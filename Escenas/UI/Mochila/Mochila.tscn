@@ -1,0 +1,135 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://c2rkbfru6vyi" path="res://Scripts/Mochila.gd" id="1_mochila"]
+[ext_resource type="Script" uid="uid://dnr564w5dbp5h" path="res://Scripts/Inventario.gd" id="2_inventory"]
+
+[node name="Mochila" type="CanvasLayer"]
+script = ExtResource("1_mochila")
+
+[node name="Inventario" type="Node" parent="."]
+script = ExtResource("2_inventory")
+
+[node name="Overlay" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+
+[node name="Title" type="Label" parent="Overlay"]
+offset_left = 34.0
+offset_top = 20.0
+offset_right = 340.0
+offset_bottom = 62.0
+text = "MOCHILA"
+theme_override_colors/font_color = Color(0.96, 0.98, 1, 1)
+theme_override_font_sizes/font_size = 30
+
+[node name="MainPanel" type="Panel" parent="Overlay"]
+anchors_preset = 15
+anchor_left = 0.04
+anchor_top = 0.10
+anchor_right = 0.96
+anchor_bottom = 0.91
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Layout" type="HBoxContainer" parent="Overlay/MainPanel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = 18.0
+offset_right = -18.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 18
+
+[node name="CategoryColumn" type="VBoxContainer" parent="Overlay/MainPanel/Layout"]
+custom_minimum_size = Vector2(180, 0)
+
+[node name="PocketTitle" type="Label" parent="Overlay/MainPanel/Layout/CategoryColumn"]
+custom_minimum_size = Vector2(0, 46)
+text = "BOLSILLOS"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.55, 0.82, 1, 1)
+theme_override_font_sizes/font_size = 19
+
+[node name="CategoryList" type="VBoxContainer" parent="Overlay/MainPanel/Layout/CategoryColumn"]
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="ContentColumn" type="VBoxContainer" parent="Overlay/MainPanel/Layout"]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="Overlay/MainPanel/Layout/ContentColumn"]
+custom_minimum_size = Vector2(0, 52)
+
+[node name="CategoryTitle" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn/Header"]
+size_flags_horizontal = 3
+text = "MEDICINA"
+vertical_alignment = 1
+
+[node name="Hint" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn/Header"]
+text = "← → bolsillo    ↑ ↓ objeto"
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.67, 0.74, 0.84, 1)
+theme_override_font_sizes/font_size = 14
+
+[node name="ItemArea" type="PanelContainer" parent="Overlay/MainPanel/Layout/ContentColumn"]
+size_flags_vertical = 3
+
+[node name="Scroll" type="ScrollContainer" parent="Overlay/MainPanel/Layout/ContentColumn/ItemArea"]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="ItemList" type="VBoxContainer" parent="Overlay/MainPanel/Layout/ContentColumn/ItemArea/Scroll"]
+size_flags_horizontal = 3
+theme_override_constants/separation = 7
+
+[node name="DescriptionPanel" type="PanelContainer" parent="Overlay/MainPanel/Layout/ContentColumn"]
+custom_minimum_size = Vector2(0, 108)
+
+[node name="Margin" type="MarginContainer" parent="Overlay/MainPanel/Layout/ContentColumn/DescriptionPanel"]
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 12
+
+[node name="Description" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn/DescriptionPanel/Margin"]
+text = "Descripción del objeto."
+autowrap_mode = 2
+vertical_alignment = 1
+
+[node name="Footer" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn"]
+custom_minimum_size = Vector2(0, 28)
+text = "ENTER: seleccionar     ESC: cerrar"
+vertical_alignment = 1
+
+[node name="ActionPanel" type="Panel" parent="Overlay"]
+anchors_preset = 0
+anchor_left = 0.72
+anchor_top = 0.32
+anchor_right = 0.94
+anchor_bottom = 0.77
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Overlay/ActionPanel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ActionList" type="VBoxContainer" parent="Overlay/ActionPanel/Margin"]
+theme_override_constants/separation = 7

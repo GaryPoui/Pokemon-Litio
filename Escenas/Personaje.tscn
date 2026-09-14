@@ -1,7 +1,8 @@
-[gd_scene format=3 uid="uid://bw6qghia3ohfr"]
+[gd_scene load_steps=15 format=3 uid="uid://bw6qghia3ohfr"]
 
 [ext_resource type="Script" uid="uid://salrlfwbpf88" path="res://Escenas/movimiento.gd" id="1_0gco6"]
 [ext_resource type="Texture2D" uid="uid://crpl2ijwynth2" path="res://Asets /Personajes/hero_godot_grid_40x40.png" id="1_qg4o5"]
+[ext_resource type="PackedScene" path="res://Escenas/UI/Mochila/Mochila.tscn" id="3_mochila"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b2o68"]
 atlas = ExtResource("1_qg4o5")
@@ -63,7 +64,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qslnp")
 }],
-"loop": 1,
+"loop": true,
 "name": &"caminar_abajo",
 "speed": 5.0
 }, {
@@ -77,9 +78,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_pjija")
 }],
-"loop": 1,
+"loop": true,
 "name": &"caminar_arriba",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -91,7 +92,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fj443")
 }],
-"loop": 1,
+"loop": true,
 "name": &"caminar_derecha",
 "speed": 5.0
 }, {
@@ -105,7 +106,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_72rsm")
 }],
-"loop": 1,
+"loop": true,
 "name": &"caminar_izquierda",
 "speed": 5.0
 }]
@@ -126,3 +127,5 @@ animation = &"caminar_izquierda"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1966611907]
 position = Vector2(108, 64)
 shape = SubResource("CapsuleShape2D_qkb0a")
+
+[node name="Mochila" parent="." instance=ExtResource("3_mochila")]
