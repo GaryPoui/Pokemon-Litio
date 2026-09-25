@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_2hn5d"]
+
+[resource]
+script = ExtResource("1_2hn5d")
+id = "last_resort"
+nombre = "Última Baza"
+poder = 140
+pp = 5
+descripcion = "Este movimiento solo puede utilizarse tras haber usado al menos una vez todos los demás conocidos por el Pokémon."

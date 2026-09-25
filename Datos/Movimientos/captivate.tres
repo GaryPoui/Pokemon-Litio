@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_1qe3i"]
+
+[resource]
+script = ExtResource("1_1qe3i")
+id = "captivate"
+nombre = "Seducción"
+categoria = "estado"
+pp = 20
+objetivo = "all-opponents"
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+cambios_stats = {
+"at_esp": -2
+}

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bgwsk6fgjdd6y"]
+
+[ext_resource type="Texture2D" uid="uid://cfvvwai8jtvgm" path="res://Assets/Objetos/pokeball_suelo.png" id="1_6gp0q"]
+[ext_resource type="Script" uid="uid://cnfx2hdd6njpu" path="res://Scripts/objeto_suelo.gd" id="1_ye0e7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6gp0q"]
+size = Vector2(14, 14)
+
+[node name="ObjetoSuelo" type="StaticBody2D" unique_id=1710029467]
+script = ExtResource("1_ye0e7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=554409273]
+texture = ExtResource("1_6gp0q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=314911873]
+shape = SubResource("RectangleShape2D_6gp0q")

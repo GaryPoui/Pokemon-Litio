@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="1_71opk"]
+
+[resource]
+script = ExtResource("1_71opk")
+id = "repel"
+nombre = "Repelente"
+descripcion = "Mantiene alejados a los Pokémon salvajes débiles durante un tiempo."
+precio = 350

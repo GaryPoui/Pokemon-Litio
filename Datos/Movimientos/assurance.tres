@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_c56c6"]
+
+[resource]
+script = ExtResource("1_c56c6")
+id = "assurance"
+nombre = "Buena Baza"
+tipo = "siniestro"
+poder = 50
+descripcion = "Si el objetivo ya ha sufrido daño en ese turno, la fuerza del ataque se duplica."

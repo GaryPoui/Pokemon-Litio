@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_l3g7l"]
+
+[resource]
+script = ExtResource("1_l3g7l")
+id = "rollout"
+nombre = "Rodar"
+tipo = "roca"
+poder = 30
+precision = 90
+pp = 20
+descripcion = "El atacante rueda contra el objetivo durante cinco turnos, cada vez con mayor fuerza."

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_ceu48"]
+
+[resource]
+script = ExtResource("1_ceu48")
+id = "roost"
+nombre = "Respiro"
+tipo = "volador"
+categoria = "estado"
+precision = 0
+pp = 5
+objetivo = "user"
+descripcion = "Aterriza sobre la superficie para descansar. Recupera hasta la mitad del total de sus PS."
+curacion = 50

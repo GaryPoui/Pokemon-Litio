@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_1mvg0"]
+
+[resource]
+script = ExtResource("1_1mvg0")
+id = "bite"
+nombre = "Mordisco"
+tipo = "siniestro"
+poder = 60
+pp = 25
+descripcion = "Un voraz bocado que puede amedrentar al objetivo."
+prob_retroceso = 30

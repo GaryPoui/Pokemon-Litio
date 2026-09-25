@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_8eir7"]
+
+[resource]
+script = ExtResource("1_8eir7")
+id = "feather_dance"
+nombre = "Danza Pluma"
+tipo = "volador"
+categoria = "estado"
+pp = 15
+descripcion = "Envuelve al objetivo con un manto de plumas para reducir mucho su Ataque."
+cambios_stats = {
+"ataque": -2
+}

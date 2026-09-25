@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_c8xwm"]
+
+[resource]
+script = ExtResource("1_c8xwm")
+id = "air_cutter"
+nombre = "Aire Afilado"
+tipo = "volador"
+categoria = "especial"
+poder = 55
+precision = 95
+pp = 25
+objetivo = "all-opponents"
+descripcion = "Viento cortante que azota. Suele ser un golpe crítico."
+critico = 1

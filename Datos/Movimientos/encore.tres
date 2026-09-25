@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_e0yy0"]
+
+[resource]
+script = ExtResource("1_e0yy0")
+id = "encore"
+nombre = "Otra Vez"
+categoria = "estado"
+pp = 5
+descripcion = "El objetivo repite su último movimiento durante tres turnos."

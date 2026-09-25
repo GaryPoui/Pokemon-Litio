@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_udk8y"]
+
+[resource]
+script = ExtResource("1_udk8y")
+id = "roar"
+nombre = "Rugido"
+categoria = "estado"
+pp = 20
+prioridad = -6
+descripcion = "Se lleva al objetivo, que es cambiado por otro Pokémon. Si es un Pokémon salvaje, acaba el combate."

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_hiqfa"]
+
+[resource]
+script = ExtResource("1_hiqfa")
+id = "revenge"
+nombre = "Desquite"
+tipo = "lucha"
+poder = 60
+prioridad = -4
+descripcion = "Ataque que produce el doble de daño si el usuario resulta herido en el mismo turno."

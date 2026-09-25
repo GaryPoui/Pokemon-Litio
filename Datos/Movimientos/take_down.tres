@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_p5rhh"]
+
+[resource]
+script = ExtResource("1_p5rhh")
+id = "take_down"
+nombre = "Derribo"
+poder = 90
+precision = 85
+pp = 20
+descripcion = "Carga desmedida que también hiere al agresor."
+drenaje = -25

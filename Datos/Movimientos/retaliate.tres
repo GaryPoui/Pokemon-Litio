@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_cjgpj"]
+
+[resource]
+script = ExtResource("1_cjgpj")
+id = "retaliate"
+nombre = "Represalia"
+poder = 70
+pp = 5
+descripcion = "Venga a los amigos caídos. Si en el turno anterior han derrotado a alguno, la potencia del ataque aumentará."

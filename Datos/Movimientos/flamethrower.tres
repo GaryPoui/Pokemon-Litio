@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_hq06c"]
+
+[resource]
+script = ExtResource("1_hq06c")
+id = "flamethrower"
+nombre = "Lanzallamas"
+tipo = "fuego"
+categoria = "especial"
+poder = 95
+pp = 15
+descripcion = "Ataca con una gran ráfaga de fuego que puede causar quemaduras."
+estado = "burn"
+prob_estado = 10

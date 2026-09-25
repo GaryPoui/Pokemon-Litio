@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_tl78o"]
+
+[resource]
+script = ExtResource("1_tl78o")
+id = "fury_cutter"
+nombre = "Corte Furia"
+tipo = "bicho"
+poder = 20
+precision = 95
+pp = 20
+descripcion = "Ataque con garras o guadaña que crece en intensidad si se usa repetidas veces."

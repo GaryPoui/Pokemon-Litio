@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_lwuy4"]
+
+[resource]
+script = ExtResource("1_lwuy4")
+id = "night_slash"
+nombre = "Tajo Umbrío"
+tipo = "siniestro"
+poder = 70
+pp = 15
+descripcion = "Ataca al objetivo a la primera oportunidad. Suele ser crítico."
+critico = 1

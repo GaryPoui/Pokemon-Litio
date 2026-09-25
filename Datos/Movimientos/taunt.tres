@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_42kat"]
+
+[resource]
+script = ExtResource("1_42kat")
+id = "taunt"
+nombre = "Mofa"
+tipo = "siniestro"
+categoria = "estado"
+pp = 20
+descripcion = "Enfurece al objetivo para que solo use movimientos de ataque durante tres turnos."

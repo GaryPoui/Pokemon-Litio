@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_4krov"]
+
+[resource]
+script = ExtResource("1_4krov")
+id = "facade"
+nombre = "Fachada"
+poder = 70
+pp = 20
+descripcion = "Si el usuario está quemado, paralizado o envenenado, ataca con el doble de potencia."

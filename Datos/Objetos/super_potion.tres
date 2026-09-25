@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="1_no7jy"]
+
+[resource]
+script = ExtResource("1_no7jy")
+id = "super_potion"
+nombre = "Superpoción"
+categoria = "MEDICINA"
+descripcion = "Restaura una buena cantidad de PS a un Pokémon."
+precio = 700
+cura_ps = 50

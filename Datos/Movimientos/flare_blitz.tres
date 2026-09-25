@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_o3w6g"]
+
+[resource]
+script = ExtResource("1_o3w6g")
+id = "flare_blitz"
+nombre = "Envite Ígneo"
+tipo = "fuego"
+poder = 120
+pp = 15
+descripcion = "El Pokémon se cubre de llamas y carga contra el objetivo, aunque él también recibe daño. Puede quemar."
+estado = "burn"
+prob_estado = 10
+drenaje = -33

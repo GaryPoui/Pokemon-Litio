@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_s5ktl"]
+
+[resource]
+script = ExtResource("1_s5ktl")
+id = "leer"
+nombre = "Malicioso"
+categoria = "estado"
+pp = 30
+objetivo = "all-opponents"
+descripcion = "Intimida a los rivales para bajar su Defensa."
+cambios_stats = {
+"defensa": -1
+}
+prob_stat = 100

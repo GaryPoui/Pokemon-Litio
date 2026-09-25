@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="1_7p63p"]
+
+[resource]
+script = ExtResource("1_7p63p")
+id = "tm01"
+nombre = "MT01"
+categoria = "MT / MO"
+descripcion = "Disco técnico que enseña un movimiento a un Pokémon compatible."
+se_puede_tirar = false

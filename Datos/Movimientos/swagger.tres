@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_2shfn"]
+
+[resource]
+script = ExtResource("1_2shfn")
+id = "swagger"
+nombre = "Fanfarronear"
+categoria = "estado"
+precision = 90
+pp = 15
+descripcion = "Provoca confusión en el objetivo, pero también sube mucho su Ataque."
+cambios_stats = {
+"ataque": 2
+}
+estado = "confusion"

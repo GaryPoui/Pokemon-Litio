@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_afefd"]
+
+[resource]
+script = ExtResource("1_afefd")
+id = "aqua_jet"
+nombre = "Acua Jet"
+tipo = "agua"
+poder = 40
+pp = 20
+prioridad = 1
+descripcion = "Ataque de una rapidez espeluznante. Este movimiento tiene prioridad alta. "

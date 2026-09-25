@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_4xmxr"]
+
+[resource]
+script = ExtResource("1_4xmxr")
+id = "flame_charge"
+nombre = "Nitrocarga"
+tipo = "fuego"
+poder = 50
+pp = 20
+descripcion = "Llamas que golpean al objetivo y aumentan la Velocidad del atacante."
+cambios_stats = {
+"velocidad": 1
+}
+prob_stat = 100

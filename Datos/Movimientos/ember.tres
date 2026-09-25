@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_hodhj"]
+
+[resource]
+script = ExtResource("1_hodhj")
+id = "ember"
+nombre = "Ascuas"
+tipo = "fuego"
+categoria = "especial"
+poder = 40
+pp = 25
+descripcion = "Ataca con llamas pequeñas que pueden causar quemaduras."
+estado = "burn"
+prob_estado = 10

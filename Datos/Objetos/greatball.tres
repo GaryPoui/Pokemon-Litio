@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="1_irg40"]
+
+[resource]
+script = ExtResource("1_irg40")
+id = "greatball"
+nombre = "Super Ball"
+categoria = "POKÉ BALLS"
+descripcion = "Poké Ball con un rendimiento superior al modelo normal."
+usable = false
+precio = 600
+ratio_captura = 1.5

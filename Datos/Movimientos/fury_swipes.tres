@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_0fxuy"]
+
+[resource]
+script = ExtResource("1_0fxuy")
+id = "fury_swipes"
+nombre = "Golpes Furia"
+poder = 18
+precision = 80
+pp = 15
+descripcion = "Araña rápidamente de dos a cinco veces."

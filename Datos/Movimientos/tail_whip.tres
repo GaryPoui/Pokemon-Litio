@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_fb75k"]
+
+[resource]
+script = ExtResource("1_fb75k")
+id = "tail_whip"
+nombre = "Agitacola"
+categoria = "estado"
+pp = 30
+objetivo = "all-opponents"
+descripcion = "Agita la cola para bajar la Defensa del equipo rival."
+cambios_stats = {
+"defensa": -1
+}

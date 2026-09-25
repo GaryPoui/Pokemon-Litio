@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_cdunw"]
+
+[resource]
+script = ExtResource("1_cdunw")
+id = "hydro_pump"
+nombre = "Hidrobomba"
+tipo = "agua"
+categoria = "especial"
+poder = 120
+precision = 80
+pp = 5
+descripcion = "Lanza una gran masa de agua a presión para atacar."

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_0s8ba"]
+
+[resource]
+script = ExtResource("1_0s8ba")
+id = "leech_seed"
+nombre = "Drenadoras"
+tipo = "planta"
+categoria = "estado"
+precision = 90
+descripcion = "Planta semillas que absorben PS del objetivo en cada turno y que le sirven para recuperarse."
+estado = "leech-seed"

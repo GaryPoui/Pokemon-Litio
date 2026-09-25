@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_e6fj0"]
+
+[resource]
+script = ExtResource("1_e6fj0")
+id = "torment"
+nombre = "Tormento"
+tipo = "siniestro"
+categoria = "estado"
+pp = 15
+descripcion = "Atormenta y enfurece al objetivo, que no puede usar dos veces seguidas el mismo movimiento. "
+estado = "torment"

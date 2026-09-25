@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dmbpe1ajn76f1"]
+
+[ext_resource type="Script" uid="uid://2bdrxs520g1l" path="res://Scripts/dialogo.gd" id="1_bsvcb"]
+
+[node name="Dialogo" type="CanvasLayer" unique_id=2096889996]
+script = ExtResource("1_bsvcb")
+
+[node name="Caja" type="Panel" parent="." unique_id=1616242089]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = -48.0
+offset_right = -4.0
+offset_bottom = -4.0
+
+[node name="Texto" type="Label" parent="Caja" unique_id=1684044897]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+autowrap_mode = 3
+
+[node name="Flecha" type="Label" parent="Caja" unique_id=1011401419]
+layout_mode = 0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -12.0
+offset_top = -13.0
+offset_right = -4.0
+offset_bottom = -2.0
+text = "▼"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_j1d2v"]
+
+[resource]
+script = ExtResource("1_j1d2v")
+id = "giga_impact"
+nombre = "Gigaimpacto"
+poder = 150
+precision = 90
+pp = 5
+descripcion = "El usuario carga contra el objetivo con toda la fuerza que tiene y descansa durante el siguiente turno."

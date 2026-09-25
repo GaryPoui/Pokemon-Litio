@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_n5f0x"]
+
+[resource]
+script = ExtResource("1_n5f0x")
+id = "tailwind"
+nombre = "Viento Afín"
+tipo = "volador"
+categoria = "estado"
+precision = 0
+pp = 30
+objetivo = "users-field"
+descripcion = "Crea un fuerte remolino que aumenta la Velocidad de los Pokémon de tu equipo durante cuatro turnos."

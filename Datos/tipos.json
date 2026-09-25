@@ -1,0 +1,167 @@
+{
+ "nombres": {
+  "normal": "Normal",
+  "fuego": "Fuego",
+  "agua": "Agua",
+  "planta": "Planta",
+  "electrico": "Eléctrico",
+  "hielo": "Hielo",
+  "lucha": "Lucha",
+  "veneno": "Veneno",
+  "tierra": "Tierra",
+  "volador": "Volador",
+  "psiquico": "Psíquico",
+  "bicho": "Bicho",
+  "roca": "Roca",
+  "fantasma": "Fantasma",
+  "dragon": "Dragón",
+  "siniestro": "Siniestro",
+  "acero": "Acero"
+ },
+ "tabla": {
+  "normal": {
+   "roca": 0.5,
+   "acero": 0.5,
+   "fantasma": 0.0
+  },
+  "fuego": {
+   "bicho": 2.0,
+   "acero": 2.0,
+   "planta": 2.0,
+   "hielo": 2.0,
+   "roca": 0.5,
+   "fuego": 0.5,
+   "agua": 0.5,
+   "dragon": 0.5
+  },
+  "agua": {
+   "tierra": 2.0,
+   "roca": 2.0,
+   "fuego": 2.0,
+   "agua": 0.5,
+   "planta": 0.5,
+   "dragon": 0.5
+  },
+  "planta": {
+   "tierra": 2.0,
+   "roca": 2.0,
+   "agua": 2.0,
+   "volador": 0.5,
+   "veneno": 0.5,
+   "bicho": 0.5,
+   "acero": 0.5,
+   "fuego": 0.5,
+   "planta": 0.5,
+   "dragon": 0.5
+  },
+  "electrico": {
+   "volador": 2.0,
+   "agua": 2.0,
+   "planta": 0.5,
+   "electrico": 0.5,
+   "dragon": 0.5,
+   "tierra": 0.0
+  },
+  "hielo": {
+   "volador": 2.0,
+   "tierra": 2.0,
+   "planta": 2.0,
+   "dragon": 2.0,
+   "acero": 0.5,
+   "fuego": 0.5,
+   "agua": 0.5,
+   "hielo": 0.5
+  },
+  "lucha": {
+   "normal": 2.0,
+   "roca": 2.0,
+   "acero": 2.0,
+   "hielo": 2.0,
+   "siniestro": 2.0,
+   "volador": 0.5,
+   "veneno": 0.5,
+   "bicho": 0.5,
+   "psiquico": 0.5,
+   "fantasma": 0.0
+  },
+  "veneno": {
+   "planta": 2.0,
+   "veneno": 0.5,
+   "tierra": 0.5,
+   "roca": 0.5,
+   "fantasma": 0.5,
+   "acero": 0.0
+  },
+  "tierra": {
+   "veneno": 2.0,
+   "roca": 2.0,
+   "acero": 2.0,
+   "fuego": 2.0,
+   "electrico": 2.0,
+   "bicho": 0.5,
+   "planta": 0.5,
+   "volador": 0.0
+  },
+  "volador": {
+   "lucha": 2.0,
+   "bicho": 2.0,
+   "planta": 2.0,
+   "roca": 0.5,
+   "acero": 0.5,
+   "electrico": 0.5
+  },
+  "psiquico": {
+   "lucha": 2.0,
+   "veneno": 2.0,
+   "acero": 0.5,
+   "psiquico": 0.5,
+   "siniestro": 0.0
+  },
+  "bicho": {
+   "planta": 2.0,
+   "psiquico": 2.0,
+   "siniestro": 2.0,
+   "lucha": 0.5,
+   "volador": 0.5,
+   "veneno": 0.5,
+   "fantasma": 0.5,
+   "acero": 0.5,
+   "fuego": 0.5
+  },
+  "roca": {
+   "volador": 2.0,
+   "bicho": 2.0,
+   "fuego": 2.0,
+   "hielo": 2.0,
+   "lucha": 0.5,
+   "tierra": 0.5,
+   "acero": 0.5
+  },
+  "fantasma": {
+   "fantasma": 2.0,
+   "psiquico": 2.0,
+   "siniestro": 0.5,
+   "acero": 0.5,
+   "normal": 0.0
+  },
+  "dragon": {
+   "dragon": 2.0,
+   "acero": 0.5
+  },
+  "siniestro": {
+   "fantasma": 2.0,
+   "psiquico": 2.0,
+   "lucha": 0.5,
+   "siniestro": 0.5,
+   "acero": 0.5
+  },
+  "acero": {
+   "roca": 2.0,
+   "hielo": 2.0,
+   "acero": 0.5,
+   "fuego": 0.5,
+   "agua": 0.5,
+   "electrico": 0.5
+  }
+ }
+}

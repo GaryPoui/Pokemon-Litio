@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_dopw4"]
+
+[resource]
+script = ExtResource("1_dopw4")
+id = "sand_attack"
+nombre = "Ataque Arena"
+tipo = "tierra"
+categoria = "estado"
+pp = 15
+descripcion = "Arroja arena a la cara y baja la Precisión."
+cambios_stats = {
+"accuracy": -1
+}

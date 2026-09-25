@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_34rx1"]
+
+[resource]
+script = ExtResource("1_34rx1")
+id = "defense_curl"
+nombre = "Rizo Defensa"
+categoria = "estado"
+precision = 0
+pp = 40
+objetivo = "user"
+descripcion = "Se enrosca para ocultar sus puntos débiles y aumentar la Defensa."
+cambios_stats = {
+"defensa": 1
+}

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_e6yna"]
+
+[resource]
+script = ExtResource("1_e6yna")
+id = "hone_claws"
+nombre = "Afilagarras"
+tipo = "siniestro"
+categoria = "estado"
+precision = 0
+pp = 15
+objetivo = "user"
+descripcion = "El usuario se afila las garras para aumentar su Ataque y Precisión."
+cambios_stats = {
+"accuracy": 1,
+"ataque": 1
+}

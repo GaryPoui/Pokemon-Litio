@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_acmln"]
+
+[resource]
+script = ExtResource("1_acmln")
+id = "water_pulse"
+nombre = "Hidropulso"
+tipo = "agua"
+categoria = "especial"
+poder = 60
+pp = 20
+descripcion = "Ataca con un potente chorro de agua. Puede confundir al objetivo."
+estado = "confusion"
+prob_estado = 20

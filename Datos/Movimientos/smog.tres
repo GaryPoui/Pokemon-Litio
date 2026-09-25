@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_egskl"]
+
+[resource]
+script = ExtResource("1_egskl")
+id = "smog"
+nombre = "Polución"
+tipo = "veneno"
+categoria = "especial"
+poder = 20
+precision = 70
+pp = 20
+descripcion = "Lanza un ataque con gases tóxicos que pueden llegar a envenenar."
+estado = "poison"
+prob_estado = 40

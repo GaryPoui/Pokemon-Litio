@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_psg6y"]
+
+[resource]
+script = ExtResource("1_psg6y")
+id = "hypnosis"
+nombre = "Hipnosis"
+tipo = "psiquico"
+categoria = "estado"
+precision = 60
+pp = 20
+descripcion = "Ataque hipnótico que hace dormir profundamente al objetivo."
+estado = "sleep"

@@ -1,0 +1,127 @@
+{
+ "fuerte": {
+  "nombre": "Fuerte",
+  "sube": "",
+  "baja": ""
+ },
+ "osada": {
+  "nombre": "Osada",
+  "sube": "defensa",
+  "baja": "ataque"
+ },
+ "modesta": {
+  "nombre": "Modesta",
+  "sube": "at_esp",
+  "baja": "ataque"
+ },
+ "serena": {
+  "nombre": "Serena",
+  "sube": "def_esp",
+  "baja": "ataque"
+ },
+ "miedosa": {
+  "nombre": "Miedosa",
+  "sube": "velocidad",
+  "baja": "ataque"
+ },
+ "huraña": {
+  "nombre": "Huraña",
+  "sube": "ataque",
+  "baja": "defensa"
+ },
+ "dócil": {
+  "nombre": "Dócil",
+  "sube": "",
+  "baja": ""
+ },
+ "afable": {
+  "nombre": "Afable",
+  "sube": "at_esp",
+  "baja": "defensa"
+ },
+ "amable": {
+  "nombre": "Amable",
+  "sube": "def_esp",
+  "baja": "defensa"
+ },
+ "activa": {
+  "nombre": "Activa",
+  "sube": "velocidad",
+  "baja": "defensa"
+ },
+ "firme": {
+  "nombre": "Firme",
+  "sube": "ataque",
+  "baja": "at_esp"
+ },
+ "agitada": {
+  "nombre": "Agitada",
+  "sube": "defensa",
+  "baja": "at_esp"
+ },
+ "tímida": {
+  "nombre": "Tímida",
+  "sube": "",
+  "baja": ""
+ },
+ "cauta": {
+  "nombre": "Cauta",
+  "sube": "def_esp",
+  "baja": "at_esp"
+ },
+ "alocada": {
+  "nombre": "Alocada",
+  "sube": "at_esp",
+  "baja": "def_esp"
+ },
+ "alegre": {
+  "nombre": "Alegre",
+  "sube": "velocidad",
+  "baja": "at_esp"
+ },
+ "pícara": {
+  "nombre": "Pícara",
+  "sube": "ataque",
+  "baja": "def_esp"
+ },
+ "floja": {
+  "nombre": "Floja",
+  "sube": "defensa",
+  "baja": "def_esp"
+ },
+ "rara": {
+  "nombre": "Rara",
+  "sube": "",
+  "baja": ""
+ },
+ "ingenua": {
+  "nombre": "Ingenua",
+  "sube": "velocidad",
+  "baja": "def_esp"
+ },
+ "audaz": {
+  "nombre": "Audaz",
+  "sube": "ataque",
+  "baja": "velocidad"
+ },
+ "plácida": {
+  "nombre": "Plácida",
+  "sube": "defensa",
+  "baja": "velocidad"
+ },
+ "mansa": {
+  "nombre": "Mansa",
+  "sube": "at_esp",
+  "baja": "velocidad"
+ },
+ "grosera": {
+  "nombre": "Grosera",
+  "sube": "def_esp",
+  "baja": "velocidad"
+ },
+ "seria": {
+  "nombre": "Seria",
+  "sube": "",
+  "baja": ""
+ }
+}

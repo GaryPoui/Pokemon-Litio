@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_sl48y"]
+
+[resource]
+script = ExtResource("1_sl48y")
+id = "growl"
+nombre = "Gruñido"
+categoria = "estado"
+pp = 40
+objetivo = "all-opponents"
+descripcion = "Dulce gruñido que reduce el Ataque del equipo rival."
+cambios_stats = {
+"ataque": -1
+}

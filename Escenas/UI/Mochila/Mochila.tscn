@@ -1,135 +1,148 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://haqmqnpausm1"]
 
 [ext_resource type="Script" uid="uid://c2rkbfru6vyi" path="res://Scripts/Mochila.gd" id="1_mochila"]
-[ext_resource type="Script" uid="uid://dnr564w5dbp5h" path="res://Scripts/Inventario.gd" id="2_inventory"]
 
-[node name="Mochila" type="CanvasLayer"]
+[node name="Mochila" type="CanvasLayer" unique_id=1311858417]
 script = ExtResource("1_mochila")
 
-[node name="Inventario" type="Node" parent="."]
-script = ExtResource("2_inventory")
-
-[node name="Overlay" type="ColorRect" parent="."]
+[node name="Overlay" type="ColorRect" parent="." unique_id=86391809]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 0
 
-[node name="Title" type="Label" parent="Overlay"]
-offset_left = 34.0
-offset_top = 20.0
-offset_right = 340.0
-offset_bottom = 62.0
-text = "MOCHILA"
+[node name="Title" type="Label" parent="Overlay" unique_id=318861647]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 2.0
+offset_right = 120.0
+offset_bottom = 18.0
 theme_override_colors/font_color = Color(0.96, 0.98, 1, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 12
+text = "MOCHILA"
 
-[node name="MainPanel" type="Panel" parent="Overlay"]
-anchors_preset = 15
+[node name="MainPanel" type="Panel" parent="Overlay" unique_id=2028818270]
+layout_mode = 0
 anchor_left = 0.04
-anchor_top = 0.10
+anchor_top = 0.1
 anchor_right = 0.96
-anchor_bottom = 0.91
+anchor_bottom = 0.95
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Layout" type="HBoxContainer" parent="Overlay/MainPanel"]
-anchors_preset = 15
+[node name="Layout" type="HBoxContainer" parent="Overlay/MainPanel" unique_id=226267130]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 18.0
-offset_top = 18.0
-offset_right = -18.0
-offset_bottom = -18.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = -4.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 18
+theme_override_constants/separation = 4
 
-[node name="CategoryColumn" type="VBoxContainer" parent="Overlay/MainPanel/Layout"]
-custom_minimum_size = Vector2(180, 0)
+[node name="CategoryColumn" type="VBoxContainer" parent="Overlay/MainPanel/Layout" unique_id=801353961]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
 
-[node name="PocketTitle" type="Label" parent="Overlay/MainPanel/Layout/CategoryColumn"]
-custom_minimum_size = Vector2(0, 46)
+[node name="PocketTitle" type="Label" parent="Overlay/MainPanel/Layout/CategoryColumn" unique_id=1239040964]
+custom_minimum_size = Vector2(0, 12)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.82, 1, 1)
+theme_override_font_sizes/font_size = 8
 text = "BOLSILLOS"
 horizontal_alignment = 1
-theme_override_colors/font_color = Color(0.55, 0.82, 1, 1)
-theme_override_font_sizes/font_size = 19
 
-[node name="CategoryList" type="VBoxContainer" parent="Overlay/MainPanel/Layout/CategoryColumn"]
+[node name="CategoryList" type="VBoxContainer" parent="Overlay/MainPanel/Layout/CategoryColumn" unique_id=2026364269]
+layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/separation = 8
+theme_override_constants/separation = 2
 
-[node name="ContentColumn" type="VBoxContainer" parent="Overlay/MainPanel/Layout"]
+[node name="ContentColumn" type="VBoxContainer" parent="Overlay/MainPanel/Layout" unique_id=1639508620]
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_constants/separation = 10
+theme_override_constants/separation = 3
 
-[node name="Header" type="HBoxContainer" parent="Overlay/MainPanel/Layout/ContentColumn"]
-custom_minimum_size = Vector2(0, 52)
+[node name="Header" type="HBoxContainer" parent="Overlay/MainPanel/Layout/ContentColumn" unique_id=1569634064]
+custom_minimum_size = Vector2(0, 14)
+layout_mode = 2
 
-[node name="CategoryTitle" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn/Header"]
+[node name="CategoryTitle" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn/Header" unique_id=1874181904]
+layout_mode = 2
 size_flags_horizontal = 3
 text = "MEDICINA"
 vertical_alignment = 1
 
-[node name="Hint" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn/Header"]
-text = "← → bolsillo    ↑ ↓ objeto"
-vertical_alignment = 1
+[node name="Hint" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn/Header" unique_id=234565522]
+layout_mode = 2
 theme_override_colors/font_color = Color(0.67, 0.74, 0.84, 1)
-theme_override_font_sizes/font_size = 14
+theme_override_font_sizes/font_size = 7
+text = "←→ bolsillo  ↑↓ objeto"
+vertical_alignment = 1
 
-[node name="ItemArea" type="PanelContainer" parent="Overlay/MainPanel/Layout/ContentColumn"]
+[node name="ItemArea" type="PanelContainer" parent="Overlay/MainPanel/Layout/ContentColumn" unique_id=281272572]
+layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Scroll" type="ScrollContainer" parent="Overlay/MainPanel/Layout/ContentColumn/ItemArea"]
+[node name="Scroll" type="ScrollContainer" parent="Overlay/MainPanel/Layout/ContentColumn/ItemArea" unique_id=196883090]
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 horizontal_scroll_mode = 0
 
-[node name="ItemList" type="VBoxContainer" parent="Overlay/MainPanel/Layout/ContentColumn/ItemArea/Scroll"]
+[node name="ItemList" type="VBoxContainer" parent="Overlay/MainPanel/Layout/ContentColumn/ItemArea/Scroll" unique_id=737460801]
+layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/separation = 7
+theme_override_constants/separation = 1
 
-[node name="DescriptionPanel" type="PanelContainer" parent="Overlay/MainPanel/Layout/ContentColumn"]
-custom_minimum_size = Vector2(0, 108)
+[node name="DescriptionPanel" type="PanelContainer" parent="Overlay/MainPanel/Layout/ContentColumn" unique_id=1700209896]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
 
-[node name="Margin" type="MarginContainer" parent="Overlay/MainPanel/Layout/ContentColumn/DescriptionPanel"]
-theme_override_constants/margin_left = 14
-theme_override_constants/margin_top = 12
-theme_override_constants/margin_right = 14
-theme_override_constants/margin_bottom = 12
+[node name="Margin" type="MarginContainer" parent="Overlay/MainPanel/Layout/ContentColumn/DescriptionPanel" unique_id=163814465]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 3
 
-[node name="Description" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn/DescriptionPanel/Margin"]
+[node name="Description" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn/DescriptionPanel/Margin" unique_id=1761544574]
+layout_mode = 2
 text = "Descripción del objeto."
+vertical_alignment = 1
 autowrap_mode = 2
-vertical_alignment = 1
 
-[node name="Footer" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn"]
-custom_minimum_size = Vector2(0, 28)
-text = "ENTER: seleccionar     ESC: cerrar"
+[node name="Footer" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn" unique_id=248396909]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+text = "Z: elegir   X: volver   ESC: cerrar"
 vertical_alignment = 1
+text_overrun_behavior = 3
 
-[node name="ActionPanel" type="Panel" parent="Overlay"]
-anchors_preset = 0
-anchor_left = 0.72
-anchor_top = 0.32
-anchor_right = 0.94
-anchor_bottom = 0.77
+[node name="ActionPanel" type="Panel" parent="Overlay" unique_id=1818804392]
+layout_mode = 0
+anchor_left = 0.7
+anchor_top = 0.3
+anchor_right = 0.95
+anchor_bottom = 0.7
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Margin" type="MarginContainer" parent="Overlay/ActionPanel"]
-anchors_preset = 15
+[node name="Margin" type="MarginContainer" parent="Overlay/ActionPanel" unique_id=2046674469]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 10.0
-offset_top = 10.0
-offset_right = -10.0
-offset_bottom = -10.0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = -3.0
+offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ActionList" type="VBoxContainer" parent="Overlay/ActionPanel/Margin"]
-theme_override_constants/separation = 7
+[node name="ActionList" type="VBoxContainer" parent="Overlay/ActionPanel/Margin" unique_id=897053305]
+layout_mode = 2
+theme_override_constants/separation = 1

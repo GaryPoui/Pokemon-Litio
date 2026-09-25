@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_exlmq"]
+
+[resource]
+script = ExtResource("1_exlmq")
+id = "razor_shell"
+nombre = "Concha Filo"
+tipo = "agua"
+poder = 75
+precision = 95
+descripcion = "Una afilada vieira ataca al objetivo. También puede hacer disminuir su Defensa."
+cambios_stats = {
+"defensa": -1
+}
+prob_stat = 50

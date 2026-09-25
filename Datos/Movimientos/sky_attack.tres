@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_s6a60"]
+
+[resource]
+script = ExtResource("1_s6a60")
+id = "sky_attack"
+nombre = "Ataque Aéreo"
+tipo = "volador"
+poder = 140
+precision = 90
+pp = 5
+descripcion = "Ataca durante dos turnos y suele asestar un golpe crítico. También puede amedrentar al objetivo."
+critico = 1
+prob_retroceso = 30

@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_omppl"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="2_07kgc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_jaoyo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/assist.tres" id="4_rpiyj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="5_37fn5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_swipes.tres" id="6_gr576"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="7_sxbbt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/torment.tres" id="8_eyni3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fake_out.tres" id="9_8xhb6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hone_claws.tres" id="10_xatnb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/assurance.tres" id="11_n5nr0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="12_2tnbd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/captivate.tres" id="13_ssusw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/night_slash.tres" id="14_5rbkx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/snatch.tres" id="15_ucr51"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="16_rkmkf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="17_y3dgd"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_jdqom"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/purrloin_espalda.png" id="19_ih2pv"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/purrloin_frente.png" id="20_xxlfd"]
+
+[sub_resource type="Resource" id="Resource_5r4hj"]
+script = ExtResource("1_omppl")
+movimiento = ExtResource("2_07kgc")
+
+[sub_resource type="Resource" id="Resource_kydjd"]
+script = ExtResource("1_omppl")
+nivel = 3
+movimiento = ExtResource("3_jaoyo")
+
+[sub_resource type="Resource" id="Resource_h1t4p"]
+script = ExtResource("1_omppl")
+nivel = 6
+movimiento = ExtResource("4_rpiyj")
+
+[sub_resource type="Resource" id="Resource_80prj"]
+script = ExtResource("1_omppl")
+nivel = 10
+movimiento = ExtResource("5_37fn5")
+
+[sub_resource type="Resource" id="Resource_0bhj8"]
+script = ExtResource("1_omppl")
+nivel = 12
+movimiento = ExtResource("6_gr576")
+
+[sub_resource type="Resource" id="Resource_brnij"]
+script = ExtResource("1_omppl")
+nivel = 15
+movimiento = ExtResource("7_sxbbt")
+
+[sub_resource type="Resource" id="Resource_3mw60"]
+script = ExtResource("1_omppl")
+nivel = 19
+movimiento = ExtResource("8_eyni3")
+
+[sub_resource type="Resource" id="Resource_ffu2h"]
+script = ExtResource("1_omppl")
+nivel = 21
+movimiento = ExtResource("9_8xhb6")
+
+[sub_resource type="Resource" id="Resource_qssli"]
+script = ExtResource("1_omppl")
+nivel = 24
+movimiento = ExtResource("10_xatnb")
+
+[sub_resource type="Resource" id="Resource_pccj3"]
+script = ExtResource("1_omppl")
+nivel = 28
+movimiento = ExtResource("11_n5nr0")
+
+[sub_resource type="Resource" id="Resource_xxune"]
+script = ExtResource("1_omppl")
+nivel = 30
+movimiento = ExtResource("12_2tnbd")
+
+[sub_resource type="Resource" id="Resource_tuxny"]
+script = ExtResource("1_omppl")
+nivel = 33
+movimiento = ExtResource("13_ssusw")
+
+[sub_resource type="Resource" id="Resource_fh85o"]
+script = ExtResource("1_omppl")
+nivel = 37
+movimiento = ExtResource("14_5rbkx")
+
+[sub_resource type="Resource" id="Resource_4n86h"]
+script = ExtResource("1_omppl")
+nivel = 39
+movimiento = ExtResource("15_ucr51")
+
+[sub_resource type="Resource" id="Resource_vobnj"]
+script = ExtResource("1_omppl")
+nivel = 42
+movimiento = ExtResource("16_rkmkf")
+
+[sub_resource type="Resource" id="Resource_grvml"]
+script = ExtResource("1_omppl")
+nivel = 46
+movimiento = ExtResource("17_y3dgd")
+
+[resource]
+script = ExtResource("18_jdqom")
+id = "purrloin"
+numero = 509
+nombre = "Purrloin"
+tipos = PackedStringArray("siniestro")
+ps = 41
+defensa = 37
+def_esp = 37
+velocidad = 66
+exp_base = 56
+ratio_captura = 255
+evs_otorgados = {
+"velocidad": 1
+}
+aprende = Array[ExtResource("1_omppl")]([SubResource("Resource_5r4hj"), SubResource("Resource_kydjd"), SubResource("Resource_h1t4p"), SubResource("Resource_80prj"), SubResource("Resource_0bhj8"), SubResource("Resource_brnij"), SubResource("Resource_3mw60"), SubResource("Resource_ffu2h"), SubResource("Resource_qssli"), SubResource("Resource_pccj3"), SubResource("Resource_xxune"), SubResource("Resource_tuxny"), SubResource("Resource_fh85o"), SubResource("Resource_4n86h"), SubResource("Resource_vobnj"), SubResource("Resource_grvml")])
+sprite_frente = ExtResource("20_xxlfd")
+sprite_espalda = ExtResource("19_ih2pv")
+cuadros_frente = 32
+cuadros_espalda = 32
+fps_sprite = 6.4

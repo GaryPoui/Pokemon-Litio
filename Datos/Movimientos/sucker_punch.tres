@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_7w2bn"]
+
+[resource]
+script = ExtResource("1_7w2bn")
+id = "sucker_punch"
+nombre = "Golpe Bajo"
+tipo = "siniestro"
+poder = 80
+pp = 5
+prioridad = 1
+descripcion = "Permite atacar con prioridad. Falla si el objetivo no está preparando ningún ataque."

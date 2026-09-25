@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_x6wwg"]
+
+[resource]
+script = ExtResource("1_x6wwg")
+id = "leaf_storm"
+nombre = "Lluevehojas"
+tipo = "planta"
+categoria = "especial"
+poder = 140
+precision = 90
+pp = 5
+descripcion = "Envuelve al objetivo con una lluvia de hojas afiladas, pero reduce mucho su Ataque Especial."
+cambios_stats = {
+"at_esp": -2
+}
+prob_stat = 100

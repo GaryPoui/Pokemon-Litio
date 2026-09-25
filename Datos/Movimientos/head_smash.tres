@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_r2cic"]
+
+[resource]
+script = ExtResource("1_r2cic")
+id = "head_smash"
+nombre = "Testarazo"
+tipo = "roca"
+poder = 150
+precision = 80
+pp = 5
+descripcion = "El usuario arriesga su vida y lanza un cabezazo con toda su fuerza. El agresor resulta seriamente dañado."
+drenaje = -50

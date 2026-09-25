@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_qkfr0"]
+
+[resource]
+script = ExtResource("1_qkfr0")
+id = "helping_hand"
+nombre = "Refuerzo"
+categoria = "estado"
+precision = 0
+pp = 20
+prioridad = 5
+objetivo = "ally"
+descripcion = "El usuario ayuda a un aliado reforzando la potencia de su ataque."

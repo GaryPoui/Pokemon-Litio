@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_cut44"]
+
+[resource]
+script = ExtResource("1_cut44")
+id = "air_slash"
+nombre = "Tajo Aéreo"
+tipo = "volador"
+categoria = "especial"
+poder = 75
+precision = 95
+pp = 20
+descripcion = "Ataca con un viento afilado que incluso corta el aire. También puede amedrentar al objetivo."
+prob_retroceso = 30

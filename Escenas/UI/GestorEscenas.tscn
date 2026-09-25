@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://blom54gnd5j68"]
+
+[ext_resource type="Script" uid="uid://b052jww0vtknr" path="res://Scripts/gestor_escenas.gd" id="1_le0hr"]
+
+[node name="GestorEscenas" type="CanvasLayer" unique_id=1884540368]
+script = ExtResource("1_le0hr")
+
+[node name="Velo" type="ColorRect" parent="." unique_id=1942285480]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0

@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_db83i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_2gjha"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="3_wc2rj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="4_e0tmm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_sport.tres" id="5_h65m2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="6_6rul3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/razor_shell.tres" id="7_dkc08"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_cutter.tres" id="8_4qvaj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_pulse.tres" id="9_tt4p8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/revenge.tres" id="10_2hg4i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aqua_jet.tres" id="11_0kvmb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/encore.tres" id="12_l68c5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aqua_tail.tres" id="13_q0do0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/retaliate.tres" id="14_krkm7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swords_dance.tres" id="15_w5n5m"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="16_tm1s3"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_1pwqn"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/oshawott_espalda.png" id="18_hpa8n"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/oshawott_frente.png" id="19_kyoli"]
+
+[sub_resource type="Resource" id="Resource_qouwp"]
+script = ExtResource("1_db83i")
+movimiento = ExtResource("2_2gjha")
+
+[sub_resource type="Resource" id="Resource_cc6bc"]
+script = ExtResource("1_db83i")
+nivel = 5
+movimiento = ExtResource("3_wc2rj")
+
+[sub_resource type="Resource" id="Resource_hsqa3"]
+script = ExtResource("1_db83i")
+nivel = 7
+movimiento = ExtResource("4_e0tmm")
+
+[sub_resource type="Resource" id="Resource_3fh15"]
+script = ExtResource("1_db83i")
+nivel = 11
+movimiento = ExtResource("5_h65m2")
+
+[sub_resource type="Resource" id="Resource_2x8xe"]
+script = ExtResource("1_db83i")
+nivel = 13
+movimiento = ExtResource("6_6rul3")
+
+[sub_resource type="Resource" id="Resource_lq55r"]
+script = ExtResource("1_db83i")
+nivel = 17
+movimiento = ExtResource("7_dkc08")
+
+[sub_resource type="Resource" id="Resource_s6wjq"]
+script = ExtResource("1_db83i")
+nivel = 19
+movimiento = ExtResource("8_4qvaj")
+
+[sub_resource type="Resource" id="Resource_7787s"]
+script = ExtResource("1_db83i")
+nivel = 23
+movimiento = ExtResource("9_tt4p8")
+
+[sub_resource type="Resource" id="Resource_3ueat"]
+script = ExtResource("1_db83i")
+nivel = 25
+movimiento = ExtResource("10_2hg4i")
+
+[sub_resource type="Resource" id="Resource_vf2ao"]
+script = ExtResource("1_db83i")
+nivel = 29
+movimiento = ExtResource("11_0kvmb")
+
+[sub_resource type="Resource" id="Resource_5tkce"]
+script = ExtResource("1_db83i")
+nivel = 31
+movimiento = ExtResource("12_l68c5")
+
+[sub_resource type="Resource" id="Resource_3rett"]
+script = ExtResource("1_db83i")
+nivel = 35
+movimiento = ExtResource("13_q0do0")
+
+[sub_resource type="Resource" id="Resource_mdv58"]
+script = ExtResource("1_db83i")
+nivel = 37
+movimiento = ExtResource("14_krkm7")
+
+[sub_resource type="Resource" id="Resource_1civj"]
+script = ExtResource("1_db83i")
+nivel = 41
+movimiento = ExtResource("15_w5n5m")
+
+[sub_resource type="Resource" id="Resource_3nax2"]
+script = ExtResource("1_db83i")
+nivel = 43
+movimiento = ExtResource("16_tm1s3")
+
+[resource]
+script = ExtResource("17_1pwqn")
+id = "oshawott"
+numero = 501
+nombre = "Oshawott"
+tipos = PackedStringArray("agua")
+ps = 55
+ataque = 55
+defensa = 45
+at_esp = 63
+def_esp = 45
+velocidad = 45
+exp_base = 62
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 1
+}
+aprende = Array[ExtResource("1_db83i")]([SubResource("Resource_qouwp"), SubResource("Resource_cc6bc"), SubResource("Resource_hsqa3"), SubResource("Resource_3fh15"), SubResource("Resource_2x8xe"), SubResource("Resource_lq55r"), SubResource("Resource_s6wjq"), SubResource("Resource_7787s"), SubResource("Resource_3ueat"), SubResource("Resource_vf2ao"), SubResource("Resource_5tkce"), SubResource("Resource_3rett"), SubResource("Resource_mdv58"), SubResource("Resource_1civj"), SubResource("Resource_3nax2")])
+sprite_frente = ExtResource("19_kyoli")
+sprite_espalda = ExtResource("18_hpa8n")
+cuadros_frente = 149
+cuadros_espalda = 147
+fps_sprite = 9.43

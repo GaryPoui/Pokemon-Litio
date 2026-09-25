@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_vs0lo"]
+
+[resource]
+script = ExtResource("1_vs0lo")
+id = "water_gun"
+nombre = "Pistola Agua"
+tipo = "agua"
+categoria = "especial"
+poder = 40
+pp = 25
+descripcion = "Ataca disparando agua con gran potencia."

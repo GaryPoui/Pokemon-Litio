@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="1_v6ykb"]
+
+[resource]
+script = ExtResource("1_v6ykb")
+id = "bicycle"
+nombre = "Bici"
+categoria = "CLAVE"
+descripcion = "Una bicicleta plegable para desplazarse más rápido."
+se_puede_tirar = false

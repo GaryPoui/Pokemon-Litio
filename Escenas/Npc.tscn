@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://b241yx4mh0a0n"]
+
+[ext_resource type="Texture2D" uid="uid://crpl2ijwynth2" path="res://Assets/Personajes/hero_godot_grid_40x40.png" id="1_4gfqg"]
+[ext_resource type="Script" uid="uid://brdsqpligix2l" path="res://Scripts/npc.gd" id="1_ipm5p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gfqg"]
+atlas = ExtResource("1_4gfqg")
+region = Rect2(0, 200, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipm5p"]
+atlas = ExtResource("1_4gfqg")
+region = Rect2(0, 160, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rkch2"]
+atlas = ExtResource("1_4gfqg")
+region = Rect2(0, 280, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dj1wj"]
+atlas = ExtResource("1_4gfqg")
+region = Rect2(0, 240, 40, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dj1wj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gfqg")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ipm5p")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rkch2")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dj1wj")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4gfqg"]
+size = Vector2(14, 14)
+
+[node name="Npc" type="StaticBody2D" unique_id=1999008602]
+script = ExtResource("1_ipm5p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1100079311]
+position = Vector2(0, -10)
+sprite_frames = SubResource("SpriteFrames_dj1wj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1715244872]
+shape = SubResource("RectangleShape2D_4gfqg")

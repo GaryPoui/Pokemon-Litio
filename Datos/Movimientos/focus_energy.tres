@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_f0pyk"]
+
+[resource]
+script = ExtResource("1_f0pyk")
+id = "focus_energy"
+nombre = "Foco Energía"
+categoria = "estado"
+precision = 0
+pp = 30
+objetivo = "user"
+descripcion = "Concentra energía para aumentar las posibilidades de asestar un golpe crítico."

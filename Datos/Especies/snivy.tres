@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_j2v1n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_pvrkn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_vrbxm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/vine_whip.tres" id="4_ugbx5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wrap.tres" id="5_av37e"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growth.tres" id="6_xj6hr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leaf_tornado.tres" id="7_btqqw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leech_seed.tres" id="8_iy8kp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="9_xpp7b"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slam.tres" id="10_yqdkb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leaf_blade.tres" id="11_gcygn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/coil.tres" id="12_krvgu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/giga_drain.tres" id="13_vvq1w"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wring_out.tres" id="14_nv41k"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gastro_acid.tres" id="15_lumjs"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="16_0gxf4"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_u6v46"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/snivy_espalda.png" id="18_couqe"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/snivy_frente.png" id="19_mvek2"]
+
+[sub_resource type="Resource" id="Resource_gbp0y"]
+script = ExtResource("1_j2v1n")
+movimiento = ExtResource("2_pvrkn")
+
+[sub_resource type="Resource" id="Resource_p4w0j"]
+script = ExtResource("1_j2v1n")
+nivel = 4
+movimiento = ExtResource("3_vrbxm")
+
+[sub_resource type="Resource" id="Resource_cn3a3"]
+script = ExtResource("1_j2v1n")
+nivel = 7
+movimiento = ExtResource("4_ugbx5")
+
+[sub_resource type="Resource" id="Resource_up202"]
+script = ExtResource("1_j2v1n")
+nivel = 10
+movimiento = ExtResource("5_av37e")
+
+[sub_resource type="Resource" id="Resource_argji"]
+script = ExtResource("1_j2v1n")
+nivel = 13
+movimiento = ExtResource("6_xj6hr")
+
+[sub_resource type="Resource" id="Resource_ugksy"]
+script = ExtResource("1_j2v1n")
+nivel = 16
+movimiento = ExtResource("7_btqqw")
+
+[sub_resource type="Resource" id="Resource_aohw4"]
+script = ExtResource("1_j2v1n")
+nivel = 19
+movimiento = ExtResource("8_iy8kp")
+
+[sub_resource type="Resource" id="Resource_h0pyp"]
+script = ExtResource("1_j2v1n")
+nivel = 22
+movimiento = ExtResource("9_xpp7b")
+
+[sub_resource type="Resource" id="Resource_xy0md"]
+script = ExtResource("1_j2v1n")
+nivel = 25
+movimiento = ExtResource("10_yqdkb")
+
+[sub_resource type="Resource" id="Resource_pqpwt"]
+script = ExtResource("1_j2v1n")
+nivel = 28
+movimiento = ExtResource("11_gcygn")
+
+[sub_resource type="Resource" id="Resource_adwio"]
+script = ExtResource("1_j2v1n")
+nivel = 31
+movimiento = ExtResource("12_krvgu")
+
+[sub_resource type="Resource" id="Resource_jfwr3"]
+script = ExtResource("1_j2v1n")
+nivel = 34
+movimiento = ExtResource("13_vvq1w")
+
+[sub_resource type="Resource" id="Resource_x1xj5"]
+script = ExtResource("1_j2v1n")
+nivel = 37
+movimiento = ExtResource("14_nv41k")
+
+[sub_resource type="Resource" id="Resource_7y2kj"]
+script = ExtResource("1_j2v1n")
+nivel = 40
+movimiento = ExtResource("15_lumjs")
+
+[sub_resource type="Resource" id="Resource_tl1ls"]
+script = ExtResource("1_j2v1n")
+nivel = 43
+movimiento = ExtResource("16_0gxf4")
+
+[resource]
+script = ExtResource("17_u6v46")
+id = "snivy"
+numero = 495
+nombre = "Snivy"
+tipos = PackedStringArray("planta")
+ps = 45
+ataque = 45
+defensa = 55
+at_esp = 45
+def_esp = 55
+velocidad = 63
+exp_base = 62
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"velocidad": 1
+}
+aprende = Array[ExtResource("1_j2v1n")]([SubResource("Resource_gbp0y"), SubResource("Resource_p4w0j"), SubResource("Resource_cn3a3"), SubResource("Resource_up202"), SubResource("Resource_argji"), SubResource("Resource_ugksy"), SubResource("Resource_aohw4"), SubResource("Resource_h0pyp"), SubResource("Resource_xy0md"), SubResource("Resource_pqpwt"), SubResource("Resource_adwio"), SubResource("Resource_jfwr3"), SubResource("Resource_x1xj5"), SubResource("Resource_7y2kj"), SubResource("Resource_tl1ls")])
+sprite_frente = ExtResource("19_mvek2")
+sprite_espalda = ExtResource("18_couqe")
+cuadros_frente = 80
+cuadros_espalda = 83
+fps_sprite = 9.18

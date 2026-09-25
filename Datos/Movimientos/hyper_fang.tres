@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_3gn2c"]
+
+[resource]
+script = ExtResource("1_3gn2c")
+id = "hyper_fang"
+nombre = "Hipercolmillo"
+poder = 80
+precision = 90
+pp = 15
+descripcion = "Ataca con agudos colmillos. Puede amedrentar al objetivo."
+prob_retroceso = 10

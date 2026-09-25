@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="1_whxhv"]
+
+[resource]
+script = ExtResource("1_whxhv")
+id = "pokeball"
+nombre = "Poké Ball"
+categoria = "POKÉ BALLS"
+descripcion = "Dispositivo para capturar Pokémon salvajes."
+usable = false
+precio = 200
+ratio_captura = 1.0

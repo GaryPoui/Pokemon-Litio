@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_024lt"]
+
+[resource]
+script = ExtResource("1_024lt")
+id = "super_fang"
+nombre = "Superdiente"
+precision = 90
+descripcion = "Finos colmillos que reducen a la mitad los PS del objetivo."

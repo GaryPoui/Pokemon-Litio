@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_01k3x"]
+
+[resource]
+script = ExtResource("1_01k3x")
+id = "coil"
+nombre = "Enrosque"
+tipo = "veneno"
+categoria = "estado"
+precision = 0
+pp = 20
+objetivo = "user"
+descripcion = "El usuario se concentra, lo que le permite aumentar su Ataque, Defensa y Precisión."
+cambios_stats = {
+"accuracy": 1,
+"ataque": 1,
+"defensa": 1
+}

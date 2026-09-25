@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_dqvty"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_0ej6v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_o8g84"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/odor_sleuth.tres" id="4_1f3p3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="5_udty1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/helping_hand.tres" id="6_xj03e"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="7_lnrds"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/work_up.tres" id="8_c8bkk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="9_xnel8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/roar.tres" id="10_b8p7m"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/retaliate.tres" id="11_gd7cr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="12_cpiy4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="13_fmvap"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/giga_impact.tres" id="14_qbil4"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="15_xr0ts"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lillipup_espalda.png" id="16_xg1h7"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lillipup_frente.png" id="17_n5vdr"]
+
+[sub_resource type="Resource" id="Resource_cuagd"]
+script = ExtResource("1_dqvty")
+movimiento = ExtResource("2_0ej6v")
+
+[sub_resource type="Resource" id="Resource_diogo"]
+script = ExtResource("1_dqvty")
+movimiento = ExtResource("3_o8g84")
+
+[sub_resource type="Resource" id="Resource_q72op"]
+script = ExtResource("1_dqvty")
+nivel = 5
+movimiento = ExtResource("4_1f3p3")
+
+[sub_resource type="Resource" id="Resource_otf4n"]
+script = ExtResource("1_dqvty")
+nivel = 8
+movimiento = ExtResource("5_udty1")
+
+[sub_resource type="Resource" id="Resource_yafen"]
+script = ExtResource("1_dqvty")
+nivel = 12
+movimiento = ExtResource("6_xj03e")
+
+[sub_resource type="Resource" id="Resource_t2iop"]
+script = ExtResource("1_dqvty")
+nivel = 15
+movimiento = ExtResource("7_lnrds")
+
+[sub_resource type="Resource" id="Resource_3e77d"]
+script = ExtResource("1_dqvty")
+nivel = 19
+movimiento = ExtResource("8_c8bkk")
+
+[sub_resource type="Resource" id="Resource_typ0g"]
+script = ExtResource("1_dqvty")
+nivel = 22
+movimiento = ExtResource("9_xnel8")
+
+[sub_resource type="Resource" id="Resource_5txka"]
+script = ExtResource("1_dqvty")
+nivel = 26
+movimiento = ExtResource("10_b8p7m")
+
+[sub_resource type="Resource" id="Resource_gurl6"]
+script = ExtResource("1_dqvty")
+nivel = 29
+movimiento = ExtResource("11_gd7cr")
+
+[sub_resource type="Resource" id="Resource_5xym0"]
+script = ExtResource("1_dqvty")
+nivel = 33
+movimiento = ExtResource("12_cpiy4")
+
+[sub_resource type="Resource" id="Resource_e74m5"]
+script = ExtResource("1_dqvty")
+nivel = 36
+movimiento = ExtResource("13_fmvap")
+
+[sub_resource type="Resource" id="Resource_h5hlg"]
+script = ExtResource("1_dqvty")
+nivel = 40
+movimiento = ExtResource("14_qbil4")
+
+[resource]
+script = ExtResource("15_xr0ts")
+id = "lillipup"
+numero = 506
+nombre = "Lillipup"
+tipos = PackedStringArray("normal")
+ps = 45
+ataque = 60
+defensa = 45
+at_esp = 25
+def_esp = 45
+velocidad = 55
+exp_base = 55
+ratio_captura = 255
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 1
+}
+aprende = Array[ExtResource("1_dqvty")]([SubResource("Resource_cuagd"), SubResource("Resource_diogo"), SubResource("Resource_q72op"), SubResource("Resource_otf4n"), SubResource("Resource_yafen"), SubResource("Resource_t2iop"), SubResource("Resource_3e77d"), SubResource("Resource_typ0g"), SubResource("Resource_5txka"), SubResource("Resource_gurl6"), SubResource("Resource_5xym0"), SubResource("Resource_e74m5"), SubResource("Resource_h5hlg")])
+sprite_frente = ExtResource("17_n5vdr")
+sprite_espalda = ExtResource("16_xg1h7")
+cuadros_frente = 64
+cuadros_espalda = 64

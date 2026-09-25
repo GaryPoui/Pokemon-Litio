@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_ba2rs"]
+
+[resource]
+script = ExtResource("1_ba2rs")
+id = "tackle"
+nombre = "Placaje"
+poder = 50
+pp = 35
+descripcion = "Embestida con todo el cuerpo."

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_su3gx"]
+
+[resource]
+script = ExtResource("1_su3gx")
+id = "slam"
+nombre = "Atizar"
+poder = 80
+precision = 75
+pp = 20
+descripcion = "Golpea con la cola o con lianas, por ejemplo, para causar daño al objetivo."

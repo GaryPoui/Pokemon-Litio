@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_v72j0"]
+
+[resource]
+script = ExtResource("1_v72j0")
+id = "slash"
+nombre = "Cuchillada"
+poder = 70
+pp = 20
+descripcion = "Ataca con cuchillas o con pinzas. Suele asestar un golpe crítico."
+critico = 1

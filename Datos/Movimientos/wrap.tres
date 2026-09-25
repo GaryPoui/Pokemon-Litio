@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_quxf5"]
+
+[resource]
+script = ExtResource("1_quxf5")
+id = "wrap"
+nombre = "Constricción"
+poder = 15
+precision = 90
+pp = 20
+descripcion = "Oprime al objetivo de cuatro a cinco turnos con ramas o con su cuerpo."
+estado = "trap"
+prob_estado = 100

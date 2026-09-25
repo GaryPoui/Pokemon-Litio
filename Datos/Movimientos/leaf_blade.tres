@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_y13ik"]
+
+[resource]
+script = ExtResource("1_y13ik")
+id = "leaf_blade"
+nombre = "Hoja Aguda"
+tipo = "planta"
+poder = 90
+pp = 15
+descripcion = "Acuchilla con una hoja fina. Suele dar un golpe crítico."
+critico = 1
