@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fsm2whocn23"
-path="res://.godot/imported/stoxapex-s.png-c884b09ae8b101ca1747ec40e5e12b79.ctex"
+path="res://.godot/imported/stoxapex-s.png-424f44b88e5a89f891a51f8d2cc516cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stoxapex-s.png"
-dest_files=["res://.godot/imported/stoxapex-s.png-c884b09ae8b101ca1747ec40e5e12b79.ctex"]
+source_file="res://Assets/Pokemones/gen5/stoxapex-s.png"
+dest_files=["res://.godot/imported/stoxapex-s.png-424f44b88e5a89f891a51f8d2cc516cc.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2g2k118qu33"
-path="res://.godot/imported/smorgrem-b.png-f8b9ecdfdd39bfcdd981761895034462.ctex"
+path="res://.godot/imported/smorgrem-b.png-6f09334e699239f37f7649e907d73aa9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smorgrem-b.png"
-dest_files=["res://.godot/imported/smorgrem-b.png-f8b9ecdfdd39bfcdd981761895034462.ctex"]
+source_file="res://Assets/Pokemones/gen5/smorgrem-b.png"
+dest_files=["res://.godot/imported/smorgrem-b.png-6f09334e699239f37f7649e907d73aa9.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ble4c0kbrlrpk"
-path="res://.godot/imported/sflutter_mane-b.png-9b3dc16b8f12e5301d96bc97c8977402.ctex"
+path="res://.godot/imported/sflutter_mane-b.png-f5a9f24e2dc2d5741b2be92ed44a15f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sflutter_mane-b.png"
-dest_files=["res://.godot/imported/sflutter_mane-b.png-9b3dc16b8f12e5301d96bc97c8977402.ctex"]
+source_file="res://Assets/Pokemones/gen5/sflutter_mane-b.png"
+dest_files=["res://.godot/imported/sflutter_mane-b.png-f5a9f24e2dc2d5741b2be92ed44a15f4.ctex"]
 
 [params]
 

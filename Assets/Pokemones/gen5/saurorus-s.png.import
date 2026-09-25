@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cv1qq0fxbptoo"
-path="res://.godot/imported/saurorus-s.png-82a867b9937f5cdb4ff0e79f3bc3b9cd.ctex"
+path="res://.godot/imported/saurorus-s.png-112a29431624588b764be811cddc50e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/saurorus-s.png"
-dest_files=["res://.godot/imported/saurorus-s.png-82a867b9937f5cdb4ff0e79f3bc3b9cd.ctex"]
+source_file="res://Assets/Pokemones/gen5/saurorus-s.png"
+dest_files=["res://.godot/imported/saurorus-s.png-112a29431624588b764be811cddc50e8.ctex"]
 
 [params]
 

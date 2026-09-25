@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drr0w5qxmja2t"
-path="res://.godot/imported/sgholdengo-b.png-6b54d3f69ca584e8f432b938fc88ac1d.ctex"
+path="res://.godot/imported/sgholdengo-b.png-d6f49591fad599b4ad7adf5845174cb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgholdengo-b.png"
-dest_files=["res://.godot/imported/sgholdengo-b.png-6b54d3f69ca584e8f432b938fc88ac1d.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgholdengo-b.png"
+dest_files=["res://.godot/imported/sgholdengo-b.png-d6f49591fad599b4ad7adf5845174cb3.ctex"]
 
 [params]
 

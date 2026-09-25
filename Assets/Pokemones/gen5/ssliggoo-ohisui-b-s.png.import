@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://shc0th1jw8ti"
-path="res://.godot/imported/ssliggoo-ohisui-b-s.png-d89b2c2102c9e0e74f504a328c907a45.ctex"
+path="res://.godot/imported/ssliggoo-ohisui-b-s.png-c053b8d4d8917ecc3699f86f65a16bad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssliggoo-ohisui-b-s.png"
-dest_files=["res://.godot/imported/ssliggoo-ohisui-b-s.png-d89b2c2102c9e0e74f504a328c907a45.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssliggoo-ohisui-b-s.png"
+dest_files=["res://.godot/imported/ssliggoo-ohisui-b-s.png-c053b8d4d8917ecc3699f86f65a16bad.ctex"]
 
 [params]
 

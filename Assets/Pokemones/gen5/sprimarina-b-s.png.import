@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crr2ewvt0i0uw"
-path="res://.godot/imported/sprimarina-b-s.png-c001d236ce2aefc237c77e755dcc4727.ctex"
+path="res://.godot/imported/sprimarina-b-s.png-c40b75cd88bfd5b7ecb2f305786fac87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sprimarina-b-s.png"
-dest_files=["res://.godot/imported/sprimarina-b-s.png-c001d236ce2aefc237c77e755dcc4727.ctex"]
+source_file="res://Assets/Pokemones/gen5/sprimarina-b-s.png"
+dest_files=["res://.godot/imported/sprimarina-b-s.png-c40b75cd88bfd5b7ecb2f305786fac87.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cctkv8usubdrf"
-path="res://.godot/imported/skangaskhan-omega-b.png-7f1420e857f8fb5c7d79bacba2543c50.ctex"
+path="res://.godot/imported/skangaskhan-omega-b.png-ebc84453571f348941751ba3bca1031a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/skangaskhan-omega-b.png"
-dest_files=["res://.godot/imported/skangaskhan-omega-b.png-7f1420e857f8fb5c7d79bacba2543c50.ctex"]
+source_file="res://Assets/Pokemones/gen5/skangaskhan-omega-b.png"
+dest_files=["res://.godot/imported/skangaskhan-omega-b.png-ebc84453571f348941751ba3bca1031a.ctex"]
 
 [params]
 

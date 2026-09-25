@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c555t1j4a04m6"
-path="res://.godot/imported/ssaharaja-b.png-62a752a96a710a33561dd8fa95a02712.ctex"
+path="res://.godot/imported/ssaharaja-b.png-a98d7f81b2e15f5e8a311ce2ef5eb171.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssaharaja-b.png"
-dest_files=["res://.godot/imported/ssaharaja-b.png-62a752a96a710a33561dd8fa95a02712.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssaharaja-b.png"
+dest_files=["res://.godot/imported/ssaharaja-b.png-a98d7f81b2e15f5e8a311ce2ef5eb171.ctex"]
 
 [params]
 

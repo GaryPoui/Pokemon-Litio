@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmxwviabwb7sr"
-path="res://.godot/imported/scursola-b.png-3fd8e416ed3aefc7230c356bb4d9f7a6.ctex"
+path="res://.godot/imported/scursola-b.png-4c954284b2414fab69692f6ac71274c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scursola-b.png"
-dest_files=["res://.godot/imported/scursola-b.png-3fd8e416ed3aefc7230c356bb4d9f7a6.ctex"]
+source_file="res://Assets/Pokemones/gen5/scursola-b.png"
+dest_files=["res://.godot/imported/scursola-b.png-4c954284b2414fab69692f6ac71274c3.ctex"]
 
 [params]
 

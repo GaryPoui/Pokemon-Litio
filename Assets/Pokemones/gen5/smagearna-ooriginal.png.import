@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlcj0i7t4vre1"
-path="res://.godot/imported/smagearna-ooriginal.png-03b2b332ecb665b055e666d6c85dedeb.ctex"
+path="res://.godot/imported/smagearna-ooriginal.png-a3f73b3ba91e4509c58e5b89e32a6192.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smagearna-ooriginal.png"
-dest_files=["res://.godot/imported/smagearna-ooriginal.png-03b2b332ecb665b055e666d6c85dedeb.ctex"]
+source_file="res://Assets/Pokemones/gen5/smagearna-ooriginal.png"
+dest_files=["res://.godot/imported/smagearna-ooriginal.png-a3f73b3ba91e4509c58e5b89e32a6192.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4jes6btqbx3f"
-path="res://.godot/imported/sgourgeist-osuper-s.png-d8f3be819b89cea56df26489a49571e3.ctex"
+path="res://.godot/imported/sgourgeist-osuper-s.png-7b98819c749491249e659f071545aea0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgourgeist-osuper-s.png"
-dest_files=["res://.godot/imported/sgourgeist-osuper-s.png-d8f3be819b89cea56df26489a49571e3.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgourgeist-osuper-s.png"
+dest_files=["res://.godot/imported/sgourgeist-osuper-s.png-7b98819c749491249e659f071545aea0.ctex"]
 
 [params]
 

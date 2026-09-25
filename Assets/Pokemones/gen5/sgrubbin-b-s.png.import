@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jlvgd7csa08"
-path="res://.godot/imported/sgrubbin-b-s.png-051f7bbe17ef0ee2b94c488fa4914676.ctex"
+path="res://.godot/imported/sgrubbin-b-s.png-b48853ffde2bda5fd391bc26c905d246.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgrubbin-b-s.png"
-dest_files=["res://.godot/imported/sgrubbin-b-s.png-051f7bbe17ef0ee2b94c488fa4914676.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgrubbin-b-s.png"
+dest_files=["res://.godot/imported/sgrubbin-b-s.png-b48853ffde2bda5fd391bc26c905d246.ctex"]
 
 [params]
 

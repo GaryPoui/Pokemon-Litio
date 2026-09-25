@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdnrdyftm0amr"
-path="res://.godot/imported/sscattervein-b.png-5f2c9f038f7506b33070f93d206123c1.ctex"
+path="res://.godot/imported/sscattervein-b.png-7635f450cffa8094ccf6d5c6a5e05894.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sscattervein-b.png"
-dest_files=["res://.godot/imported/sscattervein-b.png-5f2c9f038f7506b33070f93d206123c1.ctex"]
+source_file="res://Assets/Pokemones/gen5/sscattervein-b.png"
+dest_files=["res://.godot/imported/sscattervein-b.png-7635f450cffa8094ccf6d5c6a5e05894.ctex"]
 
 [params]
 

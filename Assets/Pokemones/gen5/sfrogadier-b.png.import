@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bimuk3e3dy350"
-path="res://.godot/imported/sfrogadier-b.png-d268c0351e6cf5c47ed9748453c8376e.ctex"
+path="res://.godot/imported/sfrogadier-b.png-83470d4695e5fa55fd2f89308634023c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfrogadier-b.png"
-dest_files=["res://.godot/imported/sfrogadier-b.png-d268c0351e6cf5c47ed9748453c8376e.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfrogadier-b.png"
+dest_files=["res://.godot/imported/sfrogadier-b.png-83470d4695e5fa55fd2f89308634023c.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqiwhmwkr8t2q"
-path="res://.godot/imported/sshox-b.png-c918062fd877235db3bd90db9aabadc4.ctex"
+path="res://.godot/imported/sshox-b.png-e8bbd7f49982722d005c47d98115267e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sshox-b.png"
-dest_files=["res://.godot/imported/sshox-b.png-c918062fd877235db3bd90db9aabadc4.ctex"]
+source_file="res://Assets/Pokemones/gen5/sshox-b.png"
+dest_files=["res://.godot/imported/sshox-b.png-e8bbd7f49982722d005c47d98115267e.ctex"]
 
 [params]
 

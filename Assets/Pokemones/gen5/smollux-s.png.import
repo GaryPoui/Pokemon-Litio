@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://t13y2v67i5lm"
-path="res://.godot/imported/smollux-s.png-f0ab745a8e366e2e19c80b8eddf62f40.ctex"
+path="res://.godot/imported/smollux-s.png-adbbf75a39420bf679dc3abf9c0d1e50.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smollux-s.png"
-dest_files=["res://.godot/imported/smollux-s.png-f0ab745a8e366e2e19c80b8eddf62f40.ctex"]
+source_file="res://Assets/Pokemones/gen5/smollux-s.png"
+dest_files=["res://.godot/imported/smollux-s.png-adbbf75a39420bf679dc3abf9c0d1e50.ctex"]
 
 [params]
 

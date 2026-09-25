@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wied33tvhrrx"
-path="res://.godot/imported/slitleo-b.png-0fb54eef3dcf7855c9968e1d32071257.ctex"
+path="res://.godot/imported/slitleo-b.png-db724428b1edf87c4c5bd162e249964d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slitleo-b.png"
-dest_files=["res://.godot/imported/slitleo-b.png-0fb54eef3dcf7855c9968e1d32071257.ctex"]
+source_file="res://Assets/Pokemones/gen5/slitleo-b.png"
+dest_files=["res://.godot/imported/slitleo-b.png-db724428b1edf87c4c5bd162e249964d.ctex"]
 
 [params]
 

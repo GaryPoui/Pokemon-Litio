@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvoohjtjbmb23"
-path="res://.godot/imported/sspritzee-s.png-8be4318fb72dff70b3de12228d21869f.ctex"
+path="res://.godot/imported/sspritzee-s.png-8e9b7a520cbbbfecabeeb366bd2f309e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sspritzee-s.png"
-dest_files=["res://.godot/imported/sspritzee-s.png-8be4318fb72dff70b3de12228d21869f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sspritzee-s.png"
+dest_files=["res://.godot/imported/sspritzee-s.png-8e9b7a520cbbbfecabeeb366bd2f309e.ctex"]
 
 [params]
 

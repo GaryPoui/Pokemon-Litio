@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfwrw81u6east"
-path="res://.godot/imported/sprotowatt-b-s.png-80e44d002d21b85f36c9e36a1cf6b19d.ctex"
+path="res://.godot/imported/sprotowatt-b-s.png-0113c6a7c60d736b514b69ff0e170e69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sprotowatt-b-s.png"
-dest_files=["res://.godot/imported/sprotowatt-b-s.png-80e44d002d21b85f36c9e36a1cf6b19d.ctex"]
+source_file="res://Assets/Pokemones/gen5/sprotowatt-b-s.png"
+dest_files=["res://.godot/imported/sprotowatt-b-s.png-0113c6a7c60d736b514b69ff0e170e69.ctex"]
 
 [params]
 

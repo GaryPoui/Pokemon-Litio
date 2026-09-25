@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5hkri5wqayao"
-path="res://.godot/imported/sinteleon.png-08e2a53265f81909771b4f6793fe8ce8.ctex"
+path="res://.godot/imported/sinteleon.png-d083ce9a85d86682f5e7d65e0e3c49e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sinteleon.png"
-dest_files=["res://.godot/imported/sinteleon.png-08e2a53265f81909771b4f6793fe8ce8.ctex"]
+source_file="res://Assets/Pokemones/gen5/sinteleon.png"
+dest_files=["res://.godot/imported/sinteleon.png-d083ce9a85d86682f5e7d65e0e3c49e7.ctex"]
 
 [params]
 

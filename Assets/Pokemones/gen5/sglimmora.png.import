@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh8fgms1nvhb6"
-path="res://.godot/imported/sglimmora.png-6fb5329395836f790dd29cc64b59a7ae.ctex"
+path="res://.godot/imported/sglimmora.png-fb1e627cb4abdca7fddb431f848c2d40.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sglimmora.png"
-dest_files=["res://.godot/imported/sglimmora.png-6fb5329395836f790dd29cc64b59a7ae.ctex"]
+source_file="res://Assets/Pokemones/gen5/sglimmora.png"
+dest_files=["res://.godot/imported/sglimmora.png-fb1e627cb4abdca7fddb431f848c2d40.ctex"]
 
 [params]
 

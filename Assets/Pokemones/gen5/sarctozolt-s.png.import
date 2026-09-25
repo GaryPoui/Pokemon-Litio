@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bs0ofobk7nk64"
-path="res://.godot/imported/sarctozolt-s.png-8978596f4066abaf377cd3cbc5988fc4.ctex"
+path="res://.godot/imported/sarctozolt-s.png-a1338b27788ef9db8ee92df9ba31d2fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sarctozolt-s.png"
-dest_files=["res://.godot/imported/sarctozolt-s.png-8978596f4066abaf377cd3cbc5988fc4.ctex"]
+source_file="res://Assets/Pokemones/gen5/sarctozolt-s.png"
+dest_files=["res://.godot/imported/sarctozolt-s.png-a1338b27788ef9db8ee92df9ba31d2fe.ctex"]
 
 [params]
 

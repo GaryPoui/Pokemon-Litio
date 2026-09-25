@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5l4duvlrdr0j"
-path="res://.godot/imported/stauros-opaldea_blaze-b-s.png-40762bb2f038ece602688e5233f13c90.ctex"
+path="res://.godot/imported/stauros-opaldea_blaze-b-s.png-ff057a5dd42fe0629b4c529d037d7df7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stauros-opaldea_blaze-b-s.png"
-dest_files=["res://.godot/imported/stauros-opaldea_blaze-b-s.png-40762bb2f038ece602688e5233f13c90.ctex"]
+source_file="res://Assets/Pokemones/gen5/stauros-opaldea_blaze-b-s.png"
+dest_files=["res://.godot/imported/stauros-opaldea_blaze-b-s.png-ff057a5dd42fe0629b4c529d037d7df7.ctex"]
 
 [params]
 

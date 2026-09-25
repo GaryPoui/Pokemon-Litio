@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8kqqakr510lb"
-path="res://.godot/imported/spinsir-omega.png-c39b54ef6b82bec5d726a87a5b3d4b86.ctex"
+path="res://.godot/imported/spinsir-omega.png-baefa7b2927bf192eaa5e6c054010fa1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spinsir-omega.png"
-dest_files=["res://.godot/imported/spinsir-omega.png-c39b54ef6b82bec5d726a87a5b3d4b86.ctex"]
+source_file="res://Assets/Pokemones/gen5/spinsir-omega.png"
+dest_files=["res://.godot/imported/spinsir-omega.png-baefa7b2927bf192eaa5e6c054010fa1.ctex"]
 
 [params]
 

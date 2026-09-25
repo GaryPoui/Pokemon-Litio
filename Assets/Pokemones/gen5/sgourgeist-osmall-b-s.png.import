@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwuehfoti4ao"
-path="res://.godot/imported/sgourgeist-osmall-b-s.png-3fb7c40d3a68d188fdd0861b10002f8f.ctex"
+path="res://.godot/imported/sgourgeist-osmall-b-s.png-015a399446bc48465a248b4d15eff3ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgourgeist-osmall-b-s.png"
-dest_files=["res://.godot/imported/sgourgeist-osmall-b-s.png-3fb7c40d3a68d188fdd0861b10002f8f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgourgeist-osmall-b-s.png"
+dest_files=["res://.godot/imported/sgourgeist-osmall-b-s.png-015a399446bc48465a248b4d15eff3ec.ctex"]
 
 [params]
 

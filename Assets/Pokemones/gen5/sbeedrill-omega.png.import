@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwsi8b4se6mgw"
-path="res://.godot/imported/sbeedrill-omega.png-a96b56e3faa6daaf37c65a4d3b415fee.ctex"
+path="res://.godot/imported/sbeedrill-omega.png-cb57d69be9fbf7791021a6db714e2118.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbeedrill-omega.png"
-dest_files=["res://.godot/imported/sbeedrill-omega.png-a96b56e3faa6daaf37c65a4d3b415fee.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbeedrill-omega.png"
+dest_files=["res://.godot/imported/sbeedrill-omega.png-cb57d69be9fbf7791021a6db714e2118.ctex"]
 
 [params]
 

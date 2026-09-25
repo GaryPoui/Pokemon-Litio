@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u17t80upyqc6"
-path="res://.godot/imported/sbombirdier-s.png-abb097fd65b93c9932f24388758a233f.ctex"
+path="res://.godot/imported/sbombirdier-s.png-b4041d4e59dd7efeabccc367b1b9c5bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbombirdier-s.png"
-dest_files=["res://.godot/imported/sbombirdier-s.png-abb097fd65b93c9932f24388758a233f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbombirdier-s.png"
+dest_files=["res://.godot/imported/sbombirdier-s.png-b4041d4e59dd7efeabccc367b1b9c5bc.ctex"]
 
 [params]
 

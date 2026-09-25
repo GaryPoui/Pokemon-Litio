@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ci1160qtmsikq"
-path="res://.godot/imported/sbarraskewda-b-s.png-c5d5ffee27dc66fd47b116c1243190d9.ctex"
+path="res://.godot/imported/sbarraskewda-b-s.png-9a6ed5546e91d9eb12ebe95a3c79d095.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbarraskewda-b-s.png"
-dest_files=["res://.godot/imported/sbarraskewda-b-s.png-c5d5ffee27dc66fd47b116c1243190d9.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbarraskewda-b-s.png"
+dest_files=["res://.godot/imported/sbarraskewda-b-s.png-9a6ed5546e91d9eb12ebe95a3c79d095.ctex"]
 
 [params]
 

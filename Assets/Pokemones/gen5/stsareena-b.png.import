@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqj4bm7gjagky"
-path="res://.godot/imported/stsareena-b.png-d5e45ce7e8951dfb68c001adaf116647.ctex"
+path="res://.godot/imported/stsareena-b.png-426555688a5ecf89b732285851b07295.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stsareena-b.png"
-dest_files=["res://.godot/imported/stsareena-b.png-d5e45ce7e8951dfb68c001adaf116647.ctex"]
+source_file="res://Assets/Pokemones/gen5/stsareena-b.png"
+dest_files=["res://.godot/imported/stsareena-b.png-426555688a5ecf89b732285851b07295.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bht6wucmebpvp"
-path="res://.godot/imported/sampharos-omega.png-34536b6a19621176b9be6cf924cba46f.ctex"
+path="res://.godot/imported/sampharos-omega.png-587dd208f5e53dead59f934a9486478f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sampharos-omega.png"
-dest_files=["res://.godot/imported/sampharos-omega.png-34536b6a19621176b9be6cf924cba46f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sampharos-omega.png"
+dest_files=["res://.godot/imported/sampharos-omega.png-587dd208f5e53dead59f934a9486478f.ctex"]
 
 [params]
 

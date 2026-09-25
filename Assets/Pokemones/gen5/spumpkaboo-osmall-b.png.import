@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx0qom7qruqff"
-path="res://.godot/imported/spumpkaboo-osmall-b.png-7ed0156a69d6e5d1f7d513e6d9a73929.ctex"
+path="res://.godot/imported/spumpkaboo-osmall-b.png-2883b59f6dd025b0ad2efc882ca73175.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spumpkaboo-osmall-b.png"
-dest_files=["res://.godot/imported/spumpkaboo-osmall-b.png-7ed0156a69d6e5d1f7d513e6d9a73929.ctex"]
+source_file="res://Assets/Pokemones/gen5/spumpkaboo-osmall-b.png"
+dest_files=["res://.godot/imported/spumpkaboo-osmall-b.png-2883b59f6dd025b0ad2efc882ca73175.ctex"]
 
 [params]
 

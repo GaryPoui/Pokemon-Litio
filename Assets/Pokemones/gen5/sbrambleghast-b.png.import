@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwbrcxlyqtap8"
-path="res://.godot/imported/sbrambleghast-b.png-70ffb4d1866855f1dc6cc6383ad20f60.ctex"
+path="res://.godot/imported/sbrambleghast-b.png-fa5d008cfb58a47f358b7bf5811a01df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbrambleghast-b.png"
-dest_files=["res://.godot/imported/sbrambleghast-b.png-70ffb4d1866855f1dc6cc6383ad20f60.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbrambleghast-b.png"
+dest_files=["res://.godot/imported/sbrambleghast-b.png-fa5d008cfb58a47f358b7bf5811a01df.ctex"]
 
 [params]
 

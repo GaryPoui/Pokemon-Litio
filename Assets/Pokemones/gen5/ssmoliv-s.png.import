@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl05bgodnub7a"
-path="res://.godot/imported/ssmoliv-s.png-c32a093a8e36e6d646630165df6175b0.ctex"
+path="res://.godot/imported/ssmoliv-s.png-c7fdacb5e5fc95640e0cf69af2cdc4d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssmoliv-s.png"
-dest_files=["res://.godot/imported/ssmoliv-s.png-c32a093a8e36e6d646630165df6175b0.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssmoliv-s.png"
+dest_files=["res://.godot/imported/ssmoliv-s.png-c7fdacb5e5fc95640e0cf69af2cdc4d4.ctex"]
 
 [params]
 

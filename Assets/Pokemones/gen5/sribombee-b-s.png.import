@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://do041wsq611cd"
-path="res://.godot/imported/sribombee-b-s.png-9a3d9f197946e26e13b5d7931ce5fc9d.ctex"
+path="res://.godot/imported/sribombee-b-s.png-82b5bc1e2bf99cec421d97e32bac4f79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sribombee-b-s.png"
-dest_files=["res://.godot/imported/sribombee-b-s.png-9a3d9f197946e26e13b5d7931ce5fc9d.ctex"]
+source_file="res://Assets/Pokemones/gen5/sribombee-b-s.png"
+dest_files=["res://.godot/imported/sribombee-b-s.png-82b5bc1e2bf99cec421d97e32bac4f79.ctex"]
 
 [params]
 

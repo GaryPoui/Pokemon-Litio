@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6m070ijbvgw6"
-path="res://.godot/imported/sorbeetle-b-g-s.png-7f3e5d9eece8c7114e1f69712d83c2d4.ctex"
+path="res://.godot/imported/sorbeetle-b-g-s.png-891f1b86c1290c194060c4ec5c544143.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sorbeetle-b-g-s.png"
-dest_files=["res://.godot/imported/sorbeetle-b-g-s.png-7f3e5d9eece8c7114e1f69712d83c2d4.ctex"]
+source_file="res://Assets/Pokemones/gen5/sorbeetle-b-g-s.png"
+dest_files=["res://.godot/imported/sorbeetle-b-g-s.png-891f1b86c1290c194060c4ec5c544143.ctex"]
 
 [params]
 

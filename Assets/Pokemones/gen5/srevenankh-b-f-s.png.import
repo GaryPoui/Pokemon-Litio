@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lftpmlsws8ui"
-path="res://.godot/imported/srevenankh-b-f-s.png-6a825af22be72243669cdcde1bafaf53.ctex"
+path="res://.godot/imported/srevenankh-b-f-s.png-b79fbcb18d8b6d304bd8acdc6ba3460d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/srevenankh-b-f-s.png"
-dest_files=["res://.godot/imported/srevenankh-b-f-s.png-6a825af22be72243669cdcde1bafaf53.ctex"]
+source_file="res://Assets/Pokemones/gen5/srevenankh-b-f-s.png"
+dest_files=["res://.godot/imported/srevenankh-b-f-s.png-b79fbcb18d8b6d304bd8acdc6ba3460d.ctex"]
 
 [params]
 

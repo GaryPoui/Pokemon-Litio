@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ded56ol3k8kbm"
-path="res://.godot/imported/schuggon.png-f2cfaa51f5ce12099cbd2e3df145d0bc.ctex"
+path="res://.godot/imported/schuggon.png-8792ebcfdb1d548b6de82f6d09721b0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/schuggon.png"
-dest_files=["res://.godot/imported/schuggon.png-f2cfaa51f5ce12099cbd2e3df145d0bc.ctex"]
+source_file="res://Assets/Pokemones/gen5/schuggon.png"
+dest_files=["res://.godot/imported/schuggon.png-8792ebcfdb1d548b6de82f6d09721b0d.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6yvwroxelbwa"
-path="res://.godot/imported/scrocalor-b-s.png-d7da7e1e2211304eac393b1ba5d18bd3.ctex"
+path="res://.godot/imported/scrocalor-b-s.png-99e85482843ff19f53a8c47b56c87324.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scrocalor-b-s.png"
-dest_files=["res://.godot/imported/scrocalor-b-s.png-d7da7e1e2211304eac393b1ba5d18bd3.ctex"]
+source_file="res://Assets/Pokemones/gen5/scrocalor-b-s.png"
+dest_files=["res://.godot/imported/scrocalor-b-s.png-99e85482843ff19f53a8c47b56c87324.ctex"]
 
 [params]
 

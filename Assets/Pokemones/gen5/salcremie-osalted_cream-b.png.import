@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ej65g1opxwty"
-path="res://.godot/imported/salcremie-osalted_cream-b.png-416d9d465273de5b4a28935b80249aed.ctex"
+path="res://.godot/imported/salcremie-osalted_cream-b.png-6680b5c0deb73f2fb413c740558ecb52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/salcremie-osalted_cream-b.png"
-dest_files=["res://.godot/imported/salcremie-osalted_cream-b.png-416d9d465273de5b4a28935b80249aed.ctex"]
+source_file="res://Assets/Pokemones/gen5/salcremie-osalted_cream-b.png"
+dest_files=["res://.godot/imported/salcremie-osalted_cream-b.png-6680b5c0deb73f2fb413c740558ecb52.ctex"]
 
 [params]
 

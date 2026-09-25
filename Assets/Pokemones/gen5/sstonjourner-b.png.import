@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cylsldhg6a36n"
-path="res://.godot/imported/sstonjourner-b.png-3b91a30d1479ade627c4c327c8eecc65.ctex"
+path="res://.godot/imported/sstonjourner-b.png-39e67bdb6c934dbac99c6ea6a32c200b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sstonjourner-b.png"
-dest_files=["res://.godot/imported/sstonjourner-b.png-3b91a30d1479ade627c4c327c8eecc65.ctex"]
+source_file="res://Assets/Pokemones/gen5/sstonjourner-b.png"
+dest_files=["res://.godot/imported/sstonjourner-b.png-39e67bdb6c934dbac99c6ea6a32c200b.ctex"]
 
 [params]
 

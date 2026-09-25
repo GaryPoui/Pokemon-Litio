@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2h17j2154bl5"
-path="res://.godot/imported/sspectrier-s.png-9f280af741c60749e4064192b5c8c7de.ctex"
+path="res://.godot/imported/sspectrier-s.png-58cab328c8b7c0cfdb6db1059fdfb61d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sspectrier-s.png"
-dest_files=["res://.godot/imported/sspectrier-s.png-9f280af741c60749e4064192b5c8c7de.ctex"]
+source_file="res://Assets/Pokemones/gen5/sspectrier-s.png"
+dest_files=["res://.godot/imported/sspectrier-s.png-58cab328c8b7c0cfdb6db1059fdfb61d.ctex"]
 
 [params]
 

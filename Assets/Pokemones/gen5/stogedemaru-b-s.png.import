@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1tmyi0qx0fcd"
-path="res://.godot/imported/stogedemaru-b-s.png-e1ddbbca7cd209f915ce80c52c704daa.ctex"
+path="res://.godot/imported/stogedemaru-b-s.png-178c9b511ddafa21e878012eabdc9d6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stogedemaru-b-s.png"
-dest_files=["res://.godot/imported/stogedemaru-b-s.png-e1ddbbca7cd209f915ce80c52c704daa.ctex"]
+source_file="res://Assets/Pokemones/gen5/stogedemaru-b-s.png"
+dest_files=["res://.godot/imported/stogedemaru-b-s.png-178c9b511ddafa21e878012eabdc9d6e.ctex"]
 
 [params]
 

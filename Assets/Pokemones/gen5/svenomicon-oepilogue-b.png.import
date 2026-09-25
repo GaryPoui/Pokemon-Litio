@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpm87iuxhw22v"
-path="res://.godot/imported/svenomicon-oepilogue-b.png-99062486fb820de90df2b2b14becb2f9.ctex"
+path="res://.godot/imported/svenomicon-oepilogue-b.png-cf96bd8308542428b2723efbe2741bd9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svenomicon-oepilogue-b.png"
-dest_files=["res://.godot/imported/svenomicon-oepilogue-b.png-99062486fb820de90df2b2b14becb2f9.ctex"]
+source_file="res://Assets/Pokemones/gen5/svenomicon-oepilogue-b.png"
+dest_files=["res://.godot/imported/svenomicon-oepilogue-b.png-cf96bd8308542428b2723efbe2741bd9.ctex"]
 
 [params]
 

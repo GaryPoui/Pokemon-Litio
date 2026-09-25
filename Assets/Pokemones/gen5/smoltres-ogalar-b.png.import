@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wpg7xn13d0v2"
-path="res://.godot/imported/smoltres-ogalar-b.png-ac0437b4a186dce40577ea98fc803767.ctex"
+path="res://.godot/imported/smoltres-ogalar-b.png-4af644ba7d27e33665f9b0b52c9dd1b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smoltres-ogalar-b.png"
-dest_files=["res://.godot/imported/smoltres-ogalar-b.png-ac0437b4a186dce40577ea98fc803767.ctex"]
+source_file="res://Assets/Pokemones/gen5/smoltres-ogalar-b.png"
+dest_files=["res://.godot/imported/smoltres-ogalar-b.png-4af644ba7d27e33665f9b0b52c9dd1b1.ctex"]
 
 [params]
 

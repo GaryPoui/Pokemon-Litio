@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nwoyr5yt6sa0"
-path="res://.godot/imported/statsugiri-ostretchy-b.png-5657559e03413cab271416253f142152.ctex"
+path="res://.godot/imported/statsugiri-ostretchy-b.png-6f3d4cd2f0d5f4d89d0b951933a42d4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/statsugiri-ostretchy-b.png"
-dest_files=["res://.godot/imported/statsugiri-ostretchy-b.png-5657559e03413cab271416253f142152.ctex"]
+source_file="res://Assets/Pokemones/gen5/statsugiri-ostretchy-b.png"
+dest_files=["res://.godot/imported/statsugiri-ostretchy-b.png-6f3d4cd2f0d5f4d89d0b951933a42d4f.ctex"]
 
 [params]
 

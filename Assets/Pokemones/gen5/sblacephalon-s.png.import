@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ct7t3tw8i4e3v"
-path="res://.godot/imported/sblacephalon-s.png-8177f86bbeb83d56755ed6016c23b23a.ctex"
+path="res://.godot/imported/sblacephalon-s.png-60cd2b35a8979de55421941150cc30c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sblacephalon-s.png"
-dest_files=["res://.godot/imported/sblacephalon-s.png-8177f86bbeb83d56755ed6016c23b23a.ctex"]
+source_file="res://Assets/Pokemones/gen5/sblacephalon-s.png"
+dest_files=["res://.godot/imported/sblacephalon-s.png-60cd2b35a8979de55421941150cc30c0.ctex"]
 
 [params]
 

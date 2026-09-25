@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbx26w43v6ppm"
-path="res://.godot/imported/smaushold-ofour.png-b19bb4a9814f161036210c92f48b63d6.ctex"
+path="res://.godot/imported/smaushold-ofour.png-bbd771b4a359226e2ae3a907ecd69594.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smaushold-ofour.png"
-dest_files=["res://.godot/imported/smaushold-ofour.png-b19bb4a9814f161036210c92f48b63d6.ctex"]
+source_file="res://Assets/Pokemones/gen5/smaushold-ofour.png"
+dest_files=["res://.godot/imported/smaushold-ofour.png-bbd771b4a359226e2ae3a907ecd69594.ctex"]
 
 [params]
 

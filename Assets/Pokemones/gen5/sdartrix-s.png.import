@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://psacwburi4an"
-path="res://.godot/imported/sdartrix-s.png-08b0ccd5c9123e7222da918edb5c6676.ctex"
+path="res://.godot/imported/sdartrix-s.png-50d609e22ab23b7258678f661009702c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdartrix-s.png"
-dest_files=["res://.godot/imported/sdartrix-s.png-08b0ccd5c9123e7222da918edb5c6676.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdartrix-s.png"
+dest_files=["res://.godot/imported/sdartrix-s.png-50d609e22ab23b7258678f661009702c.ctex"]
 
 [params]
 

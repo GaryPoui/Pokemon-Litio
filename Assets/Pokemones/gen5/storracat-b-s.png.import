@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh3u2pgbm0u6s"
-path="res://.godot/imported/storracat-b-s.png-59a5b71364e301971eb7d7870a3df04f.ctex"
+path="res://.godot/imported/storracat-b-s.png-e220a7a2d3cf9627e97c21c3145d0005.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/storracat-b-s.png"
-dest_files=["res://.godot/imported/storracat-b-s.png-59a5b71364e301971eb7d7870a3df04f.ctex"]
+source_file="res://Assets/Pokemones/gen5/storracat-b-s.png"
+dest_files=["res://.godot/imported/storracat-b-s.png-e220a7a2d3cf9627e97c21c3145d0005.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvorumytx3xug"
-path="res://.godot/imported/sdrizzile-s.png-2f5af2864be1524281ec5e91f683ada1.ctex"
+path="res://.godot/imported/sdrizzile-s.png-a0cb76b9f6d10ced1bb37f6fb42c5d2a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdrizzile-s.png"
-dest_files=["res://.godot/imported/sdrizzile-s.png-2f5af2864be1524281ec5e91f683ada1.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdrizzile-s.png"
+dest_files=["res://.godot/imported/sdrizzile-s.png-a0cb76b9f6d10ced1bb37f6fb42c5d2a.ctex"]
 
 [params]
 

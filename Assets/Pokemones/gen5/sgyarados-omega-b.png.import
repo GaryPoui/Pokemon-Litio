@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgxy36j8wmwgd"
-path="res://.godot/imported/sgyarados-omega-b.png-30e27db3599df5947a7b809a284cda65.ctex"
+path="res://.godot/imported/sgyarados-omega-b.png-7a843a77b5582dfbb41e13b6bda870f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgyarados-omega-b.png"
-dest_files=["res://.godot/imported/sgyarados-omega-b.png-30e27db3599df5947a7b809a284cda65.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgyarados-omega-b.png"
+dest_files=["res://.godot/imported/sgyarados-omega-b.png-7a843a77b5582dfbb41e13b6bda870f8.ctex"]
 
 [params]
 

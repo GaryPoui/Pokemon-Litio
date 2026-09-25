@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bponp704amdbf"
-path="res://.godot/imported/slatias-omega.png-b650fc5a0c8d9d42677372561f138972.ctex"
+path="res://.godot/imported/slatias-omega.png-9110017b19927bdd461ac3aa7f54bd8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slatias-omega.png"
-dest_files=["res://.godot/imported/slatias-omega.png-b650fc5a0c8d9d42677372561f138972.ctex"]
+source_file="res://Assets/Pokemones/gen5/slatias-omega.png"
+dest_files=["res://.godot/imported/slatias-omega.png-9110017b19927bdd461ac3aa7f54bd8a.ctex"]
 
 [params]
 

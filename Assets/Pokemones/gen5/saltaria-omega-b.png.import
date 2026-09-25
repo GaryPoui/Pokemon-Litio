@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dltu62dw6q4fj"
-path="res://.godot/imported/saltaria-omega-b.png-9fc87e96632e07e12df139d4eacdf375.ctex"
+path="res://.godot/imported/saltaria-omega-b.png-9b75a26deaad36b3befd6efc0834ef12.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/saltaria-omega-b.png"
-dest_files=["res://.godot/imported/saltaria-omega-b.png-9fc87e96632e07e12df139d4eacdf375.ctex"]
+source_file="res://Assets/Pokemones/gen5/saltaria-omega-b.png"
+dest_files=["res://.godot/imported/saltaria-omega-b.png-9b75a26deaad36b3befd6efc0834ef12.ctex"]
 
 [params]
 

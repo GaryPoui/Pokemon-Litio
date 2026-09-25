@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byyulmijwsfua"
-path="res://.godot/imported/sfloette-oeternal-b.png-e9fa0b52769c8f12804065d2c0d9b356.ctex"
+path="res://.godot/imported/sfloette-oeternal-b.png-cedb6704bf3b73f2c2303d4c8e554310.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfloette-oeternal-b.png"
-dest_files=["res://.godot/imported/sfloette-oeternal-b.png-e9fa0b52769c8f12804065d2c0d9b356.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfloette-oeternal-b.png"
+dest_files=["res://.godot/imported/sfloette-oeternal-b.png-cedb6704bf3b73f2c2303d4c8e554310.ctex"]
 
 [params]
 

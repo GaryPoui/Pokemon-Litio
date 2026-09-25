@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbhkkhrpmjjqt"
-path="res://.godot/imported/spoipole-b.png-e6875fb46347aa716dec5471b3c87498.ctex"
+path="res://.godot/imported/spoipole-b.png-af5698f83415c91c92e5a3a203d23de6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spoipole-b.png"
-dest_files=["res://.godot/imported/spoipole-b.png-e6875fb46347aa716dec5471b3c87498.ctex"]
+source_file="res://Assets/Pokemones/gen5/spoipole-b.png"
+dest_files=["res://.godot/imported/spoipole-b.png-af5698f83415c91c92e5a3a203d23de6.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lgcb87unhxhs"
-path="res://.godot/imported/spolteageist-b.png-cfea3859cdeb4fd674d10b40b4080561.ctex"
+path="res://.godot/imported/spolteageist-b.png-a1104b345e964a7c846e181d5e599ab3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spolteageist-b.png"
-dest_files=["res://.godot/imported/spolteageist-b.png-cfea3859cdeb4fd674d10b40b4080561.ctex"]
+source_file="res://Assets/Pokemones/gen5/spolteageist-b.png"
+dest_files=["res://.godot/imported/spolteageist-b.png-a1104b345e964a7c846e181d5e599ab3.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cubi45gdrtycn"
-path="res://.godot/imported/ssolgaleo-s.png-1e525eacf6ff4b98027ae513a4d039fa.ctex"
+path="res://.godot/imported/ssolgaleo-s.png-f558cc2f3b03bb196dd7786ddd2e0fb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssolgaleo-s.png"
-dest_files=["res://.godot/imported/ssolgaleo-s.png-1e525eacf6ff4b98027ae513a4d039fa.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssolgaleo-s.png"
+dest_files=["res://.godot/imported/ssolgaleo-s.png-f558cc2f3b03bb196dd7786ddd2e0fb3.ctex"]
 
 [params]
 

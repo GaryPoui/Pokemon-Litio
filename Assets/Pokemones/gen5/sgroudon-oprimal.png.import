@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkal1wfiuoh7u"
-path="res://.godot/imported/sgroudon-oprimal.png-595feff80707a35074dea37bb1fb194b.ctex"
+path="res://.godot/imported/sgroudon-oprimal.png-d55d8ce1eee4bdf7b06b88290d3b892a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgroudon-oprimal.png"
-dest_files=["res://.godot/imported/sgroudon-oprimal.png-595feff80707a35074dea37bb1fb194b.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgroudon-oprimal.png"
+dest_files=["res://.godot/imported/sgroudon-oprimal.png-d55d8ce1eee4bdf7b06b88290d3b892a.ctex"]
 
 [params]
 

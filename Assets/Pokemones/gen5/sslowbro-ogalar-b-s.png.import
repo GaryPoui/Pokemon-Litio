@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hn3qot6ejnto"
-path="res://.godot/imported/sslowbro-ogalar-b-s.png-22e444c42e94c0cc3ab7e638d0b4941e.ctex"
+path="res://.godot/imported/sslowbro-ogalar-b-s.png-a95ae4ccb89a12023d283eae28c0d680.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sslowbro-ogalar-b-s.png"
-dest_files=["res://.godot/imported/sslowbro-ogalar-b-s.png-22e444c42e94c0cc3ab7e638d0b4941e.ctex"]
+source_file="res://Assets/Pokemones/gen5/sslowbro-ogalar-b-s.png"
+dest_files=["res://.godot/imported/sslowbro-ogalar-b-s.png-a95ae4ccb89a12023d283eae28c0d680.ctex"]
 
 [params]
 

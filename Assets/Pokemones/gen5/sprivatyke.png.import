@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cny685hhf7j1l"
-path="res://.godot/imported/sprivatyke.png-008ed49ccd9a855419e88e8e0f8963b2.ctex"
+path="res://.godot/imported/sprivatyke.png-9b0e0298059409b15c162ed4226f3991.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sprivatyke.png"
-dest_files=["res://.godot/imported/sprivatyke.png-008ed49ccd9a855419e88e8e0f8963b2.ctex"]
+source_file="res://Assets/Pokemones/gen5/sprivatyke.png"
+dest_files=["res://.godot/imported/sprivatyke.png-9b0e0298059409b15c162ed4226f3991.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwinri1u1hxbb"
-path="res://.godot/imported/sfletchinder-b-s.png-15c6cc3d11b31c95dbf289c656601f79.ctex"
+path="res://.godot/imported/sfletchinder-b-s.png-0aa73d40d0162014165983218b4c5fa9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfletchinder-b-s.png"
-dest_files=["res://.godot/imported/sfletchinder-b-s.png-15c6cc3d11b31c95dbf289c656601f79.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfletchinder-b-s.png"
+dest_files=["res://.godot/imported/sfletchinder-b-s.png-0aa73d40d0162014165983218b4c5fa9.ctex"]
 
 [params]
 

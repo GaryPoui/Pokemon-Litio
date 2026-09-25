@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8ktkdx5y7x7b"
-path="res://.godot/imported/sgrowlithe-ohisui-b-s.png-a6e8fed02b288232b4ba7f667eff490b.ctex"
+path="res://.godot/imported/sgrowlithe-ohisui-b-s.png-78635fc70f4c524a3c469390d188e0db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgrowlithe-ohisui-b-s.png"
-dest_files=["res://.godot/imported/sgrowlithe-ohisui-b-s.png-a6e8fed02b288232b4ba7f667eff490b.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgrowlithe-ohisui-b-s.png"
+dest_files=["res://.godot/imported/sgrowlithe-ohisui-b-s.png-78635fc70f4c524a3c469390d188e0db.ctex"]
 
 [params]
 

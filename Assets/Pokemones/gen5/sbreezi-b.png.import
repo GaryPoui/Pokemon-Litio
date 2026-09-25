@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1ybt7mgtx1hy"
-path="res://.godot/imported/sbreezi-b.png-50849c5922f70568abc5ad09524ccb3d.ctex"
+path="res://.godot/imported/sbreezi-b.png-8b6ce7f724c88c7c15eecc51edc59c90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbreezi-b.png"
-dest_files=["res://.godot/imported/sbreezi-b.png-50849c5922f70568abc5ad09524ccb3d.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbreezi-b.png"
+dest_files=["res://.godot/imported/sbreezi-b.png-8b6ce7f724c88c7c15eecc51edc59c90.ctex"]
 
 [params]
 

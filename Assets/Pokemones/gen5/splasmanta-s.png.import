@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjtorp4w4seg6"
-path="res://.godot/imported/splasmanta-s.png-2b14c47c3d07f2e3bbf993f3ab47fdfe.ctex"
+path="res://.godot/imported/splasmanta-s.png-c36aca229559159b8086f2429c5f2b66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/splasmanta-s.png"
-dest_files=["res://.godot/imported/splasmanta-s.png-2b14c47c3d07f2e3bbf993f3ab47fdfe.ctex"]
+source_file="res://Assets/Pokemones/gen5/splasmanta-s.png"
+dest_files=["res://.godot/imported/splasmanta-s.png-c36aca229559159b8086f2429c5f2b66.ctex"]
 
 [params]
 

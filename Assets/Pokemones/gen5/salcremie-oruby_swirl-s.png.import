@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db7w06b57p24v"
-path="res://.godot/imported/salcremie-oruby_swirl-s.png-eabbc1814a8fa24219e557d2a89a231e.ctex"
+path="res://.godot/imported/salcremie-oruby_swirl-s.png-cffc8ebb5f208375feb618275d5505fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/salcremie-oruby_swirl-s.png"
-dest_files=["res://.godot/imported/salcremie-oruby_swirl-s.png-eabbc1814a8fa24219e557d2a89a231e.ctex"]
+source_file="res://Assets/Pokemones/gen5/salcremie-oruby_swirl-s.png"
+dest_files=["res://.godot/imported/salcremie-oruby_swirl-s.png-cffc8ebb5f208375feb618275d5505fd.ctex"]
 
 [params]
 

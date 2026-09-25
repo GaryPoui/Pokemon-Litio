@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d12n7k54v1lj7"
-path="res://.godot/imported/srapidash-ogalar-b-s.png-45b08a0f7a7317835c93cc6ecbd4b464.ctex"
+path="res://.godot/imported/srapidash-ogalar-b-s.png-d9862e736a8ece3386a3342722f8f624.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/srapidash-ogalar-b-s.png"
-dest_files=["res://.godot/imported/srapidash-ogalar-b-s.png-45b08a0f7a7317835c93cc6ecbd4b464.ctex"]
+source_file="res://Assets/Pokemones/gen5/srapidash-ogalar-b-s.png"
+dest_files=["res://.godot/imported/srapidash-ogalar-b-s.png-d9862e736a8ece3386a3342722f8f624.ctex"]
 
 [params]
 

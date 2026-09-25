@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brfn6jemmshxs"
-path="res://.godot/imported/sroaring_moon.png-67e1b1514e20c6df3c63cd0ece7acec4.ctex"
+path="res://.godot/imported/sroaring_moon.png-04c1217e85c7a520e0d543339d3057bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sroaring_moon.png"
-dest_files=["res://.godot/imported/sroaring_moon.png-67e1b1514e20c6df3c63cd0ece7acec4.ctex"]
+source_file="res://Assets/Pokemones/gen5/sroaring_moon.png"
+dest_files=["res://.godot/imported/sroaring_moon.png-04c1217e85c7a520e0d543339d3057bd.ctex"]
 
 [params]
 

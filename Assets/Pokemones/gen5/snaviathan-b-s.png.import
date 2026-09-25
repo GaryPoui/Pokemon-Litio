@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7puta3m3rhd8"
-path="res://.godot/imported/snaviathan-b-s.png-145078df83ac11f770c122e42234baca.ctex"
+path="res://.godot/imported/snaviathan-b-s.png-1d86402505e6dcca29e0fb625c31a86f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/snaviathan-b-s.png"
-dest_files=["res://.godot/imported/snaviathan-b-s.png-145078df83ac11f770c122e42234baca.ctex"]
+source_file="res://Assets/Pokemones/gen5/snaviathan-b-s.png"
+dest_files=["res://.godot/imported/snaviathan-b-s.png-1d86402505e6dcca29e0fb625c31a86f.ctex"]
 
 [params]
 

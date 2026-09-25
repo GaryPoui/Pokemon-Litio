@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccht2tqsfwqaw"
-path="res://.godot/imported/sveluza-s.png-19ac562a77cee5c05eac8e2cf40d471f.ctex"
+path="res://.godot/imported/sveluza-s.png-a705ca421217aa2c0c4e92bf38855647.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sveluza-s.png"
-dest_files=["res://.godot/imported/sveluza-s.png-19ac562a77cee5c05eac8e2cf40d471f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sveluza-s.png"
+dest_files=["res://.godot/imported/sveluza-s.png-a705ca421217aa2c0c4e92bf38855647.ctex"]
 
 [params]
 

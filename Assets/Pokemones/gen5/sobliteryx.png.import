@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://do4el78xq5pun"
-path="res://.godot/imported/sobliteryx.png-72813b23be017730d4a9959d1392d5d4.ctex"
+path="res://.godot/imported/sobliteryx.png-803254bc85948a4b8d9a0953eb43b294.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sobliteryx.png"
-dest_files=["res://.godot/imported/sobliteryx.png-72813b23be017730d4a9959d1392d5d4.ctex"]
+source_file="res://Assets/Pokemones/gen5/sobliteryx.png"
+dest_files=["res://.godot/imported/sobliteryx.png-803254bc85948a4b8d9a0953eb43b294.ctex"]
 
 [params]
 

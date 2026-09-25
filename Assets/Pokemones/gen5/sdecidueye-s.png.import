@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcjcl66u1nt2g"
-path="res://.godot/imported/sdecidueye-s.png-7f7f42b7805c6bb20038a5439357a518.ctex"
+path="res://.godot/imported/sdecidueye-s.png-3c545067296da39d2782fa792cbe6497.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdecidueye-s.png"
-dest_files=["res://.godot/imported/sdecidueye-s.png-7f7f42b7805c6bb20038a5439357a518.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdecidueye-s.png"
+dest_files=["res://.godot/imported/sdecidueye-s.png-3c545067296da39d2782fa792cbe6497.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgryja1peee4w"
-path="res://.godot/imported/sstakataka-s.png-0909ec58eeacde7b6d19196aec9acf1d.ctex"
+path="res://.godot/imported/sstakataka-s.png-70fb3bc4364ac71a0f659ecf574f2670.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sstakataka-s.png"
-dest_files=["res://.godot/imported/sstakataka-s.png-0909ec58eeacde7b6d19196aec9acf1d.ctex"]
+source_file="res://Assets/Pokemones/gen5/sstakataka-s.png"
+dest_files=["res://.godot/imported/sstakataka-s.png-70fb3bc4364ac71a0f659ecf574f2670.ctex"]
 
 [params]
 

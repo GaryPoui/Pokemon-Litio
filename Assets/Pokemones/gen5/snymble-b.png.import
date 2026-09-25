@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mivxcf5pje6w"
-path="res://.godot/imported/snymble-b.png-56bcc6665b94cfc5465f8ff852c2bb41.ctex"
+path="res://.godot/imported/snymble-b.png-0505eedd2a5871c6ce6f898acb253b37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/snymble-b.png"
-dest_files=["res://.godot/imported/snymble-b.png-56bcc6665b94cfc5465f8ff852c2bb41.ctex"]
+source_file="res://Assets/Pokemones/gen5/snymble-b.png"
+dest_files=["res://.godot/imported/snymble-b.png-0505eedd2a5871c6ce6f898acb253b37.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xi1pq3ekqvj6"
-path="res://.godot/imported/salakazam-omega-b-s.png-001747d6c9bd0cbe024c36251b2de08e.ctex"
+path="res://.godot/imported/salakazam-omega-b-s.png-c1c88bf3993c736c6c3a17a7d83afa45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/salakazam-omega-b-s.png"
-dest_files=["res://.godot/imported/salakazam-omega-b-s.png-001747d6c9bd0cbe024c36251b2de08e.ctex"]
+source_file="res://Assets/Pokemones/gen5/salakazam-omega-b-s.png"
+dest_files=["res://.godot/imported/salakazam-omega-b-s.png-c1c88bf3993c736c6c3a17a7d83afa45.ctex"]
 
 [params]
 

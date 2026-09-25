@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvmarv7cm1tcn"
-path="res://.godot/imported/smeowscarada.png-9f0c75ba1c6504c5327cde6ba3d95c90.ctex"
+path="res://.godot/imported/smeowscarada.png-2296082fcf4fae5cba56c322f7e07b9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smeowscarada.png"
-dest_files=["res://.godot/imported/smeowscarada.png-9f0c75ba1c6504c5327cde6ba3d95c90.ctex"]
+source_file="res://Assets/Pokemones/gen5/smeowscarada.png"
+dest_files=["res://.godot/imported/smeowscarada.png-2296082fcf4fae5cba56c322f7e07b9c.ctex"]
 
 [params]
 

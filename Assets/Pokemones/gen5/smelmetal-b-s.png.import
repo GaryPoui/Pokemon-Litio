@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tfd66i47du48"
-path="res://.godot/imported/smelmetal-b-s.png-980ef590a54753453acaa18ba74a43ce.ctex"
+path="res://.godot/imported/smelmetal-b-s.png-f15db02d978618de56d5db58536e8ff0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smelmetal-b-s.png"
-dest_files=["res://.godot/imported/smelmetal-b-s.png-980ef590a54753453acaa18ba74a43ce.ctex"]
+source_file="res://Assets/Pokemones/gen5/smelmetal-b-s.png"
+dest_files=["res://.godot/imported/smelmetal-b-s.png-f15db02d978618de56d5db58536e8ff0.ctex"]
 
 [params]
 

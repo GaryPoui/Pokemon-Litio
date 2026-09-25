@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs1cdq531pijp"
-path="res://.godot/imported/slopunny-omega.png-85ab2abb5abb391c8c8a527b6c52d6b8.ctex"
+path="res://.godot/imported/slopunny-omega.png-d33bd81458a6a41c76c496d337b6f0ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slopunny-omega.png"
-dest_files=["res://.godot/imported/slopunny-omega.png-85ab2abb5abb391c8c8a527b6c52d6b8.ctex"]
+source_file="res://Assets/Pokemones/gen5/slopunny-omega.png"
+dest_files=["res://.godot/imported/slopunny-omega.png-d33bd81458a6a41c76c496d337b6f0ca.ctex"]
 
 [params]
 

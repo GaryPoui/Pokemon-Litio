@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bk0gk0tjngj2s"
-path="res://.godot/imported/spikachu-ostarter-b-s.png-f8fa6bda459c2723091fc600546591b7.ctex"
+path="res://.godot/imported/spikachu-ostarter-b-s.png-5545d606233c398510d556ad6215b6d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spikachu-ostarter-b-s.png"
-dest_files=["res://.godot/imported/spikachu-ostarter-b-s.png-f8fa6bda459c2723091fc600546591b7.ctex"]
+source_file="res://Assets/Pokemones/gen5/spikachu-ostarter-b-s.png"
+dest_files=["res://.godot/imported/spikachu-ostarter-b-s.png-5545d606233c398510d556ad6215b6d1.ctex"]
 
 [params]
 

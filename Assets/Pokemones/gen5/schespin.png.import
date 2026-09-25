@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ee8n6olxcjop"
-path="res://.godot/imported/schespin.png-68338d3f8afd8bbec2be09e280dcf9cb.ctex"
+path="res://.godot/imported/schespin.png-da065707eeeb52c3fa92ea7ac1644779.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/schespin.png"
-dest_files=["res://.godot/imported/schespin.png-68338d3f8afd8bbec2be09e280dcf9cb.ctex"]
+source_file="res://Assets/Pokemones/gen5/schespin.png"
+dest_files=["res://.godot/imported/schespin.png-da065707eeeb52c3fa92ea7ac1644779.ctex"]
 
 [params]
 

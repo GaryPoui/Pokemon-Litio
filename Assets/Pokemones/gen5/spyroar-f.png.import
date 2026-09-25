@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpsb67r43mvkf"
-path="res://.godot/imported/spyroar-f.png-db6ea29df5beb68ef2eac4afa9a8538b.ctex"
+path="res://.godot/imported/spyroar-f.png-b52c1dbcc2f5ffb6d0a651c244ebd2c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spyroar-f.png"
-dest_files=["res://.godot/imported/spyroar-f.png-db6ea29df5beb68ef2eac4afa9a8538b.ctex"]
+source_file="res://Assets/Pokemones/gen5/spyroar-f.png"
+dest_files=["res://.godot/imported/spyroar-f.png-b52c1dbcc2f5ffb6d0a651c244ebd2c5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://41chnsshhyrs"
-path="res://.godot/imported/stalonflame-s.png-9bd832e388a55b350f07de5f05c6375f.ctex"
+path="res://.godot/imported/stalonflame-s.png-5ace0366650cdc96d57e125b1f321326.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stalonflame-s.png"
-dest_files=["res://.godot/imported/stalonflame-s.png-9bd832e388a55b350f07de5f05c6375f.ctex"]
+source_file="res://Assets/Pokemones/gen5/stalonflame-s.png"
+dest_files=["res://.godot/imported/stalonflame-s.png-5ace0366650cdc96d57e125b1f321326.ctex"]
 
 [params]
 

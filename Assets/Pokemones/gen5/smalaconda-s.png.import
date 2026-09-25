@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxsx65fqfygln"
-path="res://.godot/imported/smalaconda-s.png-d3cce90d0e8359009b8654f3872de620.ctex"
+path="res://.godot/imported/smalaconda-s.png-b46689652032966c340804eb51627f83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smalaconda-s.png"
-dest_files=["res://.godot/imported/smalaconda-s.png-d3cce90d0e8359009b8654f3872de620.ctex"]
+source_file="res://Assets/Pokemones/gen5/smalaconda-s.png"
+dest_files=["res://.godot/imported/smalaconda-s.png-b46689652032966c340804eb51627f83.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://rrw3idrsf8q4"
-path="res://.godot/imported/siron_moth-b.png-d6e0809f7b60988d79bc96e9bdb047d0.ctex"
+path="res://.godot/imported/siron_moth-b.png-5696fdd35086812c9813fa8371789935.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/siron_moth-b.png"
-dest_files=["res://.godot/imported/siron_moth-b.png-d6e0809f7b60988d79bc96e9bdb047d0.ctex"]
+source_file="res://Assets/Pokemones/gen5/siron_moth-b.png"
+dest_files=["res://.godot/imported/siron_moth-b.png-5696fdd35086812c9813fa8371789935.ctex"]
 
 [params]
 

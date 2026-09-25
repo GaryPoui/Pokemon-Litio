@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwt7rqfxftkbt"
-path="res://.godot/imported/scharizard-b-g-s.png-97c1c7b4f75315713752c121fa97009d.ctex"
+path="res://.godot/imported/scharizard-b-g-s.png-dfb988c1fdfffd3924d69941831148c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scharizard-b-g-s.png"
-dest_files=["res://.godot/imported/scharizard-b-g-s.png-97c1c7b4f75315713752c121fa97009d.ctex"]
+source_file="res://Assets/Pokemones/gen5/scharizard-b-g-s.png"
+dest_files=["res://.godot/imported/scharizard-b-g-s.png-dfb988c1fdfffd3924d69941831148c0.ctex"]
 
 [params]
 

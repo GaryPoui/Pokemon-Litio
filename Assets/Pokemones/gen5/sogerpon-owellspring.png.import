@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw2xobi7gu8yl"
-path="res://.godot/imported/sogerpon-owellspring.png-075a07df33f8956edd7310cdf333213d.ctex"
+path="res://.godot/imported/sogerpon-owellspring.png-5575399886784504b2a78320d89ebd03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sogerpon-owellspring.png"
-dest_files=["res://.godot/imported/sogerpon-owellspring.png-075a07df33f8956edd7310cdf333213d.ctex"]
+source_file="res://Assets/Pokemones/gen5/sogerpon-owellspring.png"
+dest_files=["res://.godot/imported/sogerpon-owellspring.png-5575399886784504b2a78320d89ebd03.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpfxovco0m53d"
-path="res://.godot/imported/sfomantis-b.png-c394fba1afb23644c133641c74c15366.ctex"
+path="res://.godot/imported/sfomantis-b.png-b0587cca2a11ae02a6e91f432586f5dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfomantis-b.png"
-dest_files=["res://.godot/imported/sfomantis-b.png-c394fba1afb23644c133641c74c15366.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfomantis-b.png"
+dest_files=["res://.godot/imported/sfomantis-b.png-b0587cca2a11ae02a6e91f432586f5dc.ctex"]
 
 [params]
 

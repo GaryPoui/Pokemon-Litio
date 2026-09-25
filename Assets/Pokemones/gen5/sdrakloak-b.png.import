@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yqnrogfpamyi"
-path="res://.godot/imported/sdrakloak-b.png-58d55f9716349fcddd5cfb5d261dfb8e.ctex"
+path="res://.godot/imported/sdrakloak-b.png-35ede4c7e6c7fcb20c2909ef43d3c313.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdrakloak-b.png"
-dest_files=["res://.godot/imported/sdrakloak-b.png-58d55f9716349fcddd5cfb5d261dfb8e.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdrakloak-b.png"
+dest_files=["res://.godot/imported/sdrakloak-b.png-35ede4c7e6c7fcb20c2909ef43d3c313.ctex"]
 
 [params]
 

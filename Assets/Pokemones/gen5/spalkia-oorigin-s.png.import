@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pvfy1jd3ws7t"
-path="res://.godot/imported/spalkia-oorigin-s.png-4800b8aea53b2e53701bccd898370213.ctex"
+path="res://.godot/imported/spalkia-oorigin-s.png-81cfc3b9e359dc83e717a03bc28d196a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spalkia-oorigin-s.png"
-dest_files=["res://.godot/imported/spalkia-oorigin-s.png-4800b8aea53b2e53701bccd898370213.ctex"]
+source_file="res://Assets/Pokemones/gen5/spalkia-oorigin-s.png"
+dest_files=["res://.godot/imported/spalkia-oorigin-s.png-81cfc3b9e359dc83e717a03bc28d196a.ctex"]
 
 [params]
 

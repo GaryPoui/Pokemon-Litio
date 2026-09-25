@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5j1k0ytdhna1"
-path="res://.godot/imported/sindeedee-b.png-fc36c5314ef6e30f217a4fecfb0c5994.ctex"
+path="res://.godot/imported/sindeedee-b.png-20a92325ee23d179df63e9e3a6ac18f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sindeedee-b.png"
-dest_files=["res://.godot/imported/sindeedee-b.png-fc36c5314ef6e30f217a4fecfb0c5994.ctex"]
+source_file="res://Assets/Pokemones/gen5/sindeedee-b.png"
+dest_files=["res://.godot/imported/sindeedee-b.png-20a92325ee23d179df63e9e3a6ac18f3.ctex"]
 
 [params]
 

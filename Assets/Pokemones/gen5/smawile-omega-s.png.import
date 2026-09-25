@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cy5gnf78jmctl"
-path="res://.godot/imported/smawile-omega-s.png-1edb60473689288329ea6a97239983ee.ctex"
+path="res://.godot/imported/smawile-omega-s.png-a2c44295097461202d81fb26489413e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smawile-omega-s.png"
-dest_files=["res://.godot/imported/smawile-omega-s.png-1edb60473689288329ea6a97239983ee.ctex"]
+source_file="res://Assets/Pokemones/gen5/smawile-omega-s.png"
+dest_files=["res://.godot/imported/smawile-omega-s.png-a2c44295097461202d81fb26489413e0.ctex"]
 
 [params]
 

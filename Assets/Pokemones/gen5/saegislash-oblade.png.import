@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcee7y11rribq"
-path="res://.godot/imported/saegislash-oblade.png-f2051f164a4ed420293212d86d3b72da.ctex"
+path="res://.godot/imported/saegislash-oblade.png-5eaa1257eacf0ca7f3c44df85c6b9f25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/saegislash-oblade.png"
-dest_files=["res://.godot/imported/saegislash-oblade.png-f2051f164a4ed420293212d86d3b72da.ctex"]
+source_file="res://Assets/Pokemones/gen5/saegislash-oblade.png"
+dest_files=["res://.godot/imported/saegislash-oblade.png-5eaa1257eacf0ca7f3c44df85c6b9f25.ctex"]
 
 [params]
 

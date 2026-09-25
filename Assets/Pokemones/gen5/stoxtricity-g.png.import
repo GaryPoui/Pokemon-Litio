@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djw8hwowk6c0j"
-path="res://.godot/imported/stoxtricity-g.png-3adf830f2d4fa296cf86bd36942152ec.ctex"
+path="res://.godot/imported/stoxtricity-g.png-b370a5a406c3dfd65087e91da47bd4d2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stoxtricity-g.png"
-dest_files=["res://.godot/imported/stoxtricity-g.png-3adf830f2d4fa296cf86bd36942152ec.ctex"]
+source_file="res://Assets/Pokemones/gen5/stoxtricity-g.png"
+dest_files=["res://.godot/imported/stoxtricity-g.png-b370a5a406c3dfd65087e91da47bd4d2.ctex"]
 
 [params]
 

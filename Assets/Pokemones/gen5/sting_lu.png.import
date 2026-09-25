@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://o88hbm1ply32"
-path="res://.godot/imported/sting_lu.png-35fba3ae44d878e044a08827a74868dc.ctex"
+path="res://.godot/imported/sting_lu.png-c4f9c159ae994be30b5ef937b242cd1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sting_lu.png"
-dest_files=["res://.godot/imported/sting_lu.png-35fba3ae44d878e044a08827a74868dc.ctex"]
+source_file="res://Assets/Pokemones/gen5/sting_lu.png"
+dest_files=["res://.godot/imported/sting_lu.png-c4f9c159ae994be30b5ef937b242cd1b.ctex"]
 
 [params]
 

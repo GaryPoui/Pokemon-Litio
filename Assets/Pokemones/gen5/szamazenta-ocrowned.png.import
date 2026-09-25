@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c80hw7x55ehgm"
-path="res://.godot/imported/szamazenta-ocrowned.png-c75e6432edb88f97a3c8eb1d64097820.ctex"
+path="res://.godot/imported/szamazenta-ocrowned.png-260dee6b6056189d8ca825722b146937.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/szamazenta-ocrowned.png"
-dest_files=["res://.godot/imported/szamazenta-ocrowned.png-c75e6432edb88f97a3c8eb1d64097820.ctex"]
+source_file="res://Assets/Pokemones/gen5/szamazenta-ocrowned.png"
+dest_files=["res://.godot/imported/szamazenta-ocrowned.png-260dee6b6056189d8ca825722b146937.ctex"]
 
 [params]
 

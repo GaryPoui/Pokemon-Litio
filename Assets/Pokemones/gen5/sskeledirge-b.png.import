@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nritnm0frkf2"
-path="res://.godot/imported/sskeledirge-b.png-c8019c83cdab4239039d9ca00fd6dde4.ctex"
+path="res://.godot/imported/sskeledirge-b.png-a96c1420e6ece978a5c08883047b2db8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sskeledirge-b.png"
-dest_files=["res://.godot/imported/sskeledirge-b.png-c8019c83cdab4239039d9ca00fd6dde4.ctex"]
+source_file="res://Assets/Pokemones/gen5/sskeledirge-b.png"
+dest_files=["res://.godot/imported/sskeledirge-b.png-a96c1420e6ece978a5c08883047b2db8.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxs4krm70a8f5"
-path="res://.godot/imported/sbounsweet-s.png-7ccaa803f669777921779bcebeb54af6.ctex"
+path="res://.godot/imported/sbounsweet-s.png-fa180795e981abb0a25820c14ce4a9db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbounsweet-s.png"
-dest_files=["res://.godot/imported/sbounsweet-s.png-7ccaa803f669777921779bcebeb54af6.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbounsweet-s.png"
+dest_files=["res://.godot/imported/sbounsweet-s.png-fa180795e981abb0a25820c14ce4a9db.ctex"]
 
 [params]
 

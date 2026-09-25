@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqd8bwje62a6w"
-path="res://.godot/imported/styphlosion-ohisui-b-s.png-cae7bd6320d40d0ec52154f43680960e.ctex"
+path="res://.godot/imported/styphlosion-ohisui-b-s.png-7ac7d24a14d8df01525b8d2c5074a78c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/styphlosion-ohisui-b-s.png"
-dest_files=["res://.godot/imported/styphlosion-ohisui-b-s.png-cae7bd6320d40d0ec52154f43680960e.ctex"]
+source_file="res://Assets/Pokemones/gen5/styphlosion-ohisui-b-s.png"
+dest_files=["res://.godot/imported/styphlosion-ohisui-b-s.png-7ac7d24a14d8df01525b8d2c5074a78c.ctex"]
 
 [params]
 

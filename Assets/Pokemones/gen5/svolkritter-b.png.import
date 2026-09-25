@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3x350a46eubp"
-path="res://.godot/imported/svolkritter-b.png-c9d7070beb519937cb05949dce833246.ctex"
+path="res://.godot/imported/svolkritter-b.png-885e09d44cc5890f306ed47b9e5594bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svolkritter-b.png"
-dest_files=["res://.godot/imported/svolkritter-b.png-c9d7070beb519937cb05949dce833246.ctex"]
+source_file="res://Assets/Pokemones/gen5/svolkritter-b.png"
+dest_files=["res://.godot/imported/svolkritter-b.png-885e09d44cc5890f306ed47b9e5594bd.ctex"]
 
 [params]
 

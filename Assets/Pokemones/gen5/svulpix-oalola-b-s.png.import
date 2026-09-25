@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://748qfut8dk0g"
-path="res://.godot/imported/svulpix-oalola-b-s.png-2f8b7667e5a6baa2407ae2292ce08afe.ctex"
+path="res://.godot/imported/svulpix-oalola-b-s.png-9c46ff3ee1e0c9dd87a827b50d762b99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svulpix-oalola-b-s.png"
-dest_files=["res://.godot/imported/svulpix-oalola-b-s.png-2f8b7667e5a6baa2407ae2292ce08afe.ctex"]
+source_file="res://Assets/Pokemones/gen5/svulpix-oalola-b-s.png"
+dest_files=["res://.godot/imported/svulpix-oalola-b-s.png-9c46ff3ee1e0c9dd87a827b50d762b99.ctex"]
 
 [params]
 

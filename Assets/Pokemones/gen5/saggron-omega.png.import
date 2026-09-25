@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx7rvxsy3g54y"
-path="res://.godot/imported/saggron-omega.png-f13127f4e0ef67e381e031a6a79519e6.ctex"
+path="res://.godot/imported/saggron-omega.png-32998cedb5f4ba770c351a3c7441efd1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/saggron-omega.png"
-dest_files=["res://.godot/imported/saggron-omega.png-f13127f4e0ef67e381e031a6a79519e6.ctex"]
+source_file="res://Assets/Pokemones/gen5/saggron-omega.png"
+dest_files=["res://.godot/imported/saggron-omega.png-32998cedb5f4ba770c351a3c7441efd1.ctex"]
 
 [params]
 

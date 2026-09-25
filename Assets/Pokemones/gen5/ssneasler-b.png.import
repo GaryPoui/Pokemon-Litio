@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsdrcdmjvhvdu"
-path="res://.godot/imported/ssneasler-b.png-afd866fe1ef94dfe8652e4ea813fca43.ctex"
+path="res://.godot/imported/ssneasler-b.png-48817c1b25d64d3a8d86ba1f4927ea67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssneasler-b.png"
-dest_files=["res://.godot/imported/ssneasler-b.png-afd866fe1ef94dfe8652e4ea813fca43.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssneasler-b.png"
+dest_files=["res://.godot/imported/ssneasler-b.png-48817c1b25d64d3a8d86ba1f4927ea67.ctex"]
 
 [params]
 

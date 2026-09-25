@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fwqgi2xdpmp8"
-path="res://.godot/imported/skingambit.png-2e4c00b7f5a9f5b56146ea2e43fc6d97.ctex"
+path="res://.godot/imported/skingambit.png-65817f486c710f974c2c726424a52a55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/skingambit.png"
-dest_files=["res://.godot/imported/skingambit.png-2e4c00b7f5a9f5b56146ea2e43fc6d97.ctex"]
+source_file="res://Assets/Pokemones/gen5/skingambit.png"
+dest_files=["res://.godot/imported/skingambit.png-65817f486c710f974c2c726424a52a55.ctex"]
 
 [params]
 

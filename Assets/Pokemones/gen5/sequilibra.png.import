@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mjfcx4i7hui1"
-path="res://.godot/imported/sequilibra.png-e6e33c3b0e26b238409ee04068715a49.ctex"
+path="res://.godot/imported/sequilibra.png-0214d9f7c07374cff155b877d82dba65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sequilibra.png"
-dest_files=["res://.godot/imported/sequilibra.png-e6e33c3b0e26b238409ee04068715a49.ctex"]
+source_file="res://Assets/Pokemones/gen5/sequilibra.png"
+dest_files=["res://.godot/imported/sequilibra.png-0214d9f7c07374cff155b877d82dba65.ctex"]
 
 [params]
 

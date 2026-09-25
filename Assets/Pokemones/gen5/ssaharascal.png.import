@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtb8f6lkqxi3o"
-path="res://.godot/imported/ssaharascal.png-c3ab3f7b442989fa9f5cd9eb2817a34f.ctex"
+path="res://.godot/imported/ssaharascal.png-793975c419e24c83f99763f00dba66a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssaharascal.png"
-dest_files=["res://.godot/imported/ssaharascal.png-c3ab3f7b442989fa9f5cd9eb2817a34f.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssaharascal.png"
+dest_files=["res://.godot/imported/ssaharascal.png-793975c419e24c83f99763f00dba66a1.ctex"]
 
 [params]
 

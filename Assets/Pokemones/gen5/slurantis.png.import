@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bof2rpu5l8nk3"
-path="res://.godot/imported/slurantis.png-d82b339e1ba210dcfaca048c687be735.ctex"
+path="res://.godot/imported/slurantis.png-0ebe60e0128af7c53ab7f624c5c648cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slurantis.png"
-dest_files=["res://.godot/imported/slurantis.png-d82b339e1ba210dcfaca048c687be735.ctex"]
+source_file="res://Assets/Pokemones/gen5/slurantis.png"
+dest_files=["res://.godot/imported/slurantis.png-0ebe60e0128af7c53ab7f624c5c648cb.ctex"]
 
 [params]
 

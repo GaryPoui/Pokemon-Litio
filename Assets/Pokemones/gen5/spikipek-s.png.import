@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3lao7fr8etoi"
-path="res://.godot/imported/spikipek-s.png-08ac8e5756d14ccf1505fe68265aaa58.ctex"
+path="res://.godot/imported/spikipek-s.png-5736672c14520893dd24ba3543dccd81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spikipek-s.png"
-dest_files=["res://.godot/imported/spikipek-s.png-08ac8e5756d14ccf1505fe68265aaa58.ctex"]
+source_file="res://Assets/Pokemones/gen5/spikipek-s.png"
+dest_files=["res://.godot/imported/spikipek-s.png-5736672c14520893dd24ba3543dccd81.ctex"]
 
 [params]
 

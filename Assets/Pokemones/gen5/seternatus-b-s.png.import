@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bntom3cp20wdl"
-path="res://.godot/imported/seternatus-b-s.png-66b2fde7be057ab2ce031de632044f9d.ctex"
+path="res://.godot/imported/seternatus-b-s.png-636cb734ed290d06781878d8f7d82799.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/seternatus-b-s.png"
-dest_files=["res://.godot/imported/seternatus-b-s.png-66b2fde7be057ab2ce031de632044f9d.ctex"]
+source_file="res://Assets/Pokemones/gen5/seternatus-b-s.png"
+dest_files=["res://.godot/imported/seternatus-b-s.png-636cb734ed290d06781878d8f7d82799.ctex"]
 
 [params]
 

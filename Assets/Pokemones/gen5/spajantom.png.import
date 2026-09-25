@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsg8xmw13yj70"
-path="res://.godot/imported/spajantom.png-246adc3b997946b798c7bb2beb079167.ctex"
+path="res://.godot/imported/spajantom.png-a477edcb64feacfdb10da68a8e39f07c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spajantom.png"
-dest_files=["res://.godot/imported/spajantom.png-246adc3b997946b798c7bb2beb079167.ctex"]
+source_file="res://Assets/Pokemones/gen5/spajantom.png"
+dest_files=["res://.godot/imported/spajantom.png-a477edcb64feacfdb10da68a8e39f07c.ctex"]
 
 [params]
 

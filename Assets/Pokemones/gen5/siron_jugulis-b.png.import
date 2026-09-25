@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ce5ewnpeqmkph"
-path="res://.godot/imported/siron_jugulis-b.png-6f8e1fb6fb692c4ff24687b67c9560de.ctex"
+path="res://.godot/imported/siron_jugulis-b.png-92b0ac721d7dc8abc03056753042c4e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/siron_jugulis-b.png"
-dest_files=["res://.godot/imported/siron_jugulis-b.png-6f8e1fb6fb692c4ff24687b67c9560de.ctex"]
+source_file="res://Assets/Pokemones/gen5/siron_jugulis-b.png"
+dest_files=["res://.godot/imported/siron_jugulis-b.png-92b0ac721d7dc8abc03056753042c4e1.ctex"]
 
 [params]
 

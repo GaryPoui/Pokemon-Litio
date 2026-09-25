@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bk34u4dv1ce2h"
-path="res://.godot/imported/soricorio-b.png-d2a690638ff78ab25284e4abf4c0050f.ctex"
+path="res://.godot/imported/soricorio-b.png-7e560099af9a19c795d5ec392765c384.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/soricorio-b.png"
-dest_files=["res://.godot/imported/soricorio-b.png-d2a690638ff78ab25284e4abf4c0050f.ctex"]
+source_file="res://Assets/Pokemones/gen5/soricorio-b.png"
+dest_files=["res://.godot/imported/soricorio-b.png-7e560099af9a19c795d5ec392765c384.ctex"]
 
 [params]
 

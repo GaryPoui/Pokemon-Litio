@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bt8ko5bid6khl"
-path="res://.godot/imported/smimikyu-b.png-9078e3d31ec3a4cf250c00d04b51047e.ctex"
+path="res://.godot/imported/smimikyu-b.png-20998df811971c740964d2741dd1b6dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smimikyu-b.png"
-dest_files=["res://.godot/imported/smimikyu-b.png-9078e3d31ec3a4cf250c00d04b51047e.ctex"]
+source_file="res://Assets/Pokemones/gen5/smimikyu-b.png"
+dest_files=["res://.godot/imported/smimikyu-b.png-20998df811971c740964d2741dd1b6dc.ctex"]
 
 [params]
 

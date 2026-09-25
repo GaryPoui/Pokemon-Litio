@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfxu6uogeoc2m"
-path="res://.godot/imported/spopplio.png-1d72b0cf86c6a025d80c4843bec53d15.ctex"
+path="res://.godot/imported/spopplio.png-b8fdb530a4c26c5099148e1b9ad586ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spopplio.png"
-dest_files=["res://.godot/imported/spopplio.png-1d72b0cf86c6a025d80c4843bec53d15.ctex"]
+source_file="res://Assets/Pokemones/gen5/spopplio.png"
+dest_files=["res://.godot/imported/spopplio.png-b8fdb530a4c26c5099148e1b9ad586ae.ctex"]
 
 [params]
 

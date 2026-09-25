@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cepxtgu887iu7"
-path="res://.godot/imported/spancham-s.png-ba9d28049a32ad86b60336f544eb9024.ctex"
+path="res://.godot/imported/spancham-s.png-42375fcadec27db00e0b7a4313c608f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spancham-s.png"
-dest_files=["res://.godot/imported/spancham-s.png-ba9d28049a32ad86b60336f544eb9024.ctex"]
+source_file="res://Assets/Pokemones/gen5/spancham-s.png"
+dest_files=["res://.godot/imported/spancham-s.png-42375fcadec27db00e0b7a4313c608f2.ctex"]
 
 [params]
 

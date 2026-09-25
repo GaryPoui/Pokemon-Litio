@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cch757tdkenwr"
-path="res://.godot/imported/smeowth-ogalar-b.png-e908ba95fac4dc4239feb0b77dd90006.ctex"
+path="res://.godot/imported/smeowth-ogalar-b.png-a2b8a47e3292457ace1da0e8e497ec39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smeowth-ogalar-b.png"
-dest_files=["res://.godot/imported/smeowth-ogalar-b.png-e908ba95fac4dc4239feb0b77dd90006.ctex"]
+source_file="res://Assets/Pokemones/gen5/smeowth-ogalar-b.png"
+dest_files=["res://.godot/imported/smeowth-ogalar-b.png-a2b8a47e3292457ace1da0e8e497ec39.ctex"]
 
 [params]
 

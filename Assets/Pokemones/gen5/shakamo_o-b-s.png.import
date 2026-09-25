@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7hqmibsi57d6"
-path="res://.godot/imported/shakamo_o-b-s.png-e276e91b4ff7622b2f8a89d87050979d.ctex"
+path="res://.godot/imported/shakamo_o-b-s.png-8a21d778b2d68b58102b993e03a4cf70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shakamo_o-b-s.png"
-dest_files=["res://.godot/imported/shakamo_o-b-s.png-e276e91b4ff7622b2f8a89d87050979d.ctex"]
+source_file="res://Assets/Pokemones/gen5/shakamo_o-b-s.png"
+dest_files=["res://.godot/imported/shakamo_o-b-s.png-8a21d778b2d68b58102b993e03a4cf70.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cek883lxqbps6"
-path="res://.godot/imported/sfennekin-s.png-e2a26e1fbe35a40e44a5a346626992cd.ctex"
+path="res://.godot/imported/sfennekin-s.png-28c1a8af1ab05fa774cb93886222a6ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfennekin-s.png"
-dest_files=["res://.godot/imported/sfennekin-s.png-e2a26e1fbe35a40e44a5a346626992cd.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfennekin-s.png"
+dest_files=["res://.godot/imported/sfennekin-s.png-28c1a8af1ab05fa774cb93886222a6ef.ctex"]
 
 [params]
 

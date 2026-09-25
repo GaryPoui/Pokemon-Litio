@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djd10sejo7sn0"
-path="res://.godot/imported/xsubstitute-b.png-4557ae128dc7bfb6fe8edd6b2a436dcd.ctex"
+path="res://.godot/imported/xsubstitute-b.png-d5e82e79c46948ff009ed7f1d3ca63df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/xsubstitute-b.png"
-dest_files=["res://.godot/imported/xsubstitute-b.png-4557ae128dc7bfb6fe8edd6b2a436dcd.ctex"]
+source_file="res://Assets/Pokemones/gen5/xsubstitute-b.png"
+dest_files=["res://.godot/imported/xsubstitute-b.png-d5e82e79c46948ff009ed7f1d3ca63df.ctex"]
 
 [params]
 

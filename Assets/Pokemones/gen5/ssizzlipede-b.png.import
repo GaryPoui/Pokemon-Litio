@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://k44pjno1ulv3"
-path="res://.godot/imported/ssizzlipede-b.png-bb79c66d80aef7b8a6e4477fd498831d.ctex"
+path="res://.godot/imported/ssizzlipede-b.png-118e907a0ff7209a398c9dea552fb707.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssizzlipede-b.png"
-dest_files=["res://.godot/imported/ssizzlipede-b.png-bb79c66d80aef7b8a6e4477fd498831d.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssizzlipede-b.png"
+dest_files=["res://.godot/imported/ssizzlipede-b.png-118e907a0ff7209a398c9dea552fb707.ctex"]
 
 [params]
 

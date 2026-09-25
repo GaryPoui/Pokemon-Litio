@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx8ppjdogovqv"
-path="res://.godot/imported/sfarfetchd-ogalar-b.png-154280142a0551c370ef4be29ff19c5d.ctex"
+path="res://.godot/imported/sfarfetchd-ogalar-b.png-4ff3cb54fefd4398c15cd1be2ce50d37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfarfetchd-ogalar-b.png"
-dest_files=["res://.godot/imported/sfarfetchd-ogalar-b.png-154280142a0551c370ef4be29ff19c5d.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfarfetchd-ogalar-b.png"
+dest_files=["res://.godot/imported/sfarfetchd-ogalar-b.png-4ff3cb54fefd4398c15cd1be2ce50d37.ctex"]
 
 [params]
 

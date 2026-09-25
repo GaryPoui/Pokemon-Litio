@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kg3h468qnybj"
-path="res://.godot/imported/ssneasel-ohisui-b.png-fa6c109f4cac682c36092fc194c52ccf.ctex"
+path="res://.godot/imported/ssneasel-ohisui-b.png-2e0c92e76a7de8a1f243f61a0d32f22d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssneasel-ohisui-b.png"
-dest_files=["res://.godot/imported/ssneasel-ohisui-b.png-fa6c109f4cac682c36092fc194c52ccf.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssneasel-ohisui-b.png"
+dest_files=["res://.godot/imported/ssneasel-ohisui-b.png-2e0c92e76a7de8a1f243f61a0d32f22d.ctex"]
 
 [params]
 

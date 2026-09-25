@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dokdtix6o2n4g"
-path="res://.godot/imported/spikachu-osinnoh-b.png-d6c6fcdc99f8ea646c1c303fec411485.ctex"
+path="res://.godot/imported/spikachu-osinnoh-b.png-45d11443ab150e141c9db76a62d1133b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spikachu-osinnoh-b.png"
-dest_files=["res://.godot/imported/spikachu-osinnoh-b.png-d6c6fcdc99f8ea646c1c303fec411485.ctex"]
+source_file="res://Assets/Pokemones/gen5/spikachu-osinnoh-b.png"
+dest_files=["res://.godot/imported/spikachu-osinnoh-b.png-45d11443ab150e141c9db76a62d1133b.ctex"]
 
 [params]
 

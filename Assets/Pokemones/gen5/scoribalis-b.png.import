@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bk4akdewgmr1v"
-path="res://.godot/imported/scoribalis-b.png-10428dd4a1aff2ba4764eca0b726c42c.ctex"
+path="res://.godot/imported/scoribalis-b.png-1d9547bea5bf14aa655f3cab50c4aae8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scoribalis-b.png"
-dest_files=["res://.godot/imported/scoribalis-b.png-10428dd4a1aff2ba4764eca0b726c42c.ctex"]
+source_file="res://Assets/Pokemones/gen5/scoribalis-b.png"
+dest_files=["res://.godot/imported/scoribalis-b.png-1d9547bea5bf14aa655f3cab50c4aae8.ctex"]
 
 [params]
 

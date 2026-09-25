@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8c1sjr1oove8"
-path="res://.godot/imported/sdraggalong-s.png-793ac9c2d597f7fefc5e6f265af2648c.ctex"
+path="res://.godot/imported/sdraggalong-s.png-6bf472dee4e506b282f647f78e701ecd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdraggalong-s.png"
-dest_files=["res://.godot/imported/sdraggalong-s.png-793ac9c2d597f7fefc5e6f265af2648c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdraggalong-s.png"
+dest_files=["res://.godot/imported/sdraggalong-s.png-6bf472dee4e506b282f647f78e701ecd.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwkpm65fwoiqk"
-path="res://.godot/imported/sjangmo_o-s.png-2a54aa842ce38634b8bdfdc8fa493efd.ctex"
+path="res://.godot/imported/sjangmo_o-s.png-5fffa1428439ac6805e4505e2be405b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sjangmo_o-s.png"
-dest_files=["res://.godot/imported/sjangmo_o-s.png-2a54aa842ce38634b8bdfdc8fa493efd.ctex"]
+source_file="res://Assets/Pokemones/gen5/sjangmo_o-s.png"
+dest_files=["res://.godot/imported/sjangmo_o-s.png-5fffa1428439ac6805e4505e2be405b7.ctex"]
 
 [params]
 

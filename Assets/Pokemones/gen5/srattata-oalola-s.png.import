@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6clvpf1qe533"
-path="res://.godot/imported/srattata-oalola-s.png-653cc8096014ccaafd159eeaf2a02109.ctex"
+path="res://.godot/imported/srattata-oalola-s.png-2c3e6d2052a23a1e6303d4a7b7c44a78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/srattata-oalola-s.png"
-dest_files=["res://.godot/imported/srattata-oalola-s.png-653cc8096014ccaafd159eeaf2a02109.ctex"]
+source_file="res://Assets/Pokemones/gen5/srattata-oalola-s.png"
+dest_files=["res://.godot/imported/srattata-oalola-s.png-2c3e6d2052a23a1e6303d4a7b7c44a78.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be0yw3ay4nybi"
-path="res://.godot/imported/smalamar-s.png-4ddc52a56c4808680548ef449544cc45.ctex"
+path="res://.godot/imported/smalamar-s.png-72358662de37b788cb38b08f00371cba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smalamar-s.png"
-dest_files=["res://.godot/imported/smalamar-s.png-4ddc52a56c4808680548ef449544cc45.ctex"]
+source_file="res://Assets/Pokemones/gen5/smalamar-s.png"
+dest_files=["res://.godot/imported/smalamar-s.png-72358662de37b788cb38b08f00371cba.ctex"]
 
 [params]
 

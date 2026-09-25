@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uwpsusmnse36"
-path="res://.godot/imported/ssylveon.png-10cb2562de75f4195c6f91f24d1bbc2b.ctex"
+path="res://.godot/imported/ssylveon.png-299c27f4dc282617b6cae0d1d0ceada5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssylveon.png"
-dest_files=["res://.godot/imported/ssylveon.png-10cb2562de75f4195c6f91f24d1bbc2b.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssylveon.png"
+dest_files=["res://.godot/imported/ssylveon.png-299c27f4dc282617b6cae0d1d0ceada5.ctex"]
 
 [params]
 

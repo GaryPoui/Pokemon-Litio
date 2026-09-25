@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6gfihgjkqkl1"
-path="res://.godot/imported/skilowattrel-s.png-5aa720cc063d5f646dba1a009f1b1634.ctex"
+path="res://.godot/imported/skilowattrel-s.png-d17869b1eadde3e42046c356d12e7d92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/skilowattrel-s.png"
-dest_files=["res://.godot/imported/skilowattrel-s.png-5aa720cc063d5f646dba1a009f1b1634.ctex"]
+source_file="res://Assets/Pokemones/gen5/skilowattrel-s.png"
+dest_files=["res://.godot/imported/skilowattrel-s.png-d17869b1eadde3e42046c356d12e7d92.ctex"]
 
 [params]
 

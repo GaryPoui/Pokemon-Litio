@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c11e6e7w17fbm"
-path="res://.godot/imported/sraticate-oalola-b.png-5e34cf7f56fef73271fe57c6a48ca2fe.ctex"
+path="res://.godot/imported/sraticate-oalola-b.png-498d12bf35fe7629bc878da0e8fbccbf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sraticate-oalola-b.png"
-dest_files=["res://.godot/imported/sraticate-oalola-b.png-5e34cf7f56fef73271fe57c6a48ca2fe.ctex"]
+source_file="res://Assets/Pokemones/gen5/sraticate-oalola-b.png"
+dest_files=["res://.godot/imported/sraticate-oalola-b.png-498d12bf35fe7629bc878da0e8fbccbf.ctex"]
 
 [params]
 

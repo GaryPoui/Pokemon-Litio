@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://j4d5dr5n0s6o"
-path="res://.godot/imported/sannihilape-b.png-c4204627410839375e4feabe04275140.ctex"
+path="res://.godot/imported/sannihilape-b.png-04b314559ecbc792a8c20113c99bc7e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sannihilape-b.png"
-dest_files=["res://.godot/imported/sannihilape-b.png-c4204627410839375e4feabe04275140.ctex"]
+source_file="res://Assets/Pokemones/gen5/sannihilape-b.png"
+dest_files=["res://.godot/imported/sannihilape-b.png-04b314559ecbc792a8c20113c99bc7e6.ctex"]
 
 [params]
 

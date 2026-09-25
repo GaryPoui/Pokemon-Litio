@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://caf0pnrpyv0kb"
-path="res://.godot/imported/surshifu-orapid_strike-b-g-s.png-a5fd168f2898a406a1aa9249311b99e0.ctex"
+path="res://.godot/imported/surshifu-orapid_strike-b-g-s.png-52020754a37102d3d9c61e5beaa132bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/surshifu-orapid_strike-b-g-s.png"
-dest_files=["res://.godot/imported/surshifu-orapid_strike-b-g-s.png-a5fd168f2898a406a1aa9249311b99e0.ctex"]
+source_file="res://Assets/Pokemones/gen5/surshifu-orapid_strike-b-g-s.png"
+dest_files=["res://.godot/imported/surshifu-orapid_strike-b-g-s.png-52020754a37102d3d9c61e5beaa132bd.ctex"]
 
 [params]
 

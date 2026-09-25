@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5eg8vrmit64f"
-path="res://.godot/imported/sarghonaut-f.png-ffa7ff6b2de82de5caf1d1fddf538bb4.ctex"
+path="res://.godot/imported/sarghonaut-f.png-b3dc2440923acef9f1fa8c6374d1569b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sarghonaut-f.png"
-dest_files=["res://.godot/imported/sarghonaut-f.png-ffa7ff6b2de82de5caf1d1fddf538bb4.ctex"]
+source_file="res://Assets/Pokemones/gen5/sarghonaut-f.png"
+dest_files=["res://.godot/imported/sarghonaut-f.png-b3dc2440923acef9f1fa8c6374d1569b.ctex"]
 
 [params]
 

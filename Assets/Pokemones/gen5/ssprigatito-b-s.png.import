@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4bv34610ctbr"
-path="res://.godot/imported/ssprigatito-b-s.png-9fa04a662bbd12cb3c27a2e26d8da4da.ctex"
+path="res://.godot/imported/ssprigatito-b-s.png-3342ea345b040a3a0b659340a33beb39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssprigatito-b-s.png"
-dest_files=["res://.godot/imported/ssprigatito-b-s.png-9fa04a662bbd12cb3c27a2e26d8da4da.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssprigatito-b-s.png"
+dest_files=["res://.godot/imported/ssprigatito-b-s.png-3342ea345b040a3a0b659340a33beb39.ctex"]
 
 [params]
 

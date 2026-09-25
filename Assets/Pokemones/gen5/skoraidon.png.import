@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://co04qajwk77bo"
-path="res://.godot/imported/skoraidon.png-289b7ff697771ee6965baf27395cd1a2.ctex"
+path="res://.godot/imported/skoraidon.png-a913d8e22bc577bc2e95014ab8dc81f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/skoraidon.png"
-dest_files=["res://.godot/imported/skoraidon.png-289b7ff697771ee6965baf27395cd1a2.ctex"]
+source_file="res://Assets/Pokemones/gen5/skoraidon.png"
+dest_files=["res://.godot/imported/skoraidon.png-a913d8e22bc577bc2e95014ab8dc81f2.ctex"]
 
 [params]
 

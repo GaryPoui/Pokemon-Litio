@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tynctn8kil4j"
-path="res://.godot/imported/saurumoth-s.png-25a3d5531d1864cce486e4ba65249032.ctex"
+path="res://.godot/imported/saurumoth-s.png-e3670984b037d5c30f6080cf5bb71697.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/saurumoth-s.png"
-dest_files=["res://.godot/imported/saurumoth-s.png-25a3d5531d1864cce486e4ba65249032.ctex"]
+source_file="res://Assets/Pokemones/gen5/saurumoth-s.png"
+dest_files=["res://.godot/imported/saurumoth-s.png-e3670984b037d5c30f6080cf5bb71697.ctex"]
 
 [params]
 

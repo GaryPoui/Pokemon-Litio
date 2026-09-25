@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3rgp10yqyvj2"
-path="res://.godot/imported/sappletun-s.png-40ec7ffb22042a1cf02cc3d018ded098.ctex"
+path="res://.godot/imported/sappletun-s.png-f39f3a9c12246f55e77c736def349a5b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sappletun-s.png"
-dest_files=["res://.godot/imported/sappletun-s.png-40ec7ffb22042a1cf02cc3d018ded098.ctex"]
+source_file="res://Assets/Pokemones/gen5/sappletun-s.png"
+dest_files=["res://.godot/imported/sappletun-s.png-f39f3a9c12246f55e77c736def349a5b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0clnkxgbpqfs"
-path="res://.godot/imported/scresceidon-b-s.png-0a69bf2d728f9dd7a48270f7c25a8ca0.ctex"
+path="res://.godot/imported/scresceidon-b-s.png-274cc356366b53795a3c4c4e5ff262e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scresceidon-b-s.png"
-dest_files=["res://.godot/imported/scresceidon-b-s.png-0a69bf2d728f9dd7a48270f7c25a8ca0.ctex"]
+source_file="res://Assets/Pokemones/gen5/scresceidon-b-s.png"
+dest_files=["res://.godot/imported/scresceidon-b-s.png-274cc356366b53795a3c4c4e5ff262e5.ctex"]
 
 [params]
 

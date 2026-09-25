@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://r7c42ifpj7kk"
-path="res://.godot/imported/spikachu-ounova-b.png-2ecf4d83f94bfd203496158a91f3fde8.ctex"
+path="res://.godot/imported/spikachu-ounova-b.png-91c60c153cf0be79ed3e3b2faaa6ca60.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spikachu-ounova-b.png"
-dest_files=["res://.godot/imported/spikachu-ounova-b.png-2ecf4d83f94bfd203496158a91f3fde8.ctex"]
+source_file="res://Assets/Pokemones/gen5/spikachu-ounova-b.png"
+dest_files=["res://.godot/imported/spikachu-ounova-b.png-91c60c153cf0be79ed3e3b2faaa6ca60.ctex"]
 
 [params]
 

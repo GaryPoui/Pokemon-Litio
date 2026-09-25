@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnawekuerfixr"
-path="res://.godot/imported/svikavolt-b-s.png-e20a53ff58912d88d0409260e6a18298.ctex"
+path="res://.godot/imported/svikavolt-b-s.png-462b85e8883d598ca7efd7cc99d892ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svikavolt-b-s.png"
-dest_files=["res://.godot/imported/svikavolt-b-s.png-e20a53ff58912d88d0409260e6a18298.ctex"]
+source_file="res://Assets/Pokemones/gen5/svikavolt-b-s.png"
+dest_files=["res://.godot/imported/svikavolt-b-s.png-462b85e8883d598ca7efd7cc99d892ae.ctex"]
 
 [params]
 

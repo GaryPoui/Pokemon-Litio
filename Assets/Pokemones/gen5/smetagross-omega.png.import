@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://culj7gc2h88xi"
-path="res://.godot/imported/smetagross-omega.png-9ee913563738de5e6fe39084f4ed05a7.ctex"
+path="res://.godot/imported/smetagross-omega.png-14a64f587bdc1cf01e0639eb21437b0b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smetagross-omega.png"
-dest_files=["res://.godot/imported/smetagross-omega.png-9ee913563738de5e6fe39084f4ed05a7.ctex"]
+source_file="res://Assets/Pokemones/gen5/smetagross-omega.png"
+dest_files=["res://.godot/imported/smetagross-omega.png-14a64f587bdc1cf01e0639eb21437b0b.ctex"]
 
 [params]
 

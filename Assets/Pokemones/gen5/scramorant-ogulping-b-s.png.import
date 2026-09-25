@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs8kydlvfucua"
-path="res://.godot/imported/scramorant-ogulping-b-s.png-1bed9d258221d1da29405c1dc5e39e06.ctex"
+path="res://.godot/imported/scramorant-ogulping-b-s.png-a032955b07ff2cd1e3c53e74428bbbe0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scramorant-ogulping-b-s.png"
-dest_files=["res://.godot/imported/scramorant-ogulping-b-s.png-1bed9d258221d1da29405c1dc5e39e06.ctex"]
+source_file="res://Assets/Pokemones/gen5/scramorant-ogulping-b-s.png"
+dest_files=["res://.godot/imported/scramorant-ogulping-b-s.png-a032955b07ff2cd1e3c53e74428bbbe0.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3jdqpraicwp"
-path="res://.godot/imported/sdracozolt-s.png-aa270b896f37b2e2eb4068637221b29c.ctex"
+path="res://.godot/imported/sdracozolt-s.png-24d4fe5fec79f76a3d6447703321dac1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdracozolt-s.png"
-dest_files=["res://.godot/imported/sdracozolt-s.png-aa270b896f37b2e2eb4068637221b29c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdracozolt-s.png"
+dest_files=["res://.godot/imported/sdracozolt-s.png-24d4fe5fec79f76a3d6447703321dac1.ctex"]
 
 [params]
 

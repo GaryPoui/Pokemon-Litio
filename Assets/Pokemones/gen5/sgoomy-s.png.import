@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mxpswl3yk8it"
-path="res://.godot/imported/sgoomy-s.png-d3982dffa09c4c73423408ec044edb56.ctex"
+path="res://.godot/imported/sgoomy-s.png-3ce907dd72aa8c9502658144a9b9c1d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgoomy-s.png"
-dest_files=["res://.godot/imported/sgoomy-s.png-d3982dffa09c4c73423408ec044edb56.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgoomy-s.png"
+dest_files=["res://.godot/imported/sgoomy-s.png-3ce907dd72aa8c9502658144a9b9c1d8.ctex"]
 
 [params]
 

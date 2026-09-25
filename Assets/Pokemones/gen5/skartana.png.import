@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://da572w4mkbvky"
-path="res://.godot/imported/skartana.png-4644495317e8ff783bd0689455ad1842.ctex"
+path="res://.godot/imported/skartana.png-1b7fbc29a4ae41233cfe46de1177976a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/skartana.png"
-dest_files=["res://.godot/imported/skartana.png-4644495317e8ff783bd0689455ad1842.ctex"]
+source_file="res://Assets/Pokemones/gen5/skartana.png"
+dest_files=["res://.godot/imported/skartana.png-1b7fbc29a4ae41233cfe46de1177976a.ctex"]
 
 [params]
 

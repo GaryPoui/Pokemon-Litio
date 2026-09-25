@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dr87yfgod0nf2"
-path="res://.godot/imported/sgossifleur.png-dfada7296f89f0293c48b6d354e1db04.ctex"
+path="res://.godot/imported/sgossifleur.png-1f5546fa0dbbdc71e9d9b929d88f9d1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgossifleur.png"
-dest_files=["res://.godot/imported/sgossifleur.png-dfada7296f89f0293c48b6d354e1db04.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgossifleur.png"
+dest_files=["res://.godot/imported/sgossifleur.png-1f5546fa0dbbdc71e9d9b929d88f9d1e.ctex"]
 
 [params]
 

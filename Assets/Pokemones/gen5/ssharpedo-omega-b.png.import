@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbrhw8po0nwyo"
-path="res://.godot/imported/ssharpedo-omega-b.png-0eddbaebca68308f5e9fcaacf8afcb9b.ctex"
+path="res://.godot/imported/ssharpedo-omega-b.png-690026f43a31a013d4f6686a7b620b82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssharpedo-omega-b.png"
-dest_files=["res://.godot/imported/ssharpedo-omega-b.png-0eddbaebca68308f5e9fcaacf8afcb9b.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssharpedo-omega-b.png"
+dest_files=["res://.godot/imported/ssharpedo-omega-b.png-690026f43a31a013d4f6686a7b620b82.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://eo3tp7ds7vul"
-path="res://.godot/imported/sxerneas-b.png-a52999ba1f68d227915c05514f7d2462.ctex"
+path="res://.godot/imported/sxerneas-b.png-c6c405bfe9f4a627a398cf9f964d3307.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sxerneas-b.png"
-dest_files=["res://.godot/imported/sxerneas-b.png-a52999ba1f68d227915c05514f7d2462.ctex"]
+source_file="res://Assets/Pokemones/gen5/sxerneas-b.png"
+dest_files=["res://.godot/imported/sxerneas-b.png-c6c405bfe9f4a627a398cf9f964d3307.ctex"]
 
 [params]
 

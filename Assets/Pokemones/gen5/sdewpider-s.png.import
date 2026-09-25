@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmuidhkquv340"
-path="res://.godot/imported/sdewpider-s.png-b8d2b56cbae65db76d104a667e644656.ctex"
+path="res://.godot/imported/sdewpider-s.png-ea1f874a4a1b1dc676da31cb9152e2e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdewpider-s.png"
-dest_files=["res://.godot/imported/sdewpider-s.png-b8d2b56cbae65db76d104a667e644656.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdewpider-s.png"
+dest_files=["res://.godot/imported/sdewpider-s.png-ea1f874a4a1b1dc676da31cb9152e2e2.ctex"]
 
 [params]
 

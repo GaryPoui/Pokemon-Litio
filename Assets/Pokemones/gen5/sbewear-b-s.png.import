@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2dd47celj6da"
-path="res://.godot/imported/sbewear-b-s.png-a906304348fbc7f90e9c8e220835f836.ctex"
+path="res://.godot/imported/sbewear-b-s.png-6bf008116dd288dfd454e32527cb77a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbewear-b-s.png"
-dest_files=["res://.godot/imported/sbewear-b-s.png-a906304348fbc7f90e9c8e220835f836.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbewear-b-s.png"
+dest_files=["res://.godot/imported/sbewear-b-s.png-6bf008116dd288dfd454e32527cb77a8.ctex"]
 
 [params]
 

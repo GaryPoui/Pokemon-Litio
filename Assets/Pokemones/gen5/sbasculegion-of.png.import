@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c05yos2ayb0g4"
-path="res://.godot/imported/sbasculegion-of.png-f637b86375e3a2a7a794cc1d71bf1ce0.ctex"
+path="res://.godot/imported/sbasculegion-of.png-e14974accb4a3fc6b61f252a972507a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbasculegion-of.png"
-dest_files=["res://.godot/imported/sbasculegion-of.png-f637b86375e3a2a7a794cc1d71bf1ce0.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbasculegion-of.png"
+dest_files=["res://.godot/imported/sbasculegion-of.png-e14974accb4a3fc6b61f252a972507a0.ctex"]
 
 [params]
 

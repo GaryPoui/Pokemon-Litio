@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl0ugru54uvd2"
-path="res://.godot/imported/swo_chien-b-s.png-d99adab3cddc3fc77bc6bae1775a20dc.ctex"
+path="res://.godot/imported/swo_chien-b-s.png-88abeacf876a083ea2b91786481da773.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/swo_chien-b-s.png"
-dest_files=["res://.godot/imported/swo_chien-b-s.png-d99adab3cddc3fc77bc6bae1775a20dc.ctex"]
+source_file="res://Assets/Pokemones/gen5/swo_chien-b-s.png"
+dest_files=["res://.godot/imported/swo_chien-b-s.png-88abeacf876a083ea2b91786481da773.ctex"]
 
 [params]
 

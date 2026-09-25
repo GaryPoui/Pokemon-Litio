@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6r8mapeq7luh"
-path="res://.godot/imported/scoalossal-g.png-bf86e01123efe653d5e9fdca3e1ff42f.ctex"
+path="res://.godot/imported/scoalossal-g.png-607ba6438dbccb2fd5b42bd624dae3af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scoalossal-g.png"
-dest_files=["res://.godot/imported/scoalossal-g.png-bf86e01123efe653d5e9fdca3e1ff42f.ctex"]
+source_file="res://Assets/Pokemones/gen5/scoalossal-g.png"
+dest_files=["res://.godot/imported/scoalossal-g.png-607ba6438dbccb2fd5b42bd624dae3af.ctex"]
 
 [params]
 

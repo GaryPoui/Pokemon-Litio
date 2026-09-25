@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5idjvy7frk3d"
-path="res://.godot/imported/svikavolt.png-74822ceff251374605183df2117119fd.ctex"
+path="res://.godot/imported/svikavolt.png-89fcb602c82b8a8769e83b603993b968.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svikavolt.png"
-dest_files=["res://.godot/imported/svikavolt.png-74822ceff251374605183df2117119fd.ctex"]
+source_file="res://Assets/Pokemones/gen5/svikavolt.png"
+dest_files=["res://.godot/imported/svikavolt.png-89fcb602c82b8a8769e83b603993b968.ctex"]
 
 [params]
 

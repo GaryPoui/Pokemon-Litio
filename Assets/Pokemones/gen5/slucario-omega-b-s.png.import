@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://be7l3w7m3umxj"
-path="res://.godot/imported/slucario-omega-b-s.png-cdb310981671a69fdab20f32138d2bcf.ctex"
+path="res://.godot/imported/slucario-omega-b-s.png-67c3bf2b0a245097fc1d4c237c24b9cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slucario-omega-b-s.png"
-dest_files=["res://.godot/imported/slucario-omega-b-s.png-cdb310981671a69fdab20f32138d2bcf.ctex"]
+source_file="res://Assets/Pokemones/gen5/slucario-omega-b-s.png"
+dest_files=["res://.godot/imported/slucario-omega-b-s.png-67c3bf2b0a245097fc1d4c237c24b9cb.ctex"]
 
 [params]
 

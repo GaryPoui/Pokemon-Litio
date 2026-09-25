@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jjehch4c5p5x"
-path="res://.godot/imported/ssandslash-oalola-b-s.png-6138732f66dc29b73b82361a9740ab30.ctex"
+path="res://.godot/imported/ssandslash-oalola-b-s.png-4e6b1fb2a9d75fcfa04953c60358deec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssandslash-oalola-b-s.png"
-dest_files=["res://.godot/imported/ssandslash-oalola-b-s.png-6138732f66dc29b73b82361a9740ab30.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssandslash-oalola-b-s.png"
+dest_files=["res://.godot/imported/ssandslash-oalola-b-s.png-4e6b1fb2a9d75fcfa04953c60358deec.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds7lqcsusm1fq"
-path="res://.godot/imported/sogerpon-ocornerstone_tera-b-s.png-61ac29e10588396976128eb43ce3016e.ctex"
+path="res://.godot/imported/sogerpon-ocornerstone_tera-b-s.png-197a4bcbcd278d049ea1aa4216d8e875.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sogerpon-ocornerstone_tera-b-s.png"
-dest_files=["res://.godot/imported/sogerpon-ocornerstone_tera-b-s.png-61ac29e10588396976128eb43ce3016e.ctex"]
+source_file="res://Assets/Pokemones/gen5/sogerpon-ocornerstone_tera-b-s.png"
+dest_files=["res://.godot/imported/sogerpon-ocornerstone_tera-b-s.png-197a4bcbcd278d049ea1aa4216d8e875.ctex"]
 
 [params]
 

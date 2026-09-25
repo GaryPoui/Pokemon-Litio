@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhu48fsp6vj0r"
-path="res://.godot/imported/schromera.png-0a11805165b3f53ec6a78d672d47187d.ctex"
+path="res://.godot/imported/schromera.png-23015dd75116b67c85ccb1c6c65c614b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/schromera.png"
-dest_files=["res://.godot/imported/schromera.png-0a11805165b3f53ec6a78d672d47187d.ctex"]
+source_file="res://Assets/Pokemones/gen5/schromera.png"
+dest_files=["res://.godot/imported/schromera.png-23015dd75116b67c85ccb1c6c65c614b.ctex"]
 
 [params]
 

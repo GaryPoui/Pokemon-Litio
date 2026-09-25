@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4kgq6v1r1ey3"
-path="res://.godot/imported/scosmog.png-6ee1326369d04fc7f67c3736582a79d7.ctex"
+path="res://.godot/imported/scosmog.png-0bc127b4e10bcc1e7a7acc522b52eb13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scosmog.png"
-dest_files=["res://.godot/imported/scosmog.png-6ee1326369d04fc7f67c3736582a79d7.ctex"]
+source_file="res://Assets/Pokemones/gen5/scosmog.png"
+dest_files=["res://.godot/imported/scosmog.png-0bc127b4e10bcc1e7a7acc522b52eb13.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqlm8i5stcxti"
-path="res://.godot/imported/scalyrex-s.png-64660d8e3a1a312f67d6986a6d19757e.ctex"
+path="res://.godot/imported/scalyrex-s.png-0212d72b431d5233d6d4ca4ce1a9be10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scalyrex-s.png"
-dest_files=["res://.godot/imported/scalyrex-s.png-64660d8e3a1a312f67d6986a6d19757e.ctex"]
+source_file="res://Assets/Pokemones/gen5/scalyrex-s.png"
+dest_files=["res://.godot/imported/scalyrex-s.png-0212d72b431d5233d6d4ca4ce1a9be10.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvbqyjbhphoml"
-path="res://.godot/imported/scrabominable-b.png-3bd8b7e370e13ffa583d045c5ff250c4.ctex"
+path="res://.godot/imported/scrabominable-b.png-e906737cf138624b0ba5779220fc4349.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scrabominable-b.png"
-dest_files=["res://.godot/imported/scrabominable-b.png-3bd8b7e370e13ffa583d045c5ff250c4.ctex"]
+source_file="res://Assets/Pokemones/gen5/scrabominable-b.png"
+dest_files=["res://.godot/imported/scrabominable-b.png-e906737cf138624b0ba5779220fc4349.ctex"]
 
 [params]
 

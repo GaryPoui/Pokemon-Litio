@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://g0r8twdu7geg"
-path="res://.godot/imported/sstunfisk-ogalar.png-e12a753988736626dda29240c766a773.ctex"
+path="res://.godot/imported/sstunfisk-ogalar.png-75dbf4dcea7362e37f7b5f7356e4dbcd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sstunfisk-ogalar.png"
-dest_files=["res://.godot/imported/sstunfisk-ogalar.png-e12a753988736626dda29240c766a773.ctex"]
+source_file="res://Assets/Pokemones/gen5/sstunfisk-ogalar.png"
+dest_files=["res://.godot/imported/sstunfisk-ogalar.png-75dbf4dcea7362e37f7b5f7356e4dbcd.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brpi34gyve2p2"
-path="res://.godot/imported/stoxel-b.png-5ed6dd8bef692972ad4cff20063192cf.ctex"
+path="res://.godot/imported/stoxel-b.png-2082c6054de482ed8c004f013570dd13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stoxel-b.png"
-dest_files=["res://.godot/imported/stoxel-b.png-5ed6dd8bef692972ad4cff20063192cf.ctex"]
+source_file="res://Assets/Pokemones/gen5/stoxel-b.png"
+dest_files=["res://.godot/imported/stoxel-b.png-2082c6054de482ed8c004f013570dd13.ctex"]
 
 [params]
 

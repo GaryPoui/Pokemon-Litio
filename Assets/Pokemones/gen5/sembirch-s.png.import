@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cchycwkcv0x6f"
-path="res://.godot/imported/sembirch-s.png-d7bc074d35fb3a991c81c87d2f63cf52.ctex"
+path="res://.godot/imported/sembirch-s.png-7ef95e44ffc2cff0d8ef6472de9541c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sembirch-s.png"
-dest_files=["res://.godot/imported/sembirch-s.png-d7bc074d35fb3a991c81c87d2f63cf52.ctex"]
+source_file="res://Assets/Pokemones/gen5/sembirch-s.png"
+dest_files=["res://.godot/imported/sembirch-s.png-7ef95e44ffc2cff0d8ef6472de9541c4.ctex"]
 
 [params]
 

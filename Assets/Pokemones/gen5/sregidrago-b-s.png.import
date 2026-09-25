@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr8us37362xo5"
-path="res://.godot/imported/sregidrago-b-s.png-5eedc2d118ad94f53d6fc2af5e56ea9c.ctex"
+path="res://.godot/imported/sregidrago-b-s.png-11784362ddce86ab75dba6104e2c3472.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sregidrago-b-s.png"
-dest_files=["res://.godot/imported/sregidrago-b-s.png-5eedc2d118ad94f53d6fc2af5e56ea9c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sregidrago-b-s.png"
+dest_files=["res://.godot/imported/sregidrago-b-s.png-11784362ddce86ab75dba6104e2c3472.ctex"]
 
 [params]
 

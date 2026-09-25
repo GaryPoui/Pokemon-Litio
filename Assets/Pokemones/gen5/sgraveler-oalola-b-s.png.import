@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccat23o4tlyuq"
-path="res://.godot/imported/sgraveler-oalola-b-s.png-371731d8fd299cef33eaad56faa6768f.ctex"
+path="res://.godot/imported/sgraveler-oalola-b-s.png-715aebf21a3a9869dbea2be6ced39ad3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgraveler-oalola-b-s.png"
-dest_files=["res://.godot/imported/sgraveler-oalola-b-s.png-371731d8fd299cef33eaad56faa6768f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgraveler-oalola-b-s.png"
+dest_files=["res://.godot/imported/sgraveler-oalola-b-s.png-715aebf21a3a9869dbea2be6ced39ad3.ctex"]
 
 [params]
 

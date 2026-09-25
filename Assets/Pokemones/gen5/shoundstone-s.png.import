@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt3n3gmsbvxi0"
-path="res://.godot/imported/shoundstone-s.png-fa38cacc99d203e39559abe3c015ed9d.ctex"
+path="res://.godot/imported/shoundstone-s.png-d7d3f8bc6673742f9d1a9802bab02c96.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shoundstone-s.png"
-dest_files=["res://.godot/imported/shoundstone-s.png-fa38cacc99d203e39559abe3c015ed9d.ctex"]
+source_file="res://Assets/Pokemones/gen5/shoundstone-s.png"
+dest_files=["res://.godot/imported/shoundstone-s.png-d7d3f8bc6673742f9d1a9802bab02c96.ctex"]
 
 [params]
 

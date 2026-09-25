@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg8mol2h7sesk"
-path="res://.godot/imported/ssmogecko-s.png-37eb138372d46ac652fc6c6602fc7a79.ctex"
+path="res://.godot/imported/ssmogecko-s.png-53cdcc72f4bc13b5317231bf623f3fef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssmogecko-s.png"
-dest_files=["res://.godot/imported/ssmogecko-s.png-37eb138372d46ac652fc6c6602fc7a79.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssmogecko-s.png"
+dest_files=["res://.godot/imported/ssmogecko-s.png-53cdcc72f4bc13b5317231bf623f3fef.ctex"]
 
 [params]
 

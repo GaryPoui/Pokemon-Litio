@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vy42m6ecyqy4"
-path="res://.godot/imported/sslowbro-omega-b.png-f2485493ecf2d34c9e595ee55cc0ee39.ctex"
+path="res://.godot/imported/sslowbro-omega-b.png-4012b00dcf7ecc47e14b13c9d46b61c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sslowbro-omega-b.png"
-dest_files=["res://.godot/imported/sslowbro-omega-b.png-f2485493ecf2d34c9e595ee55cc0ee39.ctex"]
+source_file="res://Assets/Pokemones/gen5/sslowbro-omega-b.png"
+dest_files=["res://.godot/imported/sslowbro-omega-b.png-4012b00dcf7ecc47e14b13c9d46b61c5.ctex"]
 
 [params]
 

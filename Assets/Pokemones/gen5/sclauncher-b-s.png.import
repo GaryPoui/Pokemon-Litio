@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://boqyhidog1mkx"
-path="res://.godot/imported/sclauncher-b-s.png-46371e7d1c223747e1fcca3380b013e1.ctex"
+path="res://.godot/imported/sclauncher-b-s.png-f3b6e9eebd9e91cbf75ccbb098d06894.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sclauncher-b-s.png"
-dest_files=["res://.godot/imported/sclauncher-b-s.png-46371e7d1c223747e1fcca3380b013e1.ctex"]
+source_file="res://Assets/Pokemones/gen5/sclauncher-b-s.png"
+dest_files=["res://.godot/imported/sclauncher-b-s.png-f3b6e9eebd9e91cbf75ccbb098d06894.ctex"]
 
 [params]
 

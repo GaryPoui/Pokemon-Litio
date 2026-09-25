@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckqg4572lcjop"
-path="res://.godot/imported/sabomasnow-omega.png-5955404330885371178845d6e8900328.ctex"
+path="res://.godot/imported/sabomasnow-omega.png-6b9745ac8436e5430d0eaaf87458309f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sabomasnow-omega.png"
-dest_files=["res://.godot/imported/sabomasnow-omega.png-5955404330885371178845d6e8900328.ctex"]
+source_file="res://Assets/Pokemones/gen5/sabomasnow-omega.png"
+dest_files=["res://.godot/imported/sabomasnow-omega.png-6b9745ac8436e5430d0eaaf87458309f.ctex"]
 
 [params]
 

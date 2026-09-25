@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfjdktlho1ufq"
-path="res://.godot/imported/swiglett-s.png-aa2210c74aa8f55fc21bd11eaa07c031.ctex"
+path="res://.godot/imported/swiglett-s.png-a09d1f18c1cfeef2a5c47d2c451ec158.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/swiglett-s.png"
-dest_files=["res://.godot/imported/swiglett-s.png-aa2210c74aa8f55fc21bd11eaa07c031.ctex"]
+source_file="res://Assets/Pokemones/gen5/swiglett-s.png"
+dest_files=["res://.godot/imported/swiglett-s.png-a09d1f18c1cfeef2a5c47d2c451ec158.ctex"]
 
 [params]
 

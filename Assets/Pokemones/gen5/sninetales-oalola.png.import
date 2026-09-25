@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpig1s0fdjgbn"
-path="res://.godot/imported/sninetales-oalola.png-56436151f47a7d4c71b57e4188deb915.ctex"
+path="res://.godot/imported/sninetales-oalola.png-003509733d998563637409f9a783e188.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sninetales-oalola.png"
-dest_files=["res://.godot/imported/sninetales-oalola.png-56436151f47a7d4c71b57e4188deb915.ctex"]
+source_file="res://Assets/Pokemones/gen5/sninetales-oalola.png"
+dest_files=["res://.godot/imported/sninetales-oalola.png-003509733d998563637409f9a783e188.ctex"]
 
 [params]
 

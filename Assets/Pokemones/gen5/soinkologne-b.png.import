@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dulflyump00td"
-path="res://.godot/imported/soinkologne-b.png-76039859bc93c5d83f49af136d819cfe.ctex"
+path="res://.godot/imported/soinkologne-b.png-41efd1ed69a3af812c3e26fe09230d8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/soinkologne-b.png"
-dest_files=["res://.godot/imported/soinkologne-b.png-76039859bc93c5d83f49af136d819cfe.ctex"]
+source_file="res://Assets/Pokemones/gen5/soinkologne-b.png"
+dest_files=["res://.godot/imported/soinkologne-b.png-41efd1ed69a3af812c3e26fe09230d8c.ctex"]
 
 [params]
 

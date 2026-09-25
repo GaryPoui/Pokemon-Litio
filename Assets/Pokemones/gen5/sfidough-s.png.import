@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djbcv3yyl8865"
-path="res://.godot/imported/sfidough-s.png-8e01149134b0868cbbeb964b16ba4f7f.ctex"
+path="res://.godot/imported/sfidough-s.png-6e961cd8556d9a49231105e79cc2229a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfidough-s.png"
-dest_files=["res://.godot/imported/sfidough-s.png-8e01149134b0868cbbeb964b16ba4f7f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfidough-s.png"
+dest_files=["res://.godot/imported/sfidough-s.png-6e961cd8556d9a49231105e79cc2229a.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://x61ueuhfem2r"
-path="res://.godot/imported/scorviknight-s.png-0d7a142acebae44b6f9116892e37158b.ctex"
+path="res://.godot/imported/scorviknight-s.png-387cd5a6787f9c8665c42d34a9a61aa7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scorviknight-s.png"
-dest_files=["res://.godot/imported/scorviknight-s.png-0d7a142acebae44b6f9116892e37158b.ctex"]
+source_file="res://Assets/Pokemones/gen5/scorviknight-s.png"
+dest_files=["res://.godot/imported/scorviknight-s.png-387cd5a6787f9c8665c42d34a9a61aa7.ctex"]
 
 [params]
 

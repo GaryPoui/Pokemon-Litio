@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://k27gk3yant8a"
-path="res://.godot/imported/sglimmet-s.png-28a5d5acb5ce119ffb200c777ab164a1.ctex"
+path="res://.godot/imported/sglimmet-s.png-309cbcd377d59b2d32f775f7e2623290.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sglimmet-s.png"
-dest_files=["res://.godot/imported/sglimmet-s.png-28a5d5acb5ce119ffb200c777ab164a1.ctex"]
+source_file="res://Assets/Pokemones/gen5/sglimmet-s.png"
+dest_files=["res://.godot/imported/sglimmet-s.png-309cbcd377d59b2d32f775f7e2623290.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://82lckeddj7j0"
-path="res://.godot/imported/squaxly-s.png-aaf42a3c878857fc9b043c28083ae756.ctex"
+path="res://.godot/imported/squaxly-s.png-d8dda20d957b9b24ecc9bf8c23da1750.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/squaxly-s.png"
-dest_files=["res://.godot/imported/squaxly-s.png-aaf42a3c878857fc9b043c28083ae756.ctex"]
+source_file="res://Assets/Pokemones/gen5/squaxly-s.png"
+dest_files=["res://.godot/imported/squaxly-s.png-d8dda20d957b9b24ecc9bf8c23da1750.ctex"]
 
 [params]
 

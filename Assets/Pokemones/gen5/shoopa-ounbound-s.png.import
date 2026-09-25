@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpk0xm1x5k1f0"
-path="res://.godot/imported/shoopa-ounbound-s.png-24138d0a6dade14677ee9d8a69130f1f.ctex"
+path="res://.godot/imported/shoopa-ounbound-s.png-83314abaf3c32700122885fe5823e350.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shoopa-ounbound-s.png"
-dest_files=["res://.godot/imported/shoopa-ounbound-s.png-24138d0a6dade14677ee9d8a69130f1f.ctex"]
+source_file="res://Assets/Pokemones/gen5/shoopa-ounbound-s.png"
+dest_files=["res://.godot/imported/shoopa-ounbound-s.png-83314abaf3c32700122885fe5823e350.ctex"]
 
 [params]
 

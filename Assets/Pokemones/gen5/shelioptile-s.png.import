@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfdhsjobo5vdf"
-path="res://.godot/imported/shelioptile-s.png-29d8e4b09f13fb1d13889329651f455c.ctex"
+path="res://.godot/imported/shelioptile-s.png-2d2a2c5ae17d7bf85c6c6bd736a583ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shelioptile-s.png"
-dest_files=["res://.godot/imported/shelioptile-s.png-29d8e4b09f13fb1d13889329651f455c.ctex"]
+source_file="res://Assets/Pokemones/gen5/shelioptile-s.png"
+dest_files=["res://.godot/imported/shelioptile-s.png-2d2a2c5ae17d7bf85c6c6bd736a583ea.ctex"]
 
 [params]
 

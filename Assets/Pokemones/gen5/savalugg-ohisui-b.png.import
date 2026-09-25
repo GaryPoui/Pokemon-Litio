@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://k7xupe0fepuk"
-path="res://.godot/imported/savalugg-ohisui-b.png-24afa28a533bcc38103c915e57292de0.ctex"
+path="res://.godot/imported/savalugg-ohisui-b.png-f7bc1e54550b98ec77da1dd888e8c19f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/savalugg-ohisui-b.png"
-dest_files=["res://.godot/imported/savalugg-ohisui-b.png-24afa28a533bcc38103c915e57292de0.ctex"]
+source_file="res://Assets/Pokemones/gen5/savalugg-ohisui-b.png"
+dest_files=["res://.godot/imported/savalugg-ohisui-b.png-f7bc1e54550b98ec77da1dd888e8c19f.ctex"]
 
 [params]
 

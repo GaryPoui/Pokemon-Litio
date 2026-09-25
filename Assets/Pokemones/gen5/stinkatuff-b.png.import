@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8y3sjw18adhw"
-path="res://.godot/imported/stinkatuff-b.png-7ebae31eae0fbb731d67ea27574b023c.ctex"
+path="res://.godot/imported/stinkatuff-b.png-1c19a5f77527ed04352ea9571ae0e7f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stinkatuff-b.png"
-dest_files=["res://.godot/imported/stinkatuff-b.png-7ebae31eae0fbb731d67ea27574b023c.ctex"]
+source_file="res://Assets/Pokemones/gen5/stinkatuff-b.png"
+dest_files=["res://.godot/imported/stinkatuff-b.png-1c19a5f77527ed04352ea9571ae0e7f3.ctex"]
 
 [params]
 

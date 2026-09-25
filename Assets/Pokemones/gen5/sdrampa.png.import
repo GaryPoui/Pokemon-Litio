@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://j4rrogtucmkt"
-path="res://.godot/imported/sdrampa.png-7537b986e2fd735d66efe0a872368b92.ctex"
+path="res://.godot/imported/sdrampa.png-b4d889bffd1f305034176c38c33bfb56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdrampa.png"
-dest_files=["res://.godot/imported/sdrampa.png-7537b986e2fd735d66efe0a872368b92.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdrampa.png"
+dest_files=["res://.godot/imported/sdrampa.png-b4d889bffd1f305034176c38c33bfb56.ctex"]
 
 [params]
 

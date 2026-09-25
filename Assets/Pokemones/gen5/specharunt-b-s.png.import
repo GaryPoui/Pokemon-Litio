@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx8116tpyqxgx"
-path="res://.godot/imported/specharunt-b-s.png-bf54153bd8e5a3f8a9e3c1cb6d16f7fe.ctex"
+path="res://.godot/imported/specharunt-b-s.png-0f690d3a0dcedbbad6ed199966b9c176.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/specharunt-b-s.png"
-dest_files=["res://.godot/imported/specharunt-b-s.png-bf54153bd8e5a3f8a9e3c1cb6d16f7fe.ctex"]
+source_file="res://Assets/Pokemones/gen5/specharunt-b-s.png"
+dest_files=["res://.godot/imported/specharunt-b-s.png-0f690d3a0dcedbbad6ed199966b9c176.ctex"]
 
 [params]
 

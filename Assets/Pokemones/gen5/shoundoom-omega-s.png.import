@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://covr3heir36mr"
-path="res://.godot/imported/shoundoom-omega-s.png-73a4528a36e478150b19b6b588e8c8bc.ctex"
+path="res://.godot/imported/shoundoom-omega-s.png-6ebfa2225b5ee0b5ae83b314a419c4b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shoundoom-omega-s.png"
-dest_files=["res://.godot/imported/shoundoom-omega-s.png-73a4528a36e478150b19b6b588e8c8bc.ctex"]
+source_file="res://Assets/Pokemones/gen5/shoundoom-omega-s.png"
+dest_files=["res://.godot/imported/shoundoom-omega-s.png-6ebfa2225b5ee0b5ae83b314a419c4b9.ctex"]
 
 [params]
 

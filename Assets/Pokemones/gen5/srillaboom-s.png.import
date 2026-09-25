@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b57g4fnee6x4g"
-path="res://.godot/imported/srillaboom-s.png-76cbc66eb8f764e6ee7ba621c80aa42d.ctex"
+path="res://.godot/imported/srillaboom-s.png-bf7cd01fc58ffe88cbfe6313399cbc26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/srillaboom-s.png"
-dest_files=["res://.godot/imported/srillaboom-s.png-76cbc66eb8f764e6ee7ba621c80aa42d.ctex"]
+source_file="res://Assets/Pokemones/gen5/srillaboom-s.png"
+dest_files=["res://.godot/imported/srillaboom-s.png-bf7cd01fc58ffe88cbfe6313399cbc26.ctex"]
 
 [params]
 

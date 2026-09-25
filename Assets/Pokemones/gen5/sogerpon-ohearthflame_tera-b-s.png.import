@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db5jxikprja2t"
-path="res://.godot/imported/sogerpon-ohearthflame_tera-b-s.png-1d34d9e5c4f5ed69ccf5521cf3f47534.ctex"
+path="res://.godot/imported/sogerpon-ohearthflame_tera-b-s.png-6b4cdf9942a2c54d2e652ab3a019a07e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sogerpon-ohearthflame_tera-b-s.png"
-dest_files=["res://.godot/imported/sogerpon-ohearthflame_tera-b-s.png-1d34d9e5c4f5ed69ccf5521cf3f47534.ctex"]
+source_file="res://Assets/Pokemones/gen5/sogerpon-ohearthflame_tera-b-s.png"
+dest_files=["res://.godot/imported/sogerpon-ohearthflame_tera-b-s.png-6b4cdf9942a2c54d2e652ab3a019a07e.ctex"]
 
 [params]
 

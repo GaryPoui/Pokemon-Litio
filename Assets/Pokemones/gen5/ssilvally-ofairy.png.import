@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tnlyhcjvhprf"
-path="res://.godot/imported/ssilvally-ofairy.png-68b5cf7f5aebf76aa73265c473b602cf.ctex"
+path="res://.godot/imported/ssilvally-ofairy.png-e29ac190a5d24f1e44ba569e7e3cc04c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilvally-ofairy.png"
-dest_files=["res://.godot/imported/ssilvally-ofairy.png-68b5cf7f5aebf76aa73265c473b602cf.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilvally-ofairy.png"
+dest_files=["res://.godot/imported/ssilvally-ofairy.png-e29ac190a5d24f1e44ba569e7e3cc04c.ctex"]
 
 [params]
 

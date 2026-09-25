@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsvosut7rvhi5"
-path="res://.godot/imported/shawlucha.png-9fa56842db188443081b81893d282645.ctex"
+path="res://.godot/imported/shawlucha.png-3b88e03d219163217117225c963daca0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shawlucha.png"
-dest_files=["res://.godot/imported/shawlucha.png-9fa56842db188443081b81893d282645.ctex"]
+source_file="res://Assets/Pokemones/gen5/shawlucha.png"
+dest_files=["res://.godot/imported/shawlucha.png-3b88e03d219163217117225c963daca0.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7618gggd01q1"
-path="res://.godot/imported/svolkraken-b-s.png-558a6d162e43bcef97c2e32a4eddac26.ctex"
+path="res://.godot/imported/svolkraken-b-s.png-47c37685c1298ff90732c8a5bc8cf055.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svolkraken-b-s.png"
-dest_files=["res://.godot/imported/svolkraken-b-s.png-558a6d162e43bcef97c2e32a4eddac26.ctex"]
+source_file="res://Assets/Pokemones/gen5/svolkraken-b-s.png"
+dest_files=["res://.godot/imported/svolkraken-b-s.png-47c37685c1298ff90732c8a5bc8cf055.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbsf05o8jnhh3"
-path="res://.godot/imported/seiscue-onoice-b-s.png-a5e4b7f5ae36dbbcc9df106ac94a1d06.ctex"
+path="res://.godot/imported/seiscue-onoice-b-s.png-99396adc872235ab747343683245faa2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/seiscue-onoice-b-s.png"
-dest_files=["res://.godot/imported/seiscue-onoice-b-s.png-a5e4b7f5ae36dbbcc9df106ac94a1d06.ctex"]
+source_file="res://Assets/Pokemones/gen5/seiscue-onoice-b-s.png"
+dest_files=["res://.godot/imported/seiscue-onoice-b-s.png-99396adc872235ab747343683245faa2.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byqiea7f67as2"
-path="res://.godot/imported/salcremie-ocaramel_swirl.png-bbabcc39d6e71da140001eeb70aaa832.ctex"
+path="res://.godot/imported/salcremie-ocaramel_swirl.png-39a1fd7147ccdfd9b55d0354f831c8e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/salcremie-ocaramel_swirl.png"
-dest_files=["res://.godot/imported/salcremie-ocaramel_swirl.png-bbabcc39d6e71da140001eeb70aaa832.ctex"]
+source_file="res://Assets/Pokemones/gen5/salcremie-ocaramel_swirl.png"
+dest_files=["res://.godot/imported/salcremie-ocaramel_swirl.png-39a1fd7147ccdfd9b55d0354f831c8e4.ctex"]
 
 [params]
 

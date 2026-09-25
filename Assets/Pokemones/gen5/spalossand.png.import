@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b81qpkpd3dyoh"
-path="res://.godot/imported/spalossand.png-4613f577004dedae7a12b7befad70bba.ctex"
+path="res://.godot/imported/spalossand.png-83a673c41f9adeda0fa8a010508f2881.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spalossand.png"
-dest_files=["res://.godot/imported/spalossand.png-4613f577004dedae7a12b7befad70bba.ctex"]
+source_file="res://Assets/Pokemones/gen5/spalossand.png"
+dest_files=["res://.godot/imported/spalossand.png-83a673c41f9adeda0fa8a010508f2881.ctex"]
 
 [params]
 

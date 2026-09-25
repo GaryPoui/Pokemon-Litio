@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4h5pgpuqj5n1"
-path="res://.godot/imported/ssandy_shocks-b.png-4b2bbcfa7cadb8e9059802a906b69e59.ctex"
+path="res://.godot/imported/ssandy_shocks-b.png-eeed31036b0941b50ba36f9797cc04fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssandy_shocks-b.png"
-dest_files=["res://.godot/imported/ssandy_shocks-b.png-4b2bbcfa7cadb8e9059802a906b69e59.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssandy_shocks-b.png"
+dest_files=["res://.godot/imported/ssandy_shocks-b.png-eeed31036b0941b50ba36f9797cc04fc.ctex"]
 
 [params]
 

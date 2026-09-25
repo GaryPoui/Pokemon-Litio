@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvglb8m82gqup"
-path="res://.godot/imported/swyrdeer-s.png-bf327912e9c3ff5a0c61a7cdf091f720.ctex"
+path="res://.godot/imported/swyrdeer-s.png-9e16512f17590409535d85cabd553eae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/swyrdeer-s.png"
-dest_files=["res://.godot/imported/swyrdeer-s.png-bf327912e9c3ff5a0c61a7cdf091f720.ctex"]
+source_file="res://Assets/Pokemones/gen5/swyrdeer-s.png"
+dest_files=["res://.godot/imported/swyrdeer-s.png-9e16512f17590409535d85cabd553eae.ctex"]
 
 [params]
 

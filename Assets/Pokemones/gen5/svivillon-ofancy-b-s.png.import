@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://badibduenglpu"
-path="res://.godot/imported/svivillon-ofancy-b-s.png-5bab3dde1007d9634926c6b11d509f25.ctex"
+path="res://.godot/imported/svivillon-ofancy-b-s.png-77197cd45a37dc69302f1e9877c2d9a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svivillon-ofancy-b-s.png"
-dest_files=["res://.godot/imported/svivillon-ofancy-b-s.png-5bab3dde1007d9634926c6b11d509f25.ctex"]
+source_file="res://Assets/Pokemones/gen5/svivillon-ofancy-b-s.png"
+dest_files=["res://.godot/imported/svivillon-ofancy-b-s.png-77197cd45a37dc69302f1e9877c2d9a1.ctex"]
 
 [params]
 

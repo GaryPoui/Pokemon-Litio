@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://26j2xmb1r7ww"
-path="res://.godot/imported/stomohawk-f-s.png-0459dec56aa4644a4ab6b67e8d54f03f.ctex"
+path="res://.godot/imported/stomohawk-f-s.png-c4020d347dadf68774e057ee1cabf10e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stomohawk-f-s.png"
-dest_files=["res://.godot/imported/stomohawk-f-s.png-0459dec56aa4644a4ab6b67e8d54f03f.ctex"]
+source_file="res://Assets/Pokemones/gen5/stomohawk-f-s.png"
+dest_files=["res://.godot/imported/stomohawk-f-s.png-c4020d347dadf68774e057ee1cabf10e.ctex"]
 
 [params]
 

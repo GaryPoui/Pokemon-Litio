@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxfdg7rkc8l5x"
-path="res://.godot/imported/savalugg.png-43791a926bf3a106b97e1b194017a83b.ctex"
+path="res://.godot/imported/savalugg.png-3c3b990ff02d0efe5b2035db56aed7e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/savalugg.png"
-dest_files=["res://.godot/imported/savalugg.png-43791a926bf3a106b97e1b194017a83b.ctex"]
+source_file="res://Assets/Pokemones/gen5/savalugg.png"
+dest_files=["res://.godot/imported/savalugg.png-3c3b990ff02d0efe5b2035db56aed7e1.ctex"]
 
 [params]
 

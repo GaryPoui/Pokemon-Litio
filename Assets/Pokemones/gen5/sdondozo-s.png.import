@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://21nmu3ngd028"
-path="res://.godot/imported/sdondozo-s.png-71a3883c23f182495673c4625c41ccd1.ctex"
+path="res://.godot/imported/sdondozo-s.png-b2b30a2f0e1f4469d0b7f57e0167c7a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdondozo-s.png"
-dest_files=["res://.godot/imported/sdondozo-s.png-71a3883c23f182495673c4625c41ccd1.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdondozo-s.png"
+dest_files=["res://.godot/imported/sdondozo-s.png-b2b30a2f0e1f4469d0b7f57e0167c7a8.ctex"]
 
 [params]
 

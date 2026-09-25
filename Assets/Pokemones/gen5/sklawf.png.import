@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgtawf0p56uuj"
-path="res://.godot/imported/sklawf.png-e688280ff9d76e2f09d4d9839c11f62a.ctex"
+path="res://.godot/imported/sklawf.png-c04b6afe17eb24e4fe07f7e2fe46357f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sklawf.png"
-dest_files=["res://.godot/imported/sklawf.png-e688280ff9d76e2f09d4d9839c11f62a.ctex"]
+source_file="res://Assets/Pokemones/gen5/sklawf.png"
+dest_files=["res://.godot/imported/sklawf.png-c04b6afe17eb24e4fe07f7e2fe46357f.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhg52mjuxq6kh"
-path="res://.godot/imported/sspewpa-b-s.png-b5b002fad799d2222963e1ed0a819cba.ctex"
+path="res://.godot/imported/sspewpa-b-s.png-199553412d343bb27a14e52cf3b13092.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sspewpa-b-s.png"
-dest_files=["res://.godot/imported/sspewpa-b-s.png-b5b002fad799d2222963e1ed0a819cba.ctex"]
+source_file="res://Assets/Pokemones/gen5/sspewpa-b-s.png"
+dest_files=["res://.godot/imported/sspewpa-b-s.png-199553412d343bb27a14e52cf3b13092.ctex"]
 
 [params]
 

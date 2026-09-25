@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcikev6a5ppbh"
-path="res://.godot/imported/schesnaught.png-f461a9df7cdf57d84a12f2456edb2356.ctex"
+path="res://.godot/imported/schesnaught.png-fb64a9dc712b54847f7e9d36ac697256.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/schesnaught.png"
-dest_files=["res://.godot/imported/schesnaught.png-f461a9df7cdf57d84a12f2456edb2356.ctex"]
+source_file="res://Assets/Pokemones/gen5/schesnaught.png"
+dest_files=["res://.godot/imported/schesnaught.png-fb64a9dc712b54847f7e9d36ac697256.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d03kl1phi2qsq"
-path="res://.godot/imported/sstufful-b-s.png-20232e6005df4fb426c88d4088670c0c.ctex"
+path="res://.godot/imported/sstufful-b-s.png-4aa951d8bb92c115a69122aef956dcdb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sstufful-b-s.png"
-dest_files=["res://.godot/imported/sstufful-b-s.png-20232e6005df4fb426c88d4088670c0c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sstufful-b-s.png"
+dest_files=["res://.godot/imported/sstufful-b-s.png-4aa951d8bb92c115a69122aef956dcdb.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ca4ynt20lqp2m"
-path="res://.godot/imported/smuk-oalola-b.png-07028b0bff2d48aca77a9dec09631f89.ctex"
+path="res://.godot/imported/smuk-oalola-b.png-2d0e0e40fbd527c71a23c133586280ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smuk-oalola-b.png"
-dest_files=["res://.godot/imported/smuk-oalola-b.png-07028b0bff2d48aca77a9dec09631f89.ctex"]
+source_file="res://Assets/Pokemones/gen5/smuk-oalola-b.png"
+dest_files=["res://.godot/imported/smuk-oalola-b.png-2d0e0e40fbd527c71a23c133586280ed.ctex"]
 
 [params]
 

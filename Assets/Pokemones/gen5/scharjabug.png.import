@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xfsjv008n4vg"
-path="res://.godot/imported/scharjabug.png-36629f3d8df217e767021e16ba0c4329.ctex"
+path="res://.godot/imported/scharjabug.png-8a90345e2ad568fc22d73c2202faf93a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scharjabug.png"
-dest_files=["res://.godot/imported/scharjabug.png-36629f3d8df217e767021e16ba0c4329.ctex"]
+source_file="res://Assets/Pokemones/gen5/scharjabug.png"
+dest_files=["res://.godot/imported/scharjabug.png-8a90345e2ad568fc22d73c2202faf93a.ctex"]
 
 [params]
 

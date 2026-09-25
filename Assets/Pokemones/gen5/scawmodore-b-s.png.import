@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://v7lan2a6id8b"
-path="res://.godot/imported/scawmodore-b-s.png-36cebfb5972f825d46d6511a71775ba8.ctex"
+path="res://.godot/imported/scawmodore-b-s.png-0eb1eef7ebf244e79821f812fff016b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scawmodore-b-s.png"
-dest_files=["res://.godot/imported/scawmodore-b-s.png-36cebfb5972f825d46d6511a71775ba8.ctex"]
+source_file="res://Assets/Pokemones/gen5/scawmodore-b-s.png"
+dest_files=["res://.godot/imported/scawmodore-b-s.png-0eb1eef7ebf244e79821f812fff016b3.ctex"]
 
 [params]
 

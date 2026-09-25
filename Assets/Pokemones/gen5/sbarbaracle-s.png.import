@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2rgd5wapm5lm"
-path="res://.godot/imported/sbarbaracle-s.png-0c27741225991e491a6f48dab4fec747.ctex"
+path="res://.godot/imported/sbarbaracle-s.png-ddeeb041c76ac3831520f623f57ce6a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbarbaracle-s.png"
-dest_files=["res://.godot/imported/sbarbaracle-s.png-0c27741225991e491a6f48dab4fec747.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbarbaracle-s.png"
+dest_files=["res://.godot/imported/sbarbaracle-s.png-ddeeb041c76ac3831520f623f57ce6a2.ctex"]
 
 [params]
 

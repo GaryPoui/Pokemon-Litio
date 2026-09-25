@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0wmfsqgg1wy2"
-path="res://.godot/imported/swalking_wake-s.png-8d0519deb1cd9656869c64e70d7789d0.ctex"
+path="res://.godot/imported/swalking_wake-s.png-b229c35dafdbcd9edef4c7f73cbcff86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/swalking_wake-s.png"
-dest_files=["res://.godot/imported/swalking_wake-s.png-8d0519deb1cd9656869c64e70d7789d0.ctex"]
+source_file="res://Assets/Pokemones/gen5/swalking_wake-s.png"
+dest_files=["res://.godot/imported/swalking_wake-s.png-b229c35dafdbcd9edef4c7f73cbcff86.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsp1ktrvyxa50"
-path="res://.godot/imported/stoxtricity-olow_key-b-s.png-64565f3ef5372be9f8e40a0d1c5c3659.ctex"
+path="res://.godot/imported/stoxtricity-olow_key-b-s.png-7d31aacbdcc13939a5ed5770b495f821.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stoxtricity-olow_key-b-s.png"
-dest_files=["res://.godot/imported/stoxtricity-olow_key-b-s.png-64565f3ef5372be9f8e40a0d1c5c3659.ctex"]
+source_file="res://Assets/Pokemones/gen5/stoxtricity-olow_key-b-s.png"
+dest_files=["res://.godot/imported/stoxtricity-olow_key-b-s.png-7d31aacbdcc13939a5ed5770b495f821.ctex"]
 
 [params]
 

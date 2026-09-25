@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bt44t2inswldc"
-path="res://.godot/imported/sflamigo-b.png-8e65bccab221dc93cd9036df30633506.ctex"
+path="res://.godot/imported/sflamigo-b.png-af824a5b1f5be04f716dffa640508b74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sflamigo-b.png"
-dest_files=["res://.godot/imported/sflamigo-b.png-8e65bccab221dc93cd9036df30633506.ctex"]
+source_file="res://Assets/Pokemones/gen5/sflamigo-b.png"
+dest_files=["res://.godot/imported/sflamigo-b.png-af824a5b1f5be04f716dffa640508b74.ctex"]
 
 [params]
 

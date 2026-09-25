@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfir0a76x7x2d"
-path="res://.godot/imported/ssilvally-osteel-b.png-7fbaa341668595be0db39256f2a5ecc2.ctex"
+path="res://.godot/imported/ssilvally-osteel-b.png-9c8cd29f7b6968dc2c903abf18e8789c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilvally-osteel-b.png"
-dest_files=["res://.godot/imported/ssilvally-osteel-b.png-7fbaa341668595be0db39256f2a5ecc2.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilvally-osteel-b.png"
+dest_files=["res://.godot/imported/ssilvally-osteel-b.png-9c8cd29f7b6968dc2c903abf18e8789c.ctex"]
 
 [params]
 

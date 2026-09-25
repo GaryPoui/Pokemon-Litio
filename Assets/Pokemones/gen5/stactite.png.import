@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl8um0vp7g5e3"
-path="res://.godot/imported/stactite.png-0eed1f4fdd17be14a4d1f0b63dddf2ab.ctex"
+path="res://.godot/imported/stactite.png-5be0921f1bcbba049747df580564da18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stactite.png"
-dest_files=["res://.godot/imported/stactite.png-0eed1f4fdd17be14a4d1f0b63dddf2ab.ctex"]
+source_file="res://Assets/Pokemones/gen5/stactite.png"
+dest_files=["res://.godot/imported/stactite.png-5be0921f1bcbba049747df580564da18.ctex"]
 
 [params]
 

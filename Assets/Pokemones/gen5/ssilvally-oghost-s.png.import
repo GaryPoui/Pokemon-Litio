@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqis7kqjy7n5d"
-path="res://.godot/imported/ssilvally-oghost-s.png-545bb7e7634de0923562aeb0d388bc17.ctex"
+path="res://.godot/imported/ssilvally-oghost-s.png-802f3c4efaecf1d872392d2848b7ff32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilvally-oghost-s.png"
-dest_files=["res://.godot/imported/ssilvally-oghost-s.png-545bb7e7634de0923562aeb0d388bc17.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilvally-oghost-s.png"
+dest_files=["res://.godot/imported/ssilvally-oghost-s.png-802f3c4efaecf1d872392d2848b7ff32.ctex"]
 
 [params]
 

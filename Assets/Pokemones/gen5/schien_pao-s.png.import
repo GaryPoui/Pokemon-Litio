@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://20gyeqwhhhbu"
-path="res://.godot/imported/schien_pao-s.png-893d332e546e83f8c27631a95411769e.ctex"
+path="res://.godot/imported/schien_pao-s.png-bc864e254ddf8f9d8a2f43a4dd649d1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/schien_pao-s.png"
-dest_files=["res://.godot/imported/schien_pao-s.png-893d332e546e83f8c27631a95411769e.ctex"]
+source_file="res://Assets/Pokemones/gen5/schien_pao-s.png"
+dest_files=["res://.godot/imported/schien_pao-s.png-bc864e254ddf8f9d8a2f43a4dd649d1d.ctex"]
 
 [params]
 

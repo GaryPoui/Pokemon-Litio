@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5vu14351rhb4"
-path="res://.godot/imported/shemogoblin-b-s.png-b704117ac72e4be16e6ea0254bd2613e.ctex"
+path="res://.godot/imported/shemogoblin-b-s.png-0dc5df6a7a79836982ebb3b1c26f7425.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shemogoblin-b-s.png"
-dest_files=["res://.godot/imported/shemogoblin-b-s.png-b704117ac72e4be16e6ea0254bd2613e.ctex"]
+source_file="res://Assets/Pokemones/gen5/shemogoblin-b-s.png"
+dest_files=["res://.godot/imported/shemogoblin-b-s.png-0dc5df6a7a79836982ebb3b1c26f7425.ctex"]
 
 [params]
 

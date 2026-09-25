@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bae77d7h0g7bf"
-path="res://.godot/imported/szarude-odada-s.png-fc3c8a5a9159cb6948590489a59b010c.ctex"
+path="res://.godot/imported/szarude-odada-s.png-4d4496b683eeff1a314cf25aa283df7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/szarude-odada-s.png"
-dest_files=["res://.godot/imported/szarude-odada-s.png-fc3c8a5a9159cb6948590489a59b010c.ctex"]
+source_file="res://Assets/Pokemones/gen5/szarude-odada-s.png"
+dest_files=["res://.godot/imported/szarude-odada-s.png-4d4496b683eeff1a314cf25aa283df7a.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4mgx14y114td"
-path="res://.godot/imported/spikachu-oalola-s.png-6d8ac66c39abd6ace93063516b90b285.ctex"
+path="res://.godot/imported/spikachu-oalola-s.png-eda86bdcdf8c9866487cd51b2fa81d79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spikachu-oalola-s.png"
-dest_files=["res://.godot/imported/spikachu-oalola-s.png-6d8ac66c39abd6ace93063516b90b285.ctex"]
+source_file="res://Assets/Pokemones/gen5/spikachu-oalola-s.png"
+dest_files=["res://.godot/imported/spikachu-oalola-s.png-eda86bdcdf8c9866487cd51b2fa81d79.ctex"]
 
 [params]
 

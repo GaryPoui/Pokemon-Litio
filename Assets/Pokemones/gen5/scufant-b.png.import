@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd7ue2jfey4pc"
-path="res://.godot/imported/scufant-b.png-f52f8280fd82acbf849ab4bbcde1260c.ctex"
+path="res://.godot/imported/scufant-b.png-caf94974a2ab13164723a8ebca9c0176.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scufant-b.png"
-dest_files=["res://.godot/imported/scufant-b.png-f52f8280fd82acbf849ab4bbcde1260c.ctex"]
+source_file="res://Assets/Pokemones/gen5/scufant-b.png"
+dest_files=["res://.godot/imported/scufant-b.png-caf94974a2ab13164723a8ebca9c0176.ctex"]
 
 [params]
 

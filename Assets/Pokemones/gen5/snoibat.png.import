@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blcv7n8krpc43"
-path="res://.godot/imported/snoibat.png-6adb3a843a3a604ddd0bc21bec9822ed.ctex"
+path="res://.godot/imported/snoibat.png-e31e6d5d39bfe83b53d405e72c61e3f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/snoibat.png"
-dest_files=["res://.godot/imported/snoibat.png-6adb3a843a3a604ddd0bc21bec9822ed.ctex"]
+source_file="res://Assets/Pokemones/gen5/snoibat.png"
+dest_files=["res://.godot/imported/snoibat.png-e31e6d5d39bfe83b53d405e72c61e3f1.ctex"]
 
 [params]
 

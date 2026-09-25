@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8p0j6yf7fvj7"
-path="res://.godot/imported/sswirlix-b.png-e6b58d6338c7a42e83089bbff4763898.ctex"
+path="res://.godot/imported/sswirlix-b.png-47771f83ab67ec68ce37c44b05720795.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sswirlix-b.png"
-dest_files=["res://.godot/imported/sswirlix-b.png-e6b58d6338c7a42e83089bbff4763898.ctex"]
+source_file="res://Assets/Pokemones/gen5/sswirlix-b.png"
+dest_files=["res://.godot/imported/sswirlix-b.png-47771f83ab67ec68ce37c44b05720795.ctex"]
 
 [params]
 

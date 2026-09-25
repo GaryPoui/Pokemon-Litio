@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://de8mhdmteqahc"
-path="res://.godot/imported/sfloette-oblue-b-s.png-d28cb5741f507fa8e141c32e4811c4b5.ctex"
+path="res://.godot/imported/sfloette-oblue-b-s.png-dbcc5f3d362d84ff6dfce2150a428efc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfloette-oblue-b-s.png"
-dest_files=["res://.godot/imported/sfloette-oblue-b-s.png-d28cb5741f507fa8e141c32e4811c4b5.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfloette-oblue-b-s.png"
+dest_files=["res://.godot/imported/sfloette-oblue-b-s.png-dbcc5f3d362d84ff6dfce2150a428efc.ctex"]
 
 [params]
 

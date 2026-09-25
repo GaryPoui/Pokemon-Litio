@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmgsketvp4xv8"
-path="res://.godot/imported/sgreat_tusk-s.png-85a58d43f51f4d1bc8e967a630c474c2.ctex"
+path="res://.godot/imported/sgreat_tusk-s.png-b96e418575e86f4dbb83f76cbb17c1aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgreat_tusk-s.png"
-dest_files=["res://.godot/imported/sgreat_tusk-s.png-85a58d43f51f4d1bc8e967a630c474c2.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgreat_tusk-s.png"
+dest_files=["res://.godot/imported/sgreat_tusk-s.png-b96e418575e86f4dbb83f76cbb17c1aa.ctex"]
 
 [params]
 

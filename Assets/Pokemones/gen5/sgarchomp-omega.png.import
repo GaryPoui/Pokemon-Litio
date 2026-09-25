@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://do3i6e0kshvy4"
-path="res://.godot/imported/sgarchomp-omega.png-7f0a8809dd8928e0b5dc5742037e7670.ctex"
+path="res://.godot/imported/sgarchomp-omega.png-bb229ec6f6ed74912deffd6fe4b9b90e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgarchomp-omega.png"
-dest_files=["res://.godot/imported/sgarchomp-omega.png-7f0a8809dd8928e0b5dc5742037e7670.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgarchomp-omega.png"
+dest_files=["res://.godot/imported/sgarchomp-omega.png-bb229ec6f6ed74912deffd6fe4b9b90e.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brnu2hf2ocile"
-path="res://.godot/imported/sgarbodor-b-g.png-4792cc5b0608c80f90ac1f4f50064289.ctex"
+path="res://.godot/imported/sgarbodor-b-g.png-612322440713f02ae4d687c810c72ffc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgarbodor-b-g.png"
-dest_files=["res://.godot/imported/sgarbodor-b-g.png-4792cc5b0608c80f90ac1f4f50064289.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgarbodor-b-g.png"
+dest_files=["res://.godot/imported/sgarbodor-b-g.png-612322440713f02ae4d687c810c72ffc.ctex"]
 
 [params]
 

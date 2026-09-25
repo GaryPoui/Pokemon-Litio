@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u2ntr5vbdpmc"
-path="res://.godot/imported/skyogre-oprimal-b-s.png-9b62dee9a04a698e2f16d9065622ed37.ctex"
+path="res://.godot/imported/skyogre-oprimal-b-s.png-de89e8d108d2d018928e4de7a84c9b89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/skyogre-oprimal-b-s.png"
-dest_files=["res://.godot/imported/skyogre-oprimal-b-s.png-9b62dee9a04a698e2f16d9065622ed37.ctex"]
+source_file="res://Assets/Pokemones/gen5/skyogre-oprimal-b-s.png"
+dest_files=["res://.godot/imported/skyogre-oprimal-b-s.png-de89e8d108d2d018928e4de7a84c9b89.ctex"]
 
 [params]
 

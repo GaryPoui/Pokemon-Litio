@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bak7va6es2j81"
-path="res://.godot/imported/shonedge.png-16ba0018eeca0271900ac8fc6888b8ea.ctex"
+path="res://.godot/imported/shonedge.png-a28a4442f516a4f7479c0d6cc93e5a73.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shonedge.png"
-dest_files=["res://.godot/imported/shonedge.png-16ba0018eeca0271900ac8fc6888b8ea.ctex"]
+source_file="res://Assets/Pokemones/gen5/shonedge.png"
+dest_files=["res://.godot/imported/shonedge.png-a28a4442f516a4f7479c0d6cc93e5a73.ctex"]
 
 [params]
 

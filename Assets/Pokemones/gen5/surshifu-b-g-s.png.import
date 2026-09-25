@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bf5a5u5op4kcw"
-path="res://.godot/imported/surshifu-b-g-s.png-a206861d5c3d45330daa523adb415b8c.ctex"
+path="res://.godot/imported/surshifu-b-g-s.png-54a8499f7f9161838c7915f0aab30bea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/surshifu-b-g-s.png"
-dest_files=["res://.godot/imported/surshifu-b-g-s.png-a206861d5c3d45330daa523adb415b8c.ctex"]
+source_file="res://Assets/Pokemones/gen5/surshifu-b-g-s.png"
+dest_files=["res://.godot/imported/surshifu-b-g-s.png-54a8499f7f9161838c7915f0aab30bea.ctex"]
 
 [params]
 

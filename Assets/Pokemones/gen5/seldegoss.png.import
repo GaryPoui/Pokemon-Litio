@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwkf6cvrfxq2a"
-path="res://.godot/imported/seldegoss.png-31ba7f678ac1989e44f8dca73f518f44.ctex"
+path="res://.godot/imported/seldegoss.png-7c7b090cc901cc17f692eb56c07f6c73.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/seldegoss.png"
-dest_files=["res://.godot/imported/seldegoss.png-31ba7f678ac1989e44f8dca73f518f44.ctex"]
+source_file="res://Assets/Pokemones/gen5/seldegoss.png"
+dest_files=["res://.godot/imported/seldegoss.png-7c7b090cc901cc17f692eb56c07f6c73.ctex"]
 
 [params]
 

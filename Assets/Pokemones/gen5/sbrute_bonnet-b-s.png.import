@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd3ydrb6g2muf"
-path="res://.godot/imported/sbrute_bonnet-b-s.png-1255dedc813ccb8bc495d35c7f8fce26.ctex"
+path="res://.godot/imported/sbrute_bonnet-b-s.png-fe908f9de7c9c00905691bb6926c1395.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbrute_bonnet-b-s.png"
-dest_files=["res://.godot/imported/sbrute_bonnet-b-s.png-1255dedc813ccb8bc495d35c7f8fce26.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbrute_bonnet-b-s.png"
+dest_files=["res://.godot/imported/sbrute_bonnet-b-s.png-fe908f9de7c9c00905691bb6926c1395.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2tpfangw7q0j"
-path="res://.godot/imported/snoivern-s.png-727186f75f9e6bc3e62b9fbf5b7898ac.ctex"
+path="res://.godot/imported/snoivern-s.png-09395853b4805b1a224d064cbc2ffc74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/snoivern-s.png"
-dest_files=["res://.godot/imported/snoivern-s.png-727186f75f9e6bc3e62b9fbf5b7898ac.ctex"]
+source_file="res://Assets/Pokemones/gen5/snoivern-s.png"
+dest_files=["res://.godot/imported/snoivern-s.png-09395853b4805b1a224d064cbc2ffc74.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bguq1rkykoiil"
-path="res://.godot/imported/srayquaza-omega-b-s.png-a1ca5b9bc3999d6685823a7e2204855d.ctex"
+path="res://.godot/imported/srayquaza-omega-b-s.png-293a566f62d682bd614ab0c95d54d298.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/srayquaza-omega-b-s.png"
-dest_files=["res://.godot/imported/srayquaza-omega-b-s.png-a1ca5b9bc3999d6685823a7e2204855d.ctex"]
+source_file="res://Assets/Pokemones/gen5/srayquaza-omega-b-s.png"
+dest_files=["res://.godot/imported/srayquaza-omega-b-s.png-293a566f62d682bd614ab0c95d54d298.ctex"]
 
 [params]
 

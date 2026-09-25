@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3jxsxhcgrpdg"
-path="res://.godot/imported/scosmoem-b-s.png-93742938b1a99f9c771e12c5b1fb2f03.ctex"
+path="res://.godot/imported/scosmoem-b-s.png-c88aeabfa542194b8f0bfb5d3d21ceb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scosmoem-b-s.png"
-dest_files=["res://.godot/imported/scosmoem-b-s.png-93742938b1a99f9c771e12c5b1fb2f03.ctex"]
+source_file="res://Assets/Pokemones/gen5/scosmoem-b-s.png"
+dest_files=["res://.godot/imported/scosmoem-b-s.png-c88aeabfa542194b8f0bfb5d3d21ceb5.ctex"]
 
 [params]
 

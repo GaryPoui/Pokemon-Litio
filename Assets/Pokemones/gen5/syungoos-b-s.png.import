@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yu8ibh2d8u02"
-path="res://.godot/imported/syungoos-b-s.png-fc6790e640190ff89c98e2f26683a1d0.ctex"
+path="res://.godot/imported/syungoos-b-s.png-cf3a426349b8d20ba04d3c6d5d16baec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/syungoos-b-s.png"
-dest_files=["res://.godot/imported/syungoos-b-s.png-fc6790e640190ff89c98e2f26683a1d0.ctex"]
+source_file="res://Assets/Pokemones/gen5/syungoos-b-s.png"
+dest_files=["res://.godot/imported/syungoos-b-s.png-cf3a426349b8d20ba04d3c6d5d16baec.ctex"]
 
 [params]
 

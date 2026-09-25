@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chvncj8ii23sf"
-path="res://.godot/imported/sgouging_fire.png-defcfe819b83e72689bd187bedd47839.ctex"
+path="res://.godot/imported/sgouging_fire.png-839f16cf0d0b43baa175387f513e3b3a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgouging_fire.png"
-dest_files=["res://.godot/imported/sgouging_fire.png-defcfe819b83e72689bd187bedd47839.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgouging_fire.png"
+dest_files=["res://.godot/imported/sgouging_fire.png-839f16cf0d0b43baa175387f513e3b3a.ctex"]
 
 [params]
 

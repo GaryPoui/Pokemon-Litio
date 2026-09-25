@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2lo3e1hb8ait"
-path="res://.godot/imported/sorthworm.png-50037357b7cd16b363d408ce106f40fa.ctex"
+path="res://.godot/imported/sorthworm.png-c2d0ce56466b7bec3c5f731341fca663.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sorthworm.png"
-dest_files=["res://.godot/imported/sorthworm.png-50037357b7cd16b363d408ce106f40fa.ctex"]
+source_file="res://Assets/Pokemones/gen5/sorthworm.png"
+dest_files=["res://.godot/imported/sorthworm.png-c2d0ce56466b7bec3c5f731341fca663.ctex"]
 
 [params]
 

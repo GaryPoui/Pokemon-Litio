@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3u6p5vt8pggr"
-path="res://.godot/imported/shatenna-s.png-af442603213c4ec1d5ed40ed2ab0c17c.ctex"
+path="res://.godot/imported/shatenna-s.png-0ffea7ab9f8db1c8ec600cc189d98931.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shatenna-s.png"
-dest_files=["res://.godot/imported/shatenna-s.png-af442603213c4ec1d5ed40ed2ab0c17c.ctex"]
+source_file="res://Assets/Pokemones/gen5/shatenna-s.png"
+dest_files=["res://.godot/imported/shatenna-s.png-0ffea7ab9f8db1c8ec600cc189d98931.ctex"]
 
 [params]
 

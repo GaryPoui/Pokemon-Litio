@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bb6f6af7wcbk6"
-path="res://.godot/imported/sogerpon-owellspring_tera-b-s.png-12c16addb8c53419ca95c7711a74ffdb.ctex"
+path="res://.godot/imported/sogerpon-owellspring_tera-b-s.png-f66739c7b233ca7c2702e196fd0e0939.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sogerpon-owellspring_tera-b-s.png"
-dest_files=["res://.godot/imported/sogerpon-owellspring_tera-b-s.png-12c16addb8c53419ca95c7711a74ffdb.ctex"]
+source_file="res://Assets/Pokemones/gen5/sogerpon-owellspring_tera-b-s.png"
+dest_files=["res://.godot/imported/sogerpon-owellspring_tera-b-s.png-f66739c7b233ca7c2702e196fd0e0939.ctex"]
 
 [params]
 

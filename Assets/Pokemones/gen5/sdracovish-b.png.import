@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5q7y7vh0mp7e"
-path="res://.godot/imported/sdracovish-b.png-e9472bf2f539bdcf341bd333d55fa009.ctex"
+path="res://.godot/imported/sdracovish-b.png-7cf56fecdaf01128671745bd79494e71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdracovish-b.png"
-dest_files=["res://.godot/imported/sdracovish-b.png-e9472bf2f539bdcf341bd333d55fa009.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdracovish-b.png"
+dest_files=["res://.godot/imported/sdracovish-b.png-7cf56fecdaf01128671745bd79494e71.ctex"]
 
 [params]
 

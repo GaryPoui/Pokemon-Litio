@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ct0wsvj3p1q11"
-path="res://.godot/imported/scorsola-ogalar-b-s.png-77248490949cfcab93217efc739603a5.ctex"
+path="res://.godot/imported/scorsola-ogalar-b-s.png-030d3dac3b8ae5b996d6f88f12d7f8f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scorsola-ogalar-b-s.png"
-dest_files=["res://.godot/imported/scorsola-ogalar-b-s.png-77248490949cfcab93217efc739603a5.ctex"]
+source_file="res://Assets/Pokemones/gen5/scorsola-ogalar-b-s.png"
+dest_files=["res://.godot/imported/scorsola-ogalar-b-s.png-030d3dac3b8ae5b996d6f88f12d7f8f7.ctex"]
 
 [params]
 

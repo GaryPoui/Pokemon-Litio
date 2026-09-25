@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btdwmsn0xeqet"
-path="res://.godot/imported/snecturna-b-s.png-961948c55389e37ea577281ebe5ff366.ctex"
+path="res://.godot/imported/snecturna-b-s.png-a79c8a6fd5dd44bf0b3afcfe8364dff6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/snecturna-b-s.png"
-dest_files=["res://.godot/imported/snecturna-b-s.png-961948c55389e37ea577281ebe5ff366.ctex"]
+source_file="res://Assets/Pokemones/gen5/snecturna-b-s.png"
+dest_files=["res://.godot/imported/snecturna-b-s.png-a79c8a6fd5dd44bf0b3afcfe8364dff6.ctex"]
 
 [params]
 

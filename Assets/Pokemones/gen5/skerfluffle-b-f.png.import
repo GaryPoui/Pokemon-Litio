@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxu4i5x7n1cyb"
-path="res://.godot/imported/skerfluffle-b-f.png-281778383c9d6098cb83bbf9bce66967.ctex"
+path="res://.godot/imported/skerfluffle-b-f.png-29abe6b37dff7cb32dba71eeeaa432ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/skerfluffle-b-f.png"
-dest_files=["res://.godot/imported/skerfluffle-b-f.png-281778383c9d6098cb83bbf9bce66967.ctex"]
+source_file="res://Assets/Pokemones/gen5/skerfluffle-b-f.png"
+dest_files=["res://.godot/imported/skerfluffle-b-f.png-29abe6b37dff7cb32dba71eeeaa432ce.ctex"]
 
 [params]
 

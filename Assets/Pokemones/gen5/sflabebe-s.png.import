@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://biec5vcbi262n"
-path="res://.godot/imported/sflabebe-s.png-91b32462dc933cfdb6d9677e755a98cc.ctex"
+path="res://.godot/imported/sflabebe-s.png-f7bfc7dd23b5832e08d4d0fae8f1a51d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sflabebe-s.png"
-dest_files=["res://.godot/imported/sflabebe-s.png-91b32462dc933cfdb6d9677e755a98cc.ctex"]
+source_file="res://Assets/Pokemones/gen5/sflabebe-s.png"
+dest_files=["res://.godot/imported/sflabebe-s.png-f7bfc7dd23b5832e08d4d0fae8f1a51d.ctex"]
 
 [params]
 

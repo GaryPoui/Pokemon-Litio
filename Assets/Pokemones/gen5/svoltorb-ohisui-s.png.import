@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjxmfs0b75nbh"
-path="res://.godot/imported/svoltorb-ohisui-s.png-7c596536491b9eb2abd411d64940fa0a.ctex"
+path="res://.godot/imported/svoltorb-ohisui-s.png-109af8b4c6a9352d82c102529bca1c43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svoltorb-ohisui-s.png"
-dest_files=["res://.godot/imported/svoltorb-ohisui-s.png-7c596536491b9eb2abd411d64940fa0a.ctex"]
+source_file="res://Assets/Pokemones/gen5/svoltorb-ohisui-s.png"
+dest_files=["res://.godot/imported/svoltorb-ohisui-s.png-109af8b4c6a9352d82c102529bca1c43.ctex"]
 
 [params]
 

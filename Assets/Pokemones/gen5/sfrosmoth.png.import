@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s4rjrovjgv0p"
-path="res://.godot/imported/sfrosmoth.png-5f7531f86f830b40738e541e73035f7e.ctex"
+path="res://.godot/imported/sfrosmoth.png-5edb70d1a6440fdd60cf3e71554a74ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfrosmoth.png"
-dest_files=["res://.godot/imported/sfrosmoth.png-5f7531f86f830b40738e541e73035f7e.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfrosmoth.png"
+dest_files=["res://.godot/imported/sfrosmoth.png-5edb70d1a6440fdd60cf3e71554a74ef.ctex"]
 
 [params]
 

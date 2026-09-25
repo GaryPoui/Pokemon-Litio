@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://up5cl5tq5lsk"
-path="res://.godot/imported/sfloatoy.png-18e5a21b3d975a5582018ad028494a0a.ctex"
+path="res://.godot/imported/sfloatoy.png-802800fded3d8078b1eb5ca7734ff4d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfloatoy.png"
-dest_files=["res://.godot/imported/sfloatoy.png-18e5a21b3d975a5582018ad028494a0a.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfloatoy.png"
+dest_files=["res://.godot/imported/sfloatoy.png-802800fded3d8078b1eb5ca7734ff4d9.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dksfj0gkfg4qm"
-path="res://.godot/imported/smilcery.png-09557ab7e0abfe4e50aa28875a8180d3.ctex"
+path="res://.godot/imported/smilcery.png-757902041b05765f35ee3c793e295f73.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smilcery.png"
-dest_files=["res://.godot/imported/smilcery.png-09557ab7e0abfe4e50aa28875a8180d3.ctex"]
+source_file="res://Assets/Pokemones/gen5/smilcery.png"
+dest_files=["res://.godot/imported/smilcery.png-757902041b05765f35ee3c793e295f73.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brvx6miv45bnx"
-path="res://.godot/imported/slurantis-ototem.png-4053b825b99ea8ddc04034495780b5ec.ctex"
+path="res://.godot/imported/slurantis-ototem.png-235f2df05a19c8378beeb3d2119f1974.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slurantis-ototem.png"
-dest_files=["res://.godot/imported/slurantis-ototem.png-4053b825b99ea8ddc04034495780b5ec.ctex"]
+source_file="res://Assets/Pokemones/gen5/slurantis-ototem.png"
+dest_files=["res://.godot/imported/slurantis-ototem.png-235f2df05a19c8378beeb3d2119f1974.ctex"]
 
 [params]
 

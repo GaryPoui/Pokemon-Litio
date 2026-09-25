@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brleaa2tmlxnu"
-path="res://.godot/imported/saromatisse-b.png-b9c4e0f90694b8383d9a86c775fe8add.ctex"
+path="res://.godot/imported/saromatisse-b.png-6353e03d37a892397d7aff93e9d8e151.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/saromatisse-b.png"
-dest_files=["res://.godot/imported/saromatisse-b.png-b9c4e0f90694b8383d9a86c775fe8add.ctex"]
+source_file="res://Assets/Pokemones/gen5/saromatisse-b.png"
+dest_files=["res://.godot/imported/saromatisse-b.png-6353e03d37a892397d7aff93e9d8e151.ctex"]
 
 [params]
 

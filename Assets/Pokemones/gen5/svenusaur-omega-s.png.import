@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byoui5kh056ft"
-path="res://.godot/imported/svenusaur-omega-s.png-97f81dc30b73b9bf7a71ff9cf6f98e8e.ctex"
+path="res://.godot/imported/svenusaur-omega-s.png-c5466f9cff019c67a86fa76bd633005c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svenusaur-omega-s.png"
-dest_files=["res://.godot/imported/svenusaur-omega-s.png-97f81dc30b73b9bf7a71ff9cf6f98e8e.ctex"]
+source_file="res://Assets/Pokemones/gen5/svenusaur-omega-s.png"
+dest_files=["res://.godot/imported/svenusaur-omega-s.png-c5466f9cff019c67a86fa76bd633005c.ctex"]
 
 [params]
 

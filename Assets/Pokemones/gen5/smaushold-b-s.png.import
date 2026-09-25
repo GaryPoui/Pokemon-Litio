@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ct3ss7i8wvr05"
-path="res://.godot/imported/smaushold-b-s.png-39062bbcd6d797c9be5868383ac1f90e.ctex"
+path="res://.godot/imported/smaushold-b-s.png-0e98ef672c782ff44baffca5241e61b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smaushold-b-s.png"
-dest_files=["res://.godot/imported/smaushold-b-s.png-39062bbcd6d797c9be5868383ac1f90e.ctex"]
+source_file="res://Assets/Pokemones/gen5/smaushold-b-s.png"
+dest_files=["res://.godot/imported/smaushold-b-s.png-0e98ef672c782ff44baffca5241e61b4.ctex"]
 
 [params]
 

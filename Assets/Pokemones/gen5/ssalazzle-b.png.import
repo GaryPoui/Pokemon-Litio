@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://diiafoa08h1hh"
-path="res://.godot/imported/ssalazzle-b.png-be14164c9b3a84649714053ea69faff0.ctex"
+path="res://.godot/imported/ssalazzle-b.png-846e40df6f5cbc0b1fb71591201dad45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssalazzle-b.png"
-dest_files=["res://.godot/imported/ssalazzle-b.png-be14164c9b3a84649714053ea69faff0.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssalazzle-b.png"
+dest_files=["res://.godot/imported/ssalazzle-b.png-846e40df6f5cbc0b1fb71591201dad45.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cn53sk72fn3ok"
-path="res://.godot/imported/smonohm-s.png-50c168aefe4639520654d358e2bc54ba.ctex"
+path="res://.godot/imported/smonohm-s.png-52e63c6a95a74d2723a9bb2e20688567.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smonohm-s.png"
-dest_files=["res://.godot/imported/smonohm-s.png-50c168aefe4639520654d358e2bc54ba.ctex"]
+source_file="res://Assets/Pokemones/gen5/smonohm-s.png"
+dest_files=["res://.godot/imported/smonohm-s.png-52e63c6a95a74d2723a9bb2e20688567.ctex"]
 
 [params]
 

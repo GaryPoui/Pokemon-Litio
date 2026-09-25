@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccogj4hq15mty"
-path="res://.godot/imported/sflorges-oblue.png-21301d937cca8b98ee68fbd2678ab60f.ctex"
+path="res://.godot/imported/sflorges-oblue.png-0e551e9e4b1617f841db4d8e61f25c68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sflorges-oblue.png"
-dest_files=["res://.godot/imported/sflorges-oblue.png-21301d937cca8b98ee68fbd2678ab60f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sflorges-oblue.png"
+dest_files=["res://.godot/imported/sflorges-oblue.png-0e551e9e4b1617f841db4d8e61f25c68.ctex"]
 
 [params]
 

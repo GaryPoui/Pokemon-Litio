@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://doli51oaequ10"
-path="res://.godot/imported/sraichu-oalola.png-ebb4a19a5f20ec11f69fb761e9459b76.ctex"
+path="res://.godot/imported/sraichu-oalola.png-e256e6a42f520aaca6e4bf9fc06db7a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sraichu-oalola.png"
-dest_files=["res://.godot/imported/sraichu-oalola.png-ebb4a19a5f20ec11f69fb761e9459b76.ctex"]
+source_file="res://Assets/Pokemones/gen5/sraichu-oalola.png"
+dest_files=["res://.godot/imported/sraichu-oalola.png-e256e6a42f520aaca6e4bf9fc06db7a5.ctex"]
 
 [params]
 

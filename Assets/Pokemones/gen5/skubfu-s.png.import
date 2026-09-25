@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnarvu75csq53"
-path="res://.godot/imported/skubfu-s.png-0187156f90266b017ba4791fa74d2302.ctex"
+path="res://.godot/imported/skubfu-s.png-3488a37ff38f4eef62eb5050ec9622c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/skubfu-s.png"
-dest_files=["res://.godot/imported/skubfu-s.png-0187156f90266b017ba4791fa74d2302.ctex"]
+source_file="res://Assets/Pokemones/gen5/skubfu-s.png"
+dest_files=["res://.godot/imported/skubfu-s.png-3488a37ff38f4eef62eb5050ec9622c9.ctex"]
 
 [params]
 

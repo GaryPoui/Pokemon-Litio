@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmv1hijcascir"
-path="res://.godot/imported/smr_rime.png-86fa45a098117f1adeb063bc242090a7.ctex"
+path="res://.godot/imported/smr_rime.png-13bceef3807d6a61e65c76170bdc6cd0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smr_rime.png"
-dest_files=["res://.godot/imported/smr_rime.png-86fa45a098117f1adeb063bc242090a7.ctex"]
+source_file="res://Assets/Pokemones/gen5/smr_rime.png"
+dest_files=["res://.godot/imported/smr_rime.png-13bceef3807d6a61e65c76170bdc6cd0.ctex"]
 
 [params]
 

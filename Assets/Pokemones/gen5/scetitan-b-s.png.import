@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckgt5epeyre3y"
-path="res://.godot/imported/scetitan-b-s.png-f23ec2e1b2891a9d0adba9da7746ebcd.ctex"
+path="res://.godot/imported/scetitan-b-s.png-2e3e3dcb4410613e8a782ef6cf8f2476.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scetitan-b-s.png"
-dest_files=["res://.godot/imported/scetitan-b-s.png-f23ec2e1b2891a9d0adba9da7746ebcd.ctex"]
+source_file="res://Assets/Pokemones/gen5/scetitan-b-s.png"
+dest_files=["res://.godot/imported/scetitan-b-s.png-2e3e3dcb4410613e8a782ef6cf8f2476.ctex"]
 
 [params]
 

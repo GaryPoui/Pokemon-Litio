@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7q78aj7mv5fl"
-path="res://.godot/imported/shatterene-g-s.png-3af97a9eba1c142276bf8433aad13920.ctex"
+path="res://.godot/imported/shatterene-g-s.png-c8981178da79649e2ccab43bac61f555.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shatterene-g-s.png"
-dest_files=["res://.godot/imported/shatterene-g-s.png-3af97a9eba1c142276bf8433aad13920.ctex"]
+source_file="res://Assets/Pokemones/gen5/shatterene-g-s.png"
+dest_files=["res://.godot/imported/shatterene-g-s.png-c8981178da79649e2ccab43bac61f555.ctex"]
 
 [params]
 

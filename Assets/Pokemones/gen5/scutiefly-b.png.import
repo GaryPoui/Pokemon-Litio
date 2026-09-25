@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c84x6lau1un7t"
-path="res://.godot/imported/scutiefly-b.png-b8feb9bb65d3f4680fa782ca31903a9d.ctex"
+path="res://.godot/imported/scutiefly-b.png-838e9961909dc0bcdadf3751933f6a37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scutiefly-b.png"
-dest_files=["res://.godot/imported/scutiefly-b.png-b8feb9bb65d3f4680fa782ca31903a9d.ctex"]
+source_file="res://Assets/Pokemones/gen5/scutiefly-b.png"
+dest_files=["res://.godot/imported/scutiefly-b.png-838e9961909dc0bcdadf3751933f6a37.ctex"]
 
 [params]
 

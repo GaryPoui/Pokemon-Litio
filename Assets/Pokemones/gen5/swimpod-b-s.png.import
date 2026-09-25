@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvl0yfquou1fi"
-path="res://.godot/imported/swimpod-b-s.png-8dd8978d5645f81950b69f3e0bfb235b.ctex"
+path="res://.godot/imported/swimpod-b-s.png-890d453964cc64ee221022e4c59ce179.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/swimpod-b-s.png"
-dest_files=["res://.godot/imported/swimpod-b-s.png-8dd8978d5645f81950b69f3e0bfb235b.ctex"]
+source_file="res://Assets/Pokemones/gen5/swimpod-b-s.png"
+dest_files=["res://.godot/imported/swimpod-b-s.png-890d453964cc64ee221022e4c59ce179.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://oo057fstwk73"
-path="res://.godot/imported/strumbeak-b-s.png-bff76eee39f95a27f074cf5cdfae1b10.ctex"
+path="res://.godot/imported/strumbeak-b-s.png-f1abd46c2094a1fd436ec815aa212f28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/strumbeak-b-s.png"
-dest_files=["res://.godot/imported/strumbeak-b-s.png-bff76eee39f95a27f074cf5cdfae1b10.ctex"]
+source_file="res://Assets/Pokemones/gen5/strumbeak-b-s.png"
+dest_files=["res://.godot/imported/strumbeak-b-s.png-f1abd46c2094a1fd436ec815aa212f28.ctex"]
 
 [params]
 

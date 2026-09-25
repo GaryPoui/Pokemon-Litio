@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qvubfyt3154b"
-path="res://.godot/imported/sarmarouge-b-s.png-7ce0dfa250f7901b08a7105a6a1dbc9f.ctex"
+path="res://.godot/imported/sarmarouge-b-s.png-6035819c0fb6c2e28fdfbb5c89089d13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sarmarouge-b-s.png"
-dest_files=["res://.godot/imported/sarmarouge-b-s.png-7ce0dfa250f7901b08a7105a6a1dbc9f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sarmarouge-b-s.png"
+dest_files=["res://.godot/imported/sarmarouge-b-s.png-6035819c0fb6c2e28fdfbb5c89089d13.ctex"]
 
 [params]
 

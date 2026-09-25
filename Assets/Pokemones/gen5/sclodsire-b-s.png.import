@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tw25u1i6xo1m"
-path="res://.godot/imported/sclodsire-b-s.png-f2d6b0e5df1f7a4520cbb465315ef307.ctex"
+path="res://.godot/imported/sclodsire-b-s.png-8a7136c34787955d424c1d43ba92603d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sclodsire-b-s.png"
-dest_files=["res://.godot/imported/sclodsire-b-s.png-f2d6b0e5df1f7a4520cbb465315ef307.ctex"]
+source_file="res://Assets/Pokemones/gen5/sclodsire-b-s.png"
+dest_files=["res://.godot/imported/sclodsire-b-s.png-8a7136c34787955d424c1d43ba92603d.ctex"]
 
 [params]
 

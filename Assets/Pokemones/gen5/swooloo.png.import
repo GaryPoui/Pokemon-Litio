@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://r2x1iucsig7i"
-path="res://.godot/imported/swooloo.png-4f8333f197e265134ba90cddfd1237bd.ctex"
+path="res://.godot/imported/swooloo.png-fe2251795728c16ddcb088b77ee054bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/swooloo.png"
-dest_files=["res://.godot/imported/swooloo.png-4f8333f197e265134ba90cddfd1237bd.ctex"]
+source_file="res://Assets/Pokemones/gen5/swooloo.png"
+dest_files=["res://.godot/imported/swooloo.png-fe2251795728c16ddcb088b77ee054bb.ctex"]
 
 [params]
 

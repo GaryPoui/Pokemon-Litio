@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://07rr27qw1833"
-path="res://.godot/imported/squaxwell-b.png-2055a14fe1c4f7cecccf8d24527ce736.ctex"
+path="res://.godot/imported/squaxwell-b.png-21845c7446634202e7b9271e8f93eefe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/squaxwell-b.png"
-dest_files=["res://.godot/imported/squaxwell-b.png-2055a14fe1c4f7cecccf8d24527ce736.ctex"]
+source_file="res://Assets/Pokemones/gen5/squaxwell-b.png"
+dest_files=["res://.godot/imported/squaxwell-b.png-21845c7446634202e7b9271e8f93eefe.ctex"]
 
 [params]
 

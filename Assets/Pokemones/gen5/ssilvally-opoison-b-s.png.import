@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://if8aq7mj4b0n"
-path="res://.godot/imported/ssilvally-opoison-b-s.png-7b63e706ea34d11514e5983b7fe49d3b.ctex"
+path="res://.godot/imported/ssilvally-opoison-b-s.png-3f00aa57f9edf0902b3852c79e70cc25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilvally-opoison-b-s.png"
-dest_files=["res://.godot/imported/ssilvally-opoison-b-s.png-7b63e706ea34d11514e5983b7fe49d3b.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilvally-opoison-b-s.png"
+dest_files=["res://.godot/imported/ssilvally-opoison-b-s.png-3f00aa57f9edf0902b3852c79e70cc25.ctex"]
 
 [params]
 

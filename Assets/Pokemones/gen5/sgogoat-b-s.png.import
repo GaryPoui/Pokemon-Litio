@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmk060vvxr3x5"
-path="res://.godot/imported/sgogoat-b-s.png-7e66a6c32e5a4e8026f4fa72a9e13396.ctex"
+path="res://.godot/imported/sgogoat-b-s.png-dc720d448239d129e541805c48770204.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgogoat-b-s.png"
-dest_files=["res://.godot/imported/sgogoat-b-s.png-7e66a6c32e5a4e8026f4fa72a9e13396.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgogoat-b-s.png"
+dest_files=["res://.godot/imported/sgogoat-b-s.png-dc720d448239d129e541805c48770204.ctex"]
 
 [params]
 

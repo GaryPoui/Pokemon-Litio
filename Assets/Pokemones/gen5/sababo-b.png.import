@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dohyoeqbfcqty"
-path="res://.godot/imported/sababo-b.png-3ee0e2010dbf2628cf27c468627fd0f6.ctex"
+path="res://.godot/imported/sababo-b.png-7461428a21adb081c0dd579e565a004a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sababo-b.png"
-dest_files=["res://.godot/imported/sababo-b.png-3ee0e2010dbf2628cf27c468627fd0f6.ctex"]
+source_file="res://Assets/Pokemones/gen5/sababo-b.png"
+dest_files=["res://.godot/imported/sababo-b.png-7461428a21adb081c0dd579e565a004a.ctex"]
 
 [params]
 

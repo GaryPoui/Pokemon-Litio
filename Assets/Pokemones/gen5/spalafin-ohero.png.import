@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bv0v0vbf0i724"
-path="res://.godot/imported/spalafin-ohero.png-db3daf548f83ac2807c2f04af0c08601.ctex"
+path="res://.godot/imported/spalafin-ohero.png-6036477a54449c8c06755337d0446d81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spalafin-ohero.png"
-dest_files=["res://.godot/imported/spalafin-ohero.png-db3daf548f83ac2807c2f04af0c08601.ctex"]
+source_file="res://Assets/Pokemones/gen5/spalafin-ohero.png"
+dest_files=["res://.godot/imported/spalafin-ohero.png-6036477a54449c8c06755337d0446d81.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ne1dmq8okew8"
-path="res://.godot/imported/ssamurott-ohisui-b-s.png-292a8f6a5539f1d478359e58487f0d87.ctex"
+path="res://.godot/imported/ssamurott-ohisui-b-s.png-1101b494a53e593f286b0e5b67f58fe9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssamurott-ohisui-b-s.png"
-dest_files=["res://.godot/imported/ssamurott-ohisui-b-s.png-292a8f6a5539f1d478359e58487f0d87.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssamurott-ohisui-b-s.png"
+dest_files=["res://.godot/imported/ssamurott-ohisui-b-s.png-1101b494a53e593f286b0e5b67f58fe9.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8eibtlaecdy2"
-path="res://.godot/imported/sastrolotl-b.png-7fcbcb2b4efa1d929bf6a0074ab56eb5.ctex"
+path="res://.godot/imported/sastrolotl-b.png-b8d6832349b8837448fdf02530b93c7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sastrolotl-b.png"
-dest_files=["res://.godot/imported/sastrolotl-b.png-7fcbcb2b4efa1d929bf6a0074ab56eb5.ctex"]
+source_file="res://Assets/Pokemones/gen5/sastrolotl-b.png"
+dest_files=["res://.godot/imported/sastrolotl-b.png-b8d6832349b8837448fdf02530b93c7a.ctex"]
 
 [params]
 

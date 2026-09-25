@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfhaaa7rwsj1u"
-path="res://.godot/imported/sfawnifer-b.png-9c75e593ceb2d309c9e2b6f54340b16c.ctex"
+path="res://.godot/imported/sfawnifer-b.png-d3936ee44444f8cc03ccbd89ecc82487.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfawnifer-b.png"
-dest_files=["res://.godot/imported/sfawnifer-b.png-9c75e593ceb2d309c9e2b6f54340b16c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfawnifer-b.png"
+dest_files=["res://.godot/imported/sfawnifer-b.png-d3936ee44444f8cc03ccbd89ecc82487.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1msaovhujdvn"
-path="res://.godot/imported/snihilego.png-f605b155402852c3dfd5fb5924e9ac7e.ctex"
+path="res://.godot/imported/snihilego.png-2dd88cfd8878da015cc5a9dee544d9d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/snihilego.png"
-dest_files=["res://.godot/imported/snihilego.png-f605b155402852c3dfd5fb5924e9ac7e.ctex"]
+source_file="res://Assets/Pokemones/gen5/snihilego.png"
+dest_files=["res://.godot/imported/snihilego.png-2dd88cfd8878da015cc5a9dee544d9d1.ctex"]
 
 [params]
 

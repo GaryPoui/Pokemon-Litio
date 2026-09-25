@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ck4pygkrymflj"
-path="res://.godot/imported/sdiancie-b-s.png-0722c1bd07bb4a4594d27750f8a722a2.ctex"
+path="res://.godot/imported/sdiancie-b-s.png-35ab8a260d6a6be4e81253913d4d22b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdiancie-b-s.png"
-dest_files=["res://.godot/imported/sdiancie-b-s.png-0722c1bd07bb4a4594d27750f8a722a2.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdiancie-b-s.png"
+dest_files=["res://.godot/imported/sdiancie-b-s.png-35ab8a260d6a6be4e81253913d4d22b8.ctex"]
 
 [params]
 

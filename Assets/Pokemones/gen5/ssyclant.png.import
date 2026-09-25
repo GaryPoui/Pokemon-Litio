@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wnrqh2nrmd00"
-path="res://.godot/imported/ssyclant.png-0fabe6ada84b277d47ab262e3c014b12.ctex"
+path="res://.godot/imported/ssyclant.png-74e2ba2422de577bd7ad228fbc268761.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssyclant.png"
-dest_files=["res://.godot/imported/ssyclant.png-0fabe6ada84b277d47ab262e3c014b12.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssyclant.png"
+dest_files=["res://.godot/imported/ssyclant.png-74e2ba2422de577bd7ad228fbc268761.ctex"]
 
 [params]
 

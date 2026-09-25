@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dc2hflr3660v4"
-path="res://.godot/imported/skrilowatt-b-f.png-7e9b0c502e0caf8460a87d81d2ce4ee6.ctex"
+path="res://.godot/imported/skrilowatt-b-f.png-917ee9d25fb05aaaa437af33bfaab5fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/skrilowatt-b-f.png"
-dest_files=["res://.godot/imported/skrilowatt-b-f.png-7e9b0c502e0caf8460a87d81d2ce4ee6.ctex"]
+source_file="res://Assets/Pokemones/gen5/skrilowatt-b-f.png"
+dest_files=["res://.godot/imported/skrilowatt-b-f.png-917ee9d25fb05aaaa437af33bfaab5fd.ctex"]
 
 [params]
 

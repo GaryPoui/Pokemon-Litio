@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfp6r3s4knpf0"
-path="res://.godot/imported/sdudunsparce-s.png-42e25cf931f358522eeb108ce760829b.ctex"
+path="res://.godot/imported/sdudunsparce-s.png-b15315574ad359d24c256b7edddddf14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdudunsparce-s.png"
-dest_files=["res://.godot/imported/sdudunsparce-s.png-42e25cf931f358522eeb108ce760829b.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdudunsparce-s.png"
+dest_files=["res://.godot/imported/sdudunsparce-s.png-b15315574ad359d24c256b7edddddf14.ctex"]
 
 [params]
 

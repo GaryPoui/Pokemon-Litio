@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbn21d6c8r000"
-path="res://.godot/imported/smorpeko-b-s.png-faa8dbb3e0b5ffd1cb4fc5b04730a5cb.ctex"
+path="res://.godot/imported/smorpeko-b-s.png-9815a42528d8299d3436a097d33c1ee5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smorpeko-b-s.png"
-dest_files=["res://.godot/imported/smorpeko-b-s.png-faa8dbb3e0b5ffd1cb4fc5b04730a5cb.ctex"]
+source_file="res://Assets/Pokemones/gen5/smorpeko-b-s.png"
+dest_files=["res://.godot/imported/smorpeko-b-s.png-9815a42528d8299d3436a097d33c1ee5.ctex"]
 
 [params]
 

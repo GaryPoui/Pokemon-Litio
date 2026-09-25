@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bap1gojl1gnmg"
-path="res://.godot/imported/sdialga-oorigin-s.png-606be6fa750e3434daef7fcb0197de30.ctex"
+path="res://.godot/imported/sdialga-oorigin-s.png-b443b4aefd2d4643e0846fe1d54a2fa2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdialga-oorigin-s.png"
-dest_files=["res://.godot/imported/sdialga-oorigin-s.png-606be6fa750e3434daef7fcb0197de30.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdialga-oorigin-s.png"
+dest_files=["res://.godot/imported/sdialga-oorigin-s.png-b443b4aefd2d4643e0846fe1d54a2fa2.ctex"]
 
 [params]
 

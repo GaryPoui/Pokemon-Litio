@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tgncaq8cc5l2"
-path="res://.godot/imported/spyukumuku.png-40bbc145a92001e546086143e1ad2146.ctex"
+path="res://.godot/imported/spyukumuku.png-53fad6495f23e297cea077e89928eb7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spyukumuku.png"
-dest_files=["res://.godot/imported/spyukumuku.png-40bbc145a92001e546086143e1ad2146.ctex"]
+source_file="res://Assets/Pokemones/gen5/spyukumuku.png"
+dest_files=["res://.godot/imported/spyukumuku.png-53fad6495f23e297cea077e89928eb7f.ctex"]
 
 [params]
 

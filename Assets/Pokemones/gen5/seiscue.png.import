@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://o2as3d2xa70f"
-path="res://.godot/imported/seiscue.png-f5db0363941df3e64b3b6dbab97b9a96.ctex"
+path="res://.godot/imported/seiscue.png-519314b405f5c53c02ce866d7cef7dab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/seiscue.png"
-dest_files=["res://.godot/imported/seiscue.png-f5db0363941df3e64b3b6dbab97b9a96.ctex"]
+source_file="res://Assets/Pokemones/gen5/seiscue.png"
+dest_files=["res://.godot/imported/seiscue.png-519314b405f5c53c02ce866d7cef7dab.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tfwxsg8hgild"
-path="res://.godot/imported/styrunt.png-5230839b3dc0815331395c43c7bda79e.ctex"
+path="res://.godot/imported/styrunt.png-837104cd8fa34db6870f33ce201d8dc6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/styrunt.png"
-dest_files=["res://.godot/imported/styrunt.png-5230839b3dc0815331395c43c7bda79e.ctex"]
+source_file="res://Assets/Pokemones/gen5/styrunt.png"
+dest_files=["res://.godot/imported/styrunt.png-837104cd8fa34db6870f33ce201d8dc6.ctex"]
 
 [params]
 

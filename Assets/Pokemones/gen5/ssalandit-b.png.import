@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://daiyablaldw48"
-path="res://.godot/imported/ssalandit-b.png-3e247603eb242228c76cc28b490997e1.ctex"
+path="res://.godot/imported/ssalandit-b.png-e08a7abb07997649ef5284157ca9712c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssalandit-b.png"
-dest_files=["res://.godot/imported/ssalandit-b.png-3e247603eb242228c76cc28b490997e1.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssalandit-b.png"
+dest_files=["res://.godot/imported/ssalandit-b.png-e08a7abb07997649ef5284157ca9712c.ctex"]
 
 [params]
 

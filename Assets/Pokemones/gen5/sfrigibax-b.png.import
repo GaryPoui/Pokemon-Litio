@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd0ltbix018wk"
-path="res://.godot/imported/sfrigibax-b.png-5720d725b0ca5d04e6d429dc60ad0b18.ctex"
+path="res://.godot/imported/sfrigibax-b.png-a41ba07736c65463f734f22ebf36d27e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfrigibax-b.png"
-dest_files=["res://.godot/imported/sfrigibax-b.png-5720d725b0ca5d04e6d429dc60ad0b18.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfrigibax-b.png"
+dest_files=["res://.godot/imported/sfrigibax-b.png-a41ba07736c65463f734f22ebf36d27e.ctex"]
 
 [params]
 

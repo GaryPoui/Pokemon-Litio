@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ejf73ylyhete"
-path="res://.godot/imported/sarcanine-ohisui-b-s.png-620c88621cf8056f9f7b3e127e6d6319.ctex"
+path="res://.godot/imported/sarcanine-ohisui-b-s.png-89728dfee92c46e3a59c40b33de57c9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sarcanine-ohisui-b-s.png"
-dest_files=["res://.godot/imported/sarcanine-ohisui-b-s.png-620c88621cf8056f9f7b3e127e6d6319.ctex"]
+source_file="res://Assets/Pokemones/gen5/sarcanine-ohisui-b-s.png"
+dest_files=["res://.godot/imported/sarcanine-ohisui-b-s.png-89728dfee92c46e3a59c40b33de57c9c.ctex"]
 
 [params]
 

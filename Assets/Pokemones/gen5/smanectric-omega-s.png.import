@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dta0kxp6q85sa"
-path="res://.godot/imported/smanectric-omega-s.png-1e627f31fb6416afb71b18b3aecff490.ctex"
+path="res://.godot/imported/smanectric-omega-s.png-ec77d8d61893748432b20730896e2bf0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smanectric-omega-s.png"
-dest_files=["res://.godot/imported/smanectric-omega-s.png-1e627f31fb6416afb71b18b3aecff490.ctex"]
+source_file="res://Assets/Pokemones/gen5/smanectric-omega-s.png"
+dest_files=["res://.godot/imported/smanectric-omega-s.png-ec77d8d61893748432b20730896e2bf0.ctex"]
 
 [params]
 

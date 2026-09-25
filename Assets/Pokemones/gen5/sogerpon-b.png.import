@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwjhgl3dxb0ad"
-path="res://.godot/imported/sogerpon-b.png-d238d75440b67a74608d4683ec98515c.ctex"
+path="res://.godot/imported/sogerpon-b.png-2993a95ad0ac231bfd8e012385bb58fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sogerpon-b.png"
-dest_files=["res://.godot/imported/sogerpon-b.png-d238d75440b67a74608d4683ec98515c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sogerpon-b.png"
+dest_files=["res://.godot/imported/sogerpon-b.png-2993a95ad0ac231bfd8e012385bb58fd.ctex"]
 
 [params]
 

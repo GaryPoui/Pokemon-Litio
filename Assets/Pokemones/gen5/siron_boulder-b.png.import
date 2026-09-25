@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvupt88y6adq8"
-path="res://.godot/imported/siron_boulder-b.png-664f8f35ab7358e55c421cbead718788.ctex"
+path="res://.godot/imported/siron_boulder-b.png-6b41a1fc385899f7521f9cec69ae59fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/siron_boulder-b.png"
-dest_files=["res://.godot/imported/siron_boulder-b.png-664f8f35ab7358e55c421cbead718788.ctex"]
+source_file="res://Assets/Pokemones/gen5/siron_boulder-b.png"
+dest_files=["res://.godot/imported/siron_boulder-b.png-6b41a1fc385899f7521f9cec69ae59fa.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2vuoilrrwf4n"
-path="res://.godot/imported/stapu_lele.png-27414fb5f09d264563ad278a16c03806.ctex"
+path="res://.godot/imported/stapu_lele.png-ac1f36d47941445bdb0c183b6db51c12.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stapu_lele.png"
-dest_files=["res://.godot/imported/stapu_lele.png-27414fb5f09d264563ad278a16c03806.ctex"]
+source_file="res://Assets/Pokemones/gen5/stapu_lele.png"
+dest_files=["res://.godot/imported/stapu_lele.png-ac1f36d47941445bdb0c183b6db51c12.ctex"]
 
 [params]
 

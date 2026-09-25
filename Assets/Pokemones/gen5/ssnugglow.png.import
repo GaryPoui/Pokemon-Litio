@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgdmyxhhdqa02"
-path="res://.godot/imported/ssnugglow.png-2467b7cefb3fb9c50bd6052af249c087.ctex"
+path="res://.godot/imported/ssnugglow.png-174aec8cf585d34c84def0ba7c1bcfd4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssnugglow.png"
-dest_files=["res://.godot/imported/ssnugglow.png-2467b7cefb3fb9c50bd6052af249c087.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssnugglow.png"
+dest_files=["res://.godot/imported/ssnugglow.png-174aec8cf585d34c84def0ba7c1bcfd4.ctex"]
 
 [params]
 

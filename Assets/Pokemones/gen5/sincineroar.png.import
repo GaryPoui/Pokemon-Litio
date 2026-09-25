@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bke3kwfgeyhp2"
-path="res://.godot/imported/sincineroar.png-16b84cfb08939561febda94b8bc28c84.ctex"
+path="res://.godot/imported/sincineroar.png-fbf855c41275075aa4a056395105b332.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sincineroar.png"
-dest_files=["res://.godot/imported/sincineroar.png-16b84cfb08939561febda94b8bc28c84.ctex"]
+source_file="res://Assets/Pokemones/gen5/sincineroar.png"
+dest_files=["res://.godot/imported/sincineroar.png-fbf855c41275075aa4a056395105b332.ctex"]
 
 [params]
 

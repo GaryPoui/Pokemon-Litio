@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpm6n2wcibgvr"
-path="res://.godot/imported/svivillon-ocontinental-s.png-eb37c64eecf1eb8ec753e9ae308c6243.ctex"
+path="res://.godot/imported/svivillon-ocontinental-s.png-3eaf91e8afc9f89a9a7da9840d2480c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svivillon-ocontinental-s.png"
-dest_files=["res://.godot/imported/svivillon-ocontinental-s.png-eb37c64eecf1eb8ec753e9ae308c6243.ctex"]
+source_file="res://Assets/Pokemones/gen5/svivillon-ocontinental-s.png"
+dest_files=["res://.godot/imported/svivillon-ocontinental-s.png-3eaf91e8afc9f89a9a7da9840d2480c4.ctex"]
 
 [params]
 

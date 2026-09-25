@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crkwgd2sclymk"
-path="res://.godot/imported/sthievul.png-2b9565ac8ffbf7544c039c43dc0edbd8.ctex"
+path="res://.godot/imported/sthievul.png-b5bccedab447a2a1ef82d1af228f8f8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sthievul.png"
-dest_files=["res://.godot/imported/sthievul.png-2b9565ac8ffbf7544c039c43dc0edbd8.ctex"]
+source_file="res://Assets/Pokemones/gen5/sthievul.png"
+dest_files=["res://.godot/imported/sthievul.png-b5bccedab447a2a1ef82d1af228f8f8c.ctex"]
 
 [params]
 

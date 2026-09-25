@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtovcdx6ssvy2"
-path="res://.godot/imported/seevee-ostarter-b.png-df346d85060406280d9589e8d11364d9.ctex"
+path="res://.godot/imported/seevee-ostarter-b.png-765eb593469b62981a4f2394883c340d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/seevee-ostarter-b.png"
-dest_files=["res://.godot/imported/seevee-ostarter-b.png-df346d85060406280d9589e8d11364d9.ctex"]
+source_file="res://Assets/Pokemones/gen5/seevee-ostarter-b.png"
+dest_files=["res://.godot/imported/seevee-ostarter-b.png-765eb593469b62981a4f2394883c340d.ctex"]
 
 [params]
 

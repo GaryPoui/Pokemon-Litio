@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cctnjs62o8v6c"
-path="res://.godot/imported/sokidogi.png-bce0f5b35b162aac3daa80455b07ceaa.ctex"
+path="res://.godot/imported/sokidogi.png-fc4e0eb2b9ce6b9695f394d815c5df94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sokidogi.png"
-dest_files=["res://.godot/imported/sokidogi.png-bce0f5b35b162aac3daa80455b07ceaa.ctex"]
+source_file="res://Assets/Pokemones/gen5/sokidogi.png"
+dest_files=["res://.godot/imported/sokidogi.png-fc4e0eb2b9ce6b9695f394d815c5df94.ctex"]
 
 [params]
 

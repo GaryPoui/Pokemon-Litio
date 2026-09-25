@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://03p2qu45axo8"
-path="res://.godot/imported/ssobble-b.png-97b8ce7150d4236caa2553f96f504713.ctex"
+path="res://.godot/imported/ssobble-b.png-e203477107c44acc9e8467e2c947786c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssobble-b.png"
-dest_files=["res://.godot/imported/ssobble-b.png-97b8ce7150d4236caa2553f96f504713.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssobble-b.png"
+dest_files=["res://.godot/imported/ssobble-b.png-e203477107c44acc9e8467e2c947786c.ctex"]
 
 [params]
 

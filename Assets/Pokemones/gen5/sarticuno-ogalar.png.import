@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csqxo2yy30gfh"
-path="res://.godot/imported/sarticuno-ogalar.png-80799de0546319e4c8675bac9377ed74.ctex"
+path="res://.godot/imported/sarticuno-ogalar.png-3b3007e98a25d71db6078a9dcedd6649.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sarticuno-ogalar.png"
-dest_files=["res://.godot/imported/sarticuno-ogalar.png-80799de0546319e4c8675bac9377ed74.ctex"]
+source_file="res://Assets/Pokemones/gen5/sarticuno-ogalar.png"
+dest_files=["res://.godot/imported/sarticuno-ogalar.png-3b3007e98a25d71db6078a9dcedd6649.ctex"]
 
 [params]
 

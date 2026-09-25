@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://41u1m8xdrv0x"
-path="res://.godot/imported/svivillon-opokeball-b-s.png-1228411782be966a9dae6c07e46c5365.ctex"
+path="res://.godot/imported/svivillon-opokeball-b-s.png-4ab11f3e0bc99d9c1b48134c9636d99f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svivillon-opokeball-b-s.png"
-dest_files=["res://.godot/imported/svivillon-opokeball-b-s.png-1228411782be966a9dae6c07e46c5365.ctex"]
+source_file="res://Assets/Pokemones/gen5/svivillon-opokeball-b-s.png"
+dest_files=["res://.godot/imported/svivillon-opokeball-b-s.png-4ab11f3e0bc99d9c1b48134c9636d99f.ctex"]
 
 [params]
 

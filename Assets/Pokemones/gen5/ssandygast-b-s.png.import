@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1kdn3lujcpmn"
-path="res://.godot/imported/ssandygast-b-s.png-5bbb690907fffeb4e0366830edb0c400.ctex"
+path="res://.godot/imported/ssandygast-b-s.png-4d6f626d8239747e4d8a2ff584f544fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssandygast-b-s.png"
-dest_files=["res://.godot/imported/ssandygast-b-s.png-5bbb690907fffeb4e0366830edb0c400.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssandygast-b-s.png"
+dest_files=["res://.godot/imported/ssandygast-b-s.png-4d6f626d8239747e4d8a2ff584f544fc.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cejxnoturx584"
-path="res://.godot/imported/sbraixen-s.png-f58669d02e084629c47706c629d7e23d.ctex"
+path="res://.godot/imported/sbraixen-s.png-98c1eab231df6df7282aa8b4bc68c4be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbraixen-s.png"
-dest_files=["res://.godot/imported/sbraixen-s.png-f58669d02e084629c47706c629d7e23d.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbraixen-s.png"
+dest_files=["res://.godot/imported/sbraixen-s.png-98c1eab231df6df7282aa8b4bc68c4be.ctex"]
 
 [params]
 

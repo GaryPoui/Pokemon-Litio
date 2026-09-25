@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ck6mfaii6ao1e"
-path="res://.godot/imported/ssteelix-omega-s.png-bbb2092cc5205300b06f1491c7c3b55f.ctex"
+path="res://.godot/imported/ssteelix-omega-s.png-84f81adf6b12c9ee27893d3663eeaf1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssteelix-omega-s.png"
-dest_files=["res://.godot/imported/ssteelix-omega-s.png-bbb2092cc5205300b06f1491c7c3b55f.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssteelix-omega-s.png"
+dest_files=["res://.godot/imported/ssteelix-omega-s.png-84f81adf6b12c9ee27893d3663eeaf1d.ctex"]
 
 [params]
 

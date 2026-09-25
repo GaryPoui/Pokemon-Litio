@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmi3ga0txue3n"
-path="res://.godot/imported/syamask-ogalar-b.png-1d0cce4c307525729df182a98289f234.ctex"
+path="res://.godot/imported/syamask-ogalar-b.png-43482b9bca6844f94d98f72c0d086813.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/syamask-ogalar-b.png"
-dest_files=["res://.godot/imported/syamask-ogalar-b.png-1d0cce4c307525729df182a98289f234.ctex"]
+source_file="res://Assets/Pokemones/gen5/syamask-ogalar-b.png"
+dest_files=["res://.godot/imported/syamask-ogalar-b.png-43482b9bca6844f94d98f72c0d086813.ctex"]
 
 [params]
 

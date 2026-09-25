@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c02avnt2ub2tc"
-path="res://.godot/imported/smiasmite-b-s.png-ce9e204a1b401e60974836892923a375.ctex"
+path="res://.godot/imported/smiasmite-b-s.png-534c69ca296e560c42bec2c085dc1315.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smiasmite-b-s.png"
-dest_files=["res://.godot/imported/smiasmite-b-s.png-ce9e204a1b401e60974836892923a375.ctex"]
+source_file="res://Assets/Pokemones/gen5/smiasmite-b-s.png"
+dest_files=["res://.godot/imported/smiasmite-b-s.png-534c69ca296e560c42bec2c085dc1315.ctex"]
 
 [params]
 

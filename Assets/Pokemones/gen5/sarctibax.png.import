@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://w3h3a0r0qyk0"
-path="res://.godot/imported/sarctibax.png-f7c8e77e7702042b8d9dc58c314c80e6.ctex"
+path="res://.godot/imported/sarctibax.png-fb6fc5d080204164365b15d7ec30b638.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sarctibax.png"
-dest_files=["res://.godot/imported/sarctibax.png-f7c8e77e7702042b8d9dc58c314c80e6.ctex"]
+source_file="res://Assets/Pokemones/gen5/sarctibax.png"
+dest_files=["res://.godot/imported/sarctibax.png-fb6fc5d080204164365b15d7ec30b638.ctex"]
 
 [params]
 

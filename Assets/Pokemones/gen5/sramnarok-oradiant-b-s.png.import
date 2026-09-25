@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bja7nac8h2rms"
-path="res://.godot/imported/sramnarok-oradiant-b-s.png-95a3ccd7e6cd90ee308d15b2dca05821.ctex"
+path="res://.godot/imported/sramnarok-oradiant-b-s.png-5970d31f5d170e4a512c6b8b0f274b8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sramnarok-oradiant-b-s.png"
-dest_files=["res://.godot/imported/sramnarok-oradiant-b-s.png-95a3ccd7e6cd90ee308d15b2dca05821.ctex"]
+source_file="res://Assets/Pokemones/gen5/sramnarok-oradiant-b-s.png"
+dest_files=["res://.godot/imported/sramnarok-oradiant-b-s.png-5970d31f5d170e4a512c6b8b0f274b8d.ctex"]
 
 [params]
 

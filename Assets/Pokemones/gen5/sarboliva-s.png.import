@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6amkmfw2i465"
-path="res://.godot/imported/sarboliva-s.png-ee01a95858b1884983ead9f023c0eb68.ctex"
+path="res://.godot/imported/sarboliva-s.png-ccc07b3ed631981f358a8207ac14cb21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sarboliva-s.png"
-dest_files=["res://.godot/imported/sarboliva-s.png-ee01a95858b1884983ead9f023c0eb68.ctex"]
+source_file="res://Assets/Pokemones/gen5/sarboliva-s.png"
+dest_files=["res://.godot/imported/sarboliva-s.png-ccc07b3ed631981f358a8207ac14cb21.ctex"]
 
 [params]
 

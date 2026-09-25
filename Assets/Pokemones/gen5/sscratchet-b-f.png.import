@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dj50dtxb6rgod"
-path="res://.godot/imported/sscratchet-b-f.png-05d4bae8ce0abcc47a4ff047eb9fa6d5.ctex"
+path="res://.godot/imported/sscratchet-b-f.png-28b0c62db0dfab63c4b34d0c69d13e86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sscratchet-b-f.png"
-dest_files=["res://.godot/imported/sscratchet-b-f.png-05d4bae8ce0abcc47a4ff047eb9fa6d5.ctex"]
+source_file="res://Assets/Pokemones/gen5/sscratchet-b-f.png"
+dest_files=["res://.godot/imported/sscratchet-b-f.png-28b0c62db0dfab63c4b34d0c69d13e86.ctex"]
 
 [params]
 

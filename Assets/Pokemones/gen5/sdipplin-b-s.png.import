@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ch3koaq32fn8x"
-path="res://.godot/imported/sdipplin-b-s.png-a8ded1492b1578cf25778fa19a0baa9f.ctex"
+path="res://.godot/imported/sdipplin-b-s.png-92fd2c35d980ff527a84400cb8ed5079.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdipplin-b-s.png"
-dest_files=["res://.godot/imported/sdipplin-b-s.png-a8ded1492b1578cf25778fa19a0baa9f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdipplin-b-s.png"
+dest_files=["res://.godot/imported/sdipplin-b-s.png-92fd2c35d980ff527a84400cb8ed5079.ctex"]
 
 [params]
 

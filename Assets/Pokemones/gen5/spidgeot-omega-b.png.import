@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xj62bj5je8mv"
-path="res://.godot/imported/spidgeot-omega-b.png-b745163e71598740c9b5ea0d43a5b692.ctex"
+path="res://.godot/imported/spidgeot-omega-b.png-87cf1a7b318fca47e746476885d20ea4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spidgeot-omega-b.png"
-dest_files=["res://.godot/imported/spidgeot-omega-b.png-b745163e71598740c9b5ea0d43a5b692.ctex"]
+source_file="res://Assets/Pokemones/gen5/spidgeot-omega-b.png"
+dest_files=["res://.godot/imported/spidgeot-omega-b.png-87cf1a7b318fca47e746476885d20ea4.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp2pmnetv8bct"
-path="res://.godot/imported/ssmokomodo-b.png-5d1df21c53fa4e79b073f9d6288e1524.ctex"
+path="res://.godot/imported/ssmokomodo-b.png-e8b0644aaf4ab871c2f425cf58b8df74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssmokomodo-b.png"
-dest_files=["res://.godot/imported/ssmokomodo-b.png-5d1df21c53fa4e79b073f9d6288e1524.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssmokomodo-b.png"
+dest_files=["res://.godot/imported/ssmokomodo-b.png-e8b0644aaf4ab871c2f425cf58b8df74.ctex"]
 
 [params]
 

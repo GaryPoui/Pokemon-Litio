@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clm7u2vm8oj4s"
-path="res://.godot/imported/smiraidon.png-75f2f6b0fd85eaee58ba9806b0e50748.ctex"
+path="res://.godot/imported/smiraidon.png-dea86c36198e8cd1a95ff721c61cafa0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smiraidon.png"
-dest_files=["res://.godot/imported/smiraidon.png-75f2f6b0fd85eaee58ba9806b0e50748.ctex"]
+source_file="res://Assets/Pokemones/gen5/smiraidon.png"
+dest_files=["res://.godot/imported/smiraidon.png-dea86c36198e8cd1a95ff721c61cafa0.ctex"]
 
 [params]
 

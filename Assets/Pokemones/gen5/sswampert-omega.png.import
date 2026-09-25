@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://trigv47iuu6q"
-path="res://.godot/imported/sswampert-omega.png-100fc2a0d39ba9d798e5eff7dc17cfea.ctex"
+path="res://.godot/imported/sswampert-omega.png-1ce0690cca3c51b43fb72f0241783dfc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sswampert-omega.png"
-dest_files=["res://.godot/imported/sswampert-omega.png-100fc2a0d39ba9d798e5eff7dc17cfea.ctex"]
+source_file="res://Assets/Pokemones/gen5/sswampert-omega.png"
+dest_files=["res://.godot/imported/sswampert-omega.png-1ce0690cca3c51b43fb72f0241783dfc.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0yt15olo0iin"
-path="res://.godot/imported/scentiskorch-b-g.png-6179b5f545536d447c8934d9e20e92a0.ctex"
+path="res://.godot/imported/scentiskorch-b-g.png-0f4bb96ce310e0e53791971a39b56450.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scentiskorch-b-g.png"
-dest_files=["res://.godot/imported/scentiskorch-b-g.png-6179b5f545536d447c8934d9e20e92a0.ctex"]
+source_file="res://Assets/Pokemones/gen5/scentiskorch-b-g.png"
+dest_files=["res://.godot/imported/scentiskorch-b-g.png-0f4bb96ce310e0e53791971a39b56450.ctex"]
 
 [params]
 

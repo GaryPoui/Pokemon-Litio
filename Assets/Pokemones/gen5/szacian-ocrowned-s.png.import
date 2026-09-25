@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://by5fltapksvrw"
-path="res://.godot/imported/szacian-ocrowned-s.png-befbad258658f47bc29883b1a41ae1ee.ctex"
+path="res://.godot/imported/szacian-ocrowned-s.png-beacf9b4cab7f53204050d973638e17f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/szacian-ocrowned-s.png"
-dest_files=["res://.godot/imported/szacian-ocrowned-s.png-befbad258658f47bc29883b1a41ae1ee.ctex"]
+source_file="res://Assets/Pokemones/gen5/szacian-ocrowned-s.png"
+dest_files=["res://.godot/imported/szacian-ocrowned-s.png-beacf9b4cab7f53204050d973638e17f.ctex"]
 
 [params]
 

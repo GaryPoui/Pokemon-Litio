@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byr0pqrg6262i"
-path="res://.godot/imported/sglalie-omega.png-c46b84268a47b32b57ab0ee2261cb8cf.ctex"
+path="res://.godot/imported/sglalie-omega.png-7ad9de6a98844d43ea0f48e0eb97d461.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sglalie-omega.png"
-dest_files=["res://.godot/imported/sglalie-omega.png-c46b84268a47b32b57ab0ee2261cb8cf.ctex"]
+source_file="res://Assets/Pokemones/gen5/sglalie-omega.png"
+dest_files=["res://.godot/imported/sglalie-omega.png-7ad9de6a98844d43ea0f48e0eb97d461.ctex"]
 
 [params]
 

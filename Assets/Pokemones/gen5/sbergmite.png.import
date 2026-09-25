@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2olpt7c3nub4"
-path="res://.godot/imported/sbergmite.png-9659a182e26c32031c60a5e03ac9ec96.ctex"
+path="res://.godot/imported/sbergmite.png-59e3a40f1fc05cfb045736118ac59b66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbergmite.png"
-dest_files=["res://.godot/imported/sbergmite.png-9659a182e26c32031c60a5e03ac9ec96.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbergmite.png"
+dest_files=["res://.godot/imported/sbergmite.png-59e3a40f1fc05cfb045736118ac59b66.ctex"]
 
 [params]
 

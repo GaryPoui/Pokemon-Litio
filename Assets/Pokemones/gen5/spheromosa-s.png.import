@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2m71qgi6w868"
-path="res://.godot/imported/spheromosa-s.png-83c3f1502ec5cbeb0d944150de10398e.ctex"
+path="res://.godot/imported/spheromosa-s.png-414075cc7df4c2a401b0e42914a4eddf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spheromosa-s.png"
-dest_files=["res://.godot/imported/spheromosa-s.png-83c3f1502ec5cbeb0d944150de10398e.ctex"]
+source_file="res://Assets/Pokemones/gen5/spheromosa-s.png"
+dest_files=["res://.godot/imported/spheromosa-s.png-414075cc7df4c2a401b0e42914a4eddf.ctex"]
 
 [params]
 

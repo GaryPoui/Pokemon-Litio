@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cos1aewxn1j5g"
-path="res://.godot/imported/scawdet.png-735f3359ad658a1e9639a730896596d0.ctex"
+path="res://.godot/imported/scawdet.png-71d605d4f1dc463f87aab2909158fd0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scawdet.png"
-dest_files=["res://.godot/imported/scawdet.png-735f3359ad658a1e9639a730896596d0.ctex"]
+source_file="res://Assets/Pokemones/gen5/scawdet.png"
+dest_files=["res://.godot/imported/scawdet.png-71d605d4f1dc463f87aab2909158fd0c.ctex"]
 
 [params]
 

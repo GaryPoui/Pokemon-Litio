@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbi38usrgd8b6"
-path="res://.godot/imported/sduraludon-g.png-0ac8c31830253ed01d431d670d6c4cd2.ctex"
+path="res://.godot/imported/sduraludon-g.png-5bfd12708973fdd2bc84a6c81768b669.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sduraludon-g.png"
-dest_files=["res://.godot/imported/sduraludon-g.png-0ac8c31830253ed01d431d670d6c4cd2.ctex"]
+source_file="res://Assets/Pokemones/gen5/sduraludon-g.png"
+dest_files=["res://.godot/imported/sduraludon-g.png-5bfd12708973fdd2bc84a6c81768b669.ctex"]
 
 [params]
 

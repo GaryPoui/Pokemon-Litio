@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccvdt3huvdjel"
-path="res://.godot/imported/soverqwil-b.png-b1048318bf083412cc7828434207c482.ctex"
+path="res://.godot/imported/soverqwil-b.png-c1cc8699c63465d32b9c7193300cc3f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/soverqwil-b.png"
-dest_files=["res://.godot/imported/soverqwil-b.png-b1048318bf083412cc7828434207c482.ctex"]
+source_file="res://Assets/Pokemones/gen5/soverqwil-b.png"
+dest_files=["res://.godot/imported/soverqwil-b.png-c1cc8699c63465d32b9c7193300cc3f6.ctex"]
 
 [params]
 

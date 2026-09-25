@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgfkbb0r40n5r"
-path="res://.godot/imported/schuggalong-b.png-2433577706e811bc49c6f7c4feedf2ba.ctex"
+path="res://.godot/imported/schuggalong-b.png-36b6465608520208dc74b8296cb9b83d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/schuggalong-b.png"
-dest_files=["res://.godot/imported/schuggalong-b.png-2433577706e811bc49c6f7c4feedf2ba.ctex"]
+source_file="res://Assets/Pokemones/gen5/schuggalong-b.png"
+dest_files=["res://.godot/imported/schuggalong-b.png-36b6465608520208dc74b8296cb9b83d.ctex"]
 
 [params]
 

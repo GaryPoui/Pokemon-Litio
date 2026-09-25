@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://p3l5kf0ilp47"
-path="res://.godot/imported/srunerigus-b.png-139c91d095e42f2dd1736b37dc453369.ctex"
+path="res://.godot/imported/srunerigus-b.png-23d89b96233f5409916158ca36f75b48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/srunerigus-b.png"
-dest_files=["res://.godot/imported/srunerigus-b.png-139c91d095e42f2dd1736b37dc453369.ctex"]
+source_file="res://Assets/Pokemones/gen5/srunerigus-b.png"
+dest_files=["res://.godot/imported/srunerigus-b.png-23d89b96233f5409916158ca36f75b48.ctex"]
 
 [params]
 

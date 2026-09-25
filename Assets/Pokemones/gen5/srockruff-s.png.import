@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1eq4f7t07ews"
-path="res://.godot/imported/srockruff-s.png-411520ff0513ac564f5f14be8d93a382.ctex"
+path="res://.godot/imported/srockruff-s.png-9f056ba5beaa042d2f8b974253229fc8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/srockruff-s.png"
-dest_files=["res://.godot/imported/srockruff-s.png-411520ff0513ac564f5f14be8d93a382.ctex"]
+source_file="res://Assets/Pokemones/gen5/srockruff-s.png"
+dest_files=["res://.godot/imported/srockruff-s.png-9f056ba5beaa042d2f8b974253229fc8.ctex"]
 
 [params]
 

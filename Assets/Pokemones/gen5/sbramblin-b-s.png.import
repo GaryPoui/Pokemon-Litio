@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2rd16yc0ua82"
-path="res://.godot/imported/sbramblin-b-s.png-a72c8d2bc75061179977663f8c96de77.ctex"
+path="res://.godot/imported/sbramblin-b-s.png-5b41ee78faa31751b90962ab5d673cef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbramblin-b-s.png"
-dest_files=["res://.godot/imported/sbramblin-b-s.png-a72c8d2bc75061179977663f8c96de77.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbramblin-b-s.png"
+dest_files=["res://.godot/imported/sbramblin-b-s.png-5b41ee78faa31751b90962ab5d673cef.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyq83ovjdwngr"
-path="res://.godot/imported/scarkol.png-1361f9284925d9ddca4202801a80c0fb.ctex"
+path="res://.godot/imported/scarkol.png-0e16647d8c6e701c763447a1aebef0b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scarkol.png"
-dest_files=["res://.godot/imported/scarkol.png-1361f9284925d9ddca4202801a80c0fb.ctex"]
+source_file="res://Assets/Pokemones/gen5/scarkol.png"
+dest_files=["res://.godot/imported/scarkol.png-0e16647d8c6e701c763447a1aebef0b2.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwlfmxaslgvse"
-path="res://.godot/imported/ssteenee-s.png-450d9d2dcb0f81433204ae0caa05e328.ctex"
+path="res://.godot/imported/ssteenee-s.png-1704933338df76cd82e0da8ee0236035.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssteenee-s.png"
-dest_files=["res://.godot/imported/ssteenee-s.png-450d9d2dcb0f81433204ae0caa05e328.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssteenee-s.png"
+dest_files=["res://.godot/imported/ssteenee-s.png-1704933338df76cd82e0da8ee0236035.ctex"]
 
 [params]
 

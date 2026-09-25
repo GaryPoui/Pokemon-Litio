@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dukbdasorvj4i"
-path="res://.godot/imported/sshiinotic.png-db93613d67e0b9325a650a0698823a6a.ctex"
+path="res://.godot/imported/sshiinotic.png-8b9947b290cfbfa9f77e5f539f63aca8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sshiinotic.png"
-dest_files=["res://.godot/imported/sshiinotic.png-db93613d67e0b9325a650a0698823a6a.ctex"]
+source_file="res://Assets/Pokemones/gen5/sshiinotic.png"
+dest_files=["res://.godot/imported/sshiinotic.png-8b9947b290cfbfa9f77e5f539f63aca8.ctex"]
 
 [params]
 

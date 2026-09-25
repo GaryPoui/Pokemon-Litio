@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cv47c3274pbnw"
-path="res://.godot/imported/senamorus-otherian-b-s.png-9996e663852dfcacb980c5a594fca711.ctex"
+path="res://.godot/imported/senamorus-otherian-b-s.png-cc747acf5daf7c34caea43d1dd9470f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/senamorus-otherian-b-s.png"
-dest_files=["res://.godot/imported/senamorus-otherian-b-s.png-9996e663852dfcacb980c5a594fca711.ctex"]
+source_file="res://Assets/Pokemones/gen5/senamorus-otherian-b-s.png"
+dest_files=["res://.godot/imported/senamorus-otherian-b-s.png-cc747acf5daf7c34caea43d1dd9470f2.ctex"]
 
 [params]
 

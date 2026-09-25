@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bn1kycdj6fetp"
-path="res://.godot/imported/sflarelm-s.png-73c47804e5b10cc27d66136e3342ab9b.ctex"
+path="res://.godot/imported/sflarelm-s.png-f15654ca6c9dd7bbc3850399d6965fc9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sflarelm-s.png"
-dest_files=["res://.godot/imported/sflarelm-s.png-73c47804e5b10cc27d66136e3342ab9b.ctex"]
+source_file="res://Assets/Pokemones/gen5/sflarelm-s.png"
+dest_files=["res://.godot/imported/sflarelm-s.png-f15654ca6c9dd7bbc3850399d6965fc9.ctex"]
 
 [params]
 

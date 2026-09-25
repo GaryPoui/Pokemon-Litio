@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dphgopdi2n5hd"
-path="res://.godot/imported/svoodoll.png-4ed9c5b36b2394c7335091ab8a882ff1.ctex"
+path="res://.godot/imported/svoodoll.png-03611bc8644a0a16e9c32dd4d092b7ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svoodoll.png"
-dest_files=["res://.godot/imported/svoodoll.png-4ed9c5b36b2394c7335091ab8a882ff1.ctex"]
+source_file="res://Assets/Pokemones/gen5/svoodoll.png"
+dest_files=["res://.godot/imported/svoodoll.png-03611bc8644a0a16e9c32dd4d092b7ee.ctex"]
 
 [params]
 

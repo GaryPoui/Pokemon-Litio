@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qncei4nhr5k7"
-path="res://.godot/imported/sgeodude-oalola-b-s.png-9754c3886887276028d1976df527faf1.ctex"
+path="res://.godot/imported/sgeodude-oalola-b-s.png-ddd383990ec6601e9494d2b83b680182.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgeodude-oalola-b-s.png"
-dest_files=["res://.godot/imported/sgeodude-oalola-b-s.png-9754c3886887276028d1976df527faf1.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgeodude-oalola-b-s.png"
+dest_files=["res://.godot/imported/sgeodude-oalola-b-s.png-ddd383990ec6601e9494d2b83b680182.ctex"]
 
 [params]
 

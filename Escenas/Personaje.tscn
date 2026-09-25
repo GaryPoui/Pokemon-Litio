@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=3 uid="uid://bw6qghia3ohfr"]
 
-[ext_resource type="Script" uid="uid://salrlfwbpf88" path="res://Escenas/movimiento.gd" id="1_0gco6"]
-[ext_resource type="Texture2D" uid="uid://crpl2ijwynth2" path="res://Asets /Personajes/hero_godot_grid_40x40.png" id="1_qg4o5"]
+[ext_resource type="Script" uid="uid://db165vagalcer" path="res://Scripts/movimiento.gd" id="1_0gco6"]
+[ext_resource type="Texture2D" uid="uid://crpl2ijwynth2" path="res://Assets/Personajes/hero_godot_grid_40x40.png" id="1_qg4o5"]
 [ext_resource type="PackedScene" path="res://Escenas/UI/Mochila/Mochila.tscn" id="3_mochila"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b2o68"]

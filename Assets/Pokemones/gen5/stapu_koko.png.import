@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0pycp7cs5vks"
-path="res://.godot/imported/stapu_koko.png-5cfea7993f0aee59895240556cdfb324.ctex"
+path="res://.godot/imported/stapu_koko.png-bc328589a4f276fb9497cc2e5c7c8fda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stapu_koko.png"
-dest_files=["res://.godot/imported/stapu_koko.png-5cfea7993f0aee59895240556cdfb324.ctex"]
+source_file="res://Assets/Pokemones/gen5/stapu_koko.png"
+dest_files=["res://.godot/imported/stapu_koko.png-bc328589a4f276fb9497cc2e5c7c8fda.ctex"]
 
 [params]
 

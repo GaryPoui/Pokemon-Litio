@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5o8b2btocmaq"
-path="res://.godot/imported/stoucannon-b-s.png-adaafbcb508801ac5daabac355d21291.ctex"
+path="res://.godot/imported/stoucannon-b-s.png-447c4ab7948b9892f6d640a225c8fa84.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stoucannon-b-s.png"
-dest_files=["res://.godot/imported/stoucannon-b-s.png-adaafbcb508801ac5daabac355d21291.ctex"]
+source_file="res://Assets/Pokemones/gen5/stoucannon-b-s.png"
+dest_files=["res://.godot/imported/stoucannon-b-s.png-447c4ab7948b9892f6d640a225c8fa84.ctex"]
 
 [params]
 

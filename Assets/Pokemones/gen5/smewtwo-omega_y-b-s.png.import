@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2s1cg4kat6cb"
-path="res://.godot/imported/smewtwo-omega_y-b-s.png-5aa4fcaa9d22cf45459e0e1edac4ac9f.ctex"
+path="res://.godot/imported/smewtwo-omega_y-b-s.png-9bcade7181adda90309cbdc736493322.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smewtwo-omega_y-b-s.png"
-dest_files=["res://.godot/imported/smewtwo-omega_y-b-s.png-5aa4fcaa9d22cf45459e0e1edac4ac9f.ctex"]
+source_file="res://Assets/Pokemones/gen5/smewtwo-omega_y-b-s.png"
+dest_files=["res://.godot/imported/smewtwo-omega_y-b-s.png-9bcade7181adda90309cbdc736493322.ctex"]
 
 [params]
 

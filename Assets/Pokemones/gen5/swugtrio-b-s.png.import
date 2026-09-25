@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cexw71rp43j0m"
-path="res://.godot/imported/swugtrio-b-s.png-6d580cac2d113665d19b6f93feb325b5.ctex"
+path="res://.godot/imported/swugtrio-b-s.png-ac5750fb4ab6edde28114542dc3b7564.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/swugtrio-b-s.png"
-dest_files=["res://.godot/imported/swugtrio-b-s.png-6d580cac2d113665d19b6f93feb325b5.ctex"]
+source_file="res://Assets/Pokemones/gen5/swugtrio-b-s.png"
+dest_files=["res://.godot/imported/swugtrio-b-s.png-ac5750fb4ab6edde28114542dc3b7564.ctex"]
 
 [params]
 

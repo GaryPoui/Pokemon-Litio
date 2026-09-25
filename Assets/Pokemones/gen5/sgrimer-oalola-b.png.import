@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ceira7scvfbt8"
-path="res://.godot/imported/sgrimer-oalola-b.png-6d33bc626abc9fd01ac363e766120f2d.ctex"
+path="res://.godot/imported/sgrimer-oalola-b.png-c8337c8c44909db2d5d1b9f589d3d564.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgrimer-oalola-b.png"
-dest_files=["res://.godot/imported/sgrimer-oalola-b.png-6d33bc626abc9fd01ac363e766120f2d.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgrimer-oalola-b.png"
+dest_files=["res://.godot/imported/sgrimer-oalola-b.png-c8337c8c44909db2d5d1b9f589d3d564.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1kog683bisld"
-path="res://.godot/imported/senamorus.png-dcd01eb94b9535c184c720e01476608a.ctex"
+path="res://.godot/imported/senamorus.png-06a2b7d8f5803f15ea825907ab4d0ed9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/senamorus.png"
-dest_files=["res://.godot/imported/senamorus.png-dcd01eb94b9535c184c720e01476608a.ctex"]
+source_file="res://Assets/Pokemones/gen5/senamorus.png"
+dest_files=["res://.godot/imported/senamorus.png-06a2b7d8f5803f15ea825907ab4d0ed9.ctex"]
 
 [params]
 

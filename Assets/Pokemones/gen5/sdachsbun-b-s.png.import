@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvol6b4fkcg1i"
-path="res://.godot/imported/sdachsbun-b-s.png-35a0bcce8dcb4dd86adc674018406fe9.ctex"
+path="res://.godot/imported/sdachsbun-b-s.png-204a5208ab117c07b645753031dca22c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdachsbun-b-s.png"
-dest_files=["res://.godot/imported/sdachsbun-b-s.png-35a0bcce8dcb4dd86adc674018406fe9.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdachsbun-b-s.png"
+dest_files=["res://.godot/imported/sdachsbun-b-s.png-204a5208ab117c07b645753031dca22c.ctex"]
 
 [params]
 

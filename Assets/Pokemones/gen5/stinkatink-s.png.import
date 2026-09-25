@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cw3pfil7kfvj6"
-path="res://.godot/imported/stinkatink-s.png-97cd45b23c5507234c6660d0ee253984.ctex"
+path="res://.godot/imported/stinkatink-s.png-0bea93001547ede409210a7b5cb07272.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stinkatink-s.png"
-dest_files=["res://.godot/imported/stinkatink-s.png-97cd45b23c5507234c6660d0ee253984.ctex"]
+source_file="res://Assets/Pokemones/gen5/stinkatink-s.png"
+dest_files=["res://.godot/imported/stinkatink-s.png-0bea93001547ede409210a7b5cb07272.ctex"]
 
 [params]
 

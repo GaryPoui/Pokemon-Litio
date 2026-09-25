@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi0diy2ohjy35"
-path="res://.godot/imported/stinkaton.png-f8c9fdeeabbdc2888f5d2e358b04bc29.ctex"
+path="res://.godot/imported/stinkaton.png-241b31b020df1ac868f5ec125f72fda5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stinkaton.png"
-dest_files=["res://.godot/imported/stinkaton.png-f8c9fdeeabbdc2888f5d2e358b04bc29.ctex"]
+source_file="res://Assets/Pokemones/gen5/stinkaton.png"
+dest_files=["res://.godot/imported/stinkaton.png-241b31b020df1ac868f5ec125f72fda5.ctex"]
 
 [params]
 

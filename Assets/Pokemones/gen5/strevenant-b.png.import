@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byes187jptpyg"
-path="res://.godot/imported/strevenant-b.png-279f0d4efc1b1331ff6e354debe44370.ctex"
+path="res://.godot/imported/strevenant-b.png-1339f231ba0d9a2c9aa5a70bd46b3b33.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/strevenant-b.png"
-dest_files=["res://.godot/imported/strevenant-b.png-279f0d4efc1b1331ff6e354debe44370.ctex"]
+source_file="res://Assets/Pokemones/gen5/strevenant-b.png"
+dest_files=["res://.godot/imported/strevenant-b.png-1339f231ba0d9a2c9aa5a70bd46b3b33.ctex"]
 
 [params]
 

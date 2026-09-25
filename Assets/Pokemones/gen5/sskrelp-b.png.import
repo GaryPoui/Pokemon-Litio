@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brbrv5qhek24b"
-path="res://.godot/imported/sskrelp-b.png-93df1ccdd6f92b1c8d2cb5b82f4f9081.ctex"
+path="res://.godot/imported/sskrelp-b.png-3ab349b14c96d1da959e9cad4abd08bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sskrelp-b.png"
-dest_files=["res://.godot/imported/sskrelp-b.png-93df1ccdd6f92b1c8d2cb5b82f4f9081.ctex"]
+source_file="res://Assets/Pokemones/gen5/sskrelp-b.png"
+dest_files=["res://.godot/imported/sskrelp-b.png-3ab349b14c96d1da959e9cad4abd08bb.ctex"]
 
 [params]
 

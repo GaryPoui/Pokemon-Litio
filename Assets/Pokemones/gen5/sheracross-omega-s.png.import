@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fksbgxv4tnuf"
-path="res://.godot/imported/sheracross-omega-s.png-77a000cbacc660f97f46f2fc31d161ea.ctex"
+path="res://.godot/imported/sheracross-omega-s.png-bd817c6102c59aaa80f9bf12994b2c00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sheracross-omega-s.png"
-dest_files=["res://.godot/imported/sheracross-omega-s.png-77a000cbacc660f97f46f2fc31d161ea.ctex"]
+source_file="res://Assets/Pokemones/gen5/sheracross-omega-s.png"
+dest_files=["res://.godot/imported/sheracross-omega-s.png-bd817c6102c59aaa80f9bf12994b2c00.ctex"]
 
 [params]
 

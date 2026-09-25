@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5h0tvnrdmbri"
-path="res://.godot/imported/sgrafaiai-s.png-e1a0dc061b2fd841eb8c8fd64d537080.ctex"
+path="res://.godot/imported/sgrafaiai-s.png-c0a75829338a6b0762b03b018cf694d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgrafaiai-s.png"
-dest_files=["res://.godot/imported/sgrafaiai-s.png-e1a0dc061b2fd841eb8c8fd64d537080.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgrafaiai-s.png"
+dest_files=["res://.godot/imported/sgrafaiai-s.png-c0a75829338a6b0762b03b018cf694d3.ctex"]
 
 [params]
 

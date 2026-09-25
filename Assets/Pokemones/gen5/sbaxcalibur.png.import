@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxnhor2v7j2gx"
-path="res://.godot/imported/sbaxcalibur.png-d23cb38c45a825b2b5f6337d23ea015f.ctex"
+path="res://.godot/imported/sbaxcalibur.png-6dee68d2d951298ac1d2f4d58d039b64.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbaxcalibur.png"
-dest_files=["res://.godot/imported/sbaxcalibur.png-d23cb38c45a825b2b5f6337d23ea015f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbaxcalibur.png"
+dest_files=["res://.godot/imported/sbaxcalibur.png-6dee68d2d951298ac1d2f4d58d039b64.ctex"]
 
 [params]
 

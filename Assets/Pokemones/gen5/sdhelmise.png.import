@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ct3tbmd7vxig8"
-path="res://.godot/imported/sdhelmise.png-5c776c997b1f927fe7de1c783e0832d6.ctex"
+path="res://.godot/imported/sdhelmise.png-d88d0ac72fc90e2e02cfa0c64f606947.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdhelmise.png"
-dest_files=["res://.godot/imported/sdhelmise.png-5c776c997b1f927fe7de1c783e0832d6.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdhelmise.png"
+dest_files=["res://.godot/imported/sdhelmise.png-d88d0ac72fc90e2e02cfa0c64f606947.ctex"]
 
 [params]
 

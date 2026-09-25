@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bq4gf8m2v2git"
-path="res://.godot/imported/sscatterbug-b.png-8daed7e66a29b9008a244deba5b7fb5c.ctex"
+path="res://.godot/imported/sscatterbug-b.png-72932723d094576028a7001773368ee4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sscatterbug-b.png"
-dest_files=["res://.godot/imported/sscatterbug-b.png-8daed7e66a29b9008a244deba5b7fb5c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sscatterbug-b.png"
+dest_files=["res://.godot/imported/sscatterbug-b.png-72932723d094576028a7001773368ee4.ctex"]
 
 [params]
 

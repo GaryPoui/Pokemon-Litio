@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fa5rq3fqiqub"
-path="res://.godot/imported/sgrapploct-s.png-f5bf4e62c7e05a5958afe62c03ea0bb2.ctex"
+path="res://.godot/imported/sgrapploct-s.png-50625b7b97cee2965990110cf000d82b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgrapploct-s.png"
-dest_files=["res://.godot/imported/sgrapploct-s.png-f5bf4e62c7e05a5958afe62c03ea0bb2.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgrapploct-s.png"
+dest_files=["res://.godot/imported/sgrapploct-s.png-50625b7b97cee2965990110cf000d82b.ctex"]
 
 [params]
 

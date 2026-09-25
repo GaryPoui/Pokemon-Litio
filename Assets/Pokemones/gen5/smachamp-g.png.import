@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bf3amo8os248i"
-path="res://.godot/imported/smachamp-g.png-34f9716bb91349bedc2147282d783747.ctex"
+path="res://.godot/imported/smachamp-g.png-e439917a840a6238167321935bb22887.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smachamp-g.png"
-dest_files=["res://.godot/imported/smachamp-g.png-34f9716bb91349bedc2147282d783747.ctex"]
+source_file="res://Assets/Pokemones/gen5/smachamp-g.png"
+dest_files=["res://.godot/imported/smachamp-g.png-e439917a840a6238167321935bb22887.ctex"]
 
 [params]
 

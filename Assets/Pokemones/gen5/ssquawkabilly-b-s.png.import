@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg5jtoyo6fh7a"
-path="res://.godot/imported/ssquawkabilly-b-s.png-c10dff192a56ff9b2c58186ebc358263.ctex"
+path="res://.godot/imported/ssquawkabilly-b-s.png-f0e339cdee116cd741722661de417c7c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssquawkabilly-b-s.png"
-dest_files=["res://.godot/imported/ssquawkabilly-b-s.png-c10dff192a56ff9b2c58186ebc358263.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssquawkabilly-b-s.png"
+dest_files=["res://.godot/imported/ssquawkabilly-b-s.png-f0e339cdee116cd741722661de417c7c.ctex"]
 
 [params]
 

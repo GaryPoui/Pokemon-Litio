@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://l74uqrsgvklr"
-path="res://.godot/imported/skingler-g.png-408c7cf20466a4d4adc63ce10182b3ec.ctex"
+path="res://.godot/imported/skingler-g.png-90d07dfab4227401b6d96d393b21e2fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/skingler-g.png"
-dest_files=["res://.godot/imported/skingler-g.png-408c7cf20466a4d4adc63ce10182b3ec.ctex"]
+source_file="res://Assets/Pokemones/gen5/skingler-g.png"
+dest_files=["res://.godot/imported/skingler-g.png-90d07dfab4227401b6d96d393b21e2fd.ctex"]
 
 [params]
 

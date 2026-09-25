@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://utx0tiq7me7p"
-path="res://.godot/imported/ssilvally-orock-b-s.png-05e3d6af4a74dd25380d117261c6c6e0.ctex"
+path="res://.godot/imported/ssilvally-orock-b-s.png-54f8c55a6e726ddd4e688bcfde42c28c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilvally-orock-b-s.png"
-dest_files=["res://.godot/imported/ssilvally-orock-b-s.png-05e3d6af4a74dd25380d117261c6c6e0.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilvally-orock-b-s.png"
+dest_files=["res://.godot/imported/ssilvally-orock-b-s.png-54f8c55a6e726ddd4e688bcfde42c28c.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6djdtcptrenh"
-path="res://.godot/imported/slokix.png-16900254a7926569edd5970615c04c9c.ctex"
+path="res://.godot/imported/slokix.png-37d8bcb2f629598c857cd6863ba91bb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slokix.png"
-dest_files=["res://.godot/imported/slokix.png-16900254a7926569edd5970615c04c9c.ctex"]
+source_file="res://Assets/Pokemones/gen5/slokix.png"
+dest_files=["res://.godot/imported/slokix.png-37d8bcb2f629598c857cd6863ba91bb1.ctex"]
 
 [params]
 

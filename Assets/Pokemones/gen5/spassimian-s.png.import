@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvmu02dbixnxt"
-path="res://.godot/imported/spassimian-s.png-720d25011eeb5a9fae3566788b1962ba.ctex"
+path="res://.godot/imported/spassimian-s.png-237e3bbb2d548f0ba082e880d325d00c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spassimian-s.png"
-dest_files=["res://.godot/imported/spassimian-s.png-720d25011eeb5a9fae3566788b1962ba.ctex"]
+source_file="res://Assets/Pokemones/gen5/spassimian-s.png"
+dest_files=["res://.godot/imported/spassimian-s.png-237e3bbb2d548f0ba082e880d325d00c.ctex"]
 
 [params]
 

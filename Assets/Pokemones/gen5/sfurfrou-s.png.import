@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1l0mnnflaow8"
-path="res://.godot/imported/sfurfrou-s.png-26de2aa33a5438630e51d6ebf86c41ea.ctex"
+path="res://.godot/imported/sfurfrou-s.png-89228aca5ce30937f8dee409d6ad8830.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfurfrou-s.png"
-dest_files=["res://.godot/imported/sfurfrou-s.png-26de2aa33a5438630e51d6ebf86c41ea.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfurfrou-s.png"
+dest_files=["res://.godot/imported/sfurfrou-s.png-89228aca5ce30937f8dee409d6ad8830.ctex"]
 
 [params]
 

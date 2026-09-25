@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhu0wdv8ub4qt"
-path="res://.godot/imported/ssandshrew-oalola-s.png-21307e494009034fcf8267f6249d5478.ctex"
+path="res://.godot/imported/ssandshrew-oalola-s.png-22691a61ee469adf2f5315b7ba79e7c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssandshrew-oalola-s.png"
-dest_files=["res://.godot/imported/ssandshrew-oalola-s.png-21307e494009034fcf8267f6249d5478.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssandshrew-oalola-s.png"
+dest_files=["res://.godot/imported/ssandshrew-oalola-s.png-22691a61ee469adf2f5315b7ba79e7c5.ctex"]
 
 [params]
 

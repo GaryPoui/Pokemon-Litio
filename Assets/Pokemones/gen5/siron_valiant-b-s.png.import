@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvw65luyqq4mm"
-path="res://.godot/imported/siron_valiant-b-s.png-a62f9e28c50ef46797f93e9c6c812958.ctex"
+path="res://.godot/imported/siron_valiant-b-s.png-2255174273c5b6f10f351452476cdcb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/siron_valiant-b-s.png"
-dest_files=["res://.godot/imported/siron_valiant-b-s.png-a62f9e28c50ef46797f93e9c6c812958.ctex"]
+source_file="res://Assets/Pokemones/gen5/siron_valiant-b-s.png"
+dest_files=["res://.godot/imported/siron_valiant-b-s.png-2255174273c5b6f10f351452476cdcb5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpeh4h3u2dku8"
-path="res://.godot/imported/scrucibelle-omega.png-11e6e558b576d9c1433c42f37d599d45.ctex"
+path="res://.godot/imported/scrucibelle-omega.png-bd646084b96550055a62a2678470c569.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scrucibelle-omega.png"
-dest_files=["res://.godot/imported/scrucibelle-omega.png-11e6e558b576d9c1433c42f37d599d45.ctex"]
+source_file="res://Assets/Pokemones/gen5/scrucibelle-omega.png"
+dest_files=["res://.godot/imported/scrucibelle-omega.png-bd646084b96550055a62a2678470c569.ctex"]
 
 [params]
 

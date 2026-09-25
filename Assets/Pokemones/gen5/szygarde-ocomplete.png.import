@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bllm27vvobugy"
-path="res://.godot/imported/szygarde-ocomplete.png-06c5b18e5f171386cd046b98546de924.ctex"
+path="res://.godot/imported/szygarde-ocomplete.png-a30aa8030320504a5ef41e60220a8d6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/szygarde-ocomplete.png"
-dest_files=["res://.godot/imported/szygarde-ocomplete.png-06c5b18e5f171386cd046b98546de924.ctex"]
+source_file="res://Assets/Pokemones/gen5/szygarde-ocomplete.png"
+dest_files=["res://.godot/imported/szygarde-ocomplete.png-a30aa8030320504a5ef41e60220a8d6e.ctex"]
 
 [params]
 

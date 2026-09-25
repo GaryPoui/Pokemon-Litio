@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt0px5qrtkdjh"
-path="res://.godot/imported/svolcanion-b.png-6c5d7d2cf159bf8f6966b38abfaa76a4.ctex"
+path="res://.godot/imported/svolcanion-b.png-48dbd25b50bd859d3fcc4b6b728ff8c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svolcanion-b.png"
-dest_files=["res://.godot/imported/svolcanion-b.png-6c5d7d2cf159bf8f6966b38abfaa76a4.ctex"]
+source_file="res://Assets/Pokemones/gen5/svolcanion-b.png"
+dest_files=["res://.godot/imported/svolcanion-b.png-48dbd25b50bd859d3fcc4b6b728ff8c5.ctex"]
 
 [params]
 

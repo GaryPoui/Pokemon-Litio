@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bk6noq57nmb7x"
-path="res://.godot/imported/ssceptile-omega-b.png-78d3e143a773251b3b198243922c9092.ctex"
+path="res://.godot/imported/ssceptile-omega-b.png-6210e46cf6d15190f12fcd283dd00e1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssceptile-omega-b.png"
-dest_files=["res://.godot/imported/ssceptile-omega-b.png-78d3e143a773251b3b198243922c9092.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssceptile-omega-b.png"
+dest_files=["res://.godot/imported/ssceptile-omega-b.png-6210e46cf6d15190f12fcd283dd00e1e.ctex"]
 
 [params]
 

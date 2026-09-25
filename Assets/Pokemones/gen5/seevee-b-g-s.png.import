@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c35f8dw5qlhin"
-path="res://.godot/imported/seevee-b-g-s.png-b2813eb27185d335d530df44bf67c3a1.ctex"
+path="res://.godot/imported/seevee-b-g-s.png-6f8d8f7cd33ebc18d93cf69952b61c55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/seevee-b-g-s.png"
-dest_files=["res://.godot/imported/seevee-b-g-s.png-b2813eb27185d335d530df44bf67c3a1.ctex"]
+source_file="res://Assets/Pokemones/gen5/seevee-b-g-s.png"
+dest_files=["res://.godot/imported/seevee-b-g-s.png-6f8d8f7cd33ebc18d93cf69952b61c55.ctex"]
 
 [params]
 

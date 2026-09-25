@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0l8t6td38y47"
-path="res://.godot/imported/szigzagoon-ogalar-s.png-7fc2ba3f1d3b20ae4b3799dd36440da6.ctex"
+path="res://.godot/imported/szigzagoon-ogalar-s.png-842c0846bece4a2a7969be0b1c2337e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/szigzagoon-ogalar-s.png"
-dest_files=["res://.godot/imported/szigzagoon-ogalar-s.png-7fc2ba3f1d3b20ae4b3799dd36440da6.ctex"]
+source_file="res://Assets/Pokemones/gen5/szigzagoon-ogalar-s.png"
+dest_files=["res://.godot/imported/szigzagoon-ogalar-s.png-842c0846bece4a2a7969be0b1c2337e4.ctex"]
 
 [params]
 

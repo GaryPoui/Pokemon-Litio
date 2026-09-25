@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl78ml5b51hip"
-path="res://.godot/imported/siron_hands-s.png-55315cb749f43b74c8d6f8437b26d498.ctex"
+path="res://.godot/imported/siron_hands-s.png-c4c29cfe0939207d9a0954b83a33cbb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/siron_hands-s.png"
-dest_files=["res://.godot/imported/siron_hands-s.png-55315cb749f43b74c8d6f8437b26d498.ctex"]
+source_file="res://Assets/Pokemones/gen5/siron_hands-s.png"
+dest_files=["res://.godot/imported/siron_hands-s.png-c4c29cfe0939207d9a0954b83a33cbb5.ctex"]
 
 [params]
 

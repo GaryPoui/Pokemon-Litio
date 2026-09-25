@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4tap5ead4rbd"
-path="res://.godot/imported/sqwilfish-ohisui-b-s.png-a4335af164c1706fceece64471453fcf.ctex"
+path="res://.godot/imported/sqwilfish-ohisui-b-s.png-14a1f0ad6dc158c6436be23c21bb4200.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sqwilfish-ohisui-b-s.png"
-dest_files=["res://.godot/imported/sqwilfish-ohisui-b-s.png-a4335af164c1706fceece64471453fcf.ctex"]
+source_file="res://Assets/Pokemones/gen5/sqwilfish-ohisui-b-s.png"
+dest_files=["res://.godot/imported/sqwilfish-ohisui-b-s.png-14a1f0ad6dc158c6436be23c21bb4200.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://br7bvn68pjne3"
-path="res://.godot/imported/sdelphox-b-s.png-443aa2c36ba29e9b7da6d5d4d55936b4.ctex"
+path="res://.godot/imported/sdelphox-b-s.png-7941e9a4f9edc87ec2f21e7decd88e13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdelphox-b-s.png"
-dest_files=["res://.godot/imported/sdelphox-b-s.png-443aa2c36ba29e9b7da6d5d4d55936b4.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdelphox-b-s.png"
+dest_files=["res://.godot/imported/sdelphox-b-s.png-7941e9a4f9edc87ec2f21e7decd88e13.ctex"]
 
 [params]
 

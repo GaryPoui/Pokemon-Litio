@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ej5qp85hh0wo"
-path="res://.godot/imported/sblaziken-omega-b.png-62b188b30a3849d53c1d1a8d9609a589.ctex"
+path="res://.godot/imported/sblaziken-omega-b.png-4aa9fb1549c0efb8cae6c4f5d2aaa227.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sblaziken-omega-b.png"
-dest_files=["res://.godot/imported/sblaziken-omega-b.png-62b188b30a3849d53c1d1a8d9609a589.ctex"]
+source_file="res://Assets/Pokemones/gen5/sblaziken-omega-b.png"
+dest_files=["res://.godot/imported/sblaziken-omega-b.png-4aa9fb1549c0efb8cae6c4f5d2aaa227.ctex"]
 
 [params]
 

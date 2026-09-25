@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cw6o01s48tv48"
-path="res://.godot/imported/shydrapple.png-ff8f095cbaca7303ef9384d0cf200b30.ctex"
+path="res://.godot/imported/shydrapple.png-16f9d4b4c07a24cebfbc91150deb037b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shydrapple.png"
-dest_files=["res://.godot/imported/shydrapple.png-ff8f095cbaca7303ef9384d0cf200b30.ctex"]
+source_file="res://Assets/Pokemones/gen5/shydrapple.png"
+dest_files=["res://.godot/imported/shydrapple.png-16f9d4b4c07a24cebfbc91150deb037b.ctex"]
 
 [params]
 

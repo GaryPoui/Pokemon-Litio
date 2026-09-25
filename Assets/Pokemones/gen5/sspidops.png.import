@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1rqwtx0l07se"
-path="res://.godot/imported/sspidops.png-9cb71fdecb1de48e402c1da0a46bf8c6.ctex"
+path="res://.godot/imported/sspidops.png-201dbbbd84d899bf6d36f3cfab64784b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sspidops.png"
-dest_files=["res://.godot/imported/sspidops.png-9cb71fdecb1de48e402c1da0a46bf8c6.ctex"]
+source_file="res://Assets/Pokemones/gen5/sspidops.png"
+dest_files=["res://.godot/imported/sspidops.png-201dbbbd84d899bf6d36f3cfab64784b.ctex"]
 
 [params]
 

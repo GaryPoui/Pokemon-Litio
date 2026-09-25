@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhusil4wyc6id"
-path="res://.godot/imported/srookidee-b-s.png-57f4f8df88e76bf12dae3fbe11bcafc8.ctex"
+path="res://.godot/imported/srookidee-b-s.png-fa8cab0aba8910d2453b512903a67775.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/srookidee-b-s.png"
-dest_files=["res://.godot/imported/srookidee-b-s.png-57f4f8df88e76bf12dae3fbe11bcafc8.ctex"]
+source_file="res://Assets/Pokemones/gen5/srookidee-b-s.png"
+dest_files=["res://.godot/imported/srookidee-b-s.png-fa8cab0aba8910d2453b512903a67775.ctex"]
 
 [params]
 

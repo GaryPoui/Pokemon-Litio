@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jwfheebs7gpx"
-path="res://.godot/imported/sflapple-b.png-160f0bd7c65758b5468b9f66327c5094.ctex"
+path="res://.godot/imported/sflapple-b.png-2108f8e0bcd5ee429792e25c2d383163.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sflapple-b.png"
-dest_files=["res://.godot/imported/sflapple-b.png-160f0bd7c65758b5468b9f66327c5094.ctex"]
+source_file="res://Assets/Pokemones/gen5/sflapple-b.png"
+dest_files=["res://.godot/imported/sflapple-b.png-2108f8e0bcd5ee429792e25c2d383163.ctex"]
 
 [params]
 

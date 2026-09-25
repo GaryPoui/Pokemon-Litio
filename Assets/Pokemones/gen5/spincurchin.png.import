@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3iodjd54uabu"
-path="res://.godot/imported/spincurchin.png-f36725320be7b6694c443795215b8fa5.ctex"
+path="res://.godot/imported/spincurchin.png-26f0c6325d344758f99fc0accafd0cb9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spincurchin.png"
-dest_files=["res://.godot/imported/spincurchin.png-f36725320be7b6694c443795215b8fa5.ctex"]
+source_file="res://Assets/Pokemones/gen5/spincurchin.png"
+dest_files=["res://.godot/imported/spincurchin.png-26f0c6325d344758f99fc0accafd0cb9.ctex"]
 
 [params]
 

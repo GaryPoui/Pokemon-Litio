@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bheqacuftf5ol"
-path="res://.godot/imported/spyroak-b-s.png-3b927baf51bc596a6e044bc0d461ba3b.ctex"
+path="res://.godot/imported/spyroak-b-s.png-e8c85400a069422e99c5caf4dfbe89f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spyroak-b-s.png"
-dest_files=["res://.godot/imported/spyroak-b-s.png-3b927baf51bc596a6e044bc0d461ba3b.ctex"]
+source_file="res://Assets/Pokemones/gen5/spyroak-b-s.png"
+dest_files=["res://.godot/imported/spyroak-b-s.png-e8c85400a069422e99c5caf4dfbe89f7.ctex"]
 
 [params]
 

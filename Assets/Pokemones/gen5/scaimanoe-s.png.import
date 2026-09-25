@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1vawpkchc2h1"
-path="res://.godot/imported/scaimanoe-s.png-5e016ab0b3a370e5d761dff0c5a24e15.ctex"
+path="res://.godot/imported/scaimanoe-s.png-cfb951909078aa78e4a50035481584e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scaimanoe-s.png"
-dest_files=["res://.godot/imported/scaimanoe-s.png-5e016ab0b3a370e5d761dff0c5a24e15.ctex"]
+source_file="res://Assets/Pokemones/gen5/scaimanoe-s.png"
+dest_files=["res://.godot/imported/scaimanoe-s.png-cfb951909078aa78e4a50035481584e8.ctex"]
 
 [params]
 

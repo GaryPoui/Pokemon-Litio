@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd3xxsekg210e"
-path="res://.godot/imported/smedicham-omega.png-ecabc67343b85da0f51729e869139c1e.ctex"
+path="res://.godot/imported/smedicham-omega.png-5c878829fe41b57eeb62ae5cd5e3b946.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smedicham-omega.png"
-dest_files=["res://.godot/imported/smedicham-omega.png-ecabc67343b85da0f51729e869139c1e.ctex"]
+source_file="res://Assets/Pokemones/gen5/smedicham-omega.png"
+dest_files=["res://.godot/imported/smedicham-omega.png-5c878829fe41b57eeb62ae5cd5e3b946.ctex"]
 
 [params]
 

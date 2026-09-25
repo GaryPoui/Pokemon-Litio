@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://r4wc5ywu3nrv"
-path="res://.godot/imported/scinderace-g-s.png-7c4f3a4db8556aa1a3d1311bc5437278.ctex"
+path="res://.godot/imported/scinderace-g-s.png-5e7922a2059cf56577b3a6ad51876dbf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scinderace-g-s.png"
-dest_files=["res://.godot/imported/scinderace-g-s.png-7c4f3a4db8556aa1a3d1311bc5437278.ctex"]
+source_file="res://Assets/Pokemones/gen5/scinderace-g-s.png"
+dest_files=["res://.godot/imported/scinderace-g-s.png-5e7922a2059cf56577b3a6ad51876dbf.ctex"]
 
 [params]
 

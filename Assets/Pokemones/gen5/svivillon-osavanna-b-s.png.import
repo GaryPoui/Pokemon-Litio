@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dea21inds4ejp"
-path="res://.godot/imported/svivillon-osavanna-b-s.png-d230d8e3f55dc2bb9b26a742607715dd.ctex"
+path="res://.godot/imported/svivillon-osavanna-b-s.png-e179c6f6880e00883f3fc65a76cda88c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svivillon-osavanna-b-s.png"
-dest_files=["res://.godot/imported/svivillon-osavanna-b-s.png-d230d8e3f55dc2bb9b26a742607715dd.ctex"]
+source_file="res://Assets/Pokemones/gen5/svivillon-osavanna-b-s.png"
+dest_files=["res://.godot/imported/svivillon-osavanna-b-s.png-e179c6f6880e00883f3fc65a76cda88c.ctex"]
 
 [params]
 

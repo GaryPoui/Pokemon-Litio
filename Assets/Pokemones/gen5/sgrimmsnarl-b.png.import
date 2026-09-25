@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtikgeypuqpfn"
-path="res://.godot/imported/sgrimmsnarl-b.png-8b6bdaa53b3fec3023bce7e083ecbb1f.ctex"
+path="res://.godot/imported/sgrimmsnarl-b.png-54f77f10ada83c3f189c70623be0c01b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgrimmsnarl-b.png"
-dest_files=["res://.godot/imported/sgrimmsnarl-b.png-8b6bdaa53b3fec3023bce7e083ecbb1f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgrimmsnarl-b.png"
+dest_files=["res://.godot/imported/sgrimmsnarl-b.png-54f77f10ada83c3f189c70623be0c01b.ctex"]
 
 [params]
 

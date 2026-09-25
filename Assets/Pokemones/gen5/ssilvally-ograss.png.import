@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4rqrgaivg5wb"
-path="res://.godot/imported/ssilvally-ograss.png-db8b9a7f4f8189ff37c676aff788c570.ctex"
+path="res://.godot/imported/ssilvally-ograss.png-a1ba35331ca8dde7dcfcb16f806bee3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilvally-ograss.png"
-dest_files=["res://.godot/imported/ssilvally-ograss.png-db8b9a7f4f8189ff37c676aff788c570.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilvally-ograss.png"
+dest_files=["res://.godot/imported/ssilvally-ograss.png-a1ba35331ca8dde7dcfcb16f806bee3f.ctex"]
 
 [params]
 

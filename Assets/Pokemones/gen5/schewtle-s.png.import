@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx4w6nuq8kbcd"
-path="res://.godot/imported/schewtle-s.png-9f42b9f0c868beee0f27c23b04749f5c.ctex"
+path="res://.godot/imported/schewtle-s.png-54948b5ad9755fc559227c3fa8b7b8fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/schewtle-s.png"
-dest_files=["res://.godot/imported/schewtle-s.png-9f42b9f0c868beee0f27c23b04749f5c.ctex"]
+source_file="res://Assets/Pokemones/gen5/schewtle-s.png"
+dest_files=["res://.godot/imported/schewtle-s.png-54948b5ad9755fc559227c3fa8b7b8fd.ctex"]
 
 [params]
 

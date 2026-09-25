@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://t5q4fanxksh4"
-path="res://.godot/imported/scharcadet-b.png-676c67992cef67d21cfafff68e4ae8a9.ctex"
+path="res://.godot/imported/scharcadet-b.png-adc13edbbcb6abdefed926411715a7b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scharcadet-b.png"
-dest_files=["res://.godot/imported/scharcadet-b.png-676c67992cef67d21cfafff68e4ae8a9.ctex"]
+source_file="res://Assets/Pokemones/gen5/scharcadet-b.png"
+dest_files=["res://.godot/imported/scharcadet-b.png-adc13edbbcb6abdefed926411715a7b7.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://njob5yt57e3v"
-path="res://.godot/imported/smorpeko-ohangry-b-s.png-14d3592d943508a6cc71842de6e97f2b.ctex"
+path="res://.godot/imported/smorpeko-ohangry-b-s.png-e2157d2dd22b4c8673b0414a6109a93b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smorpeko-ohangry-b-s.png"
-dest_files=["res://.godot/imported/smorpeko-ohangry-b-s.png-14d3592d943508a6cc71842de6e97f2b.ctex"]
+source_file="res://Assets/Pokemones/gen5/smorpeko-ohangry-b-s.png"
+dest_files=["res://.godot/imported/smorpeko-ohangry-b-s.png-e2157d2dd22b4c8673b0414a6109a93b.ctex"]
 
 [params]
 

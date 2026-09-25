@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bygxgq1v4qgrf"
-path="res://.godot/imported/sespurr-b.png-ceed06640bd2ba18b6d95e2b80f081bf.ctex"
+path="res://.godot/imported/sespurr-b.png-ca0826ed09b5a1a4027846620616ab76.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sespurr-b.png"
-dest_files=["res://.godot/imported/sespurr-b.png-ceed06640bd2ba18b6d95e2b80f081bf.ctex"]
+source_file="res://Assets/Pokemones/gen5/sespurr-b.png"
+dest_files=["res://.godot/imported/sespurr-b.png-ca0826ed09b5a1a4027846620616ab76.ctex"]
 
 [params]
 

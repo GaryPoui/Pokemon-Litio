@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hfur3w0bc6tw"
-path="res://.godot/imported/smareanie.png-2158fa31521805d3b43214d0178b9680.ctex"
+path="res://.godot/imported/smareanie.png-3ba3a86650aec627c23f788da4345f68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smareanie.png"
-dest_files=["res://.godot/imported/smareanie.png-2158fa31521805d3b43214d0178b9680.ctex"]
+source_file="res://Assets/Pokemones/gen5/smareanie.png"
+dest_files=["res://.godot/imported/smareanie.png-3ba3a86650aec627c23f788da4345f68.ctex"]
 
 [params]
 

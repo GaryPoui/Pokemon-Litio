@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pig0i2u6redl"
-path="res://.godot/imported/sgoodra-ohisui-b-s.png-7f3f14218dd7092c0a9ca0be8386575c.ctex"
+path="res://.godot/imported/sgoodra-ohisui-b-s.png-35f893cfaf6d19dfef48ca6decf10117.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgoodra-ohisui-b-s.png"
-dest_files=["res://.godot/imported/sgoodra-ohisui-b-s.png-7f3f14218dd7092c0a9ca0be8386575c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgoodra-ohisui-b-s.png"
+dest_files=["res://.godot/imported/sgoodra-ohisui-b-s.png-35f893cfaf6d19dfef48ca6decf10117.ctex"]
 
 [params]
 

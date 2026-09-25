@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://x6vcqbr1eki6"
-path="res://.godot/imported/sdarmanitan-ogalar_zen-b.png-69cfd288cf38b5e9e7d7b9e408560ddf.ctex"
+path="res://.godot/imported/sdarmanitan-ogalar_zen-b.png-e1ec184e945e22df9aa968e3cc3729da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdarmanitan-ogalar_zen-b.png"
-dest_files=["res://.godot/imported/sdarmanitan-ogalar_zen-b.png-69cfd288cf38b5e9e7d7b9e408560ddf.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdarmanitan-ogalar_zen-b.png"
+dest_files=["res://.godot/imported/sdarmanitan-ogalar_zen-b.png-e1ec184e945e22df9aa968e3cc3729da.ctex"]
 
 [params]
 

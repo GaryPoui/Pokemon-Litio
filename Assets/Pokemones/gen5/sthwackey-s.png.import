@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3p56it2bc1vf"
-path="res://.godot/imported/sthwackey-s.png-40e3a3e9e35da3811275d390c2c9b7db.ctex"
+path="res://.godot/imported/sthwackey-s.png-7b85f0504c1846a59f03d401d169ffd9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sthwackey-s.png"
-dest_files=["res://.godot/imported/sthwackey-s.png-40e3a3e9e35da3811275d390c2c9b7db.ctex"]
+source_file="res://Assets/Pokemones/gen5/sthwackey-s.png"
+dest_files=["res://.godot/imported/sthwackey-s.png-7b85f0504c1846a59f03d401d169ffd9.ctex"]
 
 [params]
 

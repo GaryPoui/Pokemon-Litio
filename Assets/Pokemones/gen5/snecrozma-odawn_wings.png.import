@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clby32lg5wvbc"
-path="res://.godot/imported/snecrozma-odawn_wings.png-ec85f0b2007fb1bad31dddd652a2e66d.ctex"
+path="res://.godot/imported/snecrozma-odawn_wings.png-52c49d9dbac8f0961ee922f4daf1bb6a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/snecrozma-odawn_wings.png"
-dest_files=["res://.godot/imported/snecrozma-odawn_wings.png-ec85f0b2007fb1bad31dddd652a2e66d.ctex"]
+source_file="res://Assets/Pokemones/gen5/snecrozma-odawn_wings.png"
+dest_files=["res://.godot/imported/snecrozma-odawn_wings.png-52c49d9dbac8f0961ee922f4daf1bb6a.ctex"]
 
 [params]
 

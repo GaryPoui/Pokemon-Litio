@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clmrqs35ovttq"
-path="res://.godot/imported/sbasculin-owhite_striped-b.png-50f319d8fe173046f28b1cff95198407.ctex"
+path="res://.godot/imported/sbasculin-owhite_striped-b.png-f6b8fee514226b3b823284e1fbb22892.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbasculin-owhite_striped-b.png"
-dest_files=["res://.godot/imported/sbasculin-owhite_striped-b.png-50f319d8fe173046f28b1cff95198407.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbasculin-owhite_striped-b.png"
+dest_files=["res://.godot/imported/sbasculin-owhite_striped-b.png-f6b8fee514226b3b823284e1fbb22892.ctex"]
 
 [params]
 

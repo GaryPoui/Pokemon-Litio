@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btd350evk5qqx"
-path="res://.godot/imported/svivillon-ojungle-b.png-5773f40bb95bf69c6d7fb481207b259b.ctex"
+path="res://.godot/imported/svivillon-ojungle-b.png-4d140091e02a5a488af9dde3651b08bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svivillon-ojungle-b.png"
-dest_files=["res://.godot/imported/svivillon-ojungle-b.png-5773f40bb95bf69c6d7fb481207b259b.ctex"]
+source_file="res://Assets/Pokemones/gen5/svivillon-ojungle-b.png"
+dest_files=["res://.godot/imported/svivillon-ojungle-b.png-4d140091e02a5a488af9dde3651b08bf.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c85x85oxnkg3f"
-path="res://.godot/imported/slycanroc-b.png-412c2db28baecc0f87726e7f3c7aeca7.ctex"
+path="res://.godot/imported/slycanroc-b.png-54d305e55d65bb944dc3208045241088.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slycanroc-b.png"
-dest_files=["res://.godot/imported/slycanroc-b.png-412c2db28baecc0f87726e7f3c7aeca7.ctex"]
+source_file="res://Assets/Pokemones/gen5/slycanroc-b.png"
+dest_files=["res://.godot/imported/slycanroc-b.png-54d305e55d65bb944dc3208045241088.ctex"]
 
 [params]
 

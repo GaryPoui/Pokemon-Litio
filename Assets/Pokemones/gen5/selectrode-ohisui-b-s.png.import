@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dumgk0fu5r07"
-path="res://.godot/imported/selectrode-ohisui-b-s.png-090bb664407d792c188ac128233f93fc.ctex"
+path="res://.godot/imported/selectrode-ohisui-b-s.png-51ee71b58ad7124dc78ffe272049e94c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/selectrode-ohisui-b-s.png"
-dest_files=["res://.godot/imported/selectrode-ohisui-b-s.png-090bb664407d792c188ac128233f93fc.ctex"]
+source_file="res://Assets/Pokemones/gen5/selectrode-ohisui-b-s.png"
+dest_files=["res://.godot/imported/selectrode-ohisui-b-s.png-51ee71b58ad7124dc78ffe272049e94c.ctex"]
 
 [params]
 

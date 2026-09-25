@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://de5dik5c8cg01"
-path="res://.godot/imported/sapplin.png-eab1977d6607b877fffee6d614d4ffdd.ctex"
+path="res://.godot/imported/sapplin.png-8b5364e08400e077b35fe33b40e563ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sapplin.png"
-dest_files=["res://.godot/imported/sapplin.png-eab1977d6607b877fffee6d614d4ffdd.ctex"]
+source_file="res://Assets/Pokemones/gen5/sapplin.png"
+dest_files=["res://.godot/imported/sapplin.png-8b5364e08400e077b35fe33b40e563ea.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bumepf8ekfjli"
-path="res://.godot/imported/sdreepy.png-0ffd8d6b3e997cbc5040f9184b12f386.ctex"
+path="res://.godot/imported/sdreepy.png-cb4dbf25a571be91349e0650c86ff173.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdreepy.png"
-dest_files=["res://.godot/imported/sdreepy.png-0ffd8d6b3e997cbc5040f9184b12f386.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdreepy.png"
+dest_files=["res://.godot/imported/sdreepy.png-cb4dbf25a571be91349e0650c86ff173.ctex"]
 
 [params]
 

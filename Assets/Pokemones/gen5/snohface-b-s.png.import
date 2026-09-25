@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clybuggvnyron"
-path="res://.godot/imported/snohface-b-s.png-715e2aba7a3f1263c59162284ba674e5.ctex"
+path="res://.godot/imported/snohface-b-s.png-ad4e2c842fd0bcf194f46be90573f1a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/snohface-b-s.png"
-dest_files=["res://.godot/imported/snohface-b-s.png-715e2aba7a3f1263c59162284ba674e5.ctex"]
+source_file="res://Assets/Pokemones/gen5/snohface-b-s.png"
+dest_files=["res://.godot/imported/snohface-b-s.png-ad4e2c842fd0bcf194f46be90573f1a3.ctex"]
 
 [params]
 

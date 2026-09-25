@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bycg1h1eptiuj"
-path="res://.godot/imported/ssirfetchd-s.png-d8c4d1dd0f555a5b3ef8f56ea0c185af.ctex"
+path="res://.godot/imported/ssirfetchd-s.png-9b27a43cb2ae5b64d3662a9905a4ad46.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssirfetchd-s.png"
-dest_files=["res://.godot/imported/ssirfetchd-s.png-d8c4d1dd0f555a5b3ef8f56ea0c185af.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssirfetchd-s.png"
+dest_files=["res://.godot/imported/ssirfetchd-s.png-9b27a43cb2ae5b64d3662a9905a4ad46.ctex"]
 
 [params]
 

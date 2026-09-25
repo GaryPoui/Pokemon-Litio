@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2ed1fy70hj70"
-path="res://.godot/imported/szamazenta-s.png-1c7262bb97751e5cc709c4824ec082a8.ctex"
+path="res://.godot/imported/szamazenta-s.png-bbe94482da42264c6d4c2567b0d81efd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/szamazenta-s.png"
-dest_files=["res://.godot/imported/szamazenta-s.png-1c7262bb97751e5cc709c4824ec082a8.ctex"]
+source_file="res://Assets/Pokemones/gen5/szamazenta-s.png"
+dest_files=["res://.godot/imported/szamazenta-s.png-bbe94482da42264c6d4c2567b0d81efd.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2cdd8w8t2hip"
-path="res://.godot/imported/sdedenne-b-s.png-3b06bd3ff454233cc656b44982637492.ctex"
+path="res://.godot/imported/sdedenne-b-s.png-92e369ea68cfba7615d8a3dfe77bd3cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdedenne-b-s.png"
-dest_files=["res://.godot/imported/sdedenne-b-s.png-3b06bd3ff454233cc656b44982637492.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdedenne-b-s.png"
+dest_files=["res://.godot/imported/sdedenne-b-s.png-92e369ea68cfba7615d8a3dfe77bd3cd.ctex"]
 
 [params]
 

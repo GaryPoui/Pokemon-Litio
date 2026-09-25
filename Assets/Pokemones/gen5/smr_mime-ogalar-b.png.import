@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhjl734t3aye"
-path="res://.godot/imported/smr_mime-ogalar-b.png-e8bcace4c122705deea9c2112f4b21be.ctex"
+path="res://.godot/imported/smr_mime-ogalar-b.png-a8ec9b62cbe664a4d6698588d60a7834.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smr_mime-ogalar-b.png"
-dest_files=["res://.godot/imported/smr_mime-ogalar-b.png-e8bcace4c122705deea9c2112f4b21be.ctex"]
+source_file="res://Assets/Pokemones/gen5/smr_mime-ogalar-b.png"
+dest_files=["res://.godot/imported/smr_mime-ogalar-b.png-a8ec9b62cbe664a4d6698588d60a7834.ctex"]
 
 [params]
 

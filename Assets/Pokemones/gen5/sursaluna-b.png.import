@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://f75h6d57fchw"
-path="res://.godot/imported/sursaluna-b.png-c114c49481c8c058de28278e61467708.ctex"
+path="res://.godot/imported/sursaluna-b.png-4a9021b64db65744d23599018362dce5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sursaluna-b.png"
-dest_files=["res://.godot/imported/sursaluna-b.png-c114c49481c8c058de28278e61467708.ctex"]
+source_file="res://Assets/Pokemones/gen5/sursaluna-b.png"
+dest_files=["res://.godot/imported/sursaluna-b.png-4a9021b64db65744d23599018362dce5.ctex"]
 
 [params]
 

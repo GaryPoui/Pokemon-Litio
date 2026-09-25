@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnkgpfiwe3ysm"
-path="res://.godot/imported/sgreninja-oash-s.png-e712e33f55236c4aac20e98b44f7af8d.ctex"
+path="res://.godot/imported/sgreninja-oash-s.png-000ae6627366f0135b51003528a925d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgreninja-oash-s.png"
-dest_files=["res://.godot/imported/sgreninja-oash-s.png-e712e33f55236c4aac20e98b44f7af8d.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgreninja-oash-s.png"
+dest_files=["res://.godot/imported/sgreninja-oash-s.png-000ae6627366f0135b51003528a925d1.ctex"]
 
 [params]
 

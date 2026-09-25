@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duh7kay8mc5o6"
-path="res://.godot/imported/sflabebe-oblue-b.png-ad9b3b017681c6d90e1eefcf74bbd36a.ctex"
+path="res://.godot/imported/sflabebe-oblue-b.png-1a0d2c6848ce0c0b8d4452c57161da88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sflabebe-oblue-b.png"
-dest_files=["res://.godot/imported/sflabebe-oblue-b.png-ad9b3b017681c6d90e1eefcf74bbd36a.ctex"]
+source_file="res://Assets/Pokemones/gen5/sflabebe-oblue-b.png"
+dest_files=["res://.godot/imported/sflabebe-oblue-b.png-1a0d2c6848ce0c0b8d4452c57161da88.ctex"]
 
 [params]
 

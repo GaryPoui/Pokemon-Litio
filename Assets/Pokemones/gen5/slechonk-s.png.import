@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0u0ewmtt05c1"
-path="res://.godot/imported/slechonk-s.png-180a0f6212516f5a32a5e83e4a1a97ee.ctex"
+path="res://.godot/imported/slechonk-s.png-3867027b700a79ae749677dac16b5532.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slechonk-s.png"
-dest_files=["res://.godot/imported/slechonk-s.png-180a0f6212516f5a32a5e83e4a1a97ee.ctex"]
+source_file="res://Assets/Pokemones/gen5/slechonk-s.png"
+dest_files=["res://.godot/imported/slechonk-s.png-3867027b700a79ae749677dac16b5532.ctex"]
 
 [params]
 

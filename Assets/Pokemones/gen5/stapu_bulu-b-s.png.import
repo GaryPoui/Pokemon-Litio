@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfy3855jrhwy6"
-path="res://.godot/imported/stapu_bulu-b-s.png-8ac6763d794421781ab29b0f3585cc49.ctex"
+path="res://.godot/imported/stapu_bulu-b-s.png-22f73043893bfd46dafa3ba07a7e1e50.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stapu_bulu-b-s.png"
-dest_files=["res://.godot/imported/stapu_bulu-b-s.png-8ac6763d794421781ab29b0f3585cc49.ctex"]
+source_file="res://Assets/Pokemones/gen5/stapu_bulu-b-s.png"
+dest_files=["res://.godot/imported/stapu_bulu-b-s.png-22f73043893bfd46dafa3ba07a7e1e50.ctex"]
 
 [params]
 

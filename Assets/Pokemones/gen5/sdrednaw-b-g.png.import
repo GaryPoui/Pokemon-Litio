@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgd1h81x6kq4g"
-path="res://.godot/imported/sdrednaw-b-g.png-d5f62bf9d10dd7a8d0799c7d0f997635.ctex"
+path="res://.godot/imported/sdrednaw-b-g.png-196b18de90e0a35adcd43d39aac6fd90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdrednaw-b-g.png"
-dest_files=["res://.godot/imported/sdrednaw-b-g.png-d5f62bf9d10dd7a8d0799c7d0f997635.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdrednaw-b-g.png"
+dest_files=["res://.godot/imported/sdrednaw-b-g.png-196b18de90e0a35adcd43d39aac6fd90.ctex"]
 
 [params]
 

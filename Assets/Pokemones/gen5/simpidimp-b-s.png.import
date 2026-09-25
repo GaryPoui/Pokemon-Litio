@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5e65w6jmuwkl"
-path="res://.godot/imported/simpidimp-b-s.png-358f90dd62eabce6dd5a9e42d3531322.ctex"
+path="res://.godot/imported/simpidimp-b-s.png-875b6107ab0fc5411c46c959c29c195d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/simpidimp-b-s.png"
-dest_files=["res://.godot/imported/simpidimp-b-s.png-358f90dd62eabce6dd5a9e42d3531322.ctex"]
+source_file="res://Assets/Pokemones/gen5/simpidimp-b-s.png"
+dest_files=["res://.godot/imported/simpidimp-b-s.png-875b6107ab0fc5411c46c959c29c195d.ctex"]
 
 [params]
 

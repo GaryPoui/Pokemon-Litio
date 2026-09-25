@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds2k2je38411u"
-path="res://.godot/imported/sdottler.png-4f9ca8ac3ded510d15a2e39f278775bd.ctex"
+path="res://.godot/imported/sdottler.png-69be9bfd93cac2877386d2c9fc541d93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdottler.png"
-dest_files=["res://.godot/imported/sdottler.png-4f9ca8ac3ded510d15a2e39f278775bd.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdottler.png"
+dest_files=["res://.godot/imported/sdottler.png-69be9bfd93cac2877386d2c9fc541d93.ctex"]
 
 [params]
 

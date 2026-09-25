@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dy5iqmeniqfxt"
-path="res://.godot/imported/scramorant-b-s.png-fdd4dd14ca12d8004393189248f0b8fb.ctex"
+path="res://.godot/imported/scramorant-b-s.png-68541491bc8c18b3a9e42a9c8f4b5a8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scramorant-b-s.png"
-dest_files=["res://.godot/imported/scramorant-b-s.png-fdd4dd14ca12d8004393189248f0b8fb.ctex"]
+source_file="res://Assets/Pokemones/gen5/scramorant-b-s.png"
+dest_files=["res://.godot/imported/scramorant-b-s.png-68541491bc8c18b3a9e42a9c8f4b5a8d.ctex"]
 
 [params]
 

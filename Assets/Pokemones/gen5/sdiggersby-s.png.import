@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://45phucfw6kao"
-path="res://.godot/imported/sdiggersby-s.png-71aeb63892db9e524be9a2c2e098fa24.ctex"
+path="res://.godot/imported/sdiggersby-s.png-79e03e2012f9aadac9d4a6c0102c3906.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdiggersby-s.png"
-dest_files=["res://.godot/imported/sdiggersby-s.png-71aeb63892db9e524be9a2c2e098fa24.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdiggersby-s.png"
+dest_files=["res://.godot/imported/sdiggersby-s.png-79e03e2012f9aadac9d4a6c0102c3906.ctex"]
 
 [params]
 

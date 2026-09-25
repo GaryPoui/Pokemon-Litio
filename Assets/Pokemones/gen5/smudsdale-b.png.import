@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bauxuj0867p4y"
-path="res://.godot/imported/smudsdale-b.png-487bdc95ee30e0c40bec8b1256d3ecfe.ctex"
+path="res://.godot/imported/smudsdale-b.png-4c6ef3acd9f7d5543e363e428ba95db0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smudsdale-b.png"
-dest_files=["res://.godot/imported/smudsdale-b.png-487bdc95ee30e0c40bec8b1256d3ecfe.ctex"]
+source_file="res://Assets/Pokemones/gen5/smudsdale-b.png"
+dest_files=["res://.godot/imported/smudsdale-b.png-4c6ef3acd9f7d5543e363e428ba95db0.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjnhx7etlmq88"
-path="res://.godot/imported/ssinistcha-omasterpiece-b-s.png-ad1cd84a8989c81d02c7c3ad6439c28e.ctex"
+path="res://.godot/imported/ssinistcha-omasterpiece-b-s.png-a402f55204418e15602e19fef5492278.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssinistcha-omasterpiece-b-s.png"
-dest_files=["res://.godot/imported/ssinistcha-omasterpiece-b-s.png-ad1cd84a8989c81d02c7c3ad6439c28e.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssinistcha-omasterpiece-b-s.png"
+dest_files=["res://.godot/imported/ssinistcha-omasterpiece-b-s.png-a402f55204418e15602e19fef5492278.ctex"]
 
 [params]
 

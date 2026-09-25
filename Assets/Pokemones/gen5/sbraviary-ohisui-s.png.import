@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brlscxswdcrv5"
-path="res://.godot/imported/sbraviary-ohisui-s.png-adce79cc24401749d6b80e5bbf7f2c2c.ctex"
+path="res://.godot/imported/sbraviary-ohisui-s.png-e8cf03e70623c084ba4c2f10a1effadf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbraviary-ohisui-s.png"
-dest_files=["res://.godot/imported/sbraviary-ohisui-s.png-adce79cc24401749d6b80e5bbf7f2c2c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbraviary-ohisui-s.png"
+dest_files=["res://.godot/imported/sbraviary-ohisui-s.png-e8cf03e70623c084ba4c2f10a1effadf.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxo2mdu8kqqmj"
-path="res://.godot/imported/saudino-omega-b.png-4a39e31a428ca7902446d16f035d1325.ctex"
+path="res://.godot/imported/saudino-omega-b.png-7170f0e890ed8f60008ad011404f1ed3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/saudino-omega-b.png"
-dest_files=["res://.godot/imported/saudino-omega-b.png-4a39e31a428ca7902446d16f035d1325.ctex"]
+source_file="res://Assets/Pokemones/gen5/saudino-omega-b.png"
+dest_files=["res://.godot/imported/saudino-omega-b.png-7170f0e890ed8f60008ad011404f1ed3.ctex"]
 
 [params]
 

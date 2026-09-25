@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpt0kdqbjseb8"
-path="res://.godot/imported/snecrozma-oultra-b-s.png-452ac0e6789c195f2e83d6fb1def2f3f.ctex"
+path="res://.godot/imported/snecrozma-oultra-b-s.png-2f12d468a917c2c2c641004d1729f8cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/snecrozma-oultra-b-s.png"
-dest_files=["res://.godot/imported/snecrozma-oultra-b-s.png-452ac0e6789c195f2e83d6fb1def2f3f.ctex"]
+source_file="res://Assets/Pokemones/gen5/snecrozma-oultra-b-s.png"
+dest_files=["res://.godot/imported/snecrozma-oultra-b-s.png-2f12d468a917c2c2c641004d1729f8cc.ctex"]
 
 [params]
 

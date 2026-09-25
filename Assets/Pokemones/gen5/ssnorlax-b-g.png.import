@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyomrmmqor4jc"
-path="res://.godot/imported/ssnorlax-b-g.png-c67adb94841129305b156c5784031321.ctex"
+path="res://.godot/imported/ssnorlax-b-g.png-ec67222fe927ae6a0b41600a0982f318.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssnorlax-b-g.png"
-dest_files=["res://.godot/imported/ssnorlax-b-g.png-c67adb94841129305b156c5784031321.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssnorlax-b-g.png"
+dest_files=["res://.godot/imported/ssnorlax-b-g.png-ec67222fe927ae6a0b41600a0982f318.ctex"]
 
 [params]
 

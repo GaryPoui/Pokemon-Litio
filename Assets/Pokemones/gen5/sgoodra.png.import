@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8s42dbvgp2sh"
-path="res://.godot/imported/sgoodra.png-3b83973f3cc97dcdef8d96bd056e0711.ctex"
+path="res://.godot/imported/sgoodra.png-08d9cab6796be950f5c84e73bfea3d3c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgoodra.png"
-dest_files=["res://.godot/imported/sgoodra.png-3b83973f3cc97dcdef8d96bd056e0711.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgoodra.png"
+dest_files=["res://.godot/imported/sgoodra.png-08d9cab6796be950f5c84e73bfea3d3c.ctex"]
 
 [params]
 

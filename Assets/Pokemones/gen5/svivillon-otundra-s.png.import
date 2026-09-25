@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b82lh1bg4ydvg"
-path="res://.godot/imported/svivillon-otundra-s.png-262a37246aabeeb8f969cf562e831b22.ctex"
+path="res://.godot/imported/svivillon-otundra-s.png-a8036389b3d0eb80035fe0ae1afd99e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svivillon-otundra-s.png"
-dest_files=["res://.godot/imported/svivillon-otundra-s.png-262a37246aabeeb8f969cf562e831b22.ctex"]
+source_file="res://Assets/Pokemones/gen5/svivillon-otundra-s.png"
+dest_files=["res://.godot/imported/svivillon-otundra-s.png-a8036389b3d0eb80035fe0ae1afd99e4.ctex"]
 
 [params]
 

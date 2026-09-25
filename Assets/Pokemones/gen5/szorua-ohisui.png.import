@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csv6gw3ss54ml"
-path="res://.godot/imported/szorua-ohisui.png-1d8971e4a442271b3a56c7c867d8a4e8.ctex"
+path="res://.godot/imported/szorua-ohisui.png-1312279371deca956297b7ddf31f3419.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/szorua-ohisui.png"
-dest_files=["res://.godot/imported/szorua-ohisui.png-1d8971e4a442271b3a56c7c867d8a4e8.ctex"]
+source_file="res://Assets/Pokemones/gen5/szorua-ohisui.png"
+dest_files=["res://.godot/imported/szorua-ohisui.png-1312279371deca956297b7ddf31f3419.ctex"]
 
 [params]
 

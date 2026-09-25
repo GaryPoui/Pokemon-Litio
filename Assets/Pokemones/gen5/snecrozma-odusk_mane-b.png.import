@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b81g20sdrj8lu"
-path="res://.godot/imported/snecrozma-odusk_mane-b.png-7abd77def0672a370d9a569c9e3ae803.ctex"
+path="res://.godot/imported/snecrozma-odusk_mane-b.png-9332b9283ac6977ce775fcb50f6bd7e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/snecrozma-odusk_mane-b.png"
-dest_files=["res://.godot/imported/snecrozma-odusk_mane-b.png-7abd77def0672a370d9a569c9e3ae803.ctex"]
+source_file="res://Assets/Pokemones/gen5/snecrozma-odusk_mane-b.png"
+dest_files=["res://.godot/imported/snecrozma-odusk_mane-b.png-9332b9283ac6977ce775fcb50f6bd7e1.ctex"]
 
 [params]
 

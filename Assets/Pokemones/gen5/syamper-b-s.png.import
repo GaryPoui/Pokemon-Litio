@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlrt267jh2g5n"
-path="res://.godot/imported/syamper-b-s.png-9d29898da4325a49a4932217896a8ca1.ctex"
+path="res://.godot/imported/syamper-b-s.png-9805b01826ad2b512150e90078d34707.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/syamper-b-s.png"
-dest_files=["res://.godot/imported/syamper-b-s.png-9d29898da4325a49a4932217896a8ca1.ctex"]
+source_file="res://Assets/Pokemones/gen5/syamper-b-s.png"
+dest_files=["res://.godot/imported/syamper-b-s.png-9805b01826ad2b512150e90078d34707.ctex"]
 
 [params]
 

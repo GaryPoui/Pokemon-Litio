@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjw0n6rlvkcak"
-path="res://.godot/imported/svivillon-osandstorm-s.png-4a3ac4be04c634527c7084ca6bc55faa.ctex"
+path="res://.godot/imported/svivillon-osandstorm-s.png-a29e3f6299b5c6aeecd7a3873e3746d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svivillon-osandstorm-s.png"
-dest_files=["res://.godot/imported/svivillon-osandstorm-s.png-4a3ac4be04c634527c7084ca6bc55faa.ctex"]
+source_file="res://Assets/Pokemones/gen5/svivillon-osandstorm-s.png"
+dest_files=["res://.godot/imported/svivillon-osandstorm-s.png-a29e3f6299b5c6aeecd7a3873e3746d5.ctex"]
 
 [params]
 

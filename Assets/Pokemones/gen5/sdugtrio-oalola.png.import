@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxrfk1fmwh6f"
-path="res://.godot/imported/sdugtrio-oalola.png-75a60b0bf34039845ea7489824dd5722.ctex"
+path="res://.godot/imported/sdugtrio-oalola.png-f7d912c8697f219f3b27d7c925873dea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdugtrio-oalola.png"
-dest_files=["res://.godot/imported/sdugtrio-oalola.png-75a60b0bf34039845ea7489824dd5722.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdugtrio-oalola.png"
+dest_files=["res://.godot/imported/sdugtrio-oalola.png-f7d912c8697f219f3b27d7c925873dea.ctex"]
 
 [params]
 

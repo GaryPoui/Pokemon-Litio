@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2w7icxr2l5hi"
-path="res://.godot/imported/smunkidori-b-s.png-5c80693cc1ff30756a26819390fbe757.ctex"
+path="res://.godot/imported/smunkidori-b-s.png-3c0a41925796ac245d2471468bd59041.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smunkidori-b-s.png"
-dest_files=["res://.godot/imported/smunkidori-b-s.png-5c80693cc1ff30756a26819390fbe757.ctex"]
+source_file="res://Assets/Pokemones/gen5/smunkidori-b-s.png"
+dest_files=["res://.godot/imported/smunkidori-b-s.png-3c0a41925796ac245d2471468bd59041.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://m116lf6gwloo"
-path="res://.godot/imported/ssilicobra-b.png-4ff105814e8cbe466808b33b4de0866c.ctex"
+path="res://.godot/imported/ssilicobra-b.png-8e56dc018097b9a63aaefbd6cc45eba5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilicobra-b.png"
-dest_files=["res://.godot/imported/ssilicobra-b.png-4ff105814e8cbe466808b33b4de0866c.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilicobra-b.png"
+dest_files=["res://.godot/imported/ssilicobra-b.png-8e56dc018097b9a63aaefbd6cc45eba5.ctex"]
 
 [params]
 

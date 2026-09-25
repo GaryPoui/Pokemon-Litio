@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdcym8n6p7too"
-path="res://.godot/imported/sraboot-b.png-2186e06166109565a775b3689c452f40.ctex"
+path="res://.godot/imported/sraboot-b.png-aaf2d1bad6cb87c047ad78a574596761.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sraboot-b.png"
-dest_files=["res://.godot/imported/sraboot-b.png-2186e06166109565a775b3689c452f40.ctex"]
+source_file="res://Assets/Pokemones/gen5/sraboot-b.png"
+dest_files=["res://.godot/imported/sraboot-b.png-aaf2d1bad6cb87c047ad78a574596761.ctex"]
 
 [params]
 

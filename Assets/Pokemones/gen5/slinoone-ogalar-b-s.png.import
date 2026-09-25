@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drvuut3d3ipe8"
-path="res://.godot/imported/slinoone-ogalar-b-s.png-c2a452b6ce3aead4695c2aac4f301a96.ctex"
+path="res://.godot/imported/slinoone-ogalar-b-s.png-b9080f14e70a1c8381f21fb7ec096190.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slinoone-ogalar-b-s.png"
-dest_files=["res://.godot/imported/slinoone-ogalar-b-s.png-c2a452b6ce3aead4695c2aac4f301a96.ctex"]
+source_file="res://Assets/Pokemones/gen5/slinoone-ogalar-b-s.png"
+dest_files=["res://.godot/imported/slinoone-ogalar-b-s.png-b9080f14e70a1c8381f21fb7ec096190.ctex"]
 
 [params]
 

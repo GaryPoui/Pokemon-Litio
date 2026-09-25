@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cts4xm30xuwp8"
-path="res://.godot/imported/sgourgeist-olarge-b-s.png-21bce3ebee8cfa475b8c42432d287c75.ctex"
+path="res://.godot/imported/sgourgeist-olarge-b-s.png-77a06e010467e4b8e7fd6853cf9a747f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgourgeist-olarge-b-s.png"
-dest_files=["res://.godot/imported/sgourgeist-olarge-b-s.png-21bce3ebee8cfa475b8c42432d287c75.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgourgeist-olarge-b-s.png"
+dest_files=["res://.godot/imported/sgourgeist-olarge-b-s.png-77a06e010467e4b8e7fd6853cf9a747f.ctex"]
 
 [params]
 

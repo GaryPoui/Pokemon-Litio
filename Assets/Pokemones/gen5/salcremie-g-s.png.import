@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6uwdjv1wadum"
-path="res://.godot/imported/salcremie-g-s.png-a0d95cd50a8cd3b900d2a8cc254ea3a0.ctex"
+path="res://.godot/imported/salcremie-g-s.png-37f8962b597a02bae01c8b1469f13053.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/salcremie-g-s.png"
-dest_files=["res://.godot/imported/salcremie-g-s.png-a0d95cd50a8cd3b900d2a8cc254ea3a0.ctex"]
+source_file="res://Assets/Pokemones/gen5/salcremie-g-s.png"
+dest_files=["res://.godot/imported/salcremie-g-s.png-37f8962b597a02bae01c8b1469f13053.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b80vtpt6lhufb"
-path="res://.godot/imported/srebble-s.png-ee5dd0da0b33a100ff8a83d7f10a0c70.ctex"
+path="res://.godot/imported/srebble-s.png-a621f8fcd7ac4344d9cb4b238ed7bcb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/srebble-s.png"
-dest_files=["res://.godot/imported/srebble-s.png-ee5dd0da0b33a100ff8a83d7f10a0c70.ctex"]
+source_file="res://Assets/Pokemones/gen5/srebble-s.png"
+dest_files=["res://.godot/imported/srebble-s.png-a621f8fcd7ac4344d9cb4b238ed7bcb7.ctex"]
 
 [params]
 

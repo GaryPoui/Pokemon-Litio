@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6h0wraot8mr"
-path="res://.godot/imported/sursaluna-obloodmoon-b-s.png-78cfe1e8ddff1476d74d7fe693649b52.ctex"
+path="res://.godot/imported/sursaluna-obloodmoon-b-s.png-ec7e392deb6b895ee6b1d0f2aef24a0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sursaluna-obloodmoon-b-s.png"
-dest_files=["res://.godot/imported/sursaluna-obloodmoon-b-s.png-78cfe1e8ddff1476d74d7fe693649b52.ctex"]
+source_file="res://Assets/Pokemones/gen5/sursaluna-obloodmoon-b-s.png"
+dest_files=["res://.godot/imported/sursaluna-obloodmoon-b-s.png-ec7e392deb6b895ee6b1d0f2aef24a0c.ctex"]
 
 [params]
 

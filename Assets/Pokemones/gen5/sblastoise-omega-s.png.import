@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2nvd01aq12ap"
-path="res://.godot/imported/sblastoise-omega-s.png-93c35b1284a5d74b3a4d29390aeaf05a.ctex"
+path="res://.godot/imported/sblastoise-omega-s.png-a9501033cbf2580ef0291ef8d0538b8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sblastoise-omega-s.png"
-dest_files=["res://.godot/imported/sblastoise-omega-s.png-93c35b1284a5d74b3a4d29390aeaf05a.ctex"]
+source_file="res://Assets/Pokemones/gen5/sblastoise-omega-s.png"
+dest_files=["res://.godot/imported/sblastoise-omega-s.png-a9501033cbf2580ef0291ef8d0538b8d.ctex"]
 
 [params]
 

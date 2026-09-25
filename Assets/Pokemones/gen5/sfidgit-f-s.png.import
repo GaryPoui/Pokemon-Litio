@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ben3e3qvu55sk"
-path="res://.godot/imported/sfidgit-f-s.png-54772000153f9811087b1c3b86131c52.ctex"
+path="res://.godot/imported/sfidgit-f-s.png-964e69b505df716a665de9c8f3462fc7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfidgit-f-s.png"
-dest_files=["res://.godot/imported/sfidgit-f-s.png-54772000153f9811087b1c3b86131c52.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfidgit-f-s.png"
+dest_files=["res://.godot/imported/sfidgit-f-s.png-964e69b505df716a665de9c8f3462fc7.ctex"]
 
 [params]
 

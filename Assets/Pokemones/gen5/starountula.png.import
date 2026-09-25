@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bft8bwmct6xuj"
-path="res://.godot/imported/starountula.png-98e21973e59ad4851c05b99ab134e6d7.ctex"
+path="res://.godot/imported/starountula.png-9187c9c831cc3ff29ff025019bf57613.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/starountula.png"
-dest_files=["res://.godot/imported/starountula.png-98e21973e59ad4851c05b99ab134e6d7.ctex"]
+source_file="res://Assets/Pokemones/gen5/starountula.png"
+dest_files=["res://.godot/imported/starountula.png-9187c9c831cc3ff29ff025019bf57613.ctex"]
 
 [params]
 

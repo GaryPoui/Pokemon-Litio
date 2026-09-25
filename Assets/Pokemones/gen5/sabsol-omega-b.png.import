@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crde6j5xkssbu"
-path="res://.godot/imported/sabsol-omega-b.png-951431a739ce910f75d9a9e1f8434b0d.ctex"
+path="res://.godot/imported/sabsol-omega-b.png-540596d8de4f0ac89b9e84286db29a38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sabsol-omega-b.png"
-dest_files=["res://.godot/imported/sabsol-omega-b.png-951431a739ce910f75d9a9e1f8434b0d.ctex"]
+source_file="res://Assets/Pokemones/gen5/sabsol-omega-b.png"
+dest_files=["res://.godot/imported/sabsol-omega-b.png-540596d8de4f0ac89b9e84286db29a38.ctex"]
 
 [params]
 

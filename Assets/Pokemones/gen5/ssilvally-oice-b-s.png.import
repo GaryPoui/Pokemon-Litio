@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdok2pf13mbux"
-path="res://.godot/imported/ssilvally-oice-b-s.png-7f7b4d211f37fb380a1cff9c33ce759f.ctex"
+path="res://.godot/imported/ssilvally-oice-b-s.png-c0f8a0ed2764d993b1ab687d7ab72fdc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilvally-oice-b-s.png"
-dest_files=["res://.godot/imported/ssilvally-oice-b-s.png-7f7b4d211f37fb380a1cff9c33ce759f.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilvally-oice-b-s.png"
+dest_files=["res://.godot/imported/ssilvally-oice-b-s.png-c0f8a0ed2764d993b1ab687d7ab72fdc.ctex"]
 
 [params]
 

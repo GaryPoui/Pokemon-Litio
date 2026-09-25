@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lmcna1i2xwk0"
-path="res://.godot/imported/ssilvally-ofire-b-s.png-5bdbb4dd7c01d0fc5f768b42e69c3aba.ctex"
+path="res://.godot/imported/ssilvally-ofire-b-s.png-650fe19fb8a4a2a9d65fb7d8d4248557.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilvally-ofire-b-s.png"
-dest_files=["res://.godot/imported/ssilvally-ofire-b-s.png-5bdbb4dd7c01d0fc5f768b42e69c3aba.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilvally-ofire-b-s.png"
+dest_files=["res://.godot/imported/ssilvally-ofire-b-s.png-650fe19fb8a4a2a9d65fb7d8d4248557.ctex"]
 
 [params]
 

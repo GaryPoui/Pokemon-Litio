@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dr5vyk0aslxxd"
-path="res://.godot/imported/sflittle.png-c61ba05d1d0b55d4806e11a7f8b6bfb7.ctex"
+path="res://.godot/imported/sflittle.png-4ab18dab08aa23f0f3882259beadc7e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sflittle.png"
-dest_files=["res://.godot/imported/sflittle.png-c61ba05d1d0b55d4806e11a7f8b6bfb7.ctex"]
+source_file="res://Assets/Pokemones/gen5/sflittle.png"
+dest_files=["res://.godot/imported/sflittle.png-4ab18dab08aa23f0f3882259beadc7e5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1seigvlfodg2"
-path="res://.godot/imported/svivillon-osun-b.png-8f8c054d68922a4ebcb6f78fe82ea6a1.ctex"
+path="res://.godot/imported/svivillon-osun-b.png-f020275b82c363724bcea306780c9797.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svivillon-osun-b.png"
-dest_files=["res://.godot/imported/svivillon-osun-b.png-8f8c054d68922a4ebcb6f78fe82ea6a1.ctex"]
+source_file="res://Assets/Pokemones/gen5/svivillon-osun-b.png"
+dest_files=["res://.godot/imported/svivillon-osun-b.png-f020275b82c363724bcea306780c9797.ctex"]
 
 [params]
 

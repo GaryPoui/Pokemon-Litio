@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://22t5myp1q2u"
-path="res://.godot/imported/smeltan.png-5137c874f79ef3e8cea57aa0cf3ea93b.ctex"
+path="res://.godot/imported/smeltan.png-3860a0c04e0cd56884be10e7dfda3a07.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smeltan.png"
-dest_files=["res://.godot/imported/smeltan.png-5137c874f79ef3e8cea57aa0cf3ea93b.ctex"]
+source_file="res://Assets/Pokemones/gen5/smeltan.png"
+dest_files=["res://.godot/imported/smeltan.png-3860a0c04e0cd56884be10e7dfda3a07.ctex"]
 
 [params]
 

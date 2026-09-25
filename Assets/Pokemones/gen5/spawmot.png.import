@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7nf3tw4k1hd5"
-path="res://.godot/imported/spawmot.png-d09eace01babcc03841ebfb166d0b2f9.ctex"
+path="res://.godot/imported/spawmot.png-4d744355d2f2e201c534012edac1016d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spawmot.png"
-dest_files=["res://.godot/imported/spawmot.png-d09eace01babcc03841ebfb166d0b2f9.ctex"]
+source_file="res://Assets/Pokemones/gen5/spawmot.png"
+dest_files=["res://.godot/imported/spawmot.png-4d744355d2f2e201c534012edac1016d.ctex"]
 
 [params]
 

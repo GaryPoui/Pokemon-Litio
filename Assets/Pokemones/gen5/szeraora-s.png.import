@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c41l03qoaidpj"
-path="res://.godot/imported/szeraora-s.png-fee48b8534002a7691e7e8725aa6bc10.ctex"
+path="res://.godot/imported/szeraora-s.png-c2c91fde0a4ccde9a6b1e372cb26adad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/szeraora-s.png"
-dest_files=["res://.godot/imported/szeraora-s.png-fee48b8534002a7691e7e8725aa6bc10.ctex"]
+source_file="res://Assets/Pokemones/gen5/szeraora-s.png"
+dest_files=["res://.godot/imported/szeraora-s.png-c2c91fde0a4ccde9a6b1e372cb26adad.ctex"]
 
 [params]
 

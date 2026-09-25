@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djjiknillyh64"
-path="res://.godot/imported/squilladin-s.png-582af5c7e268b21d8d60cd2b7475a087.ctex"
+path="res://.godot/imported/squilladin-s.png-b6d7de00b366cffe18c746cb59393c2a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/squilladin-s.png"
-dest_files=["res://.godot/imported/squilladin-s.png-582af5c7e268b21d8d60cd2b7475a087.ctex"]
+source_file="res://Assets/Pokemones/gen5/squilladin-s.png"
+dest_files=["res://.godot/imported/squilladin-s.png-b6d7de00b366cffe18c746cb59393c2a.ctex"]
 
 [params]
 

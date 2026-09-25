@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwihylt61o8hk"
-path="res://.godot/imported/standemaus-b-s.png-1ca0388b340cce625c08da71881767c3.ctex"
+path="res://.godot/imported/standemaus-b-s.png-fcbf93c7c5c4e710e47bc6e54850106b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/standemaus-b-s.png"
-dest_files=["res://.godot/imported/standemaus-b-s.png-1ca0388b340cce625c08da71881767c3.ctex"]
+source_file="res://Assets/Pokemones/gen5/standemaus-b-s.png"
+dest_files=["res://.godot/imported/standemaus-b-s.png-fcbf93c7c5c4e710e47bc6e54850106b.ctex"]
 
 [params]
 

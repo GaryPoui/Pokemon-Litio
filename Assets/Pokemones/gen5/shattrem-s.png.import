@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://de3tvbi6x71py"
-path="res://.godot/imported/shattrem-s.png-ff1158a9a6f8610e010047cb41f82bb1.ctex"
+path="res://.godot/imported/shattrem-s.png-867b320764f27f5063a2aee5264a3333.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shattrem-s.png"
-dest_files=["res://.godot/imported/shattrem-s.png-ff1158a9a6f8610e010047cb41f82bb1.ctex"]
+source_file="res://Assets/Pokemones/gen5/shattrem-s.png"
+dest_files=["res://.godot/imported/shattrem-s.png-867b320764f27f5063a2aee5264a3333.ctex"]
 
 [params]
 

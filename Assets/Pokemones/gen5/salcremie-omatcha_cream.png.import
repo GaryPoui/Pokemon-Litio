@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg70xbqabaram"
-path="res://.godot/imported/salcremie-omatcha_cream.png-2f695981055664c8616af9c2df3f1526.ctex"
+path="res://.godot/imported/salcremie-omatcha_cream.png-7dd39b1bdc85806f93fe3b1786bd762e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/salcremie-omatcha_cream.png"
-dest_files=["res://.godot/imported/salcremie-omatcha_cream.png-2f695981055664c8616af9c2df3f1526.ctex"]
+source_file="res://Assets/Pokemones/gen5/salcremie-omatcha_cream.png"
+dest_files=["res://.godot/imported/salcremie-omatcha_cream.png-7dd39b1bdc85806f93fe3b1786bd762e.ctex"]
 
 [params]
 

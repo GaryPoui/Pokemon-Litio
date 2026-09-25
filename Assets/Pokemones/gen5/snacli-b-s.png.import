@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://n8rhkt6le7l8"
-path="res://.godot/imported/snacli-b-s.png-e50800cfab4ab7bf8c8259f892d8ca26.ctex"
+path="res://.godot/imported/snacli-b-s.png-e01447d503820455c37f0fd5c1b23cde.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/snacli-b-s.png"
-dest_files=["res://.godot/imported/snacli-b-s.png-e50800cfab4ab7bf8c8259f892d8ca26.ctex"]
+source_file="res://Assets/Pokemones/gen5/snacli-b-s.png"
+dest_files=["res://.godot/imported/snacli-b-s.png-e01447d503820455c37f0fd5c1b23cde.ctex"]
 
 [params]
 

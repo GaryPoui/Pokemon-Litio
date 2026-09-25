@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4ex1lndw2o5r"
-path="res://.godot/imported/sjustyke.png-741ed3f7a284356328b5b250832cd7fc.ctex"
+path="res://.godot/imported/sjustyke.png-2772a1bee98bf721d3ecbb223633afee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sjustyke.png"
-dest_files=["res://.godot/imported/sjustyke.png-741ed3f7a284356328b5b250832cd7fc.ctex"]
+source_file="res://Assets/Pokemones/gen5/sjustyke.png"
+dest_files=["res://.godot/imported/sjustyke.png-2772a1bee98bf721d3ecbb223633afee.ctex"]
 
 [params]
 

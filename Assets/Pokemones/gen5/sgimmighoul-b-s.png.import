@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d10qiaysc4uwe"
-path="res://.godot/imported/sgimmighoul-b-s.png-676244cbff87aedc0ab461bd6f3c7da0.ctex"
+path="res://.godot/imported/sgimmighoul-b-s.png-73932135d402503f98c4772850c38445.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgimmighoul-b-s.png"
-dest_files=["res://.godot/imported/sgimmighoul-b-s.png-676244cbff87aedc0ab461bd6f3c7da0.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgimmighoul-b-s.png"
+dest_files=["res://.godot/imported/sgimmighoul-b-s.png-73932135d402503f98c4772850c38445.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pesp6k2465sb"
-path="res://.godot/imported/sclobbopus.png-6f382862f90e8e6b7a04d99ac1739672.ctex"
+path="res://.godot/imported/sclobbopus.png-ab5bdb7d70201d79b0478f58cf59b124.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sclobbopus.png"
-dest_files=["res://.godot/imported/sclobbopus.png-6f382862f90e8e6b7a04d99ac1739672.ctex"]
+source_file="res://Assets/Pokemones/gen5/sclobbopus.png"
+dest_files=["res://.godot/imported/sclobbopus.png-ab5bdb7d70201d79b0478f58cf59b124.ctex"]
 
 [params]
 

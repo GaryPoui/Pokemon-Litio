@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://e3cib6dosaf5"
-path="res://.godot/imported/smaschiff-b.png-c70abb6c1c8e2c2b7ff7295f5fa8424f.ctex"
+path="res://.godot/imported/smaschiff-b.png-b93ed439acc39b0ee594152da478f763.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smaschiff-b.png"
-dest_files=["res://.godot/imported/smaschiff-b.png-c70abb6c1c8e2c2b7ff7295f5fa8424f.ctex"]
+source_file="res://Assets/Pokemones/gen5/smaschiff-b.png"
+dest_files=["res://.godot/imported/smaschiff-b.png-b93ed439acc39b0ee594152da478f763.ctex"]
 
 [params]
 

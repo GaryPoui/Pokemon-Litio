@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fjkx2aewakkh"
-path="res://.godot/imported/sdubwool-b.png-abf3686d00369c174bab594fc720a0a5.ctex"
+path="res://.godot/imported/sdubwool-b.png-b552b2cc41ea8b4b46524af1da883d79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdubwool-b.png"
-dest_files=["res://.godot/imported/sdubwool-b.png-abf3686d00369c174bab594fc720a0a5.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdubwool-b.png"
+dest_files=["res://.godot/imported/sdubwool-b.png-b552b2cc41ea8b4b46524af1da883d79.ctex"]
 
 [params]
 

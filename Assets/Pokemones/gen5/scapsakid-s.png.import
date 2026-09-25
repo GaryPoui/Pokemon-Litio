@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://damskndh7ehfr"
-path="res://.godot/imported/scapsakid-s.png-99574fdcec4399e5a91e1a5ea3e76dbe.ctex"
+path="res://.godot/imported/scapsakid-s.png-e30311d4c4548651aa307cb299703a46.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scapsakid-s.png"
-dest_files=["res://.godot/imported/scapsakid-s.png-99574fdcec4399e5a91e1a5ea3e76dbe.ctex"]
+source_file="res://Assets/Pokemones/gen5/scapsakid-s.png"
+dest_files=["res://.godot/imported/scapsakid-s.png-e30311d4c4548651aa307cb299703a46.ctex"]
 
 [params]
 

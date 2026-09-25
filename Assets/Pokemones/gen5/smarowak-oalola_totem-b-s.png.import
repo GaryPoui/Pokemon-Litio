@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwidu0r0lm8bx"
-path="res://.godot/imported/smarowak-oalola_totem-b-s.png-dbd0d757114d81bed0a7f4bbbbe3c8ed.ctex"
+path="res://.godot/imported/smarowak-oalola_totem-b-s.png-ea027c6d79eecb195c0333110adc375d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smarowak-oalola_totem-b-s.png"
-dest_files=["res://.godot/imported/smarowak-oalola_totem-b-s.png-dbd0d757114d81bed0a7f4bbbbe3c8ed.ctex"]
+source_file="res://Assets/Pokemones/gen5/smarowak-oalola_totem-b-s.png"
+dest_files=["res://.godot/imported/smarowak-oalola_totem-b-s.png-ea027c6d79eecb195c0333110adc375d.ctex"]
 
 [params]
 

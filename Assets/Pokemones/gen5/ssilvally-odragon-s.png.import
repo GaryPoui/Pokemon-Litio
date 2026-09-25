@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcgxr2itrg64h"
-path="res://.godot/imported/ssilvally-odragon-s.png-c979df01d0b27ba8142e682701895e92.ctex"
+path="res://.godot/imported/ssilvally-odragon-s.png-0b40df10bb15ba4be74ee5339e35021e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilvally-odragon-s.png"
-dest_files=["res://.godot/imported/ssilvally-odragon-s.png-c979df01d0b27ba8142e682701895e92.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilvally-odragon-s.png"
+dest_files=["res://.godot/imported/ssilvally-odragon-s.png-0b40df10bb15ba4be74ee5339e35021e.ctex"]
 
 [params]
 

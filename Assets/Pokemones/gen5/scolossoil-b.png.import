@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bt1impf231e7q"
-path="res://.godot/imported/scolossoil-b.png-e6c0666dc0091205653ac1218860e973.ctex"
+path="res://.godot/imported/scolossoil-b.png-e4d7db635102cc3f9bee72e6978e55e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scolossoil-b.png"
-dest_files=["res://.godot/imported/scolossoil-b.png-e6c0666dc0091205653ac1218860e973.ctex"]
+source_file="res://Assets/Pokemones/gen5/scolossoil-b.png"
+dest_files=["res://.godot/imported/scolossoil-b.png-e4d7db635102cc3f9bee72e6978e55e8.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfuvduowejsyp"
-path="res://.godot/imported/sstratagem.png-434608c50c5ce9733b88c093f42c86ad.ctex"
+path="res://.godot/imported/sstratagem.png-5f34ec168d614efdd51fbeced7efd15f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sstratagem.png"
-dest_files=["res://.godot/imported/sstratagem.png-434608c50c5ce9733b88c093f42c86ad.ctex"]
+source_file="res://Assets/Pokemones/gen5/sstratagem.png"
+dest_files=["res://.godot/imported/sstratagem.png-5f34ec168d614efdd51fbeced7efd15f.ctex"]
 
 [params]
 

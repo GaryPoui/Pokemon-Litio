@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgrqbyk8guvtv"
-path="res://.godot/imported/seternatus-oeternamax-s.png-f97f15e98c38eb7c092b5d35df6734ff.ctex"
+path="res://.godot/imported/seternatus-oeternamax-s.png-68c5644ec03368aa54c29ac0c5abdd46.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/seternatus-oeternamax-s.png"
-dest_files=["res://.godot/imported/seternatus-oeternamax-s.png-f97f15e98c38eb7c092b5d35df6734ff.ctex"]
+source_file="res://Assets/Pokemones/gen5/seternatus-oeternamax-s.png"
+dest_files=["res://.godot/imported/seternatus-oeternamax-s.png-68c5644ec03368aa54c29ac0c5abdd46.ctex"]
 
 [params]
 

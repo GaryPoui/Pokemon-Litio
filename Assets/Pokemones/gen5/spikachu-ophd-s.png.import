@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bh6wdovgwohlp"
-path="res://.godot/imported/spikachu-ophd-s.png-3f9ab1dbf8fd5e0e0e254b0b5f9cfa32.ctex"
+path="res://.godot/imported/spikachu-ophd-s.png-4feb6023ea23971e1a236aee88cd02f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spikachu-ophd-s.png"
-dest_files=["res://.godot/imported/spikachu-ophd-s.png-3f9ab1dbf8fd5e0e0e254b0b5f9cfa32.ctex"]
+source_file="res://Assets/Pokemones/gen5/spikachu-ophd-s.png"
+dest_files=["res://.godot/imported/spikachu-ophd-s.png-4feb6023ea23971e1a236aee88cd02f1.ctex"]
 
 [params]
 

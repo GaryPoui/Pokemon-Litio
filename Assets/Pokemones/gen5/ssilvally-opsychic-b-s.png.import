@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmqwi80ffb6ya"
-path="res://.godot/imported/ssilvally-opsychic-b-s.png-270965e512ca57bf9eb2701146f4c3ca.ctex"
+path="res://.godot/imported/ssilvally-opsychic-b-s.png-4d82cdf76c7407ba254c0b3b2caf5ef7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilvally-opsychic-b-s.png"
-dest_files=["res://.godot/imported/ssilvally-opsychic-b-s.png-270965e512ca57bf9eb2701146f4c3ca.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilvally-opsychic-b-s.png"
+dest_files=["res://.godot/imported/ssilvally-opsychic-b-s.png-4d82cdf76c7407ba254c0b3b2caf5ef7.ctex"]
 
 [params]
 

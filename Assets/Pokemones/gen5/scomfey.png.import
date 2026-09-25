@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dihdcsndy8jup"
-path="res://.godot/imported/scomfey.png-0746f4389f5a81219092371d30613af3.ctex"
+path="res://.godot/imported/scomfey.png-30cd267fee72b4c200a4e31d729abe2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scomfey.png"
-dest_files=["res://.godot/imported/scomfey.png-0746f4389f5a81219092371d30613af3.ctex"]
+source_file="res://Assets/Pokemones/gen5/scomfey.png"
+dest_files=["res://.godot/imported/scomfey.png-30cd267fee72b4c200a4e31d729abe2b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dran1pg7l6pem"
-path="res://.godot/imported/stype_null.png-3b948088470ed992b050df49c10e0513.ctex"
+path="res://.godot/imported/stype_null.png-e7882d8c6567c3166a5fcc85378a153b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stype_null.png"
-dest_files=["res://.godot/imported/stype_null.png-3b948088470ed992b050df49c10e0513.ctex"]
+source_file="res://Assets/Pokemones/gen5/stype_null.png"
+dest_files=["res://.godot/imported/stype_null.png-e7882d8c6567c3166a5fcc85378a153b.ctex"]
 
 [params]
 

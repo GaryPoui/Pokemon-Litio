@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4g2ewhq5ge3e"
-path="res://.godot/imported/sbanette-omega.png-b58af8e62a7970432e7a083a3ef58d38.ctex"
+path="res://.godot/imported/sbanette-omega.png-2567c3d84dde0ffee0635d240274ecdc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbanette-omega.png"
-dest_files=["res://.godot/imported/sbanette-omega.png-b58af8e62a7970432e7a083a3ef58d38.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbanette-omega.png"
+dest_files=["res://.godot/imported/sbanette-omega.png-2567c3d84dde0ffee0635d240274ecdc.ctex"]
 
 [params]
 

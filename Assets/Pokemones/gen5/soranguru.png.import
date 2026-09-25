@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhqmkxem5gbdc"
-path="res://.godot/imported/soranguru.png-f58cc1e4a366606a410eb39059d2671a.ctex"
+path="res://.godot/imported/soranguru.png-326ada3701b14acdb19a0e789e2835eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/soranguru.png"
-dest_files=["res://.godot/imported/soranguru.png-f58cc1e4a366606a410eb39059d2671a.ctex"]
+source_file="res://Assets/Pokemones/gen5/soranguru.png"
+dest_files=["res://.godot/imported/soranguru.png-326ada3701b14acdb19a0e789e2835eb.ctex"]
 
 [params]
 

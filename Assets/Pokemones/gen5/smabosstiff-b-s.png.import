@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6j50xlmu4fee"
-path="res://.godot/imported/smabosstiff-b-s.png-e60dd9a51b028fcc22a992956dc39158.ctex"
+path="res://.godot/imported/smabosstiff-b-s.png-d6346d089dd73049d5eacb21bb12de1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smabosstiff-b-s.png"
-dest_files=["res://.godot/imported/smabosstiff-b-s.png-e60dd9a51b028fcc22a992956dc39158.ctex"]
+source_file="res://Assets/Pokemones/gen5/smabosstiff-b-s.png"
+dest_files=["res://.godot/imported/smabosstiff-b-s.png-d6346d089dd73049d5eacb21bb12de1d.ctex"]
 
 [params]
 

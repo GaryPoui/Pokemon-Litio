@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvo1u815wg1j2"
-path="res://.godot/imported/ssilvally-odark-b.png-a146a73a61898a358c5792198cfbae4a.ctex"
+path="res://.godot/imported/ssilvally-odark-b.png-f0dc3ec9233595253146ca507944fe38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilvally-odark-b.png"
-dest_files=["res://.godot/imported/ssilvally-odark-b.png-a146a73a61898a358c5792198cfbae4a.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilvally-odark-b.png"
+dest_files=["res://.godot/imported/ssilvally-odark-b.png-f0dc3ec9233595253146ca507944fe38.ctex"]
 
 [params]
 

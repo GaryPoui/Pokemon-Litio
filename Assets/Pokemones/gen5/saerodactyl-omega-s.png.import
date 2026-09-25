@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4sr7kg7pl60i"
-path="res://.godot/imported/saerodactyl-omega-s.png-26f78329287cdd623ad3afbb746de771.ctex"
+path="res://.godot/imported/saerodactyl-omega-s.png-59e6cbdf4b16884d5d47d24c62722fe4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/saerodactyl-omega-s.png"
-dest_files=["res://.godot/imported/saerodactyl-omega-s.png-26f78329287cdd623ad3afbb746de771.ctex"]
+source_file="res://Assets/Pokemones/gen5/saerodactyl-omega-s.png"
+dest_files=["res://.godot/imported/saerodactyl-omega-s.png-59e6cbdf4b16884d5d47d24c62722fe4.ctex"]
 
 [params]
 

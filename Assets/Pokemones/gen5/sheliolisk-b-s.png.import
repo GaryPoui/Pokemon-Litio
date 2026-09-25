@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b885wfkxbmm7t"
-path="res://.godot/imported/sheliolisk-b-s.png-558752179fc379c54be9247c2a6ab3fa.ctex"
+path="res://.godot/imported/sheliolisk-b-s.png-5fab717885aeb49f95b2f5b14a161086.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sheliolisk-b-s.png"
-dest_files=["res://.godot/imported/sheliolisk-b-s.png-558752179fc379c54be9247c2a6ab3fa.ctex"]
+source_file="res://Assets/Pokemones/gen5/sheliolisk-b-s.png"
+dest_files=["res://.godot/imported/sheliolisk-b-s.png-5fab717885aeb49f95b2f5b14a161086.ctex"]
 
 [params]
 

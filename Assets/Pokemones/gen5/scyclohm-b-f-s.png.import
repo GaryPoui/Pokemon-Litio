@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cy7y4b5m1m5un"
-path="res://.godot/imported/scyclohm-b-f-s.png-0828eb112b3cd389e9703a960bc5b408.ctex"
+path="res://.godot/imported/scyclohm-b-f-s.png-138c99360b5ce86201321b4f017a22df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scyclohm-b-f-s.png"
-dest_files=["res://.godot/imported/scyclohm-b-f-s.png-0828eb112b3cd389e9703a960bc5b408.ctex"]
+source_file="res://Assets/Pokemones/gen5/scyclohm-b-f-s.png"
+dest_files=["res://.godot/imported/scyclohm-b-f-s.png-138c99360b5ce86201321b4f017a22df.ctex"]
 
 [params]
 

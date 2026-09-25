@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnojp70puui8b"
-path="res://.godot/imported/samaura-b-s.png-570a0bbe0c7f54b056d4890a1f01ed20.ctex"
+path="res://.godot/imported/samaura-b-s.png-9c8fd619c056fdb96dc1a973d504396d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/samaura-b-s.png"
-dest_files=["res://.godot/imported/samaura-b-s.png-570a0bbe0c7f54b056d4890a1f01ed20.ctex"]
+source_file="res://Assets/Pokemones/gen5/samaura-b-s.png"
+dest_files=["res://.godot/imported/samaura-b-s.png-9c8fd619c056fdb96dc1a973d504396d.ctex"]
 
 [params]
 

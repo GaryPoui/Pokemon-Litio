@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vsyxnkvjnixx"
-path="res://.godot/imported/sfinizen-s.png-cbbcca09d00381589931cf5b681d8f26.ctex"
+path="res://.godot/imported/sfinizen-s.png-227e9154345d041e92f7625ea888193f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfinizen-s.png"
-dest_files=["res://.godot/imported/sfinizen-s.png-cbbcca09d00381589931cf5b681d8f26.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfinizen-s.png"
+dest_files=["res://.godot/imported/sfinizen-s.png-227e9154345d041e92f7625ea888193f.ctex"]
 
 [params]
 

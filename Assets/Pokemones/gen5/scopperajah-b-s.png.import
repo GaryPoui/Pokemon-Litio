@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brsynxwen1m8m"
-path="res://.godot/imported/scopperajah-b-s.png-0d1249f9bd8f97aa598e04cecf3e96d6.ctex"
+path="res://.godot/imported/scopperajah-b-s.png-2fb1c794065fa7e8a4c71392d1897a06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scopperajah-b-s.png"
-dest_files=["res://.godot/imported/scopperajah-b-s.png-0d1249f9bd8f97aa598e04cecf3e96d6.ctex"]
+source_file="res://Assets/Pokemones/gen5/scopperajah-b-s.png"
+dest_files=["res://.godot/imported/scopperajah-b-s.png-2fb1c794065fa7e8a4c71392d1897a06.ctex"]
 
 [params]
 

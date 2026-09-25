@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpcf3u7nkhr3b"
-path="res://.godot/imported/smarshadow-b-s.png-535ce3c5e246f7bd8bb73475e930583a.ctex"
+path="res://.godot/imported/smarshadow-b-s.png-ef3ff9556e53ba294865c58cac84c522.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smarshadow-b-s.png"
-dest_files=["res://.godot/imported/smarshadow-b-s.png-535ce3c5e246f7bd8bb73475e930583a.ctex"]
+source_file="res://Assets/Pokemones/gen5/smarshadow-b-s.png"
+dest_files=["res://.godot/imported/smarshadow-b-s.png-ef3ff9556e53ba294865c58cac84c522.ctex"]
 
 [params]
 

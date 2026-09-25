@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg0amwcj44x5x"
-path="res://.godot/imported/slycanroc-odusk.png-0c4d3596dec2eee646e5b357fa6b553a.ctex"
+path="res://.godot/imported/slycanroc-odusk.png-9fa2a72326449b71c6d90e8ebfd128bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slycanroc-odusk.png"
-dest_files=["res://.godot/imported/slycanroc-odusk.png-0c4d3596dec2eee646e5b357fa6b553a.ctex"]
+source_file="res://Assets/Pokemones/gen5/slycanroc-odusk.png"
+dest_files=["res://.godot/imported/slycanroc-odusk.png-9fa2a72326449b71c6d90e8ebfd128bc.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lj85blatbopw"
-path="res://.godot/imported/sskiddo.png-450257f48c24ef163ad39a338b384b2e.ctex"
+path="res://.godot/imported/sskiddo.png-fa5f8cf673cff1fb99a7c16747ae938e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sskiddo.png"
-dest_files=["res://.godot/imported/sskiddo.png-450257f48c24ef163ad39a338b384b2e.ctex"]
+source_file="res://Assets/Pokemones/gen5/sskiddo.png"
+dest_files=["res://.godot/imported/sskiddo.png-fa5f8cf673cff1fb99a7c16747ae938e.ctex"]
 
 [params]
 

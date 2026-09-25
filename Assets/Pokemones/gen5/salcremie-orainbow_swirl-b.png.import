@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhofu2rfoo1yi"
-path="res://.godot/imported/salcremie-orainbow_swirl-b.png-1cdd385943b9c6555234083746bee37f.ctex"
+path="res://.godot/imported/salcremie-orainbow_swirl-b.png-58d3fb833eeafda593072478a3b00a6d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/salcremie-orainbow_swirl-b.png"
-dest_files=["res://.godot/imported/salcremie-orainbow_swirl-b.png-1cdd385943b9c6555234083746bee37f.ctex"]
+source_file="res://Assets/Pokemones/gen5/salcremie-orainbow_swirl-b.png"
+dest_files=["res://.godot/imported/salcremie-orainbow_swirl-b.png-58d3fb833eeafda593072478a3b00a6d.ctex"]
 
 [params]
 

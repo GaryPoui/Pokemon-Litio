@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://breabf3lbt0bh"
-path="res://.godot/imported/swooper-opaldea-s.png-4acae50a6b71a486b992970bb65ec92a.ctex"
+path="res://.godot/imported/swooper-opaldea-s.png-753456bb211bb1ee206b1b9c94cbf560.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/swooper-opaldea-s.png"
-dest_files=["res://.godot/imported/swooper-opaldea-s.png-4acae50a6b71a486b992970bb65ec92a.ctex"]
+source_file="res://Assets/Pokemones/gen5/swooper-opaldea-s.png"
+dest_files=["res://.godot/imported/swooper-opaldea-s.png-753456bb211bb1ee206b1b9c94cbf560.ctex"]
 
 [params]
 

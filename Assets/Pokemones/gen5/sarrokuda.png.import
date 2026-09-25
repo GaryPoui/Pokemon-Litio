@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlewrl25nt3y7"
-path="res://.godot/imported/sarrokuda.png-53ec75cc2412c95e5ea1c470482b4e5d.ctex"
+path="res://.godot/imported/sarrokuda.png-af8c0527405ff9eb10dab1a0558cde05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sarrokuda.png"
-dest_files=["res://.godot/imported/sarrokuda.png-53ec75cc2412c95e5ea1c470482b4e5d.ctex"]
+source_file="res://Assets/Pokemones/gen5/sarrokuda.png"
+dest_files=["res://.godot/imported/sarrokuda.png-af8c0527405ff9eb10dab1a0558cde05.ctex"]
 
 [params]
 

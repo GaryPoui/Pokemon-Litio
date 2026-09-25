@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2mp3tiif1nge"
-path="res://.godot/imported/styrantrum.png-ff09f41e81f478b8b25a3dca89d2191c.ctex"
+path="res://.godot/imported/styrantrum.png-3f8db21c7c69e054181b8ea35225c9b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/styrantrum.png"
-dest_files=["res://.godot/imported/styrantrum.png-ff09f41e81f478b8b25a3dca89d2191c.ctex"]
+source_file="res://Assets/Pokemones/gen5/styrantrum.png"
+dest_files=["res://.godot/imported/styrantrum.png-3f8db21c7c69e054181b8ea35225c9b4.ctex"]
 
 [params]
 

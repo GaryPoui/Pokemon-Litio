@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6kdsl1chh360"
-path="res://.godot/imported/spangoro-b.png-ed72c38f277a603bfc34775c119e2cac.ctex"
+path="res://.godot/imported/spangoro-b.png-3eb38175369d31556094aa469985c58f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spangoro-b.png"
-dest_files=["res://.godot/imported/spangoro-b.png-ed72c38f277a603bfc34775c119e2cac.ctex"]
+source_file="res://Assets/Pokemones/gen5/spangoro-b.png"
+dest_files=["res://.godot/imported/spangoro-b.png-3eb38175369d31556094aa469985c58f.ctex"]
 
 [params]
 

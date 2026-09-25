@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3kgarnkbslfr"
-path="res://.godot/imported/sphantump.png-524e4afecc0e3988e13dfe193fe7680a.ctex"
+path="res://.godot/imported/sphantump.png-433d2116805c5e022e8cc3c60ca2ef07.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sphantump.png"
-dest_files=["res://.godot/imported/sphantump.png-524e4afecc0e3988e13dfe193fe7680a.ctex"]
+source_file="res://Assets/Pokemones/gen5/sphantump.png"
+dest_files=["res://.godot/imported/sphantump.png-433d2116805c5e022e8cc3c60ca2ef07.ctex"]
 
 [params]
 

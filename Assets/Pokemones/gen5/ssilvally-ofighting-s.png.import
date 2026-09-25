@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://baquoknor17ho"
-path="res://.godot/imported/ssilvally-ofighting-s.png-84c004bde219f176cbf98e04e5908e1b.ctex"
+path="res://.godot/imported/ssilvally-ofighting-s.png-fb60f823c599bcf09d64250da32edf88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssilvally-ofighting-s.png"
-dest_files=["res://.godot/imported/ssilvally-ofighting-s.png-84c004bde219f176cbf98e04e5908e1b.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssilvally-ofighting-s.png"
+dest_files=["res://.godot/imported/ssilvally-ofighting-s.png-fb60f823c599bcf09d64250da32edf88.ctex"]
 
 [params]
 

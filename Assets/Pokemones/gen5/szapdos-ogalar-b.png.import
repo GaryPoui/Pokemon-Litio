@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://t4knt8jdj7kr"
-path="res://.godot/imported/szapdos-ogalar-b.png-5609dda29b34b47158f525789402503f.ctex"
+path="res://.godot/imported/szapdos-ogalar-b.png-944f38ab0ea54428580558400d336558.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/szapdos-ogalar-b.png"
-dest_files=["res://.godot/imported/szapdos-ogalar-b.png-5609dda29b34b47158f525789402503f.ctex"]
+source_file="res://Assets/Pokemones/gen5/szapdos-ogalar-b.png"
+dest_files=["res://.godot/imported/szapdos-ogalar-b.png-944f38ab0ea54428580558400d336558.ctex"]
 
 [params]
 

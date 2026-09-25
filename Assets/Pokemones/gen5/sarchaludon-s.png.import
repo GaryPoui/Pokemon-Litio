@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtnarj0utdtd8"
-path="res://.godot/imported/sarchaludon-s.png-89ee192504b861951373587922f64eff.ctex"
+path="res://.godot/imported/sarchaludon-s.png-a51bd39ddd95f75fb2394084012c4b96.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sarchaludon-s.png"
-dest_files=["res://.godot/imported/sarchaludon-s.png-89ee192504b861951373587922f64eff.ctex"]
+source_file="res://Assets/Pokemones/gen5/sarchaludon-s.png"
+dest_files=["res://.godot/imported/sarchaludon-s.png-a51bd39ddd95f75fb2394084012c4b96.ctex"]
 
 [params]
 

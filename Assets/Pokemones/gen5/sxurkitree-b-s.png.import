@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cn3xqqyy6w8dv"
-path="res://.godot/imported/sxurkitree-b-s.png-bd4fa6ff521e7608770222e99f0159dc.ctex"
+path="res://.godot/imported/sxurkitree-b-s.png-91ce35c5b63df758c18921702a8d31e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sxurkitree-b-s.png"
-dest_files=["res://.godot/imported/sxurkitree-b-s.png-bd4fa6ff521e7608770222e99f0159dc.ctex"]
+source_file="res://Assets/Pokemones/gen5/sxurkitree-b-s.png"
+dest_files=["res://.godot/imported/sxurkitree-b-s.png-91ce35c5b63df758c18921702a8d31e0.ctex"]
 
 [params]
 

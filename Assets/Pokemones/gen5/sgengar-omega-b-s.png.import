@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8tq0sonaymft"
-path="res://.godot/imported/sgengar-omega-b-s.png-f80e8b7df9f81ac49ac21644e44aed8f.ctex"
+path="res://.godot/imported/sgengar-omega-b-s.png-c30b6a9f8e954d13ada06ec3adef1213.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgengar-omega-b-s.png"
-dest_files=["res://.godot/imported/sgengar-omega-b-s.png-f80e8b7df9f81ac49ac21644e44aed8f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgengar-omega-b-s.png"
+dest_files=["res://.godot/imported/sgengar-omega-b-s.png-c30b6a9f8e954d13ada06ec3adef1213.ctex"]
 
 [params]
 

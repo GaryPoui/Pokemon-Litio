@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dli3dgekgs18d"
-path="res://.godot/imported/scetoddle-b-s.png-b8b1751dd48502b943d06eec5bc522e7.ctex"
+path="res://.godot/imported/scetoddle-b-s.png-a29f2974c530e786f406e1ac0141d6f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scetoddle-b-s.png"
-dest_files=["res://.godot/imported/scetoddle-b-s.png-b8b1751dd48502b943d06eec5bc522e7.ctex"]
+source_file="res://Assets/Pokemones/gen5/scetoddle-b-s.png"
+dest_files=["res://.godot/imported/scetoddle-b-s.png-a29f2974c530e786f406e1ac0141d6f4.ctex"]
 
 [params]
 

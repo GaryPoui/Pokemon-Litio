@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddkfwtaiqkuip"
-path="res://.godot/imported/scyclizar.png-72724afe2fa8cd2a0079c65902421d25.ctex"
+path="res://.godot/imported/scyclizar.png-ac33e1fbde23eb80d9b01078772ddae4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scyclizar.png"
-dest_files=["res://.godot/imported/scyclizar.png-72724afe2fa8cd2a0079c65902421d25.ctex"]
+source_file="res://Assets/Pokemones/gen5/scyclizar.png"
+dest_files=["res://.godot/imported/scyclizar.png-ac33e1fbde23eb80d9b01078772ddae4.ctex"]
 
 [params]
 

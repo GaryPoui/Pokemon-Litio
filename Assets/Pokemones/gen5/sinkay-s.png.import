@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqx838dhe0qh0"
-path="res://.godot/imported/sinkay-s.png-34986b9b9b43b2a61bc018c2bc33fb89.ctex"
+path="res://.godot/imported/sinkay-s.png-9d92e3d41dc2476fc9060eda8d33ba74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sinkay-s.png"
-dest_files=["res://.godot/imported/sinkay-s.png-34986b9b9b43b2a61bc018c2bc33fb89.ctex"]
+source_file="res://Assets/Pokemones/gen5/sinkay-s.png"
+dest_files=["res://.godot/imported/sinkay-s.png-9d92e3d41dc2476fc9060eda8d33ba74.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsso743y6hed7"
-path="res://.godot/imported/svivillon-oicy_snow-b-s.png-02be679932c556289526fdc14f0ad77c.ctex"
+path="res://.godot/imported/svivillon-oicy_snow-b-s.png-1f9ab39da8270cad188433c2b9d58bf3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svivillon-oicy_snow-b-s.png"
-dest_files=["res://.godot/imported/svivillon-oicy_snow-b-s.png-02be679932c556289526fdc14f0ad77c.ctex"]
+source_file="res://Assets/Pokemones/gen5/svivillon-oicy_snow-b-s.png"
+dest_files=["res://.godot/imported/svivillon-oicy_snow-b-s.png-1f9ab39da8270cad188433c2b9d58bf3.ctex"]
 
 [params]
 

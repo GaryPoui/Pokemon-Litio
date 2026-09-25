@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bm6mdytiubbek"
-path="res://.godot/imported/sduohm-b-s.png-83ce5d4eee9d3e686f09dc680237f404.ctex"
+path="res://.godot/imported/sduohm-b-s.png-3a4d197271b7a59112ff7f8abd34689c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sduohm-b-s.png"
-dest_files=["res://.godot/imported/sduohm-b-s.png-83ce5d4eee9d3e686f09dc680237f404.ctex"]
+source_file="res://Assets/Pokemones/gen5/sduohm-b-s.png"
+dest_files=["res://.godot/imported/sduohm-b-s.png-3a4d197271b7a59112ff7f8abd34689c.ctex"]
 
 [params]
 

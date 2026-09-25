@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://demb6bg64x542"
-path="res://.godot/imported/statsugiri-odroopy-b-s.png-d52153fa5d8906cf4ded0fe8e35953fe.ctex"
+path="res://.godot/imported/statsugiri-odroopy-b-s.png-10f1e564bfffa9f4e8170538c9b91546.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/statsugiri-odroopy-b-s.png"
-dest_files=["res://.godot/imported/statsugiri-odroopy-b-s.png-d52153fa5d8906cf4ded0fe8e35953fe.ctex"]
+source_file="res://Assets/Pokemones/gen5/statsugiri-odroopy-b-s.png"
+dest_files=["res://.godot/imported/statsugiri-odroopy-b-s.png-10f1e564bfffa9f4e8170538c9b91546.ctex"]
 
 [params]
 

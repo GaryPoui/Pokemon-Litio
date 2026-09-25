@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c328sflp5uayk"
-path="res://.godot/imported/sgourgeist-s.png-da3eebf4944d12bb9bb5f0563775e95b.ctex"
+path="res://.godot/imported/sgourgeist-s.png-bb4e7aaeffc680f7eb9ec57af4ff028b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgourgeist-s.png"
-dest_files=["res://.godot/imported/sgourgeist-s.png-da3eebf4944d12bb9bb5f0563775e95b.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgourgeist-s.png"
+dest_files=["res://.godot/imported/sgourgeist-s.png-bb4e7aaeffc680f7eb9ec57af4ff028b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bs1o1mg4tsqe8"
-path="res://.godot/imported/sslither_wing.png-dc8bd8f365db65bba5aa77fa05cfc301.ctex"
+path="res://.godot/imported/sslither_wing.png-2339628c0baf7e509a680a806e3b55bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sslither_wing.png"
-dest_files=["res://.godot/imported/sslither_wing.png-dc8bd8f365db65bba5aa77fa05cfc301.ctex"]
+source_file="res://Assets/Pokemones/gen5/sslither_wing.png"
+dest_files=["res://.godot/imported/sslither_wing.png-2339628c0baf7e509a680a806e3b55bb.ctex"]
 
 [params]
 

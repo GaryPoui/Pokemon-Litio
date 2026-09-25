@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://def7rfgxqdsgt"
-path="res://.godot/imported/sogerpon-ohearthflame-s.png-2eb55d5332eb8691de5e12188ebcba99.ctex"
+path="res://.godot/imported/sogerpon-ohearthflame-s.png-44d38b778bb245bee94d55c33a16ff36.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sogerpon-ohearthflame-s.png"
-dest_files=["res://.godot/imported/sogerpon-ohearthflame-s.png-2eb55d5332eb8691de5e12188ebcba99.ctex"]
+source_file="res://Assets/Pokemones/gen5/sogerpon-ohearthflame-s.png"
+dest_files=["res://.godot/imported/sogerpon-ohearthflame-s.png-44d38b778bb245bee94d55c33a16ff36.ctex"]
 
 [params]
 

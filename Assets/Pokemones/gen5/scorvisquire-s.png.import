@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dy7dm423iuajb"
-path="res://.godot/imported/scorvisquire-s.png-e5df361b2c2da08c85152dfea2fd2141.ctex"
+path="res://.godot/imported/scorvisquire-s.png-e1caba433f84859f3a0044ff3d2a20a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scorvisquire-s.png"
-dest_files=["res://.godot/imported/scorvisquire-s.png-e5df361b2c2da08c85152dfea2fd2141.ctex"]
+source_file="res://Assets/Pokemones/gen5/scorvisquire-s.png"
+dest_files=["res://.godot/imported/scorvisquire-s.png-e1caba433f84859f3a0044ff3d2a20a4.ctex"]
 
 [params]
 

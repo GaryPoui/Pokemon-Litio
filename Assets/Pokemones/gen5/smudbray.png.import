@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0xq5hb00t5du"
-path="res://.godot/imported/smudbray.png-882041518716967e6fd5af0884baea32.ctex"
+path="res://.godot/imported/smudbray.png-149edd6c6c390d36845c752316d01022.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smudbray.png"
-dest_files=["res://.godot/imported/smudbray.png-882041518716967e6fd5af0884baea32.ctex"]
+source_file="res://Assets/Pokemones/gen5/smudbray.png"
+dest_files=["res://.godot/imported/smudbray.png-149edd6c6c390d36845c752316d01022.ctex"]
 
 [params]
 

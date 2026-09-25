@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf334bhhv61ms"
-path="res://.godot/imported/smiasmaw-b.png-416fc0c72df7bd282b0cd92faf0e4606.ctex"
+path="res://.godot/imported/smiasmaw-b.png-9b618c1c4c4acf3cd506b13608df313e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smiasmaw-b.png"
-dest_files=["res://.godot/imported/smiasmaw-b.png-416fc0c72df7bd282b0cd92faf0e4606.ctex"]
+source_file="res://Assets/Pokemones/gen5/smiasmaw-b.png"
+dest_files=["res://.godot/imported/smiasmaw-b.png-9b618c1c4c4acf3cd506b13608df313e.ctex"]
 
 [params]
 

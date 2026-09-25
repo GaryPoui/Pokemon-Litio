@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1hdv8rtbh8cf"
-path="res://.godot/imported/sclawitzer-b.png-d878b534028c6eb72aa75c8049338884.ctex"
+path="res://.godot/imported/sclawitzer-b.png-4394aaa3a303891343a6ecd264190842.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sclawitzer-b.png"
-dest_files=["res://.godot/imported/sclawitzer-b.png-d878b534028c6eb72aa75c8049338884.ctex"]
+source_file="res://Assets/Pokemones/gen5/sclawitzer-b.png"
+dest_files=["res://.godot/imported/sclawitzer-b.png-4394aaa3a303891343a6ecd264190842.ctex"]
 
 [params]
 

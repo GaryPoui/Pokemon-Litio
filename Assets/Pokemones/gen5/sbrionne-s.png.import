@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brnc40jysmi"
-path="res://.godot/imported/sbrionne-s.png-e9d820eea2712dbd7a118c64be57922e.ctex"
+path="res://.godot/imported/sbrionne-s.png-7c31800f6461fcf194017f2f6d11d024.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbrionne-s.png"
-dest_files=["res://.godot/imported/sbrionne-s.png-e9d820eea2712dbd7a118c64be57922e.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbrionne-s.png"
+dest_files=["res://.godot/imported/sbrionne-s.png-7c31800f6461fcf194017f2f6d11d024.ctex"]
 
 [params]
 

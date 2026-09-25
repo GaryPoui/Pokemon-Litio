@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbab3fr4704ib"
-path="res://.godot/imported/squaquaval-b-s.png-8d4041ee2ddd9d94933aee66fd46b4ea.ctex"
+path="res://.godot/imported/squaquaval-b-s.png-e44ed2c5528a3f3a21da688400386925.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/squaquaval-b-s.png"
-dest_files=["res://.godot/imported/squaquaval-b-s.png-8d4041ee2ddd9d94933aee66fd46b4ea.ctex"]
+source_file="res://Assets/Pokemones/gen5/squaquaval-b-s.png"
+dest_files=["res://.godot/imported/squaquaval-b-s.png-e44ed2c5528a3f3a21da688400386925.ctex"]
 
 [params]
 

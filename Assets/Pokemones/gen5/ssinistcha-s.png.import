@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqxriy8cky1sh"
-path="res://.godot/imported/ssinistcha-s.png-ae02a07b2250178f30e0121d33501604.ctex"
+path="res://.godot/imported/ssinistcha-s.png-b80a2c9adb148dfe5c6b9cfabfc18d0b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssinistcha-s.png"
-dest_files=["res://.godot/imported/ssinistcha-s.png-ae02a07b2250178f30e0121d33501604.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssinistcha-s.png"
+dest_files=["res://.godot/imported/ssinistcha-s.png-b80a2c9adb148dfe5c6b9cfabfc18d0b.ctex"]
 
 [params]
 

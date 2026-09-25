@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blyxwtvk2gvv7"
-path="res://.godot/imported/sregieleki-b.png-1e9db04ba13f89a8319b1a11a90bd11c.ctex"
+path="res://.godot/imported/sregieleki-b.png-b578b25b7e5ca6b091e154d219f3dd42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sregieleki-b.png"
-dest_files=["res://.godot/imported/sregieleki-b.png-1e9db04ba13f89a8319b1a11a90bd11c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sregieleki-b.png"
+dest_files=["res://.godot/imported/sregieleki-b.png-b578b25b7e5ca6b091e154d219f3dd42.ctex"]
 
 [params]
 

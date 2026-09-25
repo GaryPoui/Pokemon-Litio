@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bf3hxeioociwu"
-path="res://.godot/imported/scaribolt-b-s.png-35f868ba9352bfaa1f6234c4c10ff280.ctex"
+path="res://.godot/imported/scaribolt-b-s.png-a4530e4ee7835919e9b25e4b91bfa8b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scaribolt-b-s.png"
-dest_files=["res://.godot/imported/scaribolt-b-s.png-35f868ba9352bfaa1f6234c4c10ff280.ctex"]
+source_file="res://Assets/Pokemones/gen5/scaribolt-b-s.png"
+dest_files=["res://.godot/imported/scaribolt-b-s.png-a4530e4ee7835919e9b25e4b91bfa8b9.ctex"]
 
 [params]
 

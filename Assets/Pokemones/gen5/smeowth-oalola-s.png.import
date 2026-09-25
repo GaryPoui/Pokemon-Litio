@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c80m51jl4lc8q"
-path="res://.godot/imported/smeowth-oalola-s.png-24c9d8a0205b5bc9ef5f4f354e5baa3e.ctex"
+path="res://.godot/imported/smeowth-oalola-s.png-a67d61da0e355a8889c9a58577cf0bb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smeowth-oalola-s.png"
-dest_files=["res://.godot/imported/smeowth-oalola-s.png-24c9d8a0205b5bc9ef5f4f354e5baa3e.ctex"]
+source_file="res://Assets/Pokemones/gen5/smeowth-oalola-s.png"
+dest_files=["res://.godot/imported/smeowth-oalola-s.png-a67d61da0e355a8889c9a58577cf0bb8.ctex"]
 
 [params]
 

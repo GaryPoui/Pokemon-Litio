@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btyou2mp5eusk"
-path="res://.godot/imported/sscream_tail-b-s.png-bc61c7526400cb3794f19916f057eaa0.ctex"
+path="res://.godot/imported/sscream_tail-b-s.png-f722a05f761e814c48cc4844eeb32fce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sscream_tail-b-s.png"
-dest_files=["res://.godot/imported/sscream_tail-b-s.png-bc61c7526400cb3794f19916f057eaa0.ctex"]
+source_file="res://Assets/Pokemones/gen5/sscream_tail-b-s.png"
+dest_files=["res://.godot/imported/sscream_tail-b-s.png-f722a05f761e814c48cc4844eeb32fce.ctex"]
 
 [params]
 

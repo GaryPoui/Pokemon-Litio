@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://f6gfiaswquub"
-path="res://.godot/imported/smarowak-oalola.png-9a4848a345b7890f7b2f63e2169085e2.ctex"
+path="res://.godot/imported/smarowak-oalola.png-5cd6a76ca197319e5243fbfde4270959.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smarowak-oalola.png"
-dest_files=["res://.godot/imported/smarowak-oalola.png-9a4848a345b7890f7b2f63e2169085e2.ctex"]
+source_file="res://Assets/Pokemones/gen5/smarowak-oalola.png"
+dest_files=["res://.godot/imported/smarowak-oalola.png-5cd6a76ca197319e5243fbfde4270959.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwk6i555nbuwi"
-path="res://.godot/imported/schi_yu.png-71164dc0a1dd42a944cbfaa1decaaf8b.ctex"
+path="res://.godot/imported/schi_yu.png-c02e88881e223b2cc810524539410499.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/schi_yu.png"
-dest_files=["res://.godot/imported/schi_yu.png-71164dc0a1dd42a944cbfaa1decaaf8b.ctex"]
+source_file="res://Assets/Pokemones/gen5/schi_yu.png"
+dest_files=["res://.godot/imported/schi_yu.png-c02e88881e223b2cc810524539410499.ctex"]
 
 [params]
 

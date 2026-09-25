@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://so6wy4wlp61m"
-path="res://.godot/imported/skommo_o-s.png-c89776a458fc4e2d411d79bebdd7ff6b.ctex"
+path="res://.godot/imported/skommo_o-s.png-3b9cc240372bfbffe803982d31833365.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/skommo_o-s.png"
-dest_files=["res://.godot/imported/skommo_o-s.png-c89776a458fc4e2d411d79bebdd7ff6b.ctex"]
+source_file="res://Assets/Pokemones/gen5/skommo_o-s.png"
+dest_files=["res://.godot/imported/skommo_o-s.png-3b9cc240372bfbffe803982d31833365.ctex"]
 
 [params]
 

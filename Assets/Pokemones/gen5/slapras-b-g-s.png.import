@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bk5eftfalpfro"
-path="res://.godot/imported/slapras-b-g-s.png-9579893cdcc6ac49b1269f5c30ed7be2.ctex"
+path="res://.godot/imported/slapras-b-g-s.png-f1b49a88cbecb24607427cb5d670a2c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slapras-b-g-s.png"
-dest_files=["res://.godot/imported/slapras-b-g-s.png-9579893cdcc6ac49b1269f5c30ed7be2.ctex"]
+source_file="res://Assets/Pokemones/gen5/slapras-b-g-s.png"
+dest_files=["res://.godot/imported/slapras-b-g-s.png-f1b49a88cbecb24607427cb5d670a2c5.ctex"]
 
 [params]
 

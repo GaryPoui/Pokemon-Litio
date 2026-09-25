@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0bc3s8yajfc6"
-path="res://.godot/imported/sweezing-ogalar-b.png-20684b339806d60ab8d07fd90890b4c6.ctex"
+path="res://.godot/imported/sweezing-ogalar-b.png-4dcbfd98bdcbac3ce4c8176b3cb3e3c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sweezing-ogalar-b.png"
-dest_files=["res://.godot/imported/sweezing-ogalar-b.png-20684b339806d60ab8d07fd90890b4c6.ctex"]
+source_file="res://Assets/Pokemones/gen5/sweezing-ogalar-b.png"
+dest_files=["res://.godot/imported/sweezing-ogalar-b.png-4dcbfd98bdcbac3ce4c8176b3cb3e3c0.ctex"]
 
 [params]
 

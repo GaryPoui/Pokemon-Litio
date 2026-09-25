@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ojnysv13bwxu"
-path="res://.godot/imported/ssalamence-omega-b.png-a73b644425c3da631b0f826933a7cb32.ctex"
+path="res://.godot/imported/ssalamence-omega-b.png-cb4ff6356457b45cc24b88d12f8bf566.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssalamence-omega-b.png"
-dest_files=["res://.godot/imported/ssalamence-omega-b.png-a73b644425c3da631b0f826933a7cb32.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssalamence-omega-b.png"
+dest_files=["res://.godot/imported/ssalamence-omega-b.png-cb4ff6356457b45cc24b88d12f8bf566.ctex"]
 
 [params]
 

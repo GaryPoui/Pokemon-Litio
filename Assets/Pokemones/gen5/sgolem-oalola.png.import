@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b82lx7xi6bm7i"
-path="res://.godot/imported/sgolem-oalola.png-be199b88526ffbe44a0773ab35cee6b9.ctex"
+path="res://.godot/imported/sgolem-oalola.png-bf81c50044b254d57cb54c1ac1491b0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgolem-oalola.png"
-dest_files=["res://.godot/imported/sgolem-oalola.png-be199b88526ffbe44a0773ab35cee6b9.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgolem-oalola.png"
+dest_files=["res://.godot/imported/sgolem-oalola.png-bf81c50044b254d57cb54c1ac1491b0e.ctex"]
 
 [params]
 

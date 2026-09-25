@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dspie533an1e2"
-path="res://.godot/imported/sgolisopod.png-55cc21cb7c8cafdab053cfe649e3414f.ctex"
+path="res://.godot/imported/sgolisopod.png-46bba35c50aeac18c2aee4654bc6817b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgolisopod.png"
-dest_files=["res://.godot/imported/sgolisopod.png-55cc21cb7c8cafdab053cfe649e3414f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgolisopod.png"
+dest_files=["res://.godot/imported/sgolisopod.png-46bba35c50aeac18c2aee4654bc6817b.ctex"]
 
 [params]
 

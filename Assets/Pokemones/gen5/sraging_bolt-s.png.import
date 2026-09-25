@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhncmy0qs6m88"
-path="res://.godot/imported/sraging_bolt-s.png-dd8ac980d4eb986a42a75dad562e58c1.ctex"
+path="res://.godot/imported/sraging_bolt-s.png-6cff9dfdceb5f1291dcc886ec48e6cd5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sraging_bolt-s.png"
-dest_files=["res://.godot/imported/sraging_bolt-s.png-dd8ac980d4eb986a42a75dad562e58c1.ctex"]
+source_file="res://Assets/Pokemones/gen5/sraging_bolt-s.png"
+dest_files=["res://.godot/imported/sraging_bolt-s.png-6cff9dfdceb5f1291dcc886ec48e6cd5.ctex"]
 
 [params]
 

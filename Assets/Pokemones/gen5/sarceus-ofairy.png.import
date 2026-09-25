@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp4d7j13of8et"
-path="res://.godot/imported/sarceus-ofairy.png-b9bab1494d6b149901ddc3f810ffb83b.ctex"
+path="res://.godot/imported/sarceus-ofairy.png-01550c04f030ffa55cb294745f99c93c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sarceus-ofairy.png"
-dest_files=["res://.godot/imported/sarceus-ofairy.png-b9bab1494d6b149901ddc3f810ffb83b.ctex"]
+source_file="res://Assets/Pokemones/gen5/sarceus-ofairy.png"
+dest_files=["res://.godot/imported/sarceus-ofairy.png-01550c04f030ffa55cb294745f99c93c.ctex"]
 
 [params]
 

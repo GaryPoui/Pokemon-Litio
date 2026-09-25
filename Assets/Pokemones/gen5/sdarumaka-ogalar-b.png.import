@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5ox68wnpbbw6"
-path="res://.godot/imported/sdarumaka-ogalar-b.png-631868dcf04be66a0cbdc3bc232651b5.ctex"
+path="res://.godot/imported/sdarumaka-ogalar-b.png-424cb6e5bc5324c2a27ee5b4d6edc252.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdarumaka-ogalar-b.png"
-dest_files=["res://.godot/imported/sdarumaka-ogalar-b.png-631868dcf04be66a0cbdc3bc232651b5.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdarumaka-ogalar-b.png"
+dest_files=["res://.godot/imported/sdarumaka-ogalar-b.png-424cb6e5bc5324c2a27ee5b4d6edc252.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4l4s372w27ro"
-path="res://.godot/imported/sbrattler-b.png-12dd1ba4d693513ddfd386eaa4e46c1c.ctex"
+path="res://.godot/imported/sbrattler-b.png-8dd4c2eb7ca3a2ae0c91a4ee50b15f99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbrattler-b.png"
-dest_files=["res://.godot/imported/sbrattler-b.png-12dd1ba4d693513ddfd386eaa4e46c1c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbrattler-b.png"
+dest_files=["res://.godot/imported/sbrattler-b.png-8dd4c2eb7ca3a2ae0c91a4ee50b15f99.ctex"]
 
 [params]
 

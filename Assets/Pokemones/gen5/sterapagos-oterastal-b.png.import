@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://y38qlk25kyc2"
-path="res://.godot/imported/sterapagos-oterastal-b.png-9ac802fbcb686eb1dcec291041d2b1fa.ctex"
+path="res://.godot/imported/sterapagos-oterastal-b.png-eeef3790795c695272ff7d7376b265a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sterapagos-oterastal-b.png"
-dest_files=["res://.godot/imported/sterapagos-oterastal-b.png-9ac802fbcb686eb1dcec291041d2b1fa.ctex"]
+source_file="res://Assets/Pokemones/gen5/sterapagos-oterastal-b.png"
+dest_files=["res://.godot/imported/sterapagos-oterastal-b.png-eeef3790795c695272ff7d7376b265a0.ctex"]
 
 [params]
 

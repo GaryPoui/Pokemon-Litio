@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vn2r1x71ihwo"
-path="res://.godot/imported/sgreninja-b-s.png-75915a6e81d5aeb0e5a09e12afc2bb55.ctex"
+path="res://.godot/imported/sgreninja-b-s.png-9a4d6fd2e1af5c7f424c085f89f09c7d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgreninja-b-s.png"
-dest_files=["res://.godot/imported/sgreninja-b-s.png-75915a6e81d5aeb0e5a09e12afc2bb55.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgreninja-b-s.png"
+dest_files=["res://.godot/imported/sgreninja-b-s.png-9a4d6fd2e1af5c7f424c085f89f09c7d.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://m3ma5svin7co"
-path="res://.godot/imported/ssmoguana.png-e49b96d4dfbdcb68a958780fcea23051.ctex"
+path="res://.godot/imported/ssmoguana.png-d4ef2004c25c1037e4a25a9e52d9be00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssmoguana.png"
-dest_files=["res://.godot/imported/ssmoguana.png-e49b96d4dfbdcb68a958780fcea23051.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssmoguana.png"
+dest_files=["res://.godot/imported/ssmoguana.png-d4ef2004c25c1037e4a25a9e52d9be00.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drelh6lch6o7n"
-path="res://.godot/imported/sglastrier-s.png-22c378a3147587081e6b91f228d07f29.ctex"
+path="res://.godot/imported/sglastrier-s.png-8707b31d50c8a86318e31ba55f27f2dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sglastrier-s.png"
-dest_files=["res://.godot/imported/sglastrier-s.png-22c378a3147587081e6b91f228d07f29.ctex"]
+source_file="res://Assets/Pokemones/gen5/sglastrier-s.png"
+dest_files=["res://.godot/imported/sglastrier-s.png-8707b31d50c8a86318e31ba55f27f2dd.ctex"]
 
 [params]
 

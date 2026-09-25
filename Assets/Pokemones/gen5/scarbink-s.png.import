@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxdkgj7pgmrla"
-path="res://.godot/imported/scarbink-s.png-b4f386b8429adcf44d960ab2f11b7ef3.ctex"
+path="res://.godot/imported/scarbink-s.png-5283945e18767a1779be19a5a847b6bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scarbink-s.png"
-dest_files=["res://.godot/imported/scarbink-s.png-b4f386b8429adcf44d960ab2f11b7ef3.ctex"]
+source_file="res://Assets/Pokemones/gen5/scarbink-s.png"
+dest_files=["res://.godot/imported/scarbink-s.png-5283945e18767a1779be19a5a847b6bd.ctex"]
 
 [params]
 

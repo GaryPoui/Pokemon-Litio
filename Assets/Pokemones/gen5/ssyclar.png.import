@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bu2y4icwlqex0"
-path="res://.godot/imported/ssyclar.png-4c1361247a9cee297c442d22958c54c3.ctex"
+path="res://.godot/imported/ssyclar.png-edcd1aa7ca061043be0ab861eaf2c998.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssyclar.png"
-dest_files=["res://.godot/imported/ssyclar.png-4c1361247a9cee297c442d22958c54c3.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssyclar.png"
+dest_files=["res://.godot/imported/ssyclar.png-edcd1aa7ca061043be0ab861eaf2c998.ctex"]
 
 [params]
 

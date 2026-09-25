@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bb2qgtrqrvyon"
-path="res://.godot/imported/stoedscool-b.png-ffdf6952c58d48f6ee616e90e4f713e3.ctex"
+path="res://.godot/imported/stoedscool-b.png-b4cd835da031be6e936222276ca8b698.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stoedscool-b.png"
-dest_files=["res://.godot/imported/stoedscool-b.png-ffdf6952c58d48f6ee616e90e4f713e3.ctex"]
+source_file="res://Assets/Pokemones/gen5/stoedscool-b.png"
+dest_files=["res://.godot/imported/stoedscool-b.png-b4cd835da031be6e936222276ca8b698.ctex"]
 
 [params]
 

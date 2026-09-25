@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjr8281meeiee"
-path="res://.godot/imported/sminior-ogreen-s.png-cc64b79ad77eddcd533854e667b44da5.ctex"
+path="res://.godot/imported/sminior-ogreen-s.png-f3c81ed6c9b70d8b440f8e62c07c4d83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sminior-ogreen-s.png"
-dest_files=["res://.godot/imported/sminior-ogreen-s.png-cc64b79ad77eddcd533854e667b44da5.ctex"]
+source_file="res://Assets/Pokemones/gen5/sminior-ogreen-s.png"
+dest_files=["res://.godot/imported/sminior-ogreen-s.png-f3c81ed6c9b70d8b440f8e62c07c4d83.ctex"]
 
 [params]
 

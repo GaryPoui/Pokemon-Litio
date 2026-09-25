@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbkj0wpwyc1si"
-path="res://.godot/imported/sgumshoos-s.png-a63a7c85ec9b5a7f44c01bcecf577ce7.ctex"
+path="res://.godot/imported/sgumshoos-s.png-9475f4fcf2a26a92605c2ea3d8aa3ccd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgumshoos-s.png"
-dest_files=["res://.godot/imported/sgumshoos-s.png-a63a7c85ec9b5a7f44c01bcecf577ce7.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgumshoos-s.png"
+dest_files=["res://.godot/imported/sgumshoos-s.png-9475f4fcf2a26a92605c2ea3d8aa3ccd.ctex"]
 
 [params]
 

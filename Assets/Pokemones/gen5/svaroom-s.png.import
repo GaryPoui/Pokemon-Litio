@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx313ao7hgtlk"
-path="res://.godot/imported/svaroom-s.png-a317e5107c1776e0d8a121de63660247.ctex"
+path="res://.godot/imported/svaroom-s.png-01e19026a0b90f80360583ef459d8443.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svaroom-s.png"
-dest_files=["res://.godot/imported/svaroom-s.png-a317e5107c1776e0d8a121de63660247.ctex"]
+source_file="res://Assets/Pokemones/gen5/svaroom-s.png"
+dest_files=["res://.godot/imported/svaroom-s.png-01e19026a0b90f80360583ef459d8443.ctex"]
 
 [params]
 

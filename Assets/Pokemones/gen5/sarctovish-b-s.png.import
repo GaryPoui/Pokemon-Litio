@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://detxfqtrqsq5b"
-path="res://.godot/imported/sarctovish-b-s.png-57e6dc80a82f853e1c4e91f28d4fd37a.ctex"
+path="res://.godot/imported/sarctovish-b-s.png-423e59c9f2602b90dc0997998fb81194.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sarctovish-b-s.png"
-dest_files=["res://.godot/imported/sarctovish-b-s.png-57e6dc80a82f853e1c4e91f28d4fd37a.ctex"]
+source_file="res://Assets/Pokemones/gen5/sarctovish-b-s.png"
+dest_files=["res://.godot/imported/sarctovish-b-s.png-423e59c9f2602b90dc0997998fb81194.ctex"]
 
 [params]
 

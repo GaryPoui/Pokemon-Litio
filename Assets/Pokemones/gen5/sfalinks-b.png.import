@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0o65ykjd1y5d"
-path="res://.godot/imported/sfalinks-b.png-8f6c74fef7154290db6c8bb3b71b93ee.ctex"
+path="res://.godot/imported/sfalinks-b.png-f1817759903f919680d364c78eac941a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfalinks-b.png"
-dest_files=["res://.godot/imported/sfalinks-b.png-8f6c74fef7154290db6c8bb3b71b93ee.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfalinks-b.png"
+dest_files=["res://.godot/imported/sfalinks-b.png-f1817759903f919680d364c78eac941a.ctex"]
 
 [params]
 

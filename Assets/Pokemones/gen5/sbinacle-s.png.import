@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pl6vuhscw75q"
-path="res://.godot/imported/sbinacle-s.png-9d9a5aa9ae466f28f5508e17b2a157d8.ctex"
+path="res://.godot/imported/sbinacle-s.png-87cf96beaeedfb002df11e925afbb141.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbinacle-s.png"
-dest_files=["res://.godot/imported/sbinacle-s.png-9d9a5aa9ae466f28f5508e17b2a157d8.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbinacle-s.png"
+dest_files=["res://.godot/imported/sbinacle-s.png-87cf96beaeedfb002df11e925afbb141.ctex"]
 
 [params]
 

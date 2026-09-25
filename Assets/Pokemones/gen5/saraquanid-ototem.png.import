@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b15je1nqxxp4c"
-path="res://.godot/imported/saraquanid-ototem.png-a32d823376454b537b956fb1dbce3967.ctex"
+path="res://.godot/imported/saraquanid-ototem.png-012e1a778527408fd5d9bbbaec61df09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/saraquanid-ototem.png"
-dest_files=["res://.godot/imported/saraquanid-ototem.png-a32d823376454b537b956fb1dbce3967.ctex"]
+source_file="res://Assets/Pokemones/gen5/saraquanid-ototem.png"
+dest_files=["res://.godot/imported/saraquanid-ototem.png-012e1a778527408fd5d9bbbaec61df09.ctex"]
 
 [params]
 

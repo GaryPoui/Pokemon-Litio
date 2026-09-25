@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cq60ysvclfpj2"
-path="res://.godot/imported/scharizard-omega_y.png-efe5a37f0b6dd2cd99c096f66b1d7286.ctex"
+path="res://.godot/imported/scharizard-omega_y.png-cd2a06b092a794d1503d3a9140807262.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scharizard-omega_y.png"
-dest_files=["res://.godot/imported/scharizard-omega_y.png-efe5a37f0b6dd2cd99c096f66b1d7286.ctex"]
+source_file="res://Assets/Pokemones/gen5/scharizard-omega_y.png"
+dest_files=["res://.godot/imported/scharizard-omega_y.png-cd2a06b092a794d1503d3a9140807262.ctex"]
 
 [params]
 

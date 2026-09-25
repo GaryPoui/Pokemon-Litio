@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1pvtarj626iq"
-path="res://.godot/imported/smumbao-s.png-4ab66f9bf8a0f08bcca5163554868169.ctex"
+path="res://.godot/imported/smumbao-s.png-a6ecaa08b6405bda6af7bba93a9cc32d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/smumbao-s.png"
-dest_files=["res://.godot/imported/smumbao-s.png-4ab66f9bf8a0f08bcca5163554868169.ctex"]
+source_file="res://Assets/Pokemones/gen5/smumbao-s.png"
+dest_files=["res://.godot/imported/smumbao-s.png-a6ecaa08b6405bda6af7bba93a9cc32d.ctex"]
 
 [params]
 

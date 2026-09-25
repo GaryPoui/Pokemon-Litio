@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr05f8p2hjoi7"
-path="res://.godot/imported/sgreavard-s.png-2c2d7bb65f1ada1308191b877b2c66b9.ctex"
+path="res://.godot/imported/sgreavard-s.png-4e6eab388a70521f1a5006af8087f6c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgreavard-s.png"
-dest_files=["res://.godot/imported/sgreavard-s.png-2c2d7bb65f1ada1308191b877b2c66b9.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgreavard-s.png"
+dest_files=["res://.godot/imported/sgreavard-s.png-4e6eab388a70521f1a5006af8087f6c1.ctex"]
 
 [params]
 

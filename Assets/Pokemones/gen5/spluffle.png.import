@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://du6tpwofl7fe"
-path="res://.godot/imported/spluffle.png-ba3c14c7dc1339ce4f161b8fdeccbc7f.ctex"
+path="res://.godot/imported/spluffle.png-2866aff549a84adf8cb5739695d962a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spluffle.png"
-dest_files=["res://.godot/imported/spluffle.png-ba3c14c7dc1339ce4f161b8fdeccbc7f.ctex"]
+source_file="res://Assets/Pokemones/gen5/spluffle.png"
+dest_files=["res://.godot/imported/spluffle.png-2866aff549a84adf8cb5739695d962a7.ctex"]
 
 [params]
 

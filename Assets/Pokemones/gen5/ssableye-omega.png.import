@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bud2o1atnq5ee"
-path="res://.godot/imported/ssableye-omega.png-61d912cb6219740f9c1c610e9cfdc79f.ctex"
+path="res://.godot/imported/ssableye-omega.png-d1ed13dd68cd16457d6ac60020a0023e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssableye-omega.png"
-dest_files=["res://.godot/imported/ssableye-omega.png-61d912cb6219740f9c1c610e9cfdc79f.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssableye-omega.png"
+dest_files=["res://.godot/imported/ssableye-omega.png-d1ed13dd68cd16457d6ac60020a0023e.ctex"]
 
 [params]
 

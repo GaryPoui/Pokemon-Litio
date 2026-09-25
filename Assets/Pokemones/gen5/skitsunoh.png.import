@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u0mgv6vla412"
-path="res://.godot/imported/skitsunoh.png-60937520dd6da2d5c34ce0be61b98752.ctex"
+path="res://.godot/imported/skitsunoh.png-5bbe5d36e6ed6d975988acd730cc032e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/skitsunoh.png"
-dest_files=["res://.godot/imported/skitsunoh.png-60937520dd6da2d5c34ce0be61b98752.ctex"]
+source_file="res://Assets/Pokemones/gen5/skitsunoh.png"
+dest_files=["res://.godot/imported/skitsunoh.png-5bbe5d36e6ed6d975988acd730cc032e.ctex"]
 
 [params]
 

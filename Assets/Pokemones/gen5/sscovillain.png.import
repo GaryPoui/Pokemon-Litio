@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://61jdwefm3w5v"
-path="res://.godot/imported/sscovillain.png-85c5683d0fb9c35bf1cd405fb6e35b39.ctex"
+path="res://.godot/imported/sscovillain.png-861e6cd1db916f61a6afa444574326f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sscovillain.png"
-dest_files=["res://.godot/imported/sscovillain.png-85c5683d0fb9c35bf1cd405fb6e35b39.ctex"]
+source_file="res://Assets/Pokemones/gen5/sscovillain.png"
+dest_files=["res://.godot/imported/sscovillain.png-861e6cd1db916f61a6afa444574326f7.ctex"]
 
 [params]
 

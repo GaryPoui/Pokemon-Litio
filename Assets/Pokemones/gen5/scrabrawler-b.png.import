@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqfnjxfx1hwbk"
-path="res://.godot/imported/scrabrawler-b.png-a8adf457123706cb37080cd336c45168.ctex"
+path="res://.godot/imported/scrabrawler-b.png-e8d9e3cef4192b50e074456818f4874c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scrabrawler-b.png"
-dest_files=["res://.godot/imported/scrabrawler-b.png-a8adf457123706cb37080cd336c45168.ctex"]
+source_file="res://Assets/Pokemones/gen5/scrabrawler-b.png"
+dest_files=["res://.godot/imported/scrabrawler-b.png-e8d9e3cef4192b50e074456818f4874c.ctex"]
 
 [params]
 

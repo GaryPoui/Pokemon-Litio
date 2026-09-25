@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwwrabtpvw4da"
-path="res://.godot/imported/sponyta-ogalar.png-07cb15efd41d57e3f9b472af0b19417b.ctex"
+path="res://.godot/imported/sponyta-ogalar.png-c8f44c54882aaca9b9bf6271df47f979.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sponyta-ogalar.png"
-dest_files=["res://.godot/imported/sponyta-ogalar.png-07cb15efd41d57e3f9b472af0b19417b.ctex"]
+source_file="res://Assets/Pokemones/gen5/sponyta-ogalar.png"
+dest_files=["res://.godot/imported/sponyta-ogalar.png-c8f44c54882aaca9b9bf6271df47f979.ctex"]
 
 [params]
 

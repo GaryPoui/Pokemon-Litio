@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://boiswo4ghrbwf"
-path="res://.godot/imported/sturtonator-s.png-a69cea1e31ea93a84ccc756680adadce.ctex"
+path="res://.godot/imported/sturtonator-s.png-a8c1a3d764a533f82e6ba5b2d1fa9207.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sturtonator-s.png"
-dest_files=["res://.godot/imported/sturtonator-s.png-a69cea1e31ea93a84ccc756680adadce.ctex"]
+source_file="res://Assets/Pokemones/gen5/sturtonator-s.png"
+dest_files=["res://.godot/imported/sturtonator-s.png-a8c1a3d764a533f82e6ba5b2d1fa9207.ctex"]
 
 [params]
 

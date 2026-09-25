@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ptyaso3g5mnx"
-path="res://.godot/imported/styranitar-omega-b-s.png-ef9f57f4c410a27c7ea7f50510ca8fa4.ctex"
+path="res://.godot/imported/styranitar-omega-b-s.png-7dc9b4543e70840c125a270731d5abfa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/styranitar-omega-b-s.png"
-dest_files=["res://.godot/imported/styranitar-omega-b-s.png-ef9f57f4c410a27c7ea7f50510ca8fa4.ctex"]
+source_file="res://Assets/Pokemones/gen5/styranitar-omega-b-s.png"
+dest_files=["res://.godot/imported/styranitar-omega-b-s.png-7dc9b4543e70840c125a270731d5abfa.ctex"]
 
 [params]
 

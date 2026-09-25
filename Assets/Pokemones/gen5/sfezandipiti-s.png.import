@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dn3hn461xucuv"
-path="res://.godot/imported/sfezandipiti-s.png-909224af4f161853a94fa6a1e4a822ba.ctex"
+path="res://.godot/imported/sfezandipiti-s.png-3af159a5f0eba91889cc01c207543778.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfezandipiti-s.png"
-dest_files=["res://.godot/imported/sfezandipiti-s.png-909224af4f161853a94fa6a1e4a822ba.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfezandipiti-s.png"
+dest_files=["res://.godot/imported/sfezandipiti-s.png-3af159a5f0eba91889cc01c207543778.ctex"]
 
 [params]
 

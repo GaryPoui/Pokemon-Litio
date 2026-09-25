@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tjq01hbkah7s"
-path="res://.godot/imported/sfuecoco-b-s.png-b45de5eefdd310637c1c4b3921fc9406.ctex"
+path="res://.godot/imported/sfuecoco-b-s.png-a615c9f5cc61dd05e7d1f14b464ae7a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfuecoco-b-s.png"
-dest_files=["res://.godot/imported/sfuecoco-b-s.png-b45de5eefdd310637c1c4b3921fc9406.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfuecoco-b-s.png"
+dest_files=["res://.godot/imported/sfuecoco-b-s.png-a615c9f5cc61dd05e7d1f14b464ae7a2.ctex"]
 
 [params]
 

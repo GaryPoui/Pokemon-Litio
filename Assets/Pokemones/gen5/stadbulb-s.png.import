@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://l3f12thodlht"
-path="res://.godot/imported/stadbulb-s.png-90cb9a7fb8079379110738a70932d96a.ctex"
+path="res://.godot/imported/stadbulb-s.png-d91c7538c5e585054a20d3993022d139.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stadbulb-s.png"
-dest_files=["res://.godot/imported/stadbulb-s.png-90cb9a7fb8079379110738a70932d96a.ctex"]
+source_file="res://Assets/Pokemones/gen5/stadbulb-s.png"
+dest_files=["res://.godot/imported/stadbulb-s.png-d91c7538c5e585054a20d3993022d139.ctex"]
 
 [params]
 

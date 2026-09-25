@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwf8i2a38gmmu"
-path="res://.godot/imported/selectrelk-b-s.png-e03f2318530b016aa5863eb2eb3ab198.ctex"
+path="res://.godot/imported/selectrelk-b-s.png-f0e55e1f36fa437ab77c29d3fc1d56aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/selectrelk-b-s.png"
-dest_files=["res://.godot/imported/selectrelk-b-s.png-e03f2318530b016aa5863eb2eb3ab198.ctex"]
+source_file="res://Assets/Pokemones/gen5/selectrelk-b-s.png"
+dest_files=["res://.godot/imported/selectrelk-b-s.png-f0e55e1f36fa437ab77c29d3fc1d56aa.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cadi5k7c37nrv"
-path="res://.godot/imported/siron_thorns-b.png-6a04be21251d37b823e0d76ebe3e9bea.ctex"
+path="res://.godot/imported/siron_thorns-b.png-ac248dc0fa187cb05016ae45a522811d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/siron_thorns-b.png"
-dest_files=["res://.godot/imported/siron_thorns-b.png-6a04be21251d37b823e0d76ebe3e9bea.ctex"]
+source_file="res://Assets/Pokemones/gen5/siron_thorns-b.png"
+dest_files=["res://.godot/imported/siron_thorns-b.png-ac248dc0fa187cb05016ae45a522811d.ctex"]
 
 [params]
 

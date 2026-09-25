@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b48wyyf8nwh6y"
-path="res://.godot/imported/sdoublade.png-6a054693d4b207e8f03d603b1d1475d2.ctex"
+path="res://.godot/imported/sdoublade.png-81a8d4845b6b7090656aba11500fb403.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdoublade.png"
-dest_files=["res://.godot/imported/sdoublade.png-6a054693d4b207e8f03d603b1d1475d2.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdoublade.png"
+dest_files=["res://.godot/imported/sdoublade.png-81a8d4845b6b7090656aba11500fb403.ctex"]
 
 [params]
 

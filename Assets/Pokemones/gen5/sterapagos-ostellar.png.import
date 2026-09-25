@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5mtpp8jb43gk"
-path="res://.godot/imported/sterapagos-ostellar.png-a13eebe7d21db01ce8ed29be287103d9.ctex"
+path="res://.godot/imported/sterapagos-ostellar.png-83728a21beb65fdd894d1f27df72f22d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sterapagos-ostellar.png"
-dest_files=["res://.godot/imported/sterapagos-ostellar.png-a13eebe7d21db01ce8ed29be287103d9.ctex"]
+source_file="res://Assets/Pokemones/gen5/sterapagos-ostellar.png"
+dest_files=["res://.godot/imported/sterapagos-ostellar.png-83728a21beb65fdd894d1f27df72f22d.ctex"]
 
 [params]
 

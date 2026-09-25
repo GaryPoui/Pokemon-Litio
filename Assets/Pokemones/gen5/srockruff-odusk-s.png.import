@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwu4kqowkys3c"
-path="res://.godot/imported/srockruff-odusk-s.png-a45abe46817699fe2a8da25b4bab16e2.ctex"
+path="res://.godot/imported/srockruff-odusk-s.png-18eedb92fa83da08d32ba708d17da5df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/srockruff-odusk-s.png"
-dest_files=["res://.godot/imported/srockruff-odusk-s.png-a45abe46817699fe2a8da25b4bab16e2.ctex"]
+source_file="res://Assets/Pokemones/gen5/srockruff-odusk-s.png"
+dest_files=["res://.godot/imported/srockruff-odusk-s.png-18eedb92fa83da08d32ba708d17da5df.ctex"]
 
 [params]
 

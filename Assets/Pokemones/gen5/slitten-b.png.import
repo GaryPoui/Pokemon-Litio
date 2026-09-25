@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://by1j0pgo7tsqj"
-path="res://.godot/imported/slitten-b.png-70ec220fe73685a059fa5514db3699e0.ctex"
+path="res://.godot/imported/slitten-b.png-74d0c275e1107c5a031c541673dedcf9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slitten-b.png"
-dest_files=["res://.godot/imported/slitten-b.png-70ec220fe73685a059fa5514db3699e0.ctex"]
+source_file="res://Assets/Pokemones/gen5/slitten-b.png"
+dest_files=["res://.godot/imported/slitten-b.png-74d0c275e1107c5a031c541673dedcf9.ctex"]
 
 [params]
 

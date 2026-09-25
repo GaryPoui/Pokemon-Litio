@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://riduphu86beg"
-path="res://.godot/imported/swishiwashi-b-s.png-e5ef39204a38685f6100f77e2f461e70.ctex"
+path="res://.godot/imported/swishiwashi-b-s.png-723cf10c22c84ec394b0d5ade9939081.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/swishiwashi-b-s.png"
-dest_files=["res://.godot/imported/swishiwashi-b-s.png-e5ef39204a38685f6100f77e2f461e70.ctex"]
+source_file="res://Assets/Pokemones/gen5/swishiwashi-b-s.png"
+dest_files=["res://.godot/imported/swishiwashi-b-s.png-723cf10c22c84ec394b0d5ade9939081.ctex"]
 
 [params]
 

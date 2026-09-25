@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2ffpjj30ltpw"
-path="res://.godot/imported/szarude.png-bc16537de8953ca5c238998aaf1c8c13.ctex"
+path="res://.godot/imported/szarude.png-808bfa5c344cfd4958f356c045095920.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/szarude.png"
-dest_files=["res://.godot/imported/szarude.png-bc16537de8953ca5c238998aaf1c8c13.ctex"]
+source_file="res://Assets/Pokemones/gen5/szarude.png"
+dest_files=["res://.godot/imported/szarude.png-808bfa5c344cfd4958f356c045095920.ctex"]
 
 [params]
 

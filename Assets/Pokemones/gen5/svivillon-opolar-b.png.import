@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cir0prhvi5sl2"
-path="res://.godot/imported/svivillon-opolar-b.png-c160baa857dbbd2cb98148525c5b9d67.ctex"
+path="res://.godot/imported/svivillon-opolar-b.png-22d5ac0be22e07acc6cca6e85b760494.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/svivillon-opolar-b.png"
-dest_files=["res://.godot/imported/svivillon-opolar-b.png-c160baa857dbbd2cb98148525c5b9d67.ctex"]
+source_file="res://Assets/Pokemones/gen5/svivillon-opolar-b.png"
+dest_files=["res://.godot/imported/svivillon-opolar-b.png-22d5ac0be22e07acc6cca6e85b760494.ctex"]
 
 [params]
 

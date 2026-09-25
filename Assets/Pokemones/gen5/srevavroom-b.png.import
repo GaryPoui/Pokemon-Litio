@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bex7cbvqv2w4y"
-path="res://.godot/imported/srevavroom-b.png-390f26e20df482a9b8cc85c3925cd9dd.ctex"
+path="res://.godot/imported/srevavroom-b.png-3d58229bee6feaf045db616aaf1695e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/srevavroom-b.png"
-dest_files=["res://.godot/imported/srevavroom-b.png-390f26e20df482a9b8cc85c3925cd9dd.ctex"]
+source_file="res://Assets/Pokemones/gen5/srevavroom-b.png"
+dest_files=["res://.godot/imported/srevavroom-b.png-3d58229bee6feaf045db616aaf1695e0.ctex"]
 
 [params]
 

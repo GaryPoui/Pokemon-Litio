@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ceiyik6kt6ao0"
-path="res://.godot/imported/sespathra-s.png-47084fa6403d1c8f8082729609338a5c.ctex"
+path="res://.godot/imported/sespathra-s.png-845a23821b9c01d55a75cecbef4dd1b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sespathra-s.png"
-dest_files=["res://.godot/imported/sespathra-s.png-47084fa6403d1c8f8082729609338a5c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sespathra-s.png"
+dest_files=["res://.godot/imported/sespathra-s.png-845a23821b9c01d55a75cecbef4dd1b5.ctex"]
 
 [params]
 

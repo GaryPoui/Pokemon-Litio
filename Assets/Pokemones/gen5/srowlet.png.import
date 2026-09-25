@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqb4jy4x5a6ha"
-path="res://.godot/imported/srowlet.png-a3898b3a5b33674e5c8832ad34c64b83.ctex"
+path="res://.godot/imported/srowlet.png-3916960665f1cdb40a2c43787499b691.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/srowlet.png"
-dest_files=["res://.godot/imported/srowlet.png-a3898b3a5b33674e5c8832ad34c64b83.ctex"]
+source_file="res://Assets/Pokemones/gen5/srowlet.png"
+dest_files=["res://.godot/imported/srowlet.png-3916960665f1cdb40a2c43787499b691.ctex"]
 
 [params]
 

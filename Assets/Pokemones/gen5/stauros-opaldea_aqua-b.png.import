@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi23cm3qbh5fi"
-path="res://.godot/imported/stauros-opaldea_aqua-b.png-6a6729dbc9dc36e869f898f9177cbaaf.ctex"
+path="res://.godot/imported/stauros-opaldea_aqua-b.png-48324b36d2292e3d2caef097551459e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/stauros-opaldea_aqua-b.png"
-dest_files=["res://.godot/imported/stauros-opaldea_aqua-b.png-6a6729dbc9dc36e869f898f9177cbaaf.ctex"]
+source_file="res://Assets/Pokemones/gen5/stauros-opaldea_aqua-b.png"
+dest_files=["res://.godot/imported/stauros-opaldea_aqua-b.png-48324b36d2292e3d2caef097551459e9.ctex"]
 
 [params]
 

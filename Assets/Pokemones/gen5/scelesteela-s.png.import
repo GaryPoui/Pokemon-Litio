@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjxqk3pfv6bwr"
-path="res://.godot/imported/scelesteela-s.png-6946da0e62bebb1b1a0287c347fa54c6.ctex"
+path="res://.godot/imported/scelesteela-s.png-53efe5663e12e5da3ee6656358154485.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scelesteela-s.png"
-dest_files=["res://.godot/imported/scelesteela-s.png-6946da0e62bebb1b1a0287c347fa54c6.ctex"]
+source_file="res://Assets/Pokemones/gen5/scelesteela-s.png"
+dest_files=["res://.godot/imported/scelesteela-s.png-53efe5663e12e5da3ee6656358154485.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uactpwv3rqr0"
-path="res://.godot/imported/sbuzzwole-b.png-d97ccc8ac5372972ff05f07e5af34a70.ctex"
+path="res://.godot/imported/sbuzzwole-b.png-20bea63faba49e3a59ad93f23b36e368.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbuzzwole-b.png"
-dest_files=["res://.godot/imported/sbuzzwole-b.png-d97ccc8ac5372972ff05f07e5af34a70.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbuzzwole-b.png"
+dest_files=["res://.godot/imported/sbuzzwole-b.png-20bea63faba49e3a59ad93f23b36e368.ctex"]
 
 [params]
 

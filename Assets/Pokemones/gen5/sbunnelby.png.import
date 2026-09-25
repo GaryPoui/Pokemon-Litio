@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs1kgu0gdn8wt"
-path="res://.godot/imported/sbunnelby.png-940516e48543afa40756e931e1925d0c.ctex"
+path="res://.godot/imported/sbunnelby.png-90ad3610aa02e18c47c98fc539877bcb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbunnelby.png"
-dest_files=["res://.godot/imported/sbunnelby.png-940516e48543afa40756e931e1925d0c.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbunnelby.png"
+dest_files=["res://.godot/imported/sbunnelby.png-90ad3610aa02e18c47c98fc539877bcb.ctex"]
 
 [params]
 

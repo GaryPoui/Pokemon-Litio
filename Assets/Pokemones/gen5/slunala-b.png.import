@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4ortoh217rnv"
-path="res://.godot/imported/slunala-b.png-bc0fa2e2df106b1fd21ded227dbff7d3.ctex"
+path="res://.godot/imported/slunala-b.png-3fca1e9946d98d1a2fb10af69195be74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/slunala-b.png"
-dest_files=["res://.godot/imported/slunala-b.png-bc0fa2e2df106b1fd21ded227dbff7d3.ctex"]
+source_file="res://Assets/Pokemones/gen5/slunala-b.png"
+dest_files=["res://.godot/imported/slunala-b.png-3fca1e9946d98d1a2fb10af69195be74.ctex"]
 
 [params]
 

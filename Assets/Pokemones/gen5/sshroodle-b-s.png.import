@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7wf4p7xw8y8m"
-path="res://.godot/imported/sshroodle-b-s.png-9d28e2aeddb50c8245ef4385d96dbbf4.ctex"
+path="res://.godot/imported/sshroodle-b-s.png-22075d9778e5f0a0b672021d714de44b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sshroodle-b-s.png"
-dest_files=["res://.godot/imported/sshroodle-b-s.png-9d28e2aeddb50c8245ef4385d96dbbf4.ctex"]
+source_file="res://Assets/Pokemones/gen5/sshroodle-b-s.png"
+dest_files=["res://.godot/imported/sshroodle-b-s.png-22075d9778e5f0a0b672021d714de44b.ctex"]
 
 [params]
 

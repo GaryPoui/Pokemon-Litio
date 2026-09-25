@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqiusmw001pxe"
-path="res://.godot/imported/sperrserker-b-s.png-bb60671c2f3eb8eaa7cb61e47b8ea258.ctex"
+path="res://.godot/imported/sperrserker-b-s.png-05432c42f7ab6167e30fdeca01e04f83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sperrserker-b-s.png"
-dest_files=["res://.godot/imported/sperrserker-b-s.png-bb60671c2f3eb8eaa7cb61e47b8ea258.ctex"]
+source_file="res://Assets/Pokemones/gen5/sperrserker-b-s.png"
+dest_files=["res://.godot/imported/sperrserker-b-s.png-05432c42f7ab6167e30fdeca01e04f83.ctex"]
 
 [params]
 

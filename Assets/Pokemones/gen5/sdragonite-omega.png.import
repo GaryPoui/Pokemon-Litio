@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq5wbfxqf5ov"
-path="res://.godot/imported/sdragonite-omega.png-bd830e20ca90aa1132554672f45a02c8.ctex"
+path="res://.godot/imported/sdragonite-omega.png-fada2f659f1666510d245441f61ff379.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdragonite-omega.png"
-dest_files=["res://.godot/imported/sdragonite-omega.png-bd830e20ca90aa1132554672f45a02c8.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdragonite-omega.png"
+dest_files=["res://.godot/imported/sdragonite-omega.png-fada2f659f1666510d245441f61ff379.ctex"]
 
 [params]
 

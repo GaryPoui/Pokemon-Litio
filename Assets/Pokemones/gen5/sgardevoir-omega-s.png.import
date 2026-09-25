@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnw47caw774o6"
-path="res://.godot/imported/sgardevoir-omega-s.png-049ede6a964235483e4e5162d0ee8a49.ctex"
+path="res://.godot/imported/sgardevoir-omega-s.png-cb80121438cdee1cab070b946232cdcb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgardevoir-omega-s.png"
-dest_files=["res://.godot/imported/sgardevoir-omega-s.png-049ede6a964235483e4e5162d0ee8a49.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgardevoir-omega-s.png"
+dest_files=["res://.godot/imported/sgardevoir-omega-s.png-cb80121438cdee1cab070b946232cdcb.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxja10v3nnc5k"
-path="res://.godot/imported/sbruxish.png-eb3bf9371d225a86586f20167f4e4ffa.ctex"
+path="res://.godot/imported/sbruxish.png-b793afc3de63d826ebabc68bc2a9e5dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sbruxish.png"
-dest_files=["res://.godot/imported/sbruxish.png-eb3bf9371d225a86586f20167f4e4ffa.ctex"]
+source_file="res://Assets/Pokemones/gen5/sbruxish.png"
+dest_files=["res://.godot/imported/sbruxish.png-b793afc3de63d826ebabc68bc2a9e5dc.ctex"]
 
 [params]
 

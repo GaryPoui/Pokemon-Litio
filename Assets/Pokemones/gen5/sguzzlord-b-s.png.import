@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfjcgxkwfiedr"
-path="res://.godot/imported/sguzzlord-b-s.png-eafb8c010d5ce0a158754423f0071178.ctex"
+path="res://.godot/imported/sguzzlord-b-s.png-421479d7652963c346658374efdc1a54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sguzzlord-b-s.png"
-dest_files=["res://.godot/imported/sguzzlord-b-s.png-eafb8c010d5ce0a158754423f0071178.ctex"]
+source_file="res://Assets/Pokemones/gen5/sguzzlord-b-s.png"
+dest_files=["res://.godot/imported/sguzzlord-b-s.png-421479d7652963c346658374efdc1a54.ctex"]
 
 [params]
 

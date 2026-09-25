@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db1by817jhjri"
-path="res://.godot/imported/sargalis.png-d2b2b1b7b51d2ceb8ef1bdc0c4b2507b.ctex"
+path="res://.godot/imported/sargalis.png-7c158200f8d540841359d61c4fcdd9a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sargalis.png"
-dest_files=["res://.godot/imported/sargalis.png-d2b2b1b7b51d2ceb8ef1bdc0c4b2507b.ctex"]
+source_file="res://Assets/Pokemones/gen5/sargalis.png"
+dest_files=["res://.godot/imported/sargalis.png-7c158200f8d540841359d61c4fcdd9a2.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djqmpj4x3akk1"
-path="res://.godot/imported/ssnaelstrom-s.png-182561b6faca8dce70d53e8f965e3875.ctex"
+path="res://.godot/imported/ssnaelstrom-s.png-09297b85a672c2912ce48fb2f78a0322.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssnaelstrom-s.png"
-dest_files=["res://.godot/imported/ssnaelstrom-s.png-182561b6faca8dce70d53e8f965e3875.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssnaelstrom-s.png"
+dest_files=["res://.godot/imported/ssnaelstrom-s.png-09297b85a672c2912ce48fb2f78a0322.ctex"]
 
 [params]
 

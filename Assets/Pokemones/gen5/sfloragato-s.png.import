@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drgsnpsfjhnos"
-path="res://.godot/imported/sfloragato-s.png-7ce0d8d5753794051224b10ac2787e44.ctex"
+path="res://.godot/imported/sfloragato-s.png-727d077dceef153ea8d4aad556cbc86a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sfloragato-s.png"
-dest_files=["res://.godot/imported/sfloragato-s.png-7ce0d8d5753794051224b10ac2787e44.ctex"]
+source_file="res://Assets/Pokemones/gen5/sfloragato-s.png"
+dest_files=["res://.godot/imported/sfloragato-s.png-727d077dceef153ea8d4aad556cbc86a.ctex"]
 
 [params]
 

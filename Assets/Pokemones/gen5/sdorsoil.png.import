@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7j18nndl2g3v"
-path="res://.godot/imported/sdorsoil.png-2a39ebea6aa44b804bb9805a28176b8f.ctex"
+path="res://.godot/imported/sdorsoil.png-0d37a1431b8eff9477060c995ea91bcf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sdorsoil.png"
-dest_files=["res://.godot/imported/sdorsoil.png-2a39ebea6aa44b804bb9805a28176b8f.ctex"]
+source_file="res://Assets/Pokemones/gen5/sdorsoil.png"
+dest_files=["res://.godot/imported/sdorsoil.png-0d37a1431b8eff9477060c995ea91bcf.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bocgtn4urwkel"
-path="res://.godot/imported/shoopa-s.png-70b8cc02af2d6ab64721102e6cbe79a5.ctex"
+path="res://.godot/imported/shoopa-s.png-3295ebfaa395047779726667b306bde0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/shoopa-s.png"
-dest_files=["res://.godot/imported/shoopa-s.png-70b8cc02af2d6ab64721102e6cbe79a5.ctex"]
+source_file="res://Assets/Pokemones/gen5/shoopa-s.png"
+dest_files=["res://.godot/imported/shoopa-s.png-3295ebfaa395047779726667b306bde0.ctex"]
 
 [params]
 

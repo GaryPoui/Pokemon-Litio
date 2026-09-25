@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c81ir12ynfk0"
-path="res://.godot/imported/spikachu-opartner.png-8bd82c079c3883f53c4e43abc9c69576.ctex"
+path="res://.godot/imported/spikachu-opartner.png-6ad5f703ca8ecf137f13704d7b78f6d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spikachu-opartner.png"
-dest_files=["res://.godot/imported/spikachu-opartner.png-8bd82c079c3883f53c4e43abc9c69576.ctex"]
+source_file="res://Assets/Pokemones/gen5/spikachu-opartner.png"
+dest_files=["res://.godot/imported/spikachu-opartner.png-6ad5f703ca8ecf137f13704d7b78f6d8.ctex"]
 
 [params]
 

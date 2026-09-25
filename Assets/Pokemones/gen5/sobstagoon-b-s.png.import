@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://f3en8navmr5o"
-path="res://.godot/imported/sobstagoon-b-s.png-b1269e004812e4bcc52b8f9bc3bf837e.ctex"
+path="res://.godot/imported/sobstagoon-b-s.png-ed9916b58b9dd1a698672b0e19c85425.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sobstagoon-b-s.png"
-dest_files=["res://.godot/imported/sobstagoon-b-s.png-b1269e004812e4bcc52b8f9bc3bf837e.ctex"]
+source_file="res://Assets/Pokemones/gen5/sobstagoon-b-s.png"
+dest_files=["res://.godot/imported/sobstagoon-b-s.png-ed9916b58b9dd1a698672b0e19c85425.ctex"]
 
 [params]
 

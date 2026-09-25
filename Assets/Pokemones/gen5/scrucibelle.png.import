@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bje7r20ieuukf"
-path="res://.godot/imported/scrucibelle.png-2fdf1e7418bbc93850027faf9460150f.ctex"
+path="res://.godot/imported/scrucibelle.png-fa08cebcd93bc449353576b717ad4f62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/scrucibelle.png"
-dest_files=["res://.godot/imported/scrucibelle.png-2fdf1e7418bbc93850027faf9460150f.ctex"]
+source_file="res://Assets/Pokemones/gen5/scrucibelle.png"
+dest_files=["res://.godot/imported/scrucibelle.png-fa08cebcd93bc449353576b717ad4f62.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://decn0poc46x4y"
-path="res://.godot/imported/ssinistea-oantique-s.png-f3267c767e3d421738fc37c6bb1e8f95.ctex"
+path="res://.godot/imported/ssinistea-oantique-s.png-5f3a1e9809ea05155728f4b96270f1f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/ssinistea-oantique-s.png"
-dest_files=["res://.godot/imported/ssinistea-oantique-s.png-f3267c767e3d421738fc37c6bb1e8f95.ctex"]
+source_file="res://Assets/Pokemones/gen5/ssinistea-oantique-s.png"
+dest_files=["res://.godot/imported/ssinistea-oantique-s.png-5f3a1e9809ea05155728f4b96270f1f2.ctex"]
 
 [params]
 

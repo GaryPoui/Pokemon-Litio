@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqhg6jh2y4fq5"
-path="res://.godot/imported/sgarganacl-b.png-b1502b72ea85999831bba5d1e3b84d40.ctex"
+path="res://.godot/imported/sgarganacl-b.png-8e0a37390896416850bfea8960b18b3a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/sgarganacl-b.png"
-dest_files=["res://.godot/imported/sgarganacl-b.png-b1502b72ea85999831bba5d1e3b84d40.ctex"]
+source_file="res://Assets/Pokemones/gen5/sgarganacl-b.png"
+dest_files=["res://.godot/imported/sgarganacl-b.png-8e0a37390896416850bfea8960b18b3a.ctex"]
 
 [params]
 

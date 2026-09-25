@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://k4ktrxlm2xih"
-path="res://.godot/imported/spikachu-olibre-b.png-5febe82d66d381b92fb747b04b51ad77.ctex"
+path="res://.godot/imported/spikachu-olibre-b.png-eebb08b01855186225f5e9ad0906eb67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/spikachu-olibre-b.png"
-dest_files=["res://.godot/imported/spikachu-olibre-b.png-5febe82d66d381b92fb747b04b51ad77.ctex"]
+source_file="res://Assets/Pokemones/gen5/spikachu-olibre-b.png"
+dest_files=["res://.godot/imported/spikachu-olibre-b.png-eebb08b01855186225f5e9ad0906eb67.ctex"]
 
 [params]
 

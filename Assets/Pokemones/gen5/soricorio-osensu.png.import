@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bq0k6jq88teok"
-path="res://.godot/imported/soricorio-osensu.png-1ad21a7fa3ca8f7ac36599f95da84f14.ctex"
+path="res://.godot/imported/soricorio-osensu.png-a1b8be459da84e480271552aac8bbe30.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asets /Pokemones/gen5/soricorio-osensu.png"
-dest_files=["res://.godot/imported/soricorio-osensu.png-1ad21a7fa3ca8f7ac36599f95da84f14.ctex"]
+source_file="res://Assets/Pokemones/gen5/soricorio-osensu.png"
+dest_files=["res://.godot/imported/soricorio-osensu.png-a1b8be459da84e480271552aac8bbe30.ctex"]
 
 [params]
 
