@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bu8u4pey3ybuf"]
+
+[ext_resource type="Script" uid="uid://bhk7vlw16kjki" path="res://Scripts/ui/pantalla_equipo.gd" id="1_bv300"]
+[ext_resource type="Script" uid="uid://donqmmmwswodn" path="res://Scripts/ui/lista_opciones.gd" id="1_wbyyk"]
+
+[node name="PantallaEquipo" type="CanvasLayer" unique_id=984521374]
+script = ExtResource("1_bv300")
+
+[node name="Fondo" type="ColorRect" parent="." unique_id=637270678]
+offset_right = 256.0
+offset_bottom = 192.0
+color = Color(0.36, 0.56, 0.78, 1)
+
+[node name="Tarjetas" type="Control" parent="." unique_id=904131767]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 256.0
+offset_bottom = 160.0
+
+[node name="Mensaje" type="Panel" parent="." unique_id=1179359958]
+offset_top = 162.0
+offset_right = 256.0
+offset_bottom = 192.0
+
+[node name="Texto" type="Label" parent="Mensaje" unique_id=318847174]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 7.0
+offset_right = 248.0
+offset_bottom = 30.0
+
+[node name="Submenu" type="Panel" parent="." unique_id=940459515]
+offset_left = 176.0
+offset_top = 106.0
+offset_right = 252.0
+offset_bottom = 160.0
+
+[node name="Lista" type="Control" parent="Submenu" unique_id=2011176709]
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 5.0
+offset_right = 72.0
+offset_bottom = 51.0
+script = ExtResource("1_wbyyk")

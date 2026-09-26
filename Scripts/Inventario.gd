@@ -30,6 +30,10 @@ func _ready() -> void:
 		objetos[id]= BaseDatos.objeto(id)
 	cantidades =INICIAL.duplicate()
 
+func reiniciar() -> void:
+	cantidades= INICIAL.duplicate()
+	inventory_changed.emit()
+
 func get_categories() -> Array[String]:
 	var result: Array[String]= []
 	for category in CATEGORIES:
@@ -82,6 +86,13 @@ func add_item(item_id: String, cantidad: int= 1) -> bool:
 	if not objetos.has(item_id):
 		return false
 	cantidades[item_id]= cantidad_de(item_id)+ cantidad
+	inventory_changed.emit()
+	return true
+
+func consumir(item_id: String) -> bool:
+	if cantidad_de(item_id)<= 0:
+		return false
+	cantidades[item_id]= cantidad_de(item_id) -1
 	inventory_changed.emit()
 	return true
 

@@ -10,6 +10,7 @@ categoria = "estado"
 precision = 0
 pp = 40
 objetivo = "user"
+meta = "net-good-stats"
 descripcion = "Se enrosca para ocultar sus puntos débiles y aumentar la Defensa."
 cambios_stats = {
 "defensa": 1

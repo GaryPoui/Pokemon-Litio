@@ -10,8 +10,13 @@ func agregar(p: PokemonInstancia) -> bool:
 	if esta_lleno():
 		return false
 	miembros.append(p)
+	Estado.capturar(p.especie.id)
 	cambiado.emit()
 	return true
+
+func reiniciar() -> void:
+	miembros.clear()
+	cambiado.emit()
 
 func esta_lleno() -> bool:
 	return miembros.size()>= MAXIMO

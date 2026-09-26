@@ -22,6 +22,9 @@ var item_index: int =0
 var action_index: int = 0
 var current_items: Array[Dictionary] =[]
 var action_mode: bool = false
+var ocupado:= false
+
+const ESCENA_EQUIPO :="res://Escenas/UI/PantallaEquipo.tscn"
 
 var category_buttons: Array[Button]= []
 var item_buttons: Array[Button]= []
@@ -46,20 +49,10 @@ func _ready() -> void:
 	_refresh_items()
 
 func _unhandled_input(event: InputEvent) -> void:
-	if Dialogo.esta_abierto or GestorEscenas.en_transicion:
-		return
-	if event.is_action_pressed("menu"):
-		if action_mode:
-			_close_action_menu()
-		else:
-			toggle()
-		get_viewport().set_input_as_handled()
+	if ocupado or not is_open or Dialogo.esta_abierto or GestorEscenas.en_transicion or Combate.activo:
 		return
 
-	if not is_open:
-		return
-
-	if event.is_action_pressed("cancelar"):
+	if event.is_action_pressed("cancelar") or event.is_action_pressed("menu"):
 		if action_mode:
 			_close_action_menu()
 		else:
@@ -184,7 +177,7 @@ func _refresh_items() -> void:
 		]
 		button.alignment= HORIZONTAL_ALIGNMENT_LEFT
 		button.focus_mode= Control.FOCUS_NONE
-		button.custom_minimum_size=Vector2(0, 13)
+		button.custom_minimum_size=Vector2(0, 14)
 		button.pressed.connect(_on_item_clicked.bind(i))
 		item_list.add_child(button)
 		item_buttons.append(button)
@@ -235,7 +228,7 @@ func _apply_button_style(button: Button, selected: bool, category: bool) -> void
 	button.add_theme_stylebox_override("pressed", box)
 	button.add_theme_color_override("font_color", TEXT_DARK if selected else TEXT_LIGHT)
 	button.add_theme_color_override("font_hover_color", TEXT_DARK if selected else TEXT_LIGHT)
-	button.add_theme_font_size_override("font_size", 8 if category else 9)
+	EstiloUI.fuente(button, 6 if category else 9)
 
 func _open_action_menu() -> void:
 	if current_items.is_empty():
@@ -276,7 +269,7 @@ func _rebuild_actions() -> void:
 		var button:= Button.new()
 		button.text =actions[i]
 		button.focus_mode = Control.FOCUS_NONE
-		button.custom_minimum_size=Vector2(0, 13)
+		button.custom_minimum_size=Vector2(0, 14)
 		button.pressed.connect(_on_action_clicked.bind(i))
 		action_list.add_child(button)
 		action_buttons.append(button)
@@ -297,12 +290,9 @@ func _execute_selected_action() -> void:
 
 	match action:
 		"USAR":
-			if inventory.use_item(item_id):
-				_show_status("Usaste %s." % str(item.get("name", "el objeto")))
-			else:
-				_show_status("No se puede usar ahora.")
+			_usar(item_id)
 		"DAR":
-			_show_status("Aún no tienes equipo Pokémon.")
+			_dar(item_id)
 		"REGISTRAR":
 			_show_status("%s registrado." % str(item.get("name", "El objeto")))
 		"TIRAR":
@@ -315,6 +305,59 @@ func _execute_selected_action() -> void:
 
 	if action!="CANCELAR":
 		_close_action_menu()
+
+func _elegir_pokemon(texto: String) -> int:
+	if Equipo.miembros.is_empty():
+		_show_status("No tienes ningún Pokémon.")
+		return -1
+	ocupado= true
+	var p= load(ESCENA_EQUIPO).instantiate()
+	add_child(p)
+	p.abrir("elegir", texto)
+	await p.cerrado
+	var r: int= p.resultado
+	p.queue_free()
+	ocupado =false
+	return r
+
+func _usar(item_id: String) -> void:
+	var o:= Inventario.get_objeto(item_id)
+	if o== null or Inventario.cantidad_de(item_id)<= 0:
+		return
+	if o.cura_ps> 0:
+		var i:= await _elegir_pokemon("¿En qué Pokémon usar %s?" % o.nombre)
+		if i< 0:
+			return
+		var p:= Equipo.miembros[i]
+		if p.esta_debilitado() or p.ps_actuales>= p.ps_max():
+			_show_status("No tendrá ningún efecto.")
+			return
+		Inventario.consumir(item_id)
+		_show_status("%s recuperó %d PS." % [p.nombre(), p.curar_ps(o.cura_ps)])
+	elif item_id== "repel":
+		Inventario.consumir(item_id)
+		Estado.pasos_repelente= 100
+		_show_status("Usaste Repelente. Los Pokémon débiles no aparecerán.")
+	else:
+		_show_status("¡No es momento de usar esto!")
+
+func _dar(item_id: String) -> void:
+	var o:= Inventario.get_objeto(item_id)
+	if o== null or o.categoria in ["CLAVE", "MT / MO"]:
+		_show_status("Este objeto no se puede dar.")
+		return
+	var i:= await _elegir_pokemon("¿A quién le das %s?" % o.nombre)
+	if i< 0:
+		return
+	var p:= Equipo.miembros[i]
+	var previo:= p.objeto
+	Inventario.consumir(item_id)
+	p.objeto= item_id
+	if previo!= "":
+		Inventario.add_item(previo)
+		_show_status("%s dejó %s y ahora lleva %s." % [p.nombre(), Inventario.get_item_name(previo), o.nombre])
+	else:
+		_show_status("%s ahora lleva %s." % [p.nombre(), o.nombre])
 
 func _show_status(message: String) -> void:
 	footer_label.text= message
@@ -354,8 +397,16 @@ func _apply_gen5_style() -> void:
 	action_panel.add_theme_stylebox_override("panel", action_style)
 
 	category_title.add_theme_color_override("font_color", TEXT_LIGHT)
-	category_title.add_theme_font_size_override("font_size", 11)
+	EstiloUI.fuente(category_title, 11)
 	description_label.add_theme_color_override("font_color", TEXT_LIGHT)
-	description_label.add_theme_font_size_override("font_size", 8)
+	EstiloUI.fuente(description_label, 9)
+	description_label.get_parent().get_parent().custom_minimum_size.y= 36
 	footer_label.add_theme_color_override("font_color", Color("b9c8dc"))
-	footer_label.add_theme_font_size_override("font_size", 7)
+	EstiloUI.fuente(footer_label, 6)
+	footer_label.text= "←→ bolsillo  Z: elegir  X: volver"
+	var hint: Label= get_node("Overlay/MainPanel/Layout/ContentColumn/Header/Hint")
+	hint.visible =false
+	category_title.clip_text= true
+	category_title.custom_minimum_size.x =0
+	for ruta in ["Overlay/Title", "Overlay/MainPanel/Layout/CategoryColumn/PocketTitle", "Overlay/MainPanel/Layout/ContentColumn/Header/Hint"]:
+		EstiloUI.fuente(get_node(ruta), 12 if ruta.ends_with("Title") and not ruta.ends_with("PocketTitle") else 6)

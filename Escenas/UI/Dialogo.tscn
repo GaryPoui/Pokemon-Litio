@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dmbpe1ajn76f1"]
 
 [ext_resource type="Script" uid="uid://2bdrxs520g1l" path="res://Scripts/dialogo.gd" id="1_bsvcb"]
+[ext_resource type="Script" uid="uid://donqmmmwswodn" path="res://Scripts/ui/lista_opciones.gd" id="2_2g5bs"]
 
 [node name="Dialogo" type="CanvasLayer" unique_id=2096889996]
 script = ExtResource("1_bsvcb")
@@ -36,3 +37,19 @@ offset_top = -13.0
 offset_right = -4.0
 offset_bottom = -2.0
 text = "▼"
+
+[node name="Opciones" type="Panel" parent="." unique_id=701194437]
+visible = false
+offset_left = 196.0
+offset_top = 100.0
+offset_right = 252.0
+offset_bottom = 140.0
+
+[node name="Lista" type="Control" parent="Opciones" unique_id=2136634161]
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 5.0
+offset_right = 52.0
+offset_bottom = 35.0
+script = ExtResource("2_2g5bs")
+alto_fila = 12.0

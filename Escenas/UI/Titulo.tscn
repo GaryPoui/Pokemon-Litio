@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cifek3xx436ea"]
+
+[ext_resource type="Script" uid="uid://leuk4t8cgf1b" path="res://Scripts/batalla/sprite_pokemon.gd" id="1_4lttk"]
+[ext_resource type="Script" uid="uid://bmcw28f7xny52" path="res://Scripts/ui/titulo.gd" id="1_gooog"]
+[ext_resource type="Script" uid="uid://donqmmmwswodn" path="res://Scripts/ui/lista_opciones.gd" id="2_ksgs4"]
+
+[node name="Titulo" type="Control" unique_id=1359273544]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 256.0
+offset_bottom = 192.0
+script = ExtResource("1_gooog")
+
+[node name="Fondo" type="ColorRect" parent="." unique_id=571740418]
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 192.0
+color = Color(0.16, 0.26, 0.55, 1)
+
+[node name="Franja" type="ColorRect" parent="." unique_id=502645458]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 256.0
+offset_bottom = 192.0
+color = Color(0.12, 0.2, 0.42, 1)
+
+[node name="Logo" type="Label" parent="." unique_id=621980151]
+layout_mode = 0
+offset_top = 14.0
+offset_right = 256.0
+offset_bottom = 44.0
+text = "POKéMON LITIO"
+horizontal_alignment = 1
+
+[node name="Sub" type="Label" parent="." unique_id=1531672359]
+layout_mode = 0
+offset_top = 44.0
+offset_right = 256.0
+offset_bottom = 67.0
+text = "Un fan game de Pokémon"
+horizontal_alignment = 1
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=752988741]
+position = Vector2(128, 118)
+script = ExtResource("1_4lttk")
+
+[node name="Opciones" type="Panel" parent="." unique_id=818148596]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 128.0
+offset_right = 182.0
+offset_bottom = 166.0
+
+[node name="Lista" type="Control" parent="Opciones" unique_id=132159635]
+anchors_preset = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 102.0
+offset_bottom = 35.0
+script = ExtResource("2_ksgs4")
+
+[node name="Pie" type="Label" parent="." unique_id=1748187225]
+layout_mode = 0
+offset_top = 178.0
+offset_right = 256.0
+offset_bottom = 201.0
+text = "Proyecto fan no oficial. Pokémon es propiedad de Nintendo / Game Freak."
+horizontal_alignment = 1

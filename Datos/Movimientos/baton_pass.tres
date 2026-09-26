@@ -10,4 +10,5 @@ categoria = "estado"
 precision = 0
 pp = 40
 objetivo = "user"
+meta = "unique"
 descripcion = "Cambia el puesto con otro miembro del equipo y le pasa los cambios de características."

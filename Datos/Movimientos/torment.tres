@@ -9,5 +9,6 @@ nombre = "Tormento"
 tipo = "siniestro"
 categoria = "estado"
 pp = 15
+meta = "ailment"
 descripcion = "Atormenta y enfurece al objetivo, que no puede usar dos veces seguidas el mismo movimiento. "
 estado = "torment"

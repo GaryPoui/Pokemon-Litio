@@ -11,6 +11,7 @@ categoria = "especial"
 poder = 20
 precision = 70
 pp = 20
+meta = "damage-ailment"
 descripcion = "Lanza un ataque con gases tóxicos que pueden llegar a envenenar."
 estado = "poison"
 prob_estado = 40

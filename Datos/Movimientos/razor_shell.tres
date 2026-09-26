@@ -9,6 +9,7 @@ nombre = "Concha Filo"
 tipo = "agua"
 poder = 75
 precision = 95
+meta = "damage-lower"
 descripcion = "Una afilada vieira ataca al objetivo. También puede hacer disminuir su Defensa."
 cambios_stats = {
 "defensa": -1

@@ -3,14 +3,19 @@
 [ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_3db5g"]
 [ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="1_8w5j4"]
 [ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="1_habko"]
+[ext_resource type="Resource" path="res://Datos/Encuentros/mapa_prueba.tres" id="2_ian7j"]
 [ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="4_3db5g"]
 [ext_resource type="Script" uid="uid://cus0sfyhcm2w4" path="res://Scripts/cartel.gd" id="5_rj58i"]
 [ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_1p004"]
 [ext_resource type="PackedScene" uid="uid://bgwsk6fgjdd6y" path="res://Escenas/ObjetoSuelo.tscn" id="7_h5d8a"]
+[ext_resource type="Script" uid="uid://cf87qjs4x03b8" path="res://Scripts/entrenador.gd" id="8_7njfp"]
+[ext_resource type="Resource" uid="uid://d1x8g2u0yao76" path="res://Datos/Especies/snivy.tres" id="8_7syr3"]
+[ext_resource type="Resource" uid="uid://dmllfp6rnoprj" path="res://Datos/Entrenadores/joven_leo.tres" id="9_bi4ho"]
 
 [node name="Mapa" type="Node2D" unique_id=48326584]
 y_sort_enabled = true
 script = ExtResource("1_3db5g")
+encuentros = ExtResource("2_ian7j")
 
 [node name="Suelo" type="TileMapLayer" parent="." unique_id=580277371]
 z_index = -1
@@ -53,8 +58,26 @@ La puerta ya funciona. ¡Probá entrar!"
 position = Vector2(200, 120)
 texto = "¡Hola! Mantené Shift para correr.
 
-Y con Z hablás con la gente o revisás carteles."
+La hierba alta tiene Pokémon salvajes. ¡Tené cuidado!"
+regalo = ExtResource("8_7syr3")
+clave_regalo = "inicial_snivy"
+texto_regalo = "¡Hola! ¿Todavía no tenés un Pokémon?
+
+Entonces llevate este. ¡Cuidalo mucho!"
 
 [node name="ObjetoSuelo" parent="." unique_id=1710029467 instance=ExtResource("7_h5d8a")]
 position = Vector2(40, 120)
 clave = "mapa_pocion_1"
+
+[node name="Entrenador" parent="." unique_id=505173063 instance=ExtResource("6_1p004")]
+modulate = Color(0.75, 0.85, 1, 1)
+position = Vector2(360, 152)
+script = ExtResource("8_7njfp")
+datos = ExtResource("9_bi4ho")
+clave = "vencio_joven_leo"
+texto_derrota = "¡Uf! Sos muy fuerte..."
+texto_despues = "Voy a entrenar más para la revancha."
+texto = "¡Eh, vos! ¡Nuestras miradas se cruzaron!
+
+¡Eso significa que tenemos que combatir!"
+mirando = Vector2(-1, 0)

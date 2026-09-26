@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://d14o6t7v35w7x"]
+
+[ext_resource type="Script" uid="uid://donqmmmwswodn" path="res://Scripts/ui/lista_opciones.gd" id="1_lpjnv"]
+[ext_resource type="Script" uid="uid://khfemv7oqbmt" path="res://Scripts/ui/pokedex.gd" id="1_qfl7w"]
+[ext_resource type="Script" uid="uid://leuk4t8cgf1b" path="res://Scripts/batalla/sprite_pokemon.gd" id="2_fy5j7"]
+
+[node name="Pokedex" type="CanvasLayer" unique_id=2062938853]
+script = ExtResource("1_qfl7w")
+
+[node name="Fondo" type="ColorRect" parent="." unique_id=1478442174]
+offset_right = 256.0
+offset_bottom = 192.0
+color = Color(0.78, 0.2, 0.2, 1)
+
+[node name="Titulo" type="Label" parent="." unique_id=1196611004]
+offset_left = 8.0
+offset_top = 3.0
+offset_right = 9.0
+offset_bottom = 26.0
+text = "POKéDEX"
+
+[node name="Totales" type="Label" parent="." unique_id=2126505565]
+offset_left = 128.0
+offset_top = 6.0
+offset_right = 129.0
+offset_bottom = 29.0
+
+[node name="PanelLista" type="Panel" parent="." unique_id=74033301]
+offset_left = 4.0
+offset_top = 20.0
+offset_right = 124.0
+offset_bottom = 188.0
+
+[node name="Ventana" type="Control" parent="PanelLista" unique_id=1120695706]
+clip_contents = true
+anchors_preset = 0
+offset_left = 2.0
+offset_top = 6.0
+offset_right = 118.0
+offset_bottom = 162.0
+
+[node name="Lista" type="Control" parent="PanelLista/Ventana" unique_id=1314755367]
+anchors_preset = 0
+offset_right = 116.0
+offset_bottom = 600.0
+script = ExtResource("1_lpjnv")
+tam_fuente = 8.0
+
+[node name="PanelDetalle" type="Panel" parent="." unique_id=1259166927]
+offset_left = 128.0
+offset_top = 20.0
+offset_right = 252.0
+offset_bottom = 188.0
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1196026318]
+position = Vector2(190, 104)
+script = ExtResource("2_fy5j7")
+
+[node name="Detalle" type="Control" parent="." unique_id=2124516901]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 128.0
+offset_top = 112.0
+offset_right = 252.0
+offset_bottom = 188.0

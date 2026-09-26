@@ -10,6 +10,7 @@ tipo = "fuego"
 categoria = "especial"
 poder = 40
 pp = 25
+meta = "damage-ailment"
 descripcion = "Ataca con llamas pequeñas que pueden causar quemaduras."
 estado = "burn"
 prob_estado = 10

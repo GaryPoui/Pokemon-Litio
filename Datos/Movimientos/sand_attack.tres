@@ -9,7 +9,8 @@ nombre = "Ataque Arena"
 tipo = "tierra"
 categoria = "estado"
 pp = 15
+meta = "net-good-stats"
 descripcion = "Arroja arena a la cara y baja la Precisión."
 cambios_stats = {
-"accuracy": -1
+"precision": -1
 }

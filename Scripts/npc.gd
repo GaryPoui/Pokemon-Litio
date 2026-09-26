@@ -3,6 +3,12 @@ extends StaticBody2D
 @export_multiline var texto: String =""
 @export var mirando: Vector2= Vector2.DOWN
 
+@export_group("Regalo")
+@export var regalo: EspeciePokemon
+@export var regalo_nivel: int= 5
+@export var clave_regalo: String =""
+@export_multiline var texto_regalo: String= ""
+
 @onready var sprite: AnimatedSprite2D= $AnimatedSprite2D
 
 const ANIMS:= {
@@ -21,6 +27,14 @@ func celda() -> Vector2i:
 
 func interactuar(jugador: Node) -> void:
 	_mirar(-jugador.last_direction)
+	if regalo!= null and clave_regalo!= "" and not Estado.tiene(clave_regalo):
+		await Dialogo.mostrar(texto_regalo)
+		if Equipo.agregar(PokemonInstancia.crear(regalo, regalo_nivel)):
+			Estado.marcar(clave_regalo)
+			await Dialogo.mostrar("¡Recibiste a %s!" % regalo.nombre)
+		else:
+			await Dialogo.mostrar("Tu equipo está lleno.")
+		return
 	await Dialogo.mostrar(texto)
 
 func _mirar(direccion: Vector2) -> void:

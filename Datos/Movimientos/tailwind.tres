@@ -11,4 +11,5 @@ categoria = "estado"
 precision = 0
 pp = 30
 objetivo = "users-field"
+meta = "field-effect"
 descripcion = "Crea un fuerte remolino que aumenta la Velocidad de los Pokémon de tu equipo durante cuatro turnos."

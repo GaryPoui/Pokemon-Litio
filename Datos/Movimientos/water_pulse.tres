@@ -10,6 +10,7 @@ tipo = "agua"
 categoria = "especial"
 poder = 60
 pp = 20
+meta = "damage-ailment"
 descripcion = "Ataca con un potente chorro de agua. Puede confundir al objetivo."
 estado = "confusion"
 prob_estado = 20

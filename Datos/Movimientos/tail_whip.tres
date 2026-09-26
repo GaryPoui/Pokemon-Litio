@@ -9,6 +9,7 @@ nombre = "Agitacola"
 categoria = "estado"
 pp = 30
 objetivo = "all-opponents"
+meta = "net-good-stats"
 descripcion = "Agita la cola para bajar la Defensa del equipo rival."
 cambios_stats = {
 "defensa": -1

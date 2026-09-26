@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://dmllfp6rnoprj"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_ha5kb"]
+[ext_resource type="Resource" uid="uid://c86m72uptg82s" path="res://Datos/Especies/patrat.tres" id="2_p8wu7"]
+[ext_resource type="Resource" uid="uid://b6pbha04f4rs5" path="res://Datos/Especies/lillipup.tres" id="3_jeegb"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="4_5qf1q"]
+
+[sub_resource type="Resource" id="Resource_4f5d5"]
+script = ExtResource("1_ha5kb")
+especie = ExtResource("2_p8wu7")
+nivel_min = 4
+peso = 1
+
+[sub_resource type="Resource" id="Resource_tx4lh"]
+script = ExtResource("1_ha5kb")
+especie = ExtResource("3_jeegb")
+nivel_min = 5
+nivel_max = 5
+peso = 1
+
+[resource]
+script = ExtResource("4_5qf1q")
+nombre = "Leo"
+miembros = Array[ExtResource("1_ha5kb")]([SubResource("Resource_4f5d5"), SubResource("Resource_tx4lh")])

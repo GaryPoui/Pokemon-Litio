@@ -10,8 +10,9 @@ tipo = "planta"
 categoria = "especial"
 poder = 65
 precision = 90
+meta = "damage-lower"
 descripcion = "Tritura con afiladas hojas y puede bajar la Precisión del objetivo."
 cambios_stats = {
-"accuracy": -1
+"precision": -1
 }
 prob_stat = 50

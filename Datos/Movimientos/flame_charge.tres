@@ -9,6 +9,7 @@ nombre = "Nitrocarga"
 tipo = "fuego"
 poder = 50
 pp = 20
+meta = "damage-raise"
 descripcion = "Llamas que golpean al objetivo y aumentan la Velocidad del atacante."
 cambios_stats = {
 "velocidad": 1

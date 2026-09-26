@@ -9,4 +9,5 @@ nombre = "Cede Paso"
 categoria = "estado"
 precision = 0
 pp = 15
+meta = "unique"
 descripcion = "Si el usuario es el más rápido, permite al objetivo usar un movimiento justo tras él, adelantándose a Pokémon más rápidos."

@@ -11,6 +11,7 @@ categoria = "estado"
 precision = 0
 pp = 20
 objetivo = "user"
+meta = "net-good-stats"
 descripcion = "Estimula su cerebro pensando en cosas malas. Aumenta mucho el Ataque Especial."
 cambios_stats = {
 "at_esp": 2

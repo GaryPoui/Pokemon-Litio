@@ -12,5 +12,6 @@ precision = 0
 pp = 5
 prioridad = 4
 objetivo = "user"
+meta = "unique"
 descripcion = "Frena todos los ataques, pero puede fallar si se usa repetidamente."
 estado = "protect"

@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://c8puhhwx5v12l"]
+
+[ext_resource type="Script" uid="uid://dfps2kvnpdl28" path="res://Scripts/ui/resumen.gd" id="1_6snla"]
+[ext_resource type="Script" uid="uid://leuk4t8cgf1b" path="res://Scripts/batalla/sprite_pokemon.gd" id="1_kj32k"]
+
+[node name="Resumen" type="CanvasLayer" unique_id=1266628236]
+script = ExtResource("1_6snla")
+
+[node name="Fondo" type="ColorRect" parent="." unique_id=1902031569]
+offset_right = 256.0
+offset_bottom = 192.0
+color = Color(0.36, 0.56, 0.78, 1)
+
+[node name="Izq" type="Panel" parent="." unique_id=1799005603]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 100.0
+offset_bottom = 188.0
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2046525836]
+position = Vector2(52, 110)
+script = ExtResource("1_kj32k")
+
+[node name="DatosIzq" type="Control" parent="." unique_id=621864493]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 124.0
+offset_right = 100.0
+offset_bottom = 164.0
+
+[node name="Der" type="Panel" parent="." unique_id=543964891]
+offset_left = 104.0
+offset_top = 4.0
+offset_right = 252.0
+offset_bottom = 188.0
+
+[node name="Titulo" type="Label" parent="." unique_id=1828095901]
+offset_left = 110.0
+offset_top = 7.0
+offset_right = 246.0
+offset_bottom = 30.0
+horizontal_alignment = 1
+
+[node name="Contenido" type="Control" parent="." unique_id=129816084]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 104.0
+offset_top = 24.0
+offset_right = 252.0
+offset_bottom = 184.0

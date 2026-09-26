@@ -11,9 +11,10 @@ categoria = "estado"
 precision = 0
 pp = 20
 objetivo = "user"
+meta = "net-good-stats"
 descripcion = "El usuario se concentra, lo que le permite aumentar su Ataque, Defensa y Precisión."
 cambios_stats = {
-"accuracy": 1,
 "ataque": 1,
-"defensa": 1
+"defensa": 1,
+"precision": 1
 }

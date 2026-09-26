@@ -11,4 +11,5 @@ precision = 0
 pp = 20
 prioridad = 5
 objetivo = "ally"
+meta = "unique"
 descripcion = "El usuario ayuda a un aliado reforzando la potencia de su ataque."

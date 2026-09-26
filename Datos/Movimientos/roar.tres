@@ -9,4 +9,5 @@ nombre = "Rugido"
 categoria = "estado"
 pp = 20
 prioridad = -6
+meta = "force-switch"
 descripcion = "Se lleva al objetivo, que es cambiado por otro Pokémon. Si es un Pokémon salvaje, acaba el combate."

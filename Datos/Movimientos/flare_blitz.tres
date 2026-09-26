@@ -9,6 +9,7 @@ nombre = "Envite Ígneo"
 tipo = "fuego"
 poder = 120
 pp = 15
+meta = "damage-ailment"
 descripcion = "El Pokémon se cubre de llamas y carga contra el objetivo, aunque él también recibe daño. Puede quemar."
 estado = "burn"
 prob_estado = 10

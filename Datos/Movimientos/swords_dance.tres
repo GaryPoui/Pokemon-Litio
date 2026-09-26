@@ -10,6 +10,7 @@ categoria = "estado"
 precision = 0
 pp = 30
 objetivo = "user"
+meta = "net-good-stats"
 descripcion = "Baile frenético que aumenta mucho el Ataque."
 cambios_stats = {
 "ataque": 2

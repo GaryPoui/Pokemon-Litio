@@ -10,6 +10,7 @@ tipo = "fuego"
 categoria = "especial"
 poder = 95
 pp = 15
+meta = "damage-ailment"
 descripcion = "Ataca con una gran ráfaga de fuego que puede causar quemaduras."
 estado = "burn"
 prob_estado = 10

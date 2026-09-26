@@ -10,5 +10,6 @@ tipo = "psiquico"
 categoria = "estado"
 precision = 60
 pp = 20
+meta = "ailment"
 descripcion = "Ataque hipnótico que hace dormir profundamente al objetivo."
 estado = "sleep"

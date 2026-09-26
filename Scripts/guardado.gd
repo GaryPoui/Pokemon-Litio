@@ -23,6 +23,9 @@ func guardar() -> bool:
 		"direccion": [dir.x, dir.y],
 		"inventario": Inventario.a_diccionario(),
 		"banderas": Estado.banderas,
+		"vistos": Estado.vistos,
+		"capturados": Estado.capturados,
+		"repelente": Estado.pasos_repelente,
 		"equipo": Equipo.a_lista(),
 	}
 	var f:= FileAccess.open(RUTA, FileAccess.WRITE)
@@ -40,6 +43,9 @@ func cargar() -> bool:
 		return false
 	Inventario.desde_diccionario(datos.get("inventario", {}))
 	Estado.banderas =datos.get("banderas", {}).duplicate()
+	Estado.vistos= datos.get("vistos", {}).duplicate()
+	Estado.capturados =datos.get("capturados", {}).duplicate()
+	Estado.pasos_repelente= int(datos.get("repelente", 0))
 	Equipo.desde_lista(datos.get("equipo", []))
 	var p: Array= datos.get("posicion", [0, 0])
 	var d: Array =datos.get("direccion", [0, 1])

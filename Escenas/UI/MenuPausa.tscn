@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cwx008b63bre2"]
+
+[ext_resource type="Script" uid="uid://donqmmmwswodn" path="res://Scripts/ui/lista_opciones.gd" id="1_cgcet"]
+[ext_resource type="Script" uid="uid://cnlf5qttupsfo" path="res://Scripts/ui/menu_pausa.gd" id="1_or8h4"]
+
+[node name="MenuPausa" type="CanvasLayer" unique_id=27369313]
+script = ExtResource("1_or8h4")
+
+[node name="Caja" type="Panel" parent="." unique_id=1653800296]
+offset_left = 166.0
+offset_top = 4.0
+offset_right = 252.0
+offset_bottom = 84.0
+
+[node name="Lista" type="Control" parent="Caja" unique_id=1767418261]
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 5.0
+offset_right = 82.0
+offset_bottom = 81.0
+script = ExtResource("1_cgcet")

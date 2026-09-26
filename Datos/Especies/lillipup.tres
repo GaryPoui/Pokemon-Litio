@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://b6pbha04f4rs5"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_dqvty"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_dqvty"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_0ej6v"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_o8g84"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/odor_sleuth.tres" id="4_1f3p3"]
@@ -14,9 +14,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="12_cpiy4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="13_fmvap"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/giga_impact.tres" id="14_qbil4"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="15_xr0ts"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lillipup_espalda.png" id="16_xg1h7"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lillipup_frente.png" id="17_n5vdr"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_xr0ts"]
+[ext_resource type="Texture2D" uid="uid://w8ec7kc887x1" path="res://Assets/Pokemones/batalla/lillipup_espalda.png" id="16_xg1h7"]
+[ext_resource type="Texture2D" uid="uid://dm2c7p475cqlu" path="res://Assets/Pokemones/batalla/lillipup_frente.png" id="17_n5vdr"]
 
 [sub_resource type="Resource" id="Resource_cuagd"]
 script = ExtResource("1_dqvty")
@@ -86,7 +86,6 @@ script = ExtResource("15_xr0ts")
 id = "lillipup"
 numero = 506
 nombre = "Lillipup"
-tipos = PackedStringArray("normal")
 ps = 45
 ataque = 60
 defensa = 45

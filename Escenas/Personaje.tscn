@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://db165vagalcer" path="res://Scripts/movimiento.gd" id="1_0gco6"]
 [ext_resource type="Texture2D" uid="uid://crpl2ijwynth2" path="res://Assets/Personajes/hero_godot_grid_40x40.png" id="1_qg4o5"]
 [ext_resource type="PackedScene" uid="uid://haqmqnpausm1" path="res://Escenas/UI/Mochila/Mochila.tscn" id="3_mochila"]
+[ext_resource type="PackedScene" uid="uid://cwx008b63bre2" path="res://Escenas/UI/MenuPausa.tscn" id="4_tk1jt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sv45k"]
 atlas = ExtResource("1_qg4o5")
@@ -295,3 +296,5 @@ shape = SubResource("RectangleShape2D_0kjke")
 [node name="Mochila" parent="." unique_id=1803566958 instance=ExtResource("3_mochila")]
 
 [node name="Camara" type="Camera2D" parent="." unique_id=1602278005]
+
+[node name="MenuPausa" parent="." unique_id=27369313 instance=ExtResource("4_tk1jt")]

@@ -10,6 +10,7 @@ categoria = "estado"
 precision = 0
 pp = 30
 objetivo = "user"
+meta = "net-good-stats"
 descripcion = "Quien lo usa se concentra y potencia su Ataque y su Ataque Especial."
 cambios_stats = {
 "at_esp": 1,

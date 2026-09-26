@@ -11,5 +11,6 @@ categoria = "estado"
 precision = 0
 pp = 5
 objetivo = "user"
+meta = "heal"
 descripcion = "Aterriza sobre la superficie para descansar. Recupera hasta la mitad del total de sus PS."
 curacion = 50

@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3]
+
+[ext_resource type="FontFile" path="res://Assets/Fuentes/TruthAndIdeals.ttf" id="1_nrwrt"]
+
+[resource]
+default_font = ExtResource("1_nrwrt")
+default_font_size = 10

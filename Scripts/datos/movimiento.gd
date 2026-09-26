@@ -10,6 +10,7 @@ extends Resource
 @export var pp: int= 10
 @export var prioridad: int =0
 @export var objetivo: String= "selected-pokemon"
+@export var meta: String ="damage"
 @export_multiline var descripcion: String =""
 
 @export_group("Efectos")

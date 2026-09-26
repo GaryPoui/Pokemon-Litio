@@ -16,6 +16,7 @@ const MAX_MOVIMIENTOS:= 4
 @export var movimientos: Array[Movimiento] =[]
 @export var pp: Array[int]= []
 @export var estado: String =""
+@export var objeto: String= ""
 
 static func crear(esp: EspeciePokemon, niv: int, rng: RandomNumberGenerator= null) -> PokemonInstancia:
 	if rng== null:
@@ -85,7 +86,7 @@ func ganar_experiencia(cantidad: int) -> Array[Dictionary]:
 		var antes:= ps_max()
 		nivel+= 1
 		ps_actuales +=ps_max()- antes
-		eventos.append({"tipo": "nivel", "nivel": nivel})
+		eventos.append({"tipo": "nivel", "nivel": nivel, "ps": ps_actuales, "ps_max": ps_max()})
 		for m in especie.movimientos_en(nivel):
 			if movimientos.has(m):
 				continue
@@ -119,6 +120,7 @@ func a_diccionario() -> Dictionary:
 		"movimientos": movs,
 		"pp": pp,
 		"estado": estado,
+		"objeto": objeto,
 	}
 
 static func desde_diccionario(d: Dictionary) -> PokemonInstancia:
@@ -137,4 +139,5 @@ static func desde_diccionario(d: Dictionary) -> PokemonInstancia:
 		p.pp.append(int(v))
 	p.ps_actuales= int(d["ps"])
 	p.estado =str(d.get("estado", ""))
+	p.objeto= str(d.get("objeto", ""))
 	return p

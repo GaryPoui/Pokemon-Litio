@@ -9,5 +9,6 @@ nombre = "Gigadrenado"
 tipo = "planta"
 categoria = "especial"
 poder = 75
+meta = "damage-heal"
 descripcion = "Un ataque que absorbe nutrientes. Quien lo usa recupera la mitad de los PS del daño que produce. "
 drenaje = 50

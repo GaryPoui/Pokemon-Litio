@@ -9,5 +9,6 @@ nombre = "Drenadoras"
 tipo = "planta"
 categoria = "estado"
 precision = 90
+meta = "ailment"
 descripcion = "Planta semillas que absorben PS del objetivo en cada turno y que le sirven para recuperarse."
 estado = "leech-seed"

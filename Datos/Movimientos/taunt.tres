@@ -9,4 +9,5 @@ nombre = "Mofa"
 tipo = "siniestro"
 categoria = "estado"
 pp = 20
+meta = "unique"
 descripcion = "Enfurece al objetivo para que solo use movimientos de ataque durante tres turnos."

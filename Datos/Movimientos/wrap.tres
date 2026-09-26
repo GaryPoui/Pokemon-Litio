@@ -9,6 +9,7 @@ nombre = "Constricción"
 poder = 15
 precision = 90
 pp = 20
+meta = "damage-ailment"
 descripcion = "Oprime al objetivo de cuatro a cinco turnos con ramas o con su cuerpo."
 estado = "trap"
 prob_estado = 100

@@ -9,6 +9,7 @@ nombre = "Triturar"
 tipo = "siniestro"
 poder = 80
 pp = 15
+meta = "damage-lower"
 descripcion = "Tritura con afilados colmillos y puede bajar la Defensa del objetivo."
 cambios_stats = {
 "defensa": -1

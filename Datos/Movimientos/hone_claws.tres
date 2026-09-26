@@ -11,8 +11,9 @@ categoria = "estado"
 precision = 0
 pp = 15
 objetivo = "user"
+meta = "net-good-stats"
 descripcion = "El usuario se afila las garras para aumentar su Ataque y Precisión."
 cambios_stats = {
-"accuracy": 1,
-"ataque": 1
+"ataque": 1,
+"precision": 1
 }

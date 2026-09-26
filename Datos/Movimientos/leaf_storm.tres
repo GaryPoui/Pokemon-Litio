@@ -11,6 +11,7 @@ categoria = "especial"
 poder = 140
 precision = 90
 pp = 5
+meta = "damage-raise"
 descripcion = "Envuelve al objetivo con una lluvia de hojas afiladas, pero reduce mucho su Ataque Especial."
 cambios_stats = {
 "at_esp": -2

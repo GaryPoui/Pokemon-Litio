@@ -9,6 +9,7 @@ nombre = "Malicioso"
 categoria = "estado"
 pp = 30
 objetivo = "all-opponents"
+meta = "net-good-stats"
 descripcion = "Intimida a los rivales para bajar su Defensa."
 cambios_stats = {
 "defensa": -1

@@ -1,0 +1,189 @@
+[gd_scene format=3 uid="uid://hgva6tjsso5k"]
+
+[ext_resource type="Texture2D" uid="uid://b8x6ulybtq2lp" path="res://Assets/Batalla/ui/base_rival.png" id="1_bh8s4"]
+[ext_resource type="Script" uid="uid://cm7rdj8itidt" path="res://Scripts/batalla/batalla.gd" id="1_kluxw"]
+[ext_resource type="Script" uid="uid://leuk4t8cgf1b" path="res://Scripts/batalla/sprite_pokemon.gd" id="2_c7nxw"]
+[ext_resource type="Texture2D" uid="uid://dh5yrwdfwvjid" path="res://Assets/Batalla/ui/base_jugador.png" id="3_ce3rs"]
+[ext_resource type="Texture2D" uid="uid://cfvvwai8jtvgm" path="res://Assets/Objetos/pokeball_suelo.png" id="4_5gab2"]
+[ext_resource type="Texture2D" uid="uid://c5qc4kx7ctp2g" path="res://Assets/Batalla/ui/caja_rival.png" id="5_4ro6e"]
+[ext_resource type="Script" uid="uid://3c46evu34do3" path="res://Scripts/batalla/barra_ps.gd" id="6_h10kb"]
+[ext_resource type="Texture2D" uid="uid://d0p6f8lcdfcm5" path="res://Assets/Batalla/ui/caja_jugador.png" id="7_u1pia"]
+
+[node name="Batalla" type="CanvasLayer" unique_id=2053821235]
+script = ExtResource("1_kluxw")
+
+[node name="Fondo" type="ColorRect" parent="." unique_id=648602552]
+offset_right = 256.0
+offset_bottom = 192.0
+color = Color(0.9, 0.94, 0.84, 1)
+
+[node name="BaseRival" type="Sprite2D" parent="." unique_id=779051604]
+position = Vector2(192, 76)
+texture = ExtResource("1_bh8s4")
+
+[node name="PokemonRival" type="Sprite2D" parent="." unique_id=1540373141]
+position = Vector2(192, 80)
+script = ExtResource("2_c7nxw")
+
+[node name="BaseJugador" type="Sprite2D" parent="." unique_id=1157198786]
+position = Vector2(64, 140)
+texture = ExtResource("3_ce3rs")
+
+[node name="PokemonJugador" type="Sprite2D" parent="." unique_id=1516392007]
+position = Vector2(64, 148)
+script = ExtResource("2_c7nxw")
+
+[node name="Ball" type="Sprite2D" parent="." unique_id=1143732342]
+position = Vector2(192, 68)
+texture = ExtResource("4_5gab2")
+
+[node name="CajaRival" type="TextureRect" parent="." unique_id=781118591]
+offset_top = 14.0
+offset_bottom = 14.0
+texture = ExtResource("5_4ro6e")
+
+[node name="Nombre" type="Label" parent="CajaRival" unique_id=1064370142]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 4.0
+offset_right = 7.0
+offset_bottom = 27.0
+
+[node name="Nivel" type="Label" parent="CajaRival" unique_id=639059213]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 7.0
+offset_right = 88.0
+offset_bottom = 30.0
+
+[node name="Estado" type="Label" parent="CajaRival" unique_id=872535434]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 19.0
+offset_right = 9.0
+offset_bottom = 42.0
+
+[node name="Barra" type="Control" parent="CajaRival" unique_id=1235780831]
+anchors_preset = 0
+offset_left = 50.0
+offset_top = 24.0
+offset_right = 98.0
+offset_bottom = 27.0
+script = ExtResource("6_h10kb")
+
+[node name="CajaJugador" type="TextureRect" parent="." unique_id=1755177225]
+offset_left = 128.0
+offset_top = 94.0
+offset_right = 128.0
+offset_bottom = 94.0
+texture = ExtResource("7_u1pia")
+
+[node name="Nombre" type="Label" parent="CajaJugador" unique_id=318504078]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 4.0
+offset_right = 25.0
+offset_bottom = 27.0
+
+[node name="Nivel" type="Label" parent="CajaJugador" unique_id=1017225514]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 7.0
+offset_right = 109.0
+offset_bottom = 30.0
+
+[node name="Estado" type="Label" parent="CajaJugador" unique_id=2067850482]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 20.0
+offset_right = 27.0
+offset_bottom = 43.0
+
+[node name="Barra" type="Control" parent="CajaJugador" unique_id=506616069]
+anchors_preset = 0
+offset_left = 72.0
+offset_top = 25.0
+offset_right = 120.0
+offset_bottom = 28.0
+script = ExtResource("6_h10kb")
+
+[node name="PSActual" type="Label" parent="CajaJugador" unique_id=2022878372]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 28.0
+offset_right = 97.0
+offset_bottom = 42.0
+horizontal_alignment = 1
+
+[node name="PSMax" type="Label" parent="CajaJugador" unique_id=1564909181]
+visible = false
+layout_mode = 0
+offset_left = 96.0
+offset_top = 28.0
+offset_right = 120.0
+offset_bottom = 51.0
+
+[node name="Exp" type="Control" parent="CajaJugador" unique_id=22865326]
+anchors_preset = 0
+offset_left = 24.0
+offset_top = 42.0
+offset_right = 120.0
+offset_bottom = 44.0
+script = ExtResource("6_h10kb")
+es_exp = true
+
+[node name="Caja" type="Panel" parent="." unique_id=801931950]
+offset_top = 144.0
+offset_right = 256.0
+offset_bottom = 192.0
+
+[node name="Mensaje" type="Label" parent="Caja" unique_id=1415755080]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 248.0
+offset_bottom = 44.0
+autowrap_mode = 3
+
+[node name="Menu" type="Panel" parent="." unique_id=1897564414]
+offset_left = 132.0
+offset_top = 144.0
+offset_right = 256.0
+offset_bottom = 192.0
+
+[node name="InfoMov" type="Panel" parent="." unique_id=1368143643]
+offset_left = 176.0
+offset_top = 144.0
+offset_right = 256.0
+offset_bottom = 192.0
+
+[node name="Texto" type="Label" parent="InfoMov" unique_id=1548783814]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 4.0
+offset_right = 76.0
+offset_bottom = 44.0
+
+[node name="Lista" type="Panel" parent="." unique_id=1519467312]
+offset_left = 24.0
+offset_top = 8.0
+offset_right = 232.0
+offset_bottom = 140.0
+
+[node name="Titulo" type="Label" parent="Lista" unique_id=1816978057]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 3.0
+offset_right = 9.0
+offset_bottom = 26.0
+
+[node name="Items" type="Control" parent="Lista" unique_id=1431873761]
+anchors_preset = 0
+offset_top = 16.0
+offset_right = 208.0
+offset_bottom = 132.0
+
+[node name="Velo" type="ColorRect" parent="." unique_id=2010939231]
+offset_right = 256.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)

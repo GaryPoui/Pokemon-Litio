@@ -9,6 +9,7 @@ nombre = "Fanfarronear"
 categoria = "estado"
 precision = 90
 pp = 15
+meta = "swagger"
 descripcion = "Provoca confusión en el objetivo, pero también sube mucho su Ataque."
 cambios_stats = {
 "ataque": 2

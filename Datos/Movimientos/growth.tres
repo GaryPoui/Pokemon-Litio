@@ -10,6 +10,7 @@ categoria = "estado"
 precision = 0
 pp = 40
 objetivo = "user"
+meta = "net-good-stats"
 descripcion = "Hace que su cuerpo crezca a marchas forzadas con lo que aumenta su Ataque y Ataque Especial."
 cambios_stats = {
 "at_esp": 1,

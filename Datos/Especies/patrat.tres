@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://c86m72uptg82s"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_kld02"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_kld02"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_02xyj"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_al4my"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="4_wgs17"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/mean_look.tres" id="14_1dr4m"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/baton_pass.tres" id="15_20eyp"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/slam.tres" id="16_wxdtv"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_o3x5p"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/patrat_espalda.png" id="18_5axi1"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/patrat_frente.png" id="19_wy24c"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_o3x5p"]
+[ext_resource type="Texture2D" uid="uid://byxxmd6478o1c" path="res://Assets/Pokemones/batalla/patrat_espalda.png" id="18_5axi1"]
+[ext_resource type="Texture2D" uid="uid://j2nb253mp1xf" path="res://Assets/Pokemones/batalla/patrat_frente.png" id="19_wy24c"]
 
 [sub_resource type="Resource" id="Resource_0pyrl"]
 script = ExtResource("1_kld02")
@@ -99,7 +99,6 @@ script = ExtResource("17_o3x5p")
 id = "patrat"
 numero = 504
 nombre = "Patrat"
-tipos = PackedStringArray("normal")
 ps = 45
 ataque = 55
 defensa = 39

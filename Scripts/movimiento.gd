@@ -10,6 +10,7 @@ signal paso_terminado(celda: Vector2i)
 
 @onready var animated_sprite: AnimatedSprite2D =$AnimatedSprite2D
 @onready var mochila= get_node_or_null("Mochila")
+@onready var menu_pausa =get_node_or_null("MenuPausa")
 
 var is_moving: bool =false
 var is_running: bool= false
@@ -36,7 +37,7 @@ func _ready() -> void:
 	_set_idle()
 
 func _bloqueado() -> bool:
-	return (mochila!= null and mochila.is_open) or Dialogo.esta_abierto or GestorEscenas.en_transicion
+	return (mochila!= null and mochila.is_open) or (menu_pausa!= null and menu_pausa.is_open) or Dialogo.esta_abierto or GestorEscenas.en_transicion or Combate.activo
 
 func celda() -> Vector2i:
 	return Vector2i((position/ tile_size).floor())
