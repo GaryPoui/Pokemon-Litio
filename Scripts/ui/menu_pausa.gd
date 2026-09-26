@@ -60,7 +60,7 @@ func _elegir(op: String) -> void:
 			await _pantalla(ESCENA_EQUIPO, ["ver", "Elige un Pokémon."])
 		"MOCHILA":
 			ocupado= true
-			caja.visible =false
+			mochila.opened.connect(func(): caja.visible =false, CONNECT_ONE_SHOT)
 			mochila.open()
 			await mochila.closed
 			caja.visible= true
@@ -79,11 +79,13 @@ func _elegir(op: String) -> void:
 
 func _pantalla(ruta: String, args: Array) -> void:
 	ocupado= true
-	caja.visible =false
 	var p= load(ruta).instantiate()
-	add_child(p)
-	p.callv("abrir", args)
+	await GestorEscenas.fundido(func():
+		caja.visible =false
+		add_child(p)
+		p.callv("abrir", args))
 	await p.cerrado
-	p.queue_free()
-	caja.visible= true
+	await GestorEscenas.fundido(func():
+		p.queue_free()
+		caja.visible= true)
 	ocupado =false

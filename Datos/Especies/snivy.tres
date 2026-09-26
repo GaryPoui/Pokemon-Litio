@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://csfv61g8483tg"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_j2v1n"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_j2v1n"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_pvrkn"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_vrbxm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/vine_whip.tres" id="4_ugbx5"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/wring_out.tres" id="14_nv41k"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/gastro_acid.tres" id="15_lumjs"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="16_0gxf4"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_u6v46"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/snivy_espalda.png" id="18_couqe"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/snivy_frente.png" id="19_mvek2"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_u6v46"]
+[ext_resource type="Texture2D" uid="uid://5564phylm5v1" path="res://Assets/Pokemones/batalla/snivy_espalda.png" id="18_couqe"]
+[ext_resource type="Texture2D" uid="uid://cqcpfje3jdbuf" path="res://Assets/Pokemones/batalla/snivy_frente.png" id="19_mvek2"]
 
 [sub_resource type="Resource" id="Resource_gbp0y"]
 script = ExtResource("1_j2v1n")
@@ -99,7 +99,7 @@ script = ExtResource("17_u6v46")
 id = "snivy"
 numero = 495
 nombre = "Snivy"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 45
 ataque = 45
 defensa = 55

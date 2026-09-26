@@ -3,7 +3,7 @@ extends Resource
 
 @export var id: String= ""
 @export var nombre: String =""
-@export_enum("MEDICINA", "POKÉ BALLS", "MT / MO", "BAYAS", "OBJETOS", "CLAVE") var categoria: String= "OBJETOS"
+@export_enum("OBJETOS", "MEDICINA", "POKÉ BALLS", "MT / MO", "BAYAS", "CARTAS", "COMBATE", "CLAVE") var categoria: String= "OBJETOS"
 @export_multiline var descripcion: String =""
 @export var usable: bool= true
 @export var se_puede_tirar: bool =true

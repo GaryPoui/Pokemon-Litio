@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Objeto" format=3]
+[gd_resource type="Resource" script_class="Objeto" format=3 uid="uid://dvv501sku8v2c"]
 
-[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="1_whxhv"]
+[ext_resource type="Texture2D" uid="uid://bb2d5w26dco1i" path="res://Assets/Objetos/iconos/pokeball.png" id="1_4l7dn"]
+[ext_resource type="Script" uid="uid://d1neynu10riuh" path="res://Scripts/datos/objeto.gd" id="1_whxhv"]
 
 [resource]
 script = ExtResource("1_whxhv")
@@ -10,4 +11,5 @@ categoria = "POKÉ BALLS"
 descripcion = "Dispositivo para capturar Pokémon salvajes."
 usable = false
 precio = 200
+icono = ExtResource("1_4l7dn")
 ratio_captura = 1.0

@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Objeto" format=3]
+[gd_resource type="Resource" script_class="Objeto" format=3 uid="uid://nkayvs1pr4wn"]
 
-[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="1_v6ykb"]
+[ext_resource type="Texture2D" uid="uid://5quuxgks702i" path="res://Assets/Objetos/iconos/bicycle.png" id="1_v2n32"]
+[ext_resource type="Script" uid="uid://d1neynu10riuh" path="res://Scripts/datos/objeto.gd" id="1_v6ykb"]
 
 [resource]
 script = ExtResource("1_v6ykb")
@@ -9,3 +10,4 @@ nombre = "Bici"
 categoria = "CLAVE"
 descripcion = "Una bicicleta plegable para desplazarse más rápido."
 se_puede_tirar = false
+icono = ExtResource("1_v2n32")

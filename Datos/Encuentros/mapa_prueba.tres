@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_iqle2"]
 [ext_resource type="Resource" uid="uid://c86m72uptg82s" path="res://Datos/Especies/patrat.tres" id="2_2a75q"]
 [ext_resource type="Resource" uid="uid://b6pbha04f4rs5" path="res://Datos/Especies/lillipup.tres" id="3_wrsnn"]
-[ext_resource type="Resource" uid="uid://dxjavilqv3tqh" path="res://Datos/Especies/purrloin.tres" id="4_ibq3y"]
-[ext_resource type="Resource" uid="uid://c1pm05078tkfy" path="res://Datos/Especies/pidove.tres" id="5_bkpv8"]
+[ext_resource type="Resource" uid="uid://bmiwu1x2x5dyt" path="res://Datos/Especies/purrloin.tres" id="4_ibq3y"]
+[ext_resource type="Resource" uid="uid://yl1mvo5wxxiq" path="res://Datos/Especies/pidove.tres" id="5_bkpv8"]
 [ext_resource type="Script" uid="uid://ba384a6evk1rl" path="res://Scripts/datos/tabla_encuentros.gd" id="6_msv0v"]
 
 [sub_resource type="Resource" id="Resource_1lnqs"]

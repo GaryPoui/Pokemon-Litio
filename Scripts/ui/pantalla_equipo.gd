@@ -17,6 +17,8 @@ var en_submenu :=false
 var ocupado:= false
 var resultado:= -1
 var texto_base :=""
+var validar: Callable
+var puede_cancelar:= true
 var paneles: Array[Panel]= []
 
 func _ready() -> void:
@@ -26,8 +28,10 @@ func _ready() -> void:
 	EstiloUI.label(mensaje, 9)
 	submenu.visible =false
 
-func abrir(m: String= "ver", texto: String= "Elige un Pokémon.") -> void:
+func abrir(m: String= "ver", texto: String= "Elige un Pokémon.", validacion: Callable= Callable(), cancelable: bool= true) -> void:
 	modo= m
+	validar =validacion
+	puede_cancelar= cancelable
 	texto_base =texto
 	mensaje.text= texto
 	_construir()
@@ -96,7 +100,7 @@ func _pintar() -> void:
 		paneles[i].add_theme_stylebox_override("panel", EstiloUI.panel(fondo, borde))
 
 func _unhandled_input(event: InputEvent) -> void:
-	if ocupado or Dialogo.esta_abierto:
+	if ocupado or Dialogo.esta_abierto or GestorEscenas.en_transicion:
 		return
 	if en_submenu:
 		_input_submenu(event)
@@ -107,7 +111,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			moviendo= -1
 			mensaje.text =texto_base
 			_pintar()
-		else:
+		elif puede_cancelar:
 			resultado= -1
 			cerrado.emit()
 	elif event.is_action_pressed("aceptar") and cursor< n:
@@ -134,6 +138,10 @@ func _aceptar() -> void:
 		_construir()
 		return
 	if modo== "elegir":
+		var error: String= validar.call(cursor) if validar.is_valid() else ""
+		if error!= "":
+			mensaje.text= error
+			return
 		resultado= cursor
 		cerrado.emit()
 		return
@@ -167,10 +175,12 @@ func _cerrar_submenu() -> void:
 func _ver_datos() -> void:
 	ocupado= true
 	var r= load(ESCENA_RESUMEN).instantiate()
-	add_child(r)
-	r.abrir(cursor)
+	await GestorEscenas.fundido(func():
+		add_child(r)
+		r.abrir(cursor))
 	await r.cerrado
-	cursor =r.indice
-	r.queue_free()
-	_construir()
+	await GestorEscenas.fundido(func():
+		cursor =r.indice
+		r.queue_free()
+		_construir())
 	ocupado= false

@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Objeto" format=3]
+[gd_resource type="Resource" script_class="Objeto" format=3 uid="uid://douo1sjb40pac"]
 
-[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="1_no7jy"]
+[ext_resource type="Texture2D" uid="uid://h1ivjwqnqsyf" path="res://Assets/Objetos/iconos/super_potion.png" id="1_g6ceg"]
+[ext_resource type="Script" uid="uid://d1neynu10riuh" path="res://Scripts/datos/objeto.gd" id="1_no7jy"]
 
 [resource]
 script = ExtResource("1_no7jy")
@@ -9,4 +10,5 @@ nombre = "Superpoción"
 categoria = "MEDICINA"
 descripcion = "Restaura una buena cantidad de PS a un Pokémon."
 precio = 700
+icono = ExtResource("1_g6ceg")
 cura_ps = 50

@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var encuentros: TablaEncuentros
+@export var fondo_batalla: Texture2D
 
 var rng:= RandomNumberGenerator.new()
 

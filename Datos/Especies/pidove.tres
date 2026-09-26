@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://yl1mvo5wxxiq"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_kxbg1"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_kxbg1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="2_a724f"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_bgwbm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="4_oltoj"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/facade.tres" id="14_af4b7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tailwind.tres" id="15_sx8g2"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sky_attack.tres" id="16_5eope"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_mcr6m"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/pidove_espalda.png" id="18_un7n1"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/pidove_frente.png" id="19_oqlkf"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_mcr6m"]
+[ext_resource type="Texture2D" uid="uid://caloy1urbyxqp" path="res://Assets/Pokemones/batalla/pidove_espalda.png" id="18_un7n1"]
+[ext_resource type="Texture2D" uid="uid://c5gm7fq1lq4rn" path="res://Assets/Pokemones/batalla/pidove_frente.png" id="19_oqlkf"]
 
 [sub_resource type="Resource" id="Resource_2qfl7"]
 script = ExtResource("1_kxbg1")
@@ -99,7 +99,7 @@ script = ExtResource("17_mcr6m")
 id = "pidove"
 numero = 519
 nombre = "Pidove"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ataque = 55
 at_esp = 36
 def_esp = 30

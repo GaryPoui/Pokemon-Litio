@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Objeto" format=3]
+[gd_resource type="Resource" script_class="Objeto" format=3 uid="uid://c4rci6ygvgrs2"]
 
-[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="1_vyf08"]
+[ext_resource type="Texture2D" uid="uid://c55qckmuxm4eu" path="res://Assets/Objetos/iconos/potion.png" id="1_ghreg"]
+[ext_resource type="Script" uid="uid://d1neynu10riuh" path="res://Scripts/datos/objeto.gd" id="1_vyf08"]
 
 [resource]
 script = ExtResource("1_vyf08")
@@ -9,4 +10,5 @@ nombre = "Poción"
 categoria = "MEDICINA"
 descripcion = "Restaura 20 PS a un Pokémon."
 precio = 300
+icono = ExtResource("1_ghreg")
 cura_ps = 20

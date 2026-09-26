@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Objeto" format=3]
+[gd_resource type="Resource" script_class="Objeto" format=3 uid="uid://b27lydf1ihdnl"]
 
-[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="1_7p63p"]
+[ext_resource type="Script" uid="uid://d1neynu10riuh" path="res://Scripts/datos/objeto.gd" id="1_7p63p"]
+[ext_resource type="Texture2D" uid="uid://cxv70eklwnclg" path="res://Assets/Objetos/iconos/tm01.png" id="1_tut5v"]
 
 [resource]
 script = ExtResource("1_7p63p")
@@ -9,3 +10,4 @@ nombre = "MT01"
 categoria = "MT / MO"
 descripcion = "Disco técnico que enseña un movimiento a un Pokémon compatible."
 se_puede_tirar = false
+icono = ExtResource("1_tut5v")

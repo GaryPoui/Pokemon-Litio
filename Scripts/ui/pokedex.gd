@@ -33,6 +33,8 @@ func abrir() -> void:
 	_actualizar()
 
 func _unhandled_input(event: InputEvent) -> void:
+	if GestorEscenas.en_transicion:
+		return
 	if event.is_action_pressed("cancelar") or event.is_action_pressed("menu"):
 		cerrado.emit()
 	elif lista.mover_con_evento(event):

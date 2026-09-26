@@ -29,9 +29,10 @@ Combate="*res://Scripts/combate.gd"
 
 window/size/viewport_width=256
 window/size/viewport_height=192
+window/size/mode=3
 window/size/window_width_override=1024
 window/size/window_height_override=768
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
 
 [gui]
@@ -95,5 +96,5 @@ correr={
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
-environment/defaults/default_clear_color=Color(0.06, 0.06, 0.08, 1)
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 2d/snap/snap_2d_transforms_to_pixel=true

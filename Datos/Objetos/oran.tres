@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="Objeto" format=3]
+[gd_resource type="Resource" script_class="Objeto" format=3 uid="uid://ob4h67jdto7f"]
 
-[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="1_8nhs7"]
+[ext_resource type="Script" uid="uid://d1neynu10riuh" path="res://Scripts/datos/objeto.gd" id="1_8nhs7"]
+[ext_resource type="Texture2D" uid="uid://d0epjneul3dw3" path="res://Assets/Objetos/iconos/oran.png" id="1_np1l8"]
 
 [resource]
 script = ExtResource("1_8nhs7")
@@ -8,4 +9,5 @@ id = "oran"
 nombre = "Baya Aranja"
 categoria = "BAYAS"
 descripcion = "Una baya que restaura algunos PS cuando la lleva un Pokémon."
+icono = ExtResource("1_np1l8")
 cura_ps = 10

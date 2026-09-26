@@ -22,6 +22,8 @@ func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String) -
 	var b= load(ESCENA).instantiate()
 	ultima =b
 	add_child(b)
+	var escena:= get_tree().current_scene
+	b.poner_fondo(escena.get("fondo_batalla") if escena!= null and "fondo_batalla" in escena else null)
 	var res: String= await b.empezar(rivales, salvaje, nombre)
 	b.queue_free()
 	ultima= null

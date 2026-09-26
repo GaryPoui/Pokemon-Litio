@@ -1,148 +1,299 @@
 [gd_scene format=3 uid="uid://haqmqnpausm1"]
 
 [ext_resource type="Script" uid="uid://c2rkbfru6vyi" path="res://Scripts/Mochila.gd" id="1_mochila"]
+[ext_resource type="Texture2D" uid="uid://begeb2mxnqgjl" path="res://Assets/Menus-Mochila/platino/pokeball_claro.png" id="2_2da3a"]
+[ext_resource type="Texture2D" uid="uid://lnbyuqd0p628" path="res://Assets/Menus-Mochila/platino/placa_bolsillo.png" id="3_7s2t4"]
+[ext_resource type="Texture2D" uid="uid://bpl58py5hbbq8" path="res://Assets/Menus-Mochila/platino/icono_0_0.png" id="4_ykjt7"]
+[ext_resource type="Texture2D" uid="uid://56ln372ypkto" path="res://Assets/Menus-Mochila/platino/marco_icono.png" id="5_d4abh"]
+[ext_resource type="Texture2D" uid="uid://gf47chyfpkga" path="res://Assets/Menus-Mochila/platino/bolsa_m_0.png" id="6_baj5a"]
+[ext_resource type="Texture2D" uid="uid://clelf6spyrcsp" path="res://Assets/Menus-Mochila/platino/flecha_izq.png" id="7_xyvjb"]
+[ext_resource type="Texture2D" uid="uid://ba1qs24ubck7m" path="res://Assets/Menus-Mochila/platino/flecha_der.png" id="8_syj7f"]
+[ext_resource type="Texture2D" uid="uid://r5hbsv6wxevs" path="res://Assets/Menus-Mochila/platino/panel_lista.png" id="9_ar5gj"]
+[ext_resource type="Texture2D" uid="uid://dtjlaj46laob4" path="res://Assets/Menus-Mochila/platino/marco_item.png" id="10_16qla"]
+[ext_resource type="Texture2D" uid="uid://cdpaef0jxqosq" path="res://Assets/Menus-Mochila/platino/barra_desc.png" id="11_qhrg1"]
+[ext_resource type="Script" uid="uid://donqmmmwswodn" path="res://Scripts/ui/lista_opciones.gd" id="12_m0hv7"]
 
 [node name="Mochila" type="CanvasLayer" unique_id=1311858417]
 script = ExtResource("1_mochila")
 
-[node name="Overlay" type="ColorRect" parent="." unique_id=86391809]
+[node name="Pantalla" type="Control" parent="." unique_id=1042759281]
 visible = false
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 3
+anchors_preset = 0
+offset_right = 256.0
+offset_bottom = 192.0
 
-[node name="Title" type="Label" parent="Overlay" unique_id=318861647]
+[node name="Fondo" type="ColorRect" parent="Pantalla" unique_id=1692577451]
 layout_mode = 0
-offset_left = 10.0
-offset_top = 2.0
-offset_right = 120.0
-offset_bottom = 18.0
-theme_override_colors/font_color = Color(0.96, 0.98, 1, 1)
-theme_override_font_sizes/font_size = 12
-text = "MOCHILA"
+offset_right = 256.0
+offset_bottom = 192.0
+color = Color(0.63, 0.75, 0.88, 1)
 
-[node name="MainPanel" type="Panel" parent="Overlay" unique_id=2028818270]
+[node name="Pokeball" type="TextureRect" parent="Pantalla" unique_id=648051991]
+modulate = Color(1, 1, 1, 0.45)
 layout_mode = 0
-anchor_left = 0.04
-anchor_top = 0.1
-anchor_right = 0.96
-anchor_bottom = 0.95
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = -34.0
+offset_top = 56.0
+offset_right = -34.0
+offset_bottom = 56.0
+texture = ExtResource("2_2da3a")
 
-[node name="Layout" type="HBoxContainer" parent="Overlay/MainPanel" unique_id=226267130]
+[node name="Placa" type="TextureRect" parent="Pantalla" unique_id=1216245279]
 layout_mode = 0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 4.0
 offset_top = 4.0
-offset_right = -4.0
-offset_bottom = -4.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 4
+offset_bottom = 4.0
+texture = ExtResource("3_7s2t4")
 
-[node name="CategoryColumn" type="VBoxContainer" parent="Overlay/MainPanel/Layout" unique_id=801353961]
-custom_minimum_size = Vector2(64, 0)
-layout_mode = 2
+[node name="IconoSel" type="TextureRect" parent="Pantalla/Placa" unique_id=1375235449]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 7.0
+offset_right = 6.0
+offset_bottom = 7.0
+texture = ExtResource("4_ykjt7")
 
-[node name="PocketTitle" type="Label" parent="Overlay/MainPanel/Layout/CategoryColumn" unique_id=1239040964]
-custom_minimum_size = Vector2(0, 12)
-layout_mode = 2
-theme_override_colors/font_color = Color(0.55, 0.82, 1, 1)
-theme_override_font_sizes/font_size = 8
-text = "BOLSILLOS"
+[node name="Marco" type="TextureRect" parent="Pantalla/Placa" unique_id=1605133956]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 5.0
+offset_bottom = 6.0
+texture = ExtResource("5_d4abh")
+
+[node name="Nombre" type="Label" parent="Pantalla/Placa" unique_id=1328933456]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 23.0
+offset_right = 96.0
+offset_bottom = 39.0
 horizontal_alignment = 1
-
-[node name="CategoryList" type="VBoxContainer" parent="Overlay/MainPanel/Layout/CategoryColumn" unique_id=2026364269]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_constants/separation = 2
-
-[node name="ContentColumn" type="VBoxContainer" parent="Overlay/MainPanel/Layout" unique_id=1639508620]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_constants/separation = 3
-
-[node name="Header" type="HBoxContainer" parent="Overlay/MainPanel/Layout/ContentColumn" unique_id=1569634064]
-custom_minimum_size = Vector2(0, 14)
-layout_mode = 2
-
-[node name="CategoryTitle" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn/Header" unique_id=1874181904]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "MEDICINA"
 vertical_alignment = 1
 
-[node name="Hint" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn/Header" unique_id=234565522]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.67, 0.74, 0.84, 1)
-theme_override_font_sizes/font_size = 7
-text = "←→ bolsillo  ↑↓ objeto"
-vertical_alignment = 1
-
-[node name="ItemArea" type="PanelContainer" parent="Overlay/MainPanel/Layout/ContentColumn" unique_id=281272572]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Scroll" type="ScrollContainer" parent="Overlay/MainPanel/Layout/ContentColumn/ItemArea" unique_id=196883090]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-horizontal_scroll_mode = 0
-
-[node name="ItemList" type="VBoxContainer" parent="Overlay/MainPanel/Layout/ContentColumn/ItemArea/Scroll" unique_id=737460801]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/separation = 1
-
-[node name="DescriptionPanel" type="PanelContainer" parent="Overlay/MainPanel/Layout/ContentColumn" unique_id=1700209896]
-custom_minimum_size = Vector2(0, 30)
-layout_mode = 2
-
-[node name="Margin" type="MarginContainer" parent="Overlay/MainPanel/Layout/ContentColumn/DescriptionPanel" unique_id=163814465]
-layout_mode = 2
-theme_override_constants/margin_left = 4
-theme_override_constants/margin_top = 3
-theme_override_constants/margin_right = 4
-theme_override_constants/margin_bottom = 3
-
-[node name="Description" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn/DescriptionPanel/Margin" unique_id=1761544574]
-layout_mode = 2
-text = "Descripción del objeto."
-vertical_alignment = 1
-autowrap_mode = 2
-
-[node name="Footer" type="Label" parent="Overlay/MainPanel/Layout/ContentColumn" unique_id=248396909]
-custom_minimum_size = Vector2(0, 10)
-layout_mode = 2
-text = "Z: elegir   X: volver   ESC: cerrar"
-vertical_alignment = 1
-text_overrun_behavior = 3
-
-[node name="ActionPanel" type="Panel" parent="Overlay" unique_id=1818804392]
+[node name="Bolsa" type="TextureRect" parent="Pantalla" unique_id=1951379005]
 layout_mode = 0
-anchor_left = 0.7
-anchor_top = 0.3
-anchor_right = 0.95
-anchor_bottom = 0.7
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = 16.0
+offset_top = 74.0
+offset_right = 16.0
+offset_bottom = 74.0
+texture = ExtResource("6_baj5a")
 
-[node name="Margin" type="MarginContainer" parent="Overlay/ActionPanel" unique_id=2046674469]
+[node name="FlechaIzq" type="TextureRect" parent="Pantalla" unique_id=1686351821]
 layout_mode = 0
-anchor_right = 1.0
-anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 96.0
+offset_right = 6.0
+offset_bottom = 96.0
+texture = ExtResource("7_xyvjb")
+
+[node name="FlechaDer" type="TextureRect" parent="Pantalla" unique_id=1453270357]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 96.0
+offset_right = 86.0
+offset_bottom = 96.0
+texture = ExtResource("8_syj7f")
+
+[node name="Lista" type="TextureRect" parent="Pantalla" unique_id=636460277]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 2.0
+offset_right = 93.0
+offset_bottom = 2.0
+texture = ExtResource("9_ar5gj")
+
+[node name="F0" type="Control" parent="Pantalla/Lista" unique_id=388276110]
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 14.0
+offset_right = 152.0
+offset_bottom = 30.0
+
+[node name="Nombre" type="Label" parent="Pantalla/Lista/F0" unique_id=1911698716]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 96.0
+offset_bottom = 15.0
+
+[node name="Cantidad" type="Label" parent="Pantalla/Lista/F0" unique_id=393307747]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 1.0
+offset_right = 128.0
+offset_bottom = 15.0
+horizontal_alignment = 2
+
+[node name="F1" type="Control" parent="Pantalla/Lista" unique_id=1401334924]
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 30.0
+offset_right = 152.0
+offset_bottom = 46.0
+
+[node name="Nombre" type="Label" parent="Pantalla/Lista/F1" unique_id=491341435]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 96.0
+offset_bottom = 15.0
+
+[node name="Cantidad" type="Label" parent="Pantalla/Lista/F1" unique_id=1747200765]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 1.0
+offset_right = 128.0
+offset_bottom = 15.0
+horizontal_alignment = 2
+
+[node name="F2" type="Control" parent="Pantalla/Lista" unique_id=2082041231]
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 46.0
+offset_right = 152.0
+offset_bottom = 62.0
+
+[node name="Nombre" type="Label" parent="Pantalla/Lista/F2" unique_id=995066681]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 96.0
+offset_bottom = 15.0
+
+[node name="Cantidad" type="Label" parent="Pantalla/Lista/F2" unique_id=952597593]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 1.0
+offset_right = 128.0
+offset_bottom = 15.0
+horizontal_alignment = 2
+
+[node name="F3" type="Control" parent="Pantalla/Lista" unique_id=58663297]
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 62.0
+offset_right = 152.0
+offset_bottom = 78.0
+
+[node name="Nombre" type="Label" parent="Pantalla/Lista/F3" unique_id=1836027686]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 96.0
+offset_bottom = 15.0
+
+[node name="Cantidad" type="Label" parent="Pantalla/Lista/F3" unique_id=675198277]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 1.0
+offset_right = 128.0
+offset_bottom = 15.0
+horizontal_alignment = 2
+
+[node name="F4" type="Control" parent="Pantalla/Lista" unique_id=249023494]
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 78.0
+offset_right = 152.0
+offset_bottom = 94.0
+
+[node name="Nombre" type="Label" parent="Pantalla/Lista/F4" unique_id=198398533]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 96.0
+offset_bottom = 15.0
+
+[node name="Cantidad" type="Label" parent="Pantalla/Lista/F4" unique_id=1518927862]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 1.0
+offset_right = 128.0
+offset_bottom = 15.0
+horizontal_alignment = 2
+
+[node name="F5" type="Control" parent="Pantalla/Lista" unique_id=105034846]
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 94.0
+offset_right = 152.0
+offset_bottom = 110.0
+
+[node name="Nombre" type="Label" parent="Pantalla/Lista/F5" unique_id=1101050570]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 96.0
+offset_bottom = 15.0
+
+[node name="Cantidad" type="Label" parent="Pantalla/Lista/F5" unique_id=497479911]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 1.0
+offset_right = 128.0
+offset_bottom = 15.0
+horizontal_alignment = 2
+
+[node name="F6" type="Control" parent="Pantalla/Lista" unique_id=1297232543]
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 110.0
+offset_right = 152.0
+offset_bottom = 126.0
+
+[node name="Nombre" type="Label" parent="Pantalla/Lista/F6" unique_id=1436164211]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 96.0
+offset_bottom = 15.0
+
+[node name="Cantidad" type="Label" parent="Pantalla/Lista/F6" unique_id=1713054607]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 1.0
+offset_right = 128.0
+offset_bottom = 15.0
+horizontal_alignment = 2
+
+[node name="Marco" type="NinePatchRect" parent="Pantalla/Lista" unique_id=1719853485]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 14.0
+offset_right = 154.0
+offset_bottom = 31.0
+texture = ExtResource("10_16qla")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="Desc" type="TextureRect" parent="Pantalla" unique_id=1968133000]
+layout_mode = 0
+offset_top = 141.0
+offset_bottom = 141.0
+texture = ExtResource("11_qhrg1")
+
+[node name="Icono" type="TextureRect" parent="Pantalla/Desc" unique_id=275777590]
+layout_mode = 0
 offset_left = 3.0
-offset_top = 3.0
-offset_right = -3.0
-offset_bottom = -3.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_top = 11.0
+offset_right = 33.0
+offset_bottom = 41.0
 
-[node name="ActionList" type="VBoxContainer" parent="Overlay/ActionPanel/Margin" unique_id=897053305]
-layout_mode = 2
-theme_override_constants/separation = 1
+[node name="Texto" type="Label" parent="Pantalla/Desc" unique_id=1713405982]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 4.0
+offset_right = 252.0
+offset_bottom = 48.0
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Acciones" type="Panel" parent="Pantalla" unique_id=419550350]
+visible = false
+layout_mode = 0
+offset_left = 178.0
+offset_top = 72.0
+offset_right = 252.0
+offset_bottom = 138.0
+
+[node name="Lista" type="Control" parent="Pantalla/Acciones" unique_id=1054942401]
+anchors_preset = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 70.0
+offset_bottom = 63.0
+script = ExtResource("12_m0hv7")

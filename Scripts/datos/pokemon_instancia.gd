@@ -17,6 +17,7 @@ const MAX_MOVIMIENTOS:= 4
 @export var pp: Array[int]= []
 @export var estado: String =""
 @export var objeto: String= ""
+@export var genero: String =""
 
 static func crear(esp: EspeciePokemon, niv: int, rng: RandomNumberGenerator= null) -> PokemonInstancia:
 	if rng== null:
@@ -35,8 +36,25 @@ static func crear(esp: EspeciePokemon, niv: int, rng: RandomNumberGenerator= nul
 	for m in conocidos.slice(maxi(0, conocidos.size()- MAX_MOVIMIENTOS)):
 		p.movimientos.append(m)
 		p.pp.append(m.pp)
+	p.genero= sortear_genero(esp, rng)
 	p.ps_actuales= p.ps_max()
 	return p
+
+static func sortear_genero(esp: EspeciePokemon, rng: RandomNumberGenerator) -> String:
+	if esp.ratio_genero< 0:
+		return ""
+	return "F" if rng.randi_range(1, 8)<= esp.ratio_genero else "M"
+
+func simbolo_genero() -> String:
+	match genero:
+		"M":
+			return "♂"
+		"F":
+			return "♀"
+	return ""
+
+func color_genero() -> Color:
+	return Color("3068d8") if genero== "M" else Color("e03848")
 
 func nombre() -> String:
 	return apodo if apodo!= "" else especie.nombre
@@ -121,6 +139,7 @@ func a_diccionario() -> Dictionary:
 		"pp": pp,
 		"estado": estado,
 		"objeto": objeto,
+		"genero": genero,
 	}
 
 static func desde_diccionario(d: Dictionary) -> PokemonInstancia:
@@ -140,4 +159,5 @@ static func desde_diccionario(d: Dictionary) -> PokemonInstancia:
 	p.ps_actuales= int(d["ps"])
 	p.estado =str(d.get("estado", ""))
 	p.objeto= str(d.get("objeto", ""))
+	p.genero =str(d.get("genero", ""))
 	return p

@@ -3,13 +3,26 @@ extends Node
 signal inventory_changed
 
 const CATEGORIES:= [
+	"OBJETOS",
 	"MEDICINA",
 	"POKÉ BALLS",
 	"MT / MO",
 	"BAYAS",
-	"OBJETOS",
+	"CARTAS",
+	"COMBATE",
 	"CLAVE"
 ]
+
+const NOMBRES_BOLSILLO :={
+	"OBJETOS": "OBJETOS",
+	"MEDICINA": "BOTIQUÍN",
+	"POKÉ BALLS": "POKÉ BALLS",
+	"MT / MO": "MT Y MO",
+	"BAYAS": "BAYAS",
+	"CARTAS": "CARTAS",
+	"COMBATE": "OBJ. BATALLA",
+	"CLAVE": "OBJ. CLAVE",
+}
 
 const INICIAL :={
 	"potion": 5,
@@ -40,6 +53,9 @@ func get_categories() -> Array[String]:
 		result.append(category)
 	return result
 
+func nombre_bolsillo(category: String) -> String:
+	return NOMBRES_BOLSILLO.get(category, category)
+
 func get_objeto(item_id: String) -> Objeto:
 	return objetos.get(item_id)
 
@@ -63,6 +79,7 @@ func _como_diccionario(o: Objeto) -> Dictionary:
 		"description": o.descripcion,
 		"usable": o.usable,
 		"can_toss": o.se_puede_tirar,
+		"icon": o.icono,
 	}
 
 func use_item(item_id: String) -> bool:

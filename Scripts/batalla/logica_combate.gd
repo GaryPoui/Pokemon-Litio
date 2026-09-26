@@ -532,7 +532,7 @@ func _usar_objeto(accion: Dictionary) -> bool:
 		inventario.consumir(o.id)
 		_texto("¡Lanzaste una %s!" % o.nombre)
 		var res:= capturar(o.ratio_captura)
-		_ev({"tipo": "captura", "sacudidas": res["sacudidas"], "exito": res["exito"]})
+		_ev({"tipo": "captura", "objeto": o.id, "sacudidas": res["sacudidas"], "exito": res["exito"]})
 		if res["exito"]:
 			_texto("¡Ya está! ¡%s atrapado!" % r.pokemon.nombre())
 			if equipo!= null and equipo.agregar(r.pokemon):
