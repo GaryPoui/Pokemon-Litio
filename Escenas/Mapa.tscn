@@ -16,6 +16,7 @@
 y_sort_enabled = true
 script = ExtResource("1_3db5g")
 encuentros = ExtResource("2_ian7j")
+musica = "ruta_1"
 
 [node name="Suelo" type="TileMapLayer" parent="." unique_id=580277371]
 z_index = -1

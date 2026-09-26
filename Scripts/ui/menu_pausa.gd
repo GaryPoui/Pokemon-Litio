@@ -4,6 +4,7 @@ signal cerrado
 
 const ESCENA_EQUIPO:= "res://Escenas/UI/PantallaEquipo.tscn"
 const ESCENA_POKEDEX :="res://Escenas/UI/Pokedex.tscn"
+const ESCENA_OPCIONES:= "res://Escenas/UI/Opciones.tscn"
 
 @onready var caja: Panel= $Caja
 @onready var lista: ListaOpciones =$Caja/Lista
@@ -30,8 +31,10 @@ func _unhandled_input(event: InputEvent) -> void:
 			get_viewport().set_input_as_handled()
 		return
 	if event.is_action_pressed("menu") or event.is_action_pressed("cancelar"):
+		Sonido.efecto("menu_cerrar")
 		cerrar()
 	elif event.is_action_pressed("aceptar"):
+		Sonido.efecto("confirmar")
 		_elegir(opciones[lista.cursor])
 	elif not lista.mover_con_evento(event):
 		return
@@ -41,11 +44,12 @@ func abrir() -> void:
 	opciones= ["POKéDEX"]
 	if not Equipo.miembros.is_empty():
 		opciones.append("POKéMON")
-	opciones.append_array(["MOCHILA", "GUARDAR", "SALIR"])
+	opciones.append_array(["MOCHILA", "GUARDAR", "OPCIONES", "SALIR"])
 	lista.poner(opciones, mini(lista.cursor, opciones.size()- 1))
 	caja.size.y =10+ opciones.size()* 14
 	caja.visible= true
 	is_open =true
+	Sonido.efecto("menu_abrir")
 
 func cerrar() -> void:
 	caja.visible= false
@@ -70,10 +74,13 @@ func _elegir(op: String) -> void:
 			var r: int= await Dialogo.preguntar("¿Quieres guardar la partida?")
 			if r== 0:
 				if Guardado.guardar():
+					Sonido.efecto("guardar")
 					await Dialogo.mostrar("Guardaste la partida.")
 				else:
 					await Dialogo.mostrar("No se pudo guardar la partida.")
 			ocupado =false
+		"OPCIONES":
+			await _pantalla(ESCENA_OPCIONES, [])
 		"SALIR":
 			cerrar()
 

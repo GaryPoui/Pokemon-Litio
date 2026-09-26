@@ -31,7 +31,9 @@ func interactuar(jugador: Node) -> void:
 		await Dialogo.mostrar(texto_regalo)
 		if Equipo.agregar(PokemonInstancia.crear(regalo, regalo_nivel)):
 			Estado.marcar(clave_regalo)
+			Sonido.jingle("captura")
 			await Dialogo.mostrar("¡Recibiste a %s!" % regalo.nombre)
+			Sonido.cortar_jingle()
 		else:
 			await Dialogo.mostrar("Tu equipo está lleno.")
 		return

@@ -22,8 +22,11 @@ func interactuar(_jugador: Node) -> void:
 	visible= false
 	$CollisionShape2D.set_deferred("disabled", true)
 	var nombre:= Inventario.get_item_name(item_id)
+	var o:= Inventario.get_objeto(item_id)
+	Sonido.jingle("objeto_clave" if o!= null and o.categoria== "CLAVE" else "objeto")
 	if cantidad> 1:
 		await Dialogo.mostrar("¡Encontraste %s x%d!" % [nombre, cantidad])
 	else:
 		await Dialogo.mostrar("¡Encontraste %s!" % nombre)
+	Sonido.cortar_jingle()
 	queue_free()

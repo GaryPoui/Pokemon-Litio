@@ -116,10 +116,13 @@ func elegir_en_combate(filtro: Callable) -> Dictionary:
 
 func _handle_bag_input(event: InputEvent) -> void:
 	if event.is_action_pressed("cancelar") or event.is_action_pressed("menu"):
+		Sonido.efecto("cancelar")
 		close()
 	elif event.is_action_pressed("izquierda"):
+		Sonido.efecto("bolsillo")
 		_change_category(-1)
 	elif event.is_action_pressed("derecha"):
+		Sonido.efecto("bolsillo")
 		_change_category(1)
 	elif event.is_action_pressed("arriba"):
 		_change_item(-1)
@@ -127,6 +130,7 @@ func _handle_bag_input(event: InputEvent) -> void:
 		_change_item(1)
 	elif event.is_action_pressed("aceptar"):
 		if not current_items.is_empty():
+			Sonido.efecto("confirmar")
 			_open_action_menu()
 	else:
 		return
@@ -134,8 +138,10 @@ func _handle_bag_input(event: InputEvent) -> void:
 
 func _handle_action_input(event: InputEvent) -> void:
 	if event.is_action_pressed("cancelar") or event.is_action_pressed("menu"):
+		Sonido.efecto("cancelar")
 		_close_action_menu()
 	elif event.is_action_pressed("aceptar"):
+		Sonido.efecto("confirmar")
 		_execute_selected_action()
 	elif not action_list.mover_con_evento(event):
 		return
@@ -152,6 +158,7 @@ func _change_item(delta: int) -> void:
 	if current_items.is_empty():
 		return
 	item_index =wrapi(item_index +delta, 0, current_items.size())
+	Sonido.efecto("cursor")
 	_refresh_selection()
 
 func _saltar_bolsa() -> void:
@@ -251,12 +258,12 @@ func _execute_selected_action() -> void:
 			if inventory.toss_item(item_id):
 				_show_status("Tiraste una unidad.")
 			else:
-				_show_status("Este objeto no se puede tirar.")
+				_error("Este objeto no se puede tirar.")
 
 func _usar_en_combate(item_id: String) -> void:
 	var o:= Inventario.get_objeto(item_id)
 	if o== null or not bool(filtro_combate.call(o)):
-		_show_status("¡No es momento de usar esto!")
+		_error("¡No es momento de usar esto!")
 		return
 	if o.cura_ps<= 0:
 		resultado_combate= {"id": item_id}
@@ -308,21 +315,22 @@ func _usar(item_id: String) -> void:
 			return
 		var p:= Equipo.miembros[i]
 		if p.esta_debilitado() or p.ps_actuales>= p.ps_max():
-			_show_status("No tendrá ningún efecto.")
+			_error("No tendrá ningún efecto.")
 			return
 		Inventario.consumir(item_id)
+		Sonido.efecto("curar_ps")
 		_show_status("%s recuperó %d PS." % [p.nombre(), p.curar_ps(o.cura_ps)])
 	elif item_id== "repel":
 		Inventario.consumir(item_id)
 		Estado.pasos_repelente= 100
 		_show_status("Usaste Repelente. Los Pokémon débiles no aparecerán.")
 	else:
-		_show_status("¡No es momento de usar esto!")
+		_error("¡No es momento de usar esto!")
 
 func _dar(item_id: String) -> void:
 	var o:= Inventario.get_objeto(item_id)
 	if o== null or o.categoria in ["CLAVE", "MT / MO"]:
-		_show_status("Este objeto no se puede dar.")
+		_error("Este objeto no se puede dar.")
 		return
 	var i:= await _elegir_pokemon("¿A quién le das %s?" % o.nombre)
 	if i< 0:
@@ -336,6 +344,10 @@ func _dar(item_id: String) -> void:
 		_show_status("%s dejó %s y ahora lleva %s." % [p.nombre(), Inventario.get_item_name(previo), o.nombre])
 	else:
 		_show_status("%s ahora lleva %s." % [p.nombre(), o.nombre])
+
+func _error(message: String) -> void:
+	Sonido.efecto("error")
+	_show_status(message)
 
 func _show_status(message: String) -> void:
 	footer_label.text= message

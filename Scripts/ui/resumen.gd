@@ -27,19 +27,24 @@ func _unhandled_input(event: InputEvent) -> void:
 	if GestorEscenas.en_transicion:
 		return
 	if event.is_action_pressed("cancelar") or event.is_action_pressed("menu"):
+		Sonido.efecto("cancelar")
 		cerrado.emit()
 	elif event.is_action_pressed("derecha"):
 		pagina= (pagina+ 1)% PAGINAS.size()
 		_mostrar()
+		Sonido.efecto("cursor")
 	elif event.is_action_pressed("izquierda"):
 		pagina =(pagina+ PAGINAS.size()- 1)% PAGINAS.size()
 		_mostrar()
+		Sonido.efecto("cursor")
 	elif event.is_action_pressed("abajo") and indice+ 1< Equipo.miembros.size():
 		indice+= 1
 		_mostrar()
+		Sonido.efecto("cursor")
 	elif event.is_action_pressed("arriba") and indice> 0:
 		indice -=1
 		_mostrar()
+		Sonido.efecto("cursor")
 	else:
 		return
 	get_viewport().set_input_as_handled()

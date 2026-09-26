@@ -19,10 +19,13 @@ func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String) -
 	if activo or Equipo.primero_util()== null or rivales.is_empty():
 		return "cancelado"
 	activo= true
+	var pista:= "batalla_salvaje" if salvaje else "batalla_entrenador"
+	Sonido.musica(pista, 0.0)
 	if salvaje:
 		await GestorEscenas.barras_cubrir()
 	var b= load(ESCENA).instantiate()
 	b.entrada_barras= salvaje
+	b.pista= pista
 	ultima =b
 	add_child(b)
 	var escena:= get_tree().current_scene
@@ -31,9 +34,13 @@ func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String) -
 	b.queue_free()
 	ultima= null
 	if res== "derrota":
+		Sonido.detener_musica(0.3)
 		Equipo.curar_todo()
 		await Dialogo.mostrar("Corriste a casa para que tus Pokémon descansaran.")
-		GestorEscenas.cambiar_mapa(CASA, "Entrada", Vector2.UP)
+		await GestorEscenas.cambiar_mapa(CASA, "Entrada", Vector2.UP)
+		Sonido.jingle("curacion")
+	elif escena!= null and "musica" in escena:
+		Sonido.musica(str(escena.get("musica")), 0.8)
 	activo =false
 	termino.emit(res)
 	return res

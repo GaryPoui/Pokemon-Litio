@@ -17,6 +17,7 @@ var is_running: bool= false
 var target_position: Vector2 =Vector2.ZERO
 var last_direction: Vector2= Vector2.DOWN
 var turn_timer: float =0.0
+var ultimo_choque:= -1000
 
 const WALK_ANIMS:= {
 	Vector2.DOWN: &"caminar_abajo",
@@ -109,6 +110,9 @@ func _try_start_move(delta: float, chained: bool) -> void:
 
 	if test_move(transform, motion):
 		_set_idle()
+		if Time.get_ticks_msec()- ultimo_choque> 350:
+			ultimo_choque= Time.get_ticks_msec()
+			Sonido.efecto("choque")
 		return
 
 	target_position= position +motion

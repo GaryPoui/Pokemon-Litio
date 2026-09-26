@@ -26,12 +26,15 @@ func _input(event: InputEvent) -> void:
 	if k== null or not k.pressed or k.echo:
 		return
 	if k.keycode== KEY_F11 or (k.alt_pressed and (k.keycode== KEY_ENTER or k.keycode== KEY_KP_ENTER)):
-		poner_pantalla_completa(not es_pantalla_completa())
-		var c:= ConfigFile.new()
-		c.load(CONFIG)
-		c.set_value("pantalla", "completa", es_pantalla_completa())
-		c.save(CONFIG)
+		alternar_pantalla_completa()
 		get_viewport().set_input_as_handled()
+
+func alternar_pantalla_completa() -> void:
+	poner_pantalla_completa(not es_pantalla_completa())
+	var c:= ConfigFile.new()
+	c.load(CONFIG)
+	c.set_value("pantalla", "completa", es_pantalla_completa())
+	c.save(CONFIG)
 
 func es_pantalla_completa() -> bool:
 	var m:= DisplayServer.window_get_mode()

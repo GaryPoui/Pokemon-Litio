@@ -117,9 +117,9 @@ script = ExtResource("7_u1pia")
 [node name="PS" type="Label" parent="PanelRival" unique_id=178967526]
 layout_mode = 0
 offset_left = 31.0
-offset_top = 16.0
+offset_top = 15.0
 offset_right = 110.0
-offset_bottom = 30.0
+offset_bottom = 29.0
 horizontal_alignment = 2
 
 [node name="PanelJugador" type="NinePatchRect" parent="." unique_id=645695864]
@@ -194,9 +194,9 @@ script = ExtResource("7_u1pia")
 [node name="PS" type="Label" parent="PanelJugador" unique_id=46069692]
 layout_mode = 0
 offset_left = 31.0
-offset_top = 16.0
+offset_top = 15.0
 offset_right = 110.0
-offset_bottom = 30.0
+offset_bottom = 29.0
 horizontal_alignment = 2
 
 [node name="FondoExp" type="ColorRect" parent="PanelJugador" unique_id=324867975]
@@ -225,79 +225,79 @@ offset_bottom = 192.0
 
 [node name="B0" type="NinePatchRect" parent="Comandos" unique_id=1321567877]
 layout_mode = 0
-offset_left = 190.0
-offset_top = 116.0
+offset_left = 182.0
+offset_top = 112.0
 offset_right = 252.0
-offset_bottom = 134.0
+offset_bottom = 128.0
 texture = ExtResource("8_xgimu")
 patch_margin_left = 2
-patch_margin_top = 2
+patch_margin_top = 3
 patch_margin_right = 2
-patch_margin_bottom = 2
+patch_margin_bottom = 4
 
 [node name="Texto" type="Label" parent="Comandos/B0" unique_id=894133746]
 layout_mode = 0
-offset_top = 1.0
-offset_right = 62.0
-offset_bottom = 17.0
+offset_right = 70.0
+offset_bottom = 16.0
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="B1" type="NinePatchRect" parent="Comandos" unique_id=2004342528]
 layout_mode = 0
-offset_left = 190.0
-offset_top = 135.0
+offset_left = 182.0
+offset_top = 132.0
 offset_right = 252.0
-offset_bottom = 153.0
+offset_bottom = 148.0
 texture = ExtResource("8_xgimu")
 patch_margin_left = 2
-patch_margin_top = 2
+patch_margin_top = 3
 patch_margin_right = 2
-patch_margin_bottom = 2
+patch_margin_bottom = 4
 
 [node name="Texto" type="Label" parent="Comandos/B1" unique_id=2128187870]
 layout_mode = 0
-offset_top = 1.0
-offset_right = 62.0
-offset_bottom = 17.0
+offset_right = 70.0
+offset_bottom = 16.0
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="B2" type="NinePatchRect" parent="Comandos" unique_id=1689391217]
 layout_mode = 0
-offset_left = 190.0
-offset_top = 154.0
+offset_left = 182.0
+offset_top = 152.0
 offset_right = 252.0
-offset_bottom = 172.0
+offset_bottom = 168.0
 texture = ExtResource("8_xgimu")
 patch_margin_left = 2
-patch_margin_top = 2
+patch_margin_top = 3
 patch_margin_right = 2
-patch_margin_bottom = 2
+patch_margin_bottom = 4
 
 [node name="Texto" type="Label" parent="Comandos/B2" unique_id=78147187]
 layout_mode = 0
-offset_top = 1.0
-offset_right = 62.0
-offset_bottom = 17.0
+offset_right = 70.0
+offset_bottom = 16.0
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="B3" type="NinePatchRect" parent="Comandos" unique_id=1941475872]
 layout_mode = 0
-offset_left = 190.0
-offset_top = 173.0
+offset_left = 182.0
+offset_top = 172.0
 offset_right = 252.0
-offset_bottom = 191.0
+offset_bottom = 188.0
 texture = ExtResource("8_xgimu")
 patch_margin_left = 2
-patch_margin_top = 2
+patch_margin_top = 3
 patch_margin_right = 2
-patch_margin_bottom = 2
+patch_margin_bottom = 4
 
 [node name="Texto" type="Label" parent="Comandos/B3" unique_id=1053184419]
 layout_mode = 0
-offset_top = 1.0
-offset_right = 62.0
-offset_bottom = 17.0
+offset_right = 70.0
+offset_bottom = 16.0
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Cursor" type="TextureRect" parent="Comandos" unique_id=399586976]
 layout_mode = 0
@@ -316,111 +316,111 @@ offset_bottom = 192.0
 
 [node name="M0" type="NinePatchRect" parent="Movimientos" unique_id=1561805806]
 layout_mode = 0
-offset_left = 160.0
+offset_left = 168.0
 offset_top = 102.0
 offset_right = 252.0
-offset_bottom = 120.0
+offset_bottom = 118.0
 texture = ExtResource("8_xgimu")
 patch_margin_left = 2
-patch_margin_top = 2
+patch_margin_top = 3
 patch_margin_right = 2
-patch_margin_bottom = 2
+patch_margin_bottom = 4
 
 [node name="Texto" type="Label" parent="Movimientos/M0" unique_id=218759714]
 layout_mode = 0
 offset_left = 14.0
-offset_top = 1.0
-offset_right = 90.0
-offset_bottom = 17.0
+offset_right = 82.0
+offset_bottom = 16.0
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Tipo" type="TextureRect" parent="Movimientos/M0" unique_id=644404157]
 layout_mode = 0
 offset_left = 3.0
-offset_top = 3.0
+offset_top = 2.0
 offset_right = 15.0
-offset_bottom = 15.0
+offset_bottom = 14.0
 
 [node name="M1" type="NinePatchRect" parent="Movimientos" unique_id=1638291264]
 layout_mode = 0
-offset_left = 160.0
-offset_top = 121.0
+offset_left = 168.0
+offset_top = 122.0
 offset_right = 252.0
-offset_bottom = 139.0
+offset_bottom = 138.0
 texture = ExtResource("8_xgimu")
 patch_margin_left = 2
-patch_margin_top = 2
+patch_margin_top = 3
 patch_margin_right = 2
-patch_margin_bottom = 2
+patch_margin_bottom = 4
 
 [node name="Texto" type="Label" parent="Movimientos/M1" unique_id=639228582]
 layout_mode = 0
 offset_left = 14.0
-offset_top = 1.0
-offset_right = 90.0
-offset_bottom = 17.0
+offset_right = 82.0
+offset_bottom = 16.0
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Tipo" type="TextureRect" parent="Movimientos/M1" unique_id=110713776]
 layout_mode = 0
 offset_left = 3.0
-offset_top = 3.0
+offset_top = 2.0
 offset_right = 15.0
-offset_bottom = 15.0
+offset_bottom = 14.0
 
 [node name="M2" type="NinePatchRect" parent="Movimientos" unique_id=1183882023]
 layout_mode = 0
-offset_left = 160.0
-offset_top = 140.0
+offset_left = 168.0
+offset_top = 142.0
 offset_right = 252.0
 offset_bottom = 158.0
 texture = ExtResource("8_xgimu")
 patch_margin_left = 2
-patch_margin_top = 2
+patch_margin_top = 3
 patch_margin_right = 2
-patch_margin_bottom = 2
+patch_margin_bottom = 4
 
 [node name="Texto" type="Label" parent="Movimientos/M2" unique_id=2075929253]
 layout_mode = 0
 offset_left = 14.0
-offset_top = 1.0
-offset_right = 90.0
-offset_bottom = 17.0
+offset_right = 82.0
+offset_bottom = 16.0
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Tipo" type="TextureRect" parent="Movimientos/M2" unique_id=1257394631]
 layout_mode = 0
 offset_left = 3.0
-offset_top = 3.0
+offset_top = 2.0
 offset_right = 15.0
-offset_bottom = 15.0
+offset_bottom = 14.0
 
 [node name="M3" type="NinePatchRect" parent="Movimientos" unique_id=714134752]
 layout_mode = 0
-offset_left = 160.0
-offset_top = 159.0
+offset_left = 168.0
+offset_top = 162.0
 offset_right = 252.0
-offset_bottom = 177.0
+offset_bottom = 178.0
 texture = ExtResource("8_xgimu")
 patch_margin_left = 2
-patch_margin_top = 2
+patch_margin_top = 3
 patch_margin_right = 2
-patch_margin_bottom = 2
+patch_margin_bottom = 4
 
 [node name="Texto" type="Label" parent="Movimientos/M3" unique_id=1379959520]
 layout_mode = 0
 offset_left = 14.0
-offset_top = 1.0
-offset_right = 90.0
-offset_bottom = 17.0
+offset_right = 82.0
+offset_bottom = 16.0
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Tipo" type="TextureRect" parent="Movimientos/M3" unique_id=734927201]
 layout_mode = 0
 offset_left = 3.0
-offset_top = 3.0
+offset_top = 2.0
 offset_right = 15.0
-offset_bottom = 15.0
+offset_bottom = 14.0
 
 [node name="Categoria" type="TextureRect" parent="Movimientos" unique_id=401882918]
 layout_mode = 0
@@ -432,9 +432,9 @@ offset_bottom = 111.0
 [node name="Info" type="Label" parent="Movimientos" unique_id=818873495]
 layout_mode = 0
 offset_left = 124.0
-offset_top = 179.0
+offset_top = 181.0
 offset_right = 252.0
-offset_bottom = 193.0
+offset_bottom = 195.0
 horizontal_alignment = 2
 
 [node name="Caja" type="Panel" parent="." unique_id=801931950]
@@ -450,6 +450,7 @@ offset_top = 4.0
 offset_right = 120.0
 offset_bottom = 70.0
 autowrap_mode = 3
+visible_characters_behavior = 1
 
 [node name="Lista" type="Panel" parent="." unique_id=1519467312]
 offset_left = 24.0

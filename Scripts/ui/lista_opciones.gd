@@ -37,6 +37,7 @@ func mover(d: int) -> bool:
 		return false
 	cursor= n
 	_pintar()
+	Sonido.efecto("cursor")
 	return true
 
 func mover_con_evento(event: InputEvent) -> bool:

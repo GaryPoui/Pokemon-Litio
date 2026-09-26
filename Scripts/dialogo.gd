@@ -89,8 +89,10 @@ func _unhandled_input(event: InputEvent) -> void:
 		return
 	if eligiendo:
 		if event.is_action_pressed("aceptar"):
+			Sonido.efecto("confirmar")
 			elegido.emit(lista.cursor)
 		elif event.is_action_pressed("cancelar"):
+			Sonido.efecto("cancelar")
 			elegido.emit(-1)
 		elif not lista.mover_con_evento(event):
 			return

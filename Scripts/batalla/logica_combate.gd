@@ -68,10 +68,10 @@ func iniciar() -> Array[Dictionary]:
 		_texto("¡Un %s salvaje apareció!" % r.pokemon.nombre())
 	else:
 		_texto("¡%s quiere luchar!" % nombre_entrenador)
-		_ev_sale("rival", r.pokemon)
 		_texto("¡%s envió a %s!" % [nombre_entrenador, r.pokemon.nombre()])
-	_ev_sale("jugador", j.pokemon)
+		_ev_sale("rival", r.pokemon)
 	_texto("¡Adelante, %s!" % j.pokemon.nombre())
+	_ev_sale("jugador", j.pokemon)
 	return _tomar()
 
 func turno(accion: Dictionary) -> Array[Dictionary]:
@@ -124,8 +124,8 @@ func reemplazar(indice: int) -> Array[Dictionary]:
 	j= Luchador.new(equipo_j[indice])
 	if not participantes.has(j.pokemon):
 		participantes.append(j.pokemon)
-	_ev_sale("jugador", j.pokemon)
 	_texto("¡Adelante, %s!" % j.pokemon.nombre())
+	_ev_sale("jugador", j.pokemon)
 	return _tomar()
 
 func nombre_de(l: Luchador) -> String:
@@ -168,15 +168,15 @@ func _siguiente_util(lista: Array[PokemonInstancia]) -> PokemonInstancia:
 	return null
 
 func _ev_sale(lado: String, p: PokemonInstancia) -> void:
-	_ev({"tipo": "sale", "lado": lado, "pokemon": p, "ps": p.ps_actuales, "max": p.ps_max(), "nivel": p.nivel, "estado": p.estado, "exp": p.experiencia})
+	_ev({"tipo": "sale", "lado": lado, "pokemon": p, "ps": p.ps_actuales, "max": p.ps_max(), "nivel": p.nivel, "estado": p.estado, "exp": p.experiencia, "ball": p.ball})
 
-func _ev_ps(l: Luchador, desde: int) -> void:
-	_ev({"tipo": "ps", "lado": _lado(l), "desde": desde, "hasta": l.pokemon.ps_actuales, "max": l.pokemon.ps_max()})
+func _ev_ps(l: Luchador, desde: int, sonido: String= "") -> void:
+	_ev({"tipo": "ps", "lado": _lado(l), "desde": desde, "hasta": l.pokemon.ps_actuales, "max": l.pokemon.ps_max(), "sonido": sonido})
 
-func _herir(l: Luchador, cantidad: int) -> int:
+func _herir(l: Luchador, cantidad: int, sonido: String ="golpe_normal") -> int:
 	var antes:= l.pokemon.ps_actuales
 	var real:= l.pokemon.recibir_danio(cantidad)
-	_ev_ps(l, antes)
+	_ev_ps(l, antes, sonido)
 	return real
 
 func _ia() -> int:
@@ -244,7 +244,7 @@ func _ejecutar(a: Luchador, d: Luchador, indice: int) -> void:
 		_texto("No afecta %s..." % _a(d))
 		return
 	var golpe:= calcular_danio(a, d, mov, ef)
-	var real:= _herir(d, golpe["danio"])
+	var real:= _herir(d, golpe["danio"], "golpe_eficaz" if ef> 1.0 else ("golpe_poco" if ef< 1.0 else "golpe_normal"))
 	if golpe["critico"]:
 		_texto("¡Un golpe crítico!")
 	if ef> 1.0:
@@ -400,7 +400,7 @@ func _fin_de_turno() -> void:
 		var p: PokemonInstancia= l.pokemon
 		if p.esta_debilitado() or not p.estado in ["que", "env"]:
 			continue
-		_herir(l, maxi(1, floori(p.ps_max()/ 8.0)))
+		_herir(l, maxi(1, floori(p.ps_max()/ 8.0)), "estado_"+ p.estado)
 		if p.estado== "que":
 			_texto("¡%s se resiente de la quemadura!" % _cap(nombre_de(l)))
 		else:
@@ -417,6 +417,7 @@ func _revisar_baya(l: Luchador) -> void:
 	var antes:= p.ps_actuales
 	p.curar_ps(o.cura_ps)
 	p.objeto =""
+	_ev({"tipo": "sonido", "nombre": "objeto_activo"})
 	_ev_ps(l, antes)
 	_texto("¡%s recuperó PS con su %s!" % [_cap(nombre_de(l)), o.nombre])
 
@@ -437,8 +438,8 @@ func _revisar_debilitados() -> bool:
 			participantes.clear()
 			if not j.pokemon.esta_debilitado():
 				participantes.append(j.pokemon)
-			_ev_sale("rival", sig)
 			_texto("¡%s envió a %s!" % [nombre_entrenador, sig.nombre()])
+			_ev_sale("rival", sig)
 	if j.pokemon.esta_debilitado() and not j_anunciado:
 		algo =true
 		j_anunciado= true
@@ -487,6 +488,7 @@ func _dar_experiencia() -> void:
 					_ev({"tipo": "nivel", "pokemon": p, "nivel": e["nivel"], "ps": e["ps"], "max": e["ps_max"]})
 					_texto("¡%s subió al nivel %d!" % [p.nombre(), e["nivel"]])
 				"aprendio":
+					_ev({"tipo": "jingle", "nombre": "aprender"})
 					_texto("¡%s aprendió %s!" % [p.nombre(), e["movimiento"].nombre])
 				"quiere_aprender":
 					_ev({"tipo": "quiere_aprender", "pokemon": p, "movimiento": e["movimiento"]})
@@ -507,6 +509,7 @@ func _huir() -> bool:
 	var va:= j.stat_efectivo("velocidad")
 	var vb:= r.stat_efectivo("velocidad")
 	if va>= vb or floori(va* 128.0/ vb)+ 30* intentos_huida> rng.randi_range(0, 255):
+		_ev({"tipo": "sonido", "nombre": "huir"})
 		_texto("¡Escapaste sin problemas!")
 		_terminar("huida")
 		return true
@@ -515,12 +518,12 @@ func _huir() -> bool:
 
 func _cambiar(indice: int) -> void:
 	_texto("¡%s, vuelve!" % j.pokemon.nombre())
-	_ev({"tipo": "retirar", "lado": "jugador"})
+	_ev({"tipo": "retirar", "lado": "jugador", "ball": j.pokemon.ball})
 	j= Luchador.new(equipo_j[indice])
 	if not participantes.has(j.pokemon):
 		participantes.append(j.pokemon)
-	_ev_sale("jugador", j.pokemon)
 	_texto("¡Adelante, %s!" % j.pokemon.nombre())
+	_ev_sale("jugador", j.pokemon)
 
 func _usar_objeto(accion: Dictionary) -> bool:
 	var o:= BaseDatos.objeto(str(accion.get("id", "")))
@@ -534,6 +537,7 @@ func _usar_objeto(accion: Dictionary) -> bool:
 		var res:= capturar(o.ratio_captura)
 		_ev({"tipo": "captura", "objeto": o.id, "sacudidas": res["sacudidas"], "exito": res["exito"]})
 		if res["exito"]:
+			r.pokemon.ball= o.id
 			_texto("¡Ya está! ¡%s atrapado!" % r.pokemon.nombre())
 			if equipo!= null and equipo.agregar(r.pokemon):
 				_texto("¡%s se unió a tu equipo!" % r.pokemon.nombre())

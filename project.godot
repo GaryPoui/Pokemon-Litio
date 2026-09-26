@@ -24,6 +24,7 @@ Estado="*res://Scripts/estado.gd"
 Equipo="*res://Scripts/equipo.gd"
 Guardado="*res://Scripts/guardado.gd"
 Combate="*res://Scripts/combate.gd"
+Sonido="*res://Scripts/sonido.gd"
 
 [display]
 

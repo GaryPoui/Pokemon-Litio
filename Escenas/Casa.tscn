@@ -8,6 +8,7 @@
 [node name="Casa" type="Node2D" unique_id=1197749249]
 y_sort_enabled = true
 script = ExtResource("1_ro88r")
+musica = "pueblo"
 
 [node name="Suelo" type="TileMapLayer" parent="." unique_id=125393552]
 z_index = -1

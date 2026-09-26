@@ -18,6 +18,7 @@ const MAX_MOVIMIENTOS:= 4
 @export var estado: String =""
 @export var objeto: String= ""
 @export var genero: String =""
+@export var ball: String= "pokeball"
 
 static func crear(esp: EspeciePokemon, niv: int, rng: RandomNumberGenerator= null) -> PokemonInstancia:
 	if rng== null:
@@ -140,6 +141,7 @@ func a_diccionario() -> Dictionary:
 		"estado": estado,
 		"objeto": objeto,
 		"genero": genero,
+		"ball": ball,
 	}
 
 static func desde_diccionario(d: Dictionary) -> PokemonInstancia:
@@ -160,4 +162,5 @@ static func desde_diccionario(d: Dictionary) -> PokemonInstancia:
 	p.estado =str(d.get("estado", ""))
 	p.objeto= str(d.get("objeto", ""))
 	p.genero =str(d.get("genero", ""))
+	p.ball= str(d.get("ball", "pokeball"))
 	return p

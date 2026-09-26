@@ -2,6 +2,7 @@ extends Node2D
 
 @export var encuentros: TablaEncuentros
 @export var fondo_batalla: Texture2D
+@export var musica: String= ""
 
 var rng:= RandomNumberGenerator.new()
 
@@ -11,6 +12,8 @@ var rng:= RandomNumberGenerator.new()
 
 func _ready() -> void:
 	rng.randomize()
+	if musica!= "":
+		Sonido.musica(musica)
 	_ajustar_camara()
 	if GestorEscenas.posicion_llegada!= null:
 		jugador.colocar(GestorEscenas.posicion_llegada, GestorEscenas.direccion_llegada)
@@ -46,6 +49,7 @@ func _ajustar_camara() -> void:
 func _al_terminar_paso(celda: Vector2i) -> void:
 	for w in get_tree().get_nodes_in_group("warp"):
 		if w.celda()== celda and w.destino!= "":
+			Sonido.efecto("puerta")
 			GestorEscenas.cambiar_mapa(w.destino, w.llegada, w.direccion)
 			return
 

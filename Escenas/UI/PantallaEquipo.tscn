@@ -2,14 +2,20 @@
 
 [ext_resource type="Script" uid="uid://bhk7vlw16kjki" path="res://Scripts/ui/pantalla_equipo.gd" id="1_bv300"]
 [ext_resource type="Script" uid="uid://donqmmmwswodn" path="res://Scripts/ui/lista_opciones.gd" id="1_wbyyk"]
+[ext_resource type="Texture2D" uid="uid://cf7w844elxr8i" path="res://Assets/Menus-Equipo/fondo.png" id="3_obd37"]
+[ext_resource type="Texture2D" uid="uid://bq4simrc0pjjh" path="res://Assets/Menus-Equipo/panel_azul_a_0.png" id="3_rwdpv"]
+[ext_resource type="Texture2D" uid="uid://bjbkqlduc1u5k" path="res://Assets/Menus-Equipo/hp_etiqueta.png" id="4_puuk2"]
+[ext_resource type="Texture2D" uid="uid://pklt3igc6w1v" path="res://Assets/Menus-Equipo/hp_marco.png" id="5_jqdqk"]
+[ext_resource type="Script" uid="uid://3c46evu34do3" path="res://Scripts/batalla/barra_ps.gd" id="6_txw6c"]
+[ext_resource type="Texture2D" uid="uid://bngx3g8sgkmr" path="res://Assets/Menus-Equipo/panel_azul_b_0.png" id="7_yc23b"]
 
 [node name="PantallaEquipo" type="CanvasLayer" unique_id=984521374]
 script = ExtResource("1_bv300")
 
-[node name="Fondo" type="ColorRect" parent="." unique_id=637270678]
+[node name="Fondo" type="TextureRect" parent="." unique_id=1352915214]
 offset_right = 256.0
 offset_bottom = 192.0
-color = Color(0.36, 0.56, 0.78, 1)
+texture = ExtResource("3_obd37")
 
 [node name="Tarjetas" type="Control" parent="." unique_id=904131767]
 layout_mode = 3
@@ -17,23 +23,547 @@ anchors_preset = 0
 offset_right = 256.0
 offset_bottom = 160.0
 
+[node name="S0" type="TextureRect" parent="Tarjetas" unique_id=299446191]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 127.0
+offset_bottom = 48.0
+texture = ExtResource("3_rwdpv")
+
+[node name="Icono" type="Sprite2D" parent="Tarjetas/S0" unique_id=1222247966]
+position = Vector2(8, -6)
+centered = false
+hframes = 2
+
+[node name="Objeto" type="TextureRect" parent="Tarjetas/S0" unique_id=560539883]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 18.0
+offset_right = 43.0
+offset_bottom = 27.0
+
+[node name="Nombre" type="Label" parent="Tarjetas/S0" unique_id=1456709617]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 3.0
+offset_right = 110.0
+offset_bottom = 17.0
+
+[node name="Genero" type="Label" parent="Tarjetas/S0" unique_id=293292760]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 3.0
+offset_right = 122.0
+offset_bottom = 17.0
+
+[node name="HPEtiqueta" type="TextureRect" parent="Tarjetas/S0" unique_id=663678231]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 22.0
+offset_right = 62.0
+offset_bottom = 28.0
+texture = ExtResource("4_puuk2")
+
+[node name="HPMarco" type="TextureRect" parent="Tarjetas/S0" unique_id=1359648134]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 23.0
+offset_right = 112.0
+offset_bottom = 27.0
+texture = ExtResource("5_jqdqk")
+
+[node name="Barra" type="Control" parent="Tarjetas/S0" unique_id=1823641586]
+anchors_preset = 0
+offset_left = 63.0
+offset_top = 24.0
+offset_right = 111.0
+offset_bottom = 26.0
+script = ExtResource("6_txw6c")
+estilo_bw = true
+
+[node name="PS" type="Label" parent="Tarjetas/S0" unique_id=1683853867]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 29.0
+offset_right = 112.0
+offset_bottom = 43.0
+horizontal_alignment = 2
+
+[node name="Nivel" type="Label" parent="Tarjetas/S0" unique_id=237330397]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 30.0
+offset_right = 37.0
+offset_bottom = 44.0
+
+[node name="Estado" type="Label" parent="Tarjetas/S0" unique_id=1342110983]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 31.0
+offset_right = 58.0
+offset_bottom = 45.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="S1" type="TextureRect" parent="Tarjetas" unique_id=1057153515]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 10.0
+offset_right = 255.0
+offset_bottom = 56.0
+texture = ExtResource("7_yc23b")
+
+[node name="Icono" type="Sprite2D" parent="Tarjetas/S1" unique_id=1135776154]
+position = Vector2(8, -6)
+centered = false
+hframes = 2
+
+[node name="Objeto" type="TextureRect" parent="Tarjetas/S1" unique_id=640291101]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 18.0
+offset_right = 43.0
+offset_bottom = 27.0
+
+[node name="Nombre" type="Label" parent="Tarjetas/S1" unique_id=1936704986]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 3.0
+offset_right = 110.0
+offset_bottom = 17.0
+
+[node name="Genero" type="Label" parent="Tarjetas/S1" unique_id=207539518]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 3.0
+offset_right = 122.0
+offset_bottom = 17.0
+
+[node name="HPEtiqueta" type="TextureRect" parent="Tarjetas/S1" unique_id=467438392]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 22.0
+offset_right = 62.0
+offset_bottom = 28.0
+texture = ExtResource("4_puuk2")
+
+[node name="HPMarco" type="TextureRect" parent="Tarjetas/S1" unique_id=1652848588]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 23.0
+offset_right = 112.0
+offset_bottom = 27.0
+texture = ExtResource("5_jqdqk")
+
+[node name="Barra" type="Control" parent="Tarjetas/S1" unique_id=1466455380]
+anchors_preset = 0
+offset_left = 63.0
+offset_top = 24.0
+offset_right = 111.0
+offset_bottom = 26.0
+script = ExtResource("6_txw6c")
+estilo_bw = true
+
+[node name="PS" type="Label" parent="Tarjetas/S1" unique_id=2067946939]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 29.0
+offset_right = 112.0
+offset_bottom = 43.0
+horizontal_alignment = 2
+
+[node name="Nivel" type="Label" parent="Tarjetas/S1" unique_id=1063455901]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 30.0
+offset_right = 37.0
+offset_bottom = 44.0
+
+[node name="Estado" type="Label" parent="Tarjetas/S1" unique_id=844604504]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 31.0
+offset_right = 58.0
+offset_bottom = 45.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="S2" type="TextureRect" parent="Tarjetas" unique_id=829468264]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 50.0
+offset_right = 127.0
+offset_bottom = 96.0
+texture = ExtResource("3_rwdpv")
+
+[node name="Icono" type="Sprite2D" parent="Tarjetas/S2" unique_id=651269021]
+position = Vector2(8, -6)
+centered = false
+hframes = 2
+
+[node name="Objeto" type="TextureRect" parent="Tarjetas/S2" unique_id=1506548018]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 18.0
+offset_right = 43.0
+offset_bottom = 27.0
+
+[node name="Nombre" type="Label" parent="Tarjetas/S2" unique_id=2057917698]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 3.0
+offset_right = 110.0
+offset_bottom = 17.0
+
+[node name="Genero" type="Label" parent="Tarjetas/S2" unique_id=1395929415]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 3.0
+offset_right = 122.0
+offset_bottom = 17.0
+
+[node name="HPEtiqueta" type="TextureRect" parent="Tarjetas/S2" unique_id=2128324901]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 22.0
+offset_right = 62.0
+offset_bottom = 28.0
+texture = ExtResource("4_puuk2")
+
+[node name="HPMarco" type="TextureRect" parent="Tarjetas/S2" unique_id=508503595]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 23.0
+offset_right = 112.0
+offset_bottom = 27.0
+texture = ExtResource("5_jqdqk")
+
+[node name="Barra" type="Control" parent="Tarjetas/S2" unique_id=1813119435]
+anchors_preset = 0
+offset_left = 63.0
+offset_top = 24.0
+offset_right = 111.0
+offset_bottom = 26.0
+script = ExtResource("6_txw6c")
+estilo_bw = true
+
+[node name="PS" type="Label" parent="Tarjetas/S2" unique_id=1939491249]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 29.0
+offset_right = 112.0
+offset_bottom = 43.0
+horizontal_alignment = 2
+
+[node name="Nivel" type="Label" parent="Tarjetas/S2" unique_id=940875177]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 30.0
+offset_right = 37.0
+offset_bottom = 44.0
+
+[node name="Estado" type="Label" parent="Tarjetas/S2" unique_id=1558268119]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 31.0
+offset_right = 58.0
+offset_bottom = 45.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="S3" type="TextureRect" parent="Tarjetas" unique_id=778595923]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 58.0
+offset_right = 255.0
+offset_bottom = 104.0
+texture = ExtResource("7_yc23b")
+
+[node name="Icono" type="Sprite2D" parent="Tarjetas/S3" unique_id=2012426831]
+position = Vector2(8, -6)
+centered = false
+hframes = 2
+
+[node name="Objeto" type="TextureRect" parent="Tarjetas/S3" unique_id=1876629699]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 18.0
+offset_right = 43.0
+offset_bottom = 27.0
+
+[node name="Nombre" type="Label" parent="Tarjetas/S3" unique_id=1277758496]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 3.0
+offset_right = 110.0
+offset_bottom = 17.0
+
+[node name="Genero" type="Label" parent="Tarjetas/S3" unique_id=1370591735]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 3.0
+offset_right = 122.0
+offset_bottom = 17.0
+
+[node name="HPEtiqueta" type="TextureRect" parent="Tarjetas/S3" unique_id=427641105]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 22.0
+offset_right = 62.0
+offset_bottom = 28.0
+texture = ExtResource("4_puuk2")
+
+[node name="HPMarco" type="TextureRect" parent="Tarjetas/S3" unique_id=1606100384]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 23.0
+offset_right = 112.0
+offset_bottom = 27.0
+texture = ExtResource("5_jqdqk")
+
+[node name="Barra" type="Control" parent="Tarjetas/S3" unique_id=1488384236]
+anchors_preset = 0
+offset_left = 63.0
+offset_top = 24.0
+offset_right = 111.0
+offset_bottom = 26.0
+script = ExtResource("6_txw6c")
+estilo_bw = true
+
+[node name="PS" type="Label" parent="Tarjetas/S3" unique_id=1334787785]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 29.0
+offset_right = 112.0
+offset_bottom = 43.0
+horizontal_alignment = 2
+
+[node name="Nivel" type="Label" parent="Tarjetas/S3" unique_id=1955586597]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 30.0
+offset_right = 37.0
+offset_bottom = 44.0
+
+[node name="Estado" type="Label" parent="Tarjetas/S3" unique_id=861963447]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 31.0
+offset_right = 58.0
+offset_bottom = 45.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="S4" type="TextureRect" parent="Tarjetas" unique_id=1220614131]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 98.0
+offset_right = 127.0
+offset_bottom = 144.0
+texture = ExtResource("3_rwdpv")
+
+[node name="Icono" type="Sprite2D" parent="Tarjetas/S4" unique_id=1484015932]
+position = Vector2(8, -6)
+centered = false
+hframes = 2
+
+[node name="Objeto" type="TextureRect" parent="Tarjetas/S4" unique_id=790135327]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 18.0
+offset_right = 43.0
+offset_bottom = 27.0
+
+[node name="Nombre" type="Label" parent="Tarjetas/S4" unique_id=365781773]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 3.0
+offset_right = 110.0
+offset_bottom = 17.0
+
+[node name="Genero" type="Label" parent="Tarjetas/S4" unique_id=895568244]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 3.0
+offset_right = 122.0
+offset_bottom = 17.0
+
+[node name="HPEtiqueta" type="TextureRect" parent="Tarjetas/S4" unique_id=1354224102]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 22.0
+offset_right = 62.0
+offset_bottom = 28.0
+texture = ExtResource("4_puuk2")
+
+[node name="HPMarco" type="TextureRect" parent="Tarjetas/S4" unique_id=1908588615]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 23.0
+offset_right = 112.0
+offset_bottom = 27.0
+texture = ExtResource("5_jqdqk")
+
+[node name="Barra" type="Control" parent="Tarjetas/S4" unique_id=119573945]
+anchors_preset = 0
+offset_left = 63.0
+offset_top = 24.0
+offset_right = 111.0
+offset_bottom = 26.0
+script = ExtResource("6_txw6c")
+estilo_bw = true
+
+[node name="PS" type="Label" parent="Tarjetas/S4" unique_id=1632583722]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 29.0
+offset_right = 112.0
+offset_bottom = 43.0
+horizontal_alignment = 2
+
+[node name="Nivel" type="Label" parent="Tarjetas/S4" unique_id=1709822086]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 30.0
+offset_right = 37.0
+offset_bottom = 44.0
+
+[node name="Estado" type="Label" parent="Tarjetas/S4" unique_id=1674551233]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 31.0
+offset_right = 58.0
+offset_bottom = 45.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="S5" type="TextureRect" parent="Tarjetas" unique_id=262464790]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 106.0
+offset_right = 255.0
+offset_bottom = 152.0
+texture = ExtResource("7_yc23b")
+
+[node name="Icono" type="Sprite2D" parent="Tarjetas/S5" unique_id=875338010]
+position = Vector2(8, -6)
+centered = false
+hframes = 2
+
+[node name="Objeto" type="TextureRect" parent="Tarjetas/S5" unique_id=1011857275]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 18.0
+offset_right = 43.0
+offset_bottom = 27.0
+
+[node name="Nombre" type="Label" parent="Tarjetas/S5" unique_id=608713649]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 3.0
+offset_right = 110.0
+offset_bottom = 17.0
+
+[node name="Genero" type="Label" parent="Tarjetas/S5" unique_id=553061688]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 3.0
+offset_right = 122.0
+offset_bottom = 17.0
+
+[node name="HPEtiqueta" type="TextureRect" parent="Tarjetas/S5" unique_id=1084265227]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 22.0
+offset_right = 62.0
+offset_bottom = 28.0
+texture = ExtResource("4_puuk2")
+
+[node name="HPMarco" type="TextureRect" parent="Tarjetas/S5" unique_id=788396627]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 23.0
+offset_right = 112.0
+offset_bottom = 27.0
+texture = ExtResource("5_jqdqk")
+
+[node name="Barra" type="Control" parent="Tarjetas/S5" unique_id=765611088]
+anchors_preset = 0
+offset_left = 63.0
+offset_top = 24.0
+offset_right = 111.0
+offset_bottom = 26.0
+script = ExtResource("6_txw6c")
+estilo_bw = true
+
+[node name="PS" type="Label" parent="Tarjetas/S5" unique_id=73969828]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 29.0
+offset_right = 112.0
+offset_bottom = 43.0
+horizontal_alignment = 2
+
+[node name="Nivel" type="Label" parent="Tarjetas/S5" unique_id=1862464724]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 30.0
+offset_right = 37.0
+offset_bottom = 44.0
+
+[node name="Estado" type="Label" parent="Tarjetas/S5" unique_id=800208533]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 31.0
+offset_right = 58.0
+offset_bottom = 45.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Mensaje" type="Panel" parent="." unique_id=1179359958]
-offset_top = 162.0
-offset_right = 256.0
-offset_bottom = 192.0
+offset_left = 1.0
+offset_top = 161.0
+offset_right = 181.0
+offset_bottom = 191.0
 
 [node name="Texto" type="Label" parent="Mensaje" unique_id=318847174]
 layout_mode = 0
-offset_left = 8.0
-offset_top = 7.0
-offset_right = 248.0
-offset_bottom = 30.0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 176.0
+offset_bottom = 27.0
+vertical_alignment = 1
+
+[node name="Cancelar" type="Panel" parent="." unique_id=1310083922]
+offset_left = 184.0
+offset_top = 164.0
+offset_right = 254.0
+offset_bottom = 188.0
+
+[node name="Texto" type="Label" parent="Cancelar" unique_id=90448958]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 58.0
+offset_bottom = 24.0
+text = "CANCELAR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cruz" type="Label" parent="Cancelar" unique_id=1125625977]
+layout_mode = 0
+offset_left = 58.0
+offset_right = 69.0
+offset_bottom = 24.0
+text = "×"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Submenu" type="Panel" parent="." unique_id=940459515]
 offset_left = 176.0
-offset_top = 106.0
+offset_top = 96.0
 offset_right = 252.0
-offset_bottom = 160.0
+offset_bottom = 158.0
 
 [node name="Lista" type="Control" parent="Submenu" unique_id=2011176709]
 anchors_preset = 0

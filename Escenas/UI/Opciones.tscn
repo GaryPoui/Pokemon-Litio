@@ -1,0 +1,207 @@
+[gd_scene format=3 uid="uid://cak02v8wxwwcd"]
+
+[ext_resource type="Script" uid="uid://cejuidxough6q" path="res://Scripts/ui/opciones.gd" id="1_kg2gv"]
+[ext_resource type="Texture2D" uid="uid://cf7w844elxr8i" path="res://Assets/Menus-Equipo/fondo.png" id="2_0w8hg"]
+[ext_resource type="Script" uid="uid://3c46evu34do3" path="res://Scripts/batalla/barra_ps.gd" id="3_dhyb0"]
+
+[node name="Opciones" type="CanvasLayer" unique_id=679637907]
+script = ExtResource("1_kg2gv")
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=817510832]
+offset_right = 256.0
+offset_bottom = 192.0
+texture = ExtResource("2_0w8hg")
+
+[node name="Caja" type="Panel" parent="." unique_id=21135377]
+offset_left = 16.0
+offset_top = 12.0
+offset_right = 240.0
+offset_bottom = 180.0
+
+[node name="Titulo" type="Label" parent="Caja" unique_id=223450198]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 4.0
+offset_right = 214.0
+offset_bottom = 20.0
+text = "OPCIONES"
+
+[node name="F0" type="Control" parent="Caja" unique_id=789879527]
+anchors_preset = 0
+offset_top = 28.0
+offset_right = 224.0
+offset_bottom = 48.0
+
+[node name="Nombre" type="Label" parent="Caja/F0" unique_id=354456335]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 2.0
+offset_right = 118.0
+offset_bottom = 18.0
+text = "Música"
+
+[node name="FondoBarra" type="ColorRect" parent="Caja/F0" unique_id=481511982]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 6.0
+offset_right = 186.0
+offset_bottom = 14.0
+color = Color(0.19, 0.19, 0.19, 1)
+
+[node name="Barra" type="Control" parent="Caja/F0" unique_id=563974364]
+anchors_preset = 0
+offset_left = 113.0
+offset_top = 7.0
+offset_right = 185.0
+offset_bottom = 13.0
+script = ExtResource("3_dhyb0")
+es_exp = true
+estilo_bw = true
+
+[node name="Valor" type="Label" parent="Caja/F0" unique_id=1084998897]
+layout_mode = 0
+offset_left = 188.0
+offset_top = 2.0
+offset_right = 216.0
+offset_bottom = 18.0
+horizontal_alignment = 2
+
+[node name="F1" type="Control" parent="Caja" unique_id=1005181763]
+anchors_preset = 0
+offset_top = 52.0
+offset_right = 224.0
+offset_bottom = 72.0
+
+[node name="Nombre" type="Label" parent="Caja/F1" unique_id=1169510380]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 2.0
+offset_right = 118.0
+offset_bottom = 18.0
+text = "Efectos"
+
+[node name="FondoBarra" type="ColorRect" parent="Caja/F1" unique_id=299873302]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 6.0
+offset_right = 186.0
+offset_bottom = 14.0
+color = Color(0.19, 0.19, 0.19, 1)
+
+[node name="Barra" type="Control" parent="Caja/F1" unique_id=922276372]
+anchors_preset = 0
+offset_left = 113.0
+offset_top = 7.0
+offset_right = 185.0
+offset_bottom = 13.0
+script = ExtResource("3_dhyb0")
+es_exp = true
+estilo_bw = true
+
+[node name="Valor" type="Label" parent="Caja/F1" unique_id=445752982]
+layout_mode = 0
+offset_left = 188.0
+offset_top = 2.0
+offset_right = 216.0
+offset_bottom = 18.0
+horizontal_alignment = 2
+
+[node name="F2" type="Control" parent="Caja" unique_id=1305410608]
+anchors_preset = 0
+offset_top = 76.0
+offset_right = 224.0
+offset_bottom = 96.0
+
+[node name="Nombre" type="Label" parent="Caja/F2" unique_id=1681541957]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 2.0
+offset_right = 118.0
+offset_bottom = 18.0
+text = "Gritos"
+
+[node name="FondoBarra" type="ColorRect" parent="Caja/F2" unique_id=1328096489]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 6.0
+offset_right = 186.0
+offset_bottom = 14.0
+color = Color(0.19, 0.19, 0.19, 1)
+
+[node name="Barra" type="Control" parent="Caja/F2" unique_id=602680150]
+anchors_preset = 0
+offset_left = 113.0
+offset_top = 7.0
+offset_right = 185.0
+offset_bottom = 13.0
+script = ExtResource("3_dhyb0")
+es_exp = true
+estilo_bw = true
+
+[node name="Valor" type="Label" parent="Caja/F2" unique_id=98772596]
+layout_mode = 0
+offset_left = 188.0
+offset_top = 2.0
+offset_right = 216.0
+offset_bottom = 18.0
+horizontal_alignment = 2
+
+[node name="F3" type="Control" parent="Caja" unique_id=1574581031]
+anchors_preset = 0
+offset_top = 100.0
+offset_right = 224.0
+offset_bottom = 120.0
+
+[node name="Nombre" type="Label" parent="Caja/F3" unique_id=1766989504]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 2.0
+offset_right = 118.0
+offset_bottom = 18.0
+text = "Pantalla completa"
+
+[node name="Valor" type="Label" parent="Caja/F3" unique_id=857403398]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 2.0
+offset_right = 216.0
+offset_bottom = 18.0
+horizontal_alignment = 2
+
+[node name="F4" type="Control" parent="Caja" unique_id=1483971767]
+anchors_preset = 0
+offset_top = 124.0
+offset_right = 224.0
+offset_bottom = 144.0
+
+[node name="Nombre" type="Label" parent="Caja/F4" unique_id=387549342]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 2.0
+offset_right = 118.0
+offset_bottom = 18.0
+text = "Prueba de sonido"
+
+[node name="Valor" type="Label" parent="Caja/F4" unique_id=2086798347]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 2.0
+offset_right = 216.0
+offset_bottom = 18.0
+horizontal_alignment = 2
+
+[node name="Cursor" type="Label" parent="Caja" unique_id=1461505760]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 30.0
+offset_right = 16.0
+offset_bottom = 46.0
+text = "▶"
+
+[node name="Ayuda" type="Label" parent="Caja" unique_id=1194472532]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 150.0
+offset_right = 216.0
+offset_bottom = 164.0
+horizontal_alignment = 1
