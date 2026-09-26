@@ -2,8 +2,10 @@ extends CanvasLayer
 
 const CONFIG:= "user://config.cfg"
 const FUNDIDO_MENU :=0.15
+const NUM_BARRAS:= 16
 
 var en_transicion:= false
+var barras: Array[ColorRect] =[]
 var llegada :=""
 var direccion_llegada: Vector2= Vector2.DOWN
 var posicion_llegada: Variant =null
@@ -85,4 +87,43 @@ func cambiar_mapa(ruta: String, punto: String, direccion: Vector2) -> void:
 	var entrada :=create_tween()
 	entrada.tween_property(velo, "modulate:a", 0.0, 0.25)
 	await entrada.finished
+	en_transicion =false
+
+func _preparar_barras() -> void:
+	if not barras.is_empty():
+		return
+	var alto:= 192.0/ NUM_BARRAS
+	for i in NUM_BARRAS:
+		var b:= ColorRect.new()
+		b.color= Color.BLACK
+		b.size =Vector2(256, alto)
+		b.position= Vector2(-256, i* alto)
+		b.mouse_filter =Control.MOUSE_FILTER_IGNORE
+		b.visible= false
+		add_child(b)
+		barras.append(b)
+
+func barras_cubrir() -> void:
+	en_transicion= true
+	_preparar_barras()
+	var tw:= create_tween().set_parallel()
+	for i in NUM_BARRAS:
+		var b:= barras[i]
+		b.position.x= -256.0 if i% 2== 0 else 256.0
+		b.visible =true
+		tw.tween_property(b, "position:x", 0.0, 0.2).set_delay(i* 0.02).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	await tw.finished
+	await get_tree().create_timer(0.15).timeout
+
+func barras_descubrir() -> void:
+	_preparar_barras()
+	var rng:= RandomNumberGenerator.new()
+	rng.randomize()
+	var tw:= create_tween().set_parallel()
+	for i in NUM_BARRAS:
+		var hacia:= 256.0 if rng.randi_range(0, 1)== 0 else -256.0
+		tw.tween_property(barras[i], "position:x", hacia, 0.28).set_delay(rng.randf_range(0.0, 0.4)).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
+	await tw.finished
+	for b in barras:
+		b.visible= false
 	en_transicion =false

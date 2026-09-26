@@ -7,13 +7,11 @@
 [ext_resource type="Texture2D" uid="uid://xioxbnkkcrx0" path="res://Assets/Batalla/balls/pokeball.png" id="5_85n7h"]
 [ext_resource type="Texture2D" uid="uid://dwomjnvedongc" path="res://Assets/Batalla/ui_nueva/panel.png" id="6_h10kb"]
 [ext_resource type="Script" uid="uid://3c46evu34do3" path="res://Scripts/batalla/barra_ps.gd" id="7_u1pia"]
-[ext_resource type="Texture2D" uid="uid://ct1ff2cleeopo" path="res://Assets/Batalla/ui_nueva/boton.png" id="8_kluxw"]
+[ext_resource type="Texture2D" uid="uid://bictfh8shju20" path="res://Assets/Botones/boton_madera_1x.png" id="8_xgimu"]
 [ext_resource type="Texture2D" uid="uid://ljulc4yeagti" path="res://Assets/Batalla/ui_nueva/cursor_mano.png" id="9_lsdxj"]
-[ext_resource type="Texture2D" uid="uid://b6jcao45dikhr" path="res://Assets/Batalla/ui_nueva/boton_movimiento.png" id="10_85n7h"]
 
 [node name="Batalla" type="CanvasLayer" unique_id=2053821235]
 script = ExtResource("1_kluxw")
-letras_por_segundo = null
 
 [node name="Fondo" type="ColorRect" parent="." unique_id=648602552]
 offset_right = 256.0
@@ -230,18 +228,18 @@ layout_mode = 0
 offset_left = 190.0
 offset_top = 116.0
 offset_right = 252.0
-offset_bottom = 133.0
-texture = ExtResource("8_kluxw")
-patch_margin_left = 5
-patch_margin_top = 5
-patch_margin_right = 5
-patch_margin_bottom = 5
+offset_bottom = 134.0
+texture = ExtResource("8_xgimu")
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
 
 [node name="Texto" type="Label" parent="Comandos/B0" unique_id=894133746]
 layout_mode = 0
 offset_top = 1.0
 offset_right = 62.0
-offset_bottom = 16.0
+offset_bottom = 17.0
 horizontal_alignment = 1
 
 [node name="B1" type="NinePatchRect" parent="Comandos" unique_id=2004342528]
@@ -249,18 +247,18 @@ layout_mode = 0
 offset_left = 190.0
 offset_top = 135.0
 offset_right = 252.0
-offset_bottom = 152.0
-texture = ExtResource("8_kluxw")
-patch_margin_left = 5
-patch_margin_top = 5
-patch_margin_right = 5
-patch_margin_bottom = 5
+offset_bottom = 153.0
+texture = ExtResource("8_xgimu")
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
 
 [node name="Texto" type="Label" parent="Comandos/B1" unique_id=2128187870]
 layout_mode = 0
 offset_top = 1.0
 offset_right = 62.0
-offset_bottom = 16.0
+offset_bottom = 17.0
 horizontal_alignment = 1
 
 [node name="B2" type="NinePatchRect" parent="Comandos" unique_id=1689391217]
@@ -268,18 +266,18 @@ layout_mode = 0
 offset_left = 190.0
 offset_top = 154.0
 offset_right = 252.0
-offset_bottom = 171.0
-texture = ExtResource("8_kluxw")
-patch_margin_left = 5
-patch_margin_top = 5
-patch_margin_right = 5
-patch_margin_bottom = 5
+offset_bottom = 172.0
+texture = ExtResource("8_xgimu")
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
 
 [node name="Texto" type="Label" parent="Comandos/B2" unique_id=78147187]
 layout_mode = 0
 offset_top = 1.0
 offset_right = 62.0
-offset_bottom = 16.0
+offset_bottom = 17.0
 horizontal_alignment = 1
 
 [node name="B3" type="NinePatchRect" parent="Comandos" unique_id=1941475872]
@@ -287,18 +285,18 @@ layout_mode = 0
 offset_left = 190.0
 offset_top = 173.0
 offset_right = 252.0
-offset_bottom = 190.0
-texture = ExtResource("8_kluxw")
-patch_margin_left = 5
-patch_margin_top = 5
-patch_margin_right = 5
-patch_margin_bottom = 5
+offset_bottom = 191.0
+texture = ExtResource("8_xgimu")
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
 
 [node name="Texto" type="Label" parent="Comandos/B3" unique_id=1053184419]
 layout_mode = 0
 offset_top = 1.0
 offset_right = 62.0
-offset_bottom = 16.0
+offset_bottom = 17.0
 horizontal_alignment = 1
 
 [node name="Cursor" type="TextureRect" parent="Comandos" unique_id=399586976]
@@ -321,115 +319,115 @@ layout_mode = 0
 offset_left = 160.0
 offset_top = 102.0
 offset_right = 252.0
-offset_bottom = 119.0
-texture = ExtResource("10_85n7h")
-patch_margin_left = 5
-patch_margin_top = 5
-patch_margin_right = 5
-patch_margin_bottom = 5
+offset_bottom = 120.0
+texture = ExtResource("8_xgimu")
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
 
 [node name="Texto" type="Label" parent="Movimientos/M0" unique_id=218759714]
 layout_mode = 0
 offset_left = 14.0
 offset_top = 1.0
 offset_right = 90.0
-offset_bottom = 16.0
+offset_bottom = 17.0
 horizontal_alignment = 1
 
 [node name="Tipo" type="TextureRect" parent="Movimientos/M0" unique_id=644404157]
 layout_mode = 0
 offset_left = 3.0
-offset_top = 2.0
+offset_top = 3.0
 offset_right = 15.0
-offset_bottom = 14.0
+offset_bottom = 15.0
 
 [node name="M1" type="NinePatchRect" parent="Movimientos" unique_id=1638291264]
 layout_mode = 0
 offset_left = 160.0
 offset_top = 121.0
 offset_right = 252.0
-offset_bottom = 138.0
-texture = ExtResource("10_85n7h")
-patch_margin_left = 5
-patch_margin_top = 5
-patch_margin_right = 5
-patch_margin_bottom = 5
+offset_bottom = 139.0
+texture = ExtResource("8_xgimu")
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
 
 [node name="Texto" type="Label" parent="Movimientos/M1" unique_id=639228582]
 layout_mode = 0
 offset_left = 14.0
 offset_top = 1.0
 offset_right = 90.0
-offset_bottom = 16.0
+offset_bottom = 17.0
 horizontal_alignment = 1
 
 [node name="Tipo" type="TextureRect" parent="Movimientos/M1" unique_id=110713776]
 layout_mode = 0
 offset_left = 3.0
-offset_top = 2.0
+offset_top = 3.0
 offset_right = 15.0
-offset_bottom = 14.0
+offset_bottom = 15.0
 
 [node name="M2" type="NinePatchRect" parent="Movimientos" unique_id=1183882023]
 layout_mode = 0
 offset_left = 160.0
 offset_top = 140.0
 offset_right = 252.0
-offset_bottom = 157.0
-texture = ExtResource("10_85n7h")
-patch_margin_left = 5
-patch_margin_top = 5
-patch_margin_right = 5
-patch_margin_bottom = 5
+offset_bottom = 158.0
+texture = ExtResource("8_xgimu")
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
 
 [node name="Texto" type="Label" parent="Movimientos/M2" unique_id=2075929253]
 layout_mode = 0
 offset_left = 14.0
 offset_top = 1.0
 offset_right = 90.0
-offset_bottom = 16.0
+offset_bottom = 17.0
 horizontal_alignment = 1
 
 [node name="Tipo" type="TextureRect" parent="Movimientos/M2" unique_id=1257394631]
 layout_mode = 0
 offset_left = 3.0
-offset_top = 2.0
+offset_top = 3.0
 offset_right = 15.0
-offset_bottom = 14.0
+offset_bottom = 15.0
 
 [node name="M3" type="NinePatchRect" parent="Movimientos" unique_id=714134752]
 layout_mode = 0
 offset_left = 160.0
 offset_top = 159.0
 offset_right = 252.0
-offset_bottom = 176.0
-texture = ExtResource("10_85n7h")
-patch_margin_left = 5
-patch_margin_top = 5
-patch_margin_right = 5
-patch_margin_bottom = 5
+offset_bottom = 177.0
+texture = ExtResource("8_xgimu")
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+patch_margin_bottom = 2
 
 [node name="Texto" type="Label" parent="Movimientos/M3" unique_id=1379959520]
 layout_mode = 0
 offset_left = 14.0
 offset_top = 1.0
 offset_right = 90.0
-offset_bottom = 16.0
+offset_bottom = 17.0
 horizontal_alignment = 1
 
 [node name="Tipo" type="TextureRect" parent="Movimientos/M3" unique_id=734927201]
 layout_mode = 0
 offset_left = 3.0
-offset_top = 2.0
+offset_top = 3.0
 offset_right = 15.0
-offset_bottom = 14.0
+offset_bottom = 15.0
 
 [node name="Categoria" type="TextureRect" parent="Movimientos" unique_id=401882918]
 layout_mode = 0
 offset_left = 218.0
 offset_top = 101.0
-offset_right = 250.0
-offset_bottom = 115.0
+offset_right = 240.0
+offset_bottom = 111.0
 
 [node name="Info" type="Label" parent="Movimientos" unique_id=818873495]
 layout_mode = 0

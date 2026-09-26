@@ -19,7 +19,10 @@ func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String) -
 	if activo or Equipo.primero_util()== null or rivales.is_empty():
 		return "cancelado"
 	activo= true
+	if salvaje:
+		await GestorEscenas.barras_cubrir()
 	var b= load(ESCENA).instantiate()
+	b.entrada_barras= salvaje
 	ultima =b
 	add_child(b)
 	var escena:= get_tree().current_scene

@@ -4,3 +4,6 @@
 
 # Archivos temporales que Godot deja si no puede guardar
 *.tmp
+
+# Notas locales de arte
+ARTE_PENDIENTE.md

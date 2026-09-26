@@ -12,7 +12,9 @@ const ESCENA_MOCHILA :="res://Escenas/UI/Mochila/Mochila.tscn"
 const ESCENA_EQUIPO:= "res://Escenas/UI/PantallaEquipo.tscn"
 const BALLS :="res://Assets/Batalla/balls/"
 const EMPUJE_COMANDO :=6
-const EMPUJE_MOVIMIENTO:= 36
+const EMPUJE_MOVIMIENTO:= 28
+const BOTONES_TIPO :="res://Assets/Botones/tipos/"
+const APAGADO :=Color(0.8, 0.8, 0.8)
 
 @onready var velo: ColorRect= $Velo
 @onready var fondo_zona: TextureRect =$Fondo/FondoZona
@@ -43,14 +45,11 @@ var auto_avanzar:= false
 var flecha_menu: Label
 var vista: Dictionary= {"rival": {}, "jugador": {}}
 var modo_ps:= "porcentaje"
-var tex_boton: Texture2D
-var tex_boton_sel: Texture2D
 var mochila_combate: Node
+var entrada_barras:= false
 
 func _ready() -> void:
 	layer= 50
-	tex_boton= load(UI+ "boton.png")
-	tex_boton_sel =load(UI+ "boton_sel.png")
 	lista.add_theme_stylebox_override("panel", EstiloUI.panel())
 	var translucido:= StyleBoxFlat.new()
 	translucido.bg_color= Color(0.05, 0.07, 0.13, 0.62)
@@ -60,6 +59,7 @@ func _ready() -> void:
 	caja.add_theme_stylebox_override("panel", translucido)
 	EstiloUI.label(titulo_lista, 9)
 	EstiloUI.label(mensaje, 9, Color.WHITE)
+	EstiloUI.fuente_batalla(mensaje)
 	for panel in [caja_rival, caja_jugador]:
 		EstiloUI.label(panel.get_node("Nombre"), 9)
 		EstiloUI.label(panel.get_node("Genero"), 9)
@@ -73,8 +73,10 @@ func _ready() -> void:
 		ps.add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.6))
 		panel.visible= false
 	for i in 4:
-		EstiloUI.label(comandos.get_node("B%d/Texto" % i), 9)
-		comandos.get_node("B%d/Texto" % i).text= COMANDOS[i]
+		var tc: Label= comandos.get_node("B%d/Texto" % i)
+		EstiloUI.label(tc, 9, Color.WHITE)
+		tc.add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.55))
+		tc.text= COMANDOS[i]
 		var t: Label= movimientos_ui.get_node("M%d/Texto" % i)
 		EstiloUI.label(t, 9, Color.WHITE)
 		t.add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.55))
@@ -111,6 +113,10 @@ func empezar(rivales: Array[PokemonInstancia], salvaje: bool, entrenador: String
 	return logica.resultado
 
 func _entrada() -> void:
+	if entrada_barras:
+		velo.modulate.a= 0.0
+		await GestorEscenas.barras_descubrir()
+		return
 	velo.modulate.a= 1.0
 	var t:= create_tween()
 	t.tween_property(velo, "modulate:a", 0.0, 0.4)
@@ -272,7 +278,7 @@ func _elegir_accion() -> Dictionary:
 func _pintar_comandos(sel: int) -> void:
 	for i in 4:
 		var b: NinePatchRect= comandos.get_node("B%d" % i)
-		b.texture= tex_boton_sel if i== sel else tex_boton
+		b.self_modulate= Color.WHITE if i== sel else APAGADO
 		b.position.x =190- (EMPUJE_COMANDO if i== sel else 0)
 	var cur: TextureRect= comandos.get_node("Cursor")
 	var bs: NinePatchRect= comandos.get_node("B%d" % sel)
@@ -293,8 +299,8 @@ func _elegir_movimiento() -> int:
 		var m:= p.movimientos[i]
 		b.get_node("Texto").text= m.nombre
 		b.get_node("Tipo").texture =load(UI+ "tipos/%s.png" % m.tipo)
-		var color:= EstiloUI.color_tipo(m.tipo)
-		b.self_modulate= color if p.pp[i]> 0 else color.lerp(Color(0.55, 0.55, 0.55), 0.75)
+		b.texture= load(BOTONES_TIPO+ "%s.png" % m.tipo)
+		b.set_meta("sin_pp", p.pp[i]<= 0)
 	var ultimo:= 0
 	while true:
 		caja.visible= false
@@ -318,6 +324,8 @@ func _pintar_movimientos(sel: int) -> void:
 	for i in 4:
 		var b: NinePatchRect= movimientos_ui.get_node("M%d" % i)
 		b.position.x= 160- (EMPUJE_MOVIMIENTO if i== sel else 0)
+		var base:= Color.WHITE if i== sel else APAGADO
+		b.self_modulate =base.darkened(0.45) if b.get_meta("sin_pp", false) else base
 	var m:= p.movimientos[sel]
 	var bs: NinePatchRect= movimientos_ui.get_node("M%d" % sel)
 	var cat: TextureRect= movimientos_ui.get_node("Categoria")
@@ -487,8 +495,8 @@ func _animar_captura(e: Dictionary) -> void:
 	ball.flip_h =false
 	ball.modulate= Color.WHITE
 	var inicio:= Vector2(20, 140)
-	var arriba: Vector2= sprite_rival.pos_base+ Vector2(0, -30)
-	var suelo: Vector2 =sprite_rival.pos_base+ Vector2(0, -9)
+	var arriba: Vector2= sprite_rival.pos_base+ Vector2(0, -26)
+	var suelo: Vector2 =sprite_rival.pos_base+ Vector2(0, -4)
 	ball.position= inicio
 	ball.visible =true
 	var arco:= func(v: float) -> void:
