@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://rjuso8anatxa"]
 
 [ext_resource type="Script" uid="uid://crvoriva0vj6p" path="res://Scripts/ui/trinkets_pokemon.gd" id="1_5oeao"]
-[ext_resource type="Texture2D" uid="uid://cf7w844elxr8i" path="res://Assets/Menus-Equipo/fondo.png" id="2_qjn1c"]
+[ext_resource type="Texture2D" uid="uid://0fgboih4o0w1" path="res://Assets/Fondos/trinkets.png" id="2_wo666"]
 [ext_resource type="Script" uid="uid://p68fop7rmin3" path="res://Scripts/ui/panel_trinket.gd" id="3_wo666"]
 
 [node name="TrinketsPokemon" type="CanvasLayer" unique_id=1747358117]
@@ -10,7 +10,7 @@ script = ExtResource("1_5oeao")
 [node name="Fondo" type="TextureRect" parent="." unique_id=148983138]
 offset_right = 256.0
 offset_bottom = 192.0
-texture = ExtResource("2_qjn1c")
+texture = ExtResource("2_wo666")
 
 [node name="Cabecera" type="Panel" parent="." unique_id=376982947]
 offset_left = 4.0
@@ -72,6 +72,14 @@ offset_top = 1.0
 offset_right = 25.0
 offset_bottom = 25.0
 
+[node name="Cuenta" type="Label" parent="Equipados/S0" unique_id=1644746902]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 13.0
+offset_right = 26.0
+offset_bottom = 27.0
+horizontal_alignment = 2
+
 [node name="S1" type="Control" parent="Equipados" unique_id=1824994668]
 anchors_preset = 0
 offset_left = 46.0
@@ -91,6 +99,14 @@ offset_left = 1.0
 offset_top = 1.0
 offset_right = 25.0
 offset_bottom = 25.0
+
+[node name="Cuenta" type="Label" parent="Equipados/S1" unique_id=369475639]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 13.0
+offset_right = 26.0
+offset_bottom = 27.0
+horizontal_alignment = 2
 
 [node name="S2" type="Control" parent="Equipados" unique_id=1069697264]
 anchors_preset = 0
@@ -112,6 +128,14 @@ offset_top = 1.0
 offset_right = 25.0
 offset_bottom = 25.0
 
+[node name="Cuenta" type="Label" parent="Equipados/S2" unique_id=316988737]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 13.0
+offset_right = 26.0
+offset_bottom = 27.0
+horizontal_alignment = 2
+
 [node name="S3" type="Control" parent="Equipados" unique_id=174594740]
 anchors_preset = 0
 offset_left = 14.0
@@ -132,6 +156,14 @@ offset_top = 1.0
 offset_right = 25.0
 offset_bottom = 25.0
 
+[node name="Cuenta" type="Label" parent="Equipados/S3" unique_id=1540729968]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 13.0
+offset_right = 26.0
+offset_bottom = 27.0
+horizontal_alignment = 2
+
 [node name="S4" type="Control" parent="Equipados" unique_id=1196616178]
 anchors_preset = 0
 offset_left = 46.0
@@ -151,6 +183,14 @@ offset_left = 1.0
 offset_top = 1.0
 offset_right = 25.0
 offset_bottom = 25.0
+
+[node name="Cuenta" type="Label" parent="Equipados/S4" unique_id=1916965917]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 13.0
+offset_right = 26.0
+offset_bottom = 27.0
+horizontal_alignment = 2
 
 [node name="Marco" type="Panel" parent="Equipados" unique_id=1586111051]
 layout_mode = 0

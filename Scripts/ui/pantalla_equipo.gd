@@ -37,7 +37,7 @@ func _ready() -> void:
 	caja.set_corner_radius_all(2)
 	$Mensaje.add_theme_stylebox_override("panel", caja)
 	submenu.add_theme_stylebox_override("panel", EstiloUI.panel())
-	EstiloUI.label(mensaje, 9)
+	EstiloUI.label(mensaje, 9, EstiloUI.TEXTO_OSCURO)
 	submenu.visible =false
 	for i in Equipo.MAXIMO:
 		var p: TextureRect= tarjetas.get_node("S%d" % i)

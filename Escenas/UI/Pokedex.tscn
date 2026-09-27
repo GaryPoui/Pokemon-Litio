@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://donqmmmwswodn" path="res://Scripts/ui/lista_opciones.gd" id="1_lpjnv"]
 [ext_resource type="Script" uid="uid://khfemv7oqbmt" path="res://Scripts/ui/pokedex.gd" id="1_qfl7w"]
+[ext_resource type="Texture2D" uid="uid://ckqn4ids3lh4" path="res://Assets/Fondos/pokedex.png" id="2_7h0f7"]
 [ext_resource type="Script" uid="uid://leuk4t8cgf1b" path="res://Scripts/batalla/sprite_pokemon.gd" id="2_fy5j7"]
 
 [node name="Pokedex" type="CanvasLayer" unique_id=2062938853]
@@ -11,6 +12,13 @@ script = ExtResource("1_qfl7w")
 offset_right = 256.0
 offset_bottom = 192.0
 color = Color(0.78, 0.2, 0.2, 1)
+
+[node name="Papel" type="TextureRect" parent="." unique_id=1107212099]
+offset_top = 16.0
+offset_right = 256.0
+offset_bottom = 192.0
+mouse_filter = 2
+texture = ExtResource("2_7h0f7")
 
 [node name="Titulo" type="Label" parent="." unique_id=1196611004]
 offset_left = 8.0

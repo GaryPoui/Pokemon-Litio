@@ -35,12 +35,17 @@ func _ready() -> void:
 	EstiloUI.label(cursor_lbl, 6)
 	var seleccion: Label= $Equipados/Seleccion
 	EstiloUI.label(seleccion, 8)
+	for i in EfectosTrinket.MAX_POR_POKEMON:
+		var c: Label= equipados.get_node("S%d/Cuenta" % i)
+		EstiloUI.label(c, 8, Color.WHITE)
+		EstiloUI.fuente_batalla(c)
+		c.add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.9))
 	EstiloUI.fuente_batalla(seleccion)
 	for i in EfectosTrinket.MAX_POR_POKEMON:
 		var hueco:= StyleBoxFlat.new()
-		hueco.bg_color= Color("e4e6ee")
+		hueco.bg_color= Color("2a3448")
 		hueco.set_border_width_all(1)
-		hueco.border_color =Color("a8adc0")
+		hueco.border_color =Color("5a6c90")
 		hueco.set_corner_radius_all(3)
 		equipados.get_node("S%d/Fondo" % i).add_theme_stylebox_override("panel", hueco)
 	var marco:= StyleBoxFlat.new()
@@ -70,12 +75,15 @@ func abrir(p: PokemonInstancia) -> void:
 
 func _pintar() -> void:
 	libres= Inventario.ids_trinkets()
-	cuenta.text ="Trinkets equipados: %d/%d" % [pokemon.trinkets.size(), EfectosTrinket.MAX_POR_POKEMON]
+	var huecos:= EfectosTrinket.huecos(pokemon)
+	cuenta.text ="Huecos usados: %d/%d" % [huecos.size(), EfectosTrinket.MAX_POR_POKEMON]
 	for i in EfectosTrinket.MAX_POR_POKEMON:
 		var s: Control= equipados.get_node("S%d" % i)
-		var hay:= i< pokemon.trinkets.size()
-		var t:= BaseDatos.trinket(pokemon.trinkets[i]) if hay else null
+		var hay:= i< huecos.size()
+		var t:= BaseDatos.trinket(huecos[i]) if hay else null
 		(s.get_node("Icono") as TextureRect).texture= EfectosTrinket.icono(t) if t!= null else null
+		var n:= pokemon.trinkets.count(huecos[i]) if hay else 0
+		(s.get_node("Cuenta") as Label).text= "×%d" % n if n> 1 else ""
 	var n_lista:= maxi(1, libres.size())
 	if columna== 1:
 		fila= clampi(fila, 0, n_lista- 1)
@@ -96,8 +104,9 @@ func _pintar() -> void:
 	var marco: Panel= $Equipados/Marco
 	var seleccion: Label= $Equipados/Seleccion
 	var slot:= clampi(fila if columna== 0 else ultimo_slot, 0, EfectosTrinket.MAX_POR_POKEMON- 1)
-	var id_slot:= pokemon.trinkets[slot] if slot< pokemon.trinkets.size() else ""
-	seleccion.text= BaseDatos.trinket(id_slot).nombre if id_slot!= "" else "- vacío -"
+	var id_slot:= huecos[slot] if slot< huecos.size() else ""
+	var apilados:= pokemon.trinkets.count(id_slot) if id_slot!= "" else 0
+	seleccion.text= (BaseDatos.trinket(id_slot).nombre+ (" ×%d" % apilados if apilados> 1 else "")) if id_slot!= "" else "- vacío -"
 	seleccion.modulate =Color.WHITE if id_slot!= "" else Color(1, 1, 1, 0.45)
 	marco.position= equipados.get_node("S%d" % slot).position- Vector2(1, 1)
 	marco.visible =columna== 0
@@ -175,21 +184,23 @@ func _mover_horizontal(paso: int) -> void:
 
 func _aceptar() -> String:
 	if columna== 0:
-		if fila>= pokemon.trinkets.size():
+		var huecos:= EfectosTrinket.huecos(pokemon)
+		if fila>= huecos.size():
 			Sonido.efecto("error")
 			return ""
-		var id:= pokemon.trinkets[fila]
-		pokemon.trinkets.remove_at(fila)
+		var id:= huecos[fila]
+		EfectosTrinket.quitar_uno(pokemon, id)
 		Inventario.agregar_trinket(id)
 		Sonido.efecto("confirmar")
 		return ""
 	if fila>= libres.size():
 		Sonido.efecto("error")
 		return ""
-	if pokemon.trinkets.size()>= EfectosTrinket.MAX_POR_POKEMON:
-		Sonido.efecto("error")
-		return "%s ya lleva %d Trinkets. Quita uno primero." % [pokemon.nombre(), EfectosTrinket.MAX_POR_POKEMON]
 	var id2:= libres[fila]
+	var motivo:= EfectosTrinket.puede_equipar(pokemon, id2)
+	if motivo!= "":
+		Sonido.efecto("error")
+		return motivo
 	if Inventario.quitar_trinket(id2):
 		pokemon.trinkets.append(id2)
 		Sonido.efecto("confirmar")

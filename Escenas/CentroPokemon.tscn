@@ -10,6 +10,7 @@
 [ext_resource type="SpriteFrames" uid="uid://buqcla1qfn5ku" path="res://Recursos/Personajes/joy.tres" id="8_i2hgd"]
 [ext_resource type="Script" uid="uid://77y6ik0mxot2" path="res://Scripts/mostrador.gd" id="9_5dv3b"]
 [ext_resource type="Script" uid="uid://bpart7tua0026" path="res://Scripts/pc.gd" id="10_ktho2"]
+[ext_resource type="Script" uid="uid://dga626iyl6x3c" path="res://Scripts/maquina_curacion.gd" id="11_mxk81"]
 
 [node name="CentroPokemon" type="Node2D" unique_id=536125914]
 y_sort_enabled = true
@@ -57,6 +58,7 @@ texto_espera = "De acuerdo. ¿Me dejas tus Pokémon un momento?"
 texto_listo = "¡Gracias por esperar! Tus Pokémon están totalmente recuperados. ¡Esperamos volver a verte!"
 texto_no = "¡Esperamos volver a verte!"
 mirar_al_curar = Vector2(-1, 0)
+maquina = "../Maquina"
 texto = "¡Te damos la bienvenida al Centro Pokémon!"
 
 [node name="AnimatedSprite2D" parent="Joy" index="0" unique_id=1100079311]
@@ -82,5 +84,8 @@ destino = "../Joy"
 [node name="PC" type="Node2D" parent="." unique_id=1946390185]
 position = Vector2(184, 66)
 script = ExtResource("10_ktho2")
+
+[node name="Maquina" type="Node2D" parent="." unique_id=1727789777]
+script = ExtResource("11_mxk81")
 
 [editable path="Joy"]

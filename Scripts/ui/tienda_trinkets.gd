@@ -66,10 +66,10 @@ func _pintar() -> void:
 		(r.get_node("Nombre") as Label).text =t.nombre
 		var tl: Label= r.get_node("Tier")
 		tl.text= EfectosTrinket.NOMBRES_TIER[t.tier]
-		tl.add_theme_color_override("font_color", EfectosTrinket.color_tier(t.tier).darkened(0.25))
+		tl.add_theme_color_override("font_color", EfectosTrinket.color_tier(t.tier).lightened(0.15))
 		var pl: Label= r.get_node("Precio")
 		pl.text ="%d$" % precio(t)
-		pl.add_theme_color_override("font_color", EstiloUI.TEXTO if precio(t)<= Estado.dinero else Color("c03028"))
+		pl.add_theme_color_override("font_color", EstiloUI.TEXTO if precio(t)<= Estado.dinero else Color("f07060"))
 	$Lista/Vacio.visible= stock.is_empty()
 	cursor_lbl.visible =not stock.is_empty()
 	if stock.is_empty():

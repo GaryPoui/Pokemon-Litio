@@ -41,12 +41,12 @@ func _ready() -> void:
 	for lado in [izq, der]:
 		EstiloUI.label(lado.get_node("Nombre"), 9)
 		EstiloUI.fuente_batalla(lado.get_node("Nombre"))
-		EstiloUI.label(lado.get_node("Datos"), 8, Color("50607a"))
+		EstiloUI.label(lado.get_node("Datos"), 8, EstiloUI.TENUE)
 		EstiloUI.fuente_batalla(lado.get_node("Datos"))
 		EstiloUI.label(lado.get_node("Desc"), 8)
 		EstiloUI.fuente_batalla(lado.get_node("Desc"))
 		lado.get_node("Desc").add_theme_constant_override("line_spacing", -3)
-	$Detalles/Separador.color= Color("a8adc0")
+	$Detalles/Separador.color= Color("5a6c90")
 	for n in _capas():
 		n.modulate.a =0.0
 

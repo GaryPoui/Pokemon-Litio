@@ -78,11 +78,11 @@ func _ready() -> void:
 	EstiloUI.label(mensaje, 9, Color.WHITE)
 	EstiloUI.fuente_batalla(mensaje)
 	for panel in [caja_rival, caja_jugador]:
-		EstiloUI.label(panel.get_node("Nombre"), 9)
+		EstiloUI.label(panel.get_node("Nombre"), 9, EstiloUI.TEXTO_OSCURO)
 		EstiloUI.fuente_batalla(panel.get_node("Nombre"))
-		EstiloUI.label(panel.get_node("Genero"), 9)
+		EstiloUI.label(panel.get_node("Genero"), 9, EstiloUI.TEXTO_OSCURO)
 		for n in ["Nivel", "Estado"]:
-			EstiloUI.label(panel.get_node(n), 8)
+			EstiloUI.label(panel.get_node(n), 8, EstiloUI.TEXTO_OSCURO)
 			EstiloUI.fuente_batalla(panel.get_node(n))
 		panel.get_node("Estado").add_theme_color_override("font_color", Color("c03028"))
 		var ps: Label= panel.get_node("PS")

@@ -66,6 +66,6 @@ func _actualizar() -> void:
 	if Estado.capturados.has(e.id):
 		for k in e.tipos.size():
 			detalle.add_child(EstiloUI.insignia_tipo(e.tipos[k], Vector2(6+ k* (EstiloUI.ANCHO_INSIGNIA+ 4), 18)))
-		detalle.add_child(EstiloUI.nuevo_label("Capturado", 7, Vector2(6, 34), Color("2a8a3a")))
+		detalle.add_child(EstiloUI.nuevo_label("Capturado", 7, Vector2(6, 34), Color("78d890")))
 	else:
-		detalle.add_child(EstiloUI.nuevo_label("Solo visto", 7, Vector2(6, 34), Color("7a7a7a")))
+		detalle.add_child(EstiloUI.nuevo_label("Solo visto", 7, Vector2(6, 34), EstiloUI.TENUE))

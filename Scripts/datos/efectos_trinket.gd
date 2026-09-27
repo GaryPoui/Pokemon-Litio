@@ -25,6 +25,32 @@ const TOPES :={
 	"grado_torre": [0.0, 2.0],
 }
 
+static func huecos(p: PokemonInstancia) -> Array[String]:
+	var r: Array[String]= []
+	for id in p.trinkets:
+		if not r.has(id):
+			r.append(id)
+	return r
+
+static func puede_equipar(p: PokemonInstancia, id: String) -> String:
+	var t:= BaseDatos.trinket(id)
+	if t== null:
+		return "Ese Trinket no existe."
+	if p.trinkets.has(id):
+		if t.apilado== "no_apila":
+			return "%s ya lleva %s y no se apila." % [p.nombre(), t.nombre]
+		return ""
+	if huecos(p).size()>= MAX_POR_POKEMON:
+		return "%s ya lleva %d Trinkets distintos. Quita uno primero." % [p.nombre(), MAX_POR_POKEMON]
+	return ""
+
+static func quitar_uno(p: PokemonInstancia, id: String) -> bool:
+	var k:= p.trinkets.rfind(id)
+	if k< 0:
+		return false
+	p.trinkets.remove_at(k)
+	return true
+
 static func apilar(t: Trinket, copias: int) -> float:
 	if t== null or copias<= 0:
 		return 0.0

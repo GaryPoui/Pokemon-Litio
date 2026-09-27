@@ -61,7 +61,7 @@ func _al_terminar_paso(celda: Vector2i) -> void:
 			Dialogo.mostrar("El efecto del Repelente se ha terminado.")
 			return
 	var tasa:= encuentros.tasa* (1.0+ EfectosTrinket.total("encuentros", null, Equipo.miembros)) if encuentros!= null else 0.0
-	if encuentros!= null and _es_hierba(celda) and Equipo.primero_util()!= null and rng.randf()< tasa:
+	if encuentros!= null and es_hierba(celda) and Equipo.primero_util()!= null and rng.randf()< tasa:
 		var e:= encuentros.elegir(rng, EfectosTrinket.total("rareza", null, Equipo.miembros))
 		if e== null:
 			return
@@ -70,7 +70,7 @@ func _al_terminar_paso(celda: Vector2i) -> void:
 			return
 		Combate.iniciar_salvaje(e.especie, nivel)
 
-func _es_hierba(celda: Vector2i) -> bool:
+func es_hierba(celda: Vector2i) -> bool:
 	var capa:= get_node_or_null("Decoracion") as TileMapLayer
 	if capa== null:
 		return false

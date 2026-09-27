@@ -38,8 +38,8 @@ func _ready() -> void:
 	$Equipo/Titulo.text= "EQUIPO"
 	$Caja/Titulo.text ="CAJA"
 	EstiloUI.label(nombre, 9)
-	EstiloUI.label(ayuda, 6, Color("50607a"))
-	EstiloUI.label($Caja/Flechas, 6, Color("50607a"))
+	EstiloUI.label(ayuda, 6, EstiloUI.TENUE)
+	EstiloUI.label($Caja/Flechas, 6, EstiloUI.TENUE)
 	var m:= StyleBoxFlat.new()
 	m.bg_color= Color(0, 0, 0, 0)
 	m.set_border_width_all(2)
@@ -57,9 +57,9 @@ func _hueco(padre: Panel, pos: Vector2) -> Panel:
 	h.position= pos
 	h.size =TAM_CELDA
 	var st:= StyleBoxFlat.new()
-	st.bg_color= Color("e4e6ee")
+	st.bg_color= Color("2a3448")
 	st.set_border_width_all(1)
-	st.border_color =Color("a8adc0")
+	st.border_color =Color("5a6c90")
 	st.set_corner_radius_all(3)
 	h.add_theme_stylebox_override("panel", st)
 	var ic:= Sprite2D.new()

@@ -48,10 +48,10 @@ func _ready() -> void:
 	posiciones.resize(categories.size())
 	for i in FILAS:
 		var f: Control= get_node("Pantalla/Lista/F%d" % i)
-		EstiloUI.label(f.get_node("Nombre"), 9)
-		EstiloUI.label(f.get_node("Cantidad"), 9)
+		EstiloUI.label(f.get_node("Nombre"), 9, EstiloUI.TEXTO_OSCURO)
+		EstiloUI.label(f.get_node("Cantidad"), 9, EstiloUI.TEXTO_OSCURO)
 		filas.append(f)
-	EstiloUI.label(nombre_bolsillo, 9)
+	EstiloUI.label(nombre_bolsillo, 9, EstiloUI.TEXTO_OSCURO)
 	EstiloUI.label(footer_label, 9, Color.WHITE)
 	action_panel.add_theme_stylebox_override("panel", EstiloUI.panel())
 	bolsa_y= bolsa.position.y

@@ -1,10 +1,15 @@
 class_name EstiloUI
 extends RefCounted
 
-const TEXTO:= Color("383838")
-const SOMBRA :=Color("d0d0c8")
-const FONDO:= Color("f8f8f8")
-const BORDE :=Color("3a4a6a")
+const TEXTO:= Color("f0f2f6")
+const SOMBRA :=Color("141a26")
+const FONDO:= Color(0.09, 0.11, 0.16, 0.94)
+const BORDE :=Color("8aa0c8")
+const TENUE:= Color("9fb0cc")
+const TEXTO_OSCURO :=Color("383838")
+const SOMBRA_CLARA:= Color("d0d0c8")
+const FONDO_CLARO :=Color("f8f8f8")
+const BORDE_CLARO:= Color("3a4a6a")
 const COLORES_TIPO:= {
 	"normal": "a8a878", "fuego": "f08030", "agua": "6890f0", "planta": "78c850",
 	"electrico": "f8d030", "hielo": "98d8d8", "lucha": "c03028", "veneno": "a040a0",
@@ -17,6 +22,7 @@ const ANCHO_INSIGNIA:= 48
 const FUENTE_NORMAL:= preload("res://Assets/Fuentes/TruthAndIdeals.ttf")
 const FUENTE_PEQUENA :=preload("res://Assets/Fuentes/SmallTruths.ttf")
 const FUENTE_BATALLA:= preload("res://Assets/Fuentes/FightingIdeals.ttf")
+const MADERA :=preload("res://Assets/Botones/boton_madera_1x.png")
 
 static func panel(fondo: Color= FONDO, borde: Color= BORDE) -> StyleBoxFlat:
 	var e:= StyleBoxFlat.new()
@@ -25,6 +31,25 @@ static func panel(fondo: Color= FONDO, borde: Color= BORDE) -> StyleBoxFlat:
 	e.border_color =borde
 	e.set_corner_radius_all(3)
 	return e
+
+static func madera() -> StyleBoxTexture:
+	var s:= StyleBoxTexture.new()
+	s.texture= MADERA
+	s.texture_margin_left =2
+	s.texture_margin_right= 2
+	s.texture_margin_top =3
+	s.texture_margin_bottom= 4
+	s.axis_stretch_horizontal= StyleBoxTexture.AXIS_STRETCH_MODE_TILE_FIT
+	s.axis_stretch_vertical =StyleBoxTexture.AXIS_STRETCH_MODE_TILE_FIT
+	return s
+
+static func hoja() -> StyleBoxFlat:
+	var s:= StyleBoxFlat.new()
+	s.bg_color= Color(0.05, 0.06, 0.09, 0.84)
+	s.set_border_width_all(1)
+	s.border_color =Color("2a1a10")
+	s.set_corner_radius_all(3)
+	return s
 
 static func fuente(c: Control, tam: int) -> void:
 	if tam>= 16:
@@ -44,7 +69,7 @@ static func fuente_batalla(c: Control) -> void:
 static func label(l: Label, tam: int, color: Color= TEXTO) -> void:
 	fuente(l, tam)
 	l.add_theme_color_override("font_color", color)
-	l.add_theme_color_override("font_shadow_color", SOMBRA if color== TEXTO else Color(0, 0, 0, 0.35))
+	l.add_theme_color_override("font_shadow_color", SOMBRA if color== TEXTO else (SOMBRA_CLARA if color== TEXTO_OSCURO else Color(0, 0, 0, 0.45)))
 	l.add_theme_constant_override("shadow_offset_x", 1)
 	l.add_theme_constant_override("shadow_offset_y", 1)
 

@@ -13,8 +13,8 @@ func crear_equipo(rng: RandomNumberGenerator= null) -> Array[PokemonInstancia]:
 	var lista: Array[PokemonInstancia]= []
 	for m in miembros:
 		var p:= PokemonInstancia.crear(m.especie, m.nivel_min, rng)
-		for id in m.trinkets.slice(0, EfectosTrinket.MAX_POR_POKEMON):
-			if BaseDatos.trinket(id)!= null:
+		for id in m.trinkets:
+			if EfectosTrinket.puede_equipar(p, id)== "":
 				p.trinkets.append(id)
 		lista.append(p)
 	return lista

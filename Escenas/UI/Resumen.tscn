@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dfps2kvnpdl28" path="res://Scripts/ui/resumen.gd" id="1_6snla"]
 [ext_resource type="Script" uid="uid://leuk4t8cgf1b" path="res://Scripts/batalla/sprite_pokemon.gd" id="1_kj32k"]
+[ext_resource type="Texture2D" uid="uid://dmapnvxj68xo4" path="res://Assets/Fondos/resumen.png" id="2_6anry"]
 
 [node name="Resumen" type="CanvasLayer" unique_id=1266628236]
 script = ExtResource("1_6snla")
@@ -11,29 +12,49 @@ offset_right = 256.0
 offset_bottom = 192.0
 color = Color(0.36, 0.56, 0.78, 1)
 
+[node name="Papel" type="TextureRect" parent="." unique_id=1957016065]
+offset_right = 256.0
+offset_bottom = 192.0
+mouse_filter = 2
+texture = ExtResource("2_6anry")
+
 [node name="Izq" type="Panel" parent="." unique_id=1799005603]
 offset_left = 4.0
 offset_top = 4.0
 offset_right = 100.0
 offset_bottom = 188.0
 
+[node name="Escenario" type="Panel" parent="." unique_id=588133917]
+offset_left = 12.0
+offset_top = 24.0
+offset_right = 92.0
+offset_bottom = 110.0
+mouse_filter = 2
+
 [node name="Sprite" type="Sprite2D" parent="." unique_id=2046525836]
-position = Vector2(52, 110)
+position = Vector2(52, 104)
 script = ExtResource("1_kj32k")
 
 [node name="DatosIzq" type="Control" parent="." unique_id=621864493]
 layout_mode = 3
 anchors_preset = 0
 offset_left = 4.0
-offset_top = 124.0
+offset_top = 4.0
 offset_right = 100.0
-offset_bottom = 164.0
+offset_bottom = 188.0
 
 [node name="Der" type="Panel" parent="." unique_id=543964891]
 offset_left = 104.0
 offset_top = 4.0
 offset_right = 252.0
 offset_bottom = 188.0
+
+[node name="Hoja" type="Panel" parent="." unique_id=2072158749]
+offset_left = 110.0
+offset_top = 24.0
+offset_right = 246.0
+offset_bottom = 182.0
+mouse_filter = 2
 
 [node name="Titulo" type="Label" parent="." unique_id=1828095901]
 offset_left = 110.0
@@ -45,7 +66,16 @@ horizontal_alignment = 1
 [node name="Contenido" type="Control" parent="." unique_id=129816084]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 104.0
-offset_top = 24.0
-offset_right = 252.0
-offset_bottom = 184.0
+offset_left = 112.0
+offset_top = 26.0
+offset_right = 244.0
+offset_bottom = 180.0
+
+[node name="Pestanas" type="Control" parent="." unique_id=237785809]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 111.0
+offset_top = 7.0
+offset_right = 247.0
+offset_bottom = 21.0
+mouse_filter = 2

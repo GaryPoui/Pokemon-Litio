@@ -240,7 +240,7 @@ anchors_preset = 0
 offset_left = 6.0
 offset_top = 4.0
 offset_right = 118.0
-offset_bottom = 64.0
+offset_bottom = 68.0
 
 [node name="Tipo" type="TextureRect" parent="Detalles/Izq" unique_id=900502045]
 layout_mode = 0
@@ -273,7 +273,7 @@ offset_bottom = 27.0
 layout_mode = 0
 offset_top = 23.0
 offset_right = 112.0
-offset_bottom = 60.0
+offset_bottom = 64.0
 autowrap_mode = 3
 clip_text = true
 
@@ -282,7 +282,7 @@ anchors_preset = 0
 offset_left = 130.0
 offset_top = 4.0
 offset_right = 242.0
-offset_bottom = 64.0
+offset_bottom = 68.0
 
 [node name="Tipo" type="TextureRect" parent="Detalles/Der" unique_id=1830181563]
 layout_mode = 0
@@ -315,6 +315,6 @@ offset_bottom = 27.0
 layout_mode = 0
 offset_top = 23.0
 offset_right = 112.0
-offset_bottom = 60.0
+offset_bottom = 64.0
 autowrap_mode = 3
 clip_text = true

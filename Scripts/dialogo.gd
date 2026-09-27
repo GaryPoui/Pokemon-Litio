@@ -35,9 +35,10 @@ func _ready() -> void:
 	estilo.border_color= Color("3a4a6a")
 	estilo.set_corner_radius_all(3)
 	caja.add_theme_stylebox_override("panel", estilo)
-	caja_opciones.add_theme_stylebox_override("panel", EstiloUI.panel())
+	caja_opciones.add_theme_stylebox_override("panel", EstiloUI.panel(EstiloUI.FONDO_CLARO, EstiloUI.BORDE_CLARO))
+	lista.color= EstiloUI.TEXTO_OSCURO
 	caja_opciones.visible= false
-	EstiloUI.label(texto, 9)
+	EstiloUI.label(texto, 9, EstiloUI.TEXTO_OSCURO)
 	var zona:= texto.get_rect()
 	var ventana:= Control.new()
 	ventana.name= "Ventana"

@@ -11,18 +11,19 @@ var opciones: Array =[]
 var cursor:= 0
 var etiquetas: Array[Label]= []
 var flecha: Label
+var color :Color= EstiloUI.TEXTO
 
 func poner(lista: Array, inicio: int= 0) -> void:
 	for l in etiquetas:
 		l.queue_free()
 	etiquetas.clear()
 	if flecha== null:
-		flecha= EstiloUI.nuevo_label("▶", 6, Vector2.ZERO)
+		flecha= EstiloUI.nuevo_label("▶", 6, Vector2.ZERO, color)
 		add_child(flecha)
 	opciones= lista
 	var ancho:= size.x/ columnas
 	for i in lista.size():
-		var l:= EstiloUI.nuevo_label(str(lista[i]), tam_fuente, _pos_fila(i, ancho)+ Vector2(ANCHO_CURSOR, 0))
+		var l:= EstiloUI.nuevo_label(str(lista[i]), tam_fuente, _pos_fila(i, ancho)+ Vector2(ANCHO_CURSOR, 0), color)
 		add_child(l)
 		etiquetas.append(l)
 	cursor =clampi(inicio, 0, maxi(0, lista.size()- 1))

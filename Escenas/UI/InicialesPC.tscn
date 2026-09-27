@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://brj3a0288m1uk"]
 
 [ext_resource type="Script" uid="uid://dohdk3d8txq4a" path="res://Scripts/ui/iniciales_pc.gd" id="1_a2fc1"]
-[ext_resource type="Texture2D" uid="uid://cf7w844elxr8i" path="res://Assets/Menus-Equipo/fondo.png" id="2_utc02"]
+[ext_resource type="Texture2D" uid="uid://celj80prda7m8" path="res://Assets/Fondos/pc.png" id="2_mwkbv"]
 [ext_resource type="Script" uid="uid://leuk4t8cgf1b" path="res://Scripts/batalla/sprite_pokemon.gd" id="3_mwkbv"]
 
 [node name="InicialesPC" type="CanvasLayer" unique_id=849143534]
@@ -10,7 +10,7 @@ script = ExtResource("1_a2fc1")
 [node name="Fondo" type="TextureRect" parent="." unique_id=568125681]
 offset_right = 256.0
 offset_bottom = 192.0
-texture = ExtResource("2_utc02")
+texture = ExtResource("2_mwkbv")
 
 [node name="Cabecera" type="Panel" parent="." unique_id=2035831845]
 offset_left = 4.0

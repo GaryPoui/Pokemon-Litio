@@ -18,6 +18,8 @@ Pokémon Litio es un fan game sin fines de lucro. Pokémon y sus personajes son 
 - Íconos de menú de Pokémon de 1.ª a 4.ª generación: hojas de Pokémon Platino ripeadas por spaceemotion (The Spriters Resource).
 - Interior del Centro Pokémon y sprite de la Enfermera Joy: Pokémon Diamante/Perla, ripeado por Gamedude (The Spriters Resource).
 - Exterior del Centro Pokémon: modelo 3D de Pokémon Diamante/Perla subido por Cheesy Mac n Cheese a The Models Resource; renderizado en 2D para este proyecto.
+- Fondos de menús (fondos de Caja de Pokémon Negro/Blanco): Barubary (The Spriters Resource).
+- Hierba alta y su efecto al pisarla: texturas de la Ruta 1 de Pokémon HeartGold/SoulSilver, subidas por Kuramapika1 a The Models Resource.
 - Escenario de combate (campo de hierba y plataformas): modelos 3D "Battle Backgrounds" de Pokémon Negro 2/Blanco 2, subidos por Snivy a The Models Resource; renderizados a 256×192 para este proyecto.
 
 ## Audio

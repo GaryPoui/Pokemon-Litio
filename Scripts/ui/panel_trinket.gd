@@ -1,6 +1,6 @@
 extends Panel
 
-const GRIS:= Color("8c8c8c")
+const GRIS:= Color("a4adbf")
 
 @onready var nombre: Label= $Nombre
 @onready var tier_lbl: Label =$Tier
@@ -28,7 +28,7 @@ func mostrar(t: Trinket, extra: String= "") -> void:
 		return
 	nombre.text= t.nombre
 	tier_lbl.text ="%s · %s" % [EfectosTrinket.NOMBRES_TIER[t.tier], "Portador" if t.alcance== "portador" else "Equipo"]
-	tier_lbl.add_theme_color_override("font_color", EfectosTrinket.color_tier(t.tier).darkened(0.25))
+	tier_lbl.add_theme_color_override("font_color", EfectosTrinket.color_tier(t.tier).lightened(0.15))
 	texto.text= t.descripcion
 	apilado.text =EfectosTrinket.texto_apilado(t)+ (" "+ extra if extra!= "" else "")
 	_ajustar()

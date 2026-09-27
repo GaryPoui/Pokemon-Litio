@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 signal paso_terminado(celda: Vector2i)
+signal paso_iniciado(destino: Vector2i, direccion: Vector2)
+signal colocado
 
 @export var move_speed: float =4.0
 @export var run_multiplier: float= 2.0
@@ -59,6 +61,7 @@ func colocar(pos: Vector2, direccion: Vector2) -> void:
 	turn_timer= 0.0
 	last_direction =direccion
 	_set_idle()
+	colocado.emit()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if not event.is_action_pressed("aceptar") or is_moving or _bloqueado():
@@ -133,6 +136,7 @@ func _try_start_move(delta: float, chained: bool) -> void:
 	target_position= position +motion
 	largo_paso= motion.length()
 	is_moving =true
+	paso_iniciado.emit(celda()+ Vector2i(direction), direction)
 	_play_move_animation(direction)
 
 func _move_towards_target(delta: float) -> void:
