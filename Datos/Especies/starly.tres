@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://ea6661cen24x"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_wc43w"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_6b54j"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_ftuql"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="4_17wh0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wing_attack.tres" id="5_bv7ec"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_team.tres" id="6_dx5do"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/endeavor.tres" id="7_cyqe8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlwind.tres" id="8_2x0la"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aerial_ace.tres" id="9_lug3d"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="10_vtxrw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="11_7hwjx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/brave_bird.tres" id="12_td031"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/final_gambit.tres" id="13_32d0l"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_voeyx"]
+[ext_resource type="Texture2D" uid="uid://v74logqamfs" path="res://Assets/Pokemones/batalla/starly_espalda.png" id="15_pels7"]
+[ext_resource type="Texture2D" uid="uid://ckoeafen8183h" path="res://Assets/Pokemones/batalla/starly_frente.png" id="16_e1id8"]
+
+[sub_resource type="Resource" id="Resource_e1mgh"]
+script = ExtResource("1_wc43w")
+movimiento = ExtResource("2_6b54j")
+
+[sub_resource type="Resource" id="Resource_bpubc"]
+script = ExtResource("1_wc43w")
+movimiento = ExtResource("3_ftuql")
+
+[sub_resource type="Resource" id="Resource_32cas"]
+script = ExtResource("1_wc43w")
+nivel = 5
+movimiento = ExtResource("4_17wh0")
+
+[sub_resource type="Resource" id="Resource_4mld3"]
+script = ExtResource("1_wc43w")
+nivel = 9
+movimiento = ExtResource("5_bv7ec")
+
+[sub_resource type="Resource" id="Resource_ubcv5"]
+script = ExtResource("1_wc43w")
+nivel = 13
+movimiento = ExtResource("6_dx5do")
+
+[sub_resource type="Resource" id="Resource_pfkjd"]
+script = ExtResource("1_wc43w")
+nivel = 17
+movimiento = ExtResource("7_cyqe8")
+
+[sub_resource type="Resource" id="Resource_a26ha"]
+script = ExtResource("1_wc43w")
+nivel = 21
+movimiento = ExtResource("8_2x0la")
+
+[sub_resource type="Resource" id="Resource_ifsr0"]
+script = ExtResource("1_wc43w")
+nivel = 25
+movimiento = ExtResource("9_lug3d")
+
+[sub_resource type="Resource" id="Resource_q30db"]
+script = ExtResource("1_wc43w")
+nivel = 29
+movimiento = ExtResource("10_vtxrw")
+
+[sub_resource type="Resource" id="Resource_0trq1"]
+script = ExtResource("1_wc43w")
+nivel = 33
+movimiento = ExtResource("11_7hwjx")
+
+[sub_resource type="Resource" id="Resource_fe8fx"]
+script = ExtResource("1_wc43w")
+nivel = 37
+movimiento = ExtResource("12_td031")
+
+[sub_resource type="Resource" id="Resource_jvw4d"]
+script = ExtResource("1_wc43w")
+nivel = 41
+movimiento = ExtResource("13_32d0l")
+
+[resource]
+script = ExtResource("14_voeyx")
+id = "starly"
+numero = 396
+nombre = "Starly"
+tipos = ["normal", "volador"]
+ps = 40
+ataque = 55
+defensa = 30
+at_esp = 30
+def_esp = 30
+velocidad = 60
+exp_base = 49
+ratio_captura = 255
+crecimiento = "medium-slow"
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciona_a = "staravia"
+nivel_evolucion = 14
+aprende = Array[ExtResource("1_wc43w")]([SubResource("Resource_e1mgh"), SubResource("Resource_bpubc"), SubResource("Resource_32cas"), SubResource("Resource_4mld3"), SubResource("Resource_ubcv5"), SubResource("Resource_pfkjd"), SubResource("Resource_a26ha"), SubResource("Resource_ifsr0"), SubResource("Resource_q30db"), SubResource("Resource_0trq1"), SubResource("Resource_fe8fx"), SubResource("Resource_jvw4d")])
+sprite_frente = ExtResource("16_e1id8")
+sprite_espalda = ExtResource("15_pels7")
+cuadros_frente = 61
+cuadros_espalda = 61
+fps_sprite = 11.3

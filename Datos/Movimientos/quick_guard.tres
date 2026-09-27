@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_gjijp"]
+
+[resource]
+script = ExtResource("1_gjijp")
+id = "quick_guard"
+nombre = "Anticipo"
+tipo = "lucha"
+categoria = "estado"
+precision = 0
+pp = 15
+prioridad = 3
+objetivo = "users-field"
+meta = "field-effect"
+descripcion = "Se protege a sí mismo y a sus aliados de movimientos con prioridad."

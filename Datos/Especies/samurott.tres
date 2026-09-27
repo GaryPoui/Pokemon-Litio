@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bmo54pdsgqqig"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_0v2gn"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_0v2gn"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/megahorn.tres" id="2_s0hjl"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_crfkc"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="4_uco8n"]
@@ -18,9 +18,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/retaliate.tres" id="16_ofjgx"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/swords_dance.tres" id="17_afvdg"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="18_drlyv"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="19_j8x1b"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/samurott_espalda.png" id="20_kwy7d"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/samurott_frente.png" id="21_d8rtw"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="19_j8x1b"]
+[ext_resource type="Texture2D" uid="uid://b7eupbcxlsh56" path="res://Assets/Pokemones/batalla/samurott_espalda.png" id="20_kwy7d"]
+[ext_resource type="Texture2D" uid="uid://b53e4c5hmvupu" path="res://Assets/Pokemones/batalla/samurott_frente.png" id="21_d8rtw"]
 
 [sub_resource type="Resource" id="Resource_cpa6k"]
 script = ExtResource("1_0v2gn")
@@ -122,7 +122,7 @@ script = ExtResource("19_j8x1b")
 id = "samurott"
 numero = 503
 nombre = "Samurott"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 95
 ataque = 100
 defensa = 85

@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://o204x2782dib"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_nh3el"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_11u3o"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="3_f7lab"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_3fudd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="5_v3i8o"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bide.tres" id="6_iwk6i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_shot.tres" id="7_n4xj2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/foresight.tres" id="8_s6noc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_bomb.tres" id="9_hdf21"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="10_tny8d"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/muddy_water.tres" id="11_h4h2j"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/protect.tres" id="12_xlarq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="13_e1c0y"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/endeavor.tres" id="14_gyjwr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hammer_arm.tres" id="15_sgrj1"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_rxc0j"]
+[ext_resource type="Texture2D" uid="uid://irj6jmomm2pd" path="res://Assets/Pokemones/batalla/swampert_espalda.png" id="17_43ngk"]
+[ext_resource type="Texture2D" uid="uid://bnu8g6v33oeoo" path="res://Assets/Pokemones/batalla/swampert_frente.png" id="18_2aiir"]
+
+[sub_resource type="Resource" id="Resource_uf82y"]
+script = ExtResource("1_nh3el")
+movimiento = ExtResource("2_11u3o")
+
+[sub_resource type="Resource" id="Resource_0vvym"]
+script = ExtResource("1_nh3el")
+movimiento = ExtResource("3_f7lab")
+
+[sub_resource type="Resource" id="Resource_cxjix"]
+script = ExtResource("1_nh3el")
+movimiento = ExtResource("4_3fudd")
+
+[sub_resource type="Resource" id="Resource_msjn4"]
+script = ExtResource("1_nh3el")
+movimiento = ExtResource("5_v3i8o")
+
+[sub_resource type="Resource" id="Resource_frhhv"]
+script = ExtResource("1_nh3el")
+nivel = 6
+movimiento = ExtResource("3_f7lab")
+
+[sub_resource type="Resource" id="Resource_v1jqp"]
+script = ExtResource("1_nh3el")
+nivel = 10
+movimiento = ExtResource("5_v3i8o")
+
+[sub_resource type="Resource" id="Resource_03so5"]
+script = ExtResource("1_nh3el")
+nivel = 15
+movimiento = ExtResource("6_iwk6i")
+
+[sub_resource type="Resource" id="Resource_7wxsw"]
+script = ExtResource("1_nh3el")
+nivel = 16
+movimiento = ExtResource("7_n4xj2")
+
+[sub_resource type="Resource" id="Resource_2r5tv"]
+script = ExtResource("1_nh3el")
+nivel = 20
+movimiento = ExtResource("8_s6noc")
+
+[sub_resource type="Resource" id="Resource_khmxn"]
+script = ExtResource("1_nh3el")
+nivel = 25
+movimiento = ExtResource("9_hdf21")
+
+[sub_resource type="Resource" id="Resource_sq3ix"]
+script = ExtResource("1_nh3el")
+nivel = 31
+movimiento = ExtResource("10_tny8d")
+
+[sub_resource type="Resource" id="Resource_n0acx"]
+script = ExtResource("1_nh3el")
+nivel = 39
+movimiento = ExtResource("11_h4h2j")
+
+[sub_resource type="Resource" id="Resource_2vil8"]
+script = ExtResource("1_nh3el")
+nivel = 46
+movimiento = ExtResource("12_xlarq")
+
+[sub_resource type="Resource" id="Resource_8bw6a"]
+script = ExtResource("1_nh3el")
+nivel = 52
+movimiento = ExtResource("13_e1c0y")
+
+[sub_resource type="Resource" id="Resource_d265a"]
+script = ExtResource("1_nh3el")
+nivel = 61
+movimiento = ExtResource("14_gyjwr")
+
+[sub_resource type="Resource" id="Resource_unrwa"]
+script = ExtResource("1_nh3el")
+nivel = 69
+movimiento = ExtResource("15_sgrj1")
+
+[resource]
+script = ExtResource("16_rxc0j")
+id = "swampert"
+numero = 260
+nombre = "Swampert"
+tipos = ["agua", "tierra"]
+ps = 100
+ataque = 110
+defensa = 90
+at_esp = 85
+def_esp = 90
+velocidad = 60
+exp_base = 241
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 3
+}
+aprende = Array[ExtResource("1_nh3el")]([SubResource("Resource_uf82y"), SubResource("Resource_0vvym"), SubResource("Resource_cxjix"), SubResource("Resource_msjn4"), SubResource("Resource_frhhv"), SubResource("Resource_v1jqp"), SubResource("Resource_03so5"), SubResource("Resource_7wxsw"), SubResource("Resource_2r5tv"), SubResource("Resource_khmxn"), SubResource("Resource_sq3ix"), SubResource("Resource_n0acx"), SubResource("Resource_2vil8"), SubResource("Resource_8bw6a"), SubResource("Resource_d265a"), SubResource("Resource_unrwa")])
+sprite_frente = ExtResource("18_2aiir")
+sprite_espalda = ExtResource("17_43ngk")
+cuadros_frente = 46
+cuadros_espalda = 46
+fps_sprite = 7.42

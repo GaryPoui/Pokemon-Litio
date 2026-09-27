@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://d2f66lc3rn56u"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ptung"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ptung"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_22m8x"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="3_vyqf6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="4_sd08m"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/facade.tres" id="14_vive3"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tailwind.tres" id="15_tflt4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sky_attack.tres" id="16_5sjdi"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_yrlym"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/unfezant_espalda.png" id="18_5vjtm"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/unfezant_frente.png" id="19_pyd66"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_yrlym"]
+[ext_resource type="Texture2D" uid="uid://dpqqfqfswgbqx" path="res://Assets/Pokemones/batalla/unfezant_espalda.png" id="18_5vjtm"]
+[ext_resource type="Texture2D" uid="uid://bnunbcq56ajs7" path="res://Assets/Pokemones/batalla/unfezant_frente.png" id="19_pyd66"]
 
 [sub_resource type="Resource" id="Resource_6xn2k"]
 script = ExtResource("1_ptung")
@@ -111,7 +111,7 @@ script = ExtResource("17_yrlym")
 id = "unfezant"
 numero = 521
 nombre = "Unfezant"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 80
 ataque = 115
 defensa = 80

@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dis0x0u2ujd1r"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_m1ogp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/splash.tres" id="2_68roq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_k3ygm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="4_tbouc"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="5_l11i5"]
+[ext_resource type="Texture2D" uid="uid://m7inwo5lqrnt" path="res://Assets/Pokemones/batalla/magikarp_espalda.png" id="6_2vp6b"]
+[ext_resource type="Texture2D" uid="uid://bddqyparyo84w" path="res://Assets/Pokemones/batalla/magikarp_frente.png" id="7_nrmd2"]
+
+[sub_resource type="Resource" id="Resource_bo4xs"]
+script = ExtResource("1_m1ogp")
+movimiento = ExtResource("2_68roq")
+
+[sub_resource type="Resource" id="Resource_hy42u"]
+script = ExtResource("1_m1ogp")
+nivel = 15
+movimiento = ExtResource("3_k3ygm")
+
+[sub_resource type="Resource" id="Resource_hwi6f"]
+script = ExtResource("1_m1ogp")
+nivel = 30
+movimiento = ExtResource("4_tbouc")
+
+[resource]
+script = ExtResource("5_l11i5")
+id = "magikarp"
+numero = 129
+nombre = "Magikarp"
+tipos = ["agua"]
+ps = 20
+ataque = 10
+defensa = 55
+at_esp = 15
+def_esp = 20
+velocidad = 80
+exp_base = 40
+ratio_captura = 255
+crecimiento = "slow"
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciona_a = "gyarados"
+nivel_evolucion = 20
+aprende = Array[ExtResource("1_m1ogp")]([SubResource("Resource_bo4xs"), SubResource("Resource_hy42u"), SubResource("Resource_hwi6f")])
+sprite_frente = ExtResource("7_nrmd2")
+sprite_espalda = ExtResource("6_2vp6b")
+cuadros_frente = 92
+cuadros_espalda = 90
+fps_sprite = 15.33

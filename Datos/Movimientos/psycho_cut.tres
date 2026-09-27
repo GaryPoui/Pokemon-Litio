@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_xyqo8"]
+
+[resource]
+script = ExtResource("1_xyqo8")
+id = "psycho_cut"
+nombre = "Psicocorte"
+tipo = "psiquico"
+poder = 70
+pp = 20
+descripcion = "Ataca al objetivo con cuchillas formadas por energía psíquica. Suele ser crítico."
+critico = 1

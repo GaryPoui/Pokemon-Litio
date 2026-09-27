@@ -92,6 +92,7 @@ script = ExtResource("16_7ifi4")
 id = "tympole"
 numero = 535
 nombre = "Tympole"
+tipos = ["agua"]
 defensa = 40
 def_esp = 40
 velocidad = 64

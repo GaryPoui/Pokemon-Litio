@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://h4x6u6541sna"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_s6bvc"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_s6bvc"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_c6ipf"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_xo2o5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/vine_whip.tres" id="4_ti26a"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/wring_out.tres" id="14_kghbb"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/gastro_acid.tres" id="15_uniyr"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="16_bm6t8"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_6wior"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/servine_espalda.png" id="18_f5g12"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/servine_frente.png" id="19_pagab"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_6wior"]
+[ext_resource type="Texture2D" uid="uid://7x56e7ucbopp" path="res://Assets/Pokemones/batalla/servine_espalda.png" id="18_f5g12"]
+[ext_resource type="Texture2D" uid="uid://bj1npl4txm44y" path="res://Assets/Pokemones/batalla/servine_frente.png" id="19_pagab"]
 
 [sub_resource type="Resource" id="Resource_o07li"]
 script = ExtResource("1_s6bvc")
@@ -111,7 +111,7 @@ script = ExtResource("17_6wior")
 id = "servine"
 numero = 496
 nombre = "Servine"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 60
 ataque = 60
 defensa = 75

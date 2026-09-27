@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bfpbsnu2mtvd1"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_3e06p"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="2_0oolj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_kpp83"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="4_4jtie"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/smokescreen.tres" id="5_vepaa"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dragon_rage.tres" id="6_bonla"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="7_kxk3r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fire_fang.tres" id="8_n2sh3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_burst.tres" id="9_5xtn1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="10_wk2li"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flamethrower.tres" id="11_6ywi8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fire_spin.tres" id="12_2g57s"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/inferno.tres" id="13_nka4q"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_ah1cg"]
+[ext_resource type="Texture2D" uid="uid://drq2f8o6dcoq2" path="res://Assets/Pokemones/batalla/charmeleon_espalda.png" id="15_r6pfn"]
+[ext_resource type="Texture2D" uid="uid://diaxtolcfdf3w" path="res://Assets/Pokemones/batalla/charmeleon_frente.png" id="16_2ddtr"]
+
+[sub_resource type="Resource" id="Resource_3rdwr"]
+script = ExtResource("1_3e06p")
+movimiento = ExtResource("2_0oolj")
+
+[sub_resource type="Resource" id="Resource_a7dni"]
+script = ExtResource("1_3e06p")
+movimiento = ExtResource("3_kpp83")
+
+[sub_resource type="Resource" id="Resource_um5ot"]
+script = ExtResource("1_3e06p")
+movimiento = ExtResource("4_4jtie")
+
+[sub_resource type="Resource" id="Resource_rfkwf"]
+script = ExtResource("1_3e06p")
+nivel = 7
+movimiento = ExtResource("2_0oolj")
+
+[sub_resource type="Resource" id="Resource_n1it3"]
+script = ExtResource("1_3e06p")
+nivel = 10
+movimiento = ExtResource("5_vepaa")
+
+[sub_resource type="Resource" id="Resource_sba25"]
+script = ExtResource("1_3e06p")
+nivel = 17
+movimiento = ExtResource("6_bonla")
+
+[sub_resource type="Resource" id="Resource_qddko"]
+script = ExtResource("1_3e06p")
+nivel = 21
+movimiento = ExtResource("7_kxk3r")
+
+[sub_resource type="Resource" id="Resource_q4og4"]
+script = ExtResource("1_3e06p")
+nivel = 28
+movimiento = ExtResource("8_n2sh3")
+
+[sub_resource type="Resource" id="Resource_nr7eq"]
+script = ExtResource("1_3e06p")
+nivel = 32
+movimiento = ExtResource("9_5xtn1")
+
+[sub_resource type="Resource" id="Resource_174jr"]
+script = ExtResource("1_3e06p")
+nivel = 39
+movimiento = ExtResource("10_wk2li")
+
+[sub_resource type="Resource" id="Resource_hns3u"]
+script = ExtResource("1_3e06p")
+nivel = 43
+movimiento = ExtResource("11_6ywi8")
+
+[sub_resource type="Resource" id="Resource_c1bv7"]
+script = ExtResource("1_3e06p")
+nivel = 50
+movimiento = ExtResource("12_2g57s")
+
+[sub_resource type="Resource" id="Resource_v1i8j"]
+script = ExtResource("1_3e06p")
+nivel = 54
+movimiento = ExtResource("13_nka4q")
+
+[resource]
+script = ExtResource("14_ah1cg")
+id = "charmeleon"
+numero = 5
+nombre = "Charmeleon"
+tipos = ["fuego"]
+ps = 58
+ataque = 64
+defensa = 58
+at_esp = 80
+def_esp = 65
+velocidad = 80
+exp_base = 142
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 1,
+"velocidad": 1
+}
+evoluciona_a = "charizard"
+nivel_evolucion = 36
+aprende = Array[ExtResource("1_3e06p")]([SubResource("Resource_3rdwr"), SubResource("Resource_a7dni"), SubResource("Resource_um5ot"), SubResource("Resource_rfkwf"), SubResource("Resource_n1it3"), SubResource("Resource_sba25"), SubResource("Resource_qddko"), SubResource("Resource_q4og4"), SubResource("Resource_nr7eq"), SubResource("Resource_174jr"), SubResource("Resource_hns3u"), SubResource("Resource_c1bv7"), SubResource("Resource_v1i8j")])
+sprite_frente = ExtResource("16_2ddtr")
+sprite_espalda = ExtResource("15_r6pfn")
+cuadros_frente = 45
+cuadros_espalda = 45

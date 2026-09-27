@@ -87,6 +87,7 @@ script = ExtResource("15_ygho8")
 id = "roggenrola"
 numero = 524
 nombre = "Roggenrola"
+tipos = ["roca"]
 ps = 55
 ataque = 75
 defensa = 85

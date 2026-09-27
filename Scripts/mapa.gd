@@ -3,6 +3,7 @@ extends Node2D
 @export var encuentros: TablaEncuentros
 @export var fondo_batalla: Texture2D
 @export var musica: String= ""
+@export var tam_celda :Vector2i= Vector2i(16, 16)
 
 var rng:= RandomNumberGenerator.new()
 

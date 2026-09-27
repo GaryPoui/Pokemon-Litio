@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_bhjr5"]
+
+[resource]
+script = ExtResource("1_bhjr5")
+id = "poison_powder"
+nombre = "Polvo Veneno"
+tipo = "veneno"
+categoria = "estado"
+precision = 75
+pp = 35
+meta = "ailment"
+descripcion = "Polvo tóxico que envenena al objetivo."
+estado = "poison"

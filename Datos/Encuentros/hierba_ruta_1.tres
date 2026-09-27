@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="TablaEncuentros" format=3 uid="uid://6svba1hths28"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_gje26"]
+[ext_resource type="Resource" uid="uid://c86m72uptg82s" path="res://Datos/Especies/patrat.tres" id="2_q4rgu"]
+[ext_resource type="Resource" uid="uid://b6pbha04f4rs5" path="res://Datos/Especies/lillipup.tres" id="3_fd86j"]
+[ext_resource type="Resource" uid="uid://bmiwu1x2x5dyt" path="res://Datos/Especies/purrloin.tres" id="4_nq0f1"]
+[ext_resource type="Resource" uid="uid://yl1mvo5wxxiq" path="res://Datos/Especies/pidove.tres" id="5_eajw8"]
+[ext_resource type="Resource" uid="uid://ea6661cen24x" path="res://Datos/Especies/starly.tres" id="6_s3toj"]
+[ext_resource type="Resource" uid="uid://dmk0nxneeevy8" path="res://Datos/Especies/bidoof.tres" id="7_yhgy8"]
+[ext_resource type="Resource" uid="uid://dihbcrwtne58v" path="res://Datos/Especies/sewaddle.tres" id="8_4fde7"]
+[ext_resource type="Resource" uid="uid://mboqaox23eoj" path="res://Datos/Especies/minccino.tres" id="9_l7dwa"]
+[ext_resource type="Resource" uid="uid://dbdnn4bovwqhw" path="res://Datos/Especies/woobat.tres" id="10_ch2pm"]
+[ext_resource type="Resource" uid="uid://brha2uhu7dn34" path="res://Datos/Especies/tympole.tres" id="11_55qho"]
+[ext_resource type="Resource" uid="uid://dldekbx8kkmwe" path="res://Datos/Especies/pikachu.tres" id="12_jf28j"]
+[ext_resource type="Resource" uid="uid://d1ayx0kklf0el" path="res://Datos/Especies/eevee.tres" id="13_y7sl5"]
+[ext_resource type="Script" uid="uid://ba384a6evk1rl" path="res://Scripts/datos/tabla_encuentros.gd" id="14_8g1ac"]
+
+[sub_resource type="Resource" id="Resource_f7k4k"]
+script = ExtResource("1_gje26")
+especie = ExtResource("2_q4rgu")
+peso = 28
+
+[sub_resource type="Resource" id="Resource_kb0pq"]
+script = ExtResource("1_gje26")
+especie = ExtResource("3_fd86j")
+peso = 22
+
+[sub_resource type="Resource" id="Resource_fnvy5"]
+script = ExtResource("1_gje26")
+especie = ExtResource("4_nq0f1")
+nivel_min = 3
+peso = 12
+
+[sub_resource type="Resource" id="Resource_lwn6t"]
+script = ExtResource("1_gje26")
+especie = ExtResource("5_eajw8")
+nivel_min = 3
+nivel_max = 5
+
+[sub_resource type="Resource" id="Resource_ny3jv"]
+script = ExtResource("1_gje26")
+especie = ExtResource("6_s3toj")
+nivel_min = 3
+nivel_max = 5
+peso = 8
+
+[sub_resource type="Resource" id="Resource_pwwhs"]
+script = ExtResource("1_gje26")
+especie = ExtResource("7_yhgy8")
+nivel_min = 3
+nivel_max = 5
+peso = 8
+
+[sub_resource type="Resource" id="Resource_fhgl1"]
+script = ExtResource("1_gje26")
+especie = ExtResource("8_4fde7")
+nivel_min = 3
+nivel_max = 5
+peso = 5
+
+[sub_resource type="Resource" id="Resource_vn2i2"]
+script = ExtResource("1_gje26")
+especie = ExtResource("9_l7dwa")
+nivel_min = 3
+nivel_max = 5
+peso = 4
+
+[sub_resource type="Resource" id="Resource_ikj4r"]
+script = ExtResource("1_gje26")
+especie = ExtResource("10_ch2pm")
+nivel_min = 3
+nivel_max = 5
+peso = 3
+
+[sub_resource type="Resource" id="Resource_ayaig"]
+script = ExtResource("1_gje26")
+especie = ExtResource("11_55qho")
+nivel_min = 3
+nivel_max = 5
+peso = 2
+
+[sub_resource type="Resource" id="Resource_akqbn"]
+script = ExtResource("1_gje26")
+especie = ExtResource("12_jf28j")
+nivel_min = 3
+nivel_max = 5
+peso = 2
+
+[sub_resource type="Resource" id="Resource_vtvib"]
+script = ExtResource("1_gje26")
+especie = ExtResource("13_y7sl5")
+nivel_min = 3
+nivel_max = 5
+peso = 1
+
+[resource]
+script = ExtResource("14_8g1ac")
+entradas = Array[ExtResource("1_gje26")]([SubResource("Resource_f7k4k"), SubResource("Resource_kb0pq"), SubResource("Resource_fnvy5"), SubResource("Resource_lwn6t"), SubResource("Resource_ny3jv"), SubResource("Resource_pwwhs"), SubResource("Resource_fhgl1"), SubResource("Resource_vn2i2"), SubResource("Resource_ikj4r"), SubResource("Resource_ayaig"), SubResource("Resource_akqbn"), SubResource("Resource_vtvib")])

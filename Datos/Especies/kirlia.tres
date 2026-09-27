@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cydlih6vmt57u"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_sg7t0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="2_mplwx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_team.tres" id="3_hlf23"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="4_sfs7p"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/teleport.tres" id="5_rl0k1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/lucky_chant.tres" id="6_k667y"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/magical_leaf.tres" id="7_ywf2w"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/heal_pulse.tres" id="8_xo7mr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/calm_mind.tres" id="9_jgkfh"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="10_uka38"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/imprison.tres" id="11_3am8a"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/future_sight.tres" id="12_8gfkf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charm.tres" id="13_j4idc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hypnosis.tres" id="14_ixacp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dream_eater.tres" id="15_jxkwm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stored_power.tres" id="16_nk1tt"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_esrwk"]
+[ext_resource type="Texture2D" uid="uid://kx0av4r5anxc" path="res://Assets/Pokemones/batalla/kirlia_espalda.png" id="18_appk7"]
+[ext_resource type="Texture2D" uid="uid://cow5va2o53ihg" path="res://Assets/Pokemones/batalla/kirlia_frente.png" id="19_373c8"]
+
+[sub_resource type="Resource" id="Resource_ykd3f"]
+script = ExtResource("1_sg7t0")
+movimiento = ExtResource("2_mplwx")
+
+[sub_resource type="Resource" id="Resource_mykgm"]
+script = ExtResource("1_sg7t0")
+movimiento = ExtResource("3_hlf23")
+
+[sub_resource type="Resource" id="Resource_0ttu5"]
+script = ExtResource("1_sg7t0")
+movimiento = ExtResource("4_sfs7p")
+
+[sub_resource type="Resource" id="Resource_v2aa3"]
+script = ExtResource("1_sg7t0")
+movimiento = ExtResource("5_rl0k1")
+
+[sub_resource type="Resource" id="Resource_eje82"]
+script = ExtResource("1_sg7t0")
+nivel = 6
+movimiento = ExtResource("2_mplwx")
+
+[sub_resource type="Resource" id="Resource_vr0hr"]
+script = ExtResource("1_sg7t0")
+nivel = 10
+movimiento = ExtResource("3_hlf23")
+
+[sub_resource type="Resource" id="Resource_8cepi"]
+script = ExtResource("1_sg7t0")
+nivel = 12
+movimiento = ExtResource("5_rl0k1")
+
+[sub_resource type="Resource" id="Resource_nrfvn"]
+script = ExtResource("1_sg7t0")
+nivel = 17
+movimiento = ExtResource("6_k667y")
+
+[sub_resource type="Resource" id="Resource_nycys"]
+script = ExtResource("1_sg7t0")
+nivel = 22
+movimiento = ExtResource("7_ywf2w")
+
+[sub_resource type="Resource" id="Resource_dm2xj"]
+script = ExtResource("1_sg7t0")
+nivel = 25
+movimiento = ExtResource("8_xo7mr")
+
+[sub_resource type="Resource" id="Resource_x8i04"]
+script = ExtResource("1_sg7t0")
+nivel = 31
+movimiento = ExtResource("9_jgkfh")
+
+[sub_resource type="Resource" id="Resource_ogms2"]
+script = ExtResource("1_sg7t0")
+nivel = 36
+movimiento = ExtResource("10_uka38")
+
+[sub_resource type="Resource" id="Resource_ygk51"]
+script = ExtResource("1_sg7t0")
+nivel = 39
+movimiento = ExtResource("11_3am8a")
+
+[sub_resource type="Resource" id="Resource_07lp0"]
+script = ExtResource("1_sg7t0")
+nivel = 45
+movimiento = ExtResource("12_8gfkf")
+
+[sub_resource type="Resource" id="Resource_pmjv6"]
+script = ExtResource("1_sg7t0")
+nivel = 50
+movimiento = ExtResource("13_j4idc")
+
+[sub_resource type="Resource" id="Resource_0ai26"]
+script = ExtResource("1_sg7t0")
+nivel = 53
+movimiento = ExtResource("14_ixacp")
+
+[sub_resource type="Resource" id="Resource_tjb2w"]
+script = ExtResource("1_sg7t0")
+nivel = 59
+movimiento = ExtResource("15_jxkwm")
+
+[sub_resource type="Resource" id="Resource_cn7yw"]
+script = ExtResource("1_sg7t0")
+nivel = 64
+movimiento = ExtResource("16_nk1tt")
+
+[resource]
+script = ExtResource("17_esrwk")
+id = "kirlia"
+numero = 281
+nombre = "Kirlia"
+tipos = ["psiquico"]
+ps = 38
+ataque = 35
+defensa = 35
+at_esp = 65
+def_esp = 55
+exp_base = 97
+ratio_captura = 120
+crecimiento = "slow"
+evs_otorgados = {
+"at_esp": 2
+}
+evoluciona_a = "gardevoir"
+nivel_evolucion = 30
+aprende = Array[ExtResource("1_sg7t0")]([SubResource("Resource_ykd3f"), SubResource("Resource_mykgm"), SubResource("Resource_0ttu5"), SubResource("Resource_v2aa3"), SubResource("Resource_eje82"), SubResource("Resource_vr0hr"), SubResource("Resource_8cepi"), SubResource("Resource_nrfvn"), SubResource("Resource_nycys"), SubResource("Resource_dm2xj"), SubResource("Resource_x8i04"), SubResource("Resource_ogms2"), SubResource("Resource_ygk51"), SubResource("Resource_07lp0"), SubResource("Resource_pmjv6"), SubResource("Resource_0ai26"), SubResource("Resource_tjb2w"), SubResource("Resource_cn7yw")])
+sprite_frente = ExtResource("19_373c8")
+sprite_espalda = ExtResource("18_appk7")
+cuadros_frente = 50
+cuadros_espalda = 50
+fps_sprite = 8.93

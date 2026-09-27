@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_jou7d"]
+
+[resource]
+script = ExtResource("1_jou7d")
+id = "energy_ball"
+nombre = "Energibola"
+tipo = "planta"
+categoria = "especial"
+poder = 80
+meta = "damage-lower"
+descripcion = "Aúna fuerzas de la naturaleza y libera su ataque. Puede disminuir la Defensa Especial del objetivo."
+cambios_stats = {
+"def_esp": -1
+}
+prob_stat = 10

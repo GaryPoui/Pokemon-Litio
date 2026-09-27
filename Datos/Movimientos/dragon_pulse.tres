@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_1c543"]
+
+[resource]
+script = ExtResource("1_1c543")
+id = "dragon_pulse"
+nombre = "Pulso Dragón"
+tipo = "dragon"
+categoria = "especial"
+poder = 90
+descripcion = "Abre mucho la boca y libera una onda de choque que ataca al objetivo."

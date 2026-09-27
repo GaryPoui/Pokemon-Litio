@@ -93,6 +93,7 @@ script = ExtResource("16_0qg4t")
 id = "woobat"
 numero = 527
 nombre = "Woobat"
+tipos = ["psiquico", "volador"]
 ps = 65
 ataque = 45
 defensa = 43

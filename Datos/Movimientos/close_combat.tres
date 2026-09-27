@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_w5c1t"]
+
+[resource]
+script = ExtResource("1_w5c1t")
+id = "close_combat"
+nombre = "A Bocajarro"
+tipo = "lucha"
+poder = 120
+pp = 5
+meta = "damage-raise"
+descripcion = "Lucha abiertamente contra el objetivo sin protegerse. También reduce la Defensa y la Defensa Especial del usuario."
+cambios_stats = {
+"def_esp": -1,
+"defensa": -1
+}
+prob_stat = 100

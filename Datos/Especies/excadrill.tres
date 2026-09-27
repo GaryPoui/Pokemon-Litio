@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dqf85dt3xflkq"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vhtrg"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vhtrg"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="2_jlmox"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mud_sport.tres" id="3_ngc1b"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rapid_spin.tres" id="4_ct65b"]
@@ -17,9 +17,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sandstorm.tres" id="15_2bpia"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/drill_run.tres" id="16_ku224"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fissure.tres" id="17_kmqv7"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_wxr27"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/excadrill_espalda.png" id="19_js3wy"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/excadrill_frente.png" id="20_a0kue"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_wxr27"]
+[ext_resource type="Texture2D" uid="uid://bkvy40pijgpvc" path="res://Assets/Pokemones/batalla/excadrill_espalda.png" id="19_js3wy"]
+[ext_resource type="Texture2D" uid="uid://drgjvmtht7xnj" path="res://Assets/Pokemones/batalla/excadrill_frente.png" id="20_a0kue"]
 
 [sub_resource type="Resource" id="Resource_una18"]
 script = ExtResource("1_vhtrg")
@@ -112,7 +112,7 @@ script = ExtResource("18_wxr27")
 id = "excadrill"
 numero = 530
 nombre = "Excadrill"
-tipos = PackedStringArray("tierra", "acero")
+tipos = ["tierra", "acero"]
 ps = 110
 ataque = 135
 defensa = 60

@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://b6ukdcs5sa0ui"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_1p6dm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="2_jd1p1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_sport.tres" id="3_6ul6b"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rock_polish.tres" id="4_q65in"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="5_0ycvd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rock_throw.tres" id="6_jc8ae"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/magnitude.tres" id="7_1ktds"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rollout.tres" id="8_38m46"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rock_blast.tres" id="9_obgso"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/smack_down.tres" id="10_21tfd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/self_destruct.tres" id="11_m24f1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bulldoze.tres" id="12_0tmlj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stealth_rock.tres" id="13_pec2x"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="14_1wqn1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="15_62lmf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="16_upwp5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="17_lse1f"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_mjy0h"]
+[ext_resource type="Texture2D" uid="uid://wrt0ee0ofl5y" path="res://Assets/Pokemones/batalla/graveler_espalda.png" id="19_bcwei"]
+[ext_resource type="Texture2D" uid="uid://eye846rlpu1i" path="res://Assets/Pokemones/batalla/graveler_frente.png" id="20_0j04l"]
+
+[sub_resource type="Resource" id="Resource_mfs6e"]
+script = ExtResource("1_1p6dm")
+movimiento = ExtResource("2_jd1p1")
+
+[sub_resource type="Resource" id="Resource_6rk16"]
+script = ExtResource("1_1p6dm")
+movimiento = ExtResource("3_6ul6b")
+
+[sub_resource type="Resource" id="Resource_8oecp"]
+script = ExtResource("1_1p6dm")
+movimiento = ExtResource("4_q65in")
+
+[sub_resource type="Resource" id="Resource_rqmrl"]
+script = ExtResource("1_1p6dm")
+movimiento = ExtResource("5_0ycvd")
+
+[sub_resource type="Resource" id="Resource_43uia"]
+script = ExtResource("1_1p6dm")
+nivel = 4
+movimiento = ExtResource("3_6ul6b")
+
+[sub_resource type="Resource" id="Resource_31ipm"]
+script = ExtResource("1_1p6dm")
+nivel = 8
+movimiento = ExtResource("4_q65in")
+
+[sub_resource type="Resource" id="Resource_lev26"]
+script = ExtResource("1_1p6dm")
+nivel = 11
+movimiento = ExtResource("6_jc8ae")
+
+[sub_resource type="Resource" id="Resource_3yrhy"]
+script = ExtResource("1_1p6dm")
+nivel = 15
+movimiento = ExtResource("7_1ktds")
+
+[sub_resource type="Resource" id="Resource_q3nlq"]
+script = ExtResource("1_1p6dm")
+nivel = 18
+movimiento = ExtResource("8_38m46")
+
+[sub_resource type="Resource" id="Resource_iy7me"]
+script = ExtResource("1_1p6dm")
+nivel = 22
+movimiento = ExtResource("9_obgso")
+
+[sub_resource type="Resource" id="Resource_ov5gs"]
+script = ExtResource("1_1p6dm")
+nivel = 27
+movimiento = ExtResource("10_21tfd")
+
+[sub_resource type="Resource" id="Resource_334n4"]
+script = ExtResource("1_1p6dm")
+nivel = 31
+movimiento = ExtResource("11_m24f1")
+
+[sub_resource type="Resource" id="Resource_2ik1x"]
+script = ExtResource("1_1p6dm")
+nivel = 36
+movimiento = ExtResource("12_0tmlj")
+
+[sub_resource type="Resource" id="Resource_xn4wn"]
+script = ExtResource("1_1p6dm")
+nivel = 42
+movimiento = ExtResource("13_pec2x")
+
+[sub_resource type="Resource" id="Resource_6ctkh"]
+script = ExtResource("1_1p6dm")
+nivel = 47
+movimiento = ExtResource("14_1wqn1")
+
+[sub_resource type="Resource" id="Resource_uwkdb"]
+script = ExtResource("1_1p6dm")
+nivel = 53
+movimiento = ExtResource("15_62lmf")
+
+[sub_resource type="Resource" id="Resource_uuo74"]
+script = ExtResource("1_1p6dm")
+nivel = 58
+movimiento = ExtResource("16_upwp5")
+
+[sub_resource type="Resource" id="Resource_xulwd"]
+script = ExtResource("1_1p6dm")
+nivel = 64
+movimiento = ExtResource("17_lse1f")
+
+[resource]
+script = ExtResource("18_mjy0h")
+id = "graveler"
+numero = 75
+nombre = "Graveler"
+tipos = ["roca", "tierra"]
+ps = 55
+ataque = 95
+defensa = 115
+at_esp = 45
+def_esp = 45
+velocidad = 35
+exp_base = 137
+ratio_captura = 120
+crecimiento = "medium-slow"
+evs_otorgados = {
+"defensa": 2
+}
+aprende = Array[ExtResource("1_1p6dm")]([SubResource("Resource_mfs6e"), SubResource("Resource_6rk16"), SubResource("Resource_8oecp"), SubResource("Resource_rqmrl"), SubResource("Resource_43uia"), SubResource("Resource_31ipm"), SubResource("Resource_lev26"), SubResource("Resource_3yrhy"), SubResource("Resource_q3nlq"), SubResource("Resource_iy7me"), SubResource("Resource_ov5gs"), SubResource("Resource_334n4"), SubResource("Resource_2ik1x"), SubResource("Resource_xn4wn"), SubResource("Resource_6ctkh"), SubResource("Resource_uwkdb"), SubResource("Resource_uuo74"), SubResource("Resource_xulwd")])
+sprite_frente = ExtResource("20_0j04l")
+sprite_espalda = ExtResource("19_bcwei")
+cuadros_frente = 8
+cuadros_espalda = 8
+fps_sprite = 7.77

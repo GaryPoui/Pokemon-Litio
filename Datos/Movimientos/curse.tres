@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_4lthb"]
+
+[resource]
+script = ExtResource("1_4lthb")
+id = "curse"
+nombre = "Maldición"
+tipo = "fantasma"
+categoria = "estado"
+precision = 0
+objetivo = "specific-move"
+meta = "unique"
+descripcion = "Un movimiento que tiene efectos distintos si el usuario es de tipo Fantasma o no."

@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dvkqvyg2pssu2"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_xvbru"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_xvbru"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="2_cci6n"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hammer_arm.tres" id="3_5c48i"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/odor_sleuth.tres" id="4_rs1fd"]
@@ -18,9 +18,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/head_smash.tres" id="16_55t4c"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/roar.tres" id="17_xt355"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flare_blitz.tres" id="18_kj8ht"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="19_y62ti"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/emboar_espalda.png" id="20_fg60y"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/emboar_frente.png" id="21_v0o3r"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="19_y62ti"]
+[ext_resource type="Texture2D" uid="uid://cxba7rf8dntmw" path="res://Assets/Pokemones/batalla/emboar_espalda.png" id="20_fg60y"]
+[ext_resource type="Texture2D" uid="uid://dhjq2kng8tjn2" path="res://Assets/Pokemones/batalla/emboar_frente.png" id="21_v0o3r"]
 
 [sub_resource type="Resource" id="Resource_5l6d3"]
 script = ExtResource("1_xvbru")
@@ -122,7 +122,7 @@ script = ExtResource("19_y62ti")
 id = "emboar"
 numero = 500
 nombre = "Emboar"
-tipos = PackedStringArray("fuego", "lucha")
+tipos = ["fuego", "lucha"]
 ps = 110
 ataque = 123
 defensa = 65

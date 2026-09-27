@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_5lqyx"]
+
+[resource]
+script = ExtResource("1_5lqyx")
+id = "twister"
+nombre = "Ciclón"
+tipo = "dragon"
+categoria = "especial"
+poder = 40
+pp = 20
+objetivo = "all-opponents"
+descripcion = "Crea un violento tornado para hacer trizas al objetivo. Puede amedrentarlo."
+prob_retroceso = 20

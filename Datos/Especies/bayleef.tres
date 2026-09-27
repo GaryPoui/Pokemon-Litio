@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://ohseyk7nn2gp"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_llsts"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_as3kd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/poison_powder.tres" id="3_pc7bu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/razor_leaf.tres" id="4_gyqqy"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="5_w1r5q"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/synthesis.tres" id="6_m0u8k"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/reflect.tres" id="7_xtikm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/magical_leaf.tres" id="8_bh8aq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/natural_gift.tres" id="9_x2rh8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sweet_scent.tres" id="10_p6tr1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/light_screen.tres" id="11_aat6f"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/body_slam.tres" id="12_uod6a"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/safeguard.tres" id="13_7itkd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aromatherapy.tres" id="14_mhfmi"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="15_ylprl"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_045r8"]
+[ext_resource type="Texture2D" uid="uid://megswbcnf7tc" path="res://Assets/Pokemones/batalla/bayleef_espalda.png" id="17_jia5p"]
+[ext_resource type="Texture2D" uid="uid://4swg5gnwbaxv" path="res://Assets/Pokemones/batalla/bayleef_frente.png" id="18_yqs4a"]
+
+[sub_resource type="Resource" id="Resource_qmd7k"]
+script = ExtResource("1_llsts")
+movimiento = ExtResource("2_as3kd")
+
+[sub_resource type="Resource" id="Resource_ufpqh"]
+script = ExtResource("1_llsts")
+movimiento = ExtResource("3_pc7bu")
+
+[sub_resource type="Resource" id="Resource_ho3e0"]
+script = ExtResource("1_llsts")
+movimiento = ExtResource("4_gyqqy")
+
+[sub_resource type="Resource" id="Resource_4rfjs"]
+script = ExtResource("1_llsts")
+movimiento = ExtResource("5_w1r5q")
+
+[sub_resource type="Resource" id="Resource_r27rf"]
+script = ExtResource("1_llsts")
+nivel = 6
+movimiento = ExtResource("4_gyqqy")
+
+[sub_resource type="Resource" id="Resource_ibj01"]
+script = ExtResource("1_llsts")
+nivel = 9
+movimiento = ExtResource("3_pc7bu")
+
+[sub_resource type="Resource" id="Resource_s8yqf"]
+script = ExtResource("1_llsts")
+nivel = 12
+movimiento = ExtResource("6_m0u8k")
+
+[sub_resource type="Resource" id="Resource_k6b3h"]
+script = ExtResource("1_llsts")
+nivel = 18
+movimiento = ExtResource("7_xtikm")
+
+[sub_resource type="Resource" id="Resource_wvy8e"]
+script = ExtResource("1_llsts")
+nivel = 22
+movimiento = ExtResource("8_bh8aq")
+
+[sub_resource type="Resource" id="Resource_4cpu1"]
+script = ExtResource("1_llsts")
+nivel = 26
+movimiento = ExtResource("9_x2rh8")
+
+[sub_resource type="Resource" id="Resource_8op8y"]
+script = ExtResource("1_llsts")
+nivel = 32
+movimiento = ExtResource("10_p6tr1")
+
+[sub_resource type="Resource" id="Resource_yu5so"]
+script = ExtResource("1_llsts")
+nivel = 36
+movimiento = ExtResource("11_aat6f")
+
+[sub_resource type="Resource" id="Resource_b5suh"]
+script = ExtResource("1_llsts")
+nivel = 40
+movimiento = ExtResource("12_uod6a")
+
+[sub_resource type="Resource" id="Resource_64lvs"]
+script = ExtResource("1_llsts")
+nivel = 46
+movimiento = ExtResource("13_7itkd")
+
+[sub_resource type="Resource" id="Resource_p7qxo"]
+script = ExtResource("1_llsts")
+nivel = 50
+movimiento = ExtResource("14_mhfmi")
+
+[sub_resource type="Resource" id="Resource_bdxhw"]
+script = ExtResource("1_llsts")
+nivel = 54
+movimiento = ExtResource("15_ylprl")
+
+[resource]
+script = ExtResource("16_045r8")
+id = "bayleef"
+numero = 153
+nombre = "Bayleef"
+tipos = ["planta"]
+ps = 60
+ataque = 62
+defensa = 80
+at_esp = 63
+def_esp = 80
+velocidad = 60
+exp_base = 142
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"def_esp": 1,
+"defensa": 1
+}
+evoluciona_a = "meganium"
+nivel_evolucion = 32
+aprende = Array[ExtResource("1_llsts")]([SubResource("Resource_qmd7k"), SubResource("Resource_ufpqh"), SubResource("Resource_ho3e0"), SubResource("Resource_4rfjs"), SubResource("Resource_r27rf"), SubResource("Resource_ibj01"), SubResource("Resource_s8yqf"), SubResource("Resource_k6b3h"), SubResource("Resource_wvy8e"), SubResource("Resource_4cpu1"), SubResource("Resource_8op8y"), SubResource("Resource_yu5so"), SubResource("Resource_b5suh"), SubResource("Resource_64lvs"), SubResource("Resource_p7qxo"), SubResource("Resource_bdxhw")])
+sprite_frente = ExtResource("18_yqs4a")
+sprite_espalda = ExtResource("17_jia5p")
+cuadros_frente = 70
+cuadros_espalda = 70
+fps_sprite = 11.67

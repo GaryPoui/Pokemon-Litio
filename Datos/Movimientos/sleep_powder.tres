@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_pdivg"]
+
+[resource]
+script = ExtResource("1_pdivg")
+id = "sleep_powder"
+nombre = "Somnífero"
+tipo = "planta"
+categoria = "estado"
+precision = 75
+pp = 15
+meta = "ailment"
+descripcion = "Esparce polvo que duerme al objetivo."
+estado = "sleep"

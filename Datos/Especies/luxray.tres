@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bd28fkj2q3vym"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_alsm6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="2_3pcgi"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_p6g52"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_cmgh3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spark.tres" id="5_25gsf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="6_hfe45"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/roar.tres" id="7_cumnk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swagger.tres" id="8_fwj8v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_fang.tres" id="9_e6xb3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="10_aleip"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="11_egwuo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="12_lokw5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wild_charge.tres" id="13_xexpb"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_h0lfo"]
+[ext_resource type="Texture2D" uid="uid://b4cg8qfvhug68" path="res://Assets/Pokemones/batalla/luxray_espalda.png" id="15_mxugg"]
+[ext_resource type="Texture2D" uid="uid://gsmgw3n4dddf" path="res://Assets/Pokemones/batalla/luxray_frente.png" id="16_j54ej"]
+
+[sub_resource type="Resource" id="Resource_aoj0p"]
+script = ExtResource("1_alsm6")
+movimiento = ExtResource("2_3pcgi")
+
+[sub_resource type="Resource" id="Resource_vx6so"]
+script = ExtResource("1_alsm6")
+movimiento = ExtResource("3_p6g52")
+
+[sub_resource type="Resource" id="Resource_laigu"]
+script = ExtResource("1_alsm6")
+movimiento = ExtResource("4_cmgh3")
+
+[sub_resource type="Resource" id="Resource_cglgv"]
+script = ExtResource("1_alsm6")
+nivel = 5
+movimiento = ExtResource("3_p6g52")
+
+[sub_resource type="Resource" id="Resource_v6jgm"]
+script = ExtResource("1_alsm6")
+nivel = 9
+movimiento = ExtResource("2_3pcgi")
+
+[sub_resource type="Resource" id="Resource_o4y3h"]
+script = ExtResource("1_alsm6")
+nivel = 13
+movimiento = ExtResource("5_25gsf")
+
+[sub_resource type="Resource" id="Resource_xo0j2"]
+script = ExtResource("1_alsm6")
+nivel = 18
+movimiento = ExtResource("6_hfe45")
+
+[sub_resource type="Resource" id="Resource_oi0i3"]
+script = ExtResource("1_alsm6")
+nivel = 23
+movimiento = ExtResource("7_cumnk")
+
+[sub_resource type="Resource" id="Resource_n786u"]
+script = ExtResource("1_alsm6")
+nivel = 28
+movimiento = ExtResource("8_fwj8v")
+
+[sub_resource type="Resource" id="Resource_xsp6b"]
+script = ExtResource("1_alsm6")
+nivel = 35
+movimiento = ExtResource("9_e6xb3")
+
+[sub_resource type="Resource" id="Resource_e4tus"]
+script = ExtResource("1_alsm6")
+nivel = 42
+movimiento = ExtResource("10_aleip")
+
+[sub_resource type="Resource" id="Resource_rfl68"]
+script = ExtResource("1_alsm6")
+nivel = 49
+movimiento = ExtResource("11_egwuo")
+
+[sub_resource type="Resource" id="Resource_oxujr"]
+script = ExtResource("1_alsm6")
+nivel = 56
+movimiento = ExtResource("12_lokw5")
+
+[sub_resource type="Resource" id="Resource_null2"]
+script = ExtResource("1_alsm6")
+nivel = 63
+movimiento = ExtResource("13_xexpb")
+
+[resource]
+script = ExtResource("14_h0lfo")
+id = "luxray"
+numero = 405
+nombre = "Luxray"
+tipos = ["electrico"]
+ps = 80
+ataque = 120
+defensa = 79
+at_esp = 95
+def_esp = 79
+velocidad = 70
+exp_base = 235
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 3
+}
+aprende = Array[ExtResource("1_alsm6")]([SubResource("Resource_aoj0p"), SubResource("Resource_vx6so"), SubResource("Resource_laigu"), SubResource("Resource_cglgv"), SubResource("Resource_v6jgm"), SubResource("Resource_o4y3h"), SubResource("Resource_xo0j2"), SubResource("Resource_oi0i3"), SubResource("Resource_n786u"), SubResource("Resource_xsp6b"), SubResource("Resource_e4tus"), SubResource("Resource_rfl68"), SubResource("Resource_oxujr"), SubResource("Resource_null2")])
+sprite_frente = ExtResource("16_j54ej")
+sprite_espalda = ExtResource("15_mxugg")
+cuadros_frente = 86
+cuadros_espalda = 86

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_a55kk"]
+
+[resource]
+script = ExtResource("1_a55kk")
+id = "fire_spin"
+nombre = "Giro Fuego"
+tipo = "fuego"
+categoria = "especial"
+poder = 35
+precision = 85
+pp = 15
+meta = "damage-ailment"
+descripcion = "Un aro de fuego que atrapa al objetivo de cuatro a cinco turnos."
+estado = "trap"
+prob_estado = 100

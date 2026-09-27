@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dmk0nxneeevy8"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_pxutu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_em8ap"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_31l2a"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="4_ea22e"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rollout.tres" id="5_i77x6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/headbutt.tres" id="6_0coaa"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hyper_fang.tres" id="7_cmufr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/yawn.tres" id="8_xng6d"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="9_37b16"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="10_nji5y"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/super_fang.tres" id="11_ef1c0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/superpower.tres" id="12_r3j8e"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/curse.tres" id="13_dy708"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_f6oc4"]
+[ext_resource type="Texture2D" uid="uid://ddkla8c4wp84p" path="res://Assets/Pokemones/batalla/bidoof_espalda.png" id="15_fk5bc"]
+[ext_resource type="Texture2D" uid="uid://chw2wlxbybgr7" path="res://Assets/Pokemones/batalla/bidoof_frente.png" id="16_mhymr"]
+
+[sub_resource type="Resource" id="Resource_qcnx3"]
+script = ExtResource("1_pxutu")
+movimiento = ExtResource("2_em8ap")
+
+[sub_resource type="Resource" id="Resource_ae2tj"]
+script = ExtResource("1_pxutu")
+nivel = 5
+movimiento = ExtResource("3_31l2a")
+
+[sub_resource type="Resource" id="Resource_3fh4p"]
+script = ExtResource("1_pxutu")
+nivel = 9
+movimiento = ExtResource("4_ea22e")
+
+[sub_resource type="Resource" id="Resource_7ymq5"]
+script = ExtResource("1_pxutu")
+nivel = 13
+movimiento = ExtResource("5_i77x6")
+
+[sub_resource type="Resource" id="Resource_401by"]
+script = ExtResource("1_pxutu")
+nivel = 17
+movimiento = ExtResource("6_0coaa")
+
+[sub_resource type="Resource" id="Resource_8snfj"]
+script = ExtResource("1_pxutu")
+nivel = 21
+movimiento = ExtResource("7_cmufr")
+
+[sub_resource type="Resource" id="Resource_ywpq2"]
+script = ExtResource("1_pxutu")
+nivel = 25
+movimiento = ExtResource("8_xng6d")
+
+[sub_resource type="Resource" id="Resource_32mkb"]
+script = ExtResource("1_pxutu")
+nivel = 29
+movimiento = ExtResource("9_37b16")
+
+[sub_resource type="Resource" id="Resource_86yvi"]
+script = ExtResource("1_pxutu")
+nivel = 33
+movimiento = ExtResource("10_nji5y")
+
+[sub_resource type="Resource" id="Resource_00use"]
+script = ExtResource("1_pxutu")
+nivel = 37
+movimiento = ExtResource("11_ef1c0")
+
+[sub_resource type="Resource" id="Resource_op54j"]
+script = ExtResource("1_pxutu")
+nivel = 41
+movimiento = ExtResource("12_r3j8e")
+
+[sub_resource type="Resource" id="Resource_m8urp"]
+script = ExtResource("1_pxutu")
+nivel = 45
+movimiento = ExtResource("13_dy708")
+
+[resource]
+script = ExtResource("14_f6oc4")
+id = "bidoof"
+numero = 399
+nombre = "Bidoof"
+ps = 59
+ataque = 45
+defensa = 40
+at_esp = 35
+def_esp = 40
+velocidad = 31
+ratio_captura = 255
+evs_otorgados = {
+"ps": 1
+}
+evoluciona_a = "bibarel"
+nivel_evolucion = 15
+aprende = Array[ExtResource("1_pxutu")]([SubResource("Resource_qcnx3"), SubResource("Resource_ae2tj"), SubResource("Resource_3fh4p"), SubResource("Resource_7ymq5"), SubResource("Resource_401by"), SubResource("Resource_8snfj"), SubResource("Resource_ywpq2"), SubResource("Resource_32mkb"), SubResource("Resource_86yvi"), SubResource("Resource_00use"), SubResource("Resource_op54j"), SubResource("Resource_m8urp")])
+sprite_frente = ExtResource("16_mhymr")
+sprite_espalda = ExtResource("15_fk5bc")
+cuadros_frente = 52
+cuadros_espalda = 51
+fps_sprite = 9.12

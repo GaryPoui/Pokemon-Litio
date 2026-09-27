@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://208oplxbue3n"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_dbv30"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_qqhl3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/smokescreen.tres" id="3_bj62a"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_wrwtd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="5_fcdtd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="6_4eb01"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_wheel.tres" id="7_eixj4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="8_rhqdm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swift.tres" id="9_fxypk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_charge.tres" id="10_gdu5h"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/lava_plume.tres" id="11_d244u"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flamethrower.tres" id="12_cnfd3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/inferno.tres" id="13_qwan4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rollout.tres" id="14_da84i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="15_xn5ob"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/eruption.tres" id="16_fttjk"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_8jjfe"]
+[ext_resource type="Texture2D" uid="uid://dd1sr8x6u8bqh" path="res://Assets/Pokemones/batalla/quilava_espalda.png" id="18_0cp0p"]
+[ext_resource type="Texture2D" uid="uid://xrja0867ja1y" path="res://Assets/Pokemones/batalla/quilava_frente.png" id="19_co3au"]
+
+[sub_resource type="Resource" id="Resource_4ofw7"]
+script = ExtResource("1_dbv30")
+movimiento = ExtResource("2_qqhl3")
+
+[sub_resource type="Resource" id="Resource_1606q"]
+script = ExtResource("1_dbv30")
+movimiento = ExtResource("3_bj62a")
+
+[sub_resource type="Resource" id="Resource_la7yv"]
+script = ExtResource("1_dbv30")
+movimiento = ExtResource("4_wrwtd")
+
+[sub_resource type="Resource" id="Resource_iwnub"]
+script = ExtResource("1_dbv30")
+nivel = 6
+movimiento = ExtResource("3_bj62a")
+
+[sub_resource type="Resource" id="Resource_cyide"]
+script = ExtResource("1_dbv30")
+nivel = 10
+movimiento = ExtResource("5_fcdtd")
+
+[sub_resource type="Resource" id="Resource_kr5ty"]
+script = ExtResource("1_dbv30")
+nivel = 13
+movimiento = ExtResource("6_4eb01")
+
+[sub_resource type="Resource" id="Resource_8y7r2"]
+script = ExtResource("1_dbv30")
+nivel = 20
+movimiento = ExtResource("7_eixj4")
+
+[sub_resource type="Resource" id="Resource_qea3p"]
+script = ExtResource("1_dbv30")
+nivel = 24
+movimiento = ExtResource("8_rhqdm")
+
+[sub_resource type="Resource" id="Resource_1qkxu"]
+script = ExtResource("1_dbv30")
+nivel = 31
+movimiento = ExtResource("9_fxypk")
+
+[sub_resource type="Resource" id="Resource_41b3i"]
+script = ExtResource("1_dbv30")
+nivel = 35
+movimiento = ExtResource("10_gdu5h")
+
+[sub_resource type="Resource" id="Resource_g4lfc"]
+script = ExtResource("1_dbv30")
+nivel = 42
+movimiento = ExtResource("11_d244u")
+
+[sub_resource type="Resource" id="Resource_y5i2o"]
+script = ExtResource("1_dbv30")
+nivel = 46
+movimiento = ExtResource("12_cnfd3")
+
+[sub_resource type="Resource" id="Resource_wdjjr"]
+script = ExtResource("1_dbv30")
+nivel = 53
+movimiento = ExtResource("13_qwan4")
+
+[sub_resource type="Resource" id="Resource_ag03l"]
+script = ExtResource("1_dbv30")
+nivel = 57
+movimiento = ExtResource("14_da84i")
+
+[sub_resource type="Resource" id="Resource_ic4wn"]
+script = ExtResource("1_dbv30")
+nivel = 64
+movimiento = ExtResource("15_xn5ob")
+
+[sub_resource type="Resource" id="Resource_yh4q0"]
+script = ExtResource("1_dbv30")
+nivel = 68
+movimiento = ExtResource("16_fttjk")
+
+[resource]
+script = ExtResource("17_8jjfe")
+id = "quilava"
+numero = 156
+nombre = "Quilava"
+tipos = ["fuego"]
+ps = 58
+ataque = 64
+defensa = 58
+at_esp = 80
+def_esp = 65
+velocidad = 80
+exp_base = 142
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 1,
+"velocidad": 1
+}
+evoluciona_a = "typhlosion"
+nivel_evolucion = 36
+aprende = Array[ExtResource("1_dbv30")]([SubResource("Resource_4ofw7"), SubResource("Resource_1606q"), SubResource("Resource_la7yv"), SubResource("Resource_iwnub"), SubResource("Resource_cyide"), SubResource("Resource_kr5ty"), SubResource("Resource_8y7r2"), SubResource("Resource_qea3p"), SubResource("Resource_1qkxu"), SubResource("Resource_41b3i"), SubResource("Resource_g4lfc"), SubResource("Resource_y5i2o"), SubResource("Resource_wdjjr"), SubResource("Resource_ag03l"), SubResource("Resource_ic4wn"), SubResource("Resource_yh4q0")])
+sprite_frente = ExtResource("19_co3au")
+sprite_espalda = ExtResource("18_0cp0p")
+cuadros_frente = 82
+cuadros_espalda = 82
+fps_sprite = 20.0

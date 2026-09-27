@@ -1,0 +1,95 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://darcawhpd4342"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_nhgmn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_3285f"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="3_eu8g1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="4_h6sqv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="5_l8t0a"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/peck.tres" id="6_mstjj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="7_f62vf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fire_spin.tres" id="8_gd0os"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="9_jrogr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="10_jya4y"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mirror_move.tres" id="11_dsvdl"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flamethrower.tres" id="12_1ld2j"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="13_bj73e"]
+[ext_resource type="Texture2D" uid="uid://bbw0sysg2nb1u" path="res://Assets/Pokemones/batalla/torchic_espalda.png" id="14_0etfg"]
+[ext_resource type="Texture2D" uid="uid://d3gsl451chdvu" path="res://Assets/Pokemones/batalla/torchic_frente.png" id="15_dfdgk"]
+
+[sub_resource type="Resource" id="Resource_u2cil"]
+script = ExtResource("1_nhgmn")
+movimiento = ExtResource("2_3285f")
+
+[sub_resource type="Resource" id="Resource_v8m2l"]
+script = ExtResource("1_nhgmn")
+movimiento = ExtResource("3_eu8g1")
+
+[sub_resource type="Resource" id="Resource_t671d"]
+script = ExtResource("1_nhgmn")
+nivel = 7
+movimiento = ExtResource("4_h6sqv")
+
+[sub_resource type="Resource" id="Resource_yl8bu"]
+script = ExtResource("1_nhgmn")
+nivel = 10
+movimiento = ExtResource("5_l8t0a")
+
+[sub_resource type="Resource" id="Resource_if2i3"]
+script = ExtResource("1_nhgmn")
+nivel = 16
+movimiento = ExtResource("6_mstjj")
+
+[sub_resource type="Resource" id="Resource_wsa6i"]
+script = ExtResource("1_nhgmn")
+nivel = 19
+movimiento = ExtResource("7_f62vf")
+
+[sub_resource type="Resource" id="Resource_5mb2r"]
+script = ExtResource("1_nhgmn")
+nivel = 25
+movimiento = ExtResource("8_gd0os")
+
+[sub_resource type="Resource" id="Resource_opjnj"]
+script = ExtResource("1_nhgmn")
+nivel = 28
+movimiento = ExtResource("9_jrogr")
+
+[sub_resource type="Resource" id="Resource_d8qcr"]
+script = ExtResource("1_nhgmn")
+nivel = 34
+movimiento = ExtResource("10_jya4y")
+
+[sub_resource type="Resource" id="Resource_nytww"]
+script = ExtResource("1_nhgmn")
+nivel = 37
+movimiento = ExtResource("11_dsvdl")
+
+[sub_resource type="Resource" id="Resource_w0njn"]
+script = ExtResource("1_nhgmn")
+nivel = 43
+movimiento = ExtResource("12_1ld2j")
+
+[resource]
+script = ExtResource("13_bj73e")
+id = "torchic"
+numero = 255
+nombre = "Torchic"
+tipos = ["fuego"]
+ps = 45
+ataque = 60
+defensa = 40
+at_esp = 70
+velocidad = 45
+exp_base = 62
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 1
+}
+evoluciona_a = "combusken"
+nivel_evolucion = 16
+aprende = Array[ExtResource("1_nhgmn")]([SubResource("Resource_u2cil"), SubResource("Resource_v8m2l"), SubResource("Resource_t671d"), SubResource("Resource_yl8bu"), SubResource("Resource_if2i3"), SubResource("Resource_wsa6i"), SubResource("Resource_5mb2r"), SubResource("Resource_opjnj"), SubResource("Resource_d8qcr"), SubResource("Resource_nytww"), SubResource("Resource_w0njn")])
+sprite_frente = ExtResource("15_dfdgk")
+sprite_espalda = ExtResource("14_0etfg")
+cuadros_frente = 88
+cuadros_espalda = 88

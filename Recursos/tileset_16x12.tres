@@ -1,0 +1,14 @@
+[gd_resource type="TileSet" format=3 uid="uid://y3r6saa0ugpb"]
+
+[ext_resource type="Texture2D" uid="uid://bkwlfl8nd2e1d" path="res://Assets/Overworld/celda_16x12.png" id="1_7rsio"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tiya4"]
+texture = ExtResource("1_7rsio")
+texture_region_size = Vector2i(16, 12)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6, 8, -6, 8, 6, -8, 6)
+
+[resource]
+tile_size = Vector2i(16, 12)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_tiya4")

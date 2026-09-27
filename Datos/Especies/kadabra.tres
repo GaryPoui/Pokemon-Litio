@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dbf3kpg7whmsh"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_1fe8e"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="2_82m2t"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/kinesis.tres" id="3_yhoe8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/teleport.tres" id="4_quf1j"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/disable.tres" id="5_13paq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/miracle_eye.tres" id="6_w6m5e"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ally_switch.tres" id="7_n4dj4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psybeam.tres" id="8_mdx77"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/reflect.tres" id="9_wne4o"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/telekinesis.tres" id="10_rucld"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/recover.tres" id="11_eihus"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psycho_cut.tres" id="12_y154f"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/role_play.tres" id="13_n41xl"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="14_nhohn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/future_sight.tres" id="15_teh38"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/trick.tres" id="16_3fboj"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_0xpfc"]
+[ext_resource type="Texture2D" uid="uid://1qy5m1j03qw8" path="res://Assets/Pokemones/batalla/kadabra_espalda.png" id="18_b7due"]
+[ext_resource type="Texture2D" uid="uid://2ht1n1pjpop8" path="res://Assets/Pokemones/batalla/kadabra_frente.png" id="19_n63bw"]
+
+[sub_resource type="Resource" id="Resource_76n80"]
+script = ExtResource("1_1fe8e")
+movimiento = ExtResource("2_82m2t")
+
+[sub_resource type="Resource" id="Resource_4iljh"]
+script = ExtResource("1_1fe8e")
+movimiento = ExtResource("3_yhoe8")
+
+[sub_resource type="Resource" id="Resource_27cx3"]
+script = ExtResource("1_1fe8e")
+movimiento = ExtResource("4_quf1j")
+
+[sub_resource type="Resource" id="Resource_r6dsw"]
+script = ExtResource("1_1fe8e")
+nivel = 16
+movimiento = ExtResource("2_82m2t")
+
+[sub_resource type="Resource" id="Resource_jtkuq"]
+script = ExtResource("1_1fe8e")
+nivel = 18
+movimiento = ExtResource("5_13paq")
+
+[sub_resource type="Resource" id="Resource_8443n"]
+script = ExtResource("1_1fe8e")
+nivel = 22
+movimiento = ExtResource("6_w6m5e")
+
+[sub_resource type="Resource" id="Resource_ama50"]
+script = ExtResource("1_1fe8e")
+nivel = 24
+movimiento = ExtResource("7_n4dj4")
+
+[sub_resource type="Resource" id="Resource_5a8lr"]
+script = ExtResource("1_1fe8e")
+nivel = 28
+movimiento = ExtResource("8_mdx77")
+
+[sub_resource type="Resource" id="Resource_nr4bk"]
+script = ExtResource("1_1fe8e")
+nivel = 30
+movimiento = ExtResource("9_wne4o")
+
+[sub_resource type="Resource" id="Resource_8ygcl"]
+script = ExtResource("1_1fe8e")
+nivel = 34
+movimiento = ExtResource("10_rucld")
+
+[sub_resource type="Resource" id="Resource_nm2nq"]
+script = ExtResource("1_1fe8e")
+nivel = 36
+movimiento = ExtResource("11_eihus")
+
+[sub_resource type="Resource" id="Resource_ri7cb"]
+script = ExtResource("1_1fe8e")
+nivel = 40
+movimiento = ExtResource("12_y154f")
+
+[sub_resource type="Resource" id="Resource_vujv1"]
+script = ExtResource("1_1fe8e")
+nivel = 42
+movimiento = ExtResource("13_n41xl")
+
+[sub_resource type="Resource" id="Resource_06mat"]
+script = ExtResource("1_1fe8e")
+nivel = 46
+movimiento = ExtResource("14_nhohn")
+
+[sub_resource type="Resource" id="Resource_68jba"]
+script = ExtResource("1_1fe8e")
+nivel = 48
+movimiento = ExtResource("15_teh38")
+
+[sub_resource type="Resource" id="Resource_hfc4a"]
+script = ExtResource("1_1fe8e")
+nivel = 52
+movimiento = ExtResource("16_3fboj")
+
+[resource]
+script = ExtResource("17_0xpfc")
+id = "kadabra"
+numero = 64
+nombre = "Kadabra"
+tipos = ["psiquico"]
+ps = 40
+ataque = 35
+defensa = 30
+at_esp = 120
+def_esp = 70
+velocidad = 105
+exp_base = 140
+ratio_captura = 100
+ratio_genero = 2
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 2
+}
+aprende = Array[ExtResource("1_1fe8e")]([SubResource("Resource_76n80"), SubResource("Resource_4iljh"), SubResource("Resource_27cx3"), SubResource("Resource_r6dsw"), SubResource("Resource_jtkuq"), SubResource("Resource_8443n"), SubResource("Resource_ama50"), SubResource("Resource_5a8lr"), SubResource("Resource_nr4bk"), SubResource("Resource_8ygcl"), SubResource("Resource_nm2nq"), SubResource("Resource_ri7cb"), SubResource("Resource_vujv1"), SubResource("Resource_06mat"), SubResource("Resource_68jba"), SubResource("Resource_hfc4a")])
+sprite_frente = ExtResource("19_n63bw")
+sprite_espalda = ExtResource("18_b7due")
+cuadros_frente = 59
+cuadros_espalda = 61
+fps_sprite = 8.73

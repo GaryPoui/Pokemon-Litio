@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_mpjk5"]
+
+[resource]
+script = ExtResource("1_mpjk5")
+id = "shadow_punch"
+nombre = "Puño Sombra"
+tipo = "fantasma"
+poder = 60
+precision = 0
+pp = 20
+descripcion = "Puñetazo ineludible procedente de las sombras."

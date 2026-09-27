@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_upwav"]
+
+[resource]
+script = ExtResource("1_upwav")
+id = "aura_sphere"
+nombre = "Esfera Aural"
+tipo = "lucha"
+categoria = "especial"
+poder = 90
+precision = 0
+pp = 20
+descripcion = "Libera, desde su interior, una inmensa descarga de aura. Es infalible."

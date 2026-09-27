@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_fx2yu"]
+
+[resource]
+script = ExtResource("1_fx2yu")
+id = "sweet_scent"
+nombre = "Dulce Aroma"
+categoria = "estado"
+pp = 20
+objetivo = "all-opponents"
+meta = "net-good-stats"
+descripcion = "Un dulce aroma engatusa al objetivo, por lo que se reduce mucho su Evasión."
+cambios_stats = {
+"evasion": -2
+}

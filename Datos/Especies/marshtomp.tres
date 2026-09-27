@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dcx3at0hra4sf"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_3h35t"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_cgvau"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="3_tde1r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_lqrpq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="5_2k4kv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bide.tres" id="6_t16nh"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_shot.tres" id="7_l7y83"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/foresight.tres" id="8_4h0vh"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_bomb.tres" id="9_lw27r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="10_22clp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/muddy_water.tres" id="11_xpel0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/protect.tres" id="12_h0a0h"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="13_sir15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/endeavor.tres" id="14_bl511"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_gwno8"]
+[ext_resource type="Texture2D" uid="uid://26sfhknv1oar" path="res://Assets/Pokemones/batalla/marshtomp_espalda.png" id="16_uspxb"]
+[ext_resource type="Texture2D" uid="uid://q06xr1ri5c7t" path="res://Assets/Pokemones/batalla/marshtomp_frente.png" id="17_qecxb"]
+
+[sub_resource type="Resource" id="Resource_4lafl"]
+script = ExtResource("1_3h35t")
+movimiento = ExtResource("2_cgvau")
+
+[sub_resource type="Resource" id="Resource_gkh75"]
+script = ExtResource("1_3h35t")
+movimiento = ExtResource("3_tde1r")
+
+[sub_resource type="Resource" id="Resource_a68px"]
+script = ExtResource("1_3h35t")
+movimiento = ExtResource("4_lqrpq")
+
+[sub_resource type="Resource" id="Resource_1kc11"]
+script = ExtResource("1_3h35t")
+movimiento = ExtResource("5_2k4kv")
+
+[sub_resource type="Resource" id="Resource_w4tk3"]
+script = ExtResource("1_3h35t")
+nivel = 6
+movimiento = ExtResource("3_tde1r")
+
+[sub_resource type="Resource" id="Resource_vy80u"]
+script = ExtResource("1_3h35t")
+nivel = 10
+movimiento = ExtResource("5_2k4kv")
+
+[sub_resource type="Resource" id="Resource_hl4an"]
+script = ExtResource("1_3h35t")
+nivel = 15
+movimiento = ExtResource("6_t16nh")
+
+[sub_resource type="Resource" id="Resource_77rhe"]
+script = ExtResource("1_3h35t")
+nivel = 16
+movimiento = ExtResource("7_l7y83")
+
+[sub_resource type="Resource" id="Resource_5bpyk"]
+script = ExtResource("1_3h35t")
+nivel = 20
+movimiento = ExtResource("8_4h0vh")
+
+[sub_resource type="Resource" id="Resource_gb755"]
+script = ExtResource("1_3h35t")
+nivel = 25
+movimiento = ExtResource("9_lw27r")
+
+[sub_resource type="Resource" id="Resource_7d3l1"]
+script = ExtResource("1_3h35t")
+nivel = 31
+movimiento = ExtResource("10_22clp")
+
+[sub_resource type="Resource" id="Resource_tpjxg"]
+script = ExtResource("1_3h35t")
+nivel = 37
+movimiento = ExtResource("11_xpel0")
+
+[sub_resource type="Resource" id="Resource_yhg53"]
+script = ExtResource("1_3h35t")
+nivel = 42
+movimiento = ExtResource("12_h0a0h")
+
+[sub_resource type="Resource" id="Resource_g4jtd"]
+script = ExtResource("1_3h35t")
+nivel = 46
+movimiento = ExtResource("13_sir15")
+
+[sub_resource type="Resource" id="Resource_vpm1e"]
+script = ExtResource("1_3h35t")
+nivel = 53
+movimiento = ExtResource("14_bl511")
+
+[resource]
+script = ExtResource("15_gwno8")
+id = "marshtomp"
+numero = 259
+nombre = "Marshtomp"
+tipos = ["agua", "tierra"]
+ps = 70
+ataque = 85
+defensa = 70
+at_esp = 60
+def_esp = 70
+exp_base = 142
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 2
+}
+evoluciona_a = "swampert"
+nivel_evolucion = 36
+aprende = Array[ExtResource("1_3h35t")]([SubResource("Resource_4lafl"), SubResource("Resource_gkh75"), SubResource("Resource_a68px"), SubResource("Resource_1kc11"), SubResource("Resource_w4tk3"), SubResource("Resource_vy80u"), SubResource("Resource_hl4an"), SubResource("Resource_77rhe"), SubResource("Resource_5bpyk"), SubResource("Resource_gb755"), SubResource("Resource_7d3l1"), SubResource("Resource_tpjxg"), SubResource("Resource_yhg53"), SubResource("Resource_g4jtd"), SubResource("Resource_vpm1e")])
+sprite_frente = ExtResource("17_qecxb")
+sprite_espalda = ExtResource("16_uspxb")
+cuadros_frente = 64
+cuadros_espalda = 60
+fps_sprite = 9.76

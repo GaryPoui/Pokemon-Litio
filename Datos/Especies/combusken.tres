@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://d0i0qplqdj0w8"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_0kjw7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="2_vvmtv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="3_yay2e"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="4_pxmd7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="5_k34hp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_kick.tres" id="6_uthix"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/peck.tres" id="7_bfxd6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="8_6xteg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bulk_up.tres" id="9_e4h6v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="10_jlert"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="11_1wqc5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mirror_move.tres" id="12_4qunm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sky_uppercut.tres" id="13_kp5xa"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flare_blitz.tres" id="14_2bj3i"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_457mm"]
+[ext_resource type="Texture2D" uid="uid://4fj6n73symev" path="res://Assets/Pokemones/batalla/combusken_espalda.png" id="16_8ivci"]
+[ext_resource type="Texture2D" uid="uid://c6nketa1b64eu" path="res://Assets/Pokemones/batalla/combusken_frente.png" id="17_716nj"]
+
+[sub_resource type="Resource" id="Resource_wqc7c"]
+script = ExtResource("1_0kjw7")
+movimiento = ExtResource("2_vvmtv")
+
+[sub_resource type="Resource" id="Resource_31ve5"]
+script = ExtResource("1_0kjw7")
+movimiento = ExtResource("3_yay2e")
+
+[sub_resource type="Resource" id="Resource_0xnm8"]
+script = ExtResource("1_0kjw7")
+movimiento = ExtResource("4_pxmd7")
+
+[sub_resource type="Resource" id="Resource_50ntv"]
+script = ExtResource("1_0kjw7")
+movimiento = ExtResource("5_k34hp")
+
+[sub_resource type="Resource" id="Resource_owf6s"]
+script = ExtResource("1_0kjw7")
+nivel = 7
+movimiento = ExtResource("3_yay2e")
+
+[sub_resource type="Resource" id="Resource_hb7xl"]
+script = ExtResource("1_0kjw7")
+nivel = 13
+movimiento = ExtResource("2_vvmtv")
+
+[sub_resource type="Resource" id="Resource_5pta6"]
+script = ExtResource("1_0kjw7")
+nivel = 16
+movimiento = ExtResource("6_uthix")
+
+[sub_resource type="Resource" id="Resource_lhqsn"]
+script = ExtResource("1_0kjw7")
+nivel = 17
+movimiento = ExtResource("7_bfxd6")
+
+[sub_resource type="Resource" id="Resource_irf4r"]
+script = ExtResource("1_0kjw7")
+nivel = 21
+movimiento = ExtResource("8_6xteg")
+
+[sub_resource type="Resource" id="Resource_i3tj8"]
+script = ExtResource("1_0kjw7")
+nivel = 28
+movimiento = ExtResource("9_e4h6v")
+
+[sub_resource type="Resource" id="Resource_gje3r"]
+script = ExtResource("1_0kjw7")
+nivel = 32
+movimiento = ExtResource("10_jlert")
+
+[sub_resource type="Resource" id="Resource_aab4v"]
+script = ExtResource("1_0kjw7")
+nivel = 39
+movimiento = ExtResource("11_1wqc5")
+
+[sub_resource type="Resource" id="Resource_r4vot"]
+script = ExtResource("1_0kjw7")
+nivel = 43
+movimiento = ExtResource("12_4qunm")
+
+[sub_resource type="Resource" id="Resource_febp6"]
+script = ExtResource("1_0kjw7")
+nivel = 50
+movimiento = ExtResource("13_kp5xa")
+
+[sub_resource type="Resource" id="Resource_ugcdp"]
+script = ExtResource("1_0kjw7")
+nivel = 54
+movimiento = ExtResource("14_2bj3i")
+
+[resource]
+script = ExtResource("15_457mm")
+id = "combusken"
+numero = 256
+nombre = "Combusken"
+tipos = ["fuego", "lucha"]
+ps = 60
+ataque = 85
+defensa = 60
+at_esp = 85
+def_esp = 60
+velocidad = 55
+exp_base = 142
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 1,
+"ataque": 1
+}
+evoluciona_a = "blaziken"
+nivel_evolucion = 36
+aprende = Array[ExtResource("1_0kjw7")]([SubResource("Resource_wqc7c"), SubResource("Resource_31ve5"), SubResource("Resource_0xnm8"), SubResource("Resource_50ntv"), SubResource("Resource_owf6s"), SubResource("Resource_hb7xl"), SubResource("Resource_5pta6"), SubResource("Resource_lhqsn"), SubResource("Resource_irf4r"), SubResource("Resource_i3tj8"), SubResource("Resource_gje3r"), SubResource("Resource_aab4v"), SubResource("Resource_r4vot"), SubResource("Resource_febp6"), SubResource("Resource_ugcdp")])
+sprite_frente = ExtResource("17_716nj")
+sprite_espalda = ExtResource("16_8ivci")
+cuadros_frente = 64
+cuadros_espalda = 64
+fps_sprite = 9.37

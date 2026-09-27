@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_rucqr"]
+
+[resource]
+script = ExtResource("1_rucqr")
+id = "mach_punch"
+nombre = "Ultrapuño"
+tipo = "lucha"
+poder = 40
+pp = 30
+prioridad = 1
+descripcion = "Puñetazo de velocidad fulminante. Este movimiento tiene prioridad alta."

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_rmtmy"]
+
+[resource]
+script = ExtResource("1_rmtmy")
+id = "dark_pulse"
+nombre = "Pulso Umbrío"
+tipo = "siniestro"
+categoria = "especial"
+poder = 80
+pp = 15
+descripcion = "Libera una horrible aura llena de malos pensamientos que puede amedrentar al objetivo."
+prob_retroceso = 20

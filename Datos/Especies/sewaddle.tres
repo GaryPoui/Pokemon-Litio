@@ -56,6 +56,7 @@ script = ExtResource("10_yxbpt")
 id = "sewaddle"
 numero = 540
 nombre = "Sewaddle"
+tipos = ["bicho", "planta"]
 ps = 45
 ataque = 53
 defensa = 70

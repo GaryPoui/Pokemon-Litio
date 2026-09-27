@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_j13sg"]
+
+[resource]
+script = ExtResource("1_j13sg")
+id = "copycat"
+nombre = "Copión"
+categoria = "estado"
+precision = 0
+pp = 20
+objetivo = "user"
+meta = "unique"
+descripcion = "Imita el movimiento usado justo antes. El movimiento falla si no se ha usado aún ninguno."

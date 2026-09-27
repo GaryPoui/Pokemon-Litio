@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://w83i4h5pknif"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_eulx6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="2_t4n3y"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_on40s"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_r17v0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swords_dance.tres" id="5_dynte"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/peck.tres" id="6_je63e"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/metal_claw.tres" id="7_wp4xs"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bubble_beam.tres" id="8_v3g4a"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swagger.tres" id="9_chi51"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_attack.tres" id="10_qdow8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/brine.tres" id="11_g7iy0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aqua_jet.tres" id="12_gf5pb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlpool.tres" id="13_trn6r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mist.tres" id="14_ma2lg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/drill_peck.tres" id="15_1bpv6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="16_e4kwc"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_4yq86"]
+[ext_resource type="Texture2D" uid="uid://dl5cfo8eo5c8" path="res://Assets/Pokemones/batalla/empoleon_espalda.png" id="18_ubcmd"]
+[ext_resource type="Texture2D" uid="uid://i67kw5tlwb1b" path="res://Assets/Pokemones/batalla/empoleon_frente.png" id="19_sp25g"]
+
+[sub_resource type="Resource" id="Resource_w5yn1"]
+script = ExtResource("1_eulx6")
+movimiento = ExtResource("2_t4n3y")
+
+[sub_resource type="Resource" id="Resource_jl6oi"]
+script = ExtResource("1_eulx6")
+movimiento = ExtResource("3_on40s")
+
+[sub_resource type="Resource" id="Resource_l53xs"]
+script = ExtResource("1_eulx6")
+movimiento = ExtResource("4_r17v0")
+
+[sub_resource type="Resource" id="Resource_t3f4v"]
+script = ExtResource("1_eulx6")
+nivel = 4
+movimiento = ExtResource("3_on40s")
+
+[sub_resource type="Resource" id="Resource_u01n1"]
+script = ExtResource("1_eulx6")
+nivel = 8
+movimiento = ExtResource("2_t4n3y")
+
+[sub_resource type="Resource" id="Resource_0c4ua"]
+script = ExtResource("1_eulx6")
+nivel = 11
+movimiento = ExtResource("5_dynte")
+
+[sub_resource type="Resource" id="Resource_c3kt3"]
+script = ExtResource("1_eulx6")
+nivel = 15
+movimiento = ExtResource("6_je63e")
+
+[sub_resource type="Resource" id="Resource_5jx3x"]
+script = ExtResource("1_eulx6")
+nivel = 16
+movimiento = ExtResource("7_wp4xs")
+
+[sub_resource type="Resource" id="Resource_jc5b5"]
+script = ExtResource("1_eulx6")
+nivel = 19
+movimiento = ExtResource("8_v3g4a")
+
+[sub_resource type="Resource" id="Resource_uh2df"]
+script = ExtResource("1_eulx6")
+nivel = 24
+movimiento = ExtResource("9_chi51")
+
+[sub_resource type="Resource" id="Resource_7a2c7"]
+script = ExtResource("1_eulx6")
+nivel = 28
+movimiento = ExtResource("10_qdow8")
+
+[sub_resource type="Resource" id="Resource_ii2xc"]
+script = ExtResource("1_eulx6")
+nivel = 33
+movimiento = ExtResource("11_g7iy0")
+
+[sub_resource type="Resource" id="Resource_q5nsl"]
+script = ExtResource("1_eulx6")
+nivel = 36
+movimiento = ExtResource("12_gf5pb")
+
+[sub_resource type="Resource" id="Resource_on36b"]
+script = ExtResource("1_eulx6")
+nivel = 39
+movimiento = ExtResource("13_trn6r")
+
+[sub_resource type="Resource" id="Resource_33jp7"]
+script = ExtResource("1_eulx6")
+nivel = 46
+movimiento = ExtResource("14_ma2lg")
+
+[sub_resource type="Resource" id="Resource_y7w5w"]
+script = ExtResource("1_eulx6")
+nivel = 52
+movimiento = ExtResource("15_1bpv6")
+
+[sub_resource type="Resource" id="Resource_hj2k6"]
+script = ExtResource("1_eulx6")
+nivel = 59
+movimiento = ExtResource("16_e4kwc")
+
+[resource]
+script = ExtResource("17_4yq86")
+id = "empoleon"
+numero = 395
+nombre = "Empoleon"
+tipos = ["agua", "acero"]
+ps = 84
+ataque = 86
+defensa = 88
+at_esp = 111
+def_esp = 101
+velocidad = 60
+exp_base = 239
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 3
+}
+aprende = Array[ExtResource("1_eulx6")]([SubResource("Resource_w5yn1"), SubResource("Resource_jl6oi"), SubResource("Resource_l53xs"), SubResource("Resource_t3f4v"), SubResource("Resource_u01n1"), SubResource("Resource_0c4ua"), SubResource("Resource_c3kt3"), SubResource("Resource_5jx3x"), SubResource("Resource_jc5b5"), SubResource("Resource_uh2df"), SubResource("Resource_7a2c7"), SubResource("Resource_ii2xc"), SubResource("Resource_q5nsl"), SubResource("Resource_on36b"), SubResource("Resource_33jp7"), SubResource("Resource_y7w5w"), SubResource("Resource_hj2k6")])
+sprite_frente = ExtResource("19_sp25g")
+sprite_espalda = ExtResource("18_ubcmd")
+cuadros_frente = 66
+cuadros_espalda = 66

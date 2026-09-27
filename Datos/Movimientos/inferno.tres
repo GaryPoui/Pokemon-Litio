@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_teh7m"]
+
+[resource]
+script = ExtResource("1_teh7m")
+id = "inferno"
+nombre = "Infierno"
+tipo = "fuego"
+categoria = "especial"
+poder = 100
+precision = 50
+pp = 5
+meta = "damage-ailment"
+descripcion = "Ataca con una gran ráfaga de fuego que causa quemaduras."
+estado = "burn"
+prob_estado = 100

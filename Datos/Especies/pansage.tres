@@ -99,6 +99,7 @@ script = ExtResource("17_880lx")
 id = "pansage"
 numero = 511
 nombre = "Pansage"
+tipos = ["planta"]
 ataque = 53
 defensa = 48
 at_esp = 53

@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://brj3a0288m1uk"]
+
+[ext_resource type="Script" uid="uid://dohdk3d8txq4a" path="res://Scripts/ui/iniciales_pc.gd" id="1_a2fc1"]
+[ext_resource type="Texture2D" uid="uid://cf7w844elxr8i" path="res://Assets/Menus-Equipo/fondo.png" id="2_utc02"]
+[ext_resource type="Script" uid="uid://leuk4t8cgf1b" path="res://Scripts/batalla/sprite_pokemon.gd" id="3_mwkbv"]
+
+[node name="InicialesPC" type="CanvasLayer" unique_id=849143534]
+script = ExtResource("1_a2fc1")
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=568125681]
+offset_right = 256.0
+offset_bottom = 192.0
+texture = ExtResource("2_utc02")
+
+[node name="Cabecera" type="Panel" parent="." unique_id=2035831845]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 252.0
+offset_bottom = 24.0
+
+[node name="Titulo" type="Label" parent="Cabecera" unique_id=757385975]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 242.0
+offset_bottom = 17.0
+
+[node name="Grilla" type="Panel" parent="." unique_id=1460902056]
+offset_left = 4.0
+offset_top = 28.0
+offset_right = 152.0
+offset_bottom = 188.0
+
+[node name="Marco" type="Panel" parent="Grilla" unique_id=386153555]
+layout_mode = 0
+offset_right = 38.0
+offset_bottom = 33.0
+mouse_filter = 2
+
+[node name="Info" type="Panel" parent="." unique_id=253979713]
+offset_left = 156.0
+offset_top = 28.0
+offset_right = 252.0
+offset_bottom = 188.0
+
+[node name="Nombre" type="Label" parent="Info" unique_id=2064149420]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 92.0
+offset_bottom = 18.0
+horizontal_alignment = 1
+
+[node name="Pokemon" type="Sprite2D" parent="Info" unique_id=2013121128]
+position = Vector2(48, 100)
+script = ExtResource("3_mwkbv")
+
+[node name="Tipos" type="Control" parent="Info" unique_id=1064283555]
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 104.0
+offset_right = 92.0
+offset_bottom = 130.0
+mouse_filter = 2
+
+[node name="Nivel" type="Label" parent="Info" unique_id=1512522518]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 130.0
+offset_right = 92.0
+offset_bottom = 144.0
+horizontal_alignment = 1
+
+[node name="Ayuda" type="Label" parent="Info" unique_id=835420050]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 146.0
+offset_right = 94.0
+offset_bottom = 160.0
+horizontal_alignment = 1

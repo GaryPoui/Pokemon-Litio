@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://b67juuc2w84rv"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ae4ap"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_oqmv5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="3_ct42s"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_o5uue"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wing_attack.tres" id="5_ha4fg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_team.tres" id="6_ajrcr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/endeavor.tres" id="7_j0moi"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlwind.tres" id="8_8ps6n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aerial_ace.tres" id="9_w5epf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="10_qdu4e"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="11_30kee"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/brave_bird.tres" id="12_r2ell"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/final_gambit.tres" id="13_ytj3c"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_tt7xf"]
+[ext_resource type="Texture2D" uid="uid://bvybi3mv1dxcx" path="res://Assets/Pokemones/batalla/staravia_espalda.png" id="15_syd28"]
+[ext_resource type="Texture2D" uid="uid://duniryf6ik3wp" path="res://Assets/Pokemones/batalla/staravia_frente.png" id="16_up5ry"]
+
+[sub_resource type="Resource" id="Resource_bi61p"]
+script = ExtResource("1_ae4ap")
+movimiento = ExtResource("2_oqmv5")
+
+[sub_resource type="Resource" id="Resource_fj6vr"]
+script = ExtResource("1_ae4ap")
+movimiento = ExtResource("3_ct42s")
+
+[sub_resource type="Resource" id="Resource_8opxt"]
+script = ExtResource("1_ae4ap")
+movimiento = ExtResource("4_o5uue")
+
+[sub_resource type="Resource" id="Resource_62cp3"]
+script = ExtResource("1_ae4ap")
+nivel = 5
+movimiento = ExtResource("3_ct42s")
+
+[sub_resource type="Resource" id="Resource_o40ko"]
+script = ExtResource("1_ae4ap")
+nivel = 9
+movimiento = ExtResource("5_ha4fg")
+
+[sub_resource type="Resource" id="Resource_oanve"]
+script = ExtResource("1_ae4ap")
+nivel = 13
+movimiento = ExtResource("6_ajrcr")
+
+[sub_resource type="Resource" id="Resource_6i5jo"]
+script = ExtResource("1_ae4ap")
+nivel = 18
+movimiento = ExtResource("7_j0moi")
+
+[sub_resource type="Resource" id="Resource_gscql"]
+script = ExtResource("1_ae4ap")
+nivel = 23
+movimiento = ExtResource("8_8ps6n")
+
+[sub_resource type="Resource" id="Resource_al0a4"]
+script = ExtResource("1_ae4ap")
+nivel = 28
+movimiento = ExtResource("9_w5epf")
+
+[sub_resource type="Resource" id="Resource_2ss12"]
+script = ExtResource("1_ae4ap")
+nivel = 33
+movimiento = ExtResource("10_qdu4e")
+
+[sub_resource type="Resource" id="Resource_cnswo"]
+script = ExtResource("1_ae4ap")
+nivel = 38
+movimiento = ExtResource("11_30kee")
+
+[sub_resource type="Resource" id="Resource_7pn4w"]
+script = ExtResource("1_ae4ap")
+nivel = 43
+movimiento = ExtResource("12_r2ell")
+
+[sub_resource type="Resource" id="Resource_w4lur"]
+script = ExtResource("1_ae4ap")
+nivel = 48
+movimiento = ExtResource("13_ytj3c")
+
+[resource]
+script = ExtResource("14_tt7xf")
+id = "staravia"
+numero = 397
+nombre = "Staravia"
+tipos = ["normal", "volador"]
+ps = 55
+ataque = 75
+at_esp = 40
+def_esp = 40
+velocidad = 80
+exp_base = 119
+ratio_captura = 120
+crecimiento = "medium-slow"
+evs_otorgados = {
+"velocidad": 2
+}
+evoluciona_a = "staraptor"
+nivel_evolucion = 34
+aprende = Array[ExtResource("1_ae4ap")]([SubResource("Resource_bi61p"), SubResource("Resource_fj6vr"), SubResource("Resource_8opxt"), SubResource("Resource_62cp3"), SubResource("Resource_o40ko"), SubResource("Resource_oanve"), SubResource("Resource_6i5jo"), SubResource("Resource_gscql"), SubResource("Resource_al0a4"), SubResource("Resource_2ss12"), SubResource("Resource_cnswo"), SubResource("Resource_7pn4w"), SubResource("Resource_w4lur")])
+sprite_frente = ExtResource("16_up5ry")
+sprite_espalda = ExtResource("15_syd28")
+cuadros_frente = 58
+cuadros_espalda = 58
+fps_sprite = 7.72

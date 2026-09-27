@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dmdsufk2nsurw"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_8n3ls"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_yu01i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_lm1kt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="4_88mcq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="5_wdtki"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bide.tres" id="6_rxeaa"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/foresight.tres" id="7_4b487"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_sport.tres" id="8_6rpmq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="9_fgx7m"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlpool.tres" id="10_gblu6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/protect.tres" id="11_4kg0k"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="12_swp2b"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/endeavor.tres" id="13_e5hu3"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_ipast"]
+[ext_resource type="Texture2D" uid="uid://b01nllwuw6yhg" path="res://Assets/Pokemones/batalla/mudkip_espalda.png" id="15_lvqvn"]
+[ext_resource type="Texture2D" uid="uid://0ggmhs7x8biy" path="res://Assets/Pokemones/batalla/mudkip_frente.png" id="16_5y22a"]
+
+[sub_resource type="Resource" id="Resource_lrlhf"]
+script = ExtResource("1_8n3ls")
+movimiento = ExtResource("2_yu01i")
+
+[sub_resource type="Resource" id="Resource_5obfm"]
+script = ExtResource("1_8n3ls")
+movimiento = ExtResource("3_lm1kt")
+
+[sub_resource type="Resource" id="Resource_ealp8"]
+script = ExtResource("1_8n3ls")
+nivel = 6
+movimiento = ExtResource("4_88mcq")
+
+[sub_resource type="Resource" id="Resource_m63er"]
+script = ExtResource("1_8n3ls")
+nivel = 10
+movimiento = ExtResource("5_wdtki")
+
+[sub_resource type="Resource" id="Resource_mygil"]
+script = ExtResource("1_8n3ls")
+nivel = 15
+movimiento = ExtResource("6_rxeaa")
+
+[sub_resource type="Resource" id="Resource_gtm4i"]
+script = ExtResource("1_8n3ls")
+nivel = 19
+movimiento = ExtResource("7_4b487")
+
+[sub_resource type="Resource" id="Resource_vfx2p"]
+script = ExtResource("1_8n3ls")
+nivel = 24
+movimiento = ExtResource("8_6rpmq")
+
+[sub_resource type="Resource" id="Resource_5xi5r"]
+script = ExtResource("1_8n3ls")
+nivel = 28
+movimiento = ExtResource("9_fgx7m")
+
+[sub_resource type="Resource" id="Resource_fka8b"]
+script = ExtResource("1_8n3ls")
+nivel = 33
+movimiento = ExtResource("10_gblu6")
+
+[sub_resource type="Resource" id="Resource_ql3e7"]
+script = ExtResource("1_8n3ls")
+nivel = 37
+movimiento = ExtResource("11_4kg0k")
+
+[sub_resource type="Resource" id="Resource_wr5xx"]
+script = ExtResource("1_8n3ls")
+nivel = 42
+movimiento = ExtResource("12_swp2b")
+
+[sub_resource type="Resource" id="Resource_6fna8"]
+script = ExtResource("1_8n3ls")
+nivel = 46
+movimiento = ExtResource("13_e5hu3")
+
+[resource]
+script = ExtResource("14_ipast")
+id = "mudkip"
+numero = 258
+nombre = "Mudkip"
+tipos = ["agua"]
+ataque = 70
+velocidad = 40
+exp_base = 62
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 1
+}
+evoluciona_a = "marshtomp"
+nivel_evolucion = 16
+aprende = Array[ExtResource("1_8n3ls")]([SubResource("Resource_lrlhf"), SubResource("Resource_5obfm"), SubResource("Resource_ealp8"), SubResource("Resource_m63er"), SubResource("Resource_mygil"), SubResource("Resource_gtm4i"), SubResource("Resource_vfx2p"), SubResource("Resource_5xi5r"), SubResource("Resource_fka8b"), SubResource("Resource_ql3e7"), SubResource("Resource_wr5xx"), SubResource("Resource_6fna8")])
+sprite_frente = ExtResource("16_5y22a")
+sprite_espalda = ExtResource("15_lvqvn")
+cuadros_frente = 76
+cuadros_espalda = 76
+fps_sprite = 9.41

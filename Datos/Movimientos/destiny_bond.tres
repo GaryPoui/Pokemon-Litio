@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_vdt75"]
+
+[resource]
+script = ExtResource("1_vdt75")
+id = "destiny_bond"
+nombre = "Mismo Destino"
+tipo = "fantasma"
+categoria = "estado"
+precision = 0
+pp = 5
+objetivo = "user"
+meta = "unique"
+descripcion = "Si el usuario se debilita por un ataque rival antes de usar otro movimiento, el Pokémon rival se debilitará también. Puede fallar si se usa repetidamente."

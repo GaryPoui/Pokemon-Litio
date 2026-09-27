@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_hv5oe"]
+
+[resource]
+script = ExtResource("1_hv5oe")
+id = "heat_wave"
+nombre = "Onda Ígnea"
+tipo = "fuego"
+categoria = "especial"
+poder = 100
+precision = 90
+objetivo = "all-opponents"
+meta = "damage-ailment"
+descripcion = "Provoca un viento abrasador que puede quemar al objetivo."
+estado = "burn"
+prob_estado = 10

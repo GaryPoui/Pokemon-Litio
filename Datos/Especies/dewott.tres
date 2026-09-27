@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bsciremvf5qy6"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_gnaqi"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_gnaqi"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_uflu7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="3_vuykd"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="4_cgfrc"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/retaliate.tres" id="14_tacwp"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/swords_dance.tres" id="15_j457x"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="16_425yk"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_2slf7"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/dewott_espalda.png" id="18_n0ar3"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/dewott_frente.png" id="19_jdn0j"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_2slf7"]
+[ext_resource type="Texture2D" uid="uid://dye6jgkokq5c3" path="res://Assets/Pokemones/batalla/dewott_espalda.png" id="18_n0ar3"]
+[ext_resource type="Texture2D" uid="uid://b7d8ajydmug1f" path="res://Assets/Pokemones/batalla/dewott_frente.png" id="19_jdn0j"]
 
 [sub_resource type="Resource" id="Resource_bvpal"]
 script = ExtResource("1_gnaqi")
@@ -111,7 +111,7 @@ script = ExtResource("17_2slf7")
 id = "dewott"
 numero = 502
 nombre = "Dewott"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 75
 ataque = 75
 defensa = 60

@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://ccomcitsl4xpt"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_8g3ov"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="2_te6qw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_77duj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_sport.tres" id="4_3v67f"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rock_polish.tres" id="5_cvpq1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rock_throw.tres" id="6_ikix5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/magnitude.tres" id="7_rceoi"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rollout.tres" id="8_1pvxk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rock_blast.tres" id="9_ha1ea"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/smack_down.tres" id="10_a1osw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/self_destruct.tres" id="11_fabht"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bulldoze.tres" id="12_mjk5r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stealth_rock.tres" id="13_tkhvk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="14_v6h3n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="15_jw37a"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="16_s3vjy"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="17_2lrn7"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_tceuu"]
+[ext_resource type="Texture2D" uid="uid://dpj76ncunkmiv" path="res://Assets/Pokemones/batalla/geodude_espalda.png" id="19_gv5t3"]
+[ext_resource type="Texture2D" uid="uid://lu3w0xc7uk7m" path="res://Assets/Pokemones/batalla/geodude_frente.png" id="20_wirdb"]
+
+[sub_resource type="Resource" id="Resource_4svat"]
+script = ExtResource("1_8g3ov")
+movimiento = ExtResource("2_te6qw")
+
+[sub_resource type="Resource" id="Resource_w0loj"]
+script = ExtResource("1_8g3ov")
+movimiento = ExtResource("3_77duj")
+
+[sub_resource type="Resource" id="Resource_j0mxi"]
+script = ExtResource("1_8g3ov")
+nivel = 4
+movimiento = ExtResource("4_3v67f")
+
+[sub_resource type="Resource" id="Resource_iffj0"]
+script = ExtResource("1_8g3ov")
+nivel = 8
+movimiento = ExtResource("5_cvpq1")
+
+[sub_resource type="Resource" id="Resource_bdfjr"]
+script = ExtResource("1_8g3ov")
+nivel = 11
+movimiento = ExtResource("6_ikix5")
+
+[sub_resource type="Resource" id="Resource_fdtky"]
+script = ExtResource("1_8g3ov")
+nivel = 15
+movimiento = ExtResource("7_rceoi")
+
+[sub_resource type="Resource" id="Resource_cw3yi"]
+script = ExtResource("1_8g3ov")
+nivel = 18
+movimiento = ExtResource("8_1pvxk")
+
+[sub_resource type="Resource" id="Resource_iw2uh"]
+script = ExtResource("1_8g3ov")
+nivel = 22
+movimiento = ExtResource("9_ha1ea")
+
+[sub_resource type="Resource" id="Resource_ckeyk"]
+script = ExtResource("1_8g3ov")
+nivel = 25
+movimiento = ExtResource("10_a1osw")
+
+[sub_resource type="Resource" id="Resource_bn3b3"]
+script = ExtResource("1_8g3ov")
+nivel = 29
+movimiento = ExtResource("11_fabht")
+
+[sub_resource type="Resource" id="Resource_getek"]
+script = ExtResource("1_8g3ov")
+nivel = 32
+movimiento = ExtResource("12_mjk5r")
+
+[sub_resource type="Resource" id="Resource_2k16r"]
+script = ExtResource("1_8g3ov")
+nivel = 36
+movimiento = ExtResource("13_tkhvk")
+
+[sub_resource type="Resource" id="Resource_xi1pu"]
+script = ExtResource("1_8g3ov")
+nivel = 39
+movimiento = ExtResource("14_v6h3n")
+
+[sub_resource type="Resource" id="Resource_j01e4"]
+script = ExtResource("1_8g3ov")
+nivel = 43
+movimiento = ExtResource("15_jw37a")
+
+[sub_resource type="Resource" id="Resource_ofi13"]
+script = ExtResource("1_8g3ov")
+nivel = 46
+movimiento = ExtResource("16_s3vjy")
+
+[sub_resource type="Resource" id="Resource_cqem0"]
+script = ExtResource("1_8g3ov")
+nivel = 50
+movimiento = ExtResource("17_2lrn7")
+
+[resource]
+script = ExtResource("18_tceuu")
+id = "geodude"
+numero = 74
+nombre = "Geodude"
+tipos = ["roca", "tierra"]
+ps = 40
+ataque = 80
+defensa = 100
+at_esp = 30
+def_esp = 30
+velocidad = 20
+exp_base = 60
+ratio_captura = 255
+crecimiento = "medium-slow"
+evs_otorgados = {
+"defensa": 1
+}
+evoluciona_a = "graveler"
+nivel_evolucion = 25
+aprende = Array[ExtResource("1_8g3ov")]([SubResource("Resource_4svat"), SubResource("Resource_w0loj"), SubResource("Resource_j0mxi"), SubResource("Resource_iffj0"), SubResource("Resource_bdfjr"), SubResource("Resource_fdtky"), SubResource("Resource_cw3yi"), SubResource("Resource_iw2uh"), SubResource("Resource_ckeyk"), SubResource("Resource_bn3b3"), SubResource("Resource_getek"), SubResource("Resource_2k16r"), SubResource("Resource_xi1pu"), SubResource("Resource_j01e4"), SubResource("Resource_ofi13"), SubResource("Resource_cqem0")])
+sprite_frente = ExtResource("20_wirdb")
+sprite_espalda = ExtResource("19_gv5t3")
+cuadros_frente = 43
+cuadros_espalda = 32
+fps_sprite = 16.1

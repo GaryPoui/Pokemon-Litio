@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_yht8m"]
+
+[resource]
+script = ExtResource("1_yht8m")
+id = "flash_cannon"
+nombre = "Cañón Resplandor"
+tipo = "acero"
+categoria = "especial"
+poder = 80
+meta = "damage-lower"
+descripcion = "El usuario concentra toda la luz del cuerpo y la libera. Puede bajar la Defensa Especial del objetivo."
+cambios_stats = {
+"def_esp": -1
+}
+prob_stat = 10

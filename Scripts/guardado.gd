@@ -29,6 +29,7 @@ func guardar() -> bool:
 		"dinero": Estado.dinero,
 		"stock_tienda": Estado.stock_tienda.duplicate(),
 		"equipo": Equipo.a_lista(),
+		"caja": Equipo.caja_a_lista(),
 	}
 	var f:= FileAccess.open(RUTA, FileAccess.WRITE)
 	if f== null:
@@ -51,6 +52,7 @@ func cargar() -> bool:
 	Estado.dinero =int(datos.get("dinero", Estado.DINERO_INICIAL))
 	Estado.stock_tienda.assign(Array(datos.get("stock_tienda", [])).map(func(x): return str(x)))
 	Equipo.desde_lista(datos.get("equipo", []))
+	Equipo.caja_desde_lista(datos.get("caja", []))
 	var p: Array= datos.get("posicion", [0, 0])
 	var d: Array =datos.get("direccion", [0, 1])
 	GestorEscenas.cambiar_mapa_a(str(datos["mapa"]), Vector2(p[0], p[1]), Vector2(d[0], d[1]))

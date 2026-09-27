@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_yjj4o"]
+
+[resource]
+script = ExtResource("1_yjj4o")
+id = "mirror_move"
+nombre = "Espejo"
+tipo = "volador"
+categoria = "estado"
+precision = 0
+pp = 20
+meta = "unique"
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."

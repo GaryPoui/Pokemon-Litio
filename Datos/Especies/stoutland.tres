@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dt2cipj1ff1lc"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ljnfh"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ljnfh"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="2_ut63e"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fire_fang.tres" id="3_itgpk"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/ice_fang.tres" id="4_mes4v"]
@@ -17,9 +17,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="15_khmta"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="16_ttupe"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/giga_impact.tres" id="17_aqasr"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_j8mly"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/stoutland_espalda.png" id="19_uiq1s"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/stoutland_frente.png" id="20_8op53"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_j8mly"]
+[ext_resource type="Texture2D" uid="uid://c6kqdrt52wk6w" path="res://Assets/Pokemones/batalla/stoutland_espalda.png" id="19_uiq1s"]
+[ext_resource type="Texture2D" uid="uid://bwtdtvkaompm1" path="res://Assets/Pokemones/batalla/stoutland_frente.png" id="20_8op53"]
 
 [sub_resource type="Resource" id="Resource_ii3b0"]
 script = ExtResource("1_ljnfh")
@@ -109,7 +109,6 @@ script = ExtResource("18_j8mly")
 id = "stoutland"
 numero = 508
 nombre = "Stoutland"
-tipos = PackedStringArray("normal")
 ps = 85
 ataque = 110
 defensa = 90

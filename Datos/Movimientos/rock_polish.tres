@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_bnkgh"]
+
+[resource]
+script = ExtResource("1_bnkgh")
+id = "rock_polish"
+nombre = "Pulimento"
+tipo = "roca"
+categoria = "estado"
+precision = 0
+pp = 20
+objetivo = "user"
+meta = "net-good-stats"
+descripcion = "Reduce la resistencia puliendo su cuerpo. Aumenta mucho la Velocidad."
+cambios_stats = {
+"velocidad": 2
+}

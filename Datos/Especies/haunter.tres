@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bipcfu5mev4vu"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_mblpj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hypnosis.tres" id="2_jem2p"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/lick.tres" id="3_lqgkb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spite.tres" id="4_i0bix"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mean_look.tres" id="5_fsu6p"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/curse.tres" id="6_icmd3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/night_shade.tres" id="7_tg5ef"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/confuse_ray.tres" id="8_a6wl1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="9_cu170"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/shadow_punch.tres" id="10_qulm4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/payback.tres" id="11_8ctgt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/shadow_ball.tres" id="12_sfait"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dream_eater.tres" id="13_sb4pj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dark_pulse.tres" id="14_afuah"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/destiny_bond.tres" id="15_tap2l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hex.tres" id="16_r7dtr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nightmare.tres" id="17_l4vy3"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_05wm3"]
+[ext_resource type="Texture2D" uid="uid://bvkma5nwuxp4l" path="res://Assets/Pokemones/batalla/haunter_espalda.png" id="19_o2uto"]
+[ext_resource type="Texture2D" uid="uid://dkbhlb0jghr5w" path="res://Assets/Pokemones/batalla/haunter_frente.png" id="20_aoo7f"]
+
+[sub_resource type="Resource" id="Resource_xyo6e"]
+script = ExtResource("1_mblpj")
+movimiento = ExtResource("2_jem2p")
+
+[sub_resource type="Resource" id="Resource_kaq2b"]
+script = ExtResource("1_mblpj")
+movimiento = ExtResource("3_lqgkb")
+
+[sub_resource type="Resource" id="Resource_26h66"]
+script = ExtResource("1_mblpj")
+movimiento = ExtResource("4_i0bix")
+
+[sub_resource type="Resource" id="Resource_g1ay3"]
+script = ExtResource("1_mblpj")
+nivel = 5
+movimiento = ExtResource("4_i0bix")
+
+[sub_resource type="Resource" id="Resource_7acey"]
+script = ExtResource("1_mblpj")
+nivel = 8
+movimiento = ExtResource("5_fsu6p")
+
+[sub_resource type="Resource" id="Resource_vld6k"]
+script = ExtResource("1_mblpj")
+nivel = 12
+movimiento = ExtResource("6_icmd3")
+
+[sub_resource type="Resource" id="Resource_73vse"]
+script = ExtResource("1_mblpj")
+nivel = 15
+movimiento = ExtResource("7_tg5ef")
+
+[sub_resource type="Resource" id="Resource_qqytm"]
+script = ExtResource("1_mblpj")
+nivel = 19
+movimiento = ExtResource("8_a6wl1")
+
+[sub_resource type="Resource" id="Resource_m0kkd"]
+script = ExtResource("1_mblpj")
+nivel = 22
+movimiento = ExtResource("9_cu170")
+
+[sub_resource type="Resource" id="Resource_f6yho"]
+script = ExtResource("1_mblpj")
+nivel = 25
+movimiento = ExtResource("10_qulm4")
+
+[sub_resource type="Resource" id="Resource_3jhgm"]
+script = ExtResource("1_mblpj")
+nivel = 28
+movimiento = ExtResource("11_8ctgt")
+
+[sub_resource type="Resource" id="Resource_6rg6j"]
+script = ExtResource("1_mblpj")
+nivel = 33
+movimiento = ExtResource("12_sfait")
+
+[sub_resource type="Resource" id="Resource_2in50"]
+script = ExtResource("1_mblpj")
+nivel = 39
+movimiento = ExtResource("13_sb4pj")
+
+[sub_resource type="Resource" id="Resource_u052p"]
+script = ExtResource("1_mblpj")
+nivel = 44
+movimiento = ExtResource("14_afuah")
+
+[sub_resource type="Resource" id="Resource_vvx43"]
+script = ExtResource("1_mblpj")
+nivel = 50
+movimiento = ExtResource("15_tap2l")
+
+[sub_resource type="Resource" id="Resource_6a3f5"]
+script = ExtResource("1_mblpj")
+nivel = 55
+movimiento = ExtResource("16_r7dtr")
+
+[sub_resource type="Resource" id="Resource_pkg0s"]
+script = ExtResource("1_mblpj")
+nivel = 61
+movimiento = ExtResource("17_l4vy3")
+
+[resource]
+script = ExtResource("18_05wm3")
+id = "haunter"
+numero = 93
+nombre = "Haunter"
+tipos = ["fantasma", "veneno"]
+ps = 45
+defensa = 45
+at_esp = 115
+def_esp = 55
+velocidad = 95
+exp_base = 142
+ratio_captura = 90
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 2
+}
+aprende = Array[ExtResource("1_mblpj")]([SubResource("Resource_xyo6e"), SubResource("Resource_kaq2b"), SubResource("Resource_26h66"), SubResource("Resource_g1ay3"), SubResource("Resource_7acey"), SubResource("Resource_vld6k"), SubResource("Resource_73vse"), SubResource("Resource_qqytm"), SubResource("Resource_m0kkd"), SubResource("Resource_f6yho"), SubResource("Resource_3jhgm"), SubResource("Resource_6rg6j"), SubResource("Resource_2in50"), SubResource("Resource_u052p"), SubResource("Resource_vvx43"), SubResource("Resource_6a3f5"), SubResource("Resource_pkg0s")])
+sprite_frente = ExtResource("20_aoo7f")
+sprite_espalda = ExtResource("19_o2uto")
+cuadros_frente = 25
+cuadros_espalda = 25
+fps_sprite = 20.0

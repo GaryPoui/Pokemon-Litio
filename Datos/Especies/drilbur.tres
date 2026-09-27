@@ -98,6 +98,7 @@ script = ExtResource("17_pp887")
 id = "drilbur"
 numero = 529
 nombre = "Drilbur"
+tipos = ["tierra"]
 ps = 60
 ataque = 85
 defensa = 40

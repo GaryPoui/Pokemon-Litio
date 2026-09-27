@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://jyw8u0hvxrki"]
+
+[ext_resource type="Script" uid="uid://cmtx7no8f4jsd" path="res://Scripts/ui/caja_pc.gd" id="1_o4gc1"]
+[ext_resource type="Texture2D" uid="uid://cf7w844elxr8i" path="res://Assets/Menus-Equipo/fondo.png" id="2_nyd0y"]
+
+[node name="CajaPC" type="CanvasLayer" unique_id=1199930756]
+script = ExtResource("1_o4gc1")
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=1058878593]
+offset_right = 256.0
+offset_bottom = 192.0
+texture = ExtResource("2_nyd0y")
+
+[node name="Cabecera" type="Panel" parent="." unique_id=276225433]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 252.0
+offset_bottom = 24.0
+
+[node name="Titulo" type="Label" parent="Cabecera" unique_id=1482505037]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 126.0
+offset_bottom = 17.0
+
+[node name="Cuenta" type="Label" parent="Cabecera" unique_id=719541077]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 3.0
+offset_right = 242.0
+offset_bottom = 17.0
+
+[node name="Equipo" type="Panel" parent="." unique_id=1095624534]
+offset_left = 4.0
+offset_top = 28.0
+offset_right = 108.0
+offset_bottom = 146.0
+
+[node name="Titulo" type="Label" parent="Equipo" unique_id=1032552653]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 96.0
+offset_bottom = 16.0
+
+[node name="Caja" type="Panel" parent="." unique_id=1618301963]
+offset_left = 112.0
+offset_top = 28.0
+offset_right = 252.0
+offset_bottom = 146.0
+
+[node name="Titulo" type="Label" parent="Caja" unique_id=888384374]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 96.0
+offset_bottom = 16.0
+
+[node name="Flechas" type="Label" parent="Caja" unique_id=1452351093]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 14.0
+offset_right = 138.0
+offset_bottom = 114.0
+horizontal_alignment = 1
+
+[node name="Marco" type="Panel" parent="." unique_id=1898872279]
+offset_right = 38.0
+offset_bottom = 34.0
+mouse_filter = 2
+
+[node name="Info" type="Panel" parent="." unique_id=882312237]
+offset_left = 4.0
+offset_top = 150.0
+offset_right = 252.0
+offset_bottom = 188.0
+
+[node name="Nombre" type="Label" parent="Info" unique_id=1010056226]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 156.0
+offset_bottom = 17.0
+
+[node name="Datos" type="Label" parent="Info" unique_id=1004802861]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 4.0
+offset_right = 244.0
+offset_bottom = 18.0
+horizontal_alignment = 2
+
+[node name="Tipos" type="Control" parent="Info" unique_id=605072525]
+anchors_preset = 0
+offset_left = 6.0
+offset_top = 21.0
+offset_right = 116.0
+offset_bottom = 33.0
+mouse_filter = 2
+
+[node name="Ayuda" type="Label" parent="Info" unique_id=1703486103]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 22.0
+offset_right = 242.0
+offset_bottom = 36.0
+horizontal_alignment = 2

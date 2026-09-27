@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_votob"]
+
+[resource]
+script = ExtResource("1_votob")
+id = "astonish"
+nombre = "Impresionar"
+tipo = "fantasma"
+poder = 30
+pp = 15
+descripcion = "Lanza un grito tan tremendo que impresiona y puede amedrentar al objetivo."
+prob_retroceso = 30

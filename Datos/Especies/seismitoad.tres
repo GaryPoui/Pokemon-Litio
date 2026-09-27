@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://d0ejumtyb5qt3"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_oy7tn"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_oy7tn"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="2_2oh1k"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_m2frd"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/round.tres" id="4_btjwa"]
@@ -17,9 +17,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/echoed_voice.tres" id="15_ctsxb"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="16_3ytpe"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="17_5kbgq"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_v86ip"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/seismitoad_espalda.png" id="19_txkfq"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/seismitoad_frente.png" id="20_amiyh"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_v86ip"]
+[ext_resource type="Texture2D" uid="uid://d1qua1tg5t2ux" path="res://Assets/Pokemones/batalla/seismitoad_espalda.png" id="19_txkfq"]
+[ext_resource type="Texture2D" uid="uid://dtnxgbrcwvkfq" path="res://Assets/Pokemones/batalla/seismitoad_frente.png" id="20_amiyh"]
 
 [sub_resource type="Resource" id="Resource_q41lg"]
 script = ExtResource("1_oy7tn")
@@ -112,7 +112,7 @@ script = ExtResource("18_v86ip")
 id = "seismitoad"
 numero = 537
 nombre = "Seismitoad"
-tipos = PackedStringArray("agua", "tierra")
+tipos = ["agua", "tierra"]
 ps = 105
 ataque = 95
 defensa = 75

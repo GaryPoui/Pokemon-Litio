@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dbc7geob1pqu8"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_tnmxf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leech_life.tres" id="2_30lar"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="3_e6j4n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="4_hpbpr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="5_sac08"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wing_attack.tres" id="6_lbmml"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/confuse_ray.tres" id="7_j1yij"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_cutter.tres" id="8_np62v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mean_look.tres" id="9_x3fab"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/acrobatics.tres" id="10_llg5i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/poison_fang.tres" id="11_ypoac"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/haze.tres" id="12_0ska3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="13_5br30"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_g4vul"]
+[ext_resource type="Texture2D" uid="uid://dpkhai0aug1qj" path="res://Assets/Pokemones/batalla/zubat_espalda.png" id="15_rbn8a"]
+[ext_resource type="Texture2D" uid="uid://b3vv4kjkyui7n" path="res://Assets/Pokemones/batalla/zubat_frente.png" id="16_va7ks"]
+
+[sub_resource type="Resource" id="Resource_7f1pt"]
+script = ExtResource("1_tnmxf")
+movimiento = ExtResource("2_30lar")
+
+[sub_resource type="Resource" id="Resource_p2hhm"]
+script = ExtResource("1_tnmxf")
+nivel = 5
+movimiento = ExtResource("3_e6j4n")
+
+[sub_resource type="Resource" id="Resource_uaoup"]
+script = ExtResource("1_tnmxf")
+nivel = 9
+movimiento = ExtResource("4_hpbpr")
+
+[sub_resource type="Resource" id="Resource_n260a"]
+script = ExtResource("1_tnmxf")
+nivel = 13
+movimiento = ExtResource("5_sac08")
+
+[sub_resource type="Resource" id="Resource_pf3h4"]
+script = ExtResource("1_tnmxf")
+nivel = 17
+movimiento = ExtResource("6_lbmml")
+
+[sub_resource type="Resource" id="Resource_8nfsu"]
+script = ExtResource("1_tnmxf")
+nivel = 21
+movimiento = ExtResource("7_j1yij")
+
+[sub_resource type="Resource" id="Resource_q8t58"]
+script = ExtResource("1_tnmxf")
+nivel = 25
+movimiento = ExtResource("8_np62v")
+
+[sub_resource type="Resource" id="Resource_s38n4"]
+script = ExtResource("1_tnmxf")
+nivel = 29
+movimiento = ExtResource("9_x3fab")
+
+[sub_resource type="Resource" id="Resource_ons33"]
+script = ExtResource("1_tnmxf")
+nivel = 33
+movimiento = ExtResource("10_llg5i")
+
+[sub_resource type="Resource" id="Resource_v0v0y"]
+script = ExtResource("1_tnmxf")
+nivel = 37
+movimiento = ExtResource("11_ypoac")
+
+[sub_resource type="Resource" id="Resource_fatv7"]
+script = ExtResource("1_tnmxf")
+nivel = 41
+movimiento = ExtResource("12_0ska3")
+
+[sub_resource type="Resource" id="Resource_ikke4"]
+script = ExtResource("1_tnmxf")
+nivel = 45
+movimiento = ExtResource("13_5br30")
+
+[resource]
+script = ExtResource("14_g4vul")
+id = "zubat"
+numero = 41
+nombre = "Zubat"
+tipos = ["veneno", "volador"]
+ps = 40
+ataque = 45
+defensa = 35
+at_esp = 30
+def_esp = 40
+velocidad = 55
+exp_base = 49
+ratio_captura = 255
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciona_a = "golbat"
+nivel_evolucion = 22
+aprende = Array[ExtResource("1_tnmxf")]([SubResource("Resource_7f1pt"), SubResource("Resource_p2hhm"), SubResource("Resource_uaoup"), SubResource("Resource_n260a"), SubResource("Resource_pf3h4"), SubResource("Resource_8nfsu"), SubResource("Resource_q8t58"), SubResource("Resource_s38n4"), SubResource("Resource_ons33"), SubResource("Resource_v0v0y"), SubResource("Resource_fatv7"), SubResource("Resource_ikke4")])
+sprite_frente = ExtResource("16_va7ks")
+sprite_espalda = ExtResource("15_rbn8a")
+cuadros_frente = 27
+cuadros_espalda = 9
+fps_sprite = 20.0

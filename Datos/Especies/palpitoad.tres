@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://up00ufkmjiam"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_fumlo"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_fumlo"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="2_v675x"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_bksao"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/round.tres" id="4_6tup3"]
@@ -15,9 +15,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/echoed_voice.tres" id="13_jsky4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="14_qhowv"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="15_7hqrk"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_tv344"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/palpitoad_espalda.png" id="17_kkai2"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/palpitoad_frente.png" id="18_r58b0"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_tv344"]
+[ext_resource type="Texture2D" uid="uid://bmgbs4eu3jlnp" path="res://Assets/Pokemones/batalla/palpitoad_espalda.png" id="17_kkai2"]
+[ext_resource type="Texture2D" uid="uid://bx3edb88ccrw7" path="res://Assets/Pokemones/batalla/palpitoad_frente.png" id="18_r58b0"]
 
 [sub_resource type="Resource" id="Resource_3wumq"]
 script = ExtResource("1_fumlo")
@@ -100,7 +100,7 @@ script = ExtResource("16_tv344")
 id = "palpitoad"
 numero = 536
 nombre = "Palpitoad"
-tipos = PackedStringArray("agua", "tierra")
+tipos = ["agua", "tierra"]
 ps = 75
 ataque = 65
 defensa = 55

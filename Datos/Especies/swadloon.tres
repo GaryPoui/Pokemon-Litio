@@ -1,15 +1,15 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://d2omenxoa7fg7"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_iy2dm"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_iy2dm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="2_881rw"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/grass_whistle.tres" id="3_cwuar"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/razor_leaf.tres" id="4_avu3n"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/string_shot.tres" id="5_lrqgi"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="6_y65kg"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/protect.tres" id="7_ylmqi"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="8_04tnk"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/swadloon_espalda.png" id="9_xr23h"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/swadloon_frente.png" id="10_4t811"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="8_04tnk"]
+[ext_resource type="Texture2D" uid="uid://2hsvnfpj7hmy" path="res://Assets/Pokemones/batalla/swadloon_espalda.png" id="9_xr23h"]
+[ext_resource type="Texture2D" uid="uid://vf3781hni34x" path="res://Assets/Pokemones/batalla/swadloon_frente.png" id="10_4t811"]
 
 [sub_resource type="Resource" id="Resource_6irkg"]
 script = ExtResource("1_iy2dm")
@@ -41,7 +41,7 @@ script = ExtResource("8_04tnk")
 id = "swadloon"
 numero = 541
 nombre = "Swadloon"
-tipos = PackedStringArray("bicho", "planta")
+tipos = ["bicho", "planta"]
 ps = 55
 ataque = 63
 defensa = 90

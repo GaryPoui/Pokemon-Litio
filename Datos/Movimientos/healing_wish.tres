@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_485lu"]
+
+[resource]
+script = ExtResource("1_485lu")
+id = "healing_wish"
+nombre = "Deseo Cura"
+tipo = "psiquico"
+categoria = "estado"
+precision = 0
+objetivo = "user"
+meta = "unique"
+descripcion = "El Pokémon cae debilitado, pero su sustituto recupera su estado y los PS."

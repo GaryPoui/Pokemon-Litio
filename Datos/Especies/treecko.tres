@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://oopv2jtpkhbc"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vo7gi"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_vr3ff"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="3_qftbo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="4_m8604"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="5_f1807"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="6_s5u60"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="7_ga00g"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="8_j6q7t"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="9_yo3qc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slam.tres" id="10_3a78p"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/detect.tres" id="11_2lr8p"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/giga_drain.tres" id="12_rrsj5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/energy_ball.tres" id="13_a5cnk"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_cf5c6"]
+[ext_resource type="Texture2D" uid="uid://c1v5e1ulb6618" path="res://Assets/Pokemones/batalla/treecko_espalda.png" id="15_x1rh8"]
+[ext_resource type="Texture2D" uid="uid://dhod0s4c500r" path="res://Assets/Pokemones/batalla/treecko_frente.png" id="16_tycyf"]
+
+[sub_resource type="Resource" id="Resource_uhe36"]
+script = ExtResource("1_vo7gi")
+movimiento = ExtResource("2_vr3ff")
+
+[sub_resource type="Resource" id="Resource_khp48"]
+script = ExtResource("1_vo7gi")
+movimiento = ExtResource("3_qftbo")
+
+[sub_resource type="Resource" id="Resource_lvlyo"]
+script = ExtResource("1_vo7gi")
+nivel = 6
+movimiento = ExtResource("4_m8604")
+
+[sub_resource type="Resource" id="Resource_7jvur"]
+script = ExtResource("1_vo7gi")
+nivel = 11
+movimiento = ExtResource("5_f1807")
+
+[sub_resource type="Resource" id="Resource_a6gm6"]
+script = ExtResource("1_vo7gi")
+nivel = 16
+movimiento = ExtResource("6_s5u60")
+
+[sub_resource type="Resource" id="Resource_8cbek"]
+script = ExtResource("1_vo7gi")
+nivel = 21
+movimiento = ExtResource("7_ga00g")
+
+[sub_resource type="Resource" id="Resource_7ni6p"]
+script = ExtResource("1_vo7gi")
+nivel = 26
+movimiento = ExtResource("8_j6q7t")
+
+[sub_resource type="Resource" id="Resource_bkdna"]
+script = ExtResource("1_vo7gi")
+nivel = 31
+movimiento = ExtResource("9_yo3qc")
+
+[sub_resource type="Resource" id="Resource_2er4a"]
+script = ExtResource("1_vo7gi")
+nivel = 36
+movimiento = ExtResource("10_3a78p")
+
+[sub_resource type="Resource" id="Resource_4pa2e"]
+script = ExtResource("1_vo7gi")
+nivel = 41
+movimiento = ExtResource("11_2lr8p")
+
+[sub_resource type="Resource" id="Resource_sblv0"]
+script = ExtResource("1_vo7gi")
+nivel = 46
+movimiento = ExtResource("12_rrsj5")
+
+[sub_resource type="Resource" id="Resource_xodxu"]
+script = ExtResource("1_vo7gi")
+nivel = 51
+movimiento = ExtResource("13_a5cnk")
+
+[resource]
+script = ExtResource("14_cf5c6")
+id = "treecko"
+numero = 252
+nombre = "Treecko"
+tipos = ["planta"]
+ps = 40
+ataque = 45
+defensa = 35
+at_esp = 65
+def_esp = 55
+velocidad = 70
+exp_base = 62
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciona_a = "grovyle"
+nivel_evolucion = 16
+aprende = Array[ExtResource("1_vo7gi")]([SubResource("Resource_uhe36"), SubResource("Resource_khp48"), SubResource("Resource_lvlyo"), SubResource("Resource_7jvur"), SubResource("Resource_a6gm6"), SubResource("Resource_8cbek"), SubResource("Resource_7ni6p"), SubResource("Resource_bkdna"), SubResource("Resource_2er4a"), SubResource("Resource_4pa2e"), SubResource("Resource_sblv0"), SubResource("Resource_xodxu")])
+sprite_frente = ExtResource("16_tycyf")
+sprite_espalda = ExtResource("15_x1rh8")
+cuadros_frente = 77
+cuadros_espalda = 77
+fps_sprite = 9.49

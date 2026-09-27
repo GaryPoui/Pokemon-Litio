@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_ija6w"]
+
+[resource]
+script = ExtResource("1_ija6w")
+id = "haze"
+nombre = "Niebla"
+tipo = "hielo"
+categoria = "estado"
+precision = 0
+pp = 30
+objetivo = "entire-field"
+meta = "whole-field-effect"
+descripcion = "Neblina que elimina los cambios de características de todos los Pokémon en combate."

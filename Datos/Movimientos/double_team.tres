@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_voc1c"]
+
+[resource]
+script = ExtResource("1_voc1c")
+id = "double_team"
+nombre = "Doble Equipo"
+categoria = "estado"
+precision = 0
+pp = 15
+objetivo = "user"
+meta = "net-good-stats"
+descripcion = "Crea copias de sí mismo para mejorar la Evasión."
+cambios_stats = {
+"evasion": 1
+}

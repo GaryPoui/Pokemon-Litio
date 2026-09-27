@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_jp22s"]
+
+[resource]
+script = ExtResource("1_jp22s")
+id = "flame_wheel"
+nombre = "Rueda Fuego"
+tipo = "fuego"
+poder = 60
+pp = 25
+meta = "damage-ailment"
+descripcion = "Ataca envuelto en fuego. Puede causar quemaduras."
+estado = "burn"
+prob_estado = 10

@@ -575,6 +575,9 @@ func _usar_objeto(accion: Dictionary) -> bool:
 			_texto("¡Ya está! ¡%s atrapado!" % r.pokemon.nombre())
 			if equipo!= null and equipo.agregar(r.pokemon):
 				_texto("¡%s se unió a tu equipo!" % r.pokemon.nombre())
+			elif equipo!= null and equipo.has_method("a_caja"):
+				equipo.a_caja(r.pokemon)
+				_texto("Tu equipo está lleno, así que %s fue enviado a la Caja del PC." % r.pokemon.nombre())
 			else:
 				_texto("Tu equipo está lleno, así que %s volvió a la naturaleza." % r.pokemon.nombre())
 			_terminar("captura")

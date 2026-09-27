@@ -1,0 +1,140 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://du1b740y567tn"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vbfj8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_basai"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rage.tres" id="3_kcbb2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="4_7b46x"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="5_48wut"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="6_dg2rb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="7_7d3v6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ice_fang.tres" id="8_d8tv3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="9_gwubt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="10_owdop"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="11_xkccc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/chip_away.tres" id="12_g5kg5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="13_yyfp2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="14_37vtb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="15_mwqxq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aqua_tail.tres" id="16_frqse"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/superpower.tres" id="17_cbm3v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="18_5qdut"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="19_r24uf"]
+[ext_resource type="Texture2D" uid="uid://dk021b0kcnvbi" path="res://Assets/Pokemones/batalla/feraligatr_espalda.png" id="20_4bh86"]
+[ext_resource type="Texture2D" uid="uid://db7h1uih6qsoo" path="res://Assets/Pokemones/batalla/feraligatr_frente.png" id="21_8b4x1"]
+
+[sub_resource type="Resource" id="Resource_c0ffn"]
+script = ExtResource("1_vbfj8")
+movimiento = ExtResource("2_basai")
+
+[sub_resource type="Resource" id="Resource_jkst1"]
+script = ExtResource("1_vbfj8")
+movimiento = ExtResource("3_kcbb2")
+
+[sub_resource type="Resource" id="Resource_gk227"]
+script = ExtResource("1_vbfj8")
+movimiento = ExtResource("4_7b46x")
+
+[sub_resource type="Resource" id="Resource_6yqv3"]
+script = ExtResource("1_vbfj8")
+movimiento = ExtResource("5_48wut")
+
+[sub_resource type="Resource" id="Resource_0uxiy"]
+script = ExtResource("1_vbfj8")
+nivel = 6
+movimiento = ExtResource("5_48wut")
+
+[sub_resource type="Resource" id="Resource_qtbfx"]
+script = ExtResource("1_vbfj8")
+nivel = 8
+movimiento = ExtResource("3_kcbb2")
+
+[sub_resource type="Resource" id="Resource_u66yd"]
+script = ExtResource("1_vbfj8")
+nivel = 13
+movimiento = ExtResource("6_dg2rb")
+
+[sub_resource type="Resource" id="Resource_xl5iy"]
+script = ExtResource("1_vbfj8")
+nivel = 15
+movimiento = ExtResource("7_7d3v6")
+
+[sub_resource type="Resource" id="Resource_tj6kl"]
+script = ExtResource("1_vbfj8")
+nivel = 21
+movimiento = ExtResource("8_d8tv3")
+
+[sub_resource type="Resource" id="Resource_wfbir"]
+script = ExtResource("1_vbfj8")
+nivel = 24
+movimiento = ExtResource("9_gwubt")
+
+[sub_resource type="Resource" id="Resource_dk36g"]
+script = ExtResource("1_vbfj8")
+nivel = 30
+movimiento = ExtResource("10_owdop")
+
+[sub_resource type="Resource" id="Resource_7pfv8"]
+script = ExtResource("1_vbfj8")
+nivel = 32
+movimiento = ExtResource("11_xkccc")
+
+[sub_resource type="Resource" id="Resource_ly13y"]
+script = ExtResource("1_vbfj8")
+nivel = 37
+movimiento = ExtResource("12_g5kg5")
+
+[sub_resource type="Resource" id="Resource_hnsy7"]
+script = ExtResource("1_vbfj8")
+nivel = 45
+movimiento = ExtResource("13_yyfp2")
+
+[sub_resource type="Resource" id="Resource_4gr6l"]
+script = ExtResource("1_vbfj8")
+nivel = 50
+movimiento = ExtResource("14_37vtb")
+
+[sub_resource type="Resource" id="Resource_vnyjy"]
+script = ExtResource("1_vbfj8")
+nivel = 58
+movimiento = ExtResource("15_mwqxq")
+
+[sub_resource type="Resource" id="Resource_i503y"]
+script = ExtResource("1_vbfj8")
+nivel = 63
+movimiento = ExtResource("16_frqse")
+
+[sub_resource type="Resource" id="Resource_cfnt2"]
+script = ExtResource("1_vbfj8")
+nivel = 71
+movimiento = ExtResource("17_cbm3v")
+
+[sub_resource type="Resource" id="Resource_v6k1e"]
+script = ExtResource("1_vbfj8")
+nivel = 76
+movimiento = ExtResource("18_5qdut")
+
+[resource]
+script = ExtResource("19_r24uf")
+id = "feraligatr"
+numero = 160
+nombre = "Feraligatr"
+tipos = ["agua"]
+ps = 85
+ataque = 105
+defensa = 100
+at_esp = 79
+def_esp = 83
+velocidad = 78
+exp_base = 239
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 2,
+"defensa": 1
+}
+aprende = Array[ExtResource("1_vbfj8")]([SubResource("Resource_c0ffn"), SubResource("Resource_jkst1"), SubResource("Resource_gk227"), SubResource("Resource_6yqv3"), SubResource("Resource_0uxiy"), SubResource("Resource_qtbfx"), SubResource("Resource_u66yd"), SubResource("Resource_xl5iy"), SubResource("Resource_tj6kl"), SubResource("Resource_wfbir"), SubResource("Resource_dk36g"), SubResource("Resource_7pfv8"), SubResource("Resource_ly13y"), SubResource("Resource_hnsy7"), SubResource("Resource_4gr6l"), SubResource("Resource_vnyjy"), SubResource("Resource_i503y"), SubResource("Resource_cfnt2"), SubResource("Resource_v6k1e")])
+sprite_frente = ExtResource("21_8b4x1")
+sprite_espalda = ExtResource("20_4bh86")
+cuadros_frente = 41
+cuadros_espalda = 41
+fps_sprite = 7.5

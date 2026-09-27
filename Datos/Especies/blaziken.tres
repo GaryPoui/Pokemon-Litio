@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://btnir6em4tkdk"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_uy3q8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="2_ia5k2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fire_punch.tres" id="3_ibgmp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="4_0474i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="5_eq0lg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/high_jump_kick.tres" id="6_cv2c6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="7_35mwx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_kick.tres" id="8_3l7cf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/peck.tres" id="9_36644"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="10_3uumu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bulk_up.tres" id="11_e10bd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="12_3dqgp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/blaze_kick.tres" id="13_87btu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="14_ujx5j"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/brave_bird.tres" id="15_cuiog"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sky_uppercut.tres" id="16_whbd1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flare_blitz.tres" id="17_2qjoc"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_b0c3j"]
+[ext_resource type="Texture2D" uid="uid://cmdgbybopae4v" path="res://Assets/Pokemones/batalla/blaziken_espalda.png" id="19_xqxkx"]
+[ext_resource type="Texture2D" uid="uid://gk4glnjfmike" path="res://Assets/Pokemones/batalla/blaziken_frente.png" id="20_mfmlg"]
+
+[sub_resource type="Resource" id="Resource_3630g"]
+script = ExtResource("1_uy3q8")
+movimiento = ExtResource("2_ia5k2")
+
+[sub_resource type="Resource" id="Resource_bnyao"]
+script = ExtResource("1_uy3q8")
+movimiento = ExtResource("3_ibgmp")
+
+[sub_resource type="Resource" id="Resource_cedoj"]
+script = ExtResource("1_uy3q8")
+movimiento = ExtResource("4_0474i")
+
+[sub_resource type="Resource" id="Resource_d1rch"]
+script = ExtResource("1_uy3q8")
+movimiento = ExtResource("5_eq0lg")
+
+[sub_resource type="Resource" id="Resource_iysjv"]
+script = ExtResource("1_uy3q8")
+movimiento = ExtResource("6_cv2c6")
+
+[sub_resource type="Resource" id="Resource_eqvhd"]
+script = ExtResource("1_uy3q8")
+movimiento = ExtResource("7_35mwx")
+
+[sub_resource type="Resource" id="Resource_p1mi0"]
+script = ExtResource("1_uy3q8")
+nivel = 7
+movimiento = ExtResource("4_0474i")
+
+[sub_resource type="Resource" id="Resource_fuis6"]
+script = ExtResource("1_uy3q8")
+nivel = 13
+movimiento = ExtResource("2_ia5k2")
+
+[sub_resource type="Resource" id="Resource_876iw"]
+script = ExtResource("1_uy3q8")
+nivel = 16
+movimiento = ExtResource("8_3l7cf")
+
+[sub_resource type="Resource" id="Resource_4244w"]
+script = ExtResource("1_uy3q8")
+nivel = 17
+movimiento = ExtResource("9_36644")
+
+[sub_resource type="Resource" id="Resource_o6bi1"]
+script = ExtResource("1_uy3q8")
+nivel = 21
+movimiento = ExtResource("10_3uumu")
+
+[sub_resource type="Resource" id="Resource_ab4w8"]
+script = ExtResource("1_uy3q8")
+nivel = 28
+movimiento = ExtResource("11_e10bd")
+
+[sub_resource type="Resource" id="Resource_s3irl"]
+script = ExtResource("1_uy3q8")
+nivel = 32
+movimiento = ExtResource("12_3dqgp")
+
+[sub_resource type="Resource" id="Resource_1g5if"]
+script = ExtResource("1_uy3q8")
+nivel = 36
+movimiento = ExtResource("13_87btu")
+
+[sub_resource type="Resource" id="Resource_2d4vy"]
+script = ExtResource("1_uy3q8")
+nivel = 42
+movimiento = ExtResource("14_ujx5j")
+
+[sub_resource type="Resource" id="Resource_fqjxq"]
+script = ExtResource("1_uy3q8")
+nivel = 49
+movimiento = ExtResource("15_cuiog")
+
+[sub_resource type="Resource" id="Resource_32okf"]
+script = ExtResource("1_uy3q8")
+nivel = 59
+movimiento = ExtResource("16_whbd1")
+
+[sub_resource type="Resource" id="Resource_ob1gb"]
+script = ExtResource("1_uy3q8")
+nivel = 66
+movimiento = ExtResource("17_2qjoc")
+
+[resource]
+script = ExtResource("18_b0c3j")
+id = "blaziken"
+numero = 257
+nombre = "Blaziken"
+tipos = ["fuego", "lucha"]
+ps = 80
+ataque = 120
+defensa = 70
+at_esp = 110
+def_esp = 70
+velocidad = 80
+exp_base = 239
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 3
+}
+aprende = Array[ExtResource("1_uy3q8")]([SubResource("Resource_3630g"), SubResource("Resource_bnyao"), SubResource("Resource_cedoj"), SubResource("Resource_d1rch"), SubResource("Resource_iysjv"), SubResource("Resource_eqvhd"), SubResource("Resource_p1mi0"), SubResource("Resource_fuis6"), SubResource("Resource_876iw"), SubResource("Resource_4244w"), SubResource("Resource_o6bi1"), SubResource("Resource_ab4w8"), SubResource("Resource_s3irl"), SubResource("Resource_1g5if"), SubResource("Resource_2d4vy"), SubResource("Resource_fqjxq"), SubResource("Resource_32okf"), SubResource("Resource_ob1gb")])
+sprite_frente = ExtResource("20_mfmlg")
+sprite_espalda = ExtResource("19_xqxkx")
+cuadros_frente = 64
+cuadros_espalda = 64
+fps_sprite = 10.67

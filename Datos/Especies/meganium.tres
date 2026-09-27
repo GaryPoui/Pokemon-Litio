@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://diodtwfdwjkra"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_2skcq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_2hu76"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/poison_powder.tres" id="3_wggw1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/razor_leaf.tres" id="4_o0vsj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="5_dyrlp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/synthesis.tres" id="6_f2nl1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/reflect.tres" id="7_h8rwk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/magical_leaf.tres" id="8_1bp8b"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/natural_gift.tres" id="9_usfg7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/petal_dance.tres" id="10_3e0qu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sweet_scent.tres" id="11_stxwn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/light_screen.tres" id="12_w0uca"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/body_slam.tres" id="13_b3e27"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/safeguard.tres" id="14_mm5uq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aromatherapy.tres" id="15_kemyo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="16_stl2c"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_s2kll"]
+[ext_resource type="Texture2D" uid="uid://c773ubhxclito" path="res://Assets/Pokemones/batalla/meganium_espalda.png" id="18_rv037"]
+[ext_resource type="Texture2D" uid="uid://bbbp51fw8o83x" path="res://Assets/Pokemones/batalla/meganium_frente.png" id="19_j4lre"]
+
+[sub_resource type="Resource" id="Resource_7rx3w"]
+script = ExtResource("1_2skcq")
+movimiento = ExtResource("2_2hu76")
+
+[sub_resource type="Resource" id="Resource_g5851"]
+script = ExtResource("1_2skcq")
+movimiento = ExtResource("3_wggw1")
+
+[sub_resource type="Resource" id="Resource_bgbjc"]
+script = ExtResource("1_2skcq")
+movimiento = ExtResource("4_o0vsj")
+
+[sub_resource type="Resource" id="Resource_wgjch"]
+script = ExtResource("1_2skcq")
+movimiento = ExtResource("5_dyrlp")
+
+[sub_resource type="Resource" id="Resource_x37tj"]
+script = ExtResource("1_2skcq")
+nivel = 6
+movimiento = ExtResource("4_o0vsj")
+
+[sub_resource type="Resource" id="Resource_gjybb"]
+script = ExtResource("1_2skcq")
+nivel = 9
+movimiento = ExtResource("3_wggw1")
+
+[sub_resource type="Resource" id="Resource_nxwpr"]
+script = ExtResource("1_2skcq")
+nivel = 12
+movimiento = ExtResource("6_f2nl1")
+
+[sub_resource type="Resource" id="Resource_4u34i"]
+script = ExtResource("1_2skcq")
+nivel = 18
+movimiento = ExtResource("7_h8rwk")
+
+[sub_resource type="Resource" id="Resource_tf7v4"]
+script = ExtResource("1_2skcq")
+nivel = 22
+movimiento = ExtResource("8_1bp8b")
+
+[sub_resource type="Resource" id="Resource_1glc6"]
+script = ExtResource("1_2skcq")
+nivel = 26
+movimiento = ExtResource("9_usfg7")
+
+[sub_resource type="Resource" id="Resource_5erne"]
+script = ExtResource("1_2skcq")
+nivel = 32
+movimiento = ExtResource("10_3e0qu")
+
+[sub_resource type="Resource" id="Resource_6r4x2"]
+script = ExtResource("1_2skcq")
+nivel = 34
+movimiento = ExtResource("11_stxwn")
+
+[sub_resource type="Resource" id="Resource_lyy40"]
+script = ExtResource("1_2skcq")
+nivel = 40
+movimiento = ExtResource("12_w0uca")
+
+[sub_resource type="Resource" id="Resource_v6856"]
+script = ExtResource("1_2skcq")
+nivel = 46
+movimiento = ExtResource("13_b3e27")
+
+[sub_resource type="Resource" id="Resource_38u5m"]
+script = ExtResource("1_2skcq")
+nivel = 54
+movimiento = ExtResource("14_mm5uq")
+
+[sub_resource type="Resource" id="Resource_hqmev"]
+script = ExtResource("1_2skcq")
+nivel = 60
+movimiento = ExtResource("15_kemyo")
+
+[sub_resource type="Resource" id="Resource_4c0xm"]
+script = ExtResource("1_2skcq")
+nivel = 66
+movimiento = ExtResource("16_stl2c")
+
+[resource]
+script = ExtResource("17_s2kll")
+id = "meganium"
+numero = 154
+nombre = "Meganium"
+tipos = ["planta"]
+ps = 80
+ataque = 82
+defensa = 100
+at_esp = 83
+def_esp = 100
+velocidad = 80
+exp_base = 236
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"def_esp": 2,
+"defensa": 1
+}
+aprende = Array[ExtResource("1_2skcq")]([SubResource("Resource_7rx3w"), SubResource("Resource_g5851"), SubResource("Resource_bgbjc"), SubResource("Resource_wgjch"), SubResource("Resource_x37tj"), SubResource("Resource_gjybb"), SubResource("Resource_nxwpr"), SubResource("Resource_4u34i"), SubResource("Resource_tf7v4"), SubResource("Resource_1glc6"), SubResource("Resource_5erne"), SubResource("Resource_6r4x2"), SubResource("Resource_lyy40"), SubResource("Resource_v6856"), SubResource("Resource_38u5m"), SubResource("Resource_hqmev"), SubResource("Resource_4c0xm")])
+sprite_frente = ExtResource("19_j4lre")
+sprite_espalda = ExtResource("18_rv037")
+cuadros_frente = 46
+cuadros_espalda = 45
+fps_sprite = 7.35

@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dgtteu4g1qdfi"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_fh0ms"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="2_8m20h"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="3_tjmvt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dragon_rage.tres" id="4_acg7i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="5_35j0y"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/twister.tres" id="6_kii28"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ice_fang.tres" id="7_uhtyb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aqua_tail.tres" id="8_c72kb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="9_p1uyu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="10_osly2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dragon_dance.tres" id="11_7jgfl"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hyper_beam.tres" id="12_qsed6"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="13_fwtbe"]
+[ext_resource type="Texture2D" uid="uid://codaed1c38sqa" path="res://Assets/Pokemones/batalla/gyarados_espalda.png" id="14_ggcbh"]
+[ext_resource type="Texture2D" uid="uid://blaer4mgfpsfr" path="res://Assets/Pokemones/batalla/gyarados_frente.png" id="15_yttue"]
+
+[sub_resource type="Resource" id="Resource_alkej"]
+script = ExtResource("1_fh0ms")
+movimiento = ExtResource("2_8m20h")
+
+[sub_resource type="Resource" id="Resource_qjt7w"]
+script = ExtResource("1_fh0ms")
+nivel = 20
+movimiento = ExtResource("3_tjmvt")
+
+[sub_resource type="Resource" id="Resource_qi71x"]
+script = ExtResource("1_fh0ms")
+nivel = 23
+movimiento = ExtResource("4_acg7i")
+
+[sub_resource type="Resource" id="Resource_iicmc"]
+script = ExtResource("1_fh0ms")
+nivel = 26
+movimiento = ExtResource("5_35j0y")
+
+[sub_resource type="Resource" id="Resource_ffrud"]
+script = ExtResource("1_fh0ms")
+nivel = 29
+movimiento = ExtResource("6_kii28")
+
+[sub_resource type="Resource" id="Resource_8wjgi"]
+script = ExtResource("1_fh0ms")
+nivel = 32
+movimiento = ExtResource("7_uhtyb")
+
+[sub_resource type="Resource" id="Resource_jfmpx"]
+script = ExtResource("1_fh0ms")
+nivel = 35
+movimiento = ExtResource("8_c72kb")
+
+[sub_resource type="Resource" id="Resource_hnu62"]
+script = ExtResource("1_fh0ms")
+nivel = 38
+movimiento = ExtResource("9_p1uyu")
+
+[sub_resource type="Resource" id="Resource_hlvmx"]
+script = ExtResource("1_fh0ms")
+nivel = 41
+movimiento = ExtResource("10_osly2")
+
+[sub_resource type="Resource" id="Resource_fosqf"]
+script = ExtResource("1_fh0ms")
+nivel = 44
+movimiento = ExtResource("11_7jgfl")
+
+[sub_resource type="Resource" id="Resource_7q00b"]
+script = ExtResource("1_fh0ms")
+nivel = 47
+movimiento = ExtResource("12_qsed6")
+
+[resource]
+script = ExtResource("13_fwtbe")
+id = "gyarados"
+numero = 130
+nombre = "Gyarados"
+tipos = ["agua", "volador"]
+ps = 95
+ataque = 125
+defensa = 79
+at_esp = 60
+def_esp = 100
+velocidad = 81
+exp_base = 189
+crecimiento = "slow"
+evs_otorgados = {
+"ataque": 2
+}
+aprende = Array[ExtResource("1_fh0ms")]([SubResource("Resource_alkej"), SubResource("Resource_qjt7w"), SubResource("Resource_qi71x"), SubResource("Resource_iicmc"), SubResource("Resource_ffrud"), SubResource("Resource_8wjgi"), SubResource("Resource_jfmpx"), SubResource("Resource_hnu62"), SubResource("Resource_hlvmx"), SubResource("Resource_fosqf"), SubResource("Resource_7q00b")])
+sprite_frente = ExtResource("15_yttue")
+sprite_espalda = ExtResource("14_ggcbh")
+cuadros_frente = 11
+cuadros_espalda = 11

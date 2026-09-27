@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_x6knc"]
+
+[resource]
+script = ExtResource("1_x6knc")
+id = "teleport"
+nombre = "Teletransporte"
+tipo = "psiquico"
+categoria = "estado"
+precision = 0
+pp = 20
+prioridad = -6
+objetivo = "user"
+meta = "unique"
+descripcion = "Permite al usuario cambiarse por otro Pokémon del equipo, si es posible. Si un Pokémon salvaje usa este movimiento, huye del combate."

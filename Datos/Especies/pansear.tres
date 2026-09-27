@@ -99,6 +99,7 @@ script = ExtResource("17_054dn")
 id = "pansear"
 numero = 513
 nombre = "Pansear"
+tipos = ["fuego"]
 ataque = 53
 defensa = 48
 at_esp = 53

@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://rcf1spqj1dsu"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_cgdkj"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_cgdkj"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_fvtp6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_kmpea"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/vine_whip.tres" id="4_rot2w"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/wring_out.tres" id="14_tpolb"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/gastro_acid.tres" id="15_4sbvh"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="16_mxwfp"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_a638b"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/serperior_espalda.png" id="18_pctil"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/serperior_frente.png" id="19_ejct4"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_a638b"]
+[ext_resource type="Texture2D" uid="uid://bpxqlvni3ja8o" path="res://Assets/Pokemones/batalla/serperior_espalda.png" id="18_pctil"]
+[ext_resource type="Texture2D" uid="uid://btj1vgh6nhspr" path="res://Assets/Pokemones/batalla/serperior_frente.png" id="19_ejct4"]
 
 [sub_resource type="Resource" id="Resource_s2hqj"]
 script = ExtResource("1_cgdkj")
@@ -111,7 +111,7 @@ script = ExtResource("17_a638b")
 id = "serperior"
 numero = 497
 nombre = "Serperior"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 75
 ataque = 75
 defensa = 95

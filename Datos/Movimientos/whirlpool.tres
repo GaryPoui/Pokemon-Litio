@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_o4ghr"]
+
+[resource]
+script = ExtResource("1_o4ghr")
+id = "whirlpool"
+nombre = "Torbellino"
+tipo = "agua"
+categoria = "especial"
+poder = 35
+precision = 85
+pp = 15
+meta = "damage-ailment"
+descripcion = "Una tromba de agua atrapa al objetivo durante cuatro o cinco turnos."
+estado = "trap"
+prob_estado = 100

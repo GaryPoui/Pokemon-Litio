@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://du4um1flcujb6"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_wks5c"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_c8102"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_1mnp2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/smokescreen.tres" id="4_d56d8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="5_64g57"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="6_d62pf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_wheel.tres" id="7_n0xdg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="8_nxllo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_charge.tres" id="9_dwoo1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swift.tres" id="10_5wu1r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/lava_plume.tres" id="11_aw2yj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flamethrower.tres" id="12_yqr67"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/inferno.tres" id="13_b2ah8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rollout.tres" id="14_irfqu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="15_0wana"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/eruption.tres" id="16_pp1a4"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_gr0ja"]
+[ext_resource type="Texture2D" uid="uid://33phl3xl87o5" path="res://Assets/Pokemones/batalla/cyndaquil_espalda.png" id="18_3j667"]
+[ext_resource type="Texture2D" uid="uid://do36qqh0eabml" path="res://Assets/Pokemones/batalla/cyndaquil_frente.png" id="19_7s70s"]
+
+[sub_resource type="Resource" id="Resource_nbevi"]
+script = ExtResource("1_wks5c")
+movimiento = ExtResource("2_c8102")
+
+[sub_resource type="Resource" id="Resource_aiu2b"]
+script = ExtResource("1_wks5c")
+movimiento = ExtResource("3_1mnp2")
+
+[sub_resource type="Resource" id="Resource_sepcs"]
+script = ExtResource("1_wks5c")
+nivel = 6
+movimiento = ExtResource("4_d56d8")
+
+[sub_resource type="Resource" id="Resource_e48a7"]
+script = ExtResource("1_wks5c")
+nivel = 10
+movimiento = ExtResource("5_64g57")
+
+[sub_resource type="Resource" id="Resource_vy0aa"]
+script = ExtResource("1_wks5c")
+nivel = 13
+movimiento = ExtResource("6_d62pf")
+
+[sub_resource type="Resource" id="Resource_wvktf"]
+script = ExtResource("1_wks5c")
+nivel = 19
+movimiento = ExtResource("7_n0xdg")
+
+[sub_resource type="Resource" id="Resource_eta3i"]
+script = ExtResource("1_wks5c")
+nivel = 22
+movimiento = ExtResource("8_nxllo")
+
+[sub_resource type="Resource" id="Resource_hdjg1"]
+script = ExtResource("1_wks5c")
+nivel = 28
+movimiento = ExtResource("9_dwoo1")
+
+[sub_resource type="Resource" id="Resource_m2dva"]
+script = ExtResource("1_wks5c")
+nivel = 31
+movimiento = ExtResource("10_5wu1r")
+
+[sub_resource type="Resource" id="Resource_wy0wf"]
+script = ExtResource("1_wks5c")
+nivel = 37
+movimiento = ExtResource("11_aw2yj")
+
+[sub_resource type="Resource" id="Resource_m5e6q"]
+script = ExtResource("1_wks5c")
+nivel = 40
+movimiento = ExtResource("12_yqr67")
+
+[sub_resource type="Resource" id="Resource_oibij"]
+script = ExtResource("1_wks5c")
+nivel = 46
+movimiento = ExtResource("13_b2ah8")
+
+[sub_resource type="Resource" id="Resource_bpjf2"]
+script = ExtResource("1_wks5c")
+nivel = 49
+movimiento = ExtResource("14_irfqu")
+
+[sub_resource type="Resource" id="Resource_veqie"]
+script = ExtResource("1_wks5c")
+nivel = 55
+movimiento = ExtResource("15_0wana")
+
+[sub_resource type="Resource" id="Resource_mcn8w"]
+script = ExtResource("1_wks5c")
+nivel = 58
+movimiento = ExtResource("16_pp1a4")
+
+[resource]
+script = ExtResource("17_gr0ja")
+id = "cyndaquil"
+numero = 155
+nombre = "Cyndaquil"
+tipos = ["fuego"]
+ps = 39
+ataque = 52
+defensa = 43
+at_esp = 60
+velocidad = 65
+exp_base = 62
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciona_a = "quilava"
+nivel_evolucion = 14
+aprende = Array[ExtResource("1_wks5c")]([SubResource("Resource_nbevi"), SubResource("Resource_aiu2b"), SubResource("Resource_sepcs"), SubResource("Resource_e48a7"), SubResource("Resource_vy0aa"), SubResource("Resource_wvktf"), SubResource("Resource_eta3i"), SubResource("Resource_hdjg1"), SubResource("Resource_m2dva"), SubResource("Resource_wy0wf"), SubResource("Resource_m5e6q"), SubResource("Resource_oibij"), SubResource("Resource_bpjf2"), SubResource("Resource_veqie"), SubResource("Resource_mcn8w")])
+sprite_frente = ExtResource("19_7s70s")
+sprite_espalda = ExtResource("18_3j667")
+cuadros_frente = 128
+cuadros_espalda = 128
+fps_sprite = 20.0

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_5s17d"]
+
+[resource]
+script = ExtResource("1_5s17d")
+id = "body_slam"
+nombre = "Golpe Cuerpo"
+poder = 85
+pp = 15
+meta = "damage-ailment"
+descripcion = "Salta sobre el objetivo con todo su peso y puede llegar a paralizarlo."
+estado = "paralysis"
+prob_estado = 30

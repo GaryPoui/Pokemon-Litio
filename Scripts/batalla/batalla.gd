@@ -16,6 +16,7 @@ const EMPUJE_MOVIMIENTO:= 28
 const BOTONES_TIPO :="res://Assets/Botones/tipos/"
 const ESCENA_APRENDER:= "res://Escenas/UI/AprenderMovimiento.tscn"
 const FONDO_DEFECTO :="res://Assets/Batalla/fondos/campo.png"
+const CENTRO_BALL:= Vector2(13, 12)
 const APAGADO :=Color(0.8, 0.8, 0.8)
 const X_COMANDOS:= 182
 const X_MOVIMIENTOS :=168
@@ -403,7 +404,11 @@ func _preparar_ball_rapida() -> void:
 	b.visible= ball_rapida!= ""
 	if b.visible:
 		var o:= BaseDatos.objeto(ball_rapida)
-		(b.get_node("Icono") as TextureRect).texture= o.icono
+		var icono: TextureRect= b.get_node("Icono")
+		icono.texture= o.icono
+		icono.size =Vector2(o.icono.get_size())
+		var usado:= o.icono.get_image().get_used_rect()
+		icono.position= (CENTRO_BALL- (Vector2(usado.position)+ Vector2(usado.size)/ 2.0)).round()
 		(b.get_node("Cantidad") as Label).text ="×%d" % Inventario.cantidad_de(ball_rapida)
 
 func _pintar_comandos(sel: int) -> void:

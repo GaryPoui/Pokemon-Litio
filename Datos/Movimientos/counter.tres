@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_6rwlb"]
+
+[resource]
+script = ExtResource("1_6rwlb")
+id = "counter"
+nombre = "Contraataque"
+tipo = "lucha"
+pp = 20
+prioridad = -5
+objetivo = "specific-move"
+descripcion = "Devuelve un golpe físico por duplicado."

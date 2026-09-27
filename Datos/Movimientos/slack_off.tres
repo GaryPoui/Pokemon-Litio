@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_ceacm"]
+
+[resource]
+script = ExtResource("1_ceacm")
+id = "slack_off"
+nombre = "Relajo"
+categoria = "estado"
+precision = 0
+pp = 5
+objetivo = "user"
+meta = "heal"
+descripcion = "El usuario se relaja y restaura la mitad de sus PS máximos."
+curacion = 50

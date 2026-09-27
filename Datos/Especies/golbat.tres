@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dj6ib1dy0o2nf"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_xn3hb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="2_1q3nv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leech_life.tres" id="3_r3cbl"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="4_5byja"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="5_u3drb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="6_ysocj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wing_attack.tres" id="7_8m7wb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/confuse_ray.tres" id="8_pwq1r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_cutter.tres" id="9_u0xcv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mean_look.tres" id="10_385lf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/acrobatics.tres" id="11_becer"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/poison_fang.tres" id="12_xp51n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/haze.tres" id="13_dtiap"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="14_4ni1c"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_8p8tl"]
+[ext_resource type="Texture2D" uid="uid://dqvu2s1m0kl3s" path="res://Assets/Pokemones/batalla/golbat_espalda.png" id="16_534qk"]
+[ext_resource type="Texture2D" uid="uid://fr1rcvjhp8tb" path="res://Assets/Pokemones/batalla/golbat_frente.png" id="17_vrm41"]
+
+[sub_resource type="Resource" id="Resource_q4nmw"]
+script = ExtResource("1_xn3hb")
+movimiento = ExtResource("2_1q3nv")
+
+[sub_resource type="Resource" id="Resource_ogwpw"]
+script = ExtResource("1_xn3hb")
+movimiento = ExtResource("3_r3cbl")
+
+[sub_resource type="Resource" id="Resource_5m5ha"]
+script = ExtResource("1_xn3hb")
+movimiento = ExtResource("4_5byja")
+
+[sub_resource type="Resource" id="Resource_udo44"]
+script = ExtResource("1_xn3hb")
+movimiento = ExtResource("5_u3drb")
+
+[sub_resource type="Resource" id="Resource_6buc0"]
+script = ExtResource("1_xn3hb")
+nivel = 5
+movimiento = ExtResource("5_u3drb")
+
+[sub_resource type="Resource" id="Resource_23k7j"]
+script = ExtResource("1_xn3hb")
+nivel = 9
+movimiento = ExtResource("2_1q3nv")
+
+[sub_resource type="Resource" id="Resource_yjq63"]
+script = ExtResource("1_xn3hb")
+nivel = 13
+movimiento = ExtResource("6_ysocj")
+
+[sub_resource type="Resource" id="Resource_4qnih"]
+script = ExtResource("1_xn3hb")
+nivel = 17
+movimiento = ExtResource("7_8m7wb")
+
+[sub_resource type="Resource" id="Resource_gqpf7"]
+script = ExtResource("1_xn3hb")
+nivel = 21
+movimiento = ExtResource("8_pwq1r")
+
+[sub_resource type="Resource" id="Resource_djrgh"]
+script = ExtResource("1_xn3hb")
+nivel = 27
+movimiento = ExtResource("9_u0xcv")
+
+[sub_resource type="Resource" id="Resource_6g4yf"]
+script = ExtResource("1_xn3hb")
+nivel = 33
+movimiento = ExtResource("10_385lf")
+
+[sub_resource type="Resource" id="Resource_tv8ms"]
+script = ExtResource("1_xn3hb")
+nivel = 39
+movimiento = ExtResource("11_becer")
+
+[sub_resource type="Resource" id="Resource_2iclx"]
+script = ExtResource("1_xn3hb")
+nivel = 45
+movimiento = ExtResource("12_xp51n")
+
+[sub_resource type="Resource" id="Resource_88vtw"]
+script = ExtResource("1_xn3hb")
+nivel = 51
+movimiento = ExtResource("13_dtiap")
+
+[sub_resource type="Resource" id="Resource_56f2f"]
+script = ExtResource("1_xn3hb")
+nivel = 57
+movimiento = ExtResource("14_4ni1c")
+
+[resource]
+script = ExtResource("15_8p8tl")
+id = "golbat"
+numero = 42
+nombre = "Golbat"
+tipos = ["veneno", "volador"]
+ps = 75
+ataque = 80
+defensa = 70
+at_esp = 65
+def_esp = 75
+velocidad = 90
+exp_base = 159
+ratio_captura = 90
+evs_otorgados = {
+"velocidad": 2
+}
+aprende = Array[ExtResource("1_xn3hb")]([SubResource("Resource_q4nmw"), SubResource("Resource_ogwpw"), SubResource("Resource_5m5ha"), SubResource("Resource_udo44"), SubResource("Resource_6buc0"), SubResource("Resource_23k7j"), SubResource("Resource_yjq63"), SubResource("Resource_4qnih"), SubResource("Resource_gqpf7"), SubResource("Resource_djrgh"), SubResource("Resource_6g4yf"), SubResource("Resource_tv8ms"), SubResource("Resource_2iclx"), SubResource("Resource_88vtw"), SubResource("Resource_56f2f")])
+sprite_frente = ExtResource("17_vrm41")
+sprite_espalda = ExtResource("16_534qk")
+cuadros_frente = 16
+cuadros_espalda = 16
+fps_sprite = 20.0

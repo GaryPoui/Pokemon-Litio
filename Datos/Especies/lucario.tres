@@ -1,0 +1,140 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bfar660sofc3v"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_4a35w"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dark_pulse.tres" id="2_klda4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/detect.tres" id="3_fb58c"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/foresight.tres" id="4_rp7ki"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/metal_claw.tres" id="5_wkhqr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="6_e8j3b"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/counter.tres" id="7_lis80"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/force_palm.tres" id="8_q32ln"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feint.tres" id="9_8u7y2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bone_rush.tres" id="10_2mk1o"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/metal_sound.tres" id="11_l7mj0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/me_first.tres" id="12_kr2h3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_guard.tres" id="13_pku4t"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swords_dance.tres" id="14_5i0rc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/heal_pulse.tres" id="15_v6w3v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/calm_mind.tres" id="16_s5gen"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aura_sphere.tres" id="17_fsi13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/close_combat.tres" id="18_u18bd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dragon_pulse.tres" id="19_dm4gb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/extreme_speed.tres" id="20_rpuxg"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="21_rcyb3"]
+[ext_resource type="Texture2D" uid="uid://c3vpovbfkthi4" path="res://Assets/Pokemones/batalla/lucario_espalda.png" id="22_u8bib"]
+[ext_resource type="Texture2D" uid="uid://duvflkhoyxg6" path="res://Assets/Pokemones/batalla/lucario_frente.png" id="23_8iug5"]
+
+[sub_resource type="Resource" id="Resource_rhkw1"]
+script = ExtResource("1_4a35w")
+movimiento = ExtResource("2_klda4")
+
+[sub_resource type="Resource" id="Resource_xvcuf"]
+script = ExtResource("1_4a35w")
+movimiento = ExtResource("3_fb58c")
+
+[sub_resource type="Resource" id="Resource_jros2"]
+script = ExtResource("1_4a35w")
+movimiento = ExtResource("4_rp7ki")
+
+[sub_resource type="Resource" id="Resource_vscec"]
+script = ExtResource("1_4a35w")
+movimiento = ExtResource("5_wkhqr")
+
+[sub_resource type="Resource" id="Resource_unxhl"]
+script = ExtResource("1_4a35w")
+movimiento = ExtResource("6_e8j3b")
+
+[sub_resource type="Resource" id="Resource_qbro4"]
+script = ExtResource("1_4a35w")
+nivel = 6
+movimiento = ExtResource("7_lis80")
+
+[sub_resource type="Resource" id="Resource_5hohc"]
+script = ExtResource("1_4a35w")
+nivel = 11
+movimiento = ExtResource("8_q32ln")
+
+[sub_resource type="Resource" id="Resource_ws76e"]
+script = ExtResource("1_4a35w")
+nivel = 15
+movimiento = ExtResource("9_8u7y2")
+
+[sub_resource type="Resource" id="Resource_shj77"]
+script = ExtResource("1_4a35w")
+nivel = 19
+movimiento = ExtResource("10_2mk1o")
+
+[sub_resource type="Resource" id="Resource_4apnv"]
+script = ExtResource("1_4a35w")
+nivel = 24
+movimiento = ExtResource("11_l7mj0")
+
+[sub_resource type="Resource" id="Resource_wrqps"]
+script = ExtResource("1_4a35w")
+nivel = 29
+movimiento = ExtResource("12_kr2h3")
+
+[sub_resource type="Resource" id="Resource_0bytj"]
+script = ExtResource("1_4a35w")
+nivel = 33
+movimiento = ExtResource("13_pku4t")
+
+[sub_resource type="Resource" id="Resource_gqxjw"]
+script = ExtResource("1_4a35w")
+nivel = 37
+movimiento = ExtResource("14_5i0rc")
+
+[sub_resource type="Resource" id="Resource_6i3yw"]
+script = ExtResource("1_4a35w")
+nivel = 42
+movimiento = ExtResource("15_v6w3v")
+
+[sub_resource type="Resource" id="Resource_jo0m4"]
+script = ExtResource("1_4a35w")
+nivel = 47
+movimiento = ExtResource("16_s5gen")
+
+[sub_resource type="Resource" id="Resource_oqfct"]
+script = ExtResource("1_4a35w")
+nivel = 51
+movimiento = ExtResource("17_fsi13")
+
+[sub_resource type="Resource" id="Resource_m8c1f"]
+script = ExtResource("1_4a35w")
+nivel = 55
+movimiento = ExtResource("18_u18bd")
+
+[sub_resource type="Resource" id="Resource_iqa5f"]
+script = ExtResource("1_4a35w")
+nivel = 60
+movimiento = ExtResource("19_dm4gb")
+
+[sub_resource type="Resource" id="Resource_rlvlm"]
+script = ExtResource("1_4a35w")
+nivel = 65
+movimiento = ExtResource("20_rpuxg")
+
+[resource]
+script = ExtResource("21_rcyb3")
+id = "lucario"
+numero = 448
+nombre = "Lucario"
+tipos = ["lucha", "acero"]
+ps = 70
+ataque = 110
+defensa = 70
+at_esp = 115
+def_esp = 70
+velocidad = 90
+exp_base = 184
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 1,
+"ataque": 1
+}
+aprende = Array[ExtResource("1_4a35w")]([SubResource("Resource_rhkw1"), SubResource("Resource_xvcuf"), SubResource("Resource_jros2"), SubResource("Resource_vscec"), SubResource("Resource_unxhl"), SubResource("Resource_qbro4"), SubResource("Resource_5hohc"), SubResource("Resource_ws76e"), SubResource("Resource_shj77"), SubResource("Resource_4apnv"), SubResource("Resource_wrqps"), SubResource("Resource_0bytj"), SubResource("Resource_gqxjw"), SubResource("Resource_6i3yw"), SubResource("Resource_jo0m4"), SubResource("Resource_oqfct"), SubResource("Resource_m8c1f"), SubResource("Resource_iqa5f"), SubResource("Resource_rlvlm")])
+sprite_frente = ExtResource("23_8iug5")
+sprite_espalda = ExtResource("22_u8bib")
+cuadros_frente = 72
+cuadros_espalda = 72

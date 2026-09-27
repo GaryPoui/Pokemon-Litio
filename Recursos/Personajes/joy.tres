@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://buqcla1qfn5ku"]
+
+[ext_resource type="Texture2D" uid="uid://b0a2voicfjnu7" path="res://Assets/Personajes/npc/joy.png" id="1_ovv7n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0xf4"]
+atlas = ExtResource("1_ovv7n")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jwwtv"]
+atlas = ExtResource("1_ovv7n")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_et4j4"]
+atlas = ExtResource("1_ovv7n")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_73o60"]
+atlas = ExtResource("1_ovv7n")
+region = Rect2(0, 64, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l0xf4")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jwwtv")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_et4j4")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_73o60")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
+}]

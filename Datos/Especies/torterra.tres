@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bvnr5wci0yg3w"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_kd31t"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="2_gk8fe"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/razor_leaf.tres" id="3_myskg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_bm3sl"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/withdraw.tres" id="5_aqkpj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wood_hammer.tres" id="6_fk8ek"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/curse.tres" id="7_4m087"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="8_8vav2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="9_1gojn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="10_275qh"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leech_seed.tres" id="11_sid6s"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/synthesis.tres" id="12_lkhrr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="13_w28u0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/giga_drain.tres" id="14_k3v8o"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="15_w64ae"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_sw37w"]
+[ext_resource type="Texture2D" uid="uid://ctk4752fj5bb7" path="res://Assets/Pokemones/batalla/torterra_espalda.png" id="17_kj41j"]
+[ext_resource type="Texture2D" uid="uid://cjung2f1ku71o" path="res://Assets/Pokemones/batalla/torterra_frente.png" id="18_3763f"]
+
+[sub_resource type="Resource" id="Resource_it0kq"]
+script = ExtResource("1_kd31t")
+movimiento = ExtResource("2_gk8fe")
+
+[sub_resource type="Resource" id="Resource_nyuhb"]
+script = ExtResource("1_kd31t")
+movimiento = ExtResource("3_myskg")
+
+[sub_resource type="Resource" id="Resource_0mu8n"]
+script = ExtResource("1_kd31t")
+movimiento = ExtResource("4_bm3sl")
+
+[sub_resource type="Resource" id="Resource_fwyow"]
+script = ExtResource("1_kd31t")
+movimiento = ExtResource("5_aqkpj")
+
+[sub_resource type="Resource" id="Resource_0mp73"]
+script = ExtResource("1_kd31t")
+movimiento = ExtResource("6_fk8ek")
+
+[sub_resource type="Resource" id="Resource_eefiq"]
+script = ExtResource("1_kd31t")
+nivel = 5
+movimiento = ExtResource("5_aqkpj")
+
+[sub_resource type="Resource" id="Resource_lx26d"]
+script = ExtResource("1_kd31t")
+nivel = 9
+movimiento = ExtResource("2_gk8fe")
+
+[sub_resource type="Resource" id="Resource_kq5t8"]
+script = ExtResource("1_kd31t")
+nivel = 13
+movimiento = ExtResource("3_myskg")
+
+[sub_resource type="Resource" id="Resource_2veb8"]
+script = ExtResource("1_kd31t")
+nivel = 17
+movimiento = ExtResource("7_4m087")
+
+[sub_resource type="Resource" id="Resource_qxj16"]
+script = ExtResource("1_kd31t")
+nivel = 22
+movimiento = ExtResource("8_8vav2")
+
+[sub_resource type="Resource" id="Resource_anslt"]
+script = ExtResource("1_kd31t")
+nivel = 27
+movimiento = ExtResource("9_1gojn")
+
+[sub_resource type="Resource" id="Resource_5f6v1"]
+script = ExtResource("1_kd31t")
+nivel = 32
+movimiento = ExtResource("10_275qh")
+
+[sub_resource type="Resource" id="Resource_mqmgc"]
+script = ExtResource("1_kd31t")
+nivel = 33
+movimiento = ExtResource("11_sid6s")
+
+[sub_resource type="Resource" id="Resource_a8y2j"]
+script = ExtResource("1_kd31t")
+nivel = 39
+movimiento = ExtResource("12_lkhrr")
+
+[sub_resource type="Resource" id="Resource_t6ppm"]
+script = ExtResource("1_kd31t")
+nivel = 45
+movimiento = ExtResource("13_w28u0")
+
+[sub_resource type="Resource" id="Resource_6t350"]
+script = ExtResource("1_kd31t")
+nivel = 51
+movimiento = ExtResource("14_k3v8o")
+
+[sub_resource type="Resource" id="Resource_4icfm"]
+script = ExtResource("1_kd31t")
+nivel = 57
+movimiento = ExtResource("15_w64ae")
+
+[resource]
+script = ExtResource("16_sw37w")
+id = "torterra"
+numero = 389
+nombre = "Torterra"
+tipos = ["planta", "tierra"]
+ps = 95
+ataque = 109
+defensa = 105
+at_esp = 75
+def_esp = 85
+velocidad = 56
+exp_base = 236
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 2,
+"defensa": 1
+}
+aprende = Array[ExtResource("1_kd31t")]([SubResource("Resource_it0kq"), SubResource("Resource_nyuhb"), SubResource("Resource_0mu8n"), SubResource("Resource_fwyow"), SubResource("Resource_0mp73"), SubResource("Resource_eefiq"), SubResource("Resource_lx26d"), SubResource("Resource_kq5t8"), SubResource("Resource_2veb8"), SubResource("Resource_qxj16"), SubResource("Resource_anslt"), SubResource("Resource_5f6v1"), SubResource("Resource_mqmgc"), SubResource("Resource_a8y2j"), SubResource("Resource_t6ppm"), SubResource("Resource_6t350"), SubResource("Resource_4icfm")])
+sprite_frente = ExtResource("18_3763f")
+sprite_espalda = ExtResource("17_kj41j")
+cuadros_frente = 59
+cuadros_espalda = 54
+fps_sprite = 7.69

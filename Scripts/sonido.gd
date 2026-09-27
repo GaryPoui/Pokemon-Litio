@@ -20,6 +20,7 @@ const BUCLES:= {
 	"victoria_entrenador": 2.93503,
 	"ps_bajo": 16.35773,
 	"evolucion": 10.16685,
+	"centro_pokemon" :8.05,
 }
 
 var musica_actual :=""

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_lmdj6"]
+
+[resource]
+script = ExtResource("1_lmdj6")
+id = "dragon_claw"
+nombre = "Garra Dragón"
+tipo = "dragon"
+poder = 80
+pp = 15
+descripcion = "Araña al objetivo con garras afiladas."

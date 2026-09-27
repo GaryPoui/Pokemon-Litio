@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://b5iuxhaygulks"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_l8p8l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="2_g4gkq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="3_pxofj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_shock.tres" id="4_vrhtv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunderbolt.tres" id="5_36qfi"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="6_km1ml"]
+[ext_resource type="Texture2D" uid="uid://cvbx0jgi2gtlo" path="res://Assets/Pokemones/batalla/raichu_espalda.png" id="7_q26bq"]
+[ext_resource type="Texture2D" uid="uid://de4n7hf5j4dhc" path="res://Assets/Pokemones/batalla/raichu_frente.png" id="8_evjqu"]
+
+[sub_resource type="Resource" id="Resource_n2c2f"]
+script = ExtResource("1_l8p8l")
+movimiento = ExtResource("2_g4gkq")
+
+[sub_resource type="Resource" id="Resource_aqhuy"]
+script = ExtResource("1_l8p8l")
+movimiento = ExtResource("3_pxofj")
+
+[sub_resource type="Resource" id="Resource_8hg7s"]
+script = ExtResource("1_l8p8l")
+movimiento = ExtResource("4_vrhtv")
+
+[sub_resource type="Resource" id="Resource_yhkl8"]
+script = ExtResource("1_l8p8l")
+movimiento = ExtResource("5_36qfi")
+
+[resource]
+script = ExtResource("6_km1ml")
+id = "raichu"
+numero = 26
+nombre = "Raichu"
+tipos = ["electrico"]
+ps = 60
+ataque = 90
+defensa = 55
+at_esp = 90
+def_esp = 80
+velocidad = 110
+exp_base = 218
+ratio_captura = 75
+evs_otorgados = {
+"velocidad": 3
+}
+aprende = Array[ExtResource("1_l8p8l")]([SubResource("Resource_n2c2f"), SubResource("Resource_aqhuy"), SubResource("Resource_8hg7s"), SubResource("Resource_yhkl8")])
+sprite_frente = ExtResource("8_evjqu")
+sprite_espalda = ExtResource("7_q26bq")
+cuadros_frente = 84
+cuadros_espalda = 84

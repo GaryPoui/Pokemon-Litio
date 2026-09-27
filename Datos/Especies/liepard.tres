@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cih11gjsnldqw"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_bpwog"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_bpwog"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/assist.tres" id="2_bs4te"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_2xvdg"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="4_ic3u5"]
@@ -17,9 +17,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/snatch.tres" id="15_26hlw"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="16_8on2h"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="17_sjwxi"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_aulby"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/liepard_espalda.png" id="19_mviu1"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/liepard_frente.png" id="20_1al8b"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_aulby"]
+[ext_resource type="Texture2D" uid="uid://c43fl4j4it5c8" path="res://Assets/Pokemones/batalla/liepard_espalda.png" id="19_mviu1"]
+[ext_resource type="Texture2D" uid="uid://baqw6xiyaakhi" path="res://Assets/Pokemones/batalla/liepard_frente.png" id="20_1al8b"]
 
 [sub_resource type="Resource" id="Resource_pqdho"]
 script = ExtResource("1_bpwog")
@@ -117,7 +117,7 @@ script = ExtResource("18_aulby")
 id = "liepard"
 numero = 510
 nombre = "Liepard"
-tipos = PackedStringArray("siniestro")
+tipos = ["siniestro"]
 ps = 64
 ataque = 88
 at_esp = 88

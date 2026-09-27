@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://d1qh54p3ppbqk"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_x14mo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="2_42rnc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_esgh6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="4_mnc1h"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="5_q8apg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_cutter.tres" id="6_32k5i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="7_m1pq4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="8_3nwwp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leaf_blade.tres" id="9_j45k7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="10_k3ak1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slam.tres" id="11_oj2bf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/detect.tres" id="12_vth00"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/false_swipe.tres" id="13_p2vxu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="14_lci3j"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_mhoa3"]
+[ext_resource type="Texture2D" uid="uid://qvnajrejmkan" path="res://Assets/Pokemones/batalla/grovyle_espalda.png" id="16_hhog4"]
+[ext_resource type="Texture2D" uid="uid://scvd0085432n" path="res://Assets/Pokemones/batalla/grovyle_frente.png" id="17_g2r41"]
+
+[sub_resource type="Resource" id="Resource_1pglf"]
+script = ExtResource("1_x14mo")
+movimiento = ExtResource("2_42rnc")
+
+[sub_resource type="Resource" id="Resource_aqi41"]
+script = ExtResource("1_x14mo")
+movimiento = ExtResource("3_esgh6")
+
+[sub_resource type="Resource" id="Resource_3j4gj"]
+script = ExtResource("1_x14mo")
+movimiento = ExtResource("4_mnc1h")
+
+[sub_resource type="Resource" id="Resource_7xusi"]
+script = ExtResource("1_x14mo")
+movimiento = ExtResource("5_q8apg")
+
+[sub_resource type="Resource" id="Resource_1cw33"]
+script = ExtResource("1_x14mo")
+nivel = 6
+movimiento = ExtResource("2_42rnc")
+
+[sub_resource type="Resource" id="Resource_1fv6v"]
+script = ExtResource("1_x14mo")
+nivel = 11
+movimiento = ExtResource("5_q8apg")
+
+[sub_resource type="Resource" id="Resource_3anwo"]
+script = ExtResource("1_x14mo")
+nivel = 16
+movimiento = ExtResource("6_32k5i")
+
+[sub_resource type="Resource" id="Resource_5b5n5"]
+script = ExtResource("1_x14mo")
+nivel = 17
+movimiento = ExtResource("7_m1pq4")
+
+[sub_resource type="Resource" id="Resource_wjolk"]
+script = ExtResource("1_x14mo")
+nivel = 23
+movimiento = ExtResource("8_3nwwp")
+
+[sub_resource type="Resource" id="Resource_pxi0q"]
+script = ExtResource("1_x14mo")
+nivel = 29
+movimiento = ExtResource("9_j45k7")
+
+[sub_resource type="Resource" id="Resource_jlwbs"]
+script = ExtResource("1_x14mo")
+nivel = 35
+movimiento = ExtResource("10_k3ak1")
+
+[sub_resource type="Resource" id="Resource_0w2y8"]
+script = ExtResource("1_x14mo")
+nivel = 41
+movimiento = ExtResource("11_oj2bf")
+
+[sub_resource type="Resource" id="Resource_u0xiw"]
+script = ExtResource("1_x14mo")
+nivel = 47
+movimiento = ExtResource("12_vth00")
+
+[sub_resource type="Resource" id="Resource_chdua"]
+script = ExtResource("1_x14mo")
+nivel = 53
+movimiento = ExtResource("13_p2vxu")
+
+[sub_resource type="Resource" id="Resource_qbl0t"]
+script = ExtResource("1_x14mo")
+nivel = 59
+movimiento = ExtResource("14_lci3j")
+
+[resource]
+script = ExtResource("15_mhoa3")
+id = "grovyle"
+numero = 253
+nombre = "Grovyle"
+tipos = ["planta"]
+ataque = 65
+defensa = 45
+at_esp = 85
+def_esp = 65
+velocidad = 95
+exp_base = 142
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"velocidad": 2
+}
+evoluciona_a = "sceptile"
+nivel_evolucion = 36
+aprende = Array[ExtResource("1_x14mo")]([SubResource("Resource_1pglf"), SubResource("Resource_aqi41"), SubResource("Resource_3j4gj"), SubResource("Resource_7xusi"), SubResource("Resource_1cw33"), SubResource("Resource_1fv6v"), SubResource("Resource_3anwo"), SubResource("Resource_5b5n5"), SubResource("Resource_wjolk"), SubResource("Resource_pxi0q"), SubResource("Resource_jlwbs"), SubResource("Resource_0w2y8"), SubResource("Resource_u0xiw"), SubResource("Resource_chdua"), SubResource("Resource_qbl0t")])
+sprite_frente = ExtResource("17_g2r41")
+sprite_espalda = ExtResource("16_hhog4")
+cuadros_frente = 116
+cuadros_espalda = 114
+fps_sprite = 10.27

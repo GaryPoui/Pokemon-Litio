@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://qkn81jxq5b76"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_015xo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_lueub"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_gxhyj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="4_e5wng"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spark.tres" id="5_radmt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="6_h5ju2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/roar.tres" id="7_yvv03"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swagger.tres" id="8_l0w4s"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_fang.tres" id="9_6oqkq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="10_5moye"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="11_ns3ux"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="12_6ggnq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wild_charge.tres" id="13_wpq0j"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_y55r6"]
+[ext_resource type="Texture2D" uid="uid://bwag2qwn48mkf" path="res://Assets/Pokemones/batalla/shinx_espalda.png" id="15_15lgr"]
+[ext_resource type="Texture2D" uid="uid://bc5eeglgpj6rn" path="res://Assets/Pokemones/batalla/shinx_frente.png" id="16_dw3sa"]
+
+[sub_resource type="Resource" id="Resource_3o1qe"]
+script = ExtResource("1_015xo")
+movimiento = ExtResource("2_lueub")
+
+[sub_resource type="Resource" id="Resource_bh3x7"]
+script = ExtResource("1_015xo")
+nivel = 5
+movimiento = ExtResource("3_gxhyj")
+
+[sub_resource type="Resource" id="Resource_mfyyk"]
+script = ExtResource("1_015xo")
+nivel = 9
+movimiento = ExtResource("4_e5wng")
+
+[sub_resource type="Resource" id="Resource_pqx1f"]
+script = ExtResource("1_015xo")
+nivel = 13
+movimiento = ExtResource("5_radmt")
+
+[sub_resource type="Resource" id="Resource_2petf"]
+script = ExtResource("1_015xo")
+nivel = 17
+movimiento = ExtResource("6_h5ju2")
+
+[sub_resource type="Resource" id="Resource_uql1d"]
+script = ExtResource("1_015xo")
+nivel = 21
+movimiento = ExtResource("7_yvv03")
+
+[sub_resource type="Resource" id="Resource_ctyya"]
+script = ExtResource("1_015xo")
+nivel = 25
+movimiento = ExtResource("8_l0w4s")
+
+[sub_resource type="Resource" id="Resource_iardt"]
+script = ExtResource("1_015xo")
+nivel = 29
+movimiento = ExtResource("9_6oqkq")
+
+[sub_resource type="Resource" id="Resource_oi1xc"]
+script = ExtResource("1_015xo")
+nivel = 33
+movimiento = ExtResource("10_5moye")
+
+[sub_resource type="Resource" id="Resource_umtbp"]
+script = ExtResource("1_015xo")
+nivel = 37
+movimiento = ExtResource("11_ns3ux")
+
+[sub_resource type="Resource" id="Resource_7x6hh"]
+script = ExtResource("1_015xo")
+nivel = 41
+movimiento = ExtResource("12_6ggnq")
+
+[sub_resource type="Resource" id="Resource_jsj8a"]
+script = ExtResource("1_015xo")
+nivel = 45
+movimiento = ExtResource("13_wpq0j")
+
+[resource]
+script = ExtResource("14_y55r6")
+id = "shinx"
+numero = 403
+nombre = "Shinx"
+tipos = ["electrico"]
+ps = 45
+ataque = 65
+defensa = 34
+at_esp = 40
+def_esp = 34
+velocidad = 45
+exp_base = 53
+ratio_captura = 235
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 1
+}
+evoluciona_a = "luxio"
+nivel_evolucion = 15
+aprende = Array[ExtResource("1_015xo")]([SubResource("Resource_3o1qe"), SubResource("Resource_bh3x7"), SubResource("Resource_mfyyk"), SubResource("Resource_pqx1f"), SubResource("Resource_2petf"), SubResource("Resource_uql1d"), SubResource("Resource_ctyya"), SubResource("Resource_iardt"), SubResource("Resource_oi1xc"), SubResource("Resource_umtbp"), SubResource("Resource_7x6hh"), SubResource("Resource_jsj8a")])
+sprite_frente = ExtResource("16_dw3sa")
+sprite_espalda = ExtResource("15_15lgr")
+cuadros_frente = 64
+cuadros_espalda = 64

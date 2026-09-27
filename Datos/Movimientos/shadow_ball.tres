@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_a2sdg"]
+
+[resource]
+script = ExtResource("1_a2sdg")
+id = "shadow_ball"
+nombre = "Bola Sombra"
+tipo = "fantasma"
+categoria = "especial"
+poder = 80
+pp = 15
+meta = "damage-lower"
+descripcion = "Lanza una bola oscura que puede bajar la Defensa Especial del objetivo."
+cambios_stats = {
+"def_esp": -1
+}
+prob_stat = 20

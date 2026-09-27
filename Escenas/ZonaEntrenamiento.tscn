@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://d4g47rk6b100k"]
 
 [ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_ld3eg"]
-[ext_resource type="Resource" uid="uid://cuj3qm0m2u70f" path="res://Datos/Encuentros/zona_entrenamiento.tres" id="2_uw8w7"]
+[ext_resource type="Resource" uid="uid://0qfxekrjw5x1" path="res://Datos/Encuentros/hierba_zona.tres" id="2_vuyva"]
 [ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_nob1k"]
 [ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_h0ngc"]
 [ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_x5463"]
@@ -18,7 +18,7 @@
 [node name="ZonaEntrenamiento" type="Node2D" unique_id=2131901066]
 y_sort_enabled = true
 script = ExtResource("1_ld3eg")
-encuentros = ExtResource("2_uw8w7")
+encuentros = ExtResource("2_vuyva")
 musica = "ruta_1"
 
 [node name="Suelo" type="TileMapLayer" parent="." unique_id=490328164]
@@ -72,6 +72,11 @@ texto = "ZONA DE ENTRENAMIENTO
 [node name="Enfermera" parent="." unique_id=1999008602 instance=ExtResource("7_eu4xv")]
 position = Vector2(56, 120)
 script = ExtResource("8_3el1s")
+texto_pregunta = "¡Hola! Cuido a los Pokémon que entrenan en esta zona. ¿Quieres que cure a tu equipo?"
+texto_espera = "De acuerdo, déjame tus Pokémon un momento..."
+texto_listo = "¡Listo! Tus Pokémon están como nuevos. ¡Mucha suerte con el entrenamiento!"
+texto_no = "¡Vuelve cuando quieras!"
+mirar_al_curar = Vector2(0, -1)
 texto = "¡Hola! Cuando tengas Pokémon, tráelos aquí y los curaré."
 
 [node name="AnimatedSprite2D" parent="Enfermera" index="0" unique_id=1100079311]

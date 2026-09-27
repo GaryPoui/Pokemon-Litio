@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_udaml"]
+
+[resource]
+script = ExtResource("1_udaml")
+id = "poison_fang"
+nombre = "Colmillo Veneno"
+tipo = "veneno"
+poder = 50
+pp = 15
+meta = "damage-ailment"
+descripcion = "Colmillos tóxicos que pueden envenenar gravemente al objetivo."
+estado = "poison"
+prob_estado = 50

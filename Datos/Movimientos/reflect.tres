@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_yiaya"]
+
+[resource]
+script = ExtResource("1_yiaya")
+id = "reflect"
+nombre = "Reflejo"
+tipo = "psiquico"
+categoria = "estado"
+precision = 0
+pp = 20
+objetivo = "users-field"
+meta = "field-effect"
+descripcion = "Pared de luz que reduce durante cinco turnos el daño producido por los ataques físicos."

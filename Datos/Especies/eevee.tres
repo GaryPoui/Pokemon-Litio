@@ -1,0 +1,91 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://d1ayx0kklf0el"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_hcrwx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/helping_hand.tres" id="2_vm66n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_oor41"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="4_3xgrc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="5_qdq3l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="6_5ci4l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="7_c4gag"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="8_mitra"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/baton_pass.tres" id="9_1ee36"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="10_yapny"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="11_m36s7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/trump_card.tres" id="12_0xqf5"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="13_bgxus"]
+[ext_resource type="Texture2D" uid="uid://cy8uatvk127im" path="res://Assets/Pokemones/batalla/eevee_espalda.png" id="14_2pgku"]
+[ext_resource type="Texture2D" uid="uid://bh4idqncc4l03" path="res://Assets/Pokemones/batalla/eevee_frente.png" id="15_g3r83"]
+
+[sub_resource type="Resource" id="Resource_4cnqb"]
+script = ExtResource("1_hcrwx")
+movimiento = ExtResource("2_vm66n")
+
+[sub_resource type="Resource" id="Resource_56ke2"]
+script = ExtResource("1_hcrwx")
+movimiento = ExtResource("3_oor41")
+
+[sub_resource type="Resource" id="Resource_tra2i"]
+script = ExtResource("1_hcrwx")
+movimiento = ExtResource("4_3xgrc")
+
+[sub_resource type="Resource" id="Resource_1cea3"]
+script = ExtResource("1_hcrwx")
+nivel = 8
+movimiento = ExtResource("5_qdq3l")
+
+[sub_resource type="Resource" id="Resource_tydqy"]
+script = ExtResource("1_hcrwx")
+nivel = 15
+movimiento = ExtResource("6_5ci4l")
+
+[sub_resource type="Resource" id="Resource_bp76j"]
+script = ExtResource("1_hcrwx")
+nivel = 22
+movimiento = ExtResource("7_c4gag")
+
+[sub_resource type="Resource" id="Resource_h2382"]
+script = ExtResource("1_hcrwx")
+nivel = 29
+movimiento = ExtResource("8_mitra")
+
+[sub_resource type="Resource" id="Resource_yeri2"]
+script = ExtResource("1_hcrwx")
+nivel = 36
+movimiento = ExtResource("9_1ee36")
+
+[sub_resource type="Resource" id="Resource_muy78"]
+script = ExtResource("1_hcrwx")
+nivel = 43
+movimiento = ExtResource("10_yapny")
+
+[sub_resource type="Resource" id="Resource_5hhkp"]
+script = ExtResource("1_hcrwx")
+nivel = 50
+movimiento = ExtResource("11_m36s7")
+
+[sub_resource type="Resource" id="Resource_s6lv7"]
+script = ExtResource("1_hcrwx")
+nivel = 57
+movimiento = ExtResource("12_0xqf5")
+
+[resource]
+script = ExtResource("13_bgxus")
+id = "eevee"
+numero = 133
+nombre = "Eevee"
+ps = 55
+ataque = 55
+at_esp = 45
+def_esp = 65
+velocidad = 55
+exp_base = 65
+ratio_genero = 1
+evs_otorgados = {
+"def_esp": 1
+}
+aprende = Array[ExtResource("1_hcrwx")]([SubResource("Resource_4cnqb"), SubResource("Resource_56ke2"), SubResource("Resource_tra2i"), SubResource("Resource_1cea3"), SubResource("Resource_tydqy"), SubResource("Resource_bp76j"), SubResource("Resource_h2382"), SubResource("Resource_yeri2"), SubResource("Resource_muy78"), SubResource("Resource_5hhkp"), SubResource("Resource_s6lv7")])
+sprite_frente = ExtResource("15_g3r83")
+sprite_espalda = ExtResource("14_2pgku")
+cuadros_frente = 74
+cuadros_espalda = 80
+fps_sprite = 11.46

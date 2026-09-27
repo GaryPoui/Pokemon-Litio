@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_haqbu"]
+
+[resource]
+script = ExtResource("1_haqbu")
+id = "wood_hammer"
+nombre = "Mazazo"
+tipo = "planta"
+poder = 120
+pp = 15
+descripcion = "Arremete contra el objetivo con su robusto cuerpo. El agresor también sufre bastante daño."
+drenaje = -33

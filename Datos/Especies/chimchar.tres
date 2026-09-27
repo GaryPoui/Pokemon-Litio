@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://daxy4u60jyb5d"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_l3eqg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_sfc37"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="3_f5w5i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="4_olnrb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/taunt.tres" id="5_jpnlx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_swipes.tres" id="6_ddc7t"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_wheel.tres" id="7_qyk57"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="8_hcdyt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/torment.tres" id="9_ibgmm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/facade.tres" id="10_crjwy"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fire_spin.tres" id="11_aex61"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/acrobatics.tres" id="12_awcat"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slack_off.tres" id="13_bqtcw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flamethrower.tres" id="14_mrm7l"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_j405f"]
+[ext_resource type="Texture2D" uid="uid://byybabl2an522" path="res://Assets/Pokemones/batalla/chimchar_espalda.png" id="16_vamem"]
+[ext_resource type="Texture2D" uid="uid://c70wf6hukx6a5" path="res://Assets/Pokemones/batalla/chimchar_frente.png" id="17_5xbwl"]
+
+[sub_resource type="Resource" id="Resource_u2ke1"]
+script = ExtResource("1_l3eqg")
+movimiento = ExtResource("2_sfc37")
+
+[sub_resource type="Resource" id="Resource_p5sfw"]
+script = ExtResource("1_l3eqg")
+movimiento = ExtResource("3_f5w5i")
+
+[sub_resource type="Resource" id="Resource_f6fql"]
+script = ExtResource("1_l3eqg")
+nivel = 7
+movimiento = ExtResource("4_olnrb")
+
+[sub_resource type="Resource" id="Resource_5yk81"]
+script = ExtResource("1_l3eqg")
+nivel = 9
+movimiento = ExtResource("5_jpnlx")
+
+[sub_resource type="Resource" id="Resource_4ap5b"]
+script = ExtResource("1_l3eqg")
+nivel = 15
+movimiento = ExtResource("6_ddc7t")
+
+[sub_resource type="Resource" id="Resource_uwkik"]
+script = ExtResource("1_l3eqg")
+nivel = 17
+movimiento = ExtResource("7_qyk57")
+
+[sub_resource type="Resource" id="Resource_cdj6d"]
+script = ExtResource("1_l3eqg")
+nivel = 23
+movimiento = ExtResource("8_hcdyt")
+
+[sub_resource type="Resource" id="Resource_qh1ei"]
+script = ExtResource("1_l3eqg")
+nivel = 25
+movimiento = ExtResource("9_ibgmm")
+
+[sub_resource type="Resource" id="Resource_yi767"]
+script = ExtResource("1_l3eqg")
+nivel = 31
+movimiento = ExtResource("10_crjwy")
+
+[sub_resource type="Resource" id="Resource_l28a8"]
+script = ExtResource("1_l3eqg")
+nivel = 33
+movimiento = ExtResource("11_aex61")
+
+[sub_resource type="Resource" id="Resource_683h6"]
+script = ExtResource("1_l3eqg")
+nivel = 39
+movimiento = ExtResource("12_awcat")
+
+[sub_resource type="Resource" id="Resource_i17ac"]
+script = ExtResource("1_l3eqg")
+nivel = 41
+movimiento = ExtResource("13_bqtcw")
+
+[sub_resource type="Resource" id="Resource_k7p76"]
+script = ExtResource("1_l3eqg")
+nivel = 47
+movimiento = ExtResource("14_mrm7l")
+
+[resource]
+script = ExtResource("15_j405f")
+id = "chimchar"
+numero = 390
+nombre = "Chimchar"
+tipos = ["fuego"]
+ps = 44
+ataque = 58
+defensa = 44
+at_esp = 58
+def_esp = 44
+velocidad = 61
+exp_base = 62
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciona_a = "monferno"
+nivel_evolucion = 14
+aprende = Array[ExtResource("1_l3eqg")]([SubResource("Resource_u2ke1"), SubResource("Resource_p5sfw"), SubResource("Resource_f6fql"), SubResource("Resource_5yk81"), SubResource("Resource_4ap5b"), SubResource("Resource_uwkik"), SubResource("Resource_cdj6d"), SubResource("Resource_qh1ei"), SubResource("Resource_yi767"), SubResource("Resource_l28a8"), SubResource("Resource_683h6"), SubResource("Resource_i17ac"), SubResource("Resource_k7p76")])
+sprite_frente = ExtResource("17_5xbwl")
+sprite_espalda = ExtResource("16_vamem")
+cuadros_frente = 140
+cuadros_espalda = 140
+fps_sprite = 20.0

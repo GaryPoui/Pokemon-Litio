@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://gxjb1o46wonh"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_h1uel"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_h1uel"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bide.tres" id="2_kn6oi"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="3_4ucfw"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="4_ayd2x"]
@@ -17,9 +17,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="15_dpnee"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/focus_punch.tres" id="16_0kd46"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/superpower.tres" id="17_ge810"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_e2pk2"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/gurdurr_espalda.png" id="19_smyga"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/gurdurr_frente.png" id="20_50fay"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_e2pk2"]
+[ext_resource type="Texture2D" uid="uid://ctrhcunhxgltq" path="res://Assets/Pokemones/batalla/gurdurr_espalda.png" id="19_smyga"]
+[ext_resource type="Texture2D" uid="uid://dfw0g4rvo8s6r" path="res://Assets/Pokemones/batalla/gurdurr_frente.png" id="20_50fay"]
 
 [sub_resource type="Resource" id="Resource_bakfu"]
 script = ExtResource("1_h1uel")
@@ -112,7 +112,7 @@ script = ExtResource("18_e2pk2")
 id = "gurdurr"
 numero = 533
 nombre = "Gurdurr"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 85
 ataque = 105
 defensa = 85

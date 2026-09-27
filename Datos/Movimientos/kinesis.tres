@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_p7b23"]
+
+[resource]
+script = ExtResource("1_p7b23")
+id = "kinesis"
+nombre = "Kinético"
+tipo = "psiquico"
+categoria = "estado"
+precision = 80
+pp = 15
+meta = "net-good-stats"
+descripcion = "Dobla una cuchara para distraer al objetivo y bajar su nivel de Precisión."
+cambios_stats = {
+"precision": -1
+}

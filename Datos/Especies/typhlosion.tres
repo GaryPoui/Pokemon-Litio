@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dsrvg12djyeld"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_i2572"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="2_4fjew"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gyro_ball.tres" id="3_cdnqc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="4_61kv5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/smokescreen.tres" id="5_d7j3f"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="6_o4fl3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="7_sl1wf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_wheel.tres" id="8_fclbq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="9_j3gni"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swift.tres" id="10_0twqs"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_charge.tres" id="11_daxkv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/lava_plume.tres" id="12_4abuo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flamethrower.tres" id="13_fdlet"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/inferno.tres" id="14_ejp5g"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rollout.tres" id="15_a6cc3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="16_op6o6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/eruption.tres" id="17_sdvf2"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_pbwqf"]
+[ext_resource type="Texture2D" uid="uid://dcf61o2nqk0qu" path="res://Assets/Pokemones/batalla/typhlosion_espalda.png" id="19_6jp6h"]
+[ext_resource type="Texture2D" uid="uid://bjnfk27a7v7il" path="res://Assets/Pokemones/batalla/typhlosion_frente.png" id="20_rcpet"]
+
+[sub_resource type="Resource" id="Resource_kbk6x"]
+script = ExtResource("1_i2572")
+movimiento = ExtResource("2_4fjew")
+
+[sub_resource type="Resource" id="Resource_abacb"]
+script = ExtResource("1_i2572")
+movimiento = ExtResource("3_cdnqc")
+
+[sub_resource type="Resource" id="Resource_n4nqs"]
+script = ExtResource("1_i2572")
+movimiento = ExtResource("4_61kv5")
+
+[sub_resource type="Resource" id="Resource_nmntt"]
+script = ExtResource("1_i2572")
+movimiento = ExtResource("5_d7j3f")
+
+[sub_resource type="Resource" id="Resource_jarhy"]
+script = ExtResource("1_i2572")
+movimiento = ExtResource("6_o4fl3")
+
+[sub_resource type="Resource" id="Resource_238b7"]
+script = ExtResource("1_i2572")
+nivel = 6
+movimiento = ExtResource("5_d7j3f")
+
+[sub_resource type="Resource" id="Resource_vgq0q"]
+script = ExtResource("1_i2572")
+nivel = 10
+movimiento = ExtResource("2_4fjew")
+
+[sub_resource type="Resource" id="Resource_vqro4"]
+script = ExtResource("1_i2572")
+nivel = 13
+movimiento = ExtResource("7_sl1wf")
+
+[sub_resource type="Resource" id="Resource_taycf"]
+script = ExtResource("1_i2572")
+nivel = 20
+movimiento = ExtResource("8_fclbq")
+
+[sub_resource type="Resource" id="Resource_pj2fy"]
+script = ExtResource("1_i2572")
+nivel = 24
+movimiento = ExtResource("9_j3gni")
+
+[sub_resource type="Resource" id="Resource_q56jl"]
+script = ExtResource("1_i2572")
+nivel = 31
+movimiento = ExtResource("10_0twqs")
+
+[sub_resource type="Resource" id="Resource_cwt2q"]
+script = ExtResource("1_i2572")
+nivel = 35
+movimiento = ExtResource("11_daxkv")
+
+[sub_resource type="Resource" id="Resource_7leyf"]
+script = ExtResource("1_i2572")
+nivel = 43
+movimiento = ExtResource("12_4abuo")
+
+[sub_resource type="Resource" id="Resource_6nh00"]
+script = ExtResource("1_i2572")
+nivel = 48
+movimiento = ExtResource("13_fdlet")
+
+[sub_resource type="Resource" id="Resource_7wc65"]
+script = ExtResource("1_i2572")
+nivel = 56
+movimiento = ExtResource("14_ejp5g")
+
+[sub_resource type="Resource" id="Resource_p51vt"]
+script = ExtResource("1_i2572")
+nivel = 61
+movimiento = ExtResource("15_a6cc3")
+
+[sub_resource type="Resource" id="Resource_2hjdd"]
+script = ExtResource("1_i2572")
+nivel = 69
+movimiento = ExtResource("16_op6o6")
+
+[sub_resource type="Resource" id="Resource_xni8h"]
+script = ExtResource("1_i2572")
+nivel = 74
+movimiento = ExtResource("17_sdvf2")
+
+[resource]
+script = ExtResource("18_pbwqf")
+id = "typhlosion"
+numero = 157
+nombre = "Typhlosion"
+tipos = ["fuego"]
+ps = 78
+ataque = 84
+defensa = 78
+at_esp = 109
+def_esp = 85
+velocidad = 100
+exp_base = 240
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 3
+}
+aprende = Array[ExtResource("1_i2572")]([SubResource("Resource_kbk6x"), SubResource("Resource_abacb"), SubResource("Resource_n4nqs"), SubResource("Resource_nmntt"), SubResource("Resource_jarhy"), SubResource("Resource_238b7"), SubResource("Resource_vgq0q"), SubResource("Resource_vqro4"), SubResource("Resource_taycf"), SubResource("Resource_pj2fy"), SubResource("Resource_q56jl"), SubResource("Resource_cwt2q"), SubResource("Resource_7leyf"), SubResource("Resource_6nh00"), SubResource("Resource_7wc65"), SubResource("Resource_p51vt"), SubResource("Resource_2hjdd"), SubResource("Resource_xni8h")])
+sprite_frente = ExtResource("20_rcpet")
+sprite_espalda = ExtResource("19_6jp6h")
+cuadros_frente = 112
+cuadros_espalda = 112
+fps_sprite = 20.0

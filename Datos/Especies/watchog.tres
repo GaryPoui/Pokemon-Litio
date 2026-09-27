@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cmrjeqb35g1mr"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_qok32"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_qok32"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="2_nmj7f"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_a8ck1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/low_kick.tres" id="4_nk1f8"]
@@ -18,9 +18,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/mean_look.tres" id="16_8f1ox"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/baton_pass.tres" id="17_0boii"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/slam.tres" id="18_pd1l7"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="19_gjv3u"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/watchog_espalda.png" id="20_urkse"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/watchog_frente.png" id="21_ku22k"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="19_gjv3u"]
+[ext_resource type="Texture2D" uid="uid://4oc5q3q6abih" path="res://Assets/Pokemones/batalla/watchog_espalda.png" id="20_urkse"]
+[ext_resource type="Texture2D" uid="uid://rvgx5wlrcexn" path="res://Assets/Pokemones/batalla/watchog_frente.png" id="21_ku22k"]
 
 [sub_resource type="Resource" id="Resource_tfeoh"]
 script = ExtResource("1_qok32")
@@ -118,7 +118,6 @@ script = ExtResource("19_gjv3u")
 id = "watchog"
 numero = 505
 nombre = "Watchog"
-tipos = PackedStringArray("normal")
 ps = 60
 ataque = 85
 defensa = 69

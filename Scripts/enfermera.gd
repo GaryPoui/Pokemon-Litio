@@ -1,17 +1,24 @@
 extends "res://Scripts/npc.gd"
 
+@export_group("Curación")
+@export_multiline var texto_pregunta: String= "¡Hola! Cuido a los Pokémon que entrenan en esta zona. ¿Quieres que cure a tu equipo?"
+@export_multiline var texto_espera :String= "De acuerdo, déjame tus Pokémon un momento..."
+@export_multiline var texto_listo: String= "¡Listo! Tus Pokémon están como nuevos. ¡Mucha suerte con el entrenamiento!"
+@export_multiline var texto_no :String= "¡Vuelve cuando quieras!"
+@export var mirar_al_curar: Vector2= Vector2.UP
+
 func interactuar(jugador: Node) -> void:
 	_mirar(-jugador.last_direction)
 	if Equipo.miembros.is_empty():
 		await Dialogo.mostrar(texto)
 		return
-	var r: int= await Dialogo.preguntar("¡Hola! Cuido a los Pokémon que entrenan en esta zona. ¿Quieres que cure a tu equipo?")
+	var r: int= await Dialogo.preguntar(texto_pregunta)
 	if r!= 0:
-		await Dialogo.mostrar("¡Vuelve cuando quieras!")
+		await Dialogo.mostrar(texto_no)
 		return
-	await Dialogo.mostrar("De acuerdo, déjame tus Pokémon un momento...")
-	_mirar(Vector2.UP)
+	await Dialogo.mostrar(texto_espera)
+	_mirar(mirar_al_curar)
 	await Sonido.jingle("curacion")
 	Equipo.curar_todo()
 	_mirar(-jugador.last_direction)
-	await Dialogo.mostrar("¡Listo! Tus Pokémon están como nuevos. ¡Mucha suerte con el entrenamiento!")
+	await Dialogo.mostrar(texto_listo)

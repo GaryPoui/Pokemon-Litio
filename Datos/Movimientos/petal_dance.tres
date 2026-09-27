@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_65g4j"]
+
+[resource]
+script = ExtResource("1_65g4j")
+id = "petal_dance"
+nombre = "Danza Pétalo"
+tipo = "planta"
+categoria = "especial"
+poder = 120
+objetivo = "random-opponent"
+descripcion = "Lanza pétalos de dos a tres turnos y acaba confundiendo al atacante."

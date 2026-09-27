@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://7qiimrdhbv3p"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_hqv4n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_lhvle"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="3_aw0f1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="4_73yqr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rage.tres" id="5_cb2ai"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="6_323ru"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="7_2bh02"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ice_fang.tres" id="8_aalam"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="9_1rdy3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="10_5k867"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/chip_away.tres" id="11_l48so"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="12_6latw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="13_mom5d"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="14_4aufv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aqua_tail.tres" id="15_jkisk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/superpower.tres" id="16_x7qo8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="17_bs4gf"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_x6dte"]
+[ext_resource type="Texture2D" uid="uid://duj73gfps3737" path="res://Assets/Pokemones/batalla/totodile_espalda.png" id="19_48dsj"]
+[ext_resource type="Texture2D" uid="uid://8imq4kffcaik" path="res://Assets/Pokemones/batalla/totodile_frente.png" id="20_8a2gg"]
+
+[sub_resource type="Resource" id="Resource_5rotd"]
+script = ExtResource("1_hqv4n")
+movimiento = ExtResource("2_lhvle")
+
+[sub_resource type="Resource" id="Resource_qqxdu"]
+script = ExtResource("1_hqv4n")
+movimiento = ExtResource("3_aw0f1")
+
+[sub_resource type="Resource" id="Resource_det85"]
+script = ExtResource("1_hqv4n")
+nivel = 6
+movimiento = ExtResource("4_73yqr")
+
+[sub_resource type="Resource" id="Resource_7ur7n"]
+script = ExtResource("1_hqv4n")
+nivel = 8
+movimiento = ExtResource("5_cb2ai")
+
+[sub_resource type="Resource" id="Resource_72rla"]
+script = ExtResource("1_hqv4n")
+nivel = 13
+movimiento = ExtResource("6_323ru")
+
+[sub_resource type="Resource" id="Resource_q0mu4"]
+script = ExtResource("1_hqv4n")
+nivel = 15
+movimiento = ExtResource("7_2bh02")
+
+[sub_resource type="Resource" id="Resource_mx5vx"]
+script = ExtResource("1_hqv4n")
+nivel = 20
+movimiento = ExtResource("8_aalam")
+
+[sub_resource type="Resource" id="Resource_ehe4d"]
+script = ExtResource("1_hqv4n")
+nivel = 22
+movimiento = ExtResource("9_1rdy3")
+
+[sub_resource type="Resource" id="Resource_2lopp"]
+script = ExtResource("1_hqv4n")
+nivel = 27
+movimiento = ExtResource("10_5k867")
+
+[sub_resource type="Resource" id="Resource_xumj6"]
+script = ExtResource("1_hqv4n")
+nivel = 29
+movimiento = ExtResource("11_l48so")
+
+[sub_resource type="Resource" id="Resource_t1g27"]
+script = ExtResource("1_hqv4n")
+nivel = 34
+movimiento = ExtResource("12_6latw")
+
+[sub_resource type="Resource" id="Resource_r2p3o"]
+script = ExtResource("1_hqv4n")
+nivel = 36
+movimiento = ExtResource("13_mom5d")
+
+[sub_resource type="Resource" id="Resource_rjnlw"]
+script = ExtResource("1_hqv4n")
+nivel = 41
+movimiento = ExtResource("14_4aufv")
+
+[sub_resource type="Resource" id="Resource_pknw1"]
+script = ExtResource("1_hqv4n")
+nivel = 43
+movimiento = ExtResource("15_jkisk")
+
+[sub_resource type="Resource" id="Resource_tfxr8"]
+script = ExtResource("1_hqv4n")
+nivel = 48
+movimiento = ExtResource("16_x7qo8")
+
+[sub_resource type="Resource" id="Resource_kjljw"]
+script = ExtResource("1_hqv4n")
+nivel = 50
+movimiento = ExtResource("17_bs4gf")
+
+[resource]
+script = ExtResource("18_x6dte")
+id = "totodile"
+numero = 158
+nombre = "Totodile"
+tipos = ["agua"]
+ataque = 65
+defensa = 64
+at_esp = 44
+def_esp = 48
+velocidad = 43
+exp_base = 63
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 1
+}
+evoluciona_a = "croconaw"
+nivel_evolucion = 18
+aprende = Array[ExtResource("1_hqv4n")]([SubResource("Resource_5rotd"), SubResource("Resource_qqxdu"), SubResource("Resource_det85"), SubResource("Resource_7ur7n"), SubResource("Resource_72rla"), SubResource("Resource_q0mu4"), SubResource("Resource_mx5vx"), SubResource("Resource_ehe4d"), SubResource("Resource_2lopp"), SubResource("Resource_xumj6"), SubResource("Resource_t1g27"), SubResource("Resource_r2p3o"), SubResource("Resource_rjnlw"), SubResource("Resource_pknw1"), SubResource("Resource_tfxr8"), SubResource("Resource_kjljw")])
+sprite_frente = ExtResource("20_8a2gg")
+sprite_espalda = ExtResource("19_48dsj")
+cuadros_frente = 43
+cuadros_espalda = 43
+fps_sprite = 8.11

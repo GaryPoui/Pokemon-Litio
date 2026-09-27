@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://jl20n7im15nj"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_rj87r"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_rj87r"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="2_kw8dm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/odor_sleuth.tres" id="3_x6uaw"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_7i31d"]
@@ -17,9 +17,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/head_smash.tres" id="15_82ij1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/roar.tres" id="16_he3rc"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flare_blitz.tres" id="17_5bpam"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_p17io"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/pignite_espalda.png" id="19_0nx24"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/pignite_frente.png" id="20_2jx5w"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_p17io"]
+[ext_resource type="Texture2D" uid="uid://dw15il64baqqm" path="res://Assets/Pokemones/batalla/pignite_espalda.png" id="19_0nx24"]
+[ext_resource type="Texture2D" uid="uid://cjpj8oodn22vn" path="res://Assets/Pokemones/batalla/pignite_frente.png" id="20_2jx5w"]
 
 [sub_resource type="Resource" id="Resource_arjup"]
 script = ExtResource("1_rj87r")
@@ -117,7 +117,7 @@ script = ExtResource("18_p17io")
 id = "pignite"
 numero = 499
 nombre = "Pignite"
-tipos = PackedStringArray("fuego", "lucha")
+tipos = ["fuego", "lucha"]
 ps = 90
 ataque = 93
 defensa = 55

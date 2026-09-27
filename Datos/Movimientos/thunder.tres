@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_uru8b"]
+
+[resource]
+script = ExtResource("1_uru8b")
+id = "thunder"
+nombre = "Trueno"
+tipo = "electrico"
+categoria = "especial"
+poder = 120
+precision = 70
+meta = "damage-ailment"
+descripcion = "Un poderoso rayo que daña al objetivo y puede paralizarlo."
+estado = "paralysis"
+prob_estado = 30

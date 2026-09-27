@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bdhvxgo4ysutj"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_g0tu5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/teleport.tres" id="2_hwcav"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="3_o3s7w"]
+[ext_resource type="Texture2D" uid="uid://brvviid128mqg" path="res://Assets/Pokemones/batalla/abra_espalda.png" id="4_gjkqh"]
+[ext_resource type="Texture2D" uid="uid://2snysug40gdj" path="res://Assets/Pokemones/batalla/abra_frente.png" id="5_1r02y"]
+
+[sub_resource type="Resource" id="Resource_ry0qp"]
+script = ExtResource("1_g0tu5")
+movimiento = ExtResource("2_hwcav")
+
+[resource]
+script = ExtResource("3_o3s7w")
+id = "abra"
+numero = 63
+nombre = "Abra"
+tipos = ["psiquico"]
+ps = 25
+ataque = 20
+defensa = 15
+at_esp = 105
+def_esp = 55
+velocidad = 90
+exp_base = 62
+ratio_captura = 200
+ratio_genero = 2
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 1
+}
+evoluciona_a = "kadabra"
+nivel_evolucion = 16
+aprende = Array[ExtResource("1_g0tu5")]([SubResource("Resource_ry0qp")])
+sprite_frente = ExtResource("5_1r02y")
+sprite_espalda = ExtResource("4_gjkqh")
+cuadros_frente = 56
+cuadros_espalda = 56
+fps_sprite = 9.82

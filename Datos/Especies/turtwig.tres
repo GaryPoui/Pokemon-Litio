@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://4s26j6ixu508"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_8he6m"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_0ktkv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/withdraw.tres" id="3_qrfho"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="4_ggjn6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/razor_leaf.tres" id="5_m1rs3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/curse.tres" id="6_lw27g"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="7_udlod"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="8_y0xi4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leech_seed.tres" id="9_8utas"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/synthesis.tres" id="10_74go7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="11_8i8uf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/giga_drain.tres" id="12_h7q0a"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="13_8h57o"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_l1s7v"]
+[ext_resource type="Texture2D" uid="uid://1evn14phwtk1" path="res://Assets/Pokemones/batalla/turtwig_espalda.png" id="15_y7l76"]
+[ext_resource type="Texture2D" uid="uid://bbqselb7udtlf" path="res://Assets/Pokemones/batalla/turtwig_frente.png" id="16_cxclr"]
+
+[sub_resource type="Resource" id="Resource_cffwq"]
+script = ExtResource("1_8he6m")
+movimiento = ExtResource("2_0ktkv")
+
+[sub_resource type="Resource" id="Resource_j46vm"]
+script = ExtResource("1_8he6m")
+nivel = 5
+movimiento = ExtResource("3_qrfho")
+
+[sub_resource type="Resource" id="Resource_ged01"]
+script = ExtResource("1_8he6m")
+nivel = 9
+movimiento = ExtResource("4_ggjn6")
+
+[sub_resource type="Resource" id="Resource_qb2d7"]
+script = ExtResource("1_8he6m")
+nivel = 13
+movimiento = ExtResource("5_m1rs3")
+
+[sub_resource type="Resource" id="Resource_mxgn5"]
+script = ExtResource("1_8he6m")
+nivel = 17
+movimiento = ExtResource("6_lw27g")
+
+[sub_resource type="Resource" id="Resource_5cmlr"]
+script = ExtResource("1_8he6m")
+nivel = 21
+movimiento = ExtResource("7_udlod")
+
+[sub_resource type="Resource" id="Resource_vjewc"]
+script = ExtResource("1_8he6m")
+nivel = 25
+movimiento = ExtResource("8_y0xi4")
+
+[sub_resource type="Resource" id="Resource_kofcn"]
+script = ExtResource("1_8he6m")
+nivel = 29
+movimiento = ExtResource("9_8utas")
+
+[sub_resource type="Resource" id="Resource_b2qxl"]
+script = ExtResource("1_8he6m")
+nivel = 33
+movimiento = ExtResource("10_74go7")
+
+[sub_resource type="Resource" id="Resource_m1knc"]
+script = ExtResource("1_8he6m")
+nivel = 37
+movimiento = ExtResource("11_8i8uf")
+
+[sub_resource type="Resource" id="Resource_ec5oh"]
+script = ExtResource("1_8he6m")
+nivel = 41
+movimiento = ExtResource("12_h7q0a")
+
+[sub_resource type="Resource" id="Resource_kr8tg"]
+script = ExtResource("1_8he6m")
+nivel = 45
+movimiento = ExtResource("13_8h57o")
+
+[resource]
+script = ExtResource("14_l1s7v")
+id = "turtwig"
+numero = 387
+nombre = "Turtwig"
+tipos = ["planta"]
+ps = 55
+ataque = 68
+defensa = 64
+at_esp = 45
+def_esp = 55
+velocidad = 31
+exp_base = 64
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 1
+}
+evoluciona_a = "grotle"
+nivel_evolucion = 18
+aprende = Array[ExtResource("1_8he6m")]([SubResource("Resource_cffwq"), SubResource("Resource_j46vm"), SubResource("Resource_ged01"), SubResource("Resource_qb2d7"), SubResource("Resource_mxgn5"), SubResource("Resource_5cmlr"), SubResource("Resource_vjewc"), SubResource("Resource_kofcn"), SubResource("Resource_b2qxl"), SubResource("Resource_m1knc"), SubResource("Resource_ec5oh"), SubResource("Resource_kr8tg")])
+sprite_frente = ExtResource("16_cxclr")
+sprite_espalda = ExtResource("15_y7l76")
+cuadros_frente = 50
+cuadros_espalda = 54
+fps_sprite = 11.36

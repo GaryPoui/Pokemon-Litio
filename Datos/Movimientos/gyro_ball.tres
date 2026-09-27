@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_0t7mj"]
+
+[resource]
+script = ExtResource("1_0t7mj")
+id = "gyro_ball"
+nombre = "Giro Bola"
+tipo = "acero"
+pp = 5
+descripcion = "Embiste al objetivo con un potente ataque giratorio. Cuanto más lento es el usuario, más daño causa. "

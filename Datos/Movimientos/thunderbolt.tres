@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_hm602"]
+
+[resource]
+script = ExtResource("1_hm602")
+id = "thunderbolt"
+nombre = "Rayo"
+tipo = "electrico"
+categoria = "especial"
+poder = 95
+pp = 15
+meta = "damage-ailment"
+descripcion = "Potente ataque eléctrico que puede paralizar al objetivo."
+estado = "paralysis"
+prob_estado = 10

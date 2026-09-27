@@ -87,6 +87,7 @@ script = ExtResource("15_gci87")
 id = "blitzle"
 numero = 522
 nombre = "Blitzle"
+tipos = ["electrico"]
 ps = 45
 ataque = 60
 defensa = 32

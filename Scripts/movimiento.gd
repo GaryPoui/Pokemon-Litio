@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 signal paso_terminado(celda: Vector2i)
 
-@export var tile_size: float= 16.0
 @export var move_speed: float =4.0
 @export var run_multiplier: float= 2.0
 @export var turn_delay: float =0.08
@@ -19,6 +18,8 @@ var last_direction: Vector2= Vector2.DOWN
 var turn_timer: float =0.0
 var ultimo_choque:= -1000
 var en_evento :=false
+var tam:= Rejilla.POR_DEFECTO
+var largo_paso :=16.0
 
 const WALK_ANIMS:= {
 	Vector2.DOWN: &"caminar_abajo",
@@ -34,6 +35,13 @@ const RUN_ANIMS :={
 }
 
 func _ready() -> void:
+	tam= Rejilla.tam(self)
+	var cs:= get_node_or_null("CollisionShape2D") as CollisionShape2D
+	if cs!= null and cs.shape is RectangleShape2D:
+		var forma: RectangleShape2D= cs.shape.duplicate()
+		forma.size =Vector2(minf(forma.size.x, tam.x- 2.0), minf(forma.size.y, tam.y- 2.0))
+		cs.shape= forma
+	animated_sprite.position.y+= tam.y/ 2.0- Rejilla.POR_DEFECTO.y/ 2.0
 	target_position= position
 	_set_animation_speeds()
 	_set_idle()
@@ -42,7 +50,7 @@ func _bloqueado() -> bool:
 	return en_evento or (mochila!= null and mochila.is_open) or (menu_pausa!= null and menu_pausa.is_open) or Dialogo.esta_abierto or GestorEscenas.en_transicion or Combate.activo
 
 func celda() -> Vector2i:
-	return Vector2i((position/ tile_size).floor())
+	return Vector2i((position/ tam).floor())
 
 func colocar(pos: Vector2, direccion: Vector2) -> void:
 	position =pos
@@ -113,7 +121,7 @@ func _try_start_move(delta: float, chained: bool) -> void:
 
 	last_direction =direction
 	is_running= Input.is_action_pressed("correr")
-	var motion: Vector2 =direction* tile_size
+	var motion: Vector2 =direction* tam
 
 	if test_move(transform, motion):
 		_set_idle()
@@ -123,11 +131,12 @@ func _try_start_move(delta: float, chained: bool) -> void:
 		return
 
 	target_position= position +motion
+	largo_paso= motion.length()
 	is_moving =true
 	_play_move_animation(direction)
 
 func _move_towards_target(delta: float) -> void:
-	var speed: float= move_speed* tile_size *(run_multiplier if is_running else 1.0)
+	var speed: float= move_speed* largo_paso *(run_multiplier if is_running else 1.0)
 	var restante: float =speed* delta
 	var distancia:= position.distance_to(target_position)
 

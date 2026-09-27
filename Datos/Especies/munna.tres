@@ -110,6 +110,7 @@ script = ExtResource("19_7swrp")
 id = "munna"
 numero = 517
 nombre = "Munna"
+tipos = ["psiquico"]
 ps = 76
 ataque = 25
 defensa = 45

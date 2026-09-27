@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_38v4d"]
+
+[resource]
+script = ExtResource("1_38v4d")
+id = "screech"
+nombre = "Chirrido"
+categoria = "estado"
+precision = 85
+pp = 40
+meta = "net-good-stats"
+descripcion = "Alarido agudo que reduce mucho la Defensa del objetivo."
+cambios_stats = {
+"defensa": -2
+}

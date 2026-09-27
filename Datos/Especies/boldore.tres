@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dvafuwkcjwppn"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ye0g1"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ye0g1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="2_qhmdo"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/headbutt.tres" id="3_scsk6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="4_rxjpf"]
@@ -15,9 +15,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sandstorm.tres" id="13_wsfpj"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="14_p0o8u"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="15_2csc6"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_ar3yn"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/boldore_espalda.png" id="17_f6ioq"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/boldore_frente.png" id="18_c52d3"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_ar3yn"]
+[ext_resource type="Texture2D" uid="uid://cymak2xst623o" path="res://Assets/Pokemones/batalla/boldore_espalda.png" id="17_f6ioq"]
+[ext_resource type="Texture2D" uid="uid://rcp58kmar2ym" path="res://Assets/Pokemones/batalla/boldore_frente.png" id="18_c52d3"]
 
 [sub_resource type="Resource" id="Resource_dbe6f"]
 script = ExtResource("1_ye0g1")
@@ -105,7 +105,7 @@ script = ExtResource("16_ar3yn")
 id = "boldore"
 numero = 525
 nombre = "Boldore"
-tipos = PackedStringArray("roca")
+tipos = ["roca"]
 ps = 70
 ataque = 105
 defensa = 105

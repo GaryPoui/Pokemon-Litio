@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://jjbaedeem6gs"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_2rri7"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_2rri7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="2_oc03g"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="3_qr838"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="4_ohnqp"]
@@ -14,9 +14,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="12_7xsmh"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/wild_charge.tres" id="13_xh0us"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="14_n6k02"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="15_7r1f2"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/zebstrika_espalda.png" id="16_l6mm7"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/zebstrika_frente.png" id="17_85o53"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_7r1f2"]
+[ext_resource type="Texture2D" uid="uid://c0gb74cghinv2" path="res://Assets/Pokemones/batalla/zebstrika_espalda.png" id="16_l6mm7"]
+[ext_resource type="Texture2D" uid="uid://k5fxbga8tcmd" path="res://Assets/Pokemones/batalla/zebstrika_frente.png" id="17_85o53"]
 
 [sub_resource type="Resource" id="Resource_l2u6t"]
 script = ExtResource("1_2rri7")
@@ -99,7 +99,7 @@ script = ExtResource("15_7r1f2")
 id = "zebstrika"
 numero = 523
 nombre = "Zebstrika"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 75
 ataque = 100
 defensa = 63

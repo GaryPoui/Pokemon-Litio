@@ -9,4 +9,4 @@ func _ready() -> void:
 	add_to_group("warp")
 
 func celda() -> Vector2i:
-	return Vector2i((global_position/ 16.0).floor())
+	return Rejilla.celda(self)

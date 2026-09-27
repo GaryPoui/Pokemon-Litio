@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://wwjxk3unh22v"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_uh1io"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_ilw8p"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_viive"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/razor_leaf.tres" id="4_lclmq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/poison_powder.tres" id="5_sahx6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/synthesis.tres" id="6_fvrql"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/reflect.tres" id="7_jx6j4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/magical_leaf.tres" id="8_2fbd7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/natural_gift.tres" id="9_uach2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sweet_scent.tres" id="10_8ysd8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/light_screen.tres" id="11_5cqke"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/body_slam.tres" id="12_wmhum"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/safeguard.tres" id="13_8b335"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aromatherapy.tres" id="14_rba7v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="15_yg3es"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_ikyfe"]
+[ext_resource type="Texture2D" uid="uid://bmsasam0d07jd" path="res://Assets/Pokemones/batalla/chikorita_espalda.png" id="17_srp31"]
+[ext_resource type="Texture2D" uid="uid://cq7as6kujfj0r" path="res://Assets/Pokemones/batalla/chikorita_frente.png" id="18_pnqep"]
+
+[sub_resource type="Resource" id="Resource_pis3i"]
+script = ExtResource("1_uh1io")
+movimiento = ExtResource("2_ilw8p")
+
+[sub_resource type="Resource" id="Resource_3gc21"]
+script = ExtResource("1_uh1io")
+movimiento = ExtResource("3_viive")
+
+[sub_resource type="Resource" id="Resource_2xdyh"]
+script = ExtResource("1_uh1io")
+nivel = 6
+movimiento = ExtResource("4_lclmq")
+
+[sub_resource type="Resource" id="Resource_vysub"]
+script = ExtResource("1_uh1io")
+nivel = 9
+movimiento = ExtResource("5_sahx6")
+
+[sub_resource type="Resource" id="Resource_q22jw"]
+script = ExtResource("1_uh1io")
+nivel = 12
+movimiento = ExtResource("6_fvrql")
+
+[sub_resource type="Resource" id="Resource_gk30v"]
+script = ExtResource("1_uh1io")
+nivel = 17
+movimiento = ExtResource("7_jx6j4")
+
+[sub_resource type="Resource" id="Resource_786ys"]
+script = ExtResource("1_uh1io")
+nivel = 20
+movimiento = ExtResource("8_2fbd7")
+
+[sub_resource type="Resource" id="Resource_olqie"]
+script = ExtResource("1_uh1io")
+nivel = 23
+movimiento = ExtResource("9_uach2")
+
+[sub_resource type="Resource" id="Resource_neepu"]
+script = ExtResource("1_uh1io")
+nivel = 28
+movimiento = ExtResource("10_8ysd8")
+
+[sub_resource type="Resource" id="Resource_nqois"]
+script = ExtResource("1_uh1io")
+nivel = 31
+movimiento = ExtResource("11_5cqke")
+
+[sub_resource type="Resource" id="Resource_bh5tt"]
+script = ExtResource("1_uh1io")
+nivel = 34
+movimiento = ExtResource("12_wmhum")
+
+[sub_resource type="Resource" id="Resource_hed0p"]
+script = ExtResource("1_uh1io")
+nivel = 39
+movimiento = ExtResource("13_8b335")
+
+[sub_resource type="Resource" id="Resource_3jte0"]
+script = ExtResource("1_uh1io")
+nivel = 42
+movimiento = ExtResource("14_rba7v")
+
+[sub_resource type="Resource" id="Resource_hb7l2"]
+script = ExtResource("1_uh1io")
+nivel = 45
+movimiento = ExtResource("15_yg3es")
+
+[resource]
+script = ExtResource("16_ikyfe")
+id = "chikorita"
+numero = 152
+nombre = "Chikorita"
+tipos = ["planta"]
+ps = 45
+ataque = 49
+defensa = 65
+at_esp = 49
+def_esp = 65
+velocidad = 45
+exp_base = 64
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"def_esp": 1
+}
+evoluciona_a = "bayleef"
+nivel_evolucion = 16
+aprende = Array[ExtResource("1_uh1io")]([SubResource("Resource_pis3i"), SubResource("Resource_3gc21"), SubResource("Resource_2xdyh"), SubResource("Resource_vysub"), SubResource("Resource_q22jw"), SubResource("Resource_gk30v"), SubResource("Resource_786ys"), SubResource("Resource_olqie"), SubResource("Resource_neepu"), SubResource("Resource_nqois"), SubResource("Resource_bh5tt"), SubResource("Resource_hed0p"), SubResource("Resource_3jte0"), SubResource("Resource_hb7l2")])
+sprite_frente = ExtResource("18_pnqep")
+sprite_espalda = ExtResource("17_srp31")
+cuadros_frente = 26
+cuadros_espalda = 26
+fps_sprite = 7.69

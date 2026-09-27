@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_jhcof"]
+
+[resource]
+script = ExtResource("1_jhcof")
+id = "leech_life"
+nombre = "Chupavidas"
+tipo = "bicho"
+poder = 20
+pp = 15
+meta = "damage-heal"
+descripcion = "Restaura al usuario la mitad del daño causado al objetivo."
+drenaje = 50

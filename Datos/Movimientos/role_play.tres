@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_8tmyj"]
+
+[resource]
+script = ExtResource("1_8tmyj")
+id = "role_play"
+nombre = "Imitación"
+tipo = "psiquico"
+categoria = "estado"
+precision = 0
+meta = "unique"
+descripcion = "Imita al objetivo por completo y copia su habilidad."

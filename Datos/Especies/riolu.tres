@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://olrpehlbnvvs"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_axf50"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/endure.tres" id="2_b3dk0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/foresight.tres" id="3_qmhhs"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="4_vis6p"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/counter.tres" id="5_x6jc3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/force_palm.tres" id="6_q2dqr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feint.tres" id="7_yr8tv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="8_sk04u"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="9_vqltj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/copycat.tres" id="10_v5enq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="11_dgfhw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/final_gambit.tres" id="12_cpyk6"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="13_dl4s7"]
+[ext_resource type="Texture2D" uid="uid://duoc60p04mdim" path="res://Assets/Pokemones/batalla/riolu_espalda.png" id="14_7ojni"]
+[ext_resource type="Texture2D" uid="uid://daifobhfgn77e" path="res://Assets/Pokemones/batalla/riolu_frente.png" id="15_jv3mh"]
+
+[sub_resource type="Resource" id="Resource_53u0s"]
+script = ExtResource("1_axf50")
+movimiento = ExtResource("2_b3dk0")
+
+[sub_resource type="Resource" id="Resource_mnm6w"]
+script = ExtResource("1_axf50")
+movimiento = ExtResource("3_qmhhs")
+
+[sub_resource type="Resource" id="Resource_s7npm"]
+script = ExtResource("1_axf50")
+movimiento = ExtResource("4_vis6p")
+
+[sub_resource type="Resource" id="Resource_i6vvx"]
+script = ExtResource("1_axf50")
+nivel = 6
+movimiento = ExtResource("5_x6jc3")
+
+[sub_resource type="Resource" id="Resource_jxn84"]
+script = ExtResource("1_axf50")
+nivel = 11
+movimiento = ExtResource("6_q2dqr")
+
+[sub_resource type="Resource" id="Resource_qu7wa"]
+script = ExtResource("1_axf50")
+nivel = 15
+movimiento = ExtResource("7_yr8tv")
+
+[sub_resource type="Resource" id="Resource_2fxpn"]
+script = ExtResource("1_axf50")
+nivel = 19
+movimiento = ExtResource("8_sk04u")
+
+[sub_resource type="Resource" id="Resource_w5gn4"]
+script = ExtResource("1_axf50")
+nivel = 24
+movimiento = ExtResource("9_vqltj")
+
+[sub_resource type="Resource" id="Resource_31gwt"]
+script = ExtResource("1_axf50")
+nivel = 29
+movimiento = ExtResource("10_v5enq")
+
+[sub_resource type="Resource" id="Resource_sa2e0"]
+script = ExtResource("1_axf50")
+nivel = 47
+movimiento = ExtResource("11_dgfhw")
+
+[sub_resource type="Resource" id="Resource_nnpy3"]
+script = ExtResource("1_axf50")
+nivel = 55
+movimiento = ExtResource("12_cpyk6")
+
+[resource]
+script = ExtResource("13_dl4s7")
+id = "riolu"
+numero = 447
+nombre = "Riolu"
+tipos = ["lucha"]
+ps = 40
+ataque = 70
+defensa = 40
+at_esp = 35
+def_esp = 40
+velocidad = 60
+exp_base = 57
+ratio_captura = 75
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 1
+}
+aprende = Array[ExtResource("1_axf50")]([SubResource("Resource_53u0s"), SubResource("Resource_mnm6w"), SubResource("Resource_s7npm"), SubResource("Resource_i6vvx"), SubResource("Resource_jxn84"), SubResource("Resource_qu7wa"), SubResource("Resource_2fxpn"), SubResource("Resource_w5gn4"), SubResource("Resource_31gwt"), SubResource("Resource_sa2e0"), SubResource("Resource_nnpy3")])
+sprite_frente = ExtResource("15_jv3mh")
+sprite_espalda = ExtResource("14_7ojni")
+cuadros_frente = 63
+cuadros_espalda = 63

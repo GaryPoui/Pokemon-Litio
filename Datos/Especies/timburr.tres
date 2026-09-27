@@ -104,6 +104,7 @@ script = ExtResource("18_c7o2t")
 id = "timburr"
 numero = 532
 nombre = "Timburr"
+tipos = ["lucha"]
 ps = 75
 ataque = 80
 defensa = 55
