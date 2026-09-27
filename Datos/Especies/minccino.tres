@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://mboqaox23eoj"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_cr2k7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="2_bmvn2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_orr32"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/helping_hand.tres" id="4_2aro8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tickle.tres" id="5_hom6v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_slap.tres" id="6_1iu65"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/encore.tres" id="7_5i53g"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swift.tres" id="8_ppnv1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sing.tres" id="9_rgs3r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tail_slap.tres" id="10_w3gnm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charm.tres" id="11_icum5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wake_up_slap.tres" id="12_ycjgo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/echoed_voice.tres" id="13_bvuf8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slam.tres" id="14_naf2s"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/captivate.tres" id="15_phpus"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="16_4wycm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="17_0u6l6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/after_you.tres" id="18_1j0qq"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="19_iuva8"]
+[ext_resource type="Texture2D" uid="uid://ccb4oxqi5l38b" path="res://Assets/Pokemones/batalla/minccino_espalda.png" id="20_n56cw"]
+[ext_resource type="Texture2D" uid="uid://dajw4uqmn40to" path="res://Assets/Pokemones/batalla/minccino_frente.png" id="21_jhrwk"]
+
+[sub_resource type="Resource" id="Resource_3b21h"]
+script = ExtResource("1_cr2k7")
+movimiento = ExtResource("2_bmvn2")
+
+[sub_resource type="Resource" id="Resource_fj3nr"]
+script = ExtResource("1_cr2k7")
+nivel = 3
+movimiento = ExtResource("3_orr32")
+
+[sub_resource type="Resource" id="Resource_b2504"]
+script = ExtResource("1_cr2k7")
+nivel = 7
+movimiento = ExtResource("4_2aro8")
+
+[sub_resource type="Resource" id="Resource_cqobi"]
+script = ExtResource("1_cr2k7")
+nivel = 9
+movimiento = ExtResource("5_hom6v")
+
+[sub_resource type="Resource" id="Resource_u12h1"]
+script = ExtResource("1_cr2k7")
+nivel = 13
+movimiento = ExtResource("6_1iu65")
+
+[sub_resource type="Resource" id="Resource_67mob"]
+script = ExtResource("1_cr2k7")
+nivel = 15
+movimiento = ExtResource("7_5i53g")
+
+[sub_resource type="Resource" id="Resource_k18dw"]
+script = ExtResource("1_cr2k7")
+nivel = 19
+movimiento = ExtResource("8_ppnv1")
+
+[sub_resource type="Resource" id="Resource_3drop"]
+script = ExtResource("1_cr2k7")
+nivel = 21
+movimiento = ExtResource("9_rgs3r")
+
+[sub_resource type="Resource" id="Resource_8xiv1"]
+script = ExtResource("1_cr2k7")
+nivel = 25
+movimiento = ExtResource("10_w3gnm")
+
+[sub_resource type="Resource" id="Resource_ne73o"]
+script = ExtResource("1_cr2k7")
+nivel = 27
+movimiento = ExtResource("11_icum5")
+
+[sub_resource type="Resource" id="Resource_72ydu"]
+script = ExtResource("1_cr2k7")
+nivel = 31
+movimiento = ExtResource("12_ycjgo")
+
+[sub_resource type="Resource" id="Resource_lh200"]
+script = ExtResource("1_cr2k7")
+nivel = 33
+movimiento = ExtResource("13_bvuf8")
+
+[sub_resource type="Resource" id="Resource_de7jc"]
+script = ExtResource("1_cr2k7")
+nivel = 37
+movimiento = ExtResource("14_naf2s")
+
+[sub_resource type="Resource" id="Resource_7mmnr"]
+script = ExtResource("1_cr2k7")
+nivel = 39
+movimiento = ExtResource("15_phpus")
+
+[sub_resource type="Resource" id="Resource_npjhf"]
+script = ExtResource("1_cr2k7")
+nivel = 43
+movimiento = ExtResource("16_4wycm")
+
+[sub_resource type="Resource" id="Resource_tshpr"]
+script = ExtResource("1_cr2k7")
+nivel = 45
+movimiento = ExtResource("17_0u6l6")
+
+[sub_resource type="Resource" id="Resource_kd4un"]
+script = ExtResource("1_cr2k7")
+nivel = 49
+movimiento = ExtResource("18_1j0qq")
+
+[resource]
+script = ExtResource("19_iuva8")
+id = "minccino"
+numero = 572
+nombre = "Minccino"
+ps = 55
+defensa = 40
+at_esp = 40
+def_esp = 40
+velocidad = 75
+exp_base = 60
+ratio_captura = 255
+ratio_genero = 6
+crecimiento = "fast"
+evs_otorgados = {
+"velocidad": 1
+}
+aprende = Array[ExtResource("1_cr2k7")]([SubResource("Resource_3b21h"), SubResource("Resource_fj3nr"), SubResource("Resource_b2504"), SubResource("Resource_cqobi"), SubResource("Resource_u12h1"), SubResource("Resource_67mob"), SubResource("Resource_k18dw"), SubResource("Resource_3drop"), SubResource("Resource_8xiv1"), SubResource("Resource_ne73o"), SubResource("Resource_72ydu"), SubResource("Resource_lh200"), SubResource("Resource_de7jc"), SubResource("Resource_7mmnr"), SubResource("Resource_npjhf"), SubResource("Resource_tshpr"), SubResource("Resource_kd4un")])
+sprite_frente = ExtResource("21_jhrwk")
+sprite_espalda = ExtResource("20_n56cw")
+cuadros_frente = 96
+cuadros_espalda = 104
+fps_sprite = 13.11

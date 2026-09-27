@@ -18,7 +18,8 @@ const BUCLES:= {
 	"mirada_joven": 3.98909,
 	"batalla_entrenador": 92.65206,
 	"victoria_entrenador": 2.93503,
-	"ps_bajo": 0.0,
+	"ps_bajo": 16.35773,
+	"evolucion": 10.16685,
 }
 
 var musica_actual :=""

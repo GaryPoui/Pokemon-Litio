@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_6gc8a"]
+
+[resource]
+script = ExtResource("1_6gc8a")
+id = "grass_knot"
+nombre = "Hierba Lazo"
+tipo = "planta"
+categoria = "especial"
+pp = 20
+descripcion = "Enreda al objetivo con hierba y lo derriba. Cuanto más pesado es el objetivo, más daño inflige. "

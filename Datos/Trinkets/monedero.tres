@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_rg0um"]
+
+[resource]
+script = ExtResource("1_rg0um")
+id = "monedero"
+nombre = "Monedero"
+descripcion = "Ganas un 10% más de dinero al vencer a entrenadores."
+categoria = "economia"
+alcance = "equipo"
+efecto = "dinero"
+valor = 0.1
+maximo = 1.0
+precio = 600

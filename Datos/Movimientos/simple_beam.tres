@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_jtd4m"]
+
+[resource]
+script = ExtResource("1_jtd4m")
+id = "simple_beam"
+nombre = "Onda Simple"
+categoria = "estado"
+pp = 15
+meta = "unique"
+descripcion = "Lanza una onda psíquica que hace que la habilidad del objetivo pase a ser Simple."

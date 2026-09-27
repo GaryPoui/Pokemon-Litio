@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_bx86o"]
+
+[resource]
+script = ExtResource("1_bx86o")
+id = "grass_whistle"
+nombre = "Silbato"
+tipo = "planta"
+categoria = "estado"
+precision = 55
+pp = 15
+meta = "ailment"
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+estado = "sleep"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_nqb75"]
+
+[resource]
+script = ExtResource("1_nqb75")
+id = "drill_run"
+nombre = "Taladradora"
+tipo = "tierra"
+poder = 80
+precision = 95
+descripcion = "El usuario golpea usando su cuerpo como un taladro. Suele ser crítico."
+critico = 1

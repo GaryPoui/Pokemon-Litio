@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_lpo7g"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="2_uqcgv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_ka0i0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/odor_sleuth.tres" id="4_bb015"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="5_0pb1u"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/helping_hand.tres" id="6_nvw38"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="7_lgdu1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/work_up.tres" id="8_elr58"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="9_6mnyx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/roar.tres" id="10_s07rc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/retaliate.tres" id="11_sxpd2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="12_1y14c"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="13_laa72"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/giga_impact.tres" id="14_cwhtj"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="15_r7j3x"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/herdier_espalda.png" id="16_bw2s8"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/herdier_frente.png" id="17_h72hg"]
+
+[sub_resource type="Resource" id="Resource_tmssk"]
+script = ExtResource("1_lpo7g")
+movimiento = ExtResource("2_uqcgv")
+
+[sub_resource type="Resource" id="Resource_b1b3n"]
+script = ExtResource("1_lpo7g")
+movimiento = ExtResource("3_ka0i0")
+
+[sub_resource type="Resource" id="Resource_n1ut4"]
+script = ExtResource("1_lpo7g")
+movimiento = ExtResource("4_bb015")
+
+[sub_resource type="Resource" id="Resource_4nwta"]
+script = ExtResource("1_lpo7g")
+movimiento = ExtResource("5_0pb1u")
+
+[sub_resource type="Resource" id="Resource_w1fdf"]
+script = ExtResource("1_lpo7g")
+nivel = 5
+movimiento = ExtResource("4_bb015")
+
+[sub_resource type="Resource" id="Resource_wfcvf"]
+script = ExtResource("1_lpo7g")
+nivel = 8
+movimiento = ExtResource("2_uqcgv")
+
+[sub_resource type="Resource" id="Resource_xq87p"]
+script = ExtResource("1_lpo7g")
+nivel = 12
+movimiento = ExtResource("6_nvw38")
+
+[sub_resource type="Resource" id="Resource_vqf8x"]
+script = ExtResource("1_lpo7g")
+nivel = 15
+movimiento = ExtResource("7_lgdu1")
+
+[sub_resource type="Resource" id="Resource_upc0b"]
+script = ExtResource("1_lpo7g")
+nivel = 20
+movimiento = ExtResource("8_elr58")
+
+[sub_resource type="Resource" id="Resource_u8gei"]
+script = ExtResource("1_lpo7g")
+nivel = 24
+movimiento = ExtResource("9_6mnyx")
+
+[sub_resource type="Resource" id="Resource_bdekb"]
+script = ExtResource("1_lpo7g")
+nivel = 29
+movimiento = ExtResource("10_s07rc")
+
+[sub_resource type="Resource" id="Resource_psyj1"]
+script = ExtResource("1_lpo7g")
+nivel = 33
+movimiento = ExtResource("11_sxpd2")
+
+[sub_resource type="Resource" id="Resource_4hgck"]
+script = ExtResource("1_lpo7g")
+nivel = 38
+movimiento = ExtResource("12_1y14c")
+
+[sub_resource type="Resource" id="Resource_b6xsa"]
+script = ExtResource("1_lpo7g")
+nivel = 42
+movimiento = ExtResource("13_laa72")
+
+[sub_resource type="Resource" id="Resource_url5s"]
+script = ExtResource("1_lpo7g")
+nivel = 47
+movimiento = ExtResource("14_cwhtj")
+
+[resource]
+script = ExtResource("15_r7j3x")
+id = "herdier"
+numero = 507
+nombre = "Herdier"
+tipos = PackedStringArray("normal")
+ps = 65
+ataque = 80
+defensa = 65
+at_esp = 35
+def_esp = 65
+velocidad = 60
+exp_base = 130
+ratio_captura = 120
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 2
+}
+evoluciona_a = "stoutland"
+nivel_evolucion = 32
+aprende = Array[ExtResource("1_lpo7g")]([SubResource("Resource_tmssk"), SubResource("Resource_b1b3n"), SubResource("Resource_n1ut4"), SubResource("Resource_4nwta"), SubResource("Resource_w1fdf"), SubResource("Resource_wfcvf"), SubResource("Resource_xq87p"), SubResource("Resource_vqf8x"), SubResource("Resource_upc0b"), SubResource("Resource_u8gei"), SubResource("Resource_bdekb"), SubResource("Resource_psyj1"), SubResource("Resource_4hgck"), SubResource("Resource_b6xsa"), SubResource("Resource_url5s")])
+sprite_frente = ExtResource("17_h72hg")
+sprite_espalda = ExtResource("16_bw2s8")
+cuadros_frente = 58
+cuadros_espalda = 58
+fps_sprite = 8.29

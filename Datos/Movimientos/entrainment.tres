@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_32fxi"]
+
+[resource]
+script = ExtResource("1_32fxi")
+id = "entrainment"
+nombre = "Danza Amiga"
+categoria = "estado"
+pp = 15
+meta = "unique"
+descripcion = "Una extraña danza que hace que el usuario y el objetivo tengan la misma habilidad."

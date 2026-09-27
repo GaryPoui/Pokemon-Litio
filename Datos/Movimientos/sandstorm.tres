@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_nl2l0"]
+
+[resource]
+script = ExtResource("1_nl2l0")
+id = "sandstorm"
+nombre = "Tormenta de Arena"
+tipo = "roca"
+categoria = "estado"
+precision = 0
+objetivo = "entire-field"
+meta = "whole-field-effect"
+descripcion = "Tormenta de arena que dura cinco turnos y hiere a todos, excepto a los de tipo Roca, Tierra y Acero, y aumenta la Defensa Especial de los de tipo Roca."

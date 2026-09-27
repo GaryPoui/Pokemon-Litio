@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://daw4xvgq403mw"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_r432c"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="2_dhxw2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="3_vexc6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="4_tymv1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/shock_wave.tres" id="5_bwlye"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="6_c03aj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_charge.tres" id="7_u1cgt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="8_s3h10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spark.tres" id="9_pxeug"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stomp.tres" id="10_h341v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="11_84my5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="12_frknk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wild_charge.tres" id="13_yu143"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="14_8d2nt"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_gci87"]
+[ext_resource type="Texture2D" uid="uid://t76y8xk4c5nb" path="res://Assets/Pokemones/batalla/blitzle_espalda.png" id="16_bxvrj"]
+[ext_resource type="Texture2D" uid="uid://1iklw0ectrmc" path="res://Assets/Pokemones/batalla/blitzle_frente.png" id="17_3runy"]
+
+[sub_resource type="Resource" id="Resource_14kvw"]
+script = ExtResource("1_r432c")
+movimiento = ExtResource("2_dhxw2")
+
+[sub_resource type="Resource" id="Resource_fkyfg"]
+script = ExtResource("1_r432c")
+nivel = 4
+movimiento = ExtResource("3_vexc6")
+
+[sub_resource type="Resource" id="Resource_innnk"]
+script = ExtResource("1_r432c")
+nivel = 8
+movimiento = ExtResource("4_tymv1")
+
+[sub_resource type="Resource" id="Resource_wal0q"]
+script = ExtResource("1_r432c")
+nivel = 11
+movimiento = ExtResource("5_bwlye")
+
+[sub_resource type="Resource" id="Resource_p7ear"]
+script = ExtResource("1_r432c")
+nivel = 15
+movimiento = ExtResource("6_c03aj")
+
+[sub_resource type="Resource" id="Resource_7mso5"]
+script = ExtResource("1_r432c")
+nivel = 18
+movimiento = ExtResource("7_u1cgt")
+
+[sub_resource type="Resource" id="Resource_tx2vk"]
+script = ExtResource("1_r432c")
+nivel = 22
+movimiento = ExtResource("8_s3h10")
+
+[sub_resource type="Resource" id="Resource_8scq8"]
+script = ExtResource("1_r432c")
+nivel = 25
+movimiento = ExtResource("9_pxeug")
+
+[sub_resource type="Resource" id="Resource_ruuou"]
+script = ExtResource("1_r432c")
+nivel = 29
+movimiento = ExtResource("10_h341v")
+
+[sub_resource type="Resource" id="Resource_05mie"]
+script = ExtResource("1_r432c")
+nivel = 32
+movimiento = ExtResource("11_84my5")
+
+[sub_resource type="Resource" id="Resource_ohvf0"]
+script = ExtResource("1_r432c")
+nivel = 36
+movimiento = ExtResource("12_frknk")
+
+[sub_resource type="Resource" id="Resource_e3ccx"]
+script = ExtResource("1_r432c")
+nivel = 39
+movimiento = ExtResource("13_yu143")
+
+[sub_resource type="Resource" id="Resource_ttdxm"]
+script = ExtResource("1_r432c")
+nivel = 43
+movimiento = ExtResource("14_8d2nt")
+
+[resource]
+script = ExtResource("15_gci87")
+id = "blitzle"
+numero = 522
+nombre = "Blitzle"
+ps = 45
+ataque = 60
+defensa = 32
+def_esp = 32
+velocidad = 76
+exp_base = 59
+ratio_captura = 190
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciona_a = "zebstrika"
+nivel_evolucion = 27
+aprende = Array[ExtResource("1_r432c")]([SubResource("Resource_14kvw"), SubResource("Resource_fkyfg"), SubResource("Resource_innnk"), SubResource("Resource_wal0q"), SubResource("Resource_p7ear"), SubResource("Resource_7mso5"), SubResource("Resource_tx2vk"), SubResource("Resource_8scq8"), SubResource("Resource_ruuou"), SubResource("Resource_05mie"), SubResource("Resource_ohvf0"), SubResource("Resource_e3ccx"), SubResource("Resource_ttdxm")])
+sprite_frente = ExtResource("17_3runy")
+sprite_espalda = ExtResource("16_bxvrj")
+cuadros_frente = 96
+cuadros_espalda = 90
+fps_sprite = 10.81

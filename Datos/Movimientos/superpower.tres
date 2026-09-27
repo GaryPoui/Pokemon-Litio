@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_nwfte"]
+
+[resource]
+script = ExtResource("1_nwfte")
+id = "superpower"
+nombre = "Fuerza Bruta"
+tipo = "lucha"
+poder = 120
+pp = 5
+meta = "damage-raise"
+descripcion = "Ataque de gran potencia, pero que reduce el Ataque y la Defensa del agresor."
+cambios_stats = {
+"ataque": -1,
+"defensa": -1
+}
+prob_stat = 100

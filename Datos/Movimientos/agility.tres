@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_umlts"]
+
+[resource]
+script = ExtResource("1_umlts")
+id = "agility"
+nombre = "Agilidad"
+tipo = "psiquico"
+categoria = "estado"
+precision = 0
+pp = 30
+objetivo = "user"
+meta = "net-good-stats"
+descripcion = "Relaja el cuerpo para ganar mucha Velocidad."
+cambios_stats = {
+"velocidad": 2
+}

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_gny3g"]
+
+[resource]
+script = ExtResource("1_gny3g")
+id = "power_gem"
+nombre = "Joya de Luz"
+tipo = "roca"
+categoria = "especial"
+poder = 70
+pp = 20
+descripcion = "Ataca con un rayo de luz que centellea como si lo formaran miles de joyas."

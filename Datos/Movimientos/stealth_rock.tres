@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_mvdnt"]
+
+[resource]
+script = ExtResource("1_mvdnt")
+id = "stealth_rock"
+nombre = "Trampa Rocas"
+tipo = "roca"
+categoria = "estado"
+precision = 0
+pp = 20
+objetivo = "opponents-field"
+meta = "field-effect"
+descripcion = "Una trampa de rocas que flota en el aire y daña a los objetivos que entran en combate."

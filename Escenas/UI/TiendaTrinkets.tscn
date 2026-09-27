@@ -1,0 +1,238 @@
+[gd_scene format=3 uid="uid://bgy0y3qk60csa"]
+
+[ext_resource type="Script" uid="uid://c1k46mpmwgn24" path="res://Scripts/ui/tienda_trinkets.gd" id="1_ijn8o"]
+[ext_resource type="Texture2D" uid="uid://cf7w844elxr8i" path="res://Assets/Menus-Equipo/fondo.png" id="2_q6jly"]
+[ext_resource type="Script" uid="uid://p68fop7rmin3" path="res://Scripts/ui/panel_trinket.gd" id="3_vnknd"]
+
+[node name="TiendaTrinkets" type="CanvasLayer" unique_id=2079667412]
+script = ExtResource("1_ijn8o")
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=2108784726]
+offset_right = 256.0
+offset_bottom = 192.0
+texture = ExtResource("2_q6jly")
+
+[node name="Cabecera" type="Panel" parent="." unique_id=1085290038]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 252.0
+offset_bottom = 26.0
+
+[node name="Titulo" type="Label" parent="Cabecera" unique_id=1439041912]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 3.0
+offset_right = 158.0
+offset_bottom = 19.0
+text = "TIENDA DE TRINKETS"
+
+[node name="Dinero" type="Label" parent="Cabecera" unique_id=229589976]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 3.0
+offset_right = 240.0
+offset_bottom = 19.0
+horizontal_alignment = 2
+
+[node name="Lista" type="Panel" parent="." unique_id=1173824837]
+offset_left = 4.0
+offset_top = 28.0
+offset_right = 252.0
+offset_bottom = 122.0
+
+[node name="R0" type="Control" parent="Lista" unique_id=592459801]
+anchors_preset = 0
+offset_left = 12.0
+offset_top = 3.0
+offset_right = 242.0
+offset_bottom = 25.0
+
+[node name="Icono" type="TextureRect" parent="Lista/R0" unique_id=1243964924]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 24.0
+offset_bottom = 23.0
+
+[node name="Nombre" type="Label" parent="Lista/R0" unique_id=1204148308]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 5.0
+offset_right = 140.0
+offset_bottom = 19.0
+text_overrun_behavior = 3
+
+[node name="Tier" type="Label" parent="Lista/R0" unique_id=400201598]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 5.0
+offset_right = 192.0
+offset_bottom = 19.0
+
+[node name="Precio" type="Label" parent="Lista/R0" unique_id=1069788530]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 5.0
+offset_right = 226.0
+offset_bottom = 19.0
+horizontal_alignment = 2
+
+[node name="R1" type="Control" parent="Lista" unique_id=840442280]
+anchors_preset = 0
+offset_left = 12.0
+offset_top = 25.0
+offset_right = 242.0
+offset_bottom = 47.0
+
+[node name="Icono" type="TextureRect" parent="Lista/R1" unique_id=112366729]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 24.0
+offset_bottom = 23.0
+
+[node name="Nombre" type="Label" parent="Lista/R1" unique_id=589520738]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 5.0
+offset_right = 140.0
+offset_bottom = 19.0
+text_overrun_behavior = 3
+
+[node name="Tier" type="Label" parent="Lista/R1" unique_id=1047062677]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 5.0
+offset_right = 192.0
+offset_bottom = 19.0
+
+[node name="Precio" type="Label" parent="Lista/R1" unique_id=1583935676]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 5.0
+offset_right = 226.0
+offset_bottom = 19.0
+horizontal_alignment = 2
+
+[node name="R2" type="Control" parent="Lista" unique_id=1313701566]
+anchors_preset = 0
+offset_left = 12.0
+offset_top = 47.0
+offset_right = 242.0
+offset_bottom = 69.0
+
+[node name="Icono" type="TextureRect" parent="Lista/R2" unique_id=1334913377]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 24.0
+offset_bottom = 23.0
+
+[node name="Nombre" type="Label" parent="Lista/R2" unique_id=1803117965]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 5.0
+offset_right = 140.0
+offset_bottom = 19.0
+text_overrun_behavior = 3
+
+[node name="Tier" type="Label" parent="Lista/R2" unique_id=2102913950]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 5.0
+offset_right = 192.0
+offset_bottom = 19.0
+
+[node name="Precio" type="Label" parent="Lista/R2" unique_id=651767699]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 5.0
+offset_right = 226.0
+offset_bottom = 19.0
+horizontal_alignment = 2
+
+[node name="R3" type="Control" parent="Lista" unique_id=964382872]
+anchors_preset = 0
+offset_left = 12.0
+offset_top = 69.0
+offset_right = 242.0
+offset_bottom = 91.0
+
+[node name="Icono" type="TextureRect" parent="Lista/R3" unique_id=124645061]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 24.0
+offset_bottom = 23.0
+
+[node name="Nombre" type="Label" parent="Lista/R3" unique_id=847406306]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 5.0
+offset_right = 140.0
+offset_bottom = 19.0
+text_overrun_behavior = 3
+
+[node name="Tier" type="Label" parent="Lista/R3" unique_id=1796022417]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 5.0
+offset_right = 192.0
+offset_bottom = 19.0
+
+[node name="Precio" type="Label" parent="Lista/R3" unique_id=2088530674]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 5.0
+offset_right = 226.0
+offset_bottom = 19.0
+horizontal_alignment = 2
+
+[node name="Vacio" type="Label" parent="Lista" unique_id=817779850]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 30.0
+offset_right = 240.0
+offset_bottom = 60.0
+text = "Todo vendido."
+horizontal_alignment = 1
+
+[node name="Desc" type="Panel" parent="." unique_id=425951654]
+offset_left = 4.0
+offset_top = 124.0
+offset_right = 252.0
+offset_bottom = 188.0
+script = ExtResource("3_vnknd")
+
+[node name="Nombre" type="Label" parent="Desc" unique_id=1672918660]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 2.0
+offset_right = 136.0
+offset_bottom = 16.0
+
+[node name="Tier" type="Label" parent="Desc" unique_id=1469461632]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 3.0
+offset_right = 242.0
+offset_bottom = 17.0
+horizontal_alignment = 2
+
+[node name="Texto" type="Label" parent="Desc" unique_id=1112809738]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 16.0
+offset_right = 242.0
+offset_bottom = 42.0
+autowrap_mode = 3
+
+[node name="Apilado" type="Label" parent="Desc" unique_id=1200573817]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 42.0
+offset_right = 242.0
+offset_bottom = 62.0
+autowrap_mode = 3
+
+[node name="Cursor" type="Label" parent="." unique_id=2014835835]
+offset_right = 8.0
+offset_bottom = 14.0
+text = "▶"

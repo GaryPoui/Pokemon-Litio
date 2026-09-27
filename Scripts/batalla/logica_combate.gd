@@ -31,6 +31,10 @@ var equipo_j: Array[PokemonInstancia]= []
 var equipo_r: Array[PokemonInstancia] =[]
 var salvaje:= true
 var nombre_entrenador :=""
+var pago_base:= 0
+var dinero_ganado :=0
+var turnos:= 0
+var sin_exp :=false
 var rng:= RandomNumberGenerator.new()
 var j: Luchador
 var r: Luchador
@@ -70,6 +74,7 @@ func iniciar() -> Array[Dictionary]:
 		_texto("¡%s quiere luchar!" % nombre_entrenador)
 		_texto("¡%s envió a %s!" % [nombre_entrenador, r.pokemon.nombre()])
 		_ev_sale("rival", r.pokemon)
+		_anunciar_trinkets(r.pokemon)
 	_texto("¡Adelante, %s!" % j.pokemon.nombre())
 	_ev_sale("jugador", j.pokemon)
 	return _tomar()
@@ -77,6 +82,7 @@ func iniciar() -> Array[Dictionary]:
 func turno(accion: Dictionary) -> Array[Dictionary]:
 	if terminado or esperando_reemplazo:
 		return _tomar()
+	turnos+= 1
 	j.retrocede= false
 	r.retrocede =false
 	var tipo: String= accion.get("tipo", "movimiento")
@@ -170,13 +176,33 @@ func _siguiente_util(lista: Array[PokemonInstancia]) -> PokemonInstancia:
 func _ev_sale(lado: String, p: PokemonInstancia) -> void:
 	_ev({"tipo": "sale", "lado": lado, "pokemon": p, "ps": p.ps_actuales, "max": p.ps_max(), "nivel": p.nivel, "estado": p.estado, "exp": p.experiencia, "ball": p.ball})
 
+func _anunciar_trinkets(p: PokemonInstancia) -> void:
+	var nombres:= []
+	for id in p.trinkets:
+		var t:= BaseDatos.trinket(id)
+		if t!= null and not nombres.has(t.nombre):
+			nombres.append(t.nombre)
+	if nombres.is_empty():
+		return
+	var lista: String= nombres[0] if nombres.size()== 1 else ", ".join(nombres.slice(0, nombres.size()- 1))+ " y " +nombres.back()
+	_texto("¡%s lleva %s!" % [p.nombre(), lista])
+
 func _ev_ps(l: Luchador, desde: int, sonido: String= "") -> void:
 	_ev({"tipo": "ps", "lado": _lado(l), "desde": desde, "hasta": l.pokemon.ps_actuales, "max": l.pokemon.ps_max(), "sonido": sonido})
 
 func _herir(l: Luchador, cantidad: int, sonido: String ="golpe_normal") -> int:
 	var antes:= l.pokemon.ps_actuales
+	var aguanta:= false
+	if cantidad>= antes and antes> 1 and not l.aguante_usado and EfectosTrinket.total("aguante", l.pokemon)> 0.0:
+		cantidad= antes- 1
+		l.aguante_usado =true
+		aguanta= true
 	var real:= l.pokemon.recibir_danio(cantidad)
 	_ev_ps(l, antes, sonido)
+	if aguanta:
+		var ids:= EfectosTrinket.contar("aguante", l.pokemon).keys()
+		_ev({"tipo": "sonido", "nombre": "objeto_activo"})
+		_texto("¡%s aguantó el golpe gracias a su %s!" % [_cap(nombre_de(l)), BaseDatos.trinket(ids[0]).nombre])
 	return real
 
 func _ia() -> int:
@@ -282,7 +308,7 @@ func calcular_danio(a: Luchador, d: Luchador, mov: Movimiento, ef: float) -> Dic
 	var s_at:= "ataque" if fisico else "at_esp"
 	var s_df :="defensa" if fisico else "def_esp"
 	var tabla:= [16, 8, 4, 3, 2]
-	var critico:= rng.randi_range(1, tabla[clampi(a.critico_extra+ mov.critico, 0, 4)])== 1
+	var critico:= rng.randi_range(1, tabla[clampi(a.critico_extra+ mov.critico+ roundi(EfectosTrinket.total("critico", a.pokemon)), 0, 4)])== 1
 	var ataque: int
 	var defensa: int
 	if critico:
@@ -297,10 +323,11 @@ func calcular_danio(a: Luchador, d: Luchador, mov: Movimiento, ef: float) -> Dic
 		base*= 2
 	base= floori(base* rng.randi_range(85, 100)/ 100.0)
 	if mov.tipo in a.pokemon.especie.tipos:
-		base =floori(base* 1.5)
+		base =floori(base* (1.5+ EfectosTrinket.total("stab", a.pokemon)))
 	base= floori(base *ef)
 	if fisico and a.pokemon.estado== "que":
 		base= floori(base* 0.5)
+	base =floori(base* (1.0+ EfectosTrinket.total("danio_hecho", a.pokemon))* (1.0- EfectosTrinket.total("danio_recibido", d.pokemon)))
 	return {"danio": maxi(1, base), "critico": critico}
 
 func poder_de(a: Luchador, d: Luchador, mov: Movimiento) -> int:
@@ -432,6 +459,9 @@ func _revisar_debilitados() -> bool:
 		if sig== null:
 			if not salvaje:
 				_texto("¡Has derrotado a %s!" % nombre_entrenador)
+				if pago_base> 0:
+					dinero_ganado= roundi(pago_base* r.pokemon.nivel* (1.0+ EfectosTrinket.total("dinero", null, equipo_j)))
+					_texto("¡Ganaste %d$ por tu victoria!" % dinero_ganado)
 			_terminar("victoria")
 		else:
 			r= Luchador.new(sig)
@@ -440,6 +470,7 @@ func _revisar_debilitados() -> bool:
 				participantes.append(j.pokemon)
 			_texto("¡%s envió a %s!" % [nombre_entrenador, sig.nombre()])
 			_ev_sale("rival", sig)
+			_anunciar_trinkets(sig)
 	if j.pokemon.esta_debilitado() and not j_anunciado:
 		algo =true
 		j_anunciado= true
@@ -465,9 +496,12 @@ func exp_ganada(p: PokemonInstancia, derrotado: PokemonInstancia, cantidad_parti
 	var a:= 1.0 if salvaje else 1.5
 	var nv:= derrotado.nivel
 	var base:= a* derrotado.especie.exp_base* nv/ (5.0* cantidad_participantes)
-	return floori(base* pow(2.0* nv+ 10.0, 2.5)/ pow(nv+ p.nivel+ 10.0, 2.5))+ 1
+	var total:= floori(base* pow(2.0* nv+ 10.0, 2.5)/ pow(nv+ p.nivel+ 10.0, 2.5))+ 1
+	return floori(total* (1.0+ EfectosTrinket.total("exp", p)))
 
 func _dar_experiencia() -> void:
+	if sin_exp:
+		return
 	var vivos: Array[PokemonInstancia]= []
 	for p in participantes:
 		if not p.esta_debilitado() and not vivos.has(p):
@@ -569,6 +603,7 @@ func capturar(ball: float) -> Dictionary:
 		bonus= 2.5
 	elif p.estado!= "":
 		bonus =1.5
+	bonus*= 1.0+ EfectosTrinket.total("captura", null, equipo_j)
 	var x:= floori((3.0* m- 2.0* p.ps_actuales)* p.especie.ratio_captura* ball/ (3.0* m)* bonus)
 	if x>= 255:
 		return {"sacudidas": 3, "exito": true}

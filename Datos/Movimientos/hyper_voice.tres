@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_08vcl"]
+
+[resource]
+script = ExtResource("1_08vcl")
+id = "hyper_voice"
+nombre = "Vozarrón"
+categoria = "especial"
+poder = 90
+objetivo = "all-opponents"
+descripcion = "Grito desgarrador que inflige daño al objetivo."

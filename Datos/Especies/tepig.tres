@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://c8doxstg2fpgo"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_1ws7l"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_1ws7l"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_cvi4p"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="3_n4jrk"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="4_nla71"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/head_smash.tres" id="14_enwwm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/roar.tres" id="15_8q6b1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flare_blitz.tres" id="16_bxx0u"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_d3imm"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tepig_espalda.png" id="18_2sys2"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tepig_frente.png" id="19_2342r"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_d3imm"]
+[ext_resource type="Texture2D" uid="uid://bpttocif5d1lg" path="res://Assets/Pokemones/batalla/tepig_espalda.png" id="18_2sys2"]
+[ext_resource type="Texture2D" uid="uid://bfkexrk2qrsr2" path="res://Assets/Pokemones/batalla/tepig_frente.png" id="19_2342r"]
 
 [sub_resource type="Resource" id="Resource_vw7pn"]
 script = ExtResource("1_1ws7l")
@@ -99,7 +99,7 @@ script = ExtResource("17_d3imm")
 id = "tepig"
 numero = 498
 nombre = "Tepig"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 65
 ataque = 63
 defensa = 45
@@ -112,6 +112,8 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ps": 1
 }
+evoluciona_a = "pignite"
+nivel_evolucion = 17
 aprende = Array[ExtResource("1_1ws7l")]([SubResource("Resource_vw7pn"), SubResource("Resource_5b5ce"), SubResource("Resource_k82xt"), SubResource("Resource_4lj64"), SubResource("Resource_qgryc"), SubResource("Resource_wiq82"), SubResource("Resource_78mi3"), SubResource("Resource_044nj"), SubResource("Resource_0rels"), SubResource("Resource_n0qam"), SubResource("Resource_o4tfv"), SubResource("Resource_y8jep"), SubResource("Resource_38fcn"), SubResource("Resource_w2bu1"), SubResource("Resource_i5wwm")])
 sprite_frente = ExtResource("19_2342r")
 sprite_espalda = ExtResource("18_2sys2")

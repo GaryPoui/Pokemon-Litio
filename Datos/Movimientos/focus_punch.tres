@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_acf4m"]
+
+[resource]
+script = ExtResource("1_acf4m")
+id = "focus_punch"
+nombre = "Puño Certero"
+tipo = "lucha"
+poder = 150
+pp = 20
+prioridad = -3
+descripcion = "Se concentra para dar un puñetazo. Falla si se sufre un golpe antes de su uso."

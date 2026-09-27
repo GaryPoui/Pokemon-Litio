@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_6ea6d"]
+
+[resource]
+script = ExtResource("1_6ea6d")
+id = "cupon_socio"
+nombre = "Cupón de Socio"
+descripcion = "Los precios de la tienda de Trinkets bajan un 10%."
+tier = 3
+categoria = "economia"
+alcance = "equipo"
+efecto = "descuento"
+valor = 0.1
+apilado = "curva"
+maximo = 0.4
+precio = 2500

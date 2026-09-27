@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_e6q6k"]
+
+[resource]
+script = ExtResource("1_e6q6k")
+id = "smack_down"
+nombre = "Antiaéreo"
+tipo = "roca"
+poder = 50
+pp = 15
+descripcion = "Ataca lanzando una piedra o un proyectil. Si el objetivo está en el aire, lo estrella contra el suelo."
+estado = "unknown"
+prob_estado = 100

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_32otq"]
+
+[resource]
+script = ExtResource("1_32otq")
+id = "rock_blast"
+nombre = "Pedrada"
+tipo = "roca"
+poder = 25
+precision = 90
+descripcion = "Lanza pedruscos al objetivo de dos a cinco veces consecutivas."

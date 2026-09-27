@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_8noao"]
+
+[resource]
+script = ExtResource("1_8noao")
+id = "moonlight"
+nombre = "Luz Lunar"
+categoria = "estado"
+precision = 0
+pp = 5
+objetivo = "user"
+meta = "heal"
+descripcion = "Restaura PS del usuario. La cantidad varía según el tiempo que haga."
+curacion = 50

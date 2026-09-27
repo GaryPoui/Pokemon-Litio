@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_l41gq"]
+
+[resource]
+script = ExtResource("1_l41gq")
+id = "red_de_seda"
+nombre = "Red de Seda"
+descripcion = "Las Poké Balls tienen un 10% más de probabilidad de captura."
+categoria = "captura"
+alcance = "equipo"
+efecto = "captura"
+valor = 0.1
+apilado = "curva"
+maximo = 0.4
+precio = 900

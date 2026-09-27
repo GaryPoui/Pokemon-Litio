@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://ejcw2f3o5t33"]
+
+[ext_resource type="Texture2D" uid="uid://bpsyqqvax3qeh" path="res://Assets/Personajes/npc/maestro.png" id="1_bwynl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccqy6"]
+atlas = ExtResource("1_bwynl")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xqwch"]
+atlas = ExtResource("1_bwynl")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ju2pu"]
+atlas = ExtResource("1_bwynl")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_texry"]
+atlas = ExtResource("1_bwynl")
+region = Rect2(0, 64, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccqy6")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xqwch")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ju2pu")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_texry")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
+}]

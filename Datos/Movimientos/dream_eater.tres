@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_bwfbj"]
+
+[resource]
+script = ExtResource("1_bwfbj")
+id = "dream_eater"
+nombre = "Comesueños"
+tipo = "psiquico"
+categoria = "especial"
+poder = 100
+pp = 15
+meta = "damage-heal"
+descripcion = "Restaura al usuario la mitad del daño causado a un objetivo dormido."
+drenaje = 50

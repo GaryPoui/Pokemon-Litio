@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_f5pml"]
+
+[resource]
+script = ExtResource("1_f5pml")
+id = "metal_claw"
+nombre = "Garra Metal"
+tipo = "acero"
+poder = 50
+precision = 95
+pp = 35
+meta = "damage-raise"
+descripcion = "Ataque con garras de acero que puede aumentar el Ataque del usuario."
+cambios_stats = {
+"ataque": 1
+}
+prob_stat = 10

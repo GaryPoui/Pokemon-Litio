@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_b1jat"]
+
+[resource]
+script = ExtResource("1_b1jat")
+id = "colmillo_afilado"
+nombre = "Colmillo Afilado"
+descripcion = "El portador causa un 8% más de daño con sus movimientos."
+efecto = "danio_hecho"
+valor = 0.08
+apilado = "curva"
+maximo = 0.3
+precio = 800

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dmkmpomak5mkc"]
+
+[ext_resource type="Script" uid="uid://cewp64x6mkdki" path="res://Scripts/ui/evolucion.gd" id="1_j54mg"]
+[ext_resource type="Texture2D" uid="uid://da88046wfejqg" path="res://Assets/Batalla/evolucion_fondo.png" id="2_efitx"]
+[ext_resource type="Script" uid="uid://leuk4t8cgf1b" path="res://Scripts/batalla/sprite_pokemon.gd" id="3_efitx"]
+
+[node name="Evolucion" type="CanvasLayer" unique_id=1909376695]
+script = ExtResource("1_j54mg")
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=954353913]
+offset_right = 256.0
+offset_bottom = 192.0
+texture = ExtResource("2_efitx")
+
+[node name="Pokemon" type="Sprite2D" parent="." unique_id=1482777854]
+position = Vector2(128, 120)
+script = ExtResource("3_efitx")
+
+[node name="Brillo" type="ColorRect" parent="." unique_id=886123579]
+offset_right = 256.0
+offset_bottom = 192.0

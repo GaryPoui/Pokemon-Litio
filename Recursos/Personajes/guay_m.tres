@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bdcbiibfcjg1l"]
+
+[ext_resource type="Texture2D" uid="uid://v6p3f845o6yg" path="res://Assets/Personajes/npc/guay_m.png" id="1_ygke8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgig8"]
+atlas = ExtResource("1_ygke8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_isjim"]
+atlas = ExtResource("1_ygke8")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q34ur"]
+atlas = ExtResource("1_ygke8")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxial"]
+atlas = ExtResource("1_ygke8")
+region = Rect2(0, 64, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kgig8")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_isjim")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q34ur")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxial")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
+}]

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_o88ao"]
+
+[resource]
+script = ExtResource("1_o88ao")
+id = "sello_linaje"
+nombre = "Sello del Linaje"
+descripcion = "Los movimientos del mismo tipo que el portador multiplican su daño por 1.75 en vez de 1.5."
+tier = 3
+efecto = "stab"
+valor = 0.25
+unidad = "unico"
+apilado = "no_apila"
+precio = 3200

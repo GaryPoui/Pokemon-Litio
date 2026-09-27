@@ -19,6 +19,7 @@ const MAX_MOVIMIENTOS:= 4
 @export var objeto: String= ""
 @export var genero: String =""
 @export var ball: String= "pokeball"
+@export var trinkets: Array[String] =[]
 
 static func crear(esp: EspeciePokemon, niv: int, rng: RandomNumberGenerator= null) -> PokemonInstancia:
 	if rng== null:
@@ -119,6 +120,21 @@ func ganar_experiencia(cantidad: int) -> Array[Dictionary]:
 		experiencia= Crecimiento.exp_para_nivel(especie.crecimiento, NIVEL_MAX)
 	return eventos
 
+func puede_evolucionar() -> bool:
+	return especie.evoluciona_a!= "" and especie.nivel_evolucion> 0 and nivel>= especie.nivel_evolucion and not esta_debilitado() and BaseDatos.especie(especie.evoluciona_a)!= null
+
+func evolucionar(nueva: EspeciePokemon) -> void:
+	var antes:= ps_max()
+	especie= nueva
+	ps_actuales =clampi(ps_actuales+ ps_max()- antes, 0, ps_max())
+
+func aprender(m: Movimiento) -> bool:
+	if movimientos.has(m) or movimientos.size()>= MAX_MOVIMIENTOS:
+		return false
+	movimientos.append(m)
+	pp.append(m.pp)
+	return true
+
 func reemplazar_movimiento(indice: int, nuevo: Movimiento) -> void:
 	movimientos[indice]= nuevo
 	pp[indice] =nuevo.pp
@@ -142,6 +158,7 @@ func a_diccionario() -> Dictionary:
 		"objeto": objeto,
 		"genero": genero,
 		"ball": ball,
+		"trinkets": trinkets.duplicate(),
 	}
 
 static func desde_diccionario(d: Dictionary) -> PokemonInstancia:
@@ -163,4 +180,5 @@ static func desde_diccionario(d: Dictionary) -> PokemonInstancia:
 	p.objeto= str(d.get("objeto", ""))
 	p.genero =str(d.get("genero", ""))
 	p.ball= str(d.get("ball", "pokeball"))
+	p.trinkets.assign(Array(d.get("trinkets", [])).map(func(x): return str(x)))
 	return p

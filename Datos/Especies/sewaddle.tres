@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dihbcrwtne58v"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_4x4c8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/string_shot.tres" id="2_n0nla"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_6jtcj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="4_fod51"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/razor_leaf.tres" id="5_lxqaj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/struggle_bug.tres" id="6_3boa7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/endure.tres" id="7_h5p3f"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="8_32ix7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="9_tjbka"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="10_yxbpt"]
+[ext_resource type="Texture2D" uid="uid://u6n8bfv4gkqk" path="res://Assets/Pokemones/batalla/sewaddle_espalda.png" id="11_w168k"]
+[ext_resource type="Texture2D" uid="uid://cu6hfamgs65h5" path="res://Assets/Pokemones/batalla/sewaddle_frente.png" id="12_rhbkq"]
+
+[sub_resource type="Resource" id="Resource_tk7qo"]
+script = ExtResource("1_4x4c8")
+movimiento = ExtResource("2_n0nla")
+
+[sub_resource type="Resource" id="Resource_u7sit"]
+script = ExtResource("1_4x4c8")
+movimiento = ExtResource("3_6jtcj")
+
+[sub_resource type="Resource" id="Resource_vjjco"]
+script = ExtResource("1_4x4c8")
+nivel = 8
+movimiento = ExtResource("4_fod51")
+
+[sub_resource type="Resource" id="Resource_s3w56"]
+script = ExtResource("1_4x4c8")
+nivel = 15
+movimiento = ExtResource("5_lxqaj")
+
+[sub_resource type="Resource" id="Resource_cy3un"]
+script = ExtResource("1_4x4c8")
+nivel = 22
+movimiento = ExtResource("6_3boa7")
+
+[sub_resource type="Resource" id="Resource_kdf5h"]
+script = ExtResource("1_4x4c8")
+nivel = 29
+movimiento = ExtResource("7_h5p3f")
+
+[sub_resource type="Resource" id="Resource_odd0y"]
+script = ExtResource("1_4x4c8")
+nivel = 36
+movimiento = ExtResource("8_32ix7")
+
+[sub_resource type="Resource" id="Resource_nbdwc"]
+script = ExtResource("1_4x4c8")
+nivel = 43
+movimiento = ExtResource("9_tjbka")
+
+[resource]
+script = ExtResource("10_yxbpt")
+id = "sewaddle"
+numero = 540
+nombre = "Sewaddle"
+ps = 45
+ataque = 53
+defensa = 70
+at_esp = 40
+def_esp = 60
+velocidad = 42
+exp_base = 62
+ratio_captura = 255
+crecimiento = "medium-slow"
+evs_otorgados = {
+"defensa": 1
+}
+evoluciona_a = "swadloon"
+nivel_evolucion = 20
+aprende = Array[ExtResource("1_4x4c8")]([SubResource("Resource_tk7qo"), SubResource("Resource_u7sit"), SubResource("Resource_vjjco"), SubResource("Resource_s3w56"), SubResource("Resource_cy3un"), SubResource("Resource_kdf5h"), SubResource("Resource_odd0y"), SubResource("Resource_nbdwc")])
+sprite_frente = ExtResource("12_rhbkq")
+sprite_espalda = ExtResource("11_w168k")
+cuadros_frente = 80
+cuadros_espalda = 80

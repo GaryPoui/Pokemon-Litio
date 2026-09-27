@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_v5jk1"]
+
+[resource]
+script = ExtResource("1_v5jk1")
+id = "charge"
+nombre = "Carga"
+tipo = "electrico"
+categoria = "estado"
+precision = 0
+pp = 20
+objetivo = "user"
+meta = "net-good-stats"
+descripcion = "Recarga energía para potenciar el siguiente movimiento de tipo Eléctrico. También sube la Defensa Especial."
+cambios_stats = {
+"def_esp": 1
+}

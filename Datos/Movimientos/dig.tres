@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_hly74"]
+
+[resource]
+script = ExtResource("1_hly74")
+id = "dig"
+nombre = "Excavar"
+tipo = "tierra"
+poder = 80
+descripcion = "El usuario cava durante el primer turno y ataca en el segundo."

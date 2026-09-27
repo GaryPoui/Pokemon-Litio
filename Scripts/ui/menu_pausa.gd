@@ -7,6 +7,7 @@ const ESCENA_POKEDEX :="res://Escenas/UI/Pokedex.tscn"
 const ESCENA_OPCIONES:= "res://Escenas/UI/Opciones.tscn"
 
 @onready var caja: Panel= $Caja
+@onready var dinero: Label =$Dinero/Texto
 @onready var lista: ListaOpciones =$Caja/Lista
 @onready var jugador= get_parent()
 @onready var mochila= get_parent().get_node_or_null("Mochila")
@@ -19,9 +20,12 @@ func _ready() -> void:
 	layer= 95
 	caja.add_theme_stylebox_override("panel", EstiloUI.panel())
 	caja.visible =false
+	$Dinero.add_theme_stylebox_override("panel", EstiloUI.panel())
+	EstiloUI.label(dinero, 9)
+	$Dinero.visible= false
 
 func _unhandled_input(event: InputEvent) -> void:
-	if ocupado or Dialogo.esta_abierto or GestorEscenas.en_transicion or Combate.activo:
+	if ocupado or Dialogo.esta_abierto or GestorEscenas.en_transicion or Combate.activo or jugador.en_evento:
 		return
 	if mochila!= null and mochila.is_open:
 		return
@@ -48,11 +52,14 @@ func abrir() -> void:
 	lista.poner(opciones, mini(lista.cursor, opciones.size()- 1))
 	caja.size.y =10+ opciones.size()* 14
 	caja.visible= true
+	dinero.text= "%d$" % Estado.dinero
+	$Dinero.visible= true
 	is_open =true
 	Sonido.efecto("menu_abrir")
 
 func cerrar() -> void:
 	caja.visible= false
+	$Dinero.visible =false
 	is_open =false
 	cerrado.emit()
 

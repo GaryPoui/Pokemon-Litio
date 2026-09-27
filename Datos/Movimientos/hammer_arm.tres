@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_6ry7i"]
+
+[resource]
+script = ExtResource("1_6ry7i")
+id = "hammer_arm"
+nombre = "Machada"
+tipo = "lucha"
+poder = 100
+precision = 90
+meta = "damage-raise"
+descripcion = "Gira con fuerza el puño y da un gran golpe. No obstante, baja la Velocidad."
+cambios_stats = {
+"velocidad": -1
+}
+prob_stat = 100

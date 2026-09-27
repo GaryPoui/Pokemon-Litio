@@ -37,6 +37,7 @@ const INICIAL :={
 
 var objetos: Dictionary= {}
 var cantidades: Dictionary ={}
+var trinkets: Dictionary= {}
 
 func _ready() -> void:
 	for id in BaseDatos.ids(BaseDatos.OBJETOS):
@@ -45,7 +46,39 @@ func _ready() -> void:
 
 func reiniciar() -> void:
 	cantidades= INICIAL.duplicate()
+	trinkets ={}
 	inventory_changed.emit()
+
+func cantidad_trinket(id: String) -> int:
+	return int(trinkets.get(id, 0))
+
+func agregar_trinket(id: String, cantidad: int= 1) -> bool:
+	if BaseDatos.trinket(id)== null:
+		return false
+	trinkets[id]= cantidad_trinket(id)+ cantidad
+	inventory_changed.emit()
+	return true
+
+func quitar_trinket(id: String) -> bool:
+	if cantidad_trinket(id)<= 0:
+		return false
+	trinkets[id]= cantidad_trinket(id)- 1
+	if trinkets[id]<= 0:
+		trinkets.erase(id)
+	inventory_changed.emit()
+	return true
+
+func ids_trinkets() -> Array[String]:
+	var lista: Array[String]= []
+	for id in trinkets:
+		if int(trinkets[id])> 0:
+			lista.append(str(id))
+	lista.sort_custom(func(a, b): return _orden_trinket(a)< _orden_trinket(b))
+	return lista
+
+func _orden_trinket(id: String) -> String:
+	var t:= BaseDatos.trinket(id)
+	return "%d%s" % [9- t.tier, t.nombre] if t!= null else id
 
 func get_categories() -> Array[String]:
 	var result: Array[String]= []
@@ -118,10 +151,17 @@ func get_item_name(item_id: String) -> String:
 	return o.nombre if o!= null else item_id
 
 func a_diccionario() -> Dictionary:
-	return cantidades.duplicate()
+	var d:= cantidades.duplicate()
+	d["__trinkets"]= trinkets.duplicate()
+	return d
 
 func desde_diccionario(d: Dictionary) -> void:
 	cantidades= {}
+	trinkets ={}
 	for k in d:
-		cantidades[k] =int(d[k])
+		if k== "__trinkets":
+			for t in d[k]:
+				trinkets[str(t)]= int(d[k][t])
+		else:
+			cantidades[k] =int(d[k])
 	inventory_changed.emit()

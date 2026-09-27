@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_o4vet"]
+
+[resource]
+script = ExtResource("1_o4vet")
+id = "tail_slap"
+nombre = "Plumerazo"
+poder = 25
+precision = 85
+descripcion = "Golpea con la cola de dos a cinco veces seguidas."

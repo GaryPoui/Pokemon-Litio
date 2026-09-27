@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_pb8db"]
+
+[resource]
+script = ExtResource("1_pb8db")
+id = "cofre_dorado"
+nombre = "Cofre Dorado"
+descripcion = "Duplica el dinero ganado al vencer a entrenadores."
+tier = 5
+categoria = "economia"
+alcance = "equipo"
+efecto = "dinero"
+valor = 1.0
+unidad = "multiplicador"
+apilado = "no_apila"
+precio = 8000

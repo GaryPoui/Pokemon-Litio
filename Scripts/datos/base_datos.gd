@@ -4,6 +4,7 @@ extends RefCounted
 const ESPECIES:= "res://Datos/Especies/"
 const MOVIMIENTOS :="res://Datos/Movimientos/"
 const OBJETOS:= "res://Datos/Objetos/"
+const TRINKETS :="res://Datos/Trinkets/"
 
 static func especie(id: String) -> EspeciePokemon:
 	return _cargar(ESPECIES, id) as EspeciePokemon
@@ -13,6 +14,9 @@ static func movimiento(id: String) -> Movimiento:
 
 static func objeto(id: String) -> Objeto:
 	return _cargar(OBJETOS, id) as Objeto
+
+static func trinket(id: String) -> Trinket:
+	return _cargar(TRINKETS, id) as Trinket
 
 static func ids(carpeta: String) -> PackedStringArray:
 	var lista: PackedStringArray= []

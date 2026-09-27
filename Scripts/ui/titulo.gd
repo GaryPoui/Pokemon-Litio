@@ -19,7 +19,7 @@ func _ready() -> void:
 	EstiloUI.label($Sub, 9, Color.WHITE)
 	EstiloUI.label($Pie, 6, Color(1, 1, 1, 0.7))
 	$Pie.text= "Fan game no oficial. Pokémon es de Nintendo / Game Freak.\nFuente de Gen 5: bonzairob @ 3dPE"
-	$Pie.position= Vector2(0, 166)
+	$Pie.position= Vector2(0, 170)
 	$Pie.size =Vector2(256, 24)
 	var ids:= BaseDatos.ids(BaseDatos.ESPECIES)
 	if not ids.is_empty():

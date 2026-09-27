@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_pttl2"]
+
+[resource]
+script = ExtResource("1_pttl2")
+id = "bubble_beam"
+nombre = "Rayo Burbuja"
+tipo = "agua"
+categoria = "especial"
+poder = 65
+pp = 20
+meta = "damage-lower"
+descripcion = "Diluvio de burbujas que puede bajar la Velocidad."
+cambios_stats = {
+"velocidad": -1
+}
+prob_stat = 10

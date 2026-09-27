@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dx2lre0ivcjfn"
+path="res://.godot/imported/Pokémon Black White - Critical Health Music (HQ).mp3-c205d3b97c82296eb12dbcd16e6d245a.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Musica/Pokémon Black White - Critical Health Music (HQ).mp3"
+dest_files=["res://.godot/imported/Pokémon Black White - Critical Health Music (HQ).mp3-c205d3b97c82296eb12dbcd16e6d245a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -98,6 +98,8 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 1
 }
+evoluciona_a = "herdier"
+nivel_evolucion = 16
 aprende = Array[ExtResource("1_dqvty")]([SubResource("Resource_cuagd"), SubResource("Resource_diogo"), SubResource("Resource_q72op"), SubResource("Resource_otf4n"), SubResource("Resource_yafen"), SubResource("Resource_t2iop"), SubResource("Resource_3e77d"), SubResource("Resource_typ0g"), SubResource("Resource_5txka"), SubResource("Resource_gurl6"), SubResource("Resource_5xym0"), SubResource("Resource_e74m5"), SubResource("Resource_h5hlg")])
 sprite_frente = ExtResource("17_n5vdr")
 sprite_espalda = ExtResource("16_xg1h7")

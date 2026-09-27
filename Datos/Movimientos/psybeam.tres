@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_yvvmk"]
+
+[resource]
+script = ExtResource("1_yvvmk")
+id = "psybeam"
+nombre = "Psicorrayo"
+tipo = "psiquico"
+categoria = "especial"
+poder = 65
+pp = 20
+meta = "damage-ailment"
+descripcion = "Extraño rayo que puede causar confusión."
+estado = "confusion"
+prob_estado = 10

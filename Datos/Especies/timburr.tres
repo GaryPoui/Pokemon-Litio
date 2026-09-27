@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cjs7b5j0t0jpp"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_nyusf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_7mxjf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="3_m1blx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="4_oqr86"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bide.tres" id="5_uxkx7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/low_kick.tres" id="6_coxxm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rock_throw.tres" id="7_i62q1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wake_up_slap.tres" id="8_aenwo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/chip_away.tres" id="9_u1mys"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bulk_up.tres" id="10_oa7ni"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rock_slide.tres" id="11_jlp1b"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dynamic_punch.tres" id="12_vrxln"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="13_iixx6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hammer_arm.tres" id="14_t6s5h"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="15_a6pjd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/focus_punch.tres" id="16_ra7ay"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/superpower.tres" id="17_7i1yq"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_c7o2t"]
+[ext_resource type="Texture2D" uid="uid://cecmd21bpyobe" path="res://Assets/Pokemones/batalla/timburr_espalda.png" id="19_4jsv1"]
+[ext_resource type="Texture2D" uid="uid://cxpi0vi1bti36" path="res://Assets/Pokemones/batalla/timburr_frente.png" id="20_72em8"]
+
+[sub_resource type="Resource" id="Resource_inhep"]
+script = ExtResource("1_nyusf")
+movimiento = ExtResource("2_7mxjf")
+
+[sub_resource type="Resource" id="Resource_eev5c"]
+script = ExtResource("1_nyusf")
+movimiento = ExtResource("3_m1blx")
+
+[sub_resource type="Resource" id="Resource_3jp2u"]
+script = ExtResource("1_nyusf")
+nivel = 4
+movimiento = ExtResource("4_oqr86")
+
+[sub_resource type="Resource" id="Resource_ksb2f"]
+script = ExtResource("1_nyusf")
+nivel = 8
+movimiento = ExtResource("5_uxkx7")
+
+[sub_resource type="Resource" id="Resource_uhbdd"]
+script = ExtResource("1_nyusf")
+nivel = 12
+movimiento = ExtResource("6_coxxm")
+
+[sub_resource type="Resource" id="Resource_kkpbh"]
+script = ExtResource("1_nyusf")
+nivel = 16
+movimiento = ExtResource("7_i62q1")
+
+[sub_resource type="Resource" id="Resource_fxjmv"]
+script = ExtResource("1_nyusf")
+nivel = 20
+movimiento = ExtResource("8_aenwo")
+
+[sub_resource type="Resource" id="Resource_tfuv5"]
+script = ExtResource("1_nyusf")
+nivel = 24
+movimiento = ExtResource("9_u1mys")
+
+[sub_resource type="Resource" id="Resource_g4vk6"]
+script = ExtResource("1_nyusf")
+nivel = 28
+movimiento = ExtResource("10_oa7ni")
+
+[sub_resource type="Resource" id="Resource_x0qdw"]
+script = ExtResource("1_nyusf")
+nivel = 31
+movimiento = ExtResource("11_jlp1b")
+
+[sub_resource type="Resource" id="Resource_epibw"]
+script = ExtResource("1_nyusf")
+nivel = 34
+movimiento = ExtResource("12_vrxln")
+
+[sub_resource type="Resource" id="Resource_d5a3w"]
+script = ExtResource("1_nyusf")
+nivel = 37
+movimiento = ExtResource("13_iixx6")
+
+[sub_resource type="Resource" id="Resource_che6g"]
+script = ExtResource("1_nyusf")
+nivel = 40
+movimiento = ExtResource("14_t6s5h")
+
+[sub_resource type="Resource" id="Resource_bv6io"]
+script = ExtResource("1_nyusf")
+nivel = 43
+movimiento = ExtResource("15_a6pjd")
+
+[sub_resource type="Resource" id="Resource_1vgn7"]
+script = ExtResource("1_nyusf")
+nivel = 46
+movimiento = ExtResource("16_ra7ay")
+
+[sub_resource type="Resource" id="Resource_jwsbl"]
+script = ExtResource("1_nyusf")
+nivel = 49
+movimiento = ExtResource("17_7i1yq")
+
+[resource]
+script = ExtResource("18_c7o2t")
+id = "timburr"
+numero = 532
+nombre = "Timburr"
+ps = 75
+ataque = 80
+defensa = 55
+at_esp = 25
+def_esp = 35
+velocidad = 35
+exp_base = 61
+ratio_captura = 180
+ratio_genero = 2
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 1
+}
+evoluciona_a = "gurdurr"
+nivel_evolucion = 25
+aprende = Array[ExtResource("1_nyusf")]([SubResource("Resource_inhep"), SubResource("Resource_eev5c"), SubResource("Resource_3jp2u"), SubResource("Resource_ksb2f"), SubResource("Resource_uhbdd"), SubResource("Resource_kkpbh"), SubResource("Resource_fxjmv"), SubResource("Resource_tfuv5"), SubResource("Resource_g4vk6"), SubResource("Resource_x0qdw"), SubResource("Resource_epibw"), SubResource("Resource_d5a3w"), SubResource("Resource_che6g"), SubResource("Resource_bv6io"), SubResource("Resource_1vgn7"), SubResource("Resource_jwsbl")])
+sprite_frente = ExtResource("20_72em8")
+sprite_espalda = ExtResource("19_4jsv1")
+cuadros_frente = 88
+cuadros_espalda = 86
+fps_sprite = 12.15

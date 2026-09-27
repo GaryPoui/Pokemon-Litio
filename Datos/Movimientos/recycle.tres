@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_0lcf4"]
+
+[resource]
+script = ExtResource("1_0lcf4")
+id = "recycle"
+nombre = "Reciclaje"
+categoria = "estado"
+precision = 0
+objetivo = "user"
+meta = "unique"
+descripcion = "Recicla y así recupera un objeto equipado de un solo uso que ya haya sido empleado durante el combate."

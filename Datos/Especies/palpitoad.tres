@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_fumlo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="2_v675x"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_bksao"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/round.tres" id="4_6tup3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="5_7k75a"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bubble_beam.tres" id="6_5u1ib"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_shot.tres" id="7_c7xjt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aqua_ring.tres" id="8_jkvox"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/uproar.tres" id="9_sa4dt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/muddy_water.tres" id="10_1pla8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="11_o2alo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="12_b3vjw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/echoed_voice.tres" id="13_jsky4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="14_qhowv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="15_7hqrk"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_tv344"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/palpitoad_espalda.png" id="17_kkai2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/palpitoad_frente.png" id="18_r58b0"]
+
+[sub_resource type="Resource" id="Resource_3wumq"]
+script = ExtResource("1_fumlo")
+movimiento = ExtResource("2_v675x")
+
+[sub_resource type="Resource" id="Resource_yfh6k"]
+script = ExtResource("1_fumlo")
+movimiento = ExtResource("3_bksao")
+
+[sub_resource type="Resource" id="Resource_vs4sa"]
+script = ExtResource("1_fumlo")
+movimiento = ExtResource("4_6tup3")
+
+[sub_resource type="Resource" id="Resource_caorf"]
+script = ExtResource("1_fumlo")
+movimiento = ExtResource("5_7k75a")
+
+[sub_resource type="Resource" id="Resource_d8ngf"]
+script = ExtResource("1_fumlo")
+nivel = 5
+movimiento = ExtResource("5_7k75a")
+
+[sub_resource type="Resource" id="Resource_qjif0"]
+script = ExtResource("1_fumlo")
+nivel = 9
+movimiento = ExtResource("4_6tup3")
+
+[sub_resource type="Resource" id="Resource_fvpvb"]
+script = ExtResource("1_fumlo")
+nivel = 12
+movimiento = ExtResource("6_5u1ib")
+
+[sub_resource type="Resource" id="Resource_m54xj"]
+script = ExtResource("1_fumlo")
+nivel = 16
+movimiento = ExtResource("7_c7xjt")
+
+[sub_resource type="Resource" id="Resource_ytanu"]
+script = ExtResource("1_fumlo")
+nivel = 20
+movimiento = ExtResource("8_jkvox")
+
+[sub_resource type="Resource" id="Resource_8dlv0"]
+script = ExtResource("1_fumlo")
+nivel = 23
+movimiento = ExtResource("9_sa4dt")
+
+[sub_resource type="Resource" id="Resource_2fslm"]
+script = ExtResource("1_fumlo")
+nivel = 28
+movimiento = ExtResource("10_1pla8")
+
+[sub_resource type="Resource" id="Resource_dht0r"]
+script = ExtResource("1_fumlo")
+nivel = 33
+movimiento = ExtResource("11_o2alo")
+
+[sub_resource type="Resource" id="Resource_130sj"]
+script = ExtResource("1_fumlo")
+nivel = 37
+movimiento = ExtResource("12_b3vjw")
+
+[sub_resource type="Resource" id="Resource_m8kdl"]
+script = ExtResource("1_fumlo")
+nivel = 42
+movimiento = ExtResource("13_jsky4")
+
+[sub_resource type="Resource" id="Resource_il124"]
+script = ExtResource("1_fumlo")
+nivel = 47
+movimiento = ExtResource("14_qhowv")
+
+[sub_resource type="Resource" id="Resource_r1kne"]
+script = ExtResource("1_fumlo")
+nivel = 51
+movimiento = ExtResource("15_7hqrk")
+
+[resource]
+script = ExtResource("16_tv344")
+id = "palpitoad"
+numero = 536
+nombre = "Palpitoad"
+tipos = PackedStringArray("agua", "tierra")
+ps = 75
+ataque = 65
+defensa = 55
+at_esp = 65
+def_esp = 55
+velocidad = 69
+exp_base = 134
+ratio_captura = 120
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ps": 2
+}
+evoluciona_a = "seismitoad"
+nivel_evolucion = 36
+aprende = Array[ExtResource("1_fumlo")]([SubResource("Resource_3wumq"), SubResource("Resource_yfh6k"), SubResource("Resource_vs4sa"), SubResource("Resource_caorf"), SubResource("Resource_d8ngf"), SubResource("Resource_qjif0"), SubResource("Resource_fvpvb"), SubResource("Resource_m54xj"), SubResource("Resource_ytanu"), SubResource("Resource_8dlv0"), SubResource("Resource_2fslm"), SubResource("Resource_dht0r"), SubResource("Resource_130sj"), SubResource("Resource_m8kdl"), SubResource("Resource_il124"), SubResource("Resource_r1kne")])
+sprite_frente = ExtResource("18_r58b0")
+sprite_espalda = ExtResource("17_kkai2")
+cuadros_frente = 54
+cuadros_espalda = 71
+fps_sprite = 9.2

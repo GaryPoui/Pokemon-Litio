@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_qdadh"]
+
+[resource]
+script = ExtResource("1_qdadh")
+id = "dynamic_punch"
+nombre = "Puño Dinámico"
+tipo = "lucha"
+poder = 100
+precision = 50
+pp = 5
+meta = "damage-ailment"
+descripcion = "Puñetazo con toda la fuerza concentrada. Causa confusión si atina."
+estado = "confusion"
+prob_estado = 100

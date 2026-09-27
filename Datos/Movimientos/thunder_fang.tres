@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_hav20"]
+
+[resource]
+script = ExtResource("1_hav20")
+id = "thunder_fang"
+nombre = "Colmillo Rayo"
+tipo = "electrico"
+poder = 65
+precision = 95
+pp = 15
+meta = "damage-ailment"
+descripcion = "El usuario muerde al objetivo con colmillos electrificados y puede hacer que se amedrente o se paralice."
+estado = "paralysis"
+prob_estado = 10
+prob_retroceso = 10

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_3en1m"]
+
+[resource]
+script = ExtResource("1_3en1m")
+id = "echoed_voice"
+nombre = "Eco Voz"
+categoria = "especial"
+poder = 40
+pp = 15
+descripcion = "Un susurro que aumenta de potencia conforme el usuario y otros Pokémon lo van utilizando."

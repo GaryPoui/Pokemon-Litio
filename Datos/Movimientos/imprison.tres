@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_ipp5b"]
+
+[resource]
+script = ExtResource("1_ipp5b")
+id = "imprison"
+nombre = "Sellar"
+tipo = "psiquico"
+categoria = "estado"
+precision = 0
+objetivo = "user"
+meta = "unique"
+descripcion = "Impide a los contrincantes usar ataques conocidos por el usuario durante el combate."

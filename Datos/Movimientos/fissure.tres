@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_w484g"]
+
+[resource]
+script = ExtResource("1_w484g")
+id = "fissure"
+nombre = "Fisura"
+tipo = "tierra"
+precision = 30
+pp = 5
+meta = "ohko"
+descripcion = "Abre una grieta en el suelo y mete al objetivo en ella. Fulmina en un golpe."

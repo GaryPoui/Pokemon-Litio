@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_ml4ry"]
+
+[resource]
+script = ExtResource("1_ml4ry")
+id = "calm_mind"
+nombre = "Paz Mental"
+tipo = "psiquico"
+categoria = "estado"
+precision = 0
+pp = 20
+objetivo = "user"
+meta = "net-good-stats"
+descripcion = "Aumenta la concentración y calma el espíritu para subir el Ataque Especial y la Defensa Especial. "
+cambios_stats = {
+"at_esp": 1,
+"def_esp": 1
+}

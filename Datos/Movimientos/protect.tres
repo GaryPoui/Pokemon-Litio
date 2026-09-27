@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_3tqph"]
+
+[resource]
+script = ExtResource("1_3tqph")
+id = "protect"
+nombre = "Protección"
+categoria = "estado"
+precision = 0
+prioridad = 4
+objetivo = "user"
+meta = "unique"
+descripcion = "Frena todos los ataques, pero puede fallar si se usa repetidamente."
+estado = "protect"

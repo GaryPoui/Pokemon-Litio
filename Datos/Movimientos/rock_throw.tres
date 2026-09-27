@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_vvtau"]
+
+[resource]
+script = ExtResource("1_vvtau")
+id = "rock_throw"
+nombre = "Lanzarrocas"
+tipo = "roca"
+poder = 50
+precision = 90
+pp = 15
+descripcion = "Tira una pequeña roca al objetivo."

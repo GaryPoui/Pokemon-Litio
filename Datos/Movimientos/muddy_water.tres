@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_fyd1n"]
+
+[resource]
+script = ExtResource("1_fyd1n")
+id = "muddy_water"
+nombre = "Agua Lodosa"
+tipo = "agua"
+categoria = "especial"
+poder = 95
+precision = 85
+objetivo = "all-opponents"
+meta = "damage-lower"
+descripcion = "Ataque con agua lodosa que puede bajar la Precisión del equipo rival."
+cambios_stats = {
+"precision": -1
+}
+prob_stat = 30

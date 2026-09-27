@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_34c42"]
+
+[resource]
+script = ExtResource("1_34c42")
+id = "olfato_fino"
+nombre = "Olfato Fino"
+descripcion = "Tras vencer a un Pokémon salvaje, hay un 15% de probabilidad de encontrar un objeto."
+tier = 4
+categoria = "economia"
+alcance = "equipo"
+efecto = "hallazgo"
+valor = 0.15
+maximo = 0.6
+precio = 4500

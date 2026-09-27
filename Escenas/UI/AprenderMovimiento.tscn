@@ -1,0 +1,320 @@
+[gd_scene format=3 uid="uid://cj1squkqkpdck"]
+
+[ext_resource type="Script" uid="uid://cjf54fob6r77r" path="res://Scripts/ui/aprender_movimiento.gd" id="1_thaxm"]
+[ext_resource type="Texture2D" uid="uid://bictfh8shju20" path="res://Assets/Botones/boton_madera_1x.png" id="2_k3u7w"]
+[ext_resource type="Texture2D" uid="uid://bb7eefovhgatq" path="res://Assets/Botones/tipos/normal.png" id="3_o05tj"]
+[ext_resource type="Texture2D" uid="uid://ljulc4yeagti" path="res://Assets/Batalla/ui_nueva/cursor_mano.png" id="4_3dof2"]
+
+[node name="AprenderMovimiento" type="CanvasLayer" unique_id=1308406962]
+script = ExtResource("1_thaxm")
+
+[node name="Oscuro" type="ColorRect" parent="." unique_id=1220176971]
+offset_right = 256.0
+offset_bottom = 192.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.55)
+
+[node name="Tablero" type="NinePatchRect" parent="." unique_id=1279030278]
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 250.0
+offset_bottom = 116.0
+texture = ExtResource("2_k3u7w")
+patch_margin_left = 2
+patch_margin_top = 3
+patch_margin_right = 2
+patch_margin_bottom = 4
+axis_stretch_horizontal = 2
+axis_stretch_vertical = 2
+
+[node name="Titulo" type="Label" parent="Tablero" unique_id=1679474876]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 238.0
+offset_bottom = 19.0
+horizontal_alignment = 1
+
+[node name="M0" type="NinePatchRect" parent="Tablero" unique_id=398306143]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 26.0
+offset_right = 100.0
+offset_bottom = 42.0
+texture = ExtResource("3_o05tj")
+patch_margin_left = 2
+patch_margin_top = 3
+patch_margin_right = 2
+patch_margin_bottom = 4
+
+[node name="Texto" type="Label" parent="Tablero/M0" unique_id=1495232257]
+layout_mode = 0
+offset_left = 14.0
+offset_right = 82.0
+offset_bottom = 16.0
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="Tipo" type="TextureRect" parent="Tablero/M0" unique_id=774732502]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 14.0
+
+[node name="M1" type="NinePatchRect" parent="Tablero" unique_id=914347594]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 46.0
+offset_right = 100.0
+offset_bottom = 62.0
+texture = ExtResource("3_o05tj")
+patch_margin_left = 2
+patch_margin_top = 3
+patch_margin_right = 2
+patch_margin_bottom = 4
+
+[node name="Texto" type="Label" parent="Tablero/M1" unique_id=2138658175]
+layout_mode = 0
+offset_left = 14.0
+offset_right = 82.0
+offset_bottom = 16.0
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="Tipo" type="TextureRect" parent="Tablero/M1" unique_id=1202759308]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 14.0
+
+[node name="M2" type="NinePatchRect" parent="Tablero" unique_id=2014541679]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 66.0
+offset_right = 100.0
+offset_bottom = 82.0
+texture = ExtResource("3_o05tj")
+patch_margin_left = 2
+patch_margin_top = 3
+patch_margin_right = 2
+patch_margin_bottom = 4
+
+[node name="Texto" type="Label" parent="Tablero/M2" unique_id=979763917]
+layout_mode = 0
+offset_left = 14.0
+offset_right = 82.0
+offset_bottom = 16.0
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="Tipo" type="TextureRect" parent="Tablero/M2" unique_id=1047020288]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 14.0
+
+[node name="M3" type="NinePatchRect" parent="Tablero" unique_id=1142613879]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 86.0
+offset_right = 100.0
+offset_bottom = 102.0
+texture = ExtResource("3_o05tj")
+patch_margin_left = 2
+patch_margin_top = 3
+patch_margin_right = 2
+patch_margin_bottom = 4
+
+[node name="Texto" type="Label" parent="Tablero/M3" unique_id=799420143]
+layout_mode = 0
+offset_left = 14.0
+offset_right = 82.0
+offset_bottom = 16.0
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="Tipo" type="TextureRect" parent="Tablero/M3" unique_id=1250711586]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 14.0
+
+[node name="Flecha" type="Label" parent="Tablero" unique_id=1082269622]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 26.0
+offset_right = 132.0
+offset_bottom = 42.0
+text = "◀"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Nuevo" type="Label" parent="Tablero" unique_id=1205133984]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 32.0
+offset_right = 224.0
+offset_bottom = 46.0
+text = "NUEVO"
+horizontal_alignment = 1
+
+[node name="N" type="NinePatchRect" parent="Tablero" unique_id=819772061]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 46.0
+offset_right = 224.0
+offset_bottom = 62.0
+texture = ExtResource("3_o05tj")
+patch_margin_left = 2
+patch_margin_top = 3
+patch_margin_right = 2
+patch_margin_bottom = 4
+
+[node name="Texto" type="Label" parent="Tablero/N" unique_id=1692975269]
+layout_mode = 0
+offset_left = 14.0
+offset_right = 82.0
+offset_bottom = 16.0
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="Tipo" type="TextureRect" parent="Tablero/N" unique_id=216385429]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 14.0
+
+[node name="Salir" type="NinePatchRect" parent="Tablero" unique_id=1176644147]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 86.0
+offset_right = 224.0
+offset_bottom = 102.0
+texture = ExtResource("2_k3u7w")
+patch_margin_left = 2
+patch_margin_top = 3
+patch_margin_right = 2
+patch_margin_bottom = 4
+
+[node name="Texto" type="Label" parent="Tablero/Salir" unique_id=1253817943]
+layout_mode = 0
+offset_right = 84.0
+offset_bottom = 16.0
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="Mano" type="TextureRect" parent="Tablero" unique_id=735013989]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 29.0
+offset_right = 19.0
+offset_bottom = 39.0
+texture = ExtResource("4_3dof2")
+
+[node name="Detalles" type="Panel" parent="." unique_id=1728079136]
+offset_left = 4.0
+offset_top = 120.0
+offset_right = 252.0
+offset_bottom = 188.0
+
+[node name="Separador" type="ColorRect" parent="Detalles" unique_id=488646910]
+layout_mode = 0
+offset_left = 123.0
+offset_top = 6.0
+offset_right = 125.0
+offset_bottom = 62.0
+
+[node name="Izq" type="Control" parent="Detalles" unique_id=2059735884]
+anchors_preset = 0
+offset_left = 6.0
+offset_top = 4.0
+offset_right = 118.0
+offset_bottom = 64.0
+
+[node name="Tipo" type="TextureRect" parent="Detalles/Izq" unique_id=900502045]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 12.0
+offset_bottom = 13.0
+
+[node name="Nombre" type="Label" parent="Detalles/Izq" unique_id=490246575]
+layout_mode = 0
+offset_left = 14.0
+offset_top = -1.0
+offset_right = 88.0
+offset_bottom = 13.0
+text_overrun_behavior = 3
+
+[node name="Cat" type="TextureRect" parent="Detalles/Izq" unique_id=1513275640]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 2.0
+offset_right = 112.0
+offset_bottom = 12.0
+
+[node name="Datos" type="Label" parent="Detalles/Izq" unique_id=447781354]
+layout_mode = 0
+offset_top = 13.0
+offset_right = 112.0
+offset_bottom = 27.0
+
+[node name="Desc" type="Label" parent="Detalles/Izq" unique_id=569214035]
+layout_mode = 0
+offset_top = 23.0
+offset_right = 112.0
+offset_bottom = 60.0
+autowrap_mode = 3
+clip_text = true
+
+[node name="Der" type="Control" parent="Detalles" unique_id=1428421680]
+anchors_preset = 0
+offset_left = 130.0
+offset_top = 4.0
+offset_right = 242.0
+offset_bottom = 64.0
+
+[node name="Tipo" type="TextureRect" parent="Detalles/Der" unique_id=1830181563]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 12.0
+offset_bottom = 13.0
+
+[node name="Nombre" type="Label" parent="Detalles/Der" unique_id=1822199635]
+layout_mode = 0
+offset_left = 14.0
+offset_top = -1.0
+offset_right = 88.0
+offset_bottom = 13.0
+text_overrun_behavior = 3
+
+[node name="Cat" type="TextureRect" parent="Detalles/Der" unique_id=659813440]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 2.0
+offset_right = 112.0
+offset_bottom = 12.0
+
+[node name="Datos" type="Label" parent="Detalles/Der" unique_id=727591023]
+layout_mode = 0
+offset_top = 13.0
+offset_right = 112.0
+offset_bottom = 27.0
+
+[node name="Desc" type="Label" parent="Detalles/Der" unique_id=1243682229]
+layout_mode = 0
+offset_top = 23.0
+offset_right = 112.0
+offset_bottom = 60.0
+autowrap_mode = 3
+clip_text = true

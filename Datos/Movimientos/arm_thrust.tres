@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_ub0qe"]
+
+[resource]
+script = ExtResource("1_ub0qe")
+id = "arm_thrust"
+nombre = "Empujón"
+tipo = "lucha"
+poder = 15
+pp = 20
+descripcion = "Fuertes empujones que golpean de dos a cinco veces seguidas."

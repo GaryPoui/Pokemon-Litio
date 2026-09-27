@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_dhepl"]
+
+[resource]
+script = ExtResource("1_dhepl")
+id = "lick"
+nombre = "Lengüetazo"
+tipo = "fantasma"
+poder = 20
+pp = 30
+meta = "damage-ailment"
+descripcion = "Una lengua ataca al objetivo. Puede causar parálisis."
+estado = "paralysis"
+prob_estado = 30

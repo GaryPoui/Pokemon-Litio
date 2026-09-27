@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_3pc4a"]
+
+[resource]
+script = ExtResource("1_3pc4a")
+id = "string_shot"
+nombre = "Disparo Demora"
+tipo = "bicho"
+categoria = "estado"
+precision = 95
+pp = 40
+objetivo = "all-opponents"
+meta = "net-good-stats"
+descripcion = "Lanza seda a los rivales y reduce mucho su Velocidad."
+cambios_stats = {
+"velocidad": -2
+}

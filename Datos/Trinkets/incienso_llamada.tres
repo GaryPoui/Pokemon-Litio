@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_07n1r"]
+
+[resource]
+script = ExtResource("1_07n1r")
+id = "incienso_llamada"
+nombre = "Incienso Llamada"
+descripcion = "Aparecen un 30% más de Pokémon salvajes en la hierba alta."
+tier = 2
+categoria = "utilidad"
+alcance = "equipo"
+efecto = "encuentros"
+valor = 0.3
+apilado = "no_apila"
+precio = 1200

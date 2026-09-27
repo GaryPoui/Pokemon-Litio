@@ -8,6 +8,7 @@ var etapas: Dictionary= {}
 var turnos_sueno :=0
 var retrocede:= false
 var critico_extra: int =0
+var aguante_usado:= false
 
 func _init(p: PokemonInstancia) -> void:
 	pokemon= p
@@ -20,7 +21,10 @@ static func factor(stat: String, etapa: int) -> float:
 	return (2.0 +maxi(etapa, 0))/ (2.0- mini(etapa, 0))
 
 func stat_con_etapa(stat: String, etapa: int) -> int:
-	return maxi(1, floori(pokemon.stat(stat)* factor(stat, etapa)))
+	var base:= float(pokemon.stat(stat))* (1.0+ EfectosTrinket.total("stats_todas", pokemon))
+	if stat== "velocidad":
+		base*= 1.0+ EfectosTrinket.total("velocidad", pokemon)
+	return maxi(1, floori(base* factor(stat, etapa)))
 
 func stat_efectivo(stat: String) -> int:
 	var v:= stat_con_etapa(stat, etapas[stat])

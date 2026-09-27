@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://boanlwirx38di"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_nt5c7"]
+[ext_resource type="Resource" uid="uid://daw4xvgq403mw" path="res://Datos/Especies/blitzle.tres" id="2_0vv6i"]
+[ext_resource type="Resource" uid="uid://cjs7b5j0t0jpp" path="res://Datos/Especies/timburr.tres" id="3_h0nmh"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="4_jlqhb"]
+
+[sub_resource type="Resource" id="Resource_h4rnu"]
+script = ExtResource("1_nt5c7")
+especie = ExtResource("2_0vv6i")
+nivel_min = 14
+nivel_max = 14
+peso = 1
+trinkets = Array[String](["pluma_veloz"])
+
+[sub_resource type="Resource" id="Resource_p6ryi"]
+script = ExtResource("1_nt5c7")
+especie = ExtResource("3_h0nmh")
+nivel_min = 15
+nivel_max = 15
+peso = 1
+trinkets = Array[String](["colmillo_afilado", "lente_enfocada"])
+
+[resource]
+script = ExtResource("4_jlqhb")
+clase = "Entrenador Guay"
+nombre = "Marcos"
+miembros = Array[ExtResource("1_nt5c7")]([SubResource("Resource_h4rnu"), SubResource("Resource_p6ryi")])
+pago_base = 60

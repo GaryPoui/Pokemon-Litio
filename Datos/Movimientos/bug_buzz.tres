@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_dlotn"]
+
+[resource]
+script = ExtResource("1_dlotn")
+id = "bug_buzz"
+nombre = "Zumbido"
+tipo = "bicho"
+categoria = "especial"
+poder = 90
+meta = "damage-lower"
+descripcion = "El usuario crea una onda sónica dañina moviendo su cuerpo que también puede disminuir la Defensa Especial del objetivo."
+cambios_stats = {
+"def_esp": -1
+}
+prob_stat = 10

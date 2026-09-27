@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://besmn87m5pkpj"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_o3oe3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="2_5pxe5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psywave.tres" id="3_uxgic"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/lucky_chant.tres" id="4_xvlyq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/yawn.tres" id="5_cs3ni"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psybeam.tres" id="6_gb7s4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/imprison.tres" id="7_3tyrd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/moonlight.tres" id="8_ivhh2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hypnosis.tres" id="9_mmjd5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/zen_headbutt.tres" id="10_ggskn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/synchronoise.tres" id="11_7qtgk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nightmare.tres" id="12_irute"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/future_sight.tres" id="13_41v3v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/calm_mind.tres" id="14_l007g"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="15_lrff1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dream_eater.tres" id="16_lfwys"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/telekinesis.tres" id="17_5ijsd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stored_power.tres" id="18_orjlr"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="19_7swrp"]
+[ext_resource type="Texture2D" uid="uid://dm5tg2lbinxw8" path="res://Assets/Pokemones/batalla/munna_espalda.png" id="20_6jhwb"]
+[ext_resource type="Texture2D" uid="uid://bs1gxcb5j2sgn" path="res://Assets/Pokemones/batalla/munna_frente.png" id="21_a0waf"]
+
+[sub_resource type="Resource" id="Resource_mykxl"]
+script = ExtResource("1_o3oe3")
+movimiento = ExtResource("2_5pxe5")
+
+[sub_resource type="Resource" id="Resource_ostmm"]
+script = ExtResource("1_o3oe3")
+movimiento = ExtResource("3_uxgic")
+
+[sub_resource type="Resource" id="Resource_1doja"]
+script = ExtResource("1_o3oe3")
+nivel = 5
+movimiento = ExtResource("4_xvlyq")
+
+[sub_resource type="Resource" id="Resource_5odkk"]
+script = ExtResource("1_o3oe3")
+nivel = 7
+movimiento = ExtResource("5_cs3ni")
+
+[sub_resource type="Resource" id="Resource_7llwo"]
+script = ExtResource("1_o3oe3")
+nivel = 11
+movimiento = ExtResource("6_gb7s4")
+
+[sub_resource type="Resource" id="Resource_hd874"]
+script = ExtResource("1_o3oe3")
+nivel = 13
+movimiento = ExtResource("7_3tyrd")
+
+[sub_resource type="Resource" id="Resource_h71oc"]
+script = ExtResource("1_o3oe3")
+nivel = 17
+movimiento = ExtResource("8_ivhh2")
+
+[sub_resource type="Resource" id="Resource_sb525"]
+script = ExtResource("1_o3oe3")
+nivel = 19
+movimiento = ExtResource("9_mmjd5")
+
+[sub_resource type="Resource" id="Resource_a5kjp"]
+script = ExtResource("1_o3oe3")
+nivel = 23
+movimiento = ExtResource("10_ggskn")
+
+[sub_resource type="Resource" id="Resource_qrrho"]
+script = ExtResource("1_o3oe3")
+nivel = 25
+movimiento = ExtResource("11_7qtgk")
+
+[sub_resource type="Resource" id="Resource_2swm4"]
+script = ExtResource("1_o3oe3")
+nivel = 29
+movimiento = ExtResource("12_irute")
+
+[sub_resource type="Resource" id="Resource_olkgb"]
+script = ExtResource("1_o3oe3")
+nivel = 31
+movimiento = ExtResource("13_41v3v")
+
+[sub_resource type="Resource" id="Resource_c7j2a"]
+script = ExtResource("1_o3oe3")
+nivel = 35
+movimiento = ExtResource("14_l007g")
+
+[sub_resource type="Resource" id="Resource_3lhu7"]
+script = ExtResource("1_o3oe3")
+nivel = 37
+movimiento = ExtResource("15_lrff1")
+
+[sub_resource type="Resource" id="Resource_m8nxp"]
+script = ExtResource("1_o3oe3")
+nivel = 41
+movimiento = ExtResource("16_lfwys")
+
+[sub_resource type="Resource" id="Resource_nnfoq"]
+script = ExtResource("1_o3oe3")
+nivel = 43
+movimiento = ExtResource("17_5ijsd")
+
+[sub_resource type="Resource" id="Resource_7hio3"]
+script = ExtResource("1_o3oe3")
+nivel = 47
+movimiento = ExtResource("18_orjlr")
+
+[resource]
+script = ExtResource("19_7swrp")
+id = "munna"
+numero = 517
+nombre = "Munna"
+ps = 76
+ataque = 25
+defensa = 45
+at_esp = 67
+def_esp = 55
+velocidad = 24
+exp_base = 58
+ratio_captura = 190
+crecimiento = "fast"
+evs_otorgados = {
+"ps": 1
+}
+aprende = Array[ExtResource("1_o3oe3")]([SubResource("Resource_mykxl"), SubResource("Resource_ostmm"), SubResource("Resource_1doja"), SubResource("Resource_5odkk"), SubResource("Resource_7llwo"), SubResource("Resource_hd874"), SubResource("Resource_h71oc"), SubResource("Resource_sb525"), SubResource("Resource_a5kjp"), SubResource("Resource_qrrho"), SubResource("Resource_2swm4"), SubResource("Resource_olkgb"), SubResource("Resource_c7j2a"), SubResource("Resource_3lhu7"), SubResource("Resource_m8nxp"), SubResource("Resource_nnfoq"), SubResource("Resource_7hio3")])
+sprite_frente = ExtResource("21_a0waf")
+sprite_espalda = ExtResource("20_6jhwb")
+cuadros_frente = 91
+cuadros_espalda = 91

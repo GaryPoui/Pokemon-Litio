@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_plxqa"]
+
+[resource]
+script = ExtResource("1_plxqa")
+id = "drain_punch"
+nombre = "Puño Drenaje"
+tipo = "lucha"
+poder = 75
+meta = "damage-heal"
+descripcion = "Un golpe que drena energía. El Pokémon recupera la mitad de los PS arrebatados al objetivo."
+drenaje = 50

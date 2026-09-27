@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_fmehh"]
+
+[resource]
+script = ExtResource("1_fmehh")
+id = "diario_entrenamiento"
+nombre = "Diario de Entrenamiento"
+descripcion = "El portador gana un 15% más de experiencia."
+tier = 2
+categoria = "utilidad"
+efecto = "exp"
+valor = 0.15
+apilado = "curva"
+maximo = 0.5
+precio = 1400

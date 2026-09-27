@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_cgdkj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_fvtp6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_kmpea"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/vine_whip.tres" id="4_rot2w"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wrap.tres" id="5_55mg5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growth.tres" id="6_kavsu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leaf_tornado.tres" id="7_ribht"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leech_seed.tres" id="8_etmle"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="9_o4d6f"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slam.tres" id="10_cl54c"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leaf_blade.tres" id="11_31rs1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/coil.tres" id="12_td5vd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/giga_drain.tres" id="13_2tdfj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wring_out.tres" id="14_tpolb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gastro_acid.tres" id="15_4sbvh"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="16_mxwfp"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_a638b"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/serperior_espalda.png" id="18_pctil"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/serperior_frente.png" id="19_ejct4"]
+
+[sub_resource type="Resource" id="Resource_s2hqj"]
+script = ExtResource("1_cgdkj")
+movimiento = ExtResource("2_fvtp6")
+
+[sub_resource type="Resource" id="Resource_6mrr5"]
+script = ExtResource("1_cgdkj")
+movimiento = ExtResource("3_kmpea")
+
+[sub_resource type="Resource" id="Resource_gb2vj"]
+script = ExtResource("1_cgdkj")
+movimiento = ExtResource("4_rot2w")
+
+[sub_resource type="Resource" id="Resource_hmc43"]
+script = ExtResource("1_cgdkj")
+movimiento = ExtResource("5_55mg5")
+
+[sub_resource type="Resource" id="Resource_jyrw0"]
+script = ExtResource("1_cgdkj")
+nivel = 4
+movimiento = ExtResource("2_fvtp6")
+
+[sub_resource type="Resource" id="Resource_eh4gi"]
+script = ExtResource("1_cgdkj")
+nivel = 7
+movimiento = ExtResource("4_rot2w")
+
+[sub_resource type="Resource" id="Resource_ye01x"]
+script = ExtResource("1_cgdkj")
+nivel = 10
+movimiento = ExtResource("5_55mg5")
+
+[sub_resource type="Resource" id="Resource_n05jb"]
+script = ExtResource("1_cgdkj")
+nivel = 13
+movimiento = ExtResource("6_kavsu")
+
+[sub_resource type="Resource" id="Resource_a84w1"]
+script = ExtResource("1_cgdkj")
+nivel = 16
+movimiento = ExtResource("7_ribht")
+
+[sub_resource type="Resource" id="Resource_ceatg"]
+script = ExtResource("1_cgdkj")
+nivel = 20
+movimiento = ExtResource("8_etmle")
+
+[sub_resource type="Resource" id="Resource_syji0"]
+script = ExtResource("1_cgdkj")
+nivel = 24
+movimiento = ExtResource("9_o4d6f")
+
+[sub_resource type="Resource" id="Resource_nbhbt"]
+script = ExtResource("1_cgdkj")
+nivel = 28
+movimiento = ExtResource("10_cl54c")
+
+[sub_resource type="Resource" id="Resource_7l68h"]
+script = ExtResource("1_cgdkj")
+nivel = 32
+movimiento = ExtResource("11_31rs1")
+
+[sub_resource type="Resource" id="Resource_3duf5"]
+script = ExtResource("1_cgdkj")
+nivel = 38
+movimiento = ExtResource("12_td5vd")
+
+[sub_resource type="Resource" id="Resource_ablk1"]
+script = ExtResource("1_cgdkj")
+nivel = 44
+movimiento = ExtResource("13_2tdfj")
+
+[sub_resource type="Resource" id="Resource_m47ex"]
+script = ExtResource("1_cgdkj")
+nivel = 50
+movimiento = ExtResource("14_tpolb")
+
+[sub_resource type="Resource" id="Resource_gc50g"]
+script = ExtResource("1_cgdkj")
+nivel = 56
+movimiento = ExtResource("15_4sbvh")
+
+[sub_resource type="Resource" id="Resource_cmrxf"]
+script = ExtResource("1_cgdkj")
+nivel = 62
+movimiento = ExtResource("16_mxwfp")
+
+[resource]
+script = ExtResource("17_a638b")
+id = "serperior"
+numero = 497
+nombre = "Serperior"
+tipos = PackedStringArray("planta")
+ps = 75
+ataque = 75
+defensa = 95
+at_esp = 75
+def_esp = 95
+velocidad = 113
+exp_base = 238
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"velocidad": 3
+}
+aprende = Array[ExtResource("1_cgdkj")]([SubResource("Resource_s2hqj"), SubResource("Resource_6mrr5"), SubResource("Resource_gb2vj"), SubResource("Resource_hmc43"), SubResource("Resource_jyrw0"), SubResource("Resource_eh4gi"), SubResource("Resource_ye01x"), SubResource("Resource_n05jb"), SubResource("Resource_a84w1"), SubResource("Resource_ceatg"), SubResource("Resource_syji0"), SubResource("Resource_nbhbt"), SubResource("Resource_7l68h"), SubResource("Resource_3duf5"), SubResource("Resource_ablk1"), SubResource("Resource_m47ex"), SubResource("Resource_gc50g"), SubResource("Resource_cmrxf")])
+sprite_frente = ExtResource("19_ejct4")
+sprite_espalda = ExtResource("18_pctil")
+cuadros_frente = 73
+cuadros_espalda = 69
+fps_sprite = 8.3

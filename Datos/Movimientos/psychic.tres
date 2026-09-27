@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_mbmas"]
+
+[resource]
+script = ExtResource("1_mbmas")
+id = "psychic"
+nombre = "Psíquico"
+tipo = "psiquico"
+categoria = "especial"
+poder = 90
+meta = "damage-lower"
+descripcion = "Fuerte ataque telequinético que puede bajar la Defensa Especial del objetivo."
+cambios_stats = {
+"def_esp": -1
+}
+prob_stat = 10

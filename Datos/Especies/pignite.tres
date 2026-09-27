@@ -1,0 +1,140 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_rj87r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="2_kw8dm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/odor_sleuth.tres" id="3_x6uaw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_7i31d"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="5_kfknv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="6_7a56s"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_charge.tres" id="7_3sh8p"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/arm_thrust.tres" id="8_hqudu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/smog.tres" id="9_uec2i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rollout.tres" id="10_1bcxh"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="11_sd8ey"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/heat_crash.tres" id="12_pmycx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/assurance.tres" id="13_dw7jp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flamethrower.tres" id="14_3716l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/head_smash.tres" id="15_82ij1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/roar.tres" id="16_he3rc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flare_blitz.tres" id="17_5bpam"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_p17io"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/pignite_espalda.png" id="19_0nx24"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/pignite_frente.png" id="20_2jx5w"]
+
+[sub_resource type="Resource" id="Resource_arjup"]
+script = ExtResource("1_rj87r")
+movimiento = ExtResource("2_kw8dm")
+
+[sub_resource type="Resource" id="Resource_ukgf1"]
+script = ExtResource("1_rj87r")
+movimiento = ExtResource("3_x6uaw")
+
+[sub_resource type="Resource" id="Resource_o413k"]
+script = ExtResource("1_rj87r")
+movimiento = ExtResource("4_7i31d")
+
+[sub_resource type="Resource" id="Resource_qwyx2"]
+script = ExtResource("1_rj87r")
+movimiento = ExtResource("5_kfknv")
+
+[sub_resource type="Resource" id="Resource_2p5ci"]
+script = ExtResource("1_rj87r")
+nivel = 3
+movimiento = ExtResource("5_kfknv")
+
+[sub_resource type="Resource" id="Resource_ms013"]
+script = ExtResource("1_rj87r")
+nivel = 7
+movimiento = ExtResource("2_kw8dm")
+
+[sub_resource type="Resource" id="Resource_sj1qc"]
+script = ExtResource("1_rj87r")
+nivel = 9
+movimiento = ExtResource("3_x6uaw")
+
+[sub_resource type="Resource" id="Resource_7keen"]
+script = ExtResource("1_rj87r")
+nivel = 13
+movimiento = ExtResource("6_7a56s")
+
+[sub_resource type="Resource" id="Resource_a2u48"]
+script = ExtResource("1_rj87r")
+nivel = 15
+movimiento = ExtResource("7_3sh8p")
+
+[sub_resource type="Resource" id="Resource_1jqdp"]
+script = ExtResource("1_rj87r")
+nivel = 17
+movimiento = ExtResource("8_hqudu")
+
+[sub_resource type="Resource" id="Resource_r81b1"]
+script = ExtResource("1_rj87r")
+nivel = 20
+movimiento = ExtResource("9_uec2i")
+
+[sub_resource type="Resource" id="Resource_qpkcy"]
+script = ExtResource("1_rj87r")
+nivel = 23
+movimiento = ExtResource("10_1bcxh")
+
+[sub_resource type="Resource" id="Resource_r4wdm"]
+script = ExtResource("1_rj87r")
+nivel = 28
+movimiento = ExtResource("11_sd8ey")
+
+[sub_resource type="Resource" id="Resource_x31qv"]
+script = ExtResource("1_rj87r")
+nivel = 31
+movimiento = ExtResource("12_pmycx")
+
+[sub_resource type="Resource" id="Resource_hh85a"]
+script = ExtResource("1_rj87r")
+nivel = 36
+movimiento = ExtResource("13_dw7jp")
+
+[sub_resource type="Resource" id="Resource_wnyu6"]
+script = ExtResource("1_rj87r")
+nivel = 39
+movimiento = ExtResource("14_3716l")
+
+[sub_resource type="Resource" id="Resource_dubcu"]
+script = ExtResource("1_rj87r")
+nivel = 44
+movimiento = ExtResource("15_82ij1")
+
+[sub_resource type="Resource" id="Resource_5gsil"]
+script = ExtResource("1_rj87r")
+nivel = 47
+movimiento = ExtResource("16_he3rc")
+
+[sub_resource type="Resource" id="Resource_pl71h"]
+script = ExtResource("1_rj87r")
+nivel = 52
+movimiento = ExtResource("17_5bpam")
+
+[resource]
+script = ExtResource("18_p17io")
+id = "pignite"
+numero = 499
+nombre = "Pignite"
+tipos = PackedStringArray("fuego", "lucha")
+ps = 90
+ataque = 93
+defensa = 55
+at_esp = 70
+def_esp = 55
+velocidad = 55
+exp_base = 146
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 2
+}
+evoluciona_a = "emboar"
+nivel_evolucion = 36
+aprende = Array[ExtResource("1_rj87r")]([SubResource("Resource_arjup"), SubResource("Resource_ukgf1"), SubResource("Resource_o413k"), SubResource("Resource_qwyx2"), SubResource("Resource_2p5ci"), SubResource("Resource_ms013"), SubResource("Resource_sj1qc"), SubResource("Resource_7keen"), SubResource("Resource_a2u48"), SubResource("Resource_1jqdp"), SubResource("Resource_r81b1"), SubResource("Resource_qpkcy"), SubResource("Resource_r4wdm"), SubResource("Resource_x31qv"), SubResource("Resource_hh85a"), SubResource("Resource_wnyu6"), SubResource("Resource_dubcu"), SubResource("Resource_5gsil"), SubResource("Resource_pl71h")])
+sprite_frente = ExtResource("20_2jx5w")
+sprite_espalda = ExtResource("19_0nx24")
+cuadros_frente = 63
+cuadros_espalda = 64
+fps_sprite = 9.84

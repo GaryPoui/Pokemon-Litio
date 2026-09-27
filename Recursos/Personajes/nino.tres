@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://crp43ftl0rpxf"]
+
+[ext_resource type="Texture2D" uid="uid://c46vea5y68u2p" path="res://Assets/Personajes/npc/nino.png" id="1_xkxdw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_taxvx"]
+atlas = ExtResource("1_xkxdw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vmyl0"]
+atlas = ExtResource("1_xkxdw")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qcpk"]
+atlas = ExtResource("1_xkxdw")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_muxtd"]
+atlas = ExtResource("1_xkxdw")
+region = Rect2(0, 64, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_taxvx")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vmyl0")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qcpk")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_muxtd")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
+}]

@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bi7gw3f4gt6q"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_2exgi"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_yikcm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="3_sj3cs"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="4_2tb14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/headbutt.tres" id="5_ln5dy"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rock_blast.tres" id="6_01vl7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="7_qnw8x"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/iron_defense.tres" id="8_cjvqm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/smack_down.tres" id="9_iw62g"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rock_slide.tres" id="10_4u62c"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stealth_rock.tres" id="11_nks65"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sandstorm.tres" id="12_14ilt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="13_qx0fv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="14_swajb"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_ygho8"]
+[ext_resource type="Texture2D" uid="uid://dc782gb2u8lya" path="res://Assets/Pokemones/batalla/roggenrola_espalda.png" id="16_jes8r"]
+[ext_resource type="Texture2D" uid="uid://o25gas1pig01" path="res://Assets/Pokemones/batalla/roggenrola_frente.png" id="17_rx6p3"]
+
+[sub_resource type="Resource" id="Resource_4ti2x"]
+script = ExtResource("1_2exgi")
+movimiento = ExtResource("2_yikcm")
+
+[sub_resource type="Resource" id="Resource_w4oi7"]
+script = ExtResource("1_2exgi")
+nivel = 4
+movimiento = ExtResource("3_sj3cs")
+
+[sub_resource type="Resource" id="Resource_uasv6"]
+script = ExtResource("1_2exgi")
+nivel = 7
+movimiento = ExtResource("4_2tb14")
+
+[sub_resource type="Resource" id="Resource_puvil"]
+script = ExtResource("1_2exgi")
+nivel = 10
+movimiento = ExtResource("5_ln5dy")
+
+[sub_resource type="Resource" id="Resource_fveqn"]
+script = ExtResource("1_2exgi")
+nivel = 14
+movimiento = ExtResource("6_01vl7")
+
+[sub_resource type="Resource" id="Resource_amxwr"]
+script = ExtResource("1_2exgi")
+nivel = 17
+movimiento = ExtResource("7_qnw8x")
+
+[sub_resource type="Resource" id="Resource_mspy1"]
+script = ExtResource("1_2exgi")
+nivel = 20
+movimiento = ExtResource("8_cjvqm")
+
+[sub_resource type="Resource" id="Resource_myh04"]
+script = ExtResource("1_2exgi")
+nivel = 23
+movimiento = ExtResource("9_iw62g")
+
+[sub_resource type="Resource" id="Resource_kusga"]
+script = ExtResource("1_2exgi")
+nivel = 27
+movimiento = ExtResource("10_4u62c")
+
+[sub_resource type="Resource" id="Resource_hvmqs"]
+script = ExtResource("1_2exgi")
+nivel = 30
+movimiento = ExtResource("11_nks65")
+
+[sub_resource type="Resource" id="Resource_vvgj6"]
+script = ExtResource("1_2exgi")
+nivel = 33
+movimiento = ExtResource("12_14ilt")
+
+[sub_resource type="Resource" id="Resource_ognhg"]
+script = ExtResource("1_2exgi")
+nivel = 36
+movimiento = ExtResource("13_qx0fv")
+
+[sub_resource type="Resource" id="Resource_mjf48"]
+script = ExtResource("1_2exgi")
+nivel = 40
+movimiento = ExtResource("14_swajb")
+
+[resource]
+script = ExtResource("15_ygho8")
+id = "roggenrola"
+numero = 524
+nombre = "Roggenrola"
+ps = 55
+ataque = 75
+defensa = 85
+at_esp = 25
+def_esp = 25
+velocidad = 15
+exp_base = 56
+ratio_captura = 255
+crecimiento = "medium-slow"
+evs_otorgados = {
+"defensa": 1
+}
+evoluciona_a = "boldore"
+nivel_evolucion = 25
+aprende = Array[ExtResource("1_2exgi")]([SubResource("Resource_4ti2x"), SubResource("Resource_w4oi7"), SubResource("Resource_uasv6"), SubResource("Resource_puvil"), SubResource("Resource_fveqn"), SubResource("Resource_amxwr"), SubResource("Resource_mspy1"), SubResource("Resource_myh04"), SubResource("Resource_kusga"), SubResource("Resource_hvmqs"), SubResource("Resource_vvgj6"), SubResource("Resource_ognhg"), SubResource("Resource_mjf48")])
+sprite_frente = ExtResource("17_rx6p3")
+sprite_espalda = ExtResource("16_jes8r")
+cuadros_frente = 64
+cuadros_espalda = 64
+fps_sprite = 8.89

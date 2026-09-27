@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_tkmp0"]
+
+[resource]
+script = ExtResource("1_tkmp0")
+id = "seed_bomb"
+nombre = "Bomba Germen"
+tipo = "planta"
+poder = 80
+pp = 15
+descripcion = "Lanza al objetivo una descarga de semillas explosivas desde arriba."

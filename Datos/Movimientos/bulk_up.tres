@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_tuvq2"]
+
+[resource]
+script = ExtResource("1_tuvq2")
+id = "bulk_up"
+nombre = "Corpulencia"
+tipo = "lucha"
+categoria = "estado"
+precision = 0
+pp = 20
+objetivo = "user"
+meta = "net-good-stats"
+descripcion = "Robustece el cuerpo para subir el Ataque y la Defensa."
+cambios_stats = {
+"ataque": 1,
+"defensa": 1
+}

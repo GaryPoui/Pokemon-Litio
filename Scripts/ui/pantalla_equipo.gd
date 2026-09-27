@@ -3,6 +3,7 @@ extends CanvasLayer
 signal cerrado
 
 const ESCENA_RESUMEN:= "res://Escenas/UI/Resumen.tscn"
+const ESCENA_TRINKETS :="res://Escenas/UI/TrinketsPokemon.tscn"
 const P :="res://Assets/Menus-Equipo/"
 const ICONOS:= "res://Assets/Pokemones/iconos/"
 const ICONO_Y :=-6.0
@@ -209,7 +210,10 @@ func _aceptar() -> void:
 		return
 	Sonido.efecto("confirmar")
 	en_submenu= true
-	lista.poner(["DATOS", "MOVER", "SALIR"])
+	lista.poner(["DATOS", "MOVER", "TRINKETS", "SALIR"])
+	submenu.size.y= 10+ lista.opciones.size()* 14
+	submenu.position.y =158- submenu.size.y
+	lista.size.y= lista.opciones.size()* 14
 	submenu.visible =true
 	mensaje.text= "¿Qué hacer con %s?" % Equipo.miembros[cursor].nombre()
 
@@ -224,6 +228,8 @@ func _input_submenu(event: InputEvent) -> void:
 		match op:
 			"DATOS":
 				_ver_datos()
+			"TRINKETS":
+				_ver_trinkets()
 			"MOVER":
 				moviendo= cursor
 				mensaje.text ="¿A dónde mover a %s?" % Equipo.miembros[cursor].nombre()
@@ -247,5 +253,17 @@ func _ver_datos() -> void:
 	await GestorEscenas.fundido(func():
 		cursor =r.indice
 		r.queue_free()
+		_construir())
+	ocupado= false
+
+func _ver_trinkets() -> void:
+	ocupado= true
+	var t= load(ESCENA_TRINKETS).instantiate()
+	await GestorEscenas.fundido(func():
+		add_child(t)
+		t.abrir(Equipo.miembros[cursor]))
+	await t.cerrado
+	await GestorEscenas.fundido(func():
+		t.queue_free()
 		_construir())
 	ocupado= false

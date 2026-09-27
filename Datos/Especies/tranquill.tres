@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_07voo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_453ik"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="3_2hr8k"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="4_10lyf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="5_5gx0j"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_cutter.tres" id="6_h4b2l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/roost.tres" id="7_kxupq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/detect.tres" id="8_1wo3v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/taunt.tres" id="9_fq2do"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="10_uicnj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/razor_wind.tres" id="11_jwris"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feather_dance.tres" id="12_frjmg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swagger.tres" id="13_6tpa6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/facade.tres" id="14_nujst"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tailwind.tres" id="15_t7188"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sky_attack.tres" id="16_0q25g"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_ewjrn"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tranquill_espalda.png" id="18_jnmie"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tranquill_frente.png" id="19_a224a"]
+
+[sub_resource type="Resource" id="Resource_gfpgf"]
+script = ExtResource("1_07voo")
+movimiento = ExtResource("2_453ik")
+
+[sub_resource type="Resource" id="Resource_bblct"]
+script = ExtResource("1_07voo")
+movimiento = ExtResource("3_2hr8k")
+
+[sub_resource type="Resource" id="Resource_8516c"]
+script = ExtResource("1_07voo")
+movimiento = ExtResource("4_10lyf")
+
+[sub_resource type="Resource" id="Resource_c6hen"]
+script = ExtResource("1_07voo")
+movimiento = ExtResource("5_5gx0j")
+
+[sub_resource type="Resource" id="Resource_spyhl"]
+script = ExtResource("1_07voo")
+nivel = 4
+movimiento = ExtResource("2_453ik")
+
+[sub_resource type="Resource" id="Resource_7ed34"]
+script = ExtResource("1_07voo")
+nivel = 8
+movimiento = ExtResource("4_10lyf")
+
+[sub_resource type="Resource" id="Resource_gvi6g"]
+script = ExtResource("1_07voo")
+nivel = 11
+movimiento = ExtResource("5_5gx0j")
+
+[sub_resource type="Resource" id="Resource_b8rfm"]
+script = ExtResource("1_07voo")
+nivel = 15
+movimiento = ExtResource("6_h4b2l")
+
+[sub_resource type="Resource" id="Resource_44ndb"]
+script = ExtResource("1_07voo")
+nivel = 18
+movimiento = ExtResource("7_kxupq")
+
+[sub_resource type="Resource" id="Resource_tkxd3"]
+script = ExtResource("1_07voo")
+nivel = 23
+movimiento = ExtResource("8_1wo3v")
+
+[sub_resource type="Resource" id="Resource_mdh7y"]
+script = ExtResource("1_07voo")
+nivel = 27
+movimiento = ExtResource("9_fq2do")
+
+[sub_resource type="Resource" id="Resource_bmiyq"]
+script = ExtResource("1_07voo")
+nivel = 32
+movimiento = ExtResource("10_uicnj")
+
+[sub_resource type="Resource" id="Resource_yyb2o"]
+script = ExtResource("1_07voo")
+nivel = 36
+movimiento = ExtResource("11_jwris")
+
+[sub_resource type="Resource" id="Resource_30y4j"]
+script = ExtResource("1_07voo")
+nivel = 41
+movimiento = ExtResource("12_frjmg")
+
+[sub_resource type="Resource" id="Resource_uawp3"]
+script = ExtResource("1_07voo")
+nivel = 45
+movimiento = ExtResource("13_6tpa6")
+
+[sub_resource type="Resource" id="Resource_6ajdv"]
+script = ExtResource("1_07voo")
+nivel = 50
+movimiento = ExtResource("14_nujst")
+
+[sub_resource type="Resource" id="Resource_4sooy"]
+script = ExtResource("1_07voo")
+nivel = 54
+movimiento = ExtResource("15_t7188")
+
+[sub_resource type="Resource" id="Resource_a8ssb"]
+script = ExtResource("1_07voo")
+nivel = 59
+movimiento = ExtResource("16_0q25g")
+
+[resource]
+script = ExtResource("17_ewjrn")
+id = "tranquill"
+numero = 520
+nombre = "Tranquill"
+tipos = PackedStringArray("normal", "volador")
+ps = 62
+ataque = 77
+defensa = 62
+def_esp = 42
+velocidad = 65
+exp_base = 125
+ratio_captura = 120
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 2
+}
+evoluciona_a = "unfezant"
+nivel_evolucion = 32
+aprende = Array[ExtResource("1_07voo")]([SubResource("Resource_gfpgf"), SubResource("Resource_bblct"), SubResource("Resource_8516c"), SubResource("Resource_c6hen"), SubResource("Resource_spyhl"), SubResource("Resource_7ed34"), SubResource("Resource_gvi6g"), SubResource("Resource_b8rfm"), SubResource("Resource_44ndb"), SubResource("Resource_tkxd3"), SubResource("Resource_mdh7y"), SubResource("Resource_bmiyq"), SubResource("Resource_yyb2o"), SubResource("Resource_30y4j"), SubResource("Resource_uawp3"), SubResource("Resource_6ajdv"), SubResource("Resource_4sooy"), SubResource("Resource_a8ssb")])
+sprite_frente = ExtResource("19_a224a")
+sprite_espalda = ExtResource("18_jnmie")
+cuadros_frente = 148
+cuadros_espalda = 164
+fps_sprite = 18.43

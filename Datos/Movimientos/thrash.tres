@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_c6rlc"]
+
+[resource]
+script = ExtResource("1_c6rlc")
+id = "thrash"
+nombre = "Saña"
+poder = 120
+objetivo = "random-opponent"
+descripcion = "Ataque de dos a tres turnos que acaba confundiendo al agresor."

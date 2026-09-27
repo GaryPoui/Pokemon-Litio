@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cjvq266q7cq4f"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_db83i"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_db83i"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_2gjha"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="3_wc2rj"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="4_e0tmm"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/retaliate.tres" id="14_krkm7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/swords_dance.tres" id="15_w5n5m"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="16_tm1s3"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_1pwqn"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/oshawott_espalda.png" id="18_hpa8n"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/oshawott_frente.png" id="19_kyoli"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_1pwqn"]
+[ext_resource type="Texture2D" uid="uid://c6gsg1t3djft4" path="res://Assets/Pokemones/batalla/oshawott_espalda.png" id="18_hpa8n"]
+[ext_resource type="Texture2D" uid="uid://68tn7f2cee7k" path="res://Assets/Pokemones/batalla/oshawott_frente.png" id="19_kyoli"]
 
 [sub_resource type="Resource" id="Resource_qouwp"]
 script = ExtResource("1_db83i")
@@ -99,7 +99,7 @@ script = ExtResource("17_1pwqn")
 id = "oshawott"
 numero = 501
 nombre = "Oshawott"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 55
 ataque = 55
 defensa = 45
@@ -112,6 +112,8 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 1
 }
+evoluciona_a = "dewott"
+nivel_evolucion = 17
 aprende = Array[ExtResource("1_db83i")]([SubResource("Resource_qouwp"), SubResource("Resource_cc6bc"), SubResource("Resource_hsqa3"), SubResource("Resource_3fh15"), SubResource("Resource_2x8xe"), SubResource("Resource_lq55r"), SubResource("Resource_s6wjq"), SubResource("Resource_7787s"), SubResource("Resource_3ueat"), SubResource("Resource_vf2ao"), SubResource("Resource_5tkce"), SubResource("Resource_3rett"), SubResource("Resource_mdv58"), SubResource("Resource_1civj"), SubResource("Resource_3nax2")])
 sprite_frente = ExtResource("19_kyoli")
 sprite_espalda = ExtResource("18_hpa8n")

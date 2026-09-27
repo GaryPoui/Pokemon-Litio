@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_h732a"]
+
+[resource]
+script = ExtResource("1_h732a")
+id = "lente_enfocada"
+nombre = "Lente Enfocada"
+descripcion = "Sube en 1 fase la probabilidad de golpe crítico del portador."
+tier = 3
+efecto = "critico"
+valor = 1.0
+unidad = "fase"
+maximo = 2.0
+precio = 3000

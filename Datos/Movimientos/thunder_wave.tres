@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_mjkla"]
+
+[resource]
+script = ExtResource("1_mjkla")
+id = "thunder_wave"
+nombre = "Onda Trueno"
+tipo = "electrico"
+categoria = "estado"
+pp = 20
+meta = "ailment"
+descripcion = "Una ligera descarga que paraliza al objetivo si lo alcanza."
+estado = "paralysis"

@@ -110,6 +110,8 @@ ratio_captura = 255
 evs_otorgados = {
 "ataque": 1
 }
+evoluciona_a = "watchog"
+nivel_evolucion = 20
 aprende = Array[ExtResource("1_kld02")]([SubResource("Resource_0pyrl"), SubResource("Resource_2sm7u"), SubResource("Resource_d8p6l"), SubResource("Resource_nb6bf"), SubResource("Resource_qy0j6"), SubResource("Resource_36mte"), SubResource("Resource_jvumr"), SubResource("Resource_ecoxc"), SubResource("Resource_ru5r8"), SubResource("Resource_5n0yu"), SubResource("Resource_b7dcf"), SubResource("Resource_krkpk"), SubResource("Resource_yi2a4"), SubResource("Resource_1ltfg"), SubResource("Resource_ymiyg")])
 sprite_frente = ExtResource("19_wy24c")
 sprite_espalda = ExtResource("18_5axi1")

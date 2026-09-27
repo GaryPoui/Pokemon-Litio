@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_lgeku"]
+
+[resource]
+script = ExtResource("1_lgeku")
+id = "endeavor"
+nombre = "Esfuerzo"
+pp = 5
+descripcion = "Reduce los PS del objetivo para que igualen a los del atacante."

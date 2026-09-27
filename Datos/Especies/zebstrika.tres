@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_2rri7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="2_oc03g"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="3_qr838"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="4_ohnqp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="5_ogl6w"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/shock_wave.tres" id="6_0hfun"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_charge.tres" id="7_vn2us"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="8_7c23p"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spark.tres" id="9_r8446"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stomp.tres" id="10_2xai4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="11_sa66o"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="12_7xsmh"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wild_charge.tres" id="13_xh0us"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="14_n6k02"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="15_7r1f2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/zebstrika_espalda.png" id="16_l6mm7"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/zebstrika_frente.png" id="17_85o53"]
+
+[sub_resource type="Resource" id="Resource_l2u6t"]
+script = ExtResource("1_2rri7")
+movimiento = ExtResource("2_oc03g")
+
+[sub_resource type="Resource" id="Resource_ypiio"]
+script = ExtResource("1_2rri7")
+movimiento = ExtResource("3_qr838")
+
+[sub_resource type="Resource" id="Resource_joolr"]
+script = ExtResource("1_2rri7")
+movimiento = ExtResource("4_ohnqp")
+
+[sub_resource type="Resource" id="Resource_nrhjs"]
+script = ExtResource("1_2rri7")
+movimiento = ExtResource("5_ogl6w")
+
+[sub_resource type="Resource" id="Resource_l2bqt"]
+script = ExtResource("1_2rri7")
+nivel = 4
+movimiento = ExtResource("4_ohnqp")
+
+[sub_resource type="Resource" id="Resource_fhff5"]
+script = ExtResource("1_2rri7")
+nivel = 8
+movimiento = ExtResource("2_oc03g")
+
+[sub_resource type="Resource" id="Resource_6wt11"]
+script = ExtResource("1_2rri7")
+nivel = 11
+movimiento = ExtResource("6_0hfun")
+
+[sub_resource type="Resource" id="Resource_c8dm6"]
+script = ExtResource("1_2rri7")
+nivel = 15
+movimiento = ExtResource("5_ogl6w")
+
+[sub_resource type="Resource" id="Resource_um54j"]
+script = ExtResource("1_2rri7")
+nivel = 18
+movimiento = ExtResource("7_vn2us")
+
+[sub_resource type="Resource" id="Resource_l23ru"]
+script = ExtResource("1_2rri7")
+nivel = 22
+movimiento = ExtResource("8_7c23p")
+
+[sub_resource type="Resource" id="Resource_cna12"]
+script = ExtResource("1_2rri7")
+nivel = 25
+movimiento = ExtResource("9_r8446")
+
+[sub_resource type="Resource" id="Resource_xr2r0"]
+script = ExtResource("1_2rri7")
+nivel = 31
+movimiento = ExtResource("10_2xai4")
+
+[sub_resource type="Resource" id="Resource_xuh48"]
+script = ExtResource("1_2rri7")
+nivel = 36
+movimiento = ExtResource("11_sa66o")
+
+[sub_resource type="Resource" id="Resource_7gl6c"]
+script = ExtResource("1_2rri7")
+nivel = 42
+movimiento = ExtResource("12_7xsmh")
+
+[sub_resource type="Resource" id="Resource_ej6uv"]
+script = ExtResource("1_2rri7")
+nivel = 47
+movimiento = ExtResource("13_xh0us")
+
+[sub_resource type="Resource" id="Resource_4f543"]
+script = ExtResource("1_2rri7")
+nivel = 53
+movimiento = ExtResource("14_n6k02")
+
+[resource]
+script = ExtResource("15_7r1f2")
+id = "zebstrika"
+numero = 523
+nombre = "Zebstrika"
+tipos = PackedStringArray("electrico")
+ps = 75
+ataque = 100
+defensa = 63
+at_esp = 80
+def_esp = 63
+velocidad = 116
+exp_base = 174
+ratio_captura = 75
+evs_otorgados = {
+"velocidad": 2
+}
+aprende = Array[ExtResource("1_2rri7")]([SubResource("Resource_l2u6t"), SubResource("Resource_ypiio"), SubResource("Resource_joolr"), SubResource("Resource_nrhjs"), SubResource("Resource_l2bqt"), SubResource("Resource_fhff5"), SubResource("Resource_6wt11"), SubResource("Resource_c8dm6"), SubResource("Resource_um54j"), SubResource("Resource_l23ru"), SubResource("Resource_cna12"), SubResource("Resource_xr2r0"), SubResource("Resource_xuh48"), SubResource("Resource_7gl6c"), SubResource("Resource_ej6uv"), SubResource("Resource_4f543")])
+sprite_frente = ExtResource("17_85o53")
+sprite_espalda = ExtResource("16_l6mm7")
+cuadros_frente = 76
+cuadros_espalda = 76
+fps_sprite = 7.33

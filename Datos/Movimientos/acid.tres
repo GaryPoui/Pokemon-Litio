@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_7f2s2"]
+
+[resource]
+script = ExtResource("1_7f2s2")
+id = "acid"
+nombre = "Ácido"
+tipo = "veneno"
+categoria = "especial"
+poder = 40
+pp = 30
+objetivo = "all-opponents"
+meta = "damage-lower"
+descripcion = "Rocía a los enemigos con un ácido corrosivo. Puede bajar la Defensa Especial."
+cambios_stats = {
+"def_esp": -1
+}
+prob_stat = 10

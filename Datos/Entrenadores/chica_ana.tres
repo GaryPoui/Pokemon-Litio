@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://24dm04q157pb"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_i34a7"]
+[ext_resource type="Resource" uid="uid://mboqaox23eoj" path="res://Datos/Especies/minccino.tres" id="2_dwtby"]
+[ext_resource type="Resource" uid="uid://yl1mvo5wxxiq" path="res://Datos/Especies/pidove.tres" id="3_2mt5i"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="4_ie6q8"]
+
+[sub_resource type="Resource" id="Resource_k668m"]
+script = ExtResource("1_i34a7")
+especie = ExtResource("2_dwtby")
+nivel_min = 6
+nivel_max = 6
+peso = 1
+trinkets = Array[String](["vendaje"])
+
+[sub_resource type="Resource" id="Resource_rwbnk"]
+script = ExtResource("1_i34a7")
+especie = ExtResource("3_2mt5i")
+nivel_min = 6
+nivel_max = 6
+peso = 1
+
+[resource]
+script = ExtResource("4_ie6q8")
+clase = "Chica"
+nombre = "Ana"
+miembros = Array[ExtResource("1_i34a7")]([SubResource("Resource_k668m"), SubResource("Resource_rwbnk")])

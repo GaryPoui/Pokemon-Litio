@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_m7kgn"]
+
+[resource]
+script = ExtResource("1_m7kgn")
+id = "tickle"
+nombre = "Cosquillas"
+categoria = "estado"
+pp = 20
+meta = "net-good-stats"
+descripcion = "Hace reír al objetivo para bajar su Ataque y Defensa."
+cambios_stats = {
+"ataque": -1,
+"defensa": -1
+}

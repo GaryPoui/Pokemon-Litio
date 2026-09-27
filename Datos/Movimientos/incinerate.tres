@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_dwd3h"]
+
+[resource]
+script = ExtResource("1_dwd3h")
+id = "incinerate"
+nombre = "Calcinación"
+tipo = "fuego"
+categoria = "especial"
+poder = 30
+pp = 15
+objetivo = "all-opponents"
+descripcion = "Llamas que golpean a los objetivos adyacentes. Si estos llevan bayas o ciertos objetos, se quemarán y ya no se podrán usar."

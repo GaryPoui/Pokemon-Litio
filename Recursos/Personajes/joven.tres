@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dhj7uanei3ln7"]
+
+[ext_resource type="Texture2D" uid="uid://l8srvceuoe24" path="res://Assets/Personajes/npc/joven.png" id="1_dwj22"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bc7on"]
+atlas = ExtResource("1_dwj22")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0cqx6"]
+atlas = ExtResource("1_dwj22")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54pew"]
+atlas = ExtResource("1_dwj22")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kw2y3"]
+atlas = ExtResource("1_dwj22")
+region = Rect2(0, 64, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bc7on")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cqx6")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_54pew")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kw2y3")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
+}]

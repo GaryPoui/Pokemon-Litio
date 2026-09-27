@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ptung"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_22m8x"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="3_vyqf6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="4_sd08m"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="5_na1bg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_cutter.tres" id="6_l8sg8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/roost.tres" id="7_mm4oo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/detect.tres" id="8_t5cdy"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/taunt.tres" id="9_jossu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="10_nhvi3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/razor_wind.tres" id="11_jvwsx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feather_dance.tres" id="12_qxrc0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swagger.tres" id="13_an81r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/facade.tres" id="14_vive3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tailwind.tres" id="15_tflt4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sky_attack.tres" id="16_5sjdi"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_yrlym"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/unfezant_espalda.png" id="18_5vjtm"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/unfezant_frente.png" id="19_pyd66"]
+
+[sub_resource type="Resource" id="Resource_6xn2k"]
+script = ExtResource("1_ptung")
+movimiento = ExtResource("2_22m8x")
+
+[sub_resource type="Resource" id="Resource_3dcfr"]
+script = ExtResource("1_ptung")
+movimiento = ExtResource("3_vyqf6")
+
+[sub_resource type="Resource" id="Resource_il1ay"]
+script = ExtResource("1_ptung")
+movimiento = ExtResource("4_sd08m")
+
+[sub_resource type="Resource" id="Resource_8e17w"]
+script = ExtResource("1_ptung")
+movimiento = ExtResource("5_na1bg")
+
+[sub_resource type="Resource" id="Resource_xeauq"]
+script = ExtResource("1_ptung")
+nivel = 4
+movimiento = ExtResource("2_22m8x")
+
+[sub_resource type="Resource" id="Resource_vqb1e"]
+script = ExtResource("1_ptung")
+nivel = 8
+movimiento = ExtResource("4_sd08m")
+
+[sub_resource type="Resource" id="Resource_g12tr"]
+script = ExtResource("1_ptung")
+nivel = 11
+movimiento = ExtResource("5_na1bg")
+
+[sub_resource type="Resource" id="Resource_hvptq"]
+script = ExtResource("1_ptung")
+nivel = 15
+movimiento = ExtResource("6_l8sg8")
+
+[sub_resource type="Resource" id="Resource_em11a"]
+script = ExtResource("1_ptung")
+nivel = 18
+movimiento = ExtResource("7_mm4oo")
+
+[sub_resource type="Resource" id="Resource_mb0mt"]
+script = ExtResource("1_ptung")
+nivel = 23
+movimiento = ExtResource("8_t5cdy")
+
+[sub_resource type="Resource" id="Resource_ci0kn"]
+script = ExtResource("1_ptung")
+nivel = 27
+movimiento = ExtResource("9_jossu")
+
+[sub_resource type="Resource" id="Resource_mxh1y"]
+script = ExtResource("1_ptung")
+nivel = 33
+movimiento = ExtResource("10_nhvi3")
+
+[sub_resource type="Resource" id="Resource_gsp8q"]
+script = ExtResource("1_ptung")
+nivel = 38
+movimiento = ExtResource("11_jvwsx")
+
+[sub_resource type="Resource" id="Resource_c0sg1"]
+script = ExtResource("1_ptung")
+nivel = 44
+movimiento = ExtResource("12_qxrc0")
+
+[sub_resource type="Resource" id="Resource_fcco0"]
+script = ExtResource("1_ptung")
+nivel = 49
+movimiento = ExtResource("13_an81r")
+
+[sub_resource type="Resource" id="Resource_uwd0d"]
+script = ExtResource("1_ptung")
+nivel = 55
+movimiento = ExtResource("14_vive3")
+
+[sub_resource type="Resource" id="Resource_m0yug"]
+script = ExtResource("1_ptung")
+nivel = 60
+movimiento = ExtResource("15_tflt4")
+
+[sub_resource type="Resource" id="Resource_yj0k3"]
+script = ExtResource("1_ptung")
+nivel = 66
+movimiento = ExtResource("16_5sjdi")
+
+[resource]
+script = ExtResource("17_yrlym")
+id = "unfezant"
+numero = 521
+nombre = "Unfezant"
+tipos = PackedStringArray("normal", "volador")
+ps = 80
+ataque = 115
+defensa = 80
+at_esp = 65
+def_esp = 55
+velocidad = 93
+exp_base = 220
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 3
+}
+aprende = Array[ExtResource("1_ptung")]([SubResource("Resource_6xn2k"), SubResource("Resource_3dcfr"), SubResource("Resource_il1ay"), SubResource("Resource_8e17w"), SubResource("Resource_xeauq"), SubResource("Resource_vqb1e"), SubResource("Resource_g12tr"), SubResource("Resource_hvptq"), SubResource("Resource_em11a"), SubResource("Resource_mb0mt"), SubResource("Resource_ci0kn"), SubResource("Resource_mxh1y"), SubResource("Resource_gsp8q"), SubResource("Resource_c0sg1"), SubResource("Resource_fcco0"), SubResource("Resource_uwd0d"), SubResource("Resource_m0yug"), SubResource("Resource_yj0k3")])
+sprite_frente = ExtResource("19_pyd66")
+sprite_espalda = ExtResource("18_5vjtm")
+cuadros_frente = 88
+cuadros_espalda = 95
+fps_sprite = 11.08

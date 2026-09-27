@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_u8t7i"]
+
+[resource]
+script = ExtResource("1_u8t7i")
+id = "rain_dance"
+nombre = "Danza Lluvia"
+tipo = "agua"
+categoria = "estado"
+precision = 0
+pp = 5
+objetivo = "entire-field"
+meta = "whole-field-effect"
+descripcion = "Genera una fuerte lluvia que refuerza los movimientos de tipo Agua durante cinco turnos y debilita los de tipo Fuego."

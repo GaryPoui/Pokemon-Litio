@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_nju5w"]
+
+[resource]
+script = ExtResource("1_nju5w")
+id = "confuse_ray"
+nombre = "Rayo Confuso"
+tipo = "fantasma"
+categoria = "estado"
+meta = "ailment"
+descripcion = "Rayo siniestro que confunde al objetivo."
+estado = "confusion"

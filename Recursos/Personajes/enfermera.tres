@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://c8jbvtg8vcxc4"]
+
+[ext_resource type="Texture2D" uid="uid://bfw4qa8y52cjm" path="res://Assets/Personajes/npc/enfermera.png" id="1_gjbk0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rbvch"]
+atlas = ExtResource("1_gjbk0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hkxw"]
+atlas = ExtResource("1_gjbk0")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8hy3"]
+atlas = ExtResource("1_gjbk0")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_edyjf"]
+atlas = ExtResource("1_gjbk0")
+region = Rect2(0, 64, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rbvch")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hkxw")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8hy3")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_edyjf")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
+}]

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_pgwoy"]
+
+[resource]
+script = ExtResource("1_pgwoy")
+id = "moneda_amuleto"
+nombre = "Moneda Amuleto"
+descripcion = "Ganas un 25% más de dinero al vencer a entrenadores."
+tier = 2
+categoria = "economia"
+alcance = "equipo"
+efecto = "dinero"
+valor = 0.25
+apilado = "curva"
+factor_curva = 0.6
+maximo = 1.0
+precio = 1600

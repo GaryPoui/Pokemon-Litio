@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_jh5wp"]
+
+[resource]
+script = ExtResource("1_jh5wp")
+id = "zen_headbutt"
+nombre = "Cabezazo Zen"
+tipo = "psiquico"
+poder = 80
+precision = 90
+pp = 15
+descripcion = "Concentra su energía psíquica en la cabeza para golpear. Puede hacer que el objetivo se amedrente."
+prob_retroceso = 20

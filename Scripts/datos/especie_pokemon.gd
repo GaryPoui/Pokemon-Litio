@@ -21,6 +21,10 @@ extends Resource
 @export_enum("slow", "medium", "fast", "medium-slow", "slow-then-very-fast", "fast-then-very-slow") var crecimiento: String ="medium"
 @export var evs_otorgados: Dictionary= {}
 
+@export_group("Evolución")
+@export var evoluciona_a: String= ""
+@export var nivel_evolucion: int =0
+
 @export_group("Movimientos")
 @export var aprende: Array[MovimientoNivel]= []
 

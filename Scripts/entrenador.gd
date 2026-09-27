@@ -19,7 +19,7 @@ func interactuar(jugador: Node) -> void:
 	await Dialogo.mostrar(texto)
 	if datos== null:
 		return
-	var res: String= await Combate.iniciar_entrenador(datos.nombre_completo(), datos.crear_equipo())
+	var res: String= await Combate.iniciar_entrenador(datos.nombre_completo(), datos.crear_equipo(), datos.pago_base)
 	if res== "victoria":
 		if clave!= "":
 			Estado.marcar(clave)

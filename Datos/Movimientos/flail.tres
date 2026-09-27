@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_1j8u6"]
+
+[resource]
+script = ExtResource("1_1j8u6")
+id = "flail"
+nombre = "Azote"
+pp = 15
+descripcion = "Ataque frenético. Cuantos menos PS tenga el usuario, más daño producirá."

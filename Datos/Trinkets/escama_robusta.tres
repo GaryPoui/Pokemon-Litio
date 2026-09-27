@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_qtx3m"]
+
+[resource]
+script = ExtResource("1_qtx3m")
+id = "escama_robusta"
+nombre = "Escama Robusta"
+descripcion = "El portador recibe un 8% menos de daño."
+tier = 2
+efecto = "danio_recibido"
+valor = 0.08
+apilado = "curva"
+maximo = 0.3
+precio = 1500

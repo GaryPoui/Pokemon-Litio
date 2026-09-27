@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_vur08"]
+
+[resource]
+script = ExtResource("1_vur08")
+id = "cebo_raro"
+nombre = "Cebo Raro"
+descripcion = "Los Pokémon salvajes poco comunes aparecen con más frecuencia."
+tier = 3
+categoria = "captura"
+alcance = "equipo"
+efecto = "rareza"
+valor = 0.25
+apilado = "curva"
+maximo = 0.6
+precio = 2800

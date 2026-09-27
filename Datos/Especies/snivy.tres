@@ -112,6 +112,8 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "velocidad": 1
 }
+evoluciona_a = "servine"
+nivel_evolucion = 17
 aprende = Array[ExtResource("1_j2v1n")]([SubResource("Resource_gbp0y"), SubResource("Resource_p4w0j"), SubResource("Resource_cn3a3"), SubResource("Resource_up202"), SubResource("Resource_argji"), SubResource("Resource_ugksy"), SubResource("Resource_aohw4"), SubResource("Resource_h0pyp"), SubResource("Resource_xy0md"), SubResource("Resource_pqpwt"), SubResource("Resource_adwio"), SubResource("Resource_jfwr3"), SubResource("Resource_x1xj5"), SubResource("Resource_7y2kj"), SubResource("Resource_tl1ls")])
 sprite_frente = ExtResource("19_mvek2")
 sprite_espalda = ExtResource("18_couqe")

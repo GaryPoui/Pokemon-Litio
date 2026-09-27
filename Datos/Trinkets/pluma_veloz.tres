@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_a7b7c"]
+
+[resource]
+script = ExtResource("1_a7b7c")
+id = "pluma_veloz"
+nombre = "Pluma Veloz"
+descripcion = "La Velocidad del portador aumenta un 15%."
+tier = 4
+efecto = "velocidad"
+valor = 0.15
+apilado = "curva"
+maximo = 0.4
+precio = 5000

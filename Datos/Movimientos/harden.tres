@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_m8h7x"]
+
+[resource]
+script = ExtResource("1_m8h7x")
+id = "harden"
+nombre = "Fortaleza"
+categoria = "estado"
+precision = 0
+pp = 30
+objetivo = "user"
+meta = "net-good-stats"
+descripcion = "Tensa la musculatura del usuario para aumentar la Defensa."
+cambios_stats = {
+"defensa": 1
+}

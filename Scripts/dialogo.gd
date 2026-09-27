@@ -18,6 +18,13 @@ var escribiendo :=false
 var avance: float= 0.0
 var eligiendo:= false
 var preguntando :=false
+var lineas: Array[String]= []
+var arriba:= 0
+var esperando_scroll :=false
+var desplazando:= false
+var base_y :=0.0
+
+const LINEAS_VISIBLES:= 2
 
 func _ready() -> void:
 	layer= 110
@@ -31,6 +38,20 @@ func _ready() -> void:
 	caja_opciones.add_theme_stylebox_override("panel", EstiloUI.panel())
 	caja_opciones.visible= false
 	EstiloUI.label(texto, 9)
+	var zona:= texto.get_rect()
+	var ventana:= Control.new()
+	ventana.name= "Ventana"
+	ventana.clip_contents =true
+	ventana.mouse_filter= Control.MOUSE_FILTER_IGNORE
+	caja.add_child(ventana)
+	ventana.position= zona.position
+	ventana.size =zona.size
+	texto.reparent(ventana, false)
+	texto.anchor_right= 0.0
+	texto.anchor_bottom =0.0
+	texto.position= Vector2.ZERO
+	texto.size =zona.size
+	base_y= 0.0
 	EstiloUI.fuente_batalla(flecha)
 	flecha.add_theme_color_override("font_color", Color("d04030"))
 
@@ -56,6 +77,12 @@ func preguntar(contenido: String, opciones: Array= ["SÍ", "NO"]) -> int:
 	flecha.visible= false
 	caja_opciones.size.y =10+ opciones.size()* 12
 	caja_opciones.position.y= 142- caja_opciones.size.y
+	var ancho:= 56.0
+	for o in opciones:
+		ancho= maxf(ancho, texto.get_theme_font("font").get_string_size(str(o), HORIZONTAL_ALIGNMENT_LEFT, -1, texto.get_theme_font_size("font_size")).x+ 24.0)
+	caja_opciones.size.x =ancho
+	caja_opciones.position.x= 252.0- ancho
+	lista.size.x= ancho- 8.0
 	lista.poner(opciones)
 	caja_opciones.visible= true
 	eligiendo =true
@@ -67,22 +94,54 @@ func preguntar(contenido: String, opciones: Array= ["SÍ", "NO"]) -> int:
 	return r
 
 func _empezar_pagina() -> void:
-	texto.text= paginas[pagina]
+	lineas= EstiloUI.envolver(paginas[pagina], texto, texto.size.x)
+	arriba =0
+	texto.position.y= base_y
+	_mostrar_lineas()
 	texto.visible_characters =0
 	avance= 0.0
 	escribiendo= true
+	esperando_scroll =false
 	flecha.visible =false
 
+func _mostrar_lineas() -> void:
+	texto.text= "\n".join(lineas.slice(arriba, arriba+ LINEAS_VISIBLES))
+
+func _quedan_lineas() -> bool:
+	return arriba+ LINEAS_VISIBLES< lineas.size()
+
+func _terminar_visible() -> void:
+	texto.visible_characters= -1
+	if _quedan_lineas():
+		esperando_scroll =true
+	else:
+		escribiendo= false
+
 func _process(delta: float) -> void:
-	if not escribiendo:
+	if desplazando:
+		return
+	if esperando_scroll or not escribiendo:
 		if esta_abierto and not eligiendo:
 			flecha.visible= fmod(Time.get_ticks_msec()/ 400.0, 2.0) <1.0
 		return
 	avance+= delta *letras_por_segundo
 	texto.visible_characters =int(avance)
 	if texto.visible_characters>= texto.get_total_character_count():
-		texto.visible_characters= -1
-		escribiendo =false
+		_terminar_visible()
+
+func _desplazar() -> void:
+	esperando_scroll= false
+	desplazando =true
+	flecha.visible= false
+	var t:= create_tween()
+	t.tween_property(texto, "position:y", base_y- EstiloUI.alto_linea(texto), 0.12)
+	await t.finished
+	arriba+= 1
+	_mostrar_lineas()
+	texto.position.y= base_y
+	avance =float(lineas[arriba].length())
+	texto.visible_characters= int(avance)
+	desplazando =false
 
 func _unhandled_input(event: InputEvent) -> void:
 	if not esta_abierto:
@@ -100,9 +159,13 @@ func _unhandled_input(event: InputEvent) -> void:
 		return
 	if event.is_action_pressed("aceptar") or event.is_action_pressed("cancelar"):
 		get_viewport().set_input_as_handled()
+		if desplazando:
+			return
+		if esperando_scroll:
+			_desplazar()
+			return
 		if escribiendo:
-			texto.visible_characters =-1
-			escribiendo= false
+			_terminar_visible()
 			return
 		if preguntando:
 			return

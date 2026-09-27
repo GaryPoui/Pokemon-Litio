@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://3vxx1aj3ftla"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_waibh"]
+[ext_resource type="Resource" uid="uid://bi7gw3f4gt6q" path="res://Datos/Especies/roggenrola.tres" id="2_ach7q"]
+[ext_resource type="Resource" uid="uid://dknhqu0lvmtwe" path="res://Datos/Especies/drilbur.tres" id="3_n0lh3"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="4_47156"]
+
+[sub_resource type="Resource" id="Resource_sl4gd"]
+script = ExtResource("1_waibh")
+especie = ExtResource("2_ach7q")
+nivel_min = 8
+nivel_max = 8
+peso = 1
+trinkets = Array[String](["escama_robusta"])
+
+[sub_resource type="Resource" id="Resource_qmv6b"]
+script = ExtResource("1_waibh")
+especie = ExtResource("3_n0lh3")
+nivel_min = 8
+nivel_max = 8
+peso = 1
+trinkets = Array[String](["colmillo_afilado"])
+
+[resource]
+script = ExtResource("4_47156")
+clase = "Montañero"
+nombre = "Braulio"
+miembros = Array[ExtResource("1_waibh")]([SubResource("Resource_sl4gd"), SubResource("Resource_qmv6b")])
+pago_base = 32

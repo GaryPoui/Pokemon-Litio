@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_cf8vu"]
+
+[resource]
+script = ExtResource("1_cf8vu")
+id = "supersonic"
+nombre = "Supersónico"
+categoria = "estado"
+precision = 55
+pp = 20
+meta = "ailment"
+descripcion = "Raras ondas sónicas que confunden al objetivo."
+estado = "confusion"

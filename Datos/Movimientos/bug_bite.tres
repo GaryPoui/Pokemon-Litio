@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_o7tyd"]
+
+[resource]
+script = ExtResource("1_o7tyd")
+id = "bug_bite"
+nombre = "Picadura"
+tipo = "bicho"
+poder = 60
+pp = 20
+descripcion = "Pica al objetivo. Si el objetivo lleva una baya, el usuario se la come y se beneficia de su efecto."

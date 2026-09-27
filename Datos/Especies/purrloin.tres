@@ -115,6 +115,8 @@ ratio_captura = 255
 evs_otorgados = {
 "velocidad": 1
 }
+evoluciona_a = "liepard"
+nivel_evolucion = 20
 aprende = Array[ExtResource("1_omppl")]([SubResource("Resource_5r4hj"), SubResource("Resource_kydjd"), SubResource("Resource_h1t4p"), SubResource("Resource_80prj"), SubResource("Resource_0bhj8"), SubResource("Resource_brnij"), SubResource("Resource_3mw60"), SubResource("Resource_ffu2h"), SubResource("Resource_qssli"), SubResource("Resource_pccj3"), SubResource("Resource_xxune"), SubResource("Resource_tuxny"), SubResource("Resource_fh85o"), SubResource("Resource_4n86h"), SubResource("Resource_vobnj"), SubResource("Resource_grvml")])
 sprite_frente = ExtResource("20_xxlfd")
 sprite_espalda = ExtResource("19_ih2pv")

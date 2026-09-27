@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_3j55c"]
+
+[resource]
+script = ExtResource("1_3j55c")
+id = "spark"
+nombre = "Chispa"
+tipo = "electrico"
+poder = 65
+pp = 20
+meta = "damage-ailment"
+descripcion = "Ataque eléctrico que puede llegar a paralizar."
+estado = "paralysis"
+prob_estado = 30

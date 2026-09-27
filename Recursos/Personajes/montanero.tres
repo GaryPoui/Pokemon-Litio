@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dwpjitipv1yg8"]
+
+[ext_resource type="Texture2D" uid="uid://bnlei0fkmmalj" path="res://Assets/Personajes/npc/montanero.png" id="1_hem2w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ciaa0"]
+atlas = ExtResource("1_hem2w")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gbny"]
+atlas = ExtResource("1_hem2w")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0g5n3"]
+atlas = ExtResource("1_hem2w")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_481sp"]
+atlas = ExtResource("1_hem2w")
+region = Rect2(0, 64, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ciaa0")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gbny")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0g5n3")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_481sp")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
+}]

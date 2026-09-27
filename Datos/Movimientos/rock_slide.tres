@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_vkvho"]
+
+[resource]
+script = ExtResource("1_vkvho")
+id = "rock_slide"
+nombre = "Avalancha"
+tipo = "roca"
+poder = 75
+precision = 90
+objetivo = "all-opponents"
+descripcion = "Lanza grandes pedruscos. Puede amedrentar al objetivo."
+prob_retroceso = 30

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_7763l"]
+
+[resource]
+script = ExtResource("1_7763l")
+id = "scald"
+nombre = "Escaldar"
+tipo = "agua"
+categoria = "especial"
+poder = 80
+pp = 15
+meta = "damage-ailment"
+descripcion = "Ataca arrojando agua hirviendo al objetivo. Puede causar quemaduras."
+estado = "burn"
+prob_estado = 30

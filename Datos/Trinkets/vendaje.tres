@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_tgoeh"]
+
+[resource]
+script = ExtResource("1_tgoeh")
+id = "vendaje"
+nombre = "Vendaje"
+descripcion = "Tras ganar un combate, el portador recupera un 10% de sus PS máximos."
+efecto = "cura_victoria"
+valor = 0.1
+maximo = 0.5
+precio = 700

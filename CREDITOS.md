@@ -11,10 +11,11 @@ Pokémon Litio es un fan game sin fines de lucro. Pokémon y sus personajes son 
 - Personajes y entidades del mundo de Pokémon Negro/Blanco: Barubary (The Spriters Resource).
 - Mochila de Pokémon Platino (bolsas, bolsillos y paneles): Dragoon (The Spriters Resource).
 - Íconos de categoría de movimiento (físico/especial/estado): Pokémon Showdown.
-- Íconos de objetos: PokéAPI (https://pokeapi.co).
+- Íconos de objetos y de Trinkets (sprites de objetos de 5.ª generación): PokéAPI (https://pokeapi.co).
 - Poké Balls de Pokémon Negro/Blanco (animación de lanzamiento): redblueyellow (The Spriters Resource).
 - Pantalla de equipo de Pokémon Negro/Blanco (fondo, paneles, barra de PS): Floofy Panthar (The Spriters Resource).
 - Íconos de menú de Pokémon de 5.ª generación: Ploaj (The Spriters Resource).
+- Escenario de combate (campo de hierba y plataformas): modelos 3D "Battle Backgrounds" de Pokémon Negro 2/Blanco 2, subidos por Snivy a The Models Resource; renderizados a 256×192 para este proyecto.
 
 ## Audio
 - Música y jingles: Pokémon Negro/Blanco, © Nintendo / Game Freak. Rip del juego publicado en KHInsider ("Pokémon Black and White (DS) (gamerip)"); los puntos de bucle se midieron para este proyecto.

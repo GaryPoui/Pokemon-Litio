@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_4unn3"]
+
+[resource]
+script = ExtResource("1_4unn3")
+id = "esfera_voraz"
+nombre = "Esfera Voraz"
+descripcion = "Las Poké Balls tienen un 30% más de probabilidad de captura."
+tier = 4
+categoria = "captura"
+alcance = "equipo"
+efecto = "captura"
+valor = 0.3
+apilado = "curva"
+factor_curva = 0.6
+maximo = 0.6
+precio = 5500

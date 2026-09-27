@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_xhaun"]
+
+[resource]
+script = ExtResource("1_xhaun")
+id = "reloj_arena"
+nombre = "Reloj de Arena"
+descripcion = "Una vez por combate, si un golpe fuese a debilitar al portador, este aguanta con 1 PS."
+tier = 5
+efecto = "aguante"
+valor = 1.0
+unidad = "unico"
+apilado = "no_apila"
+precio = 9000

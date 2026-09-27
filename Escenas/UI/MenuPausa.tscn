@@ -19,3 +19,17 @@ offset_top = 5.0
 offset_right = 82.0
 offset_bottom = 81.0
 script = ExtResource("1_cgcet")
+
+[node name="Dinero" type="Panel" parent="." unique_id=300987063]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 88.0
+offset_bottom = 26.0
+
+[node name="Texto" type="Label" parent="Dinero" unique_id=350182473]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 78.0
+offset_bottom = 19.0
+horizontal_alignment = 2

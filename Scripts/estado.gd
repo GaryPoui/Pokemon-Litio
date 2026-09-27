@@ -4,6 +4,14 @@ var banderas: Dictionary= {}
 var vistos: Dictionary ={}
 var capturados: Dictionary= {}
 var pasos_repelente: int =0
+var dinero:= DINERO_INICIAL
+var stock_tienda: Array[String]= []
+
+const DINERO_INICIAL :=3000
+const DINERO_MAX:= 999999
+
+func sumar_dinero(cantidad: int) -> void:
+	dinero= clampi(dinero+ cantidad, 0, DINERO_MAX)
 
 func marcar(clave: String) -> void:
 	banderas[clave] =true
@@ -23,3 +31,5 @@ func reiniciar() -> void:
 	vistos ={}
 	capturados= {}
 	pasos_repelente =0
+	dinero= DINERO_INICIAL
+	stock_tienda.clear()

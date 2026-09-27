@@ -18,6 +18,7 @@ var target_position: Vector2 =Vector2.ZERO
 var last_direction: Vector2= Vector2.DOWN
 var turn_timer: float =0.0
 var ultimo_choque:= -1000
+var en_evento :=false
 
 const WALK_ANIMS:= {
 	Vector2.DOWN: &"caminar_abajo",
@@ -38,7 +39,7 @@ func _ready() -> void:
 	_set_idle()
 
 func _bloqueado() -> bool:
-	return (mochila!= null and mochila.is_open) or (menu_pausa!= null and menu_pausa.is_open) or Dialogo.esta_abierto or GestorEscenas.en_transicion or Combate.activo
+	return en_evento or (mochila!= null and mochila.is_open) or (menu_pausa!= null and menu_pausa.is_open) or Dialogo.esta_abierto or GestorEscenas.en_transicion or Combate.activo
 
 func celda() -> Vector2i:
 	return Vector2i((position/ tile_size).floor())
@@ -58,8 +59,14 @@ func _unhandled_input(event: InputEvent) -> void:
 	for n in get_tree().get_nodes_in_group("interactuable"):
 		if n.celda()== objetivo:
 			get_viewport().set_input_as_handled()
-			n.interactuar(self)
+			_interactuar(n)
 			return
+
+func _interactuar(n: Node) -> void:
+	en_evento= true
+	await n.interactuar(self)
+	if is_instance_valid(self):
+		en_evento =false
 
 func _physics_process(delta: float) -> void:
 	if _bloqueado():

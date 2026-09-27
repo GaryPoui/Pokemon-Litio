@@ -76,3 +76,22 @@ static func icono(especie: EspeciePokemon) -> AtlasTexture:
 	var ancho:= floori(especie.sprite_frente.get_width()/ float(maxi(1, especie.cuadros_frente)))
 	at.region =Rect2(0, 0, ancho, especie.sprite_frente.get_height())
 	return at
+
+static func envolver(texto: String, l: Label, ancho: float) -> Array[String]:
+	var f:= l.get_theme_font("font")
+	var tam:= l.get_theme_font_size("font_size")
+	var lineas: Array[String]= []
+	for parrafo in texto.split("\n"):
+		var linea:= ""
+		for w in parrafo.split(" ", false):
+			var prueba:= w if linea== "" else linea+ " "+ w
+			if linea== "" or f.get_string_size(prueba, HORIZONTAL_ALIGNMENT_LEFT, -1, tam).x<= ancho- 1.0:
+				linea= prueba
+			else:
+				lineas.append(linea)
+				linea =w
+		lineas.append(linea)
+	return lineas
+
+static func alto_linea(l: Label) -> float:
+	return l.get_theme_font("font").get_height(l.get_theme_font_size("font_size"))+ l.get_theme_constant("line_spacing")

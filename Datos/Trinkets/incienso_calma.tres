@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_3k7ph"]
+
+[resource]
+script = ExtResource("1_3k7ph")
+id = "incienso_calma"
+nombre = "Incienso Calma"
+descripcion = "Aparecen un 30% menos de Pokémon salvajes en la hierba alta."
+tier = 2
+categoria = "utilidad"
+alcance = "equipo"
+efecto = "encuentros"
+valor = -0.3
+apilado = "no_apila"
+precio = 1200

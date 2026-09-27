@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_ibff8"]
+
+[resource]
+script = ExtResource("1_ibff8")
+id = "talisman_retador"
+nombre = "Talismán del Retador"
+descripcion = "En la Torre Desafío, la calificación del portador sube un nivel."
+tier = 4
+categoria = "utilidad"
+efecto = "grado_torre"
+valor = 1.0
+unidad = "unico"
+apilado = "no_apila"
+precio = 5000

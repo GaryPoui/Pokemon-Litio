@@ -26,6 +26,8 @@ func guardar() -> bool:
 		"vistos": Estado.vistos,
 		"capturados": Estado.capturados,
 		"repelente": Estado.pasos_repelente,
+		"dinero": Estado.dinero,
+		"stock_tienda": Estado.stock_tienda.duplicate(),
 		"equipo": Equipo.a_lista(),
 	}
 	var f:= FileAccess.open(RUTA, FileAccess.WRITE)
@@ -46,6 +48,8 @@ func cargar() -> bool:
 	Estado.vistos= datos.get("vistos", {}).duplicate()
 	Estado.capturados =datos.get("capturados", {}).duplicate()
 	Estado.pasos_repelente= int(datos.get("repelente", 0))
+	Estado.dinero =int(datos.get("dinero", Estado.DINERO_INICIAL))
+	Estado.stock_tienda.assign(Array(datos.get("stock_tienda", [])).map(func(x): return str(x)))
 	Equipo.desde_lista(datos.get("equipo", []))
 	var p: Array= datos.get("posicion", [0, 0])
 	var d: Array =datos.get("direccion", [0, 1])

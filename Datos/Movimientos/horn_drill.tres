@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_lg0jo"]
+
+[resource]
+script = ExtResource("1_lg0jo")
+id = "horn_drill"
+nombre = "Perforador"
+precision = 30
+pp = 5
+meta = "ohko"
+descripcion = "Ataque con un cuerno giratorio que fulmina de un solo golpe al objetivo si lo alcanza."

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_4knjq"]
+
+[resource]
+script = ExtResource("1_4knjq")
+id = "fling"
+nombre = "Lanzamiento"
+tipo = "siniestro"
+descripcion = "El usuario lanza contra el objetivo el objeto que lleva. La fuerza del ataque y su efecto varían según el objeto."

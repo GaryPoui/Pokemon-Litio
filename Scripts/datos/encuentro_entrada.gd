@@ -5,3 +5,4 @@ extends Resource
 @export var nivel_min: int= 2
 @export var nivel_max: int =4
 @export var peso: int= 10
+@export var trinkets: Array[String] =[]

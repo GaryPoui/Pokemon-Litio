@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_eiwaa"]
+
+[resource]
+script = ExtResource("1_eiwaa")
+id = "yawn"
+nombre = "Bostezo"
+categoria = "estado"
+precision = 0
+meta = "ailment"
+descripcion = "Gran bostezo que induce al sueño al objetivo en el siguiente turno."
+estado = "yawn"

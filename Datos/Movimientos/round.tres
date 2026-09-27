@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_5sg7w"]
+
+[resource]
+script = ExtResource("1_5sg7w")
+id = "round"
+nombre = "Canon"
+categoria = "especial"
+poder = 60
+pp = 15
+descripcion = "Un canto que ataca al objetivo. Cuantos más Pokémon lo usan, más aumenta de potencia."

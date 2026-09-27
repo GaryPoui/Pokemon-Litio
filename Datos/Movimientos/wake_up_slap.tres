@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_yoy5f"]
+
+[resource]
+script = ExtResource("1_yoy5f")
+id = "wake_up_slap"
+nombre = "Espabila"
+tipo = "lucha"
+poder = 60
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."

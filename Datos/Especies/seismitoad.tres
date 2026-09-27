@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_oy7tn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="2_2oh1k"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_m2frd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/round.tres" id="4_btjwa"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="5_is7n3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bubble_beam.tres" id="6_3tqex"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_shot.tres" id="7_p2138"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aqua_ring.tres" id="8_uf08j"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/uproar.tres" id="9_xbxwa"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/muddy_water.tres" id="10_1urts"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="11_yyv0w"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/acid.tres" id="12_clb6u"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="13_5h5xr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/drain_punch.tres" id="14_1fkh3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/echoed_voice.tres" id="15_ctsxb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="16_3ytpe"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="17_5kbgq"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_v86ip"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/seismitoad_espalda.png" id="19_txkfq"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/seismitoad_frente.png" id="20_amiyh"]
+
+[sub_resource type="Resource" id="Resource_q41lg"]
+script = ExtResource("1_oy7tn")
+movimiento = ExtResource("2_2oh1k")
+
+[sub_resource type="Resource" id="Resource_7cl4q"]
+script = ExtResource("1_oy7tn")
+movimiento = ExtResource("3_m2frd")
+
+[sub_resource type="Resource" id="Resource_o1qr3"]
+script = ExtResource("1_oy7tn")
+movimiento = ExtResource("4_btjwa")
+
+[sub_resource type="Resource" id="Resource_6suqq"]
+script = ExtResource("1_oy7tn")
+movimiento = ExtResource("5_is7n3")
+
+[sub_resource type="Resource" id="Resource_ya3sp"]
+script = ExtResource("1_oy7tn")
+nivel = 5
+movimiento = ExtResource("5_is7n3")
+
+[sub_resource type="Resource" id="Resource_igp5l"]
+script = ExtResource("1_oy7tn")
+nivel = 9
+movimiento = ExtResource("4_btjwa")
+
+[sub_resource type="Resource" id="Resource_ero4l"]
+script = ExtResource("1_oy7tn")
+nivel = 12
+movimiento = ExtResource("6_3tqex")
+
+[sub_resource type="Resource" id="Resource_sqmqa"]
+script = ExtResource("1_oy7tn")
+nivel = 16
+movimiento = ExtResource("7_p2138")
+
+[sub_resource type="Resource" id="Resource_ao6l3"]
+script = ExtResource("1_oy7tn")
+nivel = 20
+movimiento = ExtResource("8_uf08j")
+
+[sub_resource type="Resource" id="Resource_ltvjv"]
+script = ExtResource("1_oy7tn")
+nivel = 23
+movimiento = ExtResource("9_xbxwa")
+
+[sub_resource type="Resource" id="Resource_vog7y"]
+script = ExtResource("1_oy7tn")
+nivel = 28
+movimiento = ExtResource("10_1urts")
+
+[sub_resource type="Resource" id="Resource_wdqad"]
+script = ExtResource("1_oy7tn")
+nivel = 33
+movimiento = ExtResource("11_yyv0w")
+
+[sub_resource type="Resource" id="Resource_eshm8"]
+script = ExtResource("1_oy7tn")
+nivel = 36
+movimiento = ExtResource("12_clb6u")
+
+[sub_resource type="Resource" id="Resource_555e0"]
+script = ExtResource("1_oy7tn")
+nivel = 39
+movimiento = ExtResource("13_5h5xr")
+
+[sub_resource type="Resource" id="Resource_tlp1h"]
+script = ExtResource("1_oy7tn")
+nivel = 44
+movimiento = ExtResource("14_1fkh3")
+
+[sub_resource type="Resource" id="Resource_uye54"]
+script = ExtResource("1_oy7tn")
+nivel = 49
+movimiento = ExtResource("15_ctsxb")
+
+[sub_resource type="Resource" id="Resource_g57x1"]
+script = ExtResource("1_oy7tn")
+nivel = 53
+movimiento = ExtResource("16_3ytpe")
+
+[sub_resource type="Resource" id="Resource_nmrnl"]
+script = ExtResource("1_oy7tn")
+nivel = 59
+movimiento = ExtResource("17_5kbgq")
+
+[resource]
+script = ExtResource("18_v86ip")
+id = "seismitoad"
+numero = 537
+nombre = "Seismitoad"
+tipos = PackedStringArray("agua", "tierra")
+ps = 105
+ataque = 95
+defensa = 75
+at_esp = 85
+def_esp = 75
+velocidad = 74
+exp_base = 229
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ps": 3
+}
+aprende = Array[ExtResource("1_oy7tn")]([SubResource("Resource_q41lg"), SubResource("Resource_7cl4q"), SubResource("Resource_o1qr3"), SubResource("Resource_6suqq"), SubResource("Resource_ya3sp"), SubResource("Resource_igp5l"), SubResource("Resource_ero4l"), SubResource("Resource_sqmqa"), SubResource("Resource_ao6l3"), SubResource("Resource_ltvjv"), SubResource("Resource_vog7y"), SubResource("Resource_wdqad"), SubResource("Resource_eshm8"), SubResource("Resource_555e0"), SubResource("Resource_tlp1h"), SubResource("Resource_uye54"), SubResource("Resource_g57x1"), SubResource("Resource_nmrnl")])
+sprite_frente = ExtResource("20_amiyh")
+sprite_espalda = ExtResource("19_txkfq")
+cuadros_frente = 100
+cuadros_espalda = 100
+fps_sprite = 10.04

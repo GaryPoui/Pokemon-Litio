@@ -14,6 +14,8 @@ const BALLS :="res://Assets/Batalla/balls/"
 const EMPUJE_COMANDO :=6
 const EMPUJE_MOVIMIENTO:= 28
 const BOTONES_TIPO :="res://Assets/Botones/tipos/"
+const ESCENA_APRENDER:= "res://Escenas/UI/AprenderMovimiento.tscn"
+const FONDO_DEFECTO :="res://Assets/Batalla/fondos/campo.png"
 const APAGADO :=Color(0.8, 0.8, 0.8)
 const X_COMANDOS:= 182
 const X_MOVIMIENTOS :=168
@@ -54,7 +56,12 @@ var entrada_barras:= false
 var ultimo_comando :=0
 var pista:= "batalla_salvaje"
 var musica_final :=false
+var torre:= false
+var subieron: Array[PokemonInstancia]= []
 var ultimo_movimiento:= 0
+var ball_rapida :=""
+var previo_ball:= 0
+static var ultima_ball :=""
 
 func _ready() -> void:
 	layer= 50
@@ -92,6 +99,10 @@ func _ready() -> void:
 		EstiloUI.label(t, 9, Color.WHITE)
 		EstiloUI.fuente_batalla(t)
 		t.add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.55))
+	var cant_ball: Label= comandos.get_node("Ball/Cantidad")
+	EstiloUI.label(cant_ball, 8, Color.WHITE)
+	EstiloUI.fuente_batalla(cant_ball)
+	cant_ball.add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.75))
 	EstiloUI.label(movimientos_ui.get_node("Info"), 6)
 	movimientos_ui.get_node("Info").add_theme_color_override("font_color", Color.WHITE)
 	movimientos_ui.get_node("Info").add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.7))
@@ -106,11 +117,18 @@ func _ready() -> void:
 	mensaje.text= ""
 
 func poner_fondo(textura: Texture2D) -> void:
-	fondo_zona.texture= textura
-	fondo_zona.visible =textura!= null
+	fondo_zona.texture= textura if textura!= null else load(FONDO_DEFECTO)
+	fondo_zona.visible =fondo_zona.texture!= null
+	$BaseRival.visible= not fondo_zona.visible
+	$BaseJugador.visible =not fondo_zona.visible
 
-func empezar(rivales: Array[PokemonInstancia], salvaje: bool, entrenador: String) -> String:
-	logica= LogicaCombate.new(Equipo.miembros, rivales, salvaje, entrenador)
+func empezar(rivales: Array[PokemonInstancia], salvaje: bool, entrenador: String, config: Dictionary= {}) -> String:
+	var propio: Array[PokemonInstancia]= []
+	propio.assign(config.get("equipo", Equipo.miembros))
+	torre= bool(config.get("torre", false))
+	logica= LogicaCombate.new(propio, rivales, salvaje, entrenador)
+	logica.pago_base= int(config.get("pago_base", 0))
+	logica.sin_exp =torre
 	logica.inventario =Inventario
 	logica.equipo= Equipo
 	var inicio:= logica.iniciar()
@@ -185,6 +203,8 @@ func _reproducir(eventos: Array[Dictionary]) -> void:
 				if str(e["estado"])!= "":
 					Sonido.efecto("estado_%s" % e["estado"])
 			"nivel":
+				if not subieron.has(e["pokemon"]):
+					subieron.append(e["pokemon"])
 				var vj: Dictionary= vista["jugador"]
 				if not vj.is_empty() and vj["p"]== e["pokemon"]:
 					vj["nivel"]= e["nivel"]
@@ -284,6 +304,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		return
 	var acepta:= event.is_action_pressed("aceptar")
 	var cancela:= event.is_action_pressed("cancelar")
+	if eligiendo and al_pintar== _pintar_comandos and ball_rapida!= "" and _mover_ball(event):
+		get_viewport().set_input_as_handled()
+		return
 	if eligiendo:
 		if acepta:
 			Sonido.efecto("confirmar")
@@ -305,6 +328,23 @@ func _unhandled_input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 		continuar.emit()
 
+func _mover_ball(event: InputEvent) -> bool:
+	if event.is_action_pressed("izquierda"):
+		if cursor!= 4:
+			previo_ball= cursor
+			cursor =4
+			al_pintar.call(cursor)
+			Sonido.efecto("cursor")
+		return true
+	if event.is_action_pressed("derecha") and cursor== 4:
+		cursor= previo_ball
+		al_pintar.call(cursor)
+		Sonido.efecto("cursor")
+		return true
+	if cursor== 4 and (event.is_action_pressed("arriba") or event.is_action_pressed("abajo")):
+		return true
+	return false
+
 func _mover(d: int) -> void:
 	var nuevo:= cursor+ d
 	if nuevo>= 0 and nuevo< num_opciones:
@@ -317,10 +357,17 @@ func _elegir_accion() -> Dictionary:
 		caja.visible= false
 		modo_ps ="porcentaje"
 		_actualizar_cajas()
+		_preparar_ball_rapida()
+		if ultimo_comando== 4 and ball_rapida== "":
+			ultimo_comando= 0
 		comandos.visible= true
 		var op:= await _elegir_opcion(4, false, _pintar_comandos, ultimo_comando)
 		comandos.visible =false
 		ultimo_comando= op
+		if torre and op> 0:
+			Sonido.efecto("error")
+			await _decir("¡No está permitido en la Torre Desafío!")
+			continue
 		match op:
 			0:
 				var m:= await _elegir_movimiento()
@@ -336,7 +383,28 @@ func _elegir_accion() -> Dictionary:
 					return {"tipo": "cambio", "indice": i}
 			3:
 				return {"tipo": "huir"}
+			4:
+				ultima_ball= ball_rapida
+				return {"tipo": "objeto", "id": ball_rapida}
 	return {}
+
+func _preparar_ball_rapida() -> void:
+	ball_rapida= ""
+	if logica.salvaje and not torre:
+		if ultima_ball!= "" and Inventario.cantidad_de(ultima_ball)> 0:
+			ball_rapida= ultima_ball
+		elif Inventario.cantidad_de("pokeball")> 0:
+			ball_rapida ="pokeball"
+		else:
+			for d in Inventario.get_items_for_category("POKÉ BALLS"):
+				ball_rapida =str(d["id"])
+				break
+	var b: NinePatchRect= comandos.get_node("Ball")
+	b.visible= ball_rapida!= ""
+	if b.visible:
+		var o:= BaseDatos.objeto(ball_rapida)
+		(b.get_node("Icono") as TextureRect).texture= o.icono
+		(b.get_node("Cantidad") as Label).text ="×%d" % Inventario.cantidad_de(ball_rapida)
 
 func _pintar_comandos(sel: int) -> void:
 	for i in 4:
@@ -344,6 +412,11 @@ func _pintar_comandos(sel: int) -> void:
 		b.self_modulate= Color.WHITE if i== sel else APAGADO
 		_deslizar(b, Vector2(X_COMANDOS- (EMPUJE_COMANDO if i== sel else 0), b.position.y))
 	var cur: TextureRect= comandos.get_node("Cursor")
+	var bola: NinePatchRect= comandos.get_node("Ball")
+	bola.self_modulate =Color.WHITE if sel== 4 else APAGADO
+	if sel== 4:
+		_deslizar(cur, Vector2(bola.position.x- cur.size.x- 2, bola.position.y+ roundi((bola.size.y- cur.size.y)/ 2.0)))
+		return
 	var bs: NinePatchRect= comandos.get_node("B%d" % sel)
 	_deslizar(cur, Vector2(X_COMANDOS- EMPUJE_COMANDO- cur.size.x- 2, bs.position.y+ roundi((bs.size.y- cur.size.y)/ 2.0)))
 
@@ -423,6 +496,9 @@ func _elegir_objeto() -> Dictionary:
 	if r.is_empty():
 		return {}
 	var acc:= {"tipo": "objeto", "id": r["id"]}
+	var usado:= BaseDatos.objeto(str(r["id"]))
+	if usado!= null and usado.ratio_captura> 0.0:
+		ultima_ball =usado.id
 	if r.has("objetivo"):
 		acc["objetivo"]= r["objetivo"]
 	return acc
@@ -626,10 +702,10 @@ func _tween_barra(barra: Control, a: float, b: float) -> void:
 func _aprender(p: PokemonInstancia, m: Movimiento) -> void:
 	await _decir("%s quiere aprender %s." % [p.nombre(), m.nombre])
 	await _decir("Pero %s ya conoce cuatro movimientos." % p.nombre())
-	titulo_lista.text= "¿Qué movimiento olvidar?"
-	var textos:= p.movimientos.map(func(x): return x.nombre)
-	textos.append("No aprender %s" % m.nombre)
-	var i:= await _elegir_en_lista(textos, true)
+	var panel= load(ESCENA_APRENDER).instantiate()
+	add_child(panel)
+	var i: int= await panel.elegir(p, m)
+	panel.queue_free()
 	if i< 0 or i>= p.movimientos.size():
 		await _decir("%s no aprendió %s." % [p.nombre(), m.nombre])
 		return

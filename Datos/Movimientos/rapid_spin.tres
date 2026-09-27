@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_nnt80"]
+
+[resource]
+script = ExtResource("1_nnt80")
+id = "rapid_spin"
+nombre = "Giro Rápido"
+poder = 20
+pp = 40
+meta = "damage-raise"
+descripcion = "Ataque giratorio que puede eliminar movimientos como Atadura, Constricción y Drenadoras. También aumenta la Velocidad del usuario."
+cambios_stats = {
+"velocidad": 1
+}
+prob_stat = 100

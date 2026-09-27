@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bscstn3e2t1qj"]
+
+[ext_resource type="Texture2D" uid="uid://ct1cbqylnfoym" path="res://Assets/Personajes/npc/chica.png" id="1_u2slb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7bn1k"]
+atlas = ExtResource("1_u2slb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjtnt"]
+atlas = ExtResource("1_u2slb")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q25qo"]
+atlas = ExtResource("1_u2slb")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5ngg"]
+atlas = ExtResource("1_u2slb")
+region = Rect2(0, 64, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7bn1k")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjtnt")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q25qo")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5ngg")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
+}]

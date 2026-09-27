@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_lxesr"]
+
+[resource]
+script = ExtResource("1_lxesr")
+id = "stomp"
+nombre = "Pisotón"
+poder = 65
+pp = 20
+descripcion = "Tremendo pisotón que puede hacer que el objetivo se amedrente."
+prob_retroceso = 30

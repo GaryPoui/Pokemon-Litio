@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://bhr4gyu5w2mcr"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_gvc06"]
+[ext_resource type="Resource" uid="uid://besmn87m5pkpj" path="res://Datos/Especies/munna.tres" id="2_7neib"]
+[ext_resource type="Resource" uid="uid://ckpd6ew081r7f" path="res://Datos/Especies/pansage.tres" id="3_h6yyl"]
+[ext_resource type="Resource" uid="uid://dbdnn4bovwqhw" path="res://Datos/Especies/woobat.tres" id="4_5r18m"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="5_fo8xf"]
+
+[sub_resource type="Resource" id="Resource_41p5f"]
+script = ExtResource("1_gvc06")
+especie = ExtResource("2_7neib")
+nivel_min = 14
+nivel_max = 14
+peso = 1
+trinkets = Array[String](["vendaje", "escama_robusta"])
+
+[sub_resource type="Resource" id="Resource_sv2h1"]
+script = ExtResource("1_gvc06")
+especie = ExtResource("3_h6yyl")
+nivel_min = 14
+nivel_max = 14
+peso = 1
+trinkets = Array[String](["sello_linaje"])
+
+[sub_resource type="Resource" id="Resource_jqxlt"]
+script = ExtResource("1_gvc06")
+especie = ExtResource("4_5r18m")
+nivel_min = 15
+nivel_max = 15
+peso = 1
+trinkets = Array[String](["pluma_veloz"])
+
+[resource]
+script = ExtResource("5_fo8xf")
+clase = "Entrenadora Guay"
+nombre = "Lucía"
+miembros = Array[ExtResource("1_gvc06")]([SubResource("Resource_41p5f"), SubResource("Resource_sv2h1"), SubResource("Resource_jqxlt")])
+pago_base = 60

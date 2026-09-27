@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_cfavs"]
+
+[resource]
+script = ExtResource("1_cfavs")
+id = "confusion"
+nombre = "Confusión"
+tipo = "psiquico"
+categoria = "especial"
+poder = 50
+pp = 25
+meta = "damage-ailment"
+descripcion = "Débil ataque telequinético que puede causar confusión."
+estado = "confusion"
+prob_estado = 10
