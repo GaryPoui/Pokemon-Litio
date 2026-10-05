@@ -1,8 +1,12 @@
 extends Node2D
 
-const TEXTURA_CALLE:= preload("res://Assets/Overworld/LaBoca/terreno_calle_gen4_concepto.png")
-const ORIGENES_ADOQUIN:= [30, 166, 302, 438, 574]
-const TAM_REGION:= 118
+const TEXTURA_ADOQUIN:= preload("res://Assets/Overworld/LaBoca/suelo_adoquin_vereda_transiciones_gen4.png")
+const TEXTURA_CAMINITO:= preload("res://Assets/Overworld/LaBoca/suelo_caminito_multicolor_tileset_gen4.png")
+const COLUMNAS:= 8
+const PITCH:= 181
+const ORIGEN_X:= 40
+const ORIGEN_Y:= 34
+const TAM_REGION:= 160
 const ESCALA_CELDA:= 16.0 / TAM_REGION
 
 func _ready() -> void:
@@ -18,9 +22,20 @@ func _ready() -> void:
 	)
 	for celda in celdas_calle:
 		var atlas:= AtlasTexture.new()
-		var variante:= posmod(celda.x * 17 + celda.y * 31, ORIGENES_ADOQUIN.size())
-		atlas.atlas= TEXTURA_CALLE
-		atlas.region= Rect2(ORIGENES_ADOQUIN[variante], 32, TAM_REGION, TAM_REGION)
+		var variante:= posmod(celda.x * 17 + celda.y * 31, COLUMNAS * 2)
+		var region:= Vector2i(40 + (variante % COLUMNAS) * PITCH, 34 + (variante / COLUMNAS) * PITCH)
+		if celda.y== 10 or celda.y== 11:
+			atlas.atlas= TEXTURA_CAMINITO
+			atlas.region= Rect2(region, Vector2i(TAM_REGION, TAM_REGION))
+		elif celda.x>= 26 and celda.y<= 3:
+			var variante_ladrillo:= posmod(celda.x * 7 + celda.y * 11, 4)
+			atlas.atlas= TEXTURA_ADOQUIN
+			atlas.region= Rect2(40 + variante_ladrillo * PITCH, 34 + 2 * PITCH, TAM_REGION, TAM_REGION)
+		else:
+			var variante_adoquin:= posmod(celda.x * 13 + celda.y * 19, 8)
+			var fila_adoquin:= 0 if posmod(celda.x + celda.y, 3)!= 0 else 1
+			atlas.atlas= TEXTURA_ADOQUIN
+			atlas.region= Rect2(40 + variante_adoquin * PITCH, 34 + fila_adoquin * PITCH, TAM_REGION, TAM_REGION)
 		var baldosa:= Sprite2D.new()
 		baldosa.texture= atlas
 		baldosa.texture_filter= CanvasItem.TEXTURE_FILTER_NEAREST

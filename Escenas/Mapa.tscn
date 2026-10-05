@@ -16,7 +16,7 @@
 [ext_resource type="Script" uid="uid://bgce3emrc13ld" path="res://Scripts/tienda.gd" id="12_wb5b1"]
 [ext_resource type="Script" uid="uid://dxsbdb50ew0p5" path="res://Scripts/torre.gd" id="13_15oqb"]
 [ext_resource type="SpriteFrames" uid="uid://c55xk8wajb11e" path="res://Recursos/Personajes/tendero.tres" id="13_yex7o"]
-[ext_resource type="Texture2D" uid="uid://gwmdqorlin7y" path="res://Assets/Overworld/torre_desafio_provisional.png" id="14_lpesb"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/LaBoca/estadio_bombonera_gen4.png" id="14_lpesb"]
 [ext_resource type="SpriteFrames" uid="uid://ejcw2f3o5t33" path="res://Recursos/Personajes/maestro.tres" id="15_aesrc"]
 [ext_resource type="Shape2D" path="res://Recursos/forma_torre.tres" id="15_h0jna"]
 [ext_resource type="Resource" uid="uid://24dm04q157pb" path="res://Datos/Entrenadores/chica_ana.tres" id="20_bx1hr"]
@@ -30,6 +30,11 @@
 [ext_resource type="SpriteFrames" path="res://Recursos/Personajes/la_boca_musico.tres" id="28_musico"]
 [ext_resource type="PackedScene" path="res://Escenas/Edificios/ConventilloRojoExterior.tscn" id="29_casa_roja"]
 [ext_resource type="Script" path="res://Scripts/la_boca_terreno.gd" id="30_terreno_boca"]
+[ext_resource type="PackedScene" path="res://Escenas/Edificios/ConventilloAmarilloExterior.tscn" id="31_casa_amarilla"]
+[ext_resource type="SpriteFrames" path="res://Recursos/Personajes/la_boca_entrenador.tres" id="32_personaje_torre"]
+[ext_resource type="SpriteFrames" path="res://Recursos/Personajes/la_boca_asador.tres" id="33_personaje_asador"]
+[ext_resource type="SpriteFrames" path="res://Recursos/Personajes/la_boca_comerciante.tres" id="34_comerciante"]
+[ext_resource type="SpriteFrames" path="res://Recursos/Personajes/la_boca_artista.tres" id="35_artista"]
 
 [node name="Mapa" type="Node2D" unique_id=48326584]
 y_sort_enabled = true
@@ -49,11 +54,17 @@ tile_set = ExtResource("1_habko")
 z_index = -1
 script = ExtResource("30_terreno_boca")
 
-[node name="ConventilloAzul" parent="." unique_id=1001045991 instance=ExtResource("27_casa_azul")]
+[node name="ConventilloAmarillo" parent="." unique_id=1001045991 instance=ExtResource("31_casa_amarilla")]
 position = Vector2(80, 198)
 
 [node name="ConventilloRojo" parent="." unique_id=1001045992 instance=ExtResource("29_casa_roja")]
 position = Vector2(208, 198)
+
+[node name="ConventilloAzulAlto" parent="." unique_id=1001045994 instance=ExtResource("27_casa_azul")]
+position = Vector2(80, 96)
+
+[node name="ConventilloRojoAlto" parent="." unique_id=1001045995 instance=ExtResource("29_casa_roja")]
+position = Vector2(240, 96)
 
 [node name="Decoracion" type="TileMapLayer" parent="." unique_id=1155384720]
 z_index = -1
@@ -130,9 +141,10 @@ texto = "¡Eh, vos! ¡Nuestras miradas se cruzaron!
 mirando = Vector2(-1, 0)
 
 [node name="AnimatedSprite2D" parent="Entrenador" index="0" unique_id=1100079311]
-position = Vector2(0, -7)
-sprite_frames = ExtResource("12_vsyq2")
+position = Vector2(0, -13)
+sprite_frames = ExtResource("33_personaje_asador")
 animation = &"abajo"
+scale = Vector2(0.06, 0.06)
 
 [node name="Tendero" parent="." unique_id=87030638 instance=ExtResource("6_1p004")]
 position = Vector2(244, 192)
@@ -140,17 +152,19 @@ script = ExtResource("12_wb5b1")
 
 [node name="AnimatedSprite2D" parent="Tendero" index="0" unique_id=1100079311]
 position = Vector2(0, -7)
-sprite_frames = ExtResource("13_yex7o")
+sprite_frames = ExtResource("34_comerciante")
 animation = &"abajo"
+scale = Vector2(0.08, 0.08)
 
 [node name="GuiaTorre" parent="." unique_id=880225666 instance=ExtResource("6_1p004")]
-position = Vector2(440, 88)
+position = Vector2(456, 96)
 script = ExtResource("13_15oqb")
 
 [node name="AnimatedSprite2D" parent="GuiaTorre" index="0" unique_id=1100079311]
-position = Vector2(0, -7)
-sprite_frames = ExtResource("15_aesrc")
+position = Vector2(0, -13)
+sprite_frames = ExtResource("32_personaje_torre")
 animation = &"abajo"
+scale = Vector2(0.06, 0.06)
 
 [node name="SalidaEste" type="Node2D" parent="." unique_id=2129353368]
 position = Vector2(504, 168)
@@ -172,9 +186,10 @@ sonido = ""
 position = Vector2(440, 80)
 
 [node name="Sprite" type="Sprite2D" parent="TorreDesafio" unique_id=796242309]
-position = Vector2(-24, -96)
+position = Vector2(-40, -73)
 texture = ExtResource("14_lpesb")
 centered = false
+scale = Vector2(0.07, 0.07)
 
 [node name="Colision" type="CollisionShape2D" parent="TorreDesafio" unique_id=1603583295]
 position = Vector2(0, -32)
@@ -191,8 +206,9 @@ texto = "¡Hola! ¿Sabías que los Pokémon pueden llevar Trinkets? ¡Mi Minccin
 
 [node name="AnimatedSprite2D" parent="ChicaAna" index="0" unique_id=1100079311]
 position = Vector2(0, -7)
-sprite_frames = ExtResource("21_w7ph6")
+sprite_frames = ExtResource("35_artista")
 animation = &"abajo"
+scale = Vector2(0.08, 0.08)
 
 [node name="MontaneroBraulio" parent="." unique_id=505992660 instance=ExtResource("6_1p004")]
 position = Vector2(456, 216)

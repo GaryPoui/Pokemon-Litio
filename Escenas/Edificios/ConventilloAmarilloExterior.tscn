@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Overworld/LaBoca/viviendas_conventillo_gen4_concepto.png" id="1_viviendas"]
+
+[sub_resource type="AtlasTexture" id="casa_amarilla"]
+atlas = ExtResource("1_viviendas")
+region = Rect2(960, 0, 576, 420)
+
+[sub_resource type="RectangleShape2D" id="base_casa"]
+size = Vector2(58, 10)
+
+[node name="ConventilloAmarillo" type="StaticBody2D"]
+
+[node name="Fachada" type="Sprite2D" parent="."]
+position = Vector2(0, -31)
+texture = SubResource("casa_amarilla")
+scale = Vector2(0.15, 0.15)
+
+[node name="Colision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("base_casa")

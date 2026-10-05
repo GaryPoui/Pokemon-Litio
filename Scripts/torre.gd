@@ -11,9 +11,9 @@ func _ready() -> void:
 func interactuar(jugador: Node) -> void:
 	_mirar(-jugador.last_direction)
 	if Equipo.primero_util()== null:
-		await Dialogo.mostrar("Necesitas al menos un Pokémon que pueda luchar para entrar a la Torre Desafío.")
+		await Dialogo.mostrar("Necesitas al menos un Pokémon que pueda luchar para entrar a la Bombonera.")
 		return
-	var r: int= await Dialogo.preguntar("Torre Desafío: entra con un solo Pokémon y vence a un rival uno contra uno. Cuantos menos turnos y más PS te queden, mejor será el Trinket. ¿Entrar?")
+	var r: int= await Dialogo.preguntar("Desafío de la Bombonera: entra con un solo Pokémon y vence a un rival uno contra uno. Cuantos menos turnos y más PS te queden, mejor será el Trinket. ¿Entrar?")
 	if r!= 0:
 		return
 	var p:= await _elegir()
@@ -26,7 +26,7 @@ func interactuar(jugador: Node) -> void:
 	p.estado =copia["estado"]
 	p.pp.assign(copia["pp"])
 	if res.get("resultado", "")!= "victoria":
-		await Dialogo.mostrar("La Torre Desafío te ha vencido esta vez. Tu Pokémon vuelve tal como entró.")
+		await Dialogo.mostrar("La Bombonera te ha vencido esta vez. Tu Pokémon vuelve tal como entró.")
 		return
 	var g:= EfectosTrinket.grado(int(res["turnos"]), float(res["ps_fraccion"]))
 	var extra:= roundi(EfectosTrinket.total("grado_torre", p))
