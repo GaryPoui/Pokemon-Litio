@@ -20,6 +20,9 @@ y_sort_enabled = true
 script = ExtResource("1_ld3eg")
 encuentros = ExtResource("2_vuyva")
 musica = "ruta_1"
+zona_id = "zona_entrenamiento"
+zona_nombre = "Zona de Entrenamiento"
+tipo_zona = 4
 
 [node name="Suelo" type="TileMapLayer" parent="." unique_id=490328164]
 z_index = -1
@@ -72,10 +75,10 @@ texto = "ZONA DE ENTRENAMIENTO
 [node name="Enfermera" parent="." unique_id=1999008602 instance=ExtResource("7_eu4xv")]
 position = Vector2(56, 120)
 script = ExtResource("8_3el1s")
-texto_pregunta = "¡Hola! Cuido a los Pokémon que entrenan en esta zona. ¿Quieres que cure a tu equipo?"
+texto_pregunta = "¡Hola! Cuido a los Pokémon que entrenan en esta zona. ¿Querés que cure a tu equipo?"
 texto_espera = "De acuerdo, déjame tus Pokémon un momento..."
 texto_listo = "¡Listo! Tus Pokémon están como nuevos. ¡Mucha suerte con el entrenamiento!"
-texto_no = "¡Vuelve cuando quieras!"
+texto_no = "¡Volvé cuando quieras!"
 mirar_al_curar = Vector2(0, -1)
 texto = "¡Hola! Cuando tengas Pokémon, tráelos aquí y los curaré."
 
@@ -91,7 +94,7 @@ datos = ExtResource("10_fiei7")
 clave = "vencio_guay_marcos"
 texto_derrota = "Vaya... tu estrategia es mejor que mis Trinkets."
 texto_despues = "Los Trinkets no lo son todo. También cuenta cómo los combinas."
-texto = "¡Entreno aquí cada día! Mis Pokémon llevan Trinkets escogidos con cuidado. ¡Veamos si estás a la altura!"
+texto = "¡Entreno acá todos los días! Mis Pokémon llevan Trinkets elegidos con cuidado. ¡A ver si estás a la altura!"
 mirando = Vector2(-1, 0)
 
 [node name="AnimatedSprite2D" parent="GuayMarcos" index="0" unique_id=1100079311]
@@ -105,8 +108,8 @@ script = ExtResource("9_0ja2y")
 datos = ExtResource("11_3iw0o")
 clave = "vencio_guay_lucia"
 texto_derrota = "¡Increíble! Ni mi Vendaje pudo salvarme."
-texto_despues = "Sigue entrenando con los Audino. ¡Dan muchísima experiencia!"
-texto = "¿Llegaste hasta el fondo de la zona? Entonces seguro que tus Pokémon subieron mucho de nivel. ¡Demuéstralo!"
+texto_despues = "Seguí entrenando con los Audino. ¡Dan muchísima experiencia!"
+texto = "¿Llegaste hasta el fondo de la zona? Entonces seguro que tus Pokémon subieron bastante de nivel. ¡Demostralo!"
 mirando = Vector2(-1, 0)
 
 [node name="AnimatedSprite2D" parent="GuayLucia" index="0" unique_id=1100079311]

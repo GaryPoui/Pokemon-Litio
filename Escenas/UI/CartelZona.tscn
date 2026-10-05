@@ -1,0 +1,29 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://Scripts/ui/cartel_zona.gd" id="1_cartel"]
+
+[node name="CartelZona" type="CanvasLayer"]
+script = ExtResource("1_cartel")
+
+[node name="Panel" type="PanelContainer" parent="."]
+offset_left = 114.0
+offset_top = 6.0
+offset_right = 250.0
+offset_bottom = 44.0
+mouse_filter = 2
+
+[node name="Contenido" type="VBoxContainer" parent="Panel"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Nombre" type="Label" parent="Panel/Contenido"]
+custom_minimum_size = Vector2(124, 11)
+layout_mode = 2
+mouse_filter = 2
+text = "Zona"
+
+[node name="Subtitulo" type="Label" parent="Panel/Contenido"]
+custom_minimum_size = Vector2(124, 9)
+layout_mode = 2
+mouse_filter = 2
+text = ""

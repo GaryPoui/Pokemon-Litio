@@ -17,6 +17,9 @@ y_sort_enabled = true
 script = ExtResource("1_1jwd6")
 musica = "centro_pokemon"
 tam_celda = Vector2i(16, 12)
+zona_id = "ruta_1"
+tipo_zona = 3
+anunciar_al_entrar = false
 
 [node name="Suelo" type="TileMapLayer" parent="." unique_id=1608737546]
 visible = false
@@ -53,7 +56,7 @@ llegada = "PuertaCentro"
 [node name="Joy" parent="." unique_id=1999008602 instance=ExtResource("6_hrbca")]
 position = Vector2(120, 66)
 script = ExtResource("7_dpxqo")
-texto_pregunta = "¡Hola! ¡Te damos la bienvenida al Centro Pokémon! Aquí podemos curar a tus Pokémon. ¿Quieres que los curemos?"
+texto_pregunta = "¡Hola! ¡Te damos la bienvenida al Centro Pokémon! Acá podemos curar a tus Pokémon. ¿Querés que los curemos?"
 texto_espera = "De acuerdo. ¿Me dejas tus Pokémon un momento?"
 texto_listo = "¡Gracias por esperar! Tus Pokémon están totalmente recuperados. ¡Esperamos volver a verte!"
 texto_no = "¡Esperamos volver a verte!"

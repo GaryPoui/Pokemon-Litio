@@ -3,23 +3,41 @@ extends CanvasLayer
 const CONFIG:= "user://config.cfg"
 const FUNDIDO_MENU :=0.15
 const NUM_BARRAS:= 16
+const TIPO_INTERIOR:= 3
 
 var en_transicion:= false
 var barras: Array[ColorRect] =[]
 var llegada :=""
 var direccion_llegada: Vector2= Vector2.DOWN
 var posicion_llegada: Variant =null
+var ultima_zona_exterior_id:= ""
+@onready var cartel_zona: CanvasLayer= $CartelZona
+@onready var capa_transicion: CanvasLayer= $Transicion
 
-@onready var velo: ColorRect =$Velo
+@onready var velo: ColorRect =$Transicion/Velo
 
 func _ready() -> void:
-	layer =120
+	layer =0
 	velo.color= Color.BLACK
 	velo.modulate.a =0.0
 	velo.mouse_filter= Control.MOUSE_FILTER_IGNORE
 	var c:= ConfigFile.new()
 	if c.load(CONFIG)== OK and c.has_section_key("pantalla", "completa"):
 		poner_pantalla_completa(bool(c.get_value("pantalla", "completa")))
+
+func registrar_zona(id: String, nombre: String, subtitulo: String, tipo: int, anunciar: bool) -> void:
+	if not anunciar or tipo== TIPO_INTERIOR or id.strip_edges().is_empty() or nombre.strip_edges().is_empty():
+		return
+	if id== ultima_zona_exterior_id:
+		return
+	ultima_zona_exterior_id= id
+	cartel_zona.mostrar_zona(nombre, subtitulo)
+
+func restaurar_zona_exterior(id: String) -> void:
+	ultima_zona_exterior_id= id
+
+func reiniciar_zona_exterior() -> void:
+	ultima_zona_exterior_id= ""
 
 func _input(event: InputEvent) -> void:
 	var k:= event as InputEventKey
@@ -103,7 +121,7 @@ func _preparar_barras() -> void:
 		b.position= Vector2(-256, i* alto)
 		b.mouse_filter =Control.MOUSE_FILTER_IGNORE
 		b.visible= false
-		add_child(b)
+		capa_transicion.add_child(b)
 		barras.append(b)
 
 func barras_cubrir() -> void:

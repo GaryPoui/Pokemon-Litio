@@ -19,6 +19,7 @@ func guardar() -> bool:
 	var datos:= {
 		"version": VERSION,
 		"mapa": escena.scene_file_path,
+		"zona_exterior_id": GestorEscenas.ultima_zona_exterior_id,
 		"posicion": [pos.x, pos.y],
 		"direccion": [dir.x, dir.y],
 		"inventario": Inventario.a_diccionario(),
@@ -53,6 +54,7 @@ func cargar() -> bool:
 	Estado.stock_tienda.assign(Array(datos.get("stock_tienda", [])).map(func(x): return str(x)))
 	Equipo.desde_lista(datos.get("equipo", []))
 	Equipo.caja_desde_lista(datos.get("caja", []))
+	GestorEscenas.restaurar_zona_exterior(str(datos.get("zona_exterior_id", "")))
 	var p: Array= datos.get("posicion", [0, 0])
 	var d: Array =datos.get("direccion", [0, 1])
 	GestorEscenas.cambiar_mapa_a(str(datos["mapa"]), Vector2(p[0], p[1]), Vector2(d[0], d[1]))

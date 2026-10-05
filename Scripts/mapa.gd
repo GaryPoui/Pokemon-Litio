@@ -5,6 +5,13 @@ extends Node2D
 @export var musica: String= ""
 @export var tam_celda :Vector2i= Vector2i(16, 16)
 
+@export_group("Zona")
+@export var zona_id: String= ""
+@export var zona_nombre: String= ""
+@export var zona_subtitulo: String= ""
+@export_enum("Ciudad", "Pueblo", "Ruta", "Interior", "Zona especial") var tipo_zona: int= 2
+@export var anunciar_al_entrar: bool= true
+
 var rng:= RandomNumberGenerator.new()
 
 @onready var suelo: TileMapLayer= $Suelo
@@ -25,6 +32,7 @@ func _ready() -> void:
 			jugador.colocar(marca.global_position, GestorEscenas.direccion_llegada)
 		GestorEscenas.llegada= ""
 	jugador.paso_terminado.connect(_al_terminar_paso)
+	GestorEscenas.registrar_zona(zona_id, zona_nombre, zona_subtitulo, tipo_zona, anunciar_al_entrar)
 
 func _ajustar_camara() -> void:
 	var zona: Rect2i= suelo.get_used_rect()

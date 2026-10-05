@@ -45,6 +45,7 @@ func _unhandled_input(event: InputEvent) -> void:
 				Inventario.reiniciar()
 				Estado.reiniciar()
 				Equipo.reiniciar()
+				GestorEscenas.reiniciar_zona_exterior()
 				GestorEscenas.cambiar_mapa(MAPA_INICIAL, "", Vector2.DOWN)
 			"OPCIONES":
 				_opciones()

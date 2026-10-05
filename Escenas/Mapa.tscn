@@ -32,6 +32,10 @@ y_sort_enabled = true
 script = ExtResource("1_3db5g")
 encuentros = ExtResource("2_0fan4")
 musica = "ruta_1"
+zona_id = "ruta_1"
+zona_nombre = "Ruta 1 (provisional)"
+zona_subtitulo = "Nombre por confirmar"
+tipo_zona = 2
 
 [node name="Suelo" type="TileMapLayer" parent="." unique_id=580277371]
 z_index = -1
