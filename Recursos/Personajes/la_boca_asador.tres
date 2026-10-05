@@ -5,18 +5,22 @@
 [sub_resource type="AtlasTexture" id="frente"]
 atlas = ExtResource("1_asador")
 region = Rect2(0, 0, 443.5, 443.5)
+filter_clip = true
 
 [sub_resource type="AtlasTexture" id="espalda"]
 atlas = ExtResource("1_asador")
 region = Rect2(1330.5, 0, 443.5, 443.5)
+filter_clip = true
 
 [sub_resource type="AtlasTexture" id="perfil_derecho"]
 atlas = ExtResource("1_asador")
 region = Rect2(887, 0, 443.5, 443.5)
+filter_clip = true
 
 [sub_resource type="AtlasTexture" id="perfil_izquierdo"]
 atlas = ExtResource("1_asador")
 region = Rect2(443.5, 0, 443.5, 443.5)
+filter_clip = true
 
 [resource]
 animations = [{

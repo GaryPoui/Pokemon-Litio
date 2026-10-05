@@ -5,6 +5,7 @@
 [sub_resource type="AtlasTexture" id="casa_roja"]
 atlas = ExtResource("1_viviendas")
 region = Rect2(480, 0, 480, 420)
+filter_clip = true
 
 [sub_resource type="RectangleShape2D" id="base_casa"]
 size = Vector2(74, 12)
@@ -12,6 +13,7 @@ size = Vector2(74, 12)
 [node name="ConventilloRojo" type="StaticBody2D" unique_id=1166975182]
 
 [node name="Fachada" type="Sprite2D" parent="." unique_id=1632683858]
+texture_filter = 3
 position = Vector2(0, -31)
 scale = Vector2(0.16, 0.16)
 texture = SubResource("casa_roja")
