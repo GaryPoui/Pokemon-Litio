@@ -1,31 +1,6 @@
-[gd_scene load_steps=11 format=3]
+[gd_scene format=3 uid="uid://dk4sigf6ivygt"]
 
-[ext_resource type="Texture2D" path="res://Assets/Fondos/assets generales.png" id="1_atlas"]
-
-[sub_resource type="AtlasTexture" id="ArbolVerde"]
-atlas = ExtResource("1_atlas")
-region = Rect2(168, 0, 158, 164)
-filter_clip = true
-
-[sub_resource type="AtlasTexture" id="ArbolRedondo"]
-atlas = ExtResource("1_atlas")
-region = Rect2(330, 0, 145, 164)
-filter_clip = true
-
-[sub_resource type="AtlasTexture" id="ArbolRosa"]
-atlas = ExtResource("1_atlas")
-region = Rect2(472, 0, 155, 164)
-filter_clip = true
-
-[sub_resource type="AtlasTexture" id="ArbolAmarillo"]
-atlas = ExtResource("1_atlas")
-region = Rect2(630, 0, 145, 164)
-filter_clip = true
-
-[sub_resource type="AtlasTexture" id="ArbolVioleta"]
-atlas = ExtResource("1_atlas")
-region = Rect2(0, 0, 160, 164)
-filter_clip = true
+[ext_resource type="Texture2D" uid="uid://dyqhflq3cymfy" path="res://Assets/AsetsObjetos/assets generales.png" id="1_atlas"]
 
 [sub_resource type="AtlasTexture" id="ArbustoFlores"]
 atlas = ExtResource("1_atlas")
@@ -37,351 +12,78 @@ atlas = ExtResource("1_atlas")
 region = Rect2(15, 427, 105, 54)
 filter_clip = true
 
-[sub_resource type="AtlasTexture" id="Farol"]
-atlas = ExtResource("1_atlas")
-region = Rect2(895, 513, 42, 110)
-filter_clip = true
-
 [sub_resource type="AtlasTexture" id="Banco"]
 atlas = ExtResource("1_atlas")
 region = Rect2(983, 616, 100, 49)
 filter_clip = true
 
-[node name="DecoracionLaBoca" type="Node2D"]
+[sub_resource type="AtlasTexture" id="Farol"]
+atlas = ExtResource("1_atlas")
+region = Rect2(895, 513, 42, 110)
+filter_clip = true
+
+[node name="DecoracionLaBoca" type="Node2D" unique_id=1224719204]
 z_index = -1
 
-[node name="ArboledaNoroeste" type="Sprite2D" parent="."]
-position = Vector2(-110, -83)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaNorte1" type="Sprite2D" parent="."]
-position = Vector2(-76, -84)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRedondo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaNorte2" type="Sprite2D" parent="."]
-position = Vector2(-42, -83)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaNorte3" type="Sprite2D" parent="."]
-position = Vector2(-8, -84)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRosa")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaNoreste1" type="Sprite2D" parent="."]
-position = Vector2(292, -84)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRedondo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaNoreste2" type="Sprite2D" parent="."]
-position = Vector2(326, -83)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolAmarillo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaNoreste3" type="Sprite2D" parent="."]
-position = Vector2(360, -84)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaNoreste4" type="Sprite2D" parent="."]
-position = Vector2(394, -83)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRosa")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaNoreste5" type="Sprite2D" parent="."]
-position = Vector2(428, -84)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRedondo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaNoreste6" type="Sprite2D" parent="."]
-position = Vector2(462, -83)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaOesteNorte" type="Sprite2D" parent="."]
-position = Vector2(-116, -40)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaOesteCentro" type="Sprite2D" parent="."]
-position = Vector2(-116, 12)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRedondo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaOesteSur" type="Sprite2D" parent="."]
-position = Vector2(-116, 64)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaOesteAbajo" type="Sprite2D" parent="."]
-position = Vector2(-116, 116)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolAmarillo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaOesteBorde" type="Sprite2D" parent="."]
-position = Vector2(-116, 300)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRedondo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaEsteNorte" type="Sprite2D" parent="."]
-position = Vector2(500, -40)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaEsteCentro" type="Sprite2D" parent="."]
-position = Vector2(500, 12)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolAmarillo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaEsteSur" type="Sprite2D" parent="."]
-position = Vector2(500, 64)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaEsteAbajo" type="Sprite2D" parent="."]
-position = Vector2(500, 116)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRedondo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaEsteBorde" type="Sprite2D" parent="."]
-position = Vector2(500, 300)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur1" type="Sprite2D" parent="."]
-position = Vector2(-90, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRedondo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur2" type="Sprite2D" parent="."]
-position = Vector2(-56, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur3" type="Sprite2D" parent="."]
-position = Vector2(-22, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolAmarillo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur4" type="Sprite2D" parent="."]
-position = Vector2(12, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur5" type="Sprite2D" parent="."]
-position = Vector2(46, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRosa")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur6" type="Sprite2D" parent="."]
-position = Vector2(80, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur7" type="Sprite2D" parent="."]
-position = Vector2(114, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRedondo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur8" type="Sprite2D" parent="."]
-position = Vector2(148, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur9" type="Sprite2D" parent="."]
-position = Vector2(182, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolAmarillo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur10" type="Sprite2D" parent="."]
-position = Vector2(216, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur11" type="Sprite2D" parent="."]
-position = Vector2(250, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRedondo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur12" type="Sprite2D" parent="."]
-position = Vector2(284, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur13" type="Sprite2D" parent="."]
-position = Vector2(318, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRosa")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur14" type="Sprite2D" parent="."]
-position = Vector2(352, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur15" type="Sprite2D" parent="."]
-position = Vector2(386, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolAmarillo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur16" type="Sprite2D" parent="."]
-position = Vector2(420, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur17" type="Sprite2D" parent="."]
-position = Vector2(454, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolRedondo")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArboledaSur18" type="Sprite2D" parent="."]
-position = Vector2(488, 366)
-offset = Vector2(0, -15)
-texture = SubResource("ArbolVerde")
-scale = Vector2(0.24, 0.24)
-texture_filter = 3
-
-[node name="ArbolVioletaPlaza" type="Sprite2D" parent="."]
-position = Vector2(128, 299)
-offset = Vector2(0, -23)
-texture = SubResource("ArbolVioleta")
-scale = Vector2(0.32, 0.32)
-texture_filter = 3
-
-[node name="ArbustosPlaza1" type="Sprite2D" parent="."]
-position = Vector2(88, 286)
-offset = Vector2(0, -5)
-texture = SubResource("ArbustoFlores")
-scale = Vector2(0.21, 0.21)
-texture_filter = 3
-
-[node name="ArbustosPlaza2" type="Sprite2D" parent="."]
-position = Vector2(168, 286)
-offset = Vector2(0, -5)
-texture = SubResource("ArbustoFlores")
-scale = Vector2(0.21, 0.21)
-texture_filter = 3
-
-[node name="ArbustosPlaza3" type="Sprite2D" parent="."]
-position = Vector2(88, 321)
-offset = Vector2(0, -5)
-texture = SubResource("ArbustoVerde")
-scale = Vector2(0.21, 0.21)
-texture_filter = 3
-
-[node name="ArbustosPlaza4" type="Sprite2D" parent="."]
-position = Vector2(168, 321)
-offset = Vector2(0, -5)
-texture = SubResource("ArbustoVerde")
-scale = Vector2(0.21, 0.21)
-texture_filter = 3
-
-[node name="BancoPlaza" type="Sprite2D" parent="."]
-position = Vector2(128, 337)
-offset = Vector2(0, -5)
-texture = SubResource("Banco")
-scale = Vector2(0.2, 0.2)
-texture_filter = 3
-
-[node name="FarolPlazaOeste" type="Sprite2D" parent="."]
-position = Vector2(-42, 208)
-offset = Vector2(0, -9)
-texture = SubResource("Farol")
-scale = Vector2(0.17, 0.17)
-texture_filter = 3
-
-[node name="FarolPlazaCentro" type="Sprite2D" parent="."]
-position = Vector2(208, 208)
-offset = Vector2(0, -9)
-texture = SubResource("Farol")
-scale = Vector2(0.17, 0.17)
-texture_filter = 3
-
-[node name="FarolPlazaEste" type="Sprite2D" parent="."]
-position = Vector2(468, 208)
-offset = Vector2(0, -9)
-texture = SubResource("Farol")
-scale = Vector2(0.17, 0.17)
-texture_filter = 3
-
-[node name="BancoBulevar" type="Sprite2D" parent="."]
-position = Vector2(355, 270)
-offset = Vector2(0, -4)
-texture = SubResource("Banco")
-scale = Vector2(0.2, 0.2)
+[node name="ArbustosPlaza1" type="Sprite2D" parent="." unique_id=1411335039]
 texture_filter = 1
+position = Vector2(88, 286)
+scale = Vector2(0.21, 0.21)
+texture = SubResource("ArbustoFlores")
+offset = Vector2(0, -5)
+
+[node name="ArbustosPlaza2" type="Sprite2D" parent="." unique_id=1434272845]
+texture_filter = 1
+position = Vector2(168, 286)
+scale = Vector2(0.21, 0.21)
+texture = SubResource("ArbustoFlores")
+offset = Vector2(0, -5)
+
+[node name="ArbustosPlaza3" type="Sprite2D" parent="." unique_id=1229149587]
+texture_filter = 1
+position = Vector2(88, 321)
+scale = Vector2(0.21, 0.21)
+texture = SubResource("ArbustoVerde")
+offset = Vector2(0, -5)
+
+[node name="ArbustosPlaza4" type="Sprite2D" parent="." unique_id=2005188579]
+texture_filter = 1
+position = Vector2(168, 321)
+scale = Vector2(0.21, 0.21)
+texture = SubResource("ArbustoVerde")
+offset = Vector2(0, -5)
+
+[node name="BancoPlaza" type="Sprite2D" parent="." unique_id=751008904]
+texture_filter = 1
+position = Vector2(128, 337)
+scale = Vector2(0.2, 0.2)
+texture = SubResource("Banco")
+offset = Vector2(0, -5)
+
+[node name="FarolPlazaOeste" type="Sprite2D" parent="." unique_id=284965580]
+texture_filter = 1
+position = Vector2(-42, 208)
+scale = Vector2(0.17, 0.17)
+texture = SubResource("Farol")
+offset = Vector2(0, -9)
+
+[node name="FarolPlazaCentro" type="Sprite2D" parent="." unique_id=664580085]
+texture_filter = 1
+position = Vector2(208, 208)
+scale = Vector2(0.17, 0.17)
+texture = SubResource("Farol")
+offset = Vector2(0, -9)
+
+[node name="FarolPlazaEste" type="Sprite2D" parent="." unique_id=1458148228]
+texture_filter = 1
+position = Vector2(468, 208)
+scale = Vector2(0.17, 0.17)
+texture = SubResource("Farol")
+offset = Vector2(0, -9)
+
+[node name="BancoBulevar" type="Sprite2D" parent="." unique_id=506998466]
+texture_filter = 1
+position = Vector2(355, 270)
+scale = Vector2(0.2, 0.2)
+texture = SubResource("Banco")
+offset = Vector2(0, -4)

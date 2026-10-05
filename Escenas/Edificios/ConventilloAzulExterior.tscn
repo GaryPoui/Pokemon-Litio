@@ -8,16 +8,16 @@ region = Rect2(0, 0, 480, 420)
 filter_clip = true
 
 [sub_resource type="RectangleShape2D" id="base_casa"]
-size = Vector2(74, 12)
+size = Vector2(74, 70)
 
 [node name="ConventilloAzul" type="StaticBody2D"]
 
 [node name="Fachada" type="Sprite2D" parent="."]
-texture_filter = 3
+texture_filter = 1
 position = Vector2(0, -34)
 texture = SubResource("casa_azul")
 scale = Vector2(0.16, 0.16)
 
 [node name="Colision" type="CollisionShape2D" parent="."]
-position = Vector2(0, -6)
+position = Vector2(0, -35)
 shape = SubResource("base_casa")
