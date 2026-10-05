@@ -1,34 +1,54 @@
-[gd_resource type="SpriteFrames" format=3]
+[gd_resource type="SpriteFrames" format=3 uid="uid://bcwn072rc0wcc"]
 
-[ext_resource type="Texture2D" path="res://Assets/Personajes/npc/LaBoca/npc_musico_artista_comerciante_chico_gen4_concepto.png" id="1_artista"]
+[ext_resource type="Texture2D" uid="uid://b0vowdvxhp611" path="res://Assets/Personajes/npc/LaBoca/npc_musico_artista_comerciante_chico_gen4_concepto.png" id="1_artista"]
 
 [sub_resource type="AtlasTexture" id="frente"]
 atlas = ExtResource("1_artista")
 region = Rect2(0, 312, 316, 312)
 
-[sub_resource type="AtlasTexture" id="perfil_izquierdo"]
+[sub_resource type="AtlasTexture" id="espalda"]
 atlas = ExtResource("1_artista")
-region = Rect2(316, 312, 316, 312)
+region = Rect2(947, 312, 316, 312)
 
 [sub_resource type="AtlasTexture" id="perfil_derecho"]
 atlas = ExtResource("1_artista")
 region = Rect2(632, 312, 316, 312)
 
-[sub_resource type="AtlasTexture" id="espalda"]
+[sub_resource type="AtlasTexture" id="perfil_izquierdo"]
 atlas = ExtResource("1_artista")
-region = Rect2(947, 312, 316, 312)
+region = Rect2(316, 312, 316, 312)
 
 [resource]
 animations = [{
-"frames": [{"duration": 1.0, "texture": SubResource("frente")}],
-"loop": false, "name": &"abajo", "speed": 1.0
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("frente")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
 }, {
-"frames": [{"duration": 1.0, "texture": SubResource("espalda")}],
-"loop": false, "name": &"arriba", "speed": 1.0
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("espalda")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
 }, {
-"frames": [{"duration": 1.0, "texture": SubResource("perfil_derecho")}],
-"loop": false, "name": &"derecha", "speed": 1.0
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("perfil_derecho")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
 }, {
-"frames": [{"duration": 1.0, "texture": SubResource("perfil_izquierdo")}],
-"loop": false, "name": &"izquierda", "speed": 1.0
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("perfil_izquierdo")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
 }]

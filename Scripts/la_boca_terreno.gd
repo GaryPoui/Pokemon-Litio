@@ -13,16 +13,18 @@ func _ready() -> void:
 	var suelo:= get_parent().get_node("Suelo") as TileMapLayer
 	if suelo== null:
 		return
-	var celdas_calle:= []
-	for celda in suelo.get_used_cells():
-		if suelo.get_cell_source_id(celda)== 1:
+	var celdas_calle: Array[Vector2i] = []
+	for celda: Vector2i in suelo.get_used_cells():
+		var es_agua:= suelo.get_cell_atlas_coords(celda)== Vector2i(2, 0)
+		if suelo.get_cell_source_id(celda)== 1 and not es_agua:
 			celdas_calle.append(celda)
 	celdas_calle.sort_custom(func(a: Vector2i, b: Vector2i) -> bool:
 		return a.y < b.y or (a.y == b.y and a.x < b.x)
 	)
-	for celda in celdas_calle:
+	for celda: Vector2i in celdas_calle:
 		var atlas:= AtlasTexture.new()
-		var variante:= posmod(celda.x * 17 + celda.y * 31, COLUMNAS * 2)
+		var clave: int = (celda.x * 73856093) ^ (celda.y * 19349663)
+		var variante: int = posmod(clave, COLUMNAS * 2)
 		var region:= Vector2i(40 + (variante % COLUMNAS) * PITCH, 34 + (variante / COLUMNAS) * PITCH)
 		if celda.y== 10 or celda.y== 11:
 			atlas.atlas= TEXTURA_CAMINITO

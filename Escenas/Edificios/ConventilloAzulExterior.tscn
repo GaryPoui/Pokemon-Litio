@@ -7,7 +7,7 @@ atlas = ExtResource("1_viviendas")
 region = Rect2(0, 0, 480, 420)
 
 [sub_resource type="RectangleShape2D" id="base_casa"]
-size = Vector2(58, 10)
+size = Vector2(74, 12)
 
 [node name="ConventilloAzul" type="StaticBody2D"]
 
@@ -17,5 +17,5 @@ texture = SubResource("casa_azul")
 scale = Vector2(0.16, 0.16)
 
 [node name="Colision" type="CollisionShape2D" parent="."]
-position = Vector2(0, -3)
+position = Vector2(0, -6)
 shape = SubResource("base_casa")
