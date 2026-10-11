@@ -22,68 +22,133 @@ atlas = ExtResource("1_atlas")
 region = Rect2(895, 513, 42, 110)
 filter_clip = true
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_veuqm"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gfmpr"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e0p74"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wafgu"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0o3g"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nqcpy"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xu1ak"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dj7f1"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_40q43"]
+size = Vector2(16, 16)
+
 [node name="DecoracionLaBoca" type="Node2D" unique_id=1224719204]
-z_index = -1
+y_sort_enabled = true
 
 [node name="ArbustosPlaza1" type="Sprite2D" parent="." unique_id=1411335039]
 texture_filter = 1
-position = Vector2(88, 286)
-scale = Vector2(0.21, 0.21)
+position = Vector2(72, 280)
+scale = Vector2(0.152381, 0.152381)
 texture = SubResource("ArbustoFlores")
-offset = Vector2(0, -5)
+offset = Vector2(0, 25.5)
 
 [node name="ArbustosPlaza2" type="Sprite2D" parent="." unique_id=1434272845]
 texture_filter = 1
-position = Vector2(168, 286)
-scale = Vector2(0.21, 0.21)
+position = Vector2(152, 280)
+scale = Vector2(0.152381, 0.152381)
 texture = SubResource("ArbustoFlores")
-offset = Vector2(0, -5)
+offset = Vector2(0, 25.5)
 
 [node name="ArbustosPlaza3" type="Sprite2D" parent="." unique_id=1229149587]
 texture_filter = 1
-position = Vector2(88, 321)
-scale = Vector2(0.21, 0.21)
+position = Vector2(72, 328)
+scale = Vector2(0.152381, 0.152381)
 texture = SubResource("ArbustoVerde")
-offset = Vector2(0, -5)
+offset = Vector2(0, 25.5)
 
 [node name="ArbustosPlaza4" type="Sprite2D" parent="." unique_id=2005188579]
 texture_filter = 1
-position = Vector2(168, 321)
-scale = Vector2(0.21, 0.21)
+position = Vector2(152, 328)
+scale = Vector2(0.152381, 0.152381)
 texture = SubResource("ArbustoVerde")
-offset = Vector2(0, -5)
+offset = Vector2(0, 25.5)
 
 [node name="BancoPlaza" type="Sprite2D" parent="." unique_id=751008904]
 texture_filter = 1
-position = Vector2(128, 337)
-scale = Vector2(0.2, 0.2)
+position = Vector2(120, 344)
+scale = Vector2(0.186047, 0.186047)
 texture = SubResource("Banco")
-offset = Vector2(0, -5)
+offset = Vector2(2, 18.5)
 
 [node name="FarolPlazaOeste" type="Sprite2D" parent="." unique_id=284965580]
 texture_filter = 1
-position = Vector2(-42, 208)
+position = Vector2(-40, 216)
 scale = Vector2(0.17, 0.17)
 texture = SubResource("Farol")
-offset = Vector2(0, -9)
+offset = Vector2(1.5, -6.9412)
 
 [node name="FarolPlazaCentro" type="Sprite2D" parent="." unique_id=664580085]
 texture_filter = 1
-position = Vector2(208, 208)
+position = Vector2(200, 216)
 scale = Vector2(0.17, 0.17)
 texture = SubResource("Farol")
-offset = Vector2(0, -9)
+offset = Vector2(1.5, -6.9412)
 
 [node name="FarolPlazaEste" type="Sprite2D" parent="." unique_id=1458148228]
 texture_filter = 1
-position = Vector2(468, 208)
+position = Vector2(440, 216)
 scale = Vector2(0.17, 0.17)
 texture = SubResource("Farol")
-offset = Vector2(0, -9)
+offset = Vector2(1.5, -6.9412)
 
 [node name="BancoBulevar" type="Sprite2D" parent="." unique_id=506998466]
 texture_filter = 1
-position = Vector2(355, 270)
-scale = Vector2(0.2, 0.2)
+position = Vector2(344, 264)
+scale = Vector2(0.186047, 0.186047)
 texture = SubResource("Banco")
-offset = Vector2(0, -4)
+offset = Vector2(2, 18.5)
+
+[node name="Colisiones" type="StaticBody2D" parent="." unique_id=264639374]
+
+[node name="ArbustosPlaza1" type="CollisionShape2D" parent="Colisiones" unique_id=359948656]
+position = Vector2(72, 280)
+shape = SubResource("RectangleShape2D_veuqm")
+
+[node name="ArbustosPlaza2" type="CollisionShape2D" parent="Colisiones" unique_id=1957568384]
+position = Vector2(152, 280)
+shape = SubResource("RectangleShape2D_gfmpr")
+
+[node name="ArbustosPlaza3" type="CollisionShape2D" parent="Colisiones" unique_id=972679158]
+position = Vector2(72, 328)
+shape = SubResource("RectangleShape2D_e0p74")
+
+[node name="ArbustosPlaza4" type="CollisionShape2D" parent="Colisiones" unique_id=1313971427]
+position = Vector2(152, 328)
+shape = SubResource("RectangleShape2D_wafgu")
+
+[node name="BancoBulevar" type="CollisionShape2D" parent="Colisiones" unique_id=528753758]
+position = Vector2(344, 264)
+shape = SubResource("RectangleShape2D_t0o3g")
+
+[node name="BancoPlaza" type="CollisionShape2D" parent="Colisiones" unique_id=1518732773]
+position = Vector2(120, 344)
+shape = SubResource("RectangleShape2D_nqcpy")
+
+[node name="FarolPlazaCentro" type="CollisionShape2D" parent="Colisiones" unique_id=1120726699]
+position = Vector2(200, 216)
+shape = SubResource("RectangleShape2D_xu1ak")
+
+[node name="FarolPlazaEste" type="CollisionShape2D" parent="Colisiones" unique_id=1369598503]
+position = Vector2(440, 216)
+shape = SubResource("RectangleShape2D_dj7f1")
+
+[node name="FarolPlazaOeste" type="CollisionShape2D" parent="Colisiones" unique_id=2082548317]
+position = Vector2(-40, 216)
+shape = SubResource("RectangleShape2D_40q43")

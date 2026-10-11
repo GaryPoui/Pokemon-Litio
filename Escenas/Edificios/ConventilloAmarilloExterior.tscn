@@ -1,23 +1,23 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene format=3 uid="uid://ruatlgxbek3k"]
 
-[ext_resource type="Texture2D" path="res://Assets/Overworld/LaBoca/viviendas_conventillo_gen4_concepto.png" id="1_viviendas"]
+[ext_resource type="Texture2D" uid="uid://qloajecvya08" path="res://Assets/Overworld/LaBoca/viviendas_conventillo_gen4_concepto.png" id="1_viviendas"]
 
 [sub_resource type="AtlasTexture" id="casa_amarilla"]
 atlas = ExtResource("1_viviendas")
 region = Rect2(960, 0, 576, 420)
 filter_clip = true
 
-[sub_resource type="RectangleShape2D" id="base_casa"]
-size = Vector2(78, 62)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8bt8l"]
+size = Vector2(80, 64)
 
-[node name="ConventilloAmarillo" type="StaticBody2D"]
+[node name="ConventilloAmarillo" type="StaticBody2D" unique_id=1655326311]
 
-[node name="Fachada" type="Sprite2D" parent="."]
+[node name="Fachada" type="Sprite2D" parent="." unique_id=2135862760]
 texture_filter = 1
-position = Vector2(0, -29.5)
+position = Vector2(0.5437, -31.534)
+scale = Vector2(0.15534, 0.15534)
 texture = SubResource("casa_amarilla")
-scale = Vector2(0.14, 0.14)
 
-[node name="Colision" type="CollisionShape2D" parent="."]
-position = Vector2(0, -31)
-shape = SubResource("base_casa")
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=116423478]
+position = Vector2(0, -32)
+shape = SubResource("RectangleShape2D_8bt8l")

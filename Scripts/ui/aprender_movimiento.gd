@@ -86,7 +86,7 @@ func elegir(p: PokemonInstancia, m: Movimiento) -> int:
 func _boton(b: NinePatchRect, m: Movimiento) -> void:
 	b.texture= load(BOTONES_TIPO+ "%s.png" % m.tipo)
 	b.get_node("Texto").text =m.nombre
-	b.get_node("Tipo").texture= load(UI+ "tipos/%s.png" % m.tipo)
+	b.get_node("Tipo").tipo= m.tipo
 
 func _pintar(animar: bool) -> void:
 	for i in 4:
@@ -113,7 +113,7 @@ func _pintar(animar: bool) -> void:
 
 func _detalle(lado: Control, m: Movimiento, pp_actual: int) -> void:
 	lado.get_node("Nombre").text= m.nombre
-	lado.get_node("Tipo").texture =load(UI+ "tipos/%s.png" % m.tipo)
+	lado.get_node("Tipo").tipo =m.tipo
 	lado.get_node("Cat").texture= load(UI+ "categoria_%s.png" % m.categoria)
 	var pot:= str(m.poder) if m.categoria!= "estado" and m.poder> 0 else "-"
 	var prec:= str(m.precision) if m.precision> 0 else "-"
@@ -122,7 +122,7 @@ func _detalle(lado: Control, m: Movimiento, pp_actual: int) -> void:
 
 func _vacio(lado: Control) -> void:
 	lado.get_node("Nombre").text= "No aprender"
-	lado.get_node("Tipo").texture =null
+	lado.get_node("Tipo").tipo =""
 	lado.get_node("Cat").texture= null
 	lado.get_node("Datos").text =""
 	lado.get_node("Desc").text= "%s conservará sus cuatro movimientos." % pokemon.nombre()

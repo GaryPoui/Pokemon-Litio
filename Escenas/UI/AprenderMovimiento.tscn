@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bictfh8shju20" path="res://Assets/Botones/boton_madera_1x.png" id="2_k3u7w"]
 [ext_resource type="Texture2D" uid="uid://bb7eefovhgatq" path="res://Assets/Botones/tipos/normal.png" id="3_o05tj"]
 [ext_resource type="Texture2D" uid="uid://ljulc4yeagti" path="res://Assets/Batalla/ui_nueva/cursor_mano.png" id="4_3dof2"]
+[ext_resource type="Script" uid="uid://dwsegpmcyq5q1" path="res://Scripts/ui/icono_tipo.gd" id="4_w87uw"]
 
 [node name="AprenderMovimiento" type="CanvasLayer" unique_id=1308406962]
 script = ExtResource("1_thaxm")
@@ -62,6 +63,7 @@ offset_left = 3.0
 offset_top = 2.0
 offset_right = 15.0
 offset_bottom = 14.0
+script = ExtResource("4_w87uw")
 
 [node name="M1" type="NinePatchRect" parent="Tablero" unique_id=914347594]
 layout_mode = 0
@@ -90,6 +92,7 @@ offset_left = 3.0
 offset_top = 2.0
 offset_right = 15.0
 offset_bottom = 14.0
+script = ExtResource("4_w87uw")
 
 [node name="M2" type="NinePatchRect" parent="Tablero" unique_id=2014541679]
 layout_mode = 0
@@ -118,6 +121,7 @@ offset_left = 3.0
 offset_top = 2.0
 offset_right = 15.0
 offset_bottom = 14.0
+script = ExtResource("4_w87uw")
 
 [node name="M3" type="NinePatchRect" parent="Tablero" unique_id=1142613879]
 layout_mode = 0
@@ -146,6 +150,7 @@ offset_left = 3.0
 offset_top = 2.0
 offset_right = 15.0
 offset_bottom = 14.0
+script = ExtResource("4_w87uw")
 
 [node name="Flecha" type="Label" parent="Tablero" unique_id=1082269622]
 layout_mode = 0
@@ -193,6 +198,7 @@ offset_left = 3.0
 offset_top = 2.0
 offset_right = 15.0
 offset_bottom = 14.0
+script = ExtResource("4_w87uw")
 
 [node name="Salir" type="NinePatchRect" parent="Tablero" unique_id=1176644147]
 layout_mode = 0
@@ -247,6 +253,7 @@ layout_mode = 0
 offset_top = 1.0
 offset_right = 12.0
 offset_bottom = 13.0
+script = ExtResource("4_w87uw")
 
 [node name="Nombre" type="Label" parent="Detalles/Izq" unique_id=490246575]
 layout_mode = 0
@@ -289,6 +296,7 @@ layout_mode = 0
 offset_top = 1.0
 offset_right = 12.0
 offset_bottom = 13.0
+script = ExtResource("4_w87uw")
 
 [node name="Nombre" type="Label" parent="Detalles/Der" unique_id=1822199635]
 layout_mode = 0

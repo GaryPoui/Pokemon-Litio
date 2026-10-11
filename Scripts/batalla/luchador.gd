@@ -9,22 +9,31 @@ var turnos_sueno :=0
 var retrocede:= false
 var critico_extra: int =0
 var aguante_usado:= false
+var actuo_turno :=false
+var herido_turno:= false
 
 func _init(p: PokemonInstancia) -> void:
 	pokemon= p
 	for e in ETAPAS:
 		etapas[e] =0
 
+static func fraccion(stat: String, etapa: int) -> Vector2i:
+	var b:= 3 if stat== "precision" or stat== "evasion" else 2
+	return Vector2i(b+ maxi(etapa, 0), b- mini(etapa, 0))
+
 static func factor(stat: String, etapa: int) -> float:
-	if stat== "precision" or stat== "evasion":
-		return (3.0+ maxi(etapa, 0))/ (3.0 -mini(etapa, 0))
-	return (2.0 +maxi(etapa, 0))/ (2.0- mini(etapa, 0))
+	var f:= fraccion(stat, etapa)
+	return float(f.x)/ f.y
 
 func stat_con_etapa(stat: String, etapa: int) -> int:
-	var base:= float(pokemon.stat(stat))* (1.0+ EfectosTrinket.total("stats_todas", pokemon))
+	var base:= pokemon.stat(stat)
+	var extra:= EfectosTrinket.total("stats_todas", pokemon)
 	if stat== "velocidad":
-		base*= 1.0+ EfectosTrinket.total("velocidad", pokemon)
-	return maxi(1, floori(base* factor(stat, etapa)))
+		extra =(1.0+ extra)* (1.0+ EfectosTrinket.total("velocidad", pokemon))- 1.0
+	if extra!= 0.0:
+		base= LogicaCombate.redondear(base, 1.0+ extra)
+	var f:= fraccion(stat, etapa)
+	return maxi(1, base* f.x/ f.y)
 
 func stat_efectivo(stat: String) -> int:
 	var v:= stat_con_etapa(stat, etapas[stat])

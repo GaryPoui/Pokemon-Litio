@@ -73,7 +73,7 @@ func _pintar() -> void:
 	$Lista/Vacio.visible= stock.is_empty()
 	cursor_lbl.visible =not stock.is_empty()
 	if stock.is_empty():
-		desc.mensaje("¡Todo vendido! Vuelve después de superar la Torre Desafío.")
+		desc.mensaje("¡Todo vendido! Vuelve después de superar el Desafío de la Bombonera.")
 		return
 	var rf: Control= lista.get_node("R%d" % fila)
 	cursor_lbl.position= lista.position+ rf.position+ Vector2(-8, 5)

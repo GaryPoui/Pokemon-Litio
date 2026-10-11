@@ -122,7 +122,7 @@ func _pintar() -> void:
 func _describir(id: String, equipado: bool) -> void:
 	var t:= BaseDatos.trinket(id) if id!= "" else null
 	if t== null:
-		desc.mensaje("Espacio libre: elige un Trinket de la derecha para equiparlo." if equipado else "No tienes Trinkets sin equipar. Consíguelos en la Torre Desafío o en la tienda.")
+		desc.mensaje("Espacio libre: elige un Trinket de la derecha para equiparlo." if equipado else "No tienes Trinkets sin equipar. Consíguelos en el Desafío de la Bombonera o en la tienda.")
 		return
 	var extra:= ""
 	var copias:= pokemon.trinkets.count(id)

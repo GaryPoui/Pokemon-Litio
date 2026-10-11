@@ -19,12 +19,12 @@ const NOMBRE_STAT :={
 	"precision": "la Precisión",
 	"evasion": "la Evasión",
 }
-const TEXTO_SACUDIDAS:= [
-	"¡Oh, no! ¡El Pokémon se ha escapado!",
-	"¡Vaya! ¡Parecía que lo había atrapado!",
-	"¡Qué pena! ¡Casi lo consigues!",
-	"¡Rayos! ¡Parecía que lo tenía!",
-]
+const TEXTO_SACUDIDAS:= {
+	0: "¡Oh, no! ¡El Pokémon se ha escapado!",
+	1: "¡Vaya! ¡Parecía que lo había atrapado!",
+	3: "¡Rayos! ¡Casi lo consigues!",
+}
+const MAGNITUDES :=[[4, 10, 5], [5, 30, 10], [6, 50, 20], [7, 70, 30], [8, 90, 20], [9, 110, 10], [10, 150, 5]]
 const OBJETIVO_PROPIO :=["user", "users-field", "user-and-allies", "ally", "user-or-ally"]
 
 var equipo_j: Array[PokemonInstancia]= []
@@ -35,6 +35,8 @@ var pago_base:= 0
 var dinero_ganado :=0
 var turnos:= 0
 var sin_exp :=false
+var aleatorio_fijo:= -1
+var capturados_dex :=0
 var rng:= RandomNumberGenerator.new()
 var j: Luchador
 var r: Luchador
@@ -85,6 +87,9 @@ func turno(accion: Dictionary) -> Array[Dictionary]:
 	turnos+= 1
 	j.retrocede= false
 	r.retrocede =false
+	for l in [j, r]:
+		l.actuo_turno= false
+		l.herido_turno =false
 	var tipo: String= accion.get("tipo", "movimiento")
 	if tipo== "huir":
 		if not salvaje:
@@ -249,6 +254,7 @@ func _ejecutar(a: Luchador, d: Luchador, indice: int) -> void:
 		_texto("¡%s está paralizado! ¡No se puede mover!" % nombre)
 		return
 	var mov:= movimiento_de(a, indice)
+	a.actuo_turno= true
 	if indice>= 0:
 		p.pp[indice]= maxi(0, p.pp[indice]- 1)
 	else:
@@ -256,7 +262,8 @@ func _ejecutar(a: Luchador, d: Luchador, indice: int) -> void:
 	_texto("¡%s usó %s!" % [nombre, mov.nombre])
 	if not mov.objetivo in OBJETIVO_PROPIO and mov.precision> 0:
 		var etapa:= clampi(a.etapas["precision"]- d.etapas["evasion"], -6, 6)
-		if rng.randf()* 100.0>= mov.precision* Luchador.factor("precision", etapa):
+		var f:= Luchador.fraccion("precision", etapa)
+		if rng.randi_range(1, 100)> mov.precision* f.x/ f.y:
 			_texto("¡Pero falló!")
 			return
 	if mov.categoria== "estado":
@@ -271,6 +278,7 @@ func _ejecutar(a: Luchador, d: Luchador, indice: int) -> void:
 		return
 	var golpe:= calcular_danio(a, d, mov, ef)
 	var real:= _herir(d, golpe["danio"], "golpe_eficaz" if ef> 1.0 else ("golpe_poco" if ef< 1.0 else "golpe_normal"))
+	d.herido_turno= true
 	if golpe["critico"]:
 		_texto("¡Un golpe crítico!")
 	if ef> 1.0:
@@ -318,21 +326,38 @@ func calcular_danio(a: Luchador, d: Luchador, mov: Movimiento, ef: float) -> Dic
 		ataque= a.stat_con_etapa(s_at, a.etapas[s_at])
 		defensa= d.stat_con_etapa(s_df, d.etapas[s_df])
 	var nivel:= a.pokemon.nivel
-	var base:= floori(floori(floori(2.0* nivel/ 5.0+ 2.0)* poder_de(a, d, mov)* ataque/ float(defensa))/ 50.0) +2
+	var base:= (2* nivel/ 5+ 2)* poder_de(a, d, mov)* ataque/ defensa/ 50+ 2
 	if critico:
 		base*= 2
-	base= floori(base* rng.randi_range(85, 100)/ 100.0)
+	base= base* (aleatorio_fijo if aleatorio_fijo>= 0 else rng.randi_range(85, 100))/ 100
 	if mov.tipo in a.pokemon.especie.tipos:
-		base =floori(base* (1.5+ EfectosTrinket.total("stab", a.pokemon)))
+		base =redondear(base, 1.5+ EfectosTrinket.total("stab", a.pokemon))
 	base= floori(base *ef)
 	if fisico and a.pokemon.estado== "que":
-		base= floori(base* 0.5)
-	base =floori(base* (1.0+ EfectosTrinket.total("danio_hecho", a.pokemon))* (1.0- EfectosTrinket.total("danio_recibido", d.pokemon)))
+		base= base/ 2
+	var final:= encadenar(1.0+ EfectosTrinket.total("danio_hecho", a.pokemon), 1.0- EfectosTrinket.total("danio_recibido", d.pokemon))
+	base =redondear_fijo(base, final)
 	return {"danio": maxi(1, base), "critico": critico}
 
+static func a_4096(m: float) -> int:
+	return roundi(m* 4096.0)
+
+static func redondear_fijo(d: int, m4096: int) -> int:
+	var q:= d* m4096
+	var entero:= q/ 4096
+	return entero+ 1 if q% 4096> 2048 else entero
+
+static func redondear(d: int, m: float) -> int:
+	return redondear_fijo(d, a_4096(m))
+
+static func encadenar(m1: float, m2: float) -> int:
+	return (a_4096(m1)* a_4096(m2)+ 2048)>> 12
+
 func poder_de(a: Luchador, d: Luchador, mov: Movimiento) -> int:
+	var pa:= a.pokemon
+	var pd:= d.pokemon
 	match mov.id:
-		"reversal":
+		"reversal", "flail":
 			var p48:= floori(48.0* a.pokemon.ps_actuales/ a.pokemon.ps_max())
 			if p48<= 1:
 				return 200
@@ -346,10 +371,77 @@ func poder_de(a: Luchador, d: Luchador, mov: Movimiento) -> int:
 				return 40
 			return 20
 		"wring_out":
-			return maxi(1, floori(120.0* d.pokemon.ps_actuales/ d.pokemon.ps_max()))
-		"heat_crash":
-			return 60
+			return maxi(1, 120* pd.ps_actuales/ pd.ps_max())
+		"eruption", "water_spout":
+			return maxi(1, 150* pa.ps_actuales/ pa.ps_max())
+		"low_kick", "grass_knot":
+			var kg:= BaseDatos.peso(pd.especie.id)
+			if kg< 10.0:
+				return 20
+			if kg< 25.0:
+				return 40
+			if kg< 50.0:
+				return 60
+			if kg< 100.0:
+				return 80
+			if kg< 200.0:
+				return 100
+			return 120
+		"heat_crash", "heavy_slam":
+			var r:= BaseDatos.peso(pa.especie.id)/ maxf(0.1, BaseDatos.peso(pd.especie.id))
+			if r>= 5.0:
+				return 120
+			if r>= 4.0:
+				return 100
+			if r>= 3.0:
+				return 80
+			if r>= 2.0:
+				return 60
+			return 40
+		"gyro_ball":
+			return mini(150, 25* d.stat_efectivo("velocidad")/ maxi(1, a.stat_efectivo("velocidad"))+ 1)
+		"electro_ball":
+			var v:= a.stat_efectivo("velocidad")/ maxi(1, d.stat_efectivo("velocidad"))
+			if v>= 4:
+				return 150
+			if v== 3:
+				return 120
+			if v== 2:
+				return 80
+			if v== 1:
+				return 60
+			return 40
+		"acrobatics":
+			return mov.poder* 2 if pa.objeto== "" else mov.poder
+		"assurance":
+			return mov.poder* 2 if d.herido_turno else mov.poder
+		"brine":
+			return mov.poder* 2 if pd.ps_actuales* 2<= pd.ps_max() else mov.poder
+		"facade":
+			return mov.poder* 2 if pa.estado in ["que", "env", "par"] else mov.poder
+		"hex":
+			return mov.poder* 2 if pd.estado!= "" else mov.poder
+		"payback":
+			return mov.poder* 2 if d.actuo_turno else mov.poder
+		"punishment":
+			return mini(200, 60+ 20* _subidas(d))
+		"stored_power":
+			return 20+ 20* _subidas(a)
+		"magnitude":
+			var tiro:= rng.randi_range(1, 100)
+			for fila in MAGNITUDES:
+				tiro-= fila[2]
+				if tiro<= 0:
+					_texto("¡Magnitud %d!" % fila[0])
+					return fila[1]
+			return 70
 	return maxi(1, mov.poder)
+
+func _subidas(l: Luchador) -> int:
+	var n:= 0
+	for e in l.etapas:
+		n+= maxi(0, int(l.etapas[e]))
+	return n
 
 func _efecto_estado(a: Luchador, d: Luchador, mov: Movimiento) -> void:
 	var hizo:= false
@@ -569,7 +661,7 @@ func _usar_objeto(accion: Dictionary) -> bool:
 		inventario.consumir(o.id)
 		_texto("¡Lanzaste una %s!" % o.nombre)
 		var res:= capturar(o.ratio_captura)
-		_ev({"tipo": "captura", "objeto": o.id, "sacudidas": res["sacudidas"], "exito": res["exito"]})
+		_ev({"tipo": "captura", "objeto": o.id, "sacudidas": res["sacudidas"], "exito": res["exito"], "critica": res["critica"]})
 		if res["exito"]:
 			r.pokemon.ball= o.id
 			_texto("¡Ya está! ¡%s atrapado!" % r.pokemon.nombre())
@@ -601,18 +693,34 @@ func _usar_objeto(accion: Dictionary) -> bool:
 func capturar(ball: float) -> Dictionary:
 	var p:= r.pokemon
 	var m:= p.ps_max()
-	var bonus:= 1.0
+	var estado:= 1.0
 	if p.estado in ["dor", "con"]:
-		bonus= 2.5
+		estado= 2.5
 	elif p.estado!= "":
-		bonus =1.5
-	bonus*= 1.0+ EfectosTrinket.total("captura", null, equipo_j)
-	var x:= floori((3.0* m- 2.0* p.ps_actuales)* p.especie.ratio_captura* ball/ (3.0* m)* bonus)
-	if x>= 255:
-		return {"sacudidas": 3, "exito": true}
-	x= maxi(x, 1)
-	var y:= floori(65536.0/ pow(255.0/ x, 0.1875))
-	var s:= 0
-	while s< 3 and rng.randi_range(0, 65535)< y:
-		s+= 1
-	return {"sacudidas": s, "exito": s== 3}
+		estado =1.5
+	var b:= ball* (1.0+ EfectosTrinket.total("captura", null, equipo_j))
+	var x:= _abajo(_cerca(_abajo(_cerca(_cerca(3.0* m- 2.0* p.ps_actuales)* p.especie.ratio_captura* b)/ (3.0* m))* estado))
+	if x>= 255.0:
+		return {"sacudidas": 3, "exito": true, "critica": false}
+	x= maxf(x, 1.0/ 4096.0)
+	var pc:= 0.0
+	for fila in [[600, 2.5], [450, 2.0], [300, 1.5], [150, 1.0], [30, 0.5]]:
+		if capturados_dex> fila[0]:
+			pc= fila[1]
+			break
+	var critica:= rng.randi_range(0, 255)< floori(minf(255.0, x)* pc/ 6.0)
+	var y:= floori(65536.0/ sqrt(sqrt(255.0/ x)))
+	var chequeos:= 1 if critica else 3
+	var ok:= 0
+	while ok< chequeos and rng.randi_range(0, 65535)< y:
+		ok+= 1
+	if ok== chequeos:
+		return {"sacudidas": 1 if critica else 3, "exito": true, "critica": critica}
+	var mostradas:int= 1 if critica else [0, 1, 3][ok]
+	return {"sacudidas": mostradas, "exito": false, "critica": critica}
+
+static func _abajo(v: float) -> float:
+	return floorf(v* 4096.0)/ 4096.0
+
+static func _cerca(v: float) -> float:
+	return floorf(v* 4096.0+ 0.5)/ 4096.0

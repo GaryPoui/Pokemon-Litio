@@ -21,6 +21,7 @@ const APAGADO :=Color(0.8, 0.8, 0.8)
 const X_COMANDOS:= 182
 const X_MOVIMIENTOS :=168
 const ESCALA_JUGADOR:= Vector2(1.75, 1.75)
+const CATEGORIAS :={"fisico": "Físico", "especial": "Especial", "estado": "Estado"}
 const DESLIZ :=0.08
 
 @onready var velo: ColorRect= $Velo
@@ -107,6 +108,12 @@ func _ready() -> void:
 	EstiloUI.label(movimientos_ui.get_node("Info"), 6)
 	movimientos_ui.get_node("Info").add_theme_color_override("font_color", Color.WHITE)
 	movimientos_ui.get_node("Info").add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.7))
+	var desc: Panel =movimientos_ui.get_node("Descripcion")
+	for n in ["Nombre", "Datos", "Texto"]:
+		var l: Label= desc.get_node(n)
+		EstiloUI.label(l, 9 if n== "Nombre" else 8, EstiloUI.TENUE if n== "Datos" else Color.WHITE)
+		EstiloUI.fuente_batalla(l)
+	desc.get_node("Texto").add_theme_constant_override("line_spacing", -3)
 	comandos.visible= false
 	movimientos_ui.visible =false
 	lista.visible= false
@@ -132,6 +139,7 @@ func empezar(rivales: Array[PokemonInstancia], salvaje: bool, entrenador: String
 	logica.sin_exp =torre
 	logica.inventario =Inventario
 	logica.equipo= Equipo
+	logica.capturados_dex =Estado.capturados.size()
 	var inicio:= logica.iniciar()
 	if salvaje:
 		for e in inicio:
@@ -367,7 +375,7 @@ func _elegir_accion() -> Dictionary:
 		ultimo_comando= op
 		if torre and op> 0:
 			Sonido.efecto("error")
-			await _decir("¡No está permitido en la Torre Desafío!")
+			await _decir("¡No está permitido en el Desafío de la Bombonera!")
 			continue
 		match op:
 			0:
@@ -451,7 +459,7 @@ func _elegir_movimiento() -> int:
 			continue
 		var m:= p.movimientos[i]
 		b.get_node("Texto").text= m.nombre
-		b.get_node("Tipo").texture =load(UI+ "tipos/%s.png" % m.tipo)
+		b.get_node("Tipo").tipo =m.tipo
 		b.texture= load(BOTONES_TIPO+ "%s.png" % m.tipo)
 		b.set_meta("sin_pp", p.pp[i]<= 0)
 	ultimo_movimiento= clampi(ultimo_movimiento, 0, p.movimientos.size()- 1)
@@ -491,6 +499,20 @@ func _pintar_movimientos(sel: int) -> void:
 	var pot:= str(m.poder) if m.categoria!= "estado" and m.poder> 0 else "-"
 	var prec:= str(m.precision) if m.precision> 0 else "-"
 	movimientos_ui.get_node("Info").text= "Pot %s  Prec %s  PP %d/%d" % [pot, prec, p.pp[sel], m.pp]
+	_describir(m)
+
+func _describir(m: Movimiento) -> void:
+	var desc: Panel= movimientos_ui.get_node("Descripcion")
+	desc.add_theme_stylebox_override("panel", EstiloUI.panel(Color(EstiloUI.FONDO, 0.9), EstiloUI.color_tipo(m.tipo).lightened(0.25)))
+	var grande:= UI+ "tipos_grandes/%s.png" % m.tipo
+	desc.get_node("Icono").texture =load(grande) if ResourceLoader.exists(grande) else load(UI+ "tipos/%s.png" % m.tipo)
+	desc.get_node("Nombre").text= m.nombre
+	desc.get_node("Datos").text ="%s  -  %s" % [Tipos.nombre(m.tipo), CATEGORIAS.get(m.categoria, "")]
+	var texto: Label= desc.get_node("Texto")
+	var lineas:= EstiloUI.envolver(m.descripcion, texto, texto.size.x)
+	texto.text= "\n".join(lineas)
+	texto.size.y =lineas.size()* 9+ 3
+	desc.size.y= maxf(40.0, texto.position.y+ texto.size.y+ 3)
 
 func _elegir_objeto() -> Dictionary:
 	if mochila_combate== null:
@@ -759,6 +781,16 @@ func _animar_captura(e: Dictionary) -> void:
 	sprite_rival.visible= false
 	ball.frame =0
 	await _esperar(0.15)
+	if e.get("critica", false):
+		Sonido.efecto("ball_sacudir")
+		for vuelta in 2:
+			for paso in [[12, false, 1], [0, false, 0], [12, true, -1], [0, false, 0]]:
+				ball.frame= paso[0]
+				ball.flip_h =paso[1]
+				ball.position.x= arriba.x+ paso[2]
+				await _esperar(0.05)
+		ball.position.x =arriba.x
+		await _esperar(0.2)
 	Sonido.efecto("ball_caer")
 	var caida:= create_tween()
 	caida.tween_property(ball, "position:y", suelo.y, 0.25).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
@@ -810,10 +842,10 @@ func _llenar_panel(panel: NinePatchRect, v: Dictionary, con_exp: bool) -> void:
 	genero.position.x =nombre.position.x+ nombre.get_combined_minimum_size().x+ 1
 	var tipos:= p.especie.tipos
 	for k in 2:
-		var icono: TextureRect= panel.get_node("Tipo%d" % (k+ 1))
+		var icono: IconoTipo= panel.get_node("Tipo%d" % (k+ 1))
 		icono.visible= k< tipos.size()
 		if k< tipos.size():
-			icono.texture= load(UI+ "tipos/%s.png" % tipos[k])
+			icono.tipo= tipos[k]
 	var nivel: Label= panel.get_node("Nivel")
 	nivel.text= "Nv%d" % v["nivel"]
 	var estado: Label =panel.get_node("Estado")

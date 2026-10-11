@@ -9,10 +9,10 @@
 [ext_resource type="Script" uid="uid://3c46evu34do3" path="res://Scripts/batalla/barra_ps.gd" id="7_u1pia"]
 [ext_resource type="Texture2D" uid="uid://bictfh8shju20" path="res://Assets/Botones/boton_madera_1x.png" id="8_xgimu"]
 [ext_resource type="Texture2D" uid="uid://ljulc4yeagti" path="res://Assets/Batalla/ui_nueva/cursor_mano.png" id="9_lsdxj"]
+[ext_resource type="Script" uid="uid://dwsegpmcyq5q1" path="res://Scripts/ui/icono_tipo.gd" id="10_85n7h"]
 
 [node name="Batalla" type="CanvasLayer" unique_id=2053821235]
 script = ExtResource("1_kluxw")
-letras_por_segundo = null
 
 [node name="Fondo" type="ColorRect" parent="." unique_id=648602552]
 offset_right = 256.0
@@ -77,6 +77,7 @@ offset_left = 88.0
 offset_top = 4.0
 offset_right = 100.0
 offset_bottom = 16.0
+script = ExtResource("10_85n7h")
 
 [node name="Tipo2" type="TextureRect" parent="PanelRival" unique_id=1794713242]
 layout_mode = 0
@@ -84,6 +85,7 @@ offset_left = 101.0
 offset_top = 4.0
 offset_right = 113.0
 offset_bottom = 16.0
+script = ExtResource("10_85n7h")
 
 [node name="Nivel" type="Label" parent="PanelRival" unique_id=112441431]
 layout_mode = 0
@@ -154,6 +156,7 @@ offset_left = 88.0
 offset_top = 4.0
 offset_right = 100.0
 offset_bottom = 16.0
+script = ExtResource("10_85n7h")
 
 [node name="Tipo2" type="TextureRect" parent="PanelJugador" unique_id=224545670]
 layout_mode = 0
@@ -161,6 +164,7 @@ offset_left = 101.0
 offset_top = 4.0
 offset_right = 113.0
 offset_bottom = 16.0
+script = ExtResource("10_85n7h")
 
 [node name="Nivel" type="Label" parent="PanelJugador" unique_id=1589035143]
 layout_mode = 0
@@ -367,6 +371,7 @@ offset_left = 3.0
 offset_top = 2.0
 offset_right = 15.0
 offset_bottom = 14.0
+script = ExtResource("10_85n7h")
 
 [node name="M1" type="NinePatchRect" parent="Movimientos" unique_id=1638291264]
 layout_mode = 0
@@ -394,6 +399,7 @@ offset_left = 3.0
 offset_top = 2.0
 offset_right = 15.0
 offset_bottom = 14.0
+script = ExtResource("10_85n7h")
 
 [node name="M2" type="NinePatchRect" parent="Movimientos" unique_id=1183882023]
 layout_mode = 0
@@ -421,6 +427,7 @@ offset_left = 3.0
 offset_top = 2.0
 offset_right = 15.0
 offset_bottom = 14.0
+script = ExtResource("10_85n7h")
 
 [node name="M3" type="NinePatchRect" parent="Movimientos" unique_id=714134752]
 layout_mode = 0
@@ -448,6 +455,7 @@ offset_left = 3.0
 offset_top = 2.0
 offset_right = 15.0
 offset_bottom = 14.0
+script = ExtResource("10_85n7h")
 
 [node name="Categoria" type="TextureRect" parent="Movimientos" unique_id=401882918]
 layout_mode = 0
@@ -463,6 +471,47 @@ offset_top = 181.0
 offset_right = 252.0
 offset_bottom = 195.0
 horizontal_alignment = 2
+
+[node name="Descripcion" type="Panel" parent="Movimientos" unique_id=28523186]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 132.0
+offset_bottom = 98.0
+mouse_filter = 2
+
+[node name="Icono" type="TextureRect" parent="Movimientos/Descripcion" unique_id=934009755]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 35.0
+offset_bottom = 36.0
+expand_mode = 1
+stretch_mode = 3
+
+[node name="Nombre" type="Label" parent="Movimientos/Descripcion" unique_id=1862895837]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 3.0
+offset_right = 127.0
+offset_bottom = 17.0
+clip_text = true
+
+[node name="Datos" type="Label" parent="Movimientos/Descripcion" unique_id=894921725]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 15.0
+offset_right = 127.0
+offset_bottom = 29.0
+clip_text = true
+
+[node name="Texto" type="Label" parent="Movimientos/Descripcion" unique_id=1157364767]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 37.0
+offset_right = 127.0
+offset_bottom = 94.0
+autowrap_mode = 3
 
 [node name="Caja" type="Panel" parent="." unique_id=801931950]
 offset_left = 126.0

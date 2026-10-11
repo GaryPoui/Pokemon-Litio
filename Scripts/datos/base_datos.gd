@@ -5,6 +5,14 @@ const ESPECIES:= "res://Datos/Especies/"
 const MOVIMIENTOS :="res://Datos/Movimientos/"
 const OBJETOS:= "res://Datos/Objetos/"
 const TRINKETS :="res://Datos/Trinkets/"
+const PESOS:= "res://Datos/pesos.json"
+
+static var _pesos :={}
+
+static func peso(id: String) -> float:
+	if _pesos.is_empty():
+		_pesos= JSON.parse_string(FileAccess.get_file_as_string(PESOS))
+	return float(_pesos.get(id, 50.0))
 
 static func especie(id: String) -> EspeciePokemon:
 	return _cargar(ESPECIES, id) as EspeciePokemon
