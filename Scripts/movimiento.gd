@@ -44,7 +44,10 @@ func _ready() -> void:
 		forma.size =Vector2(minf(forma.size.x, tam.x- 2.0), minf(forma.size.y, tam.y- 2.0))
 		cs.shape= forma
 	animated_sprite.position.y+= tam.y/ 2.0- Rejilla.POR_DEFECTO.y/ 2.0
+	position =Rejilla.centro(self, celda())
 	target_position= position
+	if get_parent()!= null:
+		get_parent().move_child.call_deferred(self, -1)
 	_set_animation_speeds()
 	_set_idle()
 
@@ -55,8 +58,8 @@ func celda() -> Vector2i:
 	return Vector2i((position/ tam).floor())
 
 func colocar(pos: Vector2, direccion: Vector2) -> void:
-	position =pos
-	target_position= pos
+	position= Rejilla.centro(self, Vector2i((pos/ tam).floor()))
+	target_position =position
 	is_moving =false
 	turn_timer= 0.0
 	last_direction =direccion

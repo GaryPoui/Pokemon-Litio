@@ -1,23 +1,17 @@
 [gd_scene format=3 uid="uid://b304tvad0qu0k"]
 
-[ext_resource type="Texture2D" uid="uid://qloajecvya08" path="res://Assets/Overworld/LaBoca/viviendas_conventillo_gen4_concepto.png" id="1_viviendas"]
-
-[sub_resource type="AtlasTexture" id="casa_azul"]
-atlas = ExtResource("1_viviendas")
-region = Rect2(0, 0, 480, 420)
-filter_clip = true
+[ext_resource type="Texture2D" uid="uid://jj81eyf6dgwq" path="res://Assets/Overworld/LaBoca/conventillo_azul.png" id="1_y8d7v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y8d7v"]
-size = Vector2(64, 64)
+size = Vector2(64, 48)
 
 [node name="ConventilloAzul" type="StaticBody2D" unique_id=486149689]
 
 [node name="Fachada" type="Sprite2D" parent="." unique_id=1503431354]
 texture_filter = 1
-position = Vector2(-0.5197, -28.3619)
-scale = Vector2(0.148492, 0.148492)
-texture = SubResource("casa_azul")
+position = Vector2(0, -24)
+texture = ExtResource("1_y8d7v")
 
 [node name="Colision" type="CollisionShape2D" parent="." unique_id=2068954682]
-position = Vector2(0, -32)
+position = Vector2(0, -16)
 shape = SubResource("RectangleShape2D_y8d7v")

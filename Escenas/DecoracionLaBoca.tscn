@@ -1,26 +1,9 @@
 [gd_scene format=3 uid="uid://dk4sigf6ivygt"]
 
-[ext_resource type="Texture2D" uid="uid://dyqhflq3cymfy" path="res://Assets/AsetsObjetos/assets generales.png" id="1_atlas"]
-
-[sub_resource type="AtlasTexture" id="ArbustoFlores"]
-atlas = ExtResource("1_atlas")
-region = Rect2(15, 375, 105, 54)
-filter_clip = true
-
-[sub_resource type="AtlasTexture" id="ArbustoVerde"]
-atlas = ExtResource("1_atlas")
-region = Rect2(15, 427, 105, 54)
-filter_clip = true
-
-[sub_resource type="AtlasTexture" id="Banco"]
-atlas = ExtResource("1_atlas")
-region = Rect2(983, 616, 100, 49)
-filter_clip = true
-
-[sub_resource type="AtlasTexture" id="Farol"]
-atlas = ExtResource("1_atlas")
-region = Rect2(895, 513, 42, 110)
-filter_clip = true
+[ext_resource type="Texture2D" uid="uid://bgkbkb58ksmu6" path="res://Assets/Overworld/LaBoca/seto_flores.png" id="1_gfmpr"]
+[ext_resource type="Texture2D" uid="uid://bk7p8adoxuxv7" path="res://Assets/Overworld/LaBoca/seto.png" id="2_e0p74"]
+[ext_resource type="Texture2D" uid="uid://sp72b28usylf" path="res://Assets/Overworld/LaBoca/banco.png" id="3_wafgu"]
+[ext_resource type="Texture2D" uid="uid://b2aw2ioi6p7cl" path="res://Assets/Overworld/LaBoca/farol.png" id="4_t0o3g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_veuqm"]
 size = Vector2(16, 16)
@@ -55,65 +38,50 @@ y_sort_enabled = true
 [node name="ArbustosPlaza1" type="Sprite2D" parent="." unique_id=1411335039]
 texture_filter = 1
 position = Vector2(72, 280)
-scale = Vector2(0.152381, 0.152381)
-texture = SubResource("ArbustoFlores")
-offset = Vector2(0, 25.5)
+texture = ExtResource("1_gfmpr")
 
 [node name="ArbustosPlaza2" type="Sprite2D" parent="." unique_id=1434272845]
 texture_filter = 1
 position = Vector2(152, 280)
-scale = Vector2(0.152381, 0.152381)
-texture = SubResource("ArbustoFlores")
-offset = Vector2(0, 25.5)
+texture = ExtResource("1_gfmpr")
 
 [node name="ArbustosPlaza3" type="Sprite2D" parent="." unique_id=1229149587]
 texture_filter = 1
 position = Vector2(72, 328)
-scale = Vector2(0.152381, 0.152381)
-texture = SubResource("ArbustoVerde")
-offset = Vector2(0, 25.5)
+texture = ExtResource("2_e0p74")
 
 [node name="ArbustosPlaza4" type="Sprite2D" parent="." unique_id=2005188579]
 texture_filter = 1
 position = Vector2(152, 328)
-scale = Vector2(0.152381, 0.152381)
-texture = SubResource("ArbustoVerde")
-offset = Vector2(0, 25.5)
+texture = ExtResource("2_e0p74")
 
 [node name="BancoPlaza" type="Sprite2D" parent="." unique_id=751008904]
 texture_filter = 1
 position = Vector2(120, 344)
-scale = Vector2(0.186047, 0.186047)
-texture = SubResource("Banco")
-offset = Vector2(2, 18.5)
+texture = ExtResource("3_wafgu")
 
 [node name="FarolPlazaOeste" type="Sprite2D" parent="." unique_id=284965580]
 texture_filter = 1
 position = Vector2(-40, 216)
-scale = Vector2(0.17, 0.17)
-texture = SubResource("Farol")
-offset = Vector2(1.5, -6.9412)
+texture = ExtResource("4_t0o3g")
+offset = Vector2(0, -7.5)
 
 [node name="FarolPlazaCentro" type="Sprite2D" parent="." unique_id=664580085]
 texture_filter = 1
 position = Vector2(200, 216)
-scale = Vector2(0.17, 0.17)
-texture = SubResource("Farol")
-offset = Vector2(1.5, -6.9412)
+texture = ExtResource("4_t0o3g")
+offset = Vector2(0, -7.5)
 
 [node name="FarolPlazaEste" type="Sprite2D" parent="." unique_id=1458148228]
 texture_filter = 1
 position = Vector2(440, 216)
-scale = Vector2(0.17, 0.17)
-texture = SubResource("Farol")
-offset = Vector2(1.5, -6.9412)
+texture = ExtResource("4_t0o3g")
+offset = Vector2(0, -7.5)
 
 [node name="BancoBulevar" type="Sprite2D" parent="." unique_id=506998466]
 texture_filter = 1
 position = Vector2(344, 264)
-scale = Vector2(0.186047, 0.186047)
-texture = SubResource("Banco")
-offset = Vector2(2, 18.5)
+texture = ExtResource("3_wafgu")
 
 [node name="Colisiones" type="StaticBody2D" parent="." unique_id=264639374]
 
