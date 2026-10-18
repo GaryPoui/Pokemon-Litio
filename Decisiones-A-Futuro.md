@@ -6,7 +6,7 @@ Constitución tipo Metal
 Cementerio (Chacarita) tipo Fantasma
 IPM (Villa Pueyrredon) tipo Electrico
 Monumental (Nuñez) tipo fantasma de la b [pokemones rojos y blancos]
-Plaza Alem (Devoto) [pokemones comida]
+Plaza Arenales (Devoto) [pokemones comida]
 Bosques de Palermo (Palermo) tipo Planta
 
 
