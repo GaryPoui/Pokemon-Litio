@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qloajecvya08"
-path="res://.godot/imported/viviendas_conventillo_gen4_concepto.png-a923a706b58c956e53b2ef3d24dea081.ctex"
+uid="uid://bhaeden2r0a8f"
+path="res://.godot/imported/bombonera.png-a52a34633ba1ce72262031ed8cc9ee7d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Overworld/LaBoca/viviendas_conventillo_gen4_concepto.png"
-dest_files=["res://.godot/imported/viviendas_conventillo_gen4_concepto.png-a923a706b58c956e53b2ef3d24dea081.ctex"]
+source_file="res://Assets/Overworld/LaBoca/bombonera.png"
+dest_files=["res://.godot/imported/bombonera.png-a52a34633ba1ce72262031ed8cc9ee7d.ctex"]
 
 [params]
 
@@ -23,7 +23,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""

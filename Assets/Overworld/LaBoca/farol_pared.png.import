@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtqeuke44ao7f"
-path="res://.godot/imported/local_cachafaz_variantes_estructura_gen4.png-b72c0869833c68a5ea1d448ba464a22c.ctex"
+uid="uid://7v7tb1ab57du"
+path="res://.godot/imported/farol_pared.png-ce900b3166c5ba6d8cee78e9de071901.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Overworld/LaBoca/local_cachafaz_variantes_estructura_gen4.png"
-dest_files=["res://.godot/imported/local_cachafaz_variantes_estructura_gen4.png-b72c0869833c68a5ea1d448ba464a22c.ctex"]
+source_file="res://Assets/Overworld/LaBoca/farol_pared.png"
+dest_files=["res://.godot/imported/farol_pared.png-ce900b3166c5ba6d8cee78e9de071901.ctex"]
 
 [params]
 

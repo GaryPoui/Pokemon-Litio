@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxsq8dff6qm4l"
-path="res://.godot/imported/suelo_adoquin_vereda_transiciones_gen4.png-b4954326ff099caa26443af1ba36371e.ctex"
+uid="uid://r4nsbwse2y8u"
+path="res://.godot/imported/boca_tormenta.png-9688b2b38c4a9b2b27906c7deb881949.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Overworld/LaBoca/suelo_adoquin_vereda_transiciones_gen4.png"
-dest_files=["res://.godot/imported/suelo_adoquin_vereda_transiciones_gen4.png-b4954326ff099caa26443af1ba36371e.ctex"]
+source_file="res://Assets/Overworld/LaBoca/boca_tormenta.png"
+dest_files=["res://.godot/imported/boca_tormenta.png-9688b2b38c4a9b2b27906c7deb881949.ctex"]
 
 [params]
 

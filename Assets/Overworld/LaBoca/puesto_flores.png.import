@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://buwpn2f38rsl"
-path="res://.godot/imported/local_cachafaz_caminito_gen4.png-dce11577bba8ddae252605eb3930e913.ctex"
+uid="uid://clcwq6ybc3s8p"
+path="res://.godot/imported/puesto_flores.png-1e8b333efa36aee5567b24ddfbd50bac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Overworld/LaBoca/local_cachafaz_caminito_gen4.png"
-dest_files=["res://.godot/imported/local_cachafaz_caminito_gen4.png-dce11577bba8ddae252605eb3930e913.ctex"]
+source_file="res://Assets/Overworld/LaBoca/puesto_flores.png"
+dest_files=["res://.godot/imported/puesto_flores.png-1e8b333efa36aee5567b24ddfbd50bac.ctex"]
 
 [params]
 

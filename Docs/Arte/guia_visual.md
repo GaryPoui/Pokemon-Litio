@@ -26,7 +26,7 @@ Medidas relevadas en `c84c115f`:
 | `pasto_variantes.png` | 128×96: 8×6 celdas de 16×16 |
 | `entorno_provisional.png` | 128×64 |
 | Conventillos activos | amarillo, azul y rojo 80×64 |
-| `estadio_bombonera.png` | 256×208 |
+| `estadio_bombonera.png` | 256×128; se muestra a escala 1× en el mapa |
 | Banco y setos de La Boca | 16×16 |
 | Farol de La Boca | 14×31 |
 | NPC clásicos del proyecto | Hoja 32×128: cuatro celdas de 32×32 |

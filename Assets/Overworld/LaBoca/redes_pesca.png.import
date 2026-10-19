@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8epljrp2i46t"
-path="res://.godot/imported/estadio_bombonera_gen4.png-7334f592375c0816d17a0e4f5a6db86d.ctex"
+uid="uid://ckgdlg1q11urv"
+path="res://.godot/imported/redes_pesca.png-7aae38d31eb3c6453db5a503222cc169.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Overworld/LaBoca/estadio_bombonera_gen4.png"
-dest_files=["res://.godot/imported/estadio_bombonera_gen4.png-7334f592375c0816d17a0e4f5a6db86d.ctex"]
+source_file="res://Assets/Overworld/LaBoca/redes_pesca.png"
+dest_files=["res://.godot/imported/redes_pesca.png-7aae38d31eb3c6453db5a503222cc169.ctex"]
 
 [params]
 

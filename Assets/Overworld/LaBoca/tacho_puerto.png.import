@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2msjhgosc3g8"
-path="res://.godot/imported/suelo_caminito_multicolor_tileset_gen4.png-df8f47dda46806a2551da6ceebf223c5.ctex"
+uid="uid://cermlyu1pd3ye"
+path="res://.godot/imported/tacho_puerto.png-e5820077014587c37588da3223591a25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Overworld/LaBoca/suelo_caminito_multicolor_tileset_gen4.png"
-dest_files=["res://.godot/imported/suelo_caminito_multicolor_tileset_gen4.png-df8f47dda46806a2551da6ceebf223c5.ctex"]
+source_file="res://Assets/Overworld/LaBoca/tacho_puerto.png"
+dest_files=["res://.godot/imported/tacho_puerto.png-e5820077014587c37588da3223591a25.ctex"]
 
 [params]
 

@@ -316,12 +316,13 @@ sonido = ""
 position = Vector2(416, 72)
 
 [node name="Sprite" type="Sprite2D" parent="TorreDesafio" unique_id=796242309]
-position = Vector2(-128, -200)
+position = Vector2(-128, -120)
 texture = ExtResource("26_jfnwk")
 centered = false
+scale = Vector2(1, 1)
 
 [node name="Colision" type="CollisionPolygon2D" parent="TorreDesafio" unique_id=1396974153]
-polygon = PackedVector2Array(-128, -200, 128, -200, 128, 8, -128, 8)
+polygon = PackedVector2Array(-128, -120, 128, -120, 128, 8, -128, 8)
 
 [node name="ChicaAna" parent="." unique_id=1154531755 instance=ExtResource("6_1p004")]
 position = Vector2(40, 232)

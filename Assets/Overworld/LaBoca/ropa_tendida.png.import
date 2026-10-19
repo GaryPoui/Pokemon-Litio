@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ciiduax534iar"
-path="res://.godot/imported/estadio_bombonera_variantes_estructura_gen4.png-59859738106d826ff1080353bb827164.ctex"
+uid="uid://cq1b0v658dxy1"
+path="res://.godot/imported/ropa_tendida.png-23adbec0a51a0e8f9437d310f927f5a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Overworld/LaBoca/estadio_bombonera_variantes_estructura_gen4.png"
-dest_files=["res://.godot/imported/estadio_bombonera_variantes_estructura_gen4.png-59859738106d826ff1080353bb827164.ctex"]
+source_file="res://Assets/Overworld/LaBoca/ropa_tendida.png"
+dest_files=["res://.godot/imported/ropa_tendida.png-23adbec0a51a0e8f9437d310f927f5a2.ctex"]
 
 [params]
 
@@ -23,7 +23,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
