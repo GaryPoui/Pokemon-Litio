@@ -1,0 +1,38 @@
+{
+  "lote": "Palermo v02",
+  "estado": "final pendiente de integración",
+  "assets": [
+    {
+      "nombre": "puente_lago",
+      "ancho": 96,
+      "alto": 48,
+      "preview": "puente_lago_4x.png",
+      "fuente": "../../../../ArteFuente/Barrios/palermo/puente_lago.svg",
+      "png": "../../../../Assets/Produccion/Barrios/palermo/v02/puente_lago.png"
+    },
+    {
+      "nombre": "parterre_rosas",
+      "ancho": 64,
+      "alto": 40,
+      "preview": "parterre_rosas_4x.png",
+      "fuente": "../../../../ArteFuente/Barrios/palermo/parterre_rosas.svg",
+      "png": "../../../../Assets/Produccion/Barrios/palermo/v02/parterre_rosas.png"
+    },
+    {
+      "nombre": "lampara_parque",
+      "ancho": 24,
+      "alto": 56,
+      "preview": "lampara_parque_4x.png",
+      "fuente": "../../../../ArteFuente/Barrios/palermo/lampara_parque.svg",
+      "png": "../../../../Assets/Produccion/Barrios/palermo/v02/lampara_parque.png"
+    },
+    {
+      "nombre": "borde_lago_tile",
+      "ancho": 32,
+      "alto": 24,
+      "preview": "borde_lago_tile_4x.png",
+      "fuente": "../../../../ArteFuente/Barrios/palermo/borde_lago_tile.svg",
+      "png": "../../../../Assets/Produccion/Barrios/palermo/v02/borde_lago_tile.png"
+    }
+  ]
+}

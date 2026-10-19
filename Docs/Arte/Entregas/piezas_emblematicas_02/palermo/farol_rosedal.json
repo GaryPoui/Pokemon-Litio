@@ -1,0 +1,13 @@
+{
+  "barrio": "palermo",
+  "nombre": "farol_rosedal",
+  "canvas_px": {
+    "ancho": 48,
+    "alto": 64
+  },
+  "asset_png": "../../../../../Assets/Produccion/Barrios/palermo/v02/farol_rosedal.png",
+  "fuente_svg": "../../../../../ArteFuente/Barrios/palermo/farol_rosedal.svg",
+  "preview": "farol_rosedal_4x.png",
+  "estado": "pendiente_de_integracion",
+  "sin_pokemon": true
+}

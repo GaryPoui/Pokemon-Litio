@@ -1,0 +1,13 @@
+{
+  "barrio": "arenales",
+  "nombre": "banco_plaza",
+  "canvas_px": {
+    "ancho": 64,
+    "alto": 48
+  },
+  "asset_png": "../../../../../Assets/Produccion/Barrios/arenales/v02/banco_plaza.png",
+  "fuente_svg": "../../../../../ArteFuente/Barrios/arenales/banco_plaza.svg",
+  "preview": "banco_plaza_4x.png",
+  "estado": "pendiente_de_integracion",
+  "sin_pokemon": true
+}

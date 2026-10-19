@@ -1,0 +1,692 @@
+{
+  "bits": {
+    "N": 1,
+    "NE": 2,
+    "E": 4,
+    "SE": 8,
+    "S": 16,
+    "SW": 32,
+    "W": 64,
+    "NW": 128
+  },
+  "normalizacion": "Eliminar diagonal si falta cualquiera de sus dos cardinales.",
+  "regiones": [
+    {
+      "id": "vereda_0",
+      "mask": 0,
+      "index": 0,
+      "columna": 0,
+      "fila": 0,
+      "rect_px": [
+        0,
+        0,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_1",
+      "mask": 1,
+      "index": 1,
+      "columna": 1,
+      "fila": 0,
+      "rect_px": [
+        16,
+        0,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_4",
+      "mask": 4,
+      "index": 2,
+      "columna": 2,
+      "fila": 0,
+      "rect_px": [
+        32,
+        0,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_5",
+      "mask": 5,
+      "index": 3,
+      "columna": 3,
+      "fila": 0,
+      "rect_px": [
+        48,
+        0,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_7",
+      "mask": 7,
+      "index": 4,
+      "columna": 4,
+      "fila": 0,
+      "rect_px": [
+        64,
+        0,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_16",
+      "mask": 16,
+      "index": 5,
+      "columna": 5,
+      "fila": 0,
+      "rect_px": [
+        80,
+        0,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_17",
+      "mask": 17,
+      "index": 6,
+      "columna": 6,
+      "fila": 0,
+      "rect_px": [
+        96,
+        0,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_20",
+      "mask": 20,
+      "index": 7,
+      "columna": 7,
+      "fila": 0,
+      "rect_px": [
+        112,
+        0,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_21",
+      "mask": 21,
+      "index": 8,
+      "columna": 0,
+      "fila": 1,
+      "rect_px": [
+        0,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_23",
+      "mask": 23,
+      "index": 9,
+      "columna": 1,
+      "fila": 1,
+      "rect_px": [
+        16,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_28",
+      "mask": 28,
+      "index": 10,
+      "columna": 2,
+      "fila": 1,
+      "rect_px": [
+        32,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_29",
+      "mask": 29,
+      "index": 11,
+      "columna": 3,
+      "fila": 1,
+      "rect_px": [
+        48,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_31",
+      "mask": 31,
+      "index": 12,
+      "columna": 4,
+      "fila": 1,
+      "rect_px": [
+        64,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_64",
+      "mask": 64,
+      "index": 13,
+      "columna": 5,
+      "fila": 1,
+      "rect_px": [
+        80,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_65",
+      "mask": 65,
+      "index": 14,
+      "columna": 6,
+      "fila": 1,
+      "rect_px": [
+        96,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_68",
+      "mask": 68,
+      "index": 15,
+      "columna": 7,
+      "fila": 1,
+      "rect_px": [
+        112,
+        16,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_69",
+      "mask": 69,
+      "index": 16,
+      "columna": 0,
+      "fila": 2,
+      "rect_px": [
+        0,
+        32,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_71",
+      "mask": 71,
+      "index": 17,
+      "columna": 1,
+      "fila": 2,
+      "rect_px": [
+        16,
+        32,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_80",
+      "mask": 80,
+      "index": 18,
+      "columna": 2,
+      "fila": 2,
+      "rect_px": [
+        32,
+        32,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_81",
+      "mask": 81,
+      "index": 19,
+      "columna": 3,
+      "fila": 2,
+      "rect_px": [
+        48,
+        32,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_84",
+      "mask": 84,
+      "index": 20,
+      "columna": 4,
+      "fila": 2,
+      "rect_px": [
+        64,
+        32,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_85",
+      "mask": 85,
+      "index": 21,
+      "columna": 5,
+      "fila": 2,
+      "rect_px": [
+        80,
+        32,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_87",
+      "mask": 87,
+      "index": 22,
+      "columna": 6,
+      "fila": 2,
+      "rect_px": [
+        96,
+        32,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_92",
+      "mask": 92,
+      "index": 23,
+      "columna": 7,
+      "fila": 2,
+      "rect_px": [
+        112,
+        32,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_93",
+      "mask": 93,
+      "index": 24,
+      "columna": 0,
+      "fila": 3,
+      "rect_px": [
+        0,
+        48,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_95",
+      "mask": 95,
+      "index": 25,
+      "columna": 1,
+      "fila": 3,
+      "rect_px": [
+        16,
+        48,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_112",
+      "mask": 112,
+      "index": 26,
+      "columna": 2,
+      "fila": 3,
+      "rect_px": [
+        32,
+        48,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_113",
+      "mask": 113,
+      "index": 27,
+      "columna": 3,
+      "fila": 3,
+      "rect_px": [
+        48,
+        48,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_116",
+      "mask": 116,
+      "index": 28,
+      "columna": 4,
+      "fila": 3,
+      "rect_px": [
+        64,
+        48,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_117",
+      "mask": 117,
+      "index": 29,
+      "columna": 5,
+      "fila": 3,
+      "rect_px": [
+        80,
+        48,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_119",
+      "mask": 119,
+      "index": 30,
+      "columna": 6,
+      "fila": 3,
+      "rect_px": [
+        96,
+        48,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_124",
+      "mask": 124,
+      "index": 31,
+      "columna": 7,
+      "fila": 3,
+      "rect_px": [
+        112,
+        48,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_125",
+      "mask": 125,
+      "index": 32,
+      "columna": 0,
+      "fila": 4,
+      "rect_px": [
+        0,
+        64,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_127",
+      "mask": 127,
+      "index": 33,
+      "columna": 1,
+      "fila": 4,
+      "rect_px": [
+        16,
+        64,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_193",
+      "mask": 193,
+      "index": 34,
+      "columna": 2,
+      "fila": 4,
+      "rect_px": [
+        32,
+        64,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_197",
+      "mask": 197,
+      "index": 35,
+      "columna": 3,
+      "fila": 4,
+      "rect_px": [
+        48,
+        64,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_199",
+      "mask": 199,
+      "index": 36,
+      "columna": 4,
+      "fila": 4,
+      "rect_px": [
+        64,
+        64,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_209",
+      "mask": 209,
+      "index": 37,
+      "columna": 5,
+      "fila": 4,
+      "rect_px": [
+        80,
+        64,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_213",
+      "mask": 213,
+      "index": 38,
+      "columna": 6,
+      "fila": 4,
+      "rect_px": [
+        96,
+        64,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_215",
+      "mask": 215,
+      "index": 39,
+      "columna": 7,
+      "fila": 4,
+      "rect_px": [
+        112,
+        64,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_221",
+      "mask": 221,
+      "index": 40,
+      "columna": 0,
+      "fila": 5,
+      "rect_px": [
+        0,
+        80,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_223",
+      "mask": 223,
+      "index": 41,
+      "columna": 1,
+      "fila": 5,
+      "rect_px": [
+        16,
+        80,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_241",
+      "mask": 241,
+      "index": 42,
+      "columna": 2,
+      "fila": 5,
+      "rect_px": [
+        32,
+        80,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_245",
+      "mask": 245,
+      "index": 43,
+      "columna": 3,
+      "fila": 5,
+      "rect_px": [
+        48,
+        80,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_247",
+      "mask": 247,
+      "index": 44,
+      "columna": 4,
+      "fila": 5,
+      "rect_px": [
+        64,
+        80,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_253",
+      "mask": 253,
+      "index": 45,
+      "columna": 5,
+      "fila": 5,
+      "rect_px": [
+        80,
+        80,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_255",
+      "mask": 255,
+      "index": 46,
+      "columna": 6,
+      "fila": 5,
+      "rect_px": [
+        96,
+        80,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "adoquin",
+      "index": 47,
+      "columna": 7,
+      "fila": 5,
+      "rect_px": [
+        112,
+        80,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "adoquin_variante_01",
+      "index": 48,
+      "columna": 0,
+      "fila": 6,
+      "rect_px": [
+        0,
+        96,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "adoquin_variante_02",
+      "index": 49,
+      "columna": 1,
+      "fila": 6,
+      "rect_px": [
+        16,
+        96,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_variante_01",
+      "index": 50,
+      "columna": 2,
+      "fila": 6,
+      "rect_px": [
+        32,
+        96,
+        16,
+        16
+      ]
+    },
+    {
+      "id": "vereda_variante_02",
+      "index": 51,
+      "columna": 3,
+      "fila": 6,
+      "rect_px": [
+        48,
+        96,
+        16,
+        16
+      ]
+    }
+  ],
+  "celdas_vacias": [
+    52,
+    53,
+    54,
+    55
+  ]
+}

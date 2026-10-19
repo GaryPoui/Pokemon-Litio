@@ -1,0 +1,23 @@
+{
+  "id": "fondo_constitucion_v03",
+  "barrio": "Constitución",
+  "estado": "pendiente_de_integracion",
+  "lienzo_px": {
+    "ancho": 256,
+    "alto": 192
+  },
+  "formato": "PNG indexado opaco",
+  "colores_rgb_unicos": 238,
+  "asset": "Assets/Produccion/Barrios/constitucion/v03/fondo_batalla.png",
+  "fuente_raster": "ArteFuente/Batalla/constitucion_fondo_batalla_imagegen_v03_source.png",
+  "preview": "Docs/Arte/Entregas/fondos_barrios_03/constitucion/fondo_batalla_4x.png",
+  "plataformas_reutilizadas": "ArteFuente/Batalla/la_boca_plataformas.svg",
+  "sin_pokemon": true,
+  "validacion": {
+    "dimensiones": true,
+    "opaco": true
+  },
+  "referencias_del_usuario": [
+    "Referencias pixel art de combate y barrio adjuntadas por el usuario"
+  ]
+}

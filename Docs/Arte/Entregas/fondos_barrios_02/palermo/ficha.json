@@ -1,0 +1,67 @@
+{
+  "barrio": "palermo",
+  "version": "v02",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/palermo/v02/fondo_batalla.png",
+  "fuente": "../../../../ArteFuente/Batalla/palermo_fondo_batalla_v02.svg",
+  "canvas": {
+    "ancho": 256,
+    "alto": 192
+  },
+  "formato": "PNG RGB opaco",
+  "uso": "fondo de combate pantalla completa",
+  "ancla": "origen (0,0)",
+  "plataformas": {
+    "trasera": {
+      "x": 163,
+      "y": 83,
+      "apoyo": "190,90"
+    },
+    "delantera": {
+      "x": 30,
+      "y": 143,
+      "apoyo": "64,174"
+    }
+  },
+  "paleta": [
+    "#b9d7dc",
+    "#d6e4d8",
+    "#608c68",
+    "#807968",
+    "#98896b",
+    "#6d685b",
+    "#a39576",
+    "#5c966a",
+    "#78a875",
+    "#6198a5",
+    "#80b3b7",
+    "#b1d2cb",
+    "#dfd4b8",
+    "#a2a795",
+    "#857d65",
+    "#52724e",
+    "#488657",
+    "#6a9a66",
+    "#466a4b",
+    "#75965e",
+    "#b95670",
+    "#e08b97",
+    "#586c61",
+    "#89a77a",
+    "#596553",
+    "#718064",
+    "#81775d",
+    "#95856a",
+    "#b6a47c",
+    "#6e6755",
+    "#39443e",
+    "#4e7041",
+    "#63904a",
+    "#7cab52",
+    "#9cc664",
+    "#4c713f",
+    "#a4cc68"
+  ],
+  "plataformas_referencia": "ArteFuente/Batalla/la_boca_plataformas.svg",
+  "sin_pokemon": true
+}

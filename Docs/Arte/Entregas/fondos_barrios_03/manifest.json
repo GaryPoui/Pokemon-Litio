@@ -1,0 +1,15 @@
+{
+  "lote": "Fondos de combate barrios v03; IPM basado en foto real v04",
+  "fecha": "2026-10-18",
+  "estado": "assets visuales listos, integracion pendiente",
+  "assets": [
+    "Plaza Arenales",
+    "Chacarita",
+    "Constitución",
+    "La Boca",
+    "Monumental",
+    "Barrio Mugica",
+    "Rosedal de Palermo",
+    "Instituto Politécnico Modelo"
+  ]
+}

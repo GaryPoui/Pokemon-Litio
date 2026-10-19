@@ -1,0 +1,27 @@
+{
+  "id": "estructura_ipm_fachada_real_v04",
+  "barrio": "Instituto Politécnico Modelo",
+  "estado": "asset_visual_pendiente_de_integracion",
+  "lienzo_px": {
+    "ancho": 128,
+    "alto": 96
+  },
+  "formato": "PNG indexado con transparencia",
+  "asset": "Assets/Produccion/Barrios/ipm/v04/fachada_instituto_real.png",
+  "escena_exterior": "Escenas/Edificios/IPMExterior.tscn",
+  "fuente_raster": "ArteFuente/Barrios/ipm/fachada_instituto_real_imagegen_v04_source.png",
+  "referencias": [
+    "Fotos reales del IPM adjuntadas por el usuario: fachada general y acceso principal"
+  ],
+  "rasgos": [
+    "fachada de ladrillo visto",
+    "franjas celestes",
+    "ventanas multipanel azules",
+    "equipos de aire acondicionado",
+    "marquesina curva con columnas rojas"
+  ],
+  "composicion": "Volumen superior retraído hacia el fondo; frente legible, sin extender la profundidad hacia los costados.",
+  "sin_pokemon": true,
+  "escena_exterior_creada": true,
+  "colocado_en_mapa": false
+}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="64" viewBox="0 0 80 64" shape-rendering="crispEdges"><title>Conventillo amarillo con techo y fachada en planos de profundidad</title>
+<!-- volumen lateral, detrás del frente -->
+<g id="cuerpo">
+<path fill="#243650" d="M62 16 77 12v42l-15 7z"/><path fill="#347552" d="M64 19 75 16v37l-11 5z"/><path fill="#55975c" d="M66 20v35h2V20zm6-2v35h1V18z"/><path fill="#2d684f" d="M69 19v36h2V19z"/>
+<!-- lateral con dos ventanas estrechas y contraventanas -->
+<path fill="#275847" d="M68 27h5v7h-5zM68 41h5v7h-5z"/><path fill="#9a5140" d="M69 28h3v5h-3zM69 42h3v5h-3z"/><path fill="#69bbc7" d="M70 29h2v3h-2zM70 43h2v3h-2z"/><path fill="#dfc86a" d="M68 27v7h1v-7zm5 0v7h1v-7zM68 41v7h1v-7zm5 0v7h1v-7z"/>
+<!-- fachada principal -->
+<path fill="#28394e" d="M2 16h62v47H2z"/><path fill="#e5bd43" d="M4 19h59v42H4z"/><path fill="#ffdb67" d="M5 20h2v41H5zm8 0h1v41h-1zm8 0h2v41h-2zm9 0h1v41h-1zm8 0h2v41h-2zm9 0h1v41h-1zm9 0h2v41h-2z"/><path fill="#b88935" d="M10 20h1v41h-1zm8 0h2v41h-2zm8 0h1v41h-1zm9 0h1v41h-1zm8 0h2v41h-2zm9 0h1v41h-1zm8 0h1v41h-1z"/>
+<!-- moldura superior y faja entre plantas -->
+<path fill="#9a7136" d="M4 19h59v3H4zm0 21h59v3H4z"/><path fill="#ffe17b" d="M4 19h59v1H4zm0 21h59v1H4z"/>
+<!-- ventanas altas, marcos y vidrios -->
+<g><path fill="#713f3e" d="M8 24h11v11H8zm18 0h11v11H26zm18 0h11v11H44z"/><path fill="#d77155" d="M9 25h9v9H9zm18 0h9v9h-9zm18 0h9v9h-9z"/><path fill="#263b54" d="M10 26h7v7h-7zm18 0h7v7h-7zm18 0h7v7h-7z"/><path fill="#72c1cb" d="M11 27h2v2h-2zm3 0h2v2h-2zm-3 3h2v2h-2zm3 0h2v2h-2zm15-3h2v2h-2zm3 0h2v2h-2zm-3 3h2v2h-2zm3 0h2v2h-2zm15-3h2v2h-2zm3 0h2v2h-2zm-3 3h2v2h-2zm3 0h2v2h-2z"/><path fill="#f0bd62" d="M13 26h1v7h-1zm-3 3h7v1h-7zm18 0h7v1h-7zm18 0h7v1h-7z"/></g>
+<!-- balcón corrido: ménsulas, losa, barandas y balaustres -->
+<path fill="#28394e" d="M2 37h62v3H2zm1 3h60v3H3z"/><path fill="#397fc5" d="M3 37h60v1H3zm1 4h58v1H4z"/><path fill="#28538b" d="M4 38h2v3H4zm7 0h1v3h-1zm7 0h2v3h-2zm7 0h1v3h-1zm7 0h2v3h-2zm7 0h1v3h-1zm7 0h2v3h-2zm7 0h1v3h-1zm7 0h2v3h-2z"/><path fill="#70a7dc" d="M5 38h1v2H5zm14 0h1v2h-1zm14 0h1v2h-1zm14 0h1v2h-1zm14 0h1v2h-1z"/><path fill="#28394e" d="M5 43h3v2H5zm23 0h3v2h-3zm29 0h3v2h-3z"/>
+<!-- planta baja con puerta y ventanas -->
+<path fill="#713f3e" d="M8 47h11v11H8zm36 0h11v11H44z"/><path fill="#d77155" d="M9 48h9v9H9zm36 0h9v9h-9z"/><path fill="#263b54" d="M10 49h7v7h-7zm36 0h7v7h-7z"/><path fill="#72c1cb" d="M11 50h2v2h-2zm3 0h2v2h-2zm-3 3h2v2h-2zm3 0h2v2h-2zm33-3h2v2h-2zm3 0h2v2h-2zm-3 3h2v2h-2zm3 0h2v2h-2z"/><path fill="#763e3c" d="M27 45h13v17H27z"/><path fill="#aa5144" d="M29 46h9v15h-9z"/><path fill="#e78059" d="M29 46h2v15h-2zm2 1h5v4h-5z"/><path fill="#70c1c9" d="M32 48h3v2h-3z"/><path fill="#edcf62" d="M36 54h1v2h-1z"/><path fill="#28634c" d="M25 44h17v2H25z"/><path fill="#70a861" d="M27 42h13v2H27z"/><path fill="#fff0bf" d="M28 42h2v3h-2zm5 0h2v3h-2zm5 0h2v3h-2z"/>
+<!-- escalera adosada al lateral, huella visible -->
+<path fill="#27374d" d="M61 34h4v3h-4zm3 3h4v3h-4zm3 3h4v3h-4zm3 3h4v3h-4zm3 3h4v3h-4zm1 3h3v8h-3z"/><path fill="#4c91d7" d="M62 35h3v1h-3zm3 3h3v1h-3zm3 3h3v1h-3zm3 3h3v1h-3zm3 3h3v1h-3zm0 4h2v5h-2z"/><path fill="#316bc0" d="M62 36h3v1h-3zm3 3h3v1h-3zm3 3h3v1h-3zm3 3h3v1h-3zm3 3h3v1h-3z"/>
+<path fill="#5d7182" d="M1 61h63v3H1z"/><path fill="#d5d8ce" d="M1 61h63v1H1z"/>
+</g>
+<g id="techo">
+<!-- Techo detrás de la fachada: volumen frontal simétrico y profundidad vertical. -->
+<path fill="#172b4c" d="M3 19V8l7-6h51l7 6v11H3z"/>
+<path fill="#214c91" d="M5 17V9l6-5h49l6 5v8H5z"/>
+<!-- Paños de chapa: listones paralelos al eje frente-fondo, sin fuga a izquierda o derecha. -->
+<path fill="#3879cf" d="M7 9h3v8H7zm7-4h3v12h-3zm8 0h3v12h-3zm8 0h3v12h-3zm19 0h3v12h-3zm8 0h3v12h-3zm7 4h2v8h-2z"/>
+<path fill="#173e7a" d="M11 5h2v12h-2zm8 0h2v12h-2zm8 0h2v12h-2zm8 0h2v12h-2zm12 0h2v12h-2zm8 0h2v12h-2zm8 1h2v11h-2z"/>
+<path fill="#5796df" d="M12 4h2v13h-2zm8 1h1v12h-1zm8 0h1v12h-1zm20 0h1v12h-1zm8 0h1v12h-1z"/>
+<!-- Cumbrera central continua desde la fachada hacia el fondo. -->
+<path fill="#142845" d="M34 2h12v17H34z"/>
+<path fill="#2f69ad" d="M36 3h8v14h-8z"/>
+<path fill="#3c82d0" d="M38 3h3v14h-3z"/>
+<path fill="#8ab7e2" d="M36 3h1v14h-1z"/>
+<!-- Alero delantero recto, alineado con la fachada. -->
+<path fill="#172b4c" d="M3 17h65v7H3z"/>
+<path fill="#5094e8" d="M4 17h63v2H4z"/>
+<path fill="#234d89" d="M3 21h65v3H3z"/>
+<path fill="#a7cae8" d="M5 17h61v1H5z"/>
+<!-- Parche de chapa en el faldón izquierdo. -->
+<path fill="#773d3c" d="M13 5h4v7h-4z"/><path fill="#e07856" d="M13 5h3v1h-2v5h-1z"/>
+</g></svg>

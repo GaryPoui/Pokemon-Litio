@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" shape-rendering="crispEdges"><rect width="256" height="192" fill="#aec6cf"/><path d="M0 0h256v33h-256z" fill="#788b92"/><path d="M0 26h21v4H0zm32-10h15v4H32zm184 12h40v4h-40z" fill="#d6e4d8"/><path d="M12 79Q16 40 52 36H204Q240 40 244 79v64H12z" fill="#d2cbb7" stroke="#746e66" stroke-width="4"/><path d="M21 80Q25 48 55 45H201Q231 48 235 80v12H21z" fill="#9c9c91"/><path d="M31 77Q36 56 59 53H197Q220 56 225 77" fill="none" stroke="#eee6d1" stroke-width="5"/><path d="M35 69h9v13h-9zm18-8h9v21h-9zm18-4h9v25h-9zm18-3h9v28h-9zm18-1h9v29h-9zm18 0h9v29h-9zm18 1h9v28h-9zm18 3h9v25h-9zm18 4h9v21h-9zm18 8h9v13h-9z" fill="#646d71"/><path d="M31 100h194v9H31zM25 118h206v9H25z" fill="#5f6b70"/><path d="M26 97h204v5H26z" fill="#eee7d3"/><path d="M47 132h18v12H47zm27 0h18v12H74zm27 0h18v12h-18zm27 0h18v12h-18zm27 0h18v12h-18zm27 0h18v12h-18z" fill="#a94a47"/><path d="M0 145h256v10H0z" fill="#6d6961"/><path d="M14 72l17-9v16L14 88zm228 0-17-9v16l17 9" fill="#b84e49"/><path d="M118 25v21m20-21v21" stroke="#b24b47" stroke-width="5"/><path d="M0 155h256v37H0z" fill="#7c776d"/><path d="M0 155h256v3H0z" fill="#b54b46"/><path d="M0 170h256m-256 14h256" stroke="#ffffff" stroke-opacity=".12" stroke-width="1"/>
+<!-- plataforma trasera, bajo la posición rival (190,90) -->
+<path fill="#39443e" d="M173 102h34v-2h7v-2h5v-5h-3v-3h-5v-2h-47v2h-5v3h-3v5h5v2h7z"/>
+<path fill="#4e7041" d="M169 98h42v2h7v-2h3v-5h-3v-3h-7v-2h-42v2h-7v2h-3v5h3v2z"/>
+<path fill="#63904a" d="M166 94h50v2h5v-2h2v-5h-2v-2h-5v-2h-50v2h-5v2h-2v5h2v2z"/>
+<path fill="#7cab52" d="M171 91h44v2h4v-2h2v-4h-2v-2h-4v-1h-44v1h-4v2h-2v4h2v2z"/>
+<path fill="#9cc664" d="M178 86h31v2h6v2h-2v1h-37v-1h-2v-2h4z"/>
+<path fill="#4c713f" d="M165 93h5v2h-5zm49 0h5v2h-5zm-42-8h4v1h-4z"/>
+<path fill="#a4cc68" d="M174 86h3v1h-3zm36 4h3v1h-3z"/>
+<!-- plataforma delantera, bajo la posición del jugador (64,174) -->
+<path fill="#39443e" d="M48 165h31v-2h11v-2h7v-3h5v-6h-5v-3h-7v-2H43v2h-7v3h-5v6h5v3h7v2z"/>
+<path fill="#4e7041" d="M43 161h42v2h10v-2h7v-3h4v-6h-4v-3h-7v-2H43v2h-7v3h-4v6h4v3h7z"/>
+<path fill="#63904a" d="M38 157h49v2h12v-2h6v-3h4v-5h-4v-3h-6v-2H38v2h-6v3h-4v5h4v3h6z"/>
+<path fill="#7cab52" d="M43 153h44v2h11v-2h4v-3h3v-4h-3v-2H98v-1H43v1h-6v2h-3v4h3v3h6z"/>
+<path fill="#9cc664" d="M51 148h35v1h12v2h-4v1H41v-1h-2v-2h12z"/>
+<path fill="#4c713f" d="M34 155h6v2h-6zm64 0h6v2h-6zm-55-9h4v1h-4z"/>
+<path fill="#a4cc68" d="M48 147h4v1h-4zm42 4h3v1h-3z"/>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "barrio": "palermo",
+  "nombre": "casa_guardaparque",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/palermo/v02/casa_guardaparque.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/palermo/casa_guardaparque.svg",
+  "lienzo": {
+    "ancho": 96,
+    "alto": 96
+  },
+  "area_visible": "x=6..90; y=8..94",
+  "ancla": "centro inferior (48,96)",
+  "huella": "96×16 sugerida; verificar con mapa al integrar",
+  "puerta": "central; paso abierto en la fachada",
+  "profundidad": "techo extendido verticalmente hacia el fondo (parte superior); fachada al frente",
+  "paleta": "10–14 colores por material con luces arriba a la izquierda",
+  "integracion": "asset nuevo separado; no modifica escenas"
+}

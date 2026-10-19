@@ -1,0 +1,39 @@
+{
+  "id": "valija_anden",
+  "barrio": "Constitución",
+  "nombre": "Valija de viaje",
+  "estado": "asset_final_pendiente_de_integracion",
+  "lienzo_px": {
+    "ancho": 32,
+    "alto": 40
+  },
+  "caja_visible_px": [
+    5,
+    5,
+    28,
+    38
+  ],
+  "ancla_px": [
+    16,
+    38
+  ],
+  "ruta_png": "Assets/Produccion/Barrios/constitucion/v03/valija_anden.png",
+  "fuente_svg": "ArteFuente/Barrios/constitucion/valija_anden.svg",
+  "paleta_rgb": [
+    "#282f37",
+    "#45545b",
+    "#483d38",
+    "#493e3a",
+    "#6d5140",
+    "#98704b",
+    "#bd925b",
+    "#c69c64",
+    "#d3ad70"
+  ],
+  "validacion": {
+    "dimensiones": true,
+    "alfa_transparente": true,
+    "probado_en_godot": false
+  },
+  "referencia": "https://www.argentina.gob.ar/capital-humano/cultura/monumentos/estacion-plaza-constitucion"
+}

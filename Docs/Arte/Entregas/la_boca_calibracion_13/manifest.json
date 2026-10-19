@@ -1,0 +1,93 @@
+{
+  "lote": "La Boca · comercio y decoración v13",
+  "estado": "pendiente de integración",
+  "piezas": [
+    {
+      "nombre": "comercio_caminito",
+      "rol": "Frente de comercio de Caminito",
+      "tamano_px": {
+        "ancho": 80,
+        "alto": 64
+      },
+      "estado": "asset_final_pendiente_de_integracion",
+      "ruta_png": "Assets/Overworld/LaBoca/comercio_caminito.png",
+      "fuente_svg": "ArteFuente/la_boca_calibracion_01/v13/comercio_caminito.svg",
+      "colores_rgb": [
+        "#21404c",
+        "#254458",
+        "#273448",
+        "#344950",
+        "#37454b",
+        "#513e3a",
+        "#68423d",
+        "#88c5c8",
+        "#9a6047",
+        "#a9634b",
+        "#bd664a",
+        "#bd7950",
+        "#c0b89f",
+        "#c5824e",
+        "#c8955d",
+        "#d87855",
+        "#e09b5b",
+        "#e3c272",
+        "#e4bb68",
+        "#e5ba53",
+        "#edca73",
+        "#f0c96b",
+        "#f2d486",
+        "#f4d879",
+        "#f5d17a"
+      ]
+    },
+    {
+      "nombre": "banderines_caminito",
+      "rol": "Banderines callejeros de Caminito",
+      "tamano_px": {
+        "ancho": 96,
+        "alto": 32
+      },
+      "estado": "asset_final_pendiente_de_integracion",
+      "ruta_png": "Assets/Overworld/LaBoca/banderines_caminito.png",
+      "fuente_svg": "ArteFuente/la_boca_calibracion_01/v13/banderines_caminito.svg",
+      "colores_rgb": [
+        "#353847",
+        "#37424c",
+        "#3c69a0",
+        "#4c9ba0",
+        "#d77858",
+        "#d96c4b",
+        "#e4cf9e",
+        "#e7dfc3",
+        "#f1c74e",
+        "#f1d78d"
+      ]
+    },
+    {
+      "nombre": "mural_puerto",
+      "rol": "Mural portuario de La Boca",
+      "tamano_px": {
+        "ancho": 64,
+        "alto": 48
+      },
+      "estado": "asset_final_pendiente_de_integracion",
+      "ruta_png": "Assets/Overworld/LaBoca/mural_puerto.png",
+      "fuente_svg": "ArteFuente/la_boca_calibracion_01/v13/mural_puerto.svg",
+      "colores_rgb": [
+        "#1d4c69",
+        "#2f4552",
+        "#315779",
+        "#353c48",
+        "#563e3d",
+        "#7ab0b6",
+        "#a45b46",
+        "#a8cbd0",
+        "#c58a56",
+        "#e0bd75",
+        "#e4bb64",
+        "#e9cc76",
+        "#f1d58a"
+      ]
+    }
+  ]
+}

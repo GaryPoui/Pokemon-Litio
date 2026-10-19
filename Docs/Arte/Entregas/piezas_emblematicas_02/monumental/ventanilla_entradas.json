@@ -1,0 +1,13 @@
+{
+  "barrio": "monumental",
+  "nombre": "ventanilla_entradas",
+  "canvas_px": {
+    "ancho": 56,
+    "alto": 56
+  },
+  "asset_png": "../../../../../Assets/Produccion/Barrios/monumental/v02/ventanilla_entradas.png",
+  "fuente_svg": "../../../../../ArteFuente/Barrios/monumental/ventanilla_entradas.svg",
+  "preview": "ventanilla_entradas_4x.png",
+  "estado": "pendiente_de_integracion",
+  "sin_pokemon": true
+}

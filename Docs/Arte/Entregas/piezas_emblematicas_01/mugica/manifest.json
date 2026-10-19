@@ -1,0 +1,13 @@
+{
+  "barrio": "mugica",
+  "nombre": "Puesto gastronómico",
+  "tamano_px": {
+    "ancho": 88,
+    "alto": 72
+  },
+  "png": "Assets/Produccion/Barrios/mugica/v01/puesto_gastronomico.png",
+  "fuente": "ArteFuente/Barrios/mugica/puesto_gastronomico.svg",
+  "paleta_rgb": 11,
+  "estado": "asset_final_pendiente_de_integracion",
+  "referencia": "https://buenosaires.gob.ar/gcaba_historico/noticias/un-impulso-al-desarrollo-local-la-ciudad-inauguro-el-patio-gastronomico"
+}

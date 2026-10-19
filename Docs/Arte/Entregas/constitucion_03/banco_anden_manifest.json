@@ -1,0 +1,38 @@
+{
+  "id": "banco_anden",
+  "barrio": "Constitución",
+  "nombre": "Banco de andén",
+  "estado": "asset_final_pendiente_de_integracion",
+  "lienzo_px": {
+    "ancho": 64,
+    "alto": 48
+  },
+  "caja_visible_px": [
+    6,
+    17,
+    59,
+    44
+  ],
+  "ancla_px": [
+    32,
+    44
+  ],
+  "ruta_png": "Assets/Produccion/Barrios/constitucion/v03/banco_anden.png",
+  "fuente_svg": "ArteFuente/Barrios/constitucion/banco_anden.svg",
+  "paleta_rgb": [
+    "#343c3e",
+    "#34464d",
+    "#586b6c",
+    "#74898a",
+    "#77614b",
+    "#a27d51",
+    "#b6a68a",
+    "#d4af71"
+  ],
+  "validacion": {
+    "dimensiones": true,
+    "alfa_transparente": true,
+    "probado_en_godot": false
+  },
+  "referencia": "https://www.argentina.gob.ar/capital-humano/cultura/monumentos/estacion-plaza-constitucion"
+}

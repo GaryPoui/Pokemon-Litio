@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="80" height="64" viewBox="0 0 80 64" shape-rendering="crispEdges">
+ <title>Conventillo amarillo — La Boca</title>
+ <defs>
+  <g id="ventana">
+   <path fill="#773d3c" d="M0 0h11v11H0z"/>
+   <path fill="#e07856" d="M0 0h11v1H1v9H0z"/>
+   <path fill="#b64e45" d="M1 1h9v9H1z"/>
+   <path fill="#2b3c55" d="M2 2h7v7H2z"/>
+   <path fill="#68b9c9" d="M3 3h2v2H3zm3 0h2v2H6zM3 6h2v2H3zm3 0h2v2H6z"/>
+   <path fill="#b6e1d6" d="M3 3h1v2H3zm3 0h1v1H6zM3 6h1v1H3z"/>
+   <path fill="#e07856" d="M5 2h1v7H5zM2 5h7v1H2z"/>
+   <path fill="#773d3c" d="M0 10h11v2H0z"/>
+  </g>
+ </defs>
+ <g id="cuerpo">
+  <path fill="#2b3c55" d="M2 16h76v47H2z"/>
+  <path fill="#efc84c" d="M3 18h63v43H3z"/>
+  <path fill="#ffe080" d="M3 19h2v42H3zM9 19h1v42H9zM15 19h1v42H15zM21 19h1v42H21zM27 19h1v42H27zM33 19h1v42H33zM39 19h1v42H39zM45 19h1v42H45zM51 19h1v42H51zM57 19h1v42H57zM63 19h1v42H63z"/>
+  <path fill="#bd9234" d="M7 20h1v41H7zM13 20h1v41H13zM19 20h1v41H19zM25 20h1v41H25zM31 20h1v41H31zM37 20h1v41H37zM43 20h1v41H43zM49 20h1v41H49zM55 20h1v41H55zM61 20h1v41H61z"/>
+  <path fill="#3b8659" d="M66 19h10v42H66z"/>
+  <path fill="#66a562" d="M67 20h1v40H67zM71 20h1v40H71zM75 20h1v40H75z"/>
+  <path fill="#2c654c" d="M69 19h1v42H69zM73 19h1v42H73z"/>
+  <path fill="#bd9234" d="M3 19h63v3H3zM3 42h63v3H3z"/>
+ </g>
+ <g id="ventanas">
+  <use href="#ventana" x="8" y="24"/>
+  <use href="#ventana" x="27" y="24"/>
+  <use href="#ventana" x="46" y="24"/>
+  <use href="#ventana" x="10" y="48"/>
+  <use href="#ventana" x="46" y="48"/>
+ </g>
+ <g id="puerta">
+  <path fill="#773d3c" d="M30 46h12v16H30z"/>
+  <path fill="#b64e45" d="M32 47h8v14H32z"/>
+  <path fill="#e07856" d="M31 47h1v14H31zM33 53h1v7H33z"/>
+  <path fill="#68b9c9" d="M33 48h5v4H33z"/>
+  <path fill="#b6e1d6" d="M33 48h2v2H33z"/>
+  <path fill="#efc84c" d="M38 55h1v2H38z"/>
+  <path fill="#2c654c" d="M28 45h16v2H28z"/>
+  <path fill="#66a562" d="M29 43h14v2H29z"/>
+  <path fill="#f7edce" d="M31 43h2v3H31zM36 43h2v3H36zM41 43h2v3H41z"/>
+ </g>
+ <g id="escalera">
+  <path fill="#234d89" d="M64 38h5v4h-5zM66 41h5v4h-5zM68 44h5v4h-5zM70 47h5v4h-5zM72 50h5v4h-5zM74 53h5v5h-5zM76 57h3v5h-3z"/>
+  <path fill="#5094e8" d="M65 39h4v1h-4zM67 42h4v1h-4zM69 45h4v1h-4zM71 48h4v1h-4zM73 51h4v1h-4zM75 54h4v1h-4zM76 58h3v1h-3z"/>
+  <path fill="#2f6bc4" d="M65 40h4v1h-4zM67 43h4v1h-4zM69 46h4v1h-4zM71 49h4v1h-4zM73 52h4v1h-4zM75 55h4v2h-4zM76 59h3v2h-3z"/>
+  <path fill="#2b3c55" d="M63 34h2v3h-2zM65 36h2v4h-2zM67 39h2v4h-2zM69 42h2v4h-2zM71 45h2v4h-2zM73 48h2v4h-2zM75 51h2v4h-2zM77 54h2v8h-2z"/>
+  <path fill="#5094e8" d="M63 34h1v2h-1zM65 36h1v3h-1zM67 39h1v3h-1zM69 42h1v3h-1zM71 45h1v3h-1zM73 48h1v3h-1zM75 51h1v3h-1zM77 54h1v7h-1z"/>
+  <path fill="#234d89" d="M64 37h1v7h-1zM70 46h1v7h-1zM76 55h1v7h-1z"/>
+ </g>
+ <g id="balcon">
+  <path fill="#2b3c55" d="M2 35h63v2H2zM2 41h64v3H2z"/>
+  <path fill="#5094e8" d="M3 35h61v1H3zM3 41h62v1H3z"/>
+  <path fill="#234d89" d="M3 37h1v4H3zM9 37h1v4H9zM15 37h1v4H15zM21 37h1v4H21zM27 37h1v4H27zM33 37h1v4H33zM39 37h1v4H39zM45 37h1v4H45zM51 37h1v4H51zM57 37h1v4H57zM63 37h1v4H63z"/>
+  <path fill="#2f6bc4" d="M4 37h1v4H4zM10 37h1v4H10zM16 37h1v4H16zM22 37h1v4H22zM28 37h1v4H28zM34 37h1v4H34zM40 37h1v4H40zM46 37h1v4H46zM52 37h1v4H52zM58 37h1v4H58zM3 42h62v1H3z"/>
+  <path fill="#234d89" d="M5 44h2v2H5zM24 44h2v2H24zM60 44h2v2H60z"/>
+ </g>
+ <g id="techo">
+  <path fill="#2b3c55" d="M5 0h68v2h2v2h2v3h2v12H0v-6h1V9h1V5h2V2h1z"/>
+  <path fill="#2f6bc4" d="M6 2h66v2h2v2h2v11H2v-3h1v-4h1V6h2z"/>
+  <path fill="#5094e8" d="M7 2h2v15H7zM13 2h2v15h-2zM19 2h2v15h-2zM25 2h2v15h-2zM31 2h2v15h-2zM37 2h2v15h-2zM43 2h2v15h-2zM49 2h2v15h-2zM55 2h2v15h-2zM61 2h2v15h-2zM67 2h2v15h-2zM73 5h1v12h-1z"/>
+  <path fill="#234d89" d="M11 3h1v14h-1zM17 3h1v14h-1zM23 3h1v14h-1zM29 3h1v14h-1zM35 3h1v14h-1zM41 3h1v14h-1zM47 3h1v14h-1zM53 3h1v14h-1zM59 3h1v14h-1zM65 3h1v14h-1zM71 3h1v14h-1z"/>
+  <path fill="#91bce7" d="M6 2h66v1H6z"/>
+  <path fill="#234d89" d="M1 17h77v2H1z"/>
+  <path fill="#5094e8" d="M1 17h77v1H1z"/>
+  <path fill="#773d3c" d="M12 3h4v6h-4z"/>
+  <path fill="#e07856" d="M12 3h4v1h-3v4h-1z"/>
+ </g>
+ <g id="zocalo">
+  <path fill="#56687b" d="M1 61h78v3H1z"/>
+  <path fill="#ccd5d6" d="M1 61h78v1H1z"/>
+  <path fill="#91a4b3" d="M2 62h76v1H2z"/>
+ </g>
+</svg>

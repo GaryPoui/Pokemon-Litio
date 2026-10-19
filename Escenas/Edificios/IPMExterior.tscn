@@ -1,0 +1,24 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Produccion/Barrios/ipm/v04/fachada_instituto_real.png" id="1_ipm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_left"]
+size = Vector2(42, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_right"]
+size = Vector2(42, 22)
+
+[node name="IPMExterior" type="StaticBody2D"]
+
+[node name="Fachada" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -48)
+texture = ExtResource("1_ipm")
+
+[node name="ColisionIzquierda" type="CollisionShape2D" parent="."]
+position = Vector2(-40, -12)
+shape = SubResource("RectangleShape2D_left")
+
+[node name="ColisionDerecha" type="CollisionShape2D" parent="."]
+position = Vector2(40, -12)
+shape = SubResource("RectangleShape2D_right")

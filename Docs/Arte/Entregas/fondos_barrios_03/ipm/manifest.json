@@ -1,0 +1,23 @@
+{
+  "id": "fondo_ipm_v04",
+  "barrio": "Instituto Politécnico Modelo",
+  "estado": "pendiente_de_integracion",
+  "lienzo_px": {
+    "ancho": 256,
+    "alto": 192
+  },
+  "formato": "PNG indexado opaco",
+  "colores_rgb_unicos": 233,
+  "asset": "Assets/Produccion/Barrios/ipm/v04/fondo_batalla.png",
+  "fuente_raster": "ArteFuente/Batalla/ipm_fondo_batalla_imagegen_v04_source.png",
+  "preview": "Docs/Arte/Entregas/fondos_barrios_03/ipm/fondo_batalla_4x.png",
+  "plataformas_reutilizadas": "ArteFuente/Batalla/la_boca_plataformas.svg",
+  "sin_pokemon": true,
+  "validacion": {
+    "dimensiones": true,
+    "opaco": true
+  },
+  "referencias_del_usuario": [
+    "Fotos reales del Instituto Politécnico Modelo adjuntadas el 18-10-2026"
+  ]
+}

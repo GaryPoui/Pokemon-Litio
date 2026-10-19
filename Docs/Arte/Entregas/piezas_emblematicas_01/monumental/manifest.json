@@ -1,0 +1,13 @@
+{
+  "barrio": "monumental",
+  "nombre": "Banderín rojiblanco",
+  "tamano_px": {
+    "ancho": 64,
+    "alto": 80
+  },
+  "png": "Assets/Produccion/Barrios/monumental/v01/banderin_roji_blanco.png",
+  "fuente": "ArteFuente/Barrios/monumental/banderin_roji_blanco.svg",
+  "paleta_rgb": 8,
+  "estado": "asset_final_pendiente_de_integracion",
+  "referencia": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/estadio-river-plate-estadio-monumental"
+}

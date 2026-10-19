@@ -1,0 +1,64 @@
+{
+  "barrio": "monumental",
+  "version": "v02",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/monumental/v02/fondo_batalla.png",
+  "fuente": "../../../../ArteFuente/Batalla/monumental_fondo_batalla_v02.svg",
+  "canvas": {
+    "ancho": 256,
+    "alto": 192
+  },
+  "formato": "PNG RGB opaco",
+  "uso": "fondo de combate pantalla completa",
+  "ancla": "origen (0,0)",
+  "plataformas": {
+    "trasera": {
+      "x": 163,
+      "y": 83,
+      "apoyo": "190,90"
+    },
+    "delantera": {
+      "x": 30,
+      "y": 143,
+      "apoyo": "64,174"
+    }
+  },
+  "paleta": [
+    "#b7cbd0",
+    "#d6e4d8",
+    "#7f9092",
+    "#807968",
+    "#98896b",
+    "#6d685b",
+    "#a39576",
+    "#76878b",
+    "#a8aa9f",
+    "#d8d0ba",
+    "#5d6d71",
+    "#8f9e9c",
+    "#eee2c9",
+    "#a84c47",
+    "#d7cdb7",
+    "#8e9691",
+    "#e7ddc8",
+    "#777a72",
+    "#b94f49",
+    "#e9e0d1",
+    "#566d75",
+    "#596553",
+    "#718064",
+    "#81775d",
+    "#95856a",
+    "#b6a47c",
+    "#6e6755",
+    "#39443e",
+    "#4e7041",
+    "#63904a",
+    "#7cab52",
+    "#9cc664",
+    "#4c713f",
+    "#a4cc68"
+  ],
+  "plataformas_referencia": "ArteFuente/Batalla/la_boca_plataformas.svg",
+  "sin_pokemon": true
+}

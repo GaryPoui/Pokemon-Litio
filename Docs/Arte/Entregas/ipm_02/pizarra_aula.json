@@ -1,0 +1,14 @@
+{
+  "nombre": "pizarra_aula",
+  "barrio": "Instituto de Puerto Madero",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/ipm/v02/pizarra_aula.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/ipm/pizarra_aula.svg",
+  "lienzo": {
+    "ancho": 64,
+    "alto": 48
+  },
+  "transparencia": true,
+  "ancla": "centro inferior",
+  "integracion": "pendiente; pieza de producción separada"
+}

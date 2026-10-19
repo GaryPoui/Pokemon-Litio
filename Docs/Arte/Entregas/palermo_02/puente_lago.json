@@ -1,0 +1,14 @@
+{
+  "nombre": "puente_lago",
+  "barrio": "Palermo",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/palermo/v02/puente_lago.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/palermo/puente_lago.svg",
+  "lienzo": {
+    "ancho": 96,
+    "alto": 48
+  },
+  "transparencia": true,
+  "ancla": "centro inferior",
+  "integracion": "pendiente; pieza independiente"
+}

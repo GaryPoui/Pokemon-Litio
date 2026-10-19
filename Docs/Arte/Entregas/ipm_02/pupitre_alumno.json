@@ -1,0 +1,14 @@
+{
+  "nombre": "pupitre_alumno",
+  "barrio": "Instituto de Puerto Madero",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/ipm/v02/pupitre_alumno.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/ipm/pupitre_alumno.svg",
+  "lienzo": {
+    "ancho": 32,
+    "alto": 32
+  },
+  "transparencia": true,
+  "ancla": "centro inferior",
+  "integracion": "pendiente; pieza de producción separada"
+}

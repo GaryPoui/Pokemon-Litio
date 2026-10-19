@@ -1,0 +1,38 @@
+{
+  "id": "boca_guia_detallada",
+  "rol": "La Boca · guía",
+  "estado": "integrado_en_recurso_SpriteFrames_pendiente_prueba_en_Godot",
+  "textura": "Assets/Personajes/npc/LaBoca/guia_detallada.png",
+  "produccion": "Assets/Produccion/Barrios/la_boca/v11/guia_detallada.png",
+  "fuente_raster": "ArteFuente/la_boca_calibracion_01/v11/guia_fuente.png",
+  "dimensiones_px": {
+    "ancho": 224,
+    "alto": 1360
+  },
+  "cuadro_px": {
+    "ancho": 224,
+    "alto": 340
+  },
+  "orden": [
+    "abajo",
+    "arriba",
+    "izquierda",
+    "derecha"
+  ],
+  "ancla": "centro horizontal; pies alineados a y=308/339 por celda",
+  "colores_rgb_unicos": 254,
+  "procedencia": "Ilustración raster generada con imagegen usando como referencia de estilo la pintora detallada aprobada por el usuario. Recortada en cuatro direcciones y normalizada mediante ampliación nearest; no se presenta como dibujo manual ni como fuente SVG editable.",
+  "validacion": {
+    "dimensiones": true,
+    "alfa_transparente": true,
+    "cuatro_vistas_con_contenido": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "vistas_y_anclas_inspeccionadas": true
+  },
+  "sin_pokemon": true,
+  "integracion": "Recursos/Personajes/boca_guia.tres"
+}

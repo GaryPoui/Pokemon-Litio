@@ -1,0 +1,44 @@
+{
+  "id": "senal_anden",
+  "barrio": "Constitución",
+  "nombre": "Señal ferroviaria",
+  "estado": "asset_final_pendiente_de_integracion",
+  "lienzo_px": {
+    "ancho": 24,
+    "alto": 64
+  },
+  "caja_visible_px": [
+    3,
+    6,
+    21,
+    63
+  ],
+  "ancla_px": [
+    12,
+    62
+  ],
+  "ruta_png": "Assets/Produccion/Barrios/constitucion/v03/senal_anden.png",
+  "fuente_svg": "ArteFuente/Barrios/constitucion/senal_anden.svg",
+  "paleta_rgb": [
+    "#273742",
+    "#28363c",
+    "#293a40",
+    "#36444a",
+    "#384449",
+    "#516870",
+    "#567f61",
+    "#62787c",
+    "#87928a",
+    "#87ac74",
+    "#af9565",
+    "#b0aa91",
+    "#b85046",
+    "#d87560"
+  ],
+  "validacion": {
+    "dimensiones": true,
+    "alfa_transparente": true,
+    "probado_en_godot": false
+  },
+  "referencia": "https://www.argentina.gob.ar/capital-humano/cultura/monumentos/estacion-plaza-constitucion"
+}

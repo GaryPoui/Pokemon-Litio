@@ -1,0 +1,14 @@
+{
+  "nombre": "lampara_parque",
+  "barrio": "Palermo",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/palermo/v02/lampara_parque.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/palermo/lampara_parque.svg",
+  "lienzo": {
+    "ancho": 24,
+    "alto": 56
+  },
+  "transparencia": true,
+  "ancla": "centro inferior",
+  "integracion": "pendiente; pieza independiente"
+}

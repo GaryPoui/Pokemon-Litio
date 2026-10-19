@@ -1,0 +1,16 @@
+{
+  "nombre": "florero_flores",
+  "barrio": "Chacarita",
+  "estado": "final pendiente de integración",
+  "archivo_png": "../../../../Assets/Produccion/Barrios/chacarita/v03/florero_flores.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/chacarita/florero_flores.svg",
+  "lienzo": {
+    "ancho": 24,
+    "alto": 32
+  },
+  "transparencia": true,
+  "ancla": "centro inferior del objeto",
+  "uso": "pieza independiente para montaje de escena",
+  "estilo": "pixel art de bordes nítidos, paleta corta y sombreado por bloques",
+  "integracion": "pendiente; no modifica escenas ni recursos del juego"
+}

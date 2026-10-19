@@ -1,0 +1,1840 @@
+{
+  "schema_version": 1,
+  "estado": "final_pendiente_integracion",
+  "base_repo": "https://github.com/GaryPoui/Pokemon-Litio.git",
+  "base_branch": "development",
+  "base_commit": "7f531f1b104064a7a5b20373e33e1b3c5bfaa99f",
+  "fecha": "2026-10-18",
+  "lote": "la_boca_calibracion_01",
+  "assets": [
+    {
+      "id": "adoquin",
+      "barrio": "la_boca",
+      "categoria": "suelo",
+      "estado": "final_pendiente_integracion",
+      "archivo_png": "Assets/Produccion/Barrios/la_boca/v01/adoquin.png",
+      "fuente_editable": "ArteFuente/la_boca_calibracion_01/v01/adoquin.svg",
+      "lienzo_px": {
+        "ancho": 16,
+        "alto": 16
+      },
+      "bbox_visible_px": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "formato": "RGBA",
+      "alfa_real": false,
+      "grilla_px": [
+        16,
+        16
+      ],
+      "margin_px": 0,
+      "separation_px": 0,
+      "animacion": {
+        "columnas": 1,
+        "filas": 1,
+        "ancho_cuadro_px": 16,
+        "alto_cuadro_px": 16,
+        "cantidad_cuadros": 1,
+        "orden": [
+          "estatico"
+        ],
+        "fps": null,
+        "loop": false
+      },
+      "coordenadas": "pixeles_nativos_origen_esquina_superior_izquierda",
+      "ancla_px": [
+        0,
+        0
+      ],
+      "huella_celdas": [],
+      "colision_sugerida_px": [],
+      "puertas_px": [],
+      "linea_orden_dibujo_y_px": null,
+      "capas": [],
+      "atlas_regiones": [],
+      "paleta_hex": [
+        "#65727c",
+        "#79858e",
+        "#8d9799",
+        "#a5afac",
+        "#b7bdb3"
+      ],
+      "reemplaza_a": null,
+      "compatible_sin_cambios_de_recurso": false,
+      "requiere_integracion": true,
+      "instrucciones_integracion": "Importar el atlas como fuente nueva; no reordenar fuentes o coordenadas activas. Consultar atlas_regiones.json y la ficha de integración.",
+      "referencias": [
+        {
+          "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/calle-museo-caminito",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "chapa pintada",
+            "balcones",
+            "calzada de adoquines"
+          ],
+          "uso": "contexto del barrio; sin incorporar fotografías"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/calle-museo-caminito-dic2025-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "detalle visible del farol y balcones",
+            "fachadas por paños de color"
+          ],
+          "uso": "referencia visual; sin copiar texturas"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/2caminito-aerea-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "profundidad de fachadas",
+            "relación entre calle y frentes"
+          ],
+          "uso": "vista general; adaptación ficticia a cámara de juego"
+        }
+      ],
+      "procedencia": {
+        "autor": null,
+        "material_incorporado": [],
+        "notas_creditos": "Diseño nuevo de este lote. No se añade atribución humana. Referencias y créditos existentes conservados; registro completo de trabajo fuera de los archivos de producción."
+      },
+      "verificacion": {
+        "png_valido": true,
+        "dimensiones_y_cuadros": true,
+        "alfa": true,
+        "escala_nativa": true,
+        "perspectiva": true,
+        "anclajes": true,
+        "sin_costuras_si_aplica": true,
+        "prueba_en_godot": false,
+        "evidencia": [
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_1x.png",
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_4x.png"
+        ],
+        "pendientes": [
+          "Asignación y comprobación en Godot por la tarea de integración."
+        ]
+      },
+      "sha256": "2a8893728330d134b93826b21a06dc7141cc83b522755c52111b2cba6c690fcf"
+    },
+    {
+      "id": "conventillo_amarillo",
+      "barrio": "la_boca",
+      "categoria": "edificio",
+      "estado": "final_pendiente_integracion",
+      "archivo_png": "Assets/Produccion/Barrios/la_boca/v01/conventillo_amarillo.png",
+      "fuente_editable": "ArteFuente/la_boca_calibracion_01/v01/conventillo_amarillo.svg",
+      "lienzo_px": {
+        "ancho": 80,
+        "alto": 64
+      },
+      "bbox_visible_px": [
+        0,
+        0,
+        79,
+        64
+      ],
+      "formato": "RGBA",
+      "alfa_real": true,
+      "grilla_px": null,
+      "margin_px": 0,
+      "separation_px": 0,
+      "animacion": {
+        "columnas": 1,
+        "filas": 1,
+        "ancho_cuadro_px": 80,
+        "alto_cuadro_px": 64,
+        "cantidad_cuadros": 1,
+        "orden": [
+          "estatico"
+        ],
+        "fps": null,
+        "loop": false
+      },
+      "coordenadas": "pixeles_nativos_origen_esquina_superior_izquierda",
+      "ancla_px": [
+        40,
+        56
+      ],
+      "huella_celdas": [
+        [
+          -2,
+          -2
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          -2
+        ],
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          -2,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "colision_sugerida_px": [
+        [
+          0,
+          16,
+          80,
+          48
+        ]
+      ],
+      "puertas_px": [
+        [
+          30,
+          46,
+          12,
+          16
+        ]
+      ],
+      "linea_orden_dibujo_y_px": 56,
+      "capas": [
+        {
+          "id": "cuerpo",
+          "archivo": "Assets/Produccion/Barrios/la_boca/v01/conventillo_amarillo_cuerpo.png"
+        },
+        {
+          "id": "techo",
+          "archivo": "Assets/Produccion/Barrios/la_boca/v01/conventillo_amarillo_techo.png"
+        }
+      ],
+      "atlas_regiones": [],
+      "paleta_hex": [
+        "#234d89",
+        "#2b3c55",
+        "#2c654c",
+        "#2f6bc4",
+        "#3b8659",
+        "#5094e8",
+        "#56687b",
+        "#66a562",
+        "#68b9c9",
+        "#773d3c",
+        "#91a4b3",
+        "#91bce7",
+        "#b64e45",
+        "#b6e1d6",
+        "#bd9234",
+        "#ccd5d6",
+        "#e07856",
+        "#efc84c",
+        "#f7edce",
+        "#ffe080"
+      ],
+      "reemplaza_a": "Assets/Overworld/LaBoca/conventillo_amarillo.png",
+      "compatible_sin_cambios_de_recurso": false,
+      "requiere_integracion": true,
+      "instrucciones_integracion": "Conservar lienzo 80×64 y posición (0,-24). Usar la imagen completa o las dos capas, nunca ambas. Separar techo y cuerpo requiere cambios de escena.",
+      "referencias": [
+        {
+          "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/calle-museo-caminito",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "chapa pintada",
+            "balcones",
+            "calzada de adoquines"
+          ],
+          "uso": "contexto del barrio; sin incorporar fotografías"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/calle-museo-caminito-dic2025-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "detalle visible del farol y balcones",
+            "fachadas por paños de color"
+          ],
+          "uso": "referencia visual; sin copiar texturas"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/2caminito-aerea-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "profundidad de fachadas",
+            "relación entre calle y frentes"
+          ],
+          "uso": "vista general; adaptación ficticia a cámara de juego"
+        }
+      ],
+      "procedencia": {
+        "autor": null,
+        "material_incorporado": [],
+        "notas_creditos": "Diseño nuevo de este lote. No se añade atribución humana. Referencias y créditos existentes conservados; registro completo de trabajo fuera de los archivos de producción."
+      },
+      "verificacion": {
+        "png_valido": true,
+        "dimensiones_y_cuadros": true,
+        "alfa": true,
+        "escala_nativa": true,
+        "perspectiva": true,
+        "anclajes": true,
+        "sin_costuras_si_aplica": null,
+        "prueba_en_godot": false,
+        "evidencia": [
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_1x.png",
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_4x.png"
+        ],
+        "pendientes": [
+          "Asignación y comprobación en Godot por la tarea de integración."
+        ]
+      },
+      "sha256": "f4ea96f63baf95834413d04eac81026be4f8bf077d324a83bb55cc1a96f899a9"
+    },
+    {
+      "id": "conventillo_amarillo_cuerpo",
+      "barrio": "la_boca",
+      "categoria": "edificio_cuerpo",
+      "estado": "final_pendiente_integracion",
+      "archivo_png": "Assets/Produccion/Barrios/la_boca/v01/conventillo_amarillo_cuerpo.png",
+      "fuente_editable": "ArteFuente/la_boca_calibracion_01/v01/conventillo_amarillo.svg",
+      "lienzo_px": {
+        "ancho": 80,
+        "alto": 64
+      },
+      "bbox_visible_px": [
+        1,
+        16,
+        79,
+        64
+      ],
+      "formato": "RGBA",
+      "alfa_real": true,
+      "grilla_px": null,
+      "margin_px": 0,
+      "separation_px": 0,
+      "animacion": {
+        "columnas": 1,
+        "filas": 1,
+        "ancho_cuadro_px": 80,
+        "alto_cuadro_px": 64,
+        "cantidad_cuadros": 1,
+        "orden": [
+          "estatico"
+        ],
+        "fps": null,
+        "loop": false
+      },
+      "coordenadas": "pixeles_nativos_origen_esquina_superior_izquierda",
+      "ancla_px": [
+        40,
+        56
+      ],
+      "huella_celdas": [],
+      "colision_sugerida_px": [
+        [
+          0,
+          16,
+          80,
+          48
+        ]
+      ],
+      "puertas_px": [
+        [
+          30,
+          46,
+          12,
+          16
+        ]
+      ],
+      "linea_orden_dibujo_y_px": 56,
+      "capas": [
+        {
+          "id": "cuerpo",
+          "archivo": "Assets/Produccion/Barrios/la_boca/v01/conventillo_amarillo_cuerpo.png"
+        },
+        {
+          "id": "techo",
+          "archivo": "Assets/Produccion/Barrios/la_boca/v01/conventillo_amarillo_techo.png"
+        }
+      ],
+      "atlas_regiones": [],
+      "paleta_hex": [
+        "#234d89",
+        "#2b3c55",
+        "#2c654c",
+        "#2f6bc4",
+        "#3b8659",
+        "#5094e8",
+        "#56687b",
+        "#66a562",
+        "#68b9c9",
+        "#773d3c",
+        "#91a4b3",
+        "#b64e45",
+        "#b6e1d6",
+        "#bd9234",
+        "#ccd5d6",
+        "#e07856",
+        "#efc84c",
+        "#f7edce",
+        "#ffe080"
+      ],
+      "reemplaza_a": null,
+      "compatible_sin_cambios_de_recurso": false,
+      "requiere_integracion": true,
+      "instrucciones_integracion": "Conservar lienzo 80×64 y posición (0,-24). Usar la imagen completa o las dos capas, nunca ambas. Separar techo y cuerpo requiere cambios de escena.",
+      "referencias": [
+        {
+          "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/calle-museo-caminito",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "chapa pintada",
+            "balcones",
+            "calzada de adoquines"
+          ],
+          "uso": "contexto del barrio; sin incorporar fotografías"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/calle-museo-caminito-dic2025-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "detalle visible del farol y balcones",
+            "fachadas por paños de color"
+          ],
+          "uso": "referencia visual; sin copiar texturas"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/2caminito-aerea-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "profundidad de fachadas",
+            "relación entre calle y frentes"
+          ],
+          "uso": "vista general; adaptación ficticia a cámara de juego"
+        }
+      ],
+      "procedencia": {
+        "autor": null,
+        "material_incorporado": [],
+        "notas_creditos": "Diseño nuevo de este lote. No se añade atribución humana. Referencias y créditos existentes conservados; registro completo de trabajo fuera de los archivos de producción."
+      },
+      "verificacion": {
+        "png_valido": true,
+        "dimensiones_y_cuadros": true,
+        "alfa": true,
+        "escala_nativa": true,
+        "perspectiva": true,
+        "anclajes": true,
+        "sin_costuras_si_aplica": null,
+        "prueba_en_godot": false,
+        "evidencia": [
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_1x.png",
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_4x.png"
+        ],
+        "pendientes": [
+          "Asignación y comprobación en Godot por la tarea de integración."
+        ]
+      },
+      "sha256": "8b2a233f1d4820cfad88a538df7050e04a6f53567e5b6022bceaf9d84f49547e"
+    },
+    {
+      "id": "conventillo_amarillo_techo",
+      "barrio": "la_boca",
+      "categoria": "edificio_techo",
+      "estado": "final_pendiente_integracion",
+      "archivo_png": "Assets/Produccion/Barrios/la_boca/v01/conventillo_amarillo_techo.png",
+      "fuente_editable": "ArteFuente/la_boca_calibracion_01/v01/conventillo_amarillo.svg",
+      "lienzo_px": {
+        "ancho": 80,
+        "alto": 64
+      },
+      "bbox_visible_px": [
+        0,
+        0,
+        79,
+        19
+      ],
+      "formato": "RGBA",
+      "alfa_real": true,
+      "grilla_px": null,
+      "margin_px": 0,
+      "separation_px": 0,
+      "animacion": {
+        "columnas": 1,
+        "filas": 1,
+        "ancho_cuadro_px": 80,
+        "alto_cuadro_px": 64,
+        "cantidad_cuadros": 1,
+        "orden": [
+          "estatico"
+        ],
+        "fps": null,
+        "loop": false
+      },
+      "coordenadas": "pixeles_nativos_origen_esquina_superior_izquierda",
+      "ancla_px": [
+        40,
+        56
+      ],
+      "huella_celdas": [],
+      "colision_sugerida_px": [],
+      "puertas_px": [],
+      "linea_orden_dibujo_y_px": 56,
+      "capas": [
+        {
+          "id": "cuerpo",
+          "archivo": "Assets/Produccion/Barrios/la_boca/v01/conventillo_amarillo_cuerpo.png"
+        },
+        {
+          "id": "techo",
+          "archivo": "Assets/Produccion/Barrios/la_boca/v01/conventillo_amarillo_techo.png"
+        }
+      ],
+      "atlas_regiones": [],
+      "paleta_hex": [
+        "#234d89",
+        "#2b3c55",
+        "#2f6bc4",
+        "#5094e8",
+        "#773d3c",
+        "#91bce7",
+        "#e07856"
+      ],
+      "reemplaza_a": null,
+      "compatible_sin_cambios_de_recurso": false,
+      "requiere_integracion": true,
+      "instrucciones_integracion": "Conservar lienzo 80×64 y posición (0,-24). Usar la imagen completa o las dos capas, nunca ambas. Separar techo y cuerpo requiere cambios de escena.",
+      "referencias": [
+        {
+          "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/calle-museo-caminito",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "chapa pintada",
+            "balcones",
+            "calzada de adoquines"
+          ],
+          "uso": "contexto del barrio; sin incorporar fotografías"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/calle-museo-caminito-dic2025-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "detalle visible del farol y balcones",
+            "fachadas por paños de color"
+          ],
+          "uso": "referencia visual; sin copiar texturas"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/2caminito-aerea-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "profundidad de fachadas",
+            "relación entre calle y frentes"
+          ],
+          "uso": "vista general; adaptación ficticia a cámara de juego"
+        }
+      ],
+      "procedencia": {
+        "autor": null,
+        "material_incorporado": [],
+        "notas_creditos": "Diseño nuevo de este lote. No se añade atribución humana. Referencias y créditos existentes conservados; registro completo de trabajo fuera de los archivos de producción."
+      },
+      "verificacion": {
+        "png_valido": true,
+        "dimensiones_y_cuadros": true,
+        "alfa": true,
+        "escala_nativa": true,
+        "perspectiva": true,
+        "anclajes": true,
+        "sin_costuras_si_aplica": null,
+        "prueba_en_godot": false,
+        "evidencia": [
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_1x.png",
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_4x.png"
+        ],
+        "pendientes": [
+          "Asignación y comprobación en Godot por la tarea de integración."
+        ]
+      },
+      "sha256": "9db919c862f89896188703885bebe1ee9f5469ef4b150f5da1e5dc38e8225fda"
+    },
+    {
+      "id": "farol",
+      "barrio": "la_boca",
+      "categoria": "mobiliario",
+      "estado": "final_pendiente_integracion",
+      "archivo_png": "Assets/Produccion/Barrios/la_boca/v01/farol.png",
+      "fuente_editable": "ArteFuente/la_boca_calibracion_01/v01/farol.xpm",
+      "lienzo_px": {
+        "ancho": 14,
+        "alto": 31
+      },
+      "bbox_visible_px": [
+        1,
+        0,
+        13,
+        31
+      ],
+      "formato": "RGBA",
+      "alfa_real": true,
+      "grilla_px": null,
+      "margin_px": 0,
+      "separation_px": 0,
+      "animacion": {
+        "columnas": 1,
+        "filas": 1,
+        "ancho_cuadro_px": 14,
+        "alto_cuadro_px": 31,
+        "cantidad_cuadros": 1,
+        "orden": [
+          "estatico"
+        ],
+        "fps": null,
+        "loop": false
+      },
+      "coordenadas": "pixeles_nativos_origen_esquina_superior_izquierda",
+      "ancla_px": [
+        7,
+        23
+      ],
+      "huella_celdas": [],
+      "colision_sugerida_px": [
+        [
+          4,
+          24,
+          6,
+          7
+        ]
+      ],
+      "puertas_px": [],
+      "linea_orden_dibujo_y_px": 23,
+      "capas": [],
+      "atlas_regiones": [],
+      "paleta_hex": [
+        "#2b3c55",
+        "#56687b",
+        "#91a4b3",
+        "#ccd5d6",
+        "#d4ba79",
+        "#f7edce"
+      ],
+      "reemplaza_a": "Assets/Overworld/LaBoca/farol.png",
+      "compatible_sin_cambios_de_recurso": false,
+      "requiere_integracion": true,
+      "instrucciones_integracion": "Conservar lienzo 14×31, Sprite2D centrado y offset (0,-7.5) en DecoracionLaBoca.tscn. La colisión actual es 16×16: la base dibujada no la cambia.",
+      "referencias": [
+        {
+          "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/calle-museo-caminito",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "chapa pintada",
+            "balcones",
+            "calzada de adoquines"
+          ],
+          "uso": "contexto del barrio; sin incorporar fotografías"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/calle-museo-caminito-dic2025-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "detalle visible del farol y balcones",
+            "fachadas por paños de color"
+          ],
+          "uso": "referencia visual; sin copiar texturas"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/2caminito-aerea-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "profundidad de fachadas",
+            "relación entre calle y frentes"
+          ],
+          "uso": "vista general; adaptación ficticia a cámara de juego"
+        }
+      ],
+      "procedencia": {
+        "autor": null,
+        "material_incorporado": [],
+        "notas_creditos": "Diseño nuevo de este lote. No se añade atribución humana. Referencias y créditos existentes conservados; registro completo de trabajo fuera de los archivos de producción."
+      },
+      "verificacion": {
+        "png_valido": true,
+        "dimensiones_y_cuadros": true,
+        "alfa": true,
+        "escala_nativa": true,
+        "perspectiva": true,
+        "anclajes": true,
+        "sin_costuras_si_aplica": null,
+        "prueba_en_godot": false,
+        "evidencia": [
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_1x.png",
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_4x.png"
+        ],
+        "pendientes": [
+          "Asignación y comprobación en Godot por la tarea de integración."
+        ]
+      },
+      "sha256": "866ae7c87c75ccd1e01270642d764d755bb97845c4e8f9583855695fbfbfb772"
+    },
+    {
+      "id": "pintora",
+      "barrio": "la_boca",
+      "categoria": "npc",
+      "estado": "final_pendiente_integracion",
+      "archivo_png": "Assets/Produccion/Barrios/la_boca/v01/pintora.png",
+      "fuente_editable": "ArteFuente/la_boca_calibracion_01/v01/pintora.xpm",
+      "lienzo_px": {
+        "ancho": 32,
+        "alto": 128
+      },
+      "bbox_visible_px": [
+        9,
+        4,
+        23,
+        128
+      ],
+      "formato": "RGBA",
+      "alfa_real": true,
+      "grilla_px": null,
+      "margin_px": 0,
+      "separation_px": 0,
+      "animacion": {
+        "columnas": 1,
+        "filas": 4,
+        "ancho_cuadro_px": 32,
+        "alto_cuadro_px": 32,
+        "cantidad_cuadros": 4,
+        "orden": [
+          "abajo",
+          "arriba",
+          "izquierda",
+          "derecha"
+        ],
+        "fps": 1,
+        "loop": false,
+        "nota": "Cuatro direcciones independientes, una pose cada una; no ciclo de caminar."
+      },
+      "coordenadas": "pixeles_nativos_origen_esquina_superior_izquierda",
+      "ancla_px": [
+        16,
+        23
+      ],
+      "huella_celdas": [],
+      "colision_sugerida_px": [
+        [
+          9,
+          16,
+          14,
+          14
+        ]
+      ],
+      "puertas_px": [],
+      "linea_orden_dibujo_y_px": 23,
+      "capas": [],
+      "atlas_regiones": [],
+      "paleta_hex": [
+        "#263b57",
+        "#276673",
+        "#302b32",
+        "#355b8d",
+        "#388e99",
+        "#394b70",
+        "#493937",
+        "#527eae",
+        "#5c7094",
+        "#5f392c",
+        "#65b4b8",
+        "#78513d",
+        "#925733",
+        "#a69a7a",
+        "#bd7851",
+        "#c38447",
+        "#d8ccaa",
+        "#e0ac65",
+        "#e5a46d",
+        "#f7edce",
+        "#ffd391"
+      ],
+      "reemplaza_a": "Assets/Personajes/npc/LaBoca/pintora.png",
+      "compatible_sin_cambios_de_recurso": false,
+      "requiere_integracion": true,
+      "instrucciones_integracion": "Conservar cuatro recortes 32×32 y el orden abajo/arriba/izquierda/derecha en Recursos/Personajes/boca_pintora.tres. Revisar el desplazamiento (0,-7) de ChicaAna; no añadir caminar.",
+      "referencias": [
+        {
+          "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/calle-museo-caminito",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "chapa pintada",
+            "balcones",
+            "calzada de adoquines"
+          ],
+          "uso": "contexto del barrio; sin incorporar fotografías"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/calle-museo-caminito-dic2025-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "detalle visible del farol y balcones",
+            "fachadas por paños de color"
+          ],
+          "uso": "referencia visual; sin copiar texturas"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/2caminito-aerea-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "profundidad de fachadas",
+            "relación entre calle y frentes"
+          ],
+          "uso": "vista general; adaptación ficticia a cámara de juego"
+        }
+      ],
+      "procedencia": {
+        "autor": null,
+        "material_incorporado": [],
+        "notas_creditos": "Diseño nuevo de este lote. No se añade atribución humana. Referencias y créditos existentes conservados; registro completo de trabajo fuera de los archivos de producción."
+      },
+      "verificacion": {
+        "png_valido": true,
+        "dimensiones_y_cuadros": true,
+        "alfa": true,
+        "escala_nativa": true,
+        "perspectiva": true,
+        "anclajes": true,
+        "sin_costuras_si_aplica": null,
+        "prueba_en_godot": false,
+        "evidencia": [
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_1x.png",
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_4x.png"
+        ],
+        "pendientes": [
+          "Asignación y comprobación en Godot por la tarea de integración."
+        ]
+      },
+      "sha256": "8692ceb9f120a3e7334bef63cc3b8942341a9bf850e075cee00a0967e9935d63"
+    },
+    {
+      "id": "suelo_urbano",
+      "barrio": "la_boca",
+      "categoria": "atlas_suelo",
+      "estado": "final_pendiente_integracion",
+      "archivo_png": "Assets/Produccion/Barrios/la_boca/v01/suelo_urbano.png",
+      "fuente_editable": "ArteFuente/la_boca_calibracion_01/v01/suelo_urbano.xpm",
+      "lienzo_px": {
+        "ancho": 128,
+        "alto": 112
+      },
+      "bbox_visible_px": [
+        0,
+        0,
+        128,
+        112
+      ],
+      "formato": "RGBA",
+      "alfa_real": true,
+      "grilla_px": [
+        16,
+        16
+      ],
+      "margin_px": 0,
+      "separation_px": 0,
+      "animacion": {
+        "columnas": 1,
+        "filas": 1,
+        "ancho_cuadro_px": 128,
+        "alto_cuadro_px": 112,
+        "cantidad_cuadros": 1,
+        "orden": [
+          "estatico"
+        ],
+        "fps": null,
+        "loop": false
+      },
+      "coordenadas": "pixeles_nativos_origen_esquina_superior_izquierda",
+      "ancla_px": [
+        0,
+        0
+      ],
+      "huella_celdas": [],
+      "colision_sugerida_px": [],
+      "puertas_px": [],
+      "linea_orden_dibujo_y_px": null,
+      "capas": [],
+      "atlas_regiones": [
+        {
+          "id": "vereda_0",
+          "mask": 0,
+          "index": 0,
+          "columna": 0,
+          "fila": 0,
+          "rect_px": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_1",
+          "mask": 1,
+          "index": 1,
+          "columna": 1,
+          "fila": 0,
+          "rect_px": [
+            16,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_4",
+          "mask": 4,
+          "index": 2,
+          "columna": 2,
+          "fila": 0,
+          "rect_px": [
+            32,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_5",
+          "mask": 5,
+          "index": 3,
+          "columna": 3,
+          "fila": 0,
+          "rect_px": [
+            48,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_7",
+          "mask": 7,
+          "index": 4,
+          "columna": 4,
+          "fila": 0,
+          "rect_px": [
+            64,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_16",
+          "mask": 16,
+          "index": 5,
+          "columna": 5,
+          "fila": 0,
+          "rect_px": [
+            80,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_17",
+          "mask": 17,
+          "index": 6,
+          "columna": 6,
+          "fila": 0,
+          "rect_px": [
+            96,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_20",
+          "mask": 20,
+          "index": 7,
+          "columna": 7,
+          "fila": 0,
+          "rect_px": [
+            112,
+            0,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_21",
+          "mask": 21,
+          "index": 8,
+          "columna": 0,
+          "fila": 1,
+          "rect_px": [
+            0,
+            16,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_23",
+          "mask": 23,
+          "index": 9,
+          "columna": 1,
+          "fila": 1,
+          "rect_px": [
+            16,
+            16,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_28",
+          "mask": 28,
+          "index": 10,
+          "columna": 2,
+          "fila": 1,
+          "rect_px": [
+            32,
+            16,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_29",
+          "mask": 29,
+          "index": 11,
+          "columna": 3,
+          "fila": 1,
+          "rect_px": [
+            48,
+            16,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_31",
+          "mask": 31,
+          "index": 12,
+          "columna": 4,
+          "fila": 1,
+          "rect_px": [
+            64,
+            16,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_64",
+          "mask": 64,
+          "index": 13,
+          "columna": 5,
+          "fila": 1,
+          "rect_px": [
+            80,
+            16,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_65",
+          "mask": 65,
+          "index": 14,
+          "columna": 6,
+          "fila": 1,
+          "rect_px": [
+            96,
+            16,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_68",
+          "mask": 68,
+          "index": 15,
+          "columna": 7,
+          "fila": 1,
+          "rect_px": [
+            112,
+            16,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_69",
+          "mask": 69,
+          "index": 16,
+          "columna": 0,
+          "fila": 2,
+          "rect_px": [
+            0,
+            32,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_71",
+          "mask": 71,
+          "index": 17,
+          "columna": 1,
+          "fila": 2,
+          "rect_px": [
+            16,
+            32,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_80",
+          "mask": 80,
+          "index": 18,
+          "columna": 2,
+          "fila": 2,
+          "rect_px": [
+            32,
+            32,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_81",
+          "mask": 81,
+          "index": 19,
+          "columna": 3,
+          "fila": 2,
+          "rect_px": [
+            48,
+            32,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_84",
+          "mask": 84,
+          "index": 20,
+          "columna": 4,
+          "fila": 2,
+          "rect_px": [
+            64,
+            32,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_85",
+          "mask": 85,
+          "index": 21,
+          "columna": 5,
+          "fila": 2,
+          "rect_px": [
+            80,
+            32,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_87",
+          "mask": 87,
+          "index": 22,
+          "columna": 6,
+          "fila": 2,
+          "rect_px": [
+            96,
+            32,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_92",
+          "mask": 92,
+          "index": 23,
+          "columna": 7,
+          "fila": 2,
+          "rect_px": [
+            112,
+            32,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_93",
+          "mask": 93,
+          "index": 24,
+          "columna": 0,
+          "fila": 3,
+          "rect_px": [
+            0,
+            48,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_95",
+          "mask": 95,
+          "index": 25,
+          "columna": 1,
+          "fila": 3,
+          "rect_px": [
+            16,
+            48,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_112",
+          "mask": 112,
+          "index": 26,
+          "columna": 2,
+          "fila": 3,
+          "rect_px": [
+            32,
+            48,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_113",
+          "mask": 113,
+          "index": 27,
+          "columna": 3,
+          "fila": 3,
+          "rect_px": [
+            48,
+            48,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_116",
+          "mask": 116,
+          "index": 28,
+          "columna": 4,
+          "fila": 3,
+          "rect_px": [
+            64,
+            48,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_117",
+          "mask": 117,
+          "index": 29,
+          "columna": 5,
+          "fila": 3,
+          "rect_px": [
+            80,
+            48,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_119",
+          "mask": 119,
+          "index": 30,
+          "columna": 6,
+          "fila": 3,
+          "rect_px": [
+            96,
+            48,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_124",
+          "mask": 124,
+          "index": 31,
+          "columna": 7,
+          "fila": 3,
+          "rect_px": [
+            112,
+            48,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_125",
+          "mask": 125,
+          "index": 32,
+          "columna": 0,
+          "fila": 4,
+          "rect_px": [
+            0,
+            64,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_127",
+          "mask": 127,
+          "index": 33,
+          "columna": 1,
+          "fila": 4,
+          "rect_px": [
+            16,
+            64,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_193",
+          "mask": 193,
+          "index": 34,
+          "columna": 2,
+          "fila": 4,
+          "rect_px": [
+            32,
+            64,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_197",
+          "mask": 197,
+          "index": 35,
+          "columna": 3,
+          "fila": 4,
+          "rect_px": [
+            48,
+            64,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_199",
+          "mask": 199,
+          "index": 36,
+          "columna": 4,
+          "fila": 4,
+          "rect_px": [
+            64,
+            64,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_209",
+          "mask": 209,
+          "index": 37,
+          "columna": 5,
+          "fila": 4,
+          "rect_px": [
+            80,
+            64,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_213",
+          "mask": 213,
+          "index": 38,
+          "columna": 6,
+          "fila": 4,
+          "rect_px": [
+            96,
+            64,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_215",
+          "mask": 215,
+          "index": 39,
+          "columna": 7,
+          "fila": 4,
+          "rect_px": [
+            112,
+            64,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_221",
+          "mask": 221,
+          "index": 40,
+          "columna": 0,
+          "fila": 5,
+          "rect_px": [
+            0,
+            80,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_223",
+          "mask": 223,
+          "index": 41,
+          "columna": 1,
+          "fila": 5,
+          "rect_px": [
+            16,
+            80,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_241",
+          "mask": 241,
+          "index": 42,
+          "columna": 2,
+          "fila": 5,
+          "rect_px": [
+            32,
+            80,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_245",
+          "mask": 245,
+          "index": 43,
+          "columna": 3,
+          "fila": 5,
+          "rect_px": [
+            48,
+            80,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_247",
+          "mask": 247,
+          "index": 44,
+          "columna": 4,
+          "fila": 5,
+          "rect_px": [
+            64,
+            80,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_253",
+          "mask": 253,
+          "index": 45,
+          "columna": 5,
+          "fila": 5,
+          "rect_px": [
+            80,
+            80,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_255",
+          "mask": 255,
+          "index": 46,
+          "columna": 6,
+          "fila": 5,
+          "rect_px": [
+            96,
+            80,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "adoquin",
+          "index": 47,
+          "columna": 7,
+          "fila": 5,
+          "rect_px": [
+            112,
+            80,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "adoquin_variante_01",
+          "index": 48,
+          "columna": 0,
+          "fila": 6,
+          "rect_px": [
+            0,
+            96,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "adoquin_variante_02",
+          "index": 49,
+          "columna": 1,
+          "fila": 6,
+          "rect_px": [
+            16,
+            96,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_variante_01",
+          "index": 50,
+          "columna": 2,
+          "fila": 6,
+          "rect_px": [
+            32,
+            96,
+            16,
+            16
+          ]
+        },
+        {
+          "id": "vereda_variante_02",
+          "index": 51,
+          "columna": 3,
+          "fila": 6,
+          "rect_px": [
+            48,
+            96,
+            16,
+            16
+          ]
+        }
+      ],
+      "paleta_hex": [
+        "#65727c",
+        "#79858e",
+        "#8d9799",
+        "#a5afac",
+        "#aaad9f",
+        "#b7bdb3",
+        "#c2bfaf",
+        "#d5d0bb",
+        "#e4deca"
+      ],
+      "reemplaza_a": null,
+      "compatible_sin_cambios_de_recurso": false,
+      "requiere_integracion": true,
+      "instrucciones_integracion": "Importar el atlas como fuente nueva; no reordenar fuentes o coordenadas activas. Consultar atlas_regiones.json y la ficha de integración.",
+      "referencias": [
+        {
+          "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/calle-museo-caminito",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "chapa pintada",
+            "balcones",
+            "calzada de adoquines"
+          ],
+          "uso": "contexto del barrio; sin incorporar fotografías"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/calle-museo-caminito-dic2025-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "detalle visible del farol y balcones",
+            "fachadas por paños de color"
+          ],
+          "uso": "referencia visual; sin copiar texturas"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/2caminito-aerea-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "profundidad de fachadas",
+            "relación entre calle y frentes"
+          ],
+          "uso": "vista general; adaptación ficticia a cámara de juego"
+        }
+      ],
+      "procedencia": {
+        "autor": null,
+        "material_incorporado": [],
+        "notas_creditos": "Diseño nuevo de este lote. No se añade atribución humana. Referencias y créditos existentes conservados; registro completo de trabajo fuera de los archivos de producción."
+      },
+      "verificacion": {
+        "png_valido": true,
+        "dimensiones_y_cuadros": true,
+        "alfa": true,
+        "escala_nativa": true,
+        "perspectiva": true,
+        "anclajes": true,
+        "sin_costuras_si_aplica": true,
+        "prueba_en_godot": false,
+        "evidencia": [
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_1x.png",
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_4x.png"
+        ],
+        "pendientes": [
+          "Asignación y comprobación en Godot por la tarea de integración."
+        ]
+      },
+      "sha256": "aaf58cce92c14d242d191aee0b54acf76e50b222ef4d39bb177c00ad82e38e15"
+    },
+    {
+      "id": "vereda",
+      "barrio": "la_boca",
+      "categoria": "suelo",
+      "estado": "final_pendiente_integracion",
+      "archivo_png": "Assets/Produccion/Barrios/la_boca/v01/vereda.png",
+      "fuente_editable": "ArteFuente/la_boca_calibracion_01/v01/vereda.svg",
+      "lienzo_px": {
+        "ancho": 16,
+        "alto": 16
+      },
+      "bbox_visible_px": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "formato": "RGBA",
+      "alfa_real": false,
+      "grilla_px": [
+        16,
+        16
+      ],
+      "margin_px": 0,
+      "separation_px": 0,
+      "animacion": {
+        "columnas": 1,
+        "filas": 1,
+        "ancho_cuadro_px": 16,
+        "alto_cuadro_px": 16,
+        "cantidad_cuadros": 1,
+        "orden": [
+          "estatico"
+        ],
+        "fps": null,
+        "loop": false
+      },
+      "coordenadas": "pixeles_nativos_origen_esquina_superior_izquierda",
+      "ancla_px": [
+        0,
+        0
+      ],
+      "huella_celdas": [],
+      "colision_sugerida_px": [],
+      "puertas_px": [],
+      "linea_orden_dibujo_y_px": null,
+      "capas": [],
+      "atlas_regiones": [],
+      "paleta_hex": [
+        "#aaad9f",
+        "#c2bfaf",
+        "#d5d0bb",
+        "#e4deca"
+      ],
+      "reemplaza_a": null,
+      "compatible_sin_cambios_de_recurso": false,
+      "requiere_integracion": true,
+      "instrucciones_integracion": "Importar el atlas como fuente nueva; no reordenar fuentes o coordenadas activas. Consultar atlas_regiones.json y la ficha de integración.",
+      "referencias": [
+        {
+          "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/calle-museo-caminito",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "chapa pintada",
+            "balcones",
+            "calzada de adoquines"
+          ],
+          "uso": "contexto del barrio; sin incorporar fotografías"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/calle-museo-caminito-dic2025-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "detalle visible del farol y balcones",
+            "fachadas por paños de color"
+          ],
+          "uso": "referencia visual; sin copiar texturas"
+        },
+        {
+          "url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/2caminito-aerea-1500x610.jpg",
+          "fecha_consulta": "2026-10-18",
+          "rasgos_utilizados": [
+            "profundidad de fachadas",
+            "relación entre calle y frentes"
+          ],
+          "uso": "vista general; adaptación ficticia a cámara de juego"
+        }
+      ],
+      "procedencia": {
+        "autor": null,
+        "material_incorporado": [],
+        "notas_creditos": "Diseño nuevo de este lote. No se añade atribución humana. Referencias y créditos existentes conservados; registro completo de trabajo fuera de los archivos de producción."
+      },
+      "verificacion": {
+        "png_valido": true,
+        "dimensiones_y_cuadros": true,
+        "alfa": true,
+        "escala_nativa": true,
+        "perspectiva": true,
+        "anclajes": true,
+        "sin_costuras_si_aplica": true,
+        "prueba_en_godot": false,
+        "evidencia": [
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_1x.png",
+          "Docs/Arte/Entregas/la_boca_calibracion_01/Previews/montaje_la_boca_4x.png"
+        ],
+        "pendientes": [
+          "Asignación y comprobación en Godot por la tarea de integración."
+        ]
+      },
+      "sha256": "793223c8b31bb73487d012ff9f126e0c5b451b99b799690676069a1d980633e8"
+    }
+  ],
+  "recortes_npc": [
+    {
+      "direccion": "abajo",
+      "rect_px": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "bbox_local_px": [
+        9,
+        4,
+        22,
+        32
+      ],
+      "pie_y_px": 31
+    },
+    {
+      "direccion": "arriba",
+      "rect_px": [
+        0,
+        32,
+        32,
+        32
+      ],
+      "bbox_local_px": [
+        9,
+        4,
+        22,
+        32
+      ],
+      "pie_y_px": 31
+    },
+    {
+      "direccion": "izquierda",
+      "rect_px": [
+        0,
+        64,
+        32,
+        32
+      ],
+      "bbox_local_px": [
+        10,
+        4,
+        23,
+        32
+      ],
+      "pie_y_px": 31
+    },
+    {
+      "direccion": "derecha",
+      "rect_px": [
+        0,
+        96,
+        32,
+        32
+      ],
+      "bbox_local_px": [
+        9,
+        4,
+        22,
+        32
+      ],
+      "pie_y_px": 31
+    }
+  ],
+  "atlas_bits": {
+    "N": 1,
+    "NE": 2,
+    "E": 4,
+    "SE": 8,
+    "S": 16,
+    "SW": 32,
+    "W": 64,
+    "NW": 128
+  },
+  "atlas_celdas_vacias": [
+    52,
+    53,
+    54,
+    55
+  ],
+  "paleta": "ArteFuente/la_boca_calibracion_01/v01/la_boca_lote_01.gpl"
+}

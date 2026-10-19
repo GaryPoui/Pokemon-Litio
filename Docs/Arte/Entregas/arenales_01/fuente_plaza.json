@@ -1,0 +1,14 @@
+{
+  "nombre": "fuente_plaza",
+  "barrio": "Arenales",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/arenales/v01/fuente_plaza.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/arenales/fuente_plaza.svg",
+  "lienzo": {
+    "ancho": 64,
+    "alto": 64
+  },
+  "transparencia": true,
+  "ancla": "centro inferior",
+  "integracion": "pendiente; pieza separada de producción"
+}

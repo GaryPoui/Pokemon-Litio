@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="96" viewBox="0 0 192 96" shape-rendering="crispEdges">
+<title>Acceso clásico de cementerio de barrio en piedra clara, sin texto</title>
+<path fill="#3d4845" d="M4 88h184v7H4z"/><path fill="#aaa994" d="M2 84h188v5H2z"/><path fill="#d5d1bb" d="M3 84h186v2H3z"/>
+<!-- base de sillería -->
+<path fill="#77776c" d="M13 75h166v10H13z"/><path fill="#bbb9a6" d="M16 77h160v6H16z"/><path fill="#e0dbc5" d="M16 77h160v2H16z"/><path fill="#9a9a89" d="M17 82h33v1H17zm38 0h37v1H55zm42 0h37v1H97zm42 0h36v1h-36z"/>
+<!-- cuerpo frontal monumental -->
+<path fill="#666a63" d="M21 41h150v38H21z"/><path fill="#b1b2a2" d="M24 39h144v39H24z"/><path fill="#d5d3bf" d="M28 42h136v33H28z"/><path fill="#e7e3cf" d="M31 44h130v29H31z"/>
+<!-- pedimento y cornisa -->
+<path fill="#5e625d" d="M20 39 95 8l77 31-4 5H25z"/><path fill="#a7a99a" d="M25 38 95 12l70 26-7 3H31z"/><path fill="#d8d5c2" d="M32 36 95 14l63 22-8 3H40z"/><path fill="#eee8d2" d="M45 34 95 17l49 17-6 2H51z"/><path fill="#716d5f" d="M19 38h154v5H19z"/><path fill="#e4dfc9" d="M21 38h150v2H21z"/><path fill="#bbb5a2" d="M29 44h134v3H29z"/>
+<!-- medallón vacío en el frontón -->
+<path fill="#8d8b7b" d="M87 22h17v10H87z"/><path fill="#e6e0ca" d="M89 23h13v7H89z"/><path fill="#b8b29e" d="M91 24h9v5h-9z"/><path fill="#ddd6c0" d="M95 24h1v4h-1zM92 26h7v1h-7z"/>
+<!-- tres arcos: piedra interior, sombra y portones -->
+<path fill="#686c64" d="M36 77V56l3-10 7-6h17l7 6 3 10v21H36zm37 0V56l3-10 7-6h17l7 6 3 10v21H73zm37 0V56l3-10 7-6h17l7 6 3 10v21h-37z"/>
+<path fill="#a6a899" d="M40 77V56l3-8 5-4h13l5 4 3 8v21H40zm37 0V56l3-8 5-4h13l5 4 3 8v21H77zm37 0V56l3-8 5-4h13l5 4 3 8v21h-29z"/>
+<path fill="#4a5554" d="M45 77V56l2-6 4-3h10l4 3 2 6v21H45zm37 0V56l2-6 4-3h10l4 3 2 6v21H82zm37 0V56l2-6 4-3h10l4 3 2 6v21h-24z"/>
+<path fill="#526b69" d="M47 77V56l2-5 4-2h8l4 2 2 5v21H47zm37 0V56l2-5 4-2h8l4 2 2 5v21H84zm37 0V56l2-5 4-2h8l4 2 2 5v21h-20z"/>
+<!-- rejas de hierro, cada arco con remate y barrotes -->
+<path fill="#343f42" d="M50 50h1v27h-1zm6-2h1v29h-1zm6 2h1v27h-1zm25 0h1v27h-1zm6-2h1v29h-1zm6 2h1v27h-1zm25 0h1v27h-1zm6-2h1v29h-1zm6 2h1v27h-1z"/><path fill="#8b9b90" d="M49 57h17v1H49zm35 0h17v1H84zm35 0h17v1h-17zM49 75h17v2H49zm35 0h17v2H84zm35 0h17v2h-17z"/><path fill="#687b75" d="M51 53h2v1h-2zm6-2h2v1h-2zm6 2h2v1h-2zm29-1h2v1h-2zm6 1h2v1h-2zm29-1h2v1h-2zm6 1h2v1h-2z"/>
+<!-- pilastras y capiteles -->
+<path fill="#8d8c7d" d="M26 43h5v35h-5zm27 0h5v4h-5zm27 0h5v4h-5zm27 0h5v4h-5zm27 0h5v35h-5z"/><path fill="#ebe5d0" d="M27 44h2v32h-2zm27 0h2v2h-2zm27 0h2v2h-2zm27 0h2v2h-2zm27 0h2v32h-2z"/><path fill="#b3b09d" d="M23 42h11v3H23zm27 0h11v3H50zm27 0h11v3H77zm27 0h11v3h-11zm27 0h11v3h-11z"/>
+<!-- jardineras pequeñas con flores, sobrias -->
+<path fill="#545f51" d="M6 82h13v5H6zm167 0h13v5h-13z"/><path fill="#7c8a62" d="M7 80h11v3H7zm168 0h11v3h-11z"/><path fill="#bd8580" d="M8 79h3v3H8zm5-2h3v4h-3zm158 2h3v3h-3zm5-2h3v4h-3z"/><path fill="#d6c397" d="M2 89h188v2H2z"/>
+</svg>

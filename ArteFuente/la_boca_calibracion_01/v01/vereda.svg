@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges">
+ <title>Baldosas de vereda</title>
+ <path fill="#d5d0bb" d="M0 0h16v16H0z"/>
+ <path fill="#e4deca" d="M0 0h15v1H1v14H0z"/>
+ <path fill="#c2bfaf" d="M14 1h1v14H1v-1h13z"/>
+ <path fill="#aaad9f" d="M15 0h1v16h-1zM0 15h16v1H0z"/>
+</svg>

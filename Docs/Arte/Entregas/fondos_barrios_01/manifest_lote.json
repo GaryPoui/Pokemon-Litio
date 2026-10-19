@@ -1,0 +1,296 @@
+{
+  "lote": "Fondos de combate de barrios · 01",
+  "fecha": "2026-10-18",
+  "estado": "assets finales pendientes de integración",
+  "nota": "Esta tanda cubre los ocho fondos de combate del documento de barrios. No completa el resto del kit de cada ciudad.",
+  "piezas": [
+    {
+      "id": "fondo_batalla_la_boca_01",
+      "barrio": "La Boca",
+      "tipo": "fondo_batalla",
+      "estado": "asset_final_pendiente_de_integracion",
+      "lienzo_px": {
+        "ancho": 256,
+        "alto": 192
+      },
+      "formato": "PNG RGBA opaco",
+      "paleta_rgb_unicos": 43,
+      "ruta_png": "Assets/Produccion/Barrios/la_boca/v02/fondo_batalla.png",
+      "fuente_editable": "ArteFuente/Batalla/la_boca_fondo_batalla.svg",
+      "plataformas": {
+        "rival": [
+          190,
+          90
+        ],
+        "jugador": [
+          64,
+          174
+        ]
+      },
+      "sin_pokemon": true,
+      "sin_interfaz": true,
+      "referencia": {
+        "nombre": "Calle Museo Caminito, Turismo Buenos Aires",
+        "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/calle-museo-caminito"
+      },
+      "validacion": {
+        "dimensiones": true,
+        "alfa_opaca": true,
+        "integrado": false
+      },
+      "base_git": "7f531f1b104064a7a5b20373e33e1b3c5bfaa99f"
+    },
+    {
+      "id": "fondo_batalla_constitucion_01",
+      "barrio": "Constitución",
+      "tipo": "fondo_batalla",
+      "estado": "asset_final_pendiente_de_integracion",
+      "lienzo_px": {
+        "ancho": 256,
+        "alto": 192
+      },
+      "formato": "PNG RGBA opaco",
+      "paleta_rgb_unicos": 27,
+      "ruta_png": "Assets/Produccion/Barrios/constitucion/v01/fondo_batalla.png",
+      "fuente_editable": "ArteFuente/Batalla/constitucion_fondo_batalla.svg",
+      "plataformas": {
+        "rival": [
+          190,
+          90
+        ],
+        "jugador": [
+          64,
+          174
+        ]
+      },
+      "sin_pokemon": true,
+      "sin_interfaz": true,
+      "referencia": {
+        "nombre": "Estación Plaza Constitución, Argentina.gob.ar",
+        "url": "https://www.argentina.gob.ar/capital-humano/cultura/monumentos/estacion-plaza-constitucion"
+      },
+      "validacion": {
+        "dimensiones": true,
+        "alfa_opaca": true,
+        "integrado": false
+      },
+      "base_git": "7f531f1b104064a7a5b20373e33e1b3c5bfaa99f"
+    },
+    {
+      "id": "fondo_batalla_chacarita_01",
+      "barrio": "Chacarita",
+      "tipo": "fondo_batalla",
+      "estado": "asset_final_pendiente_de_integracion",
+      "lienzo_px": {
+        "ancho": 256,
+        "alto": 192
+      },
+      "formato": "PNG RGBA opaco",
+      "paleta_rgb_unicos": 25,
+      "ruta_png": "Assets/Produccion/Barrios/chacarita/v01/fondo_batalla.png",
+      "fuente_editable": "ArteFuente/Batalla/chacarita_fondo_batalla.svg",
+      "plataformas": {
+        "rival": [
+          190,
+          90
+        ],
+        "jugador": [
+          64,
+          174
+        ]
+      },
+      "sin_pokemon": true,
+      "sin_interfaz": true,
+      "referencia": {
+        "nombre": "Cementerio de la Chacarita, Turismo Buenos Aires",
+        "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/cementerio-de-la-chacarita"
+      },
+      "validacion": {
+        "dimensiones": true,
+        "alfa_opaca": true,
+        "integrado": false
+      },
+      "base_git": "7f531f1b104064a7a5b20373e33e1b3c5bfaa99f"
+    },
+    {
+      "id": "fondo_batalla_ipm_01",
+      "barrio": "IPM",
+      "tipo": "fondo_batalla",
+      "estado": "asset_final_pendiente_de_integracion",
+      "lienzo_px": {
+        "ancho": 256,
+        "alto": 192
+      },
+      "formato": "PNG RGBA opaco",
+      "paleta_rgb_unicos": 29,
+      "ruta_png": "Assets/Produccion/Barrios/ipm/v01/fondo_batalla.png",
+      "fuente_editable": "ArteFuente/Batalla/ipm_fondo_batalla.svg",
+      "plataformas": {
+        "rival": [
+          190,
+          90
+        ],
+        "jugador": [
+          64,
+          174
+        ]
+      },
+      "sin_pokemon": true,
+      "sin_interfaz": true,
+      "referencia": {
+        "nombre": "Instituto Politécnico Modelo",
+        "url": "https://www.ipm.edu.ar/"
+      },
+      "validacion": {
+        "dimensiones": true,
+        "alfa_opaca": true,
+        "integrado": false
+      },
+      "base_git": "7f531f1b104064a7a5b20373e33e1b3c5bfaa99f"
+    },
+    {
+      "id": "fondo_batalla_arenales_01",
+      "barrio": "Villa Devoto · Plaza Arenales",
+      "tipo": "fondo_batalla",
+      "estado": "asset_final_pendiente_de_integracion",
+      "lienzo_px": {
+        "ancho": 256,
+        "alto": 192
+      },
+      "formato": "PNG RGBA opaco",
+      "paleta_rgb_unicos": 29,
+      "ruta_png": "Assets/Produccion/Barrios/arenales/v01/fondo_batalla.png",
+      "fuente_editable": "ArteFuente/Batalla/arenales_fondo_batalla.svg",
+      "plataformas": {
+        "rival": [
+          190,
+          90
+        ],
+        "jugador": [
+          64,
+          174
+        ]
+      },
+      "sin_pokemon": true,
+      "sin_interfaz": true,
+      "referencia": {
+        "nombre": "Plaza Arenales, GCBA",
+        "url": "https://buenosaires.gob.ar/gcaba_historico/gobierno/registro-civil/plaza-arenales"
+      },
+      "validacion": {
+        "dimensiones": true,
+        "alfa_opaca": true,
+        "integrado": false
+      },
+      "base_git": "7f531f1b104064a7a5b20373e33e1b3c5bfaa99f"
+    },
+    {
+      "id": "fondo_batalla_palermo_01",
+      "barrio": "Palermo · Rosedal",
+      "tipo": "fondo_batalla",
+      "estado": "asset_final_pendiente_de_integracion",
+      "lienzo_px": {
+        "ancho": 256,
+        "alto": 192
+      },
+      "formato": "PNG RGBA opaco",
+      "paleta_rgb_unicos": 24,
+      "ruta_png": "Assets/Produccion/Barrios/palermo/v01/fondo_batalla.png",
+      "fuente_editable": "ArteFuente/Batalla/palermo_fondo_batalla.svg",
+      "plataformas": {
+        "rival": [
+          190,
+          90
+        ],
+        "jugador": [
+          64,
+          174
+        ]
+      },
+      "sin_pokemon": true,
+      "sin_interfaz": true,
+      "referencia": {
+        "nombre": "Rosedal de Palermo, Turismo Buenos Aires",
+        "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/rosedal-de-palermo-0"
+      },
+      "validacion": {
+        "dimensiones": true,
+        "alfa_opaca": true,
+        "integrado": false
+      },
+      "base_git": "7f531f1b104064a7a5b20373e33e1b3c5bfaa99f"
+    },
+    {
+      "id": "fondo_batalla_mugica_01",
+      "barrio": "Barrio Mugica · Retiro",
+      "tipo": "fondo_batalla",
+      "estado": "asset_final_pendiente_de_integracion",
+      "lienzo_px": {
+        "ancho": 256,
+        "alto": 192
+      },
+      "formato": "PNG RGBA opaco",
+      "paleta_rgb_unicos": 24,
+      "ruta_png": "Assets/Produccion/Barrios/mugica/v01/fondo_batalla.png",
+      "fuente_editable": "ArteFuente/Batalla/mugica_fondo_batalla.svg",
+      "plataformas": {
+        "rival": [
+          190,
+          90
+        ],
+        "jugador": [
+          64,
+          174
+        ]
+      },
+      "sin_pokemon": true,
+      "sin_interfaz": true,
+      "referencia": {
+        "nombre": "Patio Gastronómico Barrio Mugica, GCBA",
+        "url": "https://buenosaires.gob.ar/gcaba_historico/noticias/un-impulso-al-desarrollo-local-la-ciudad-inauguro-el-patio-gastronomico"
+      },
+      "validacion": {
+        "dimensiones": true,
+        "alfa_opaca": true,
+        "integrado": false
+      },
+      "base_git": "7f531f1b104064a7a5b20373e33e1b3c5bfaa99f"
+    },
+    {
+      "id": "fondo_batalla_monumental_01",
+      "barrio": "Núñez · Monumental",
+      "tipo": "fondo_batalla",
+      "estado": "asset_final_pendiente_de_integracion",
+      "lienzo_px": {
+        "ancho": 256,
+        "alto": 192
+      },
+      "formato": "PNG RGBA opaco",
+      "paleta_rgb_unicos": 24,
+      "ruta_png": "Assets/Produccion/Barrios/monumental/v01/fondo_batalla.png",
+      "fuente_editable": "ArteFuente/Batalla/monumental_fondo_batalla.svg",
+      "plataformas": {
+        "rival": [
+          190,
+          90
+        ],
+        "jugador": [
+          64,
+          174
+        ]
+      },
+      "sin_pokemon": true,
+      "sin_interfaz": true,
+      "referencia": {
+        "nombre": "Estadio Monumental, Turismo Buenos Aires",
+        "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/estadio-river-plate-estadio-monumental"
+      },
+      "validacion": {
+        "dimensiones": true,
+        "alfa_opaca": true,
+        "integrado": false
+      },
+      "base_git": "7f531f1b104064a7a5b20373e33e1b3c5bfaa99f"
+    }
+  ]
+}

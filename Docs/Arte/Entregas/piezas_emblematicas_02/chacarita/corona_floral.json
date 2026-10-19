@@ -1,0 +1,13 @@
+{
+  "barrio": "chacarita",
+  "nombre": "corona_floral",
+  "canvas_px": {
+    "ancho": 56,
+    "alto": 48
+  },
+  "asset_png": "../../../../../Assets/Produccion/Barrios/chacarita/v02/corona_floral.png",
+  "fuente_svg": "../../../../../ArteFuente/Barrios/chacarita/corona_floral.svg",
+  "preview": "corona_floral_4x.png",
+  "estado": "pendiente_de_integracion",
+  "sin_pokemon": true
+}

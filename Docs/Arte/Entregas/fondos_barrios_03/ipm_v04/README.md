@@ -1,0 +1,9 @@
+# Fondo de combate · Instituto Politécnico Modelo · v04
+
+Fondo de 256×192 px compuesto desde una ilustración de pixel art generada y reducida con vecinos cercanos a una paleta de 233 colores RGB. Las dos plataformas reutilizan la geometría del juego y se agregan después de reducir el fondo. La escena no contiene criaturas ni interfaz.
+
+- Asset: [PNG final](../../../../../Assets/Produccion/Barrios/ipm/v04/fondo_batalla.png).
+- Fuente raster de alta resolución: [PNG original](../../../../../ArteFuente/Batalla/ipm_fondo_batalla_imagegen_v04_source.png).
+- [Vista 1×](fondo_batalla_1x.png) · [vista ampliada 4×](fondo_batalla_4x.png).
+
+Estado: listo como asset visual, pendiente de integración y prueba en el motor. Verificación: 256×192, opaco, 233 colores.

@@ -21,6 +21,7 @@ color = Color(0.9, 0.94, 0.84, 1)
 
 [node name="FondoZona" type="TextureRect" parent="Fondo" unique_id=1573852909]
 visible = false
+texture_filter = 1
 layout_mode = 0
 offset_right = 256.0
 offset_bottom = 192.0

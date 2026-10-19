@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" shape-rendering="crispEdges"><title>Palermo · Rosedal y lago</title><path fill="#b9d7dc" d="M0 0h256v48H0z"/><path fill="#d6e4d8" d="M15 15h17v2H15zm4 3h22v2H19zm148-8h19v2h-19zm6 3h18v2h-18z"/><path fill="#608c68" d="M0 33h256v25H0z"/><path fill="#807968" d="M0 89h256v50H0z"/><path fill="#98896b" d="M0 89h256v3H0z"/><path fill="#6d685b" d="M0 105h256v2H0zm0 17h256v2H0zm0 14h256v2H0z"/><path fill="#a39576" d="M16 92v12h1V92zm32 0v12h1V92zm32 0v12h1V92zm32 0v12h1V92zm32 0v12h1V92zm32 0v12h1V92zm32 0v12h1V92zm32 0v12h1V92z"/>
+<path fill="#5c966a" d="M0 39h256v50H0z"/><path fill="#78a875" d="M0 47h256v29H0z"/><path fill="#6198a5" d="M0 70h256v24H0z"/><path fill="#80b3b7" d="M0 71h256v3H0z"/><path fill="#b1d2cb" d="M0 90h256v5H0z"/><path fill="#dfd4b8" d="M85 63h86v7H85zm9-8h68v8H94zm11-9h46v9h-46z"/><path fill="#a2a795" d="M91 63v-8m15 8V48m15 15V46m15 17V46m15 17V48m15 15v-8" stroke="#9d9c83" stroke-width="3"/><path fill="#857d65" d="M87 62h82v3H87z"/><path fill="#52724e" d="M23 53V31h7v22zm198 0V30h7v23z"/><path fill="#488657" d="M8 38h40v18H8zm185-2h51v19h-51z"/><path fill="#6a9a66" d="M15 32h25v13H15zm185-1h37v12h-37z"/><path fill="#466a4b" d="M25 62h39v22H25zm167 0h39v22h-39z"/><path fill="#75965e" d="M30 65h28v16H30zm167 0h28v16h-28z"/><path fill="#b95670" d="M33 68h5v5h-5zm10-4h5v5h-5zm10 5h5v5h-5zm141 0h5v5h-5zm10-5h5v5h-5zm10 5h5v5h-5z"/><path fill="#e08b97" d="M34 68h2v2h-2zm10-4h2v2h-2zm10 5h2v2h-2zm141 0h2v2h-2zm10-5h2v2h-2z"/><path fill="#586c61" d="M0 96h256v8H0z"/><path fill="#89a77a" d="M0 104h256v5H0z"/><path fill="#596553" d="M0 139h256v53H0z"/><path fill="#718064" d="M0 139h256v3H0z"/><path fill="#81775d" d="M0 146h256v3H0z"/><path fill="#95856a" d="M0 172h256v3H0z"/><path fill="#b6a47c" d="M0 174h256v2H0z"/><path fill="#6e6755" d="M0 188h256v4H0z"/>
+<!-- plataforma trasera, bajo la posición rival (190,90) -->
+<path fill="#39443e" d="M173 102h34v-2h7v-2h5v-5h-3v-3h-5v-2h-47v2h-5v3h-3v5h5v2h7z"/>
+<path fill="#4e7041" d="M169 98h42v2h7v-2h3v-5h-3v-3h-7v-2h-42v2h-7v2h-3v5h3v2z"/>
+<path fill="#63904a" d="M166 94h50v2h5v-2h2v-5h-2v-2h-5v-2h-50v2h-5v2h-2v5h2v2z"/>
+<path fill="#7cab52" d="M171 91h44v2h4v-2h2v-4h-2v-2h-4v-1h-44v1h-4v2h-2v4h2v2z"/>
+<path fill="#9cc664" d="M178 86h31v2h6v2h-2v1h-37v-1h-2v-2h4z"/>
+<path fill="#4c713f" d="M165 93h5v2h-5zm49 0h5v2h-5zm-42-8h4v1h-4z"/>
+<path fill="#a4cc68" d="M174 86h3v1h-3zm36 4h3v1h-3z"/>
+<!-- plataforma delantera, bajo la posición del jugador (64,174) -->
+<path fill="#39443e" d="M48 165h31v-2h11v-2h7v-3h5v-6h-5v-3h-7v-2H43v2h-7v3h-5v6h5v3h7v2z"/>
+<path fill="#4e7041" d="M43 161h42v2h10v-2h7v-3h4v-6h-4v-3h-7v-2H43v2h-7v3h-4v6h4v3h7z"/>
+<path fill="#63904a" d="M38 157h49v2h12v-2h6v-3h4v-5h-4v-3h-6v-2H38v2h-6v3h-4v5h4v3h6z"/>
+<path fill="#7cab52" d="M43 153h44v2h11v-2h4v-3h3v-4h-3v-2H98v-1H43v1h-6v2h-3v4h3v3h6z"/>
+<path fill="#9cc664" d="M51 148h35v1h12v2h-4v1H41v-1h-2v-2h12z"/>
+<path fill="#4c713f" d="M34 155h6v2h-6zm64 0h6v2h-6zm-55-9h4v1h-4z"/>
+<path fill="#a4cc68" d="M48 147h4v1h-4zm42 4h3v1h-3z"/>
+</svg>

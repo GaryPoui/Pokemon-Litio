@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" shape-rendering="crispEdges"><rect width="256" height="192" fill="#b7d8df"/><path d="M0 0h256v33h-256z" fill="#699070"/><path d="M0 26h21v4H0zm32-10h15v4H32zm184 12h40v4h-40z" fill="#d6e4d8"/><rect x="0" y="52" width="256" height="90" fill="#86aa83"/><path d="M0 67h256v40H0z" fill="#659aaa"/><path d="M0 67h256v5H0zM0 103h256v5H0z" fill="#b9d8d0"/><path d="M88 56h80v9H88zM98 48h60v8H98zM108 39h40v9h-40z" fill="#e1d8bd"/><path d="M94 64v-8m13 8V49m14 15V40m14 24V40m14 24V49m13 15v-8" stroke="#ddd3b9" stroke-width="3"/><path d="M40 142V80h22v62m-19-53h16m-16 13h16m-16 13h16m-16 13h16" fill="none" stroke="#52705a" stroke-width="3"/><path d="M202 142V80h18v62m-16-53h14m-14 13h14m-14 13h14m-14 13h14" fill="none" stroke="#52705a" stroke-width="3"/><path d="M5 74v-25h5V36h5v13h5v25m211 0V51h5V38h5v13h5v23" fill="#3f754e"/><circle cx="12" cy="39" r="12" fill="#4d8858"/><circle cx="238" cy="41" r="13" fill="#4d8858"/><path d="M20 119h44v16H20zm169 0h46v16h-46z" fill="#668a60"/><path d="M24 121h5v5h-5zm10 4h5v5h-5zm16-5h5v5h-5zm142 5h5v5h-5zm15-5h5v5h-5z" fill="#e68c9d"/><path d="M0 143h256v11H0z" fill="#66735e"/><path d="M0 155h256v37H0z" fill="#718469"/><path d="M0 155h256v3H0z" fill="#eadbac"/><path d="M0 170h256m-256 14h256" stroke="#ffffff" stroke-opacity=".12" stroke-width="1"/>
+<!-- plataforma trasera, bajo la posición rival (190,90) -->
+<path fill="#39443e" d="M173 102h34v-2h7v-2h5v-5h-3v-3h-5v-2h-47v2h-5v3h-3v5h5v2h7z"/>
+<path fill="#4e7041" d="M169 98h42v2h7v-2h3v-5h-3v-3h-7v-2h-42v2h-7v2h-3v5h3v2z"/>
+<path fill="#63904a" d="M166 94h50v2h5v-2h2v-5h-2v-2h-5v-2h-50v2h-5v2h-2v5h2v2z"/>
+<path fill="#7cab52" d="M171 91h44v2h4v-2h2v-4h-2v-2h-4v-1h-44v1h-4v2h-2v4h2v2z"/>
+<path fill="#9cc664" d="M178 86h31v2h6v2h-2v1h-37v-1h-2v-2h4z"/>
+<path fill="#4c713f" d="M165 93h5v2h-5zm49 0h5v2h-5zm-42-8h4v1h-4z"/>
+<path fill="#a4cc68" d="M174 86h3v1h-3zm36 4h3v1h-3z"/>
+<!-- plataforma delantera, bajo la posición del jugador (64,174) -->
+<path fill="#39443e" d="M48 165h31v-2h11v-2h7v-3h5v-6h-5v-3h-7v-2H43v2h-7v3h-5v6h5v3h7v2z"/>
+<path fill="#4e7041" d="M43 161h42v2h10v-2h7v-3h4v-6h-4v-3h-7v-2H43v2h-7v3h-4v6h4v3h7z"/>
+<path fill="#63904a" d="M38 157h49v2h12v-2h6v-3h4v-5h-4v-3h-6v-2H38v2h-6v3h-4v5h4v3h6z"/>
+<path fill="#7cab52" d="M43 153h44v2h11v-2h4v-3h3v-4h-3v-2H98v-1H43v1h-6v2h-3v4h3v3h6z"/>
+<path fill="#9cc664" d="M51 148h35v1h12v2h-4v1H41v-1h-2v-2h12z"/>
+<path fill="#4c713f" d="M34 155h6v2h-6zm64 0h6v2h-6zm-55-9h4v1h-4z"/>
+<path fill="#a4cc68" d="M48 147h4v1h-4zm42 4h3v1h-3z"/>
+</svg>

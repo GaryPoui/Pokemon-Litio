@@ -1,0 +1,80 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Produccion/Barrios/ipm/v05/taller_interior.png" id="1_taller"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="2_jugador"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_tileset"]
+[ext_resource type="Texture2D" path="res://Assets/Produccion/Barrios/ipm/v05/fondo_batalla_taller.png" id="4_fondo_batalla"]
+[ext_resource type="Script" path="res://Scripts/ipm_taller.gd" id="5_mapa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lathe"]
+size = Vector2(72, 34)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bench"]
+size = Vector2(76, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cabinet"]
+size = Vector2(24, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall_x"]
+size = Vector2(8, 208)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall_y"]
+size = Vector2(272, 8)
+
+[node name="IPMTallerInterior" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("5_mapa")
+fondo_batalla = ExtResource("4_fondo_batalla")
+zona_id = "ipm_taller"
+zona_nombre = "TALLER DEL IPM"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="."]
+z_index = -1
+tile_set = ExtResource("3_tileset")
+
+[node name="Taller" type="Sprite2D" parent="."]
+texture_filter = 1
+z_index = -10
+position = Vector2(0, 0)
+centered = false
+texture = ExtResource("1_taller")
+
+[node name="Maquinaria" type="StaticBody2D" parent="."]
+
+[node name="Torno" type="CollisionShape2D" parent="Maquinaria"]
+position = Vector2(42, 112)
+shape = SubResource("RectangleShape2D_lathe")
+
+[node name="BancoTrabajo" type="CollisionShape2D" parent="Maquinaria"]
+position = Vector2(146, 114)
+shape = SubResource("RectangleShape2D_bench")
+
+[node name="ArmarioHerramientas" type="CollisionShape2D" parent="Maquinaria"]
+position = Vector2(244, 96)
+shape = SubResource("RectangleShape2D_cabinet")
+
+[node name="Limites" type="StaticBody2D" parent="."]
+
+[node name="Izquierda" type="CollisionShape2D" parent="Limites"]
+position = Vector2(-4, 96)
+shape = SubResource("RectangleShape2D_wall_x")
+
+[node name="Derecha" type="CollisionShape2D" parent="Limites"]
+position = Vector2(260, 96)
+shape = SubResource("RectangleShape2D_wall_x")
+
+[node name="Arriba" type="CollisionShape2D" parent="Limites"]
+position = Vector2(128, -4)
+shape = SubResource("RectangleShape2D_wall_y")
+
+[node name="Abajo" type="CollisionShape2D" parent="Limites"]
+position = Vector2(128, 196)
+shape = SubResource("RectangleShape2D_wall_y")
+
+[node name="Jugador" parent="." instance=ExtResource("2_jugador")]
+position = Vector2(128, 160)
+
+[node name="Entrada" type="Marker2D" parent="."]
+position = Vector2(128, 176)

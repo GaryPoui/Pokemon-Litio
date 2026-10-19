@@ -1,0 +1,14 @@
+{
+  "nombre": "parterre_rosas",
+  "barrio": "Palermo",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/palermo/v02/parterre_rosas.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/palermo/parterre_rosas.svg",
+  "lienzo": {
+    "ancho": 64,
+    "alto": 40
+  },
+  "transparencia": true,
+  "ancla": "centro inferior",
+  "integracion": "pendiente; pieza independiente"
+}

@@ -1,0 +1,72 @@
+{
+  "barrio": "arenales",
+  "version": "v02",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/arenales/v02/fondo_batalla.png",
+  "fuente": "../../../../ArteFuente/Batalla/arenales_fondo_batalla_v02.svg",
+  "canvas": {
+    "ancho": 256,
+    "alto": 192
+  },
+  "formato": "PNG RGB opaco",
+  "uso": "fondo de combate pantalla completa",
+  "ancla": "origen (0,0)",
+  "plataformas": {
+    "trasera": {
+      "x": 163,
+      "y": 83,
+      "apoyo": "190,90"
+    },
+    "delantera": {
+      "x": 30,
+      "y": 143,
+      "apoyo": "64,174"
+    }
+  },
+  "paleta": [
+    "#b8d4d2",
+    "#d6e4d8",
+    "#6e966e",
+    "#807968",
+    "#98896b",
+    "#6d685b",
+    "#a39576",
+    "#5f8b63",
+    "#8dac76",
+    "#d5c49a",
+    "#eee0b4",
+    "#b59b6c",
+    "#e6d3a0",
+    "#627c56",
+    "#4f8159",
+    "#6a9a63",
+    "#71825e",
+    "#bc7053",
+    "#e0b775",
+    "#9a6a4c",
+    "#735344",
+    "#d28b5c",
+    "#f0c67a",
+    "#53665e",
+    "#b4d1c8",
+    "#ac8159",
+    "#5d7658",
+    "#dc9a9d",
+    "#d8c69a",
+    "#596553",
+    "#718064",
+    "#81775d",
+    "#95856a",
+    "#b6a47c",
+    "#6e6755",
+    "#39443e",
+    "#4e7041",
+    "#63904a",
+    "#7cab52",
+    "#9cc664",
+    "#4c713f",
+    "#a4cc68"
+  ],
+  "plataformas_referencia": "ArteFuente/Batalla/la_boca_plataformas.svg",
+  "sin_pokemon": true
+}

@@ -1,0 +1,14 @@
+{
+  "nombre": "silla_cafeteria",
+  "barrio": "Arenales",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/arenales/v01/silla_cafeteria.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/arenales/silla_cafeteria.svg",
+  "lienzo": {
+    "ancho": 24,
+    "alto": 32
+  },
+  "transparencia": true,
+  "ancla": "centro inferior",
+  "integracion": "pendiente; pieza separada de producción"
+}

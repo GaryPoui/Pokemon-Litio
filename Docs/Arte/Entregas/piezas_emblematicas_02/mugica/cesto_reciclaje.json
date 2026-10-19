@@ -1,0 +1,13 @@
+{
+  "barrio": "mugica",
+  "nombre": "cesto_reciclaje",
+  "canvas_px": {
+    "ancho": 48,
+    "alto": 48
+  },
+  "asset_png": "../../../../../Assets/Produccion/Barrios/mugica/v02/cesto_reciclaje.png",
+  "fuente_svg": "../../../../../ArteFuente/Barrios/mugica/cesto_reciclaje.svg",
+  "preview": "cesto_reciclaje_4x.png",
+  "estado": "pendiente_de_integracion",
+  "sin_pokemon": true
+}

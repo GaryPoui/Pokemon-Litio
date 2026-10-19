@@ -1,0 +1,14 @@
+{
+  "nombre": "mesa_taller",
+  "barrio": "Instituto de Puerto Madero",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/ipm/v02/mesa_taller.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/ipm/mesa_taller.svg",
+  "lienzo": {
+    "ancho": 64,
+    "alto": 48
+  },
+  "transparencia": true,
+  "ancla": "centro inferior",
+  "integracion": "pendiente; pieza de producción separada"
+}

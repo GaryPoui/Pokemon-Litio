@@ -1,0 +1,38 @@
+{
+  "lote": "Arenales v01",
+  "estado": "final pendiente de integración",
+  "assets": [
+    {
+      "nombre": "fuente_plaza",
+      "ancho": 64,
+      "alto": 64,
+      "preview": "fuente_plaza_4x.png",
+      "fuente": "../../../../ArteFuente/Barrios/arenales/fuente_plaza.svg",
+      "png": "../../../../Assets/Produccion/Barrios/arenales/v01/fuente_plaza.png"
+    },
+    {
+      "nombre": "mesa_cafeteria",
+      "ancho": 48,
+      "alto": 40,
+      "preview": "mesa_cafeteria_4x.png",
+      "fuente": "../../../../ArteFuente/Barrios/arenales/mesa_cafeteria.svg",
+      "png": "../../../../Assets/Produccion/Barrios/arenales/v01/mesa_cafeteria.png"
+    },
+    {
+      "nombre": "silla_cafeteria",
+      "ancho": 24,
+      "alto": 32,
+      "preview": "silla_cafeteria_4x.png",
+      "fuente": "../../../../ArteFuente/Barrios/arenales/silla_cafeteria.svg",
+      "png": "../../../../Assets/Produccion/Barrios/arenales/v01/silla_cafeteria.png"
+    },
+    {
+      "nombre": "maceton_arbusto",
+      "ancho": 32,
+      "alto": 32,
+      "preview": "maceton_arbusto_4x.png",
+      "fuente": "../../../../ArteFuente/Barrios/arenales/maceton_arbusto.svg",
+      "png": "../../../../Assets/Produccion/Barrios/arenales/v01/maceton_arbusto.png"
+    }
+  ]
+}

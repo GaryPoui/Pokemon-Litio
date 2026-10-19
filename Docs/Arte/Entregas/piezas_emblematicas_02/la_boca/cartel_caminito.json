@@ -1,0 +1,13 @@
+{
+  "barrio": "la_boca",
+  "nombre": "cartel_caminito",
+  "canvas_px": {
+    "ancho": 48,
+    "alto": 56
+  },
+  "asset_png": "../../../../../Assets/Produccion/Barrios/la_boca/v02/cartel_caminito.png",
+  "fuente_svg": "../../../../../ArteFuente/Barrios/la_boca/cartel_caminito.svg",
+  "preview": "cartel_caminito_4x.png",
+  "estado": "pendiente_de_integracion",
+  "sin_pokemon": true
+}

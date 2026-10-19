@@ -1,0 +1,67 @@
+{
+  "barrio": "chacarita",
+  "version": "v02",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/chacarita/v02/fondo_batalla.png",
+  "fuente": "../../../../ArteFuente/Batalla/chacarita_fondo_batalla_v02.svg",
+  "canvas": {
+    "ancho": 256,
+    "alto": 192
+  },
+  "formato": "PNG RGB opaco",
+  "uso": "fondo de combate pantalla completa",
+  "ancla": "origen (0,0)",
+  "plataformas": {
+    "trasera": {
+      "x": 163,
+      "y": 83,
+      "apoyo": "190,90"
+    },
+    "delantera": {
+      "x": 30,
+      "y": 143,
+      "apoyo": "64,174"
+    }
+  },
+  "paleta": [
+    "#aabdb3",
+    "#d6e4d8",
+    "#778d7b",
+    "#807968",
+    "#98896b",
+    "#6d685b",
+    "#a39576",
+    "#596d5e",
+    "#77917a",
+    "#426249",
+    "#6f956b",
+    "#5d5c52",
+    "#c1b9a3",
+    "#e2d7bc",
+    "#4c5852",
+    "#394b48",
+    "#718982",
+    "#a69b80",
+    "#d2c9b1",
+    "#5b604f",
+    "#82956d",
+    "#b6ad96",
+    "#7c8765",
+    "#9b8874",
+    "#596553",
+    "#718064",
+    "#81775d",
+    "#95856a",
+    "#b6a47c",
+    "#6e6755",
+    "#39443e",
+    "#4e7041",
+    "#63904a",
+    "#7cab52",
+    "#9cc664",
+    "#4c713f",
+    "#a4cc68"
+  ],
+  "plataformas_referencia": "ArteFuente/Batalla/la_boca_plataformas.svg",
+  "sin_pokemon": true
+}

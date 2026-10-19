@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="208" viewBox="0 0 256 208" shape-rendering="crispEdges">
+<title>Fachada exterior pixel art de estadio barrial azul y oro, sin texto</title>
+<!-- sombra y basamento -->
+<path fill="#14243b" d="M12 184h232v12H12zM22 195h212v5H22z"/><path fill="#737b78" d="M7 190h242v8H7z"/><path fill="#c3c7b5" d="M8 190h240v2H8z"/>
+<!-- volumen alto asimétrico de tribuna, con fondo retraído -->
+<path fill="#1e385b" d="M20 75 46 50 73 35 183 35 211 46 238 72 238 123H20z"/>
+<path fill="#244d7d" d="M27 72 51 51 77 39 180 39 206 49 231 73v46H27z"/>
+<path fill="#3874a8" d="M37 69 57 52 80 43h97l23 9 22 19v7H37z"/>
+<!-- cubierta y profundidad hacia atras -->
+<path fill="#172c49" d="M19 76 48 48 75 30 185 30 215 43 240 70l-4 9-30-24-24-11H77L52 57 25 83z"/>
+<path fill="#315e91" d="M22 72 49 48 77 33h105l28 12 25 25-5 7-27-23-22-10H80L55 59 27 82z"/>
+<path fill="#548bb5" d="M30 68 54 47 80 37h99l26 11 23 20-3 4-25-20-23-9H82L58 62 33 77z"/>
+<path fill="#8ab8d0" d="M44 56 61 42 81 35h41v3H82L63 45 47 59zM130 35h43l24 10 16 13-3 2-17-12-22-9h-41z"/>
+<path fill="#17324f" d="M18 74h220v11H18z"/><path fill="#f5c84e" d="M20 74h216v4H20z"/><path fill="#e5aa35" d="M21 79h214v3H21z"/>
+<!-- bandas de gradas vistas en profundidad -->
+<path fill="#172942" d="M35 61h183v3H35zm-7 8h202v3H28z"/><path fill="#f3c342" d="M45 60h165v2H45zm-12 8h190v2H33z"/>
+<!-- torre alta de la tribuna continua: rompe la silueta oval común -->
+<path fill="#142944" d="M166 73V45l16-14h46l18 14v31z"/><path fill="#285583" d="M170 70V47l14-12h42l16 12v23z"/><path fill="#3979a9" d="M175 46 186 38h39l11 9v4h-61z"/><path fill="#172d4a" d="M170 51h72v4h-72z"/><path fill="#f4c642" d="M171 52h70v3h-70z"/><path fill="#244d7c" d="M174 57h65v12h-65z"/><path fill="#142a46" d="M177 58h9v10h-9zm14 0h9v10h-9zm14 0h9v10h-9zm14 0h9v10h-9z"/><path fill="#7cb5c6" d="M179 59h5v3h-5zm14 0h5v3h-5zm14 0h5v3h-5zm14 0h5v3h-5z"/><path fill="#f3c444" d="M169 70h78v4h-78z"/><path fill="#193451" d="M173 74h72v5h-72z"/>
+<!-- fachada curva principal -->
+<path fill="#172942" d="M16 82h224v91H16z"/><path fill="#285c91" d="M20 85h216v83H20z"/>
+<path fill="#f5c53e" d="M20 89h216v8H20z"/><path fill="#e5a92e" d="M20 97h216v3H20z"/>
+<path fill="#1a3d65" d="M20 101h216v5H20z"/><path fill="#3875aa" d="M20 106h216v31H20z"/>
+<!-- arcadas de la tribuna alta, variación de luces y pilares -->
+<path fill="#132a48" d="M27 108h15v22H27zm23 0h15v22H50zm23 0h15v22H73zm23 0h15v22H96zm23 0h15v22H119zm23 0h15v22H142zm23 0h15v22H165zm23 0h15v22H188zm23 0h15v22H211z"/>
+<path fill="#4c8db9" d="M30 111h9v16h-9zm23 0h9v16h-9zm23 0h9v16h-9zm23 0h9v16h-9zm23 0h9v16h-9zm23 0h9v16h-9zm23 0h9v16h-9zm23 0h9v16h-9zm23 0h9v16h-9z"/>
+<path fill="#77b4c8" d="M31 112h3v4h-3zm5 0h3v4h-3zm18 0h3v4h-3zm5 0h3v4h-3zm18 0h3v4h-3zm5 0h3v4h-3zm18 0h3v4h-3zm5 0h3v4h-3zm18 0h3v4h-3zm5 0h3v4h-3zm18 0h3v4h-3zm5 0h3v4h-3zm18 0h3v4h-3zm5 0h3v4h-3zm18 0h3v4h-3zm5 0h3v4h-3zm18 0h3v4h-3zm5 0h3v4h-3z"/>
+<!-- cinturón oro en voladizo -->
+<path fill="#172942" d="M16 133h224v13H16z"/><path fill="#f8cf54" d="M17 134h222v5H17z"/><path fill="#e9ad35" d="M17 140h222v3H17z"/><path fill="#7bb0c3" d="M24 134h28v2H24zm44 0h25v2H68zm47 0h25v2h-25zm47 0h25v2h-25zm47 0h19v2h-19z"/>
+<!-- paños inferiores y accesos -->
+<path fill="#204c7b" d="M20 146h216v25H20z"/><path fill="#162e4a" d="M27 148h31v23H27zm42 0h31v23H69zm43 0h31v23h-31zm43 0h31v23h-31zm43 0h29v23h-29z"/>
+<path fill="#3974a3" d="M30 150h25v17H30zm42 0h25v17H72zm43 0h25v17h-25zm43 0h25v17h-25zm43 0h23v17h-23z"/>
+<path fill="#6fa9c0" d="M32 151h4v3h-4zm7 0h4v3h-4zm7 0h4v3h-4zm28 0h4v3h-4zm7 0h4v3h-4zm7 0h4v3h-4zm35 0h4v3h-4zm7 0h4v3h-4zm7 0h4v3h-4zm36 0h4v3h-4zm7 0h4v3h-4zm7 0h4v3h-4zm28 0h4v3h-4zm7 0h4v3h-4z"/>
+<!-- portal principal, pórtico dorado y escudo abstracto -->
+<path fill="#112943" d="M101 146h54v29h-54z"/><path fill="#f5c84b" d="M105 148h46v27h-46z"/><path fill="#193956" d="M111 151h34v24h-34z"/><path fill="#102943" d="M116 154h24v21h-24z"/><path fill="#f7d361" d="M124 156h8v12l-4 4-4-4z"/><path fill="#194374" d="M124 158h8v8l-4 3-4-3z"/>
+<path fill="#edbd40" d="M119 145h18v2h-18zM122 141h12v4h-12z"/><path fill="#f3d87d" d="M125 142h6v1h-6z"/>
+<!-- contrafuertes y rejillas laterales -->
+<path fill="#112a47" d="M20 84h8v87h-8zm208 0h8v87h-8z"/><path fill="#efb638" d="M27 146h5v25h-5zm197 0h5v25h-5z"/><path fill="#648eaa" d="M18 84h4v48h-4zm216 0h4v48h-4z"/>
+<!-- pequeños remates metálicos y uniones de chapa -->
+<path fill="#f1cd61" d="M18 83h7v2h-7zm213 0h7v2h-7zM16 171h224v3H16z"/><path fill="#5e8296" d="M23 174h210v3H23z"/><path fill="#d5d7ca" d="M12 184h232v3H12z"/>
+</svg>

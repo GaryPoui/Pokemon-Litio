@@ -1,0 +1,13 @@
+{
+  "barrio": "palermo",
+  "nombre": "Rosal y pérgola",
+  "tamano_px": {
+    "ancho": 80,
+    "alto": 72
+  },
+  "png": "Assets/Produccion/Barrios/palermo/v01/roseton_y_pergola.png",
+  "fuente": "ArteFuente/Barrios/palermo/roseton_y_pergola.svg",
+  "paleta_rgb": 7,
+  "estado": "asset_final_pendiente_de_integracion",
+  "referencia": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/rosedal-de-palermo-0"
+}

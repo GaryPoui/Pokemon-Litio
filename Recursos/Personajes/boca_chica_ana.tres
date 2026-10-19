@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Personajes/npc/LaBoca/chica_ana_detallada.png" id="1_hoja"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abajo"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 0, 224, 340)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arriba"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 340, 224, 340)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_derecha"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 1020, 224, 340)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_izquierda"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 680, 224, 340)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abajo")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arriba")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_derecha")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_izquierda")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
+}]

@@ -1,0 +1,36 @@
+{
+  "id": "fondo_batalla_chacarita_01",
+  "barrio": "Chacarita",
+  "tipo": "fondo_batalla",
+  "estado": "asset_final_pendiente_de_integracion",
+  "lienzo_px": {
+    "ancho": 256,
+    "alto": 192
+  },
+  "formato": "PNG RGBA opaco",
+  "paleta_rgb_unicos": 25,
+  "ruta_png": "Assets/Produccion/Barrios/chacarita/v01/fondo_batalla.png",
+  "fuente_editable": "ArteFuente/Batalla/chacarita_fondo_batalla.svg",
+  "plataformas": {
+    "rival": [
+      190,
+      90
+    ],
+    "jugador": [
+      64,
+      174
+    ]
+  },
+  "sin_pokemon": true,
+  "sin_interfaz": true,
+  "referencia": {
+    "nombre": "Cementerio de la Chacarita, Turismo Buenos Aires",
+    "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/cementerio-de-la-chacarita"
+  },
+  "validacion": {
+    "dimensiones": true,
+    "alfa_opaca": true,
+    "integrado": false
+  },
+  "base_git": "7f531f1b104064a7a5b20373e33e1b3c5bfaa99f"
+}

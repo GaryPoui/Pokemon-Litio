@@ -1,0 +1,36 @@
+{
+  "id": "fondo_batalla_palermo_01",
+  "barrio": "Palermo · Rosedal",
+  "tipo": "fondo_batalla",
+  "estado": "asset_final_pendiente_de_integracion",
+  "lienzo_px": {
+    "ancho": 256,
+    "alto": 192
+  },
+  "formato": "PNG RGBA opaco",
+  "paleta_rgb_unicos": 24,
+  "ruta_png": "Assets/Produccion/Barrios/palermo/v01/fondo_batalla.png",
+  "fuente_editable": "ArteFuente/Batalla/palermo_fondo_batalla.svg",
+  "plataformas": {
+    "rival": [
+      190,
+      90
+    ],
+    "jugador": [
+      64,
+      174
+    ]
+  },
+  "sin_pokemon": true,
+  "sin_interfaz": true,
+  "referencia": {
+    "nombre": "Rosedal de Palermo, Turismo Buenos Aires",
+    "url": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/rosedal-de-palermo-0"
+  },
+  "validacion": {
+    "dimensiones": true,
+    "alfa_opaca": true,
+    "integrado": false
+  },
+  "base_git": "7f531f1b104064a7a5b20373e33e1b3c5bfaa99f"
+}

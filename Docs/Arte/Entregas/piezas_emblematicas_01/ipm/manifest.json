@@ -1,0 +1,13 @@
+{
+  "barrio": "ipm",
+  "nombre": "Bobina didáctica",
+  "tamano_px": {
+    "ancho": 80,
+    "alto": 72
+  },
+  "png": "Assets/Produccion/Barrios/ipm/v01/bobina_didactica.png",
+  "fuente": "ArteFuente/Barrios/ipm/bobina_didactica.svg",
+  "paleta_rgb": 7,
+  "estado": "asset_final_pendiente_de_integracion",
+  "referencia": "https://www.ipm.edu.ar/"
+}

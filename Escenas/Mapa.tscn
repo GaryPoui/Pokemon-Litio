@@ -25,14 +25,16 @@
 [ext_resource type="Texture2D" uid="uid://u2tkhri8x063" path="res://Assets/Overworld/centro_pokemon.png" id="24_12vqy"]
 [ext_resource type="Shape2D" path="res://Recursos/forma_centro_a.tres" id="25_8xvfq"]
 [ext_resource type="SpriteFrames" uid="uid://ducwfvbbateg6" path="res://Recursos/Personajes/boca_guia.tres" id="25_jfnwk"]
+[ext_resource type="SpriteFrames" path="res://Recursos/Personajes/boca_chica_ana.tres" id="41_chica_ana_detallada"]
 [ext_resource type="Shape2D" path="res://Recursos/forma_centro_b.tres" id="26_0fan4"]
 [ext_resource type="Texture2D" uid="uid://cdmwias3m0vve" path="res://Assets/Overworld/LaBoca/estadio_bombonera.png" id="26_jfnwk"]
 [ext_resource type="PackedScene" uid="uid://b304tvad0qu0k" path="res://Escenas/Edificios/ConventilloAzulExterior.tscn" id="27_casa_azul"]
-[ext_resource type="SpriteFrames" uid="uid://b3l5ym8sba7vc" path="res://Recursos/Personajes/boca_pintora.tres" id="28_jfnwk"]
+[ext_resource type="SpriteFrames" path="res://Recursos/Personajes/boca_pintora_detallada.tres" id="40_pintora_detallada"]
 [ext_resource type="PackedScene" uid="uid://d0wb1d3ro2u5n" path="res://Escenas/Edificios/ConventilloRojoExterior.tscn" id="29_casa_roja"]
 [ext_resource type="PackedScene" uid="uid://ruatlgxbek3k" path="res://Escenas/Edificios/ConventilloAmarilloExterior.tscn" id="31_casa_amarilla"]
 [ext_resource type="PackedScene" uid="uid://dk4sigf6ivygt" path="res://Escenas/DecoracionLaBoca.tscn" id="36_decoracion_boca"]
 [ext_resource type="Script" uid="uid://ddvwhbkkqr5se" path="res://Scripts/la_boca_terreno.gd" id="38_terreno_la_boca"]
+[ext_resource type="Texture2D" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="42_fondo_boca_v03"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8d84m"]
 texture = ExtResource("3_jfnwk")
@@ -165,6 +167,7 @@ sources/2 = SubResource("TileSetAtlasSource_vqp0k")
 y_sort_enabled = true
 script = ExtResource("1_3db5g")
 encuentros = ExtResource("2_0fan4")
+fondo_batalla = ExtResource("42_fondo_boca_v03")
 musica = "ruta_1"
 zona_id = "la_boca"
 zona_nombre = "LA BOCA"
@@ -192,6 +195,7 @@ position = Vector2(48, 152)
 
 [node name="ConventilloRojoAlto" parent="." unique_id=1001045995 instance=ExtResource("29_casa_roja")]
 position = Vector2(392, 152)
+
 
 [node name="Obstaculos" type="TileMapLayer" parent="." unique_id=863897196]
 y_sort_enabled = true
@@ -243,6 +247,7 @@ Entonces llevate este. ¡Cuidalo mucho!"
 [node name="AnimatedSprite2D" parent="Npc" index="0" unique_id=1100079311]
 texture_filter = 1
 position = Vector2(0, -7)
+scale = Vector2(0.09, 0.09)
 sprite_frames = ExtResource("17_jfnwk")
 animation = &"abajo"
 
@@ -265,6 +270,7 @@ mirando = Vector2(-1, 0)
 [node name="AnimatedSprite2D" parent="Entrenador" index="0" unique_id=1100079311]
 texture_filter = 1
 position = Vector2(0, -7)
+scale = Vector2(0.09, 0.09)
 sprite_frames = ExtResource("21_jfnwk")
 animation = &"abajo"
 
@@ -275,6 +281,7 @@ script = ExtResource("12_wb5b1")
 [node name="AnimatedSprite2D" parent="Tendero" index="0" unique_id=1100079311]
 texture_filter = 1
 position = Vector2(0, -7)
+scale = Vector2(0.09, 0.09)
 sprite_frames = ExtResource("23_jfnwk")
 animation = &"abajo"
 
@@ -285,6 +292,7 @@ script = ExtResource("13_15oqb")
 [node name="AnimatedSprite2D" parent="GuiaTorre" index="0" unique_id=1100079311]
 texture_filter = 1
 position = Vector2(0, -7)
+scale = Vector2(0.09, 0.09)
 sprite_frames = ExtResource("25_jfnwk")
 animation = &"abajo"
 
@@ -327,7 +335,8 @@ texto = "¡Hola! ¿Sabías que los Pokémon pueden llevar Trinkets? ¡Mi Minccin
 [node name="AnimatedSprite2D" parent="ChicaAna" index="0" unique_id=1100079311]
 texture_filter = 1
 position = Vector2(0, -7)
-sprite_frames = ExtResource("28_jfnwk")
+scale = Vector2(0.09, 0.09)
+sprite_frames = ExtResource("41_chica_ana_detallada")
 animation = &"abajo"
 
 [node name="MontaneroBraulio" parent="." unique_id=505992660 instance=ExtResource("6_1p004")]
@@ -343,6 +352,17 @@ mirando = Vector2(0, -1)
 [node name="AnimatedSprite2D" parent="MontaneroBraulio" index="0" unique_id=1100079311]
 position = Vector2(0, -7)
 sprite_frames = ExtResource("23_crhfx")
+animation = &"abajo"
+
+[node name="PintoraLaBoca" parent="." instance=ExtResource("6_1p004")]
+position = Vector2(184, 168)
+texto = "¡Estoy pintando los colores del conventillo! ¿Viste cómo cambia el barrio con un poco de pintura?"
+
+[node name="AnimatedSprite2D" parent="PintoraLaBoca" index=0 unique_id=1100079311]
+texture_filter = 1
+position = Vector2(0, -7)
+scale = Vector2(0.09, 0.09)
+sprite_frames = ExtResource("40_pintora_detallada")
 animation = &"abajo"
 
 [node name="CentroPokemon" type="StaticBody2D" parent="." unique_id=1057477346]
@@ -378,3 +398,4 @@ direccion = Vector2(0, -1)
 [editable path="GuiaTorre"]
 [editable path="ChicaAna"]
 [editable path="MontaneroBraulio"]
+[editable path="PintoraLaBoca"]

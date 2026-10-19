@@ -1,0 +1,71 @@
+{
+  "lote": "Piezas de barrio 02",
+  "fecha": "2026-10-18",
+  "cantidad": 8,
+  "piezas": [
+    {
+      "barrio": "la_boca",
+      "nombre": "cartel_caminito",
+      "ancho": 48,
+      "alto": 56,
+      "asset": "Assets/Produccion/Barrios/la_boca/v02/cartel_caminito.png",
+      "fuente": "ArteFuente/Barrios/la_boca/cartel_caminito.svg"
+    },
+    {
+      "barrio": "constitucion",
+      "nombre": "boletera_anden",
+      "ancho": 48,
+      "alto": 56,
+      "asset": "Assets/Produccion/Barrios/constitucion/v02/boletera_anden.png",
+      "fuente": "ArteFuente/Barrios/constitucion/boletera_anden.svg"
+    },
+    {
+      "barrio": "chacarita",
+      "nombre": "corona_floral",
+      "ancho": 56,
+      "alto": 48,
+      "asset": "Assets/Produccion/Barrios/chacarita/v02/corona_floral.png",
+      "fuente": "ArteFuente/Barrios/chacarita/corona_floral.svg"
+    },
+    {
+      "barrio": "ipm",
+      "nombre": "gabinete_herramientas",
+      "ancho": 48,
+      "alto": 56,
+      "asset": "Assets/Produccion/Barrios/ipm/v02/gabinete_herramientas.png",
+      "fuente": "ArteFuente/Barrios/ipm/gabinete_herramientas.svg"
+    },
+    {
+      "barrio": "arenales",
+      "nombre": "banco_plaza",
+      "ancho": 64,
+      "alto": 48,
+      "asset": "Assets/Produccion/Barrios/arenales/v02/banco_plaza.png",
+      "fuente": "ArteFuente/Barrios/arenales/banco_plaza.svg"
+    },
+    {
+      "barrio": "palermo",
+      "nombre": "farol_rosedal",
+      "ancho": 48,
+      "alto": 64,
+      "asset": "Assets/Produccion/Barrios/palermo/v02/farol_rosedal.png",
+      "fuente": "ArteFuente/Barrios/palermo/farol_rosedal.svg"
+    },
+    {
+      "barrio": "mugica",
+      "nombre": "cesto_reciclaje",
+      "ancho": 48,
+      "alto": 48,
+      "asset": "Assets/Produccion/Barrios/mugica/v02/cesto_reciclaje.png",
+      "fuente": "ArteFuente/Barrios/mugica/cesto_reciclaje.svg"
+    },
+    {
+      "barrio": "monumental",
+      "nombre": "ventanilla_entradas",
+      "ancho": 56,
+      "alto": 56,
+      "asset": "Assets/Produccion/Barrios/monumental/v02/ventanilla_entradas.png",
+      "fuente": "ArteFuente/Barrios/monumental/ventanilla_entradas.svg"
+    }
+  ]
+}

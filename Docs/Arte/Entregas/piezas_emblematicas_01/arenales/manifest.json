@@ -1,0 +1,13 @@
+{
+  "barrio": "arenales",
+  "nombre": "Monumento y bandera",
+  "tamano_px": {
+    "ancho": 72,
+    "alto": 80
+  },
+  "png": "Assets/Produccion/Barrios/arenales/v01/monumento_bandera.png",
+  "fuente": "ArteFuente/Barrios/arenales/monumento_bandera.svg",
+  "paleta_rgb": 9,
+  "estado": "asset_final_pendiente_de_integracion",
+  "referencia": "https://buenosaires.gob.ar/gcaba_historico/gobierno/registro-civil/plaza-arenales"
+}

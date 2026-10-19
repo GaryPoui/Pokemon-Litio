@@ -1,0 +1,14 @@
+{
+  "nombre": "borde_lago_tile",
+  "barrio": "Palermo",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/palermo/v02/borde_lago_tile.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/palermo/borde_lago_tile.svg",
+  "lienzo": {
+    "ancho": 32,
+    "alto": 24
+  },
+  "transparencia": true,
+  "ancla": "origen superior izquierdo; tile repetible",
+  "integracion": "pendiente; pieza independiente"
+}

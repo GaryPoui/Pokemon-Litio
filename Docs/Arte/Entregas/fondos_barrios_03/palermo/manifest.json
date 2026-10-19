@@ -1,0 +1,23 @@
+{
+  "id": "fondo_palermo_v03",
+  "barrio": "Rosedal de Palermo",
+  "estado": "pendiente_de_integracion",
+  "lienzo_px": {
+    "ancho": 256,
+    "alto": 192
+  },
+  "formato": "PNG indexado opaco",
+  "colores_rgb_unicos": 246,
+  "asset": "Assets/Produccion/Barrios/palermo/v03/fondo_batalla.png",
+  "fuente_raster": "ArteFuente/Batalla/palermo_fondo_batalla_imagegen_v03_source.png",
+  "preview": "Docs/Arte/Entregas/fondos_barrios_03/palermo/fondo_batalla_4x.png",
+  "plataformas_reutilizadas": "ArteFuente/Batalla/la_boca_plataformas.svg",
+  "sin_pokemon": true,
+  "validacion": {
+    "dimensiones": true,
+    "opaco": true
+  },
+  "referencias_del_usuario": [
+    "Referencias pixel art de combate y barrio adjuntadas por el usuario"
+  ]
+}

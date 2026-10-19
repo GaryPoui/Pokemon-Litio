@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="96" viewBox="0 0 192 96" shape-rendering="crispEdges">
+<title>Fachada modular pixel art de estación histórica con reloj y andén</title>
+<!-- sombra de apoyo -->
+<path fill="#273948" d="M4 91h184v5H4z"/><path fill="#b6aa91" d="M3 89h186v3H3z"/>
+<!-- volumen lateral y alas de piedra -->
+<path fill="#645c55" d="M8 47h176v42H8z"/><path fill="#b89e76" d="M10 48h172v39H10z"/><path fill="#d1bd96" d="M13 50h166v34H13z"/><path fill="#ab8b68" d="M13 50h166v3H13zM13 83h166v3H13z"/><path fill="#ead7af" d="M14 50h164v1H14zM14 83h164v1H14z"/>
+<!-- pabellones laterales con mansarda y profundidad de cubierta -->
+<path fill="#334857" d="M6 48 10 34 53 29 73 39 72 49zM120 39 139 29 181 34 186 48 120 49z"/><path fill="#4c6d7a" d="M9 42 14 35 52 31 67 39 66 43zM125 39 140 31 178 35 183 42 126 43z"/><path fill="#7c938f" d="M14 35 52 30 67 38 64 39 51 33 16 38zM140 30 178 35 181 38 144 33 128 40 125 39z"/><path fill="#263c4c" d="M6 46h67v4H6zm113 0h67v4h-67z"/><path fill="#e1c695" d="M8 47h64v2H8zm114 0h64v2h-64z"/>
+<!-- pequeños lucernarios sobre las alas -->
+<path fill="#273d4b" d="M27 35h14v9H27zM150 35h14v9h-14z"/><path fill="#b28e68" d="M29 37h10v7H29zm123 0h10v7h-10z"/><path fill="#68909a" d="M31 38h3v4h-3zm5 0h3v4h-3zm123 0h3v4h-3zm-5 0h3v4h-3z"/>
+<!-- pabellón central: basamento, reloj y cubierta alta -->
+<path fill="#3b4e5b" d="M65 34 77 19h38l12 15v53H65z"/><path fill="#c5ab7f" d="M69 36 80 23h32l10 13v49H69z"/><path fill="#e0c99c" d="M72 37 82 26h28l9 11v46H72z"/><path fill="#705c52" d="M69 35h53v4H69zM69 81h53v5H69z"/><path fill="#f0d9a7" d="M70 35h51v2H70zM71 81h49v1H71z"/>
+<!-- techo elevado que muestra faldón frontal y plano de fondo -->
+<path fill="#293d4c" d="M62 35 77 18 95 3 116 18 131 35 123 39 112 27 96 15 80 27 70 39z"/><path fill="#425f70" d="M67 33 80 19 95 6 111 19 126 33 121 35 110 23 96 11 82 23 72 35z"/><path fill="#688796" d="M80 18 95 5 96 11 82 23 71 35 68 33zM97 11l14 11 12 13-3 1-12-13-12-8z"/><path fill="#879f9f" d="M83 18 95 7l1 3-12 12zM98 11l11 9 2 3-12-9z"/>
+<path fill="#e1c28c" d="M77 35h38v3H77z"/><path fill="#f0d9a7" d="M80 35h33v1H80z"/>
+<path fill="#536f7b" d="M82 29 95 13 109 29 106 32 95 19 85 32z"/><path fill="#72909a" d="m85 28 10-12 1 3-9 11zm12-9 9 9-2 1-9-9z"/><path fill="#344b5b" d="M84 29h23v3H84z"/>
+<!-- reloj del pabellón -->
+<path fill="#524843" d="M87 24h18v13H87z"/><path fill="#8a725c" d="M89 25h14v11H89z"/><circle cx="96" cy="30" r="5" fill="#e8d7af" stroke="#465966" stroke-width="1"/><path fill="#475a62" d="M95 26h1v4h-1zm1 4 3 2-1 1-3-2z"/><path fill="#42545d" d="M94 23h4v2h-4zM94 36h4v2h-4z"/>
+<!-- ventanas altas con arcos y pilastras -->
+<path fill="#735746" d="M18 57h14v20H18zm23 0h14v20H41zm73 0h14v20h-14zm23 0h14v20h-14zm23 0h14v20h-14z"/><path fill="#d7bd8c" d="M17 56h16v3H17zm23 0h16v3H40zm73 0h16v3h-16zm23 0h16v3h-16zm23 0h16v3h-16z"/><path fill="#456c78" d="M21 62h8v13h-8zm23 0h8v13h-8zm73 0h8v13h-8zm23 0h8v13h-8zm23 0h8v13h-8z"/><path fill="#91bac0" d="M22 63h3v4h-3zm4 0h3v4h-3zm-4 6h3v5h-3zm4 0h3v5h-3zm19-6h3v4h-3zm4 0h3v4h-3zm-4 6h3v5h-3zm4 0h3v5h-3zm69-6h3v4h-3zm4 0h3v4h-3zm-4 6h3v5h-3zm4 0h3v5h-3zm19-6h3v4h-3zm4 0h3v4h-3zm-4 6h3v5h-3zm4 0h3v5h-3zm19-6h3v4h-3zm4 0h3v4h-3zm-4 6h3v5h-3zm4 0h3v5h-3z"/>
+<path fill="#9e805d" d="M35 52h3v31h-3zm23 0h3v31h-3zm93 0h3v31h-3zm23 0h3v31h-3z"/><path fill="#e6d1a5" d="M36 52h1v30h-1zm23 0h1v30h-1zm93 0h1v30h-1zm23 0h1v30h-1z"/>
+<!-- ventanas altas del pabellón y claves de piedra -->
+<path fill="#846a55" d="M76 43h14v13H76zm22 0h14v13H98z"/><path fill="#ddc99e" d="M77 44h12v11H77zm22 0h12v11H99z"/><path fill="#456d7a" d="M79 46h8v8h-8zm22 0h8v8h-8z"/><path fill="#9cc3c5" d="M80 47h3v3h-3zm4 0h3v3h-3zm17 0h3v3h-3zm4 0h3v3h-3z"/><path fill="#9c805e" d="M74 57h43v2H74zM74 41h43v2H74z"/><path fill="#eddbb4" d="M75 58h41v1H75z"/>
+<!-- puertas bajo el reloj y boleterías laterales -->
+<path fill="#493f3b" d="M82 60h11v27H82zm17 0h11v27H99z"/><path fill="#3d6875" d="M84 63h7v24h-7zm17 0h7v24h-7z"/><path fill="#a4c7c7" d="M85 64h5v5h-5zm17 0h5v5h-5z"/><path fill="#d8bd8d" d="M81 58h12v3H81zm17 0h12v3H98z"/><path fill="#e4d09e" d="M95 61h2v26h-2z"/>
+<!-- marquesina ferroviaria al frente, ligera y de hierro -->
+<path fill="#283e4d" d="M3 78h186v4H3z"/><path fill="#526f7b" d="M5 75h182v2H5z"/><path fill="#b6a07a" d="M4 81h184v3H4z"/><path fill="#5a7078" d="M17 79v10h2V79zm39 0v10h2V79zm39 0v10h2V79zm39 0v10h2V79zm39 0v10h2V79z"/><path fill="#8ca6a2" d="M17 80v7h1v-7zm39 0v7h1v-7zm39 0v7h1v-7zm39 0v7h1v-7zm39 0v7h1v-7z"/><path fill="#6d8790" d="M6 76 17 82 29 76m27 0 12 6 12-6m16 0 12 6 11-6m28 0 12 6 12-6m8 0 12 6 9-6" fill-opacity=".9"/>
+<!-- sillería marcada y placas pequeñas del frente -->
+<path fill="#c2aa7d" d="M15 54h8v1h-8zm20 4h8v1h-8zm21-3h7v1h-7zm81 1h8v1h-8zm22-4h8v1h-8zm17 7h8v1h-8zM74 39h5v1h-5zm38 0h5v1h-5z"/><path fill="#ead6a9" d="M16 55h6v1h-6zm42 7h6v1h-6zm78-1h6v1h-6z"/>
+<!-- remate de andén y losas -->
+<path fill="#6f6c62" d="M4 87h184v3H4z"/><path fill="#e0d1ae" d="M4 87h184v1H4z"/><path fill="#c0b49b" d="M8 91h9v1H8zm18 0h9v1h-9zm18 0h9v1h-9zm18 0h9v1h-9zm18 0h9v1h-9zm18 0h9v1h-9zm18 0h9v1h-9zm18 0h9v1h-9zm18 0h9v1h-9z"/>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "barrio": "constitucion",
+  "nombre": "Reloj de andén",
+  "tamano_px": {
+    "ancho": 96,
+    "alto": 72
+  },
+  "png": "Assets/Produccion/Barrios/constitucion/v01/reloj_estacion.png",
+  "fuente": "ArteFuente/Barrios/constitucion/reloj_estacion.svg",
+  "paleta_rgb": 7,
+  "estado": "asset_final_pendiente_de_integracion",
+  "referencia": "https://www.argentina.gob.ar/capital-humano/cultura/monumentos/estacion-plaza-constitucion"
+}

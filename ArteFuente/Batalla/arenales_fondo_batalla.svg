@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" shape-rendering="crispEdges"><rect width="256" height="192" fill="#b9d5d5"/><path d="M0 0h256v33h-256z" fill="#6d906c"/><path d="M0 26h21v4H0zm32-10h15v4H32zm184 12h40v4h-40z" fill="#d6e4d8"/><path d="M0 54h256v90H0z" fill="#83a978"/><path d="M0 89h256v20H0zM119 45h18v99h-18z" fill="#c9b98a"/><path d="M0 94h119m18 0h119M128 45v49m0 18v32" stroke="#eee0b3" stroke-width="3"/><path d="M108 55h40v6h-40z" fill="#d7cfae"/><rect x="123" y="55" width="10" height="17" fill="#a39b83"/><path d="M110 74l18-16 18 16-18 9z" fill="#cfbf91"/><path d="M14 48v24m18-27v22m191-20v26m20-21v24" stroke="#4f7258" stroke-width="5"/><circle cx="15" cy="44" r="12" fill="#4f815d"/><circle cx="32" cy="39" r="13" fill="#568863"/><circle cx="220" cy="43" r="13" fill="#4d815d"/><circle cx="240" cy="48" r="13" fill="#568863"/><path d="M28 70h45v16H28z" fill="#d8c690"/><path d="M35 63h31v9H35z" fill="#aa7052"/><path d="M185 72h48v15h-48z" fill="#d8c690"/><path d="M192 65h33v9h-33z" fill="#a85e4f"/><circle cx="128" cy="100" r="6" fill="#d2b856" stroke="#665940" stroke-width="2"/><path d="M126 100h4m-2-2v5" stroke="#7f6444" stroke-width="1"/><path d="M0 155h256v37H0z" fill="#85906e"/><path d="M0 155h256v3H0z" fill="#ead886"/><path d="M0 170h256m-256 14h256" stroke="#ffffff" stroke-opacity=".12" stroke-width="1"/>
+<!-- plataforma trasera, bajo la posición rival (190,90) -->
+<path fill="#39443e" d="M173 102h34v-2h7v-2h5v-5h-3v-3h-5v-2h-47v2h-5v3h-3v5h5v2h7z"/>
+<path fill="#4e7041" d="M169 98h42v2h7v-2h3v-5h-3v-3h-7v-2h-42v2h-7v2h-3v5h3v2z"/>
+<path fill="#63904a" d="M166 94h50v2h5v-2h2v-5h-2v-2h-5v-2h-50v2h-5v2h-2v5h2v2z"/>
+<path fill="#7cab52" d="M171 91h44v2h4v-2h2v-4h-2v-2h-4v-1h-44v1h-4v2h-2v4h2v2z"/>
+<path fill="#9cc664" d="M178 86h31v2h6v2h-2v1h-37v-1h-2v-2h4z"/>
+<path fill="#4c713f" d="M165 93h5v2h-5zm49 0h5v2h-5zm-42-8h4v1h-4z"/>
+<path fill="#a4cc68" d="M174 86h3v1h-3zm36 4h3v1h-3z"/>
+<!-- plataforma delantera, bajo la posición del jugador (64,174) -->
+<path fill="#39443e" d="M48 165h31v-2h11v-2h7v-3h5v-6h-5v-3h-7v-2H43v2h-7v3h-5v6h5v3h7v2z"/>
+<path fill="#4e7041" d="M43 161h42v2h10v-2h7v-3h4v-6h-4v-3h-7v-2H43v2h-7v3h-4v6h4v3h7z"/>
+<path fill="#63904a" d="M38 157h49v2h12v-2h6v-3h4v-5h-4v-3h-6v-2H38v2h-6v3h-4v5h4v3h6z"/>
+<path fill="#7cab52" d="M43 153h44v2h11v-2h4v-3h3v-4h-3v-2H98v-1H43v1h-6v2h-3v4h3v3h6z"/>
+<path fill="#9cc664" d="M51 148h35v1h12v2h-4v1H41v-1h-2v-2h12z"/>
+<path fill="#4c713f" d="M34 155h6v2h-6zm64 0h6v2h-6zm-55-9h4v1h-4z"/>
+<path fill="#a4cc68" d="M48 147h4v1h-4zm42 4h3v1h-3z"/>
+</svg>

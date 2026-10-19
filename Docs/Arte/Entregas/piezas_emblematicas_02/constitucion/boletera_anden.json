@@ -1,0 +1,13 @@
+{
+  "barrio": "constitucion",
+  "nombre": "boletera_anden",
+  "canvas_px": {
+    "ancho": 48,
+    "alto": 56
+  },
+  "asset_png": "../../../../../Assets/Produccion/Barrios/constitucion/v02/boletera_anden.png",
+  "fuente_svg": "../../../../../ArteFuente/Barrios/constitucion/boletera_anden.svg",
+  "preview": "boletera_anden_4x.png",
+  "estado": "pendiente_de_integracion",
+  "sin_pokemon": true
+}

@@ -1,0 +1,42 @@
+{
+  "lote": "Estructuras profundidad v02",
+  "referencia": "Conventillos de La Boca aprobados por el usuario",
+  "assets": [
+    {
+      "barrio": "ipm",
+      "nombre": "anexo_aulas",
+      "ancho": 96,
+      "alto": 96,
+      "preview": "ipm/anexo_aulas_4x.png",
+      "fuente": "ArteFuente/Barrios/ipm/anexo_aulas.svg",
+      "png": "Assets/Produccion/Barrios/ipm/v02/anexo_aulas.png"
+    },
+    {
+      "barrio": "arenales",
+      "nombre": "cafe_plaza",
+      "ancho": 96,
+      "alto": 96,
+      "preview": "arenales/cafe_plaza_4x.png",
+      "fuente": "ArteFuente/Barrios/arenales/cafe_plaza.svg",
+      "png": "Assets/Produccion/Barrios/arenales/v02/cafe_plaza.png"
+    },
+    {
+      "barrio": "palermo",
+      "nombre": "casa_guardaparque",
+      "ancho": 96,
+      "alto": 96,
+      "preview": "palermo/casa_guardaparque_4x.png",
+      "fuente": "ArteFuente/Barrios/palermo/casa_guardaparque.svg",
+      "png": "Assets/Produccion/Barrios/palermo/v02/casa_guardaparque.png"
+    },
+    {
+      "barrio": "mugica",
+      "nombre": "casa_pasaje",
+      "ancho": 96,
+      "alto": 96,
+      "preview": "mugica/casa_pasaje_4x.png",
+      "fuente": "ArteFuente/Barrios/mugica/casa_pasaje.svg",
+      "png": "Assets/Produccion/Barrios/mugica/v02/casa_pasaje.png"
+    }
+  ]
+}

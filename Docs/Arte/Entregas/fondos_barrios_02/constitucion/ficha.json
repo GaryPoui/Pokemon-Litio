@@ -1,0 +1,72 @@
+{
+  "barrio": "constitucion",
+  "version": "v02",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/constitucion/v02/fondo_batalla.png",
+  "fuente": "../../../../ArteFuente/Batalla/constitucion_fondo_batalla_v02.svg",
+  "canvas": {
+    "ancho": 256,
+    "alto": 192
+  },
+  "formato": "PNG RGB opaco",
+  "uso": "fondo de combate pantalla completa",
+  "ancla": "origen (0,0)",
+  "plataformas": {
+    "trasera": {
+      "x": 163,
+      "y": 83,
+      "apoyo": "190,90"
+    },
+    "delantera": {
+      "x": 30,
+      "y": 143,
+      "apoyo": "64,174"
+    }
+  },
+  "paleta": [
+    "#9ebcc2",
+    "#d6e4d8",
+    "#7e9b9c",
+    "#807968",
+    "#98896b",
+    "#6d685b",
+    "#a39576",
+    "#70868a",
+    "#625f59",
+    "#c3b493",
+    "#877966",
+    "#d9c9a3",
+    "#455b64",
+    "#93bfc0",
+    "#b99c65",
+    "#e4d5ac",
+    "#e3d2a6",
+    "#4d626b",
+    "#d0b77e",
+    "#52636a",
+    "#7d9698",
+    "#455a64",
+    "#d4c49c",
+    "#6b5b4e",
+    "#b39d76",
+    "#465056",
+    "#7f7668",
+    "#d2c09b",
+    "#4c626b",
+    "#596553",
+    "#718064",
+    "#81775d",
+    "#95856a",
+    "#b6a47c",
+    "#6e6755",
+    "#39443e",
+    "#4e7041",
+    "#63904a",
+    "#7cab52",
+    "#9cc664",
+    "#4c713f",
+    "#a4cc68"
+  ],
+  "plataformas_referencia": "ArteFuente/Batalla/la_boca_plataformas.svg",
+  "sin_pokemon": true
+}

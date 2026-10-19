@@ -1,0 +1,38 @@
+{
+  "lote": "IPM escolar v02",
+  "estado": "final pendiente de integración",
+  "assets": [
+    {
+      "nombre": "fachada_instituto",
+      "ancho": 160,
+      "alto": 112,
+      "preview": "fachada_instituto_4x.png",
+      "fuente": "../../../../ArteFuente/Barrios/ipm/fachada_instituto.svg",
+      "png": "../../../../Assets/Produccion/Barrios/ipm/v02/fachada_instituto.png"
+    },
+    {
+      "nombre": "pizarra_aula",
+      "ancho": 64,
+      "alto": 48,
+      "preview": "pizarra_aula_4x.png",
+      "fuente": "../../../../ArteFuente/Barrios/ipm/pizarra_aula.svg",
+      "png": "../../../../Assets/Produccion/Barrios/ipm/v02/pizarra_aula.png"
+    },
+    {
+      "nombre": "mesa_taller",
+      "ancho": 64,
+      "alto": 48,
+      "preview": "mesa_taller_4x.png",
+      "fuente": "../../../../ArteFuente/Barrios/ipm/mesa_taller.svg",
+      "png": "../../../../Assets/Produccion/Barrios/ipm/v02/mesa_taller.png"
+    },
+    {
+      "nombre": "pupitre_alumno",
+      "ancho": 32,
+      "alto": 32,
+      "preview": "pupitre_alumno_4x.png",
+      "fuente": "../../../../ArteFuente/Barrios/ipm/pupitre_alumno.svg",
+      "png": "../../../../Assets/Produccion/Barrios/ipm/v02/pupitre_alumno.png"
+    }
+  ]
+}

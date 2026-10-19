@@ -1,0 +1,16 @@
+{
+  "nombre": "pared_nichos",
+  "barrio": "Chacarita",
+  "estado": "final pendiente de integración",
+  "archivo_png": "../../../../Assets/Produccion/Barrios/chacarita/v03/pared_nichos.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/chacarita/pared_nichos.svg",
+  "lienzo": {
+    "ancho": 80,
+    "alto": 64
+  },
+  "transparencia": true,
+  "ancla": "centro inferior del objeto",
+  "uso": "pieza independiente para montaje de escena",
+  "estilo": "pixel art de bordes nítidos, paleta corta y sombreado por bloques",
+  "integracion": "pendiente; no modifica escenas ni recursos del juego"
+}

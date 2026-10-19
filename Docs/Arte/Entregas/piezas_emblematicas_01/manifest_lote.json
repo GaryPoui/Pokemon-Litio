@@ -1,0 +1,98 @@
+{
+  "lote": "Piezas emblemáticas 01",
+  "estado": "assets finales pendientes de integración",
+  "sin_pokemon": true,
+  "piezas": [
+    {
+      "barrio": "constitucion",
+      "nombre": "Reloj de andén",
+      "tamano_px": {
+        "ancho": 96,
+        "alto": 72
+      },
+      "png": "Assets/Produccion/Barrios/constitucion/v01/reloj_estacion.png",
+      "fuente": "ArteFuente/Batalla/constitucion_reloj_estacion.svg",
+      "paleta_rgb": 7,
+      "estado": "asset_final_pendiente_de_integracion",
+      "referencia": "https://www.argentina.gob.ar/capital-humano/cultura/monumentos/estacion-plaza-constitucion"
+    },
+    {
+      "barrio": "chacarita",
+      "nombre": "Mausoleo con flores",
+      "tamano_px": {
+        "ancho": 80,
+        "alto": 72
+      },
+      "png": "Assets/Produccion/Barrios/chacarita/v01/mausoleo_floral.png",
+      "fuente": "ArteFuente/Batalla/chacarita_mausoleo_floral.svg",
+      "paleta_rgb": 12,
+      "estado": "asset_final_pendiente_de_integracion",
+      "referencia": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/cementerio-de-la-chacarita"
+    },
+    {
+      "barrio": "ipm",
+      "nombre": "Bobina didáctica",
+      "tamano_px": {
+        "ancho": 80,
+        "alto": 72
+      },
+      "png": "Assets/Produccion/Barrios/ipm/v01/bobina_didactica.png",
+      "fuente": "ArteFuente/Batalla/ipm_bobina_didactica.svg",
+      "paleta_rgb": 7,
+      "estado": "asset_final_pendiente_de_integracion",
+      "referencia": "https://www.ipm.edu.ar/"
+    },
+    {
+      "barrio": "arenales",
+      "nombre": "Monumento y bandera",
+      "tamano_px": {
+        "ancho": 72,
+        "alto": 80
+      },
+      "png": "Assets/Produccion/Barrios/arenales/v01/monumento_bandera.png",
+      "fuente": "ArteFuente/Batalla/arenales_monumento_bandera.svg",
+      "paleta_rgb": 9,
+      "estado": "asset_final_pendiente_de_integracion",
+      "referencia": "https://buenosaires.gob.ar/gcaba_historico/gobierno/registro-civil/plaza-arenales"
+    },
+    {
+      "barrio": "palermo",
+      "nombre": "Rosal y pérgola",
+      "tamano_px": {
+        "ancho": 80,
+        "alto": 72
+      },
+      "png": "Assets/Produccion/Barrios/palermo/v01/roseton_y_pergola.png",
+      "fuente": "ArteFuente/Batalla/palermo_roseton_y_pergola.svg",
+      "paleta_rgb": 7,
+      "estado": "asset_final_pendiente_de_integracion",
+      "referencia": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/rosedal-de-palermo-0"
+    },
+    {
+      "barrio": "mugica",
+      "nombre": "Puesto gastronómico",
+      "tamano_px": {
+        "ancho": 88,
+        "alto": 72
+      },
+      "png": "Assets/Produccion/Barrios/mugica/v01/puesto_gastronomico.png",
+      "fuente": "ArteFuente/Batalla/mugica_puesto_gastronomico.svg",
+      "paleta_rgb": 11,
+      "estado": "asset_final_pendiente_de_integracion",
+      "referencia": "https://buenosaires.gob.ar/gcaba_historico/noticias/un-impulso-al-desarrollo-local-la-ciudad-inauguro-el-patio-gastronomico"
+    },
+    {
+      "barrio": "monumental",
+      "nombre": "Banderín rojiblanco",
+      "tamano_px": {
+        "ancho": 64,
+        "alto": 80
+      },
+      "png": "Assets/Produccion/Barrios/monumental/v01/banderin_roji_blanco.png",
+      "fuente": "ArteFuente/Batalla/monumental_banderin_roji_blanco.svg",
+      "paleta_rgb": 8,
+      "estado": "asset_final_pendiente_de_integracion",
+      "referencia": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/estadio-river-plate-estadio-monumental"
+    }
+  ]
+}

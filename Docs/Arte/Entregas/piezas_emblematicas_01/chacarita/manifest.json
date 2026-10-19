@@ -1,0 +1,13 @@
+{
+  "barrio": "chacarita",
+  "nombre": "Mausoleo con flores",
+  "tamano_px": {
+    "ancho": 80,
+    "alto": 72
+  },
+  "png": "Assets/Produccion/Barrios/chacarita/v01/mausoleo_floral.png",
+  "fuente": "ArteFuente/Barrios/chacarita/mausoleo_floral.svg",
+  "paleta_rgb": 12,
+  "estado": "asset_final_pendiente_de_integracion",
+  "referencia": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/cementerio-de-la-chacarita"
+}

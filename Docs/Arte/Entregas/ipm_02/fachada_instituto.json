@@ -1,0 +1,14 @@
+{
+  "nombre": "fachada_instituto",
+  "barrio": "Instituto de Puerto Madero",
+  "estado": "final pendiente de integración",
+  "png": "../../../../Assets/Produccion/Barrios/ipm/v02/fachada_instituto.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/ipm/fachada_instituto.svg",
+  "lienzo": {
+    "ancho": 160,
+    "alto": 112
+  },
+  "transparencia": true,
+  "ancla": "centro inferior",
+  "integracion": "pendiente; pieza de producción separada"
+}

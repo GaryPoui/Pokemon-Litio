@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" shape-rendering="crispEdges">
+<title>Fondo de combate de La Boca</title>
+<!-- cielo en bandas de color -->
+<path fill="#4f96d0" d="M0 0h256v48H0z"/><path fill="#77b5dd" d="M0 48h256v24H0z"/><path fill="#d7bb83" d="M0 72h256v11H0z"/>
+<!-- nubes en grupos discretos -->
+<path fill="#e2e0cf" d="M19 27h21v4h8v4H13v-4h6zm28 6h9v4h8v4H38v-4h9zm130-14h15v4h8v4h-25v-4h2zm17 8h9v4h8v4h-19v-4h2z"/>
+<path fill="#f1e9cf" d="M23 27h15v2H23zm151-14h16v2h-16z"/>
+<!-- ribera, grúas y depósitos distantes -->
+<path fill="#758d9a" d="M0 76h256v8H0z"/><path fill="#7db4bd" d="M0 84h256v7H0z"/><path fill="#4a778a" d="M0 90h256v4H0z"/>
+<path fill="#596c70" d="M82 72h5v12h-5zm11-6h3v18h-3zm5 5h4v13h-4zm58 1h4v13h-4zm4-8h3v21h-3zm15 8h5v13h-5z"/>
+<!-- grúa portuaria con pluma y tirante -->
+<path fill="#465c62" d="M169 47h4v35h-4zm-18 3h44v3h-44zm7-4h3v36h-3zm26 3h3v34h-3z"/><path fill="#465c62" d="M153 49 168 33h4v3l-14 16z"/><path fill="#d6b26c" d="M168 34h3v4h-3zm-1 5h1v13h-1z"/>
+<!-- conventillo recortado del lado izquierdo, con chapa y balcones -->
+<path fill="#263e52" d="M0 0h38v91H0z"/><path fill="#b94f42" d="M0 4h35v26H0z"/><path fill="#d66c4e" d="M3 7h2v22H3zm8-3h2v26h-2zm9 0h2v26h-2zm9 0h2v26h-2z"/><path fill="#7d3d39" d="M0 31h38v4H0z"/>
+<path fill="#20546e" d="M0 36h37v29H0z"/><path fill="#2d8c9a" d="M2 38h4v25H2zm9 0h3v25h-3zm8 0h4v25h-4zm10 0h4v25h-4z"/>
+<path fill="#a35c42" d="M7 13h12v13H7z"/><path fill="#6ea5ab" d="M9 15h8v9H9z"/><path fill="#f0d48e" d="M12 15h2v9h-2zm-3 4h8v2H9z"/>
+<path fill="#284e45" d="M0 54h32v4H0zm4 4h2v12H4zm20 0h2v12h-2z"/><path fill="#c4a76b" d="M2 55h30v2H2z"/>
+<!-- conventillo recortado del lado derecho, chapa amarilla y verde -->
+<path fill="#263e52" d="M218 0h38v91h-38z"/><path fill="#d4a83e" d="M221 3h35v29h-35z"/><path fill="#f1cf62" d="M224 4h3v27h-3zm9 0h2v27h-2zm9 0h3v27h-3zm10 0h2v27h-2z"/>
+<path fill="#397653" d="M219 35h37v30h-37z"/><path fill="#4f9366" d="M222 37h3v27h-3zm9 0h3v27h-3zm9 0h3v27h-3zm9 0h3v27h-3z"/>
+<path fill="#78443c" d="M234 12h13v14h-13z"/><path fill="#78b5bb" d="M236 14h9v10h-9z"/><path fill="#ead183" d="M240 14h2v10h-2zm-4 4h9v2h-9z"/>
+<path fill="#264a3c" d="M220 54h32v4h-32zm5 4h2v12h-2zm21 0h2v12h-2z"/><path fill="#b8a05f" d="M220 55h30v2h-30z"/>
+<!-- Piso compuesto con el centro de adoquín 16×16 aprobado en el kit común. -->
+<path fill="#807b70" d="M0 94h256v98H0z"/>
+</svg>

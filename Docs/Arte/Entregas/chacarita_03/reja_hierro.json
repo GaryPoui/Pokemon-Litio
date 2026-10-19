@@ -1,0 +1,16 @@
+{
+  "nombre": "reja_hierro",
+  "barrio": "Chacarita",
+  "estado": "final pendiente de integración",
+  "archivo_png": "../../../../Assets/Produccion/Barrios/chacarita/v03/reja_hierro.png",
+  "fuente_svg": "../../../../ArteFuente/Barrios/chacarita/reja_hierro.svg",
+  "lienzo": {
+    "ancho": 64,
+    "alto": 40
+  },
+  "transparencia": true,
+  "ancla": "centro inferior del objeto",
+  "uso": "pieza independiente para montaje de escena",
+  "estilo": "pixel art de bordes nítidos, paleta corta y sombreado por bloques",
+  "integracion": "pendiente; no modifica escenas ni recursos del juego"
+}

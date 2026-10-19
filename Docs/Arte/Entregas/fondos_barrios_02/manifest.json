@@ -1,0 +1,57 @@
+{
+  "lote": "Fondos de combate v02",
+  "referencia": "Fondo de La Boca v02 y conventillos aprobados",
+  "estado": "final pendiente de integración",
+  "plataformas": "Se conserva la geometría de ArteFuente/Batalla/la_boca_plataformas.svg",
+  "assets": [
+    {
+      "barrio": "constitucion",
+      "png": "Assets/Produccion/Barrios/constitucion/v02/fondo_batalla.png",
+      "fuente": "ArteFuente/Batalla/constitucion_fondo_batalla_v02.svg",
+      "preview": "Docs/Arte/Entregas/fondos_barrios_02/constitucion/fondo_batalla_4x.png",
+      "canvas": "256x192"
+    },
+    {
+      "barrio": "chacarita",
+      "png": "Assets/Produccion/Barrios/chacarita/v02/fondo_batalla.png",
+      "fuente": "ArteFuente/Batalla/chacarita_fondo_batalla_v02.svg",
+      "preview": "Docs/Arte/Entregas/fondos_barrios_02/chacarita/fondo_batalla_4x.png",
+      "canvas": "256x192"
+    },
+    {
+      "barrio": "ipm",
+      "png": "Assets/Produccion/Barrios/ipm/v02/fondo_batalla.png",
+      "fuente": "ArteFuente/Batalla/ipm_fondo_batalla_v02.svg",
+      "preview": "Docs/Arte/Entregas/fondos_barrios_02/ipm/fondo_batalla_4x.png",
+      "canvas": "256x192"
+    },
+    {
+      "barrio": "arenales",
+      "png": "Assets/Produccion/Barrios/arenales/v02/fondo_batalla.png",
+      "fuente": "ArteFuente/Batalla/arenales_fondo_batalla_v02.svg",
+      "preview": "Docs/Arte/Entregas/fondos_barrios_02/arenales/fondo_batalla_4x.png",
+      "canvas": "256x192"
+    },
+    {
+      "barrio": "palermo",
+      "png": "Assets/Produccion/Barrios/palermo/v02/fondo_batalla.png",
+      "fuente": "ArteFuente/Batalla/palermo_fondo_batalla_v02.svg",
+      "preview": "Docs/Arte/Entregas/fondos_barrios_02/palermo/fondo_batalla_4x.png",
+      "canvas": "256x192"
+    },
+    {
+      "barrio": "mugica",
+      "png": "Assets/Produccion/Barrios/mugica/v02/fondo_batalla.png",
+      "fuente": "ArteFuente/Batalla/mugica_fondo_batalla_v02.svg",
+      "preview": "Docs/Arte/Entregas/fondos_barrios_02/mugica/fondo_batalla_4x.png",
+      "canvas": "256x192"
+    },
+    {
+      "barrio": "monumental",
+      "png": "Assets/Produccion/Barrios/monumental/v02/fondo_batalla.png",
+      "fuente": "ArteFuente/Batalla/monumental_fondo_batalla_v02.svg",
+      "preview": "Docs/Arte/Entregas/fondos_barrios_02/monumental/fondo_batalla_4x.png",
+      "canvas": "256x192"
+    }
+  ]
+}
