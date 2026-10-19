@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7jsvejwqtr8m"
-path="res://.godot/imported/florita.png-2f40c5e00f9e134a97e2ef01a6bbe048.ctex"
+uid="uid://pay4xt6ajc67"
+path="res://.godot/imported/trans_D.png-326d92575ae855654f1c0e2ea52b9346.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personajes/npc/Chacarita/florita.png"
-dest_files=["res://.godot/imported/florita.png-2f40c5e00f9e134a97e2ef01a6bbe048.ctex"]
+source_file="res://Assets/Personajes/npc/palermo/trans_D.png"
+dest_files=["res://.godot/imported/trans_D.png-326d92575ae855654f1c0e2ea52b9346.ctex"]
 
 [params]
 

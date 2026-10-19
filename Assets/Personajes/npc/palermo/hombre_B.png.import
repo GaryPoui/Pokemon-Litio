@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bptvg0fwsw82b"
-path="res://.godot/imported/luto_A.png-dc8358973cf8c8cd2ddcec4b4eda0509.ctex"
+uid="uid://dkoao5x3xu2cu"
+path="res://.godot/imported/hombre_B.png-7c727660ace146d48734f7f79f520124.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personajes/npc/Chacarita/luto_A.png"
-dest_files=["res://.godot/imported/luto_A.png-dc8358973cf8c8cd2ddcec4b4eda0509.ctex"]
+source_file="res://Assets/Personajes/npc/palermo/hombre_B.png"
+dest_files=["res://.godot/imported/hombre_B.png-7c727660ace146d48734f7f79f520124.ctex"]
 
 [params]
 

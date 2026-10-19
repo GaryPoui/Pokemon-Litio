@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clblpv7eeiign"
-path="res://.godot/imported/fantasma_C.png-f01809700cc3aa94427a629baae30352.ctex"
+uid="uid://dyyc58wj3lrq3"
+path="res://.godot/imported/hombre_C.png-f9413c72489f2926b2f9849a22966cc5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personajes/npc/Chacarita/fantasma_C.png"
-dest_files=["res://.godot/imported/fantasma_C.png-f01809700cc3aa94427a629baae30352.ctex"]
+source_file="res://Assets/Personajes/npc/palermo/hombre_C.png"
+dest_files=["res://.godot/imported/hombre_C.png-f9413c72489f2926b2f9849a22966cc5.ctex"]
 
 [params]
 

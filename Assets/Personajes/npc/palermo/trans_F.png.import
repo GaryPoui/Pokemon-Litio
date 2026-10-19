@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dof378vjhqymf"
-path="res://.godot/imported/seguridad_B.png-50d416e5bef38c15b0a6043fd8e201cb.ctex"
+uid="uid://3vqqnoq3a504"
+path="res://.godot/imported/trans_F.png-abe1bd8a81a8cbaaed9b0a387b95ff16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personajes/npc/Chacarita/seguridad_B.png"
-dest_files=["res://.godot/imported/seguridad_B.png-50d416e5bef38c15b0a6043fd8e201cb.ctex"]
+source_file="res://Assets/Personajes/npc/palermo/trans_F.png"
+dest_files=["res://.godot/imported/trans_F.png-abe1bd8a81a8cbaaed9b0a387b95ff16.ctex"]
 
 [params]
 

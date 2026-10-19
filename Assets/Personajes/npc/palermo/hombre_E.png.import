@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2vf1l21eye8s"
-path="res://.godot/imported/sepulturero_B.png-6d9f36667932be3ab20afcefa29be0b5.ctex"
+uid="uid://b8egsxpd3xapd"
+path="res://.godot/imported/hombre_E.png-314b38f9284ebdbdfc85fd6ca2461609.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personajes/npc/Chacarita/sepulturero_B.png"
-dest_files=["res://.godot/imported/sepulturero_B.png-6d9f36667932be3ab20afcefa29be0b5.ctex"]
+source_file="res://Assets/Personajes/npc/palermo/hombre_E.png"
+dest_files=["res://.godot/imported/hombre_E.png-314b38f9284ebdbdfc85fd6ca2461609.ctex"]
 
 [params]
 

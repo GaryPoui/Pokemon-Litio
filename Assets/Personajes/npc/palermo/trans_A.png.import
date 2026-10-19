@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ct6t4vqp25lh0"
-path="res://.godot/imported/fort.png-fa3583ed1acead65472206359da9046e.ctex"
+uid="uid://dat2o3t5plmib"
+path="res://.godot/imported/trans_A.png-68824155f6e1f89fe3d8934a772aecab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personajes/npc/Chacarita/fort.png"
-dest_files=["res://.godot/imported/fort.png-fa3583ed1acead65472206359da9046e.ctex"]
+source_file="res://Assets/Personajes/npc/palermo/trans_A.png"
+dest_files=["res://.godot/imported/trans_A.png-68824155f6e1f89fe3d8934a772aecab.ctex"]
 
 [params]
 

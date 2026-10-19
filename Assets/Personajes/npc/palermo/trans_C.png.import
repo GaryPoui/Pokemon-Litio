@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbfcbd8mw8fku"
-path="res://.godot/imported/sepulturero_A.png-c771ea74d5658d486a1b0ae3f98e85fd.ctex"
+uid="uid://cugo2eemy1gt3"
+path="res://.godot/imported/trans_C.png-4c1215d59f3c8805583c060bb1d5aa5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personajes/npc/Chacarita/sepulturero_A.png"
-dest_files=["res://.godot/imported/sepulturero_A.png-c771ea74d5658d486a1b0ae3f98e85fd.ctex"]
+source_file="res://Assets/Personajes/npc/palermo/trans_C.png"
+dest_files=["res://.godot/imported/trans_C.png-4c1215d59f3c8805583c060bb1d5aa5c.ctex"]
 
 [params]
 
