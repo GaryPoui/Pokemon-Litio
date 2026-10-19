@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0vowdvxhp611"
-path="res://.godot/imported/npc_musico_artista_comerciante_chico_gen4_concepto.png-41121c0f2a4a64fc096f071e3a49fc6a.ctex"
+uid="uid://c1satbkjm75ea"
+path="res://.godot/imported/musico_fuente.png-1eb27aa652ffd0c3e961a19cf2de3dda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Personajes/npc/LaBoca/npc_musico_artista_comerciante_chico_gen4_concepto.png"
-dest_files=["res://.godot/imported/npc_musico_artista_comerciante_chico_gen4_concepto.png-41121c0f2a4a64fc096f071e3a49fc6a.ctex"]
+source_file="res://ArteFuente/la_boca_npcs_simples_v01/musico_fuente.png"
+dest_files=["res://.godot/imported/musico_fuente.png-1eb27aa652ffd0c3e961a19cf2de3dda.ctex"]
 
 [params]
 
@@ -23,7 +23,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
