@@ -1,0 +1,135 @@
+{
+  "format": [
+    224,
+    1360
+  ],
+  "cell": [
+    224,
+    340
+  ],
+  "directions": [
+    "abajo",
+    "arriba",
+    "izquierda",
+    "derecha"
+  ],
+  "feet_y": 335,
+  "scale_in_scene": 0.09,
+  "source": "image_gen built-in; nearest-neighbor packing with ImageMagick",
+  "characters": {
+    "hincha": {
+      "file": "Assets/Personajes/npc/LaBoca/hincha_detallada.png",
+      "source": "ArteFuente/la_boca_npcs_simples_v01/hincha_fuente.png",
+      "source_pose_rows": [
+        [
+          48,
+          550
+        ],
+        [
+          586,
+          1077
+        ],
+        [
+          1113,
+          1612
+        ],
+        [
+          1652,
+          2142
+        ]
+      ]
+    },
+    "musico": {
+      "file": "Assets/Personajes/npc/LaBoca/musico_detallada.png",
+      "source": "ArteFuente/la_boca_npcs_simples_v01/musico_fuente.png",
+      "source_pose_rows": [
+        [
+          110,
+          601
+        ],
+        [
+          654,
+          1146
+        ],
+        [
+          1187,
+          1637
+        ],
+        [
+          1677,
+          2133
+        ]
+      ]
+    },
+    "guia": {
+      "file": "Assets/Personajes/npc/LaBoca/guia_detallada.png",
+      "source": "ArteFuente/la_boca_npcs_simples_v01/guia_fuente.png",
+      "source_pose_rows": [
+        [
+          108,
+          620
+        ],
+        [
+          668,
+          1164
+        ],
+        [
+          1205,
+          1630
+        ],
+        [
+          1663,
+          2100
+        ]
+      ]
+    },
+    "tendera": {
+      "file": "Assets/Personajes/npc/LaBoca/tendera_detallada.png",
+      "source": "ArteFuente/la_boca_npcs_simples_v01/tendera_fuente.png",
+      "source_pose_rows": [
+        [
+          76,
+          597
+        ],
+        [
+          646,
+          1140
+        ],
+        [
+          1184,
+          1626
+        ],
+        [
+          1659,
+          2111
+        ]
+      ]
+    },
+    "chica_ana": {
+      "file": "Assets/Personajes/npc/LaBoca/chica_ana_detallada.png",
+      "source": "ArteFuente/la_boca_npcs_simples_v01/chica_ana_fuente.png",
+      "source_pose_rows": [
+        [
+          106,
+          573
+        ],
+        [
+          633,
+          1098
+        ],
+        [
+          1157,
+          1618
+        ],
+        [
+          1657,
+          2127
+        ]
+      ]
+    },
+    "pintora": {
+      "file": "Assets/Personajes/npc/LaBoca/pintora_detallada.png",
+      "status": "Unchanged: exact user style reference"
+    }
+  }
+}
