@@ -1,122 +1,1453 @@
 [gd_scene format=3 uid="uid://dk4sigf6ivygt"]
 
-[ext_resource type="Texture2D" uid="uid://bgkbkb58ksmu6" path="res://Assets/Overworld/LaBoca/seto_flores.png" id="1_gfmpr"]
-[ext_resource type="Texture2D" uid="uid://bk7p8adoxuxv7" path="res://Assets/Overworld/LaBoca/seto.png" id="2_e0p74"]
-[ext_resource type="Texture2D" uid="uid://sp72b28usylf" path="res://Assets/Overworld/LaBoca/banco.png" id="3_wafgu"]
-[ext_resource type="Texture2D" uid="uid://b2aw2ioi6p7cl" path="res://Assets/Overworld/LaBoca/farol.png" id="4_t0o3g"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/conventillo_azul.png" id="tex_1"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/conventillo_amarillo.png" id="tex_2"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_05_casa_verde_balcon.png" id="tex_3"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_06_casa_naranja_balcon.png" id="tex_4"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_07_casa_violeta.png" id="tex_5"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/conventillo_rojo.png" id="tex_6"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/boca_cafe_caminito_pixelart.png" id="tex_7"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/boca_kiosco_pixelart.png" id="tex_8"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_16_mesa_cafe.png" id="tex_9"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_17_sombrilla_mesa.png" id="tex_10"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_21_bicicletero.png" id="tex_11"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_19_buzon_rojo.png" id="tex_12"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_20_telefono_publico.png" id="tex_13"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_31_papelera_verde.png" id="tex_14"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_25_maceta_malvon.png" id="tex_15"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/boca_fuente_plaza_pixelart.png" id="tex_16"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_28_jacaranda.png" id="tex_17"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/boca_arbol_plaza_pixelart.png" id="tex_18"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_23_banco_azul_amarillo.png" id="tex_19"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_24_cantero_ladrillo.png" id="tex_20"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_30_farola_doble.png" id="tex_21"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_10_entrada_paseo.png" id="tex_22"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_18_cartel_caminito.png" id="tex_23"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_14_puesto_pinturas.png" id="tex_24"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_13_puesto_artesanias.png" id="tex_25"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_50_mural_tango.png" id="tex_26"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/ropa_tendida.png" id="tex_27"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/banderines_caminito.png" id="tex_28"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_22_bicicleta_apoyada.png" id="tex_29"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_48_cartel_parada.png" id="tex_30"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_11_carrito_choripan.png" id="tex_31"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_09_galpon_portuario.png" id="tex_32"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_34_barriles_combustible.png" id="tex_33"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/cajones_puerto.png" id="tex_34"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_37_carrete_cable.png" id="tex_35"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_36_pila_maderas.png" id="tex_36"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/redes_pesca.png" id="tex_37"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_33_barril_madera.png" id="tex_38"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_39_salvavidas.png" id="tex_39"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_38_ancla_portuaria.png" id="tex_40"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_44_poste_muelle.png" id="tex_41"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_40_amarre_cuerda.png" id="tex_42"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_29_palmera_ribera.png" id="tex_43"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_41_bote_remos.png" id="tex_44"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/boca_lancha_riachuelo_pixelart.png" id="tex_45"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_42_boya_roja.png" id="tex_46"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_43_boya_verde.png" id="tex_47"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/boca_puente_transbordador_pixelart.png" id="tex_48"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/nuevo50_45_escalera_muelle.png" id="tex_49"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/calle_extra_05_alcantarilla.png" id="tex_50"]
+[ext_resource type="Texture2D" path="res://Assets/Overworld/calle_extra_07_parche_vereda_rota.png" id="tex_51"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_veuqm"]
+[sub_resource type="RectangleShape2D" id="forma_1"]
+size = Vector2(64, 40)
+
+[sub_resource type="RectangleShape2D" id="forma_2"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="forma_3"]
+size = Vector2(24, 16)
+
+[sub_resource type="RectangleShape2D" id="forma_4"]
+size = Vector2(40, 16)
+
+[sub_resource type="RectangleShape2D" id="forma_5"]
+size = Vector2(12, 16)
+
+[sub_resource type="RectangleShape2D" id="forma_6"]
+size = Vector2(12, 12)
+
+[sub_resource type="RectangleShape2D" id="forma_7"]
 size = Vector2(16, 16)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gfmpr"]
-size = Vector2(16, 16)
+[sub_resource type="RectangleShape2D" id="forma_8"]
+size = Vector2(32, 16)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_e0p74"]
-size = Vector2(16, 16)
+[sub_resource type="RectangleShape2D" id="forma_9"]
+size = Vector2(32, 24)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wafgu"]
-size = Vector2(16, 16)
+[sub_resource type="RectangleShape2D" id="forma_10"]
+size = Vector2(48, 24)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t0o3g"]
-size = Vector2(16, 16)
+[sub_resource type="RectangleShape2D" id="forma_11"]
+size = Vector2(80, 40)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nqcpy"]
-size = Vector2(16, 16)
+[sub_resource type="RectangleShape2D" id="forma_12"]
+size = Vector2(16, 12)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xu1ak"]
-size = Vector2(16, 16)
+[sub_resource type="RectangleShape2D" id="forma_13"]
+size = Vector2(896, 16)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dj7f1"]
-size = Vector2(16, 16)
+[sub_resource type="RectangleShape2D" id="forma_14"]
+size = Vector2(16, 576)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_40q43"]
-size = Vector2(16, 16)
+[sub_resource type="RectangleShape2D" id="forma_15"]
+size = Vector2(112, 16)
 
-[node name="DecoracionLaBoca" type="Node2D" unique_id=1224719204]
+[sub_resource type="RectangleShape2D" id="forma_16"]
+size = Vector2(688, 16)
+
+[sub_resource type="RectangleShape2D" id="forma_17"]
+size = Vector2(16, 64)
+
+[sub_resource type="RectangleShape2D" id="forma_18"]
+size = Vector2(16, 48)
+
+[node name="DecoracionLaBoca" type="Node2D"]
 y_sort_enabled = true
-
-[node name="ArbustosPlaza1" type="Sprite2D" parent="." unique_id=1411335039]
 texture_filter = 1
-position = Vector2(72, 280)
-texture = ExtResource("1_gfmpr")
 
-[node name="ArbustosPlaza2" type="Sprite2D" parent="." unique_id=1434272845]
-texture_filter = 1
-position = Vector2(152, 280)
-texture = ExtResource("1_gfmpr")
+[node name="CasaAzul" type="StaticBody2D" parent="."]
+position = Vector2(200, 152)
 
-[node name="ArbustosPlaza3" type="Sprite2D" parent="." unique_id=1229149587]
-texture_filter = 1
-position = Vector2(72, 328)
-texture = ExtResource("2_e0p74")
+[node name="Sprite" type="Sprite2D" parent="CasaAzul"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_1")
 
-[node name="ArbustosPlaza4" type="Sprite2D" parent="." unique_id=2005188579]
-texture_filter = 1
-position = Vector2(152, 328)
-texture = ExtResource("2_e0p74")
+[node name="Colision" type="CollisionShape2D" parent="CasaAzul"]
+position = Vector2(0, -24)
+shape = SubResource("forma_1")
 
-[node name="BancoPlaza" type="Sprite2D" parent="." unique_id=751008904]
-texture_filter = 1
-position = Vector2(120, 344)
-texture = ExtResource("3_wafgu")
+[node name="CasaAmarilla" type="StaticBody2D" parent="."]
+position = Vector2(296, 152)
 
-[node name="FarolPlazaOeste" type="Sprite2D" parent="." unique_id=284965580]
-texture_filter = 1
-position = Vector2(-40, 216)
-texture = ExtResource("4_t0o3g")
-offset = Vector2(0, -7.5)
+[node name="Sprite" type="Sprite2D" parent="CasaAmarilla"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_2")
 
-[node name="FarolPlazaCentro" type="Sprite2D" parent="." unique_id=664580085]
-texture_filter = 1
-position = Vector2(200, 216)
-texture = ExtResource("4_t0o3g")
-offset = Vector2(0, -7.5)
+[node name="Colision" type="CollisionShape2D" parent="CasaAmarilla"]
+position = Vector2(0, -24)
+shape = SubResource("forma_1")
 
-[node name="FarolPlazaEste" type="Sprite2D" parent="." unique_id=1458148228]
-texture_filter = 1
-position = Vector2(440, 216)
-texture = ExtResource("4_t0o3g")
-offset = Vector2(0, -7.5)
+[node name="CasaVerde" type="StaticBody2D" parent="."]
+position = Vector2(392, 152)
 
-[node name="BancoBulevar" type="Sprite2D" parent="." unique_id=506998466]
-texture_filter = 1
-position = Vector2(344, 264)
-texture = ExtResource("3_wafgu")
+[node name="Sprite" type="Sprite2D" parent="CasaVerde"]
+position = Vector2(0, -40.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_3")
 
-[node name="Colisiones" type="StaticBody2D" parent="." unique_id=264639374]
+[node name="Colision" type="CollisionShape2D" parent="CasaVerde"]
+position = Vector2(0, -24)
+shape = SubResource("forma_1")
 
-[node name="ArbustosPlaza1" type="CollisionShape2D" parent="Colisiones" unique_id=359948656]
-position = Vector2(72, 280)
-shape = SubResource("RectangleShape2D_veuqm")
+[node name="CasaNaranja" type="StaticBody2D" parent="."]
+position = Vector2(488, 152)
 
-[node name="ArbustosPlaza2" type="CollisionShape2D" parent="Colisiones" unique_id=1957568384]
-position = Vector2(152, 280)
-shape = SubResource("RectangleShape2D_gfmpr")
+[node name="Sprite" type="Sprite2D" parent="CasaNaranja"]
+position = Vector2(0, -40.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_4")
 
-[node name="ArbustosPlaza3" type="CollisionShape2D" parent="Colisiones" unique_id=972679158]
-position = Vector2(72, 328)
-shape = SubResource("RectangleShape2D_e0p74")
+[node name="Colision" type="CollisionShape2D" parent="CasaNaranja"]
+position = Vector2(0, -24)
+shape = SubResource("forma_1")
 
-[node name="ArbustosPlaza4" type="CollisionShape2D" parent="Colisiones" unique_id=1313971427]
-position = Vector2(152, 328)
-shape = SubResource("RectangleShape2D_wafgu")
+[node name="CasaVioleta" type="StaticBody2D" parent="."]
+position = Vector2(584, 152)
 
-[node name="BancoBulevar" type="CollisionShape2D" parent="Colisiones" unique_id=528753758]
-position = Vector2(344, 264)
-shape = SubResource("RectangleShape2D_t0o3g")
+[node name="Sprite" type="Sprite2D" parent="CasaVioleta"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_5")
 
-[node name="BancoPlaza" type="CollisionShape2D" parent="Colisiones" unique_id=1518732773]
-position = Vector2(120, 344)
-shape = SubResource("RectangleShape2D_nqcpy")
+[node name="Colision" type="CollisionShape2D" parent="CasaVioleta"]
+position = Vector2(0, -24)
+shape = SubResource("forma_1")
 
-[node name="FarolPlazaCentro" type="CollisionShape2D" parent="Colisiones" unique_id=1120726699]
-position = Vector2(200, 216)
-shape = SubResource("RectangleShape2D_xu1ak")
+[node name="CasaRojaPuerto" type="StaticBody2D" parent="."]
+position = Vector2(200, 248)
 
-[node name="FarolPlazaEste" type="CollisionShape2D" parent="Colisiones" unique_id=1369598503]
-position = Vector2(440, 216)
-shape = SubResource("RectangleShape2D_dj7f1")
+[node name="Sprite" type="Sprite2D" parent="CasaRojaPuerto"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_6")
 
-[node name="FarolPlazaOeste" type="CollisionShape2D" parent="Colisiones" unique_id=2082548317]
-position = Vector2(-40, 216)
-shape = SubResource("RectangleShape2D_40q43")
+[node name="Colision" type="CollisionShape2D" parent="CasaRojaPuerto"]
+position = Vector2(0, -24)
+shape = SubResource("forma_1")
+
+[node name="CafeCaminito" type="StaticBody2D" parent="."]
+position = Vector2(432, 392)
+
+[node name="Sprite" type="Sprite2D" parent="CafeCaminito"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_7")
+
+[node name="Colision" type="CollisionShape2D" parent="CafeCaminito"]
+position = Vector2(0, -24)
+shape = SubResource("forma_1")
+
+[node name="Kiosco" type="StaticBody2D" parent="."]
+position = Vector2(536, 392)
+
+[node name="Sprite" type="Sprite2D" parent="Kiosco"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_8")
+
+[node name="Colision" type="CollisionShape2D" parent="Kiosco"]
+position = Vector2(0, -16)
+shape = SubResource("forma_2")
+
+[node name="MesaCafeOeste" type="StaticBody2D" parent="."]
+position = Vector2(360, 448)
+
+[node name="Sprite" type="Sprite2D" parent="MesaCafeOeste"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_9")
+
+[node name="Colision" type="CollisionShape2D" parent="MesaCafeOeste"]
+position = Vector2(0, -8)
+shape = SubResource("forma_3")
+
+[node name="MesaCafeEste" type="StaticBody2D" parent="."]
+position = Vector2(472, 448)
+
+[node name="Sprite" type="Sprite2D" parent="MesaCafeEste"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_10")
+
+[node name="Colision" type="CollisionShape2D" parent="MesaCafeEste"]
+position = Vector2(0, -8)
+shape = SubResource("forma_3")
+
+[node name="BicicleteroCafe" type="StaticBody2D" parent="."]
+position = Vector2(432, 488)
+
+[node name="Sprite" type="Sprite2D" parent="BicicleteroCafe"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_11")
+
+[node name="Colision" type="CollisionShape2D" parent="BicicleteroCafe"]
+position = Vector2(0, -8)
+shape = SubResource("forma_4")
+
+[node name="BuzonCentro" type="StaticBody2D" parent="."]
+position = Vector2(248, 392)
+
+[node name="Sprite" type="Sprite2D" parent="BuzonCentro"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_12")
+
+[node name="Colision" type="CollisionShape2D" parent="BuzonCentro"]
+position = Vector2(0, -8)
+shape = SubResource("forma_5")
+
+[node name="TelefonoKiosco" type="StaticBody2D" parent="."]
+position = Vector2(584, 376)
+
+[node name="Sprite" type="Sprite2D" parent="TelefonoKiosco"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_13")
+
+[node name="Colision" type="CollisionShape2D" parent="TelefonoKiosco"]
+position = Vector2(0, -8)
+shape = SubResource("forma_5")
+
+[node name="PapeleraCafe" type="StaticBody2D" parent="."]
+position = Vector2(488, 392)
+
+[node name="Sprite" type="Sprite2D" parent="PapeleraCafe"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_14")
+
+[node name="Colision" type="CollisionShape2D" parent="PapeleraCafe"]
+position = Vector2(0, -8)
+shape = SubResource("forma_5")
+
+[node name="MalvonComercios0" type="StaticBody2D" parent="."]
+position = Vector2(344, 392)
+
+[node name="Sprite" type="Sprite2D" parent="MalvonComercios0"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_15")
+
+[node name="Colision" type="CollisionShape2D" parent="MalvonComercios0"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="MalvonComercios1" type="StaticBody2D" parent="."]
+position = Vector2(392, 392)
+
+[node name="Sprite" type="Sprite2D" parent="MalvonComercios1"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_15")
+
+[node name="Colision" type="CollisionShape2D" parent="MalvonComercios1"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="MalvonComercios2" type="StaticBody2D" parent="."]
+position = Vector2(472, 392)
+
+[node name="Sprite" type="Sprite2D" parent="MalvonComercios2"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_15")
+
+[node name="Colision" type="CollisionShape2D" parent="MalvonComercios2"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="MalvonComercios3" type="StaticBody2D" parent="."]
+position = Vector2(504, 392)
+
+[node name="Sprite" type="Sprite2D" parent="MalvonComercios3"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_15")
+
+[node name="Colision" type="CollisionShape2D" parent="MalvonComercios3"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="MalvonComercios4" type="StaticBody2D" parent="."]
+position = Vector2(568, 392)
+
+[node name="Sprite" type="Sprite2D" parent="MalvonComercios4"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_15")
+
+[node name="Colision" type="CollisionShape2D" parent="MalvonComercios4"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="FuentePlaza" type="StaticBody2D" parent="."]
+position = Vector2(720, 432)
+
+[node name="Sprite" type="Sprite2D" parent="FuentePlaza"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_16")
+
+[node name="Colision" type="CollisionShape2D" parent="FuentePlaza"]
+position = Vector2(0, -8)
+shape = SubResource("forma_3")
+
+[node name="ArbolPlaza0" type="StaticBody2D" parent="."]
+position = Vector2(640, 392)
+
+[node name="Sprite" type="Sprite2D" parent="ArbolPlaza0"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_17")
+
+[node name="Colision" type="CollisionShape2D" parent="ArbolPlaza0"]
+position = Vector2(0, -8)
+shape = SubResource("forma_7")
+
+[node name="ArbolPlaza1" type="StaticBody2D" parent="."]
+position = Vector2(792, 392)
+
+[node name="Sprite" type="Sprite2D" parent="ArbolPlaza1"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_18")
+
+[node name="Colision" type="CollisionShape2D" parent="ArbolPlaza1"]
+position = Vector2(0, -8)
+shape = SubResource("forma_7")
+
+[node name="ArbolPlaza2" type="StaticBody2D" parent="."]
+position = Vector2(640, 472)
+
+[node name="Sprite" type="Sprite2D" parent="ArbolPlaza2"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_18")
+
+[node name="Colision" type="CollisionShape2D" parent="ArbolPlaza2"]
+position = Vector2(0, -8)
+shape = SubResource("forma_7")
+
+[node name="ArbolPlaza3" type="StaticBody2D" parent="."]
+position = Vector2(792, 472)
+
+[node name="Sprite" type="Sprite2D" parent="ArbolPlaza3"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_17")
+
+[node name="Colision" type="CollisionShape2D" parent="ArbolPlaza3"]
+position = Vector2(0, -8)
+shape = SubResource("forma_7")
+
+[node name="BancoPlaza0" type="StaticBody2D" parent="."]
+position = Vector2(672, 376)
+
+[node name="Sprite" type="Sprite2D" parent="BancoPlaza0"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_19")
+
+[node name="Colision" type="CollisionShape2D" parent="BancoPlaza0"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="BancoPlaza1" type="StaticBody2D" parent="."]
+position = Vector2(768, 376)
+
+[node name="Sprite" type="Sprite2D" parent="BancoPlaza1"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_19")
+
+[node name="Colision" type="CollisionShape2D" parent="BancoPlaza1"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="BancoPlaza2" type="StaticBody2D" parent="."]
+position = Vector2(672, 472)
+
+[node name="Sprite" type="Sprite2D" parent="BancoPlaza2"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_19")
+
+[node name="Colision" type="CollisionShape2D" parent="BancoPlaza2"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="BancoPlaza3" type="StaticBody2D" parent="."]
+position = Vector2(768, 472)
+
+[node name="Sprite" type="Sprite2D" parent="BancoPlaza3"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_19")
+
+[node name="Colision" type="CollisionShape2D" parent="BancoPlaza3"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="CanteroPlaza0" type="StaticBody2D" parent="."]
+position = Vector2(688, 352)
+
+[node name="Sprite" type="Sprite2D" parent="CanteroPlaza0"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_20")
+
+[node name="Colision" type="CollisionShape2D" parent="CanteroPlaza0"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="CanteroPlaza1" type="StaticBody2D" parent="."]
+position = Vector2(752, 352)
+
+[node name="Sprite" type="Sprite2D" parent="CanteroPlaza1"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_20")
+
+[node name="Colision" type="CollisionShape2D" parent="CanteroPlaza1"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="CanteroPlaza2" type="StaticBody2D" parent="."]
+position = Vector2(688, 472)
+
+[node name="Sprite" type="Sprite2D" parent="CanteroPlaza2"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_20")
+
+[node name="Colision" type="CollisionShape2D" parent="CanteroPlaza2"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="CanteroPlaza3" type="StaticBody2D" parent="."]
+position = Vector2(752, 472)
+
+[node name="Sprite" type="Sprite2D" parent="CanteroPlaza3"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_20")
+
+[node name="Colision" type="CollisionShape2D" parent="CanteroPlaza3"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="FarolaPlaza0" type="StaticBody2D" parent="."]
+position = Vector2(616, 328)
+
+[node name="Sprite" type="Sprite2D" parent="FarolaPlaza0"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_21")
+
+[node name="Colision" type="CollisionShape2D" parent="FarolaPlaza0"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="FarolaPlaza1" type="StaticBody2D" parent="."]
+position = Vector2(808, 328)
+
+[node name="Sprite" type="Sprite2D" parent="FarolaPlaza1"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_21")
+
+[node name="Colision" type="CollisionShape2D" parent="FarolaPlaza1"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="FarolaPlaza2" type="StaticBody2D" parent="."]
+position = Vector2(616, 488)
+
+[node name="Sprite" type="Sprite2D" parent="FarolaPlaza2"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_21")
+
+[node name="Colision" type="CollisionShape2D" parent="FarolaPlaza2"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="FarolaPlaza3" type="StaticBody2D" parent="."]
+position = Vector2(808, 488)
+
+[node name="Sprite" type="Sprite2D" parent="FarolaPlaza3"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_21")
+
+[node name="Colision" type="CollisionShape2D" parent="FarolaPlaza3"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="PapeleraPlaza" type="StaticBody2D" parent="."]
+position = Vector2(808, 440)
+
+[node name="Sprite" type="Sprite2D" parent="PapeleraPlaza"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_14")
+
+[node name="Colision" type="CollisionShape2D" parent="PapeleraPlaza"]
+position = Vector2(0, -8)
+shape = SubResource("forma_5")
+
+[node name="EntradaCaminito" type="Node2D" parent="."]
+position = Vector2(200, 328)
+z_index = 2
+
+[node name="Sprite" type="Sprite2D" parent="EntradaCaminito"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_22")
+
+[node name="PilarArcoOeste" type="StaticBody2D" parent="."]
+position = Vector2(168, 320)
+
+[node name="Colision" type="CollisionShape2D" parent="PilarArcoOeste"]
+shape = SubResource("forma_7")
+
+[node name="PilarArcoEste" type="StaticBody2D" parent="."]
+position = Vector2(232, 320)
+
+[node name="Colision" type="CollisionShape2D" parent="PilarArcoEste"]
+shape = SubResource("forma_7")
+
+[node name="CartelCaminito" type="StaticBody2D" parent="."]
+position = Vector2(184, 360)
+
+[node name="Sprite" type="Sprite2D" parent="CartelCaminito"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_23")
+
+[node name="Colision" type="CollisionShape2D" parent="CartelCaminito"]
+position = Vector2(0, -8)
+shape = SubResource("forma_5")
+
+[node name="CartelOrientacion" type="StaticBody2D" parent="."]
+position = Vector2(248, 200)
+
+[node name="Sprite" type="Sprite2D" parent="CartelOrientacion"]
+position = Vector2(0, -12.0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("tex_23")
+
+[node name="Colision" type="CollisionShape2D" parent="CartelOrientacion"]
+position = Vector2(0, -8)
+shape = SubResource("forma_5")
+
+[node name="PuestoPinturas" type="StaticBody2D" parent="."]
+position = Vector2(200, 432)
+
+[node name="Sprite" type="Sprite2D" parent="PuestoPinturas"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_24")
+
+[node name="Colision" type="CollisionShape2D" parent="PuestoPinturas"]
+position = Vector2(0, -12)
+shape = SubResource("forma_9")
+
+[node name="PuestoArtesanias" type="StaticBody2D" parent="."]
+position = Vector2(200, 488)
+
+[node name="Sprite" type="Sprite2D" parent="PuestoArtesanias"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_25")
+
+[node name="Colision" type="CollisionShape2D" parent="PuestoArtesanias"]
+position = Vector2(0, -12)
+shape = SubResource("forma_10")
+
+[node name="MuralTango" type="StaticBody2D" parent="."]
+position = Vector2(184, 64)
+
+[node name="Sprite" type="Sprite2D" parent="MuralTango"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_26")
+
+[node name="Colision" type="CollisionShape2D" parent="MuralTango"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="RopaTendida" type="Node2D" parent="."]
+position = Vector2(344, 104)
+z_index = 1
+
+[node name="Sprite" type="Sprite2D" parent="RopaTendida"]
+position = Vector2(0, -24.0)
+scale = Vector2(0.05411499436302142, 0.05411499436302142)
+texture = ExtResource("tex_27")
+
+[node name="BanderinesCasas0" type="Node2D" parent="."]
+position = Vector2(248, 184)
+z_index = 2
+
+[node name="Sprite" type="Sprite2D" parent="BanderinesCasas0"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_28")
+
+[node name="BanderinesCasas1" type="Node2D" parent="."]
+position = Vector2(344, 184)
+z_index = 2
+
+[node name="Sprite" type="Sprite2D" parent="BanderinesCasas1"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_28")
+
+[node name="BanderinesCasas2" type="Node2D" parent="."]
+position = Vector2(440, 184)
+z_index = 2
+
+[node name="Sprite" type="Sprite2D" parent="BanderinesCasas2"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_28")
+
+[node name="BanderinesCasas3" type="Node2D" parent="."]
+position = Vector2(536, 184)
+z_index = 2
+
+[node name="Sprite" type="Sprite2D" parent="BanderinesCasas3"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_28")
+
+[node name="BanderinesCafe" type="Node2D" parent="."]
+position = Vector2(432, 328)
+z_index = 2
+
+[node name="Sprite" type="Sprite2D" parent="BanderinesCafe"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_28")
+
+[node name="MalvonCasas0" type="StaticBody2D" parent="."]
+position = Vector2(248, 152)
+
+[node name="Sprite" type="Sprite2D" parent="MalvonCasas0"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_15")
+
+[node name="Colision" type="CollisionShape2D" parent="MalvonCasas0"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="MalvonCasas1" type="StaticBody2D" parent="."]
+position = Vector2(344, 152)
+
+[node name="Sprite" type="Sprite2D" parent="MalvonCasas1"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_15")
+
+[node name="Colision" type="CollisionShape2D" parent="MalvonCasas1"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="MalvonCasas2" type="StaticBody2D" parent="."]
+position = Vector2(440, 152)
+
+[node name="Sprite" type="Sprite2D" parent="MalvonCasas2"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_15")
+
+[node name="Colision" type="CollisionShape2D" parent="MalvonCasas2"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="MalvonCasas3" type="StaticBody2D" parent="."]
+position = Vector2(536, 152)
+
+[node name="Sprite" type="Sprite2D" parent="MalvonCasas3"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_15")
+
+[node name="Colision" type="CollisionShape2D" parent="MalvonCasas3"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="MalvonCasas4" type="StaticBody2D" parent="."]
+position = Vector2(616, 152)
+
+[node name="Sprite" type="Sprite2D" parent="MalvonCasas4"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_15")
+
+[node name="Colision" type="CollisionShape2D" parent="MalvonCasas4"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="CanteroNorte0" type="StaticBody2D" parent="."]
+position = Vector2(248, 56)
+
+[node name="Sprite" type="Sprite2D" parent="CanteroNorte0"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_20")
+
+[node name="Colision" type="CollisionShape2D" parent="CanteroNorte0"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="CanteroNorte1" type="StaticBody2D" parent="."]
+position = Vector2(344, 56)
+
+[node name="Sprite" type="Sprite2D" parent="CanteroNorte1"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_20")
+
+[node name="Colision" type="CollisionShape2D" parent="CanteroNorte1"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="CanteroNorte2" type="StaticBody2D" parent="."]
+position = Vector2(440, 56)
+
+[node name="Sprite" type="Sprite2D" parent="CanteroNorte2"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_20")
+
+[node name="Colision" type="CollisionShape2D" parent="CanteroNorte2"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="CanteroNorte3" type="StaticBody2D" parent="."]
+position = Vector2(536, 56)
+
+[node name="Sprite" type="Sprite2D" parent="CanteroNorte3"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_20")
+
+[node name="Colision" type="CollisionShape2D" parent="CanteroNorte3"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="BicicletaCasa" type="StaticBody2D" parent="."]
+position = Vector2(168, 248)
+
+[node name="Sprite" type="Sprite2D" parent="BicicletaCasa"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_29")
+
+[node name="Colision" type="CollisionShape2D" parent="BicicletaCasa"]
+position = Vector2(0, -8)
+shape = SubResource("forma_3")
+
+[node name="ParadaColectivo" type="StaticBody2D" parent="."]
+position = Vector2(872, 248)
+
+[node name="Sprite" type="Sprite2D" parent="ParadaColectivo"]
+position = Vector2(0, -20.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_30")
+
+[node name="Colision" type="CollisionShape2D" parent="ParadaColectivo"]
+position = Vector2(0, -8)
+shape = SubResource("forma_5")
+
+[node name="CarritoChoripan" type="StaticBody2D" parent="."]
+position = Vector2(824, 224)
+
+[node name="Sprite" type="Sprite2D" parent="CarritoChoripan"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_31")
+
+[node name="Colision" type="CollisionShape2D" parent="CarritoChoripan"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="BancoEstadio" type="StaticBody2D" parent="."]
+position = Vector2(648, 240)
+
+[node name="Sprite" type="Sprite2D" parent="BancoEstadio"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_19")
+
+[node name="Colision" type="CollisionShape2D" parent="BancoEstadio"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="PapeleraEstadio" type="StaticBody2D" parent="."]
+position = Vector2(792, 240)
+
+[node name="Sprite" type="Sprite2D" parent="PapeleraEstadio"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_14")
+
+[node name="Colision" type="CollisionShape2D" parent="PapeleraEstadio"]
+position = Vector2(0, -8)
+shape = SubResource("forma_5")
+
+[node name="GalponPuerto" type="StaticBody2D" parent="."]
+position = Vector2(56, 152)
+
+[node name="Sprite" type="Sprite2D" parent="GalponPuerto"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_32")
+
+[node name="Colision" type="CollisionShape2D" parent="GalponPuerto"]
+position = Vector2(0, -24)
+shape = SubResource("forma_11")
+
+[node name="BarrilesPuerto" type="StaticBody2D" parent="."]
+position = Vector2(24, 232)
+
+[node name="Sprite" type="Sprite2D" parent="BarrilesPuerto"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_33")
+
+[node name="Colision" type="CollisionShape2D" parent="BarrilesPuerto"]
+position = Vector2(0, -8)
+shape = SubResource("forma_3")
+
+[node name="CajasPuerto" type="StaticBody2D" parent="."]
+position = Vector2(64, 248)
+
+[node name="Sprite" type="Sprite2D" parent="CajasPuerto"]
+position = Vector2(0, -16.0)
+scale = Vector2(0.025518341307814992, 0.025518341307814992)
+texture = ExtResource("tex_34")
+
+[node name="Colision" type="CollisionShape2D" parent="CajasPuerto"]
+position = Vector2(0, -8)
+shape = SubResource("forma_3")
+
+[node name="CarretePuerto" type="StaticBody2D" parent="."]
+position = Vector2(24, 344)
+
+[node name="Sprite" type="Sprite2D" parent="CarretePuerto"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_35")
+
+[node name="Colision" type="CollisionShape2D" parent="CarretePuerto"]
+position = Vector2(0, -8)
+shape = SubResource("forma_3")
+
+[node name="MaderasPuerto" type="StaticBody2D" parent="."]
+position = Vector2(64, 360)
+
+[node name="Sprite" type="Sprite2D" parent="MaderasPuerto"]
+position = Vector2(0, -8.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_36")
+
+[node name="Colision" type="CollisionShape2D" parent="MaderasPuerto"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="RedesPuerto" type="StaticBody2D" parent="."]
+position = Vector2(24, 440)
+
+[node name="Sprite" type="Sprite2D" parent="RedesPuerto"]
+position = Vector2(0, -14.44848484848485)
+scale = Vector2(0.024242424242424242, 0.024242424242424242)
+texture = ExtResource("tex_37")
+
+[node name="Colision" type="CollisionShape2D" parent="RedesPuerto"]
+position = Vector2(0, -8)
+shape = SubResource("forma_7")
+
+[node name="BarrilPuerto" type="StaticBody2D" parent="."]
+position = Vector2(72, 472)
+
+[node name="Sprite" type="Sprite2D" parent="BarrilPuerto"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_38")
+
+[node name="Colision" type="CollisionShape2D" parent="BarrilPuerto"]
+position = Vector2(0, -8)
+shape = SubResource("forma_7")
+
+[node name="SalvavidasPuerto" type="StaticBody2D" parent="."]
+position = Vector2(24, 536)
+
+[node name="Sprite" type="Sprite2D" parent="SalvavidasPuerto"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_39")
+
+[node name="Colision" type="CollisionShape2D" parent="SalvavidasPuerto"]
+position = Vector2(0, -8)
+shape = SubResource("forma_5")
+
+[node name="AnclaPuerto" type="StaticBody2D" parent="."]
+position = Vector2(80, 552)
+
+[node name="Sprite" type="Sprite2D" parent="AnclaPuerto"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_40")
+
+[node name="Colision" type="CollisionShape2D" parent="AnclaPuerto"]
+position = Vector2(0, -8)
+shape = SubResource("forma_3")
+
+[node name="PostePuerto0" type="StaticBody2D" parent="."]
+position = Vector2(8, 280)
+
+[node name="Sprite" type="Sprite2D" parent="PostePuerto0"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_41")
+
+[node name="Colision" type="CollisionShape2D" parent="PostePuerto0"]
+position = Vector2(0, -8)
+shape = SubResource("forma_5")
+
+[node name="PostePuerto1" type="StaticBody2D" parent="."]
+position = Vector2(8, 392)
+
+[node name="Sprite" type="Sprite2D" parent="PostePuerto1"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_41")
+
+[node name="Colision" type="CollisionShape2D" parent="PostePuerto1"]
+position = Vector2(0, -8)
+shape = SubResource("forma_5")
+
+[node name="PostePuerto2" type="StaticBody2D" parent="."]
+position = Vector2(8, 504)
+
+[node name="Sprite" type="Sprite2D" parent="PostePuerto2"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_41")
+
+[node name="Colision" type="CollisionShape2D" parent="PostePuerto2"]
+position = Vector2(0, -8)
+shape = SubResource("forma_5")
+
+[node name="AmarreCostanera0" type="StaticBody2D" parent="."]
+position = Vector2(120, 576)
+
+[node name="Sprite" type="Sprite2D" parent="AmarreCostanera0"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_42")
+
+[node name="Colision" type="CollisionShape2D" parent="AmarreCostanera0"]
+position = Vector2(0, -6)
+shape = SubResource("forma_12")
+
+[node name="AmarreCostanera1" type="StaticBody2D" parent="."]
+position = Vector2(248, 576)
+
+[node name="Sprite" type="Sprite2D" parent="AmarreCostanera1"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_42")
+
+[node name="Colision" type="CollisionShape2D" parent="AmarreCostanera1"]
+position = Vector2(0, -6)
+shape = SubResource("forma_12")
+
+[node name="AmarreCostanera2" type="StaticBody2D" parent="."]
+position = Vector2(376, 576)
+
+[node name="Sprite" type="Sprite2D" parent="AmarreCostanera2"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_42")
+
+[node name="Colision" type="CollisionShape2D" parent="AmarreCostanera2"]
+position = Vector2(0, -6)
+shape = SubResource("forma_12")
+
+[node name="AmarreCostanera3" type="StaticBody2D" parent="."]
+position = Vector2(504, 576)
+
+[node name="Sprite" type="Sprite2D" parent="AmarreCostanera3"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_42")
+
+[node name="Colision" type="CollisionShape2D" parent="AmarreCostanera3"]
+position = Vector2(0, -6)
+shape = SubResource("forma_12")
+
+[node name="AmarreCostanera4" type="StaticBody2D" parent="."]
+position = Vector2(632, 576)
+
+[node name="Sprite" type="Sprite2D" parent="AmarreCostanera4"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_42")
+
+[node name="Colision" type="CollisionShape2D" parent="AmarreCostanera4"]
+position = Vector2(0, -6)
+shape = SubResource("forma_12")
+
+[node name="AmarreCostanera5" type="StaticBody2D" parent="."]
+position = Vector2(760, 576)
+
+[node name="Sprite" type="Sprite2D" parent="AmarreCostanera5"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_42")
+
+[node name="Colision" type="CollisionShape2D" parent="AmarreCostanera5"]
+position = Vector2(0, -6)
+shape = SubResource("forma_12")
+
+[node name="AmarreCostanera6" type="StaticBody2D" parent="."]
+position = Vector2(888, 576)
+
+[node name="Sprite" type="Sprite2D" parent="AmarreCostanera6"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_42")
+
+[node name="Colision" type="CollisionShape2D" parent="AmarreCostanera6"]
+position = Vector2(0, -6)
+shape = SubResource("forma_12")
+
+[node name="FarolCostanera0" type="StaticBody2D" parent="."]
+position = Vector2(152, 552)
+
+[node name="Sprite" type="Sprite2D" parent="FarolCostanera0"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_21")
+
+[node name="Colision" type="CollisionShape2D" parent="FarolCostanera0"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="FarolCostanera1" type="StaticBody2D" parent="."]
+position = Vector2(344, 552)
+
+[node name="Sprite" type="Sprite2D" parent="FarolCostanera1"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_21")
+
+[node name="Colision" type="CollisionShape2D" parent="FarolCostanera1"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="FarolCostanera2" type="StaticBody2D" parent="."]
+position = Vector2(536, 552)
+
+[node name="Sprite" type="Sprite2D" parent="FarolCostanera2"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_21")
+
+[node name="Colision" type="CollisionShape2D" parent="FarolCostanera2"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="FarolCostanera3" type="StaticBody2D" parent="."]
+position = Vector2(728, 552)
+
+[node name="Sprite" type="Sprite2D" parent="FarolCostanera3"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_21")
+
+[node name="Colision" type="CollisionShape2D" parent="FarolCostanera3"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="FarolCostanera4" type="StaticBody2D" parent="."]
+position = Vector2(856, 552)
+
+[node name="Sprite" type="Sprite2D" parent="FarolCostanera4"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_21")
+
+[node name="Colision" type="CollisionShape2D" parent="FarolCostanera4"]
+position = Vector2(0, -6)
+shape = SubResource("forma_6")
+
+[node name="BancoCostanera0" type="StaticBody2D" parent="."]
+position = Vector2(296, 568)
+
+[node name="Sprite" type="Sprite2D" parent="BancoCostanera0"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_19")
+
+[node name="Colision" type="CollisionShape2D" parent="BancoCostanera0"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="BancoCostanera1" type="StaticBody2D" parent="."]
+position = Vector2(488, 568)
+
+[node name="Sprite" type="Sprite2D" parent="BancoCostanera1"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_19")
+
+[node name="Colision" type="CollisionShape2D" parent="BancoCostanera1"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="BancoCostanera2" type="StaticBody2D" parent="."]
+position = Vector2(680, 568)
+
+[node name="Sprite" type="Sprite2D" parent="BancoCostanera2"]
+position = Vector2(0, -12.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_19")
+
+[node name="Colision" type="CollisionShape2D" parent="BancoCostanera2"]
+position = Vector2(0, -8)
+shape = SubResource("forma_8")
+
+[node name="PalmeraCostaneraOeste" type="StaticBody2D" parent="."]
+position = Vector2(104, 552)
+
+[node name="Sprite" type="Sprite2D" parent="PalmeraCostaneraOeste"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_43")
+
+[node name="Colision" type="CollisionShape2D" parent="PalmeraCostaneraOeste"]
+position = Vector2(0, -8)
+shape = SubResource("forma_7")
+
+[node name="PalmeraCostaneraEste" type="StaticBody2D" parent="."]
+position = Vector2(824, 552)
+
+[node name="Sprite" type="Sprite2D" parent="PalmeraCostaneraEste"]
+position = Vector2(0, -32.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_43")
+
+[node name="Colision" type="CollisionShape2D" parent="PalmeraCostaneraEste"]
+position = Vector2(0, -8)
+shape = SubResource("forma_7")
+
+[node name="BoteAmarrado" type="Node2D" parent="."]
+position = Vector2(104, 632)
+
+[node name="Sprite" type="Sprite2D" parent="BoteAmarrado"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_44")
+
+[node name="LanchaRiachuelo" type="Node2D" parent="."]
+position = Vector2(376, 656)
+
+[node name="Sprite" type="Sprite2D" parent="LanchaRiachuelo"]
+position = Vector2(0, -24.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_45")
+
+[node name="BoyaRoja" type="Node2D" parent="."]
+position = Vector2(280, 696)
+
+[node name="Sprite" type="Sprite2D" parent="BoyaRoja"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_46")
+
+[node name="BoyaVerde" type="Node2D" parent="."]
+position = Vector2(552, 632)
+
+[node name="Sprite" type="Sprite2D" parent="BoyaVerde"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_47")
+
+[node name="PuenteTransbordador" type="Node2D" parent="."]
+position = Vector2(112, 736)
+
+[node name="Sprite" type="Sprite2D" parent="PuenteTransbordador"]
+position = Vector2(0, -48.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_48")
+
+[node name="EscaleraMuelle" type="Node2D" parent="."]
+position = Vector2(64, 608)
+z_index = 1
+
+[node name="Sprite" type="Sprite2D" parent="EscaleraMuelle"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_49")
+
+[node name="CordonAvenidaNorte" type="Line2D" parent="."]
+z_index = -5
+points = PackedVector2Array(160, 256, 880, 256)
+width = 2
+default_color = Color(0.58, 0.56, 0.50, 1)
+
+[node name="CordonAvenidaSur" type="Line2D" parent="."]
+z_index = -5
+points = PackedVector2Array(160, 320, 880, 320)
+width = 2
+default_color = Color(0.58, 0.56, 0.50, 1)
+
+[node name="CordonLateralPuerto" type="Line2D" parent="."]
+z_index = -5
+points = PackedVector2Array(112, 160, 112, 544)
+width = 2
+default_color = Color(0.58, 0.56, 0.50, 1)
+
+[node name="CordonVueltaSur" type="Line2D" parent="."]
+z_index = -5
+points = PackedVector2Array(160, 544, 880, 544)
+width = 2
+default_color = Color(0.58, 0.56, 0.50, 1)
+
+[node name="CordonPlazaEste" type="Line2D" parent="."]
+z_index = -5
+points = PackedVector2Array(880, 320, 880, 544)
+width = 2
+default_color = Color(0.58, 0.56, 0.50, 1)
+
+[node name="BordeCostanera" type="Line2D" parent="."]
+z_index = -5
+points = PackedVector2Array(0, 576, 896, 576)
+width = 3
+default_color = Color(0.25, 0.29, 0.27, 1)
+
+[node name="RejillaDesague0" type="Node2D" parent="."]
+position = Vector2(24, 528)
+z_index = -4
+
+[node name="Sprite" type="Sprite2D" parent="RejillaDesague0"]
+position = Vector2(0, -8.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_50")
+
+[node name="RejillaDesague1" type="Node2D" parent="."]
+position = Vector2(152, 528)
+z_index = -4
+
+[node name="Sprite" type="Sprite2D" parent="RejillaDesague1"]
+position = Vector2(0, -8.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_50")
+
+[node name="RejillaDesague2" type="Node2D" parent="."]
+position = Vector2(280, 528)
+z_index = -4
+
+[node name="Sprite" type="Sprite2D" parent="RejillaDesague2"]
+position = Vector2(0, -8.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_50")
+
+[node name="RejillaDesague3" type="Node2D" parent="."]
+position = Vector2(408, 528)
+z_index = -4
+
+[node name="Sprite" type="Sprite2D" parent="RejillaDesague3"]
+position = Vector2(0, -8.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_50")
+
+[node name="RejillaDesague4" type="Node2D" parent="."]
+position = Vector2(536, 528)
+z_index = -4
+
+[node name="Sprite" type="Sprite2D" parent="RejillaDesague4"]
+position = Vector2(0, -8.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_50")
+
+[node name="RejillaDesague5" type="Node2D" parent="."]
+position = Vector2(664, 528)
+z_index = -4
+
+[node name="Sprite" type="Sprite2D" parent="RejillaDesague5"]
+position = Vector2(0, -8.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_50")
+
+[node name="RejillaDesague6" type="Node2D" parent="."]
+position = Vector2(792, 528)
+z_index = -4
+
+[node name="Sprite" type="Sprite2D" parent="RejillaDesague6"]
+position = Vector2(0, -8.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_50")
+
+[node name="VeredaGastada0" type="Node2D" parent="."]
+position = Vector2(168, 280)
+z_index = -4
+
+[node name="Sprite" type="Sprite2D" parent="VeredaGastada0"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_51")
+
+[node name="VeredaGastada1" type="Node2D" parent="."]
+position = Vector2(504, 296)
+z_index = -4
+
+[node name="Sprite" type="Sprite2D" parent="VeredaGastada1"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_51")
+
+[node name="VeredaGastada2" type="Node2D" parent="."]
+position = Vector2(856, 424)
+z_index = -4
+
+[node name="Sprite" type="Sprite2D" parent="VeredaGastada2"]
+position = Vector2(0, -16.0)
+scale = Vector2(1, 1)
+texture = ExtResource("tex_51")
+
+[node name="LimiteNorte" type="StaticBody2D" parent="."]
+position = Vector2(448, -8)
+
+[node name="Colision" type="CollisionShape2D" parent="LimiteNorte"]
+shape = SubResource("forma_13")
+
+[node name="LimiteOeste" type="StaticBody2D" parent="."]
+position = Vector2(-8, 288)
+
+[node name="Colision" type="CollisionShape2D" parent="LimiteOeste"]
+shape = SubResource("forma_14")
+
+[node name="LimiteEste" type="StaticBody2D" parent="."]
+position = Vector2(904, 288)
+
+[node name="Colision" type="CollisionShape2D" parent="LimiteEste"]
+shape = SubResource("forma_14")
+
+[node name="LimiteAguaOeste" type="StaticBody2D" parent="."]
+position = Vector2(16, 584)
+
+[node name="Colision" type="CollisionShape2D" parent="LimiteAguaOeste"]
+shape = SubResource("forma_8")
+
+[node name="LimiteAguaCentro" type="StaticBody2D" parent="."]
+position = Vector2(120, 584)
+
+[node name="Colision" type="CollisionShape2D" parent="LimiteAguaCentro"]
+shape = SubResource("forma_15")
+
+[node name="LimiteAguaEste" type="StaticBody2D" parent="."]
+position = Vector2(552, 584)
+
+[node name="Colision" type="CollisionShape2D" parent="LimiteAguaEste"]
+shape = SubResource("forma_16")
+
+[node name="MuelleUnoOeste" type="StaticBody2D" parent="."]
+position = Vector2(24, 608)
+
+[node name="Colision" type="CollisionShape2D" parent="MuelleUnoOeste"]
+shape = SubResource("forma_17")
+
+[node name="MuelleUnoEste" type="StaticBody2D" parent="."]
+position = Vector2(72, 608)
+
+[node name="Colision" type="CollisionShape2D" parent="MuelleUnoEste"]
+shape = SubResource("forma_17")
+
+[node name="MuelleUnoFin" type="StaticBody2D" parent="."]
+position = Vector2(48, 648)
+
+[node name="Colision" type="CollisionShape2D" parent="MuelleUnoFin"]
+shape = SubResource("forma_8")
+
+[node name="MuelleDosOeste" type="StaticBody2D" parent="."]
+position = Vector2(168, 600)
+
+[node name="Colision" type="CollisionShape2D" parent="MuelleDosOeste"]
+shape = SubResource("forma_18")
+
+[node name="MuelleDosEste" type="StaticBody2D" parent="."]
+position = Vector2(216, 600)
+
+[node name="Colision" type="CollisionShape2D" parent="MuelleDosEste"]
+shape = SubResource("forma_18")
+
+[node name="MuelleDosFin" type="StaticBody2D" parent="."]
+position = Vector2(192, 632)
+
+[node name="Colision" type="CollisionShape2D" parent="MuelleDosFin"]
+shape = SubResource("forma_8")
