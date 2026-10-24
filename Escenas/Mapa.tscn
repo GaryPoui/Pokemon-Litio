@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://djhltrsdc06b6"]
+[gd_scene format=3 uid="uid://djhltrsdc06b6"]
 
 [ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_3db5g"]
 [ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="1_8w5j4"]
@@ -10,28 +10,28 @@
 [ext_resource type="Script" uid="uid://cf87qjs4x03b8" path="res://Scripts/entrenador.gd" id="8_7njfp"]
 [ext_resource type="Resource" uid="uid://csfv61g8483tg" path="res://Datos/Especies/snivy.tres" id="8_7syr3"]
 [ext_resource type="Resource" uid="uid://dmllfp6rnoprj" path="res://Datos/Entrenadores/joven_leo.tres" id="9_bi4ho"]
+[ext_resource type="SpriteFrames" uid="uid://duxoikc8txrow" path="res://Recursos/Personajes/laboca_musico.tres" id="11_p15sl"]
 [ext_resource type="Script" uid="uid://bgce3emrc13ld" path="res://Scripts/tienda.gd" id="12_wb5b1"]
 [ext_resource type="Script" uid="uid://dxsbdb50ew0p5" path="res://Scripts/torre.gd" id="13_15oqb"]
-[ext_resource type="SpriteFrames" uid="uid://d18eji5uxnwen" path="res://Recursos/Personajes/boca_musico.tres" id="17_jfnwk"]
+[ext_resource type="SpriteFrames" uid="uid://0oharg3p0gih" path="res://Recursos/Personajes/laboca_hincha.tres" id="15_p15sl"]
+[ext_resource type="SpriteFrames" uid="uid://hgmu078xq1mr" path="res://Recursos/Personajes/laboca_tendera.tres" id="17_p15sl"]
+[ext_resource type="SpriteFrames" uid="uid://coktisehv5kr" path="res://Recursos/Personajes/laboca_guia.tres" id="19_p15sl"]
 [ext_resource type="Resource" uid="uid://24dm04q157pb" path="res://Datos/Entrenadores/chica_ana.tres" id="20_bx1hr"]
-[ext_resource type="SpriteFrames" uid="uid://ba7dpmv544oo3" path="res://Recursos/Personajes/boca_hincha.tres" id="21_jfnwk"]
+[ext_resource type="Texture2D" uid="uid://bpx8e8x8pdmch" path="res://Assets/Overworld/LaBoca/unificado/estadio_bombonera.png" id="20_p15sl"]
+[ext_resource type="SpriteFrames" uid="uid://c00dycbcp8j62" path="res://Recursos/Personajes/laboca_chica_ana.tres" id="22_p15sl"]
 [ext_resource type="Resource" uid="uid://3vxx1aj3ftla" path="res://Datos/Entrenadores/montanero_braulio.tres" id="22_wnkcx"]
 [ext_resource type="SpriteFrames" uid="uid://dwpjitipv1yg8" path="res://Recursos/Personajes/montanero.tres" id="23_crhfx"]
-[ext_resource type="SpriteFrames" uid="uid://djgbv6ya72v3t" path="res://Recursos/Personajes/boca_tendera.tres" id="23_jfnwk"]
 [ext_resource type="Texture2D" uid="uid://u2tkhri8x063" path="res://Assets/Overworld/centro_pokemon.png" id="24_12vqy"]
 [ext_resource type="Shape2D" path="res://Recursos/forma_centro_a.tres" id="25_8xvfq"]
-[ext_resource type="SpriteFrames" uid="uid://ducwfvbbateg6" path="res://Recursos/Personajes/boca_guia.tres" id="25_jfnwk"]
-[ext_resource type="SpriteFrames" path="res://Recursos/Personajes/boca_chica_ana.tres" id="41_chica_ana_detallada"]
+[ext_resource type="SpriteFrames" uid="uid://bvkxwxq0ja8pw" path="res://Recursos/Personajes/laboca_pintora.tres" id="25_p15sl"]
 [ext_resource type="Shape2D" path="res://Recursos/forma_centro_b.tres" id="26_0fan4"]
-[ext_resource type="Texture2D" uid="uid://cdmwias3m0vve" path="res://Assets/Overworld/LaBoca/estadio_bombonera.png" id="26_jfnwk"]
-[ext_resource type="SpriteFrames" path="res://Recursos/Personajes/boca_pintora_detallada.tres" id="40_pintora_detallada"]
 [ext_resource type="PackedScene" uid="uid://dk4sigf6ivygt" path="res://Escenas/DecoracionLaBoca.tscn" id="36_decoracion_boca"]
 [ext_resource type="PackedScene" path="res://Escenas/TerrenoLaBoca.tscn" id="38_terreno_la_boca"]
-[ext_resource type="Texture2D" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="42_fondo_boca_v03"]
+[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="42_fondo_boca_v03"]
 
 [node name="Mapa" type="Node2D" unique_id=48326584]
-texture_filter = 1
 y_sort_enabled = true
+texture_filter = 1
 script = ExtResource("1_3db5g")
 encuentros = ExtResource("2_0fan4")
 fondo_batalla = ExtResource("42_fondo_boca_v03")
@@ -41,7 +41,7 @@ zona_nombre = "LA BOCA"
 zona_subtitulo = "Caminito y la ribera"
 tipo_zona = 0
 
-[node name="Suelo" parent="." instance=ExtResource("38_terreno_la_boca")]
+[node name="Suelo" parent="." unique_id=1091050830 instance=ExtResource("38_terreno_la_boca")]
 
 [node name="AmbientacionCiudad" parent="." unique_id=632343639 instance=ExtResource("36_decoracion_boca")]
 
@@ -51,7 +51,7 @@ position = Vector2(296, 216)
 [node name="Llegadas" type="Node2D" parent="." unique_id=1815999784]
 
 [node name="Puerta" type="Marker2D" parent="Llegadas" unique_id=740374496]
-position = Vector2(296, 184)
+position = Vector2(296, 168)
 
 [node name="Este" type="Marker2D" parent="Llegadas" unique_id=939893493]
 position = Vector2(872, 280)
@@ -63,7 +63,7 @@ position = Vector2(872, 296)
 position = Vector2(296, 408)
 
 [node name="PuertaCasa" type="Node2D" parent="." unique_id=2085869319]
-position = Vector2(296, 168)
+position = Vector2(296, 152)
 script = ExtResource("4_3db5g")
 destino = "res://Escenas/Casa.tscn"
 llegada = "Entrada"
@@ -90,8 +90,7 @@ Entonces llevate este. ¡Cuidalo mucho!"
 [node name="AnimatedSprite2D" parent="Npc" index="0" unique_id=1100079311]
 texture_filter = 1
 position = Vector2(0, -7)
-scale = Vector2(0.09, 0.09)
-sprite_frames = ExtResource("17_jfnwk")
+sprite_frames = ExtResource("11_p15sl")
 animation = &"abajo"
 
 [node name="ObjetoSuelo" parent="." unique_id=1710029467 instance=ExtResource("7_h5d8a")]
@@ -113,8 +112,7 @@ mirando = Vector2(-1, 0)
 [node name="AnimatedSprite2D" parent="Entrenador" index="0" unique_id=1100079311]
 texture_filter = 1
 position = Vector2(0, -7)
-scale = Vector2(0.09, 0.09)
-sprite_frames = ExtResource("21_jfnwk")
+sprite_frames = ExtResource("15_p15sl")
 animation = &"abajo"
 
 [node name="Tendero" parent="." unique_id=87030638 instance=ExtResource("6_1p004")]
@@ -124,8 +122,7 @@ script = ExtResource("12_wb5b1")
 [node name="AnimatedSprite2D" parent="Tendero" index="0" unique_id=1100079311]
 texture_filter = 1
 position = Vector2(0, -7)
-scale = Vector2(0.09, 0.09)
-sprite_frames = ExtResource("23_jfnwk")
+sprite_frames = ExtResource("17_p15sl")
 animation = &"abajo"
 
 [node name="GuiaTorre" parent="." unique_id=880225666 instance=ExtResource("6_1p004")]
@@ -135,8 +132,7 @@ script = ExtResource("13_15oqb")
 [node name="AnimatedSprite2D" parent="GuiaTorre" index="0" unique_id=1100079311]
 texture_filter = 1
 position = Vector2(0, -7)
-scale = Vector2(0.09, 0.09)
-sprite_frames = ExtResource("25_jfnwk")
+sprite_frames = ExtResource("19_p15sl")
 animation = &"abajo"
 
 [node name="SalidaEste" type="Node2D" parent="." unique_id=2129353368]
@@ -159,16 +155,15 @@ sonido = ""
 position = Vector2(736, 168)
 
 [node name="Sprite" type="Sprite2D" parent="TorreDesafio" unique_id=796242309]
-position = Vector2(-128, -128)
-texture = ExtResource("26_jfnwk")
+position = Vector2(-128, -116)
+texture = ExtResource("20_p15sl")
 centered = false
-scale = Vector2(1, 1)
 
 [node name="Colision" type="CollisionPolygon2D" parent="TorreDesafio" unique_id=1396974153]
-polygon = PackedVector2Array(-120, -104, 120, -104, 120, 0, -120, 0)
+polygon = PackedVector2Array(-128, -88, 128, -88, 128, 8, -128, 8)
 
 [node name="ChicaAna" parent="." unique_id=1154531755 instance=ExtResource("6_1p004")]
-position = Vector2(648, 472)
+position = Vector2(648, 488)
 script = ExtResource("8_7njfp")
 datos = ExtResource("20_bx1hr")
 clave = "vencio_chica_ana"
@@ -179,8 +174,7 @@ texto = "¡Hola! ¿Sabías que los Pokémon pueden llevar Trinkets? ¡Mi Minccin
 [node name="AnimatedSprite2D" parent="ChicaAna" index="0" unique_id=1100079311]
 texture_filter = 1
 position = Vector2(0, -7)
-scale = Vector2(0.09, 0.09)
-sprite_frames = ExtResource("41_chica_ana_detallada")
+sprite_frames = ExtResource("22_p15sl")
 animation = &"abajo"
 
 [node name="MontaneroBraulio" parent="." unique_id=505992660 instance=ExtResource("6_1p004")]
@@ -198,35 +192,34 @@ position = Vector2(0, -7)
 sprite_frames = ExtResource("23_crhfx")
 animation = &"abajo"
 
-[node name="PintoraLaBoca" parent="." instance=ExtResource("6_1p004")]
+[node name="PintoraLaBoca" parent="." unique_id=1788349029 instance=ExtResource("6_1p004")]
 position = Vector2(216, 456)
 texto = "¡Estoy pintando los colores del conventillo! ¿Viste cómo cambia el barrio con un poco de pintura?"
 
 [node name="AnimatedSprite2D" parent="PintoraLaBoca" index="0" unique_id=1100079311]
 texture_filter = 1
 position = Vector2(0, -7)
-scale = Vector2(0.09, 0.09)
-sprite_frames = ExtResource("40_pintora_detallada")
+sprite_frames = ExtResource("25_p15sl")
 animation = &"abajo"
 
 [node name="CentroPokemon" type="StaticBody2D" parent="." unique_id=1057477346]
 position = Vector2(296, 392)
 
 [node name="Sprite" type="Sprite2D" parent="CentroPokemon" unique_id=1546344962]
-position = Vector2(-41, -97)
+position = Vector2(-41, -86)
 texture = ExtResource("24_12vqy")
 centered = false
 
 [node name="Cuerpo" type="CollisionShape2D" parent="CentroPokemon" unique_id=403296435]
-position = Vector2(0, -48)
+position = Vector2(0, -32)
 shape = ExtResource("25_8xvfq")
 
 [node name="Izquierda" type="CollisionShape2D" parent="CentroPokemon" unique_id=1051843354]
-position = Vector2(-24, -8)
+position = Vector2(-24, 0)
 shape = ExtResource("26_0fan4")
 
 [node name="Derecha" type="CollisionShape2D" parent="CentroPokemon" unique_id=596196802]
-position = Vector2(24, -8)
+position = Vector2(24, 0)
 shape = ExtResource("26_0fan4")
 
 [node name="PuertaCentro" type="Node2D" parent="." unique_id=134970984]

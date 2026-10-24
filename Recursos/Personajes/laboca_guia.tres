@@ -1,0 +1,54 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://coktisehv5kr"]
+
+[ext_resource type="Texture2D" uid="uid://chemchek3k7is" path="res://Assets/Personajes/npc/LaBoca/guia.png" id="1_hoja"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abajo"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arriba"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_derecha"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_izquierda"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 64, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abajo")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arriba")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_derecha")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_izquierda")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
+}]
