@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://2ouo7mdnknds"]
 
-[ext_resource type="Texture2D" uid="uid://bqccwey1oluli" path="res://Assets/Produccion/Barrios/palermo/v02/lampara_parque.png" id="1_ttwmb"]
+[ext_resource type="Texture2D" uid="uid://nvha64t4nwel" path="res://Assets/Overworld/Rutas/lampara_parque.png" id="1_ttwmb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ttwmb"]
 size = Vector2(16, 16)
@@ -8,7 +8,7 @@ size = Vector2(16, 16)
 [node name="LamparaParque" type="StaticBody2D" unique_id=1178067191]
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1872246415]
-position = Vector2(-12, -48)
+position = Vector2(-8, -40)
 texture = ExtResource("1_ttwmb")
 centered = false
 

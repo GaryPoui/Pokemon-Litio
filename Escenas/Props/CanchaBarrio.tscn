@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b4tymvd6c3tta"]
+
+[ext_resource type="Texture2D" uid="uid://bvl8ab6qq8ckt" path="res://Assets/Overworld/Villa31/cancha_barrio.png" id="1_fc831"]
+
+[node name="CanchaBarrio" type="Node2D" unique_id=21943438]
+z_index = -1
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1496453041]
+texture = ExtResource("1_fc831")
+centered = false

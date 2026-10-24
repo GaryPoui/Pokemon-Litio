@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c47qvh41k51ov"]
 
-[ext_resource type="Texture2D" uid="uid://b8i26epjj7w5f" path="res://Assets/Produccion/Barrios/mugica/v01/puesto_gastronomico.png" id="1_wd82o"]
+[ext_resource type="Texture2D" uid="uid://nq8nripjirwb" path="res://Assets/Overworld/Villa31/puesto_comida.png" id="1_wd82o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wd82o"]
 size = Vector2(64, 32)
@@ -8,7 +8,7 @@ size = Vector2(64, 32)
 [node name="PuestoComida" type="StaticBody2D" unique_id=1631218801]
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1261749472]
-position = Vector2(-43, -64)
+position = Vector2(-32, -52)
 texture = ExtResource("1_wd82o")
 centered = false
 

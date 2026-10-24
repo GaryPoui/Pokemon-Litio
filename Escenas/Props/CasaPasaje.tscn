@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dnl3l346lr2kb"]
 
-[ext_resource type="Texture2D" uid="uid://e38easiay6dg" path="res://Assets/Produccion/Barrios/mugica/v02/casa_pasaje.png" id="1_tf0i3"]
+[ext_resource type="Texture2D" uid="uid://qiv3qtwwv3y5" path="res://Assets/Overworld/Villa31/casa_pasaje.png" id="1_tf0i3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tf0i3"]
 size = Vector2(80, 48)
@@ -8,7 +8,7 @@ size = Vector2(80, 48)
 [node name="CasaPasaje" type="StaticBody2D" unique_id=975713702]
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1386983740]
-position = Vector2(-48, -86)
+position = Vector2(-40, -96)
 texture = ExtResource("1_tf0i3")
 centered = false
 
