@@ -52,6 +52,7 @@ position = Vector2(120, 186)
 script = ExtResource("5_dq8n6")
 destino = "res://Escenas/Mapa.tscn"
 llegada = "PuertaCentro"
+volver = true
 
 [node name="Joy" parent="." unique_id=1999008602 instance=ExtResource("6_hrbca")]
 position = Vector2(120, 66)

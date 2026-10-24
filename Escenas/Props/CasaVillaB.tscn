@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c7w2d0nb1p45e"]
+
+[ext_resource type="Texture2D" uid="uid://bo4hjg0ed2nq4" path="res://Assets/Overworld/Villa31/casa_villa_b.png" id="1_75qqn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_75qqn"]
+size = Vector2(64, 48)
+
+[node name="CasaVillaB" type="StaticBody2D" unique_id=1745258101]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2091017707]
+position = Vector2(-32, -72)
+texture = ExtResource("1_75qqn")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=554589294]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_75qqn")

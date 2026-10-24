@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dtfe7cjdj84ln"]
+
+[ext_resource type="Texture2D" uid="uid://u2tkhri8x063" path="res://Assets/Overworld/centro_pokemon.png" id="1_pv67d"]
+[ext_resource type="Shape2D" path="res://Recursos/forma_centro_a.tres" id="2_jmopn"]
+[ext_resource type="Shape2D" path="res://Recursos/forma_centro_b.tres" id="3_6xjpw"]
+
+[node name="CentroPokemonExt" type="StaticBody2D" unique_id=1521866035]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1445484399]
+position = Vector2(-41, -86)
+texture = ExtResource("1_pv67d")
+centered = false
+
+[node name="Cuerpo" type="CollisionShape2D" parent="." unique_id=1612540231]
+position = Vector2(0, -32)
+shape = ExtResource("2_jmopn")
+
+[node name="Izquierda" type="CollisionShape2D" parent="." unique_id=1985839546]
+position = Vector2(-24, 0)
+shape = ExtResource("3_6xjpw")
+
+[node name="Derecha" type="CollisionShape2D" parent="." unique_id=3363594]
+position = Vector2(24, 0)
+shape = ExtResource("3_6xjpw")

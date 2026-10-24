@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://brtteh67nqw0"]
+
+[ext_resource type="Texture2D" uid="uid://cetpi1v6mcukv" path="res://Assets/Produccion/Barrios/palermo/v02/casa_guardaparque.png" id="1_1bxe4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bxe4"]
+size = Vector2(80, 48)
+
+[node name="CasaGuardaparque" type="StaticBody2D" unique_id=361283300]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1582207428]
+position = Vector2(-48, -85)
+texture = ExtResource("1_1bxe4")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1497858391]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_1bxe4")

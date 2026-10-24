@@ -1,6 +1,6 @@
-[gd_resource type="SpriteFrames" format=3]
+[gd_resource type="SpriteFrames" format=3 uid="uid://c048bartrykgf"]
 
-[ext_resource type="Texture2D" path="res://Assets/Personajes/npc/LaBoca/pintora_detallada.png" id="1_atlas"]
+[ext_resource type="Texture2D" uid="uid://b5pvr1urdv03j" path="res://Assets/Personajes/npc/LaBoca/pintora_detallada.png" id="1_atlas"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_abajo"]
 atlas = ExtResource("1_atlas")
@@ -10,13 +10,13 @@ region = Rect2(0, 0, 224, 340)
 atlas = ExtResource("1_atlas")
 region = Rect2(0, 340, 224, 340)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_izquierda"]
-atlas = ExtResource("1_atlas")
-region = Rect2(0, 680, 224, 340)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_derecha"]
 atlas = ExtResource("1_atlas")
 region = Rect2(0, 1020, 224, 340)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_izquierda"]
+atlas = ExtResource("1_atlas")
+region = Rect2(0, 680, 224, 340)
 
 [resource]
 animations = [{

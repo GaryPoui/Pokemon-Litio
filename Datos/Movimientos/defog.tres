@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_amwxu"]
+
+[resource]
+script = ExtResource("1_amwxu")
+id = "defog"
+nombre = "Despejar"
+tipo = "volador"
+categoria = "estado"
+precision = 0
+pp = 15
+meta = "unique"
+descripcion = "Potente viento que barre el reflejo o la pantalla de luz creada por el objetivo. También puede reducir su Evasión."
+cambios_stats = {
+"evasion": -1
+}

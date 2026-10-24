@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dk4c1vb8eqygw"]
+
+[ext_resource type="Texture2D" uid="uid://bh0kgwdxfr5jj" path="res://Assets/Overworld/nuevo50_37_carrete_cable.png" id="1_02m0m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_02m0m"]
+size = Vector2(32, 16)
+
+[node name="CarreteCable" type="StaticBody2D" unique_id=1713997623]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1350879921]
+position = Vector2(-15, -23)
+texture = ExtResource("1_02m0m")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1388058435]
+shape = SubResource("RectangleShape2D_02m0m")

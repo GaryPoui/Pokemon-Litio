@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_ujwhy"]
+
+[resource]
+script = ExtResource("1_ujwhy")
+id = "night_daze"
+nombre = "Pulso Noche"
+tipo = "siniestro"
+categoria = "especial"
+poder = 85
+precision = 95
+meta = "damage-lower"
+descripcion = "Ataca al objetivo con una onda siniestra. Puede bajar su Precisión."
+cambios_stats = {
+"precision": -1
+}
+prob_stat = 40

@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bast6r6qwer6i"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_0erbm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_40uhc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/low_kick.tres" id="3_w868v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="4_cbkx2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="5_1tg7v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/headbutt.tres" id="6_w836x"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swagger.tres" id="7_h412a"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/brick_break.tres" id="8_8aj0i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/payback.tres" id="9_5imy4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/chip_away.tres" id="10_c5426"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/high_jump_kick.tres" id="11_mk3ms"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="12_2j8cn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="13_votvh"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/facade.tres" id="14_a5eak"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rock_climb.tres" id="15_73pi3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/focus_punch.tres" id="16_lnnk1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/head_smash.tres" id="17_i6fxf"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_dgb6r"]
+[ext_resource type="Texture2D" uid="uid://bmxyv7pqsxgec" path="res://Assets/Pokemones/batalla/scraggy_espalda.png" id="19_is16t"]
+[ext_resource type="Texture2D" uid="uid://own2qrfjy47w" path="res://Assets/Pokemones/batalla/scraggy_frente.png" id="20_6eigc"]
+
+[sub_resource type="Resource" id="Resource_rvd2c"]
+script = ExtResource("1_0erbm")
+movimiento = ExtResource("2_40uhc")
+
+[sub_resource type="Resource" id="Resource_hopai"]
+script = ExtResource("1_0erbm")
+movimiento = ExtResource("3_w868v")
+
+[sub_resource type="Resource" id="Resource_gjebd"]
+script = ExtResource("1_0erbm")
+nivel = 5
+movimiento = ExtResource("4_cbkx2")
+
+[sub_resource type="Resource" id="Resource_23lej"]
+script = ExtResource("1_0erbm")
+nivel = 9
+movimiento = ExtResource("5_1tg7v")
+
+[sub_resource type="Resource" id="Resource_l0gij"]
+script = ExtResource("1_0erbm")
+nivel = 12
+movimiento = ExtResource("6_w836x")
+
+[sub_resource type="Resource" id="Resource_yie5n"]
+script = ExtResource("1_0erbm")
+nivel = 16
+movimiento = ExtResource("7_h412a")
+
+[sub_resource type="Resource" id="Resource_8jt52"]
+script = ExtResource("1_0erbm")
+nivel = 20
+movimiento = ExtResource("8_8aj0i")
+
+[sub_resource type="Resource" id="Resource_83mfw"]
+script = ExtResource("1_0erbm")
+nivel = 23
+movimiento = ExtResource("9_5imy4")
+
+[sub_resource type="Resource" id="Resource_2pn5f"]
+script = ExtResource("1_0erbm")
+nivel = 27
+movimiento = ExtResource("10_c5426")
+
+[sub_resource type="Resource" id="Resource_0l3qv"]
+script = ExtResource("1_0erbm")
+nivel = 31
+movimiento = ExtResource("11_mk3ms")
+
+[sub_resource type="Resource" id="Resource_eeukj"]
+script = ExtResource("1_0erbm")
+nivel = 34
+movimiento = ExtResource("12_2j8cn")
+
+[sub_resource type="Resource" id="Resource_iyapd"]
+script = ExtResource("1_0erbm")
+nivel = 38
+movimiento = ExtResource("13_votvh")
+
+[sub_resource type="Resource" id="Resource_xxplh"]
+script = ExtResource("1_0erbm")
+nivel = 42
+movimiento = ExtResource("14_a5eak")
+
+[sub_resource type="Resource" id="Resource_u82q8"]
+script = ExtResource("1_0erbm")
+nivel = 45
+movimiento = ExtResource("15_73pi3")
+
+[sub_resource type="Resource" id="Resource_x5r4n"]
+script = ExtResource("1_0erbm")
+nivel = 49
+movimiento = ExtResource("16_lnnk1")
+
+[sub_resource type="Resource" id="Resource_rn3fw"]
+script = ExtResource("1_0erbm")
+nivel = 53
+movimiento = ExtResource("17_i6fxf")
+
+[resource]
+script = ExtResource("18_dgb6r")
+id = "scraggy"
+numero = 559
+nombre = "Scraggy"
+tipos = ["siniestro", "lucha"]
+ataque = 75
+defensa = 70
+at_esp = 35
+def_esp = 70
+velocidad = 48
+exp_base = 70
+ratio_captura = 180
+evs_otorgados = {
+"ataque": 1
+}
+evoluciona_a = "scrafty"
+nivel_evolucion = 39
+aprende = Array[ExtResource("1_0erbm")]([SubResource("Resource_rvd2c"), SubResource("Resource_hopai"), SubResource("Resource_gjebd"), SubResource("Resource_23lej"), SubResource("Resource_l0gij"), SubResource("Resource_yie5n"), SubResource("Resource_8jt52"), SubResource("Resource_83mfw"), SubResource("Resource_2pn5f"), SubResource("Resource_0l3qv"), SubResource("Resource_eeukj"), SubResource("Resource_iyapd"), SubResource("Resource_xxplh"), SubResource("Resource_u82q8"), SubResource("Resource_x5r4n"), SubResource("Resource_rn3fw")])
+sprite_frente = ExtResource("20_6eigc")
+sprite_espalda = ExtResource("19_is16t")
+cuadros_frente = 71
+cuadros_espalda = 71
+fps_sprite = 7.24

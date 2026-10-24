@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c0fybe4fls1ho"]
+
+[ext_resource type="Texture2D" uid="uid://c3hghpdcen2n5" path="res://Assets/Overworld/Rutas/vagon_carga.png" id="1_bip3x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bip3x"]
+size = Vector2(64, 16)
+
+[node name="VagonCarga" type="StaticBody2D" unique_id=787849175]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=59428889]
+position = Vector2(-32, -32)
+texture = ExtResource("1_bip3x")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1854400897]
+shape = SubResource("RectangleShape2D_bip3x")

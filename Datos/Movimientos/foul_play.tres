@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_wix6r"]
+
+[resource]
+script = ExtResource("1_wix6r")
+id = "foul_play"
+nombre = "Juego Sucio"
+tipo = "siniestro"
+poder = 95
+pp = 15
+descripcion = "El usuario emplea la fuerza del objetivo para atacarlo. Cuanto mayor es el Ataque del objetivo, más daño provoca."

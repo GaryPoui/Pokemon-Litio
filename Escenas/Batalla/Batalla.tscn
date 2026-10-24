@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bictfh8shju20" path="res://Assets/Botones/boton_madera_1x.png" id="8_xgimu"]
 [ext_resource type="Texture2D" uid="uid://ljulc4yeagti" path="res://Assets/Batalla/ui_nueva/cursor_mano.png" id="9_lsdxj"]
 [ext_resource type="Script" uid="uid://dwsegpmcyq5q1" path="res://Scripts/ui/icono_tipo.gd" id="10_85n7h"]
+[ext_resource type="Texture2D" uid="uid://bl7dwgmevru8g" path="res://Assets/Batalla/entrenador_espalda.png" id="11_xgimu"]
 
 [node name="Batalla" type="CanvasLayer" unique_id=2053821235]
 script = ExtResource("1_kluxw")
@@ -37,6 +38,13 @@ script = ExtResource("2_c7nxw")
 [node name="BaseJugador" type="Sprite2D" parent="." unique_id=1157198786]
 position = Vector2(64, 170)
 texture = ExtResource("3_ce3rs")
+
+[node name="Entrenador" type="Sprite2D" parent="." unique_id=162033924]
+visible = false
+texture_filter = 1
+position = Vector2(68, 152)
+texture = ExtResource("11_xgimu")
+hframes = 5
 
 [node name="PokemonJugador" type="Sprite2D" parent="." unique_id=1516392007]
 position = Vector2(64, 174)

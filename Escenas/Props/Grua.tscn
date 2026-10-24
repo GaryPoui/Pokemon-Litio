@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://chcujjv3xl0l2"]
+
+[ext_resource type="Texture2D" uid="uid://cqxl7kb5vowsa" path="res://Assets/Overworld/Rutas/grua.png" id="1_mmlr4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mmlr4"]
+size = Vector2(32, 16)
+
+[node name="Grua" type="StaticBody2D" unique_id=1518177890]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1728106381]
+position = Vector2(-24, -88)
+texture = ExtResource("1_mmlr4")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1811556684]
+shape = SubResource("RectangleShape2D_mmlr4")

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_iav04"]
+
+[resource]
+script = ExtResource("1_iav04")
+id = "cotton_spore"
+nombre = "Esporagodón"
+tipo = "planta"
+categoria = "estado"
+pp = 40
+objetivo = "all-opponents"
+meta = "net-good-stats"
+descripcion = "Adhiere esporas a los rivales para reducir mucho su Velocidad."
+cambios_stats = {
+"velocidad": -2
+}

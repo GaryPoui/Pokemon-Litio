@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://f64kii6odla6"]
+
+[ext_resource type="Texture2D" uid="uid://buafbw2l2i247" path="res://Assets/Overworld/Rutas/ceibo.png" id="1_pggcx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pggcx"]
+size = Vector2(16, 16)
+
+[node name="Ceibo" type="StaticBody2D" unique_id=1868842056]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1246855089]
+position = Vector2(-24, -48)
+texture = ExtResource("1_pggcx")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1387212634]
+shape = SubResource("RectangleShape2D_pggcx")

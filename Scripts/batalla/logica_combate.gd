@@ -653,7 +653,7 @@ func _cambiar(indice: int) -> void:
 
 func _usar_objeto(accion: Dictionary) -> bool:
 	var o:= BaseDatos.objeto(str(accion.get("id", "")))
-	if o== null or inventario== null or inventario.cantidad_de(o.id)<= 0:
+	if o== null or inventario== null or inventario.cantidad_de(o.id)<= 0 or o.solo_safari:
 		return false
 	if o.ratio_captura> 0.0:
 		if not salvaje:
@@ -663,16 +663,7 @@ func _usar_objeto(accion: Dictionary) -> bool:
 		var res:= capturar(o.ratio_captura)
 		_ev({"tipo": "captura", "objeto": o.id, "sacudidas": res["sacudidas"], "exito": res["exito"], "critica": res["critica"]})
 		if res["exito"]:
-			r.pokemon.ball= o.id
-			_texto("¡Ya está! ¡%s atrapado!" % r.pokemon.nombre())
-			if equipo!= null and equipo.agregar(r.pokemon):
-				_texto("¡%s se unió a tu equipo!" % r.pokemon.nombre())
-			elif equipo!= null and equipo.has_method("a_caja"):
-				equipo.a_caja(r.pokemon)
-				_texto("Tu equipo está lleno, así que %s fue enviado a la Caja del PC." % r.pokemon.nombre())
-			else:
-				_texto("Tu equipo está lleno, así que %s volvió a la naturaleza." % r.pokemon.nombre())
-			_terminar("captura")
+			_capturado(o.id)
 		else:
 			_texto(TEXTO_SACUDIDAS[res["sacudidas"]])
 		return true
@@ -690,7 +681,19 @@ func _usar_objeto(accion: Dictionary) -> bool:
 		return true
 	return false
 
-func capturar(ball: float) -> Dictionary:
+func _capturado(ball_id: String) -> void:
+	r.pokemon.ball= ball_id
+	_texto("¡Ya está! ¡%s atrapado!" % r.pokemon.nombre())
+	if equipo!= null and equipo.agregar(r.pokemon):
+		_texto("¡%s se unió a tu equipo!" % r.pokemon.nombre())
+	elif equipo!= null and equipo.has_method("a_caja"):
+		equipo.a_caja(r.pokemon)
+		_texto("Tu equipo está lleno, así que %s fue enviado a la Caja del PC." % r.pokemon.nombre())
+	else:
+		_texto("Tu equipo está lleno, así que %s volvió a la naturaleza." % r.pokemon.nombre())
+	_terminar("captura")
+
+func capturar(ball: float, humor :=1.0) -> Dictionary:
 	var p:= r.pokemon
 	var m:= p.ps_max()
 	var estado:= 1.0
@@ -698,7 +701,7 @@ func capturar(ball: float) -> Dictionary:
 		estado= 2.5
 	elif p.estado!= "":
 		estado =1.5
-	var b:= ball* (1.0+ EfectosTrinket.total("captura", null, equipo_j))
+	var b:= ball* humor* (1.0+ EfectosTrinket.total("captura", null, equipo_j))
 	var x:= _abajo(_cerca(_abajo(_cerca(_cerca(3.0* m- 2.0* p.ps_actuales)* p.especie.ratio_captura* b)/ (3.0* m))* estado))
 	if x>= 255.0:
 		return {"sacudidas": 3, "exito": true, "critica": false}

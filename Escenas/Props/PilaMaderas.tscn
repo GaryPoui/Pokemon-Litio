@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cbwhtxhoxwau4"]
+
+[ext_resource type="Texture2D" uid="uid://bn1fxq1unp6ou" path="res://Assets/Overworld/nuevo50_36_pila_maderas.png" id="1_k1p4i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k1p4i"]
+size = Vector2(32, 16)
+
+[node name="PilaMaderas" type="StaticBody2D" unique_id=1320673049]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=622676787]
+position = Vector2(-15, -7)
+texture = ExtResource("1_k1p4i")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1636575196]
+shape = SubResource("RectangleShape2D_k1p4i")

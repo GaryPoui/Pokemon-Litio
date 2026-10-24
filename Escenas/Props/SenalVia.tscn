@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://y6y7jg7ujafs"]
+
+[ext_resource type="Texture2D" uid="uid://covd24nn15vp7" path="res://Assets/Produccion/Barrios/constitucion/v03/senal_anden.png" id="1_14xwv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_14xwv"]
+size = Vector2(16, 16)
+
+[node name="SenalVia" type="StaticBody2D" unique_id=1480378537]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2079446562]
+position = Vector2(-12, -55)
+texture = ExtResource("1_14xwv")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1859890612]
+shape = SubResource("RectangleShape2D_14xwv")

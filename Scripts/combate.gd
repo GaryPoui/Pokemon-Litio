@@ -20,6 +20,15 @@ func iniciar_salvaje(especie: EspeciePokemon, nivel: int) -> String:
 	var rivales: Array[PokemonInstancia]= [PokemonInstancia.crear(especie, nivel)]
 	return await _iniciar(rivales, true, "")
 
+func iniciar_safari(especie: EspeciePokemon, nivel: int, ruta: String) -> String:
+	var rivales: Array[PokemonInstancia]= [PokemonInstancia.crear(especie, nivel)]
+	var res:= await _iniciar(rivales, true, "", {"safari": ruta})
+	if res== "captura":
+		Estado.registrar_safari(ruta, especie.id)
+	elif res =="sin_balls":
+		await Dialogo.mostrar("Te quedaste sin Safari Balls. El guardaparque de la entrada te da más.")
+	return res
+
 func iniciar_entrenador(nombre: String, equipo: Array[PokemonInstancia], pago_base: int= 0) -> String:
 	return await _iniciar(equipo, false, nombre, {"pago_base": pago_base})
 
@@ -31,9 +40,10 @@ func iniciar_torre(pokemon: PokemonInstancia, rival: PokemonInstancia) -> Dictio
 
 func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String, config: Dictionary= {}) -> String:
 	var propio: Array= config.get("equipo", Equipo.miembros)
-	if activo or rivales.is_empty() or not propio.any(func(p): return not p.esta_debilitado()):
-		return "cancelado"
 	var torre:= bool(config.get("torre", false))
+	var safari :=config.has("safari")
+	if activo or rivales.is_empty() or not (safari or propio.any(func(p): return not p.esta_debilitado())):
+		return "cancelado"
 	activo= true
 	var pista:= "batalla_salvaje" if salvaje else "batalla_entrenador"
 	Sonido.musica(pista, 0.0)
@@ -49,7 +59,7 @@ func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String, c
 	var res: String= await b.empezar(rivales, salvaje, nombre, config)
 	var logica: LogicaCombate= b.logica
 	var subieron: Array[PokemonInstancia]= b.subieron.duplicate()
-	ultimo_resultado= {"resultado": res, "turnos": logica.turnos, "ps_fraccion": float(propio[0].ps_actuales)/ maxf(1.0, propio[0].ps_max())}
+	ultimo_resultado= {"resultado": res, "turnos": logica.turnos, "ps_fraccion": float(propio[0].ps_actuales)/ maxf(1.0, propio[0].ps_max()) if not propio.is_empty() else 0.0}
 	b.queue_free()
 	ultima= null
 	if torre:
@@ -68,7 +78,7 @@ func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String, c
 		Estado.sumar_dinero(logica.dinero_ganado)
 		if escena!= null and "musica" in escena:
 			Sonido.musica(str(escena.get("musica")), 0.8)
-		if res in ["victoria", "captura"]:
+		if res in ["victoria", "captura"] and not safari:
 			await _curar_con_trinkets()
 		if res== "victoria" and salvaje:
 			await _hallazgo()

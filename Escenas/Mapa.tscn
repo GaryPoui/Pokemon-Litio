@@ -138,7 +138,7 @@ animation = &"abajo"
 [node name="SalidaEste" type="Node2D" parent="." unique_id=2129353368]
 position = Vector2(888, 280)
 script = ExtResource("4_3db5g")
-destino = "res://Escenas/ZonaEntrenamiento.tscn"
+destino = "res://Escenas/Rutas/Ruta1Reserva.tscn"
 llegada = "Oeste"
 direccion = Vector2(1, 0)
 sonido = ""
@@ -146,7 +146,7 @@ sonido = ""
 [node name="SalidaEste2" type="Node2D" parent="." unique_id=1153138515]
 position = Vector2(888, 296)
 script = ExtResource("4_3db5g")
-destino = "res://Escenas/ZonaEntrenamiento.tscn"
+destino = "res://Escenas/Rutas/Ruta1Reserva.tscn"
 llegada = "Oeste2"
 direccion = Vector2(1, 0)
 sonido = ""
@@ -228,6 +228,7 @@ script = ExtResource("4_3db5g")
 destino = "res://Escenas/CentroPokemon.tscn"
 llegada = "Entrada"
 direccion = Vector2(0, -1)
+vuelta = "PuertaCentro"
 
 [editable path="Npc"]
 [editable path="Entrenador"]

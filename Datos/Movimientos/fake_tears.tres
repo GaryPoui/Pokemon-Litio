@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_wklel"]
+
+[resource]
+script = ExtResource("1_wklel")
+id = "fake_tears"
+nombre = "Llanto Falso"
+tipo = "siniestro"
+categoria = "estado"
+pp = 20
+meta = "net-good-stats"
+descripcion = "Lágrimas de cocodrilo que bajan mucho la Defensa Especial del objetivo."
+cambios_stats = {
+"def_esp": -2
+}

@@ -12,7 +12,19 @@ extends Node2D
 @export_enum("Ciudad", "Pueblo", "Ruta", "Interior", "Zona especial") var tipo_zona: int= 2
 @export var anunciar_al_entrar: bool= true
 
+@export_group("Reserva")
+@export var safari:= false
+@export var encuentros_raros :TablaEncuentros
+@export_range(0.0, 1.0, 0.005) var prob_hierba_rara: float= 0.04
+
+const HIERBA_RARA:= preload("res://Scripts/hierba_rara.gd")
+const DIST_RARA :=Vector2i(2, 5)
+const PASOS_RARA:= 40
+
 var rng:= RandomNumberGenerator.new()
+var hierba_rara: Node2D
+var celda_rara :=Vector2i.ZERO
+var pasos_rara:= 0
 
 @onready var suelo: TileMapLayer= $Suelo
 @onready var jugador =$Jugador
@@ -23,6 +35,7 @@ func _ready() -> void:
 	if musica!= "":
 		Sonido.musica(musica)
 	_ajustar_camara()
+	var de_partida:= GestorEscenas.posicion_llegada!= null
 	if GestorEscenas.posicion_llegada!= null:
 		jugador.colocar(GestorEscenas.posicion_llegada, GestorEscenas.direccion_llegada)
 		GestorEscenas.posicion_llegada =null
@@ -33,6 +46,11 @@ func _ready() -> void:
 		GestorEscenas.llegada= ""
 	jugador.paso_terminado.connect(_al_terminar_paso)
 	GestorEscenas.registrar_zona(zona_id, zona_nombre, zona_subtitulo, tipo_zona, anunciar_al_entrar)
+	if safari and not de_partida:
+		for g in get_tree().get_nodes_in_group("guardaparque"):
+			if g.cerca_de(jugador):
+				g.al_llegar.call_deferred(jugador)
+				break
 
 func _ajustar_camara() -> void:
 	var zona: Rect2i= suelo.get_used_rect()
@@ -60,7 +78,13 @@ func _al_terminar_paso(celda: Vector2i) -> void:
 		if w.celda()== celda and w.destino!= "":
 			if w.sonido!= "":
 				Sonido.efecto(w.sonido)
-			GestorEscenas.cambiar_mapa(w.destino, w.llegada, w.direccion)
+			GestorEscenas.usar_warp(w)
+			return
+	if hierba_rara!= null and celda== celda_rara:
+		_quitar_rara()
+		var raro:= encuentros_raros.elegir(rng) if encuentros_raros!= null else null
+		if raro!= null:
+			_encuentro(raro)
 			return
 
 	if Estado.pasos_repelente> 0:
@@ -69,14 +93,56 @@ func _al_terminar_paso(celda: Vector2i) -> void:
 			Dialogo.mostrar("El efecto del Repelente se ha terminado.")
 			return
 	var tasa:= encuentros.tasa* (1.0+ EfectosTrinket.total("encuentros", null, Equipo.miembros)) if encuentros!= null else 0.0
-	if encuentros!= null and es_hierba(celda) and Equipo.primero_util()!= null and rng.randf()< tasa:
+	if encuentros!= null and es_hierba(celda) and (safari or Equipo.primero_util()!= null) and rng.randf()< tasa:
 		var e:= encuentros.elegir(rng, EfectosTrinket.total("rareza", null, Equipo.miembros))
-		if e== null:
+		if e!= null:
+			_encuentro(e)
 			return
-		var nivel:= rng.randi_range(e.nivel_min, e.nivel_max)
-		if Estado.pasos_repelente> 0 and nivel< Equipo.primero_util().nivel:
-			return
+	_avanzar_rara(celda)
+
+func _encuentro(e: EncuentroEntrada) -> void:
+	var nivel:= rng.randi_range(e.nivel_min, e.nivel_max)
+	var guia:= Equipo.primero_util()
+	if Estado.pasos_repelente> 0 and guia!= null and nivel< guia.nivel:
+		return
+	if safari:
+		Combate.iniciar_safari(e.especie, nivel, zona_id)
+	else:
 		Combate.iniciar_salvaje(e.especie, nivel)
+
+func _avanzar_rara(celda: Vector2i) -> void:
+	if not safari or encuentros_raros== null:
+		return
+	if hierba_rara!= null:
+		pasos_rara+= 1
+		var d:= (celda_rara- celda).abs()
+		if pasos_rara> PASOS_RARA or maxi(d.x, d.y)> DIST_RARA.y* 2:
+			_quitar_rara()
+		return
+	if rng.randf()>= prob_hierba_rara:
+		return
+	var opciones: Array[Vector2i]= []
+	for dy in range(-DIST_RARA.y, DIST_RARA.y+ 1):
+		for dx in range(-DIST_RARA.y, DIST_RARA.y+ 1):
+			var c:= celda+ Vector2i(dx, dy)
+			if absi(dx)+ absi(dy)>= DIST_RARA.x and es_hierba(c):
+				opciones.append(c)
+	if opciones.is_empty():
+		return
+	poner_rara(opciones[rng.randi_range(0, opciones.size()- 1)])
+
+func poner_rara(c: Vector2i) -> void:
+	_quitar_rara()
+	celda_rara= c
+	pasos_rara =0
+	hierba_rara= HIERBA_RARA.new()
+	hierba_rara.position= Vector2(c* tam_celda)
+	add_child(hierba_rara)
+
+func _quitar_rara() -> void:
+	if hierba_rara!= null:
+		hierba_rara.queue_free()
+	hierba_rara= null
 
 func es_hierba(celda: Vector2i) -> bool:
 	var capa:= get_node_or_null("Decoracion") as TileMapLayer

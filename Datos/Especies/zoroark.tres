@@ -1,0 +1,143 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_l50cs"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hone_claws.tres" id="2_lfjjh"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_6t5u6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="4_qd0ee"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="5_atww4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/u_turn.tres" id="6_3oxf2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_swipes.tres" id="7_qipxo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="8_8uqlf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="9_dupgr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/taunt.tres" id="10_vi4rk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/foul_play.tres" id="11_byob4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/night_slash.tres" id="12_fr8v0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/torment.tres" id="13_7l86r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="14_7poly"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/embargo.tres" id="15_hp4iy"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/punishment.tres" id="16_vqyyi"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="17_sd6fb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/imprison.tres" id="18_dmsu4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/night_daze.tres" id="19_fsr6k"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="20_jnejh"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/zoroark_espalda.png" id="21_fab06"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/zoroark_frente.png" id="22_273um"]
+
+[sub_resource type="Resource" id="Resource_4dxaf"]
+script = ExtResource("1_l50cs")
+movimiento = ExtResource("2_lfjjh")
+
+[sub_resource type="Resource" id="Resource_mc2q0"]
+script = ExtResource("1_l50cs")
+movimiento = ExtResource("3_6t5u6")
+
+[sub_resource type="Resource" id="Resource_y8j5a"]
+script = ExtResource("1_l50cs")
+movimiento = ExtResource("4_qd0ee")
+
+[sub_resource type="Resource" id="Resource_h7ibf"]
+script = ExtResource("1_l50cs")
+movimiento = ExtResource("5_atww4")
+
+[sub_resource type="Resource" id="Resource_3kfxp"]
+script = ExtResource("1_l50cs")
+movimiento = ExtResource("6_3oxf2")
+
+[sub_resource type="Resource" id="Resource_x1o2i"]
+script = ExtResource("1_l50cs")
+nivel = 5
+movimiento = ExtResource("4_qd0ee")
+
+[sub_resource type="Resource" id="Resource_k5elm"]
+script = ExtResource("1_l50cs")
+nivel = 9
+movimiento = ExtResource("2_lfjjh")
+
+[sub_resource type="Resource" id="Resource_0bi8x"]
+script = ExtResource("1_l50cs")
+nivel = 13
+movimiento = ExtResource("7_qipxo")
+
+[sub_resource type="Resource" id="Resource_oby4e"]
+script = ExtResource("1_l50cs")
+nivel = 17
+movimiento = ExtResource("8_8uqlf")
+
+[sub_resource type="Resource" id="Resource_kifbt"]
+script = ExtResource("1_l50cs")
+nivel = 21
+movimiento = ExtResource("9_dupgr")
+
+[sub_resource type="Resource" id="Resource_aciok"]
+script = ExtResource("1_l50cs")
+nivel = 25
+movimiento = ExtResource("10_vi4rk")
+
+[sub_resource type="Resource" id="Resource_3crv2"]
+script = ExtResource("1_l50cs")
+nivel = 29
+movimiento = ExtResource("11_byob4")
+
+[sub_resource type="Resource" id="Resource_2ax4t"]
+script = ExtResource("1_l50cs")
+nivel = 30
+movimiento = ExtResource("12_fr8v0")
+
+[sub_resource type="Resource" id="Resource_fcib6"]
+script = ExtResource("1_l50cs")
+nivel = 34
+movimiento = ExtResource("13_7l86r")
+
+[sub_resource type="Resource" id="Resource_8cimk"]
+script = ExtResource("1_l50cs")
+nivel = 39
+movimiento = ExtResource("14_7poly")
+
+[sub_resource type="Resource" id="Resource_pudfw"]
+script = ExtResource("1_l50cs")
+nivel = 44
+movimiento = ExtResource("15_hp4iy")
+
+[sub_resource type="Resource" id="Resource_kwof3"]
+script = ExtResource("1_l50cs")
+nivel = 49
+movimiento = ExtResource("16_vqyyi")
+
+[sub_resource type="Resource" id="Resource_54dnf"]
+script = ExtResource("1_l50cs")
+nivel = 54
+movimiento = ExtResource("17_sd6fb")
+
+[sub_resource type="Resource" id="Resource_rlbh0"]
+script = ExtResource("1_l50cs")
+nivel = 59
+movimiento = ExtResource("18_dmsu4")
+
+[sub_resource type="Resource" id="Resource_o12y0"]
+script = ExtResource("1_l50cs")
+nivel = 64
+movimiento = ExtResource("19_fsr6k")
+
+[resource]
+script = ExtResource("20_jnejh")
+id = "zoroark"
+numero = 571
+nombre = "Zoroark"
+tipos = ["siniestro"]
+ps = 60
+ataque = 105
+defensa = 60
+at_esp = 120
+def_esp = 60
+velocidad = 105
+exp_base = 179
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 2
+}
+aprende = Array[ExtResource("1_l50cs")]([SubResource("Resource_4dxaf"), SubResource("Resource_mc2q0"), SubResource("Resource_y8j5a"), SubResource("Resource_h7ibf"), SubResource("Resource_3kfxp"), SubResource("Resource_x1o2i"), SubResource("Resource_k5elm"), SubResource("Resource_0bi8x"), SubResource("Resource_oby4e"), SubResource("Resource_kifbt"), SubResource("Resource_aciok"), SubResource("Resource_3crv2"), SubResource("Resource_2ax4t"), SubResource("Resource_fcib6"), SubResource("Resource_8cimk"), SubResource("Resource_pudfw"), SubResource("Resource_kwof3"), SubResource("Resource_54dnf"), SubResource("Resource_rlbh0"), SubResource("Resource_o12y0")])
+sprite_frente = ExtResource("22_273um")
+sprite_espalda = ExtResource("21_fab06")
+cuadros_frente = 90
+cuadros_espalda = 90

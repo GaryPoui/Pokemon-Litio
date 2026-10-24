@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://nvk5dib584xn"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_qj2gg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="2_krbqo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_sport.tres" id="3_q2631"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/defog.tres" id="4_vbwpx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wing_attack.tres" id="5_3pxgr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_pulse.tres" id="6_pnn0o"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aerial_ace.tres" id="7_k6nh1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bubble_beam.tres" id="8_35svl"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feather_dance.tres" id="9_86vlu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aqua_ring.tres" id="10_t6ct1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="11_ylk1j"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/roost.tres" id="12_l2s1f"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="13_71iok"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tailwind.tres" id="14_8fh7h"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/brave_bird.tres" id="15_xpjwv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hurricane.tres" id="16_mnns2"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_n1lkp"]
+[ext_resource type="Texture2D" uid="uid://v7fi3cavac8o" path="res://Assets/Pokemones/batalla/ducklett_espalda.png" id="18_1jpt7"]
+[ext_resource type="Texture2D" uid="uid://dnorajooocjvi" path="res://Assets/Pokemones/batalla/ducklett_frente.png" id="19_tg0im"]
+
+[sub_resource type="Resource" id="Resource_x0j7p"]
+script = ExtResource("1_qj2gg")
+movimiento = ExtResource("2_krbqo")
+
+[sub_resource type="Resource" id="Resource_5y4r2"]
+script = ExtResource("1_qj2gg")
+nivel = 3
+movimiento = ExtResource("3_q2631")
+
+[sub_resource type="Resource" id="Resource_sqpfm"]
+script = ExtResource("1_qj2gg")
+nivel = 6
+movimiento = ExtResource("4_vbwpx")
+
+[sub_resource type="Resource" id="Resource_epb68"]
+script = ExtResource("1_qj2gg")
+nivel = 9
+movimiento = ExtResource("5_3pxgr")
+
+[sub_resource type="Resource" id="Resource_fbvwo"]
+script = ExtResource("1_qj2gg")
+nivel = 13
+movimiento = ExtResource("6_pnn0o")
+
+[sub_resource type="Resource" id="Resource_wn3ol"]
+script = ExtResource("1_qj2gg")
+nivel = 15
+movimiento = ExtResource("7_k6nh1")
+
+[sub_resource type="Resource" id="Resource_21ywf"]
+script = ExtResource("1_qj2gg")
+nivel = 19
+movimiento = ExtResource("8_35svl")
+
+[sub_resource type="Resource" id="Resource_pun1o"]
+script = ExtResource("1_qj2gg")
+nivel = 21
+movimiento = ExtResource("9_86vlu")
+
+[sub_resource type="Resource" id="Resource_8cdbf"]
+script = ExtResource("1_qj2gg")
+nivel = 24
+movimiento = ExtResource("10_t6ct1")
+
+[sub_resource type="Resource" id="Resource_8y50u"]
+script = ExtResource("1_qj2gg")
+nivel = 27
+movimiento = ExtResource("11_ylk1j")
+
+[sub_resource type="Resource" id="Resource_th1ew"]
+script = ExtResource("1_qj2gg")
+nivel = 30
+movimiento = ExtResource("12_l2s1f")
+
+[sub_resource type="Resource" id="Resource_aa74p"]
+script = ExtResource("1_qj2gg")
+nivel = 34
+movimiento = ExtResource("13_71iok")
+
+[sub_resource type="Resource" id="Resource_ll2ey"]
+script = ExtResource("1_qj2gg")
+nivel = 37
+movimiento = ExtResource("14_8fh7h")
+
+[sub_resource type="Resource" id="Resource_yr2at"]
+script = ExtResource("1_qj2gg")
+nivel = 41
+movimiento = ExtResource("15_xpjwv")
+
+[sub_resource type="Resource" id="Resource_rmmjf"]
+script = ExtResource("1_qj2gg")
+nivel = 46
+movimiento = ExtResource("16_mnns2")
+
+[resource]
+script = ExtResource("17_n1lkp")
+id = "ducklett"
+numero = 580
+nombre = "Ducklett"
+tipos = ["agua", "volador"]
+ps = 62
+ataque = 44
+at_esp = 44
+velocidad = 55
+exp_base = 61
+ratio_captura = 190
+evs_otorgados = {
+"ps": 1
+}
+evoluciona_a = "swanna"
+nivel_evolucion = 35
+aprende = Array[ExtResource("1_qj2gg")]([SubResource("Resource_x0j7p"), SubResource("Resource_5y4r2"), SubResource("Resource_sqpfm"), SubResource("Resource_epb68"), SubResource("Resource_fbvwo"), SubResource("Resource_wn3ol"), SubResource("Resource_21ywf"), SubResource("Resource_pun1o"), SubResource("Resource_8cdbf"), SubResource("Resource_8y50u"), SubResource("Resource_th1ew"), SubResource("Resource_aa74p"), SubResource("Resource_ll2ey"), SubResource("Resource_yr2at"), SubResource("Resource_rmmjf")])
+sprite_frente = ExtResource("19_tg0im")
+sprite_espalda = ExtResource("18_1jpt7")
+cuadros_frente = 41
+cuadros_espalda = 41
+fps_sprite = 7.28

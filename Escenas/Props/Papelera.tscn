@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://xrprtx07tojh"]
+
+[ext_resource type="Texture2D" uid="uid://b5dlgcwlurt6p" path="res://Assets/Overworld/nuevo50_31_papelera_verde.png" id="1_vu3ug"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vu3ug"]
+size = Vector2(16, 16)
+
+[node name="Papelera" type="StaticBody2D" unique_id=1616361462]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1082923105]
+position = Vector2(-8, -15)
+texture = ExtResource("1_vu3ug")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=552849258]
+shape = SubResource("RectangleShape2D_vu3ug")

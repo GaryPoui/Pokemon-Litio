@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b2si3brbeo1w5"]
+
+[ext_resource type="Texture2D" uid="uid://dajrnafdlob2q" path="res://Assets/Overworld/Villa31/autopista.png" id="1_x2k7e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x2k7e"]
+size = Vector2(64, 16)
+
+[node name="Autopista" type="StaticBody2D" unique_id=435325717]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1434184099]
+position = Vector2(-32, -56)
+texture = ExtResource("1_x2k7e")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1381673065]
+shape = SubResource("RectangleShape2D_x2k7e")

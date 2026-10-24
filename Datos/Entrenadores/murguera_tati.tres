@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://gljb8bwl1fua"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_entrada"]
+[ext_resource type="Resource" uid="uid://bmiwu1x2x5dyt" path="res://Datos/Especies/purrloin.tres" id="2_purrloin"]
+[ext_resource type="Resource" uid="uid://bast6r6qwer6i" path="res://Datos/Especies/scraggy.tres" id="3_scraggy"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="4_equipo"]
+
+[sub_resource type="Resource" id="Miembro_1"]
+script = ExtResource("1_entrada")
+especie = ExtResource("2_purrloin")
+nivel_min = 16
+nivel_max = 16
+peso = 1
+trinkets = Array[String](["pluma_veloz"])
+
+[sub_resource type="Resource" id="Miembro_2"]
+script = ExtResource("1_entrada")
+especie = ExtResource("3_scraggy")
+nivel_min = 17
+nivel_max = 17
+peso = 1
+trinkets = Array[String](["vendaje"])
+
+[resource]
+script = ExtResource("4_equipo")
+clase = "Murguera"
+nombre = "Tati"
+miembros = Array[ExtResource("1_entrada")]([SubResource("Miembro_1"), SubResource("Miembro_2")])
+pago_base = 70

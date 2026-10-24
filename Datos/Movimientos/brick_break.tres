@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_sidmk"]
+
+[resource]
+script = ExtResource("1_sidmk")
+id = "brick_break"
+nombre = "Demolición"
+tipo = "lucha"
+poder = 75
+pp = 15
+descripcion = "Potente ataque que también es capaz de destruir barreras como Pantalla de Luz y Reflejo."

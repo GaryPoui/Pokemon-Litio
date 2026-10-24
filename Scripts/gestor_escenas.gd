@@ -11,6 +11,7 @@ var llegada :=""
 var direccion_llegada: Vector2= Vector2.DOWN
 var posicion_llegada: Variant =null
 var ultima_zona_exterior_id:= ""
+var retorno: Dictionary ={}
 @onready var cartel_zona: CanvasLayer= $CartelZona
 @onready var capa_transicion: CanvasLayer= $Transicion
 
@@ -86,6 +87,18 @@ func fundido(cambio: Callable, t: float= FUNDIDO_MENU) -> void:
 	await cubrir(t)
 	await cambio.call()
 	await descubrir(t)
+
+func recordar_retorno(ruta: String, punto: String) -> void:
+	retorno= {"ruta": ruta, "llegada": punto}
+
+func usar_warp(w: Node) -> void:
+	var escena:= get_tree().current_scene
+	if w.vuelta!= "" and escena!= null:
+		recordar_retorno(escena.scene_file_path, w.vuelta)
+	if w.volver and str(retorno.get("ruta", ""))!= "" and ResourceLoader.exists(str(retorno["ruta"])):
+		await cambiar_mapa(str(retorno["ruta"]), str(retorno["llegada"]), w.direccion)
+		return
+	await cambiar_mapa(w.destino, w.llegada, w.direccion)
 
 func cambiar_mapa_a(ruta: String, posicion: Vector2, direccion: Vector2) -> void:
 	if en_transicion:

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bkjohqjmg8fae"]
+
+[ext_resource type="Texture2D" uid="uid://b0uo7ntfhnxo3" path="res://Assets/Overworld/Rutas/mastil_puente.png" id="1_051vh"]
+
+[node name="MastilPuente" type="Node2D" unique_id=1221307843]
+z_index = 2
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1317451841]
+position = Vector2(-8, -88)
+texture = ExtResource("1_051vh")
+centered = false

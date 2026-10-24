@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://0o6m6gljxa34"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_p3pxd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/defog.tres" id="2_7wu6i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="3_5mv04"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_sport.tres" id="4_cj2sv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wing_attack.tres" id="5_vkml5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_pulse.tres" id="6_i7b5n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aerial_ace.tres" id="7_bbtot"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bubble_beam.tres" id="8_kvcrs"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feather_dance.tres" id="9_nw1ny"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aqua_ring.tres" id="10_ic3hh"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="11_tcsvk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/roost.tres" id="12_us6rt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="13_g6147"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tailwind.tres" id="14_ernal"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/brave_bird.tres" id="15_4muom"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hurricane.tres" id="16_0dlpq"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_et3rr"]
+[ext_resource type="Texture2D" uid="uid://cj03irn8o6ru" path="res://Assets/Pokemones/batalla/swanna_espalda.png" id="18_exclj"]
+[ext_resource type="Texture2D" uid="uid://ccxdnfkfo4gr2" path="res://Assets/Pokemones/batalla/swanna_frente.png" id="19_tcjaf"]
+
+[sub_resource type="Resource" id="Resource_rkoq0"]
+script = ExtResource("1_p3pxd")
+movimiento = ExtResource("2_7wu6i")
+
+[sub_resource type="Resource" id="Resource_mc6te"]
+script = ExtResource("1_p3pxd")
+movimiento = ExtResource("3_5mv04")
+
+[sub_resource type="Resource" id="Resource_gmo61"]
+script = ExtResource("1_p3pxd")
+movimiento = ExtResource("4_cj2sv")
+
+[sub_resource type="Resource" id="Resource_ywbc7"]
+script = ExtResource("1_p3pxd")
+movimiento = ExtResource("5_vkml5")
+
+[sub_resource type="Resource" id="Resource_cdoig"]
+script = ExtResource("1_p3pxd")
+nivel = 3
+movimiento = ExtResource("4_cj2sv")
+
+[sub_resource type="Resource" id="Resource_5a5es"]
+script = ExtResource("1_p3pxd")
+nivel = 6
+movimiento = ExtResource("2_7wu6i")
+
+[sub_resource type="Resource" id="Resource_elmwn"]
+script = ExtResource("1_p3pxd")
+nivel = 9
+movimiento = ExtResource("5_vkml5")
+
+[sub_resource type="Resource" id="Resource_6inhq"]
+script = ExtResource("1_p3pxd")
+nivel = 13
+movimiento = ExtResource("6_i7b5n")
+
+[sub_resource type="Resource" id="Resource_dvwl1"]
+script = ExtResource("1_p3pxd")
+nivel = 15
+movimiento = ExtResource("7_bbtot")
+
+[sub_resource type="Resource" id="Resource_ol7p1"]
+script = ExtResource("1_p3pxd")
+nivel = 19
+movimiento = ExtResource("8_kvcrs")
+
+[sub_resource type="Resource" id="Resource_hlac5"]
+script = ExtResource("1_p3pxd")
+nivel = 21
+movimiento = ExtResource("9_nw1ny")
+
+[sub_resource type="Resource" id="Resource_swgce"]
+script = ExtResource("1_p3pxd")
+nivel = 24
+movimiento = ExtResource("10_ic3hh")
+
+[sub_resource type="Resource" id="Resource_o2lbk"]
+script = ExtResource("1_p3pxd")
+nivel = 27
+movimiento = ExtResource("11_tcsvk")
+
+[sub_resource type="Resource" id="Resource_5xnh3"]
+script = ExtResource("1_p3pxd")
+nivel = 30
+movimiento = ExtResource("12_us6rt")
+
+[sub_resource type="Resource" id="Resource_6rqhm"]
+script = ExtResource("1_p3pxd")
+nivel = 34
+movimiento = ExtResource("13_g6147")
+
+[sub_resource type="Resource" id="Resource_ujjys"]
+script = ExtResource("1_p3pxd")
+nivel = 40
+movimiento = ExtResource("14_ernal")
+
+[sub_resource type="Resource" id="Resource_56q7j"]
+script = ExtResource("1_p3pxd")
+nivel = 47
+movimiento = ExtResource("15_4muom")
+
+[sub_resource type="Resource" id="Resource_rxehi"]
+script = ExtResource("1_p3pxd")
+nivel = 55
+movimiento = ExtResource("16_0dlpq")
+
+[resource]
+script = ExtResource("17_et3rr")
+id = "swanna"
+numero = 581
+nombre = "Swanna"
+tipos = ["agua", "volador"]
+ps = 75
+ataque = 87
+defensa = 63
+at_esp = 87
+def_esp = 63
+velocidad = 98
+exp_base = 166
+evs_otorgados = {
+"velocidad": 2
+}
+aprende = Array[ExtResource("1_p3pxd")]([SubResource("Resource_rkoq0"), SubResource("Resource_mc6te"), SubResource("Resource_gmo61"), SubResource("Resource_ywbc7"), SubResource("Resource_cdoig"), SubResource("Resource_5a5es"), SubResource("Resource_elmwn"), SubResource("Resource_6inhq"), SubResource("Resource_dvwl1"), SubResource("Resource_ol7p1"), SubResource("Resource_hlac5"), SubResource("Resource_swgce"), SubResource("Resource_o2lbk"), SubResource("Resource_5xnh3"), SubResource("Resource_6rqhm"), SubResource("Resource_ujjys"), SubResource("Resource_56q7j"), SubResource("Resource_rxehi")])
+sprite_frente = ExtResource("19_tcjaf")
+sprite_espalda = ExtResource("18_exclj")
+cuadros_frente = 74
+cuadros_espalda = 70
+fps_sprite = 10.19

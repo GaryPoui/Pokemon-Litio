@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cyx4ad3j3v56i"]
+
+[ext_resource type="Texture2D" uid="uid://xsh0ali3gph3" path="res://Assets/Overworld/nuevo50_11_carrito_choripan.png" id="1_bysj1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bysj1"]
+size = Vector2(32, 16)
+
+[node name="CarritoChoripan" type="StaticBody2D" unique_id=1639231038]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1678199590]
+position = Vector2(-25, -39)
+texture = ExtResource("1_bysj1")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=860594976]
+shape = SubResource("RectangleShape2D_bysj1")

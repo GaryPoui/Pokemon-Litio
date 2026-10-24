@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cpdbujlbnbcpc"]
+
+[ext_resource type="Texture2D" uid="uid://dgeo0qkvvbol3" path="res://Assets/Overworld/Villa31/capilla.png" id="1_v5dlx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5dlx"]
+size = Vector2(64, 48)
+
+[node name="Capilla" type="StaticBody2D" unique_id=1152289666]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1734856585]
+position = Vector2(-32, -80)
+texture = ExtResource("1_v5dlx")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1120797275]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_v5dlx")

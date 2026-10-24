@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dxvihytdscbii"]
+
+[ext_resource type="Texture2D" uid="uid://carxf6csbx8sh" path="res://Assets/Produccion/Barrios/mugica/v02/cesto_reciclaje.png" id="1_rw3o0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rw3o0"]
+size = Vector2(32, 16)
+
+[node name="CestoReciclaje" type="StaticBody2D" unique_id=1608508863]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1930972132]
+position = Vector2(-24, -37)
+texture = ExtResource("1_rw3o0")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=301906879]
+shape = SubResource("RectangleShape2D_rw3o0")

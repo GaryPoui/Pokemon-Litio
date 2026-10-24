@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b4mnkjbg1sqry"]
+
+[ext_resource type="Texture2D" uid="uid://bk74q10a7aiel" path="res://Assets/Overworld/nuevo50_34_barriles_combustible.png" id="1_q1icg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q1icg"]
+size = Vector2(32, 16)
+
+[node name="Barriles" type="StaticBody2D" unique_id=1184791384]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1411215141]
+position = Vector2(-16, -15)
+texture = ExtResource("1_q1icg")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=34971123]
+shape = SubResource("RectangleShape2D_q1icg")

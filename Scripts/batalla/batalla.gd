@@ -5,9 +5,14 @@ signal continuar
 
 @export var letras_por_segundo: float= 60.0
 
-const ABREV:= {"que": "QUE", "env": "ENV", "par": "PAR", "dor": "DOR", "con": "CON"}
+const ABREV:= {"que": "QUE", "env": "ENV", "par": "PAR", "dor": "DOR", "con": "CON", "comiendo": "COME", "enojado": "ENOJ"}
+const COLOR_HUMOR :={"comiendo": Color("3f8f2f"), "enojado": Color("c03028")}
 const UI :="res://Assets/Batalla/ui_nueva/"
 const COMANDOS:= ["Luchar", "Mochila", "Pokémon", "Huir"]
+const SAFARI :=["ball", "alfajor", "barro", "huir"]
+const NOMBRES_SAFARI:= ["Ball", "Alfajor", "Barro", "Huir"]
+const LANZABLES :="res://Assets/Batalla/safari/"
+const MANO:= Vector2(32, -13)
 const ESCENA_MOCHILA :="res://Escenas/UI/Mochila/Mochila.tscn"
 const ESCENA_EQUIPO:= "res://Escenas/UI/PantallaEquipo.tscn"
 const BALLS :="res://Assets/Batalla/balls/"
@@ -28,6 +33,7 @@ const DESLIZ :=0.08
 @onready var fondo_zona: TextureRect =$Fondo/FondoZona
 @onready var sprite_rival: Sprite2D =$PokemonRival
 @onready var sprite_jugador: Sprite2D= $PokemonJugador
+@onready var sprite_entrenador: Sprite2D =$Entrenador
 @onready var ball: Sprite2D =$Ball
 @onready var caja_rival: NinePatchRect= $PanelRival
 @onready var caja_jugador: NinePatchRect =$PanelJugador
@@ -59,6 +65,7 @@ var ultimo_comando :=0
 var pista:= "batalla_salvaje"
 var musica_final :=false
 var torre:= false
+var safari :=false
 var subieron: Array[PokemonInstancia]= []
 var ultimo_movimiento:= 0
 var ball_rapida :=""
@@ -134,9 +141,13 @@ func empezar(rivales: Array[PokemonInstancia], salvaje: bool, entrenador: String
 	var propio: Array[PokemonInstancia]= []
 	propio.assign(config.get("equipo", Equipo.miembros))
 	torre= bool(config.get("torre", false))
-	logica= LogicaCombate.new(propio, rivales, salvaje, entrenador)
+	safari =config.has("safari")
+	if safari:
+		logica= LogicaSafari.new(propio, rivales, str(config["safari"]))
+	else:
+		logica =LogicaCombate.new(propio, rivales, salvaje, entrenador)
 	logica.pago_base= int(config.get("pago_base", 0))
-	logica.sin_exp =torre
+	logica.sin_exp =torre or safari
 	logica.inventario =Inventario
 	logica.equipo= Equipo
 	logica.capturados_dex =Estado.capturados.size()
@@ -147,6 +158,8 @@ func empezar(rivales: Array[PokemonInstancia], salvaje: bool, entrenador: String
 				sprite_rival.mostrar(e["pokemon"].especie, false)
 				sprite_rival.scale= Vector2.ONE
 				break
+	sprite_entrenador.frame= 0
+	sprite_entrenador.visible =safari
 	await _entrada()
 	await _reproducir(inicio)
 	while not logica.terminado:
@@ -228,6 +241,12 @@ func _reproducir(eventos: Array[Dictionary]) -> void:
 				await _aprender(e["pokemon"], e["movimiento"])
 			"captura":
 				await _animar_captura(e)
+			"lanzar":
+				await _animar_lanzamiento(str(e["objeto"]))
+			"humor":
+				if not vista["rival"].is_empty():
+					vista["rival"]["estado"]= e["humor"]
+				_actualizar_cajas()
 	caja.visible= false
 
 func _ultimo_rival(eventos: Array[Dictionary], desde: int) -> bool:
@@ -367,6 +386,11 @@ func _elegir_accion() -> Dictionary:
 		modo_ps ="porcentaje"
 		_actualizar_cajas()
 		_preparar_ball_rapida()
+		if safari:
+			var accion:= await _elegir_safari()
+			if not accion.is_empty():
+				return accion
+			continue
 		if ultimo_comando== 4 and ball_rapida== "":
 			ultimo_comando= 0
 		comandos.visible= true
@@ -397,17 +421,33 @@ func _elegir_accion() -> Dictionary:
 				return {"tipo": "objeto", "id": ball_rapida}
 	return {}
 
+func _elegir_safari() -> Dictionary:
+	var cuantos:= [Inventario.cantidad_de(LogicaSafari.BALL), Inventario.cantidad_de(LogicaSafari.CEBO), Inventario.cantidad_de(LogicaSafari.BARRO)]
+	for i in 4:
+		var tc: Label= comandos.get_node("B%d/Texto" % i)
+		tc.text= NOMBRES_SAFARI[i] if i== 3 else "%s ×%d" % [NOMBRES_SAFARI[i], cuantos[i]]
+	comandos.visible= true
+	var op:= await _elegir_opcion(4, false, _pintar_comandos, mini(ultimo_comando, 3))
+	comandos.visible =false
+	ultimo_comando= op
+	if op< 3 and cuantos[op]<= 0:
+		Sonido.efecto("error")
+		await _decir(["¡No te quedan Safari Balls!", "¡No te quedan Alfajores!", "¡No te queda Barro!"][op])
+		return {}
+	return {"safari": SAFARI[op]}
+
 func _preparar_ball_rapida() -> void:
 	ball_rapida= ""
-	if logica.salvaje and not torre:
+	if logica.salvaje and not torre and not safari:
 		if ultima_ball!= "" and Inventario.cantidad_de(ultima_ball)> 0:
 			ball_rapida= ultima_ball
 		elif Inventario.cantidad_de("pokeball")> 0:
 			ball_rapida ="pokeball"
 		else:
 			for d in Inventario.get_items_for_category("POKÉ BALLS"):
-				ball_rapida =str(d["id"])
-				break
+				if not BaseDatos.objeto(str(d["id"])).solo_safari:
+					ball_rapida =str(d["id"])
+					break
 	var b: NinePatchRect= comandos.get_node("Ball")
 	b.visible= ball_rapida!= ""
 	if b.visible:
@@ -519,7 +559,7 @@ func _elegir_objeto() -> Dictionary:
 		mochila_combate= load(ESCENA_MOCHILA).instantiate()
 		mochila_combate.name= "Mochila"
 		add_child(mochila_combate)
-	var r: Dictionary= await mochila_combate.elegir_en_combate(func(o: Objeto): return o.cura_ps> 0 or (o.ratio_captura> 0.0 and logica.salvaje))
+	var r: Dictionary= await mochila_combate.elegir_en_combate(func(o: Objeto): return not o.solo_safari and (o.cura_ps> 0 or (o.ratio_captura> 0.0 and logica.salvaje)))
 	if r.is_empty():
 		return {}
 	var acc:= {"tipo": "objeto", "id": r["id"]}
@@ -754,6 +794,8 @@ func _animar_captura(e: Dictionary) -> void:
 	ball.flip_h =false
 	ball.modulate= Color.WHITE
 	var inicio:= Vector2(20, 140)
+	if safari:
+		inicio= await _brazo()
 	var arriba: Vector2= sprite_rival.pos_base+ Vector2(0, -26)
 	var suelo: Vector2 =sprite_rival.pos_base+ Vector2(0, -4)
 	ball.position= inicio
@@ -850,6 +892,7 @@ func _llenar_panel(panel: NinePatchRect, v: Dictionary, con_exp: bool) -> void:
 	nivel.text= "Nv%d" % v["nivel"]
 	var estado: Label =panel.get_node("Estado")
 	estado.text= ABREV.get(v["estado"], "")
+	estado.add_theme_color_override("font_color", COLOR_HUMOR.get(v["estado"], Color("c03028")))
 	estado.position= Vector2(genero.position.x+ genero.get_combined_minimum_size().x+ 3, 4)
 	panel.get_node("Barra").poner(float(v["ps"])/ maxf(1.0, v["max"]))
 	panel.get_node("PS").text= _texto_ps(v["ps"], v["max"])
@@ -861,3 +904,56 @@ func _actualizar_cajas() -> void:
 		_llenar_panel(caja_rival, vista["rival"], false)
 	if not vista["jugador"].is_empty():
 		_llenar_panel(caja_jugador, vista["jugador"], true)
+
+func _brazo() -> Vector2:
+	for f in [1, 2]:
+		sprite_entrenador.frame= f
+		await _esperar(0.07)
+	sprite_entrenador.frame =3
+	_bajar_brazo()
+	return sprite_entrenador.position+ MANO
+
+func _bajar_brazo() -> void:
+	await _esperar(0.12)
+	sprite_entrenador.frame= 4
+	await _esperar(0.18)
+	sprite_entrenador.frame =0
+
+func _animar_lanzamiento(id: String) -> void:
+	var inicio:= await _brazo()
+	var cosa:= Sprite2D.new()
+	cosa.texture= load(LANZABLES+ "%s.png" % id)
+	cosa.texture_filter =CanvasItem.TEXTURE_FILTER_NEAREST
+	add_child(cosa)
+	move_child(cosa, ball.get_index())
+	var destino: Vector2= sprite_rival.pos_base+ (Vector2(-14, -2) if id== LogicaSafari.CEBO else Vector2(0, -22))
+	cosa.position= inicio
+	Sonido.efecto("ball_lanzar")
+	var arco:= func(v: float) -> void:
+		cosa.position= Vector2(roundf(lerpf(inicio.x, destino.x, v)), roundf(lerpf(inicio.y, destino.y, v)- 60.0* sin(PI* v)))
+		cosa.rotation= v* TAU* 1.5 if id== LogicaSafari.BARRO else 0.0
+	var t:= create_tween()
+	t.tween_method(arco, 0.0, 1.0, 0.5)
+	await t.finished
+	cosa.rotation =0.0
+	if id== LogicaSafari.CEBO:
+		Sonido.efecto("ball_caer")
+		for k in 2:
+			var salto:= create_tween()
+			salto.tween_property(sprite_rival, "position:y", sprite_rival.pos_base.y- 4, 0.1).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+			salto.tween_property(sprite_rival, "position:y", sprite_rival.pos_base.y, 0.1).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
+			await salto.finished
+		await _esperar(0.3)
+	else:
+		Sonido.efecto("golpe_poco")
+		cosa.texture= load(LANZABLES+ "barro_mancha.png")
+		for k in 3:
+			for dx in [2, -2]:
+				sprite_rival.position.x= sprite_rival.pos_base.x+ dx
+				await _esperar(0.05)
+		sprite_rival.position =sprite_rival.pos_base
+		await _esperar(0.2)
+	var fuera:= create_tween()
+	fuera.tween_property(cosa, "modulate:a", 0.0, 0.25)
+	await fuera.finished
+	cosa.queue_free()

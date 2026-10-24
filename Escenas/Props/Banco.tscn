@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bqiwo7nwx4cgm"]
+
+[ext_resource type="Texture2D" uid="uid://xcds3tkk0hno" path="res://Assets/Overworld/nuevo50_23_banco_azul_amarillo.png" id="1_1sig6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1sig6"]
+size = Vector2(32, 16)
+
+[node name="Banco" type="StaticBody2D" unique_id=1680785286]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=181244646]
+position = Vector2(-16, -15)
+texture = ExtResource("1_1sig6")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1024454966]
+shape = SubResource("RectangleShape2D_1sig6")

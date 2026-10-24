@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_a4qse"]
+
+[resource]
+script = ExtResource("1_a4qse")
+id = "nature_power"
+nombre = "Adaptación"
+categoria = "estado"
+precision = 0
+pp = 20
+meta = "unique"
+descripcion = "Usa el poder de la naturaleza para atacar. Su efecto varía según el entorno de combate."

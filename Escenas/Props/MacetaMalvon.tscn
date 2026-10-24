@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://3k147ckosocb"]
+
+[ext_resource type="Texture2D" uid="uid://ctckst5wf13ao" path="res://Assets/Overworld/nuevo50_25_maceta_malvon.png" id="1_be1tn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_be1tn"]
+size = Vector2(16, 16)
+
+[node name="MacetaMalvon" type="StaticBody2D" unique_id=2092348505]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1102541200]
+position = Vector2(-7, -15)
+texture = ExtResource("1_be1tn")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=375021867]
+shape = SubResource("RectangleShape2D_be1tn")

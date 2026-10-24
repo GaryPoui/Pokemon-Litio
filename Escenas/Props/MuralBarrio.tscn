@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://m4r2skeyf65a"]
+
+[ext_resource type="Texture2D" uid="uid://cwlpnjmcxnua1" path="res://Assets/Overworld/Villa31/mural_barrio.png" id="1_m3k8q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m3k8q"]
+size = Vector2(64, 16)
+
+[node name="MuralBarrio" type="StaticBody2D" unique_id=776856618]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1220028228]
+position = Vector2(-32, -32)
+texture = ExtResource("1_m3k8q")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=800290490]
+shape = SubResource("RectangleShape2D_m3k8q")

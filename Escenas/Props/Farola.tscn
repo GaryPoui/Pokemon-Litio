@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://y7gejwxykouh"]
+
+[ext_resource type="Texture2D" uid="uid://bgvlq5dfrwyna" path="res://Assets/Overworld/nuevo50_30_farola_doble.png" id="1_cspfy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cspfy"]
+size = Vector2(16, 16)
+
+[node name="Farola" type="StaticBody2D" unique_id=1118715152]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1579445225]
+position = Vector2(-12, -39)
+texture = ExtResource("1_cspfy")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=80833605]
+shape = SubResource("RectangleShape2D_cspfy")

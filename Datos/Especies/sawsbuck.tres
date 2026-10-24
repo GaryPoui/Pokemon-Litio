@@ -1,0 +1,136 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_io7k3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/camouflage.tres" id="2_kuiil"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_8y7nj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/megahorn.tres" id="4_5pu6g"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="5_4e3gp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="6_00i0v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_kick.tres" id="7_7tiju"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leech_seed.tres" id="8_dk8da"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="9_20qlg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="10_ds4vn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/jump_kick.tres" id="11_rmdki"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aromatherapy.tres" id="12_fvrlc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/energy_ball.tres" id="13_nh8xf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charm.tres" id="14_i6mt0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/horn_leech.tres" id="15_vg4s5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nature_power.tres" id="16_clmbo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="17_57c04"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="18_afts6"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="19_gv1au"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/sawsbuck_espalda.png" id="20_ipvrf"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/sawsbuck_frente.png" id="21_20wnm"]
+
+[sub_resource type="Resource" id="Resource_3lujb"]
+script = ExtResource("1_io7k3")
+movimiento = ExtResource("2_kuiil")
+
+[sub_resource type="Resource" id="Resource_8ybd1"]
+script = ExtResource("1_io7k3")
+movimiento = ExtResource("3_8y7nj")
+
+[sub_resource type="Resource" id="Resource_n11x2"]
+script = ExtResource("1_io7k3")
+movimiento = ExtResource("4_5pu6g")
+
+[sub_resource type="Resource" id="Resource_gek46"]
+script = ExtResource("1_io7k3")
+movimiento = ExtResource("5_4e3gp")
+
+[sub_resource type="Resource" id="Resource_sesw2"]
+script = ExtResource("1_io7k3")
+movimiento = ExtResource("6_00i0v")
+
+[sub_resource type="Resource" id="Resource_usu64"]
+script = ExtResource("1_io7k3")
+nivel = 4
+movimiento = ExtResource("3_8y7nj")
+
+[sub_resource type="Resource" id="Resource_apphp"]
+script = ExtResource("1_io7k3")
+nivel = 7
+movimiento = ExtResource("5_4e3gp")
+
+[sub_resource type="Resource" id="Resource_4i4bn"]
+script = ExtResource("1_io7k3")
+nivel = 10
+movimiento = ExtResource("7_7tiju")
+
+[sub_resource type="Resource" id="Resource_jafhr"]
+script = ExtResource("1_io7k3")
+nivel = 13
+movimiento = ExtResource("8_dk8da")
+
+[sub_resource type="Resource" id="Resource_v6v4d"]
+script = ExtResource("1_io7k3")
+nivel = 16
+movimiento = ExtResource("9_20qlg")
+
+[sub_resource type="Resource" id="Resource_0ifni"]
+script = ExtResource("1_io7k3")
+nivel = 20
+movimiento = ExtResource("10_ds4vn")
+
+[sub_resource type="Resource" id="Resource_3o10u"]
+script = ExtResource("1_io7k3")
+nivel = 24
+movimiento = ExtResource("11_rmdki")
+
+[sub_resource type="Resource" id="Resource_6kymq"]
+script = ExtResource("1_io7k3")
+nivel = 28
+movimiento = ExtResource("12_fvrlc")
+
+[sub_resource type="Resource" id="Resource_v8sdm"]
+script = ExtResource("1_io7k3")
+nivel = 32
+movimiento = ExtResource("13_nh8xf")
+
+[sub_resource type="Resource" id="Resource_sqmrn"]
+script = ExtResource("1_io7k3")
+nivel = 36
+movimiento = ExtResource("14_i6mt0")
+
+[sub_resource type="Resource" id="Resource_y4oen"]
+script = ExtResource("1_io7k3")
+nivel = 37
+movimiento = ExtResource("15_vg4s5")
+
+[sub_resource type="Resource" id="Resource_5ws12"]
+script = ExtResource("1_io7k3")
+nivel = 44
+movimiento = ExtResource("16_clmbo")
+
+[sub_resource type="Resource" id="Resource_rph81"]
+script = ExtResource("1_io7k3")
+nivel = 52
+movimiento = ExtResource("17_57c04")
+
+[sub_resource type="Resource" id="Resource_omn57"]
+script = ExtResource("1_io7k3")
+nivel = 60
+movimiento = ExtResource("18_afts6")
+
+[resource]
+script = ExtResource("19_gv1au")
+id = "sawsbuck"
+numero = 586
+nombre = "Sawsbuck"
+tipos = ["normal", "planta"]
+ps = 80
+ataque = 100
+defensa = 70
+at_esp = 60
+def_esp = 70
+velocidad = 95
+exp_base = 166
+ratio_captura = 75
+evs_otorgados = {
+"ataque": 2
+}
+aprende = Array[ExtResource("1_io7k3")]([SubResource("Resource_3lujb"), SubResource("Resource_8ybd1"), SubResource("Resource_n11x2"), SubResource("Resource_gek46"), SubResource("Resource_sesw2"), SubResource("Resource_usu64"), SubResource("Resource_apphp"), SubResource("Resource_4i4bn"), SubResource("Resource_jafhr"), SubResource("Resource_v6v4d"), SubResource("Resource_0ifni"), SubResource("Resource_3o10u"), SubResource("Resource_6kymq"), SubResource("Resource_v8sdm"), SubResource("Resource_sqmrn"), SubResource("Resource_y4oen"), SubResource("Resource_5ws12"), SubResource("Resource_rph81"), SubResource("Resource_omn57")])
+sprite_frente = ExtResource("21_20wnm")
+sprite_espalda = ExtResource("20_ipvrf")
+cuadros_frente = 70
+cuadros_espalda = 70

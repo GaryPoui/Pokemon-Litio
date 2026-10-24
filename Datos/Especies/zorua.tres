@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cmj6rglyeerhh"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_51a8v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_eimfm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="3_bgtmj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="4_qqg0y"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fake_tears.tres" id="5_47b8r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_swipes.tres" id="6_wju7l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="7_hgqkg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="8_p0ton"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/taunt.tres" id="9_4m0yw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/foul_play.tres" id="10_g00r0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/torment.tres" id="11_kqjnc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="12_4c6e1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/embargo.tres" id="13_awlng"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/punishment.tres" id="14_prbl6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="15_qy3ab"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/imprison.tres" id="16_lgjj7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/night_daze.tres" id="17_uda8o"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_3l8u1"]
+[ext_resource type="Texture2D" uid="uid://dvuc3sqw1ra15" path="res://Assets/Pokemones/batalla/zorua_espalda.png" id="19_i7b25"]
+[ext_resource type="Texture2D" uid="uid://dv7yvmfmy5er6" path="res://Assets/Pokemones/batalla/zorua_frente.png" id="20_xlpn5"]
+
+[sub_resource type="Resource" id="Resource_wxoxq"]
+script = ExtResource("1_51a8v")
+movimiento = ExtResource("2_eimfm")
+
+[sub_resource type="Resource" id="Resource_iyh6v"]
+script = ExtResource("1_51a8v")
+movimiento = ExtResource("3_bgtmj")
+
+[sub_resource type="Resource" id="Resource_0ugnn"]
+script = ExtResource("1_51a8v")
+nivel = 5
+movimiento = ExtResource("4_qqg0y")
+
+[sub_resource type="Resource" id="Resource_36qax"]
+script = ExtResource("1_51a8v")
+nivel = 9
+movimiento = ExtResource("5_47b8r")
+
+[sub_resource type="Resource" id="Resource_mdpxi"]
+script = ExtResource("1_51a8v")
+nivel = 13
+movimiento = ExtResource("6_wju7l")
+
+[sub_resource type="Resource" id="Resource_kayxy"]
+script = ExtResource("1_51a8v")
+nivel = 17
+movimiento = ExtResource("7_hgqkg")
+
+[sub_resource type="Resource" id="Resource_qvi5q"]
+script = ExtResource("1_51a8v")
+nivel = 21
+movimiento = ExtResource("8_p0ton")
+
+[sub_resource type="Resource" id="Resource_ryc87"]
+script = ExtResource("1_51a8v")
+nivel = 25
+movimiento = ExtResource("9_4m0yw")
+
+[sub_resource type="Resource" id="Resource_mcxja"]
+script = ExtResource("1_51a8v")
+nivel = 29
+movimiento = ExtResource("10_g00r0")
+
+[sub_resource type="Resource" id="Resource_u75fp"]
+script = ExtResource("1_51a8v")
+nivel = 33
+movimiento = ExtResource("11_kqjnc")
+
+[sub_resource type="Resource" id="Resource_4gvp3"]
+script = ExtResource("1_51a8v")
+nivel = 37
+movimiento = ExtResource("12_4c6e1")
+
+[sub_resource type="Resource" id="Resource_gr2gg"]
+script = ExtResource("1_51a8v")
+nivel = 41
+movimiento = ExtResource("13_awlng")
+
+[sub_resource type="Resource" id="Resource_bmr43"]
+script = ExtResource("1_51a8v")
+nivel = 45
+movimiento = ExtResource("14_prbl6")
+
+[sub_resource type="Resource" id="Resource_kfl7q"]
+script = ExtResource("1_51a8v")
+nivel = 49
+movimiento = ExtResource("15_qy3ab")
+
+[sub_resource type="Resource" id="Resource_3j33x"]
+script = ExtResource("1_51a8v")
+nivel = 53
+movimiento = ExtResource("16_lgjj7")
+
+[sub_resource type="Resource" id="Resource_pwtci"]
+script = ExtResource("1_51a8v")
+nivel = 57
+movimiento = ExtResource("17_uda8o")
+
+[resource]
+script = ExtResource("18_3l8u1")
+id = "zorua"
+numero = 570
+nombre = "Zorua"
+tipos = ["siniestro"]
+ps = 40
+ataque = 65
+defensa = 40
+at_esp = 80
+def_esp = 40
+velocidad = 65
+exp_base = 66
+ratio_captura = 75
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 1
+}
+evoluciona_a = "zoroark"
+nivel_evolucion = 30
+aprende = Array[ExtResource("1_51a8v")]([SubResource("Resource_wxoxq"), SubResource("Resource_iyh6v"), SubResource("Resource_0ugnn"), SubResource("Resource_36qax"), SubResource("Resource_mdpxi"), SubResource("Resource_kayxy"), SubResource("Resource_qvi5q"), SubResource("Resource_ryc87"), SubResource("Resource_mcxja"), SubResource("Resource_u75fp"), SubResource("Resource_4gvp3"), SubResource("Resource_gr2gg"), SubResource("Resource_bmr43"), SubResource("Resource_kfl7q"), SubResource("Resource_3j33x"), SubResource("Resource_pwtci")])
+sprite_frente = ExtResource("20_xlpn5")
+sprite_espalda = ExtResource("19_i7b25")
+cuadros_frente = 69
+cuadros_espalda = 69
+fps_sprite = 11.08

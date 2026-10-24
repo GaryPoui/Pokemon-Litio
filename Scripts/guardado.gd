@@ -20,6 +20,7 @@ func guardar() -> bool:
 		"version": VERSION,
 		"mapa": escena.scene_file_path,
 		"zona_exterior_id": GestorEscenas.ultima_zona_exterior_id,
+		"retorno": GestorEscenas.retorno,
 		"posicion": [pos.x, pos.y],
 		"direccion": [dir.x, dir.y],
 		"inventario": Inventario.a_diccionario(),
@@ -29,6 +30,7 @@ func guardar() -> bool:
 		"repelente": Estado.pasos_repelente,
 		"dinero": Estado.dinero,
 		"stock_tienda": Estado.stock_tienda.duplicate(),
+		"safari": Estado.safari,
 		"equipo": Equipo.a_lista(),
 		"caja": Equipo.caja_a_lista(),
 	}
@@ -52,9 +54,11 @@ func cargar() -> bool:
 	Estado.pasos_repelente= int(datos.get("repelente", 0))
 	Estado.dinero =int(datos.get("dinero", Estado.DINERO_INICIAL))
 	Estado.stock_tienda.assign(Array(datos.get("stock_tienda", [])).map(func(x): return str(x)))
+	Estado.safari= datos.get("safari", {}).duplicate(true)
 	Equipo.desde_lista(datos.get("equipo", []))
 	Equipo.caja_desde_lista(datos.get("caja", []))
 	GestorEscenas.restaurar_zona_exterior(str(datos.get("zona_exterior_id", "")))
+	GestorEscenas.retorno =datos.get("retorno", {}).duplicate()
 	var p: Array= datos.get("posicion", [0, 0])
 	var d: Array =datos.get("direccion", [0, 1])
 	GestorEscenas.cambiar_mapa_a(str(datos["mapa"]), Vector2(p[0], p[1]), Vector2(d[0], d[1]))

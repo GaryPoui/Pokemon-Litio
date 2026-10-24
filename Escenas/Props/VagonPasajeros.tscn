@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://hgyix1ldc2aj"]
+
+[ext_resource type="Texture2D" uid="uid://dbdqh48ejdjf5" path="res://Assets/Overworld/Rutas/vagon_pasajeros.png" id="1_oyurd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oyurd"]
+size = Vector2(64, 16)
+
+[node name="VagonPasajeros" type="StaticBody2D" unique_id=268893921]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1466609392]
+position = Vector2(-32, -32)
+texture = ExtResource("1_oyurd")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=790967243]
+shape = SubResource("RectangleShape2D_oyurd")

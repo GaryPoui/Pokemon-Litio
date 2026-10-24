@@ -13,3 +13,4 @@ extends Resource
 @export_group("Efecto")
 @export var cura_ps: int= 0
 @export var ratio_captura: float =0.0
+@export var solo_safari :=false

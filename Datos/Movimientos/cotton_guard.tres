@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_ysbxg"]
+
+[resource]
+script = ExtResource("1_ysbxg")
+id = "cotton_guard"
+nombre = "Rizo Algodón"
+tipo = "planta"
+categoria = "estado"
+precision = 0
+objetivo = "user"
+meta = "net-good-stats"
+descripcion = "Cubre al Pokémon con una madeja protectora. Aumenta muchísimo la Defensa."
+cambios_stats = {
+"defensa": 3
+}

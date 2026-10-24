@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://clvfpkmn8v37f"]
+
+[ext_resource type="Texture2D" uid="uid://b3n1rflpc3qpg" path="res://Assets/Overworld/nuevo50_29_palmera_ribera.png" id="1_7o0j7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7o0j7"]
+size = Vector2(16, 16)
+
+[node name="Palmera" type="StaticBody2D" unique_id=858004644]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1356248997]
+position = Vector2(-25, -55)
+texture = ExtResource("1_7o0j7")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=562169111]
+shape = SubResource("RectangleShape2D_7o0j7")

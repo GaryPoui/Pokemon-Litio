@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://8to4yj565csn"]
+
+[ext_resource type="Texture2D" uid="uid://dt5hv1lx76gq7" path="res://Assets/Overworld/Rutas/edificio_dique.png" id="1_vk1f4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vk1f4"]
+size = Vector2(96, 48)
+
+[node name="EdificioDique" type="StaticBody2D" unique_id=883809906]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=204514699]
+position = Vector2(-48, -88)
+texture = ExtResource("1_vk1f4")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1639964745]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_vk1f4")

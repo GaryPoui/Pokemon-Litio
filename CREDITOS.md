@@ -8,6 +8,7 @@ Pokémon Litio es un fan game sin fines de lucro. Pokémon y sus personajes son 
 ## Gráficos extraídos
 - Barras de PS y fuente de HGSS: GameMaster12 y StayPuft (The Spriters Resource).
 - Bases de combate de HGSS: Tsuka (The Spriters Resource).
+- Entrenador de espaldas en combate (Ethan, con la animación de lanzamiento) de HGSS: MufasaKong (The Spriters Resource).
 - Personajes y entidades del mundo de Pokémon Negro/Blanco: Barubary (The Spriters Resource).
 - Mochila de Pokémon Platino (bolsas, bolsillos y paneles): Dragoon (The Spriters Resource).
 - Íconos de categoría de movimiento (físico/especial/estado): Pokémon Showdown.

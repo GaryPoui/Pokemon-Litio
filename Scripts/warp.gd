@@ -4,6 +4,8 @@ extends Node2D
 @export var llegada: String =""
 @export var direccion: Vector2= Vector2.DOWN
 @export var sonido :String= "puerta"
+@export var vuelta: String= ""
+@export var volver :=false
 
 func _ready() -> void:
 	add_to_group("warp")

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://comjeu4duaayd"]
+
+[ext_resource type="Texture2D" uid="uid://bkq15sj3qm737" path="res://Assets/Overworld/nuevo50_28_jacaranda.png" id="1_1n3qr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1n3qr"]
+size = Vector2(16, 16)
+
+[node name="Jacaranda" type="StaticBody2D" unique_id=1701932100]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1735856388]
+position = Vector2(-24, -55)
+texture = ExtResource("1_1n3qr")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1221545975]
+shape = SubResource("RectangleShape2D_1n3qr")

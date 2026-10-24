@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c2h7axwvybd78"]
+
+[ext_resource type="Texture2D" uid="uid://cpi5w5rc1wm3m" path="res://Assets/Overworld/Villa31/arco_futbol.png" id="1_uiu7u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uiu7u"]
+size = Vector2(16, 16)
+
+[node name="ArcoFutbol" type="StaticBody2D" unique_id=1844110148]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=324423228]
+position = Vector2(-8, -20)
+texture = ExtResource("1_uiu7u")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=669422472]
+shape = SubResource("RectangleShape2D_uiu7u")

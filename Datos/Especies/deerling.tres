@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dayrp6wdl0v07"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_gaqbt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/camouflage.tres" id="2_lokkm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_0ra8j"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="4_svdys"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="5_rd45s"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_kick.tres" id="6_k22ts"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leech_seed.tres" id="7_cw0wo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="8_13nir"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="9_by1ku"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/jump_kick.tres" id="10_w2253"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aromatherapy.tres" id="11_64ewn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/energy_ball.tres" id="12_264gb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charm.tres" id="13_hlcp1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nature_power.tres" id="14_58ark"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="15_terae"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="16_mhqij"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_hwexw"]
+[ext_resource type="Texture2D" uid="uid://x4n3pb7f2n0" path="res://Assets/Pokemones/batalla/deerling_espalda.png" id="18_8kekk"]
+[ext_resource type="Texture2D" uid="uid://l5j6cef5r533" path="res://Assets/Pokemones/batalla/deerling_frente.png" id="19_bx5ao"]
+
+[sub_resource type="Resource" id="Resource_cknnb"]
+script = ExtResource("1_gaqbt")
+movimiento = ExtResource("2_lokkm")
+
+[sub_resource type="Resource" id="Resource_5rkyq"]
+script = ExtResource("1_gaqbt")
+movimiento = ExtResource("3_0ra8j")
+
+[sub_resource type="Resource" id="Resource_u67ud"]
+script = ExtResource("1_gaqbt")
+nivel = 4
+movimiento = ExtResource("4_svdys")
+
+[sub_resource type="Resource" id="Resource_igkmr"]
+script = ExtResource("1_gaqbt")
+nivel = 7
+movimiento = ExtResource("5_rd45s")
+
+[sub_resource type="Resource" id="Resource_gp4i6"]
+script = ExtResource("1_gaqbt")
+nivel = 10
+movimiento = ExtResource("6_k22ts")
+
+[sub_resource type="Resource" id="Resource_ms7oc"]
+script = ExtResource("1_gaqbt")
+nivel = 13
+movimiento = ExtResource("7_cw0wo")
+
+[sub_resource type="Resource" id="Resource_8mqq1"]
+script = ExtResource("1_gaqbt")
+nivel = 16
+movimiento = ExtResource("8_13nir")
+
+[sub_resource type="Resource" id="Resource_bbkps"]
+script = ExtResource("1_gaqbt")
+nivel = 20
+movimiento = ExtResource("9_by1ku")
+
+[sub_resource type="Resource" id="Resource_xj6hx"]
+script = ExtResource("1_gaqbt")
+nivel = 24
+movimiento = ExtResource("10_w2253")
+
+[sub_resource type="Resource" id="Resource_fc15q"]
+script = ExtResource("1_gaqbt")
+nivel = 28
+movimiento = ExtResource("11_64ewn")
+
+[sub_resource type="Resource" id="Resource_rrt6e"]
+script = ExtResource("1_gaqbt")
+nivel = 32
+movimiento = ExtResource("12_264gb")
+
+[sub_resource type="Resource" id="Resource_1jog7"]
+script = ExtResource("1_gaqbt")
+nivel = 36
+movimiento = ExtResource("13_hlcp1")
+
+[sub_resource type="Resource" id="Resource_xdfn2"]
+script = ExtResource("1_gaqbt")
+nivel = 41
+movimiento = ExtResource("14_58ark")
+
+[sub_resource type="Resource" id="Resource_qn4ra"]
+script = ExtResource("1_gaqbt")
+nivel = 46
+movimiento = ExtResource("15_terae")
+
+[sub_resource type="Resource" id="Resource_rwrds"]
+script = ExtResource("1_gaqbt")
+nivel = 51
+movimiento = ExtResource("16_mhqij")
+
+[resource]
+script = ExtResource("17_hwexw")
+id = "deerling"
+numero = 585
+nombre = "Deerling"
+tipos = ["normal", "planta"]
+ps = 60
+ataque = 60
+at_esp = 40
+velocidad = 75
+exp_base = 67
+ratio_captura = 190
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciona_a = "sawsbuck"
+nivel_evolucion = 34
+aprende = Array[ExtResource("1_gaqbt")]([SubResource("Resource_cknnb"), SubResource("Resource_5rkyq"), SubResource("Resource_u67ud"), SubResource("Resource_igkmr"), SubResource("Resource_gp4i6"), SubResource("Resource_ms7oc"), SubResource("Resource_8mqq1"), SubResource("Resource_bbkps"), SubResource("Resource_xj6hx"), SubResource("Resource_fc15q"), SubResource("Resource_rrt6e"), SubResource("Resource_1jog7"), SubResource("Resource_xdfn2"), SubResource("Resource_qn4ra"), SubResource("Resource_rwrds")])
+sprite_frente = ExtResource("19_bx5ao")
+sprite_espalda = ExtResource("18_8kekk")
+cuadros_frente = 65
+cuadros_espalda = 65
+fps_sprite = 9.03
