@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://drk15020nrqan"]
+
+[ext_resource type="Texture2D" uid="uid://d0s2umberkshd" path="res://Assets/Overworld/Rutas/semaforo.png" id="1_cpjmt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cpjmt"]
+size = Vector2(16, 16)
+
+[node name="Semaforo" type="StaticBody2D" unique_id=891940066]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1812007359]
+position = Vector2(-8, -36)
+texture = ExtResource("1_cpjmt")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1796161211]
+shape = SubResource("RectangleShape2D_cpjmt")

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/mt_acero.png" id="1_icono"]
+[ext_resource type="Script" uid="uid://d1neynu10riuh" path="res://Scripts/datos/objeto.gd" id="2_script"]
+
+[resource]
+script = ExtResource("2_script")
+id = "tm91"
+nombre = "MT91 Foco Resplandor"
+categoria = "MT / MO"
+descripcion = "Enseña Foco Resplandor: rayo de luz de acero que puede bajar la Defensa Especial del objetivo. Se puede usar las veces que quieras."
+usable = true
+se_puede_tirar = false
+precio = 0
+icono = ExtResource("1_icono")
+movimiento_mt = "flash_cannon"

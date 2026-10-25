@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_25n66"]
+
+[resource]
+script = ExtResource("1_25n66")
+id = "acid_spray"
+nombre = "Bomba Ácida"
+tipo = "veneno"
+categoria = "especial"
+poder = 40
+pp = 20
+meta = "damage-lower"
+descripcion = "Ataca con un líquido corrosivo que reduce mucho la Defensa Especial del objetivo."
+cambios_stats = {
+"def_esp": -2
+}
+prob_stat = 100

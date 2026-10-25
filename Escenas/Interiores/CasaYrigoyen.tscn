@@ -1,0 +1,82 @@
+[gd_scene format=4 uid="uid://dy76u3wtgodp0"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_35t60"]
+[ext_resource type="Texture2D" uid="uid://7fy0onj3a5qr" path="res://Assets/Batalla/fondos/campo.png" id="2_fg4fa"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_vaqtt"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_7g0cn"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_mnbdf"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_2i6bk"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="7_rbkpx"]
+[ext_resource type="SpriteFrames" uid="uid://coktisehv5kr" path="res://Recursos/Personajes/laboca_guia.tres" id="8_r7tkn"]
+[ext_resource type="SpriteFrames" uid="uid://dhj7uanei3ln7" path="res://Recursos/Personajes/joven.tres" id="9_v830g"]
+
+[node name="CasaYrigoyen" type="Node2D" unique_id=993227696]
+y_sort_enabled = true
+script = ExtResource("1_35t60")
+fondo_batalla = ExtResource("2_fg4fa")
+musica = "pueblo"
+zona_id = "constitucion"
+zona_nombre = "Constitución"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=52795131]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACAADAAEAAAAAAAEACAAEAAEAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAABAAAACAAHAAEAAAABAAEACAAHAAIAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAACAAAACAADAAEAAAACAAEACAAEAAEAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgABAAAAAAACAAUABgAAAAAAAAACAAYABgAAAAAAAAADAAAACAADAAEAAAADAAEACAAEAAEAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgAAAAAAAAADAAUABgAAAAAAAAADAAYABgABAAAAAAAEAAAACAADAAEAAAAEAAEACAAEAAEAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgAAAAAAAAAEAAUABgABAAAAAAAEAAYABgAGAAMAAAAFAAAACAADAAEAAAAFAAEACAAEAAEAAAAFAAIABgAAAAAAAAAFAAMABgAAAAAAAAAFAAQABgABAAAAAAAFAAUABgAAAAAAAAAFAAYABgAAAAAAAAAGAAAACAAHAAEAAAAGAAEACAAHAAIAAAAGAAIABgAAAAAAAAAGAAMABgABAAAAAAAGAAQABgAAAAAAAAAGAAUABgAAAAAAAAAGAAYABgABAAAAAAAHAAAACAADAAEAAAAHAAEACAAEAAEAAAAHAAIABgABAAAAAAAHAAMABgAAAAAAAAAHAAQABgAAAAAAAAAHAAUABgABAAAAAAAHAAYABgAAAAAAAAA=")
+tile_set = ExtResource("3_vaqtt")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=22207104]
+z_index = -1
+tile_set = ExtResource("3_vaqtt")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=1673450504]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAEABgAFAAEAAAAAAAIABgAFAAIAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAEABgAGAAEAAAABAAIABgAGAAIAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAAACAAEAAYAAAADAAMACAAEAAQAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAAACAACAAYAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAUABgACAAMAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAEABgAFAAEAAAAGAAIABgAFAAIAAAAGAAUABgAAAAMAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAEABgAGAAEAAAAHAAIABgAGAAIAAAAHAAUABgABAAMAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_vaqtt")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=533214387]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=1891249494]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=1895384412]
+position = Vector2(72, 104)
+script = ExtResource("5_mnbdf")
+destino = "res://Escenas/Constitucion.tscn"
+llegada = "PuertaYrigoyen"
+salir_empujando = true
+
+[node name="Cuidadora" parent="." unique_id=1999008602 instance=ExtResource("6_2i6bk")]
+position = Vector2(88, 56)
+script = ExtResource("7_rbkpx")
+objeto_regalo = ""
+cantidad_regalo = 1
+trinket_regalo = "sello_linaje"
+clave_objeto = "regalo_yrigoyen"
+texto_antes = "En esta cuadra vivió Hipólito Yrigoyen, dos veces presidente. Vivía con lo justo y donaba su sueldo. Guardamos este sello de la época: dicen que hace honor al linaje de quien lo lleva."
+texto_despues = "El Sello del Linaje potencia los movimientos del mismo tipo que el Pokémon que lo lleva."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "Hipólito Yrigoyen vivió en esta cuadra. Fue presidente dos veces y vivía con lo justo."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="Cuidadora" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_r7tkn")
+animation = &"abajo"
+
+[node name="Estudiante" parent="." unique_id=1112889724 instance=ExtResource("6_2i6bk")]
+position = Vector2(24, 72)
+texto = "Estoy haciendo un trabajo práctico sobre Yrigoyen. Le decían «el Peludo» porque casi no salía de su casa."
+mirando = Vector2(0, -1)
+
+[node name="AnimatedSprite2D" parent="Estudiante" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_v830g")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_7g0cn")]
+position = Vector2(72, 88)
+
+[editable path="Cuidadora"]
+[editable path="Estudiante"]

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://bgiurl2iu4mx"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_76awy"]
+[ext_resource type="Resource" uid="uid://q0w0xcpduaa5" path="res://Datos/Especies/klink.tres" id="2_o15li"]
+[ext_resource type="Resource" uid="uid://buw35tu3i0nqb" path="res://Datos/Especies/durant.tres" id="3_ik6yb"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="4_704i3"]
+
+[sub_resource type="Resource" id="Resource_2sgu7"]
+script = ExtResource("1_76awy")
+especie = ExtResource("2_o15li")
+nivel_min = 23
+nivel_max = 23
+peso = 1
+movimientos = Array[String](["vice_grip", "gear_grind", "charge_beam", "metal_sound"])
+
+[sub_resource type="Resource" id="Resource_qclup"]
+script = ExtResource("1_76awy")
+especie = ExtResource("3_ik6yb")
+nivel_min = 24
+nivel_max = 24
+peso = 1
+movimientos = Array[String](["metal_claw", "bite", "x_scissor", "iron_defense"])
+ia = Array[String](["subir:iron_defense:defensa:1", "danio"])
+
+[resource]
+script = ExtResource("4_704i3")
+clase = "Maquinista"
+nombre = "Rubén"
+miembros = Array[ExtResource("1_76awy")]([SubResource("Resource_2sgu7"), SubResource("Resource_qclup")])
+pago_base = 55

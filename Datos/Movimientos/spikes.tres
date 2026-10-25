@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_bfjd4"]
+
+[resource]
+script = ExtResource("1_bfjd4")
+id = "spikes"
+nombre = "Púas"
+tipo = "tierra"
+categoria = "estado"
+precision = 0
+pp = 20
+objetivo = "opponents-field"
+meta = "field-effect"
+descripcion = "Esparce púas alrededor del equipo rival que hieren a los Pokémon rivales que entran en combate. "

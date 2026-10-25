@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://v7mr3qccxybo"]
+
+[ext_resource type="Texture2D" uid="uid://crorokljlb7ms" path="res://Assets/Overworld/Rutas/cartel_san_juan.png" id="1_dfe8v"]
+
+[node name="CartelSanJuan" type="Node2D" unique_id=161179346]
+z_index = 2
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=887986932]
+position = Vector2(-8, -8)
+texture = ExtResource("1_dfe8v")
+centered = false

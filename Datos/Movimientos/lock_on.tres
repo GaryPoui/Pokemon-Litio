@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_qvb87"]
+
+[resource]
+script = ExtResource("1_qvb87")
+id = "lock_on"
+nombre = "Fijar Blanco"
+categoria = "estado"
+precision = 0
+pp = 5
+meta = "unique"
+descripcion = "Fija el blanco para que el siguiente ataque no falle."

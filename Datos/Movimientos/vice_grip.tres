@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_glaps"]
+
+[resource]
+script = ExtResource("1_glaps")
+id = "vice_grip"
+nombre = "Agarre"
+poder = 55
+pp = 30
+descripcion = "Atrapa y atenaza al objetivo."

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_mc70d"]
+
+[resource]
+script = ExtResource("1_mc70d")
+id = "gunk_shot"
+nombre = "Lanzamugre"
+tipo = "veneno"
+poder = 120
+precision = 70
+pp = 5
+meta = "damage-ailment"
+descripcion = "Lanza contra el objetivo basura asquerosa y puede envenenarlo."
+estado = "poison"
+prob_estado = 30

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_3n1fk"]
+
+[resource]
+script = ExtResource("1_3n1fk")
+id = "shift_gear"
+nombre = "Cambio de Marcha"
+tipo = "acero"
+categoria = "estado"
+precision = 0
+objetivo = "user"
+meta = "net-good-stats"
+descripcion = "Al hacer girar los engranajes, el usuario mejora su Ataque y aumenta mucho su Velocidad."
+cambios_stats = {
+"ataque": 1,
+"velocidad": 2
+}

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_5irub"]
+
+[resource]
+script = ExtResource("1_5irub")
+id = "guillotine"
+nombre = "Guillotina"
+precision = 30
+pp = 5
+meta = "ohko"
+descripcion = "Ataque cortante que debilita al oponente de un golpe si acierta."

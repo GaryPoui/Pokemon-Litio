@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://q0w0xcpduaa5"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_f6gfk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/vice_grip.tres" id="2_hlbo2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="3_tdid7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_shock.tres" id="4_o5rje"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gear_grind.tres" id="5_8ney1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bind.tres" id="6_lkgfe"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge_beam.tres" id="7_etyfk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/autotomize.tres" id="8_0a5ti"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mirror_shot.tres" id="9_q46ap"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="10_sd47h"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="11_sa323"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/metal_sound.tres" id="12_nc20n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/shift_gear.tres" id="13_1vyqs"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/lock_on.tres" id="14_570wr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/zap_cannon.tres" id="15_vas74"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hyper_beam.tres" id="16_yomrp"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_yuiw0"]
+[ext_resource type="Texture2D" uid="uid://dhkwind8g7u5e" path="res://Assets/Pokemones/batalla/klink_espalda.png" id="18_fxhqu"]
+[ext_resource type="Texture2D" uid="uid://bswtibgdwe4gd" path="res://Assets/Pokemones/batalla/klink_frente.png" id="19_gacfw"]
+
+[sub_resource type="Resource" id="Resource_umw4w"]
+script = ExtResource("1_f6gfk")
+movimiento = ExtResource("2_hlbo2")
+
+[sub_resource type="Resource" id="Resource_j10ku"]
+script = ExtResource("1_f6gfk")
+nivel = 6
+movimiento = ExtResource("3_tdid7")
+
+[sub_resource type="Resource" id="Resource_1pjvn"]
+script = ExtResource("1_f6gfk")
+nivel = 11
+movimiento = ExtResource("4_o5rje")
+
+[sub_resource type="Resource" id="Resource_tunpl"]
+script = ExtResource("1_f6gfk")
+nivel = 16
+movimiento = ExtResource("5_8ney1")
+
+[sub_resource type="Resource" id="Resource_geamh"]
+script = ExtResource("1_f6gfk")
+nivel = 21
+movimiento = ExtResource("6_lkgfe")
+
+[sub_resource type="Resource" id="Resource_1s2qr"]
+script = ExtResource("1_f6gfk")
+nivel = 26
+movimiento = ExtResource("7_etyfk")
+
+[sub_resource type="Resource" id="Resource_3hqjs"]
+script = ExtResource("1_f6gfk")
+nivel = 31
+movimiento = ExtResource("8_0a5ti")
+
+[sub_resource type="Resource" id="Resource_b16uu"]
+script = ExtResource("1_f6gfk")
+nivel = 36
+movimiento = ExtResource("9_q46ap")
+
+[sub_resource type="Resource" id="Resource_y55bx"]
+script = ExtResource("1_f6gfk")
+nivel = 39
+movimiento = ExtResource("10_sd47h")
+
+[sub_resource type="Resource" id="Resource_crkim"]
+script = ExtResource("1_f6gfk")
+nivel = 42
+movimiento = ExtResource("11_sa323")
+
+[sub_resource type="Resource" id="Resource_5cghs"]
+script = ExtResource("1_f6gfk")
+nivel = 45
+movimiento = ExtResource("12_nc20n")
+
+[sub_resource type="Resource" id="Resource_c783d"]
+script = ExtResource("1_f6gfk")
+nivel = 48
+movimiento = ExtResource("13_1vyqs")
+
+[sub_resource type="Resource" id="Resource_7n4di"]
+script = ExtResource("1_f6gfk")
+nivel = 51
+movimiento = ExtResource("14_570wr")
+
+[sub_resource type="Resource" id="Resource_xdwyi"]
+script = ExtResource("1_f6gfk")
+nivel = 54
+movimiento = ExtResource("15_vas74")
+
+[sub_resource type="Resource" id="Resource_g5voc"]
+script = ExtResource("1_f6gfk")
+nivel = 57
+movimiento = ExtResource("16_yomrp")
+
+[resource]
+script = ExtResource("17_yuiw0")
+id = "klink"
+numero = 599
+nombre = "Klink"
+tipos = ["acero"]
+ps = 40
+ataque = 55
+defensa = 70
+at_esp = 45
+def_esp = 60
+velocidad = 30
+exp_base = 60
+ratio_captura = 130
+ratio_genero = -1
+crecimiento = "medium-slow"
+evs_otorgados = {
+"defensa": 1
+}
+evoluciona_a = "klang"
+nivel_evolucion = 38
+aprende = Array[ExtResource("1_f6gfk")]([SubResource("Resource_umw4w"), SubResource("Resource_j10ku"), SubResource("Resource_1pjvn"), SubResource("Resource_tunpl"), SubResource("Resource_geamh"), SubResource("Resource_1s2qr"), SubResource("Resource_3hqjs"), SubResource("Resource_b16uu"), SubResource("Resource_y55bx"), SubResource("Resource_crkim"), SubResource("Resource_5cghs"), SubResource("Resource_c783d"), SubResource("Resource_7n4di"), SubResource("Resource_xdwyi"), SubResource("Resource_g5voc")])
+sprite_frente = ExtResource("19_gacfw")
+sprite_espalda = ExtResource("18_fxhqu")
+cuadros_frente = 16
+cuadros_espalda = 4
+fps_sprite = 14.29

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_fejj5"]
+
+[resource]
+script = ExtResource("1_fejj5")
+id = "ingrain"
+nombre = "Arraigo"
+tipo = "planta"
+categoria = "estado"
+precision = 0
+pp = 20
+objetivo = "user"
+meta = "ailment"
+descripcion = "Echa raíces para recuperar PS en cada turno, pero impide el relevo."
+estado = "ingrain"

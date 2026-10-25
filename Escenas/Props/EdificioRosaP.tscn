@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ttwatud27w5i"]
+
+[ext_resource type="Texture2D" uid="uid://smhphglio14x" path="res://Assets/Overworld/Constitucion/edificio_rosa.png" id="1_rqcfq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rqcfq"]
+size = Vector2(64, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n4s8p"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2n11"]
+size = Vector2(32, 16)
+
+[node name="EdificioRosaP" type="StaticBody2D" unique_id=745708296]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1246029854]
+position = Vector2(-32, -124)
+texture = ExtResource("1_rqcfq")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1126247463]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_rqcfq")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=705478915]
+position = Vector2(-24, 0)
+shape = SubResource("RectangleShape2D_n4s8p")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=55082975]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_h2n11")

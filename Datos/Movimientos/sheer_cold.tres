@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_iaf32"]
+
+[resource]
+script = ExtResource("1_iaf32")
+id = "sheer_cold"
+nombre = "Frío Polar"
+tipo = "hielo"
+categoria = "especial"
+precision = 30
+pp = 5
+meta = "ohko"
+descripcion = "Debilita al objetivo de un solo golpe. Si lo usa un Pokémon que no sea de tipo Hielo, es difícil que acierte."

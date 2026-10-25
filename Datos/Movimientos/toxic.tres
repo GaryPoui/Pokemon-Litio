@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_sdifd"]
+
+[resource]
+script = ExtResource("1_sdifd")
+id = "toxic"
+nombre = "Tóxico"
+tipo = "veneno"
+categoria = "estado"
+precision = 90
+meta = "ailment"
+descripcion = "Envenena gravemente al objetivo y causa un daño mayor en cada turno."
+estado = "poison"

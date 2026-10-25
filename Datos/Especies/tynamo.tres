@@ -1,0 +1,53 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bi4i2lx6po1bu"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_hyf1o"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge_beam.tres" id="2_nvids"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spark.tres" id="3_hqptp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_rqash"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="5_qetga"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="6_glt0t"]
+[ext_resource type="Texture2D" uid="uid://dpnqdtrwn8bhu" path="res://Assets/Pokemones/batalla/tynamo_espalda.png" id="7_73lat"]
+[ext_resource type="Texture2D" uid="uid://brur2yo5dxynp" path="res://Assets/Pokemones/batalla/tynamo_frente.png" id="8_l8wqy"]
+
+[sub_resource type="Resource" id="Resource_wr86v"]
+script = ExtResource("1_hyf1o")
+movimiento = ExtResource("2_nvids")
+
+[sub_resource type="Resource" id="Resource_hax3j"]
+script = ExtResource("1_hyf1o")
+movimiento = ExtResource("3_hqptp")
+
+[sub_resource type="Resource" id="Resource_stwox"]
+script = ExtResource("1_hyf1o")
+movimiento = ExtResource("4_rqash")
+
+[sub_resource type="Resource" id="Resource_b5u5m"]
+script = ExtResource("1_hyf1o")
+movimiento = ExtResource("5_qetga")
+
+[resource]
+script = ExtResource("6_glt0t")
+id = "tynamo"
+numero = 602
+nombre = "Tynamo"
+tipos = ["electrico"]
+ps = 35
+ataque = 55
+defensa = 40
+at_esp = 45
+def_esp = 40
+velocidad = 60
+exp_base = 55
+ratio_captura = 190
+crecimiento = "slow"
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciona_a = "eelektrik"
+nivel_evolucion = 39
+aprende = Array[ExtResource("1_hyf1o")]([SubResource("Resource_wr86v"), SubResource("Resource_hax3j"), SubResource("Resource_stwox"), SubResource("Resource_b5u5m")])
+sprite_frente = ExtResource("8_l8wqy")
+sprite_espalda = ExtResource("7_73lat")
+cuadros_frente = 148
+cuadros_espalda = 149
+fps_sprite = 12.74

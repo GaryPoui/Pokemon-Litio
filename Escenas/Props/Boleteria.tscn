@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dqmd40qqifs35"]
+
+[ext_resource type="Texture2D" uid="uid://1v8quii7cs7o" path="res://Assets/Overworld/Rutas/boleteria.png" id="1_x4dje"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x4dje"]
+size = Vector2(32, 16)
+
+[node name="Boleteria" type="StaticBody2D" unique_id=1612909334]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=14169350]
+position = Vector2(-16, -24)
+texture = ExtResource("1_x4dje")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=868110271]
+shape = SubResource("RectangleShape2D_x4dje")

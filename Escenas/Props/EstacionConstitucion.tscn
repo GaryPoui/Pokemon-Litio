@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b6gmofk476ob7"]
+
+[ext_resource type="Texture2D" uid="uid://bnn7q1bg5nwpq" path="res://Assets/Overworld/Constitucion/estacion_constitucion.png" id="1_wd3yd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wd3yd"]
+size = Vector2(192, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tguau"]
+size = Vector2(80, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uis8g"]
+size = Vector2(80, 16)
+
+[node name="EstacionConstitucion" type="StaticBody2D" unique_id=1898966400]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1871953148]
+position = Vector2(-96, -136)
+texture = ExtResource("1_wd3yd")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1645631877]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_wd3yd")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=1415093478]
+position = Vector2(-56, 0)
+shape = SubResource("RectangleShape2D_tguau")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=912125687]
+position = Vector2(56, 0)
+shape = SubResource("RectangleShape2D_uis8g")

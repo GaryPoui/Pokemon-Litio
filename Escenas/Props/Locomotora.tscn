@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://tp3uhdeme4bg"]
+
+[ext_resource type="Texture2D" uid="uid://wfkxc75arbua" path="res://Assets/Overworld/Gimnasios/locomotora.png" id="1_6tiqy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6tiqy"]
+size = Vector2(64, 32)
+
+[node name="Locomotora" type="StaticBody2D" unique_id=728216539]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=872088590]
+position = Vector2(-31, -39)
+texture = ExtResource("1_6tiqy")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1017913589]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_6tiqy")

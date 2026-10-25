@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_xhd3x"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/acid.tres" id="2_quqcm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="3_6qs7g"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crush_claw.tres" id="4_14k82"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="5_q3dal"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/headbutt.tres" id="6_0x33s"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="7_b2q8e"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/eelektross_espalda.png" id="8_3daf2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/eelektross_frente.png" id="9_ajehi"]
+
+[sub_resource type="Resource" id="Resource_iujwf"]
+script = ExtResource("1_xhd3x")
+movimiento = ExtResource("2_quqcm")
+
+[sub_resource type="Resource" id="Resource_4lg0l"]
+script = ExtResource("1_xhd3x")
+movimiento = ExtResource("3_6qs7g")
+
+[sub_resource type="Resource" id="Resource_a8lar"]
+script = ExtResource("1_xhd3x")
+movimiento = ExtResource("4_14k82")
+
+[sub_resource type="Resource" id="Resource_f6qoe"]
+script = ExtResource("1_xhd3x")
+movimiento = ExtResource("5_q3dal")
+
+[sub_resource type="Resource" id="Resource_wle2d"]
+script = ExtResource("1_xhd3x")
+movimiento = ExtResource("6_0x33s")
+
+[resource]
+script = ExtResource("7_b2q8e")
+id = "eelektross"
+numero = 604
+nombre = "Eelektross"
+tipos = ["electrico"]
+ps = 85
+ataque = 115
+defensa = 80
+at_esp = 105
+def_esp = 80
+exp_base = 232
+ratio_captura = 30
+crecimiento = "slow"
+evs_otorgados = {
+"ataque": 3
+}
+aprende = Array[ExtResource("1_xhd3x")]([SubResource("Resource_iujwf"), SubResource("Resource_4lg0l"), SubResource("Resource_a8lar"), SubResource("Resource_f6qoe"), SubResource("Resource_wle2d")])
+sprite_frente = ExtResource("9_ajehi")
+sprite_espalda = ExtResource("8_3daf2")
+cuadros_frente = 128
+cuadros_espalda = 128
+fps_sprite = 18.21

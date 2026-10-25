@@ -1,0 +1,75 @@
+[gd_scene format=4 uid="uid://bkvjdx6226my3"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_vscoi"]
+[ext_resource type="Texture2D" uid="uid://7fy0onj3a5qr" path="res://Assets/Batalla/fondos/campo.png" id="2_4v3ym"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_e6gw1"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_from4"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_kk2nr"]
+[ext_resource type="Script" uid="uid://77y6ik0mxot2" path="res://Scripts/mostrador.gd" id="6_6qtwq"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="7_jauv8"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="8_3wv70"]
+[ext_resource type="SpriteFrames" uid="uid://ejcw2f3o5t33" path="res://Recursos/Personajes/maestro.tres" id="9_rj8fp"]
+
+[node name="Relojeria" type="Node2D" unique_id=550815461]
+y_sort_enabled = true
+script = ExtResource("1_vscoi")
+fondo_batalla = ExtResource("2_4v3ym")
+musica = "pueblo"
+zona_id = "constitucion"
+zona_nombre = "Constitución"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=795414047]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACAAFAAQAAAAAAAEACAAGAAQAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAABAAAACAAFAAQAAAABAAEACAAGAAQAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAACAAAACAAFAAQAAAACAAEACAAGAAQAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgABAAAAAAACAAUABgAAAAAAAAACAAYABgAAAAAAAAADAAAACAAFAAQAAAADAAEACAAGAAQAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgAAAAAAAAADAAUABgAAAAAAAAADAAYABgABAAAAAAAEAAAACAAFAAQAAAAEAAEACAAGAAQAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgAAAAAAAAAEAAUABgABAAAAAAAEAAYABgAGAAMAAAAFAAAACAAFAAQAAAAFAAEACAAGAAQAAAAFAAIABgAAAAAAAAAFAAMABgAAAAAAAAAFAAQABgABAAAAAAAFAAUABgAAAAAAAAAFAAYABgAAAAAAAAAGAAAACAAFAAQAAAAGAAEACAAGAAQAAAAGAAIABgAAAAAAAAAGAAMABgABAAAAAAAGAAQABgAAAAAAAAAGAAUABgAAAAAAAAAGAAYABgABAAAAAAAHAAAACAAFAAQAAAAHAAEACAAGAAQAAAAHAAIABgABAAAAAAAHAAMABgAAAAAAAAAHAAQABgAAAAAAAAAHAAUABgABAAAAAAAHAAYABgAAAAAAAAA=")
+tile_set = ExtResource("3_e6gw1")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1060422054]
+z_index = -1
+tile_set = ExtResource("3_e6gw1")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=283146768]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAIABgAHAAAAAAAAAAUABgAHAAEAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAAACAADAAYAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAMACAADAAIAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAAACAAAAAYAAAADAAEACAABAAYAAAADAAMACAAEAAIAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAMACAAFAAIAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAAACAADAAYAAAAFAAMACAAGAAIAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAAACAADAAYAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAIABgAHAAAAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_e6gw1")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=2142599554]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=1677384092]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=712088548]
+position = Vector2(72, 104)
+script = ExtResource("5_kk2nr")
+destino = "res://Escenas/Constitucion.tscn"
+llegada = "PuertaRelojeria"
+salir_empujando = true
+
+[node name="MostradorRelojero" type="Node2D" parent="." unique_id=246644482]
+position = Vector2(56, 56)
+script = ExtResource("6_6qtwq")
+destino = "../Relojero"
+
+[node name="Relojero" parent="." unique_id=1999008602 instance=ExtResource("7_jauv8")]
+position = Vector2(56, 40)
+script = ExtResource("8_3wv70")
+objeto_regalo = "revive"
+cantidad_regalo = 2
+trinket_regalo = ""
+clave_objeto = "regalo_relojero"
+texto_antes = "Hace cuarenta años que le doy cuerda al reloj de la torre de Constitución. Un buen reloj nunca se rinde: tomá, para que tus Pokémon tampoco."
+texto_despues = "Si el reloj de la estación atrasa, la culpa es mía. Pero nunca atrasa."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "Hace cuarenta años que le doy cuerda al reloj de la estación."
+
+[node name="AnimatedSprite2D" parent="Relojero" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_rj8fp")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_from4")]
+position = Vector2(72, 88)
+
+[editable path="Relojero"]

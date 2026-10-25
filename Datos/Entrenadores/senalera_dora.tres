@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://drprpt13hfs06"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_n70nv"]
+[ext_resource type="Resource" uid="uid://cuu4ymuc6xvjr" path="res://Datos/Especies/ferroseed.tres" id="2_je4u5"]
+[ext_resource type="Resource" uid="uid://cb0dn6lifpyn1" path="res://Datos/Especies/joltik.tres" id="3_ixe3t"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="4_7yf47"]
+
+[sub_resource type="Resource" id="Resource_fx3u7"]
+script = ExtResource("1_n70nv")
+especie = ExtResource("2_je4u5")
+nivel_min = 23
+nivel_max = 23
+peso = 1
+movimientos = Array[String](["spikes", "metal_claw", "gyro_ball", "iron_defense"])
+ia = Array[String](["puas:1", "danio"])
+
+[sub_resource type="Resource" id="Resource_cpjwh"]
+script = ExtResource("1_n70nv")
+especie = ExtResource("3_ixe3t")
+nivel_min = 24
+nivel_max = 24
+peso = 1
+movimientos = Array[String](["spark", "thunder_wave", "bug_bite", "screech"])
+ia = Array[String](["estado:thunder_wave", "danio"])
+
+[resource]
+script = ExtResource("4_7yf47")
+clase = "Señalera"
+nombre = "Dora"
+miembros = Array[ExtResource("1_n70nv")]([SubResource("Resource_fx3u7"), SubResource("Resource_cpjwh")])
+pago_base = 55

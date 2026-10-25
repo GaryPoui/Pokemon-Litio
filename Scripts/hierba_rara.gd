@@ -7,13 +7,16 @@ const REGION:= Rect2(32, 0, 16, 16)
 var mata: Sprite2D
 var tiempo:= 0.0
 var sacudidas :=0
+var textura: Texture2D
+var region :=Rect2()
+var polvo:= false
 
 func _ready() -> void:
 	add_to_group("hierba_rara")
 	mata= Sprite2D.new()
-	mata.texture= HIERBA
+	mata.texture= textura if textura!= null else HIERBA
 	mata.region_enabled =true
-	mata.region_rect= REGION
+	mata.region_rect= region if textura!= null else REGION
 	mata.centered =false
 	mata.position= Vector2(0, -8)
 	position.y+= 8
@@ -33,6 +36,10 @@ func _process(delta: float) -> void:
 func _hoja(lado: float) -> void:
 	var h:= Sprite2D.new()
 	h.texture= HOJA
+	if polvo:
+		var img:= Image.create(2, 2, false, Image.FORMAT_RGBA8)
+		img.fill(Color("a8a29a"))
+		h.texture= ImageTexture.create_from_image(img)
 	h.centered =false
 	h.position= Vector2(lado* 3.0, -6.0)
 	add_child(h)

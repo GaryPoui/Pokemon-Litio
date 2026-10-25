@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://c1ee6y3x6hsp6"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_dpbe7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="2_jlynm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growth.tres" id="3_o24mo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="4_2v5yy"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bide.tres" id="5_dbb1r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="6_eqbr1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ingrain.tres" id="7_huclf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="8_un4l6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sweet_scent.tres" id="9_8x2cv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/giga_drain.tres" id="10_py7ay"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/toxic.tres" id="11_kmn1s"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/synthesis.tres" id="12_j404n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/clear_smog.tres" id="13_n78dq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="14_8oxhm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rage_powder.tres" id="15_38o7h"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spore.tres" id="16_b2f3r"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_xr5im"]
+[ext_resource type="Texture2D" uid="uid://bfp4bjo73d63o" path="res://Assets/Pokemones/batalla/foongus_espalda.png" id="18_qkxhn"]
+[ext_resource type="Texture2D" uid="uid://ba2k2kssyjtrt" path="res://Assets/Pokemones/batalla/foongus_frente.png" id="19_podso"]
+
+[sub_resource type="Resource" id="Resource_7yq5a"]
+script = ExtResource("1_dpbe7")
+movimiento = ExtResource("2_jlynm")
+
+[sub_resource type="Resource" id="Resource_rytmr"]
+script = ExtResource("1_dpbe7")
+nivel = 6
+movimiento = ExtResource("3_o24mo")
+
+[sub_resource type="Resource" id="Resource_eiucf"]
+script = ExtResource("1_dpbe7")
+nivel = 8
+movimiento = ExtResource("4_2v5yy")
+
+[sub_resource type="Resource" id="Resource_fkl3r"]
+script = ExtResource("1_dpbe7")
+nivel = 12
+movimiento = ExtResource("5_dbb1r")
+
+[sub_resource type="Resource" id="Resource_fry4h"]
+script = ExtResource("1_dpbe7")
+nivel = 15
+movimiento = ExtResource("6_eqbr1")
+
+[sub_resource type="Resource" id="Resource_ohehx"]
+script = ExtResource("1_dpbe7")
+nivel = 18
+movimiento = ExtResource("7_huclf")
+
+[sub_resource type="Resource" id="Resource_kwwg2"]
+script = ExtResource("1_dpbe7")
+nivel = 20
+movimiento = ExtResource("8_un4l6")
+
+[sub_resource type="Resource" id="Resource_u0jud"]
+script = ExtResource("1_dpbe7")
+nivel = 24
+movimiento = ExtResource("9_8x2cv")
+
+[sub_resource type="Resource" id="Resource_6hkxe"]
+script = ExtResource("1_dpbe7")
+nivel = 28
+movimiento = ExtResource("10_py7ay")
+
+[sub_resource type="Resource" id="Resource_ghsp6"]
+script = ExtResource("1_dpbe7")
+nivel = 32
+movimiento = ExtResource("11_kmn1s")
+
+[sub_resource type="Resource" id="Resource_4xdkk"]
+script = ExtResource("1_dpbe7")
+nivel = 35
+movimiento = ExtResource("12_j404n")
+
+[sub_resource type="Resource" id="Resource_2c3cq"]
+script = ExtResource("1_dpbe7")
+nivel = 39
+movimiento = ExtResource("13_n78dq")
+
+[sub_resource type="Resource" id="Resource_uotly"]
+script = ExtResource("1_dpbe7")
+nivel = 43
+movimiento = ExtResource("14_8oxhm")
+
+[sub_resource type="Resource" id="Resource_kvyev"]
+script = ExtResource("1_dpbe7")
+nivel = 45
+movimiento = ExtResource("15_38o7h")
+
+[sub_resource type="Resource" id="Resource_7pxih"]
+script = ExtResource("1_dpbe7")
+nivel = 50
+movimiento = ExtResource("16_b2f3r")
+
+[resource]
+script = ExtResource("17_xr5im")
+id = "foongus"
+numero = 590
+nombre = "Foongus"
+tipos = ["planta", "veneno"]
+ps = 69
+ataque = 55
+defensa = 45
+at_esp = 55
+def_esp = 55
+velocidad = 15
+exp_base = 59
+ratio_captura = 190
+evs_otorgados = {
+"ps": 1
+}
+evoluciona_a = "amoonguss"
+nivel_evolucion = 39
+aprende = Array[ExtResource("1_dpbe7")]([SubResource("Resource_7yq5a"), SubResource("Resource_rytmr"), SubResource("Resource_eiucf"), SubResource("Resource_fkl3r"), SubResource("Resource_fry4h"), SubResource("Resource_ohehx"), SubResource("Resource_kwwg2"), SubResource("Resource_u0jud"), SubResource("Resource_6hkxe"), SubResource("Resource_ghsp6"), SubResource("Resource_4xdkk"), SubResource("Resource_2c3cq"), SubResource("Resource_uotly"), SubResource("Resource_kvyev"), SubResource("Resource_7pxih")])
+sprite_frente = ExtResource("19_podso")
+sprite_espalda = ExtResource("18_qkxhn")
+cuadros_frente = 49
+cuadros_espalda = 49
+fps_sprite = 9.07

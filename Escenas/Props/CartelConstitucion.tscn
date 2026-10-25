@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://rnrytbi8efb7"]
+
+[ext_resource type="Texture2D" uid="uid://bjnyc7mqhfwo0" path="res://Assets/Overworld/Rutas/cartel_constitucion.png" id="1_xj43y"]
+
+[node name="CartelConstitucion" type="Node2D" unique_id=1315056780]
+z_index = 2
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=795996494]
+position = Vector2(-8, -8)
+texture = ExtResource("1_xj43y")
+centered = false

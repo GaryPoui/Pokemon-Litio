@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cuu4ymuc6xvjr"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_jq0mg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="2_n3s76"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_04lqc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rollout.tres" id="4_abtsm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/curse.tres" id="5_bj0ui"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/metal_claw.tres" id="6_bml6n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pin_missile.tres" id="7_8rjfa"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gyro_ball.tres" id="8_mhj1o"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/iron_defense.tres" id="9_o5jp6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mirror_shot.tres" id="10_qtp8w"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ingrain.tres" id="11_acaoe"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/self_destruct.tres" id="12_j06ei"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/iron_head.tres" id="13_marrx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/payback.tres" id="14_hcc7n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flash_cannon.tres" id="15_6pul1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="16_baruf"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_imn7i"]
+[ext_resource type="Texture2D" uid="uid://c6dr50t4bl7r2" path="res://Assets/Pokemones/batalla/ferroseed_espalda.png" id="18_psxoj"]
+[ext_resource type="Texture2D" uid="uid://darbi8yenigi1" path="res://Assets/Pokemones/batalla/ferroseed_frente.png" id="19_yil38"]
+
+[sub_resource type="Resource" id="Resource_unl1h"]
+script = ExtResource("1_jq0mg")
+movimiento = ExtResource("2_n3s76")
+
+[sub_resource type="Resource" id="Resource_yiutv"]
+script = ExtResource("1_jq0mg")
+movimiento = ExtResource("3_04lqc")
+
+[sub_resource type="Resource" id="Resource_o2nc7"]
+script = ExtResource("1_jq0mg")
+nivel = 6
+movimiento = ExtResource("4_abtsm")
+
+[sub_resource type="Resource" id="Resource_oslfh"]
+script = ExtResource("1_jq0mg")
+nivel = 9
+movimiento = ExtResource("5_bj0ui")
+
+[sub_resource type="Resource" id="Resource_7gjve"]
+script = ExtResource("1_jq0mg")
+nivel = 14
+movimiento = ExtResource("6_bml6n")
+
+[sub_resource type="Resource" id="Resource_kb7bi"]
+script = ExtResource("1_jq0mg")
+nivel = 18
+movimiento = ExtResource("7_8rjfa")
+
+[sub_resource type="Resource" id="Resource_mjurh"]
+script = ExtResource("1_jq0mg")
+nivel = 21
+movimiento = ExtResource("8_mhj1o")
+
+[sub_resource type="Resource" id="Resource_w8efs"]
+script = ExtResource("1_jq0mg")
+nivel = 26
+movimiento = ExtResource("9_o5jp6")
+
+[sub_resource type="Resource" id="Resource_03qt5"]
+script = ExtResource("1_jq0mg")
+nivel = 30
+movimiento = ExtResource("10_qtp8w")
+
+[sub_resource type="Resource" id="Resource_0rxm3"]
+script = ExtResource("1_jq0mg")
+nivel = 35
+movimiento = ExtResource("11_acaoe")
+
+[sub_resource type="Resource" id="Resource_ajq1j"]
+script = ExtResource("1_jq0mg")
+nivel = 38
+movimiento = ExtResource("12_j06ei")
+
+[sub_resource type="Resource" id="Resource_0jwuq"]
+script = ExtResource("1_jq0mg")
+nivel = 43
+movimiento = ExtResource("13_marrx")
+
+[sub_resource type="Resource" id="Resource_l4rbd"]
+script = ExtResource("1_jq0mg")
+nivel = 47
+movimiento = ExtResource("14_hcc7n")
+
+[sub_resource type="Resource" id="Resource_yrvx1"]
+script = ExtResource("1_jq0mg")
+nivel = 52
+movimiento = ExtResource("15_6pul1")
+
+[sub_resource type="Resource" id="Resource_6fsu8"]
+script = ExtResource("1_jq0mg")
+nivel = 55
+movimiento = ExtResource("16_baruf")
+
+[resource]
+script = ExtResource("17_imn7i")
+id = "ferroseed"
+numero = 597
+nombre = "Ferroseed"
+tipos = ["planta", "acero"]
+ps = 44
+defensa = 91
+at_esp = 24
+def_esp = 86
+velocidad = 10
+exp_base = 61
+ratio_captura = 255
+evs_otorgados = {
+"defensa": 1
+}
+evoluciona_a = "ferrothorn"
+nivel_evolucion = 40
+aprende = Array[ExtResource("1_jq0mg")]([SubResource("Resource_unl1h"), SubResource("Resource_yiutv"), SubResource("Resource_o2nc7"), SubResource("Resource_oslfh"), SubResource("Resource_7gjve"), SubResource("Resource_kb7bi"), SubResource("Resource_mjurh"), SubResource("Resource_w8efs"), SubResource("Resource_03qt5"), SubResource("Resource_0rxm3"), SubResource("Resource_ajq1j"), SubResource("Resource_0jwuq"), SubResource("Resource_l4rbd"), SubResource("Resource_yrvx1"), SubResource("Resource_6fsu8")])
+sprite_frente = ExtResource("19_yil38")
+sprite_espalda = ExtResource("18_psxoj")
+cuadros_frente = 204
+cuadros_espalda = 226
+fps_sprite = 15.04

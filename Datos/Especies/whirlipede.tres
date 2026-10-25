@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://53auv1x07igt"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vvhmd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="2_ade60"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/poison_sting.tres" id="3_an78f"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rollout.tres" id="4_h4ox1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="5_xjhp5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="6_xt0xj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/protect.tres" id="7_u2w5g"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/poison_tail.tres" id="8_cc05k"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/iron_defense.tres" id="9_nkrrw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="10_n1hd7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/venoshock.tres" id="11_ndgqk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="12_c65eo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/steamroller.tres" id="13_7c5i8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/toxic.tres" id="14_44lxn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rock_climb.tres" id="15_mdycc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="16_24wqy"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_ugb1t"]
+[ext_resource type="Texture2D" uid="uid://b5cnupjbs3gjn" path="res://Assets/Pokemones/batalla/whirlipede_espalda.png" id="18_gk1ce"]
+[ext_resource type="Texture2D" uid="uid://dps7jrgq55ktu" path="res://Assets/Pokemones/batalla/whirlipede_frente.png" id="19_77r4l"]
+
+[sub_resource type="Resource" id="Resource_8u3vk"]
+script = ExtResource("1_vvhmd")
+movimiento = ExtResource("2_ade60")
+
+[sub_resource type="Resource" id="Resource_bbpvr"]
+script = ExtResource("1_vvhmd")
+movimiento = ExtResource("3_an78f")
+
+[sub_resource type="Resource" id="Resource_vooii"]
+script = ExtResource("1_vvhmd")
+movimiento = ExtResource("4_h4ox1")
+
+[sub_resource type="Resource" id="Resource_0b287"]
+script = ExtResource("1_vvhmd")
+movimiento = ExtResource("5_xjhp5")
+
+[sub_resource type="Resource" id="Resource_hfrh7"]
+script = ExtResource("1_vvhmd")
+nivel = 5
+movimiento = ExtResource("3_an78f")
+
+[sub_resource type="Resource" id="Resource_phwhm"]
+script = ExtResource("1_vvhmd")
+nivel = 8
+movimiento = ExtResource("5_xjhp5")
+
+[sub_resource type="Resource" id="Resource_f6pwv"]
+script = ExtResource("1_vvhmd")
+nivel = 12
+movimiento = ExtResource("6_xt0xj")
+
+[sub_resource type="Resource" id="Resource_ieyov"]
+script = ExtResource("1_vvhmd")
+nivel = 15
+movimiento = ExtResource("7_u2w5g")
+
+[sub_resource type="Resource" id="Resource_6rw6s"]
+script = ExtResource("1_vvhmd")
+nivel = 19
+movimiento = ExtResource("8_cc05k")
+
+[sub_resource type="Resource" id="Resource_bi73g"]
+script = ExtResource("1_vvhmd")
+nivel = 22
+movimiento = ExtResource("9_nkrrw")
+
+[sub_resource type="Resource" id="Resource_ks0hd"]
+script = ExtResource("1_vvhmd")
+nivel = 23
+movimiento = ExtResource("10_n1hd7")
+
+[sub_resource type="Resource" id="Resource_nm0lw"]
+script = ExtResource("1_vvhmd")
+nivel = 28
+movimiento = ExtResource("11_ndgqk")
+
+[sub_resource type="Resource" id="Resource_2fswf"]
+script = ExtResource("1_vvhmd")
+nivel = 32
+movimiento = ExtResource("12_c65eo")
+
+[sub_resource type="Resource" id="Resource_ws6yf"]
+script = ExtResource("1_vvhmd")
+nivel = 37
+movimiento = ExtResource("13_7c5i8")
+
+[sub_resource type="Resource" id="Resource_1aefx"]
+script = ExtResource("1_vvhmd")
+nivel = 41
+movimiento = ExtResource("14_44lxn")
+
+[sub_resource type="Resource" id="Resource_v0o8r"]
+script = ExtResource("1_vvhmd")
+nivel = 46
+movimiento = ExtResource("15_mdycc")
+
+[sub_resource type="Resource" id="Resource_7awl3"]
+script = ExtResource("1_vvhmd")
+nivel = 50
+movimiento = ExtResource("16_24wqy")
+
+[resource]
+script = ExtResource("17_ugb1t")
+id = "whirlipede"
+numero = 544
+nombre = "Whirlipede"
+tipos = ["bicho", "veneno"]
+ps = 40
+ataque = 55
+defensa = 99
+at_esp = 40
+def_esp = 79
+velocidad = 47
+exp_base = 126
+ratio_captura = 120
+crecimiento = "medium-slow"
+evs_otorgados = {
+"defensa": 2
+}
+evoluciona_a = "scolipede"
+nivel_evolucion = 30
+aprende = Array[ExtResource("1_vvhmd")]([SubResource("Resource_8u3vk"), SubResource("Resource_bbpvr"), SubResource("Resource_vooii"), SubResource("Resource_0b287"), SubResource("Resource_hfrh7"), SubResource("Resource_phwhm"), SubResource("Resource_f6pwv"), SubResource("Resource_ieyov"), SubResource("Resource_6rw6s"), SubResource("Resource_bi73g"), SubResource("Resource_ks0hd"), SubResource("Resource_nm0lw"), SubResource("Resource_2fswf"), SubResource("Resource_ws6yf"), SubResource("Resource_1aefx"), SubResource("Resource_v0o8r"), SubResource("Resource_7awl3")])
+sprite_frente = ExtResource("19_77r4l")
+sprite_espalda = ExtResource("18_gk1ce")
+cuadros_frente = 96
+cuadros_espalda = 98
+fps_sprite = 13.6

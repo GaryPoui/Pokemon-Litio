@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_fyij4"]
+
+[resource]
+script = ExtResource("1_fyij4")
+id = "iron_head"
+nombre = "Cabeza de Hierro"
+tipo = "acero"
+poder = 80
+pp = 15
+descripcion = "Ataca con su dura cabeza de hierro. Puede hacer que el objetivo se amedrente."
+prob_retroceso = 30

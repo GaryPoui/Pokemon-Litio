@@ -1,0 +1,87 @@
+[gd_scene format=4 uid="uid://bu7n8hx2okkf8"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_8yotg"]
+[ext_resource type="Texture2D" uid="uid://7fy0onj3a5qr" path="res://Assets/Batalla/fondos/campo.png" id="2_0dhim"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_3i7nb"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_71qby"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_8mbks"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_730mk"]
+[ext_resource type="Script" uid="uid://e5xkutdy0347" path="res://Scripts/desafio.gd" id="7_5x67v"]
+[ext_resource type="SpriteFrames" uid="uid://ia82g3bprd3n" path="res://Recursos/Personajes/rutas_ferroviario.tres" id="8_pgho2"]
+[ext_resource type="SpriteFrames" uid="uid://bdcbiibfcjg1l" path="res://Recursos/Personajes/guay_m.tres" id="9_nbsk6"]
+[ext_resource type="SpriteFrames" uid="uid://b7cxigkbnqs60" path="res://Recursos/Personajes/guay_h.tres" id="10_0bgyy"]
+
+[node name="TorreReloj" type="Node2D" unique_id=1540736807]
+y_sort_enabled = true
+script = ExtResource("1_8yotg")
+fondo_batalla = ExtResource("2_0dhim")
+musica = "pueblo"
+zona_id = "constitucion"
+zona_nombre = "Constitución"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1298443449]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACAADAAEAAAAAAAEACAAEAAEAAAAAAAIACAACAAAAAAAAAAMACAACAAAAAAAAAAQACAACAAAAAAAAAAUACAADAAAAAAAAAAYACAACAAAAAAAAAAcACAACAAAAAAAAAAgACAACAAAAAAABAAAACAAHAAEAAAABAAEACAAHAAIAAAABAAIACAACAAAAAAABAAMACAACAAAAAAABAAQACAACAAAAAAABAAUACAACAAAAAAABAAYACAADAAAAAAABAAcACAACAAAAAAABAAgACAACAAAAAAACAAAACAADAAEAAAACAAEACAAEAAEAAAACAAIACAADAAAAAAACAAMACAACAAAAAAACAAQACAACAAAAAAACAAUACAACAAAAAAACAAYACAACAAAAAAACAAcACAADAAAAAAACAAgACAACAAAAAAADAAAACAADAAEAAAADAAEACAAEAAEAAAADAAIACAACAAAAAAADAAMACAADAAAAAAADAAQACAACAAAAAAADAAUACAACAAAAAAADAAYACAACAAAAAAADAAcACAACAAAAAAADAAgACAADAAAAAAAEAAAACAADAAEAAAAEAAEACAAEAAEAAAAEAAIACAACAAAAAAAEAAMACAACAAAAAAAEAAQACAADAAAAAAAEAAUACAACAAAAAAAEAAYACAACAAAAAAAEAAcACAACAAAAAAAEAAgACAACAAAAAAAFAAAACAAGAAMAAAAFAAEACAAEAAEAAAAFAAIACAACAAAAAAAFAAMACAACAAAAAAAFAAQACAACAAAAAAAFAAUACAADAAAAAAAFAAYACAACAAAAAAAFAAcACAACAAAAAAAFAAgACAACAAAAAAAGAAAACAAHAAMAAAAGAAEACAAEAAEAAAAGAAIACAACAAAAAAAGAAMACAAEAAAAAAAGAAQACAAEAAAAAAAGAAUACAAEAAAAAAAGAAYACAAEAAAAAAAGAAcACAAEAAAAAAAGAAgACAACAAUAAAAHAAAACAADAAEAAAAHAAEACAAEAAEAAAAHAAIACAADAAAAAAAHAAMACAACAAAAAAAHAAQACAACAAAAAAAHAAUACAACAAAAAAAHAAYACAACAAAAAAAHAAcACAADAAAAAAAHAAgACAACAAAAAAAIAAAACAADAAEAAAAIAAEACAAEAAEAAAAIAAIACAACAAAAAAAIAAMACAADAAAAAAAIAAQACAACAAAAAAAIAAUACAACAAAAAAAIAAYACAACAAAAAAAIAAcACAACAAAAAAAIAAgACAADAAAAAAAJAAAACAADAAEAAAAJAAEACAAEAAEAAAAJAAIACAACAAAAAAAJAAMACAACAAAAAAAJAAQACAADAAAAAAAJAAUACAACAAAAAAAJAAYACAACAAAAAAAJAAcACAACAAAAAAAJAAgACAACAAAAAAAKAAAACAAHAAEAAAAKAAEACAAHAAIAAAAKAAIACAACAAAAAAAKAAMACAACAAAAAAAKAAQACAACAAAAAAAKAAUACAADAAAAAAAKAAYACAACAAAAAAAKAAcACAACAAAAAAAKAAgACAACAAAAAAALAAAACAADAAEAAAALAAEACAAEAAEAAAALAAIACAACAAAAAAALAAMACAACAAAAAAALAAQACAACAAAAAAALAAUACAACAAAAAAALAAYACAADAAAAAAALAAcACAACAAAAAAALAAgACAACAAAAAAA=")
+tile_set = ExtResource("3_3i7nb")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=552887572]
+z_index = -1
+tile_set = ExtResource("3_3i7nb")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=774439753]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAD//wgABgAHAAIAAAD//wkABgAHAAIAAAAAAP//BgAHAAIAAAAAAAIACAAFAAMAAAAAAAYACAAFAAMAAAAAAAkABgAHAAIAAAABAP//BgAHAAIAAAABAAkABgAHAAIAAAACAP//BgAHAAIAAAACAAkABgAHAAIAAAADAP//BgAHAAIAAAADAAAACAADAAYAAAADAAMACAACAAMAAAADAAkABgAHAAIAAAAEAP//BgAHAAIAAAAEAAMACAADAAMAAAAEAAkABgAHAAIAAAAFAP//BgAHAAIAAAAFAAMACAAEAAMAAAAFAAkABgAHAAIAAAAGAP//BgAHAAIAAAAGAAkABgAHAAIAAAAHAP//BgAHAAIAAAAHAAMACAACAAMAAAAHAAkABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAACAADAAYAAAAIAAMACAADAAMAAAAIAAkABgAHAAIAAAAJAP//BgAHAAIAAAAJAAMACAAEAAMAAAAJAAkABgAHAAIAAAAKAP//BgAHAAIAAAAKAAkABgAHAAIAAAALAP//BgAHAAIAAAALAAIACAAFAAMAAAALAAYACAAFAAMAAAALAAkABgAHAAIAAAAMAP//BgAHAAIAAAAMAAAABgAHAAIAAAAMAAEABgAHAAIAAAAMAAIABgAHAAIAAAAMAAMABgAHAAIAAAAMAAQABgAHAAIAAAAMAAUABgAHAAIAAAAMAAYABgAHAAIAAAAMAAcABgAHAAIAAAAMAAgABgAHAAIAAAAMAAkABgAHAAIAAAA=")
+tile_set = ExtResource("3_3i7nb")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=160387742]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=1409462575]
+position = Vector2(104, 120)
+
+[node name="Salida" type="Node2D" parent="." unique_id=93758473]
+position = Vector2(104, 136)
+script = ExtResource("5_8mbks")
+destino = "res://Escenas/Constitucion.tscn"
+llegada = "PuertaEstacion"
+salir_empujando = true
+
+[node name="Anfitriona" parent="." unique_id=1999008602 instance=ExtResource("6_730mk")]
+position = Vector2(104, 40)
+script = ExtResource("7_5x67v")
+nombre_desafio = "Desafío del Reloj"
+pool = Array[String]([])
+texto_bienvenida = "¡Bienvenido al Desafío del Reloj! Debajo de la torre de la estación se pelea con puntualidad inglesa: un Pokémon contra otro, sin cambios."
+
+[node name="AnimatedSprite2D" parent="Anfitriona" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_pgho2")
+animation = &"abajo"
+
+[node name="Pasajera" parent="." unique_id=629241334 instance=ExtResource("6_730mk")]
+position = Vector2(40, 104)
+texto = "Todos los días tomo el Roca a las 7:42. Si el reloj de la torre dice que llego tarde, llego tarde."
+mirando = Vector2(1, 0)
+
+[node name="AnimatedSprite2D" parent="Pasajera" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_nbsk6")
+animation = &"abajo"
+
+[node name="Habitue" parent="." unique_id=1584631161 instance=ExtResource("6_730mk")]
+position = Vector2(152, 104)
+texto = "Las Fichas de Desafío de La Boca y de Villa 31 también valen acá. Cada victoria le sube un nivel al Pokémon que pelea."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="Habitue" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("10_0bgyy")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_71qby")]
+position = Vector2(104, 120)
+
+[editable path="Anfitriona"]
+[editable path="Pasajera"]
+[editable path="Habitue"]

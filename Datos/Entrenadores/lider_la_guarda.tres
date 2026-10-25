@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://dh6ajxpnka5f8"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_tqsto"]
+[ext_resource type="Resource" uid="uid://cuu4ymuc6xvjr" path="res://Datos/Especies/ferroseed.tres" id="2_mpcwf"]
+[ext_resource type="Resource" uid="uid://bx6mt6sa50dv8" path="res://Datos/Especies/klang.tres" id="3_kxhrh"]
+[ext_resource type="Resource" uid="uid://s3mf10thgw5j" path="res://Datos/Especies/pawniard.tres" id="4_362tj"]
+[ext_resource type="Resource" uid="uid://dfpp1gwpglkyi" path="res://Datos/Especies/skarmory.tres" id="5_w8l1b"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="6_5f03m"]
+
+[sub_resource type="Resource" id="Resource_oskkw"]
+script = ExtResource("1_tqsto")
+especie = ExtResource("2_mpcwf")
+nivel_min = 26
+nivel_max = 26
+peso = 1
+trinkets = Array[String](["vendaje"])
+movimientos = Array[String](["spikes", "iron_defense", "gyro_ball", "metal_claw"])
+ia = Array[String](["puas:2", "subir:iron_defense:defensa:2", "danio"])
+
+[sub_resource type="Resource" id="Resource_te6y7"]
+script = ExtResource("1_tqsto")
+especie = ExtResource("3_kxhrh")
+nivel_min = 27
+nivel_max = 27
+peso = 1
+trinkets = Array[String](["escama_robusta"])
+movimientos = Array[String](["stealth_rock", "gear_grind", "charge_beam", "metal_sound"])
+ia = Array[String](["rocas", "danio"])
+
+[sub_resource type="Resource" id="Resource_evmu4"]
+script = ExtResource("1_tqsto")
+especie = ExtResource("4_362tj")
+nivel_min = 27
+nivel_max = 27
+peso = 1
+trinkets = Array[String](["colmillo_afilado"])
+movimientos = Array[String](["iron_head", "night_slash", "iron_defense", "fury_cutter"])
+ia = Array[String](["subir:iron_defense:defensa:1", "danio"])
+
+[sub_resource type="Resource" id="Resource_a0yc3"]
+script = ExtResource("1_tqsto")
+especie = ExtResource("5_w8l1b")
+nivel_min = 29
+nivel_max = 29
+peso = 1
+trinkets = Array[String](["escama_robusta"])
+movimientos = Array[String](["spikes", "whirlwind", "steel_wing", "drill_peck"])
+ia = Array[String](["puas:3", "silbato", "danio"])
+
+[resource]
+script = ExtResource("6_5f03m")
+clase = "Líder"
+nombre = "La Guarda"
+miembros = Array[ExtResource("1_tqsto")]([SubResource("Resource_oskkw"), SubResource("Resource_te6y7"), SubResource("Resource_evmu4"), SubResource("Resource_a0yc3")])
+pago_base = 140
+objetos = Array[String](["super_potion", "hyper_potion"])

@@ -110,12 +110,20 @@ func _al_terminar_paso(celda: Vector2i) -> void:
 			Dialogo.mostrar("El efecto del Repelente se ha terminado.")
 			return
 	var tasa:= encuentros.tasa* (1.0+ EfectosTrinket.total("encuentros", null, Equipo.miembros)) if encuentros!= null else 0.0
-	if encuentros!= null and es_hierba(celda) and (safari or Equipo.primero_util()!= null) and rng.randf()< tasa:
+	if encuentros!= null and hay_encuentro(celda) and (safari or Equipo.primero_util()!= null) and rng.randf()< tasa:
 		var e:= encuentros.elegir(rng, EfectosTrinket.total("rareza", null, Equipo.miembros))
 		if e!= null:
 			_encuentro(e)
 			return
 	_avanzar_rara(celda)
+
+func salto_en(celda: Vector2i) -> String:
+	for capa in [get_node_or_null("Obstaculos"), get_node_or_null("Suelo")]:
+		if capa is TileMapLayer and capa.tile_set!= null and capa.tile_set.get_custom_data_layer_by_name("salto")>= 0:
+			var td: TileData= capa.get_cell_tile_data(celda)
+			if td!= null and str(td.get_custom_data("salto"))!= "":
+				return str(td.get_custom_data("salto"))
+	return ""
 
 func salir_empujando(celda: Vector2i, dir: Vector2) -> bool:
 	for w in get_tree().get_nodes_in_group("warp"):
@@ -151,7 +159,7 @@ func _avanzar_rara(celda: Vector2i) -> void:
 	for dy in range(-DIST_RARA.y, DIST_RARA.y+ 1):
 		for dx in range(-DIST_RARA.y, DIST_RARA.y+ 1):
 			var c:= celda+ Vector2i(dx, dy)
-			if absi(dx)+ absi(dy)>= DIST_RARA.x and es_hierba(c):
+			if absi(dx)+ absi(dy)>= DIST_RARA.x and hay_encuentro(c):
 				opciones.append(c)
 	if opciones.is_empty():
 		return
@@ -162,6 +170,14 @@ func poner_rara(c: Vector2i) -> void:
 	celda_rara= c
 	pasos_rara =0
 	hierba_rara= HIERBA_RARA.new()
+	if not es_hierba(c):
+		var capa:= get_node_or_null("Decoracion") as TileMapLayer
+		if capa!= null and capa.get_cell_source_id(c)>= 0:
+			var src:= capa.tile_set.get_source(capa.get_cell_source_id(c)) as TileSetAtlasSource
+			if src!= null:
+				hierba_rara.textura= src.texture
+				hierba_rara.region =Rect2(src.get_tile_texture_region(capa.get_cell_atlas_coords(c)))
+				hierba_rara.polvo= true
 	hierba_rara.position= Vector2(c* tam_celda)
 	add_child(hierba_rara)
 
@@ -169,6 +185,15 @@ func _quitar_rara() -> void:
 	if hierba_rara!= null:
 		hierba_rara.queue_free()
 	hierba_rara= null
+
+func hay_encuentro(celda: Vector2i) -> bool:
+	if es_hierba(celda):
+		return true
+	var capa:= get_node_or_null("Decoracion") as TileMapLayer
+	if capa== null or capa.tile_set== null or capa.tile_set.get_custom_data_layer_by_name("escondite")< 0:
+		return false
+	var td:= capa.get_cell_tile_data(celda)
+	return td!= null and td.get_custom_data("escondite")== true
 
 func es_hierba(celda: Vector2i) -> bool:
 	var capa:= get_node_or_null("Decoracion") as TileMapLayer

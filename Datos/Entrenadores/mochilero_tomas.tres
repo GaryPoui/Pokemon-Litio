@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://b63jnp7wpwsnr"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_6jhao"]
+[ext_resource type="Resource" uid="uid://q3ve70kb4v4c" path="res://Datos/Especies/tranquill.tres" id="2_cxug6"]
+[ext_resource type="Resource" uid="uid://bi7gw3f4gt6q" path="res://Datos/Especies/roggenrola.tres" id="3_sty0x"]
+[ext_resource type="Resource" uid="uid://clup4bcxlvii8" path="res://Datos/Especies/emolga.tres" id="4_grtom"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="5_gkinn"]
+
+[sub_resource type="Resource" id="Resource_4w45q"]
+script = ExtResource("1_6jhao")
+especie = ExtResource("2_cxug6")
+nivel_min = 22
+nivel_max = 22
+peso = 1
+
+[sub_resource type="Resource" id="Resource_o8mvi"]
+script = ExtResource("1_6jhao")
+especie = ExtResource("3_sty0x")
+nivel_min = 22
+nivel_max = 22
+peso = 1
+
+[sub_resource type="Resource" id="Resource_5dw27"]
+script = ExtResource("1_6jhao")
+especie = ExtResource("4_grtom")
+nivel_min = 23
+nivel_max = 23
+peso = 1
+
+[resource]
+script = ExtResource("5_gkinn")
+clase = "Mochilero"
+nombre = "Tomás"
+miembros = Array[ExtResource("1_6jhao")]([SubResource("Resource_4w45q"), SubResource("Resource_o8mvi"), SubResource("Resource_5dw27")])
+pago_base = 50

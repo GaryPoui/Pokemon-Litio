@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://clup4bcxlvii8"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_p2xxu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_shock.tres" id="2_gluqi"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="3_tmwvu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="4_s45we"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="5_e285l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spark.tres" id="6_fbb6t"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="7_f8uel"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_team.tres" id="8_h2y62"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/shock_wave.tres" id="9_lv031"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/electro_ball.tres" id="10_67q0m"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/acrobatics.tres" id="11_0a45e"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/light_screen.tres" id="12_6q07d"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/encore.tres" id="13_j3lwj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/volt_switch.tres" id="14_f1ulv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="15_j1khi"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="16_8o8lp"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_hag27"]
+[ext_resource type="Texture2D" uid="uid://4m0l2io4jbf3" path="res://Assets/Pokemones/batalla/emolga_espalda.png" id="18_vw3xn"]
+[ext_resource type="Texture2D" uid="uid://haht5q8852vq" path="res://Assets/Pokemones/batalla/emolga_frente.png" id="19_namh3"]
+
+[sub_resource type="Resource" id="Resource_fc2be"]
+script = ExtResource("1_p2xxu")
+movimiento = ExtResource("2_gluqi")
+
+[sub_resource type="Resource" id="Resource_wfjgv"]
+script = ExtResource("1_p2xxu")
+nivel = 4
+movimiento = ExtResource("3_tmwvu")
+
+[sub_resource type="Resource" id="Resource_4ddor"]
+script = ExtResource("1_p2xxu")
+nivel = 7
+movimiento = ExtResource("4_s45we")
+
+[sub_resource type="Resource" id="Resource_t15sa"]
+script = ExtResource("1_p2xxu")
+nivel = 10
+movimiento = ExtResource("5_e285l")
+
+[sub_resource type="Resource" id="Resource_lix2e"]
+script = ExtResource("1_p2xxu")
+nivel = 13
+movimiento = ExtResource("6_fbb6t")
+
+[sub_resource type="Resource" id="Resource_bxkdq"]
+script = ExtResource("1_p2xxu")
+nivel = 16
+movimiento = ExtResource("7_f8uel")
+
+[sub_resource type="Resource" id="Resource_7u8h7"]
+script = ExtResource("1_p2xxu")
+nivel = 19
+movimiento = ExtResource("8_h2y62")
+
+[sub_resource type="Resource" id="Resource_o8vqn"]
+script = ExtResource("1_p2xxu")
+nivel = 22
+movimiento = ExtResource("9_lv031")
+
+[sub_resource type="Resource" id="Resource_y6kdn"]
+script = ExtResource("1_p2xxu")
+nivel = 26
+movimiento = ExtResource("10_67q0m")
+
+[sub_resource type="Resource" id="Resource_52dtu"]
+script = ExtResource("1_p2xxu")
+nivel = 30
+movimiento = ExtResource("11_0a45e")
+
+[sub_resource type="Resource" id="Resource_0f6bj"]
+script = ExtResource("1_p2xxu")
+nivel = 34
+movimiento = ExtResource("12_6q07d")
+
+[sub_resource type="Resource" id="Resource_dxpca"]
+script = ExtResource("1_p2xxu")
+nivel = 38
+movimiento = ExtResource("13_j3lwj")
+
+[sub_resource type="Resource" id="Resource_nj7vc"]
+script = ExtResource("1_p2xxu")
+nivel = 42
+movimiento = ExtResource("14_f1ulv")
+
+[sub_resource type="Resource" id="Resource_oj7uy"]
+script = ExtResource("1_p2xxu")
+nivel = 46
+movimiento = ExtResource("15_j1khi")
+
+[sub_resource type="Resource" id="Resource_y7h88"]
+script = ExtResource("1_p2xxu")
+nivel = 50
+movimiento = ExtResource("16_8o8lp")
+
+[resource]
+script = ExtResource("17_hag27")
+id = "emolga"
+numero = 587
+nombre = "Emolga"
+tipos = ["electrico", "volador"]
+ps = 55
+ataque = 75
+defensa = 60
+at_esp = 75
+def_esp = 60
+velocidad = 103
+exp_base = 150
+ratio_captura = 200
+evs_otorgados = {
+"velocidad": 2
+}
+aprende = Array[ExtResource("1_p2xxu")]([SubResource("Resource_fc2be"), SubResource("Resource_wfjgv"), SubResource("Resource_4ddor"), SubResource("Resource_t15sa"), SubResource("Resource_lix2e"), SubResource("Resource_bxkdq"), SubResource("Resource_7u8h7"), SubResource("Resource_o8vqn"), SubResource("Resource_y6kdn"), SubResource("Resource_52dtu"), SubResource("Resource_0f6bj"), SubResource("Resource_dxpca"), SubResource("Resource_nj7vc"), SubResource("Resource_oj7uy"), SubResource("Resource_y7h88")])
+sprite_frente = ExtResource("19_namh3")
+sprite_espalda = ExtResource("18_vw3xn")
+cuadros_frente = 98
+cuadros_espalda = 97
+fps_sprite = 10.46

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b7naeip0732ci"]
+
+[ext_resource type="Texture2D" uid="uid://npfdjc0oidjm" path="res://Assets/Overworld/Constitucion/trasbordo.png" id="1_nxa68"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nxa68"]
+size = Vector2(96, 16)
+
+[node name="Trasbordo" type="StaticBody2D" unique_id=1100287958]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=555732631]
+position = Vector2(-49, -48)
+texture = ExtResource("1_nxa68")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1496410384]
+shape = SubResource("RectangleShape2D_nxa68")

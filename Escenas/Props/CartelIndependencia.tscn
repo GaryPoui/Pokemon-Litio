@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://sj38gh16027m"]
+
+[ext_resource type="Texture2D" uid="uid://e7wsgysdyuig" path="res://Assets/Overworld/Rutas/cartel_independencia.png" id="1_gli8x"]
+
+[node name="CartelIndependencia" type="Node2D" unique_id=1446148542]
+z_index = 2
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=358933305]
+position = Vector2(-8, -8)
+texture = ExtResource("1_gli8x")
+centered = false

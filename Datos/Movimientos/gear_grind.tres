@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_vs1g4"]
+
+[resource]
+script = ExtResource("1_vs1g4")
+id = "gear_grind"
+nombre = "Rueda Doble"
+tipo = "acero"
+poder = 50
+precision = 85
+pp = 15
+descripcion = "Rota dos engranajes de hierro sobre el objetivo. Golpea dos veces."

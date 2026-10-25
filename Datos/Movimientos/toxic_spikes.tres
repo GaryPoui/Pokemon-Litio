@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_nd6d6"]
+
+[resource]
+script = ExtResource("1_nd6d6")
+id = "toxic_spikes"
+nombre = "Púas Tóxicas"
+tipo = "veneno"
+categoria = "estado"
+precision = 0
+pp = 20
+objetivo = "opponents-field"
+meta = "field-effect"
+descripcion = "Lanza una trampa de púas tóxicas a los pies del objetivo. El veneno afecta a los Pokémon oponentes que entran en combate."

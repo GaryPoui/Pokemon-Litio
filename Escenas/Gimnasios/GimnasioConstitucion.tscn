@@ -1,0 +1,218 @@
+[gd_scene format=4 uid="uid://588j077j5l4t"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_qep8i"]
+[ext_resource type="Texture2D" uid="uid://7fy0onj3a5qr" path="res://Assets/Batalla/fondos/campo.png" id="2_jv3y8"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_ty506"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_a5vwb"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_4je2y"]
+[ext_resource type="PackedScene" uid="uid://tp3uhdeme4bg" path="res://Escenas/Props/Locomotora.tscn" id="6_b6qvk"]
+[ext_resource type="Script" uid="uid://byjj0sehdttyq" path="res://Scripts/objeto_oculto.gd" id="7_ue8u0"]
+[ext_resource type="Script" uid="uid://kektvejqy6u7" path="res://Scripts/mesa_giratoria.gd" id="8_rqr2j"]
+[ext_resource type="Script" uid="uid://hyfnmolnnx6p" path="res://Scripts/palanca.gd" id="9_6rd8y"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="10_h7v3q"]
+[ext_resource type="Script" uid="uid://hamtyxhu8hcm" path="res://Scripts/lider.gd" id="11_028qg"]
+[ext_resource type="Resource" uid="uid://dh6ajxpnka5f8" path="res://Datos/Entrenadores/lider_la_guarda.tres" id="12_eocgt"]
+[ext_resource type="SpriteFrames" uid="uid://brwq7e8c6p2rt" path="res://Recursos/Personajes/gym_la_guarda.tres" id="12_h2i3v"]
+[ext_resource type="Script" uid="uid://cf87qjs4x03b8" path="res://Scripts/entrenador.gd" id="14_8so3n"]
+[ext_resource type="SpriteFrames" uid="uid://dwpjitipv1yg8" path="res://Recursos/Personajes/montanero.tres" id="15_6e0cu"]
+[ext_resource type="Resource" uid="uid://bgiurl2iu4mx" path="res://Datos/Entrenadores/maquinista_ruben.tres" id="15_oer58"]
+[ext_resource type="SpriteFrames" uid="uid://bscstn3e2t1qj" path="res://Recursos/Personajes/chica.tres" id="17_k64dt"]
+[ext_resource type="Resource" uid="uid://drprpt13hfs06" path="res://Datos/Entrenadores/senalera_dora.tres" id="17_omcas"]
+[ext_resource type="SpriteFrames" uid="uid://bo7igfunh1kvh" path="res://Recursos/Personajes/villa31_obrero.tres" id="19_iux7v"]
+[ext_resource type="Resource" uid="uid://bptarbh0e5cfp" path="res://Datos/Entrenadores/mecanico_tito.tres" id="19_t3guf"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="21_qwsjw"]
+[ext_resource type="SpriteFrames" uid="uid://ia82g3bprd3n" path="res://Recursos/Personajes/rutas_ferroviario.tres" id="22_tf2s0"]
+
+[node name="GimnasioConstitucion" type="Node2D" unique_id=1044912218]
+y_sort_enabled = true
+script = ExtResource("1_qep8i")
+fondo_batalla = ExtResource("2_jv3y8")
+musica = "gimnasio"
+zona_id = "gimnasio_constitucion"
+zona_nombre = "Talleres del Roca"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1456019333]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACwAHAAEAAAAAAAEACwAHAAEAAAAAAAIACwAHAAEAAAAAAAMACwAHAAEAAAAAAAQACwAHAAEAAAAAAAUACwAHAAEAAAAAAAYACwAHAAEAAAAAAAcACwAHAAEAAAAAAAgACwAHAAEAAAAAAAkACwAHAAEAAAAAAAoACwAHAAEAAAAAAAsACwAHAAEAAAAAAAwACwAHAAEAAAAAAA0ACwAHAAEAAAAAAA4ACwAHAAEAAAAAAA8ACwAHAAEAAAAAABAACwAHAAEAAAAAABEACwAHAAEAAAABAAAACwAAAAEAAAABAAEACwABAAEAAAABAAIACwABAAAAAAABAAMACwAEAAAAAAABAAQACwABAAAAAAABAAUACwAGAAAAAAABAAYACwAFAAAAAAABAAcACwAHAAAAAAABAAgACwABAAAAAAABAAkACwABAAAAAAABAAoACwABAAAAAAABAAsACwAGAAAAAAABAAwACwAFAAAAAAABAA0ACwAHAAAAAAABAA4ACwABAAAAAAABAA8ACwABAAAAAAABABAACwABAAAAAAABABEACwABAAAAAAACAAAACwAEAAEAAAACAAEACwAFAAEAAAACAAIACwAAAAAAAAACAAMACwAEAAAAAAACAAQACwAAAAAAAAACAAUACwAGAAAAAAACAAYACwAFAAAAAAACAAcACwAHAAAAAAACAAgACwAAAAAAAAACAAkACwAAAAAAAAACAAoACwAAAAAAAAACAAsACwAGAAAAAAACAAwACwAFAAAAAAACAA0ACwAHAAAAAAACAA4ACwAAAAAAAAACAA8ACwAAAAAAAAACABAACwAAAAAAAAACABEACwAAAAAAAAADAAAACwAAAAEAAAADAAEACwABAAEAAAADAAIACwABAAAAAAADAAMACwAEAAAAAAADAAQACwABAAAAAAADAAUACwAGAAAAAAADAAYACwAFAAAAAAADAAcACwAHAAAAAAADAAgACwAAAAAAAAADAAkACwACAAAAAAADAAoACwABAAAAAAADAAsACwAAAAAAAAADAAwACwAAAAAAAAADAA0ACwAAAAAAAAADAA4ACwABAAAAAAADAA8ACwABAAAAAAADABAACwABAAAAAAADABEACwABAAAAAAAEAAAACwACAAEAAAAEAAEACwADAAEAAAAEAAIACwAAAAAAAAAEAAMACwAEAAAAAAAEAAQACwAAAAAAAAAEAAUACwAGAAAAAAAEAAYACwAFAAAAAAAEAAcACwAHAAAAAAAEAAgACwAAAAAAAAAEAAkACwAAAAAAAAAEAAoACwAAAAAAAAAEAAsACwAAAAAAAAAEAAwACwAAAAAAAAAEAA0ACwAAAAAAAAAEAA4ACwAAAAAAAAAEAA8ACwAAAAAAAAAEABAACwAAAAAAAAAEABEACwAAAAAAAAAFAAAACwAAAAEAAAAFAAEACwABAAEAAAAFAAIACwABAAAAAAAFAAMACwAEAAAAAAAFAAQACwABAAAAAAAFAAUACwAGAAAAAAAFAAYACwAFAAAAAAAFAAcACwAHAAAAAAAFAAgACwABAAAAAAAFAAkACwABAAAAAAAFAAoACwABAAAAAAAFAAsACwAAAAAAAAAFAAwACwAAAAAAAAAFAA0ACwAAAAAAAAAFAA4ACwABAAAAAAAFAA8ACwABAAAAAAAFABAACwAAAAAAAAAFABEACwABAAAAAAAGAAAACwAAAAEAAAAGAAEACwABAAEAAAAGAAIACwAAAAAAAAAGAAMACwAEAAAAAAAGAAQACwAAAAAAAAAGAAUACwAGAAAAAAAGAAYACwAFAAAAAAAGAAcACwAHAAAAAAAGAAgACwAAAAAAAAAGAAkACwAAAAAAAAAGAAoACwAAAAAAAAAGAAsACwAGAAAAAAAGAAwACwAFAAAAAAAGAA0ACwAHAAAAAAAGAA4ACwAAAAAAAAAGAA8ACwACAAAAAAAGABAACwAAAAAAAAAGABEACwAAAAAAAAAHAAAACwAAAAEAAAAHAAEACwABAAEAAAAHAAIACwABAAAAAAAHAAMACwABAAAAAAAHAAQACwABAAAAAAAHAAUACwAGAAAAAAAHAAYACwAFAAAAAAAHAAcACwAHAAAAAAAHAAgACwABAAAAAAAHAAkACwABAAAAAAAHAAoACwABAAAAAAAHAAsACwAGAAAAAAAHAAwACwAFAAAAAAAHAA0ACwAHAAAAAAAHAA4ACwABAAAAAAAHAA8ACwABAAAAAAAHABAACwABAAAAAAAHABEACwABAAAAAAAIAAAACwACAAEAAAAIAAEACwADAAEAAAAIAAIACwAAAAAAAAAIAAMACwAAAAAAAAAIAAQACwAAAAAAAAAIAAUACwAGAAAAAAAIAAYACwAFAAAAAAAIAAcACwAHAAAAAAAIAAgACwAAAAAAAAAIAAkACwAAAAAAAAAIAAoACwAAAAAAAAAIAAsACwAGAAAAAAAIAAwACwAFAAAAAAAIAA0ACwAHAAAAAAAIAA4ACwAAAAAAAAAIAA8ACwAAAAAAAAAIABAACwAAAAAAAAAIABEACwAAAAAAAAAJAAAACwAAAAEAAAAJAAEACwABAAEAAAAJAAIACwABAAAAAAAJAAMACwABAAAAAAAJAAQACwABAAAAAAAJAAUACwAGAAAAAAAJAAYACwAFAAAAAAAJAAcACwAHAAAAAAAJAAgACwAAAAAAAAAJAAkACwAAAAAAAAAJAAoACwAAAAAAAAAJAAsACwAGAAAAAAAJAAwACwAFAAAAAAAJAA0ACwAHAAAAAAAJAA4ACwABAAAAAAAJAA8ACwAAAAAAAAAJABAACwABAAAAAAAJABEACwACAAIAAAAKAAAACwAAAAEAAAAKAAEACwABAAEAAAAKAAIACwAAAAAAAAAKAAMACwAAAAAAAAAKAAQACwAAAAAAAAAKAAUACwAGAAAAAAAKAAYACwAFAAAAAAAKAAcACwAHAAAAAAAKAAgACwAAAAAAAAAKAAkACwAAAAAAAAAKAAoACwAAAAAAAAAKAAsACwAGAAAAAAAKAAwACwAFAAAAAAAKAA0ACwAHAAAAAAAKAA4ACwAAAAAAAAAKAA8ACwAAAAAAAAAKABAACwAAAAAAAAAKABEACwACAAIAAAALAAAACwACAAEAAAALAAEACwADAAEAAAALAAIACwABAAAAAAALAAMACwABAAAAAAALAAQACwABAAAAAAALAAUACwAGAAAAAAALAAYACwAFAAAAAAALAAcACwAHAAAAAAALAAgACwAAAAAAAAALAAkACwAAAAAAAAALAAoACwAAAAAAAAALAAsACwAGAAAAAAALAAwACwAFAAAAAAALAA0ACwAHAAAAAAALAA4ACwABAAAAAAALAA8ACwABAAAAAAALABAACwABAAAAAAALABEACwABAAAAAAAMAAAACwAAAAEAAAAMAAEACwABAAEAAAAMAAIACwAAAAAAAAAMAAMACwAAAAAAAAAMAAQACwAAAAAAAAAMAAUACwAGAAAAAAAMAAYACwAFAAAAAAAMAAcACwAHAAAAAAAMAAgACwAAAAAAAAAMAAkACwACAAAAAAAMAAoACwAAAAAAAAAMAAsACwAGAAAAAAAMAAwACwAFAAAAAAAMAA0ACwAHAAAAAAAMAA4ACwAAAAAAAAAMAA8ACwAAAAAAAAAMABAACwAAAAAAAAAMABEACwAAAAAAAAANAAAACwAAAAEAAAANAAEACwABAAEAAAANAAIACwABAAAAAAANAAMACwABAAAAAAANAAQACwABAAAAAAANAAUACwAGAAAAAAANAAYACwAFAAAAAAANAAcACwAHAAAAAAANAAgACwABAAAAAAANAAkACwABAAAAAAANAAoACwABAAAAAAANAAsACwAGAAAAAAANAAwACwAFAAAAAAANAA0ACwAHAAAAAAANAA4ACwABAAAAAAANAA8ACwABAAAAAAANABAACwABAAAAAAANABEACwABAAAAAAAOAAAACwAAAAEAAAAOAAEACwABAAEAAAAOAAIACwAAAAAAAAAOAAMACwAAAAAAAAAOAAQACwAAAAAAAAAOAAUACwAAAAAAAAAOAAYACwAAAAAAAAAOAAcACwAAAAAAAAAOAAgACwAAAAAAAAAOAAkACwAAAAAAAAAOAAoACwAAAAAAAAAOAAsACwAGAAAAAAAOAAwACwAFAAAAAAAOAA0ACwAHAAAAAAAOAA4ACwAAAAAAAAAOAA8ACwAAAAAAAAAOABAACwAAAAAAAAAOABEACwAAAAAAAAAPAAAACwACAAEAAAAPAAEACwADAAEAAAAPAAIACwABAAAAAAAPAAMACwABAAAAAAAPAAQACwABAAAAAAAPAAUACwAAAAAAAAAPAAYACwAAAAAAAAAPAAcACwAAAAAAAAAPAAgACwABAAAAAAAPAAkACwABAAAAAAAPAAoACwABAAAAAAAPAAsACwAGAAAAAAAPAAwACwAFAAAAAAAPAA0ACwAHAAAAAAAPAA4ACwABAAAAAAAPAA8ACwAAAAAAAAAPABAACwABAAAAAAAPABEACwABAAAAAAAQAAAACwAAAAEAAAAQAAEACwABAAEAAAAQAAIACwAAAAAAAAAQAAMACwAAAAAAAAAQAAQACwAAAAAAAAAQAAUACwAAAAAAAAAQAAYACwAAAAAAAAAQAAcACwAAAAAAAAAQAAgACwAAAAAAAAAQAAkACwAAAAAAAAAQAAoACwAAAAAAAAAQAAsACwAGAAAAAAAQAAwACwAFAAAAAAAQAA0ACwAHAAAAAAAQAA4ACwAAAAAAAAAQAA8ACwAAAAAAAAAQABAACwAAAAAAAAAQABEACwAAAAAAAAARAAAACwAEAAEAAAARAAEACwAFAAEAAAARAAIACwABAAAAAAARAAMACwABAAAAAAARAAQACwABAAAAAAARAAUACwAGAAAAAAARAAYACwAFAAAAAAARAAcACwAHAAAAAAARAAgACwABAAAAAAARAAkACwABAAAAAAARAAoACwABAAAAAAARAAsACwAGAAAAAAARAAwACwAFAAAAAAARAA0ACwAHAAAAAAARAA4ACwABAAAAAAARAA8ACwABAAAAAAARABAACwABAAAAAAARABEACwABAAAAAAASAAAACwAAAAEAAAASAAEACwABAAEAAAASAAIACwAAAAAAAAASAAMACwAAAAAAAAASAAQACwAAAAAAAAASAAUACwAGAAAAAAASAAYACwAFAAAAAAASAAcACwAHAAAAAAASAAgACwAAAAAAAAASAAkACwAAAAAAAAASAAoACwAAAAAAAAASAAsACwAGAAAAAAASAAwACwAFAAAAAAASAA0ACwAHAAAAAAASAA4ACwAAAAAAAAASAA8ACwAAAAAAAAASABAACwAAAAAAAAASABEACwAAAAAAAAATAAAACwAHAAEAAAATAAEACwAHAAEAAAATAAIACwAHAAEAAAATAAMACwAHAAEAAAATAAQACwAHAAEAAAATAAUACwAHAAEAAAATAAYACwAHAAEAAAATAAcACwAHAAEAAAATAAgACwAHAAEAAAATAAkACwAHAAEAAAATAAoACwAHAAEAAAATAAsACwAHAAEAAAATAAwACwAHAAEAAAATAA0ACwAHAAEAAAATAA4ACwAHAAEAAAATAA8ACwAHAAEAAAATABAACwAHAAEAAAATABEACwAHAAEAAAA=")
+tile_set = ExtResource("3_ty506")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1016803415]
+z_index = -1
+tile_set = ExtResource("3_ty506")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=519655173]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////CwAHAAEAAAD//wAACwAHAAEAAAD//wEACwAHAAEAAAD//wIACwAHAAEAAAD//wMACwAHAAEAAAD//wQACwAHAAEAAAD//wUACwAHAAEAAAD//wYACwAHAAEAAAD//wcACwAHAAEAAAD//wgACwAHAAEAAAD//wkACwAHAAEAAAD//woACwAHAAEAAAD//wsACwAHAAEAAAD//wwACwAHAAEAAAD//w0ACwAHAAEAAAD//w4ACwAHAAEAAAD//w8ACwAHAAEAAAD//xAACwAHAAEAAAD//xEACwAHAAEAAAD//xIACwAHAAEAAAAAAP//CwAHAAEAAAAAABIACwAHAAEAAAABAP//CwAHAAEAAAABABIACwAHAAEAAAACAP//CwAHAAEAAAACABIACwAHAAEAAAADAP//CwAHAAEAAAADAAgACwAAAAIAAAADABIACwAHAAEAAAAEAP//CwAHAAEAAAAEAAgACwABAAIAAAAEABIACwAHAAEAAAAFAP//CwAHAAEAAAAFABAACwAGAAEAAAAFABIACwAHAAEAAAAGAP//CwAHAAEAAAAGABIACwAHAAEAAAAHAP//CwAHAAEAAAAHABIACwAHAAEAAAAIAP//CwAHAAEAAAAIABIACwAHAAEAAAAJAP//CwAHAAEAAAAJAA8ACwAGAAEAAAAJABIACwAHAAEAAAAKAP//CwAHAAEAAAAKABIACwAHAAEAAAALAP//CwAHAAEAAAALABIACwAHAAEAAAAMAP//CwAHAAEAAAAMABIACwAHAAEAAAANAP//CwAHAAEAAAANABIACwAHAAEAAAAOAP//CwAHAAEAAAAOAAIACwAGAAEAAAAOABIACwAHAAEAAAAPAP//CwAHAAEAAAAPAA8ACwAAAAIAAAAPABIACwAHAAEAAAAQAP//CwAHAAEAAAAQAA8ACwABAAIAAAAQABIACwAHAAEAAAARAP//CwAHAAEAAAARABIACwAHAAEAAAASAP//CwAHAAEAAAASAA8ACwAGAAEAAAASABIACwAHAAEAAAATAP//CwAHAAEAAAATABIACwAHAAEAAAAUAP//CwAHAAEAAAAUAAAACwAHAAEAAAAUAAEACwAHAAEAAAAUAAIACwAHAAEAAAAUAAMACwAHAAEAAAAUAAQACwAHAAEAAAAUAAUACwAHAAEAAAAUAAYACwAHAAEAAAAUAAcACwAHAAEAAAAUAAgACwAHAAEAAAAUAAkACwAHAAEAAAAUAAoACwAHAAEAAAAUAAsACwAHAAEAAAAUAAwACwAHAAEAAAAUAA0ACwAHAAEAAAAUAA4ACwAHAAEAAAAUAA8ACwAHAAEAAAAUABAACwAHAAEAAAAUABEACwAHAAEAAAAUABIACwAHAAEAAAA=")
+tile_set = ExtResource("3_ty506")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=1671341139]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=1094192045]
+position = Vector2(152, 264)
+
+[node name="Entrada2" type="Marker2D" parent="Llegadas" unique_id=1039294344]
+position = Vector2(168, 264)
+
+[node name="Salida" type="Node2D" parent="." unique_id=332707580]
+position = Vector2(152, 280)
+script = ExtResource("5_4je2y")
+destino = "res://Escenas/Constitucion.tscn"
+llegada = "PuertaGimnasio"
+salir_empujando = true
+
+[node name="Salida2" type="Node2D" parent="." unique_id=396574939]
+position = Vector2(168, 280)
+script = ExtResource("5_4je2y")
+destino = "res://Escenas/Constitucion.tscn"
+llegada = "PuertaGimnasio"
+salir_empujando = true
+
+[node name="Locomotora" parent="." unique_id=728216539 instance=ExtResource("6_b6qvk")]
+position = Vector2(64, 56)
+
+[node name="Oculto1" type="Node2D" parent="." unique_id=2012140039]
+position = Vector2(24, 264)
+script = ExtResource("7_ue8u0")
+item_id = "full_heal"
+clave = "oculto_gym_const"
+
+[node name="MesaInferior" type="Node2D" parent="." unique_id=5623992]
+position = Vector2(72, 200)
+script = ExtResource("8_rqr2j")
+clave = "gym_const_mesa_inf"
+
+[node name="MesaMedia" type="Node2D" parent="." unique_id=1563373787]
+position = Vector2(168, 152)
+script = ExtResource("8_rqr2j")
+clave = "gym_const_mesa_med"
+vertical_inicial = true
+
+[node name="MesaSuperior" type="Node2D" parent="." unique_id=1237412409]
+position = Vector2(248, 104)
+script = ExtResource("8_rqr2j")
+clave = "gym_const_mesa_sup"
+
+[node name="PalancaInf1" type="Node2D" parent="." unique_id=1969368893]
+position = Vector2(40, 232)
+script = ExtResource("9_6rd8y")
+mesas = ["MesaInferior"]
+
+[node name="PalancaInf2" type="Node2D" parent="." unique_id=415946706]
+position = Vector2(40, 152)
+script = ExtResource("9_6rd8y")
+mesas = ["MesaInferior"]
+
+[node name="PalancaMed1" type="Node2D" parent="." unique_id=549101467]
+position = Vector2(120, 168)
+script = ExtResource("9_6rd8y")
+mesas = ["MesaMedia"]
+
+[node name="PalancaMed2" type="Node2D" parent="." unique_id=358747210]
+position = Vector2(216, 168)
+script = ExtResource("9_6rd8y")
+mesas = ["MesaMedia"]
+
+[node name="PalancaSup1" type="Node2D" parent="." unique_id=463209230]
+position = Vector2(280, 152)
+script = ExtResource("9_6rd8y")
+mesas = ["MesaSuperior"]
+
+[node name="PalancaSup2" type="Node2D" parent="." unique_id=126930636]
+position = Vector2(280, 56)
+script = ExtResource("9_6rd8y")
+mesas = ["MesaSuperior"]
+
+[node name="LaGuarda" parent="." unique_id=1999008602 instance=ExtResource("10_h7v3q")]
+position = Vector2(168, 56)
+script = ExtResource("11_028qg")
+medalla = "anden"
+nombre_medalla = "Medalla Andén"
+requiere_medalla = "terraza"
+texto_requisito = "¡Alto ahí! Este andén es para entrenadores con la Medalla Terraza. Volvé cuando le hayas ganado a La Gata."
+mt_premio = "tm91"
+trinket_premio = "escama_robusta"
+texto_premio = "Llevate este Disco Técnico: Foco Resplandor, puro acero. Y esta Escama Robusta, para que aguantes la hora pico."
+datos = ExtResource("12_eocgt")
+clave = "vencio_la_guarda"
+texto_derrota = "¡Fiuuuu! Llegaste a destino. Te ganaste la Medalla Andén."
+texto_despues = "En hora pico no conviene cambiar de vagón a cada rato: si te tiran púas, quedate y pegá fuerte."
+texto = "Bienvenido a los Talleres del Roca. Soy la Guarda: acá cada tren sale a horario y nadie se baja donde quiere. Tiro las vías, toco el silbato, y vos vas y venís a mi ritmo. ¡A bordo!"
+
+[node name="AnimatedSprite2D" parent="LaGuarda" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("12_h2i3v")
+animation = &"abajo"
+
+[node name="MaquinistaRuben" parent="." unique_id=2102479301 instance=ExtResource("10_h7v3q")]
+position = Vector2(216, 248)
+script = ExtResource("14_8so3n")
+datos = ExtResource("15_oer58")
+clave = "vencio_maquinista_ruben"
+texto_derrota = "¡Uy! Me descarrilaste."
+texto_despues = "Las palancas mueven las mesas giratorias. Cada mesa tiene una palanca de cada lado."
+texto = "¡Treinta años manejando el Roca! Mis Pokémon son duros como un riel."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="MaquinistaRuben" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("15_6e0cu")
+animation = &"abajo"
+
+[node name="SenaleraDora" parent="." unique_id=1110811850 instance=ExtResource("10_h7v3q")]
+position = Vector2(88, 152)
+script = ExtResource("14_8so3n")
+datos = ExtResource("17_omcas")
+clave = "vencio_senalera_dora"
+texto_derrota = "Señal en verde... pasá nomás."
+texto_despues = "La mesa del medio cruza de lado a lado. Girala y seguí hacia el este."
+texto = "¡Señal en rojo! No pasás sin pelear."
+
+[node name="AnimatedSprite2D" parent="SenaleraDora" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("17_k64dt")
+animation = &"abajo"
+
+[node name="MecanicoTito" parent="." unique_id=1273564780 instance=ExtResource("10_h7v3q")]
+position = Vector2(264, 168)
+script = ExtResource("14_8so3n")
+datos = ExtResource("19_t3guf")
+clave = "vencio_mecanico_tito"
+texto_derrota = "Se me aflojó una tuerca..."
+texto_despues = "La Guarda pone púas y después toca el silbato para hacerte cambiar de Pokémon. Cada vez que entrás, te pinchás."
+texto = "Aceito engranajes desde chico. ¡Mis Pokémon están bien ajustados!"
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="MecanicoTito" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("19_iux7v")
+animation = &"abajo"
+
+[node name="GuiaGimnasio" parent="." unique_id=1507277299 instance=ExtResource("10_h7v3q")]
+position = Vector2(184, 264)
+script = ExtResource("21_qwsjw")
+objeto_regalo = "super_potion"
+cantidad_regalo = 2
+trinket_regalo = ""
+clave_objeto = "guia_gym_const"
+texto_antes = "¡Bienvenido a los Talleres! La Guarda usa Pokémon de acero: el fuego y la lucha les pegan fuerte. Tomá, esto te va a ayudar."
+texto_despues = "Girá las mesas con las palancas. Si una vía no conecta, buscá la otra palanca."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "¡Bienvenido a los Talleres del Roca! Para llegar al andén de la Guarda tenés que girar las mesas giratorias con las palancas."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="GuiaGimnasio" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("22_tf2s0")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_a5vwb")]
+position = Vector2(152, 264)
+
+[editable path="LaGuarda"]
+[editable path="MaquinistaRuben"]
+[editable path="SenaleraDora"]
+[editable path="MecanicoTito"]
+[editable path="GuiaGimnasio"]

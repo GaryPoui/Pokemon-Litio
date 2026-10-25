@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_o0ymp"]
+
+[resource]
+script = ExtResource("1_o0ymp")
+id = "volt_switch"
+nombre = "Voltiocambio"
+tipo = "electrico"
+categoria = "especial"
+poder = 70
+pp = 20
+descripcion = "Tras atacar, el usuario vuelve a toda prisa para dar paso a otro Pokémon del equipo."

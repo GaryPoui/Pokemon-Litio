@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_sxbps"]
+
+[resource]
+script = ExtResource("1_sxbps")
+id = "acid_armor"
+nombre = "Armadura Ácida"
+tipo = "veneno"
+categoria = "estado"
+precision = 0
+pp = 40
+objetivo = "user"
+meta = "net-good-stats"
+descripcion = "Transforma la estructura celular para hacerse líquido y aumenta mucho la Defensa."
+cambios_stats = {
+"defensa": 2
+}

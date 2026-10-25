@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_70hri"]
+
+[resource]
+script = ExtResource("1_70hri")
+id = "weather_ball"
+nombre = "Meteorobola"
+categoria = "especial"
+poder = 50
+descripcion = "El tipo y fuerza del ataque varían según el tiempo que haga."

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_mhhs5"]
+
+[resource]
+script = ExtResource("1_mhhs5")
+id = "sludge"
+nombre = "Residuos"
+tipo = "veneno"
+categoria = "especial"
+poder = 65
+pp = 20
+meta = "damage-ailment"
+descripcion = "Arroja residuos al objetivo. Puede llegar a envenenar."
+estado = "poison"
+prob_estado = 30

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_jx31g"]
+
+[resource]
+script = ExtResource("1_jx31g")
+id = "poison_gas"
+nombre = "Gas Venenoso"
+tipo = "veneno"
+categoria = "estado"
+precision = 80
+pp = 40
+objetivo = "all-opponents"
+meta = "ailment"
+descripcion = "Lanza una nube de gas tóxico al objetivo. Produce envenenamiento."
+estado = "poison"

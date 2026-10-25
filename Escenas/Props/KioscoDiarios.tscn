@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b6aum82qh2po7"]
+
+[ext_resource type="Texture2D" uid="uid://bv0bi0si31nbv" path="res://Assets/Overworld/Rutas/kiosco_diarios.png" id="1_r0rpv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0rpv"]
+size = Vector2(32, 16)
+
+[node name="KioscoDiarios" type="StaticBody2D" unique_id=418491201]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=796232120]
+position = Vector2(-16, -32)
+texture = ExtResource("1_r0rpv")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=108721345]
+shape = SubResource("RectangleShape2D_r0rpv")

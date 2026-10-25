@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_5vs5a"]
+
+[resource]
+script = ExtResource("1_5vs5a")
+id = "steel_wing"
+nombre = "Ala de Acero"
+tipo = "acero"
+poder = 70
+precision = 90
+pp = 25
+meta = "damage-raise"
+descripcion = "Alas macizas que golpean al objetivo y pueden subir la Defensa del usuario."
+cambios_stats = {
+"defensa": 1
+}
+prob_stat = 10

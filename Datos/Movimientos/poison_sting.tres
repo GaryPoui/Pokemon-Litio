@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_qn22v"]
+
+[resource]
+script = ExtResource("1_qn22v")
+id = "poison_sting"
+nombre = "Picotazo Veneno"
+tipo = "veneno"
+poder = 15
+pp = 35
+meta = "damage-ailment"
+descripcion = "Lanza un aguijón tóxico que puede envenenar al objetivo."
+estado = "poison"
+prob_estado = 30

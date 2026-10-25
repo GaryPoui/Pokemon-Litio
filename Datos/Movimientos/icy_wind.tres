@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_f3qyo"]
+
+[resource]
+script = ExtResource("1_f3qyo")
+id = "icy_wind"
+nombre = "Viento Hielo"
+tipo = "hielo"
+categoria = "especial"
+poder = 55
+precision = 95
+pp = 15
+objetivo = "all-opponents"
+meta = "damage-lower"
+descripcion = "Ataque con aire helado que baja la Velocidad de los rivales."
+cambios_stats = {
+"velocidad": -1
+}
+prob_stat = 100

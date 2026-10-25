@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_52rxp"]
+
+[resource]
+script = ExtResource("1_52rxp")
+id = "rage_powder"
+nombre = "Polvo Ira"
+tipo = "bicho"
+categoria = "estado"
+precision = 0
+pp = 20
+prioridad = 2
+objetivo = "user"
+meta = "unique"
+descripcion = "Usa un polvo que irrita y centra en el usuario la atención y los ataques de los rivales."

@@ -1,0 +1,81 @@
+[gd_scene format=4 uid="uid://blpbat8myfgws"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_8woky"]
+[ext_resource type="Texture2D" uid="uid://7fy0onj3a5qr" path="res://Assets/Batalla/fondos/campo.png" id="2_y514x"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_j0b8u"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_btcxl"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_057ls"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_y7y8q"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="7_dq5ng"]
+[ext_resource type="SpriteFrames" uid="uid://bla2ql07euub3" path="res://Recursos/Personajes/rutas_oficinista.tres" id="8_ix7g6"]
+[ext_resource type="SpriteFrames" uid="uid://bscstn3e2t1qj" path="res://Recursos/Personajes/chica.tres" id="9_jh1vq"]
+
+[node name="CasaColectivero" type="Node2D" unique_id=708480428]
+y_sort_enabled = true
+script = ExtResource("1_8woky")
+fondo_batalla = ExtResource("2_y514x")
+musica = "pueblo"
+zona_id = "constitucion"
+zona_nombre = "Constitución"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=194030838]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAABgACAAAAAAAAAAEABgADAAAAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAABAAAABgACAAAAAAABAAEABgADAAAAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAACAAAABgACAAAAAAACAAEABgADAAAAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgAAAAQAAAACAAUABgADAAQAAAACAAYABgAAAAAAAAADAAAABgACAAAAAAADAAEABgADAAAAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgABAAQAAAADAAUABgAEAAQAAAADAAYABgABAAAAAAAEAAAABgACAAAAAAAEAAEABgADAAAAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgACAAQAAAAEAAUABgAFAAQAAAAEAAYABgAGAAMAAAAFAAAABgACAAAAAAAFAAEABgADAAAAAAAFAAIABgAAAAAAAAAFAAMABgAAAAAAAAAFAAQABgABAAAAAAAFAAUABgAAAAAAAAAFAAYABgAAAAAAAAAGAAAABgACAAAAAAAGAAEABgADAAAAAAAGAAIABgAAAAAAAAAGAAMABgABAAAAAAAGAAQABgAAAAAAAAAGAAUABgAAAAAAAAAGAAYABgABAAAAAAAHAAAABgACAAAAAAAHAAEABgADAAAAAAAHAAIABgABAAAAAAAHAAMABgAAAAAAAAAHAAQABgAAAAAAAAAHAAUABgABAAAAAAAHAAYABgAAAAAAAAA=")
+tile_set = ExtResource("3_j0b8u")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=741623182]
+z_index = -1
+tile_set = ExtResource("3_j0b8u")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=684282777]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAEABgAAAAEAAAAAAAIABgAAAAIAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAAACAAAAAYAAAABAAEABgABAAEAAAABAAIABgABAAIAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAEABgACAAEAAAACAAIABgACAAIAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAAACAACAAYAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAEABgADAAEAAAAFAAIABgADAAIAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAAACAAAAAYAAAAGAAEABgAEAAEAAAAGAAIABgAEAAIAAAAGAAQABgAEAAMAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAQABgAFAAMAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_j0b8u")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=1342293728]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=596474832]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=2046605988]
+position = Vector2(72, 104)
+script = ExtResource("5_057ls")
+destino = "res://Escenas/Constitucion.tscn"
+llegada = "PuertaColectivero"
+salir_empujando = true
+
+[node name="Colectivero" parent="." unique_id=1999008602 instance=ExtResource("6_y7y8q")]
+position = Vector2(72, 56)
+script = ExtResource("7_dq5ng")
+objeto_regalo = "greatball"
+cantidad_regalo = 5
+trinket_regalo = ""
+clave_objeto = "regalo_colectivero"
+texto_antes = "Manejo el 60, de Constitución a Tigre. ¡Lo que se olvida la gente en el colectivo! Esta semana juntaba Super Balls debajo de los asientos. Tomá, a vos te van a servir más."
+texto_despues = "Si te subís al 60, sentate atrás: ahí se ven los mejores paisajes."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "Manejo el 60 desde Constitución hasta Tigre. Ida y vuelta, todos los días."
+
+[node name="AnimatedSprite2D" parent="Colectivero" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_ix7g6")
+animation = &"abajo"
+
+[node name="Hija" parent="." unique_id=84247300 instance=ExtResource("6_y7y8q")]
+position = Vector2(24, 88)
+texto = "Mi papá conoce todas las paradas de memoria. ¡Hasta las de las calles que ya no existen!"
+mirando = Vector2(1, 0)
+
+[node name="AnimatedSprite2D" parent="Hija" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_jh1vq")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_btcxl")]
+position = Vector2(72, 88)
+
+[editable path="Colectivero"]
+[editable path="Hija"]

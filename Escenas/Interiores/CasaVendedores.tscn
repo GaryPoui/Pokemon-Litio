@@ -1,0 +1,81 @@
+[gd_scene format=4 uid="uid://ck0k2eojwx5j8"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_f43sx"]
+[ext_resource type="Texture2D" uid="uid://7fy0onj3a5qr" path="res://Assets/Batalla/fondos/campo.png" id="2_8ayjv"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_vn3xb"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_5iiif"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_k4nf0"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_js71v"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="7_0rfar"]
+[ext_resource type="SpriteFrames" uid="uid://c55xk8wajb11e" path="res://Recursos/Personajes/tendero.tres" id="8_wndud"]
+[ext_resource type="SpriteFrames" uid="uid://hgmu078xq1mr" path="res://Recursos/Personajes/laboca_tendera.tres" id="9_dwgle"]
+
+[node name="CasaVendedores" type="Node2D" unique_id=635213159]
+y_sort_enabled = true
+script = ExtResource("1_f43sx")
+fondo_batalla = ExtResource("2_8ayjv")
+musica = "pueblo"
+zona_id = "constitucion"
+zona_nombre = "Constitución"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1938240542]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAABgACAAAAAAAAAAEABgADAAAAAAAAAAIACAAAAAAAAAAAAAMACAAAAAAAAAAAAAQACAAAAAAAAAAAAAUACAAAAAAAAAAAAAYACAAAAAAAAAABAAAABgACAAAAAAABAAEABgADAAAAAAABAAIACAAAAAAAAAABAAMACAAAAAAAAAABAAQACAAAAAAAAAABAAUACAAAAAAAAAABAAYACAAAAAAAAAACAAAABgACAAAAAAACAAEABgADAAAAAAACAAIACAAAAAAAAAACAAMACAAAAAAAAAACAAQACAAAAAAAAAACAAUACAAAAAAAAAACAAYACAAAAAAAAAADAAAABgACAAAAAAADAAEABgADAAAAAAADAAIACAAAAAAAAAADAAMACAAAAAAAAAADAAQACAAAAAAAAAADAAUACAAAAAAAAAADAAYACAAAAAAAAAAEAAAABgACAAAAAAAEAAEABgADAAAAAAAEAAIACAAAAAAAAAAEAAMACAAAAAAAAAAEAAQACAAAAAAAAAAEAAUACAAAAAAAAAAEAAYACAABAAUAAAAFAAAACAAHAAAAAAAFAAEABgADAAAAAAAFAAIACAAAAAAAAAAFAAMACAAAAAAAAAAFAAQACAAAAAAAAAAFAAUACAAAAAAAAAAFAAYACAAAAAAAAAAGAAAABgACAAAAAAAGAAEABgADAAAAAAAGAAIACAAAAAAAAAAGAAMACAAAAAAAAAAGAAQACAAAAAAAAAAGAAUACAAAAAAAAAAGAAYACAAAAAAAAAAHAAAABgACAAAAAAAHAAEABgADAAAAAAAHAAIACAAAAAAAAAAHAAMACAAAAAAAAAAHAAQACAAAAAAAAAAHAAUACAAAAAAAAAAHAAYACAAAAAAAAAA=")
+tile_set = ExtResource("3_vn3xb")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1220792562]
+z_index = -1
+tile_set = ExtResource("3_vn3xb")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=405943616]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAEACAAAAAEAAAAAAAIACAAAAAIAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAEACAABAAEAAAABAAIACAABAAIAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAAACAAAAAYAAAACAAEACAABAAYAAAACAAQACAAAAAMAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAQACAABAAMAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAQACAAAAAMAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAEACAAAAAEAAAAGAAIACAAAAAIAAAAGAAQACAABAAMAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAEACAABAAEAAAAHAAIACAABAAIAAAAHAAYABgAHAAEAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_vn3xb")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=556678009]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=584888325]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=2025745158]
+position = Vector2(72, 104)
+script = ExtResource("5_k4nf0")
+destino = "res://Escenas/Constitucion.tscn"
+llegada = "PuertaVendedores"
+salir_empujando = true
+
+[node name="Vendedor" parent="." unique_id=1999008602 instance=ExtResource("6_js71v")]
+position = Vector2(56, 40)
+script = ExtResource("7_0rfar")
+objeto_regalo = ""
+cantidad_regalo = 1
+trinket_regalo = "vendaje"
+clave_objeto = "regalo_vendedores"
+texto_antes = "¡Curitas, pañuelitos, vendas, alfajores! Así se vende en el Roca, vagón por vagón. A vos te regalo una venda, que se ve que entrenás duro."
+texto_despues = "El Vendaje cura un poco a tu Pokémon cada vez que gana un combate."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "Vendo en los trenes del Roca: curitas, pañuelitos, alfajores. ¡Lo que necesites!"
+
+[node name="AnimatedSprite2D" parent="Vendedor" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_wndud")
+animation = &"abajo"
+
+[node name="Vendedora" parent="." unique_id=1987965887 instance=ExtResource("6_js71v")]
+position = Vector2(104, 88)
+texto = "Mi marido vende arriba del tren y yo en el andén. Entre los dos cubrimos todo el ramal."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="Vendedora" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_dwgle")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_5iiif")]
+position = Vector2(72, 88)
+
+[editable path="Vendedor"]
+[editable path="Vendedora"]

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cbkokhgs1jv7p"]
+
+[ext_resource type="Texture2D" uid="uid://braysl4qxno8r" path="res://Assets/Overworld/Rutas/obelisco.png" id="1_hyy5q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hyy5q"]
+size = Vector2(32, 32)
+
+[node name="Obelisco" type="StaticBody2D" unique_id=346847997]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1007324867]
+position = Vector2(-16, -168)
+texture = ExtResource("1_hyy5q")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=2140451169]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_hyy5q")

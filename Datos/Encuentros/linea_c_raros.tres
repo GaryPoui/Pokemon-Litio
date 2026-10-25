@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="TablaEncuentros" format=3 uid="uid://bxngwchqkq56p"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_entrada"]
+[ext_resource type="Script" uid="uid://ba384a6evk1rl" path="res://Scripts/datos/tabla_encuentros.gd" id="2_tabla"]
+[ext_resource type="Resource" uid="uid://dvafuwkcjwppn" path="res://Datos/Especies/boldore.tres" id="e0"]
+[ext_resource type="Resource" uid="uid://dqf85dt3xflkq" path="res://Datos/Especies/excadrill.tres" id="e1"]
+[ext_resource type="Resource" uid="uid://cndgcmsvc6c4o" path="res://Datos/Especies/eelektrik.tres" id="e2"]
+[ext_resource type="Resource" uid="uid://cuu4ymuc6xvjr" path="res://Datos/Especies/ferroseed.tres" id="e3"]
+[ext_resource type="Resource" uid="uid://s3mf10thgw5j" path="res://Datos/Especies/pawniard.tres" id="e4"]
+
+[sub_resource type="Resource" id="Entrada_0"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e0")
+nivel_min = 22
+nivel_max = 24
+peso = 25
+
+[sub_resource type="Resource" id="Entrada_1"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e1")
+nivel_min = 23
+nivel_max = 25
+peso = 15
+
+[sub_resource type="Resource" id="Entrada_2"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e2")
+nivel_min = 22
+nivel_max = 24
+peso = 20
+
+[sub_resource type="Resource" id="Entrada_3"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e3")
+nivel_min = 22
+nivel_max = 24
+peso = 20
+
+[sub_resource type="Resource" id="Entrada_4"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e4")
+nivel_min = 22
+nivel_max = 24
+peso = 20
+
+[resource]
+script = ExtResource("2_tabla")
+tasa = 1.0
+entradas = Array[ExtResource("1_entrada")]([SubResource("Entrada_0"), SubResource("Entrada_1"), SubResource("Entrada_2"), SubResource("Entrada_3"), SubResource("Entrada_4")])

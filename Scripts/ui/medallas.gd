@@ -7,7 +7,9 @@ const FONDO :=preload("res://Assets/Fondos/opciones.png")
 const LISTA:= [
 	["bombonera", "Medalla Bombonera", "Líder Riquelme · La Boca"],
 	["terraza", "Medalla Terraza", "Líder La Gata · Villa 31"],
+	["anden", "Medalla Andén", "Líder La Guarda · Constitución"],
 ]
+const VACIA:= 3
 const HUECOS :=8
 const TAM:= 24
 
@@ -67,7 +69,7 @@ func tiene(i: int) -> bool:
 func _pintar() -> void:
 	for i in HUECOS:
 		var a: AtlasTexture= iconos[i].texture
-		var k:= i if tiene(i) else 2
+		var k:= i if tiene(i) else VACIA
 		a.region= Rect2(k* TAM, 0, TAM, TAM)
 	marco.position= iconos[cursor].position- Vector2(3, 3)
 	if tiene(cursor):

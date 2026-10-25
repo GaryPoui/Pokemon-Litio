@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cgwpjf5gr7l1"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ytrn2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="2_jgdvd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="3_wqwjm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bide.tres" id="4_h8oyu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growth.tres" id="5_2idqt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="6_k03y3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ingrain.tres" id="7_pb1mv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="8_wyhl1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sweet_scent.tres" id="9_5bf0h"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/giga_drain.tres" id="10_hfi0h"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/toxic.tres" id="11_jjy0s"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/synthesis.tres" id="12_pwt4l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/clear_smog.tres" id="13_bpaqp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="14_yl3q4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rage_powder.tres" id="15_41lpd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spore.tres" id="16_d7sut"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_xtbiv"]
+[ext_resource type="Texture2D" uid="uid://dhrbkgspeqesl" path="res://Assets/Pokemones/batalla/amoonguss_espalda.png" id="18_hh3s0"]
+[ext_resource type="Texture2D" uid="uid://whqrcfvnb6jm" path="res://Assets/Pokemones/batalla/amoonguss_frente.png" id="19_put44"]
+
+[sub_resource type="Resource" id="Resource_outd3"]
+script = ExtResource("1_ytrn2")
+movimiento = ExtResource("2_jgdvd")
+
+[sub_resource type="Resource" id="Resource_7pvt2"]
+script = ExtResource("1_ytrn2")
+movimiento = ExtResource("3_wqwjm")
+
+[sub_resource type="Resource" id="Resource_8ogyk"]
+script = ExtResource("1_ytrn2")
+movimiento = ExtResource("4_h8oyu")
+
+[sub_resource type="Resource" id="Resource_f1jcj"]
+script = ExtResource("1_ytrn2")
+movimiento = ExtResource("5_2idqt")
+
+[sub_resource type="Resource" id="Resource_mlabx"]
+script = ExtResource("1_ytrn2")
+nivel = 6
+movimiento = ExtResource("5_2idqt")
+
+[sub_resource type="Resource" id="Resource_1i5cg"]
+script = ExtResource("1_ytrn2")
+nivel = 8
+movimiento = ExtResource("3_wqwjm")
+
+[sub_resource type="Resource" id="Resource_pqjrd"]
+script = ExtResource("1_ytrn2")
+nivel = 12
+movimiento = ExtResource("4_h8oyu")
+
+[sub_resource type="Resource" id="Resource_edd0f"]
+script = ExtResource("1_ytrn2")
+nivel = 15
+movimiento = ExtResource("6_k03y3")
+
+[sub_resource type="Resource" id="Resource_5xa7s"]
+script = ExtResource("1_ytrn2")
+nivel = 18
+movimiento = ExtResource("7_pb1mv")
+
+[sub_resource type="Resource" id="Resource_xdirp"]
+script = ExtResource("1_ytrn2")
+nivel = 20
+movimiento = ExtResource("8_wyhl1")
+
+[sub_resource type="Resource" id="Resource_p1yk3"]
+script = ExtResource("1_ytrn2")
+nivel = 24
+movimiento = ExtResource("9_5bf0h")
+
+[sub_resource type="Resource" id="Resource_m13lr"]
+script = ExtResource("1_ytrn2")
+nivel = 28
+movimiento = ExtResource("10_hfi0h")
+
+[sub_resource type="Resource" id="Resource_0ivx6"]
+script = ExtResource("1_ytrn2")
+nivel = 32
+movimiento = ExtResource("11_jjy0s")
+
+[sub_resource type="Resource" id="Resource_fewp2"]
+script = ExtResource("1_ytrn2")
+nivel = 35
+movimiento = ExtResource("12_pwt4l")
+
+[sub_resource type="Resource" id="Resource_drffu"]
+script = ExtResource("1_ytrn2")
+nivel = 43
+movimiento = ExtResource("13_bpaqp")
+
+[sub_resource type="Resource" id="Resource_4gtll"]
+script = ExtResource("1_ytrn2")
+nivel = 49
+movimiento = ExtResource("14_yl3q4")
+
+[sub_resource type="Resource" id="Resource_yhqad"]
+script = ExtResource("1_ytrn2")
+nivel = 54
+movimiento = ExtResource("15_41lpd")
+
+[sub_resource type="Resource" id="Resource_g2omj"]
+script = ExtResource("1_ytrn2")
+nivel = 62
+movimiento = ExtResource("16_d7sut")
+
+[resource]
+script = ExtResource("17_xtbiv")
+id = "amoonguss"
+numero = 591
+nombre = "Amoonguss"
+tipos = ["planta", "veneno"]
+ps = 114
+ataque = 85
+defensa = 70
+at_esp = 85
+def_esp = 80
+velocidad = 30
+exp_base = 162
+ratio_captura = 75
+evs_otorgados = {
+"ps": 2
+}
+aprende = Array[ExtResource("1_ytrn2")]([SubResource("Resource_outd3"), SubResource("Resource_7pvt2"), SubResource("Resource_8ogyk"), SubResource("Resource_f1jcj"), SubResource("Resource_mlabx"), SubResource("Resource_1i5cg"), SubResource("Resource_pqjrd"), SubResource("Resource_edd0f"), SubResource("Resource_5xa7s"), SubResource("Resource_xdirp"), SubResource("Resource_p1yk3"), SubResource("Resource_m13lr"), SubResource("Resource_0ivx6"), SubResource("Resource_fewp2"), SubResource("Resource_drffu"), SubResource("Resource_4gtll"), SubResource("Resource_yhqad"), SubResource("Resource_g2omj")])
+sprite_frente = ExtResource("19_put44")
+sprite_espalda = ExtResource("18_hh3s0")
+cuadros_frente = 48
+cuadros_espalda = 48

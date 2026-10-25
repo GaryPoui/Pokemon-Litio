@@ -22,6 +22,10 @@ var ultimo_choque:= -1000
 var en_evento :=false
 var tam:= Rejilla.POR_DEFECTO
 var largo_paso :=16.0
+var saltando:= false
+var salto_total :=0.0
+var sprite_y0: float= 0.0
+const NOMBRE_DIR:= {Vector2.DOWN: "abajo", Vector2.UP: "arriba", Vector2.LEFT: "izquierda", Vector2.RIGHT: "derecha"}
 
 const WALK_ANIMS:= {
 	Vector2.DOWN: &"caminar_abajo",
@@ -44,6 +48,7 @@ func _ready() -> void:
 		forma.size =Vector2(minf(forma.size.x, tam.x- 2.0), minf(forma.size.y, tam.y- 2.0))
 		cs.shape= forma
 	animated_sprite.position.y+= tam.y/ 2.0- Rejilla.POR_DEFECTO.y/ 2.0
+	sprite_y0= animated_sprite.position.y
 	position =Rejilla.centro(self, celda())
 	target_position= position
 	if get_parent()!= null:
@@ -61,6 +66,8 @@ func colocar(pos: Vector2, direccion: Vector2) -> void:
 	position= Rejilla.centro(self, Vector2i((pos/ tam).floor()))
 	target_position =position
 	is_moving =false
+	saltando= false
+	animated_sprite.position.y =sprite_y0
 	turn_timer= 0.0
 	last_direction =direccion
 	_set_idle()
@@ -87,6 +94,9 @@ func _physics_process(delta: float) -> void:
 		if is_moving:
 			position =target_position
 			is_moving= false
+			if saltando:
+				saltando =false
+				animated_sprite.position.y= sprite_y0
 		turn_timer= 0.0
 		_set_idle()
 		return
@@ -136,6 +146,10 @@ func _try_start_move(delta: float, chained: bool) -> void:
 
 	if test_move(transform, motion):
 		var frente:= celda()+ Vector2i(direction)
+		var mapa_s:= get_parent()
+		if mapa_s!= null and mapa_s.has_method("salto_en") and mapa_s.salto_en(frente)== NOMBRE_DIR.get(direction, "") and _libre(frente+ Vector2i(direction)):
+			_saltar(direction)
+			return
 		for n in get_tree().get_nodes_in_group("empujable"):
 			if n.celda()== frente:
 				n.empujar(Vector2i(direction))
@@ -152,18 +166,45 @@ func _try_start_move(delta: float, chained: bool) -> void:
 	paso_iniciado.emit(celda()+ Vector2i(direction), direction)
 	_play_move_animation(direction)
 
+func _libre(c: Vector2i) -> bool:
+	var q:= PhysicsPointQueryParameters2D.new()
+	q.position= Rejilla.centro(self, c)
+	q.exclude =[get_rid()]
+	return get_world_2d().direct_space_state.intersect_point(q).is_empty()
+
+func _saltar(direction: Vector2) -> void:
+	last_direction= direction
+	is_running =false
+	target_position= position+ direction* tam* 2.0
+	largo_paso= (direction* tam* 2.0).length()
+	salto_total =largo_paso
+	saltando= true
+	is_moving =true
+	Sonido.efecto("salto")
+	paso_iniciado.emit(celda()+ Vector2i(direction)* 2, direction)
+	_play_move_animation(direction)
+
 func _move_towards_target(delta: float) -> void:
 	var speed: float= move_speed* largo_paso *(run_multiplier if is_running else 1.0)
+	if saltando:
+		speed= move_speed* tam.y* 1.6
 	var restante: float =speed* delta
 	var distancia:= position.distance_to(target_position)
 
 	if restante< distancia:
 		position =position.move_toward(target_position, restante)
+		if saltando:
+			var t:= 1.0- position.distance_to(target_position)/ maxf(1.0, salto_total)
+			animated_sprite.position.y= sprite_y0- sin(t* PI)* tam.y* 0.5
 		return
 
 	position= target_position
 	restante-= distancia
 	is_moving= false
+	if saltando:
+		saltando= false
+		animated_sprite.position.y =sprite_y0
+		restante= 0.0
 	paso_terminado.emit(celda())
 	if _bloqueado():
 		_set_idle()

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cwkwnjhy3baax"]
+
+[ext_resource type="Texture2D" uid="uid://cel2xbm1eylao" path="res://Assets/Overworld/Constitucion/edificio_beige.png" id="1_6ecgb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ecgb"]
+size = Vector2(64, 32)
+
+[node name="EdificioBeige" type="StaticBody2D" unique_id=814060400]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1524770984]
+position = Vector2(-32, -124)
+texture = ExtResource("1_6ecgb")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1465144117]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_6ecgb")

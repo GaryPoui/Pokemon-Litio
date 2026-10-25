@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://5ug2m4t361w6"]
+
+[ext_resource type="Texture2D" uid="uid://36p7y8n4gs6g" path="res://Assets/Overworld/Constitucion/edificio_ocre.png" id="1_bpdag"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bpdag"]
+size = Vector2(64, 32)
+
+[node name="EdificioOcre" type="StaticBody2D" unique_id=1880820843]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=569994586]
+position = Vector2(-32, -124)
+texture = ExtResource("1_bpdag")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=298349749]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_bpdag")

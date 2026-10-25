@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://80thixxg1wv5"]
+
+[ext_resource type="Texture2D" uid="uid://08ocb8djxnv8" path="res://Assets/Overworld/Rutas/vagon_subte.png" id="1_uuogw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uuogw"]
+size = Vector2(64, 16)
+
+[node name="VagonSubte" type="StaticBody2D" unique_id=1605830711]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=869936349]
+position = Vector2(-32, -28)
+texture = ExtResource("1_uuogw")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=337953086]
+shape = SubResource("RectangleShape2D_uuogw")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_olf2e"]
+
+[resource]
+script = ExtResource("1_olf2e")
+id = "mirror_coat"
+nombre = "Manto Espejo"
+tipo = "psiquico"
+categoria = "especial"
+pp = 20
+prioridad = -5
+objetivo = "specific-move"
+descripcion = "Responde a un ataque especial ocasionando el doble del daño recibido."

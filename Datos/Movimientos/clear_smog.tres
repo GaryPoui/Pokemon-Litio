@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_dhda8"]
+
+[resource]
+script = ExtResource("1_dhda8")
+id = "clear_smog"
+nombre = "Niebla Clara"
+tipo = "veneno"
+categoria = "especial"
+poder = 50
+precision = 0
+pp = 15
+descripcion = "Ataca al objetivo con una singular bola de lodo que elimina cualquier cambio en sus características."

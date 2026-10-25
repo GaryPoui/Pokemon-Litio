@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dfpp1gwpglkyi"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_cbfku"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_n6jw7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/peck.tres" id="3_t2oru"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="4_l44j0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swift.tres" id="5_uav40"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="6_w6wsp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_attack.tres" id="7_o8a1d"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feint.tres" id="8_qtne1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_cutter.tres" id="9_7vtxu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spikes.tres" id="10_gk4hy"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/metal_sound.tres" id="11_b1yca"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/steel_wing.tres" id="12_x7knp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/autotomize.tres" id="13_qwgdn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="14_etcdu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="15_4caej"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/night_slash.tres" id="16_hiq1m"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_6sacj"]
+[ext_resource type="Texture2D" uid="uid://d4l703ob6k1e0" path="res://Assets/Pokemones/batalla/skarmory_espalda.png" id="18_gnvy7"]
+[ext_resource type="Texture2D" uid="uid://cban2j3b7m2jh" path="res://Assets/Pokemones/batalla/skarmory_frente.png" id="19_hmxgx"]
+
+[sub_resource type="Resource" id="Resource_da1pa"]
+script = ExtResource("1_cbfku")
+movimiento = ExtResource("2_n6jw7")
+
+[sub_resource type="Resource" id="Resource_5uynb"]
+script = ExtResource("1_cbfku")
+movimiento = ExtResource("3_t2oru")
+
+[sub_resource type="Resource" id="Resource_3t3gn"]
+script = ExtResource("1_cbfku")
+nivel = 6
+movimiento = ExtResource("4_l44j0")
+
+[sub_resource type="Resource" id="Resource_dbkoi"]
+script = ExtResource("1_cbfku")
+nivel = 9
+movimiento = ExtResource("5_uav40")
+
+[sub_resource type="Resource" id="Resource_k8dlk"]
+script = ExtResource("1_cbfku")
+nivel = 12
+movimiento = ExtResource("6_w6wsp")
+
+[sub_resource type="Resource" id="Resource_g6hys"]
+script = ExtResource("1_cbfku")
+nivel = 17
+movimiento = ExtResource("7_o8a1d")
+
+[sub_resource type="Resource" id="Resource_kj1eb"]
+script = ExtResource("1_cbfku")
+nivel = 20
+movimiento = ExtResource("8_qtne1")
+
+[sub_resource type="Resource" id="Resource_kllbc"]
+script = ExtResource("1_cbfku")
+nivel = 23
+movimiento = ExtResource("9_7vtxu")
+
+[sub_resource type="Resource" id="Resource_oad26"]
+script = ExtResource("1_cbfku")
+nivel = 28
+movimiento = ExtResource("10_gk4hy")
+
+[sub_resource type="Resource" id="Resource_afk4t"]
+script = ExtResource("1_cbfku")
+nivel = 31
+movimiento = ExtResource("11_b1yca")
+
+[sub_resource type="Resource" id="Resource_tokff"]
+script = ExtResource("1_cbfku")
+nivel = 34
+movimiento = ExtResource("12_x7knp")
+
+[sub_resource type="Resource" id="Resource_7jne0"]
+script = ExtResource("1_cbfku")
+nivel = 39
+movimiento = ExtResource("13_qwgdn")
+
+[sub_resource type="Resource" id="Resource_obbob"]
+script = ExtResource("1_cbfku")
+nivel = 42
+movimiento = ExtResource("14_etcdu")
+
+[sub_resource type="Resource" id="Resource_v57yu"]
+script = ExtResource("1_cbfku")
+nivel = 45
+movimiento = ExtResource("15_4caej")
+
+[sub_resource type="Resource" id="Resource_8jlyx"]
+script = ExtResource("1_cbfku")
+nivel = 50
+movimiento = ExtResource("16_hiq1m")
+
+[resource]
+script = ExtResource("17_6sacj")
+id = "skarmory"
+numero = 227
+nombre = "Skarmory"
+tipos = ["acero", "volador"]
+ps = 65
+ataque = 80
+defensa = 140
+at_esp = 40
+def_esp = 70
+velocidad = 70
+exp_base = 163
+ratio_captura = 25
+crecimiento = "slow"
+evs_otorgados = {
+"defensa": 2
+}
+aprende = Array[ExtResource("1_cbfku")]([SubResource("Resource_da1pa"), SubResource("Resource_5uynb"), SubResource("Resource_3t3gn"), SubResource("Resource_dbkoi"), SubResource("Resource_k8dlk"), SubResource("Resource_g6hys"), SubResource("Resource_kj1eb"), SubResource("Resource_kllbc"), SubResource("Resource_oad26"), SubResource("Resource_afk4t"), SubResource("Resource_tokff"), SubResource("Resource_7jne0"), SubResource("Resource_obbob"), SubResource("Resource_v57yu"), SubResource("Resource_8jlyx")])
+sprite_frente = ExtResource("19_hmxgx")
+sprite_espalda = ExtResource("18_gnvy7")
+cuadros_frente = 136
+cuadros_espalda = 139
+fps_sprite = 28.57

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_sqt7w"]
+
+[resource]
+script = ExtResource("1_sqt7w")
+id = "poison_tail"
+nombre = "Cola Veneno"
+tipo = "veneno"
+poder = 50
+pp = 25
+meta = "damage-ailment"
+descripcion = "Puede envenenar y dar un golpe crítico."
+estado = "poison"
+prob_estado = 10
+critico = 1

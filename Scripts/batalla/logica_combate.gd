@@ -52,6 +52,8 @@ var equipo :Node
 var eventos: Array[Dictionary]= []
 var espacio_raro:= 0
 var objetos_rival: Array[String] =[]
+var trampas:= {"jugador": {"puas": 0, "rocas": false}, "rival": {"puas": 0, "rocas": false}}
+const PUAS:= [0.0, 1.0/ 8.0, 1.0/ 6.0, 1.0/ 4.0]
 const ILUSION:= ["zorua", "zoroark"]
 const CURAS_RIVAL :={"hyper_potion": 0.0, "super_potion": 0.0, "potion": 0.0}
 
@@ -83,6 +85,8 @@ func iniciar() -> Array[Dictionary]:
 		_anunciar_trinkets(r.pokemon)
 	_texto("¡Adelante, %s!" % j.pokemon.nombre())
 	_ev_sale("jugador", j.pokemon)
+	if _entrar_trampas(j):
+		_revisar_debilitados()
 	return _tomar()
 
 func turno(accion: Dictionary) -> Array[Dictionary]:
@@ -537,6 +541,25 @@ func _efecto_estado(a: Luchador, d: Luchador, mov: Movimiento) -> void:
 		"baton_pass":
 			_relevo(a)
 			return
+		"spikes":
+			var t: Dictionary= trampas[_lado(d)]
+			if int(t["puas"])>= 3:
+				_texto("¡Pero falló!")
+			else:
+				t["puas"]= int(t["puas"])+ 1
+				_texto("¡Se esparcieron púas alrededor de los pies %s!" % _equipo_de(d))
+			return
+		"stealth_rock":
+			var t2: Dictionary= trampas[_lado(d)]
+			if t2["rocas"]:
+				_texto("¡Pero falló!")
+			else:
+				t2["rocas"] =true
+				_texto("¡Rocas puntiagudas flotan alrededor %s!" % _equipo_de(d))
+			return
+		"roar", "whirlwind":
+			_arrastrar(a, d)
+			return
 		"soak":
 			if d.tipos()== ["agua"]:
 				_texto("¡Pero falló!")
@@ -611,12 +634,60 @@ func _relevo(a: Luchador) -> void:
 		_texto("¡%s envió a %s!" % [nombre_entrenador, r.nombre_visible()])
 		_ev_sale("rival", sig)
 		_anunciar_trinkets(sig)
+		_entrar_trampas(r)
 	else:
 		j= nuevo
 		if not participantes.has(sig):
 			participantes.append(sig)
 		_texto("¡Adelante, %s!" % sig.nombre())
 		_ev_sale("jugador", sig)
+		_entrar_trampas(j)
+
+func _equipo_de(l: Luchador) -> String:
+	return "del equipo rival" if l== r else "de tu equipo"
+
+func _entrar_trampas(l: Luchador) -> bool:
+	var t: Dictionary= trampas[_lado(l)]
+	var p:= l.pokemon
+	if p.esta_debilitado():
+		return false
+	if int(t["puas"])> 0 and not "volador" in l.tipos():
+		_herir(l, maxi(1, floori(p.ps_max()* PUAS[int(t["puas"])])), "golpe_normal")
+		_texto("¡%s fue herido por las púas!" % _cap(nombre_de(l)))
+	if t["rocas"] and not p.esta_debilitado():
+		var ef:= Tipos.efectividad("roca", l.tipos())
+		_herir(l, maxi(1, floori(p.ps_max()* ef/ 8.0)), "golpe_eficaz" if ef> 1.0 else "golpe_normal")
+		_texto("¡Las rocas puntiagudas hirieron a %s!" % nombre_de(l))
+	return p.esta_debilitado()
+
+func _arrastrar(a: Luchador, d: Luchador) -> void:
+	if salvaje:
+		_texto("¡Pero falló!")
+		return
+	var lista:= equipo_r if d== r else equipo_j
+	var opciones: Array[PokemonInstancia]= []
+	for o in lista:
+		if o!= d.pokemon and not o.esta_debilitado():
+			opciones.append(o)
+	if opciones.is_empty():
+		_texto("¡Pero falló!")
+		return
+	var sig: PokemonInstancia= opciones[rng.randi_range(0, opciones.size()- 1)]
+	var lado:= _lado(d)
+	_ev({"tipo": "retirar", "lado": lado, "ball": d.pokemon.ball})
+	if d== r:
+		r= _nuevo_rival(sig)
+		_texto("¡%s fue arrastrado al combate!" % _cap(r.nombre_visible()))
+		_ev_sale("rival", sig)
+		_anunciar_trinkets(sig)
+		_entrar_trampas(r)
+	else:
+		j= Luchador.new(sig)
+		if not participantes.has(sig):
+			participantes.append(sig)
+		_texto("¡%s fue arrastrado al combate!" % sig.nombre())
+		_ev_sale("jugador", sig)
+		_entrar_trampas(j)
 
 func _cambiar_etapa(l: Luchador, stat: String, cambio: int, anunciar_tope: bool) -> bool:
 	if not l.etapas.has(stat) or cambio== 0:
@@ -719,6 +790,8 @@ func _revisar_debilitados() -> bool:
 			_texto("¡%s envió a %s!" % [nombre_entrenador, r.nombre_visible()])
 			_ev_sale("rival", sig)
 			_anunciar_trinkets(sig)
+			if _entrar_trampas(r):
+				return _revisar_debilitados() or true
 	if j.pokemon.esta_debilitado() and not j_anunciado:
 		algo =true
 		j_anunciado= true
@@ -806,6 +879,7 @@ func _cambiar(indice: int) -> void:
 		participantes.append(j.pokemon)
 	_texto("¡Adelante, %s!" % j.pokemon.nombre())
 	_ev_sale("jugador", j.pokemon)
+	_entrar_trampas(j)
 
 func _usar_objeto(accion: Dictionary) -> bool:
 	var o:= BaseDatos.objeto(str(accion.get("id", "")))
@@ -933,6 +1007,18 @@ func _ia_reglas(reglas: Array[String]) -> int:
 			"subir":
 				if partes.size()> 3 and int(r.etapas.get(partes[2], 0))< int(partes[3]):
 					i= _indice_mov(r, partes[1])
+			"puas":
+				if int(trampas["jugador"]["puas"])< (int(partes[1]) if partes.size()> 1 else 3) and _quedan_j()>= 2:
+					i= _indice_mov(r, "spikes")
+			"rocas":
+				if not trampas["jugador"]["rocas"] and _quedan_j()>= 2:
+					i= _indice_mov(r, "stealth_rock")
+			"silbato":
+				var hay: bool= int(trampas["jugador"]["puas"])> 0 or bool(trampas["jugador"]["rocas"])
+				if hay and _quedan_j()>= 2 and (_subidas(j)>= 1 or rng.randf()< 0.4):
+					i= _indice_mov(r, "roar")
+					if i< 0:
+						i= _indice_mov(r, "whirlwind")
 			"relevo":
 				if _subidas(r)>= 2:
 					for o in equipo_r:
@@ -944,6 +1030,13 @@ func _ia_reglas(reglas: Array[String]) -> int:
 		if i>= 0 and r.pokemon.pp[i]> 0:
 			return i
 	return _mejor_danio()
+
+func _quedan_j() -> int:
+	var n:= 0
+	for o in equipo_j:
+		if not o.esta_debilitado():
+			n+= 1
+	return n
 
 func _indice_mov(l: Luchador, id: String) -> int:
 	for k in l.pokemon.movimientos.size():

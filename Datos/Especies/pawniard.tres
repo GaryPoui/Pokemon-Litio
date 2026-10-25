@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://s3mf10thgw5j"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_85b3o"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="2_7b4y7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_8mhb4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_cutter.tres" id="4_rrhkq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/torment.tres" id="5_ayqtj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="6_xb4n6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="7_6q4p6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/metal_claw.tres" id="8_76jg0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="9_fmyh4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/assurance.tres" id="10_as4n4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/metal_sound.tres" id="11_8ch2y"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/embargo.tres" id="12_cm27t"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/iron_defense.tres" id="13_62q4p"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/night_slash.tres" id="14_yc4mi"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/iron_head.tres" id="15_rsjue"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swords_dance.tres" id="16_fud5x"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/guillotine.tres" id="17_kx42a"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_4smuc"]
+[ext_resource type="Texture2D" uid="uid://dnoyyele5lndr" path="res://Assets/Pokemones/batalla/pawniard_espalda.png" id="19_nrty7"]
+[ext_resource type="Texture2D" uid="uid://dqchi83xj3krd" path="res://Assets/Pokemones/batalla/pawniard_frente.png" id="20_7smrp"]
+
+[sub_resource type="Resource" id="Resource_chlrj"]
+script = ExtResource("1_85b3o")
+movimiento = ExtResource("2_7b4y7")
+
+[sub_resource type="Resource" id="Resource_5243t"]
+script = ExtResource("1_85b3o")
+nivel = 6
+movimiento = ExtResource("3_8mhb4")
+
+[sub_resource type="Resource" id="Resource_6p3ny"]
+script = ExtResource("1_85b3o")
+nivel = 9
+movimiento = ExtResource("4_rrhkq")
+
+[sub_resource type="Resource" id="Resource_jhy71"]
+script = ExtResource("1_85b3o")
+nivel = 14
+movimiento = ExtResource("5_ayqtj")
+
+[sub_resource type="Resource" id="Resource_fcx2g"]
+script = ExtResource("1_85b3o")
+nivel = 17
+movimiento = ExtResource("6_xb4n6")
+
+[sub_resource type="Resource" id="Resource_4aiv0"]
+script = ExtResource("1_85b3o")
+nivel = 22
+movimiento = ExtResource("7_6q4p6")
+
+[sub_resource type="Resource" id="Resource_gcmgy"]
+script = ExtResource("1_85b3o")
+nivel = 25
+movimiento = ExtResource("8_76jg0")
+
+[sub_resource type="Resource" id="Resource_lt2m3"]
+script = ExtResource("1_85b3o")
+nivel = 30
+movimiento = ExtResource("9_fmyh4")
+
+[sub_resource type="Resource" id="Resource_xlatf"]
+script = ExtResource("1_85b3o")
+nivel = 33
+movimiento = ExtResource("10_as4n4")
+
+[sub_resource type="Resource" id="Resource_v8wtu"]
+script = ExtResource("1_85b3o")
+nivel = 38
+movimiento = ExtResource("11_8ch2y")
+
+[sub_resource type="Resource" id="Resource_ge3i7"]
+script = ExtResource("1_85b3o")
+nivel = 41
+movimiento = ExtResource("12_cm27t")
+
+[sub_resource type="Resource" id="Resource_lx37k"]
+script = ExtResource("1_85b3o")
+nivel = 46
+movimiento = ExtResource("13_62q4p")
+
+[sub_resource type="Resource" id="Resource_wj0s2"]
+script = ExtResource("1_85b3o")
+nivel = 49
+movimiento = ExtResource("14_yc4mi")
+
+[sub_resource type="Resource" id="Resource_mw1hc"]
+script = ExtResource("1_85b3o")
+nivel = 54
+movimiento = ExtResource("15_rsjue")
+
+[sub_resource type="Resource" id="Resource_07gv3"]
+script = ExtResource("1_85b3o")
+nivel = 57
+movimiento = ExtResource("16_fud5x")
+
+[sub_resource type="Resource" id="Resource_4mif2"]
+script = ExtResource("1_85b3o")
+nivel = 62
+movimiento = ExtResource("17_kx42a")
+
+[resource]
+script = ExtResource("18_4smuc")
+id = "pawniard"
+numero = 624
+nombre = "Pawniard"
+tipos = ["siniestro", "acero"]
+ps = 45
+ataque = 85
+defensa = 70
+at_esp = 40
+def_esp = 40
+velocidad = 60
+exp_base = 68
+ratio_captura = 120
+evs_otorgados = {
+"ataque": 1
+}
+evoluciona_a = "bisharp"
+nivel_evolucion = 52
+aprende = Array[ExtResource("1_85b3o")]([SubResource("Resource_chlrj"), SubResource("Resource_5243t"), SubResource("Resource_6p3ny"), SubResource("Resource_jhy71"), SubResource("Resource_fcx2g"), SubResource("Resource_4aiv0"), SubResource("Resource_gcmgy"), SubResource("Resource_lt2m3"), SubResource("Resource_xlatf"), SubResource("Resource_v8wtu"), SubResource("Resource_ge3i7"), SubResource("Resource_lx37k"), SubResource("Resource_wj0s2"), SubResource("Resource_mw1hc"), SubResource("Resource_07gv3"), SubResource("Resource_4mif2")])
+sprite_frente = ExtResource("20_7smrp")
+sprite_espalda = ExtResource("19_nrty7")
+cuadros_frente = 90
+cuadros_espalda = 90
+fps_sprite = 13.82

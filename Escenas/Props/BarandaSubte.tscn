@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://r70y1a3qsiyy"]
+
+[ext_resource type="Texture2D" uid="uid://bid8r11ajha7l" path="res://Assets/Overworld/Rutas/baranda_subte.png" id="1_lh3y8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lh3y8"]
+size = Vector2(16, 16)
+
+[node name="BarandaSubte" type="StaticBody2D" unique_id=1769052786]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=706508354]
+position = Vector2(-8, -20)
+texture = ExtResource("1_lh3y8")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=452749625]
+shape = SubResource("RectangleShape2D_lh3y8")

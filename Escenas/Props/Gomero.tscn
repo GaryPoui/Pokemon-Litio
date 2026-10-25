@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://duyr88kbiiu2p"]
+
+[ext_resource type="Texture2D" uid="uid://d06yo1fqm5jl5" path="res://Assets/Overworld/Rutas/gomero.png" id="1_rlglw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rlglw"]
+size = Vector2(48, 16)
+
+[node name="Gomero" type="StaticBody2D" unique_id=1087064442]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=485152282]
+position = Vector2(-40, -72)
+texture = ExtResource("1_rlglw")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=639801661]
+shape = SubResource("RectangleShape2D_rlglw")

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_ayoov"]
+
+[resource]
+script = ExtResource("1_ayoov")
+id = "blizzard"
+nombre = "Ventisca"
+tipo = "hielo"
+categoria = "especial"
+poder = 120
+precision = 70
+pp = 5
+objetivo = "all-opponents"
+meta = "damage-ailment"
+descripcion = "Tormenta de hielo que puede llegar a congelar."
+estado = "freeze"
+prob_estado = 10

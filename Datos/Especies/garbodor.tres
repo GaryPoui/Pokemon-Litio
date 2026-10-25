@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://2f2eltyom3kb"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_v8sfw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/poison_gas.tres" id="2_u28hr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="3_175f0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/recycle.tres" id="4_0def8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/toxic_spikes.tres" id="5_s2bmv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/acid_spray.tres" id="6_2t8bf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_slap.tres" id="7_fm6q1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sludge.tres" id="8_rfg88"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stockpile.tres" id="9_rhclr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swallow.tres" id="10_o4ox8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/body_slam.tres" id="11_qnjjo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sludge_bomb.tres" id="12_4pee5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/clear_smog.tres" id="13_7p5cb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/toxic.tres" id="14_u3v4l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="15_fx8np"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gunk_shot.tres" id="16_obrpr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="17_obihu"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_csofj"]
+[ext_resource type="Texture2D" uid="uid://dc7ambl0rws4a" path="res://Assets/Pokemones/batalla/garbodor_espalda.png" id="19_ecwaq"]
+[ext_resource type="Texture2D" uid="uid://chewaffc575bb" path="res://Assets/Pokemones/batalla/garbodor_frente.png" id="20_gp2lw"]
+
+[sub_resource type="Resource" id="Resource_aiijh"]
+script = ExtResource("1_v8sfw")
+movimiento = ExtResource("2_u28hr")
+
+[sub_resource type="Resource" id="Resource_h0vfl"]
+script = ExtResource("1_v8sfw")
+movimiento = ExtResource("3_175f0")
+
+[sub_resource type="Resource" id="Resource_carv8"]
+script = ExtResource("1_v8sfw")
+movimiento = ExtResource("4_0def8")
+
+[sub_resource type="Resource" id="Resource_h82xm"]
+script = ExtResource("1_v8sfw")
+movimiento = ExtResource("5_s2bmv")
+
+[sub_resource type="Resource" id="Resource_odrss"]
+script = ExtResource("1_v8sfw")
+nivel = 3
+movimiento = ExtResource("4_0def8")
+
+[sub_resource type="Resource" id="Resource_ytdyw"]
+script = ExtResource("1_v8sfw")
+nivel = 7
+movimiento = ExtResource("5_s2bmv")
+
+[sub_resource type="Resource" id="Resource_7oydk"]
+script = ExtResource("1_v8sfw")
+nivel = 12
+movimiento = ExtResource("6_2t8bf")
+
+[sub_resource type="Resource" id="Resource_v6it1"]
+script = ExtResource("1_v8sfw")
+nivel = 14
+movimiento = ExtResource("7_fm6q1")
+
+[sub_resource type="Resource" id="Resource_sjxkn"]
+script = ExtResource("1_v8sfw")
+nivel = 18
+movimiento = ExtResource("8_rfg88")
+
+[sub_resource type="Resource" id="Resource_mdbfn"]
+script = ExtResource("1_v8sfw")
+nivel = 23
+movimiento = ExtResource("9_rhclr")
+
+[sub_resource type="Resource" id="Resource_gcav2"]
+script = ExtResource("1_v8sfw")
+nivel = 23
+movimiento = ExtResource("10_o4ox8")
+
+[sub_resource type="Resource" id="Resource_qbkis"]
+script = ExtResource("1_v8sfw")
+nivel = 25
+movimiento = ExtResource("11_qnjjo")
+
+[sub_resource type="Resource" id="Resource_slhvb"]
+script = ExtResource("1_v8sfw")
+nivel = 29
+movimiento = ExtResource("12_4pee5")
+
+[sub_resource type="Resource" id="Resource_r2sij"]
+script = ExtResource("1_v8sfw")
+nivel = 34
+movimiento = ExtResource("13_7p5cb")
+
+[sub_resource type="Resource" id="Resource_0i5a5"]
+script = ExtResource("1_v8sfw")
+nivel = 39
+movimiento = ExtResource("14_u3v4l")
+
+[sub_resource type="Resource" id="Resource_fc2it"]
+script = ExtResource("1_v8sfw")
+nivel = 46
+movimiento = ExtResource("15_fx8np")
+
+[sub_resource type="Resource" id="Resource_h1t3p"]
+script = ExtResource("1_v8sfw")
+nivel = 54
+movimiento = ExtResource("16_obrpr")
+
+[sub_resource type="Resource" id="Resource_heu6p"]
+script = ExtResource("1_v8sfw")
+nivel = 59
+movimiento = ExtResource("17_obihu")
+
+[resource]
+script = ExtResource("18_csofj")
+id = "garbodor"
+numero = 569
+nombre = "Garbodor"
+tipos = ["veneno"]
+ps = 80
+ataque = 95
+defensa = 82
+at_esp = 60
+def_esp = 82
+velocidad = 75
+exp_base = 166
+ratio_captura = 60
+evs_otorgados = {
+"ataque": 2
+}
+aprende = Array[ExtResource("1_v8sfw")]([SubResource("Resource_aiijh"), SubResource("Resource_h0vfl"), SubResource("Resource_carv8"), SubResource("Resource_h82xm"), SubResource("Resource_odrss"), SubResource("Resource_ytdyw"), SubResource("Resource_7oydk"), SubResource("Resource_v6it1"), SubResource("Resource_sjxkn"), SubResource("Resource_mdbfn"), SubResource("Resource_gcav2"), SubResource("Resource_qbkis"), SubResource("Resource_slhvb"), SubResource("Resource_r2sij"), SubResource("Resource_0i5a5"), SubResource("Resource_fc2it"), SubResource("Resource_h1t3p"), SubResource("Resource_heu6p")])
+sprite_frente = ExtResource("20_gp2lw")
+sprite_espalda = ExtResource("19_ecwaq")
+cuadros_frente = 68
+cuadros_espalda = 72

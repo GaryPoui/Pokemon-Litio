@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bymtn45fy8fyu"]
+
+[ext_resource type="Texture2D" uid="uid://c3fli624k38s5" path="res://Assets/Overworld/Rutas/palo_borracho.png" id="1_mrcr6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mrcr6"]
+size = Vector2(16, 16)
+
+[node name="PaloBorracho" type="StaticBody2D" unique_id=746560726]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1182947029]
+position = Vector2(-20, -56)
+texture = ExtResource("1_mrcr6")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=941722852]
+shape = SubResource("RectangleShape2D_mrcr6")

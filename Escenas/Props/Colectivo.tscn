@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bcsd1qb0tclxc"]
+
+[ext_resource type="Texture2D" uid="uid://2muta6df2spi" path="res://Assets/Overworld/Constitucion/colectivo.png" id="1_44h8t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44h8t"]
+size = Vector2(64, 16)
+
+[node name="Colectivo" type="StaticBody2D" unique_id=384047418]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1851297381]
+position = Vector2(-32, -32)
+texture = ExtResource("1_44h8t")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1454719948]
+shape = SubResource("RectangleShape2D_44h8t")

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d3xoy46fiyevb"]
+
+[ext_resource type="Texture2D" uid="uid://duttyxt7ewyvq" path="res://Assets/Overworld/Rutas/parada_metrobus.png" id="1_h8s6g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h8s6g"]
+size = Vector2(64, 16)
+
+[node name="ParadaMetrobus" type="StaticBody2D" unique_id=35025010]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=273650177]
+position = Vector2(-32, -36)
+texture = ExtResource("1_h8s6g")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=485019611]
+shape = SubResource("RectangleShape2D_h8s6g")

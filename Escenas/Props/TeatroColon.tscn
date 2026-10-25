@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cawrb0p1og425"]
+
+[ext_resource type="Texture2D" uid="uid://cnlch6nxh2yhi" path="res://Assets/Overworld/Rutas/teatro_colon.png" id="1_wk2rw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wk2rw"]
+size = Vector2(128, 32)
+
+[node name="TeatroColon" type="StaticBody2D" unique_id=1248246656]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1261772846]
+position = Vector2(-64, -96)
+texture = ExtResource("1_wk2rw")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1097614417]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_wk2rw")

@@ -1,0 +1,136 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_a0rgv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="2_5ymcb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="3_t0me8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/icicle_spear.tres" id="4_f8ysy"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/uproar.tres" id="5_ubd0t"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/weather_ball.tres" id="6_t76xm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/icy_wind.tres" id="7_eokx2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mist.tres" id="8_1erdt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/avalanche.tres" id="9_rjkvj"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/taunt.tres" id="10_wg0r5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mirror_shot.tres" id="11_upt28"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/acid_armor.tres" id="12_1l5bv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ice_beam.tres" id="13_gskgt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hail.tres" id="14_r7ns8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mirror_coat.tres" id="15_oh6e6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/blizzard.tres" id="16_uj3hn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sheer_cold.tres" id="17_2i63r"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_nevpl"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/vanilluxe_espalda.png" id="19_qt8b3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/vanilluxe_frente.png" id="20_mrfgf"]
+
+[sub_resource type="Resource" id="Resource_nf23v"]
+script = ExtResource("1_a0rgv")
+movimiento = ExtResource("2_5ymcb")
+
+[sub_resource type="Resource" id="Resource_sf0jr"]
+script = ExtResource("1_a0rgv")
+movimiento = ExtResource("3_t0me8")
+
+[sub_resource type="Resource" id="Resource_xgmjb"]
+script = ExtResource("1_a0rgv")
+movimiento = ExtResource("4_f8ysy")
+
+[sub_resource type="Resource" id="Resource_hdtat"]
+script = ExtResource("1_a0rgv")
+movimiento = ExtResource("5_ubd0t")
+
+[sub_resource type="Resource" id="Resource_ok70x"]
+script = ExtResource("1_a0rgv")
+movimiento = ExtResource("6_t76xm")
+
+[sub_resource type="Resource" id="Resource_ssy0h"]
+script = ExtResource("1_a0rgv")
+nivel = 4
+movimiento = ExtResource("3_t0me8")
+
+[sub_resource type="Resource" id="Resource_x0ren"]
+script = ExtResource("1_a0rgv")
+nivel = 7
+movimiento = ExtResource("2_5ymcb")
+
+[sub_resource type="Resource" id="Resource_so6ef"]
+script = ExtResource("1_a0rgv")
+nivel = 10
+movimiento = ExtResource("5_ubd0t")
+
+[sub_resource type="Resource" id="Resource_6g0ca"]
+script = ExtResource("1_a0rgv")
+nivel = 13
+movimiento = ExtResource("7_eokx2")
+
+[sub_resource type="Resource" id="Resource_khwqi"]
+script = ExtResource("1_a0rgv")
+nivel = 16
+movimiento = ExtResource("8_1erdt")
+
+[sub_resource type="Resource" id="Resource_bd0vk"]
+script = ExtResource("1_a0rgv")
+nivel = 19
+movimiento = ExtResource("9_rjkvj")
+
+[sub_resource type="Resource" id="Resource_kec7j"]
+script = ExtResource("1_a0rgv")
+nivel = 22
+movimiento = ExtResource("10_wg0r5")
+
+[sub_resource type="Resource" id="Resource_o3vk6"]
+script = ExtResource("1_a0rgv")
+nivel = 26
+movimiento = ExtResource("11_upt28")
+
+[sub_resource type="Resource" id="Resource_lru1f"]
+script = ExtResource("1_a0rgv")
+nivel = 31
+movimiento = ExtResource("12_1l5bv")
+
+[sub_resource type="Resource" id="Resource_7ld7h"]
+script = ExtResource("1_a0rgv")
+nivel = 36
+movimiento = ExtResource("13_gskgt")
+
+[sub_resource type="Resource" id="Resource_0b4yh"]
+script = ExtResource("1_a0rgv")
+nivel = 42
+movimiento = ExtResource("14_r7ns8")
+
+[sub_resource type="Resource" id="Resource_s3ljw"]
+script = ExtResource("1_a0rgv")
+nivel = 50
+movimiento = ExtResource("15_oh6e6")
+
+[sub_resource type="Resource" id="Resource_p8igm"]
+script = ExtResource("1_a0rgv")
+nivel = 59
+movimiento = ExtResource("16_uj3hn")
+
+[sub_resource type="Resource" id="Resource_dhana"]
+script = ExtResource("1_a0rgv")
+nivel = 67
+movimiento = ExtResource("17_2i63r")
+
+[resource]
+script = ExtResource("18_nevpl")
+id = "vanilluxe"
+numero = 584
+nombre = "Vanilluxe"
+tipos = ["hielo"]
+ps = 71
+ataque = 95
+defensa = 85
+at_esp = 110
+def_esp = 95
+velocidad = 79
+exp_base = 241
+crecimiento = "slow"
+evs_otorgados = {
+"at_esp": 3
+}
+aprende = Array[ExtResource("1_a0rgv")]([SubResource("Resource_nf23v"), SubResource("Resource_sf0jr"), SubResource("Resource_xgmjb"), SubResource("Resource_hdtat"), SubResource("Resource_ok70x"), SubResource("Resource_ssy0h"), SubResource("Resource_x0ren"), SubResource("Resource_so6ef"), SubResource("Resource_6g0ca"), SubResource("Resource_khwqi"), SubResource("Resource_bd0vk"), SubResource("Resource_kec7j"), SubResource("Resource_o3vk6"), SubResource("Resource_lru1f"), SubResource("Resource_7ld7h"), SubResource("Resource_0b4yh"), SubResource("Resource_s3ljw"), SubResource("Resource_p8igm"), SubResource("Resource_dhana")])
+sprite_frente = ExtResource("20_mrfgf")
+sprite_espalda = ExtResource("19_qt8b3")
+cuadros_frente = 169
+cuadros_espalda = 169
+fps_sprite = 15.16

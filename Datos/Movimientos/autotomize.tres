@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_sdal2"]
+
+[resource]
+script = ExtResource("1_sdal2")
+id = "autotomize"
+nombre = "Aligerar"
+tipo = "acero"
+categoria = "estado"
+precision = 0
+pp = 15
+objetivo = "user"
+meta = "net-good-stats"
+descripcion = "El usuario se desprende de partes prescindibles de su cuerpo para hacerse más ligero y aumentar mucho su Velocidad."
+cambios_stats = {
+"velocidad": 2
+}

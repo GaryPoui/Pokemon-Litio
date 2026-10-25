@@ -1,0 +1,80 @@
+[gd_resource type="Resource" script_class="TablaEncuentros" format=3 uid="uid://ci2e41guty13c"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_entrada"]
+[ext_resource type="Script" uid="uid://ba384a6evk1rl" path="res://Scripts/datos/tabla_encuentros.gd" id="2_tabla"]
+[ext_resource type="Resource" uid="uid://yl1mvo5wxxiq" path="res://Datos/Especies/pidove.tres" id="e0"]
+[ext_resource type="Resource" uid="uid://pophcf8dksng" path="res://Datos/Especies/venipede.tres" id="e1"]
+[ext_resource type="Resource" uid="uid://c1ee6y3x6hsp6" path="res://Datos/Especies/foongus.tres" id="e2"]
+[ext_resource type="Resource" uid="uid://d13l6aqg7nc0i" path="res://Datos/Especies/cottonee.tres" id="e3"]
+[ext_resource type="Resource" uid="uid://b6pbha04f4rs5" path="res://Datos/Especies/lillipup.tres" id="e4"]
+[ext_resource type="Resource" uid="uid://dihbcrwtne58v" path="res://Datos/Especies/sewaddle.tres" id="e5"]
+[ext_resource type="Resource" uid="uid://q3ve70kb4v4c" path="res://Datos/Especies/tranquill.tres" id="e6"]
+[ext_resource type="Resource" uid="uid://clup4bcxlvii8" path="res://Datos/Especies/emolga.tres" id="e7"]
+[ext_resource type="Resource" uid="uid://b3x2qx45pf50s" path="res://Datos/Especies/audino.tres" id="e8"]
+
+[sub_resource type="Resource" id="Entrada_0"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e0")
+nivel_min = 14
+nivel_max = 17
+peso = 18
+
+[sub_resource type="Resource" id="Entrada_1"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e1")
+nivel_min = 14
+nivel_max = 17
+peso = 14
+
+[sub_resource type="Resource" id="Entrada_2"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e2")
+nivel_min = 15
+nivel_max = 18
+peso = 14
+
+[sub_resource type="Resource" id="Entrada_3"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e3")
+nivel_min = 14
+nivel_max = 17
+peso = 12
+
+[sub_resource type="Resource" id="Entrada_4"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e4")
+nivel_min = 14
+nivel_max = 16
+peso = 12
+
+[sub_resource type="Resource" id="Entrada_5"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e5")
+nivel_min = 14
+nivel_max = 16
+
+[sub_resource type="Resource" id="Entrada_6"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e6")
+nivel_min = 16
+nivel_max = 18
+peso = 8
+
+[sub_resource type="Resource" id="Entrada_7"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e7")
+nivel_min = 16
+nivel_max = 18
+peso = 7
+
+[sub_resource type="Resource" id="Entrada_8"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e8")
+nivel_min = 15
+nivel_max = 18
+peso = 5
+
+[resource]
+script = ExtResource("2_tabla")
+tasa = 0.12
+entradas = Array[ExtResource("1_entrada")]([SubResource("Entrada_0"), SubResource("Entrada_1"), SubResource("Entrada_2"), SubResource("Entrada_3"), SubResource("Entrada_4"), SubResource("Entrada_5"), SubResource("Entrada_6"), SubResource("Entrada_7"), SubResource("Entrada_8")])
