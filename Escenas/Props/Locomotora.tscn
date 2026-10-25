@@ -8,7 +8,7 @@ size = Vector2(64, 32)
 [node name="Locomotora" type="StaticBody2D" unique_id=728216539]
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=872088590]
-position = Vector2(-31, -39)
+position = Vector2(-32, -40)
 texture = ExtResource("1_6tiqy")
 centered = false
 

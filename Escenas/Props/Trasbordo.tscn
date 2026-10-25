@@ -8,7 +8,7 @@ size = Vector2(96, 16)
 [node name="Trasbordo" type="StaticBody2D" unique_id=1100287958]
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=555732631]
-position = Vector2(-49, -48)
+position = Vector2(-48, -48)
 texture = ExtResource("1_nxa68")
 centered = false
 

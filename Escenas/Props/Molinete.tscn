@@ -8,7 +8,7 @@ size = Vector2(16, 16)
 [node name="Molinete" type="StaticBody2D" unique_id=1568640505]
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1361517469]
-position = Vector2(-8, -15)
+position = Vector2(-8, -16)
 texture = ExtResource("1_d7uci")
 centered = false
 
