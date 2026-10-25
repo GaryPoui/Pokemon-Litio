@@ -1,0 +1,99 @@
+[gd_scene format=4 uid="uid://cqcdibt3cm4oi"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_mer0y"]
+[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="2_lnc3l"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_m1rjp"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_1uc84"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_0rcun"]
+[ext_resource type="Script" uid="uid://77y6ik0mxot2" path="res://Scripts/mostrador.gd" id="6_20oju"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="7_jh80k"]
+[ext_resource type="Script" uid="uid://1etgcxm1i15e" path="res://Scripts/mercado.gd" id="8_cfj10"]
+[ext_resource type="SpriteFrames" uid="uid://c55xk8wajb11e" path="res://Recursos/Personajes/tendero.tres" id="9_alrev"]
+[ext_resource type="Script" uid="uid://bgce3emrc13ld" path="res://Scripts/tienda.gd" id="10_uqg83"]
+[ext_resource type="SpriteFrames" uid="uid://hgmu078xq1mr" path="res://Recursos/Personajes/laboca_tendera.tres" id="11_lkh07"]
+[ext_resource type="SpriteFrames" uid="uid://bla2ql07euub3" path="res://Recursos/Personajes/rutas_oficinista.tres" id="12_o7314"]
+
+[node name="Almacen" type="Node2D" unique_id=1768391188]
+y_sort_enabled = true
+script = ExtResource("1_mer0y")
+fondo_batalla = ExtResource("2_lnc3l")
+musica = "pueblo"
+zona_id = "la_boca"
+zona_nombre = "La Boca"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1952809115]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACAAFAAAAAAAAAAEACAAGAAAAAAAAAAIACAAAAAAAAAAAAAMACAAAAAAAAAAAAAQACAAAAAAAAAAAAAUACAAAAAAAAAAAAAYACAAAAAAAAAAAAAcACAAAAAAAAAABAAAACAAHAAAAAAABAAEACAAGAAAAAAABAAIACAAAAAAAAAABAAMACAAAAAAAAAABAAQACAAAAAAAAAABAAUACAAAAAAAAAABAAYACAAAAAAAAAABAAcACAAAAAAAAAACAAAACAAFAAAAAAACAAEACAAGAAAAAAACAAIACAAAAAAAAAACAAMACAAAAAAAAAACAAQACAAAAAAAAAACAAUACAAAAAAAAAACAAYACAAAAAAAAAACAAcACAAAAAAAAAADAAAACAAFAAAAAAADAAEACAAGAAAAAAADAAIACAAAAAAAAAADAAMACAAAAAAAAAADAAQACAAAAAAAAAADAAUACAAAAAAAAAADAAYACAAAAAAAAAADAAcACAAAAAAAAAAEAAAACAAFAAAAAAAEAAEACAAGAAAAAAAEAAIACAAAAAAAAAAEAAMACAAAAAAAAAAEAAQACAAAAAAAAAAEAAUACAAAAAAAAAAEAAYACAAAAAAAAAAEAAcACAAAAAAAAAAFAAAACAAFAAAAAAAFAAEACAAGAAAAAAAFAAIACAAAAAAAAAAFAAMACAAAAAAAAAAFAAQACAAAAAAAAAAFAAUACAAAAAAAAAAFAAYACAAAAAAAAAAFAAcACAABAAUAAAAGAAAACAAFAAAAAAAGAAEACAAGAAAAAAAGAAIACAAAAAAAAAAGAAMACAAAAAAAAAAGAAQACAAAAAAAAAAGAAUACAAAAAAAAAAGAAYACAAAAAAAAAAGAAcACAAAAAAAAAAHAAAACAAFAAAAAAAHAAEACAAGAAAAAAAHAAIACAAAAAAAAAAHAAMACAAAAAAAAAAHAAQACAAAAAAAAAAHAAUACAAAAAAAAAAHAAYACAAAAAAAAAAHAAcACAAAAAAAAAAIAAAACAAFAAAAAAAIAAEACAAGAAAAAAAIAAIACAAAAAAAAAAIAAMACAAAAAAAAAAIAAQACAAAAAAAAAAIAAUACAAAAAAAAAAIAAYACAAAAAAAAAAIAAcACAAAAAAAAAAJAAAACAAFAAAAAAAJAAEACAAGAAAAAAAJAAIACAAAAAAAAAAJAAMACAAAAAAAAAAJAAQACAAAAAAAAAAJAAUACAAAAAAAAAAJAAYACAAAAAAAAAAJAAcACAAAAAAAAAA=")
+tile_set = ExtResource("3_m1rjp")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=2096533236]
+z_index = -1
+tile_set = ExtResource("3_m1rjp")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=1628545993]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAD//wgABgAHAAIAAAAAAP//BgAHAAIAAAAAAAMACAADAAIAAAAAAAcABgAHAAEAAAAAAAgABgAHAAIAAAABAP//BgAHAAIAAAABAAMACAAFAAIAAAABAAgABgAHAAIAAAACAP//BgAHAAIAAAACAAAACAAAAAYAAAACAAEACAABAAYAAAACAAMACAAGAAIAAAACAAUACAAAAAMAAAACAAgABgAHAAIAAAADAP//BgAHAAIAAAADAAEACAACAAEAAAADAAIACAACAAIAAAADAAUACAABAAMAAAADAAgABgAHAAIAAAAEAP//BgAHAAIAAAAEAAEACAAAAAEAAAAEAAIACAAAAAIAAAAEAAgABgAHAAIAAAAFAP//BgAHAAIAAAAFAAEACAABAAEAAAAFAAIACAABAAIAAAAFAAgABgAHAAIAAAAGAP//BgAHAAIAAAAGAAEACAAAAAEAAAAGAAIACAAAAAIAAAAGAAUACAAAAAMAAAAGAAgABgAHAAIAAAAHAP//BgAHAAIAAAAHAAEACAABAAEAAAAHAAIACAABAAIAAAAHAAUACAABAAMAAAAHAAgABgAHAAIAAAAIAP//BgAHAAIAAAAIAAEACAACAAEAAAAIAAIACAACAAIAAAAIAAgABgAHAAIAAAAJAP//BgAHAAIAAAAJAAEACAACAAEAAAAJAAIACAACAAIAAAAJAAcABgAHAAEAAAAJAAgABgAHAAIAAAAKAP//BgAHAAIAAAAKAAAABgAHAAIAAAAKAAEABgAHAAIAAAAKAAIABgAHAAIAAAAKAAMABgAHAAIAAAAKAAQABgAHAAIAAAAKAAUABgAHAAIAAAAKAAYABgAHAAIAAAAKAAcABgAHAAIAAAAKAAgABgAHAAIAAAA=")
+tile_set = ExtResource("3_m1rjp")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=1720053584]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=623448289]
+position = Vector2(88, 104)
+
+[node name="Salida" type="Node2D" parent="." unique_id=1804230582]
+position = Vector2(88, 120)
+script = ExtResource("5_0rcun")
+destino = "res://Escenas/Mapa.tscn"
+llegada = "PuertaAlmacen"
+volver = true
+salir_empujando = true
+
+[node name="MostradorCaja" type="Node2D" parent="." unique_id=1716472715]
+position = Vector2(24, 56)
+script = ExtResource("6_20oju")
+destino = "../Cajero"
+
+[node name="MostradorTrinkets" type="Node2D" parent="." unique_id=567449401]
+position = Vector2(40, 56)
+script = ExtResource("6_20oju")
+destino = "../Tendera"
+
+[node name="Cajero" parent="." unique_id=1999008602 instance=ExtResource("7_jh80k")]
+position = Vector2(24, 40)
+script = ExtResource("8_cfj10")
+titulo = "ALMACÉN POKéMON"
+extra = Array[String]([])
+texto = "¡Bienvenido al Almacén Pokémon! Cuantas más medallas tengas, más cosas te puedo vender."
+
+[node name="AnimatedSprite2D" parent="Cajero" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_alrev")
+animation = &"abajo"
+
+[node name="Tendera" parent="." unique_id=1074108197 instance=ExtResource("7_jh80k")]
+position = Vector2(40, 40)
+script = ExtResource("10_uqg83")
+
+[node name="AnimatedSprite2D" parent="Tendera" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("11_lkh07")
+animation = &"abajo"
+
+[node name="Cliente" parent="." unique_id=1283922220 instance=ExtResource("7_jh80k")]
+position = Vector2(120, 72)
+texto = "Si comprás diez Poké Balls juntas, el almacenero te regala una de yapa. ¡Siempre llevo de a diez!"
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="Cliente" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("12_o7314")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_1uc84")]
+position = Vector2(88, 104)
+
+[editable path="Cajero"]
+[editable path="Tendera"]
+[editable path="Cliente"]

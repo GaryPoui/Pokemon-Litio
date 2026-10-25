@@ -1,0 +1,233 @@
+[gd_scene format=4 uid="uid://bk5ovy8cak4uw"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_vwv5s"]
+[ext_resource type="Texture2D" uid="uid://lfttg1begv2i" path="res://Assets/Produccion/Barrios/mugica/v03/fondo_batalla.png" id="2_u56fl"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_8gtxa"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_h4f37"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_3a51f"]
+[ext_resource type="PackedScene" uid="uid://dclhokunqesuq" path="res://Escenas/Props/BarreraClub.tscn" id="6_aqtmj"]
+[ext_resource type="Script" uid="uid://byjj0sehdttyq" path="res://Scripts/objeto_oculto.gd" id="7_o2s0u"]
+[ext_resource type="Script" uid="uid://lfvuismmo1ix" path="res://Scripts/apagon.gd" id="8_ovchk"]
+[ext_resource type="Script" uid="uid://cga0me8ydyaba" path="res://Scripts/luces_zona.gd" id="9_vynbe"]
+[ext_resource type="Script" uid="uid://cgxmr0fjnt35y" path="res://Scripts/interruptor.gd" id="10_5qyfc"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="11_hm3x7"]
+[ext_resource type="Script" uid="uid://hamtyxhu8hcm" path="res://Scripts/lider.gd" id="12_0004r"]
+[ext_resource type="SpriteFrames" uid="uid://cdbi1vs735kh0" path="res://Recursos/Personajes/gym_la_gata.tres" id="13_44514"]
+[ext_resource type="Resource" uid="uid://cps16mcx5yyio" path="res://Datos/Entrenadores/lider_la_gata.tres" id="13_ohoj5"]
+[ext_resource type="Script" uid="uid://cf87qjs4x03b8" path="res://Scripts/entrenador.gd" id="15_u45jv"]
+[ext_resource type="SpriteFrames" uid="uid://dwpjitipv1yg8" path="res://Recursos/Personajes/montanero.tres" id="16_8lcyn"]
+[ext_resource type="Resource" uid="uid://bah4a3klsu1dv" path="res://Datos/Entrenadores/patovica_ramon.tres" id="16_46kj8"]
+[ext_resource type="SpriteFrames" uid="uid://ca1hpcrt52cx0" path="res://Recursos/Personajes/villa31_musico.tres" id="18_60asw"]
+[ext_resource type="Resource" uid="uid://vflcjt44ikdh" path="res://Datos/Entrenadores/dj_nico.tres" id="18_hs21o"]
+[ext_resource type="Resource" uid="uid://c7yk34mo7o1bs" path="res://Datos/Entrenadores/barwoman_vale.tres" id="20_eh80a"]
+[ext_resource type="SpriteFrames" uid="uid://bscstn3e2t1qj" path="res://Recursos/Personajes/chica.tres" id="20_roib3"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="22_33rc3"]
+[ext_resource type="SpriteFrames" uid="uid://c74rh52rjrowf" path="res://Recursos/Personajes/villa31_vecina.tres" id="23_5s83w"]
+
+[node name="GimnasioVilla" type="Node2D" unique_id=2022328184]
+y_sort_enabled = true
+script = ExtResource("1_vwv5s")
+fondo_batalla = ExtResource("2_u56fl")
+musica = "gimnasio"
+zona_id = "gimnasio_villa"
+zona_nombre = "Club La Terraza"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=865384350]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACQAGAAEAAAAAAAEACQAGAAEAAAAAAAIACQAGAAEAAAAAAAMACQAGAAEAAAAAAAQACQAGAAEAAAAAAAUACQAGAAEAAAAAAAYACQAGAAEAAAAAAAcACQAGAAEAAAAAAAgACQAGAAEAAAAAAAkACQAGAAEAAAAAAAoACQAGAAEAAAAAAAsACQAGAAEAAAAAAAwACQAGAAEAAAAAAA0ACQAGAAEAAAAAAA4ACQAGAAEAAAAAAA8ACQAGAAEAAAAAABAACQAGAAEAAAAAABEACQAGAAEAAAABAAAACQAAAAEAAAABAAEACQABAAEAAAABAAIACQABAAAAAAABAAMACQABAAAAAAABAAQACQABAAAAAAABAAUACQABAAAAAAABAAYACQABAAAAAAABAAcACQAAAAAAAAABAAgACQABAAAAAAABAAkACQAAAAAAAAABAAoACQABAAAAAAABAAsACQAAAAAAAAABAAwACQABAAAAAAABAA0ACQABAAAAAAABAA4ACQAAAAAAAAABAA8ACQABAAAAAAABABAACQAAAAAAAAABABEACQABAAAAAAACAAAACQAAAAEAAAACAAEACQABAAEAAAACAAIACQAAAAAAAAACAAMACQAAAAAAAAACAAQACQAAAAAAAAACAAUACQAAAAAAAAACAAYACQAAAAAAAAACAAcACQAAAAAAAAACAAgACQAAAAAAAAACAAkACQAAAAAAAAACAAoACQAAAAAAAAACAAsACQAAAAAAAAACAAwACQAAAAAAAAACAA0ACQAAAAAAAAACAA4ACQAAAAAAAAACAA8ACQAAAAAAAAACABAACQAAAAAAAAACABEACQAAAAAAAAADAAAACQAAAAEAAAADAAEACQABAAEAAAADAAIACQAEAAAAAAADAAMACQAEAAAAAAADAAQACQAFAAAAAAADAAUACQABAAAAAAADAAYACQABAAAAAAADAAcACQABAAAAAAADAAgACQABAAAAAAADAAkACQABAAAAAAADAAoACQABAAAAAAADAAsACQABAAAAAAADAAwACQABAAAAAAADAA0ACQAAAAAAAAADAA4ACQAAAAAAAAADAA8ACQABAAAAAAADABAACQAAAAAAAAADABEACQABAAAAAAAEAAAACQAEAAEAAAAEAAEACQAFAAEAAAAEAAIACQAEAAAAAAAEAAMACQAEAAAAAAAEAAQACQAFAAAAAAAEAAUACQAAAAAAAAAEAAYACQAAAAAAAAAEAAcACQAAAAAAAAAEAAgACQAAAAAAAAAEAAkACQAAAAAAAAAEAAoACQAAAAAAAAAEAAsACQAAAAAAAAAEAAwACQAAAAAAAAAEAA0ACQAAAAAAAAAEAA4ACQAAAAAAAAAEAA8ACQAAAAAAAAAEABAACQAAAAAAAAAEABEACQAAAAAAAAAFAAAACQAAAAEAAAAFAAEACQABAAEAAAAFAAIACQAEAAAAAAAFAAMACQAEAAAAAAAFAAQACQAFAAAAAAAFAAUACQABAAAAAAAFAAYACQABAAAAAAAFAAcACQADAAAAAAAFAAgACQADAAAAAAAFAAkACQADAAAAAAAFAAoACQADAAAAAAAFAAsACQABAAAAAAAFAAwACQABAAAAAAAFAA0ACQAAAAAAAAAFAA4ACQABAAAAAAAFAA8ACQABAAAAAAAFABAACQABAAAAAAAFABEACQABAAAAAAAGAAAACQAAAAEAAAAGAAEACQABAAEAAAAGAAIACQAEAAAAAAAGAAMACQAEAAAAAAAGAAQACQAFAAAAAAAGAAUACQAAAAAAAAAGAAYACQAAAAAAAAAGAAcACQACAAAAAAAGAAgACQACAAAAAAAGAAkACQACAAAAAAAGAAoACQACAAAAAAAGAAsACQAAAAAAAAAGAAwACQAAAAAAAAAGAA0ACQAAAAAAAAAGAA4ACQAAAAAAAAAGAA8ACQAAAAAAAAAGABAACQAAAAAAAAAGABEACQAAAAAAAAAHAAAACQAAAAEAAAAHAAEACQABAAEAAAAHAAIACQAEAAAAAAAHAAMACQAEAAAAAAAHAAQACQAFAAAAAAAHAAUACQABAAAAAAAHAAYACQABAAAAAAAHAAcACQADAAAAAAAHAAgACQADAAAAAAAHAAkACQADAAAAAAAHAAoACQADAAAAAAAHAAsACQABAAAAAAAHAAwACQABAAAAAAAHAA0ACQABAAAAAAAHAA4ACQABAAAAAAAHAA8ACQABAAAAAAAHABAACQABAAAAAAAHABEACQABAAAAAAAIAAAACQAAAAEAAAAIAAEACQABAAEAAAAIAAIACQAEAAAAAAAIAAMACQAEAAAAAAAIAAQACQAFAAAAAAAIAAUACQAAAAAAAAAIAAYACQAAAAAAAAAIAAcACQACAAAAAAAIAAgACQACAAAAAAAIAAkACQACAAAAAAAIAAoACQACAAAAAAAIAAsACQAAAAAAAAAIAAwACQAAAAAAAAAIAA0ACQAAAAAAAAAIAA4ACQAAAAAAAAAIAA8ACQAAAAAAAAAIABAACQAAAAAAAAAIABEACQAAAAAAAAAJAAAACQACAAEAAAAJAAEACQABAAEAAAAJAAIACQAEAAAAAAAJAAMACQAEAAAAAAAJAAQACQAFAAAAAAAJAAUACQAGAAAAAAAJAAYACQABAAAAAAAJAAcACQADAAAAAAAJAAgACQADAAAAAAAJAAkACQADAAAAAAAJAAoACQADAAAAAAAJAAsACQAGAAAAAAAJAAwACQABAAAAAAAJAA0ACQABAAAAAAAJAA4ACQABAAAAAAAJAA8ACQAAAAAAAAAJABAACQABAAAAAAAJABEACQADAAMAAAAKAAAACQADAAEAAAAKAAEACQABAAEAAAAKAAIACQAEAAAAAAAKAAMACQAEAAAAAAAKAAQACQAFAAAAAAAKAAUACQAGAAAAAAAKAAYACQAAAAAAAAAKAAcACQACAAAAAAAKAAgACQACAAAAAAAKAAkACQACAAAAAAAKAAoACQACAAAAAAAKAAsACQAGAAAAAAAKAAwACQAAAAAAAAAKAA0ACQAAAAAAAAAKAA4ACQAAAAAAAAAKAA8ACQAAAAAAAAAKABAACQAAAAAAAAAKABEACQADAAMAAAALAAAACQAAAAEAAAALAAEACQABAAEAAAALAAIACQAEAAAAAAALAAMACQAEAAAAAAALAAQACQAFAAAAAAALAAUACQABAAAAAAALAAYACQABAAAAAAALAAcACQADAAAAAAALAAgACQADAAAAAAALAAkACQADAAAAAAALAAoACQADAAAAAAALAAsACQABAAAAAAALAAwACQABAAAAAAALAA0ACQAAAAAAAAALAA4ACQABAAAAAAALAA8ACQAAAAAAAAALABAACQABAAAAAAALABEACQABAAAAAAAMAAAACQAAAAEAAAAMAAEACQABAAEAAAAMAAIACQAEAAAAAAAMAAMACQAEAAAAAAAMAAQACQAFAAAAAAAMAAUACQAAAAAAAAAMAAYACQAAAAAAAAAMAAcACQACAAAAAAAMAAgACQACAAAAAAAMAAkACQACAAAAAAAMAAoACQACAAAAAAAMAAsACQAAAAAAAAAMAAwACQAAAAAAAAAMAA0ACQAAAAAAAAAMAA4ACQAAAAAAAAAMAA8ACQAAAAAAAAAMABAACQAAAAAAAAAMABEACQAAAAAAAAANAAAACQAAAAEAAAANAAEACQABAAEAAAANAAIACQAEAAAAAAANAAMACQAEAAAAAAANAAQACQAFAAAAAAANAAUACQABAAAAAAANAAYACQABAAAAAAANAAcACQADAAAAAAANAAgACQADAAAAAAANAAkACQADAAAAAAANAAoACQADAAAAAAANAAsACQABAAAAAAANAAwACQABAAAAAAANAA0ACQAAAAAAAAANAA4ACQABAAAAAAANAA8ACQABAAAAAAANABAACQABAAAAAAANABEACQABAAAAAAAOAAAACQAAAAEAAAAOAAEACQABAAEAAAAOAAIACQAEAAAAAAAOAAMACQAEAAAAAAAOAAQACQAFAAAAAAAOAAUACQAAAAAAAAAOAAYACQAAAAAAAAAOAAcACQACAAAAAAAOAAgACQACAAAAAAAOAAkACQACAAAAAAAOAAoACQACAAAAAAAOAAsACQAAAAAAAAAOAAwACQAAAAAAAAAOAA0ACQAAAAAAAAAOAA4ACQAAAAAAAAAOAA8ACQAAAAAAAAAOABAACQAAAAAAAAAOABEACQAAAAAAAAAPAAAACQAEAAEAAAAPAAEACQAFAAEAAAAPAAIACQAEAAAAAAAPAAMACQAEAAAAAAAPAAQACQAFAAAAAAAPAAUACQABAAAAAAAPAAYACQABAAAAAAAPAAcACQABAAAAAAAPAAgACQABAAAAAAAPAAkACQABAAAAAAAPAAoACQABAAAAAAAPAAsACQABAAAAAAAPAAwACQABAAAAAAAPAA0ACQABAAAAAAAPAA4ACQAAAAAAAAAPAA8ACQABAAAAAAAPABAACQAAAAAAAAAPABEACQABAAAAAAAQAAAACQAAAAEAAAAQAAEACQABAAEAAAAQAAIACQAEAAAAAAAQAAMACQAEAAAAAAAQAAQACQAFAAAAAAAQAAUACQAAAAAAAAAQAAYACQAAAAAAAAAQAAcACQAAAAAAAAAQAAgACQAAAAAAAAAQAAkACQAAAAAAAAAQAAoACQAAAAAAAAAQAAsACQAAAAAAAAAQAAwACQAAAAAAAAAQAA0ACQAAAAAAAAAQAA4ACQAAAAAAAAAQAA8ACQAAAAAAAAAQABAACQAAAAAAAAAQABEACQAAAAAAAAARAAAACQAAAAEAAAARAAEACQABAAEAAAARAAIACQABAAAAAAARAAMACQABAAAAAAARAAQACQABAAAAAAARAAUACQABAAAAAAARAAYACQABAAAAAAARAAcACQAAAAAAAAARAAgACQABAAAAAAARAAkACQABAAAAAAARAAoACQABAAAAAAARAAsACQABAAAAAAARAAwACQABAAAAAAARAA0ACQABAAAAAAARAA4ACQAAAAAAAAARAA8ACQABAAAAAAARABAACQAAAAAAAAARABEACQABAAAAAAASAAAACQAAAAEAAAASAAEACQABAAEAAAASAAIACQAAAAAAAAASAAMACQAAAAAAAAASAAQACQAAAAAAAAASAAUACQAAAAAAAAASAAYACQAAAAAAAAASAAcACQAAAAAAAAASAAgACQAAAAAAAAASAAkACQAAAAAAAAASAAoACQAAAAAAAAASAAsACQAAAAAAAAASAAwACQAAAAAAAAASAA0ACQAAAAAAAAASAA4ACQAAAAAAAAASAA8ACQAAAAAAAAASABAACQAAAAAAAAASABEACQAAAAAAAAATAAAACQAHAAEAAAATAAEACQAHAAEAAAATAAIACQAHAAEAAAATAAMACQAHAAEAAAATAAQACQAHAAEAAAATAAUACQAHAAEAAAATAAYACQAHAAEAAAATAAcACQAHAAEAAAATAAgACQAHAAEAAAATAAkACQAHAAEAAAATAAoACQAHAAEAAAATAAsACQAHAAEAAAATAAwACQAHAAEAAAATAA0ACQAHAAEAAAATAA4ACQAHAAEAAAATAA8ACQAHAAEAAAATABAACQAHAAEAAAATABEACQAHAAEAAAA=")
+tile_set = ExtResource("3_8gtxa")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1672129285]
+z_index = -1
+tile_set = ExtResource("3_8gtxa")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=1509978356]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////CQAEAAMAAAD//wAACQAEAAMAAAD//wEACQAEAAMAAAD//wIACQAEAAMAAAD//wMACQAEAAMAAAD//wQACQAEAAMAAAD//wUACQAEAAMAAAD//wYACQAEAAMAAAD//wcACQAEAAMAAAD//wgACQAEAAMAAAD//wkACQAEAAMAAAD//woACQAEAAMAAAD//wsACQAEAAMAAAD//wwACQAEAAMAAAD//w0ACQAEAAMAAAD//w4ACQAEAAMAAAD//w8ACQAEAAMAAAD//xAACQAEAAMAAAD//xEACQAEAAMAAAD//xIACQAEAAMAAAAAAP//CQAEAAMAAAAAABIACQAEAAMAAAABAP//CQAEAAMAAAABAAcACQABAAIAAAABAAkACQAAAAIAAAABAA4ACQAGAAIAAAABABAACQAHAAIAAAABABIACQAEAAMAAAACAP//CQAEAAMAAAACAAcACQACAAIAAAACABIACQAEAAMAAAADAP//CQAEAAMAAAADAAIACQAAAAIAAAADAA0ACQAHAAIAAAADAA4ACQAAAAMAAAADABAACQAGAAIAAAADABIACQAEAAMAAAAEAP//CQAEAAMAAAAEAA4ACQABAAMAAAAEAA8ACQACAAMAAAAEABIACQAEAAMAAAAFAP//CQAEAAMAAAAFAA0ACQAAAAMAAAAFABIACQAEAAMAAAAGAP//CQAEAAMAAAAGAA0ACQABAAMAAAAGAA4ACQAHAAIAAAAGABAACQACAAMAAAAGABIACQAEAAMAAAAHAP//CQAEAAMAAAAHABIACQAEAAMAAAAIAP//CQAEAAMAAAAIAA0ACQAGAAIAAAAIAA4ACQACAAMAAAAIAA8ACQAAAAMAAAAIABIACQAEAAMAAAAJAP//CQAEAAMAAAAJAA8ACQABAAMAAAAJABIACQAEAAMAAAAKAP//CQAEAAMAAAAKABIACQAEAAMAAAALAP//CQAEAAMAAAALAA0ACQACAAMAAAALAA8ACQAHAAIAAAALABIACQAEAAMAAAAMAP//CQAEAAMAAAAMAA4ACQAGAAIAAAAMABIACQAEAAMAAAANAP//CQAEAAMAAAANAA0ACQAAAAMAAAANABIACQAEAAMAAAAOAP//CQAEAAMAAAAOAA0ACQABAAMAAAAOAA8ACQAGAAIAAAAOABIACQAEAAMAAAAPAP//CQAEAAMAAAAPAA4ACQACAAMAAAAPABAACQAHAAIAAAAPABIACQAEAAMAAAAQAP//CQAEAAMAAAAQAAIACQAAAAIAAAAQAAcACQADAAIAAAAQAA0ACQAHAAIAAAAQABIACQAEAAMAAAARAP//CQAEAAMAAAARAAcACQAEAAIAAAARAA4ACQAGAAIAAAARABAACQACAAMAAAARABIACQAEAAMAAAASAP//CQAEAAMAAAASAAcACQAFAAIAAAASAAkACQAAAAIAAAASABIACQAEAAMAAAATAP//CQAEAAMAAAATABIACQAEAAMAAAAUAP//CQAEAAMAAAAUAAAACQAEAAMAAAAUAAEACQAEAAMAAAAUAAIACQAEAAMAAAAUAAMACQAEAAMAAAAUAAQACQAEAAMAAAAUAAUACQAEAAMAAAAUAAYACQAEAAMAAAAUAAcACQAEAAMAAAAUAAgACQAEAAMAAAAUAAkACQAEAAMAAAAUAAoACQAEAAMAAAAUAAsACQAEAAMAAAAUAAwACQAEAAMAAAAUAA0ACQAEAAMAAAAUAA4ACQAEAAMAAAAUAA8ACQAEAAMAAAAUABAACQAEAAMAAAAUABEACQAEAAMAAAAUABIACQAEAAMAAAA=")
+tile_set = ExtResource("3_8gtxa")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=113202012]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=87628624]
+position = Vector2(152, 264)
+
+[node name="Entrada2" type="Marker2D" parent="Llegadas" unique_id=1483852694]
+position = Vector2(168, 264)
+
+[node name="Salida" type="Node2D" parent="." unique_id=521753037]
+position = Vector2(152, 280)
+script = ExtResource("5_3a51f")
+destino = "res://Escenas/Villa31.tscn"
+llegada = "PuertaGimnasio"
+salir_empujando = true
+
+[node name="Salida2" type="Node2D" parent="." unique_id=1648183535]
+position = Vector2(168, 280)
+script = ExtResource("5_3a51f")
+destino = "res://Escenas/Villa31.tscn"
+llegada = "PuertaGimnasio"
+salir_empujando = true
+
+[node name="PersianaUno" parent="." unique_id=371590723 instance=ExtResource("6_aqtmj")]
+position = Vector2(160, 200)
+clave = "gym_villa_luz1"
+
+[node name="PersianaDos" parent="." unique_id=1608497265 instance=ExtResource("6_aqtmj")]
+position = Vector2(160, 104)
+clave = "gym_villa_luz2"
+
+[node name="Oculto1" type="Node2D" parent="." unique_id=1581986762]
+position = Vector2(24, 248)
+script = ExtResource("7_o2s0u")
+item_id = "awakening"
+clave = "oculto_gym_villa"
+
+[node name="Apagon" type="Node2D" parent="." unique_id=1424970363]
+position = Vector2(8, 8)
+script = ExtResource("8_ovchk")
+
+[node name="LucesEntrada" type="Node2D" parent="." unique_id=2005679203]
+position = Vector2(8, 8)
+script = ExtResource("9_vynbe")
+puntos = [[9.0, 17.0]]
+color = Color(1, 0.8, 0.6, 1)
+radio = 28.0
+energia = 0.8
+
+[node name="LucesZonaUno" type="Node2D" parent="." unique_id=2050081236]
+position = Vector2(8, 8)
+script = ExtResource("9_vynbe")
+clave = "gym_villa_luz1"
+puntos = [[4.0, 14.0], [10.0, 14.0], [16.0, 14.0]]
+color = Color(1, 0.82, 0.62, 1)
+radio = 60.0
+
+[node name="LucesZonaDos" type="Node2D" parent="." unique_id=912191523]
+position = Vector2(8, 8)
+script = ExtResource("9_vynbe")
+clave = "gym_villa_luz2"
+puntos = [[6.0, 8.0], [9.0, 9.0], [12.0, 8.0], [3.0, 10.0], [16.0, 10.0]]
+radio = 52.0
+baile = true
+
+[node name="LucesEscenario" type="Node2D" parent="." unique_id=387119498]
+position = Vector2(8, 8)
+script = ExtResource("9_vynbe")
+puntos = [[9.0, 3.0]]
+color = Color(1, 0.45, 0.8, 1)
+radio = 44.0
+energia = 1.2
+
+[node name="LucesEscenarioFull" type="Node2D" parent="." unique_id=1865498968]
+position = Vector2(8, 8)
+script = ExtResource("9_vynbe")
+clave = "gym_villa_luz2"
+puntos = [[4.0, 3.0], [15.0, 3.0]]
+color = Color(0.75, 0.6, 1, 1)
+
+[node name="TableroUno" type="Node2D" parent="." unique_id=34222083]
+position = Vector2(296, 216)
+script = ExtResource("10_5qyfc")
+clave = "gym_villa_luz1"
+barrera = "PersianaUno"
+texto = "¡Clac! Volvió la luz en el salón y la persiana del fondo empezó a subir."
+
+[node name="TableroDos" type="Node2D" parent="." unique_id=628009666]
+position = Vector2(24, 184)
+script = ExtResource("10_5qyfc")
+clave = "gym_villa_luz2"
+barrera = "PersianaDos"
+texto = "¡Clac! Se prendió la pista de baile. ¡La persiana del escenario se abrió!"
+
+[node name="LaGata" parent="." unique_id=1999008602 instance=ExtResource("11_hm3x7")]
+position = Vector2(152, 56)
+script = ExtResource("12_0004r")
+medalla = "terraza"
+nombre_medalla = "Medalla Terraza"
+requiere_medalla = "bombonera"
+texto_requisito = "¿Y vos quién sos? Acá arriba solo suben los que ya le ganaron a Riquelme. Volvé con la Medalla Bombonera."
+mt_premio = "tm95"
+trinket_premio = "reloj_arena"
+texto_premio = "Tomá este Disco Técnico: Alarido baja el Ataque Especial de quien lo recibe. Y este Reloj de Arena: aguanta un golpe que te tiraría."
+datos = ExtResource("13_ohoj5")
+clave = "vencio_la_gata"
+texto_derrota = "Miau... Me ganaste limpio, y eso en este barrio vale oro."
+texto_despues = "Si te agrandan, no te la creas: cambiá de Pokémon y se te pasa. Eso también es saber pelear."
+texto = "Llegaste hasta el escenario a oscuras... Nada mal. Soy Rocío, pero en el barrio me dicen La Gata. En la oscuridad mis Pokémon te engañan, te agrandan y te usan la fuerza en contra. ¿Bailamos?"
+
+[node name="AnimatedSprite2D" parent="LaGata" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("13_44514")
+animation = &"abajo"
+
+[node name="PatovicaRamon" parent="." unique_id=1955974378 instance=ExtResource("11_hm3x7")]
+position = Vector2(120, 248)
+script = ExtResource("15_u45jv")
+datos = ExtResource("16_46kj8")
+clave = "vencio_patovica_ramon"
+texto_derrota = "Bueno, bueno... pasá. Pero no hagas lío."
+texto_despues = "La térmica del salón está en la esquina del fondo, a la derecha. Andá tanteando."
+texto = "¡Ey! Con la luz cortada no se pasa así nomás. Primero pasá por mí."
+
+[node name="AnimatedSprite2D" parent="PatovicaRamon" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("16_8lcyn")
+animation = &"abajo"
+
+[node name="DjNico" parent="." unique_id=163279876 instance=ExtResource("11_hm3x7")]
+position = Vector2(56, 136)
+script = ExtResource("15_u45jv")
+datos = ExtResource("18_hs21o")
+clave = "vencio_dj_nico"
+texto_derrota = "Se me cortó el tema..."
+texto_despues = "La térmica de la pista está abajo a la izquierda, contra la pared."
+texto = "¡Sin luz no hay fiesta! Bah, mis Pokémon bailan igual. ¡A ver si les seguís el ritmo!"
+
+[node name="AnimatedSprite2D" parent="DjNico" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("18_60asw")
+animation = &"abajo"
+
+[node name="BarwomanVale" parent="." unique_id=910386299 instance=ExtResource("11_hm3x7")]
+position = Vector2(280, 136)
+script = ExtResource("15_u45jv")
+datos = ExtResource("20_eh80a")
+clave = "vencio_barwoman_vale"
+texto_derrota = "Bien servido. Te lo ganaste."
+texto_despues = "La Gata usa Fanfarronear: sube tu Ataque y te confunde. Después te pega con tu propia fuerza."
+texto = "La casa invita... ¡a un combate!"
+
+[node name="AnimatedSprite2D" parent="BarwomanVale" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("20_roib3")
+animation = &"abajo"
+
+[node name="GuiaGimnasio" parent="." unique_id=1063358691 instance=ExtResource("11_hm3x7")]
+position = Vector2(184, 264)
+script = ExtResource("22_33rc3")
+objeto_regalo = "super_potion"
+cantidad_regalo = 2
+trinket_regalo = ""
+clave_objeto = "guia_gym_villa"
+texto_antes = "¡Uy, se cortó la luz en todo el club! Hay que levantar las térmicas para abrir las persianas. Tomá, con esto vas a aguantar."
+texto_despues = "Los Pokémon de La Gata son de tipo Siniestro. Los de tipo Lucha y Bicho les pegan fuerte."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "¡Se cortó la luz en todo el club! Hay que levantar las térmicas para abrir las persianas."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="GuiaGimnasio" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("23_5s83w")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_h4f37")]
+position = Vector2(152, 264)
+
+[editable path="LaGata"]
+[editable path="PatovicaRamon"]
+[editable path="DjNico"]
+[editable path="BarwomanVale"]
+[editable path="GuiaGimnasio"]

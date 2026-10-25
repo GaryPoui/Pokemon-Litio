@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_c80s5"]
+
+[resource]
+script = ExtResource("1_c80s5")
+id = "wonder_room"
+nombre = "Zona Extraña"
+tipo = "psiquico"
+categoria = "estado"
+precision = 0
+objetivo = "entire-field"
+meta = "whole-field-effect"
+descripcion = "Crea una zona misteriosa donde se intercambian la Defensa y la Defensa Especial de todos los Pokémon durante cinco turnos."

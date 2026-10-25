@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dclhokunqesuq"]
+
+[ext_resource type="Script" uid="uid://fshn7pus51oi" path="res://Scripts/barrera.gd" id="1_abdwi"]
+[ext_resource type="Texture2D" uid="uid://d28y7wrelkoyg" path="res://Assets/Overworld/Gimnasios/persiana_18.png" id="2_4gagn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4gagn"]
+size = Vector2(288, 16)
+
+[node name="BarreraClub" type="StaticBody2D" unique_id=371590723]
+script = ExtResource("1_abdwi")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1415182032]
+position = Vector2(-144, -20)
+texture = ExtResource("2_4gagn")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=665378702]
+shape = SubResource("RectangleShape2D_4gagn")

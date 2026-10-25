@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_b2bnx"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_r0l3u"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_pgw6g"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_shock.tres" id="4_t4vda"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="5_lrkxm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/cotton_spore.tres" id="6_87888"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="7_ogqwb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/electro_ball.tres" id="8_ruacg"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/cotton_guard.tres" id="9_5s5y2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="10_gx21h"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/signal_beam.tres" id="11_mjo8l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/light_screen.tres" id="12_1gsxi"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/power_gem.tres" id="13_xmp6a"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder.tres" id="14_fvpmi"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="15_ej4hv"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/flaaffy_espalda.png" id="16_eb0nb"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/flaaffy_frente.png" id="17_03qpn"]
+
+[sub_resource type="Resource" id="Resource_jjnsm"]
+script = ExtResource("1_b2bnx")
+movimiento = ExtResource("2_r0l3u")
+
+[sub_resource type="Resource" id="Resource_c1w0p"]
+script = ExtResource("1_b2bnx")
+movimiento = ExtResource("3_pgw6g")
+
+[sub_resource type="Resource" id="Resource_ftcx0"]
+script = ExtResource("1_b2bnx")
+movimiento = ExtResource("4_t4vda")
+
+[sub_resource type="Resource" id="Resource_i2nto"]
+script = ExtResource("1_b2bnx")
+nivel = 5
+movimiento = ExtResource("2_r0l3u")
+
+[sub_resource type="Resource" id="Resource_x4ni1"]
+script = ExtResource("1_b2bnx")
+nivel = 10
+movimiento = ExtResource("4_t4vda")
+
+[sub_resource type="Resource" id="Resource_ya84v"]
+script = ExtResource("1_b2bnx")
+nivel = 14
+movimiento = ExtResource("5_lrkxm")
+
+[sub_resource type="Resource" id="Resource_iqg4o"]
+script = ExtResource("1_b2bnx")
+nivel = 20
+movimiento = ExtResource("6_87888")
+
+[sub_resource type="Resource" id="Resource_a7aor"]
+script = ExtResource("1_b2bnx")
+nivel = 25
+movimiento = ExtResource("7_ogqwb")
+
+[sub_resource type="Resource" id="Resource_2se45"]
+script = ExtResource("1_b2bnx")
+nivel = 31
+movimiento = ExtResource("8_ruacg")
+
+[sub_resource type="Resource" id="Resource_7s1yv"]
+script = ExtResource("1_b2bnx")
+nivel = 36
+movimiento = ExtResource("9_5s5y2")
+
+[sub_resource type="Resource" id="Resource_13f4m"]
+script = ExtResource("1_b2bnx")
+nivel = 42
+movimiento = ExtResource("10_gx21h")
+
+[sub_resource type="Resource" id="Resource_06miy"]
+script = ExtResource("1_b2bnx")
+nivel = 47
+movimiento = ExtResource("11_mjo8l")
+
+[sub_resource type="Resource" id="Resource_7bugc"]
+script = ExtResource("1_b2bnx")
+nivel = 53
+movimiento = ExtResource("12_1gsxi")
+
+[sub_resource type="Resource" id="Resource_bf4fp"]
+script = ExtResource("1_b2bnx")
+nivel = 59
+movimiento = ExtResource("13_xmp6a")
+
+[sub_resource type="Resource" id="Resource_5o8ng"]
+script = ExtResource("1_b2bnx")
+nivel = 65
+movimiento = ExtResource("14_fvpmi")
+
+[resource]
+script = ExtResource("15_ej4hv")
+id = "flaaffy"
+numero = 180
+nombre = "Flaaffy"
+tipos = ["electrico"]
+ps = 70
+ataque = 55
+defensa = 55
+at_esp = 80
+def_esp = 60
+velocidad = 45
+exp_base = 128
+ratio_captura = 120
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 2
+}
+evoluciona_a = "ampharos"
+nivel_evolucion = 30
+aprende = Array[ExtResource("1_b2bnx")]([SubResource("Resource_jjnsm"), SubResource("Resource_c1w0p"), SubResource("Resource_ftcx0"), SubResource("Resource_i2nto"), SubResource("Resource_x4ni1"), SubResource("Resource_ya84v"), SubResource("Resource_iqg4o"), SubResource("Resource_a7aor"), SubResource("Resource_2se45"), SubResource("Resource_7s1yv"), SubResource("Resource_13f4m"), SubResource("Resource_06miy"), SubResource("Resource_7bugc"), SubResource("Resource_bf4fp"), SubResource("Resource_5o8ng")])
+sprite_frente = ExtResource("17_03qpn")
+sprite_espalda = ExtResource("16_eb0nb")
+cuadros_frente = 55
+cuadros_espalda = 51
+fps_sprite = 9.17

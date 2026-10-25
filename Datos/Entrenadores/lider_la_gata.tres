@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://cps16mcx5yyio"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_yfoo1"]
+[ext_resource type="Resource" uid="uid://bast6r6qwer6i" path="res://Datos/Especies/scraggy.tres" id="2_e2h0c"]
+[ext_resource type="Resource" uid="uid://cmj6rglyeerhh" path="res://Datos/Especies/zorua.tres" id="3_8npg5"]
+[ext_resource type="Resource" uid="uid://cih11gjsnldqw" path="res://Datos/Especies/liepard.tres" id="4_bhxwg"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="5_npr5v"]
+
+[sub_resource type="Resource" id="Resource_dykdl"]
+script = ExtResource("1_yfoo1")
+especie = ExtResource("2_e2h0c")
+nivel_min = 20
+nivel_max = 20
+peso = 1
+trinkets = Array[String](["escama_robusta"])
+movimientos = Array[String](["swagger", "feint_attack", "low_kick", "sand_attack"])
+ia = Array[String](["confundir:swagger", "danio"])
+
+[sub_resource type="Resource" id="Resource_fm2fn"]
+script = ExtResource("1_yfoo1")
+especie = ExtResource("3_8npg5")
+nivel_min = 21
+nivel_max = 21
+peso = 1
+trinkets = Array[String](["lente_enfocada"])
+movimientos = Array[String](["foul_play", "pursuit", "fury_swipes", "torment"])
+ia = Array[String](["danio"])
+
+[sub_resource type="Resource" id="Resource_r7yoq"]
+script = ExtResource("1_yfoo1")
+especie = ExtResource("4_bhxwg")
+nivel_min = 23
+nivel_max = 23
+peso = 1
+trinkets = Array[String](["colmillo_afilado"])
+movimientos = Array[String](["swagger", "foul_play", "assurance", "sand_attack"])
+ia = Array[String](["confundir:swagger", "danio"])
+
+[resource]
+script = ExtResource("5_npr5v")
+clase = "Líder"
+nombre = "La Gata"
+miembros = Array[ExtResource("1_yfoo1")]([SubResource("Resource_dykdl"), SubResource("Resource_fm2fn"), SubResource("Resource_r7yoq")])
+pago_base = 120
+objetos = Array[String](["super_potion", "super_potion"])

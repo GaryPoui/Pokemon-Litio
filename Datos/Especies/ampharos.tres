@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_8bn5d"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fire_punch.tres" id="2_gpry3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_t43xe"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_al5ef"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_shock.tres" id="5_84gsv"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="6_7w50l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/cotton_spore.tres" id="7_d1v8c"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="8_uqv3p"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_punch.tres" id="9_4o3jn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/electro_ball.tres" id="10_3ivx8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/cotton_guard.tres" id="11_eultr"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="12_r3a1t"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/signal_beam.tres" id="13_smflt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/light_screen.tres" id="14_lc77q"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/power_gem.tres" id="15_5n37s"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder.tres" id="16_xnxfb"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_ojetj"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ampharos_espalda.png" id="18_n0m7g"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ampharos_frente.png" id="19_i47mm"]
+
+[sub_resource type="Resource" id="Resource_me7um"]
+script = ExtResource("1_8bn5d")
+movimiento = ExtResource("2_gpry3")
+
+[sub_resource type="Resource" id="Resource_bnicp"]
+script = ExtResource("1_8bn5d")
+movimiento = ExtResource("3_t43xe")
+
+[sub_resource type="Resource" id="Resource_340g0"]
+script = ExtResource("1_8bn5d")
+movimiento = ExtResource("4_al5ef")
+
+[sub_resource type="Resource" id="Resource_073y8"]
+script = ExtResource("1_8bn5d")
+movimiento = ExtResource("5_84gsv")
+
+[sub_resource type="Resource" id="Resource_yypsa"]
+script = ExtResource("1_8bn5d")
+movimiento = ExtResource("6_7w50l")
+
+[sub_resource type="Resource" id="Resource_3doob"]
+script = ExtResource("1_8bn5d")
+nivel = 5
+movimiento = ExtResource("3_t43xe")
+
+[sub_resource type="Resource" id="Resource_7246h"]
+script = ExtResource("1_8bn5d")
+nivel = 10
+movimiento = ExtResource("5_84gsv")
+
+[sub_resource type="Resource" id="Resource_8383i"]
+script = ExtResource("1_8bn5d")
+nivel = 14
+movimiento = ExtResource("6_7w50l")
+
+[sub_resource type="Resource" id="Resource_2rm3g"]
+script = ExtResource("1_8bn5d")
+nivel = 20
+movimiento = ExtResource("7_d1v8c")
+
+[sub_resource type="Resource" id="Resource_qbq51"]
+script = ExtResource("1_8bn5d")
+nivel = 25
+movimiento = ExtResource("8_uqv3p")
+
+[sub_resource type="Resource" id="Resource_4gqec"]
+script = ExtResource("1_8bn5d")
+nivel = 30
+movimiento = ExtResource("9_4o3jn")
+
+[sub_resource type="Resource" id="Resource_ycprl"]
+script = ExtResource("1_8bn5d")
+nivel = 33
+movimiento = ExtResource("10_3ivx8")
+
+[sub_resource type="Resource" id="Resource_x2i4c"]
+script = ExtResource("1_8bn5d")
+nivel = 40
+movimiento = ExtResource("11_eultr")
+
+[sub_resource type="Resource" id="Resource_iief4"]
+script = ExtResource("1_8bn5d")
+nivel = 48
+movimiento = ExtResource("12_r3a1t")
+
+[sub_resource type="Resource" id="Resource_x0njc"]
+script = ExtResource("1_8bn5d")
+nivel = 55
+movimiento = ExtResource("13_smflt")
+
+[sub_resource type="Resource" id="Resource_xyq3g"]
+script = ExtResource("1_8bn5d")
+nivel = 63
+movimiento = ExtResource("14_lc77q")
+
+[sub_resource type="Resource" id="Resource_8rqm5"]
+script = ExtResource("1_8bn5d")
+nivel = 71
+movimiento = ExtResource("15_5n37s")
+
+[sub_resource type="Resource" id="Resource_xpft4"]
+script = ExtResource("1_8bn5d")
+nivel = 79
+movimiento = ExtResource("16_xnxfb")
+
+[resource]
+script = ExtResource("17_ojetj")
+id = "ampharos"
+numero = 181
+nombre = "Ampharos"
+tipos = ["electrico"]
+ps = 90
+ataque = 75
+defensa = 85
+at_esp = 115
+def_esp = 90
+velocidad = 55
+exp_base = 230
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 3
+}
+aprende = Array[ExtResource("1_8bn5d")]([SubResource("Resource_me7um"), SubResource("Resource_bnicp"), SubResource("Resource_340g0"), SubResource("Resource_073y8"), SubResource("Resource_yypsa"), SubResource("Resource_3doob"), SubResource("Resource_7246h"), SubResource("Resource_8383i"), SubResource("Resource_2rm3g"), SubResource("Resource_qbq51"), SubResource("Resource_4gqec"), SubResource("Resource_ycprl"), SubResource("Resource_x2i4c"), SubResource("Resource_iief4"), SubResource("Resource_x0njc"), SubResource("Resource_xyq3g"), SubResource("Resource_8rqm5"), SubResource("Resource_xpft4")])
+sprite_frente = ExtResource("19_i47mm")
+sprite_espalda = ExtResource("18_n0m7g")
+cuadros_frente = 36
+cuadros_espalda = 36
+fps_sprite = 8.57

@@ -31,6 +31,9 @@ func guardar() -> bool:
 		"dinero": Estado.dinero,
 		"stock_tienda": Estado.stock_tienda.duplicate(),
 		"safari": Estado.safari,
+		"medallas": Estado.medallas.duplicate(),
+		"fichas": Estado.fichas,
+		"fichas_ciudades": Estado.fichas_ciudades,
 		"equipo": Equipo.a_lista(),
 		"caja": Equipo.caja_a_lista(),
 	}
@@ -55,6 +58,9 @@ func cargar() -> bool:
 	Estado.dinero =int(datos.get("dinero", Estado.DINERO_INICIAL))
 	Estado.stock_tienda.assign(Array(datos.get("stock_tienda", [])).map(func(x): return str(x)))
 	Estado.safari= datos.get("safari", {}).duplicate(true)
+	Estado.medallas.assign(Array(datos.get("medallas", [])).map(func(x): return str(x)))
+	Estado.fichas =int(datos.get("fichas", 0))
+	Estado.fichas_ciudades= datos.get("fichas_ciudades", {}).duplicate()
 	Equipo.desde_lista(datos.get("equipo", []))
 	Equipo.caja_desde_lista(datos.get("caja", []))
 	GestorEscenas.restaurar_zona_exterior(str(datos.get("zona_exterior_id", "")))

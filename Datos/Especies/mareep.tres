@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dd54fremw7wjf"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_hm300"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_6cn6h"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_415lu"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_shock.tres" id="4_oag30"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="5_w5cnk"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/cotton_spore.tres" id="6_thrd7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="7_yhq7x"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/electro_ball.tres" id="8_pwlby"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/cotton_guard.tres" id="9_mcyjp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="10_b266r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/signal_beam.tres" id="11_lr55l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/light_screen.tres" id="12_08hic"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/power_gem.tres" id="13_2xoq1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder.tres" id="14_l337j"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_h33mi"]
+[ext_resource type="Texture2D" uid="uid://ctsr8vdjpkm7r" path="res://Assets/Pokemones/batalla/mareep_espalda.png" id="16_0l7kj"]
+[ext_resource type="Texture2D" uid="uid://dmqteu2rvsjep" path="res://Assets/Pokemones/batalla/mareep_frente.png" id="17_5bq50"]
+
+[sub_resource type="Resource" id="Resource_46tvx"]
+script = ExtResource("1_hm300")
+movimiento = ExtResource("2_6cn6h")
+
+[sub_resource type="Resource" id="Resource_v3t11"]
+script = ExtResource("1_hm300")
+nivel = 5
+movimiento = ExtResource("3_415lu")
+
+[sub_resource type="Resource" id="Resource_ntcm7"]
+script = ExtResource("1_hm300")
+nivel = 10
+movimiento = ExtResource("4_oag30")
+
+[sub_resource type="Resource" id="Resource_pgib5"]
+script = ExtResource("1_hm300")
+nivel = 14
+movimiento = ExtResource("5_w5cnk")
+
+[sub_resource type="Resource" id="Resource_cad2t"]
+script = ExtResource("1_hm300")
+nivel = 19
+movimiento = ExtResource("6_thrd7")
+
+[sub_resource type="Resource" id="Resource_365lw"]
+script = ExtResource("1_hm300")
+nivel = 23
+movimiento = ExtResource("7_yhq7x")
+
+[sub_resource type="Resource" id="Resource_e6vn4"]
+script = ExtResource("1_hm300")
+nivel = 28
+movimiento = ExtResource("8_pwlby")
+
+[sub_resource type="Resource" id="Resource_oaqfn"]
+script = ExtResource("1_hm300")
+nivel = 32
+movimiento = ExtResource("9_mcyjp")
+
+[sub_resource type="Resource" id="Resource_7uefd"]
+script = ExtResource("1_hm300")
+nivel = 37
+movimiento = ExtResource("10_b266r")
+
+[sub_resource type="Resource" id="Resource_imstx"]
+script = ExtResource("1_hm300")
+nivel = 41
+movimiento = ExtResource("11_lr55l")
+
+[sub_resource type="Resource" id="Resource_iwlgk"]
+script = ExtResource("1_hm300")
+nivel = 46
+movimiento = ExtResource("12_08hic")
+
+[sub_resource type="Resource" id="Resource_7rk7w"]
+script = ExtResource("1_hm300")
+nivel = 50
+movimiento = ExtResource("13_2xoq1")
+
+[sub_resource type="Resource" id="Resource_6o8m2"]
+script = ExtResource("1_hm300")
+nivel = 55
+movimiento = ExtResource("14_l337j")
+
+[resource]
+script = ExtResource("15_h33mi")
+id = "mareep"
+numero = 179
+nombre = "Mareep"
+tipos = ["electrico"]
+ps = 55
+ataque = 40
+defensa = 40
+at_esp = 65
+def_esp = 45
+velocidad = 35
+exp_base = 56
+ratio_captura = 235
+crecimiento = "medium-slow"
+evs_otorgados = {
+"at_esp": 1
+}
+evoluciona_a = "flaaffy"
+nivel_evolucion = 15
+aprende = Array[ExtResource("1_hm300")]([SubResource("Resource_46tvx"), SubResource("Resource_v3t11"), SubResource("Resource_ntcm7"), SubResource("Resource_pgib5"), SubResource("Resource_cad2t"), SubResource("Resource_365lw"), SubResource("Resource_e6vn4"), SubResource("Resource_oaqfn"), SubResource("Resource_7uefd"), SubResource("Resource_imstx"), SubResource("Resource_iwlgk"), SubResource("Resource_7rk7w"), SubResource("Resource_6o8m2")])
+sprite_frente = ExtResource("17_5bq50")
+sprite_espalda = ExtResource("16_0l7kj")
+cuadros_frente = 49
+cuadros_espalda = 50
+fps_sprite = 9.07

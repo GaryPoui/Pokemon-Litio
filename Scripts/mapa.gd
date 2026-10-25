@@ -36,6 +36,7 @@ func _ready() -> void:
 		Sonido.musica(musica)
 	_ajustar_camara()
 	var de_partida:= GestorEscenas.posicion_llegada!= null
+	var por_cambio :=GestorEscenas.consumir_cambio()
 	if GestorEscenas.posicion_llegada!= null:
 		jugador.colocar(GestorEscenas.posicion_llegada, GestorEscenas.direccion_llegada)
 		GestorEscenas.posicion_llegada =null
@@ -46,11 +47,27 @@ func _ready() -> void:
 		GestorEscenas.llegada= ""
 	jugador.paso_terminado.connect(_al_terminar_paso)
 	GestorEscenas.registrar_zona(zona_id, zona_nombre, zona_subtitulo, tipo_zona, anunciar_al_entrar)
+	if tipo_zona== 0 and por_cambio and not de_partida and Estado.dar_fichas_ciudad(zona_id)> 0:
+		_avisar_fichas.call_deferred()
 	if safari and not de_partida:
 		for g in get_tree().get_nodes_in_group("guardaparque"):
 			if g.cerca_de(jugador):
 				g.al_llegar.call_deferred(jugador)
 				break
+
+func _avisar_fichas() -> void:
+	while GestorEscenas.en_transicion or Dialogo.esta_abierto:
+		if not is_inside_tree():
+			return
+		await get_tree().process_frame
+	if not is_inside_tree():
+		return
+	jugador.en_evento= true
+	Sonido.jingle("objeto")
+	await Dialogo.mostrar("¡Bienvenido a %s! Recibiste %d Fichas de Desafío. Cada victoria en la torre de desafíos de la ciudad le sube un nivel al Pokémon que pelea. Ya tenés %d." % [zona_nombre, Estado.FICHAS_POR_CIUDAD, Estado.fichas])
+	Sonido.cortar_jingle()
+	if is_instance_valid(jugador):
+		jugador.en_evento =false
 
 func _ajustar_camara() -> void:
 	var zona: Rect2i= suelo.get_used_rect()
@@ -75,7 +92,7 @@ func _ajustar_camara() -> void:
 
 func _al_terminar_paso(celda: Vector2i) -> void:
 	for w in get_tree().get_nodes_in_group("warp"):
-		if w.celda()== celda and w.destino!= "":
+		if w.celda()== celda and w.destino!= "" and not w.salir_empujando:
 			if w.sonido!= "":
 				Sonido.efecto(w.sonido)
 			GestorEscenas.usar_warp(w)
@@ -99,6 +116,15 @@ func _al_terminar_paso(celda: Vector2i) -> void:
 			_encuentro(e)
 			return
 	_avanzar_rara(celda)
+
+func salir_empujando(celda: Vector2i, dir: Vector2) -> bool:
+	for w in get_tree().get_nodes_in_group("warp"):
+		if w.celda()== celda and w.destino!= "" and w.salir_empujando and Vector2(w.direccion)== dir:
+			if w.sonido!= "":
+				Sonido.efecto(w.sonido)
+			GestorEscenas.usar_warp(w)
+			return true
+	return false
 
 func _encuentro(e: EncuentroEntrada) -> void:
 	var nivel:= rng.randi_range(e.nivel_min, e.nivel_max)

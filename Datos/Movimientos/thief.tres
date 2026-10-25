@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_mjc6n"]
+
+[resource]
+script = ExtResource("1_mjc6n")
+id = "thief"
+nombre = "Ladrón"
+tipo = "siniestro"
+poder = 40
+descripcion = "El agresor ataca y le quita el objeto al objetivo siempre y cuando no lleve ninguno."

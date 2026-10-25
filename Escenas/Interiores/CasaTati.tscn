@@ -1,0 +1,81 @@
+[gd_scene format=4 uid="uid://cwx0n1sui4vhh"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_55tlh"]
+[ext_resource type="Texture2D" uid="uid://lfttg1begv2i" path="res://Assets/Produccion/Barrios/mugica/v03/fondo_batalla.png" id="2_2dplj"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_qhlp2"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_h55x5"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_lq30n"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_k0muu"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="7_jfuwl"]
+[ext_resource type="SpriteFrames" uid="uid://c74rh52rjrowf" path="res://Recursos/Personajes/villa31_vecina.tres" id="8_ypvsl"]
+[ext_resource type="SpriteFrames" uid="uid://crp43ftl0rpxf" path="res://Recursos/Personajes/nino.tres" id="9_ogdp8"]
+
+[node name="CasaTati" type="Node2D" unique_id=243671826]
+y_sort_enabled = true
+script = ExtResource("1_55tlh")
+fondo_batalla = ExtResource("2_2dplj")
+musica = "pueblo"
+zona_id = "villa_31"
+zona_nombre = "Barrio Mugica"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1996146966]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAABgACAAAAAAAAAAEABgADAAAAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAABAAAABgACAAAAAAABAAEABgADAAAAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAACAAAABgACAAAAAAACAAEABgADAAAAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgABAAAAAAACAAUABgAAAAAAAAACAAYABgAAAAAAAAADAAAABgACAAAAAAADAAEABgADAAAAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgAAAAAAAAADAAUABgAAAAAAAAADAAYABgABAAAAAAAEAAAABgACAAAAAAAEAAEABgADAAAAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgAAAAAAAAAEAAUABgABAAAAAAAEAAYABgAGAAMAAAAFAAAABgACAAAAAAAFAAEABgADAAAAAAAFAAIABgAAAAAAAAAFAAMABgAAAAAAAAAFAAQABgABAAAAAAAFAAUABgAAAAAAAAAFAAYABgAAAAAAAAAGAAAABgACAAAAAAAGAAEABgADAAAAAAAGAAIABgAAAAAAAAAGAAMABgABAAAAAAAGAAQABgAAAAAAAAAGAAUABgAAAAAAAAAGAAYABgABAAAAAAAHAAAABgACAAAAAAAHAAEABgADAAAAAAAHAAIABgABAAAAAAAHAAMABgAAAAAAAAAHAAQABgAAAAAAAAAHAAUABgABAAAAAAAHAAYABgAAAAAAAAA=")
+tile_set = ExtResource("3_qhlp2")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=133528845]
+z_index = -1
+tile_set = ExtResource("3_qhlp2")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=1231711859]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAIACAAAAAQAAAAAAAMACAABAAQAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAAACAACAAYAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAQABgACAAMAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAQABgAAAAMAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAAACAAAAAYAAAAFAAEACAABAAYAAAAFAAQABgABAAMAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAEABgADAAEAAAAGAAIABgADAAIAAAAGAAQABgADAAMAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAEABgAEAAEAAAAHAAIABgAEAAIAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_qhlp2")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=767143380]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=507109831]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=966562732]
+position = Vector2(72, 104)
+script = ExtResource("5_lq30n")
+destino = "res://Escenas/Villa31.tscn"
+llegada = "PuertaFamilia"
+salir_empujando = true
+
+[node name="MamaTati" parent="." unique_id=1999008602 instance=ExtResource("6_k0muu")]
+position = Vector2(40, 56)
+script = ExtResource("7_jfuwl")
+objeto_regalo = "alfajor"
+cantidad_regalo = 3
+trinket_regalo = ""
+clave_objeto = "regalo_mama_tati"
+texto_antes = "¿Conocés a mi hija Tati, la de la murga? Siempre vuelve muerta de hambre. Tomá unos alfajores caseros, para el camino."
+texto_despues = "Los alfajores también sirven en las reservas, para tentar a los Pokémon salvajes."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "Mi hija Tati ensaya con la murga todo el día."
+
+[node name="AnimatedSprite2D" parent="MamaTati" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_ypvsl")
+animation = &"abajo"
+
+[node name="Hermanito" parent="." unique_id=810770288 instance=ExtResource("6_k0muu")]
+position = Vector2(88, 88)
+texto = "¡Cuando sea grande voy a tocar el bombo en la murga como mi hermana!"
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="Hermanito" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_ogdp8")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_h55x5")]
+position = Vector2(72, 88)
+
+[editable path="MamaTati"]
+[editable path="Hermanito"]

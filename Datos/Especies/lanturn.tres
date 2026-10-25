@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_3yg5u"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="2_biava"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="3_17uu4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="4_hpwey"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="5_rblu5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="6_qw6om"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/confuse_ray.tres" id="7_ub6jd"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spark.tres" id="8_5twuc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="9_aewo2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spit_up.tres" id="10_8pw6x"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stockpile.tres" id="11_wxf60"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swallow.tres" id="12_f0jai"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/electro_ball.tres" id="13_wkv5e"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bubble_beam.tres" id="14_7p4sa"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/signal_beam.tres" id="15_xv506"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="16_xihlo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aqua_ring.tres" id="17_tcg60"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="18_otbgl"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="19_5dl18"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="20_ct3fm"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lanturn_espalda.png" id="21_gtxyy"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lanturn_frente.png" id="22_v4fw3"]
+
+[sub_resource type="Resource" id="Resource_63muj"]
+script = ExtResource("1_3yg5u")
+movimiento = ExtResource("2_biava")
+
+[sub_resource type="Resource" id="Resource_euc02"]
+script = ExtResource("1_3yg5u")
+movimiento = ExtResource("3_17uu4")
+
+[sub_resource type="Resource" id="Resource_dxqhi"]
+script = ExtResource("1_3yg5u")
+movimiento = ExtResource("4_hpwey")
+
+[sub_resource type="Resource" id="Resource_8basl"]
+script = ExtResource("1_3yg5u")
+nivel = 6
+movimiento = ExtResource("4_hpwey")
+
+[sub_resource type="Resource" id="Resource_kp6bj"]
+script = ExtResource("1_3yg5u")
+nivel = 9
+movimiento = ExtResource("5_rblu5")
+
+[sub_resource type="Resource" id="Resource_ocok6"]
+script = ExtResource("1_3yg5u")
+nivel = 12
+movimiento = ExtResource("6_qw6om")
+
+[sub_resource type="Resource" id="Resource_hakef"]
+script = ExtResource("1_3yg5u")
+nivel = 17
+movimiento = ExtResource("7_ub6jd")
+
+[sub_resource type="Resource" id="Resource_k2mam"]
+script = ExtResource("1_3yg5u")
+nivel = 20
+movimiento = ExtResource("8_5twuc")
+
+[sub_resource type="Resource" id="Resource_c7ipe"]
+script = ExtResource("1_3yg5u")
+nivel = 23
+movimiento = ExtResource("9_aewo2")
+
+[sub_resource type="Resource" id="Resource_yc7yg"]
+script = ExtResource("1_3yg5u")
+nivel = 27
+movimiento = ExtResource("10_8pw6x")
+
+[sub_resource type="Resource" id="Resource_g4lfd"]
+script = ExtResource("1_3yg5u")
+nivel = 27
+movimiento = ExtResource("11_wxf60")
+
+[sub_resource type="Resource" id="Resource_i7pc6"]
+script = ExtResource("1_3yg5u")
+nivel = 27
+movimiento = ExtResource("12_f0jai")
+
+[sub_resource type="Resource" id="Resource_mwniy"]
+script = ExtResource("1_3yg5u")
+nivel = 30
+movimiento = ExtResource("13_wkv5e")
+
+[sub_resource type="Resource" id="Resource_nsuul"]
+script = ExtResource("1_3yg5u")
+nivel = 35
+movimiento = ExtResource("14_7p4sa")
+
+[sub_resource type="Resource" id="Resource_la5vi"]
+script = ExtResource("1_3yg5u")
+nivel = 40
+movimiento = ExtResource("15_xv506")
+
+[sub_resource type="Resource" id="Resource_7j07a"]
+script = ExtResource("1_3yg5u")
+nivel = 47
+movimiento = ExtResource("16_xihlo")
+
+[sub_resource type="Resource" id="Resource_lramf"]
+script = ExtResource("1_3yg5u")
+nivel = 52
+movimiento = ExtResource("17_tcg60")
+
+[sub_resource type="Resource" id="Resource_c8c5f"]
+script = ExtResource("1_3yg5u")
+nivel = 57
+movimiento = ExtResource("18_otbgl")
+
+[sub_resource type="Resource" id="Resource_4u7ta"]
+script = ExtResource("1_3yg5u")
+nivel = 64
+movimiento = ExtResource("19_5dl18")
+
+[resource]
+script = ExtResource("20_ct3fm")
+id = "lanturn"
+numero = 171
+nombre = "Lanturn"
+tipos = ["agua", "electrico"]
+ps = 125
+ataque = 58
+defensa = 58
+at_esp = 76
+def_esp = 76
+velocidad = 67
+exp_base = 161
+ratio_captura = 75
+crecimiento = "slow"
+evs_otorgados = {
+"ps": 2
+}
+aprende = Array[ExtResource("1_3yg5u")]([SubResource("Resource_63muj"), SubResource("Resource_euc02"), SubResource("Resource_dxqhi"), SubResource("Resource_8basl"), SubResource("Resource_kp6bj"), SubResource("Resource_ocok6"), SubResource("Resource_hakef"), SubResource("Resource_k2mam"), SubResource("Resource_c7ipe"), SubResource("Resource_yc7yg"), SubResource("Resource_g4lfd"), SubResource("Resource_i7pc6"), SubResource("Resource_mwniy"), SubResource("Resource_nsuul"), SubResource("Resource_la5vi"), SubResource("Resource_7j07a"), SubResource("Resource_lramf"), SubResource("Resource_c8c5f"), SubResource("Resource_4u7ta")])
+sprite_frente = ExtResource("22_v4fw3")
+sprite_espalda = ExtResource("21_gtxyy")
+cuadros_frente = 126
+cuadros_espalda = 126
+fps_sprite = 20.0

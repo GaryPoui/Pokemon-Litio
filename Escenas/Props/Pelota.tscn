@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cxsidqvvjkvw5"]
+
+[ext_resource type="Script" uid="uid://lyou074w4obq" path="res://Scripts/pelota.gd" id="1_v0i0y"]
+[ext_resource type="Texture2D" uid="uid://cj3nt2ohwfbbx" path="res://Assets/Overworld/Gimnasios/pelota.png" id="2_au7sd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_au7sd"]
+size = Vector2(16, 16)
+
+[node name="Pelota" type="StaticBody2D" unique_id=736994931]
+script = ExtResource("1_v0i0y")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=435498093]
+position = Vector2(-7, -6)
+texture = ExtResource("2_au7sd")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=393534406]
+shape = SubResource("RectangleShape2D_au7sd")

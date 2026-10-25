@@ -20,6 +20,7 @@ const MAX_MOVIMIENTOS:= 4
 @export var genero: String =""
 @export var ball: String= "pokeball"
 @export var trinkets: Array[String] =[]
+var ia: Array[String]= []
 
 static func crear(esp: EspeciePokemon, niv: int, rng: RandomNumberGenerator= null) -> PokemonInstancia:
 	if rng== null:

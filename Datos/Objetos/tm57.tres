@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/mt_electrico.png" id="1_icono"]
+[ext_resource type="Script" uid="uid://d1neynu10riuh" path="res://Scripts/datos/objeto.gd" id="2_script"]
+
+[resource]
+script = ExtResource("2_script")
+id = "tm57"
+nombre = "MT57 Rayo Carga"
+categoria = "MT / MO"
+descripcion = "Enseña Rayo Carga: ataque eléctrico que suele subir el Ataque Especial de quien lo usa. Se puede usar las veces que quieras."
+usable = true
+se_puede_tirar = false
+precio = 0
+icono = ExtResource("1_icono")
+movimiento_mt = "charge_beam"

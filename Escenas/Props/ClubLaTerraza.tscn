@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b3kmbjj78kca2"]
+
+[ext_resource type="Texture2D" uid="uid://bf1eyj3tcbc1k" path="res://Assets/Overworld/Villa31/club_la_terraza.png" id="1_la30s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_la30s"]
+size = Vector2(80, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tjfx0"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a3ce8"]
+size = Vector2(32, 16)
+
+[node name="ClubLaTerraza" type="StaticBody2D" unique_id=329312275]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=495186295]
+position = Vector2(-40, -124)
+texture = ExtResource("1_la30s")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1428452730]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_la30s")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=529872690]
+position = Vector2(-24, 0)
+shape = SubResource("RectangleShape2D_tjfx0")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=249743966]
+position = Vector2(24, 0)
+shape = SubResource("RectangleShape2D_a3ce8")

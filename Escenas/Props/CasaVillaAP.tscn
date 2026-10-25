@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dnpm606jmo663"]
+
+[ext_resource type="Texture2D" uid="uid://cepf7misog3fx" path="res://Assets/Overworld/Villa31/casa_villa_a.png" id="1_fw2lr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fw2lr"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wp0im"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_srt61"]
+size = Vector2(16, 16)
+
+[node name="CasaVillaAP" type="StaticBody2D" unique_id=1557952920]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1555885759]
+position = Vector2(-24, -96)
+texture = ExtResource("1_fw2lr")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1248346254]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_fw2lr")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=2071359377]
+position = Vector2(-16, 0)
+shape = SubResource("RectangleShape2D_wp0im")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=387379315]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_srt61")

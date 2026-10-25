@@ -36,3 +36,4 @@ position = Vector2(72, 120)
 script = ExtResource("3_lbrl0")
 destino = "res://Escenas/Mapa.tscn"
 llegada = "Puerta"
+salir_empujando = true

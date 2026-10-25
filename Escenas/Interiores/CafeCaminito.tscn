@@ -1,0 +1,84 @@
+[gd_scene format=4 uid="uid://c7y3mox3hpxtg"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_xjp8m"]
+[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="2_7foy4"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_o5o7f"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_bmmm8"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_yxe44"]
+[ext_resource type="Script" uid="uid://byjj0sehdttyq" path="res://Scripts/objeto_oculto.gd" id="6_xpu6n"]
+[ext_resource type="Script" uid="uid://77y6ik0mxot2" path="res://Scripts/mostrador.gd" id="7_mhmac"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="8_xf5y4"]
+[ext_resource type="SpriteFrames" uid="uid://cuorock8u3sgd" path="res://Recursos/Personajes/villa31_cocinera.tres" id="9_681ka"]
+[ext_resource type="SpriteFrames" uid="uid://ca1hpcrt52cx0" path="res://Recursos/Personajes/villa31_musico.tres" id="10_2y4ak"]
+
+[node name="CafeCaminito" type="Node2D" unique_id=712526589]
+y_sort_enabled = true
+script = ExtResource("1_xjp8m")
+fondo_batalla = ExtResource("2_7foy4")
+musica = "pueblo"
+zona_id = "la_boca"
+zona_nombre = "La Boca"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1125790458]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAABgACAAAAAAAAAAEABgADAAAAAAAAAAIACAAAAAAAAAAAAAMACAAAAAAAAAAAAAQACAAAAAAAAAAAAAUACAAAAAAAAAAAAAYACAAAAAAAAAABAAAABgACAAAAAAABAAEABgADAAAAAAABAAIACAAAAAAAAAABAAMACAAAAAAAAAABAAQACAAAAAAAAAABAAUACAAAAAAAAAABAAYACAAAAAAAAAACAAAABgACAAAAAAACAAEABgADAAAAAAACAAIACAAAAAAAAAACAAMACAAAAAAAAAACAAQACAAAAAAAAAACAAUACAAAAAAAAAACAAYACAAAAAAAAAADAAAABgACAAAAAAADAAEABgADAAAAAAADAAIACAAAAAAAAAADAAMACAAAAAAAAAADAAQACAAAAAAAAAADAAUACAAAAAAAAAADAAYACAAAAAAAAAAEAAAABgACAAAAAAAEAAEABgADAAAAAAAEAAIACAAAAAAAAAAEAAMACAAAAAAAAAAEAAQACAAAAAAAAAAEAAUACAAAAAAAAAAEAAYACAAAAAAAAAAFAAAABgACAAAAAAAFAAEABgADAAAAAAAFAAIACAAAAAAAAAAFAAMACAAAAAAAAAAFAAQACAAAAAAAAAAFAAUACAAAAAAAAAAFAAYACAABAAUAAAAGAAAABgACAAAAAAAGAAEABgADAAAAAAAGAAIACAAAAAAAAAAGAAMACAAAAAAAAAAGAAQACAAAAAAAAAAGAAUACAAAAAAAAAAGAAYACAAAAAAAAAAHAAAABgACAAAAAAAHAAEABgADAAAAAAAHAAIACAAAAAAAAAAHAAMACAAAAAAAAAAHAAQACAAAAAAAAAAHAAUACAAAAAAAAAAHAAYACAAAAAAAAAAIAAAABgACAAAAAAAIAAEABgADAAAAAAAIAAIACAAAAAAAAAAIAAMACAAAAAAAAAAIAAQACAAAAAAAAAAIAAUACAAAAAAAAAAIAAYACAAAAAAAAAAJAAAABgACAAAAAAAJAAEABgADAAAAAAAJAAIACAAAAAAAAAAJAAMACAAAAAAAAAAJAAQACAAAAAAAAAAJAAUACAAAAAAAAAAJAAYACAAAAAAAAAA=")
+tile_set = ExtResource("3_o5o7f")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1740268426]
+z_index = -1
+tile_set = ExtResource("3_o5o7f")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=895175788]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAEABgAAAAEAAAAAAAIABgAAAAIAAAAAAAMACAADAAIAAAAAAAUABgACAAMAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAAACAADAAYAAAABAAMACAAFAAIAAAABAAUABgAAAAMAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAMACAAEAAIAAAACAAUABgABAAMAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAMACAAGAAIAAAADAAUABgADAAMAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAAACAAAAAYAAAAEAAEACAAAAAEAAAAEAAIACAAAAAIAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAEACAABAAEAAAAFAAIACAABAAIAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAMABgACAAMAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAAACAACAAYAAAAHAAMABgAAAAMAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAACAAAAAYAAAAIAAEACAABAAYAAAAIAAMABgABAAMAAAAIAAcABgAHAAIAAAAJAP//BgAHAAIAAAAJAAMABgADAAMAAAAJAAYABgAHAAEAAAAJAAcABgAHAAIAAAAKAP//BgAHAAIAAAAKAAAABgAHAAIAAAAKAAEABgAHAAIAAAAKAAIABgAHAAIAAAAKAAMABgAHAAIAAAAKAAQABgAHAAIAAAAKAAUABgAHAAIAAAAKAAYABgAHAAIAAAAKAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_o5o7f")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=922088797]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=1698800419]
+position = Vector2(88, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=609095827]
+position = Vector2(88, 104)
+script = ExtResource("5_yxe44")
+destino = "res://Escenas/Mapa.tscn"
+llegada = "PuertaCafe"
+salir_empujando = true
+
+[node name="Oculto1" type="Node2D" parent="." unique_id=1760431517]
+position = Vector2(152, 88)
+script = ExtResource("6_xpu6n")
+item_id = "alfajor"
+clave = "oculto_cafe_caminito"
+
+[node name="MostradorCafe" type="Node2D" parent="." unique_id=229815747]
+position = Vector2(40, 56)
+script = ExtResource("7_mhmac")
+destino = "../Moza"
+
+[node name="Moza" parent="." unique_id=1999008602 instance=ExtResource("8_xf5y4")]
+position = Vector2(40, 40)
+texto = "¿Un cafecito con medialunas? En el Café Caminito nadie tiene apuro. Dicen que alguien dejó un alfajor escondido por acá..."
+
+[node name="AnimatedSprite2D" parent="Moza" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_681ka")
+animation = &"abajo"
+
+[node name="Bandoneonista" parent="." unique_id=843154572 instance=ExtResource("8_xf5y4")]
+position = Vector2(136, 88)
+texto = "El bandoneón llegó al puerto en un barco, igual que mis abuelos. Por eso suena a despedida."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="Bandoneonista" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("10_2y4ak")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_bmmm8")]
+position = Vector2(88, 88)
+
+[editable path="Moza"]
+[editable path="Bandoneonista"]

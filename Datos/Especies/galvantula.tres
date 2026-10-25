@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_obwxa"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leech_life.tres" id="2_qk7e7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spider_web.tres" id="3_8ktaa"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/string_shot.tres" id="4_cc7no"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="5_qeg8b"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="6_e4no5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_cutter.tres" id="7_scy8q"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/electroweb.tres" id="8_vu87l"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="9_6m0br"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gastro_acid.tres" id="10_n7uq3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="11_kkb8i"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/electro_ball.tres" id="12_hni5n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/signal_beam.tres" id="13_b5obq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="14_e728u"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="15_svie4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="16_s1hmn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="17_jorix"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_qyqdx"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/galvantula_espalda.png" id="19_imf0t"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/galvantula_frente.png" id="20_5a5gg"]
+
+[sub_resource type="Resource" id="Resource_h67c2"]
+script = ExtResource("1_obwxa")
+movimiento = ExtResource("2_qk7e7")
+
+[sub_resource type="Resource" id="Resource_qleue"]
+script = ExtResource("1_obwxa")
+movimiento = ExtResource("3_8ktaa")
+
+[sub_resource type="Resource" id="Resource_w7loo"]
+script = ExtResource("1_obwxa")
+movimiento = ExtResource("4_cc7no")
+
+[sub_resource type="Resource" id="Resource_aidej"]
+script = ExtResource("1_obwxa")
+movimiento = ExtResource("5_qeg8b")
+
+[sub_resource type="Resource" id="Resource_yuy1r"]
+script = ExtResource("1_obwxa")
+nivel = 4
+movimiento = ExtResource("5_qeg8b")
+
+[sub_resource type="Resource" id="Resource_66t41"]
+script = ExtResource("1_obwxa")
+nivel = 7
+movimiento = ExtResource("6_e4no5")
+
+[sub_resource type="Resource" id="Resource_unq45"]
+script = ExtResource("1_obwxa")
+nivel = 12
+movimiento = ExtResource("7_scy8q")
+
+[sub_resource type="Resource" id="Resource_bgvwj"]
+script = ExtResource("1_obwxa")
+nivel = 15
+movimiento = ExtResource("8_vu87l")
+
+[sub_resource type="Resource" id="Resource_jfwh3"]
+script = ExtResource("1_obwxa")
+nivel = 18
+movimiento = ExtResource("9_6m0br")
+
+[sub_resource type="Resource" id="Resource_43lf1"]
+script = ExtResource("1_obwxa")
+nivel = 23
+movimiento = ExtResource("10_n7uq3")
+
+[sub_resource type="Resource" id="Resource_8swcr"]
+script = ExtResource("1_obwxa")
+nivel = 26
+movimiento = ExtResource("11_kkb8i")
+
+[sub_resource type="Resource" id="Resource_12nkn"]
+script = ExtResource("1_obwxa")
+nivel = 29
+movimiento = ExtResource("12_hni5n")
+
+[sub_resource type="Resource" id="Resource_wahnw"]
+script = ExtResource("1_obwxa")
+nivel = 34
+movimiento = ExtResource("13_b5obq")
+
+[sub_resource type="Resource" id="Resource_qxp6c"]
+script = ExtResource("1_obwxa")
+nivel = 40
+movimiento = ExtResource("14_e728u")
+
+[sub_resource type="Resource" id="Resource_kjfmv"]
+script = ExtResource("1_obwxa")
+nivel = 46
+movimiento = ExtResource("15_svie4")
+
+[sub_resource type="Resource" id="Resource_31nbm"]
+script = ExtResource("1_obwxa")
+nivel = 54
+movimiento = ExtResource("16_s1hmn")
+
+[sub_resource type="Resource" id="Resource_voi2y"]
+script = ExtResource("1_obwxa")
+nivel = 60
+movimiento = ExtResource("17_jorix")
+
+[resource]
+script = ExtResource("18_qyqdx")
+id = "galvantula"
+numero = 596
+nombre = "Galvantula"
+tipos = ["bicho", "electrico"]
+ps = 70
+ataque = 77
+defensa = 60
+at_esp = 97
+def_esp = 60
+velocidad = 108
+exp_base = 165
+ratio_captura = 75
+evs_otorgados = {
+"velocidad": 2
+}
+aprende = Array[ExtResource("1_obwxa")]([SubResource("Resource_h67c2"), SubResource("Resource_qleue"), SubResource("Resource_w7loo"), SubResource("Resource_aidej"), SubResource("Resource_yuy1r"), SubResource("Resource_66t41"), SubResource("Resource_unq45"), SubResource("Resource_bgvwj"), SubResource("Resource_jfwh3"), SubResource("Resource_43lf1"), SubResource("Resource_8swcr"), SubResource("Resource_12nkn"), SubResource("Resource_wahnw"), SubResource("Resource_qxp6c"), SubResource("Resource_kjfmv"), SubResource("Resource_31nbm"), SubResource("Resource_voi2y")])
+sprite_frente = ExtResource("20_5a5gg")
+sprite_espalda = ExtResource("19_imf0t")
+cuadros_frente = 84
+cuadros_espalda = 88
+fps_sprite = 11.67

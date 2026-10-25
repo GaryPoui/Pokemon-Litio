@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/antidote.png" id="1_icono"]
+[ext_resource type="Script" uid="uid://d1neynu10riuh" path="res://Scripts/datos/objeto.gd" id="2_script"]
+
+[resource]
+script = ExtResource("2_script")
+id = "antidote"
+nombre = "Antídoto"
+categoria = "MEDICINA"
+descripcion = "Cura el envenenamiento de un Pokémon."
+usable = true
+precio = 100
+icono = ExtResource("1_icono")
+cura_estado = "env"

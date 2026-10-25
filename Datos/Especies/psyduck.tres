@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://sdc7un2pfuk8"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_h2652"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="2_ynrxn"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_sport.tres" id="3_74a3u"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="4_suku4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="5_ppp88"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/disable.tres" id="6_7dvhp"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="7_b6nsm"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_pulse.tres" id="8_eke1q"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_swipes.tres" id="9_icw68"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="10_f57oe"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/soak.tres" id="11_ygpui"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psych_up.tres" id="12_8musq"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/zen_headbutt.tres" id="13_hj0y7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="14_0ioha"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="15_af5kf"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wonder_room.tres" id="16_53qec"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_kxasj"]
+[ext_resource type="Texture2D" uid="uid://cagg234uywbrk" path="res://Assets/Pokemones/batalla/psyduck_espalda.png" id="18_eyv5s"]
+[ext_resource type="Texture2D" uid="uid://b1tiruagmti1i" path="res://Assets/Pokemones/batalla/psyduck_frente.png" id="19_cm3t1"]
+
+[sub_resource type="Resource" id="Resource_lrthw"]
+script = ExtResource("1_h2652")
+movimiento = ExtResource("2_ynrxn")
+
+[sub_resource type="Resource" id="Resource_p1rtf"]
+script = ExtResource("1_h2652")
+movimiento = ExtResource("3_74a3u")
+
+[sub_resource type="Resource" id="Resource_jf6kv"]
+script = ExtResource("1_h2652")
+nivel = 5
+movimiento = ExtResource("4_suku4")
+
+[sub_resource type="Resource" id="Resource_f7nek"]
+script = ExtResource("1_h2652")
+nivel = 9
+movimiento = ExtResource("5_ppp88")
+
+[sub_resource type="Resource" id="Resource_4i8r1"]
+script = ExtResource("1_h2652")
+nivel = 14
+movimiento = ExtResource("6_7dvhp")
+
+[sub_resource type="Resource" id="Resource_7s2ju"]
+script = ExtResource("1_h2652")
+nivel = 18
+movimiento = ExtResource("7_b6nsm")
+
+[sub_resource type="Resource" id="Resource_4s0ba"]
+script = ExtResource("1_h2652")
+nivel = 22
+movimiento = ExtResource("8_eke1q")
+
+[sub_resource type="Resource" id="Resource_spsyl"]
+script = ExtResource("1_h2652")
+nivel = 27
+movimiento = ExtResource("9_icw68")
+
+[sub_resource type="Resource" id="Resource_5827m"]
+script = ExtResource("1_h2652")
+nivel = 31
+movimiento = ExtResource("10_f57oe")
+
+[sub_resource type="Resource" id="Resource_wqekn"]
+script = ExtResource("1_h2652")
+nivel = 35
+movimiento = ExtResource("11_ygpui")
+
+[sub_resource type="Resource" id="Resource_7uxvh"]
+script = ExtResource("1_h2652")
+nivel = 40
+movimiento = ExtResource("12_8musq")
+
+[sub_resource type="Resource" id="Resource_dyw1w"]
+script = ExtResource("1_h2652")
+nivel = 44
+movimiento = ExtResource("13_hj0y7")
+
+[sub_resource type="Resource" id="Resource_6ef3m"]
+script = ExtResource("1_h2652")
+nivel = 48
+movimiento = ExtResource("14_0ioha")
+
+[sub_resource type="Resource" id="Resource_p7ct7"]
+script = ExtResource("1_h2652")
+nivel = 53
+movimiento = ExtResource("15_af5kf")
+
+[sub_resource type="Resource" id="Resource_d5vsl"]
+script = ExtResource("1_h2652")
+nivel = 57
+movimiento = ExtResource("16_53qec")
+
+[resource]
+script = ExtResource("17_kxasj")
+id = "psyduck"
+numero = 54
+nombre = "Psyduck"
+tipos = ["agua"]
+ataque = 52
+defensa = 48
+at_esp = 65
+velocidad = 55
+exp_base = 64
+ratio_captura = 190
+evs_otorgados = {
+"at_esp": 1
+}
+evoluciona_a = "golduck"
+nivel_evolucion = 33
+aprende = Array[ExtResource("1_h2652")]([SubResource("Resource_lrthw"), SubResource("Resource_p1rtf"), SubResource("Resource_jf6kv"), SubResource("Resource_f7nek"), SubResource("Resource_4i8r1"), SubResource("Resource_7s2ju"), SubResource("Resource_4s0ba"), SubResource("Resource_spsyl"), SubResource("Resource_5827m"), SubResource("Resource_wqekn"), SubResource("Resource_7uxvh"), SubResource("Resource_dyw1w"), SubResource("Resource_6ef3m"), SubResource("Resource_p7ct7"), SubResource("Resource_d5vsl")])
+sprite_frente = ExtResource("19_cm3t1")
+sprite_espalda = ExtResource("18_eyv5s")
+cuadros_frente = 24
+cuadros_espalda = 28
+fps_sprite = 4.73

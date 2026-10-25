@@ -1,0 +1,67 @@
+[gd_scene format=4 uid="uid://cjpvs5inatul7"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_w8kc4"]
+[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="2_m7rwq"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_7cr85"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_5s4b1"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_vytio"]
+[ext_resource type="Script" uid="uid://byjj0sehdttyq" path="res://Scripts/objeto_oculto.gd" id="6_rf065"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="7_oojhe"]
+[ext_resource type="SpriteFrames" uid="uid://dwpjitipv1yg8" path="res://Recursos/Personajes/montanero.tres" id="8_7l1oj"]
+
+[node name="CasaNaranja" type="Node2D" unique_id=1699166298]
+y_sort_enabled = true
+script = ExtResource("1_w8kc4")
+fondo_batalla = ExtResource("2_m7rwq")
+musica = "pueblo"
+zona_id = "la_boca"
+zona_nombre = "La Boca"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1825848404]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAABgACAAAAAAAAAAEABgADAAAAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAABAAAABgACAAAAAAABAAEABgADAAAAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAACAAAABgACAAAAAAACAAEABgADAAAAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgABAAAAAAACAAUABgAAAAAAAAACAAYABgAAAAAAAAADAAAABgACAAAAAAADAAEABgADAAAAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgAAAAAAAAADAAUABgAAAAAAAAADAAYABgABAAAAAAAEAAAABgACAAAAAAAEAAEABgADAAAAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgAAAAAAAAAEAAUABgABAAAAAAAEAAYABgAGAAMAAAAFAAAABgACAAAAAAAFAAEABgADAAAAAAAFAAIABgAAAAAAAAAFAAMABgAAAAAAAAAFAAQABgABAAAAAAAFAAUABgAAAAAAAAAFAAYABgAAAAAAAAAGAAAABgACAAAAAAAGAAEABgADAAAAAAAGAAIABgAAAAAAAAAGAAMABgABAAAAAAAGAAQABgAAAAAAAAAGAAUABgAAAAAAAAAGAAYABgABAAAAAAAHAAAABgACAAAAAAAHAAEABgADAAAAAAAHAAIABgABAAAAAAAHAAMABgAAAAAAAAAHAAQABgAAAAAAAAAHAAUABgABAAAAAAAHAAYABgAAAAAAAAA=")
+tile_set = ExtResource("3_7cr85")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=507037607]
+z_index = -1
+tile_set = ExtResource("3_7cr85")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=318954719]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAEABgABAAEAAAAAAAIABgABAAIAAAAAAAYABgAHAAEAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAEABgACAAEAAAABAAIABgACAAIAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAEABgAAAAEAAAACAAIABgAAAAIAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAAACAADAAYAAAADAAQABgACAAMAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAQABgAAAAMAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAAACAAAAAYAAAAFAAEACAABAAYAAAAFAAQABgABAAMAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAQABgADAAMAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAAACAAEAAYAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_7cr85")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=1611981065]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=1712249729]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=1666998799]
+position = Vector2(72, 104)
+script = ExtResource("5_vytio")
+destino = "res://Escenas/Mapa.tscn"
+llegada = "PuertaNaranja"
+salir_empujando = true
+
+[node name="Oculto1" type="Node2D" parent="." unique_id=1085184975]
+position = Vector2(120, 40)
+script = ExtResource("6_rf065")
+item_id = "greatball"
+cantidad = 2
+clave = "oculto_casa_naranja"
+
+[node name="Arquero" parent="." unique_id=1999008602 instance=ExtResource("7_oojhe")]
+position = Vector2(88, 40)
+texto = "Fui arquero de la reserva veinte años. Un consejo para el gimnasio: una pelota contra la pared ya no se mueve. Antes de empujar, fijate de qué lado vas a quedar parado."
+
+[node name="AnimatedSprite2D" parent="Arquero" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_7l1oj")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_5s4b1")]
+position = Vector2(72, 88)
+
+[editable path="Arquero"]

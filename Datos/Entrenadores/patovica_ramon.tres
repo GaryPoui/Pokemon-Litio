@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://bah4a3klsu1dv"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_ooi3w"]
+[ext_resource type="Resource" uid="uid://cfeicotxmqami" path="res://Datos/Especies/poochyena.tres" id="2_c68cb"]
+[ext_resource type="Resource" uid="uid://cs41pnhxuyi47" path="res://Datos/Especies/sandile.tres" id="3_cdq4g"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="4_djvwq"]
+
+[sub_resource type="Resource" id="Resource_8pl74"]
+script = ExtResource("1_ooi3w")
+especie = ExtResource("2_c68cb")
+nivel_min = 17
+nivel_max = 17
+peso = 1
+
+[sub_resource type="Resource" id="Resource_c2b3e"]
+script = ExtResource("1_ooi3w")
+especie = ExtResource("3_cdq4g")
+nivel_min = 17
+nivel_max = 17
+peso = 1
+
+[resource]
+script = ExtResource("4_djvwq")
+clase = "Patovica"
+nombre = "Ramón"
+miembros = Array[ExtResource("1_ooi3w")]([SubResource("Resource_8pl74"), SubResource("Resource_c2b3e")])
+pago_base = 48

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ckal4osipi68e"]
+
+[ext_resource type="Texture2D" uid="uid://cnot0b2i3fptd" path="res://Assets/Overworld/Villa31/autoservicio.png" id="1_w56ig"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w56ig"]
+size = Vector2(64, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_akq05"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ltr3l"]
+size = Vector2(32, 16)
+
+[node name="Autoservicio" type="StaticBody2D" unique_id=941717684]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2131038621]
+position = Vector2(-32, -76)
+texture = ExtResource("1_w56ig")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=11466617]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_w56ig")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=847761435]
+position = Vector2(-24, 0)
+shape = SubResource("RectangleShape2D_akq05")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=854234502]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_ltr3l")

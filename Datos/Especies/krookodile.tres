@@ -1,0 +1,138 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_1gip0"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="2_gyhem"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_xrxjo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rage.tres" id="4_7wm7n"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="5_g8i8u"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/torment.tres" id="6_xig4r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_tomb.tres" id="7_u0e3m"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/assurance.tres" id="8_ret2c"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="9_uhaeb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/embargo.tres" id="10_na6rt"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swagger.tres" id="11_u2261"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="12_7me3k"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dig.tres" id="13_ebr3e"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="14_vs3i3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/foul_play.tres" id="15_56v0v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sandstorm.tres" id="16_wt8hb"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="17_7uxr3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/outrage.tres" id="18_sfa58"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="19_ik3oc"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/krookodile_espalda.png" id="20_dsebw"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/krookodile_frente.png" id="21_tl7d7"]
+
+[sub_resource type="Resource" id="Resource_aphm1"]
+script = ExtResource("1_1gip0")
+movimiento = ExtResource("2_gyhem")
+
+[sub_resource type="Resource" id="Resource_8dp4p"]
+script = ExtResource("1_1gip0")
+movimiento = ExtResource("3_xrxjo")
+
+[sub_resource type="Resource" id="Resource_th83w"]
+script = ExtResource("1_1gip0")
+movimiento = ExtResource("4_7wm7n")
+
+[sub_resource type="Resource" id="Resource_0x6kb"]
+script = ExtResource("1_1gip0")
+movimiento = ExtResource("5_g8i8u")
+
+[sub_resource type="Resource" id="Resource_rwahh"]
+script = ExtResource("1_1gip0")
+nivel = 4
+movimiento = ExtResource("2_gyhem")
+
+[sub_resource type="Resource" id="Resource_fd31j"]
+script = ExtResource("1_1gip0")
+nivel = 7
+movimiento = ExtResource("5_g8i8u")
+
+[sub_resource type="Resource" id="Resource_nlhb6"]
+script = ExtResource("1_1gip0")
+nivel = 10
+movimiento = ExtResource("6_xig4r")
+
+[sub_resource type="Resource" id="Resource_8rtr0"]
+script = ExtResource("1_1gip0")
+nivel = 13
+movimiento = ExtResource("7_u0e3m")
+
+[sub_resource type="Resource" id="Resource_n1tw8"]
+script = ExtResource("1_1gip0")
+nivel = 16
+movimiento = ExtResource("8_ret2c")
+
+[sub_resource type="Resource" id="Resource_3dfjn"]
+script = ExtResource("1_1gip0")
+nivel = 19
+movimiento = ExtResource("9_uhaeb")
+
+[sub_resource type="Resource" id="Resource_iskjv"]
+script = ExtResource("1_1gip0")
+nivel = 22
+movimiento = ExtResource("10_na6rt")
+
+[sub_resource type="Resource" id="Resource_emjoo"]
+script = ExtResource("1_1gip0")
+nivel = 25
+movimiento = ExtResource("11_u2261")
+
+[sub_resource type="Resource" id="Resource_cg5ww"]
+script = ExtResource("1_1gip0")
+nivel = 28
+movimiento = ExtResource("12_7me3k")
+
+[sub_resource type="Resource" id="Resource_qug5k"]
+script = ExtResource("1_1gip0")
+nivel = 32
+movimiento = ExtResource("13_ebr3e")
+
+[sub_resource type="Resource" id="Resource_gvmgh"]
+script = ExtResource("1_1gip0")
+nivel = 36
+movimiento = ExtResource("14_vs3i3")
+
+[sub_resource type="Resource" id="Resource_e0ojk"]
+script = ExtResource("1_1gip0")
+nivel = 42
+movimiento = ExtResource("15_56v0v")
+
+[sub_resource type="Resource" id="Resource_sj2wl"]
+script = ExtResource("1_1gip0")
+nivel = 48
+movimiento = ExtResource("16_wt8hb")
+
+[sub_resource type="Resource" id="Resource_uat81"]
+script = ExtResource("1_1gip0")
+nivel = 54
+movimiento = ExtResource("17_7uxr3")
+
+[sub_resource type="Resource" id="Resource_tq4w6"]
+script = ExtResource("1_1gip0")
+nivel = 60
+movimiento = ExtResource("18_sfa58")
+
+[resource]
+script = ExtResource("19_ik3oc")
+id = "krookodile"
+numero = 553
+nombre = "Krookodile"
+tipos = ["tierra", "siniestro"]
+ps = 95
+ataque = 117
+defensa = 80
+at_esp = 65
+def_esp = 70
+velocidad = 92
+exp_base = 234
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 3
+}
+aprende = Array[ExtResource("1_1gip0")]([SubResource("Resource_aphm1"), SubResource("Resource_8dp4p"), SubResource("Resource_th83w"), SubResource("Resource_0x6kb"), SubResource("Resource_rwahh"), SubResource("Resource_fd31j"), SubResource("Resource_nlhb6"), SubResource("Resource_8rtr0"), SubResource("Resource_n1tw8"), SubResource("Resource_3dfjn"), SubResource("Resource_iskjv"), SubResource("Resource_emjoo"), SubResource("Resource_cg5ww"), SubResource("Resource_qug5k"), SubResource("Resource_gvmgh"), SubResource("Resource_e0ojk"), SubResource("Resource_sj2wl"), SubResource("Resource_uat81"), SubResource("Resource_tq4w6")])
+sprite_frente = ExtResource("21_tl7d7")
+sprite_espalda = ExtResource("20_dsebw")
+cuadros_frente = 84
+cuadros_espalda = 103
+fps_sprite = 15.56

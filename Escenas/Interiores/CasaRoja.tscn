@@ -1,0 +1,81 @@
+[gd_scene format=4 uid="uid://dsxqwqvookwdq"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_ooyks"]
+[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="2_3hx8s"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_8peab"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_rm1ir"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_h3tyd"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_ijtjs"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="7_bbwnh"]
+[ext_resource type="SpriteFrames" uid="uid://bo7igfunh1kvh" path="res://Recursos/Personajes/villa31_obrero.tres" id="8_1klo8"]
+[ext_resource type="SpriteFrames" uid="uid://cuorock8u3sgd" path="res://Recursos/Personajes/villa31_cocinera.tres" id="9_lmdgp"]
+
+[node name="CasaRoja" type="Node2D" unique_id=276663418]
+y_sort_enabled = true
+script = ExtResource("1_ooyks")
+fondo_batalla = ExtResource("2_3hx8s")
+musica = "pueblo"
+zona_id = "la_boca"
+zona_nombre = "La Boca"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=419717688]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACAADAAEAAAAAAAEACAAEAAEAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAABAAAACAADAAEAAAABAAEACAAEAAEAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAACAAAACAAHAAEAAAACAAEACAAHAAIAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgABAAAAAAACAAUABgAAAAAAAAACAAYABgAAAAAAAAADAAAACAADAAEAAAADAAEACAAEAAEAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgAAAAAAAAADAAUABgAAAAAAAAADAAYABgABAAAAAAAEAAAACAADAAEAAAAEAAEACAAEAAEAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgAAAAAAAAAEAAUABgABAAAAAAAEAAYABgAGAAMAAAAFAAAACAAHAAEAAAAFAAEACAAHAAIAAAAFAAIABgAAAAAAAAAFAAMABgAAAAAAAAAFAAQABgABAAAAAAAFAAUABgAAAAAAAAAFAAYABgAAAAAAAAAGAAAACAADAAEAAAAGAAEACAAEAAEAAAAGAAIABgAAAAAAAAAGAAMABgABAAAAAAAGAAQABgAAAAAAAAAGAAUABgAAAAAAAAAGAAYABgABAAAAAAAHAAAACAADAAEAAAAHAAEACAAEAAEAAAAHAAIABgABAAAAAAAHAAMABgAAAAAAAAAHAAQABgAAAAAAAAAHAAUABgABAAAAAAAHAAYABgAAAAAAAAA=")
+tile_set = ExtResource("3_8peab")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=857212878]
+z_index = -1
+tile_set = ExtResource("3_8peab")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=1875257125]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAIACAAAAAQAAAAAAAMACAABAAQAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAQABgACAAMAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAQABgAAAAMAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAQABgABAAMAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAEABgAFAAEAAAAGAAIABgAFAAIAAAAGAAQABgADAAMAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAEABgAGAAEAAAAHAAIABgAGAAIAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_8peab")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=492650551]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=398720454]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=557782270]
+position = Vector2(72, 104)
+script = ExtResource("5_h3tyd")
+destino = "res://Escenas/Mapa.tscn"
+llegada = "PuertaRoja"
+salir_empujando = true
+
+[node name="Estibador" parent="." unique_id=1999008602 instance=ExtResource("6_ijtjs")]
+position = Vector2(40, 56)
+script = ExtResource("7_bbwnh")
+objeto_regalo = "revive"
+cantidad_regalo = 1
+trinket_regalo = ""
+clave_objeto = "regalo_estibador"
+texto_antes = "Trabajo en el puerto desde que tengo memoria. Ayer un barco dejó esto olvidado y yo no lo uso. Llevatelo, a vos te va a servir más."
+texto_despues = "Un Revivir levanta a un Pokémon debilitado. En el Almacén recién lo venden cuando tenés dos medallas."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "Trabajo en el puerto desde que tengo memoria."
+
+[node name="AnimatedSprite2D" parent="Estibador" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_1klo8")
+animation = &"abajo"
+
+[node name="Esposa" parent="." unique_id=974993336 instance=ExtResource("6_ijtjs")]
+position = Vector2(104, 56)
+texto = "Desde la ventana se ve el Riachuelo. Cuando sube el agua, los Psyduck se meten hasta la vereda."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="Esposa" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_lmdgp")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_rm1ir")]
+position = Vector2(72, 88)
+
+[editable path="Estibador"]
+[editable path="Esposa"]

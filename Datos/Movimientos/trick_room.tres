@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_o3qms"]
+
+[resource]
+script = ExtResource("1_o3qms")
+id = "trick_room"
+nombre = "Espacio Raro"
+tipo = "psiquico"
+categoria = "estado"
+precision = 0
+pp = 5
+prioridad = -7
+objetivo = "entire-field"
+meta = "whole-field-effect"
+descripcion = "Crea un espacio extraño en el que los Pokémon lentos se mueven primero durante cinco turnos."

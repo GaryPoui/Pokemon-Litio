@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://d1djujo8jss1r"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_entrada"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="2_equipo"]
+[ext_resource type="Resource" uid="uid://dj6fo0fem04oe" path="res://Datos/Especies/chinchou.tres" id="e0"]
+[ext_resource type="Resource" uid="uid://sdc7un2pfuk8" path="res://Datos/Especies/psyduck.tres" id="e1"]
+[ext_resource type="Resource" uid="uid://dd54fremw7wjf" path="res://Datos/Especies/mareep.tres" id="e2"]
+
+[sub_resource type="Resource" id="Miembro_0"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e0")
+nivel_min = 12
+nivel_max = 12
+peso = 1
+trinkets = Array[String](["escama_robusta"])
+movimientos = Array[String](["trick_room", "spark", "bubble", "confuse_ray"])
+ia = Array[String](["espacio_raro", "danio"])
+
+[sub_resource type="Resource" id="Miembro_1"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e1")
+nivel_min = 12
+nivel_max = 12
+peso = 1
+trinkets = Array[String](["vendaje"])
+movimientos = Array[String](["amnesia", "baton_pass", "confusion", "water_gun"])
+ia = Array[String](["subir:amnesia:def_esp:2", "relevo", "danio"])
+
+[sub_resource type="Resource" id="Miembro_2"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e2")
+nivel_min = 14
+nivel_max = 14
+peso = 1
+trinkets = Array[String](["sello_linaje"])
+movimientos = Array[String](["charge", "spark", "tackle", "growl"])
+ia = Array[String](["carga", "danio"])
+
+[resource]
+script = ExtResource("2_equipo")
+clase = "Líder"
+nombre = "Riquelme"
+miembros = Array[ExtResource("1_entrada")]([SubResource("Miembro_0"), SubResource("Miembro_1"), SubResource("Miembro_2")])
+pago_base = 100
+objetos = Array[String](["super_potion"])

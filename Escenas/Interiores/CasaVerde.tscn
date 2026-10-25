@@ -1,0 +1,81 @@
+[gd_scene format=4 uid="uid://4xbf5cyjv3yg"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_p5bpg"]
+[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="2_nle2x"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_moils"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_b2nnn"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_5xwof"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_qhaca"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="7_3fli7"]
+[ext_resource type="SpriteFrames" uid="uid://crp43ftl0rpxf" path="res://Recursos/Personajes/nino.tres" id="8_q5mub"]
+[ext_resource type="SpriteFrames" uid="uid://c74rh52rjrowf" path="res://Recursos/Personajes/villa31_vecina.tres" id="9_316va"]
+
+[node name="CasaVerde" type="Node2D" unique_id=984606817]
+y_sort_enabled = true
+script = ExtResource("1_p5bpg")
+fondo_batalla = ExtResource("2_nle2x")
+musica = "pueblo"
+zona_id = "la_boca"
+zona_nombre = "La Boca"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=518252603]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACAAFAAQAAAAAAAEACAAGAAQAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAABAAAACAAFAAQAAAABAAEACAAGAAQAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAACAAAACAAFAAQAAAACAAEACAAGAAQAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgABAAAAAAACAAUABgAAAAAAAAACAAYABgAAAAAAAAADAAAACAAFAAQAAAADAAEACAAGAAQAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgAAAAAAAAADAAUABgAAAAAAAAADAAYABgABAAAAAAAEAAAACAAFAAQAAAAEAAEACAAGAAQAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgAAAAAAAAAEAAUABgABAAAAAAAEAAYABgAGAAMAAAAFAAAACAAFAAQAAAAFAAEACAAGAAQAAAAFAAIABgAAAAAAAAAFAAMABgAAAAAAAAAFAAQABgABAAAAAAAFAAUABgAAAAAAAAAFAAYABgAAAAAAAAAGAAAACAAFAAQAAAAGAAEACAAGAAQAAAAGAAIABgAAAAAAAAAGAAMABgABAAAAAAAGAAQABgAAAAAAAAAGAAUABgAAAAAAAAAGAAYABgABAAAAAAAHAAAACAAFAAQAAAAHAAEACAAGAAQAAAAHAAIABgABAAAAAAAHAAMABgAAAAAAAAAHAAQABgAAAAAAAAAHAAUABgABAAAAAAAHAAYABgAAAAAAAAA=")
+tile_set = ExtResource("3_moils")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1490863508]
+z_index = -1
+tile_set = ExtResource("3_moils")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=1631078964]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAIACAAAAAQAAAAAAAMACAABAAQAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAAACAAEAAYAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAAACAAAAAYAAAADAAEACAABAAYAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAEABgADAAEAAAAFAAIABgADAAIAAAAFAAUABgACAAMAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAAACAAEAAYAAAAGAAEABgAEAAEAAAAGAAIABgAEAAIAAAAGAAUABgAAAAMAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAUABgABAAMAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_moils")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=247140324]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=495274966]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=328639038]
+position = Vector2(72, 104)
+script = ExtResource("5_5xwof")
+destino = "res://Escenas/Mapa.tscn"
+llegada = "PuertaVerde"
+salir_empujando = true
+
+[node name="HinchaChico" parent="." unique_id=1999008602 instance=ExtResource("6_qhaca")]
+position = Vector2(40, 56)
+script = ExtResource("7_3fli7")
+objeto_regalo = ""
+cantidad_regalo = 1
+trinket_regalo = "pluma_veloz"
+clave_objeto = "regalo_hincha_chico"
+texto_antes = "¡Ese Pokémon es azul y oro! ¡Es igualito a la camiseta! Tomá, te regalo mi pluma de la suerte."
+texto_despues = "¡Cuando sea grande voy a jugar en la Bombonera con Riquelme!"
+requiere_tipos = Array[String](["agua", "electrico"])
+texto_falta = "¡Quiero ver un Pokémon azul y oro! Uno de agua o eléctrico, como los de Riquelme. ¿No tenés ninguno?"
+texto = "¡Soy hincha de Boca desde la cuna!"
+
+[node name="AnimatedSprite2D" parent="HinchaChico" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_q5mub")
+animation = &"abajo"
+
+[node name="Mama" parent="." unique_id=1419258755 instance=ExtResource("6_qhaca")]
+position = Vector2(104, 56)
+texto = "Mi hijo no se saca la camiseta ni para dormir. Ni para bañarse, a veces..."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="Mama" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_316va")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_b2nnn")]
+position = Vector2(72, 88)
+
+[editable path="HinchaChico"]
+[editable path="Mama"]

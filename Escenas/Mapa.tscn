@@ -11,10 +11,7 @@
 [ext_resource type="Resource" uid="uid://csfv61g8483tg" path="res://Datos/Especies/snivy.tres" id="8_7syr3"]
 [ext_resource type="Resource" uid="uid://dmllfp6rnoprj" path="res://Datos/Entrenadores/joven_leo.tres" id="9_bi4ho"]
 [ext_resource type="SpriteFrames" uid="uid://duxoikc8txrow" path="res://Recursos/Personajes/laboca_musico.tres" id="11_p15sl"]
-[ext_resource type="Script" uid="uid://bgce3emrc13ld" path="res://Scripts/tienda.gd" id="12_wb5b1"]
-[ext_resource type="Script" uid="uid://dxsbdb50ew0p5" path="res://Scripts/torre.gd" id="13_15oqb"]
 [ext_resource type="SpriteFrames" uid="uid://0oharg3p0gih" path="res://Recursos/Personajes/laboca_hincha.tres" id="15_p15sl"]
-[ext_resource type="SpriteFrames" uid="uid://hgmu078xq1mr" path="res://Recursos/Personajes/laboca_tendera.tres" id="17_p15sl"]
 [ext_resource type="SpriteFrames" uid="uid://coktisehv5kr" path="res://Recursos/Personajes/laboca_guia.tres" id="19_p15sl"]
 [ext_resource type="Resource" uid="uid://24dm04q157pb" path="res://Datos/Entrenadores/chica_ana.tres" id="20_bx1hr"]
 [ext_resource type="Texture2D" uid="uid://bpx8e8x8pdmch" path="res://Assets/Overworld/LaBoca/unificado/estadio_bombonera.png" id="20_p15sl"]
@@ -45,9 +42,6 @@ tipo_zona = 0
 
 [node name="AmbientacionCiudad" parent="." unique_id=632343639 instance=ExtResource("36_decoracion_boca")]
 
-[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("1_8w5j4")]
-position = Vector2(296, 216)
-
 [node name="Llegadas" type="Node2D" parent="." unique_id=1815999784]
 
 [node name="Puerta" type="Marker2D" parent="Llegadas" unique_id=740374496]
@@ -61,6 +55,33 @@ position = Vector2(872, 296)
 
 [node name="PuertaCentro" type="Marker2D" parent="Llegadas" unique_id=237662904]
 position = Vector2(296, 408)
+
+[node name="PuertaGimnasio" type="Marker2D" parent="Llegadas" unique_id=1584739924]
+position = Vector2(744, 184)
+
+[node name="PuertaUsina" type="Marker2D" parent="Llegadas" unique_id=470073789]
+position = Vector2(56, 168)
+
+[node name="PuertaAlmacen" type="Marker2D" parent="Llegadas" unique_id=988355445]
+position = Vector2(536, 408)
+
+[node name="PuertaCafe" type="Marker2D" parent="Llegadas" unique_id=1313060976]
+position = Vector2(408, 408)
+
+[node name="PuertaAzul" type="Marker2D" parent="Llegadas" unique_id=2122234628]
+position = Vector2(216, 168)
+
+[node name="PuertaVerde" type="Marker2D" parent="Llegadas" unique_id=843464228]
+position = Vector2(392, 168)
+
+[node name="PuertaNaranja" type="Marker2D" parent="Llegadas" unique_id=279203866]
+position = Vector2(472, 168)
+
+[node name="PuertaVioleta" type="Marker2D" parent="Llegadas" unique_id=530092316]
+position = Vector2(584, 168)
+
+[node name="PuertaRoja" type="Marker2D" parent="Llegadas" unique_id=1517889372]
+position = Vector2(200, 264)
 
 [node name="PuertaCasa" type="Node2D" parent="." unique_id=2085869319]
 position = Vector2(296, 152)
@@ -115,19 +136,9 @@ position = Vector2(0, -7)
 sprite_frames = ExtResource("15_p15sl")
 animation = &"abajo"
 
-[node name="Tendero" parent="." unique_id=87030638 instance=ExtResource("6_1p004")]
-position = Vector2(536, 408)
-script = ExtResource("12_wb5b1")
-
-[node name="AnimatedSprite2D" parent="Tendero" index="0" unique_id=1100079311]
-texture_filter = 1
-position = Vector2(0, -7)
-sprite_frames = ExtResource("17_p15sl")
-animation = &"abajo"
-
 [node name="GuiaTorre" parent="." unique_id=880225666 instance=ExtResource("6_1p004")]
-position = Vector2(744, 184)
-script = ExtResource("13_15oqb")
+position = Vector2(776, 184)
+texto = "¡La Bombonera es el gimnasio de Riquelme! Si buscás el Desafío, ahora se juega en la Usina del Arte, la de la torre del reloj, al oeste junto al puerto."
 
 [node name="AnimatedSprite2D" parent="GuiaTorre" index="0" unique_id=1100079311]
 texture_filter = 1
@@ -160,7 +171,7 @@ texture = ExtResource("20_p15sl")
 centered = false
 
 [node name="Colision" type="CollisionPolygon2D" parent="TorreDesafio" unique_id=1396974153]
-polygon = PackedVector2Array(-128, -88, 128, -88, 128, 8, -128, 8)
+polygon = PackedVector2Array(-128, -88, 128, -88, 128, 8, 16, 8, 16, -8, 0, -8, 0, 8, -128, 8)
 
 [node name="ChicaAna" parent="." unique_id=1154531755 instance=ExtResource("6_1p004")]
 position = Vector2(648, 488)
@@ -230,9 +241,75 @@ llegada = "Entrada"
 direccion = Vector2(0, -1)
 vuelta = "PuertaCentro"
 
+[node name="PuertaGimnasio" type="Node2D" parent="." unique_id=478299285]
+position = Vector2(744, 168)
+script = ExtResource("4_3db5g")
+destino = "res://Escenas/Gimnasios/GimnasioBoca.tscn"
+llegada = "Entrada"
+direccion = Vector2(0, -1)
+
+[node name="PuertaUsina" type="Node2D" parent="." unique_id=410588737]
+position = Vector2(56, 152)
+script = ExtResource("4_3db5g")
+destino = "res://Escenas/Interiores/UsinaDelArte.tscn"
+llegada = "Entrada"
+direccion = Vector2(0, -1)
+
+[node name="PuertaAlmacen" type="Node2D" parent="." unique_id=1576736997]
+position = Vector2(536, 392)
+script = ExtResource("4_3db5g")
+destino = "res://Escenas/Interiores/Almacen.tscn"
+llegada = "Entrada"
+direccion = Vector2(0, -1)
+vuelta = "PuertaAlmacen"
+
+[node name="PuertaCafe" type="Node2D" parent="." unique_id=1592418929]
+position = Vector2(408, 392)
+script = ExtResource("4_3db5g")
+destino = "res://Escenas/Interiores/CafeCaminito.tscn"
+llegada = "Entrada"
+direccion = Vector2(0, -1)
+
+[node name="PuertaAzul" type="Node2D" parent="." unique_id=1905271398]
+position = Vector2(216, 152)
+script = ExtResource("4_3db5g")
+destino = "res://Escenas/Interiores/CasaAzul.tscn"
+llegada = "Entrada"
+direccion = Vector2(0, -1)
+
+[node name="PuertaVerde" type="Node2D" parent="." unique_id=529970627]
+position = Vector2(392, 152)
+script = ExtResource("4_3db5g")
+destino = "res://Escenas/Interiores/CasaVerde.tscn"
+llegada = "Entrada"
+direccion = Vector2(0, -1)
+
+[node name="PuertaNaranja" type="Node2D" parent="." unique_id=277342136]
+position = Vector2(472, 152)
+script = ExtResource("4_3db5g")
+destino = "res://Escenas/Interiores/CasaNaranja.tscn"
+llegada = "Entrada"
+direccion = Vector2(0, -1)
+
+[node name="PuertaVioleta" type="Node2D" parent="." unique_id=735091186]
+position = Vector2(584, 152)
+script = ExtResource("4_3db5g")
+destino = "res://Escenas/Interiores/CasaVioleta.tscn"
+llegada = "Entrada"
+direccion = Vector2(0, -1)
+
+[node name="PuertaRoja" type="Node2D" parent="." unique_id=1473170893]
+position = Vector2(200, 248)
+script = ExtResource("4_3db5g")
+destino = "res://Escenas/Interiores/CasaRoja.tscn"
+llegada = "Entrada"
+direccion = Vector2(0, -1)
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("1_8w5j4")]
+position = Vector2(296, 216)
+
 [editable path="Npc"]
 [editable path="Entrenador"]
-[editable path="Tendero"]
 [editable path="GuiaTorre"]
 [editable path="ChicaAna"]
 [editable path="MontaneroBraulio"]

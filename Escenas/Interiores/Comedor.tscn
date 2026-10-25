@@ -1,0 +1,81 @@
+[gd_scene format=4 uid="uid://n02i3j1xbwjf"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_hqbvk"]
+[ext_resource type="Texture2D" uid="uid://lfttg1begv2i" path="res://Assets/Produccion/Barrios/mugica/v03/fondo_batalla.png" id="2_5kdg0"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_vj02n"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_cewv2"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_lkgbh"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_ovcq4"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="7_fhrr8"]
+[ext_resource type="SpriteFrames" uid="uid://cuorock8u3sgd" path="res://Recursos/Personajes/villa31_cocinera.tres" id="8_ib6i5"]
+[ext_resource type="SpriteFrames" uid="uid://crp43ftl0rpxf" path="res://Recursos/Personajes/nino.tres" id="9_4n6j7"]
+
+[node name="Comedor" type="Node2D" unique_id=1084690072]
+y_sort_enabled = true
+script = ExtResource("1_hqbvk")
+fondo_batalla = ExtResource("2_5kdg0")
+musica = "pueblo"
+zona_id = "villa_31"
+zona_nombre = "Barrio Mugica"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1709986470]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAABgACAAAAAAAAAAEABgADAAAAAAAAAAIACAAAAAAAAAAAAAMACAAAAAAAAAAAAAQACAAAAAAAAAAAAAUACAAAAAAAAAAAAAYACAAAAAAAAAABAAAABgACAAAAAAABAAEABgADAAAAAAABAAIACAAAAAAAAAABAAMACAAAAAAAAAABAAQACAAAAAAAAAABAAUACAAAAAAAAAABAAYACAAAAAAAAAACAAAABgACAAAAAAACAAEABgADAAAAAAACAAIACAAAAAAAAAACAAMACAAAAAAAAAACAAQACAAAAAAAAAACAAUACAAAAAAAAAACAAYACAAAAAAAAAADAAAABgACAAAAAAADAAEABgADAAAAAAADAAIACAAAAAAAAAADAAMACAAAAAAAAAADAAQACAAAAAAAAAADAAUACAAAAAAAAAADAAYACAAAAAAAAAAEAAAABgACAAAAAAAEAAEABgADAAAAAAAEAAIACAAAAAAAAAAEAAMACAAAAAAAAAAEAAQACAAAAAAAAAAEAAUACAAAAAAAAAAEAAYACAABAAUAAAAFAAAABgACAAAAAAAFAAEABgADAAAAAAAFAAIACAAAAAAAAAAFAAMACAAAAAAAAAAFAAQACAAAAAAAAAAFAAUACAAAAAAAAAAFAAYACAAAAAAAAAAGAAAABgACAAAAAAAGAAEABgADAAAAAAAGAAIACAAAAAAAAAAGAAMACAAAAAAAAAAGAAQACAAAAAAAAAAGAAUACAAAAAAAAAAGAAYACAAAAAAAAAAHAAAABgACAAAAAAAHAAEABgADAAAAAAAHAAIACAAAAAAAAAAHAAMACAAAAAAAAAAHAAQACAAAAAAAAAAHAAUACAAAAAAAAAAHAAYACAAAAAAAAAA=")
+tile_set = ExtResource("3_vj02n")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1584187668]
+z_index = -1
+tile_set = ExtResource("3_vj02n")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=402724313]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAEABgAAAAEAAAAAAAIABgAAAAIAAAAAAAQABgACAAMAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAAACAAAAAYAAAABAAEABgABAAEAAAABAAIABgABAAIAAAABAAQABgAAAAMAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAEABgACAAEAAAACAAIABgACAAIAAAACAAQABgABAAMAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAQABgADAAMAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAAACAADAAYAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAQABgACAAMAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAAACAAAAAYAAAAGAAEACAABAAYAAAAGAAQABgAAAAMAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAQABgABAAMAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_vj02n")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=1773580000]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=220068729]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=1956413952]
+position = Vector2(72, 104)
+script = ExtResource("5_lkgbh")
+destino = "res://Escenas/Villa31.tscn"
+llegada = "PuertaComedor"
+salir_empujando = true
+
+[node name="Cocinera" parent="." unique_id=1999008602 instance=ExtResource("6_ovcq4")]
+position = Vector2(72, 40)
+script = ExtResource("7_fhrr8")
+objeto_regalo = "super_potion"
+cantidad_regalo = 3
+trinket_regalo = ""
+clave_objeto = "regalo_comedor"
+texto_antes = "¡Pasá, pasá! En el comedor comunitario nadie se queda sin plato. Para tus Pokémon tengo esto, que les cae mejor que el guiso."
+texto_despues = "Volvé cuando quieras. Acá siempre hay un plato caliente."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "En el comedor nadie se queda sin plato. Ni las personas ni los Pokémon."
+
+[node name="AnimatedSprite2D" parent="Cocinera" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_ib6i5")
+animation = &"abajo"
+
+[node name="Chico" parent="." unique_id=1814970321 instance=ExtResource("6_ovcq4")]
+position = Vector2(40, 88)
+texto = "¡Hoy hay guiso de lentejas! Mi Purrloin se come las zanahorias que yo dejo."
+mirando = Vector2(0, -1)
+
+[node name="AnimatedSprite2D" parent="Chico" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_4n6j7")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_cewv2")]
+position = Vector2(72, 88)
+
+[editable path="Cocinera"]
+[editable path="Chico"]

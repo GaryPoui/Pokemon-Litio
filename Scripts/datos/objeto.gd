@@ -14,3 +14,7 @@ extends Resource
 @export var cura_ps: int= 0
 @export var ratio_captura: float =0.0
 @export var solo_safari :=false
+@export var cura_estado: String= ""
+@export var revivir :float= 0.0
+@export var pasos_repelente: int= 0
+@export var movimiento_mt :String= ""

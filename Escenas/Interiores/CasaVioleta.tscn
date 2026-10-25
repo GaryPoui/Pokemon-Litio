@@ -1,0 +1,82 @@
+[gd_scene format=4 uid="uid://dehjfgfivi4aw"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_yxauy"]
+[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="2_kjg7i"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_k3thj"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_5jarm"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_ke6x4"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_re3ol"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="7_0rdyi"]
+[ext_resource type="SpriteFrames" uid="uid://bscstn3e2t1qj" path="res://Recursos/Personajes/chica.tres" id="8_v01p4"]
+[ext_resource type="SpriteFrames" uid="uid://dhj7uanei3ln7" path="res://Recursos/Personajes/joven.tres" id="9_hl1k0"]
+
+[node name="CasaVioleta" type="Node2D" unique_id=971709650]
+y_sort_enabled = true
+script = ExtResource("1_yxauy")
+fondo_batalla = ExtResource("2_kjg7i")
+musica = "pueblo"
+zona_id = "la_boca"
+zona_nombre = "La Boca"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1441548503]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACAAHAAQAAAAAAAEACAAAAAUAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAABAAAACAAHAAQAAAABAAEACAAAAAUAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAACAAAACAAHAAQAAAACAAEACAAAAAUAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgAAAAQAAAACAAUABgADAAQAAAACAAYABgAAAAAAAAADAAAACAAHAAQAAAADAAEACAAAAAUAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgABAAQAAAADAAUABgAEAAQAAAADAAYABgABAAAAAAAEAAAACAAHAAQAAAAEAAEACAAAAAUAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgACAAQAAAAEAAUABgAFAAQAAAAEAAYABgAGAAMAAAAFAAAACAAHAAQAAAAFAAEACAAAAAUAAAAFAAIABgAAAAAAAAAFAAMABgAAAAAAAAAFAAQABgABAAAAAAAFAAUABgAAAAAAAAAFAAYABgAAAAAAAAAGAAAACAAHAAQAAAAGAAEACAAAAAUAAAAGAAIABgAAAAAAAAAGAAMABgABAAAAAAAGAAQABgAAAAAAAAAGAAUABgAAAAAAAAAGAAYABgABAAAAAAAHAAAACAAHAAQAAAAHAAEACAAAAAUAAAAHAAIABgABAAAAAAAHAAMABgAAAAAAAAAHAAQABgAAAAAAAAAHAAUABgABAAAAAAAHAAYABgAAAAAAAAA=")
+tile_set = ExtResource("3_k3thj")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=2024476687]
+z_index = -1
+tile_set = ExtResource("3_k3thj")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=1294297623]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAIACAACAAQAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAAACAAAAAYAAAABAAEACAABAAYAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAAACAACAAYAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAIABgAEAAMAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAAACAAAAAYAAAAGAAEACAABAAYAAAAGAAIABgAFAAMAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAYABgAHAAEAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_k3thj")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=359355511]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=1163695459]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=1661178474]
+position = Vector2(72, 104)
+script = ExtResource("5_ke6x4")
+destino = "res://Escenas/Mapa.tscn"
+llegada = "PuertaVioleta"
+salir_empujando = true
+
+[node name="Bailarina" parent="." unique_id=1999008602 instance=ExtResource("6_re3ol")]
+position = Vector2(56, 72)
+script = ExtResource("7_0rdyi")
+objeto_regalo = ""
+cantidad_regalo = 1
+trinket_regalo = "monedero"
+clave_objeto = "regalo_bailarina"
+texto_antes = "Bailás con ganas, se nota. Tomá, las propinas de la milonga van en este monedero: ¡que te traiga suerte!"
+texto_despues = "Un Pokémon que lleva el Monedero hace ganar más plata en cada combate contra entrenadores."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "En la milonga se baila con el corazón. ¿Querés aprender un ocho?"
+mirando = Vector2(1, 0)
+
+[node name="AnimatedSprite2D" parent="Bailarina" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_v01p4")
+animation = &"abajo"
+
+[node name="Bailarin" parent="." unique_id=1990540446 instance=ExtResource("6_re3ol")]
+position = Vector2(72, 72)
+texto = "El gramófono era de mi abuelo. Todavía suena a Gardel."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="Bailarin" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_hl1k0")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_5jarm")]
+position = Vector2(72, 88)
+
+[editable path="Bailarina"]
+[editable path="Bailarin"]

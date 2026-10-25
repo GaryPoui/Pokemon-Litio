@@ -147,6 +147,7 @@ func empezar(rivales: Array[PokemonInstancia], salvaje: bool, entrenador: String
 	else:
 		logica =LogicaCombate.new(propio, rivales, salvaje, entrenador)
 	logica.pago_base= int(config.get("pago_base", 0))
+	logica.objetos_rival.assign(config.get("objetos", []))
 	logica.sin_exp =torre or safari
 	logica.inventario =Inventario
 	logica.equipo= Equipo
@@ -243,6 +244,13 @@ func _reproducir(eventos: Array[Dictionary]) -> void:
 				await _animar_captura(e)
 			"lanzar":
 				await _animar_lanzamiento(str(e["objeto"]))
+			"ilusion":
+				vista[e["lado"]]= {"p": e["pokemon"], "ps": e["ps"], "max": e["max"], "nivel": e["nivel"], "estado": e["estado"], "exp": 0}
+				await _ilusion(e["lado"], e["pokemon"])
+			"tipos":
+				if not vista[e["lado"]].is_empty():
+					vista[e["lado"]]["tipos"]= e["tipos"]
+				_actualizar_cajas()
 			"humor":
 				if not vista["rival"].is_empty():
 					vista["rival"]["estado"]= e["humor"]
@@ -259,7 +267,7 @@ func _ultimo_rival(eventos: Array[Dictionary], desde: int) -> bool:
 
 func _musica_victoria() -> void:
 	musica_final= true
-	Sonido.musica("victoria_salvaje" if logica.salvaje else "victoria_entrenador", 0.2)
+	Sonido.musica("victoria_salvaje" if logica.salvaje else ("victoria_lider" if pista== "batalla_lider" else "victoria_entrenador"), 0.2)
 
 func _revisar_ps_bajo() -> void:
 	if musica_final:
@@ -399,7 +407,7 @@ func _elegir_accion() -> Dictionary:
 		ultimo_comando= op
 		if torre and op> 0:
 			Sonido.efecto("error")
-			await _decir("¡No está permitido en el Desafío de la Bombonera!")
+			await _decir("¡No está permitido en el desafío!")
 			continue
 		match op:
 			0:
@@ -559,7 +567,7 @@ func _elegir_objeto() -> Dictionary:
 		mochila_combate= load(ESCENA_MOCHILA).instantiate()
 		mochila_combate.name= "Mochila"
 		add_child(mochila_combate)
-	var r: Dictionary= await mochila_combate.elegir_en_combate(func(o: Objeto): return not o.solo_safari and (o.cura_ps> 0 or (o.ratio_captura> 0.0 and logica.salvaje)))
+	var r: Dictionary= await mochila_combate.elegir_en_combate(func(o: Objeto): return not o.solo_safari and (o.cura_ps> 0 or o.cura_estado!= "" or o.revivir> 0.0 or (o.ratio_captura> 0.0 and logica.salvaje)))
 	if r.is_empty():
 		return {}
 	var acc:= {"tipo": "objeto", "id": r["id"]}
@@ -882,7 +890,7 @@ func _llenar_panel(panel: NinePatchRect, v: Dictionary, con_exp: bool) -> void:
 	genero.text= p.simbolo_genero()
 	genero.add_theme_color_override("font_color", p.color_genero())
 	genero.position.x =nombre.position.x+ nombre.get_combined_minimum_size().x+ 1
-	var tipos:= p.especie.tipos
+	var tipos: Array= v.get("tipos", Array(p.especie.tipos))
 	for k in 2:
 		var icono: IconoTipo= panel.get_node("Tipo%d" % (k+ 1))
 		icono.visible= k< tipos.size()
@@ -957,3 +965,16 @@ func _animar_lanzamiento(id: String) -> void:
 	fuera.tween_property(cosa, "modulate:a", 0.0, 0.25)
 	await fuera.finished
 	cosa.queue_free()
+
+func _ilusion(lado: String, p: PokemonInstancia) -> void:
+	var spr: Sprite2D= sprite_rival if lado== "rival" else sprite_jugador
+	var brillo:= create_tween()
+	brillo.tween_property(spr, "modulate", Color(6, 6, 6, 1), 0.15)
+	await brillo.finished
+	spr.mostrar(p.especie, lado== "jugador")
+	spr.modulate= Color(6, 6, 6, 1)
+	Sonido.grito(p.especie.numero)
+	var vuelta :=create_tween()
+	vuelta.tween_property(spr, "modulate", Color.WHITE, 0.3)
+	await vuelta.finished
+	_actualizar_cajas()

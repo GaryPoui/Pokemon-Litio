@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cb0dn6lifpyn1"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_j7102"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leech_life.tres" id="2_dixs1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spider_web.tres" id="3_1hia3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/string_shot.tres" id="4_xfys6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="5_yjeeo"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="6_4xvba"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_cutter.tres" id="7_2m7qy"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/electroweb.tres" id="8_3v7x3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="9_kobie"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gastro_acid.tres" id="10_oiyw8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="11_rgro6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/electro_ball.tres" id="12_1ao6s"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/signal_beam.tres" id="13_jy678"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="14_q43x6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="15_himed"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="16_b1556"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="17_xo6sc"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_jfdr1"]
+[ext_resource type="Texture2D" uid="uid://d3fwxqnneoddd" path="res://Assets/Pokemones/batalla/joltik_espalda.png" id="19_x5345"]
+[ext_resource type="Texture2D" uid="uid://rm1pqnrh7dah" path="res://Assets/Pokemones/batalla/joltik_frente.png" id="20_lc0p4"]
+
+[sub_resource type="Resource" id="Resource_w1j33"]
+script = ExtResource("1_j7102")
+movimiento = ExtResource("2_dixs1")
+
+[sub_resource type="Resource" id="Resource_05348"]
+script = ExtResource("1_j7102")
+movimiento = ExtResource("3_1hia3")
+
+[sub_resource type="Resource" id="Resource_0xa3i"]
+script = ExtResource("1_j7102")
+movimiento = ExtResource("4_xfys6")
+
+[sub_resource type="Resource" id="Resource_8ojp6"]
+script = ExtResource("1_j7102")
+nivel = 4
+movimiento = ExtResource("5_yjeeo")
+
+[sub_resource type="Resource" id="Resource_mpnjd"]
+script = ExtResource("1_j7102")
+nivel = 7
+movimiento = ExtResource("6_4xvba")
+
+[sub_resource type="Resource" id="Resource_gmuwp"]
+script = ExtResource("1_j7102")
+nivel = 12
+movimiento = ExtResource("7_2m7qy")
+
+[sub_resource type="Resource" id="Resource_einu8"]
+script = ExtResource("1_j7102")
+nivel = 15
+movimiento = ExtResource("8_3v7x3")
+
+[sub_resource type="Resource" id="Resource_tpa68"]
+script = ExtResource("1_j7102")
+nivel = 18
+movimiento = ExtResource("9_kobie")
+
+[sub_resource type="Resource" id="Resource_kq50u"]
+script = ExtResource("1_j7102")
+nivel = 23
+movimiento = ExtResource("10_oiyw8")
+
+[sub_resource type="Resource" id="Resource_ktf18"]
+script = ExtResource("1_j7102")
+nivel = 26
+movimiento = ExtResource("11_rgro6")
+
+[sub_resource type="Resource" id="Resource_8w74t"]
+script = ExtResource("1_j7102")
+nivel = 29
+movimiento = ExtResource("12_1ao6s")
+
+[sub_resource type="Resource" id="Resource_0m5p3"]
+script = ExtResource("1_j7102")
+nivel = 34
+movimiento = ExtResource("13_jy678")
+
+[sub_resource type="Resource" id="Resource_xdqa3"]
+script = ExtResource("1_j7102")
+nivel = 37
+movimiento = ExtResource("14_q43x6")
+
+[sub_resource type="Resource" id="Resource_foo5f"]
+script = ExtResource("1_j7102")
+nivel = 40
+movimiento = ExtResource("15_himed")
+
+[sub_resource type="Resource" id="Resource_wpv17"]
+script = ExtResource("1_j7102")
+nivel = 45
+movimiento = ExtResource("16_b1556")
+
+[sub_resource type="Resource" id="Resource_uyhlg"]
+script = ExtResource("1_j7102")
+nivel = 48
+movimiento = ExtResource("17_xo6sc")
+
+[resource]
+script = ExtResource("18_jfdr1")
+id = "joltik"
+numero = 595
+nombre = "Joltik"
+tipos = ["bicho", "electrico"]
+ataque = 47
+at_esp = 57
+velocidad = 65
+exp_base = 64
+ratio_captura = 190
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciona_a = "galvantula"
+nivel_evolucion = 36
+aprende = Array[ExtResource("1_j7102")]([SubResource("Resource_w1j33"), SubResource("Resource_05348"), SubResource("Resource_0xa3i"), SubResource("Resource_8ojp6"), SubResource("Resource_mpnjd"), SubResource("Resource_gmuwp"), SubResource("Resource_einu8"), SubResource("Resource_tpa68"), SubResource("Resource_kq50u"), SubResource("Resource_ktf18"), SubResource("Resource_8w74t"), SubResource("Resource_0m5p3"), SubResource("Resource_xdqa3"), SubResource("Resource_foo5f"), SubResource("Resource_wpv17"), SubResource("Resource_uyhlg")])
+sprite_frente = ExtResource("20_lc0p4")
+sprite_espalda = ExtResource("19_x5345")
+cuadros_frente = 65
+cuadros_espalda = 65
+fps_sprite = 14.1

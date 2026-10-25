@@ -6,3 +6,5 @@ extends Resource
 @export var nivel_max: int =4
 @export var peso: int= 10
 @export var trinkets: Array[String] =[]
+@export var movimientos: Array[String]= []
+@export var ia :Array[String]= []

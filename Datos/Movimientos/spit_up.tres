@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_ubfuk"]
+
+[resource]
+script = ExtResource("1_ubfuk")
+id = "spit_up"
+nombre = "Escupir"
+categoria = "especial"
+descripcion = "Libera de una vez la energía acumulada con Reserva. La potencia del ataque será proporcional a la cantidad de energía acumulada."

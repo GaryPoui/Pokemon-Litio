@@ -11,6 +11,10 @@ var critico_extra: int =0
 var aguante_usado:= false
 var actuo_turno :=false
 var herido_turno:= false
+var confusion:= 0
+var tipos_forzados: Array= []
+var cargado :=0
+var disfraz: PokemonInstancia
 
 func _init(p: PokemonInstancia) -> void:
 	pokemon= p
@@ -45,3 +49,9 @@ func cambiar_etapa(stat: String, cambio: int) -> int:
 	var antes: int= etapas[stat]
 	etapas[stat] =clampi(antes+ cambio, -6, 6)
 	return etapas[stat]- antes
+
+func tipos() -> Array:
+	return tipos_forzados if not tipos_forzados.is_empty() else Array(pokemon.especie.tipos)
+
+func nombre_visible() -> String:
+	return disfraz.nombre() if disfraz!= null else pokemon.nombre()

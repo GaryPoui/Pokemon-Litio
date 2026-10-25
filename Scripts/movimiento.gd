@@ -125,11 +125,21 @@ func _try_start_move(delta: float, chained: bool) -> void:
 		turn_timer-= delta
 		return
 
+	var mapa:= get_parent()
+	if mapa!= null and mapa.has_method("salir_empujando") and mapa.salir_empujando(celda(), direction):
+		_set_idle()
+		return
+
 	last_direction =direction
 	is_running= Input.is_action_pressed("correr")
 	var motion: Vector2 =direction* tam
 
 	if test_move(transform, motion):
+		var frente:= celda()+ Vector2i(direction)
+		for n in get_tree().get_nodes_in_group("empujable"):
+			if n.celda()== frente:
+				n.empujar(Vector2i(direction))
+				break
 		_set_idle()
 		if Time.get_ticks_msec()- ultimo_choque> 350:
 			ultimo_choque= Time.get_ticks_msec()

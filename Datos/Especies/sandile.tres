@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cs41pnhxuyi47"]
+
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_cohyw"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_4a72c"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rage.tres" id="3_w45q8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="4_rfj1u"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="5_xf44r"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/torment.tres" id="6_4w4i6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_tomb.tres" id="7_noive"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/assurance.tres" id="8_vh6w1"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="9_o6r2k"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/embargo.tres" id="10_l3x67"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swagger.tres" id="11_qm47y"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="12_4c44v"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dig.tres" id="13_de6o5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="14_otn2d"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/foul_play.tres" id="15_qhetc"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sandstorm.tres" id="16_5whse"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="17_xbij7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="18_2ylew"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="19_4ctpb"]
+[ext_resource type="Texture2D" uid="uid://b7ywh6g85d3aq" path="res://Assets/Pokemones/batalla/sandile_espalda.png" id="20_0dmr8"]
+[ext_resource type="Texture2D" uid="uid://dnr887gpgy1hn" path="res://Assets/Pokemones/batalla/sandile_frente.png" id="21_a0x4a"]
+
+[sub_resource type="Resource" id="Resource_yexmk"]
+script = ExtResource("1_cohyw")
+movimiento = ExtResource("2_4a72c")
+
+[sub_resource type="Resource" id="Resource_d7p2m"]
+script = ExtResource("1_cohyw")
+movimiento = ExtResource("3_w45q8")
+
+[sub_resource type="Resource" id="Resource_6bfld"]
+script = ExtResource("1_cohyw")
+nivel = 4
+movimiento = ExtResource("4_rfj1u")
+
+[sub_resource type="Resource" id="Resource_fhb7v"]
+script = ExtResource("1_cohyw")
+nivel = 7
+movimiento = ExtResource("5_xf44r")
+
+[sub_resource type="Resource" id="Resource_i82cy"]
+script = ExtResource("1_cohyw")
+nivel = 10
+movimiento = ExtResource("6_4w4i6")
+
+[sub_resource type="Resource" id="Resource_p8jo6"]
+script = ExtResource("1_cohyw")
+nivel = 13
+movimiento = ExtResource("7_noive")
+
+[sub_resource type="Resource" id="Resource_t3vak"]
+script = ExtResource("1_cohyw")
+nivel = 16
+movimiento = ExtResource("8_vh6w1")
+
+[sub_resource type="Resource" id="Resource_m5dgf"]
+script = ExtResource("1_cohyw")
+nivel = 19
+movimiento = ExtResource("9_o6r2k")
+
+[sub_resource type="Resource" id="Resource_4db2i"]
+script = ExtResource("1_cohyw")
+nivel = 22
+movimiento = ExtResource("10_l3x67")
+
+[sub_resource type="Resource" id="Resource_g2cnn"]
+script = ExtResource("1_cohyw")
+nivel = 25
+movimiento = ExtResource("11_qm47y")
+
+[sub_resource type="Resource" id="Resource_dc7g1"]
+script = ExtResource("1_cohyw")
+nivel = 28
+movimiento = ExtResource("12_4c44v")
+
+[sub_resource type="Resource" id="Resource_7owkx"]
+script = ExtResource("1_cohyw")
+nivel = 31
+movimiento = ExtResource("13_de6o5")
+
+[sub_resource type="Resource" id="Resource_q5xdj"]
+script = ExtResource("1_cohyw")
+nivel = 34
+movimiento = ExtResource("14_otn2d")
+
+[sub_resource type="Resource" id="Resource_qg3is"]
+script = ExtResource("1_cohyw")
+nivel = 37
+movimiento = ExtResource("15_qhetc")
+
+[sub_resource type="Resource" id="Resource_6k1ae"]
+script = ExtResource("1_cohyw")
+nivel = 40
+movimiento = ExtResource("16_5whse")
+
+[sub_resource type="Resource" id="Resource_7yel4"]
+script = ExtResource("1_cohyw")
+nivel = 43
+movimiento = ExtResource("17_xbij7")
+
+[sub_resource type="Resource" id="Resource_ix52l"]
+script = ExtResource("1_cohyw")
+nivel = 46
+movimiento = ExtResource("18_2ylew")
+
+[resource]
+script = ExtResource("19_4ctpb")
+id = "sandile"
+numero = 551
+nombre = "Sandile"
+tipos = ["tierra", "siniestro"]
+ataque = 72
+defensa = 35
+at_esp = 35
+def_esp = 35
+velocidad = 65
+exp_base = 58
+ratio_captura = 180
+crecimiento = "medium-slow"
+evs_otorgados = {
+"ataque": 1
+}
+evoluciona_a = "krokorok"
+nivel_evolucion = 29
+aprende = Array[ExtResource("1_cohyw")]([SubResource("Resource_yexmk"), SubResource("Resource_d7p2m"), SubResource("Resource_6bfld"), SubResource("Resource_fhb7v"), SubResource("Resource_i82cy"), SubResource("Resource_p8jo6"), SubResource("Resource_t3vak"), SubResource("Resource_m5dgf"), SubResource("Resource_4db2i"), SubResource("Resource_g2cnn"), SubResource("Resource_dc7g1"), SubResource("Resource_7owkx"), SubResource("Resource_q5xdj"), SubResource("Resource_qg3is"), SubResource("Resource_6k1ae"), SubResource("Resource_7yel4"), SubResource("Resource_ix52l")])
+sprite_frente = ExtResource("21_a0x4a")
+sprite_espalda = ExtResource("20_0dmr8")
+cuadros_frente = 80
+cuadros_espalda = 80
+fps_sprite = 14.81

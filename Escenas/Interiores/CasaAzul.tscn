@@ -1,0 +1,63 @@
+[gd_scene format=4 uid="uid://dtvtciir4kgxa"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_sjaqn"]
+[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="2_sr6k3"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_jlc1y"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_1p3l5"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_shmfv"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_rujt4"]
+[ext_resource type="Script" uid="uid://btb1xbg05r3q5" path="res://Scripts/recordador.gd" id="7_fwu3e"]
+[ext_resource type="SpriteFrames" uid="uid://ejcw2f3o5t33" path="res://Recursos/Personajes/maestro.tres" id="8_rcndu"]
+
+[node name="CasaAzul" type="Node2D" unique_id=1614625347]
+y_sort_enabled = true
+script = ExtResource("1_sjaqn")
+fondo_batalla = ExtResource("2_sr6k3")
+musica = "pueblo"
+zona_id = "la_boca"
+zona_nombre = "La Boca"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=646321874]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAABgACAAAAAAAAAAEABgADAAAAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAABAAAABgACAAAAAAABAAEABgADAAAAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAACAAAABgACAAAAAAACAAEABgADAAAAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgABAAAAAAACAAUABgAAAAAAAAACAAYABgAAAAAAAAADAAAABgACAAAAAAADAAEABgADAAAAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgAAAAAAAAADAAUABgAAAAAAAAADAAYABgABAAAAAAAEAAAABgACAAAAAAAEAAEABgADAAAAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgAAAAAAAAAEAAUABgABAAAAAAAEAAYABgAGAAMAAAAFAAAABgACAAAAAAAFAAEABgADAAAAAAAFAAIABgAAAAAAAAAFAAMABgAAAAAAAAAFAAQABgABAAAAAAAFAAUABgAAAAAAAAAFAAYABgAAAAAAAAAGAAAABgACAAAAAAAGAAEABgADAAAAAAAGAAIABgAAAAAAAAAGAAMABgABAAAAAAAGAAQABgAAAAAAAAAGAAUABgAAAAAAAAAGAAYABgABAAAAAAAHAAAABgACAAAAAAAHAAEABgADAAAAAAAHAAIABgABAAAAAAAHAAMABgAAAAAAAAAHAAQABgAAAAAAAAAHAAUABgABAAAAAAAHAAYABgAAAAAAAAA=")
+tile_set = ExtResource("3_jlc1y")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1621821120]
+z_index = -1
+tile_set = ExtResource("3_jlc1y")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=1337497932]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAEABgAFAAEAAAAAAAIABgAFAAIAAAAAAAQABgACAAMAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAEABgAGAAEAAAABAAIABgAGAAIAAAABAAQABgAAAAMAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAAACAAAAAYAAAACAAEACAABAAYAAAACAAQABgABAAMAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAAACAACAAYAAAAEAAQABgAEAAMAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAEABgADAAEAAAAFAAIABgADAAIAAAAFAAQABgAFAAMAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAAACAADAAYAAAAGAAEABgAEAAEAAAAGAAIABgAEAAIAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAYABgAHAAEAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_jlc1y")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=1011112828]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=1043531509]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=1554159497]
+position = Vector2(72, 104)
+script = ExtResource("5_shmfv")
+destino = "res://Escenas/Mapa.tscn"
+llegada = "PuertaAzul"
+salir_empujando = true
+
+[node name="DonTito" parent="." unique_id=1999008602 instance=ExtResource("6_rujt4")]
+position = Vector2(56, 56)
+script = ExtResource("7_fwu3e")
+objeto_pago = "alfajor"
+texto_sin_pago = "Si me traés un Alfajor, le hago recordar a tu Pokémon un movimiento que haya olvidado. Los venden en Villa 31, y los guardaparques regalan algunos."
+texto = "Soy Don Tito, el memorioso del barrio. Me acuerdo de cada gol de la Bombonera... ¡y de cada movimiento que tus Pokémon olvidaron!"
+
+[node name="AnimatedSprite2D" parent="DonTito" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_rcndu")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_1p3l5")]
+position = Vector2(72, 88)
+
+[editable path="DonTito"]

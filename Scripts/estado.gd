@@ -7,9 +7,13 @@ var pasos_repelente: int =0
 var dinero:= DINERO_INICIAL
 var stock_tienda: Array[String]= []
 var safari :Dictionary= {}
+var medallas: Array[String]= []
+var fichas:= 0
+var fichas_ciudades :Dictionary= {}
 
 const DINERO_INICIAL :=3000
 const DINERO_MAX:= 999999
+const FICHAS_POR_CIUDAD :=5
 
 func sumar_dinero(cantidad: int) -> void:
 	dinero= clampi(dinero+ cantidad, 0, DINERO_MAX)
@@ -37,6 +41,20 @@ func registrar_safari(ruta: String, especie_id: String) -> void:
 func safari_de(ruta: String) -> Array:
 	return safari.get(ruta, {}).keys()
 
+func dar_medalla(id: String) -> void:
+	if not medallas.has(id):
+		medallas.append(id)
+
+func tiene_medalla(id: String) -> bool:
+	return medallas.has(id)
+
+func dar_fichas_ciudad(zona_id: String) -> int:
+	if zona_id== "" or fichas_ciudades.has(zona_id):
+		return 0
+	fichas_ciudades[zona_id]= true
+	fichas+= FICHAS_POR_CIUDAD
+	return FICHAS_POR_CIUDAD
+
 func reiniciar() -> void:
 	banderas= {}
 	vistos ={}
@@ -45,3 +63,6 @@ func reiniciar() -> void:
 	dinero= DINERO_INICIAL
 	stock_tienda.clear()
 	safari ={}
+	medallas.clear()
+	fichas= 0
+	fichas_ciudades ={}

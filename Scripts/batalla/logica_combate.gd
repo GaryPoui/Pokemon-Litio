@@ -50,6 +50,10 @@ var forcejeo: Movimiento
 var inventario: Node
 var equipo :Node
 var eventos: Array[Dictionary]= []
+var espacio_raro:= 0
+var objetos_rival: Array[String] =[]
+const ILUSION:= ["zorua", "zoroark"]
+const CURAS_RIVAL :={"hyper_potion": 0.0, "super_potion": 0.0, "potion": 0.0}
 
 func _init(jugador: Array[PokemonInstancia], rival: Array[PokemonInstancia], es_salvaje: bool, entrenador: String= "") -> void:
 	equipo_j= jugador
@@ -66,7 +70,7 @@ func _init(jugador: Array[PokemonInstancia], rival: Array[PokemonInstancia], es_
 	forcejeo.pp= 1
 
 func iniciar() -> Array[Dictionary]:
-	r= Luchador.new(_siguiente_util(equipo_r))
+	r= _nuevo_rival(_siguiente_util(equipo_r))
 	j =Luchador.new(_siguiente_util(equipo_j))
 	participantes= [j.pokemon]
 	if salvaje:
@@ -74,7 +78,7 @@ func iniciar() -> Array[Dictionary]:
 		_texto("¡Un %s salvaje apareció!" % r.pokemon.nombre())
 	else:
 		_texto("¡%s quiere luchar!" % nombre_entrenador)
-		_texto("¡%s envió a %s!" % [nombre_entrenador, r.pokemon.nombre()])
+		_texto("¡%s envió a %s!" % [nombre_entrenador, r.nombre_visible()])
 		_ev_sale("rival", r.pokemon)
 		_anunciar_trinkets(r.pokemon)
 	_texto("¡Adelante, %s!" % j.pokemon.nombre())
@@ -102,18 +106,23 @@ func turno(accion: Dictionary) -> Array[Dictionary]:
 			return _tomar()
 	elif tipo== "cambio":
 		_cambiar(int(accion["indice"]))
-	var ir:= _ia()
+	var accion_r:= _accion_rival()
+	var ir: int= int(accion_r.get("indice", -1))
+	if accion_r.get("tipo", "")== "objeto":
+		_usar_objeto_rival(str(accion_r["id"]))
 	var orden: Array= []
 	if tipo== "movimiento":
 		var ij:= int(accion.get("indice", -1))
 		if _primero_j(ij, ir):
-			orden= [[j, ij], [r, ir]]
+			orden= [["j", ij], ["r", ir]]
 		else:
-			orden =[[r, ir], [j, ij]]
-	else:
-		orden= [[r, ir]]
+			orden =[["r", ir], ["j", ij]]
+		if accion_r.get("tipo", "")== "objeto":
+			orden= [["j", ij]]
+	elif accion_r.get("tipo", "")!= "objeto":
+		orden= [["r", ir]]
 	for par in orden:
-		var atacante: Luchador= par[0]
+		var atacante: Luchador= j if par[0]== "j" else r
 		var defensor: Luchador =r if atacante== j else j
 		if terminado or atacante.pokemon.esta_debilitado() or defensor.pokemon.esta_debilitado():
 			continue
@@ -141,8 +150,8 @@ func reemplazar(indice: int) -> Array[Dictionary]:
 
 func nombre_de(l: Luchador) -> String:
 	if l== j:
-		return l.pokemon.nombre()
-	return ("el %s salvaje" if salvaje else "el %s enemigo") % l.pokemon.nombre()
+		return l.nombre_visible()
+	return ("el %s salvaje" if salvaje else "el %s enemigo") % l.nombre_visible()
 
 func movimiento_de(l: Luchador, indice: int) -> Movimiento:
 	return forcejeo if indice< 0 else l.pokemon.movimientos[indice]
@@ -179,7 +188,28 @@ func _siguiente_util(lista: Array[PokemonInstancia]) -> PokemonInstancia:
 	return null
 
 func _ev_sale(lado: String, p: PokemonInstancia) -> void:
-	_ev({"tipo": "sale", "lado": lado, "pokemon": p, "ps": p.ps_actuales, "max": p.ps_max(), "nivel": p.nivel, "estado": p.estado, "exp": p.experiencia, "ball": p.ball})
+	var visto:= p
+	if lado== "rival" and r!= null and r.pokemon== p and r.disfraz!= null:
+		visto= r.disfraz
+	_ev({"tipo": "sale", "lado": lado, "pokemon": visto, "ps": p.ps_actuales, "max": p.ps_max(), "nivel": p.nivel, "estado": p.estado, "exp": p.experiencia, "ball": p.ball})
+
+func _nuevo_rival(p: PokemonInstancia) -> Luchador:
+	var l:= Luchador.new(p)
+	if p!= null and p.especie.id in ILUSION:
+		for k in range(equipo_r.size()- 1, -1, -1):
+			var o:= equipo_r[k]
+			if o!= p and not o.esta_debilitado():
+				l.disfraz= o
+				break
+	return l
+
+func _romper_ilusion(l: Luchador) -> void:
+	if l.disfraz== null:
+		return
+	l.disfraz= null
+	var p:= l.pokemon
+	_ev({"tipo": "ilusion", "lado": _lado(l), "pokemon": p, "ps": p.ps_actuales, "max": p.ps_max(), "nivel": p.nivel, "estado": p.estado})
+	_texto("¡La ilusión de %s se desvaneció!" % p.nombre())
 
 func _anunciar_trinkets(p: PokemonInstancia) -> void:
 	var nombres:= []
@@ -190,7 +220,8 @@ func _anunciar_trinkets(p: PokemonInstancia) -> void:
 	if nombres.is_empty():
 		return
 	var lista: String= nombres[0] if nombres.size()== 1 else ", ".join(nombres.slice(0, nombres.size()- 1))+ " y " +nombres.back()
-	_texto("¡%s lleva %s!" % [p.nombre(), lista])
+	var quien:= r.nombre_visible() if r!= null and r.pokemon== p else p.nombre()
+	_texto("¡%s lleva %s!" % [quien, lista])
 
 func _ev_ps(l: Luchador, desde: int, sonido: String= "") -> void:
 	_ev({"tipo": "ps", "lado": _lado(l), "desde": desde, "hasta": l.pokemon.ps_actuales, "max": l.pokemon.ps_max(), "sonido": sonido})
@@ -210,7 +241,27 @@ func _herir(l: Luchador, cantidad: int, sonido: String ="golpe_normal") -> int:
 		_texto("¡%s aguantó el golpe gracias a su %s!" % [_cap(nombre_de(l)), BaseDatos.trinket(ids[0]).nombre])
 	return real
 
+func _accion_rival() -> Dictionary:
+	var p:= r.pokemon
+	if not salvaje and not p.esta_debilitado() and p.ps_actuales* 10<= p.ps_max()* 3:
+		for id in CURAS_RIVAL:
+			if objetos_rival.has(id):
+				return {"tipo": "objeto", "id": id}
+	return {"tipo": "movimiento", "indice": _ia()}
+
+func _usar_objeto_rival(id: String) -> void:
+	objetos_rival.erase(id)
+	var o:= BaseDatos.objeto(id)
+	var antes:= r.pokemon.ps_actuales
+	r.pokemon.curar_ps(o.cura_ps if o!= null else 20)
+	_texto("¡%s usó %s!" % [nombre_entrenador, o.nombre if o!= null else id])
+	_ev_ps(r, antes)
+
 func _ia() -> int:
+	if not r.pokemon.ia.is_empty():
+		var elegido:= _ia_reglas(r.pokemon.ia)
+		if elegido>= 0:
+			return elegido
 	var opciones:= []
 	for i in r.pokemon.movimientos.size():
 		if r.pokemon.pp[i]> 0:
@@ -227,7 +278,7 @@ func _primero_j(ij: int, ir: int) -> bool:
 	var vj:= j.stat_efectivo("velocidad")
 	var vr:= r.stat_efectivo("velocidad")
 	if vj!= vr:
-		return vj >vr
+		return vj< vr if espacio_raro> 0 else vj >vr
 	return rng.randi_range(0, 1)== 0
 
 func _ejecutar(a: Luchador, d: Luchador, indice: int) -> void:
@@ -253,6 +304,16 @@ func _ejecutar(a: Luchador, d: Luchador, indice: int) -> void:
 	if p.estado== "par" and rng.randi_range(1, 4) ==1:
 		_texto("¡%s está paralizado! ¡No se puede mover!" % nombre)
 		return
+	if a.confusion> 0:
+		a.confusion-= 1
+		if a.confusion== 0:
+			_texto("¡%s ya no está confuso!" % nombre)
+		else:
+			_texto("¡%s está confuso!" % nombre)
+			if rng.randi_range(0, 1)== 0:
+				_texto("¡Está tan confuso que se hirió a sí mismo!")
+				_herir(a, danio_confusion(a))
+				return
 	var mov:= movimiento_de(a, indice)
 	a.actuo_turno= true
 	if indice>= 0:
@@ -272,13 +333,17 @@ func _ejecutar(a: Luchador, d: Luchador, indice: int) -> void:
 	if mov.id== "bide":
 		_texto("¡Pero falló!")
 		return
-	var ef:= Tipos.efectividad(mov.tipo, d.pokemon.especie.tipos)
+	var ef:= Tipos.efectividad(mov.tipo, d.tipos())
 	if ef== 0.0:
 		_texto("No afecta %s..." % _a(d))
 		return
 	var golpe:= calcular_danio(a, d, mov, ef)
+	if mov.tipo== "electrico":
+		a.cargado= 0
 	var real:= _herir(d, golpe["danio"], "golpe_eficaz" if ef> 1.0 else ("golpe_poco" if ef< 1.0 else "golpe_normal"))
 	d.herido_turno= true
+	if not d.pokemon.esta_debilitado():
+		_romper_ilusion(d)
 	if golpe["critico"]:
 		_texto("¡Un golpe crítico!")
 	if ef> 1.0:
@@ -306,6 +371,8 @@ func _ejecutar(a: Luchador, d: Luchador, indice: int) -> void:
 		return
 	if ESTADOS.has(mov.estado) and mov.prob_estado> 0 and rng.randi_range(1, 100)<= mov.prob_estado:
 		_aplicar_estado(d, ESTADOS[mov.estado], false)
+	elif mov.estado== "confusion" and mov.prob_estado> 0 and rng.randi_range(1, 100)<= mov.prob_estado:
+		_confundir(d, false)
 	if mov.prob_retroceso> 0 and rng.randi_range(1, 100) <=mov.prob_retroceso:
 		d.retrocede= true
 
@@ -319,18 +386,19 @@ func calcular_danio(a: Luchador, d: Luchador, mov: Movimiento, ef: float) -> Dic
 	var critico:= rng.randi_range(1, tabla[clampi(a.critico_extra+ mov.critico+ roundi(EfectosTrinket.total("critico", a.pokemon)), 0, 4)])== 1
 	var ataque: int
 	var defensa: int
+	var fuente: Luchador= d if mov.id== "foul_play" else a
 	if critico:
-		ataque= a.stat_con_etapa(s_at, maxi(a.etapas[s_at], 0))
+		ataque= fuente.stat_con_etapa(s_at, maxi(fuente.etapas[s_at], 0))
 		defensa =d.stat_con_etapa(s_df, mini(d.etapas[s_df], 0))
 	else:
-		ataque= a.stat_con_etapa(s_at, a.etapas[s_at])
+		ataque= fuente.stat_con_etapa(s_at, fuente.etapas[s_at])
 		defensa= d.stat_con_etapa(s_df, d.etapas[s_df])
 	var nivel:= a.pokemon.nivel
 	var base:= (2* nivel/ 5+ 2)* poder_de(a, d, mov)* ataque/ defensa/ 50+ 2
 	if critico:
 		base*= 2
 	base= base* (aleatorio_fijo if aleatorio_fijo>= 0 else rng.randi_range(85, 100))/ 100
-	if mov.tipo in a.pokemon.especie.tipos:
+	if mov.tipo in a.tipos():
 		base =redondear(base, 1.5+ EfectosTrinket.total("stab", a.pokemon))
 	base= floori(base *ef)
 	if fisico and a.pokemon.estado== "que":
@@ -354,6 +422,19 @@ static func encadenar(m1: float, m2: float) -> int:
 	return (a_4096(m1)* a_4096(m2)+ 2048)>> 12
 
 func poder_de(a: Luchador, d: Luchador, mov: Movimiento) -> int:
+	var base_p:= _poder_base(a, d, mov)
+	if a.cargado> 0 and mov.tipo== "electrico":
+		return base_p* 2
+	return base_p
+
+func danio_confusion(a: Luchador) -> int:
+	var ataque:= a.stat_con_etapa("ataque", a.etapas["ataque"])
+	var defensa:= a.stat_con_etapa("defensa", a.etapas["defensa"])
+	var base:= (2* a.pokemon.nivel/ 5+ 2)* 40* ataque/ defensa/ 50+ 2
+	base= base* (aleatorio_fijo if aleatorio_fijo>= 0 else rng.randi_range(85, 100))/ 100
+	return maxi(1, base)
+
+func _poder_base(a: Luchador, d: Luchador, mov: Movimiento) -> int:
 	var pa:= a.pokemon
 	var pd:= d.pokemon
 	match mov.id:
@@ -444,7 +525,31 @@ func _subidas(l: Luchador) -> int:
 	return n
 
 func _efecto_estado(a: Luchador, d: Luchador, mov: Movimiento) -> void:
+	match mov.id:
+		"trick_room":
+			if espacio_raro> 0:
+				espacio_raro= 0
+				_texto("¡Las dimensiones retorcidas volvieron a la normalidad!")
+			else:
+				espacio_raro =5
+				_texto("¡%s retorció las dimensiones!" % _cap(nombre_de(a)))
+			return
+		"baton_pass":
+			_relevo(a)
+			return
+		"soak":
+			if d.tipos()== ["agua"]:
+				_texto("¡Pero falló!")
+			else:
+				d.tipos_forzados= ["agua"]
+				_ev({"tipo": "tipos", "lado": _lado(d), "tipos": d.tipos()})
+				_texto("¡%s ahora es de tipo Agua!" % _cap(nombre_de(d)))
+			return
 	var hizo:= false
+	if mov.id== "charge":
+		a.cargado= 2
+		_texto("¡%s comenzó a cargarse de energía!" % _cap(nombre_de(a)))
+		hizo= true
 	if mov.curacion> 0:
 		var p:= a.pokemon
 		var antes:= p.ps_actuales
@@ -462,12 +567,56 @@ func _efecto_estado(a: Luchador, d: Luchador, mov: Movimiento) -> void:
 	if ESTADOS.has(mov.estado):
 		_aplicar_estado(d, ESTADOS[mov.estado], true)
 		hizo= true
+	elif mov.estado== "confusion":
+		_confundir(d, true)
+		hizo =true
 	if mov.id== "focus_energy":
 		a.critico_extra= 2
 		_texto("¡%s se está preparando para luchar!" % _cap(nombre_de(a)))
 		hizo =true
 	if not hizo:
 		_texto("¡Pero no pasó nada!")
+
+func _confundir(l: Luchador, anunciar_fallo: bool) -> bool:
+	if l.pokemon.esta_debilitado():
+		return false
+	if l.confusion> 0:
+		if anunciar_fallo:
+			_texto("¡%s ya está confuso!" % _cap(nombre_de(l)))
+		return false
+	l.confusion= rng.randi_range(2, 5)
+	_texto("¡%s se encuentra confuso!" % _cap(nombre_de(l)))
+	return true
+
+func _relevo(a: Luchador) -> void:
+	var lista:= equipo_r if a== r else equipo_j
+	var sig: PokemonInstancia= null
+	for k in range(lista.size()- 1, -1, -1):
+		if lista[k]!= a.pokemon and not lista[k].esta_debilitado():
+			sig= lista[k]
+			break
+	if sig== null:
+		_texto("¡Pero falló!")
+		return
+	var etapas:= a.etapas.duplicate()
+	var conf:= a.confusion
+	var lado:= _lado(a)
+	_texto("¡%s pasó el relevo!" % _cap(nombre_de(a)))
+	_ev({"tipo": "retirar", "lado": lado, "ball": a.pokemon.ball})
+	var nuevo:= _nuevo_rival(sig) if a== r else Luchador.new(sig)
+	nuevo.etapas= etapas
+	nuevo.confusion =conf
+	if a== r:
+		r= nuevo
+		_texto("¡%s envió a %s!" % [nombre_entrenador, r.nombre_visible()])
+		_ev_sale("rival", sig)
+		_anunciar_trinkets(sig)
+	else:
+		j= nuevo
+		if not participantes.has(sig):
+			participantes.append(sig)
+		_texto("¡Adelante, %s!" % sig.nombre())
+		_ev_sale("jugador", sig)
 
 func _cambiar_etapa(l: Luchador, stat: String, cambio: int, anunciar_tope: bool) -> bool:
 	if not l.etapas.has(stat) or cambio== 0:
@@ -500,7 +649,7 @@ func _aplicar_estado(l: Luchador, est: String, anunciar_fallo: bool) -> bool:
 			_texto("¡Pero falló!")
 		return false
 	for t in INMUNES.get(est, []):
-		if t in p.especie.tipos:
+		if t in l.tipos():
 			if anunciar_fallo:
 				_texto("No afecta %s..." % _a(l))
 			return false
@@ -515,6 +664,13 @@ func _poner_estado(l: Luchador, est: String) -> void:
 	_ev({"tipo": "estado", "lado": _lado(l), "estado": est})
 
 func _fin_de_turno() -> void:
+	for l in [j, r]:
+		if l.cargado> 0:
+			l.cargado-= 1
+	if espacio_raro> 0:
+		espacio_raro -=1
+		if espacio_raro== 0:
+			_texto("¡Las dimensiones retorcidas volvieron a la normalidad!")
 	for l in [j, r]:
 		var p: PokemonInstancia= l.pokemon
 		if p.esta_debilitado() or not p.estado in ["que", "env"]:
@@ -556,11 +712,11 @@ func _revisar_debilitados() -> bool:
 					_texto("¡Ganaste %d$ por tu victoria!" % dinero_ganado)
 			_terminar("victoria")
 		else:
-			r= Luchador.new(sig)
+			r= _nuevo_rival(sig)
 			participantes.clear()
 			if not j.pokemon.esta_debilitado():
 				participantes.append(j.pokemon)
-			_texto("¡%s envió a %s!" % [nombre_entrenador, sig.nombre()])
+			_texto("¡%s envió a %s!" % [nombre_entrenador, r.nombre_visible()])
 			_ev_sale("rival", sig)
 			_anunciar_trinkets(sig)
 	if j.pokemon.esta_debilitado() and not j_anunciado:
@@ -667,6 +823,31 @@ func _usar_objeto(accion: Dictionary) -> bool:
 		else:
 			_texto(TEXTO_SACUDIDAS[res["sacudidas"]])
 		return true
+	if o.revivir> 0.0:
+		var muerto:= equipo_j[int(accion.get("objetivo", 0))]
+		if not muerto.esta_debilitado():
+			return false
+		inventario.consumir(o.id)
+		muerto.ps_actuales= maxi(1, floori(muerto.ps_max()* o.revivir))
+		muerto.estado =""
+		_texto("¡Usaste %s!" % o.nombre)
+		_texto("¡%s se reanimó!" % muerto.nombre())
+		return true
+	if o.cura_estado!= "":
+		var c:= equipo_j[int(accion.get("objetivo", 0))]
+		if c.esta_debilitado() or c.estado== "" or (o.cura_estado!= "todos" and c.estado!= o.cura_estado):
+			return false
+		inventario.consumir(o.id)
+		_texto("¡Usaste %s!" % o.nombre)
+		if c== j.pokemon:
+			_poner_estado(j, "")
+			if o.cura_estado== "todos":
+				j.confusion= 0
+		else:
+			c.estado= ""
+		_ev({"tipo": "sonido", "nombre": "curar_estado"})
+		_texto("¡%s se recuperó!" % c.nombre())
+		return true
 	if o.cura_ps> 0:
 		var p:= equipo_j[int(accion.get("objetivo", 0))]
 		if p.esta_debilitado() or p.ps_actuales>= p.ps_max():
@@ -727,3 +908,80 @@ static func _abajo(v: float) -> float:
 
 static func _cerca(v: float) -> float:
 	return floorf(v* 4096.0+ 0.5)/ 4096.0
+
+func _ia_reglas(reglas: Array[String]) -> int:
+	for regla in reglas:
+		var partes:= regla.split(":")
+		var i:= -1
+		match partes[0]:
+			"espacio_raro":
+				if espacio_raro== 0:
+					i= _indice_mov(r, "trick_room")
+			"carga":
+				if r.cargado== 0 and r.pokemon.ps_actuales* 2> r.pokemon.ps_max():
+					i= _indice_mov(r, "charge")
+			"empapar":
+				if j.tipos()!= ["agua"]:
+					i= _indice_mov(r, "soak")
+			"confundir":
+				var mov_c: String= partes[1] if partes.size()> 1 else "confuse_ray"
+				if j.confusion== 0 and (mov_c!= "swagger" or int(j.etapas.get("ataque", 0))< 2):
+					i= _indice_mov(r, mov_c)
+			"estado":
+				if j.pokemon.estado== "" and partes.size()> 1:
+					i= _indice_mov(r, partes[1])
+			"subir":
+				if partes.size()> 3 and int(r.etapas.get(partes[2], 0))< int(partes[3]):
+					i= _indice_mov(r, partes[1])
+			"relevo":
+				if _subidas(r)>= 2:
+					for o in equipo_r:
+						if o!= r.pokemon and not o.esta_debilitado():
+							i= _indice_mov(r, "baton_pass")
+							break
+			"danio":
+				i= _mejor_danio()
+		if i>= 0 and r.pokemon.pp[i]> 0:
+			return i
+	return _mejor_danio()
+
+func _indice_mov(l: Luchador, id: String) -> int:
+	for k in l.pokemon.movimientos.size():
+		if l.pokemon.movimientos[k].id== id:
+			return k
+	return -1
+
+func estimar_danio(a: Luchador, d: Luchador, mov: Movimiento) -> float:
+	if mov.categoria== "estado":
+		return 0.0
+	var ef:= Tipos.efectividad(mov.tipo, d.tipos())
+	if ef== 0.0:
+		return 0.0
+	var fisico:= mov.categoria== "fisico"
+	var fuente: Luchador= d if mov.id== "foul_play" else a
+	var ataque:= fuente.stat_efectivo("ataque" if fisico else "at_esp")
+	var defensa:= d.stat_efectivo("defensa" if fisico else "def_esp")
+	var poder:= mov.poder if mov.id== "magnitude" else poder_de(a, d, mov)
+	var base:= (2.0* a.pokemon.nivel/ 5.0+ 2.0)* poder* ataque/ maxf(1.0, defensa)/ 50.0+ 2.0
+	if mov.tipo in a.tipos():
+		base*= 1.5+ EfectosTrinket.total("stab", a.pokemon)
+	var prec:= 1.0 if mov.precision<= 0 else mov.precision/ 100.0
+	return base* ef* prec* 0.925
+
+func _mejor_danio() -> int:
+	var mejor:= -1
+	var valor:= -1.0
+	for k in r.pokemon.movimientos.size():
+		if r.pokemon.pp[k]<= 0:
+			continue
+		var v:= estimar_danio(r, j, r.pokemon.movimientos[k])
+		if v> valor:
+			valor= v
+			mejor =k
+	if valor<= 0.0:
+		var opciones:= []
+		for k in r.pokemon.movimientos.size():
+			if r.pokemon.pp[k]> 0:
+				opciones.append(k)
+		return -1 if opciones.is_empty() else opciones[rng.randi_range(0, opciones.size()- 1)]
+	return mejor

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://c6l3lgor82dhi"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_entrada"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="2_equipo"]
+[ext_resource type="Resource" uid="uid://nvk5dib584xn" path="res://Datos/Especies/ducklett.tres" id="e0"]
+[ext_resource type="Resource" uid="uid://dd54fremw7wjf" path="res://Datos/Especies/mareep.tres" id="e1"]
+
+[sub_resource type="Resource" id="Miembro_0"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e0")
+nivel_min = 11
+nivel_max = 11
+peso = 1
+
+[sub_resource type="Resource" id="Miembro_1"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e1")
+nivel_min = 11
+nivel_max = 11
+peso = 1
+
+[resource]
+script = ExtResource("2_equipo")
+clase = "Juvenil"
+nombre = "Lara"
+miembros = Array[ExtResource("1_entrada")]([SubResource("Miembro_0"), SubResource("Miembro_1")])
+pago_base = 40

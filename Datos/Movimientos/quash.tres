@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_85rhb"]
+
+[resource]
+script = ExtResource("1_85rhb")
+id = "quash"
+nombre = "Último Lugar"
+tipo = "siniestro"
+categoria = "estado"
+pp = 15
+meta = "unique"
+descripcion = "Consigue que el objetivo sea el último en moverse."

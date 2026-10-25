@@ -1,0 +1,97 @@
+[gd_scene format=4 uid="uid://3woa2ikiir71"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_dtmfd"]
+[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="2_cpg2w"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_fcoie"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_rxqcc"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_eksdc"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_wm68f"]
+[ext_resource type="Script" uid="uid://e5xkutdy0347" path="res://Scripts/desafio.gd" id="7_l4e6i"]
+[ext_resource type="SpriteFrames" uid="uid://coktisehv5kr" path="res://Recursos/Personajes/laboca_guia.tres" id="8_ts8tn"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="9_b8n53"]
+[ext_resource type="SpriteFrames" uid="uid://cop8j46pdthlq" path="res://Recursos/Personajes/rutas_turista.tres" id="10_vpw8y"]
+[ext_resource type="SpriteFrames" uid="uid://dhj7uanei3ln7" path="res://Recursos/Personajes/joven.tres" id="11_gnalp"]
+
+[node name="UsinaDelArte" type="Node2D" unique_id=1422927140]
+y_sort_enabled = true
+script = ExtResource("1_dtmfd")
+fondo_batalla = ExtResource("2_cpg2w")
+musica = "pueblo"
+zona_id = "la_boca"
+zona_nombre = "La Boca"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=667371121]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACAADAAEAAAAAAAEACAAEAAEAAAAAAAIACAACAAAAAAAAAAMACAACAAAAAAAAAAQACAACAAAAAAAAAAUACAADAAAAAAAAAAYACAACAAAAAAAAAAcACAACAAAAAAAAAAgACAACAAAAAAABAAAACAAHAAEAAAABAAEACAAHAAIAAAABAAIACAACAAAAAAABAAMACAACAAAAAAABAAQACAACAAAAAAABAAUACAACAAAAAAABAAYACAADAAAAAAABAAcACAACAAAAAAABAAgACAACAAAAAAACAAAACAADAAEAAAACAAEACAAEAAEAAAACAAIACAADAAAAAAACAAMACAACAAAAAAACAAQACAACAAAAAAACAAUACAACAAAAAAACAAYACAACAAAAAAACAAcACAADAAAAAAACAAgACAACAAAAAAADAAAACAAFAAEAAAADAAEACAAEAAEAAAADAAIACAACAAAAAAADAAMACAADAAAAAAADAAQACAACAAAAAAADAAUACAACAAAAAAADAAYACAACAAAAAAADAAcACAACAAAAAAADAAgACAADAAAAAAAEAAAACAADAAEAAAAEAAEACAAEAAEAAAAEAAIACAACAAAAAAAEAAMACAACAAAAAAAEAAQACAADAAAAAAAEAAUACAACAAAAAAAEAAYACAACAAAAAAAEAAcACAACAAAAAAAEAAgACAACAAAAAAAFAAAACAAGAAMAAAAFAAEACAAEAAEAAAAFAAIACAACAAAAAAAFAAMACAACAAAAAAAFAAQACAACAAAAAAAFAAUACAADAAAAAAAFAAYACAACAAAAAAAFAAcACAACAAAAAAAFAAgACAACAAAAAAAGAAAACAAHAAMAAAAGAAEACAAEAAEAAAAGAAIACAACAAAAAAAGAAMACAAEAAAAAAAGAAQACAAEAAAAAAAGAAUACAAEAAAAAAAGAAYACAAEAAAAAAAGAAcACAAEAAAAAAAGAAgACAACAAUAAAAHAAAACAADAAEAAAAHAAEACAAEAAEAAAAHAAIACAADAAAAAAAHAAMACAACAAAAAAAHAAQACAACAAAAAAAHAAUACAACAAAAAAAHAAYACAACAAAAAAAHAAcACAADAAAAAAAHAAgACAACAAAAAAAIAAAACAAGAAEAAAAIAAEACAAEAAEAAAAIAAIACAACAAAAAAAIAAMACAADAAAAAAAIAAQACAACAAAAAAAIAAUACAACAAAAAAAIAAYACAACAAAAAAAIAAcACAACAAAAAAAIAAgACAADAAAAAAAJAAAACAADAAEAAAAJAAEACAAEAAEAAAAJAAIACAACAAAAAAAJAAMACAACAAAAAAAJAAQACAADAAAAAAAJAAUACAACAAAAAAAJAAYACAACAAAAAAAJAAcACAACAAAAAAAJAAgACAACAAAAAAAKAAAACAAHAAEAAAAKAAEACAAHAAIAAAAKAAIACAACAAAAAAAKAAMACAACAAAAAAAKAAQACAACAAAAAAAKAAUACAADAAAAAAAKAAYACAACAAAAAAAKAAcACAACAAAAAAAKAAgACAACAAAAAAALAAAACAADAAEAAAALAAEACAAEAAEAAAALAAIACAACAAAAAAALAAMACAACAAAAAAALAAQACAACAAAAAAALAAUACAACAAAAAAALAAYACAADAAAAAAALAAcACAACAAAAAAALAAgACAACAAAAAAA=")
+tile_set = ExtResource("3_fcoie")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1324792666]
+z_index = -1
+tile_set = ExtResource("3_fcoie")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=542685925]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAD//wgABgAHAAIAAAD//wkABgAHAAIAAAAAAP//BgAHAAIAAAAAAAIACAAFAAMAAAAAAAYACAAFAAMAAAAAAAkABgAHAAIAAAABAP//BgAHAAIAAAABAAkABgAHAAIAAAACAP//BgAHAAIAAAACAAkABgAHAAIAAAADAP//BgAHAAIAAAADAAMACAACAAMAAAADAAkABgAHAAIAAAAEAP//BgAHAAIAAAAEAAMACAADAAMAAAAEAAkABgAHAAIAAAAFAP//BgAHAAIAAAAFAAMACAAEAAMAAAAFAAkABgAHAAIAAAAGAP//BgAHAAIAAAAGAAkABgAHAAIAAAAHAP//BgAHAAIAAAAHAAMACAACAAMAAAAHAAkABgAHAAIAAAAIAP//BgAHAAIAAAAIAAMACAADAAMAAAAIAAkABgAHAAIAAAAJAP//BgAHAAIAAAAJAAMACAAEAAMAAAAJAAkABgAHAAIAAAAKAP//BgAHAAIAAAAKAAkABgAHAAIAAAALAP//BgAHAAIAAAALAAIACAAFAAMAAAALAAYACAAFAAMAAAALAAkABgAHAAIAAAAMAP//BgAHAAIAAAAMAAAABgAHAAIAAAAMAAEABgAHAAIAAAAMAAIABgAHAAIAAAAMAAMABgAHAAIAAAAMAAQABgAHAAIAAAAMAAUABgAHAAIAAAAMAAYABgAHAAIAAAAMAAcABgAHAAIAAAAMAAgABgAHAAIAAAAMAAkABgAHAAIAAAA=")
+tile_set = ExtResource("3_fcoie")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=1865884855]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=182745705]
+position = Vector2(104, 120)
+
+[node name="Salida" type="Node2D" parent="." unique_id=43113128]
+position = Vector2(104, 136)
+script = ExtResource("5_eksdc")
+destino = "res://Escenas/Mapa.tscn"
+llegada = "PuertaUsina"
+salir_empujando = true
+
+[node name="Anfitriona" parent="." unique_id=1999008602 instance=ExtResource("6_wm68f")]
+position = Vector2(104, 40)
+script = ExtResource("7_l4e6i")
+nombre_desafio = "Desafío de la Usina"
+pool = Array[String]([])
+texto_bienvenida = "¡Bienvenido a la Usina del Arte! Antes era una usina eléctrica; hoy acá se juntan los mejores entrenadores para el Desafío."
+
+[node name="AnimatedSprite2D" parent="Anfitriona" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_ts8tn")
+animation = &"abajo"
+
+[node name="Visitante" parent="." unique_id=2069512775 instance=ExtResource("6_wm68f")]
+position = Vector2(40, 104)
+script = ExtResource("9_b8n53")
+objeto_regalo = ""
+cantidad_regalo = 1
+trinket_regalo = "talisman_retador"
+clave_objeto = "regalo_visitante_usina"
+texto_antes = "¿Vas a entrar al Desafío? Tomá, este amuleto me lo regaló un campeón. Dice que hace brillar a quien pelea."
+texto_despues = "El Talismán del Retador sube la calificación del Pokémon que lo lleva. Mejor calificación, mejores Trinkets."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "Vine a ver un concierto y terminé mirando combates. ¡Esto es mejor!"
+mirando = Vector2(1, 0)
+
+[node name="AnimatedSprite2D" parent="Visitante" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("10_vpw8y")
+animation = &"abajo"
+
+[node name="Guia" parent="." unique_id=1696459465 instance=ExtResource("6_wm68f")]
+position = Vector2(152, 104)
+texto = "Cada ciudad te da cinco Fichas la primera vez que llegás. Ganar en la Usina gasta una ficha y le sube un nivel a tu Pokémon. Si perdés, la ficha vuelve."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="Guia" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("11_gnalp")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_rxqcc")]
+position = Vector2(104, 120)
+
+[editable path="Anfitriona"]
+[editable path="Visitante"]
+[editable path="Guia"]

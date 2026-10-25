@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_gj42f"]
+
+[resource]
+script = ExtResource("1_gj42f")
+id = "stockpile"
+nombre = "Reserva"
+categoria = "estado"
+precision = 0
+pp = 20
+objetivo = "user"
+meta = "unique"
+descripcion = "Acumula energía y sube la Defensa y la Defensa Especial. Puede utilizarse hasta tres veces."
+cambios_stats = {
+"def_esp": 1,
+"defensa": 1
+}

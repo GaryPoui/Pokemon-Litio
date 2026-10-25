@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_d4l53"]
+
+[resource]
+script = ExtResource("1_d4l53")
+id = "howl"
+nombre = "Aullido"
+categoria = "estado"
+precision = 0
+pp = 40
+objetivo = "user-and-allies"
+meta = "net-good-stats"
+descripcion = "Aullido que sube el ánimo y aumenta el Ataque del equipo. "
+cambios_stats = {
+"ataque": 1
+}

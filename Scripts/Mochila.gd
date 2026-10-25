@@ -9,6 +9,7 @@ const FILAS :=7
 const ALTO_FILA:= 16
 const ALTO_ACCION :=14
 const ESCENA_EQUIPO :="res://Escenas/UI/PantallaEquipo.tscn"
+const ESCENA_APRENDER:= "res://Escenas/UI/AprenderMovimiento.tscn"
 
 var is_open: bool= false
 var ocupado:= false
@@ -265,12 +266,16 @@ func _usar_en_combate(item_id: String) -> void:
 	if o== null or not bool(filtro_combate.call(o)):
 		_error("¡No es momento de usar esto!")
 		return
-	if o.cura_ps<= 0:
+	if o.cura_ps<= 0 and o.cura_estado== "" and o.revivir<= 0.0:
 		resultado_combate= {"id": item_id}
 		close()
 		return
 	var sin_efecto:= func(i: int) -> String:
 		var p:= Equipo.miembros[i]
+		if o.revivir> 0.0:
+			return "" if p.esta_debilitado() else "No tendrá ningún efecto."
+		if o.cura_estado!= "":
+			return "" if not p.esta_debilitado() and p.estado!= "" and (o.cura_estado== "todos" or p.estado== o.cura_estado) else "No tendrá ningún efecto."
 		return "No tendrá ningún efecto." if p.esta_debilitado() or p.ps_actuales>= p.ps_max() else ""
 	ocupado= true
 	var pantalla_equipo= await _abrir_equipo("¿En qué Pokémon usar %s?" % o.nombre, sin_efecto)
@@ -309,7 +314,38 @@ func _usar(item_id: String) -> void:
 	var o:= Inventario.get_objeto(item_id)
 	if o== null or Inventario.cantidad_de(item_id)<= 0:
 		return
-	if o.cura_ps> 0:
+	if o.movimiento_mt!= "":
+		await _usar_mt(o)
+	elif o.revivir> 0.0:
+		var i:= await _elegir_pokemon("¿A qué Pokémon reanimar con %s?" % o.nombre)
+		if i< 0:
+			return
+		var p:= Equipo.miembros[i]
+		if not p.esta_debilitado():
+			_error("No tendrá ningún efecto.")
+			return
+		Inventario.consumir(item_id)
+		p.ps_actuales= maxi(1, floori(p.ps_max()* o.revivir))
+		p.estado =""
+		Sonido.efecto("curar_ps")
+		_show_status("%s se reanimó." % p.nombre())
+	elif o.cura_estado!= "":
+		var i:= await _elegir_pokemon("¿En qué Pokémon usar %s?" % o.nombre)
+		if i< 0:
+			return
+		var p:= Equipo.miembros[i]
+		if p.esta_debilitado() or p.estado== "" or (o.cura_estado!= "todos" and p.estado!= o.cura_estado):
+			_error("No tendrá ningún efecto.")
+			return
+		Inventario.consumir(item_id)
+		p.estado= ""
+		Sonido.efecto("curar_estado")
+		_show_status("%s ya está bien." % p.nombre())
+	elif o.pasos_repelente> 0:
+		Inventario.consumir(item_id)
+		Estado.pasos_repelente= o.pasos_repelente
+		_show_status("Usaste %s. Los Pokémon débiles no aparecerán." % o.nombre)
+	elif o.cura_ps> 0:
 		var i:= await _elegir_pokemon("¿En qué Pokémon usar %s?" % o.nombre)
 		if i< 0:
 			return
@@ -326,6 +362,47 @@ func _usar(item_id: String) -> void:
 		_show_status("Usaste Repelente. Los Pokémon débiles no aparecerán.")
 	else:
 		_error("¡No es momento de usar esto!")
+
+func _usar_mt(o: Objeto) -> void:
+	var m:= BaseDatos.movimiento(o.movimiento_mt)
+	if m== null or Equipo.miembros.is_empty():
+		_error("No tienes ningún Pokémon.")
+		return
+	var valida:= func(i: int) -> String:
+		var q:= Equipo.miembros[i]
+		if not BaseDatos.puede_aprender_mt(q.especie.id, m.id):
+			return "%s no puede aprender %s." % [q.nombre(), m.nombre]
+		if q.movimientos.has(m):
+			return "%s ya conoce %s." % [q.nombre(), m.nombre]
+		return ""
+	ocupado= true
+	var pe= await _abrir_equipo("¿Quién aprende %s?" % m.nombre, valida)
+	await pe.cerrado
+	var i: int= pe.resultado
+	await GestorEscenas.fundido(func(): pe.queue_free())
+	ocupado =false
+	if i< 0:
+		return
+	var p:= Equipo.miembros[i]
+	if p.movimientos.size()< PokemonInstancia.MAX_MOVIMIENTOS:
+		p.movimientos.append(m)
+		p.pp.append(m.pp)
+		Sonido.jingle("aprender")
+		_show_status("¡%s aprendió %s!" % [p.nombre(), m.nombre])
+		return
+	ocupado= true
+	var panel= load(ESCENA_APRENDER).instantiate()
+	await GestorEscenas.fundido(func(): add_child(panel))
+	var k: int= await panel.elegir(p, m)
+	await GestorEscenas.fundido(func(): panel.queue_free())
+	ocupado =false
+	if k< 0 or k>= p.movimientos.size():
+		_show_status("%s no aprendió %s." % [p.nombre(), m.nombre])
+		return
+	var viejo:= p.movimientos[k].nombre
+	p.reemplazar_movimiento(k, m)
+	Sonido.jingle("aprender")
+	_show_status("%s olvidó %s y aprendió %s." % [p.nombre(), viejo, m.nombre])
 
 func _dar(item_id: String) -> void:
 	var o:= Inventario.get_objeto(item_id)

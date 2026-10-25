@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b4ig77n1cgvhi"]
+
+[ext_resource type="Texture2D" uid="uid://b4hsec6a7e7to" path="res://Assets/Overworld/Villa31/torre_terrazas.png" id="1_0mlx2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0mlx2"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_48y7c"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7oy30"]
+size = Vector2(16, 16)
+
+[node name="TorreTerrazas" type="StaticBody2D" unique_id=160321275]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1636269085]
+position = Vector2(-24, -160)
+texture = ExtResource("1_0mlx2")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=649943754]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_0mlx2")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=1885617530]
+position = Vector2(-16, 0)
+shape = SubResource("RectangleShape2D_48y7c")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=1782970343]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_7oy30")

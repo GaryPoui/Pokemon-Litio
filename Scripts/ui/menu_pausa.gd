@@ -5,6 +5,7 @@ signal cerrado
 const ESCENA_EQUIPO:= "res://Escenas/UI/PantallaEquipo.tscn"
 const ESCENA_POKEDEX :="res://Escenas/UI/Pokedex.tscn"
 const ESCENA_OPCIONES:= "res://Escenas/UI/Opciones.tscn"
+const PANTALLA_MEDALLAS :="res://Scripts/ui/medallas.gd"
 
 @onready var caja: Panel= $Caja
 @onready var dinero: Label =$Dinero/Texto
@@ -48,7 +49,10 @@ func abrir() -> void:
 	opciones= ["POKéDEX"]
 	if not Equipo.miembros.is_empty():
 		opciones.append("POKéMON")
-	opciones.append_array(["MOCHILA", "GUARDAR", "OPCIONES", "SALIR"])
+	opciones.append("MOCHILA")
+	if not Estado.medallas.is_empty():
+		opciones.append("MEDALLAS")
+	opciones.append_array(["GUARDAR", "OPCIONES", "SALIR"])
 	lista.poner(opciones, mini(lista.cursor, opciones.size()- 1))
 	caja.size.y =10+ opciones.size()* 14
 	caja.visible= true
@@ -86,14 +90,21 @@ func _elegir(op: String) -> void:
 				else:
 					await Dialogo.mostrar("No se pudo guardar la partida.")
 			ocupado =false
+		"MEDALLAS":
+			await _pantalla(PANTALLA_MEDALLAS, [])
 		"OPCIONES":
 			await _pantalla(ESCENA_OPCIONES, [])
 		"SALIR":
-			cerrar()
+			ocupado= true
+			var r: int= await Dialogo.preguntar("¿Querés cerrar el juego? Lo que no guardaste se va a perder.")
+			ocupado =false
+			if r== 0:
+				get_tree().quit()
 
 func _pantalla(ruta: String, args: Array) -> void:
 	ocupado= true
-	var p= load(ruta).instantiate()
+	var r= load(ruta)
+	var p= r.new() if r is GDScript else r.instantiate()
 	await GestorEscenas.fundido(func():
 		caja.visible =false
 		add_child(p)

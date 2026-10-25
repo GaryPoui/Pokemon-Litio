@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://c7yk34mo7o1bs"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_heqv0"]
+[ext_resource type="Resource" uid="uid://bast6r6qwer6i" path="res://Datos/Especies/scraggy.tres" id="2_8sjda"]
+[ext_resource type="Resource" uid="uid://cfeicotxmqami" path="res://Datos/Especies/poochyena.tres" id="3_hgdk1"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="4_jll1t"]
+
+[sub_resource type="Resource" id="Resource_lp0f7"]
+script = ExtResource("1_heqv0")
+especie = ExtResource("2_8sjda")
+nivel_min = 18
+nivel_max = 18
+peso = 1
+
+[sub_resource type="Resource" id="Resource_ijgll"]
+script = ExtResource("1_heqv0")
+especie = ExtResource("3_hgdk1")
+nivel_min = 17
+nivel_max = 17
+peso = 1
+trinkets = Array[String](["colmillo_afilado"])
+
+[resource]
+script = ExtResource("4_jll1t")
+clase = "Barwoman"
+nombre = "Vale"
+miembros = Array[ExtResource("1_heqv0")]([SubResource("Resource_lp0f7"), SubResource("Resource_ijgll")])
+pago_base = 50

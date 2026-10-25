@@ -12,6 +12,7 @@ var direccion_llegada: Vector2= Vector2.DOWN
 var posicion_llegada: Variant =null
 var ultima_zona_exterior_id:= ""
 var retorno: Dictionary ={}
+var por_cambio:= false
 @onready var cartel_zona: CanvasLayer= $CartelZona
 @onready var capa_transicion: CanvasLayer= $Transicion
 
@@ -88,6 +89,11 @@ func fundido(cambio: Callable, t: float= FUNDIDO_MENU) -> void:
 	await cambio.call()
 	await descubrir(t)
 
+func consumir_cambio() -> bool:
+	var v:= por_cambio
+	por_cambio= false
+	return v
+
 func recordar_retorno(ruta: String, punto: String) -> void:
 	retorno= {"ruta": ruta, "llegada": punto}
 
@@ -112,6 +118,7 @@ func cambiar_mapa(ruta: String, punto: String, direccion: Vector2) -> void:
 	en_transicion= true
 	llegada =punto
 	direccion_llegada= direccion
+	por_cambio= true
 	var salida:= create_tween()
 	salida.tween_property(velo, "modulate:a", 1.0, 0.25)
 	await salida.finished

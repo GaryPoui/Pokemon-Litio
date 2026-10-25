@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://vflcjt44ikdh"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_c7veh"]
+[ext_resource type="Resource" uid="uid://dujt7cdaoi0wm" path="res://Datos/Especies/murkrow.tres" id="2_efsm2"]
+[ext_resource type="Resource" uid="uid://bmiwu1x2x5dyt" path="res://Datos/Especies/purrloin.tres" id="3_2elm5"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="4_vyrts"]
+
+[sub_resource type="Resource" id="Resource_r46me"]
+script = ExtResource("1_c7veh")
+especie = ExtResource("2_efsm2")
+nivel_min = 18
+nivel_max = 18
+peso = 1
+
+[sub_resource type="Resource" id="Resource_yr5x8"]
+script = ExtResource("1_c7veh")
+especie = ExtResource("3_2elm5")
+nivel_min = 18
+nivel_max = 18
+peso = 1
+trinkets = Array[String](["pluma_veloz"])
+
+[resource]
+script = ExtResource("4_vyrts")
+clase = "DJ"
+nombre = "Nico"
+miembros = Array[ExtResource("1_c7veh")]([SubResource("Resource_r46me"), SubResource("Resource_yr5x8")])
+pago_base = 50

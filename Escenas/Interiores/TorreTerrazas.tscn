@@ -1,0 +1,97 @@
+[gd_scene format=4 uid="uid://n8q2h6q3bdc1"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_7umy4"]
+[ext_resource type="Texture2D" uid="uid://lfttg1begv2i" path="res://Assets/Produccion/Barrios/mugica/v03/fondo_batalla.png" id="2_ldm55"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_n4t6v"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_5e2hr"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_r4bmb"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_sn1x2"]
+[ext_resource type="Script" uid="uid://e5xkutdy0347" path="res://Scripts/desafio.gd" id="7_wlody"]
+[ext_resource type="SpriteFrames" uid="uid://b7cxigkbnqs60" path="res://Recursos/Personajes/guay_h.tres" id="8_5wip0"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="9_u0l7p"]
+[ext_resource type="SpriteFrames" uid="uid://bdcbiibfcjg1l" path="res://Recursos/Personajes/guay_m.tres" id="10_sb2qs"]
+[ext_resource type="SpriteFrames" uid="uid://dhj7uanei3ln7" path="res://Recursos/Personajes/joven.tres" id="11_apf5d"]
+
+[node name="TorreTerrazas" type="Node2D" unique_id=763207633]
+y_sort_enabled = true
+script = ExtResource("1_7umy4")
+fondo_batalla = ExtResource("2_ldm55")
+musica = "pueblo"
+zona_id = "villa_31"
+zona_nombre = "Barrio Mugica"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=109152379]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACAADAAEAAAAAAAEACAAEAAEAAAAAAAIACAACAAAAAAAAAAMACAACAAAAAAAAAAQACAACAAAAAAAAAAUACAADAAAAAAAAAAYACAACAAAAAAAAAAcACAACAAAAAAAAAAgACAACAAAAAAABAAAACAAHAAEAAAABAAEACAAHAAIAAAABAAIACAACAAAAAAABAAMACAACAAAAAAABAAQACAACAAAAAAABAAUACAACAAAAAAABAAYACAADAAAAAAABAAcACAACAAAAAAABAAgACAACAAAAAAACAAAACAADAAEAAAACAAEACAAEAAEAAAACAAIACAADAAAAAAACAAMACAACAAAAAAACAAQACAACAAAAAAACAAUACAACAAAAAAACAAYACAACAAAAAAACAAcACAADAAAAAAACAAgACAACAAAAAAADAAAACAADAAEAAAADAAEACAAEAAEAAAADAAIACAACAAAAAAADAAMACAADAAAAAAADAAQACAACAAAAAAADAAUACAACAAAAAAADAAYACAACAAAAAAADAAcACAACAAAAAAADAAgACAADAAAAAAAEAAAACAADAAEAAAAEAAEACAAEAAEAAAAEAAIACAACAAAAAAAEAAMACAACAAAAAAAEAAQACAADAAAAAAAEAAUACAACAAAAAAAEAAYACAACAAAAAAAEAAcACAACAAAAAAAEAAgACAACAAAAAAAFAAAACAAGAAMAAAAFAAEACAAEAAEAAAAFAAIACAACAAAAAAAFAAMACAACAAAAAAAFAAQACAACAAAAAAAFAAUACAADAAAAAAAFAAYACAACAAAAAAAFAAcACAACAAAAAAAFAAgACAACAAAAAAAGAAAACAAHAAMAAAAGAAEACAAEAAEAAAAGAAIACAACAAAAAAAGAAMACAAEAAAAAAAGAAQACAAEAAAAAAAGAAUACAAEAAAAAAAGAAYACAAEAAAAAAAGAAcACAAEAAAAAAAGAAgACAACAAUAAAAHAAAACAADAAEAAAAHAAEACAAEAAEAAAAHAAIACAADAAAAAAAHAAMACAACAAAAAAAHAAQACAACAAAAAAAHAAUACAACAAAAAAAHAAYACAACAAAAAAAHAAcACAADAAAAAAAHAAgACAACAAAAAAAIAAAACAADAAEAAAAIAAEACAAEAAEAAAAIAAIACAACAAAAAAAIAAMACAADAAAAAAAIAAQACAACAAAAAAAIAAUACAACAAAAAAAIAAYACAACAAAAAAAIAAcACAACAAAAAAAIAAgACAADAAAAAAAJAAAACAADAAEAAAAJAAEACAAEAAEAAAAJAAIACAACAAAAAAAJAAMACAACAAAAAAAJAAQACAADAAAAAAAJAAUACAACAAAAAAAJAAYACAACAAAAAAAJAAcACAACAAAAAAAJAAgACAACAAAAAAAKAAAACAAHAAEAAAAKAAEACAAHAAIAAAAKAAIACAACAAAAAAAKAAMACAACAAAAAAAKAAQACAACAAAAAAAKAAUACAADAAAAAAAKAAYACAACAAAAAAAKAAcACAACAAAAAAAKAAgACAACAAAAAAALAAAACAADAAEAAAALAAEACAAEAAEAAAALAAIACAACAAAAAAALAAMACAACAAAAAAALAAQACAACAAAAAAALAAUACAACAAAAAAALAAYACAADAAAAAAALAAcACAACAAAAAAALAAgACAACAAAAAAA=")
+tile_set = ExtResource("3_n4t6v")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1701558609]
+z_index = -1
+tile_set = ExtResource("3_n4t6v")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=1653591346]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAD//wgABgAHAAIAAAD//wkABgAHAAIAAAAAAP//BgAHAAIAAAAAAAIACAAFAAMAAAAAAAYACAAFAAMAAAAAAAkABgAHAAIAAAABAP//BgAHAAIAAAABAAkABgAHAAIAAAACAP//BgAHAAIAAAACAAkABgAHAAIAAAADAP//BgAHAAIAAAADAAAACAAEAAYAAAADAAMACAACAAMAAAADAAkABgAHAAIAAAAEAP//BgAHAAIAAAAEAAMACAADAAMAAAAEAAkABgAHAAIAAAAFAP//BgAHAAIAAAAFAAMACAAEAAMAAAAFAAkABgAHAAIAAAAGAP//BgAHAAIAAAAGAAkABgAHAAIAAAAHAP//BgAHAAIAAAAHAAMACAACAAMAAAAHAAkABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAACAACAAYAAAAIAAMACAADAAMAAAAIAAkABgAHAAIAAAAJAP//BgAHAAIAAAAJAAMACAAEAAMAAAAJAAkABgAHAAIAAAAKAP//BgAHAAIAAAAKAAkABgAHAAIAAAALAP//BgAHAAIAAAALAAIACAAFAAMAAAALAAYACAAFAAMAAAALAAkABgAHAAIAAAAMAP//BgAHAAIAAAAMAAAABgAHAAIAAAAMAAEABgAHAAIAAAAMAAIABgAHAAIAAAAMAAMABgAHAAIAAAAMAAQABgAHAAIAAAAMAAUABgAHAAIAAAAMAAYABgAHAAIAAAAMAAcABgAHAAIAAAAMAAgABgAHAAIAAAAMAAkABgAHAAIAAAA=")
+tile_set = ExtResource("3_n4t6v")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=482912399]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=682047734]
+position = Vector2(104, 120)
+
+[node name="Salida" type="Node2D" parent="." unique_id=1202891112]
+position = Vector2(104, 136)
+script = ExtResource("5_r4bmb")
+destino = "res://Escenas/Villa31.tscn"
+llegada = "PuertaTorre"
+salir_empujando = true
+
+[node name="Anfitrion" parent="." unique_id=1999008602 instance=ExtResource("6_sn1x2")]
+position = Vector2(104, 40)
+script = ExtResource("7_wlody")
+nombre_desafio = "Desafío de las Terrazas"
+pool = Array[String]([])
+texto_bienvenida = "¡Bienvenido a la Torre de las Terrazas! Piso por piso la levantaron los vecinos, y acá arriba se pelea de igual a igual."
+
+[node name="AnimatedSprite2D" parent="Anfitrion" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_5wip0")
+animation = &"abajo"
+
+[node name="Socia" parent="." unique_id=1509290769 instance=ExtResource("6_sn1x2")]
+position = Vector2(40, 104)
+script = ExtResource("9_u0l7p")
+objeto_regalo = ""
+cantidad_regalo = 1
+trinket_regalo = "cupon_socio"
+clave_objeto = "regalo_socia_torre"
+texto_antes = "¡Uh, una cara nueva! Tomá mi Cupón de Socio, yo ya tengo otro. Con eso los Trinkets salen más baratos."
+texto_despues = "El Cupón de Socio baja un 10% los precios de la tienda de Trinkets. ¡Sirve aunque no lo tenga puesto nadie!"
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "Soy socia de la torre desde que tenía tu edad."
+mirando = Vector2(1, 0)
+
+[node name="AnimatedSprite2D" parent="Socia" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("10_sb2qs")
+animation = &"abajo"
+
+[node name="Guia" parent="." unique_id=2125932386 instance=ExtResource("6_sn1x2")]
+position = Vector2(152, 104)
+texto = "Las Fichas de Desafío no son de una sola torre: las de La Boca también sirven acá. Cada victoria gasta una y le sube un nivel a tu Pokémon."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="Guia" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("11_apf5d")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_5e2hr")]
+position = Vector2(104, 120)
+
+[editable path="Anfitrion"]
+[editable path="Socia"]
+[editable path="Guia"]

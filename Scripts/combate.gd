@@ -5,6 +5,7 @@ signal termino(resultado: String)
 const ESCENA:= "res://Escenas/Batalla/Batalla.tscn"
 const CASA :="res://Escenas/Casa.tscn"
 const ESCENA_EVOLUCION:= "res://Escenas/UI/Evolucion.tscn"
+const ESCENA_APRENDER :="res://Escenas/UI/AprenderMovimiento.tscn"
 
 const POOL_HALLAZGO:= ["potion", "super_potion", "pokeball", "greatball", "oran", "repel"]
 
@@ -29,8 +30,10 @@ func iniciar_safari(especie: EspeciePokemon, nivel: int, ruta: String) -> String
 		await Dialogo.mostrar("Te quedaste sin Safari Balls. El guardaparque de la entrada te da más.")
 	return res
 
-func iniciar_entrenador(nombre: String, equipo: Array[PokemonInstancia], pago_base: int= 0) -> String:
-	return await _iniciar(equipo, false, nombre, {"pago_base": pago_base})
+func iniciar_entrenador(nombre: String, equipo: Array[PokemonInstancia], pago_base: int= 0, extra :Dictionary= {}) -> String:
+	var config:= {"pago_base": pago_base}
+	config.merge(extra)
+	return await _iniciar(equipo, false, nombre, config)
 
 func iniciar_torre(pokemon: PokemonInstancia, rival: PokemonInstancia) -> Dictionary:
 	var propio: Array[PokemonInstancia]= [pokemon]
@@ -45,7 +48,7 @@ func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String, c
 	if activo or rivales.is_empty() or not (safari or propio.any(func(p): return not p.esta_debilitado())):
 		return "cancelado"
 	activo= true
-	var pista:= "batalla_salvaje" if salvaje else "batalla_entrenador"
+	var pista:= "batalla_salvaje" if salvaje else ("batalla_lider" if bool(config.get("lider", false)) else "batalla_entrenador")
 	Sonido.musica(pista, 0.0)
 	if salvaje:
 		await GestorEscenas.barras_cubrir()
@@ -115,6 +118,38 @@ func _hallazgo() -> void:
 	Sonido.jingle("objeto")
 	await Dialogo.mostrar("¡Tu equipo encontró %s tras el combate!" % Inventario.get_item_name(id))
 	Sonido.cortar_jingle()
+
+func subir_nivel(p: PokemonInstancia) -> void:
+	var falta:= Crecimiento.exp_para_nivel(p.especie.crecimiento, p.nivel+ 1)- p.experiencia
+	var res:= p.ganar_experiencia(maxi(1, falta))
+	Sonido.jingle("subir_nivel")
+	await Dialogo.mostrar("¡%s subió al nivel %d!" % [p.nombre(), p.nivel])
+	for e in res:
+		match e["tipo"]:
+			"aprendio":
+				Sonido.jingle("aprender")
+				await Dialogo.mostrar("¡%s aprendió %s!" % [p.nombre(), e["movimiento"].nombre])
+			"quiere_aprender":
+				await _aprender_fuera(p, e["movimiento"])
+	if p.puede_evolucionar():
+		await _evolucionar(p)
+		var escena:= get_tree().current_scene
+		if escena!= null and "musica" in escena:
+			Sonido.musica(str(escena.get("musica")), 0.8)
+
+func _aprender_fuera(p: PokemonInstancia, m: Movimiento) -> void:
+	await Dialogo.mostrar("%s quiere aprender %s, pero ya conoce cuatro movimientos." % [p.nombre(), m.nombre])
+	var panel= load(ESCENA_APRENDER).instantiate()
+	await GestorEscenas.fundido(func(): add_child(panel))
+	var i: int= await panel.elegir(p, m)
+	await GestorEscenas.fundido(func(): panel.queue_free())
+	if i< 0 or i>= p.movimientos.size():
+		await Dialogo.mostrar("%s no aprendió %s." % [p.nombre(), m.nombre])
+		return
+	var viejo:= p.movimientos[i].nombre
+	p.reemplazar_movimiento(i, m)
+	Sonido.jingle("aprender")
+	await Dialogo.mostrar("1, 2 y... ¡Tachán! %s olvidó %s y aprendió %s." % [p.nombre(), viejo, m.nombre])
 
 func _evolucionar(p: PokemonInstancia) -> bool:
 	var e= load(ESCENA_EVOLUCION).instantiate()

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_paw7n"]
+
+[resource]
+script = ExtResource("1_paw7n")
+id = "signal_beam"
+nombre = "Rayo Señal"
+tipo = "bicho"
+categoria = "especial"
+poder = 75
+pp = 15
+meta = "damage-ailment"
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+estado = "confusion"
+prob_estado = 10

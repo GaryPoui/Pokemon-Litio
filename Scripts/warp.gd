@@ -6,6 +6,7 @@ extends Node2D
 @export var sonido :String= "puerta"
 @export var vuelta: String= ""
 @export var volver :=false
+@export var salir_empujando:= false
 
 func _ready() -> void:
 	add_to_group("warp")

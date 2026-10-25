@@ -21,6 +21,9 @@ const BUCLES:= {
 	"ps_bajo": 16.35773,
 	"evolucion": 10.16685,
 	"centro_pokemon" :8.05,
+	"gimnasio": 14.2,
+	"batalla_lider" :78.8,
+	"victoria_lider": 37.05,
 }
 
 var musica_actual :=""

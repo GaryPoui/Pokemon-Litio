@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bycb8r3e1cjo0"]
+
+[ext_resource type="Script" uid="uid://fshn7pus51oi" path="res://Scripts/barrera.gd" id="1_c1q4s"]
+[ext_resource type="Texture2D" uid="uid://gt70e8b51b48" path="res://Assets/Overworld/Gimnasios/barrera_22.png" id="2_y6cvt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y6cvt"]
+size = Vector2(352, 16)
+
+[node name="BarreraBoca" type="StaticBody2D" unique_id=97362383]
+script = ExtResource("1_c1q4s")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1412095462]
+position = Vector2(-176, -20)
+texture = ExtResource("2_y6cvt")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=997219846]
+shape = SubResource("RectangleShape2D_y6cvt")

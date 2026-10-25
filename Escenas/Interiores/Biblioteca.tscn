@@ -1,0 +1,81 @@
+[gd_scene format=4 uid="uid://geauowpqs6bi"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_i2min"]
+[ext_resource type="Texture2D" uid="uid://lfttg1begv2i" path="res://Assets/Produccion/Barrios/mugica/v03/fondo_batalla.png" id="2_6qoju"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_j5w86"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_a84wo"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_ujiii"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_yy6ct"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="7_x5u84"]
+[ext_resource type="SpriteFrames" uid="uid://c74rh52rjrowf" path="res://Recursos/Personajes/villa31_vecina.tres" id="8_80mkt"]
+[ext_resource type="SpriteFrames" uid="uid://dhj7uanei3ln7" path="res://Recursos/Personajes/joven.tres" id="9_3fxkc"]
+
+[node name="Biblioteca" type="Node2D" unique_id=886434788]
+y_sort_enabled = true
+script = ExtResource("1_i2min")
+fondo_batalla = ExtResource("2_6qoju")
+musica = "pueblo"
+zona_id = "villa_31"
+zona_nombre = "Barrio Mugica"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1465563338]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACAAFAAQAAAAAAAEACAAGAAQAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAABAAAACAAFAAQAAAABAAEACAAGAAQAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAACAAAACAAFAAQAAAACAAEACAAGAAQAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgABAAAAAAACAAUABgAAAAAAAAACAAYABgAAAAAAAAADAAAACAAFAAQAAAADAAEACAAGAAQAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgAAAAAAAAADAAUABgAAAAAAAAADAAYABgABAAAAAAAEAAAACAAFAAQAAAAEAAEACAAGAAQAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgAAAAAAAAAEAAUABgABAAAAAAAEAAYABgAGAAMAAAAFAAAACAAFAAQAAAAFAAEACAAGAAQAAAAFAAIABgAAAAAAAAAFAAMABgAAAAAAAAAFAAQABgABAAAAAAAFAAUABgAAAAAAAAAFAAYABgAAAAAAAAAGAAAACAAFAAQAAAAGAAEACAAGAAQAAAAGAAIABgAAAAAAAAAGAAMABgABAAAAAAAGAAQABgAAAAAAAAAGAAUABgAAAAAAAAAGAAYABgABAAAAAAAHAAAACAAFAAQAAAAHAAEACAAGAAQAAAAHAAIABgABAAAAAAAHAAMABgAAAAAAAAAHAAQABgAAAAAAAAAHAAUABgABAAAAAAAHAAYABgAAAAAAAAA=")
+tile_set = ExtResource("3_j5w86")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=293861475]
+z_index = -1
+tile_set = ExtResource("3_j5w86")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=336253149]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAEABgAFAAEAAAAAAAIABgAFAAIAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAEABgAGAAEAAAABAAIABgAGAAIAAAABAAQABgACAAMAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAQABgAAAAMAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAAACAAAAAYAAAADAAEACAABAAYAAAADAAQABgABAAMAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAEABgAFAAEAAAAEAAIABgAFAAIAAAAEAAQABgADAAMAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAEABgAGAAEAAAAFAAIABgAGAAIAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAAACAACAAYAAAAGAAEABgAFAAEAAAAGAAIABgAFAAIAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAEABgAGAAEAAAAHAAIABgAGAAIAAAAHAAYABgAHAAEAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_j5w86")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=314468831]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=2140985821]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=1325327930]
+position = Vector2(72, 104)
+script = ExtResource("5_ujiii")
+destino = "res://Escenas/Villa31.tscn"
+llegada = "PuertaBiblioteca"
+salir_empujando = true
+
+[node name="Bibliotecaria" parent="." unique_id=1999008602 instance=ExtResource("6_yy6ct")]
+position = Vector2(40, 40)
+script = ExtResource("7_x5u84")
+objeto_regalo = ""
+cantidad_regalo = 1
+trinket_regalo = "lente_enfocada"
+clave_objeto = "regalo_biblioteca"
+texto_antes = "Esta biblioteca popular la armamos con libros donados. Un libro de entrenamiento dice que el que mira bien, pega donde duele. Llevate esta lente."
+texto_despues = "La Lente Enfocada sube la probabilidad de golpe crítico de quien la lleva."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "Esta biblioteca popular la armamos con libros donados por los vecinos."
+
+[node name="AnimatedSprite2D" parent="Bibliotecaria" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_80mkt")
+animation = &"abajo"
+
+[node name="Estudiante" parent="." unique_id=602933283 instance=ExtResource("6_yy6ct")]
+position = Vector2(88, 56)
+texto = "Estoy leyendo sobre el padre Carlos Mugica. Vivía acá, en el barrio, y trabajaba codo a codo con los vecinos."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="Estudiante" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_3fxkc")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_a84wo")]
+position = Vector2(72, 88)
+
+[editable path="Bibliotecaria"]
+[editable path="Estudiante"]

@@ -1,0 +1,69 @@
+[gd_scene format=4 uid="uid://cyaps7x2q8pac"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_txtns"]
+[ext_resource type="Texture2D" uid="uid://lfttg1begv2i" path="res://Assets/Produccion/Barrios/mugica/v03/fondo_batalla.png" id="2_j5ivc"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_eye7x"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_y2dli"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_cddy5"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_ccn0y"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="7_f38v0"]
+[ext_resource type="SpriteFrames" uid="uid://ca1hpcrt52cx0" path="res://Recursos/Personajes/villa31_musico.tres" id="8_6cmuc"]
+
+[node name="EstudioDj" type="Node2D" unique_id=589287587]
+y_sort_enabled = true
+script = ExtResource("1_txtns")
+fondo_batalla = ExtResource("2_j5ivc")
+musica = "pueblo"
+zona_id = "villa_31"
+zona_nombre = "Barrio Mugica"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1207568404]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACAAHAAQAAAAAAAEACAAAAAUAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAABAAAACAAHAAQAAAABAAEACAAAAAUAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAACAAAACAAHAAQAAAACAAEACAAAAAUAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgAAAAQAAAACAAUABgADAAQAAAACAAYABgAAAAAAAAADAAAACAAHAAQAAAADAAEACAAAAAUAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgABAAQAAAADAAUABgAEAAQAAAADAAYABgABAAAAAAAEAAAACAAHAAQAAAAEAAEACAAAAAUAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgACAAQAAAAEAAUABgAFAAQAAAAEAAYABgAGAAMAAAAFAAAACAAHAAQAAAAFAAEACAAAAAUAAAAFAAIABgAAAAAAAAAFAAMABgAAAAAAAAAFAAQABgABAAAAAAAFAAUABgAAAAAAAAAFAAYABgAAAAAAAAAGAAAACAAHAAQAAAAGAAEACAAAAAUAAAAGAAIABgAAAAAAAAAGAAMABgABAAAAAAAGAAQABgAAAAAAAAAGAAUABgAAAAAAAAAGAAYABgABAAAAAAAHAAAACAAHAAQAAAAHAAEACAAAAAUAAAAHAAIABgABAAAAAAAHAAMABgAAAAAAAAAHAAQABgAAAAAAAAAHAAUABgABAAAAAAAHAAYABgAAAAAAAAA=")
+tile_set = ExtResource("3_eye7x")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1392030355]
+z_index = -1
+tile_set = ExtResource("3_eye7x")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=630269496]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAIACAACAAQAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAAACAAAAAYAAAABAAEACAABAAYAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAEABgADAAEAAAAEAAIABgADAAIAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAAACAACAAYAAAAFAAEABgAEAAEAAAAFAAIABgAEAAIAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAQABgAEAAMAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAQABgAFAAMAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_eye7x")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=1903212857]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=529483123]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=1214610257]
+position = Vector2(72, 104)
+script = ExtResource("5_cddy5")
+destino = "res://Escenas/Villa31.tscn"
+llegada = "PuertaEstudio"
+salir_empujando = true
+
+[node name="Dj" parent="." unique_id=1999008602 instance=ExtResource("6_ccn0y")]
+position = Vector2(56, 40)
+script = ExtResource("7_f38v0")
+objeto_regalo = ""
+cantidad_regalo = 1
+trinket_regalo = "moneda_amuleto"
+clave_objeto = "regalo_dj"
+texto_antes = "¡Ey! ¿Te gusta la cumbia? Tomá esta moneda: me la tiraron en un baile y desde entonces me va bien. Que a vos también te dé suerte."
+texto_despues = "La Moneda Amuleto hace ganar más plata en cada combate contra entrenadores."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "Acá grabo cumbia con lo que hay: un gramófono viejo y una tele que hace de parlante."
+
+[node name="AnimatedSprite2D" parent="Dj" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_6cmuc")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_y2dli")]
+position = Vector2(72, 88)
+
+[editable path="Dj"]

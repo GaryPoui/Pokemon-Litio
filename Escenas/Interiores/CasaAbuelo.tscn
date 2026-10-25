@@ -1,0 +1,69 @@
+[gd_scene format=4 uid="uid://c7aicns6yrfvp"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_e6maw"]
+[ext_resource type="Texture2D" uid="uid://lfttg1begv2i" path="res://Assets/Produccion/Barrios/mugica/v03/fondo_batalla.png" id="2_oxy1u"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_vbfyi"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_ma3uy"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_q313q"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_wgmc1"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="7_a8rr0"]
+[ext_resource type="SpriteFrames" uid="uid://ejcw2f3o5t33" path="res://Recursos/Personajes/maestro.tres" id="8_x5yen"]
+
+[node name="CasaAbuelo" type="Node2D" unique_id=1654316070]
+y_sort_enabled = true
+script = ExtResource("1_e6maw")
+fondo_batalla = ExtResource("2_oxy1u")
+musica = "pueblo"
+zona_id = "villa_31"
+zona_nombre = "Barrio Mugica"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=568097185]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAACAADAAEAAAAAAAEACAAEAAEAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAABAAAACAADAAEAAAABAAEACAAEAAEAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAACAAAACAAHAAEAAAACAAEACAAHAAIAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgAAAAQAAAACAAUABgADAAQAAAACAAYABgAAAAAAAAADAAAACAADAAEAAAADAAEACAAEAAEAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgABAAQAAAADAAUABgAEAAQAAAADAAYABgABAAAAAAAEAAAACAADAAEAAAAEAAEACAAEAAEAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgACAAQAAAAEAAUABgAFAAQAAAAEAAYABgAGAAMAAAAFAAAACAAHAAEAAAAFAAEACAAHAAIAAAAFAAIABgAAAAAAAAAFAAMABgAAAAAAAAAFAAQABgABAAAAAAAFAAUABgAAAAAAAAAFAAYABgAAAAAAAAAGAAAACAADAAEAAAAGAAEACAAEAAEAAAAGAAIABgAAAAAAAAAGAAMABgABAAAAAAAGAAQABgAAAAAAAAAGAAUABgAAAAAAAAAGAAYABgABAAAAAAAHAAAACAADAAEAAAAHAAEACAAEAAEAAAAHAAIABgABAAAAAAAHAAMABgAAAAAAAAAHAAQABgAAAAAAAAAHAAUABgABAAAAAAAHAAYABgAAAAAAAAA=")
+tile_set = ExtResource("3_vbfyi")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=677848369]
+z_index = -1
+tile_set = ExtResource("3_vbfyi")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=561273912]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAAAAP//BgAHAAIAAAAAAAEABgAFAAEAAAAAAAIABgAFAAIAAAAAAAcABgAHAAIAAAABAP//BgAHAAIAAAABAAEABgAGAAEAAAABAAIABgAGAAIAAAABAAcABgAHAAIAAAACAP//BgAHAAIAAAACAAcABgAHAAIAAAADAP//BgAHAAIAAAADAAcABgAHAAIAAAAEAP//BgAHAAIAAAAEAAcABgAHAAIAAAAFAP//BgAHAAIAAAAFAAIABgAEAAMAAAAFAAcABgAHAAIAAAAGAP//BgAHAAIAAAAGAAIABgAFAAMAAAAGAAcABgAHAAIAAAAHAP//BgAHAAIAAAAHAAYABgAHAAEAAAAHAAcABgAHAAIAAAAIAP//BgAHAAIAAAAIAAAABgAHAAIAAAAIAAEABgAHAAIAAAAIAAIABgAHAAIAAAAIAAMABgAHAAIAAAAIAAQABgAHAAIAAAAIAAUABgAHAAIAAAAIAAYABgAHAAIAAAAIAAcABgAHAAIAAAA=")
+tile_set = ExtResource("3_vbfyi")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=1714017385]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=1828619620]
+position = Vector2(72, 88)
+
+[node name="Salida" type="Node2D" parent="." unique_id=225822162]
+position = Vector2(72, 104)
+script = ExtResource("5_q313q")
+destino = "res://Escenas/Villa31.tscn"
+llegada = "PuertaAbuelo"
+salir_empujando = true
+
+[node name="Abuelo" parent="." unique_id=1999008602 instance=ExtResource("6_wgmc1")]
+position = Vector2(56, 56)
+script = ExtResource("7_a8rr0")
+objeto_regalo = "hyper_potion"
+cantidad_regalo = 1
+trinket_regalo = ""
+clave_objeto = "regalo_abuelo"
+texto_antes = "Cuando llegué al barrio no había ni calles: barro y chapas. Lo levantamos todo entre vecinos. Tomá, guardé esto para un entrenador que lo necesite."
+texto_despues = "Cuidá a tus Pokémon como cuidamos este barrio: entre todos."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "Cuando llegué al barrio no había ni calles. Lo hicimos todo nosotros."
+
+[node name="AnimatedSprite2D" parent="Abuelo" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_x5yen")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_ma3uy")]
+position = Vector2(72, 88)
+
+[editable path="Abuelo"]

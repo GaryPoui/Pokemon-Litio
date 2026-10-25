@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://cojbry2epus0n" path="res://Assets/Overworld/LaBoca/unificado/casa_violeta.png" id="5_p0xwe"]
 [ext_resource type="Texture2D" uid="uid://e8ysw2prtosm" path="res://Assets/Overworld/LaBoca/unificado/casa_roja.png" id="6_p0xwe"]
 [ext_resource type="Texture2D" uid="uid://d23a5111epih3" path="res://Assets/Overworld/LaBoca/unificado/cafe_caminito.png" id="7_p0xwe"]
-[ext_resource type="Texture2D" uid="uid://nwcqmuwsmyj0" path="res://Assets/Overworld/LaBoca/unificado/kiosco.png" id="8_p0xwe"]
 [ext_resource type="Texture2D" uid="uid://dcahs6en1tpas" path="res://Assets/Overworld/LaBoca/unificado/fuente_plaza.png" id="16_p0xwe"]
 [ext_resource type="Texture2D" uid="uid://jtk03cak6yc6" path="res://Assets/Overworld/LaBoca/unificado/arbol_plaza.png" id="18_4e5q2"]
 [ext_resource type="Texture2D" uid="uid://btitu434d5j4g" path="res://Assets/Overworld/LaBoca/unificado/cartel_orientacion.png" id="24_4e5q2"]
@@ -16,6 +15,8 @@
 [ext_resource type="Texture2D" uid="uid://dntwtyl2h2rce" path="res://Assets/Overworld/LaBoca/unificado/redes_pesca.png" id="38_4e5q2"]
 [ext_resource type="Texture2D" uid="uid://3ie7mmwlhweu" path="res://Assets/Overworld/LaBoca/unificado/lancha_riachuelo.png" id="46_4e5q2"]
 [ext_resource type="Texture2D" uid="uid://d0bq43ou73x1y" path="res://Assets/Overworld/LaBoca/unificado/puente_transbordador.png" id="49_4e5q2"]
+[ext_resource type="Texture2D" uid="uid://h4w12byft5op" path="res://Assets/Overworld/LaBoca/unificado/usina_del_arte.png" id="52_4e5q2"]
+[ext_resource type="Texture2D" uid="uid://dk8yax8sii8ul" path="res://Assets/Overworld/LaBoca/unificado/almacen_pokemon.png" id="52_p6bjc"]
 [ext_resource type="Texture2D" uid="uid://cm48plq35hfl2" path="res://Assets/Overworld/nuevo50_16_mesa_cafe.png" id="tex_9"]
 [ext_resource type="Texture2D" uid="uid://np1wknttetkh" path="res://Assets/Overworld/nuevo50_17_sombrilla_mesa.png" id="tex_10"]
 [ext_resource type="Texture2D" uid="uid://blx613g07fvkc" path="res://Assets/Overworld/nuevo50_21_bicicletero.png" id="tex_11"]
@@ -36,7 +37,6 @@
 [ext_resource type="Texture2D" uid="uid://ds33b5jxdals8" path="res://Assets/Overworld/nuevo50_22_bicicleta_apoyada.png" id="tex_29"]
 [ext_resource type="Texture2D" uid="uid://crxj58klwbqa1" path="res://Assets/Overworld/nuevo50_48_cartel_parada.png" id="tex_30"]
 [ext_resource type="Texture2D" uid="uid://xsh0ali3gph3" path="res://Assets/Overworld/nuevo50_11_carrito_choripan.png" id="tex_31"]
-[ext_resource type="Texture2D" uid="uid://bc4x44gb23dcq" path="res://Assets/Overworld/nuevo50_09_galpon_portuario.png" id="tex_32"]
 [ext_resource type="Texture2D" uid="uid://bk74q10a7aiel" path="res://Assets/Overworld/nuevo50_34_barriles_combustible.png" id="tex_33"]
 [ext_resource type="Texture2D" uid="uid://bh0kgwdxfr5jj" path="res://Assets/Overworld/nuevo50_37_carrete_cable.png" id="tex_35"]
 [ext_resource type="Texture2D" uid="uid://bn1fxq1unp6ou" path="res://Assets/Overworld/nuevo50_36_pila_maderas.png" id="tex_36"]
@@ -54,7 +54,13 @@
 [ext_resource type="Texture2D" uid="uid://tr30kcdl3ynm" path="res://Assets/Overworld/calle_extra_07_parche_vereda_rota.png" id="tex_51"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5m8yl"]
-size = Vector2(64, 64)
+size = Vector2(64, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lghvw"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p2vn0"]
+size = Vector2(16, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cxvrq"]
 size = Vector2(80, 48)
@@ -66,22 +72,49 @@ size = Vector2(32, 16)
 size = Vector2(32, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3aved"]
-size = Vector2(64, 64)
+size = Vector2(64, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p6pt7"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v21i1"]
+size = Vector2(16, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ajhi"]
-size = Vector2(64, 64)
+size = Vector2(64, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrd6s"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iav1c"]
+size = Vector2(32, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6e6gk"]
-size = Vector2(48, 64)
+size = Vector2(48, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2nmsl"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8q2m0"]
+size = Vector2(16, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wyaga"]
-size = Vector2(80, 64)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_l1oo6"]
 size = Vector2(80, 48)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ca386"]
-size = Vector2(48, 32)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8x61q"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_517aq"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l1oo6"]
+size = Vector2(80, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2udy"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iid00"]
+size = Vector2(48, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_082mk"]
 size = Vector2(32, 16)
@@ -230,9 +263,6 @@ size = Vector2(32, 16)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0m58k"]
 size = Vector2(16, 16)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ay6lw"]
-size = Vector2(80, 48)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xi0df"]
 size = Vector2(32, 16)
 
@@ -338,6 +368,24 @@ size = Vector2(16, 64)
 [sub_resource type="RectangleShape2D" id="forma_18"]
 size = Vector2(16, 48)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ay6lw"]
+size = Vector2(80, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_loubu"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qiorh"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ca386"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jrbw1"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fo5xw"]
+size = Vector2(16, 16)
+
 [node name="DecoracionLaBoca" type="Node2D" unique_id=585864569]
 y_sort_enabled = true
 texture_filter = 1
@@ -350,8 +398,16 @@ position = Vector2(0, -32)
 texture = ExtResource("1_p0xwe")
 
 [node name="Colision" type="CollisionShape2D" parent="CasaAzul" unique_id=364318413]
-position = Vector2(0, -24)
+position = Vector2(0, -32)
 shape = SubResource("RectangleShape2D_5m8yl")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="CasaAzul" unique_id=249168040]
+position = Vector2(-16, 0)
+shape = SubResource("RectangleShape2D_lghvw")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="CasaAzul" unique_id=1567247306]
+position = Vector2(24, 0)
+shape = SubResource("RectangleShape2D_p2vn0")
 
 [node name="CasaAmarilla" type="StaticBody2D" parent="." unique_id=66437842]
 position = Vector2(288, 152)
@@ -380,8 +436,16 @@ position = Vector2(0, -32)
 texture = ExtResource("3_p0xwe")
 
 [node name="Colision" type="CollisionShape2D" parent="CasaVerde" unique_id=826569725]
-position = Vector2(0, -24)
+position = Vector2(0, -32)
 shape = SubResource("RectangleShape2D_3aved")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="CasaVerde" unique_id=1815241337]
+position = Vector2(-16, 0)
+shape = SubResource("RectangleShape2D_p6pt7")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="CasaVerde" unique_id=89008010]
+position = Vector2(24, 0)
+shape = SubResource("RectangleShape2D_v21i1")
 
 [node name="CasaNaranja" type="StaticBody2D" parent="." unique_id=1889939331]
 position = Vector2(480, 152)
@@ -391,8 +455,16 @@ position = Vector2(0, -32)
 texture = ExtResource("4_p0xwe")
 
 [node name="Colision" type="CollisionShape2D" parent="CasaNaranja" unique_id=1689439964]
-position = Vector2(0, -24)
+position = Vector2(0, -32)
 shape = SubResource("RectangleShape2D_1ajhi")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="CasaNaranja" unique_id=941917474]
+position = Vector2(-24, 0)
+shape = SubResource("RectangleShape2D_xrd6s")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="CasaNaranja" unique_id=1569144813]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_iav1c")
 
 [node name="CasaVioleta" type="StaticBody2D" parent="." unique_id=1878145337]
 position = Vector2(584, 152)
@@ -402,8 +474,16 @@ position = Vector2(0, -32)
 texture = ExtResource("5_p0xwe")
 
 [node name="Colision" type="CollisionShape2D" parent="CasaVioleta" unique_id=1281549441]
-position = Vector2(0, -24)
+position = Vector2(0, -32)
 shape = SubResource("RectangleShape2D_6e6gk")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="CasaVioleta" unique_id=1567482445]
+position = Vector2(-16, 0)
+shape = SubResource("RectangleShape2D_2nmsl")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="CasaVioleta" unique_id=1266793480]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_8q2m0")
 
 [node name="CasaRojaPuerto" type="StaticBody2D" parent="." unique_id=174094980]
 position = Vector2(200, 248)
@@ -413,8 +493,16 @@ position = Vector2(0, -32)
 texture = ExtResource("6_p0xwe")
 
 [node name="Colision" type="CollisionShape2D" parent="CasaRojaPuerto" unique_id=1207573707]
-position = Vector2(0, -24)
+position = Vector2(0, -32)
 shape = SubResource("RectangleShape2D_wyaga")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="CasaRojaPuerto" unique_id=1124787686]
+position = Vector2(-24, 0)
+shape = SubResource("RectangleShape2D_8x61q")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="CasaRojaPuerto" unique_id=1053232984]
+position = Vector2(24, 0)
+shape = SubResource("RectangleShape2D_517aq")
 
 [node name="CafeCaminito" type="StaticBody2D" parent="." unique_id=519433983]
 position = Vector2(424, 392)
@@ -424,19 +512,16 @@ position = Vector2(0, -24)
 texture = ExtResource("7_p0xwe")
 
 [node name="Colision" type="CollisionShape2D" parent="CafeCaminito" unique_id=1136351923]
-position = Vector2(0, -16)
+position = Vector2(0, -24)
 shape = SubResource("RectangleShape2D_l1oo6")
 
-[node name="Kiosco" type="StaticBody2D" parent="." unique_id=1848877]
-position = Vector2(544, 392)
+[node name="ColisionIzq" type="CollisionShape2D" parent="CafeCaminito" unique_id=67768341]
+position = Vector2(-32, 0)
+shape = SubResource("RectangleShape2D_t2udy")
 
-[node name="Sprite" type="Sprite2D" parent="Kiosco" unique_id=847148698]
-position = Vector2(-10, -20)
-texture = ExtResource("8_p0xwe")
-
-[node name="Colision" type="CollisionShape2D" parent="Kiosco" unique_id=1540138261]
-position = Vector2(-8, -8)
-shape = SubResource("RectangleShape2D_ca386")
+[node name="ColisionDer" type="CollisionShape2D" parent="CafeCaminito" unique_id=670994485]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_iid00")
 
 [node name="MesaCafeOeste" type="StaticBody2D" parent="." unique_id=1734540625]
 position = Vector2(368, 440)
@@ -979,17 +1064,6 @@ texture = ExtResource("tex_14")
 [node name="Colision" type="CollisionShape2D" parent="PapeleraEstadio" unique_id=1281087566]
 shape = SubResource("RectangleShape2D_0m58k")
 
-[node name="GalponPuerto" type="StaticBody2D" parent="." unique_id=596036613]
-position = Vector2(56, 152)
-
-[node name="Sprite" type="Sprite2D" parent="GalponPuerto" unique_id=1443598226]
-position = Vector2(0, -23)
-texture = ExtResource("tex_32")
-
-[node name="Colision" type="CollisionShape2D" parent="GalponPuerto" unique_id=1188111320]
-position = Vector2(0, -16)
-shape = SubResource("RectangleShape2D_ay6lw")
-
 [node name="BarrilesPuerto" type="StaticBody2D" parent="." unique_id=1184693342]
 position = Vector2(16, 232)
 
@@ -1508,3 +1582,41 @@ position = Vector2(200, 328)
 texture = ExtResource("tex_22")
 region_enabled = true
 region_rect = Rect2(0, 48, 80, 16)
+
+[node name="UsinaDelArte" type="StaticBody2D" parent="." unique_id=1184145509]
+position = Vector2(56, 152)
+
+[node name="Sprite" type="Sprite2D" parent="UsinaDelArte" unique_id=1906049200]
+position = Vector2(0, -52)
+texture = ExtResource("52_4e5q2")
+
+[node name="Colision" type="CollisionShape2D" parent="UsinaDelArte" unique_id=1619777413]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_ay6lw")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="UsinaDelArte" unique_id=778947166]
+position = Vector2(-24, 0)
+shape = SubResource("RectangleShape2D_loubu")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="UsinaDelArte" unique_id=2054533483]
+position = Vector2(24, 0)
+shape = SubResource("RectangleShape2D_qiorh")
+
+[node name="AlmacenPokemon" type="StaticBody2D" parent="." unique_id=1094021419]
+position = Vector2(536, 392)
+
+[node name="Sprite" type="Sprite2D" parent="AlmacenPokemon" unique_id=1631400400]
+position = Vector2(0, -24)
+texture = ExtResource("52_p6bjc")
+
+[node name="Colision" type="CollisionShape2D" parent="AlmacenPokemon" unique_id=1260771017]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_ca386")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="AlmacenPokemon" unique_id=402320791]
+position = Vector2(-16, 0)
+shape = SubResource("RectangleShape2D_jrbw1")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="AlmacenPokemon" unique_id=49683273]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_fo5xw")

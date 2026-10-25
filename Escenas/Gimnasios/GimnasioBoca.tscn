@@ -1,0 +1,181 @@
+[gd_scene format=4 uid="uid://bb1lwa1ba2cu8"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_r33al"]
+[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="2_uasb8"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_pi1ew"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_e4rph"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_5ia3a"]
+[ext_resource type="PackedScene" uid="uid://bycb8r3e1cjo0" path="res://Escenas/Props/BarreraBoca.tscn" id="6_ca7rw"]
+[ext_resource type="PackedScene" uid="uid://cxsidqvvjkvw5" path="res://Escenas/Props/Pelota.tscn" id="7_jl8yg"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="8_ww8cy"]
+[ext_resource type="Script" uid="uid://hamtyxhu8hcm" path="res://Scripts/lider.gd" id="9_v8lyd"]
+[ext_resource type="SpriteFrames" uid="uid://cmae846aaya76" path="res://Recursos/Personajes/gym_riquelme.tres" id="10_ti2i6"]
+[ext_resource type="Resource" uid="uid://d1djujo8jss1r" path="res://Datos/Entrenadores/lider_riquelme.tres" id="10_v8e2m"]
+[ext_resource type="Script" uid="uid://cf87qjs4x03b8" path="res://Scripts/entrenador.gd" id="12_hevwj"]
+[ext_resource type="SpriteFrames" uid="uid://kul48sbv5wv4" path="res://Recursos/Personajes/gym_juvenil_tomi.tres" id="13_5daf7"]
+[ext_resource type="Resource" uid="uid://dm1bd53ndvg3q" path="res://Datos/Entrenadores/juvenil_tomi.tres" id="13_omte0"]
+[ext_resource type="SpriteFrames" uid="uid://h5fec75uhyvp" path="res://Recursos/Personajes/gym_juvenil_lara.tres" id="15_w0q8y"]
+[ext_resource type="Resource" uid="uid://c6l3lgor82dhi" path="res://Datos/Entrenadores/juvenil_lara.tres" id="15_xdg2a"]
+[ext_resource type="SpriteFrames" uid="uid://0oharg3p0gih" path="res://Recursos/Personajes/laboca_hincha.tres" id="17_ibe3w"]
+[ext_resource type="Resource" uid="uid://b14mf4maudavk" path="res://Datos/Entrenadores/hincha_coco.tres" id="17_t5lp3"]
+[ext_resource type="Script" uid="uid://b8xxeedffvhhs" path="res://Scripts/vecino.gd" id="19_y7htd"]
+[ext_resource type="SpriteFrames" uid="uid://coktisehv5kr" path="res://Recursos/Personajes/laboca_guia.tres" id="20_mvg56"]
+
+[node name="GimnasioBoca" type="Node2D" unique_id=1324037437]
+y_sort_enabled = true
+script = ExtResource("1_r33al")
+fondo_batalla = ExtResource("2_uasb8")
+musica = "gimnasio"
+zona_id = "gimnasio_boca"
+zona_nombre = "Gimnasio de la Bombonera"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=2093518107]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAABwAAAAMAAAAAAAEABwABAAMAAAAAAAIABwACAAMAAAAAAAMABwADAAMAAAAAAAQABwADAAMAAAAAAAUABwADAAMAAAAAAAYABwADAAMAAAAAAAcABwADAAMAAAAAAAgABwADAAMAAAAAAAkABwADAAMAAAAAAAoABwADAAMAAAAAAAsABwADAAMAAAAAAAwABwADAAMAAAAAAA0ABwADAAMAAAAAAA4ABwADAAMAAAAAAA8ABwADAAMAAAAAABAABwADAAMAAAAAABEABwABAAMAAAAAABIABwAAAAMAAAAAABMABwABAAMAAAABAAAABwAAAAMAAAABAAEABwABAAMAAAABAAIABwACAAMAAAABAAMABwAHAAIAAAABAAQABwAHAAIAAAABAAUABwAHAAIAAAABAAYABwAHAAIAAAABAAcABwAHAAIAAAABAAgABwAAAAIAAAABAAkABwABAAIAAAABAAoABQAHAAkAAAABAAsABwAHAAIAAAABAAwABwAHAAIAAAABAA0ABwAHAAIAAAABAA4ABwAHAAMAAAABAA8ABwAHAAIAAAABABAABwAHAAIAAAABABEABwABAAMAAAABABIABwAAAAMAAAABABMABwABAAMAAAACAAAABwAAAAMAAAACAAEABwABAAMAAAACAAIABwACAAMAAAACAAMABwAHAAIAAAACAAQABwAAAAEAAAACAAUABwAEAAAAAAACAAYABwAEAAAAAAACAAcABwAEAAAAAAACAAgABwAEAAAAAAACAAkABwAEAAAAAAACAAoABwAEAAAAAAACAAsABwAEAAAAAAACAAwABwAEAAAAAAACAA0ABwAEAAAAAAACAA4ABwAEAAAAAAACAA8ABwACAAEAAAACABAABwAHAAIAAAACABEABwABAAMAAAACABIABwAAAAMAAAACABMABwABAAMAAAADAAAABwAAAAMAAAADAAEABwABAAMAAAADAAIABwACAAMAAAADAAMABwAHAAIAAAADAAQABwACAAAAAAADAAUABwABAAAAAAADAAYABwABAAAAAAADAAcABwABAAAAAAADAAgABwABAAAAAAADAAkABwABAAAAAAADAAoABwABAAAAAAADAAsABwABAAAAAAADAAwABwABAAAAAAADAA0ABwABAAAAAAADAA4ABwABAAAAAAADAA8ABwADAAAAAAADABAABwAHAAIAAAADABEABwABAAMAAAADABIABwAAAAMAAAADABMABwABAAMAAAAEAAAABwAAAAMAAAAEAAEABwABAAMAAAAEAAIABwACAAMAAAAEAAMABwAHAAIAAAAEAAQABwACAAAAAAAEAAUABwAAAAAAAAAEAAYABwAAAAAAAAAEAAcABwAAAAAAAAAEAAgABwAAAAAAAAAEAAkABwAAAAAAAAAEAAoABwAAAAAAAAAEAAsABwAAAAAAAAAEAAwABwAAAAAAAAAEAA0ABwAAAAAAAAAEAA4ABwAAAAAAAAAEAA8ABwADAAAAAAAEABAABwAHAAIAAAAEABEABwABAAMAAAAEABIABwAAAAMAAAAEABMABwABAAMAAAAFAAAABwAAAAMAAAAFAAEABwABAAMAAAAFAAIABwACAAMAAAAFAAMABwAHAAIAAAAFAAQABwACAAAAAAAFAAUABwABAAAAAAAFAAYABwABAAAAAAAFAAcABwABAAAAAAAFAAgABwABAAAAAAAFAAkABwABAAAAAAAFAAoABwABAAAAAAAFAAsABwABAAAAAAAFAAwABwABAAAAAAAFAA0ABwABAAAAAAAFAA4ABwABAAAAAAAFAA8ABwADAAAAAAAFABAABwAHAAIAAAAFABEABwABAAMAAAAFABIABwAAAAMAAAAFABMABwABAAMAAAAGAAAABwAAAAMAAAAGAAEABwABAAMAAAAGAAIABwACAAMAAAAGAAMABwAHAAIAAAAGAAQABwACAAAAAAAGAAUABwAAAAAAAAAGAAYABwAAAAAAAAAGAAcABwAAAAAAAAAGAAgABwAAAAAAAAAGAAkABwAAAAAAAAAGAAoABwAAAAAAAAAGAAsABwAAAAAAAAAGAAwABwAAAAAAAAAGAA0ABwAGAAIAAAAGAA4ABwAAAAAAAAAGAA8ABwAGAAIAAAAGABAABwAHAAIAAAAGABEABwABAAMAAAAGABIABwAAAAMAAAAGABMABwABAAMAAAAHAAAABwAAAAMAAAAHAAEABwABAAMAAAAHAAIABwACAAMAAAAHAAMABwAHAAIAAAAHAAQABwACAAAAAAAHAAUABwABAAAAAAAHAAYABwABAAAAAAAHAAcABwABAAAAAAAHAAgABwAGAAIAAAAHAAkABwAGAAIAAAAHAAoABwABAAAAAAAHAAsABwABAAAAAAAHAAwABwABAAAAAAAHAA0ABwABAAAAAAAHAA4ABwABAAAAAAAHAA8ABwADAAAAAAAHABAABwAHAAIAAAAHABEABwABAAMAAAAHABIABwAAAAMAAAAHABMABwABAAMAAAAIAAAABwAAAAMAAAAIAAEABwABAAMAAAAIAAIABwACAAMAAAAIAAMABwAHAAIAAAAIAAQABwACAAAAAAAIAAUABwAAAAAAAAAIAAYABwAAAAAAAAAIAAcABwAAAAAAAAAIAAgABwAAAAAAAAAIAAkABwAAAAAAAAAIAAoABwAAAAAAAAAIAAsABwAAAAAAAAAIAAwABwAAAAAAAAAIAA0ABwAAAAAAAAAIAA4ABwAAAAAAAAAIAA8ABwADAAAAAAAIABAABwAHAAIAAAAIABEABwABAAMAAAAIABIABwAAAAMAAAAIABMABwABAAMAAAAJAAAABwAAAAMAAAAJAAEABwABAAMAAAAJAAIABwACAAMAAAAJAAMABwAHAAIAAAAJAAQABwACAAAAAAAJAAUABwABAAAAAAAJAAYABwABAAAAAAAJAAcABwABAAAAAAAJAAgABwABAAAAAAAJAAkABwABAAAAAAAJAAoABwABAAAAAAAJAAsABwABAAAAAAAJAAwABwABAAAAAAAJAA0ABwABAAAAAAAJAA4ABwABAAAAAAAJAA8ABwADAAAAAAAJABAABwAHAAIAAAAJABEABwABAAMAAAAJABIABwAAAAMAAAAJABMABwABAAMAAAAKAAAABwAAAAMAAAAKAAEABwABAAMAAAAKAAIABwACAAMAAAAKAAMABwAHAAIAAAAKAAQABwACAAAAAAAKAAUABwAAAAAAAAAKAAYABwAAAAAAAAAKAAcABwAAAAAAAAAKAAgABwAAAAAAAAAKAAkABwAAAAAAAAAKAAoABwAAAAAAAAAKAAsABwAAAAAAAAAKAAwABwAAAAAAAAAKAA0ABwAAAAAAAAAKAA4ABwAGAAIAAAAKAA8ABwADAAAAAAAKABAABwAHAAIAAAAKABEABwAGAAMAAAAKABIABwAGAAMAAAAKABMABwAGAAMAAAALAAAABwAAAAMAAAALAAEABwABAAMAAAALAAIABwACAAMAAAALAAMABwAHAAIAAAALAAQABwACAAAAAAALAAUABwAGAAAAAAALAAYABwAGAAAAAAALAAcABwAGAAAAAAALAAgABwAGAAAAAAALAAkABwAEAAEAAAALAAoABwAGAAEAAAALAAsABwAGAAAAAAALAAwABwAGAAAAAAALAA0ABwAGAAAAAAALAA4ABwAGAAAAAAALAA8ABwADAAAAAAALABAABwAHAAIAAAALABEABwAFAAMAAAALABIABwAFAAMAAAALABMABwAFAAMAAAAMAAAABwAAAAMAAAAMAAEABwABAAMAAAAMAAIABwACAAMAAAAMAAMABwAHAAIAAAAMAAQABwACAAAAAAAMAAUABwAHAAAAAAAMAAYABwAHAAAAAAAMAAcABwAHAAAAAAAMAAgABwAHAAAAAAAMAAkABwAFAAEAAAAMAAoABwAHAAEAAAAMAAsABwAHAAAAAAAMAAwABwAHAAAAAAAMAA0ABwAHAAAAAAAMAA4ABwAHAAAAAAAMAA8ABwADAAAAAAAMABAABwAHAAIAAAAMABEABwAFAAMAAAAMABIABwAFAAMAAAAMABMABwAFAAMAAAANAAAABwAAAAMAAAANAAEABwABAAMAAAANAAIABwACAAMAAAANAAMABwAHAAIAAAANAAQABwACAAAAAAANAAUABwABAAAAAAANAAYABwABAAAAAAANAAcABwABAAAAAAANAAgABwABAAAAAAANAAkABwABAAAAAAANAAoABwABAAAAAAANAAsABwABAAAAAAANAAwABwABAAAAAAANAA0ABwABAAAAAAANAA4ABwABAAAAAAANAA8ABwADAAAAAAANABAABwAHAAIAAAANABEABwAGAAMAAAANABIABwAGAAMAAAANABMABwAGAAMAAAAOAAAABwAAAAMAAAAOAAEABwABAAMAAAAOAAIABwACAAMAAAAOAAMABwAHAAIAAAAOAAQABwACAAAAAAAOAAUABwAAAAAAAAAOAAYABwAAAAAAAAAOAAcABwAGAAIAAAAOAAgABwAGAAIAAAAOAAkABwAAAAAAAAAOAAoABwAGAAIAAAAOAAsABwAGAAIAAAAOAAwABwAAAAAAAAAOAA0ABwAGAAIAAAAOAA4ABwAAAAAAAAAOAA8ABwADAAAAAAAOABAABwAHAAIAAAAOABEABwABAAMAAAAOABIABwAAAAMAAAAOABMABwABAAMAAAAPAAAABwAAAAMAAAAPAAEABwABAAMAAAAPAAIABwACAAMAAAAPAAMABwAHAAIAAAAPAAQABwACAAAAAAAPAAUABwABAAAAAAAPAAYABwABAAAAAAAPAAcABwABAAAAAAAPAAgABwABAAAAAAAPAAkABwABAAAAAAAPAAoABwABAAAAAAAPAAsABwABAAAAAAAPAAwABwABAAAAAAAPAA0ABwABAAAAAAAPAA4ABwABAAAAAAAPAA8ABwADAAAAAAAPABAABwAHAAIAAAAPABEABwABAAMAAAAPABIABwAAAAMAAAAPABMABwABAAMAAAAQAAAABwAAAAMAAAAQAAEABwABAAMAAAAQAAIABwACAAMAAAAQAAMABwAHAAIAAAAQAAQABwACAAAAAAAQAAUABwAAAAAAAAAQAAYABwAAAAAAAAAQAAcABwAAAAAAAAAQAAgABwAAAAAAAAAQAAkABwAAAAAAAAAQAAoABwAAAAAAAAAQAAsABwAAAAAAAAAQAAwABwAAAAAAAAAQAA0ABwAAAAAAAAAQAA4ABwAAAAAAAAAQAA8ABwADAAAAAAAQABAABwAHAAIAAAAQABEABwABAAMAAAAQABIABwAAAAMAAAAQABMABwABAAMAAAARAAAABwAAAAMAAAARAAEABwABAAMAAAARAAIABwACAAMAAAARAAMABwAHAAIAAAARAAQABwACAAAAAAARAAUABwABAAAAAAARAAYABwABAAAAAAARAAcABwABAAAAAAARAAgABwABAAAAAAARAAkABwABAAAAAAARAAoABwABAAAAAAARAAsABwABAAAAAAARAAwABwABAAAAAAARAA0ABwABAAAAAAARAA4ABwABAAAAAAARAA8ABwADAAAAAAARABAABwAHAAIAAAARABEABwABAAMAAAARABIABwAAAAMAAAARABMABwABAAMAAAASAAAABwAAAAMAAAASAAEABwABAAMAAAASAAIABwACAAMAAAASAAMABwAHAAIAAAASAAQABwACAAAAAAASAAUABwAAAAAAAAASAAYABwAAAAAAAAASAAcABwAAAAAAAAASAAgABwAAAAAAAAASAAkABwAGAAIAAAASAAoABwAAAAAAAAASAAsABwAAAAAAAAASAAwABwAAAAAAAAASAA0ABwAAAAAAAAASAA4ABwAAAAAAAAASAA8ABwADAAAAAAASABAABwAHAAIAAAASABEABwABAAMAAAASABIABwAAAAMAAAASABMABwABAAMAAAATAAAABwAAAAMAAAATAAEABwABAAMAAAATAAIABwACAAMAAAATAAMABwAHAAIAAAATAAQABwACAAAAAAATAAUABwABAAAAAAATAAYABwABAAAAAAATAAcABwABAAAAAAATAAgABwABAAAAAAATAAkABwABAAAAAAATAAoABwABAAAAAAATAAsABwABAAAAAAATAAwABwABAAAAAAATAA0ABwABAAAAAAATAA4ABwABAAAAAAATAA8ABwADAAAAAAATABAABwAHAAIAAAATABEABwABAAMAAAATABIABwAAAAMAAAATABMABwABAAMAAAAUAAAABwAAAAMAAAAUAAEABwABAAMAAAAUAAIABwACAAMAAAAUAAMABwAHAAIAAAAUAAQABwACAAAAAAAUAAUABwAAAAAAAAAUAAYABwAAAAAAAAAUAAcABwAAAAAAAAAUAAgABwAAAAAAAAAUAAkABwAAAAAAAAAUAAoABwAAAAAAAAAUAAsABwAAAAAAAAAUAAwABwAAAAAAAAAUAA0ABwAAAAAAAAAUAA4ABwAAAAAAAAAUAA8ABwADAAAAAAAUABAABwAHAAIAAAAUABEABwABAAMAAAAUABIABwAAAAMAAAAUABMABwABAAMAAAAVAAAABwAAAAMAAAAVAAEABwABAAMAAAAVAAIABwACAAMAAAAVAAMABwAHAAIAAAAVAAQABwABAAEAAAAVAAUABwAFAAAAAAAVAAYABwAFAAAAAAAVAAcABwAFAAAAAAAVAAgABwAFAAAAAAAVAAkABwAFAAAAAAAVAAoABwAFAAAAAAAVAAsABwAFAAAAAAAVAAwABwAFAAAAAAAVAA0ABwAFAAAAAAAVAA4ABwAFAAAAAAAVAA8ABwADAAEAAAAVABAABwAHAAIAAAAVABEABwABAAMAAAAVABIABwAAAAMAAAAVABMABwABAAMAAAAWAAAABwAAAAMAAAAWAAEABwABAAMAAAAWAAIABwACAAMAAAAWAAMABwAHAAIAAAAWAAQABwAHAAIAAAAWAAUABwAHAAIAAAAWAAYABwAHAAIAAAAWAAcABwAHAAIAAAAWAAgABwADAAIAAAAWAAkABwAEAAIAAAAWAAoABwAFAAIAAAAWAAsABwAHAAIAAAAWAAwABwAHAAIAAAAWAA0ABwAHAAIAAAAWAA4ABwAHAAIAAAAWAA8ABwAHAAIAAAAWABAABwAHAAIAAAAWABEABwABAAMAAAAWABIABwAAAAMAAAAWABMABwABAAMAAAAXAAAABwAAAAMAAAAXAAEABwABAAMAAAAXAAIABwACAAMAAAAXAAMABwAEAAMAAAAXAAQABwAEAAMAAAAXAAUABwAEAAMAAAAXAAYABwAEAAMAAAAXAAcABwAEAAMAAAAXAAgABwAEAAMAAAAXAAkABwAEAAMAAAAXAAoABwAEAAMAAAAXAAsABwAEAAMAAAAXAAwABwAEAAMAAAAXAA0ABwAEAAMAAAAXAA4ABwAEAAMAAAAXAA8ABwAEAAMAAAAXABAABwAEAAMAAAAXABEABwABAAMAAAAXABIABwAAAAMAAAAXABMABwABAAMAAAA=")
+tile_set = ExtResource("3_pi1ew")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1810850444]
+z_index = -1
+tile_set = ExtResource("3_pi1ew")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=240372017]
+y_sort_enabled = true
+tile_set = ExtResource("3_pi1ew")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=1599731792]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=180758932]
+position = Vector2(184, 280)
+
+[node name="Entrada2" type="Marker2D" parent="Llegadas" unique_id=1778675652]
+position = Vector2(200, 280)
+
+[node name="Salida" type="Node2D" parent="." unique_id=7514232]
+position = Vector2(184, 312)
+script = ExtResource("5_5ia3a")
+destino = "res://Escenas/Mapa.tscn"
+llegada = "PuertaGimnasio"
+salir_empujando = true
+
+[node name="Salida2" type="Node2D" parent="." unique_id=1244159372]
+position = Vector2(200, 312)
+script = ExtResource("5_5ia3a")
+destino = "res://Escenas/Mapa.tscn"
+llegada = "PuertaGimnasio"
+salir_empujando = true
+
+[node name="BarreraUno" parent="." unique_id=97362383 instance=ExtResource("6_ca7rw")]
+position = Vector2(192, 200)
+clave = "gym_boca_gol1"
+
+[node name="BarreraDos" parent="." unique_id=1490417202 instance=ExtResource("6_ca7rw")]
+position = Vector2(192, 104)
+clave = "gym_boca_gol2"
+
+[node name="PelotaUno" parent="." unique_id=736994931 instance=ExtResource("7_jl8yg")]
+position = Vector2(280, 232)
+metas = [[1.0, 14.0]]
+barrera = "BarreraUno"
+clave = "gym_boca_gol1"
+texto_gol = "¡GOOOL en el arco de entrenamiento! La primera barrera se abrió."
+
+[node name="PelotaDos" parent="." unique_id=735963097 instance=ExtResource("7_jl8yg")]
+position = Vector2(184, 152)
+metas = [[1.0, 8.0], [1.0, 9.0], [1.0, 10.0], [22.0, 8.0], [22.0, 9.0], [22.0, 10.0]]
+barrera = "BarreraDos"
+clave = "gym_boca_gol2"
+texto_gol = "¡GOLAZO de tiro libre! La segunda barrera se abrió. Riquelme te espera."
+
+[node name="Riquelme" parent="." unique_id=1999008602 instance=ExtResource("8_ww8cy")]
+position = Vector2(184, 72)
+script = ExtResource("9_v8lyd")
+medalla = "bombonera"
+nombre_medalla = "Medalla Bombonera"
+requiere_medalla = ""
+texto_requisito = ""
+mt_premio = "tm57"
+trinket_premio = "diario_entrenamiento"
+texto_premio = "Llevate también este Disco Técnico y mi Diario de Entrenamiento: con eso tus Pokémon van a aprender más rápido."
+datos = ExtResource("10_v8e2m")
+clave = "vencio_riquelme"
+texto_derrota = "¡Qué partido! Me hiciste correr, y eso no es fácil. Te ganaste la medalla."
+texto_despues = "El fútbol es de los que piensan. Seguí así: en Villa 31 te espera un rival que juega con trampas de verdad."
+texto = "Bienvenido a la Bombonera. Acá la pelota no se apura: se la para, se hace la pausa y se da el pase justo. ¿Estás listo para jugar a mi ritmo?"
+
+[node name="AnimatedSprite2D" parent="Riquelme" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("10_ti2i6")
+animation = &"abajo"
+
+[node name="JuvenilTomi" parent="." unique_id=1690633338 instance=ExtResource("8_ww8cy")]
+position = Vector2(312, 248)
+script = ExtResource("12_hevwj")
+datos = ExtResource("13_omte0")
+clave = "vencio_juvenil_tomi"
+texto_derrota = "¡Uh! Me pasaste por arriba como un caño."
+texto_despues = "Empujá la pelota hasta el arquito de entrenamiento. Si se traba, salí y volvé a entrar."
+texto = "¡Entreno con el Diez todos los días! ¿Vos sabés patear un tiro libre?"
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="JuvenilTomi" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("13_5daf7")
+animation = &"abajo"
+
+[node name="JuvenilLara" parent="." unique_id=1716245474 instance=ExtResource("8_ww8cy")]
+position = Vector2(312, 184)
+script = ExtResource("12_hevwj")
+datos = ExtResource("15_xdg2a")
+clave = "vencio_juvenil_lara"
+texto_derrota = "¡Qué jugada! Me dejaste sin marca."
+texto_despues = "Riquelme primero frena el partido y después pasa la pelota a su mejor jugador. ¡Ojo con eso!"
+texto = "Azul y oro, como el barco que entró al puerto. ¡A ver si jugás tan bien como hablás!"
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="JuvenilLara" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("15_w0q8y")
+animation = &"abajo"
+
+[node name="HinchaCoco" parent="." unique_id=602701885 instance=ExtResource("8_ww8cy")]
+position = Vector2(72, 120)
+script = ExtResource("12_hevwj")
+datos = ExtResource("17_t5lp3")
+clave = "vencio_hincha_coco"
+texto_derrota = "¡Dale, dale! Ganaste bien."
+texto_despues = "Cuando sus Pokémon se dan vuelta las cosas, los más lentos atacan primero. ¡Usá eso a tu favor!"
+texto = "¡La Bombonera no tiembla: late! Y mis Pokémon laten con ella."
+
+[node name="AnimatedSprite2D" parent="HinchaCoco" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("17_ibe3w")
+animation = &"abajo"
+
+[node name="GuiaGimnasio" parent="." unique_id=1078146926 instance=ExtResource("8_ww8cy")]
+position = Vector2(232, 264)
+script = ExtResource("19_y7htd")
+objeto_regalo = "super_potion"
+cantidad_regalo = 2
+trinket_regalo = ""
+clave_objeto = "guia_gym_boca"
+texto_antes = "¡Bienvenido! Riquelme usa Pokémon azul y oro, de agua y eléctricos. Juega lento a propósito y se pasa las mejoras. Tomá, esto te va a servir."
+texto_despues = "Empujá cada pelota hasta un arco para abrir las barreras. Si se traba, salí y volvé a entrar."
+requiere_tipos = Array[String]([])
+texto_falta = ""
+texto = "¡Bienvenido al gimnasio! Para llegar al Diez tenés que abrir dos barreras: empujá cada pelota hasta un arco. Si una pelota se traba, salí y volvé a entrar."
+
+[node name="AnimatedSprite2D" parent="GuiaGimnasio" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("20_mvg56")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_e4rph")]
+position = Vector2(184, 280)
+
+[editable path="Riquelme"]
+[editable path="JuvenilTomi"]
+[editable path="JuvenilLara"]
+[editable path="HinchaCoco"]
+[editable path="GuiaGimnasio"]
