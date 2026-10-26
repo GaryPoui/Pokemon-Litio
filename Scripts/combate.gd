@@ -58,7 +58,8 @@ func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String, c
 	ultima =b
 	add_child(b)
 	var escena:= get_tree().current_scene
-	b.poner_fondo(escena.get("fondo_batalla") if escena!= null and "fondo_batalla" in escena else null)
+	var terreno:= str(escena.terreno_actual()) if escena!= null and escena.has_method("terreno_actual") else ""
+	b.poner_fondo(escena.get("fondo_batalla") if escena!= null and "fondo_batalla" in escena else null, terreno)
 	var res: String= await b.empezar(rivales, salvaje, nombre, config)
 	var logica: LogicaCombate= b.logica
 	var subieron: Array[PokemonInstancia]= b.subieron.duplicate()
@@ -71,7 +72,11 @@ func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String, c
 		activo= false
 		termino.emit(res)
 		return res
-	if res== "derrota":
+	if res== "derrota" and bool(config.get("sin_derrota", false)):
+		Equipo.curar_todo()
+		if escena!= null and "musica" in escena:
+			Sonido.musica(str(escena.get("musica")), 0.8)
+	elif res== "derrota":
 		Sonido.detener_musica(0.3)
 		Equipo.curar_todo()
 		await Dialogo.mostrar("Corriste a casa para que tus Pokémon descansaran.")

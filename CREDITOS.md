@@ -21,7 +21,7 @@ Pokémon Litio es un fan game sin fines de lucro. Pokémon y sus personajes son 
 - Exterior del Centro Pokémon: modelo 3D de Pokémon Diamante/Perla subido por Cheesy Mac n Cheese a The Models Resource; renderizado en 2D para este proyecto.
 - Fondos de menús (fondos de Caja de Pokémon Negro/Blanco): Barubary (The Spriters Resource).
 - Hierba alta y su efecto al pisarla: texturas de la Ruta 1 de Pokémon HeartGold/SoulSilver, subidas por Kuramapika1 a The Models Resource.
-- Escenario de combate (campo de hierba y plataformas): modelos 3D "Battle Backgrounds" de Pokémon Negro 2/Blanco 2, subidos por Snivy a The Models Resource; renderizados a 256×192 para este proyecto.
+- Escenario de combate (campo de hierba) y plataformas de combate por terreno (pasto, campo, orilla, agua, cemento y roca): modelos 3D "Battle Backgrounds" de Pokémon Negro 2/Blanco 2, subidos por Snivy a The Models Resource; renderizados a 256×192 para este proyecto.
 
 ## Audio
 - Música y jingles: Pokémon Negro/Blanco, © Nintendo / Game Freak. Rip del juego publicado en KHInsider ("Pokémon Black and White (DS) (gamerip)"); los puntos de bucle se midieron para este proyecto.

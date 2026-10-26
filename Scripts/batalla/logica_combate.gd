@@ -53,6 +53,7 @@ var eventos: Array[Dictionary]= []
 var espacio_raro:= 0
 var objetos_rival: Array[String] =[]
 var trampas:= {"jugador": {"puas": 0, "rocas": false}, "rival": {"puas": 0, "rocas": false}}
+var ultimo_caido :={"jugador": -1, "rival": -1}
 const PUAS:= [0.0, 1.0/ 8.0, 1.0/ 6.0, 1.0/ 4.0]
 const ILUSION:= ["zorua", "zoroark"]
 const CURAS_RIVAL :={"hyper_potion": 0.0, "super_potion": 0.0, "potion": 0.0}
@@ -238,6 +239,8 @@ func _herir(l: Luchador, cantidad: int, sonido: String ="golpe_normal") -> int:
 		l.aguante_usado =true
 		aguanta= true
 	var real:= l.pokemon.recibir_danio(cantidad)
+	if l.pokemon.esta_debilitado() and antes> 0:
+		ultimo_caido[_lado(l)]= turnos
 	_ev_ps(l, antes, sonido)
 	if aguanta:
 		var ids:= EfectosTrinket.contar("aguante", l.pokemon).keys()
@@ -508,6 +511,10 @@ func _poder_base(a: Luchador, d: Luchador, mov: Movimiento) -> int:
 			return mov.poder* 2 if pd.estado!= "" else mov.poder
 		"payback":
 			return mov.poder* 2 if d.actuo_turno else mov.poder
+		"retaliate":
+			return mov.poder* 2 if represalia_lista(a) else mov.poder
+		"revenge":
+			return mov.poder* 2 if a.herido_turno else mov.poder
 		"punishment":
 			return mini(200, 60+ 20* _subidas(d))
 		"stored_power":
@@ -1019,6 +1026,15 @@ func _ia_reglas(reglas: Array[String]) -> int:
 					i= _indice_mov(r, "roar")
 					if i< 0:
 						i= _indice_mov(r, "whirlwind")
+			"represalia":
+				if represalia_lista(r):
+					i= _indice_mov(r, "retaliate")
+			"desquite":
+				if r.pokemon.ps_actuales* 2> r.pokemon.ps_max():
+					i =_indice_mov(r, "revenge")
+			"vendetta":
+				if r.stat_efectivo("velocidad")< j.stat_efectivo("velocidad"):
+					i= _indice_mov(r, "payback")
 			"relevo":
 				if _subidas(r)>= 2:
 					for o in equipo_r:
@@ -1030,6 +1046,9 @@ func _ia_reglas(reglas: Array[String]) -> int:
 		if i>= 0 and r.pokemon.pp[i]> 0:
 			return i
 	return _mejor_danio()
+
+func represalia_lista(l: Luchador) -> bool:
+	return int(ultimo_caido[_lado(l)])== turnos- 1
 
 func _quedan_j() -> int:
 	var n:= 0

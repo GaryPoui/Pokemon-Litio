@@ -2,6 +2,7 @@ extends Node2D
 
 @export var encuentros: TablaEncuentros
 @export var fondo_batalla: Texture2D
+@export_enum("auto", "pasto", "campo", "orilla", "agua", "cemento", "roca") var terreno_batalla: String= "auto"
 @export var musica: String= ""
 @export var tam_celda :Vector2i= Vector2i(16, 16)
 
@@ -91,6 +92,7 @@ func _ajustar_camara() -> void:
 	camara.limit_bottom =aba
 
 func _al_terminar_paso(celda: Vector2i) -> void:
+	Estado.contar_paso()
 	for w in get_tree().get_nodes_in_group("warp"):
 		if w.celda()== celda and w.destino!= "" and not w.salir_empujando:
 			if w.sonido!= "":
@@ -194,6 +196,46 @@ func hay_encuentro(celda: Vector2i) -> bool:
 		return false
 	var td:= capa.get_cell_tile_data(celda)
 	return td!= null and td.get_custom_data("escondite")== true
+
+func es_agua(celda: Vector2i) -> bool:
+	var capa:= get_node_or_null("Suelo") as TileMapLayer
+	if capa== null or capa.tile_set== null:
+		return false
+	var s:= capa.get_cell_source_id(celda)
+	if s< 0:
+		return false
+	var fuente:= capa.tile_set.get_source(s) as TileSetAtlasSource
+	if fuente== null or fuente.texture== null:
+		return false
+	var c:= capa.get_cell_atlas_coords(celda)
+	match fuente.texture.resource_path.get_file():
+		"tiles_rutas.png":
+			return (c.y<= 3 and not (c.x== 0 and (c.y== 0 or c.y== 2))) or (c.y== 6 and c.x<= 5)
+		"entorno_provisional.png":
+			return c.y== 0 and (c.x== 3 or c.x== 4)
+		"boca_riachuelo_agua_muelle_tiles_16x16.png":
+			return c.y<= 1
+	return false
+
+func terreno_en(celda: Vector2i) -> String:
+	if hay_encuentro(celda) and not es_hierba(celda):
+		return "roca"
+	var cerca:= false
+	for dy in range(-1, 2):
+		for dx in range(-1, 2):
+			if (dx!= 0 or dy!= 0) and es_agua(celda+ Vector2i(dx, dy)):
+				cerca =true
+	if es_hierba(celda):
+		return "orilla" if cerca else "pasto"
+	for v in [Vector2i.LEFT, Vector2i.RIGHT, Vector2i.UP, Vector2i.DOWN]:
+		if es_agua(celda+ v):
+			return "agua"
+	if terreno_batalla!= "" and terreno_batalla!= "auto":
+		return terreno_batalla
+	return "campo" if tipo_zona== 2 or tipo_zona== 4 else "cemento"
+
+func terreno_actual() -> String:
+	return terreno_en(Rejilla.celda(jugador))
 
 func es_hierba(celda: Vector2i) -> bool:
 	var capa:= get_node_or_null("Decoracion") as TileMapLayer

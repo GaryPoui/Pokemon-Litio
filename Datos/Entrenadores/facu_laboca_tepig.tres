@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/encuentro_entrada.gd" id="1_b2xw3"]
+[ext_resource type="Resource" path="res://Datos/Especies/oshawott.tres" id="2_8pdqf"]
+[ext_resource type="Script" path="res://Scripts/datos/equipo_entrenador.gd" id="3_fjjfn"]
+
+[sub_resource type="Resource" id="Resource_6w0yw"]
+script = ExtResource("1_b2xw3")
+especie = ExtResource("2_8pdqf")
+nivel_min = 5
+nivel_max = 5
+peso = 1
+
+[resource]
+script = ExtResource("3_fjjfn")
+clase = "Rival"
+nombre = "Facu"
+miembros = Array[ExtResource("1_b2xw3")]([SubResource("Resource_6w0yw")])
+pago_base = 30

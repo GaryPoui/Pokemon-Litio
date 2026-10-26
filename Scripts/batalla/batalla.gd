@@ -28,6 +28,10 @@ const X_MOVIMIENTOS :=168
 const ESCALA_JUGADOR:= Vector2(1.75, 1.75)
 const CATEGORIAS :={"fisico": "Físico", "especial": "Especial", "estado": "Estado"}
 const DESLIZ :=0.08
+const SHADER_ETAPA:= preload("res://Recursos/etapa.gdshader")
+const PLATAFORMAS :="res://Assets/Batalla/plataformas/"
+const TONO_SUBE :=Color(1.0, 0.42, 0.24)
+const TONO_BAJA:= Color(0.3, 0.56, 1.0)
 
 @onready var velo: ColorRect= $Velo
 @onready var fondo_zona: TextureRect =$Fondo/FondoZona
@@ -71,9 +75,18 @@ var ultimo_movimiento:= 0
 var ball_rapida :=""
 var previo_ball:= 0
 static var ultima_ball :=""
+var terreno:= "campo"
 
 func _ready() -> void:
 	layer= 50
+	for spr in [sprite_rival, sprite_jugador]:
+		var m:= ShaderMaterial.new()
+		m.shader =SHADER_ETAPA
+		m.set_shader_parameter("fuerza", 0.0)
+		m.set_shader_parameter("tiempo", 0.0)
+		m.set_shader_parameter("sentido", 1.0)
+		m.set_shader_parameter("tono", TONO_SUBE)
+		spr.material= m
 	lista.add_theme_stylebox_override("panel", EstiloUI.panel())
 	var translucido:= StyleBoxFlat.new()
 	translucido.bg_color= Color(0.05, 0.07, 0.13, 0.62)
@@ -131,11 +144,17 @@ func _ready() -> void:
 	velo.color =Color.BLACK
 	mensaje.text= ""
 
-func poner_fondo(textura: Texture2D) -> void:
+func poner_fondo(textura: Texture2D, tipo: String= "") -> void:
 	fondo_zona.texture= textura if textura!= null else load(FONDO_DEFECTO)
 	fondo_zona.visible =fondo_zona.texture!= null
-	$BaseRival.visible= not fondo_zona.visible
-	$BaseJugador.visible =not fondo_zona.visible
+	terreno= tipo if tipo!= "" and ResourceLoader.exists(PLATAFORMAS+ tipo+ "_rival.png") else "campo"
+	for par in [[$BaseRival, "rival"], [$BaseJugador, "jugador"]]:
+		var base: Sprite2D= par[0]
+		base.texture= load(PLATAFORMAS+ "%s_%s.png" % [terreno, par[1]])
+		base.centered =false
+		base.offset= Vector2.ZERO
+		base.position =Vector2.ZERO
+		base.visible= true
 
 func empezar(rivales: Array[PokemonInstancia], salvaje: bool, entrenador: String, config: Dictionary= {}) -> String:
 	var propio: Array[PokemonInstancia]= []
@@ -202,7 +221,7 @@ func _reproducir(eventos: Array[Dictionary]) -> void:
 				Sonido.jingle(e["nombre"])
 			"etapa":
 				Sonido.efecto("stat_sube" if int(e["cambio"])> 0 else "stat_baja")
-				await _esperar(0.5)
+				await _efecto_etapa(str(e["lado"]), int(e["cambio"])> 0)
 			"sale":
 				if e["lado"]== "jugador" and not vista["jugador"].is_empty() and vista["jugador"]["p"]!= e["pokemon"]:
 					ultimo_movimiento= 0
@@ -793,6 +812,23 @@ func _aprender(p: PokemonInstancia, m: Movimiento) -> void:
 
 func _esperar(t: float) -> void:
 	await get_tree().create_timer(t).timeout
+
+func _efecto_etapa(lado: String, sube: bool) -> void:
+	var spr: Sprite2D= sprite_rival if lado== "rival" else sprite_jugador
+	if not spr.visible or not spr.material is ShaderMaterial:
+		await _esperar(0.5)
+		return
+	var m: ShaderMaterial= spr.material
+	m.set_shader_parameter("sentido", 1.0 if sube else -1.0)
+	m.set_shader_parameter("tono", TONO_SUBE if sube else TONO_BAJA)
+	var reloj:= create_tween()
+	reloj.tween_method(func(v: float): m.set_shader_parameter("tiempo", v), 0.0, 1.0, 1.0)
+	var t:= create_tween()
+	t.tween_method(func(v: float): m.set_shader_parameter("fuerza", v), 0.0, 1.0, 0.15)
+	t.tween_interval(0.6)
+	t.tween_method(func(v: float): m.set_shader_parameter("fuerza", v), 1.0, 0.0, 0.25)
+	await t.finished
+	m.set_shader_parameter("fuerza", 0.0)
 
 func _animar_captura(e: Dictionary) -> void:
 	var ruta:= BALLS+ "%s.png" % str(e.get("objeto", "pokeball"))

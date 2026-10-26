@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_squ8u"]
 [ext_resource type="Resource" uid="uid://ci2e41guty13c" path="res://Datos/Encuentros/barrancas_retiro.tres" id="2_526bx"]
-[ext_resource type="Texture2D" uid="uid://brt13wc4kegh7" path="res://Assets/Produccion/Barrios/palermo/v03/fondo_batalla.png" id="3_0sgf3"]
 [ext_resource type="Resource" uid="uid://e2kujvauydks" path="res://Datos/Encuentros/barrancas_retiro_raros.tres" id="3_j3s7j"]
+[ext_resource type="Texture2D" uid="uid://cgb7lw35xdwl" path="res://Assets/Batalla/fondos/palermo.png" id="3_ng4km"]
 [ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="5_tn0nj"]
 [ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="6_wgsjr"]
 [ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="7_jflhl"]
@@ -28,7 +28,7 @@
 y_sort_enabled = true
 script = ExtResource("1_squ8u")
 encuentros = ExtResource("2_526bx")
-fondo_batalla = ExtResource("3_0sgf3")
+fondo_batalla = ExtResource("3_ng4km")
 musica = "ruta_1"
 zona_id = "barrancas_retiro"
 zona_nombre = "Ruta 4"
@@ -215,7 +215,7 @@ animation = &"abajo"
 
 [node name="Paseadora" parent="." unique_id=1563078418 instance=ExtResource("18_h12mg")]
 position = Vector2(200, 1064)
-texto = "Al sur está la Avenida 9 de Julio. Es tan ancha que se cruza en dos o tres semáforos. ¡Y al final está el Obelisco!"
+texto = "Al sur está la Avenida 9 de Julio. Es tan ancha que se cruza en dos o tres semáforos. ¡Y a mitad de camino está el Cabildo!"
 mirando = Vector2(0, -1)
 
 [node name="AnimatedSprite2D" parent="Paseadora" index="0" unique_id=1100079311]

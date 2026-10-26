@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://bk5ovy8cak4uw"]
 
 [ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_vwv5s"]
-[ext_resource type="Texture2D" uid="uid://lfttg1begv2i" path="res://Assets/Produccion/Barrios/mugica/v03/fondo_batalla.png" id="2_u56fl"]
+[ext_resource type="Texture2D" uid="uid://bhlmnyai5ocao" path="res://Assets/Batalla/fondos/mugica.png" id="2_5s83w"]
 [ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_8gtxa"]
 [ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_h4f37"]
 [ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_3a51f"]
@@ -27,7 +27,7 @@
 [node name="GimnasioVilla" type="Node2D" unique_id=2022328184]
 y_sort_enabled = true
 script = ExtResource("1_vwv5s")
-fondo_batalla = ExtResource("2_u56fl")
+fondo_batalla = ExtResource("2_5s83w")
 musica = "gimnasio"
 zona_id = "gimnasio_villa"
 zona_nombre = "Club La Terraza"

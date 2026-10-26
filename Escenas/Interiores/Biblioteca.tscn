@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://geauowpqs6bi"]
 
 [ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_i2min"]
-[ext_resource type="Texture2D" uid="uid://lfttg1begv2i" path="res://Assets/Produccion/Barrios/mugica/v03/fondo_batalla.png" id="2_6qoju"]
+[ext_resource type="Texture2D" uid="uid://bhlmnyai5ocao" path="res://Assets/Batalla/fondos/mugica.png" id="2_3fxkc"]
 [ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_j5w86"]
 [ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_a84wo"]
 [ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_ujiii"]
@@ -13,7 +13,7 @@
 [node name="Biblioteca" type="Node2D" unique_id=886434788]
 y_sort_enabled = true
 script = ExtResource("1_i2min")
-fondo_batalla = ExtResource("2_6qoju")
+fondo_batalla = ExtResource("2_3fxkc")
 musica = "pueblo"
 zona_id = "villa_31"
 zona_nombre = "Barrio Mugica"

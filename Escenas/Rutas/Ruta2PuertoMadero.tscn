@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_lgcsr"]
 [ext_resource type="Resource" uid="uid://b4b5mwtsldpvd" path="res://Datos/Encuentros/puerto_madero.tres" id="2_gehsi"]
-[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="3_6wtyg"]
 [ext_resource type="Resource" uid="uid://c5yi1bm0kbxv4" path="res://Datos/Encuentros/puerto_madero_raros.tres" id="3_gtkkg"]
+[ext_resource type="Texture2D" uid="uid://b4dpdinvmflur" path="res://Assets/Batalla/fondos/la_boca.png" id="3_yv1nj"]
 [ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="5_v7d6v"]
 [ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="6_v80r5"]
 [ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="7_0mhou"]
@@ -29,7 +29,7 @@
 y_sort_enabled = true
 script = ExtResource("1_lgcsr")
 encuentros = ExtResource("2_gehsi")
-fondo_batalla = ExtResource("3_6wtyg")
+fondo_batalla = ExtResource("3_yv1nj")
 musica = "ruta_1"
 zona_id = "puerto_madero"
 zona_nombre = "Ruta 2"

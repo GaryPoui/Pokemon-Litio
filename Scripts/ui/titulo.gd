@@ -9,6 +9,7 @@ var opciones: Array= []
 var ocupado:= false
 
 const ESCENA_OPCIONES :="res://Escenas/UI/Opciones.tscn"
+const SELECCION:= preload("res://Scripts/ui/seleccion_archivo.gd")
 
 func _ready() -> void:
 	$Opciones.add_theme_stylebox_override("panel", EstiloUI.panel())
@@ -24,11 +25,7 @@ func _ready() -> void:
 	var ids:= BaseDatos.ids(BaseDatos.ESPECIES)
 	if not ids.is_empty():
 		sprite.mostrar(BaseDatos.especie(ids[randi_range(0, ids.size()- 1)]), false)
-	opciones= []
-	if Guardado.existe():
-		opciones.append("CONTINUAR")
-	opciones.append("NUEVA PARTIDA")
-	opciones.append("OPCIONES")
+	opciones= ["JUGAR", "OPCIONES"]
 	$Opciones.size.y =10+ opciones.size()* 14
 	lista.poner(opciones)
 	Sonido.musica("titulo")
@@ -39,19 +36,33 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("aceptar"):
 		Sonido.efecto("confirmar")
 		match opciones[lista.cursor]:
-			"CONTINUAR":
-				Guardado.cargar()
-			"NUEVA PARTIDA":
-				Inventario.reiniciar()
-				Estado.reiniciar()
-				Equipo.reiniciar()
-				GestorEscenas.reiniciar_zona_exterior()
-				GestorEscenas.cambiar_mapa(MAPA_INICIAL, "", Vector2.DOWN)
+			"JUGAR":
+				_jugar()
 			"OPCIONES":
 				_opciones()
 	elif not lista.mover_con_evento(event):
 		return
 	get_viewport().set_input_as_handled()
+
+func _jugar() -> void:
+	ocupado= true
+	var p= SELECCION.new()
+	await GestorEscenas.fundido(func(): add_child(p))
+	var res: Array= await p.cerrado
+	var n: int= res[0]
+	if n== 0:
+		await GestorEscenas.fundido(func(): p.queue_free())
+		ocupado =false
+		return
+	if bool(res[1]):
+		Guardado.ranura= n
+		Inventario.reiniciar()
+		Estado.reiniciar()
+		Equipo.reiniciar()
+		GestorEscenas.reiniciar_zona_exterior()
+		GestorEscenas.cambiar_mapa(MAPA_INICIAL, "", Vector2.DOWN)
+	else:
+		Guardado.cargar(n)
 
 func _opciones() -> void:
 	ocupado= true

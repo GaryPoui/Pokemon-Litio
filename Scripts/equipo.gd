@@ -12,6 +12,7 @@ func agregar(p: PokemonInstancia) -> bool:
 		return false
 	miembros.append(p)
 	Estado.capturar(p.especie.id)
+	Estado.anotar_companero(p.especie.id)
 	cambiado.emit()
 	return true
 
@@ -25,6 +26,7 @@ func a_caja(p: PokemonInstancia) -> void:
 	p.curar()
 	caja.append(p)
 	Estado.capturar(p.especie.id)
+	Estado.anotar_companero(p.especie.id)
 	cambiado.emit()
 
 func puede_depositar(i: int) -> String:

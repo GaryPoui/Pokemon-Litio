@@ -126,6 +126,10 @@ func puede_evolucionar() -> bool:
 
 func evolucionar(nueva: EspeciePokemon) -> void:
 	var antes:= ps_max()
+	var arbol:= Engine.get_main_loop() as SceneTree
+	var estado: Node= arbol.root.get_node_or_null("Estado") if arbol!= null else null
+	if estado!= null:
+		estado.cambiar_companero(especie.id, nueva.id)
 	especie= nueva
 	ps_actuales =clampi(ps_actuales+ ps_max()- antes, 0, ps_max())
 

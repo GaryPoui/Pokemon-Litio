@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="TablaEncuentros" format=3 uid="uid://dnkwios5qgxh3"]
+[gd_resource type="Resource" script_class="TablaEncuentros" format=3 uid="uid://bjqiotog5tekn"]
 
 [ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_entrada"]
 [ext_resource type="Script" uid="uid://ba384a6evk1rl" path="res://Scripts/datos/tabla_encuentros.gd" id="2_tabla"]

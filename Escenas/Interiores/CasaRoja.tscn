@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://dsxqwqvookwdq"]
 
 [ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_ooyks"]
-[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="2_3hx8s"]
+[ext_resource type="Texture2D" uid="uid://b4dpdinvmflur" path="res://Assets/Batalla/fondos/la_boca.png" id="2_lmdgp"]
 [ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_8peab"]
 [ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_rm1ir"]
 [ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_h3tyd"]
@@ -13,7 +13,7 @@
 [node name="CasaRoja" type="Node2D" unique_id=276663418]
 y_sort_enabled = true
 script = ExtResource("1_ooyks")
-fondo_batalla = ExtResource("2_3hx8s")
+fondo_batalla = ExtResource("2_lmdgp")
 musica = "pueblo"
 zona_id = "la_boca"
 zona_nombre = "La Boca"

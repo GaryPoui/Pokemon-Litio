@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://bb1lwa1ba2cu8"]
 
 [ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_r33al"]
-[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="2_uasb8"]
+[ext_resource type="Texture2D" uid="uid://b4dpdinvmflur" path="res://Assets/Batalla/fondos/la_boca.png" id="2_mvg56"]
 [ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_pi1ew"]
 [ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_e4rph"]
 [ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_5ia3a"]
@@ -24,7 +24,8 @@
 [node name="GimnasioBoca" type="Node2D" unique_id=1324037437]
 y_sort_enabled = true
 script = ExtResource("1_r33al")
-fondo_batalla = ExtResource("2_uasb8")
+fondo_batalla = ExtResource("2_mvg56")
+terreno_batalla = "pasto"
 musica = "gimnasio"
 zona_id = "gimnasio_boca"
 zona_nombre = "Gimnasio de la Bombonera"

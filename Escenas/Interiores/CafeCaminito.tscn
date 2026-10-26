@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://c7y3mox3hpxtg"]
 
 [ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_xjp8m"]
-[ext_resource type="Texture2D" uid="uid://bk46apvud7ajn" path="res://Assets/Produccion/Barrios/la_boca/v03/fondo_batalla.png" id="2_7foy4"]
+[ext_resource type="Texture2D" uid="uid://b4dpdinvmflur" path="res://Assets/Batalla/fondos/la_boca.png" id="2_2y4ak"]
 [ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_o5o7f"]
 [ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_bmmm8"]
 [ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_yxe44"]
@@ -14,7 +14,7 @@
 [node name="CafeCaminito" type="Node2D" unique_id=712526589]
 y_sort_enabled = true
 script = ExtResource("1_xjp8m")
-fondo_batalla = ExtResource("2_7foy4")
+fondo_batalla = ExtResource("2_2y4ak")
 musica = "pueblo"
 zona_id = "la_boca"
 zona_nombre = "La Boca"

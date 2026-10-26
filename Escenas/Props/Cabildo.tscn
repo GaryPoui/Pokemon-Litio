@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b5qh5ontcvlmj"]
+
+[ext_resource type="Texture2D" uid="uid://l8lswcx5fk61" path="res://Assets/Overworld/Rutas/cabildo.png" id="1_mohpr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mohpr"]
+size = Vector2(160, 48)
+
+[node name="Cabildo" type="StaticBody2D" unique_id=1836771227]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=269710462]
+position = Vector2(-80, -104)
+texture = ExtResource("1_mohpr")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=2063239885]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_mohpr")
