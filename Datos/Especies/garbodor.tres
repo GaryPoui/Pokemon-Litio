@@ -129,3 +129,6 @@ sprite_frente = ExtResource("20_gp2lw")
 sprite_espalda = ExtResource("19_ecwaq")
 cuadros_frente = 68
 cuadros_espalda = 72
+habilidades = PackedStringArray("Hedor", "Armadura Frágil")
+habilidad_oculta = "Secuela/Detonación"
+evoluciones = Array[Dictionary]([])

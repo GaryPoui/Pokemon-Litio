@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/wooper_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/wooper_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_sport.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_shot.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/slam.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_bomb.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/yawn.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mist.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/haze.tres" id="16"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/muddy_water.tres" id="17"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 5
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 9
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 15
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 19
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 23
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 29
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 33
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 37
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Move_10"]
+script = ExtResource("2")
+nivel = 43
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Move_11"]
+script = ExtResource("2")
+nivel = 43
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Move_12"]
+script = ExtResource("2")
+nivel = 47
+movimiento = ExtResource("17")
+
+[resource]
+script = ExtResource("1")
+id = "wooper"
+numero = 194
+nombre = "Wooper"
+tipos = PackedStringArray("agua", "tierra")
+habilidades = PackedStringArray("Humedad", "Absorbeagua/Absorbe Agua")
+habilidad_oculta = "Ignorancia/Ignorante"
+ps = 55
+ataque = 45
+defensa = 45
+at_esp = 25
+def_esp = 25
+velocidad = 15
+exp_base = 42
+ratio_captura = 255
+ratio_genero = 4
+crecimiento = "medium"
+evs_otorgados = {"ps": 1}
+evoluciones = Array[Dictionary]([{"especie": "quagsire", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}])
+evoluciona_a = "quagsire"
+nivel_evolucion = 20
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 12
+cuadros_espalda = 12
+fps_sprite = 9.23

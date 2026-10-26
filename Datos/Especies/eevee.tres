@@ -89,3 +89,6 @@ sprite_espalda = ExtResource("14_2pgku")
 cuadros_frente = 74
 cuadros_espalda = 80
 fps_sprite = 11.46
+habilidades = PackedStringArray("Fuga", "Adaptable")
+habilidad_oculta = "Anticipación"
+evoluciones = Array[Dictionary]([{"especie": "vaporeon", "metodo": "piedra", "condicion": "Piedra agua"}, {"especie": "jolteon", "metodo": "piedra", "condicion": "Piedra trueno"}, {"especie": "flareon", "metodo": "piedra", "condicion": "Piedra fuego"}, {"especie": "espeon", "metodo": "amistad", "condicion": "Amistad + nivel (día)"}, {"especie": "umbreon", "metodo": "amistad", "condicion": "Amistad + nivel (noche)"}, {"especie": "leafeon", "metodo": "piedra", "condicion": "Subir nivel cerca de la roca musgo ; o piedra hoja"}, {"especie": "glaceon", "metodo": "piedra", "condicion": "Subir nivel cerca de la roca hielo ; o piedra hielo"}])

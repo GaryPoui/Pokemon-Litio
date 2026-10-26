@@ -134,3 +134,6 @@ sprite_espalda = ExtResource("19_lwp7j")
 cuadros_frente = 183
 cuadros_espalda = 183
 fps_sprite = 14.07
+habilidades = PackedStringArray("Sincronía", "Calco")
+habilidad_oculta = "Telepatía"
+evoluciones = Array[Dictionary]([])

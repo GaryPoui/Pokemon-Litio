@@ -117,3 +117,7 @@ sprite_espalda = ExtResource("18_q5fci")
 cuadros_frente = 10
 cuadros_espalda = 10
 fps_sprite = 9.09
+habilidades = PackedStringArray("Insomnio", "Supersuerte/Afortunado")
+habilidad_oculta = "Timador/Bromista"
+evoluciones = Array[Dictionary]([{"especie": "honchkrow", "metodo": "piedra", "condicion": "Piedra noche"}])
+evoluciona_a = "honchkrow"

@@ -122,3 +122,7 @@ sprite_espalda = ExtResource("19_vkis3")
 cuadros_frente = 65
 cuadros_espalda = 58
 fps_sprite = 8.69
+habilidades = PackedStringArray("Timador/Bromista", "Allanamiento")
+habilidad_oculta = "Clorofila"
+evoluciones = Array[Dictionary]([{"especie": "whimsicott", "metodo": "piedra", "condicion": "Piedra solar"}])
+evoluciona_a = "whimsicott"

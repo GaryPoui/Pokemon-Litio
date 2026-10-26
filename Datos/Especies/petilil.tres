@@ -122,3 +122,7 @@ sprite_espalda = ExtResource("19_5m3po")
 cuadros_frente = 54
 cuadros_espalda = 54
 fps_sprite = 9.31
+habilidades = PackedStringArray("Clorofila", "Ritmo Propio")
+habilidad_oculta = "Defensa Hoja"
+evoluciones = Array[Dictionary]([{"especie": "lilligant", "metodo": "piedra", "condicion": "Piedra solar (fuera de Hisui)"}])
+evoluciona_a = "lilligant"

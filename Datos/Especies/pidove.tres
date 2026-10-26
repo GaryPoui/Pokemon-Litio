@@ -118,3 +118,6 @@ sprite_espalda = ExtResource("18_un7n1")
 cuadros_frente = 65
 cuadros_espalda = 62
 fps_sprite = 10.52
+habilidades = PackedStringArray("Sacapecho", "Supersuerte/Afortunado")
+habilidad_oculta = "Rivalidad"
+evoluciones = Array[Dictionary]([{"especie": "tranquill", "metodo": "nivel", "condicion": "Nivel 21", "nivel": 21}])

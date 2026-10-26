@@ -111,3 +111,7 @@ sprite_espalda = ExtResource("17_bljwn")
 cuadros_frente = 120
 cuadros_espalda = 120
 fps_sprite = 14.29
+habilidades = PackedStringArray("Ignorancia/Ignorante", "Torpeza/Zoquete")
+habilidad_oculta = "Simple"
+evoluciones = Array[Dictionary]([{"especie": "swoobat", "metodo": "amistad", "condicion": "Amistad + nivel"}])
+evoluciona_a = "swoobat"

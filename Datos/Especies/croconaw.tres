@@ -129,3 +129,6 @@ sprite_frente = ExtResource("20_8uu8j")
 sprite_espalda = ExtResource("19_xcid6")
 cuadros_frente = 90
 cuadros_espalda = 96
+habilidades = PackedStringArray("Torrente")
+habilidad_oculta = "Potencia Bruta"
+evoluciones = Array[Dictionary]([{"especie": "feraligatr", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])

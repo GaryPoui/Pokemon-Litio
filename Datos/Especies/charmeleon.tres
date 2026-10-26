@@ -105,3 +105,6 @@ sprite_frente = ExtResource("16_2ddtr")
 sprite_espalda = ExtResource("15_r6pfn")
 cuadros_frente = 45
 cuadros_espalda = 45
+habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
+habilidad_oculta = "Poder Solar"
+evoluciones = Array[Dictionary]([{"especie": "charizard", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

@@ -139,3 +139,6 @@ sprite_espalda = ExtResource("20_dojo6")
 cuadros_frente = 80
 cuadros_espalda = 84
 fps_sprite = 12.7
+habilidades = PackedStringArray("Intimidación", "Autoestima")
+habilidad_oculta = "Irascible"
+evoluciones = Array[Dictionary]([{"especie": "krookodile", "metodo": "nivel", "condicion": "Nivel 40", "nivel": 40}])

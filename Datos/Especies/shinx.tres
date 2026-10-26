@@ -101,3 +101,6 @@ sprite_frente = ExtResource("16_dw3sa")
 sprite_espalda = ExtResource("15_15lgr")
 cuadros_frente = 64
 cuadros_espalda = 64
+habilidades = PackedStringArray("Rivalidad", "Intimidación")
+habilidad_oculta = "Agallas"
+evoluciones = Array[Dictionary]([{"especie": "luxio", "metodo": "nivel", "condicion": "Nivel 15", "nivel": 15}])

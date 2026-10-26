@@ -37,3 +37,6 @@ sprite_espalda = ExtResource("4_gjkqh")
 cuadros_frente = 56
 cuadros_espalda = 56
 fps_sprite = 9.82
+habilidades = PackedStringArray("Sincronía", "Fuerza Mental")
+habilidad_oculta = "Muro Mágico"
+evoluciones = Array[Dictionary]([{"especie": "kadabra", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

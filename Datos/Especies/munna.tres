@@ -128,3 +128,7 @@ sprite_frente = ExtResource("21_a0waf")
 sprite_espalda = ExtResource("20_6jhwb")
 cuadros_frente = 91
 cuadros_espalda = 91
+habilidades = PackedStringArray("Alerta", "Sincronía")
+habilidad_oculta = "Telepatía"
+evoluciones = Array[Dictionary]([{"especie": "musharna", "metodo": "piedra", "condicion": "Piedra lunar"}])
+evoluciona_a = "musharna"

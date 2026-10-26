@@ -126,3 +126,7 @@ sprite_espalda = ExtResource("19_o2uto")
 cuadros_frente = 25
 cuadros_espalda = 25
 fps_sprite = 20.0
+habilidades = PackedStringArray("Levitación")
+habilidad_oculta = ""
+evoluciones = Array[Dictionary]([{"especie": "gengar", "metodo": "intercambio", "condicion": "Intercambio; o cordón unión"}])
+evoluciona_a = "gengar"

@@ -117,3 +117,6 @@ sprite_espalda = ExtResource("18_psxoj")
 cuadros_frente = 204
 cuadros_espalda = 226
 fps_sprite = 15.04
+habilidades = PackedStringArray("Punta Acero")
+habilidad_oculta = ""
+evoluciones = Array[Dictionary]([{"especie": "ferrothorn", "metodo": "nivel", "condicion": "Nivel 40", "nivel": 40}])

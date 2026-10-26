@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ditto_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ditto_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/transform.tres" id="5"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[resource]
+script = ExtResource("1")
+id = "ditto"
+numero = 132
+nombre = "Ditto"
+tipos = PackedStringArray("normal")
+habilidades = PackedStringArray("Flexibilidad")
+habilidad_oculta = "Impostor"
+ps = 48
+ataque = 48
+defensa = 48
+at_esp = 48
+def_esp = 48
+velocidad = 48
+exp_base = 101
+ratio_captura = 35
+ratio_genero = -1
+crecimiento = "medium"
+evs_otorgados = {"ps": 1}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 24
+cuadros_espalda = 24
+fps_sprite = 12.5

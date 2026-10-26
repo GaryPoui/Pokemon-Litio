@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ho_oh_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ho_oh_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/weather_ball.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/brave_bird.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/extrasensory.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sunny_day.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fire_blast.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sacred_fire.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/punishment.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ancient_power.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/safeguard.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/recover.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/future_sight.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/natural_gift.tres" id="16"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/calm_mind.tres" id="17"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sky_attack.tres" id="18"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 15
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 23
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 29
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 37
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 43
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 50
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 57
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 65
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 71
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Move_10"]
+script = ExtResource("2")
+nivel = 79
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Move_11"]
+script = ExtResource("2")
+nivel = 85
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Move_12"]
+script = ExtResource("2")
+nivel = 93
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Move_13"]
+script = ExtResource("2")
+nivel = 99
+movimiento = ExtResource("18")
+
+[resource]
+script = ExtResource("1")
+id = "ho_oh"
+numero = 250
+nombre = "Ho-Oh"
+tipos = PackedStringArray("fuego", "volador")
+habilidades = PackedStringArray("Presión")
+habilidad_oculta = "Regeneración"
+ps = 106
+ataque = 130
+defensa = 90
+at_esp = 110
+def_esp = 154
+velocidad = 90
+exp_base = 306
+ratio_captura = 3
+ratio_genero = -1
+crecimiento = "slow"
+evs_otorgados = {"def_esp": 3}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 42
+cuadros_espalda = 42
+fps_sprite = 7.69

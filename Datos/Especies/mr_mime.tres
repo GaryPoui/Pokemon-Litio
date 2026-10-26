@@ -1,0 +1,171 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/mr_mime_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/mr_mime_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/magical_leaf.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/guard_swap.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/power_swap.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wide_guard.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/barrier.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_guard.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/copycat.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/meditate.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_slap.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psywave.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mimic.tres" id="16"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/encore.tres" id="17"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/reflect.tres" id="18"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/light_screen.tres" id="19"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psybeam.tres" id="20"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/substitute.tres" id="21"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/recycle.tres" id="22"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/trick.tres" id="23"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="24"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/role_play.tres" id="25"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/baton_pass.tres" id="26"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/safeguard.tres" id="27"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 4
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 8
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 11
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Move_10"]
+script = ExtResource("2")
+nivel = 15
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Move_11"]
+script = ExtResource("2")
+nivel = 15
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Move_12"]
+script = ExtResource("2")
+nivel = 18
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Move_13"]
+script = ExtResource("2")
+nivel = 22
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Move_14"]
+script = ExtResource("2")
+nivel = 22
+movimiento = ExtResource("19")
+
+[sub_resource type="Resource" id="Move_15"]
+script = ExtResource("2")
+nivel = 25
+movimiento = ExtResource("20")
+
+[sub_resource type="Resource" id="Move_16"]
+script = ExtResource("2")
+nivel = 29
+movimiento = ExtResource("21")
+
+[sub_resource type="Resource" id="Move_17"]
+script = ExtResource("2")
+nivel = 32
+movimiento = ExtResource("22")
+
+[sub_resource type="Resource" id="Move_18"]
+script = ExtResource("2")
+nivel = 36
+movimiento = ExtResource("23")
+
+[sub_resource type="Resource" id="Move_19"]
+script = ExtResource("2")
+nivel = 39
+movimiento = ExtResource("24")
+
+[sub_resource type="Resource" id="Move_20"]
+script = ExtResource("2")
+nivel = 43
+movimiento = ExtResource("25")
+
+[sub_resource type="Resource" id="Move_21"]
+script = ExtResource("2")
+nivel = 46
+movimiento = ExtResource("26")
+
+[sub_resource type="Resource" id="Move_22"]
+script = ExtResource("2")
+nivel = 50
+movimiento = ExtResource("27")
+
+[resource]
+script = ExtResource("1")
+id = "mr_mime"
+numero = 122
+nombre = "Mr. Mime"
+tipos = PackedStringArray("psiquico")
+habilidades = PackedStringArray("Insonorización/Insonorizar", "Filtro")
+habilidad_oculta = "Experto"
+ps = 40
+ataque = 45
+defensa = 65
+at_esp = 100
+def_esp = 120
+velocidad = 90
+exp_base = 161
+ratio_captura = 45
+ratio_genero = 4
+crecimiento = "medium"
+evs_otorgados = {"def_esp": 2}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18"), SubResource("Move_19"), SubResource("Move_20"), SubResource("Move_21"), SubResource("Move_22")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 16
+cuadros_espalda = 16
+fps_sprite = 10.0

@@ -131,3 +131,7 @@ sprite_espalda = ExtResource("19_bcwei")
 cuadros_frente = 8
 cuadros_espalda = 8
 fps_sprite = 7.77
+habilidades = PackedStringArray("Cabeza Roca", "Robustez")
+habilidad_oculta = "Velo de Arena/Velo Arena"
+evoluciones = Array[Dictionary]([{"especie": "golem", "metodo": "intercambio", "condicion": "Intercambio; o cordón unión"}])
+evoluciona_a = "golem"

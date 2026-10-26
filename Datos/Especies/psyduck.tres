@@ -116,3 +116,6 @@ sprite_espalda = ExtResource("18_eyv5s")
 cuadros_frente = 24
 cuadros_espalda = 28
 fps_sprite = 4.73
+habilidades = PackedStringArray("Humedad", "Aclimatación")
+habilidad_oculta = "Nado Rápido"
+evoluciones = Array[Dictionary]([{"especie": "golduck", "metodo": "nivel", "condicion": "Nivel 33", "nivel": 33}])

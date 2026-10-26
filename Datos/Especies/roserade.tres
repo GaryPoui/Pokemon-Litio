@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/roserade_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/roserade_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/magical_leaf.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/weather_ball.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/poison_sting.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sweet_scent.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="9"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("9")
+
+[resource]
+script = ExtResource("1")
+id = "roserade"
+numero = 407
+nombre = "Roserade"
+tipos = PackedStringArray("planta", "veneno")
+habilidades = PackedStringArray("Curación Natural/Cura Natural", "Punto Tóxico")
+habilidad_oculta = "Experto"
+ps = 60
+ataque = 70
+defensa = 65
+at_esp = 125
+def_esp = 105
+velocidad = 90
+exp_base = 227
+ratio_captura = 75
+ratio_genero = 4
+crecimiento = "medium-slow"
+evs_otorgados = {"at_esp": 3}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 102
+cuadros_espalda = 102
+fps_sprite = 8.63

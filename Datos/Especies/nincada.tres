@@ -1,0 +1,95 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/nincada_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/nincada_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leech_life.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_swipes.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mind_reader.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/false_swipe.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/metal_claw.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/dig.tres" id="14"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 5
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 9
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 14
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 19
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 25
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 31
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 38
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 45
+movimiento = ExtResource("14")
+
+[resource]
+script = ExtResource("1")
+id = "nincada"
+numero = 290
+nombre = "Nincada"
+tipos = PackedStringArray("bicho", "tierra")
+habilidades = PackedStringArray("Ojo Compuesto")
+habilidad_oculta = "Fuga"
+ps = 31
+ataque = 45
+defensa = 90
+at_esp = 30
+def_esp = 30
+velocidad = 40
+exp_base = 53
+ratio_captura = 255
+ratio_genero = 4
+crecimiento = "slow-then-very-fast"
+evs_otorgados = {"defensa": 1}
+evoluciones = Array[Dictionary]([{"especie": "ninjask", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}, {"especie": "shedinja", "metodo": "especial", "condicion": "Al evolucionar a Ninjask: espacio en el equipo y una Poke Ball."}])
+evoluciona_a = "ninjask"
+nivel_evolucion = 20
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 54
+cuadros_espalda = 54
+fps_sprite = 6.07

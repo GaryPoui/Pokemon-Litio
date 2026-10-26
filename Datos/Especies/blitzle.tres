@@ -106,3 +106,6 @@ sprite_espalda = ExtResource("16_bxvrj")
 cuadros_frente = 96
 cuadros_espalda = 90
 fps_sprite = 10.81
+habilidades = PackedStringArray("Pararrayos", "Electromotor")
+habilidad_oculta = "Herbívoro"
+evoluciones = Array[Dictionary]([{"especie": "zebstrika", "metodo": "nivel", "condicion": "Nivel 27", "nivel": 27}])

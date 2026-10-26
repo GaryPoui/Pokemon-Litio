@@ -1,0 +1,89 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/surskit_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/surskit_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sweet_scent.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_sport.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bubble_beam.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/haze.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mist.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/baton_pass.tres" id="13"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 7
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 13
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 19
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 25
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 31
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 37
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 37
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 43
+movimiento = ExtResource("13")
+
+[resource]
+script = ExtResource("1")
+id = "surskit"
+numero = 283
+nombre = "Surskit"
+tipos = PackedStringArray("bicho", "agua")
+habilidades = PackedStringArray("Nado Rápido")
+habilidad_oculta = "Curación Pluvial/Cura Lluvia"
+ps = 40
+ataque = 30
+defensa = 32
+at_esp = 50
+def_esp = 52
+velocidad = 65
+exp_base = 54
+ratio_captura = 200
+ratio_genero = 4
+crecimiento = "medium"
+evs_otorgados = {"velocidad": 1}
+evoluciones = Array[Dictionary]([{"especie": "masquerain", "metodo": "nivel", "condicion": "Nivel 22", "nivel": 22}])
+evoluciona_a = "masquerain"
+nivel_evolucion = 22
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 64
+cuadros_espalda = 60
+fps_sprite = 8.41

@@ -92,3 +92,7 @@ sprite_frente = ExtResource("15_jv3mh")
 sprite_espalda = ExtResource("14_7ojni")
 cuadros_frente = 63
 cuadros_espalda = 63
+habilidades = PackedStringArray("Impasible", "Fuerza Mental")
+habilidad_oculta = "Timador/Bromista"
+evoluciones = Array[Dictionary]([{"especie": "lucario", "metodo": "amistad", "condicion": "Amistad + nivel (día)"}])
+evoluciona_a = "lucario"

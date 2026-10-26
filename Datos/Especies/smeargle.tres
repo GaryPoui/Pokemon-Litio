@@ -1,0 +1,84 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/smeargle_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/smeargle_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sketch.tres" id="5"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 11
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 21
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 31
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 41
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 51
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 61
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 71
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 81
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 91
+movimiento = ExtResource("5")
+
+[resource]
+script = ExtResource("1")
+id = "smeargle"
+numero = 235
+nombre = "Smeargle"
+tipos = PackedStringArray("normal")
+habilidades = PackedStringArray("Ritmo Propio", "Experto")
+habilidad_oculta = "Temperamental/Veleta"
+ps = 55
+ataque = 20
+defensa = 35
+at_esp = 20
+def_esp = 45
+velocidad = 75
+exp_base = 88
+ratio_captura = 45
+ratio_genero = 4
+crecimiento = "fast"
+evs_otorgados = {"velocidad": 1}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 48
+cuadros_espalda = 48
+fps_sprite = 7.69

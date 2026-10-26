@@ -123,3 +123,6 @@ sprite_espalda = ExtResource("17_iu6bv")
 cuadros_frente = 64
 cuadros_espalda = 64
 fps_sprite = 12.9
+habilidades = PackedStringArray("Intimidación", "Pies Rápidos")
+habilidad_oculta = "Autoestima"
+evoluciones = Array[Dictionary]([])

@@ -129,3 +129,6 @@ sprite_espalda = ExtResource("19_xqxkx")
 cuadros_frente = 64
 cuadros_espalda = 64
 fps_sprite = 10.67
+habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
+habilidad_oculta = "Impulso"
+evoluciones = Array[Dictionary]([])

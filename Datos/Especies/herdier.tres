@@ -114,3 +114,6 @@ sprite_espalda = ExtResource("16_bw2s8")
 cuadros_frente = 58
 cuadros_espalda = 58
 fps_sprite = 8.29
+habilidades = PackedStringArray("Intimidación", "Ímpetu Arena")
+habilidad_oculta = "Intrépido"
+evoluciones = Array[Dictionary]([{"especie": "stoutland", "metodo": "nivel", "condicion": "Nivel 32", "nivel": 32}])

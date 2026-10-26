@@ -117,3 +117,6 @@ sprite_espalda = ExtResource("18_1jpt7")
 cuadros_frente = 41
 cuadros_espalda = 41
 fps_sprite = 7.28
+habilidades = PackedStringArray("Perspicacia/Vista Lince", "Sacapecho")
+habilidad_oculta = "Hidratación"
+evoluciones = Array[Dictionary]([{"especie": "swanna", "metodo": "nivel", "condicion": "Nivel 35", "nivel": 35}])

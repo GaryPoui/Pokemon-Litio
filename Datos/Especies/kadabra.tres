@@ -122,3 +122,7 @@ sprite_espalda = ExtResource("18_b7due")
 cuadros_frente = 59
 cuadros_espalda = 61
 fps_sprite = 8.73
+habilidades = PackedStringArray("Fuerza Mental", "Sincronía")
+habilidad_oculta = "Muro Mágico"
+evoluciones = Array[Dictionary]([{"especie": "alakazam", "metodo": "intercambio", "condicion": "Intercambio; o cordón unión"}])
+evoluciona_a = "alakazam"

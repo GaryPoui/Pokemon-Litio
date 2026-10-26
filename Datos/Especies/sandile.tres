@@ -130,3 +130,6 @@ sprite_espalda = ExtResource("20_0dmr8")
 cuadros_frente = 80
 cuadros_espalda = 80
 fps_sprite = 14.81
+habilidades = PackedStringArray("Intimidación", "Autoestima")
+habilidad_oculta = "Irascible"
+evoluciones = Array[Dictionary]([{"especie": "krokorok", "metodo": "nivel", "condicion": "Nivel 29", "nivel": 29}])

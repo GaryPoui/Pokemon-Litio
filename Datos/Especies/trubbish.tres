@@ -121,3 +121,6 @@ sprite_frente = ExtResource("20_6tdl1")
 sprite_espalda = ExtResource("19_mff6a")
 cuadros_frente = 102
 cuadros_espalda = 102
+habilidades = PackedStringArray("Hedor", "Viscosidad")
+habilidad_oculta = "Secuela/Detonación"
+evoluciones = Array[Dictionary]([{"especie": "garbodor", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

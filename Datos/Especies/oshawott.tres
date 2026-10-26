@@ -120,3 +120,6 @@ sprite_espalda = ExtResource("18_hpa8n")
 cuadros_frente = 149
 cuadros_espalda = 147
 fps_sprite = 9.43
+habilidades = PackedStringArray("Torrente")
+habilidad_oculta = "Caparazón"
+evoluciones = Array[Dictionary]([{"especie": "dewott", "metodo": "nivel", "condicion": "Nivel 17", "nivel": 17}])

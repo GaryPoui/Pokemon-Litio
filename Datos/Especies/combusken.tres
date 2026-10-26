@@ -116,3 +116,6 @@ sprite_espalda = ExtResource("16_8ivci")
 cuadros_frente = 64
 cuadros_espalda = 64
 fps_sprite = 9.37
+habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
+habilidad_oculta = "Impulso"
+evoluciones = Array[Dictionary]([{"especie": "blaziken", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

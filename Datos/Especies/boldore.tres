@@ -124,3 +124,7 @@ sprite_espalda = ExtResource("17_f6ioq")
 cuadros_frente = 58
 cuadros_espalda = 58
 fps_sprite = 7.44
+habilidades = PackedStringArray("Robustez", "Armadura Frágil")
+habilidad_oculta = "Poder Arenoso/Poder Arena"
+evoluciones = Array[Dictionary]([{"especie": "gigalith", "metodo": "intercambio", "condicion": "Intercambio"}])
+evoluciona_a = "gigalith"

@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/cloyster_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/cloyster_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aurora_beam.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/protect.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/withdraw.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/toxic_spikes.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spike_cannon.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spikes.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/icicle_crash.tres" id="12"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 13
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 28
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 52
+movimiento = ExtResource("12")
+
+[resource]
+script = ExtResource("1")
+id = "cloyster"
+numero = 91
+nombre = "Cloyster"
+tipos = PackedStringArray("agua", "hielo")
+habilidades = PackedStringArray("Caparazón", "Encadenado")
+habilidad_oculta = "Funda"
+ps = 50
+ataque = 95
+defensa = 180
+at_esp = 85
+def_esp = 45
+velocidad = 70
+exp_base = 184
+ratio_captura = 60
+ratio_genero = 4
+crecimiento = "slow"
+evs_otorgados = {"defensa": 2}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 17
+cuadros_espalda = 17
+fps_sprite = 10.0

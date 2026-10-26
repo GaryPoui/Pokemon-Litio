@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/mankey_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/mankey_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/low_kick.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/covet.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_swipes.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/karate_chop.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/seismic_toss.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/assurance.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swagger.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/cross_chop.tres" id="16"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="17"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/punishment.tres" id="18"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/close_combat.tres" id="19"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/final_gambit.tres" id="20"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 9
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 13
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 17
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 21
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 25
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Move_10"]
+script = ExtResource("2")
+nivel = 33
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Move_11"]
+script = ExtResource("2")
+nivel = 37
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Move_12"]
+script = ExtResource("2")
+nivel = 41
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Move_13"]
+script = ExtResource("2")
+nivel = 45
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Move_14"]
+script = ExtResource("2")
+nivel = 49
+movimiento = ExtResource("19")
+
+[sub_resource type="Resource" id="Move_15"]
+script = ExtResource("2")
+nivel = 53
+movimiento = ExtResource("20")
+
+[resource]
+script = ExtResource("1")
+id = "mankey"
+numero = 56
+nombre = "Mankey"
+tipos = PackedStringArray("lucha")
+habilidades = PackedStringArray("Espíritu Vital", "Irascible")
+habilidad_oculta = "Competitivo"
+ps = 40
+ataque = 80
+defensa = 35
+at_esp = 35
+def_esp = 45
+velocidad = 70
+exp_base = 61
+ratio_captura = 190
+ratio_genero = 4
+crecimiento = "medium"
+evs_otorgados = {"ataque": 1}
+evoluciones = Array[Dictionary]([{"especie": "primeape", "metodo": "nivel", "condicion": "Nivel 28", "nivel": 28}])
+evoluciona_a = "primeape"
+nivel_evolucion = 28
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 90
+cuadros_espalda = 90
+fps_sprite = 14.29

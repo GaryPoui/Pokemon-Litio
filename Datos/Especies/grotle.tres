@@ -107,3 +107,6 @@ sprite_espalda = ExtResource("15_20c8c")
 cuadros_frente = 87
 cuadros_espalda = 86
 fps_sprite = 13.68
+habilidades = PackedStringArray("Espesura")
+habilidad_oculta = "Caparazón"
+evoluciones = Array[Dictionary]([{"especie": "torterra", "metodo": "nivel", "condicion": "Nivel 32", "nivel": 32}])

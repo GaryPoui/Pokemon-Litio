@@ -124,3 +124,6 @@ sprite_espalda = ExtResource("19_48dsj")
 cuadros_frente = 43
 cuadros_espalda = 43
 fps_sprite = 8.11
+habilidades = PackedStringArray("Torrente")
+habilidad_oculta = "Potencia Bruta"
+evoluciones = Array[Dictionary]([{"especie": "croconaw", "metodo": "nivel", "condicion": "Nivel 18", "nivel": 18}])

@@ -121,3 +121,6 @@ sprite_espalda = ExtResource("18_fxhqu")
 cuadros_frente = 16
 cuadros_espalda = 4
 fps_sprite = 14.29
+habilidades = PackedStringArray("Más", "Menos")
+habilidad_oculta = "Cuerpo Puro"
+evoluciones = Array[Dictionary]([{"especie": "klang", "metodo": "nivel", "condicion": "Nivel 38", "nivel": 38}])

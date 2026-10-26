@@ -129,3 +129,6 @@ sprite_espalda = ExtResource("19_xuik4")
 cuadros_frente = 39
 cuadros_espalda = 41
 fps_sprite = 9.51
+habilidades = PackedStringArray("Humedad", "Aclimatación")
+habilidad_oculta = "Nado Rápido"
+evoluciones = Array[Dictionary]([])

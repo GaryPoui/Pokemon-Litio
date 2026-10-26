@@ -132,3 +132,6 @@ sprite_espalda = ExtResource("18_nk8wm")
 cuadros_frente = 32
 cuadros_espalda = 16
 fps_sprite = 14.29
+habilidades = PackedStringArray("Más", "Menos")
+habilidad_oculta = "Cuerpo Puro"
+evoluciones = Array[Dictionary]([{"especie": "klinklang", "metodo": "nivel", "condicion": "Nivel 49", "nivel": 49}])

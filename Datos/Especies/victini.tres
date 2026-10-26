@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/victini_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/victini_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/searing_shot.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/incinerate.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/endure.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/headbutt.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_charge.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flame_burst.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/zen_headbutt.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/inferno.tres" id="16"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="17"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flare_blitz.tres" id="18"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/final_gambit.tres" id="19"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stored_power.tres" id="20"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/overheat.tres" id="21"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 9
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 17
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 25
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 33
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 41
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Move_10"]
+script = ExtResource("2")
+nivel = 49
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Move_11"]
+script = ExtResource("2")
+nivel = 57
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Move_12"]
+script = ExtResource("2")
+nivel = 65
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Move_13"]
+script = ExtResource("2")
+nivel = 73
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Move_14"]
+script = ExtResource("2")
+nivel = 81
+movimiento = ExtResource("19")
+
+[sub_resource type="Resource" id="Move_15"]
+script = ExtResource("2")
+nivel = 89
+movimiento = ExtResource("20")
+
+[sub_resource type="Resource" id="Move_16"]
+script = ExtResource("2")
+nivel = 97
+movimiento = ExtResource("21")
+
+[resource]
+script = ExtResource("1")
+id = "victini"
+numero = 494
+nombre = "Victini"
+tipos = PackedStringArray("psiquico", "fuego")
+habilidades = PackedStringArray("Tinovictoria")
+habilidad_oculta = ""
+ps = 100
+ataque = 100
+defensa = 100
+at_esp = 100
+def_esp = 100
+velocidad = 100
+exp_base = 270
+ratio_captura = 3
+ratio_genero = -1
+crecimiento = "slow"
+evs_otorgados = {"ps": 3}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 55
+cuadros_espalda = 60
+fps_sprite = 7.98

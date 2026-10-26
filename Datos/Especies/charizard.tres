@@ -139,3 +139,6 @@ sprite_frente = ExtResource("22_vejma")
 sprite_espalda = ExtResource("21_552q7")
 cuadros_frente = 72
 cuadros_espalda = 72
+habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
+habilidad_oculta = "Poder Solar"
+evoluciones = Array[Dictionary]([])

@@ -118,3 +118,6 @@ sprite_espalda = ExtResource("18_3j667")
 cuadros_frente = 128
 cuadros_espalda = 128
 fps_sprite = 20.0
+habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
+habilidad_oculta = "Absorbefuego/Absorbe Fuego"
+evoluciones = Array[Dictionary]([{"especie": "quilava", "metodo": "especial", "condicion": "Nivel 14 (nivel 17 en )"}])

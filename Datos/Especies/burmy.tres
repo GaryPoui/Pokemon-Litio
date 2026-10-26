@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/burmy_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/burmy_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/protect.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hidden_power.tres" id="8"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 10
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 15
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 20
+movimiento = ExtResource("8")
+
+[resource]
+script = ExtResource("1")
+id = "burmy"
+numero = 412
+nombre = "Burmy"
+tipos = PackedStringArray("bicho")
+habilidades = PackedStringArray("Mudar")
+habilidad_oculta = "Funda"
+ps = 40
+ataque = 29
+defensa = 45
+at_esp = 29
+def_esp = 45
+velocidad = 36
+exp_base = 45
+ratio_captura = 120
+ratio_genero = 4
+crecimiento = "medium"
+evs_otorgados = {"def_esp": 1}
+evoluciones = Array[Dictionary]([{"especie": "wormadam", "metodo": "especial", "condicion": "Nivel 20 + ♀"}, {"especie": "mothim", "metodo": "especial", "condicion": "Nivel 20 + ♂"}])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 82
+cuadros_espalda = 82
+fps_sprite = 7.69

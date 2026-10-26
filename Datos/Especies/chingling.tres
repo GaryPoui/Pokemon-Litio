@@ -1,0 +1,76 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/chingling_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/chingling_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wrap.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/uproar.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/entrainment.tres" id="11"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 6
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 9
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 14
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 17
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 22
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 25
+movimiento = ExtResource("11")
+
+[resource]
+script = ExtResource("1")
+id = "chingling"
+numero = 433
+nombre = "Chingling"
+tipos = PackedStringArray("psiquico")
+habilidades = PackedStringArray("Levitación")
+habilidad_oculta = ""
+ps = 45
+ataque = 30
+defensa = 50
+at_esp = 65
+def_esp = 50
+velocidad = 45
+exp_base = 57
+ratio_captura = 120
+ratio_genero = 4
+crecimiento = "fast"
+evs_otorgados = {"at_esp": 1}
+evoluciones = Array[Dictionary]([{"especie": "chimecho", "metodo": "amistad", "condicion": "Amistad + nivel (noche)"}])
+evoluciona_a = "chimecho"
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 82
+cuadros_espalda = 82
+fps_sprite = 9.76

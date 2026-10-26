@@ -58,3 +58,7 @@ sprite_frente = ExtResource("10_4t811")
 sprite_espalda = ExtResource("9_xr23h")
 cuadros_frente = 64
 cuadros_espalda = 64
+habilidades = PackedStringArray("Defensa Hoja", "Clorofila")
+habilidad_oculta = "Funda"
+evoluciones = Array[Dictionary]([{"especie": "leavanny", "metodo": "amistad", "condicion": "Amistad + nivel"}])
+evoluciona_a = "leavanny"

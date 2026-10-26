@@ -119,3 +119,6 @@ sprite_espalda = ExtResource("18_2p1q8")
 cuadros_frente = 118
 cuadros_espalda = 118
 fps_sprite = 21.34
+habilidades = PackedStringArray("Levitación")
+habilidad_oculta = ""
+evoluciones = Array[Dictionary]([{"especie": "haunter", "metodo": "nivel", "condicion": "Nivel 25", "nivel": 25}])

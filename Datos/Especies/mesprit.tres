@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/mesprit_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/mesprit_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rest.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/imprison.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/protect.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swift.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/lucky_chant.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/future_sight.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charm.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/extrasensory.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/copycat.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/natural_gift.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/healing_wish.tres" id="16"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 6
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 16
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 21
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 31
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 36
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 46
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 51
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 61
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Move_10"]
+script = ExtResource("2")
+nivel = 66
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Move_11"]
+script = ExtResource("2")
+nivel = 76
+movimiento = ExtResource("16")
+
+[resource]
+script = ExtResource("1")
+id = "mesprit"
+numero = 481
+nombre = "Mesprit"
+tipos = PackedStringArray("psiquico")
+habilidades = PackedStringArray("Levitación")
+habilidad_oculta = ""
+ps = 80
+ataque = 105
+defensa = 105
+at_esp = 105
+def_esp = 105
+velocidad = 80
+exp_base = 261
+ratio_captura = 3
+ratio_genero = -1
+crecimiento = "slow"
+evs_otorgados = {"ataque": 1, "at_esp": 1, "def_esp": 1}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 86
+cuadros_espalda = 86
+fps_sprite = 12.18

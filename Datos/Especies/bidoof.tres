@@ -99,3 +99,6 @@ sprite_espalda = ExtResource("15_fk5bc")
 cuadros_frente = 52
 cuadros_espalda = 51
 fps_sprite = 9.12
+habilidades = PackedStringArray("Simple", "Ignorancia/Ignorante")
+habilidad_oculta = "Temperamental/Veleta"
+evoluciones = Array[Dictionary]([{"especie": "bibarel", "metodo": "nivel", "condicion": "Nivel 15", "nivel": 15}])

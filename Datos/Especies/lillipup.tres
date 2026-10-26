@@ -105,3 +105,6 @@ sprite_frente = ExtResource("17_n5vdr")
 sprite_espalda = ExtResource("16_xg1h7")
 cuadros_frente = 64
 cuadros_espalda = 64
+habilidades = PackedStringArray("Espíritu Vital", "Recolección/Recogida")
+habilidad_oculta = "Fuga"
+evoluciones = Array[Dictionary]([{"especie": "herdier", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

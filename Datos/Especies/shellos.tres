@@ -1,0 +1,95 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/shellos_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/shellos_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_sport.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_pulse.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_bomb.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hidden_power.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/body_slam.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/muddy_water.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/recover.tres" id="14"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 2
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 4
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 7
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 11
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 16
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 22
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 29
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 37
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 46
+movimiento = ExtResource("14")
+
+[resource]
+script = ExtResource("1")
+id = "shellos"
+numero = 422
+nombre = "Shellos"
+tipos = PackedStringArray("agua")
+habilidades = PackedStringArray("Viscosidad", "Colector")
+habilidad_oculta = "Poder Arenoso/Poder Arena"
+ps = 76
+ataque = 48
+defensa = 48
+at_esp = 57
+def_esp = 62
+velocidad = 34
+exp_base = 65
+ratio_captura = 190
+ratio_genero = 4
+crecimiento = "medium"
+evs_otorgados = {"ps": 1}
+evoluciones = Array[Dictionary]([{"especie": "gastrodon", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])
+evoluciona_a = "gastrodon"
+nivel_evolucion = 30
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 60
+cuadros_espalda = 60
+fps_sprite = 11.24

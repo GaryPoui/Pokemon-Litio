@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/combee_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/combee_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sweet_scent.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="7"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 13
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 29
+movimiento = ExtResource("7")
+
+[resource]
+script = ExtResource("1")
+id = "combee"
+numero = 415
+nombre = "Combee"
+tipos = PackedStringArray("bicho", "volador")
+habilidades = PackedStringArray("Cosechamiel/Recogemiel")
+habilidad_oculta = "Entusiasmo"
+ps = 30
+ataque = 30
+defensa = 42
+at_esp = 30
+def_esp = 42
+velocidad = 70
+exp_base = 49
+ratio_captura = 120
+ratio_genero = 1
+crecimiento = "medium-slow"
+evs_otorgados = {"velocidad": 1}
+evoluciones = Array[Dictionary]([{"especie": "vespiquen", "metodo": "especial", "condicion": "Nivel 21 + ♀"}])
+evoluciona_a = "vespiquen"
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 96
+cuadros_espalda = 96
+fps_sprite = 50.0

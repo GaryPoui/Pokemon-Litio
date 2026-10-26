@@ -129,3 +129,7 @@ sprite_espalda = ExtResource("20_n56cw")
 cuadros_frente = 96
 cuadros_espalda = 104
 fps_sprite = 13.11
+habilidades = PackedStringArray("Gran Encanto", "Experto")
+habilidad_oculta = "Encadenado"
+evoluciones = Array[Dictionary]([{"especie": "cinccino", "metodo": "piedra", "condicion": "Piedra día"}])
+evoluciona_a = "cinccino"

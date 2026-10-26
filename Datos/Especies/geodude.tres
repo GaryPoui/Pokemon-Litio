@@ -125,3 +125,6 @@ sprite_espalda = ExtResource("19_gv5t3")
 cuadros_frente = 43
 cuadros_espalda = 32
 fps_sprite = 16.1
+habilidades = PackedStringArray("Cabeza Roca", "Robustez")
+habilidad_oculta = "Velo de Arena/Velo Arena"
+evoluciones = Array[Dictionary]([{"especie": "graveler", "metodo": "nivel", "condicion": "Nivel 25", "nivel": 25}])

@@ -126,3 +126,6 @@ sprite_espalda = ExtResource("19_4jsv1")
 cuadros_frente = 88
 cuadros_espalda = 86
 fps_sprite = 12.15
+habilidades = PackedStringArray("Agallas", "Potencia Bruta")
+habilidad_oculta = "Puño Férreo"
+evoluciones = Array[Dictionary]([{"especie": "gurdurr", "metodo": "nivel", "condicion": "Nivel 25", "nivel": 25}])

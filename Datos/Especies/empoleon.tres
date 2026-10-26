@@ -125,3 +125,6 @@ sprite_frente = ExtResource("19_sp25g")
 sprite_espalda = ExtResource("18_ubcmd")
 cuadros_frente = 66
 cuadros_espalda = 66
+habilidades = PackedStringArray("Torrente")
+habilidad_oculta = "Tenacidad"
+evoluciones = Array[Dictionary]([])

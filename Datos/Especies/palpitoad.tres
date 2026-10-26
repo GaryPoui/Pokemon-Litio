@@ -121,3 +121,6 @@ sprite_espalda = ExtResource("17_kkai2")
 cuadros_frente = 54
 cuadros_espalda = 71
 fps_sprite = 9.2
+habilidades = PackedStringArray("Nado Rápido", "Hidratación")
+habilidad_oculta = "Absorbeagua/Absorbe Agua"
+evoluciones = Array[Dictionary]([{"especie": "seismitoad", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

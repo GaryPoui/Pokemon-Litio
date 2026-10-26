@@ -116,3 +116,6 @@ sprite_espalda = ExtResource("16_eb0nb")
 cuadros_frente = 55
 cuadros_espalda = 51
 fps_sprite = 9.17
+habilidades = PackedStringArray("Electricidad Estática")
+habilidad_oculta = "Más"
+evoluciones = Array[Dictionary]([{"especie": "ampharos", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])

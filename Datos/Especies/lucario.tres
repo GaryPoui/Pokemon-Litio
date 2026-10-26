@@ -138,3 +138,6 @@ sprite_frente = ExtResource("23_8iug5")
 sprite_espalda = ExtResource("22_u8bib")
 cuadros_frente = 72
 cuadros_espalda = 72
+habilidades = PackedStringArray("Impasible", "Fuerza Mental")
+habilidad_oculta = "Justiciero"
+evoluciones = Array[Dictionary]([])

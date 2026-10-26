@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/seedot_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/seedot_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bide.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growth.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nature_power.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/synthesis.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sunny_day.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="11"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 3
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 7
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 13
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 21
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 31
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 43
+movimiento = ExtResource("11")
+
+[resource]
+script = ExtResource("1")
+id = "seedot"
+numero = 273
+nombre = "Seedot"
+tipos = PackedStringArray("planta")
+habilidades = PackedStringArray("Clorofila", "Madrugador/Madrugar")
+habilidad_oculta = "Hurto"
+ps = 40
+ataque = 40
+defensa = 50
+at_esp = 30
+def_esp = 30
+velocidad = 30
+exp_base = 44
+ratio_captura = 255
+ratio_genero = 4
+crecimiento = "medium-slow"
+evs_otorgados = {"defensa": 1}
+evoluciones = Array[Dictionary]([{"especie": "nuzleaf", "metodo": "nivel", "condicion": "Nivel 14", "nivel": 14}])
+evoluciona_a = "nuzleaf"
+nivel_evolucion = 14
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 193
+cuadros_espalda = 193
+fps_sprite = 14.22

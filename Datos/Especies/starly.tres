@@ -101,3 +101,6 @@ sprite_espalda = ExtResource("15_pels7")
 cuadros_frente = 61
 cuadros_espalda = 61
 fps_sprite = 11.3
+habilidades = PackedStringArray("Perspicacia/Vista Lince")
+habilidad_oculta = "Audaz"
+evoluciones = Array[Dictionary]([{"especie": "staravia", "metodo": "nivel", "condicion": "Nivel 14", "nivel": 14}])

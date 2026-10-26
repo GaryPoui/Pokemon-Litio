@@ -47,3 +47,6 @@ sprite_frente = ExtResource("8_evjqu")
 sprite_espalda = ExtResource("7_q26bq")
 cuadros_frente = 84
 cuadros_espalda = 84
+habilidades = PackedStringArray("Electricidad Estática")
+habilidad_oculta = "Pararrayos"
+evoluciones = Array[Dictionary]([])

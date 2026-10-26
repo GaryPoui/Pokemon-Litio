@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lilligant_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lilligant_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leech_seed.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growth.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/synthesis.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/teeter_dance.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quiver_dance.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/petal_dance.tres" id="11"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 10
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 28
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 46
+movimiento = ExtResource("11")
+
+[resource]
+script = ExtResource("1")
+id = "lilligant"
+numero = 549
+nombre = "Lilligant"
+tipos = PackedStringArray("planta")
+habilidades = PackedStringArray("Clorofila", "Ritmo Propio")
+habilidad_oculta = "Defensa Hoja"
+ps = 70
+ataque = 60
+defensa = 75
+at_esp = 110
+def_esp = 75
+velocidad = 90
+exp_base = 168
+ratio_captura = 75
+ratio_genero = 8
+crecimiento = "medium"
+evs_otorgados = {"at_esp": 2}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 67
+cuadros_espalda = 62
+fps_sprite = 10.31

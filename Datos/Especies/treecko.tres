@@ -101,3 +101,6 @@ sprite_espalda = ExtResource("15_x1rh8")
 cuadros_frente = 77
 cuadros_espalda = 77
 fps_sprite = 9.49
+habilidades = PackedStringArray("Espesura")
+habilidad_oculta = "Liviano"
+evoluciones = Array[Dictionary]([{"especie": "grovyle", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

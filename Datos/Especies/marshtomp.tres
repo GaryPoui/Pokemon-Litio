@@ -114,3 +114,6 @@ sprite_espalda = ExtResource("16_uspxb")
 cuadros_frente = 64
 cuadros_espalda = 60
 fps_sprite = 9.76
+habilidades = PackedStringArray("Torrente")
+habilidad_oculta = "Humedad"
+evoluciones = Array[Dictionary]([{"especie": "swampert", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

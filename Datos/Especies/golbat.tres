@@ -112,3 +112,7 @@ sprite_espalda = ExtResource("16_534qk")
 cuadros_frente = 16
 cuadros_espalda = 16
 fps_sprite = 20.0
+habilidades = PackedStringArray("Fuerza Mental")
+habilidad_oculta = "Allanamiento"
+evoluciones = Array[Dictionary]([{"especie": "crobat", "metodo": "amistad", "condicion": "Amistad + nivel"}])
+evoluciona_a = "crobat"

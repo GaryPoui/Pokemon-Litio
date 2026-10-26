@@ -120,3 +120,6 @@ sprite_espalda = ExtResource("19_x5345")
 cuadros_frente = 65
 cuadros_espalda = 65
 fps_sprite = 14.1
+habilidades = PackedStringArray("Ojo Compuesto", "Nerviosismo")
+habilidad_oculta = "Enjambre"
+evoluciones = Array[Dictionary]([{"especie": "galvantula", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

@@ -51,3 +51,6 @@ sprite_espalda = ExtResource("7_73lat")
 cuadros_frente = 148
 cuadros_espalda = 149
 fps_sprite = 12.74
+habilidades = PackedStringArray("Levitación")
+habilidad_oculta = ""
+evoluciones = Array[Dictionary]([{"especie": "eelektrik", "metodo": "nivel", "condicion": "Nivel 39", "nivel": 39}])

@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tyrogue_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tyrogue_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/foresight.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/helping_hand.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fake_out.tres" id="8"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("8")
+
+[resource]
+script = ExtResource("1")
+id = "tyrogue"
+numero = 236
+nombre = "Tyrogue"
+tipos = PackedStringArray("lucha")
+habilidades = PackedStringArray("Agallas", "Impasible")
+habilidad_oculta = "Espíritu Vital"
+ps = 35
+ataque = 35
+defensa = 35
+at_esp = 35
+def_esp = 35
+velocidad = 35
+exp_base = 42
+ratio_captura = 75
+ratio_genero = 0
+crecimiento = "medium"
+evs_otorgados = {"ataque": 1}
+evoluciones = Array[Dictionary]([{"especie": "hitmonlee", "metodo": "especial", "condicion": "Nivel 20 Ataque > Defensa"}, {"especie": "hitmonchan", "metodo": "especial", "condicion": "Nivel 20 Ataque < Defensa"}, {"especie": "hitmontop", "metodo": "especial", "condicion": "Nivel 20 Ataque = Defensa"}])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 43
+cuadros_espalda = 38
+fps_sprite = 10.8

@@ -118,3 +118,6 @@ sprite_espalda = ExtResource("18_5axi1")
 cuadros_frente = 65
 cuadros_espalda = 60
 fps_sprite = 10.45
+habilidades = PackedStringArray("Perspicacia/Vista Lince", "Fuga")
+habilidad_oculta = "Cálculo Final"
+evoluciones = Array[Dictionary]([{"especie": "watchog", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}])

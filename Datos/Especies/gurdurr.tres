@@ -131,3 +131,7 @@ sprite_espalda = ExtResource("19_smyga")
 cuadros_frente = 88
 cuadros_espalda = 88
 fps_sprite = 9.67
+habilidades = PackedStringArray("Agallas", "Potencia Bruta")
+habilidad_oculta = "Puño Férreo"
+evoluciones = Array[Dictionary]([{"especie": "conkeldurr", "metodo": "intercambio", "condicion": "Intercambio"}])
+evoluciona_a = "conkeldurr"

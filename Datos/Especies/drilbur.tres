@@ -118,3 +118,6 @@ sprite_espalda = ExtResource("18_bks63")
 cuadros_frente = 72
 cuadros_espalda = 72
 fps_sprite = 12.0
+habilidades = PackedStringArray("Ímpetu Arena", "Poder Arenoso/Poder Arena")
+habilidad_oculta = "Rompemoldes"
+evoluciones = Array[Dictionary]([{"especie": "excadrill", "metodo": "nivel", "condicion": "Nivel 31", "nivel": 31}])

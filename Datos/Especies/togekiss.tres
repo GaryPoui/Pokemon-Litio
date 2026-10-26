@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/togekiss_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/togekiss_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sky_attack.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aura_sphere.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/extreme_speed.tres" id="8"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("8")
+
+[resource]
+script = ExtResource("1")
+id = "togekiss"
+numero = 468
+nombre = "Togekiss"
+tipos = PackedStringArray("volador")
+habilidades = PackedStringArray("Entusiasmo", "Dicha")
+habilidad_oculta = "Supersuerte/Afortunado"
+ps = 85
+ataque = 50
+defensa = 95
+at_esp = 120
+def_esp = 115
+velocidad = 80
+exp_base = 245
+ratio_captura = 30
+ratio_genero = 1
+crecimiento = "fast"
+evs_otorgados = {"at_esp": 2, "def_esp": 1}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 48
+cuadros_espalda = 48
+fps_sprite = 10.0

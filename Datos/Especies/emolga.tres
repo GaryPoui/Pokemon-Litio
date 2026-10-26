@@ -117,3 +117,6 @@ sprite_espalda = ExtResource("18_vw3xn")
 cuadros_frente = 98
 cuadros_espalda = 97
 fps_sprite = 10.46
+habilidades = PackedStringArray("Electricidad Estática")
+habilidad_oculta = "Electromotor"
+evoluciones = Array[Dictionary]([])

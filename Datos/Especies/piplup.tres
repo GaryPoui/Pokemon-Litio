@@ -107,3 +107,6 @@ sprite_frente = ExtResource("17_vyfmy")
 sprite_espalda = ExtResource("16_buowb")
 cuadros_frente = 75
 cuadros_espalda = 75
+habilidades = PackedStringArray("Torrente")
+habilidad_oculta = "Tenacidad"
+evoluciones = Array[Dictionary]([{"especie": "prinplup", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

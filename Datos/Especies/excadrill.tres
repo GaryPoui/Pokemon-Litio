@@ -129,3 +129,6 @@ sprite_espalda = ExtResource("19_js3wy")
 cuadros_frente = 92
 cuadros_espalda = 92
 fps_sprite = 10.42
+habilidades = PackedStringArray("Ímpetu Arena", "Poder Arenoso/Poder Arena")
+habilidad_oculta = "Rompemoldes"
+evoluciones = Array[Dictionary]([])

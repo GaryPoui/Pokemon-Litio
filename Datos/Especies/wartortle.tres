@@ -123,3 +123,6 @@ sprite_espalda = ExtResource("17_xe585")
 cuadros_frente = 43
 cuadros_espalda = 43
 fps_sprite = 9.77
+habilidades = PackedStringArray("Torrente")
+habilidad_oculta = "Curación Pluvial/Cura Lluvia"
+evoluciones = Array[Dictionary]([{"especie": "blastoise", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

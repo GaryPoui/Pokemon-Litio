@@ -115,3 +115,7 @@ sprite_espalda = ExtResource("18_imirk")
 cuadros_frente = 81
 cuadros_espalda = 81
 fps_sprite = 13.52
+habilidades = PackedStringArray("Levitación")
+habilidad_oculta = ""
+evoluciones = Array[Dictionary]([{"especie": "eelektross", "metodo": "piedra", "condicion": "Piedra trueno"}])
+evoluciona_a = "eelektross"

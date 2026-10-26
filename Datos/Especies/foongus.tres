@@ -119,3 +119,6 @@ sprite_espalda = ExtResource("18_qkxhn")
 cuadros_frente = 49
 cuadros_espalda = 49
 fps_sprite = 9.07
+habilidades = PackedStringArray("Efecto Espora")
+habilidad_oculta = "Regeneración"
+evoluciones = Array[Dictionary]([{"especie": "amoonguss", "metodo": "nivel", "condicion": "Nivel 39", "nivel": 39}])

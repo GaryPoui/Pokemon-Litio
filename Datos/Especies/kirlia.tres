@@ -131,3 +131,6 @@ sprite_espalda = ExtResource("18_appk7")
 cuadros_frente = 50
 cuadros_espalda = 50
 fps_sprite = 8.93
+habilidades = PackedStringArray("Sincronía", "Calco")
+habilidad_oculta = "Telepatía"
+evoluciones = Array[Dictionary]([{"especie": "gardevoir", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}, {"especie": "gallade", "metodo": "piedra", "condicion": "♂ + Piedra alba"}])

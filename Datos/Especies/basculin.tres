@@ -121,3 +121,6 @@ sprite_frente = ExtResource("20_dko37")
 sprite_espalda = ExtResource("19_vugid")
 cuadros_frente = 93
 cuadros_espalda = 90
+habilidades = PackedStringArray("AudazRR Cabeza RocaRA CobardíaRB", "Adaptable")
+habilidad_oculta = "Rompemoldes"
+evoluciones = Array[Dictionary]([])

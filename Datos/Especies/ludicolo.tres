@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ludicolo_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ludicolo_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nature_power.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="8"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("8")
+
+[resource]
+script = ExtResource("1")
+id = "ludicolo"
+numero = 272
+nombre = "Ludicolo"
+tipos = PackedStringArray("agua", "planta")
+habilidades = PackedStringArray("Nado Rápido", "Curación Pluvial/Cura Lluvia")
+habilidad_oculta = "Ritmo Propio"
+ps = 80
+ataque = 70
+defensa = 70
+at_esp = 90
+def_esp = 100
+velocidad = 70
+exp_base = 216
+ratio_captura = 45
+ratio_genero = 4
+crecimiento = "medium-slow"
+evs_otorgados = {"def_esp": 3}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 43
+cuadros_espalda = 42
+fps_sprite = 6.81

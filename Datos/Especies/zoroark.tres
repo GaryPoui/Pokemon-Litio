@@ -141,3 +141,6 @@ sprite_frente = ExtResource("22_273um")
 sprite_espalda = ExtResource("21_fab06")
 cuadros_frente = 90
 cuadros_espalda = 90
+habilidades = PackedStringArray("Ilusión")
+habilidad_oculta = ""
+evoluciones = Array[Dictionary]([])

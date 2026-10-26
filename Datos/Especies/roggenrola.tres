@@ -108,3 +108,6 @@ sprite_espalda = ExtResource("16_jes8r")
 cuadros_frente = 64
 cuadros_espalda = 64
 fps_sprite = 8.89
+habilidades = PackedStringArray("Robustez", "Armadura Frágil")
+habilidad_oculta = "Poder Arenoso/Poder Arena"
+evoluciones = Array[Dictionary]([{"especie": "boldore", "metodo": "nivel", "condicion": "Nivel 25", "nivel": 25}])

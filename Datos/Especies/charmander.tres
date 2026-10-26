@@ -99,3 +99,6 @@ sprite_frente = ExtResource("16_qf8vb")
 sprite_espalda = ExtResource("15_2vvjq")
 cuadros_frente = 54
 cuadros_espalda = 54
+habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
+habilidad_oculta = "Poder Solar"
+evoluciones = Array[Dictionary]([{"especie": "charmeleon", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/feebas_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/feebas_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/splash.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="7"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 15
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 30
+movimiento = ExtResource("7")
+
+[resource]
+script = ExtResource("1")
+id = "feebas"
+numero = 349
+nombre = "Feebas"
+tipos = PackedStringArray("agua")
+habilidades = PackedStringArray("Nado Rápido", "Despistado/Despiste")
+habilidad_oculta = "Adaptable"
+ps = 20
+ataque = 15
+defensa = 20
+at_esp = 10
+def_esp = 55
+velocidad = 80
+exp_base = 40
+ratio_captura = 255
+ratio_genero = 4
+crecimiento = "slow-then-very-fast"
+evs_otorgados = {"velocidad": 1}
+evoluciones = Array[Dictionary]([{"especie": "milotic", "metodo": "intercambio", "condicion": "Belleza alta + nivel; o intercambio equipado con escama bella"}])
+evoluciona_a = "milotic"
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 23
+cuadros_espalda = 23
+fps_sprite = 10.0

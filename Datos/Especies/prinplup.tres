@@ -117,3 +117,6 @@ sprite_espalda = ExtResource("17_anbnr")
 cuadros_frente = 63
 cuadros_espalda = 63
 fps_sprite = 9.55
+habilidades = PackedStringArray("Torrente")
+habilidad_oculta = "Tenacidad"
+evoluciones = Array[Dictionary]([{"especie": "empoleon", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

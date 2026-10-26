@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/mew_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/mew_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/reflect_type.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/transform.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_punch.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/metronome.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/barrier.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ancient_power.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/me_first.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/baton_pass.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="16"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aura_sphere.tres" id="17"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 10
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 20
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 30
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 40
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 50
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 60
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 70
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Move_10"]
+script = ExtResource("2")
+nivel = 80
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Move_11"]
+script = ExtResource("2")
+nivel = 90
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Move_12"]
+script = ExtResource("2")
+nivel = 100
+movimiento = ExtResource("17")
+
+[resource]
+script = ExtResource("1")
+id = "mew"
+numero = 151
+nombre = "Mew"
+tipos = PackedStringArray("psiquico")
+habilidades = PackedStringArray("Sincronía")
+habilidad_oculta = ""
+ps = 100
+ataque = 100
+defensa = 100
+at_esp = 100
+def_esp = 100
+velocidad = 100
+exp_base = 270
+ratio_captura = 45
+ratio_genero = -1
+crecimiento = "medium-slow"
+evs_otorgados = {"ps": 3}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 20
+cuadros_espalda = 20
+fps_sprite = 10.0

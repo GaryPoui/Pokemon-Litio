@@ -97,3 +97,6 @@ sprite_espalda = ExtResource("15_lvqvn")
 cuadros_frente = 76
 cuadros_espalda = 76
 fps_sprite = 9.41
+habilidades = PackedStringArray("Torrente")
+habilidad_oculta = "Humedad"
+evoluciones = Array[Dictionary]([{"especie": "marshtomp", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

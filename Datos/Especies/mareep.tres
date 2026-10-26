@@ -108,3 +108,6 @@ sprite_espalda = ExtResource("16_0l7kj")
 cuadros_frente = 49
 cuadros_espalda = 50
 fps_sprite = 9.07
+habilidades = PackedStringArray("Electricidad Estática")
+habilidad_oculta = "Más"
+evoluciones = Array[Dictionary]([{"especie": "flaaffy", "metodo": "nivel", "condicion": "Nivel 15", "nivel": 15}])

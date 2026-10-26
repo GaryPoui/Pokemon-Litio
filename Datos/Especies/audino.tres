@@ -108,3 +108,6 @@ sprite_espalda = ExtResource("17_awvc7")
 cuadros_frente = 61
 cuadros_espalda = 62
 fps_sprite = 9.53
+habilidades = PackedStringArray("Alma Sanadora/Alma Cura", "Regeneración")
+habilidad_oculta = "Torpeza/Zoquete"
+evoluciones = Array[Dictionary]([])

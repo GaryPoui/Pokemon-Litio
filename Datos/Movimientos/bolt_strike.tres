@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "bolt_strike"
+nombre = "Ataque fulgor"
+tipo = "electrico"
+categoria = "fisico"
+poder = 130
+precision = 85
+pp = 5
+objetivo = "selected-pokemon"
+meta = "damage"

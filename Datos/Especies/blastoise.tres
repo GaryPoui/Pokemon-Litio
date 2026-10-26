@@ -129,3 +129,6 @@ sprite_espalda = ExtResource("18_p1xou")
 cuadros_frente = 143
 cuadros_espalda = 143
 fps_sprite = 11.85
+habilidades = PackedStringArray("Torrente")
+habilidad_oculta = "Curación Pluvial/Cura Lluvia"
+evoluciones = Array[Dictionary]([])

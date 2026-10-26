@@ -134,3 +134,6 @@ sprite_espalda = ExtResource("19_qt8b3")
 cuadros_frente = 169
 cuadros_espalda = 169
 fps_sprite = 15.16
+habilidades = PackedStringArray("Cuerpo de Hielo/Gélido", "Nevada")
+habilidad_oculta = "Armadura Frágil"
+evoluciones = Array[Dictionary]([])

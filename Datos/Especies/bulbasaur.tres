@@ -114,3 +114,6 @@ sprite_espalda = ExtResource("17_x285b")
 cuadros_frente = 50
 cuadros_espalda = 50
 fps_sprite = 9.8
+habilidades = PackedStringArray("Espesura")
+habilidad_oculta = "Clorofila"
+evoluciones = Array[Dictionary]([{"especie": "ivysaur", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

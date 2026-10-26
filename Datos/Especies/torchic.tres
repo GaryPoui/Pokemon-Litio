@@ -93,3 +93,6 @@ sprite_frente = ExtResource("15_dfdgk")
 sprite_espalda = ExtResource("14_0etfg")
 cuadros_frente = 88
 cuadros_espalda = 88
+habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
+habilidad_oculta = "Impulso"
+evoluciones = Array[Dictionary]([{"especie": "combusken", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

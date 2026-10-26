@@ -117,3 +117,7 @@ sprite_espalda = ExtResource("18_7fpdx")
 cuadros_frente = 104
 cuadros_espalda = 104
 fps_sprite = 11.74
+habilidades = PackedStringArray("Gula")
+habilidad_oculta = "Espesura"
+evoluciones = Array[Dictionary]([{"especie": "simisage", "metodo": "piedra", "condicion": "Piedra hoja"}])
+evoluciona_a = "simisage"

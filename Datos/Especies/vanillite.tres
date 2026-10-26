@@ -118,3 +118,6 @@ sprite_espalda = ExtResource("18_i5205")
 cuadros_frente = 54
 cuadros_espalda = 54
 fps_sprite = 10.13
+habilidades = PackedStringArray("Cuerpo de Hielo/Gélido", "Manto Níveo")
+habilidad_oculta = "Armadura Frágil"
+evoluciones = Array[Dictionary]([{"especie": "vanillish", "metodo": "nivel", "condicion": "Nivel 35", "nivel": 35}])

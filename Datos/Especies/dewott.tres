@@ -132,3 +132,6 @@ sprite_espalda = ExtResource("18_n0ar3")
 cuadros_frente = 58
 cuadros_espalda = 61
 fps_sprite = 8.27
+habilidades = PackedStringArray("Torrente")
+habilidad_oculta = "Caparazón"
+evoluciones = Array[Dictionary]([{"especie": "samurott", "metodo": "especial", "condicion": "Nivel 36 (fuera de Hisui)"}])

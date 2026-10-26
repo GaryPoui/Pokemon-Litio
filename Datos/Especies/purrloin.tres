@@ -123,3 +123,6 @@ sprite_espalda = ExtResource("19_ih2pv")
 cuadros_frente = 32
 cuadros_espalda = 32
 fps_sprite = 6.4
+habilidades = PackedStringArray("Flexibilidad", "Liviano")
+habilidad_oculta = "Timador/Bromista"
+evoluciones = Array[Dictionary]([{"especie": "liepard", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}])

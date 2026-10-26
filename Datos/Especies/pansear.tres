@@ -116,3 +116,7 @@ sprite_frente = ExtResource("19_8fydm")
 sprite_espalda = ExtResource("18_tnv53")
 cuadros_frente = 48
 cuadros_espalda = 48
+habilidades = PackedStringArray("Gula")
+habilidad_oculta = "Mar de Llamas/Mar Llamas"
+evoluciones = Array[Dictionary]([{"especie": "simisear", "metodo": "piedra", "condicion": "Piedra fuego"}])
+evoluciona_a = "simisear"

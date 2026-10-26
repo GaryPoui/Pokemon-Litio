@@ -131,3 +131,6 @@ sprite_espalda = ExtResource("18_bcy54")
 cuadros_frente = 32
 cuadros_espalda = 16
 fps_sprite = 14.29
+habilidades = PackedStringArray("Más", "Menos")
+habilidad_oculta = "Cuerpo Puro"
+evoluciones = Array[Dictionary]([])

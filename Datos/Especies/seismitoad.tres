@@ -130,3 +130,6 @@ sprite_espalda = ExtResource("19_txkfq")
 cuadros_frente = 100
 cuadros_espalda = 100
 fps_sprite = 10.04
+habilidades = PackedStringArray("Nado Rápido", "Contacto Tóxico/Toque Tóxico")
+habilidad_oculta = "Absorbeagua/Absorbe Agua"
+evoluciones = Array[Dictionary]([])

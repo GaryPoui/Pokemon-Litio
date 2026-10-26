@@ -48,3 +48,6 @@ sprite_espalda = ExtResource("6_2vp6b")
 cuadros_frente = 92
 cuadros_espalda = 90
 fps_sprite = 15.33
+habilidades = PackedStringArray("Nado Rápido")
+habilidad_oculta = "Cobardía"
+evoluciones = Array[Dictionary]([{"especie": "gyarados", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}])

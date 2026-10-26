@@ -139,3 +139,6 @@ sprite_espalda = ExtResource("21_gtxyy")
 cuadros_frente = 126
 cuadros_espalda = 126
 fps_sprite = 20.0
+habilidades = PackedStringArray("Absorbevoltios/Absorbe Electricidad", "Iluminación")
+habilidad_oculta = "Absorbeagua/Absorbe Agua"
+evoluciones = Array[Dictionary]([])

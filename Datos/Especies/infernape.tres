@@ -121,3 +121,6 @@ sprite_espalda = ExtResource("17_q5joy")
 cuadros_frente = 100
 cuadros_espalda = 100
 fps_sprite = 14.29
+habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
+habilidad_oculta = "Puño Férreo"
+evoluciones = Array[Dictionary]([])

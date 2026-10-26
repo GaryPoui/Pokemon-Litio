@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/mewtwo_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/mewtwo_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/disable.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/barrier.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swift.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/future_sight.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psych_up.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/miracle_eye.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mist.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psycho_cut.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/power_swap.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/guard_swap.tres" id="16"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="17"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/me_first.tres" id="18"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/recover.tres" id="19"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/safeguard.tres" id="20"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/aura_sphere.tres" id="21"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psystrike.tres" id="22"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 8
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 15
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 22
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 29
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 36
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 43
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 50
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Move_10"]
+script = ExtResource("2")
+nivel = 57
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Move_11"]
+script = ExtResource("2")
+nivel = 57
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Move_12"]
+script = ExtResource("2")
+nivel = 64
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Move_13"]
+script = ExtResource("2")
+nivel = 71
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Move_14"]
+script = ExtResource("2")
+nivel = 79
+movimiento = ExtResource("19")
+
+[sub_resource type="Resource" id="Move_15"]
+script = ExtResource("2")
+nivel = 86
+movimiento = ExtResource("20")
+
+[sub_resource type="Resource" id="Move_16"]
+script = ExtResource("2")
+nivel = 93
+movimiento = ExtResource("21")
+
+[sub_resource type="Resource" id="Move_17"]
+script = ExtResource("2")
+nivel = 100
+movimiento = ExtResource("22")
+
+[resource]
+script = ExtResource("1")
+id = "mewtwo"
+numero = 150
+nombre = "Mewtwo"
+tipos = PackedStringArray("psiquico")
+habilidades = PackedStringArray("Presión")
+habilidad_oculta = "Nerviosismo"
+ps = 106
+ataque = 110
+defensa = 90
+at_esp = 154
+def_esp = 90
+velocidad = 130
+exp_base = 306
+ratio_captura = 3
+ratio_genero = -1
+crecimiento = "slow"
+evs_otorgados = {"at_esp": 3}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 63
+cuadros_espalda = 62
+fps_sprite = 9.4

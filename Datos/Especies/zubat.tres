@@ -101,3 +101,6 @@ sprite_espalda = ExtResource("15_rbn8a")
 cuadros_frente = 27
 cuadros_espalda = 9
 fps_sprite = 20.0
+habilidades = PackedStringArray("Fuerza Mental")
+habilidad_oculta = "Allanamiento"
+evoluciones = Array[Dictionary]([{"especie": "golbat", "metodo": "nivel", "condicion": "Nivel 22", "nivel": 22}])

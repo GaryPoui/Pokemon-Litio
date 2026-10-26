@@ -124,3 +124,6 @@ sprite_espalda = ExtResource("18_0cp0p")
 cuadros_frente = 82
 cuadros_espalda = 82
 fps_sprite = 20.0
+habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
+habilidad_oculta = "Absorbefuego/Absorbe Fuego"
+evoluciones = Array[Dictionary]([{"especie": "typhlosion", "metodo": "especial", "condicion": "Nivel 36 (fuera de Hisui)"}])

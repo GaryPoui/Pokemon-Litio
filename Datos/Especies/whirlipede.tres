@@ -127,3 +127,6 @@ sprite_espalda = ExtResource("18_gk1ce")
 cuadros_frente = 96
 cuadros_espalda = 98
 fps_sprite = 13.6
+habilidades = PackedStringArray("Enjambre", "Punto Tóxico")
+habilidad_oculta = "Pies Rápidos"
+evoluciones = Array[Dictionary]([{"especie": "scolipede", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])

@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/budew_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/budew_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growth.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/water_sport.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stun_spore.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/worry_seed.tres" id="10"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 4
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 7
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 10
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 13
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 16
+movimiento = ExtResource("10")
+
+[resource]
+script = ExtResource("1")
+id = "budew"
+numero = 406
+nombre = "Budew"
+tipos = PackedStringArray("planta", "veneno")
+habilidades = PackedStringArray("Curación Natural/Cura Natural", "Punto Tóxico")
+habilidad_oculta = "Defensa Hoja"
+ps = 40
+ataque = 30
+defensa = 35
+at_esp = 50
+def_esp = 70
+velocidad = 55
+exp_base = 56
+ratio_captura = 255
+ratio_genero = 4
+crecimiento = "medium-slow"
+evs_otorgados = {"at_esp": 1}
+evoluciones = Array[Dictionary]([{"especie": "roselia", "metodo": "amistad", "condicion": "Amistad + nivel (día)"}])
+evoluciona_a = "roselia"
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 77
+cuadros_espalda = 77
+fps_sprite = 13.9

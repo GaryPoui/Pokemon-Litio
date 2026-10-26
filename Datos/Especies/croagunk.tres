@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/croagunk_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/croagunk_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/poison_sting.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/taunt.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/revenge.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/swagger.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mud_bomb.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/venoshock.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="16"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/poison_jab.tres" id="17"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sludge_bomb.tres" id="18"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flatter.tres" id="19"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 3
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 8
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 10
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 15
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 17
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 22
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 24
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 29
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 31
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Move_10"]
+script = ExtResource("2")
+nivel = 36
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Move_11"]
+script = ExtResource("2")
+nivel = 38
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Move_12"]
+script = ExtResource("2")
+nivel = 43
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Move_13"]
+script = ExtResource("2")
+nivel = 45
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Move_14"]
+script = ExtResource("2")
+nivel = 50
+movimiento = ExtResource("19")
+
+[resource]
+script = ExtResource("1")
+id = "croagunk"
+numero = 453
+nombre = "Croagunk"
+tipos = PackedStringArray("veneno", "lucha")
+habilidades = PackedStringArray("Anticipación", "Piel Seca")
+habilidad_oculta = "Contacto Tóxico/Toque Tóxico"
+ps = 48
+ataque = 61
+defensa = 40
+at_esp = 61
+def_esp = 40
+velocidad = 50
+exp_base = 60
+ratio_captura = 140
+ratio_genero = 4
+crecimiento = "medium"
+evs_otorgados = {"ataque": 1}
+evoluciones = Array[Dictionary]([{"especie": "toxicroak", "metodo": "nivel", "condicion": "Nivel 37", "nivel": 37}])
+evoluciona_a = "toxicroak"
+nivel_evolucion = 37
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 78
+cuadros_espalda = 78
+fps_sprite = 9.75

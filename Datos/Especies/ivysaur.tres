@@ -122,3 +122,6 @@ sprite_frente = ExtResource("18_gce7o")
 sprite_espalda = ExtResource("17_jrgba")
 cuadros_frente = 56
 cuadros_espalda = 56
+habilidades = PackedStringArray("Espesura")
+habilidad_oculta = "Clorofila"
+evoluciones = Array[Dictionary]([{"especie": "venusaur", "metodo": "nivel", "condicion": "Nivel 32", "nivel": 32}])

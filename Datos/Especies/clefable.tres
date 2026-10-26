@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/clefable_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/clefable_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/double_slap.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sing.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/minimize.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/metronome.tres" id="8"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("8")
+
+[resource]
+script = ExtResource("1")
+id = "clefable"
+numero = 36
+nombre = "Clefable"
+tipos = PackedStringArray("normal")
+habilidades = PackedStringArray("Gran Encanto", "Muro Mágico")
+habilidad_oculta = "Ignorancia/Ignorante"
+ps = 95
+ataque = 70
+defensa = 73
+at_esp = 95
+def_esp = 90
+velocidad = 60
+exp_base = 213
+ratio_captura = 25
+ratio_genero = 6
+crecimiento = "fast"
+evs_otorgados = {"ps": 3}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 54
+cuadros_espalda = 54
+fps_sprite = 10.55

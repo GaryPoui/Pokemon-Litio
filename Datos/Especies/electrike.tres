@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/electrike_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/electrike_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/howl.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/spark.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/odor_sleuth.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_fang.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/roar.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="16"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/wild_charge.tres" id="17"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/thunder.tres" id="18"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 4
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 9
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 12
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 17
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 20
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 25
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 28
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 33
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 36
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Move_10"]
+script = ExtResource("2")
+nivel = 41
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Move_11"]
+script = ExtResource("2")
+nivel = 44
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Move_12"]
+script = ExtResource("2")
+nivel = 49
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Move_13"]
+script = ExtResource("2")
+nivel = 52
+movimiento = ExtResource("18")
+
+[resource]
+script = ExtResource("1")
+id = "electrike"
+numero = 309
+nombre = "Electrike"
+tipos = PackedStringArray("electrico")
+habilidades = PackedStringArray("Electricidad Estática", "Pararrayos")
+habilidad_oculta = "Menos"
+ps = 40
+ataque = 45
+defensa = 40
+at_esp = 65
+def_esp = 40
+velocidad = 65
+exp_base = 59
+ratio_captura = 120
+ratio_genero = 4
+crecimiento = "slow"
+evs_otorgados = {"velocidad": 1}
+evoluciones = Array[Dictionary]([{"especie": "manectric", "metodo": "nivel", "condicion": "Nivel 26", "nivel": 26}])
+evoluciona_a = "manectric"
+nivel_evolucion = 26
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 7
+cuadros_espalda = 7
+fps_sprite = 6.36

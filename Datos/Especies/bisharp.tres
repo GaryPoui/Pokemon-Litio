@@ -139,3 +139,6 @@ sprite_espalda = ExtResource("20_1siaj")
 cuadros_frente = 88
 cuadros_espalda = 88
 fps_sprite = 10.09
+habilidades = PackedStringArray("Competitivo", "Fuerza Mental")
+habilidad_oculta = "Presión"
+evoluciones = Array[Dictionary]([])

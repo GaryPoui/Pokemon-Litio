@@ -76,3 +76,6 @@ sprite_frente = ExtResource("12_rhbkq")
 sprite_espalda = ExtResource("11_w168k")
 cuadros_frente = 80
 cuadros_espalda = 80
+habilidades = PackedStringArray("Enjambre", "Clorofila")
+habilidad_oculta = "Funda"
+evoluciones = Array[Dictionary]([{"especie": "swadloon", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}])

@@ -113,3 +113,6 @@ sprite_espalda = ExtResource("17_k7pwy")
 cuadros_frente = 59
 cuadros_espalda = 52
 fps_sprite = 12.32
+habilidades = PackedStringArray("Fuga", "Pies Rápidos")
+habilidad_oculta = "Cobardía"
+evoluciones = Array[Dictionary]([{"especie": "mightyena", "metodo": "nivel", "condicion": "Nivel 18", "nivel": 18}])

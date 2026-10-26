@@ -138,3 +138,6 @@ sprite_espalda = ExtResource("19_0nx24")
 cuadros_frente = 63
 cuadros_espalda = 64
 fps_sprite = 9.84
+habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
+habilidad_oculta = "Sebo"
+evoluciones = Array[Dictionary]([{"especie": "emboar", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

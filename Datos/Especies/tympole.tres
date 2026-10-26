@@ -110,3 +110,6 @@ sprite_espalda = ExtResource("17_nmnji")
 cuadros_frente = 109
 cuadros_espalda = 113
 fps_sprite = 11.77
+habilidades = PackedStringArray("Nado Rápido", "Hidratación")
+habilidad_oculta = "Absorbeagua/Absorbe Agua"
+evoluciones = Array[Dictionary]([{"especie": "palpitoad", "metodo": "nivel", "condicion": "Nivel 25", "nivel": 25}])

@@ -135,3 +135,6 @@ sprite_espalda = ExtResource("20_j1qwf")
 cuadros_frente = 72
 cuadros_espalda = 72
 fps_sprite = 9.05
+habilidades = PackedStringArray("Punta Acero")
+habilidad_oculta = "Anticipación"
+evoluciones = Array[Dictionary]([])

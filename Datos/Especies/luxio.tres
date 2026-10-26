@@ -106,3 +106,6 @@ sprite_espalda = ExtResource("15_5dj3q")
 cuadros_frente = 192
 cuadros_espalda = 192
 fps_sprite = 20.0
+habilidades = PackedStringArray("Rivalidad", "Intimidación")
+habilidad_oculta = "Agallas"
+evoluciones = Array[Dictionary]([{"especie": "luxray", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])

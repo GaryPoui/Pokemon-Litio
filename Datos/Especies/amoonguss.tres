@@ -128,3 +128,6 @@ sprite_frente = ExtResource("19_put44")
 sprite_espalda = ExtResource("18_hh3s0")
 cuadros_frente = 48
 cuadros_espalda = 48
+habilidades = PackedStringArray("Efecto Espora")
+habilidad_oculta = "Regeneración"
+evoluciones = Array[Dictionary]([])

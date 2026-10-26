@@ -125,3 +125,6 @@ sprite_espalda = ExtResource("19_nrty7")
 cuadros_frente = 90
 cuadros_espalda = 90
 fps_sprite = 13.82
+habilidades = PackedStringArray("Competitivo", "Fuerza Mental")
+habilidad_oculta = "Presión"
+evoluciones = Array[Dictionary]([{"especie": "bisharp", "metodo": "nivel", "condicion": "Nivel 52", "nivel": 52}])

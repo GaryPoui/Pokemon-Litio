@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/oddish_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/oddish_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sweet_scent.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/acid.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/poison_powder.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stun_spore.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/sleep_powder.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/lucky_chant.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/natural_gift.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/moonlight.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/giga_drain.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/petal_dance.tres" id="16"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 5
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 9
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 13
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 15
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 17
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 21
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 25
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 29
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 33
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Move_10"]
+script = ExtResource("2")
+nivel = 37
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Move_11"]
+script = ExtResource("2")
+nivel = 41
+movimiento = ExtResource("16")
+
+[resource]
+script = ExtResource("1")
+id = "oddish"
+numero = 43
+nombre = "Oddish"
+tipos = PackedStringArray("planta", "veneno")
+habilidades = PackedStringArray("Clorofila")
+habilidad_oculta = "Fuga"
+ps = 45
+ataque = 50
+defensa = 55
+at_esp = 75
+def_esp = 65
+velocidad = 30
+exp_base = 64
+ratio_captura = 255
+ratio_genero = 4
+crecimiento = "medium-slow"
+evs_otorgados = {"at_esp": 1}
+evoluciones = Array[Dictionary]([{"especie": "gloom", "metodo": "nivel", "condicion": "Nivel 21", "nivel": 21}])
+evoluciona_a = "gloom"
+nivel_evolucion = 21
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 55
+cuadros_espalda = 55
+fps_sprite = 10.0

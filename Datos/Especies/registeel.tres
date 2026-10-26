@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/registeel_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/registeel_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/stomp.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/metal_claw.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/curse.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/superpower.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/ancient_power.tres" id="10"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/iron_defense.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/charge_beam.tres" id="13"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/lock_on.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/zap_cannon.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/flash_cannon.tres" id="16"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/iron_head.tres" id="17"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hammer_arm.tres" id="18"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/hyper_beam.tres" id="19"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 9
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 17
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Move_4"]
+script = ExtResource("2")
+nivel = 25
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Move_5"]
+script = ExtResource("2")
+nivel = 33
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Move_6"]
+script = ExtResource("2")
+nivel = 41
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Move_7"]
+script = ExtResource("2")
+nivel = 41
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Move_8"]
+script = ExtResource("2")
+nivel = 49
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Move_9"]
+script = ExtResource("2")
+nivel = 57
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Move_10"]
+script = ExtResource("2")
+nivel = 65
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Move_11"]
+script = ExtResource("2")
+nivel = 73
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Move_12"]
+script = ExtResource("2")
+nivel = 73
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Move_13"]
+script = ExtResource("2")
+nivel = 81
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Move_14"]
+script = ExtResource("2")
+nivel = 89
+movimiento = ExtResource("19")
+
+[resource]
+script = ExtResource("1")
+id = "registeel"
+numero = 379
+nombre = "Registeel"
+tipos = PackedStringArray("acero")
+habilidades = PackedStringArray("Cuerpo Puro")
+habilidad_oculta = "Metal Liviano"
+ps = 80
+ataque = 75
+defensa = 150
+at_esp = 75
+def_esp = 150
+velocidad = 50
+exp_base = 261
+ratio_captura = 3
+ratio_genero = -1
+crecimiento = "slow"
+evs_otorgados = {"defensa": 2, "def_esp": 1}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 41
+cuadros_espalda = 42
+fps_sprite = 7.13

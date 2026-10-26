@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/simisage_frente.png" id="3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/simisage_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/lick.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/seed_bomb.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/fury_swipes.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="8"]
+
+[sub_resource type="Resource" id="Move_0"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Move_1"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Move_2"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Move_3"]
+script = ExtResource("2")
+nivel = 1
+movimiento = ExtResource("8")
+
+[resource]
+script = ExtResource("1")
+id = "simisage"
+numero = 512
+nombre = "Simisage"
+tipos = PackedStringArray("planta")
+habilidades = PackedStringArray("Gula")
+habilidad_oculta = "Espesura"
+ps = 75
+ataque = 98
+defensa = 63
+at_esp = 98
+def_esp = 63
+velocidad = 101
+exp_base = 174
+ratio_captura = 75
+ratio_genero = 1
+crecimiento = "medium"
+evs_otorgados = {"velocidad": 2}
+evoluciones = Array[Dictionary]([])
+aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+sprite_frente = ExtResource("3")
+sprite_espalda = ExtResource("4")
+cuadros_frente = 77
+cuadros_espalda = 81
+fps_sprite = 9.06

@@ -108,3 +108,7 @@ sprite_espalda = ExtResource("17_2w8jj")
 cuadros_frente = 61
 cuadros_espalda = 60
 fps_sprite = 10.5
+habilidades = PackedStringArray("Electricidad Estática")
+habilidad_oculta = "Pararrayos"
+evoluciones = Array[Dictionary]([{"especie": "raichu", "metodo": "piedra", "condicion": "Piedra trueno (fuera de Alola)"}])
+evoluciona_a = "raichu"
