@@ -23,92 +23,90 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/counter.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/close_combat.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_0x0k0"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_q3qae"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_tppp2"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_nwbxh"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 16
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_f03oj"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_06he8"]
+script = ExtResource("2")
+nivel = 16
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_umo7t"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_ll32e"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_mihad"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_2algd"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_bl3qu"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_ltkt6"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_4cmt2"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_83hpo"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_u3b0b"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_m2x12"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_axgxq"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_dns4j"]
 script = ExtResource("2")
 nivel = 66
 movimiento = ExtResource("22")
@@ -119,21 +117,23 @@ id = "hitmonchan"
 numero = 107
 nombre = "Hitmonchan"
 tipos = PackedStringArray("lucha")
-habilidades = PackedStringArray("Perspicacia/Vista Lince", "Puño Férreo")
-habilidad_oculta = "Fuerza Mental"
-ps = 50
 ataque = 105
 defensa = 79
 at_esp = 35
 def_esp = 110
 velocidad = 76
 exp_base = 159
-ratio_captura = 45
 ratio_genero = 0
-crecimiento = "medium"
-evs_otorgados = {"def_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"def_esp": 2
+}
+habilidades = PackedStringArray("keen_eye", "iron_fist")
+habilidad_oculta = "inner_focus"
+categoria = "Pokémon Puñetazo"
+altura = 1.4
+peso_kg = 50.2
+descripcion = "Los potentes golpes de sus brazos pueden pulverizar el hormigón. Descansa tras luchar tres minutos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_0x0k0"), SubResource("Resource_q3qae"), SubResource("Resource_tppp2"), SubResource("Resource_nwbxh"), SubResource("Resource_f03oj"), SubResource("Resource_06he8"), SubResource("Resource_umo7t"), SubResource("Resource_ll32e"), SubResource("Resource_mihad"), SubResource("Resource_2algd"), SubResource("Resource_bl3qu"), SubResource("Resource_ltkt6"), SubResource("Resource_4cmt2"), SubResource("Resource_83hpo"), SubResource("Resource_u3b0b"), SubResource("Resource_m2x12"), SubResource("Resource_axgxq"), SubResource("Resource_dns4j")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 40

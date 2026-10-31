@@ -23,92 +23,93 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_esn7k"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_4sw2i"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_re22h"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_o16m6"]
+script = ExtResource("2")
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_adovr"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_jw1je"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_1enew"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_5gw4n"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_resxt"]
 script = ExtResource("2")
 nivel = 18
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_7fgns"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ifkxr"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_pakfl"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_mpd74"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_cbx4w"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_7eht1"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_iwd8q"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_vobtw"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_f6bbc"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_pgfc4"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("22")
@@ -119,8 +120,6 @@ id = "carracosta"
 numero = 565
 nombre = "Carracosta"
 tipos = PackedStringArray("agua", "roca")
-habilidades = PackedStringArray("Roca Sólida", "Robustez")
-habilidad_oculta = "Nado Rápido"
 ps = 74
 ataque = 108
 defensa = 133
@@ -128,14 +127,18 @@ at_esp = 83
 def_esp = 65
 velocidad = 32
 exp_base = 173
-ratio_captura = 45
 ratio_genero = 1
-crecimiento = "medium"
-evs_otorgados = {"defensa": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"defensa": 2
+}
+habilidades = PackedStringArray("solid_rock", "sturdy")
+habilidad_oculta = "swift_swim"
+categoria = "Pokémon Pretortuga"
+altura = 1.2
+peso_kg = 81.0
+descripcion = "Vive en el mar y en la superficie. Sus garras pueden abrir un agujero en el fondo de un petrolero."
+aprende = Array[ExtResource("2")]([SubResource("Resource_esn7k"), SubResource("Resource_4sw2i"), SubResource("Resource_re22h"), SubResource("Resource_o16m6"), SubResource("Resource_adovr"), SubResource("Resource_jw1je"), SubResource("Resource_1enew"), SubResource("Resource_5gw4n"), SubResource("Resource_resxt"), SubResource("Resource_7fgns"), SubResource("Resource_ifkxr"), SubResource("Resource_pakfl"), SubResource("Resource_mpd74"), SubResource("Resource_cbx4w"), SubResource("Resource_7eht1"), SubResource("Resource_iwd8q"), SubResource("Resource_vobtw"), SubResource("Resource_f6bbc"), SubResource("Resource_pgfc4")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 92
 cuadros_espalda = 92
-fps_sprite = 10.0

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_otthh"]
+
+[resource]
+script = ExtResource("1_otthh")
+id = "surf"
+nombre = "Surf"
+tipo = "agua"
+categoria = "especial"
+poder = 95
+pp = 15
+objetivo = "all-other-pokemon"
+descripcion = "Inunda el terreno de combate con una ola gigante."
+numero = 57
+banderas = PackedStringArray("metronome", "mirror", "nonsky", "protect")

@@ -5,11 +5,13 @@
 [resource]
 script = ExtResource("1")
 id = "morning_sun"
-nombre = "Sol matinal"
-tipo = "normal"
+nombre = "Sol Matinal"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 5
 objetivo = "user"
-meta = "unique"
+meta = "heal"
+descripcion = "Restaura PS del usuario. La cantidad varía según el tiempo que haga."
+curacion = 50
+numero = 234
+banderas = PackedStringArray("heal", "metronome", "snatch")

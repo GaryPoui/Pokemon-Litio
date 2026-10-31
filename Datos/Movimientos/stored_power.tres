@@ -10,3 +10,5 @@ tipo = "psiquico"
 categoria = "especial"
 poder = 20
 descripcion = "Acumula poder para golpear. Cuanto más suban las características del usuario, mayor será el daño."
+numero = 500
+banderas = PackedStringArray("metronome", "mirror", "protect")

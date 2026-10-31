@@ -20,77 +20,75 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/after_you.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_jmgxu"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_x2npq"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_mdurt"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_q32me"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_s8txv"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_tncmr"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_kvo7v"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_3aih2"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_r173c"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_bmfnw"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_ecytx"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_c03i8"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_4v1bb"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_n2sax"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_7qjjh"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("19")
@@ -101,8 +99,6 @@ id = "togepi"
 numero = 175
 nombre = "Togepi"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Entusiasmo", "Dicha")
-habilidad_oculta = "Supersuerte/Afortunado"
 ps = 35
 ataque = 20
 defensa = 65
@@ -113,10 +109,21 @@ exp_base = 49
 ratio_captura = 190
 ratio_genero = 1
 crecimiento = "fast"
-evs_otorgados = {"def_esp": 1}
-evoluciones = Array[Dictionary]([{"especie": "togetic", "metodo": "amistad", "condicion": "Amistad + nivel"}])
-evoluciona_a = "togetic"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"def_esp": 1
+}
+evoluciones = Array[Dictionary]([{
+"amistad": 220,
+"especie": "togetic",
+"metodo": "amistad"
+}])
+habilidades = PackedStringArray("hustle", "serene_grace")
+habilidad_oculta = "super_luck"
+categoria = "Pokémon Bolaclavos"
+altura = 0.3
+peso_kg = 1.5
+descripcion = "El cascarón parece estar lleno de alegría. Dicen que trae buena suerte si es tratado con cariño."
+aprende = Array[ExtResource("2")]([SubResource("Resource_jmgxu"), SubResource("Resource_x2npq"), SubResource("Resource_mdurt"), SubResource("Resource_q32me"), SubResource("Resource_s8txv"), SubResource("Resource_tncmr"), SubResource("Resource_kvo7v"), SubResource("Resource_3aih2"), SubResource("Resource_r173c"), SubResource("Resource_bmfnw"), SubResource("Resource_ecytx"), SubResource("Resource_c03i8"), SubResource("Resource_4v1bb"), SubResource("Resource_n2sax"), SubResource("Resource_7qjjh")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 70

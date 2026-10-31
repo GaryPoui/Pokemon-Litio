@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_7fx8r"]
+
+[resource]
+script = ExtResource("1_7fx8r")
+id = "frenzy_plant"
+nombre = "Planta Feroz"
+tipo = "planta"
+categoria = "especial"
+poder = 150
+precision = 90
+pp = 5
+descripcion = "Golpea con una enorme planta. Quien lo usa no puede moverse en el siguiente turno."
+numero = 338
+banderas = PackedStringArray("metronome", "mirror", "nonsky", "protect", "recharge")

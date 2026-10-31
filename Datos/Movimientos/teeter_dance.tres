@@ -5,11 +5,14 @@
 [resource]
 script = ExtResource("1")
 id = "teeter_dance"
-nombre = "Danza caos"
-tipo = "normal"
+nombre = "Danza Caos"
 categoria = "estado"
-poder = 0
-precision = 100
 pp = 20
-objetivo = "selected-pokemon"
-meta = "unique"
+objetivo = "all-other-pokemon"
+meta = "ailment"
+descripcion = "Danza histérica que confunde a los Pokémon que están alrededor del usuario."
+estado = "confusion"
+numero = 298
+banderas = PackedStringArray("dance", "metronome", "mirror", "protect")
+turnos_min = 2
+turnos_max = 5

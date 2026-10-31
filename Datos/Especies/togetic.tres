@@ -21,92 +21,87 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/after_you.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_6re18"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_b40pt"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_ldw21"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_8774u"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_l2niq"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_e00aq"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_oujc7"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_gh36l"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_u6su8"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_uvd5v"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_g6se1"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_7en8b"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_5vb6r"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_lswwe"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_3gx01"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_m4rgl"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_djspi"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_abdfv"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("20")
@@ -116,9 +111,7 @@ script = ExtResource("1")
 id = "togetic"
 numero = 176
 nombre = "Togetic"
-tipos = PackedStringArray("volador")
-habilidades = PackedStringArray("Entusiasmo", "Dicha")
-habilidad_oculta = "Supersuerte/Afortunado"
+tipos = PackedStringArray("normal", "volador")
 ps = 55
 ataque = 40
 defensa = 85
@@ -129,12 +122,22 @@ exp_base = 142
 ratio_captura = 75
 ratio_genero = 1
 crecimiento = "fast"
-evs_otorgados = {"def_esp": 2}
-evoluciones = Array[Dictionary]([{"especie": "togekiss", "metodo": "piedra", "condicion": "Piedra día"}])
-evoluciona_a = "togekiss"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"def_esp": 2
+}
+evoluciones = Array[Dictionary]([{
+"especie": "togekiss",
+"metodo": "piedra",
+"objeto": "shiny_stone"
+}])
+habilidades = PackedStringArray("hustle", "serene_grace")
+habilidad_oculta = "super_luck"
+categoria = "Pokémon Felicidad"
+altura = 0.6
+peso_kg = 3.2
+descripcion = "Si no está con gente amable, se entristece. Puede flotar en el aire sin mover las alas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_6re18"), SubResource("Resource_b40pt"), SubResource("Resource_ldw21"), SubResource("Resource_8774u"), SubResource("Resource_l2niq"), SubResource("Resource_e00aq"), SubResource("Resource_oujc7"), SubResource("Resource_gh36l"), SubResource("Resource_u6su8"), SubResource("Resource_uvd5v"), SubResource("Resource_g6se1"), SubResource("Resource_7en8b"), SubResource("Resource_5vb6r"), SubResource("Resource_lswwe"), SubResource("Resource_3gx01"), SubResource("Resource_m4rgl"), SubResource("Resource_djspi"), SubResource("Resource_abdfv")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 54
 cuadros_espalda = 51
-fps_sprite = 10.0

@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1")
 id = "fusion_flare"
-nombre = "Llama fusión"
+nombre = "Llama Fusión"
 tipo = "fuego"
 categoria = "especial"
 poder = 100
-precision = 100
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Ataca con una llamarada gigantesca. Aumenta su potencia si es influenciada por una gran energía eléctrica."
+numero = 558
+banderas = PackedStringArray("defrost", "metronome", "mirror", "protect")

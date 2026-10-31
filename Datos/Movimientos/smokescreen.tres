@@ -13,3 +13,5 @@ descripcion = "Baja la Precisión del objetivo con una nube de humo o tinta."
 cambios_stats = {
 "precision": -1
 }
+numero = 108
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")

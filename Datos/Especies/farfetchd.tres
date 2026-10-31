@@ -23,92 +23,87 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/brave_bird.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_gliuq"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_7av7d"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_45two"]
+script = ExtResource("2")
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_4sbco"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_nu8ag"]
+script = ExtResource("2")
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_ne8sg"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_1vsgu"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_lkm7v"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_tjx3h"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ginsd"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_p3kxu"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_10ity"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_uvybu"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_e0i2b"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_g3lod"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_i0w0x"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_mx4mm"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_o57js"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("22")
@@ -119,21 +114,23 @@ id = "farfetchd"
 numero = 83
 nombre = "Farfetch’d"
 tipos = PackedStringArray("normal", "volador")
-habilidades = PackedStringArray("Perspicacia/Vista Lince", "Fuerza Mental")
-habilidad_oculta = "Competitivo"
 ps = 52
-ataque = 90
+ataque = 65
 defensa = 55
 at_esp = 58
 def_esp = 62
 velocidad = 60
-exp_base = 123
-ratio_captura = 45
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+exp_base = 132
+evs_otorgados = {
+"ataque": 1
+}
+habilidades = PackedStringArray("keen_eye", "inner_focus")
+habilidad_oculta = "defiant"
+categoria = "Pokémon Pato Salvaje"
+altura = 0.8
+peso_kg = 15.0
+descripcion = "El puerro que lleva es su mejor arma. Suele usarlo como espada para cortar cosas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_gliuq"), SubResource("Resource_7av7d"), SubResource("Resource_45two"), SubResource("Resource_4sbco"), SubResource("Resource_nu8ag"), SubResource("Resource_ne8sg"), SubResource("Resource_1vsgu"), SubResource("Resource_lkm7v"), SubResource("Resource_tjx3h"), SubResource("Resource_ginsd"), SubResource("Resource_p3kxu"), SubResource("Resource_10ity"), SubResource("Resource_uvybu"), SubResource("Resource_e0i2b"), SubResource("Resource_g3lod"), SubResource("Resource_i0w0x"), SubResource("Resource_mx4mm"), SubResource("Resource_o57js")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 16

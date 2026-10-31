@@ -5,11 +5,15 @@
 [resource]
 script = ExtResource("1")
 id = "powder_snow"
-nombre = "Nieve polvo"
+nombre = "Nieve Polvo"
 tipo = "hielo"
 categoria = "especial"
 poder = 40
-precision = 100
 pp = 25
-objetivo = "selected-pokemon"
-meta = "damage"
+objetivo = "all-opponents"
+meta = "damage-ailment"
+descripcion = "Lanza nieve que puede llegar a congelar."
+estado = "freeze"
+prob_estado = 10
+numero = 181
+banderas = PackedStringArray("metronome", "mirror", "protect")

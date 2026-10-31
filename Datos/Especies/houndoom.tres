@@ -22,97 +22,92 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/inferno.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_wltl8"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_cgwm6"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_dsmb4"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_8jfyu"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_lovnq"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_djsf1"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_wqlrb"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_yjs6g"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_n801c"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_r8vq7"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_h52pb"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_fe5mk"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_w4fls"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_85f6c"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_g7h2c"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_1vb34"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_1lsr0"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_rbv1c"]
 script = ExtResource("2")
 nivel = 60
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_5uuur"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("21")
@@ -123,21 +118,24 @@ id = "houndoom"
 numero = 229
 nombre = "Houndoom"
 tipos = PackedStringArray("siniestro", "fuego")
-habilidades = PackedStringArray("Madrugador/Madrugar", "Absorbefuego/Absorbe Fuego")
-habilidad_oculta = "Nerviosismo"
 ps = 75
 ataque = 90
-defensa = 50
 at_esp = 110
 def_esp = 80
 velocidad = 95
 exp_base = 175
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"at_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18")])
+evs_otorgados = {
+"at_esp": 2
+}
+amistad_base = 35
+habilidades = PackedStringArray("early_bird", "flash_fire")
+habilidad_oculta = "unnerve"
+categoria = "Pokémon Siniestro"
+altura = 1.4
+peso_kg = 35.0
+descripcion = "Hace mucho, la gente creía que sus horripilantes aullidos eran de la muerte personificada."
+aprende = Array[ExtResource("2")]([SubResource("Resource_wltl8"), SubResource("Resource_cgwm6"), SubResource("Resource_dsmb4"), SubResource("Resource_8jfyu"), SubResource("Resource_lovnq"), SubResource("Resource_djsf1"), SubResource("Resource_wqlrb"), SubResource("Resource_yjs6g"), SubResource("Resource_n801c"), SubResource("Resource_r8vq7"), SubResource("Resource_h52pb"), SubResource("Resource_fe5mk"), SubResource("Resource_w4fls"), SubResource("Resource_85f6c"), SubResource("Resource_g7h2c"), SubResource("Resource_1vb34"), SubResource("Resource_1lsr0"), SubResource("Resource_rbv1c"), SubResource("Resource_5uuur")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 62

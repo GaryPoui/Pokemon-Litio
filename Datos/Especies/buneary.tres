@@ -21,82 +21,78 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/bounce.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/healing_wish.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_y5cxf"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_d2wtf"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_45ixl"]
+script = ExtResource("2")
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_0jtba"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_bfck3"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_tf175"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_8yx0b"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_3wci4"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_at3cv"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_hebfw"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_m0pso"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_fn5xk"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_mahhc"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_nj7vp"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_0765v"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_v7yd7"]
 script = ExtResource("2")
 nivel = 63
 movimiento = ExtResource("20")
@@ -107,8 +103,6 @@ id = "buneary"
 numero = 427
 nombre = "Buneary"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Fuga", "Torpeza/Zoquete")
-habilidad_oculta = "Flexibilidad"
 ps = 55
 ataque = 66
 defensa = 44
@@ -117,12 +111,22 @@ def_esp = 56
 velocidad = 85
 exp_base = 70
 ratio_captura = 190
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "lopunny", "metodo": "amistad", "condicion": "Amistad + nivel"}])
-evoluciona_a = "lopunny"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciones = Array[Dictionary]([{
+"amistad": 220,
+"especie": "lopunny",
+"metodo": "amistad"
+}])
+amistad_base = 0
+habilidades = PackedStringArray("run_away", "klutz")
+habilidad_oculta = "limber"
+categoria = "Pokémon Conejo"
+altura = 0.4
+peso_kg = 5.5
+descripcion = "Lleva las orejas enrolladas. Cuando las extiende, golpea con tal fuerza que incluso puede romper rocas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_y5cxf"), SubResource("Resource_d2wtf"), SubResource("Resource_45ixl"), SubResource("Resource_0jtba"), SubResource("Resource_bfck3"), SubResource("Resource_tf175"), SubResource("Resource_8yx0b"), SubResource("Resource_3wci4"), SubResource("Resource_at3cv"), SubResource("Resource_hebfw"), SubResource("Resource_m0pso"), SubResource("Resource_fn5xk"), SubResource("Resource_mahhc"), SubResource("Resource_nj7vp"), SubResource("Resource_0765v"), SubResource("Resource_v7yd7")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 91

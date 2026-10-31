@@ -19,87 +19,83 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/guillotine.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_cvnvt"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_g8a3g"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_lesib"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_2qdtj"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_1mj1q"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_rhbyo"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_l5gmf"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_ox1b1"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_p6wh2"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_l7w5b"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_rs7a4"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_j5mi1"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_8jbpa"]
 script = ExtResource("2")
 nivel = 39
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_637ff"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_si0kg"]
 script = ExtResource("2")
 nivel = 52
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_mbp14"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_vip4v"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("18")
@@ -110,8 +106,6 @@ id = "crawdaunt"
 numero = 342
 nombre = "Crawdaunt"
 tipos = PackedStringArray("agua", "siniestro")
-habilidades = PackedStringArray("Caparazón", "Corte Fuerte")
-habilidad_oculta = "Adaptable"
 ps = 63
 ataque = 120
 defensa = 85
@@ -120,11 +114,17 @@ def_esp = 55
 velocidad = 55
 exp_base = 164
 ratio_captura = 155
-ratio_genero = 4
 crecimiento = "fast-then-very-slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"ataque": 2
+}
+habilidades = PackedStringArray("hyper_cutter", "shell_armor")
+habilidad_oculta = "adaptability"
+categoria = "Pokémon Granuja"
+altura = 1.1
+peso_kg = 32.8
+descripcion = "Este malandrín usa sus pinzas para atosigar y expulsar a los otros Pokémon que viven en su estanque."
+aprende = Array[ExtResource("2")]([SubResource("Resource_cvnvt"), SubResource("Resource_g8a3g"), SubResource("Resource_lesib"), SubResource("Resource_2qdtj"), SubResource("Resource_1mj1q"), SubResource("Resource_rhbyo"), SubResource("Resource_l5gmf"), SubResource("Resource_ox1b1"), SubResource("Resource_p6wh2"), SubResource("Resource_l7w5b"), SubResource("Resource_rs7a4"), SubResource("Resource_j5mi1"), SubResource("Resource_8jbpa"), SubResource("Resource_637ff"), SubResource("Resource_si0kg"), SubResource("Resource_mbp14"), SubResource("Resource_vip4v")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 50

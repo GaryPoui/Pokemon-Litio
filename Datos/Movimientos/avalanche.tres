@@ -10,3 +10,5 @@ tipo = "hielo"
 poder = 60
 prioridad = -4
 descripcion = "Este ataque inflige el doble de daño a un objetivo que haya golpeado al usuario en ese mismo turno."
+numero = 419
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

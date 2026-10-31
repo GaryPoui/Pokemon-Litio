@@ -13,3 +13,5 @@ pp = 15
 objetivo = "entire-field"
 meta = "whole-field-effect"
 descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+numero = 300
+banderas = PackedStringArray("metronome", "nonsky")

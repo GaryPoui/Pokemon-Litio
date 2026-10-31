@@ -10,3 +10,5 @@ poder = 40
 prioridad = 3
 descripcion = "Amedrenta al objetivo con este movimiento de prioridad alta. Solo sirve en el primer turno."
 prob_retroceso = 100
+numero = 252
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

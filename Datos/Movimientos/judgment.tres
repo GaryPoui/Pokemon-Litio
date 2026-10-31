@@ -6,10 +6,8 @@
 script = ExtResource("1")
 id = "judgment"
 nombre = "Sentencia"
-tipo = "normal"
 categoria = "especial"
 poder = 100
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Emite incontables haces de luz. El tipo del movimiento varía según la tabla que lleve el usuario."
+numero = 449
+banderas = PackedStringArray("metronome", "mirror", "protect")

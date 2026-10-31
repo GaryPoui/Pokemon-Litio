@@ -11,4 +11,6 @@ precision = 0
 pp = 25
 objetivo = "users-field"
 meta = "field-effect"
-descripcion = "Un escudo que protege de problemas de estado, como el sueño o la parálisis, durante cinco turnos. "
+descripcion = "Un escudo que protege de problemas de estado, como el sueño o la parálisis, durante cinco turnos."
+numero = 219
+banderas = PackedStringArray("metronome", "snatch")

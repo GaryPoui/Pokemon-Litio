@@ -16,57 +16,56 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/uproar.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="15"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_hrnj5"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_p4q4c"]
 script = ExtResource("2")
 nivel = 3
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_pe7u3"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_sq58n"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_35yyq"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_gy16h"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_37jpj"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_wkbfy"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_t6rtc"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_vbfnv"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_7rymy"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("15")
@@ -77,22 +76,27 @@ id = "lombre"
 numero = 271
 nombre = "Lombre"
 tipos = PackedStringArray("agua", "planta")
-habilidades = PackedStringArray("Nado Rápido", "Curación Pluvial/Cura Lluvia")
-habilidad_oculta = "Ritmo Propio"
 ps = 60
-ataque = 50
-defensa = 50
 at_esp = 60
 def_esp = 70
-velocidad = 50
 exp_base = 119
 ratio_captura = 120
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"def_esp": 2}
-evoluciones = Array[Dictionary]([{"especie": "ludicolo", "metodo": "piedra", "condicion": "Piedra agua"}])
-evoluciona_a = "ludicolo"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10")])
+evs_otorgados = {
+"def_esp": 2
+}
+evoluciones = Array[Dictionary]([{
+"especie": "ludicolo",
+"metodo": "piedra",
+"objeto": "water_stone"
+}])
+habilidades = PackedStringArray("swift_swim", "rain_dish")
+habilidad_oculta = "own_tempo"
+categoria = "Pokémon Alegre"
+altura = 1.2
+peso_kg = 32.5
+descripcion = "Vive en el agua y, cuando hace sol, se queda en la orilla. De día duerme sobre las algas y de noche entra en acción."
+aprende = Array[ExtResource("2")]([SubResource("Resource_hrnj5"), SubResource("Resource_p4q4c"), SubResource("Resource_pe7u3"), SubResource("Resource_sq58n"), SubResource("Resource_35yyq"), SubResource("Resource_gy16h"), SubResource("Resource_37jpj"), SubResource("Resource_wkbfy"), SubResource("Resource_t6rtc"), SubResource("Resource_vbfnv"), SubResource("Resource_7rymy")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 46

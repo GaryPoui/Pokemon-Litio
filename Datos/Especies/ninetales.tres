@@ -10,30 +10,25 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/safeguard.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="9"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_rkwtb"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_6k4td"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
+movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_cggfy"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_yphy4"]
+script = ExtResource("2")
 movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_0uv3d"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
 
 [resource]
 script = ExtResource("1")
@@ -41,8 +36,6 @@ id = "ninetales"
 numero = 38
 nombre = "Ninetales"
 tipos = PackedStringArray("fuego")
-habilidades = PackedStringArray("Absorbefuego/Absorbe Fuego")
-habilidad_oculta = "Sequía"
 ps = 73
 ataque = 76
 defensa = 75
@@ -52,12 +45,18 @@ velocidad = 100
 exp_base = 177
 ratio_captura = 75
 ratio_genero = 6
-crecimiento = "medium"
-evs_otorgados = {"def_esp": 1, "velocidad": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4")])
+evs_otorgados = {
+"def_esp": 1,
+"velocidad": 1
+}
+habilidades = PackedStringArray("flash_fire")
+habilidad_oculta = "drought"
+categoria = "Pokémon Zorro"
+altura = 1.1
+peso_kg = 19.9
+descripcion = "Tiene nueve colas y un pelaje de color dorado. Dicen que este Pokémon llega a vivir 1000 años."
+aprende = Array[ExtResource("2")]([SubResource("Resource_rkwtb"), SubResource("Resource_6k4td"), SubResource("Resource_cggfy"), SubResource("Resource_yphy4"), SubResource("Resource_0uv3d")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 9
 cuadros_espalda = 9
-fps_sprite = 10.0

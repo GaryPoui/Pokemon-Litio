@@ -18,74 +18,74 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/flaaffy_espalda.png" id="16_eb0nb"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/flaaffy_frente.png" id="17_03qpn"]
 
-[sub_resource type="Resource" id="Resource_jjnsm"]
+[sub_resource type="Resource" id="Resource_b2bnx"]
 script = ExtResource("1_b2bnx")
 movimiento = ExtResource("2_r0l3u")
 
-[sub_resource type="Resource" id="Resource_c1w0p"]
+[sub_resource type="Resource" id="Resource_r0l3u"]
 script = ExtResource("1_b2bnx")
 movimiento = ExtResource("3_pgw6g")
 
-[sub_resource type="Resource" id="Resource_ftcx0"]
+[sub_resource type="Resource" id="Resource_pgw6g"]
 script = ExtResource("1_b2bnx")
 movimiento = ExtResource("4_t4vda")
 
-[sub_resource type="Resource" id="Resource_i2nto"]
+[sub_resource type="Resource" id="Resource_t4vda"]
 script = ExtResource("1_b2bnx")
 nivel = 5
 movimiento = ExtResource("2_r0l3u")
 
-[sub_resource type="Resource" id="Resource_x4ni1"]
+[sub_resource type="Resource" id="Resource_lrkxm"]
 script = ExtResource("1_b2bnx")
 nivel = 10
 movimiento = ExtResource("4_t4vda")
 
-[sub_resource type="Resource" id="Resource_ya84v"]
+[sub_resource type="Resource" id="Resource_87888"]
 script = ExtResource("1_b2bnx")
 nivel = 14
 movimiento = ExtResource("5_lrkxm")
 
-[sub_resource type="Resource" id="Resource_iqg4o"]
+[sub_resource type="Resource" id="Resource_ogqwb"]
 script = ExtResource("1_b2bnx")
 nivel = 20
 movimiento = ExtResource("6_87888")
 
-[sub_resource type="Resource" id="Resource_a7aor"]
+[sub_resource type="Resource" id="Resource_ruacg"]
 script = ExtResource("1_b2bnx")
 nivel = 25
 movimiento = ExtResource("7_ogqwb")
 
-[sub_resource type="Resource" id="Resource_2se45"]
+[sub_resource type="Resource" id="Resource_5s5y2"]
 script = ExtResource("1_b2bnx")
 nivel = 31
 movimiento = ExtResource("8_ruacg")
 
-[sub_resource type="Resource" id="Resource_7s1yv"]
+[sub_resource type="Resource" id="Resource_gx21h"]
 script = ExtResource("1_b2bnx")
 nivel = 36
 movimiento = ExtResource("9_5s5y2")
 
-[sub_resource type="Resource" id="Resource_13f4m"]
+[sub_resource type="Resource" id="Resource_mjo8l"]
 script = ExtResource("1_b2bnx")
 nivel = 42
 movimiento = ExtResource("10_gx21h")
 
-[sub_resource type="Resource" id="Resource_06miy"]
+[sub_resource type="Resource" id="Resource_1gsxi"]
 script = ExtResource("1_b2bnx")
 nivel = 47
 movimiento = ExtResource("11_mjo8l")
 
-[sub_resource type="Resource" id="Resource_7bugc"]
+[sub_resource type="Resource" id="Resource_xmp6a"]
 script = ExtResource("1_b2bnx")
 nivel = 53
 movimiento = ExtResource("12_1gsxi")
 
-[sub_resource type="Resource" id="Resource_bf4fp"]
+[sub_resource type="Resource" id="Resource_fvpmi"]
 script = ExtResource("1_b2bnx")
 nivel = 59
 movimiento = ExtResource("13_xmp6a")
 
-[sub_resource type="Resource" id="Resource_5o8ng"]
+[sub_resource type="Resource" id="Resource_ej4hv"]
 script = ExtResource("1_b2bnx")
 nivel = 65
 movimiento = ExtResource("14_fvpmi")
@@ -95,7 +95,7 @@ script = ExtResource("15_ej4hv")
 id = "flaaffy"
 numero = 180
 nombre = "Flaaffy"
-tipos = ["electrico"]
+tipos = PackedStringArray("electrico")
 ps = 70
 ataque = 55
 defensa = 55
@@ -110,12 +110,20 @@ evs_otorgados = {
 }
 evoluciona_a = "ampharos"
 nivel_evolucion = 30
-aprende = Array[ExtResource("1_b2bnx")]([SubResource("Resource_jjnsm"), SubResource("Resource_c1w0p"), SubResource("Resource_ftcx0"), SubResource("Resource_i2nto"), SubResource("Resource_x4ni1"), SubResource("Resource_ya84v"), SubResource("Resource_iqg4o"), SubResource("Resource_a7aor"), SubResource("Resource_2se45"), SubResource("Resource_7s1yv"), SubResource("Resource_13f4m"), SubResource("Resource_06miy"), SubResource("Resource_7bugc"), SubResource("Resource_bf4fp"), SubResource("Resource_5o8ng")])
+evoluciones = Array[Dictionary]([{
+"especie": "ampharos",
+"metodo": "nivel",
+"nivel": 30
+}])
+habilidades = PackedStringArray("static")
+habilidad_oculta = "plus"
+categoria = "Pokémon Lana"
+altura = 0.8
+peso_kg = 13.3
+descripcion = "Su esponjosa lana almacena electricidad. Su piel gomosa evita que sea electrocutado."
+aprende = Array[ExtResource("1_b2bnx")]([SubResource("Resource_b2bnx"), SubResource("Resource_r0l3u"), SubResource("Resource_pgw6g"), SubResource("Resource_t4vda"), SubResource("Resource_lrkxm"), SubResource("Resource_87888"), SubResource("Resource_ogqwb"), SubResource("Resource_ruacg"), SubResource("Resource_5s5y2"), SubResource("Resource_gx21h"), SubResource("Resource_mjo8l"), SubResource("Resource_1gsxi"), SubResource("Resource_xmp6a"), SubResource("Resource_fvpmi"), SubResource("Resource_ej4hv")])
 sprite_frente = ExtResource("17_03qpn")
 sprite_espalda = ExtResource("16_eb0nb")
 cuadros_frente = 55
 cuadros_espalda = 51
 fps_sprite = 9.17
-habilidades = PackedStringArray("Electricidad Estática")
-habilidad_oculta = "Más"
-evoluciones = Array[Dictionary]([{"especie": "ampharos", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])

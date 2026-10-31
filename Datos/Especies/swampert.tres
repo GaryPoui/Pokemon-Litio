@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://o204x2782dib"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_nh3el"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_nh3el"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_11u3o"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="3_f7lab"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_3fudd"]
@@ -15,82 +15,82 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="13_e1c0y"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/endeavor.tres" id="14_gyjwr"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hammer_arm.tres" id="15_sgrj1"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_rxc0j"]
-[ext_resource type="Texture2D" uid="uid://irj6jmomm2pd" path="res://Assets/Pokemones/batalla/swampert_espalda.png" id="17_43ngk"]
-[ext_resource type="Texture2D" uid="uid://bnu8g6v33oeoo" path="res://Assets/Pokemones/batalla/swampert_frente.png" id="18_2aiir"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_rxc0j"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/swampert_espalda.png" id="17_43ngk"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/swampert_frente.png" id="18_2aiir"]
 
-[sub_resource type="Resource" id="Resource_uf82y"]
+[sub_resource type="Resource" id="Resource_nh3el"]
 script = ExtResource("1_nh3el")
 movimiento = ExtResource("2_11u3o")
 
-[sub_resource type="Resource" id="Resource_0vvym"]
+[sub_resource type="Resource" id="Resource_11u3o"]
 script = ExtResource("1_nh3el")
 movimiento = ExtResource("3_f7lab")
 
-[sub_resource type="Resource" id="Resource_cxjix"]
+[sub_resource type="Resource" id="Resource_f7lab"]
 script = ExtResource("1_nh3el")
 movimiento = ExtResource("4_3fudd")
 
-[sub_resource type="Resource" id="Resource_msjn4"]
+[sub_resource type="Resource" id="Resource_3fudd"]
 script = ExtResource("1_nh3el")
 movimiento = ExtResource("5_v3i8o")
 
-[sub_resource type="Resource" id="Resource_frhhv"]
+[sub_resource type="Resource" id="Resource_v3i8o"]
 script = ExtResource("1_nh3el")
 nivel = 6
 movimiento = ExtResource("3_f7lab")
 
-[sub_resource type="Resource" id="Resource_v1jqp"]
+[sub_resource type="Resource" id="Resource_iwk6i"]
 script = ExtResource("1_nh3el")
 nivel = 10
 movimiento = ExtResource("5_v3i8o")
 
-[sub_resource type="Resource" id="Resource_03so5"]
+[sub_resource type="Resource" id="Resource_n4xj2"]
 script = ExtResource("1_nh3el")
 nivel = 15
 movimiento = ExtResource("6_iwk6i")
 
-[sub_resource type="Resource" id="Resource_7wxsw"]
+[sub_resource type="Resource" id="Resource_s6noc"]
 script = ExtResource("1_nh3el")
 nivel = 16
 movimiento = ExtResource("7_n4xj2")
 
-[sub_resource type="Resource" id="Resource_2r5tv"]
+[sub_resource type="Resource" id="Resource_hdf21"]
 script = ExtResource("1_nh3el")
 nivel = 20
 movimiento = ExtResource("8_s6noc")
 
-[sub_resource type="Resource" id="Resource_khmxn"]
+[sub_resource type="Resource" id="Resource_tny8d"]
 script = ExtResource("1_nh3el")
 nivel = 25
 movimiento = ExtResource("9_hdf21")
 
-[sub_resource type="Resource" id="Resource_sq3ix"]
+[sub_resource type="Resource" id="Resource_h4h2j"]
 script = ExtResource("1_nh3el")
 nivel = 31
 movimiento = ExtResource("10_tny8d")
 
-[sub_resource type="Resource" id="Resource_n0acx"]
+[sub_resource type="Resource" id="Resource_xlarq"]
 script = ExtResource("1_nh3el")
 nivel = 39
 movimiento = ExtResource("11_h4h2j")
 
-[sub_resource type="Resource" id="Resource_2vil8"]
+[sub_resource type="Resource" id="Resource_e1c0y"]
 script = ExtResource("1_nh3el")
 nivel = 46
 movimiento = ExtResource("12_xlarq")
 
-[sub_resource type="Resource" id="Resource_8bw6a"]
+[sub_resource type="Resource" id="Resource_gyjwr"]
 script = ExtResource("1_nh3el")
 nivel = 52
 movimiento = ExtResource("13_e1c0y")
 
-[sub_resource type="Resource" id="Resource_d265a"]
+[sub_resource type="Resource" id="Resource_sgrj1"]
 script = ExtResource("1_nh3el")
 nivel = 61
 movimiento = ExtResource("14_gyjwr")
 
-[sub_resource type="Resource" id="Resource_unrwa"]
+[sub_resource type="Resource" id="Resource_rxc0j"]
 script = ExtResource("1_nh3el")
 nivel = 69
 movimiento = ExtResource("15_sgrj1")
@@ -100,7 +100,7 @@ script = ExtResource("16_rxc0j")
 id = "swampert"
 numero = 260
 nombre = "Swampert"
-tipos = ["agua", "tierra"]
+tipos = PackedStringArray("agua", "tierra")
 ps = 100
 ataque = 110
 defensa = 90
@@ -113,12 +113,15 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-aprende = Array[ExtResource("1_nh3el")]([SubResource("Resource_uf82y"), SubResource("Resource_0vvym"), SubResource("Resource_cxjix"), SubResource("Resource_msjn4"), SubResource("Resource_frhhv"), SubResource("Resource_v1jqp"), SubResource("Resource_03so5"), SubResource("Resource_7wxsw"), SubResource("Resource_2r5tv"), SubResource("Resource_khmxn"), SubResource("Resource_sq3ix"), SubResource("Resource_n0acx"), SubResource("Resource_2vil8"), SubResource("Resource_8bw6a"), SubResource("Resource_d265a"), SubResource("Resource_unrwa")])
+habilidades = PackedStringArray("torrent")
+habilidad_oculta = "damp"
+categoria = "Pokémon Pez Lodo"
+altura = 1.5
+peso_kg = 81.9
+descripcion = "Con sus brazos duros como el acero puede partir rocas gigantescas en mil pedazos de un solo golpe."
+aprende = Array[ExtResource("1_nh3el")]([SubResource("Resource_nh3el"), SubResource("Resource_11u3o"), SubResource("Resource_f7lab"), SubResource("Resource_3fudd"), SubResource("Resource_v3i8o"), SubResource("Resource_iwk6i"), SubResource("Resource_n4xj2"), SubResource("Resource_s6noc"), SubResource("Resource_hdf21"), SubResource("Resource_tny8d"), SubResource("Resource_h4h2j"), SubResource("Resource_xlarq"), SubResource("Resource_e1c0y"), SubResource("Resource_gyjwr"), SubResource("Resource_sgrj1"), SubResource("Resource_rxc0j")])
 sprite_frente = ExtResource("18_2aiir")
 sprite_espalda = ExtResource("17_43ngk")
 cuadros_frente = 46
 cuadros_espalda = 46
 fps_sprite = 7.42
-habilidades = PackedStringArray("Torrente")
-habilidad_oculta = "Humedad"
-evoluciones = Array[Dictionary]([])

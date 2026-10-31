@@ -10,29 +10,25 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/swift.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confuse_ray.tres" id="9"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_cvdp5"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_ctolh"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_0jdgt"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_owqks"]
 script = ExtResource("2")
-nivel = 22
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_78pmf"]
+script = ExtResource("2")
+nivel = 28
 movimiento = ExtResource("9")
 
 [resource]
@@ -41,8 +37,6 @@ id = "starmie"
 numero = 121
 nombre = "Starmie"
 tipos = PackedStringArray("agua", "psiquico")
-habilidades = PackedStringArray("Iluminación", "Curación Natural/Cura Natural")
-habilidad_oculta = "Cálculo Final"
 ps = 60
 ataque = 75
 defensa = 85
@@ -53,9 +47,16 @@ exp_base = 182
 ratio_captura = 60
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"velocidad": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4")])
+evs_otorgados = {
+"velocidad": 2
+}
+habilidades = PackedStringArray("illuminate", "natural_cure")
+habilidad_oculta = "analytic"
+categoria = "Pokémon Misterioso"
+altura = 1.1
+peso_kg = 80.0
+descripcion = "Su núcleo central brilla con los colores del arcoíris. Para algunos tiene el valor de una gema."
+aprende = Array[ExtResource("2")]([SubResource("Resource_cvdp5"), SubResource("Resource_ctolh"), SubResource("Resource_0jdgt"), SubResource("Resource_owqks"), SubResource("Resource_78pmf")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 48

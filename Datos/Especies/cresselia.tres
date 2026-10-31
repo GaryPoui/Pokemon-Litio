@@ -17,62 +17,60 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/lunar_dance.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_v2wgy"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_xjo0h"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_jmpdh"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_wc2oe"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_7lmvs"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_se5cm"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_qhlrw"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_yh0ik"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_4xtxt"]
 script = ExtResource("2")
 nivel = 66
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_qo57b"]
 script = ExtResource("2")
 nivel = 75
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_w5qav"]
 script = ExtResource("2")
 nivel = 84
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_y7dsy"]
 script = ExtResource("2")
 nivel = 93
 movimiento = ExtResource("16")
@@ -83,8 +81,6 @@ id = "cresselia"
 numero = 488
 nombre = "Cresselia"
 tipos = PackedStringArray("psiquico")
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
 ps = 120
 ataque = 70
 defensa = 120
@@ -95,9 +91,16 @@ exp_base = 270
 ratio_captura = 3
 ratio_genero = 8
 crecimiento = "slow"
-evs_otorgados = {"def_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evs_otorgados = {
+"def_esp": 3
+}
+amistad_base = 100
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Lunar"
+altura = 1.5
+peso_kg = 85.6
+descripcion = "Sus alas emiten un velo de partículas brillantes. Se dice que representa un cuarto lunar."
+aprende = Array[ExtResource("2")]([SubResource("Resource_v2wgy"), SubResource("Resource_xjo0h"), SubResource("Resource_jmpdh"), SubResource("Resource_wc2oe"), SubResource("Resource_7lmvs"), SubResource("Resource_se5cm"), SubResource("Resource_qhlrw"), SubResource("Resource_yh0ik"), SubResource("Resource_4xtxt"), SubResource("Resource_qo57b"), SubResource("Resource_w5qav"), SubResource("Resource_y7dsy")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 96

@@ -6,8 +6,10 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/butterfree_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/poison_powder.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="6_dw6ov"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/stun_spore.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sleep_powder.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlwind.tres" id="8_l02nt"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/psybeam.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/silver_wind.tres" id="11"]
@@ -18,72 +20,81 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/quiver_dance.tres" id="17"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_dw6ov"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_l02nt"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_wwwcj"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 12
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_mrplp"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_xwwcf"]
+script = ExtResource("2")
+nivel = 12
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_3fgpu"]
+script = ExtResource("2")
+nivel = 16
+movimiento = ExtResource("6_dw6ov")
+
+[sub_resource type="Resource" id="Resource_6bscq"]
 script = ExtResource("2")
 nivel = 18
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_0wimf"]
+script = ExtResource("2")
+nivel = 22
+movimiento = ExtResource("8_l02nt")
+
+[sub_resource type="Resource" id="Resource_m1ueh"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_w6kur"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_b4w2n"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ap7mb"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_o1uwk"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_lh23w"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_q1cay"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_p85tr"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("17")
@@ -94,23 +105,24 @@ id = "butterfree"
 numero = 12
 nombre = "Butterfree"
 tipos = PackedStringArray("bicho", "volador")
-habilidades = PackedStringArray("Ojo Compuesto")
-habilidad_oculta = "Cromolente"
 ps = 60
 ataque = 45
-defensa = 50
-at_esp = 90
+at_esp = 80
 def_esp = 80
 velocidad = 70
-exp_base = 173
-ratio_captura = 45
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"at_esp": 2, "def_esp": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+exp_base = 178
+evs_otorgados = {
+"at_esp": 2,
+"def_esp": 1
+}
+habilidades = PackedStringArray("compound_eyes")
+habilidad_oculta = "tinted_lens"
+categoria = "Pokémon Mariposa"
+altura = 1.1
+peso_kg = 32.0
+descripcion = "Adora el néctar de las flores. Puede localizar hasta las más pequeñas cantidades de polen."
+aprende = Array[ExtResource("2")]([SubResource("Resource_dw6ov"), SubResource("Resource_l02nt"), SubResource("Resource_wwwcj"), SubResource("Resource_mrplp"), SubResource("Resource_xwwcf"), SubResource("Resource_3fgpu"), SubResource("Resource_6bscq"), SubResource("Resource_0wimf"), SubResource("Resource_m1ueh"), SubResource("Resource_w6kur"), SubResource("Resource_b4w2n"), SubResource("Resource_ap7mb"), SubResource("Resource_o1uwk"), SubResource("Resource_lh23w"), SubResource("Resource_q1cay"), SubResource("Resource_p85tr")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 45
 cuadros_espalda = 15
-fps_sprite = 10.0

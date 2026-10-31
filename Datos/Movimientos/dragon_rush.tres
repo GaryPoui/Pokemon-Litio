@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1")
 id = "dragon_rush"
-nombre = "Carga dragón"
+nombre = "Carga Dragón"
 tipo = "dragon"
-categoria = "fisico"
 poder = 100
 precision = 75
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Ataca de forma brutal mientras intimida al objetivo. También puede amedrentarlo."
+prob_retroceso = 20
+numero = 407
+banderas = PackedStringArray("contact", "metronome", "minimize", "mirror", "protect")

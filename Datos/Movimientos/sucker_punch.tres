@@ -11,3 +11,5 @@ poder = 80
 pp = 5
 prioridad = 1
 descripcion = "Permite atacar con prioridad. Falla si el objetivo no está preparando ningún ataque."
+numero = 389
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

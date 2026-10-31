@@ -5,11 +5,12 @@
 [resource]
 script = ExtResource("1")
 id = "comet_punch"
-nombre = "Puño cometa"
-tipo = "normal"
-categoria = "fisico"
+nombre = "Puño Cometa"
 poder = 18
 precision = 85
 pp = 15
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+numero = 4
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")
+golpes_min = 2
+golpes_max = 5

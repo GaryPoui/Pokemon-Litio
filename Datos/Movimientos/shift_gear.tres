@@ -16,3 +16,5 @@ cambios_stats = {
 "ataque": 1,
 "velocidad": 2
 }
+numero = 508
+banderas = PackedStringArray("metronome", "snatch")

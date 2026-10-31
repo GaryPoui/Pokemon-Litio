@@ -6,10 +6,11 @@
 script = ExtResource("1")
 id = "tri_attack"
 nombre = "Triataque"
-tipo = "normal"
 categoria = "especial"
 poder = 80
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-ailment"
+descripcion = "Ataque triple que puede paralizar, quemar o congelar al objetivo."
+estado = "unknown"
+prob_estado = 20
+numero = 161
+banderas = PackedStringArray("metronome", "mirror", "protect")

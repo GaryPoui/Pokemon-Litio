@@ -5,11 +5,13 @@
 [resource]
 script = ExtResource("1")
 id = "dizzy_punch"
-nombre = "Puño mareo"
-tipo = "normal"
-categoria = "fisico"
+nombre = "Puño Mareo"
 poder = 70
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-ailment"
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+estado = "confusion"
+prob_estado = 20
+numero = 146
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")
+turnos_min = 2
+turnos_max = 5

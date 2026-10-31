@@ -22,87 +22,86 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/inferno.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/shell_smash.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_12t4i"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_krsjq"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_e1ewe"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_hwrcg"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_citnp"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_uke8l"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_tgyku"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_vcvp2"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_fg2tn"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_dgj3m"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_w8ucb"]
 script = ExtResource("2")
 nivel = 39
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_n37e7"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_rjnx8"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_hq0p0"]
 script = ExtResource("2")
 nivel = 52
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_w8erh"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_ynx0i"]
 script = ExtResource("2")
 nivel = 60
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_fvv2c"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("21")
@@ -113,8 +112,6 @@ id = "torkoal"
 numero = 324
 nombre = "Torkoal"
 tipos = PackedStringArray("fuego")
-habilidades = PackedStringArray("Humo Blanco", "Sequía")
-habilidad_oculta = "Caparazón"
 ps = 70
 ataque = 85
 defensa = 140
@@ -123,11 +120,16 @@ def_esp = 70
 velocidad = 20
 exp_base = 165
 ratio_captura = 90
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"defensa": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"defensa": 2
+}
+habilidades = PackedStringArray("white_smoke")
+habilidad_oculta = "shell_armor"
+categoria = "Pokémon Carbón"
+altura = 0.5
+peso_kg = 80.4
+descripcion = "Trabaja sin descanso en minas en desuso localizando y extrayendo carbón."
+aprende = Array[ExtResource("2")]([SubResource("Resource_12t4i"), SubResource("Resource_krsjq"), SubResource("Resource_e1ewe"), SubResource("Resource_hwrcg"), SubResource("Resource_citnp"), SubResource("Resource_uke8l"), SubResource("Resource_tgyku"), SubResource("Resource_vcvp2"), SubResource("Resource_fg2tn"), SubResource("Resource_dgj3m"), SubResource("Resource_w8ucb"), SubResource("Resource_n37e7"), SubResource("Resource_rjnx8"), SubResource("Resource_hq0p0"), SubResource("Resource_w8erh"), SubResource("Resource_ynx0i"), SubResource("Resource_fvv2c")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 65

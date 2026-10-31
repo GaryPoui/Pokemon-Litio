@@ -5,11 +5,16 @@
 [resource]
 script = ExtResource("1")
 id = "iron_tail"
-nombre = "Cola férrea"
+nombre = "Cola Férrea"
 tipo = "acero"
-categoria = "fisico"
 poder = 100
 precision = 75
 pp = 15
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-lower"
+descripcion = "Ataca con una cola férrea y puede bajar la Defensa del objetivo."
+cambios_stats = {
+"defensa": -1
+}
+prob_stat = 30
+numero = 231
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

@@ -13,3 +13,5 @@ pp = 30
 objetivo = "entire-field"
 meta = "whole-field-effect"
 descripcion = "Neblina que elimina los cambios de características de todos los Pokémon en combate."
+numero = 114
+banderas = PackedStringArray("bypasssub", "metronome")

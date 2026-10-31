@@ -17,62 +17,61 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/covet.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_ptqs0"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_r4ooa"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_of5ad"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_nff1t"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_pqp8r"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_kv5mb"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_00v5n"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_17nh7"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_7wi87"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ppe1c"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_n20qi"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_1c001"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("16")
@@ -83,21 +82,26 @@ id = "illumise"
 numero = 314
 nombre = "Illumise"
 tipos = PackedStringArray("bicho")
-habilidades = PackedStringArray("Despistado/Despiste", "Cromolente")
-habilidad_oculta = "Timador/Bromista"
 ps = 65
 ataque = 47
-defensa = 75
+defensa = 55
 at_esp = 73
-def_esp = 85
+def_esp = 75
 velocidad = 85
-exp_base = 140
+exp_base = 151
 ratio_captura = 150
 ratio_genero = 8
 crecimiento = "fast-then-very-slow"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evs_otorgados = {
+"velocidad": 1
+}
+habilidades = PackedStringArray("oblivious", "tinted_lens")
+habilidad_oculta = "prankster"
+categoria = "Pokémon Luciérnaga"
+altura = 0.6
+peso_kg = 17.7
+descripcion = "Con su dulce aroma guía a grupos de Volbeat para que tracen hasta 200 dibujos distintos en el cielo nocturno."
+aprende = Array[ExtResource("2")]([SubResource("Resource_ptqs0"), SubResource("Resource_r4ooa"), SubResource("Resource_of5ad"), SubResource("Resource_nff1t"), SubResource("Resource_pqp8r"), SubResource("Resource_kv5mb"), SubResource("Resource_00v5n"), SubResource("Resource_17nh7"), SubResource("Resource_7wi87"), SubResource("Resource_ppe1c"), SubResource("Resource_n20qi"), SubResource("Resource_1c001")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 23

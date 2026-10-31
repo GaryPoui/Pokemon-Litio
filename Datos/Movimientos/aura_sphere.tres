@@ -12,3 +12,5 @@ poder = 90
 precision = 0
 pp = 20
 descripcion = "Libera, desde su interior, una inmensa descarga de aura. Es infalible."
+numero = 396
+banderas = PackedStringArray("bullet", "distance", "metronome", "mirror", "protect", "pulse")

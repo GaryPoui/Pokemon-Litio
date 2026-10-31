@@ -15,3 +15,5 @@ descripcion = "El usuario muerde al objetivo con colmillos en llamas y puede hac
 estado = "burn"
 prob_estado = 10
 prob_retroceso = 10
+numero = 424
+banderas = PackedStringArray("bite", "contact", "metronome", "mirror", "protect")

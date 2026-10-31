@@ -9,25 +9,21 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="8"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_g3fwe"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
+movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_7kgog"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_ale0h"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_b87se"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
+movimiento = ExtResource("5")
 
 [resource]
 script = ExtResource("1")
@@ -35,8 +31,6 @@ id = "ludicolo"
 numero = 272
 nombre = "Ludicolo"
 tipos = PackedStringArray("agua", "planta")
-habilidades = PackedStringArray("Nado Rápido", "Curación Pluvial/Cura Lluvia")
-habilidad_oculta = "Ritmo Propio"
 ps = 80
 ataque = 70
 defensa = 70
@@ -44,12 +38,17 @@ at_esp = 90
 def_esp = 100
 velocidad = 70
 exp_base = 216
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"def_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+evs_otorgados = {
+"def_esp": 3
+}
+habilidades = PackedStringArray("swift_swim", "rain_dish")
+habilidad_oculta = "own_tempo"
+categoria = "Pokémon Optimista"
+altura = 1.5
+peso_kg = 55.0
+descripcion = "Cuando oye música alegre, sus músculos se llenan de energía, y no puede evitar ponerse a bailar."
+aprende = Array[ExtResource("2")]([SubResource("Resource_g3fwe"), SubResource("Resource_7kgog"), SubResource("Resource_ale0h"), SubResource("Resource_b87se")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 43

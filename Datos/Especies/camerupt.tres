@@ -13,102 +13,86 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/lava_plume.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/earth_power.tres" id="13"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/curse.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rock_slide.tres" id="16"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/yawn.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/eruption.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fissure.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_hy1tr"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_0a0uu"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_8ekhg"]
+script = ExtResource("2")
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_51hus"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_vd6l0"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_q8cp8"]
 script = ExtResource("2")
-nivel = 8
+nivel = 11
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 12
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_lnxmp"]
 script = ExtResource("2")
 nivel = 15
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_cq3y3"]
+script = ExtResource("2")
+nivel = 21
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ariwa"]
 script = ExtResource("2")
-nivel = 19
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 22
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 26
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 29
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 31
+nivel = 25
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_3qcuq"]
+script = ExtResource("2")
+nivel = 31
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Resource_1efo8"]
 script = ExtResource("2")
 nivel = 33
-movimiento = ExtResource("16")
+movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_qnebp"]
 script = ExtResource("2")
 nivel = 39
-movimiento = ExtResource("17")
+movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_5u2vh"]
 script = ExtResource("2")
-nivel = 46
+nivel = 49
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_jgvo8"]
+script = ExtResource("2")
+nivel = 57
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_ht15h"]
 script = ExtResource("2")
-nivel = 52
+nivel = 67
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_d70qa"]
 script = ExtResource("2")
-nivel = 59
+nivel = 75
 movimiento = ExtResource("20")
 
 [resource]
@@ -117,8 +101,6 @@ id = "camerupt"
 numero = 323
 nombre = "Camerupt"
 tipos = PackedStringArray("fuego", "tierra")
-habilidades = PackedStringArray("Escudo de Magma/Escudo Magma", "Roca Sólida")
-habilidad_oculta = "Irascible"
 ps = 70
 ataque = 100
 defensa = 70
@@ -127,11 +109,17 @@ def_esp = 75
 velocidad = 40
 exp_base = 161
 ratio_captura = 150
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1, "at_esp": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"at_esp": 1,
+"ataque": 1
+}
+habilidades = PackedStringArray("magma_armor", "solid_rock")
+habilidad_oculta = "anger_point"
+categoria = "Pokémon Erupción"
+altura = 1.9
+peso_kg = 220.0
+descripcion = "Los volcanes de su joroba entran en erupción cada 10 años o cuando Camerupt se enfada mucho."
+aprende = Array[ExtResource("2")]([SubResource("Resource_hy1tr"), SubResource("Resource_0a0uu"), SubResource("Resource_8ekhg"), SubResource("Resource_51hus"), SubResource("Resource_vd6l0"), SubResource("Resource_q8cp8"), SubResource("Resource_lnxmp"), SubResource("Resource_cq3y3"), SubResource("Resource_ariwa"), SubResource("Resource_3qcuq"), SubResource("Resource_1efo8"), SubResource("Resource_qnebp"), SubResource("Resource_5u2vh"), SubResource("Resource_jgvo8"), SubResource("Resource_ht15h"), SubResource("Resource_d70qa")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 53

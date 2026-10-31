@@ -14,3 +14,5 @@ descripcion = "Puede envenenar y dar un golpe crítico."
 estado = "poison"
 prob_estado = 10
 critico = 1
+numero = 342
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

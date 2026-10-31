@@ -15,110 +15,91 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/wing_attack.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/headbutt.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/water_pulse.tres" id="15"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/wide_guard.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="18"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/aqua_ring.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bounce.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_vriop"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_hbie2"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 3
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 7
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_rno8f"]
 script = ExtResource("2")
-nivel = 11
-movimiento = ExtResource("12")
+movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_afabb"]
 script = ExtResource("2")
-nivel = 14
-movimiento = ExtResource("13")
+movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_a21gv"]
 script = ExtResource("2")
-nivel = 16
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_qgdhn"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_f0it1"]
+script = ExtResource("2")
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Resource_hh1w6"]
+script = ExtResource("2")
+nivel = 4
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_2j7my"]
+script = ExtResource("2")
+nivel = 10
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_edw12"]
+script = ExtResource("2")
+nivel = 13
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_fe0vq"]
 script = ExtResource("2")
 nivel = 19
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_13"]
-script = ExtResource("2")
-nivel = 23
-movimiento = ExtResource("16")
-
-[sub_resource type="Resource" id="Move_14"]
-script = ExtResource("2")
-nivel = 27
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_15"]
-script = ExtResource("2")
-nivel = 32
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_sjfkx"]
 script = ExtResource("2")
-nivel = 36
-movimiento = ExtResource("19")
+nivel = 22
+movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_k4wl8"]
 script = ExtResource("2")
-nivel = 39
-movimiento = ExtResource("20")
+nivel = 28
+movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_fh70v"]
 script = ExtResource("2")
-nivel = 46
+nivel = 31
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Resource_kodub"]
+script = ExtResource("2")
+nivel = 37
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Resource_16j2c"]
+script = ExtResource("2")
+nivel = 40
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_19"]
+[sub_resource type="Resource" id="Resource_0qebc"]
+script = ExtResource("2")
+nivel = 46
+movimiento = ExtResource("20")
+
+[sub_resource type="Resource" id="Resource_a3t5n"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("22")
@@ -129,23 +110,26 @@ id = "mantine"
 numero = 226
 nombre = "Mantine"
 tipos = PackedStringArray("agua", "volador")
-habilidades = PackedStringArray("Nado Rápido", "Absorbeagua/Absorbe Agua")
-habilidad_oculta = "Velo de Agua/Velo Agua"
-ps = 85
+ps = 65
 ataque = 40
 defensa = 70
 at_esp = 80
 def_esp = 140
 velocidad = 70
-exp_base = 163
+exp_base = 170
 ratio_captura = 25
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"def_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18"), SubResource("Move_19")])
+evs_otorgados = {
+"def_esp": 2
+}
+habilidades = PackedStringArray("swift_swim", "water_absorb")
+habilidad_oculta = "water_veil"
+categoria = "Pokémon Milano"
+altura = 2.1
+peso_kg = 220.0
+descripcion = "Acumula velocidad nadando y puede saltar fuera del agua, alcanzando 100 metros de altura, para descender luego planeando."
+aprende = Array[ExtResource("2")]([SubResource("Resource_vriop"), SubResource("Resource_hbie2"), SubResource("Resource_rno8f"), SubResource("Resource_afabb"), SubResource("Resource_a21gv"), SubResource("Resource_qgdhn"), SubResource("Resource_f0it1"), SubResource("Resource_hh1w6"), SubResource("Resource_2j7my"), SubResource("Resource_edw12"), SubResource("Resource_fe0vq"), SubResource("Resource_sjfkx"), SubResource("Resource_k4wl8"), SubResource("Resource_fh70v"), SubResource("Resource_kodub"), SubResource("Resource_16j2c"), SubResource("Resource_0qebc"), SubResource("Resource_a3t5n")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 21
 cuadros_espalda = 21
-fps_sprite = 10.0

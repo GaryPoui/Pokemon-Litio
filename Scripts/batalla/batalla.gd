@@ -21,10 +21,10 @@ const EMPUJE_MOVIMIENTO:= 28
 const BOTONES_TIPO :="res://Assets/Botones/tipos/"
 const ESCENA_APRENDER:= "res://Escenas/UI/AprenderMovimiento.tscn"
 const FONDO_DEFECTO :="res://Assets/Batalla/fondos/campo.png"
-const CENTRO_BALL:= Vector2(13, 12)
+const CENTRO_BALL:= Vector2(13, 13)
 const APAGADO :=Color(0.8, 0.8, 0.8)
 const X_COMANDOS:= 182
-const X_MOVIMIENTOS :=168
+const X_MOVIMIENTOS :=152
 const ESCALA_JUGADOR:= Vector2(1.75, 1.75)
 const CATEGORIAS :={"fisico": "Físico", "especial": "Especial", "estado": "Estado"}
 const DESLIZ :=0.08
@@ -32,6 +32,14 @@ const SHADER_ETAPA:= preload("res://Recursos/etapa.gdshader")
 const PLATAFORMAS :="res://Assets/Batalla/plataformas/"
 const TONO_SUBE :=Color(1.0, 0.42, 0.24)
 const TONO_BAJA:= Color(0.3, 0.56, 1.0)
+const SUSTITUTO :="res://Assets/Batalla/sustituto_%s.png"
+const MINI_TRINKET:= "res://Assets/Trinkets/mini/"
+const TINTE_CLIMA :={"lluvia": Color(0.35, 0.45, 0.85, 0.2), "sol": Color(1.0, 0.78, 0.35, 0.16), "arena": Color(0.8, 0.62, 0.3, 0.24), "granizo": Color(0.85, 0.92, 1.0, 0.22)}
+const TECLA_PRUEBA:= KEY_F9
+const ALTO_EXTRA :=14
+const FIN_FILA_RIVAL:= 148.0
+const LIMITE_RIVAL :=Rect2(2, 0, 252, 192)
+const LIMITE_JUGADOR:= Rect2(0, 55, 256, 137)
 
 @onready var velo: ColorRect= $Velo
 @onready var fondo_zona: TextureRect =$Fondo/FondoZona
@@ -76,6 +84,11 @@ var ball_rapida :=""
 var previo_ball:= 0
 static var ultima_ball :=""
 var terreno:= "campo"
+var tinte: ColorRect
+var tabs_hab:= {}
+var fila_trinkets: HBoxContainer
+var marco_trinkets: Panel
+var munecos :={}
 
 func _ready() -> void:
 	layer= 50
@@ -89,7 +102,7 @@ func _ready() -> void:
 		spr.material= m
 	lista.add_theme_stylebox_override("panel", EstiloUI.panel())
 	var translucido:= StyleBoxFlat.new()
-	translucido.bg_color= Color(0.05, 0.07, 0.13, 0.62)
+	translucido.bg_color= Color(0.05, 0.07, 0.13)
 	translucido.set_border_width_all(1)
 	translucido.border_color =Color(1, 1, 1, 0.45)
 	translucido.set_corner_radius_all(3)
@@ -107,9 +120,8 @@ func _ready() -> void:
 			EstiloUI.fuente_batalla(panel.get_node(n))
 		panel.get_node("Estado").add_theme_color_override("font_color", Color("c03028"))
 		var ps: Label= panel.get_node("PS")
-		EstiloUI.label(ps, 8, Color.WHITE)
+		EstiloUI.label(ps, 8, EstiloUI.TEXTO_OSCURO)
 		EstiloUI.fuente_batalla(ps)
-		ps.add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.6))
 		panel.visible= false
 	for i in 4:
 		var tc: Label= comandos.get_node("B%d/Texto" % i)
@@ -124,6 +136,9 @@ func _ready() -> void:
 	var cant_ball: Label= comandos.get_node("Ball/Cantidad")
 	EstiloUI.label(cant_ball, 8, Color.WHITE)
 	EstiloUI.fuente_batalla(cant_ball)
+	cant_ball.add_theme_stylebox_override("normal", _estilo_pastilla())
+	var info: Label= movimientos_ui.get_node("Info")
+	info.add_theme_stylebox_override("normal", _estilo_pastilla())
 	cant_ball.add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.75))
 	EstiloUI.label(movimientos_ui.get_node("Info"), 6)
 	movimientos_ui.get_node("Info").add_theme_color_override("font_color", Color.WHITE)
@@ -138,6 +153,39 @@ func _ready() -> void:
 	movimientos_ui.visible =false
 	lista.visible= false
 	caja.visible =false
+	tinte= ColorRect.new()
+	tinte.size= Vector2(256, 192)
+	tinte.color =Color(0, 0, 0, 0)
+	tinte.mouse_filter= Control.MOUSE_FILTER_IGNORE
+	add_child(tinte)
+	move_child(tinte, sprite_rival.get_index())
+	for lado in ["rival", "jugador"]:
+		var tab:= Panel.new()
+		tab.name= "Habilidad_" +lado
+		tab.add_theme_stylebox_override("panel", _estilo_extra())
+		tab.mouse_filter =Control.MOUSE_FILTER_IGNORE
+		var et:= EstiloUI.nuevo_label("", 8, Vector2(4, 0))
+		EstiloUI.fuente_batalla(et)
+		et.name= "Texto"
+		tab.add_child(et)
+		tab.visible= false
+		add_child(tab)
+		tabs_hab[lado]= tab
+	marco_trinkets= Panel.new()
+	marco_trinkets.name= "TrinketsRival"
+	marco_trinkets.add_theme_stylebox_override("panel", _estilo_extra())
+	marco_trinkets.mouse_filter= Control.MOUSE_FILTER_IGNORE
+	marco_trinkets.visible =false
+	add_child(marco_trinkets)
+	fila_trinkets= HBoxContainer.new()
+	fila_trinkets.name= "Fila"
+	fila_trinkets.position =Vector2(3, 1)
+	fila_trinkets.add_theme_constant_override("separation", 1)
+	fila_trinkets.mouse_filter =Control.MOUSE_FILTER_IGNORE
+	fila_trinkets.visible= false
+	marco_trinkets.add_child(fila_trinkets)
+	for n in [tabs_hab["rival"], tabs_hab["jugador"], marco_trinkets]:
+		move_child(n, comandos.get_index())
 	ball.visible= false
 	sprite_rival.visible =false
 	sprite_jugador.visible= false
@@ -171,21 +219,29 @@ func empezar(rivales: Array[PokemonInstancia], salvaje: bool, entrenador: String
 	logica.inventario =Inventario
 	logica.equipo= Equipo
 	logica.capturados_dex =Estado.capturados.size()
+	logica.terreno= terreno
 	var inicio:= logica.iniciar()
 	if salvaje:
 		for e in inicio:
 			if e["tipo"]== "sale" and e["lado"]== "rival":
 				sprite_rival.mostrar(e["pokemon"].especie, false)
-				sprite_rival.scale= Vector2.ONE
+				sprite_rival.scale= _encajar(sprite_rival, "rival")
 				break
 	sprite_entrenador.frame= 0
 	sprite_entrenador.visible =safari
 	await _entrada()
 	await _reproducir(inicio)
 	while not logica.terminado:
-		var accion:= await _elegir_accion()
-		await _reproducir(logica.turno(accion))
-		while logica.esperando_reemplazo and not logica.terminado:
+		var accion: Dictionary
+		if not safari and logica.accion_forzada():
+			accion= {"tipo": "movimiento", "indice": 0}
+		else:
+			accion= await _elegir_accion()
+		if accion.get("tipo", "")== "ganar":
+			await _reproducir(logica.ganar_ya())
+		else:
+			await _reproducir(logica.turno(accion))
+		while (logica.esperando_reemplazo or logica.relevo_pendiente!= "") and not logica.terminado:
 			var i:= await _elegir_pokemon(true)
 			await _reproducir(logica.reemplazar(i))
 	await _salida()
@@ -274,6 +330,25 @@ func _reproducir(eventos: Array[Dictionary]) -> void:
 				if not vista["rival"].is_empty():
 					vista["rival"]["estado"]= e["humor"]
 				_actualizar_cajas()
+			"habilidad":
+				await _anunciar_habilidad(str(e["lado"]), str(e["nombre"]), str(e["habilidad"]))
+				_poner_tab(str(e["lado"]))
+			"oculto":
+				var spr_o: Sprite2D= sprite_rival if e["lado"]== "rival" else sprite_jugador
+				spr_o.visible= not bool(e["oculto"])
+			"sustituto":
+				await _munieco(str(e["lado"]), bool(e["activo"]))
+			"clima":
+				_tinte_clima(str(e["clima"]))
+			"transformar":
+				var spr_t: Sprite2D= sprite_rival if e["lado"]== "rival" else sprite_jugador
+				Sonido.efecto("estado_con")
+				spr_t.mostrar(e["pokemon"].especie, e["lado"]== "jugador")
+				spr_t.scale= _encajar(spr_t, e["lado"])
+				if not vista[e["lado"]].is_empty():
+					vista[e["lado"]]["tipos"]= Array(e["pokemon"].especie.tipos)
+				_actualizar_cajas()
+				await _esperar(0.4)
 	caja.visible= false
 
 func _ultimo_rival(eventos: Array[Dictionary], desde: int) -> bool:
@@ -362,6 +437,10 @@ func _unhandled_input(event: InputEvent) -> void:
 	if eligiendo and al_pintar== _pintar_comandos and ball_rapida!= "" and _mover_ball(event):
 		get_viewport().set_input_as_handled()
 		return
+	if eligiendo and al_pintar== _pintar_comandos and event is InputEventKey and event.pressed and not event.echo and event.keycode== TECLA_PRUEBA and not safari:
+		get_viewport().set_input_as_handled()
+		elegido.emit(-99)
+		return
 	if eligiendo:
 		if acepta:
 			Sonido.efecto("confirmar")
@@ -423,6 +502,8 @@ func _elegir_accion() -> Dictionary:
 		comandos.visible= true
 		var op:= await _elegir_opcion(4, false, _pintar_comandos, ultimo_comando)
 		comandos.visible =false
+		if op== -99:
+			return {"tipo": "ganar"}
 		ultimo_comando= op
 		if torre and op> 0:
 			Sonido.efecto("error")
@@ -484,7 +565,10 @@ func _preparar_ball_rapida() -> void:
 		icono.size =Vector2(o.icono.get_size())
 		var usado:= o.icono.get_image().get_used_rect()
 		icono.position= (CENTRO_BALL- (Vector2(usado.position)+ Vector2(usado.size)/ 2.0)).round()
-		(b.get_node("Cantidad") as Label).text ="×%d" % Inventario.cantidad_de(ball_rapida)
+		var cant: Label= b.get_node("Cantidad")
+		cant.text ="×%d" % Inventario.cantidad_de(ball_rapida)
+		cant.size= cant.get_combined_minimum_size()
+		cant.position= Vector2(roundi((b.size.x- cant.size.x)/ 2.0), b.size.y+ 2)
 
 func _pintar_comandos(sel: int) -> void:
 	for i in 4:
@@ -513,49 +597,61 @@ func _deslizar(n: Control, destino: Vector2) -> void:
 	n.set_meta("desliz", t)
 
 func _elegir_movimiento() -> int:
-	var p:= logica.j.pokemon
-	if p.pp.all(func(v): return v<= 0):
+	var movs:= logica.j.movimientos()
+	var pps:= logica.j.pp()
+	var usables:= logica.movimientos_usables(logica.j)
+	if not usables.has(true):
 		return -1
 	modo_ps= "valores"
 	_actualizar_cajas()
 	for i in 4:
 		var b: NinePatchRect= movimientos_ui.get_node("M%d" % i)
-		var hay:= i< p.movimientos.size()
+		var hay:= i< movs.size()
 		b.visible= hay
 		if not hay:
 			continue
-		var m:= p.movimientos[i]
-		b.get_node("Texto").text= m.nombre
+		var m:= movs[i]
+		var tx: Label= b.get_node("Texto")
+		tx.text= m.nombre
+		var w:= tx.get_combined_minimum_size().x
+		tx.horizontal_alignment= HORIZONTAL_ALIGNMENT_LEFT
+		tx.position.x= maxf(17.0, roundf((b.size.x- w)/ 2.0))
+		tx.size.x =w
 		b.get_node("Tipo").tipo =m.tipo
 		b.texture= load(BOTONES_TIPO+ "%s.png" % m.tipo)
-		b.set_meta("sin_pp", p.pp[i]<= 0)
-	ultimo_movimiento= clampi(ultimo_movimiento, 0, p.movimientos.size()- 1)
+		b.set_meta("sin_pp", not usables[i])
+	ultimo_movimiento= clampi(ultimo_movimiento, 0, movs.size()- 1)
 	while true:
 		caja.visible= false
 		movimientos_ui.visible= true
-		var i:= await _elegir_opcion(p.movimientos.size(), true, _pintar_movimientos, ultimo_movimiento)
+		var i:= await _elegir_opcion(movs.size(), true, _pintar_movimientos, ultimo_movimiento)
 		movimientos_ui.visible =false
 		if i< 0:
 			modo_ps= "porcentaje"
 			_actualizar_cajas()
 			return -2
 		ultimo_movimiento= i
-		if p.pp[i]<= 0:
+		if pps[i]<= 0:
 			Sonido.efecto("error")
 			await _decir("¡No quedan PP para este movimiento!")
+			continue
+		if not usables[i]:
+			Sonido.efecto("error")
+			await _decir("¡%s no puede usar %s ahora!" % [logica.j.pokemon.nombre(), movs[i].nombre])
 			continue
 		modo_ps ="porcentaje"
 		return i
 	return -2
 
 func _pintar_movimientos(sel: int) -> void:
-	var p:= logica.j.pokemon
+	var movs:= logica.j.movimientos()
+	var pps:= logica.j.pp()
 	for i in 4:
 		var b: NinePatchRect= movimientos_ui.get_node("M%d" % i)
 		_deslizar(b, Vector2(X_MOVIMIENTOS- (EMPUJE_MOVIMIENTO if i== sel else 0), b.position.y))
 		var base:= Color.WHITE if i== sel else APAGADO
 		b.self_modulate =base.darkened(0.45) if b.get_meta("sin_pp", false) else base
-	var m:= p.movimientos[sel]
+	var m:= movs[sel]
 	var bs: NinePatchRect= movimientos_ui.get_node("M%d" % sel)
 	var cat: TextureRect= movimientos_ui.get_node("Categoria")
 	cat.texture= load(UI+ "categoria_%s.png" % m.categoria)
@@ -565,12 +661,15 @@ func _pintar_movimientos(sel: int) -> void:
 	aparece.tween_property(cat, "modulate:a", 1.0, DESLIZ* 1.5)
 	var pot:= str(m.poder) if m.categoria!= "estado" and m.poder> 0 else "-"
 	var prec:= str(m.precision) if m.precision> 0 else "-"
-	movimientos_ui.get_node("Info").text= "Pot %s  Prec %s  PP %d/%d" % [pot, prec, p.pp[sel], m.pp]
+	var info: Label= movimientos_ui.get_node("Info")
+	info.text= "Pot %s  Prec %s  PP %d/%d" % [pot, prec, pps[sel], m.pp]
+	info.size =info.get_combined_minimum_size()
+	info.position= Vector2(252.0- info.size.x, 192.0- info.size.y- 2.0)
 	_describir(m)
 
 func _describir(m: Movimiento) -> void:
 	var desc: Panel= movimientos_ui.get_node("Descripcion")
-	desc.add_theme_stylebox_override("panel", EstiloUI.panel(Color(EstiloUI.FONDO, 0.9), EstiloUI.color_tipo(m.tipo).lightened(0.25)))
+	desc.add_theme_stylebox_override("panel", EstiloUI.panel(EstiloUI.FONDO, EstiloUI.color_tipo(m.tipo).lightened(0.25)))
 	var grande:= UI+ "tipos_grandes/%s.png" % m.tipo
 	desc.get_node("Icono").texture =load(grande) if ResourceLoader.exists(grande) else load(UI+ "tipos/%s.png" % m.tipo)
 	desc.get_node("Nombre").text= m.nombre
@@ -623,14 +722,158 @@ func _sale(lado: String, p: PokemonInstancia, tipo_ball: String) -> void:
 	if lado== "rival" and logica.salvaje:
 		if not spr.visible:
 			spr.mostrar(p.especie, false)
-			spr.scale= escala
+			spr.scale= _encajar(spr, lado)
 		Sonido.grito(p.especie.numero)
 	else:
 		spr.mostrar(p.especie, lado== "jugador")
+		escala= _encajar(spr, lado)
 		spr.visible= false
 		await _soltar_de_ball(spr, escala, tipo_ball, lado)
 	_actualizar_cajas()
 	_caja(lado).visible= true
+	_poner_tab(lado)
+	if lado== "rival":
+		_poner_trinkets(p)
+
+func _poner_tab(lado: String) -> void:
+	var tab: Panel= tabs_hab[lado]
+	var l: Luchador= logica.j if lado== "jugador" else logica.r
+	tab.visible= false
+	if logica.salvaje or safari or l== null or l.habilidad== "":
+		return
+	var h:= BaseDatos.habilidad(l.habilidad)
+	if h== null:
+		return
+	var et: Label= tab.get_node("Texto")
+	et.text= h.nombre
+	var ancho:= et.get_combined_minimum_size().x+ 7
+	tab.size= Vector2(ancho, ALTO_EXTRA)
+	var caja_l:= _caja(lado)
+	tab.position= Vector2(caja_l.position.x, caja_l.position.y+ caja_l.size.y+ 2) if lado== "rival" else Vector2(caja_l.position.x, caja_l.position.y- ALTO_EXTRA- 2)
+	tab.visible= true
+	if lado== "rival":
+		_colocar_trinkets()
+
+func _poner_trinkets(p: PokemonInstancia) -> void:
+	for c in fila_trinkets.get_children():
+		fila_trinkets.remove_child(c)
+		c.queue_free()
+	var cuenta:= {}
+	for id in p.trinkets:
+		cuenta[id]= int(cuenta.get(id, 0))+ 1
+	var ancho:= 0.0
+	for id in cuenta:
+		var ruta:= MINI_TRINKET+ "%s.png" % id
+		if not ResourceLoader.exists(ruta):
+			continue
+		if ancho> 0.0:
+			ancho+= 1
+		var icono:= TextureRect.new()
+		icono.name= "Trinket_" +str(id)
+		icono.texture= load(ruta)
+		icono.texture_filter= CanvasItem.TEXTURE_FILTER_NEAREST
+		icono.custom_minimum_size= Vector2(12, 12)
+		icono.mouse_filter =Control.MOUSE_FILTER_IGNORE
+		fila_trinkets.add_child(icono)
+		ancho+= 12
+		if int(cuenta[id])> 1:
+			var n:= EstiloUI.nuevo_label("×%d" % int(cuenta[id]), 8, Vector2.ZERO)
+			EstiloUI.fuente_batalla(n)
+			n.name= "Cuenta_"+ str(id)
+			n.custom_minimum_size= Vector2(0, 12)
+			n.vertical_alignment= VERTICAL_ALIGNMENT_CENTER
+			fila_trinkets.add_child(n)
+			ancho+= 1+ n.get_combined_minimum_size().x
+	fila_trinkets.visible= ancho> 0.0
+	marco_trinkets.visible =ancho> 0.0
+	marco_trinkets.size= Vector2(ancho+ 6, ALTO_EXTRA)
+	_colocar_trinkets()
+
+func _ocultar_extras(lado: String) -> void:
+	tabs_hab[lado].visible= false
+	if lado== "rival":
+		marco_trinkets.visible= false
+
+func _colocar_trinkets() -> void:
+	var tab: Panel= tabs_hab["rival"]
+	var caja_r:= _caja("rival")
+	var debajo:= Vector2(caja_r.position.x, caja_r.position.y+ caja_r.size.y+ 2)
+	if not tab.visible:
+		marco_trinkets.position= debajo
+		return
+	var x:= tab.position.x+ tab.size.x+ 2
+	if x+ marco_trinkets.size.x<= FIN_FILA_RIVAL:
+		marco_trinkets.position =Vector2(x, tab.position.y)
+	else:
+		marco_trinkets.position= Vector2(caja_r.position.x+ caja_r.size.x+ 2, caja_r.position.y)
+
+func _estilo_pastilla() -> StyleBoxFlat:
+	var e:= _estilo_extra()
+	e.content_margin_left= 4
+	e.content_margin_right =4
+	e.content_margin_top= 0
+	e.content_margin_bottom =1
+	return e
+
+func _estilo_extra() -> StyleBoxFlat:
+	var e:= EstiloUI.panel(EstiloUI.FONDO, EstiloUI.BORDE)
+	e.set_border_width_all(1)
+	return e
+
+func _encajar(spr: Sprite2D, lado: String) -> Vector2:
+	if lado== "jugador":
+		return spr.ajustar(ESCALA_JUGADOR, LIMITE_JUGADOR, true)
+	return spr.ajustar(Vector2.ONE, LIMITE_RIVAL, false)
+
+func _anunciar_habilidad(lado: String, nombre: String, habilidad: String) -> void:
+	var cartel:= Panel.new()
+	cartel.name= "CartelHabilidad"
+	cartel.add_theme_stylebox_override("panel", EstiloUI.panel(Color(EstiloUI.FONDO, 0.92), Color("ffd84a")))
+	cartel.mouse_filter =Control.MOUSE_FILTER_IGNORE
+	var arriba:= EstiloUI.nuevo_label(nombre, 6, Vector2(4, 1), EstiloUI.TENUE)
+	var abajo:= EstiloUI.nuevo_label(habilidad, 8, Vector2(4, 8))
+	EstiloUI.fuente_batalla(abajo)
+	cartel.add_child(arriba)
+	cartel.add_child(abajo)
+	var ancho:= maxf(arriba.get_combined_minimum_size().x, abajo.get_combined_minimum_size().x)+ 10
+	cartel.size= Vector2(ancho, 20)
+	var y:= 58.0 if lado== "rival" else 128.0
+	var fuera:= Vector2(258.0, y) if lado== "rival" else Vector2(-ancho- 2.0, y)
+	var dentro:= Vector2(252.0- ancho, y) if lado== "rival" else Vector2(4.0, y)
+	cartel.position= fuera
+	add_child(cartel)
+	Sonido.efecto("habilidad")
+	var t:= create_tween()
+	t.tween_property(cartel, "position", dentro, 0.15).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	t.tween_interval(0.9 if not auto_avanzar else 0.1)
+	t.tween_property(cartel, "position", fuera, 0.15).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN)
+	await t.finished
+	cartel.queue_free()
+
+func _tinte_clima(clima: String) -> void:
+	var t:= create_tween()
+	t.tween_property(tinte, "color", TINTE_CLIMA.get(clima, Color(0, 0, 0, 0)), 0.4)
+
+func _munieco(lado: String, activo: bool) -> void:
+	var spr: Sprite2D= sprite_rival if lado== "rival" else sprite_jugador
+	if munecos.has(lado):
+		munecos[lado].queue_free()
+		munecos.erase(lado)
+	if not activo:
+		spr.modulate.a= 1.0
+		return
+	var m:= Sprite2D.new()
+	m.name= "Sustituto_" +lado
+	m.texture= load(SUSTITUTO % ("espalda" if lado== "jugador" else "frente"))
+	m.texture_filter =CanvasItem.TEXTURE_FILTER_NEAREST
+	m.scale= ESCALA_JUGADOR if lado== "jugador" else Vector2.ONE
+	m.position =spr.pos_base+ Vector2(0, -16* m.scale.y- (22 if lado== "jugador" else 0))
+	add_child(m)
+	move_child(m, spr.get_index()+ 1)
+	munecos[lado]= m
+	spr.modulate.a= 0.0
+	Sonido.efecto("ball_abrir")
+	await _esperar(0.3)
 
 func _punto_ball(lado: String) -> Vector2:
 	var spr: Sprite2D= sprite_rival if lado== "rival" else sprite_jugador
@@ -698,6 +941,7 @@ func _retirar(lado: String, tipo_ball: String) -> void:
 	spr.visible= false
 	spr.modulate =Color.WHITE
 	_caja(lado).visible =false
+	_ocultar_extras(lado)
 	ball.frame= 0
 	await _esperar(0.12)
 	var vuelta:= Vector2(-10, 160) if lado== "jugador" else Vector2(266, 24)
@@ -758,6 +1002,7 @@ func _debilitar(lado: String) -> void:
 	await t.finished
 	spr.visible= false
 	_caja(lado).visible =false
+	_ocultar_extras(lado)
 
 func _ratio_exp(g: String, nivel: int, experiencia: int) -> float:
 	if nivel>= PokemonInstancia.NIVEL_MAX:
@@ -1008,6 +1253,7 @@ func _ilusion(lado: String, p: PokemonInstancia) -> void:
 	brillo.tween_property(spr, "modulate", Color(6, 6, 6, 1), 0.15)
 	await brillo.finished
 	spr.mostrar(p.especie, lado== "jugador")
+	spr.scale= _encajar(spr, lado)
 	spr.modulate= Color(6, 6, 6, 1)
 	Sonido.grito(p.especie.numero)
 	var vuelta :=create_tween()

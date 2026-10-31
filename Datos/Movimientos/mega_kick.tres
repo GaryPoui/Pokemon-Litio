@@ -6,10 +6,9 @@
 script = ExtResource("1")
 id = "mega_kick"
 nombre = "Megapatada"
-tipo = "normal"
-categoria = "fisico"
 poder = 120
 precision = 75
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Patada de extrema fuerza."
+numero = 25
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

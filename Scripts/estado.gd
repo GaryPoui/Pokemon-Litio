@@ -26,6 +26,11 @@ func _process(delta: float) -> void:
 
 func contar_paso() -> void:
 	estadisticas["pasos"] =int(estadisticas.get("pasos", 0))+ 1
+	if int(estadisticas["pasos"])% 128== 0:
+		var equipo:= get_tree().root.get_node_or_null("Equipo")
+		if equipo!= null:
+			for p in equipo.miembros:
+				p.subir_amistad(1)
 
 func anotar_companero(especie_id: String) -> void:
 	if str(estadisticas.get("companero", ""))== "":

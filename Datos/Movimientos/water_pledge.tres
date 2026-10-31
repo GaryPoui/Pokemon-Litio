@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_3fvjl"]
+
+[resource]
+script = ExtResource("1_3fvjl")
+id = "water_pledge"
+nombre = "Voto Agua"
+tipo = "agua"
+categoria = "especial"
+poder = 50
+descripcion = "Ataca con columnas de agua. Combinado con Voto Fuego, crea un arcoíris y aumenta su potencia."
+numero = 518
+banderas = PackedStringArray("metronome", "mirror", "nonsky", "pledgecombo", "protect")

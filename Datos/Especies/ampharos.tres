@@ -20,87 +20,87 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ampharos_espalda.png" id="18_n0m7g"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ampharos_frente.png" id="19_i47mm"]
 
-[sub_resource type="Resource" id="Resource_me7um"]
+[sub_resource type="Resource" id="Resource_8bn5d"]
 script = ExtResource("1_8bn5d")
 movimiento = ExtResource("2_gpry3")
 
-[sub_resource type="Resource" id="Resource_bnicp"]
+[sub_resource type="Resource" id="Resource_gpry3"]
 script = ExtResource("1_8bn5d")
 movimiento = ExtResource("3_t43xe")
 
-[sub_resource type="Resource" id="Resource_340g0"]
+[sub_resource type="Resource" id="Resource_t43xe"]
 script = ExtResource("1_8bn5d")
 movimiento = ExtResource("4_al5ef")
 
-[sub_resource type="Resource" id="Resource_073y8"]
+[sub_resource type="Resource" id="Resource_al5ef"]
 script = ExtResource("1_8bn5d")
 movimiento = ExtResource("5_84gsv")
 
-[sub_resource type="Resource" id="Resource_yypsa"]
+[sub_resource type="Resource" id="Resource_84gsv"]
 script = ExtResource("1_8bn5d")
 movimiento = ExtResource("6_7w50l")
 
-[sub_resource type="Resource" id="Resource_3doob"]
+[sub_resource type="Resource" id="Resource_7w50l"]
 script = ExtResource("1_8bn5d")
 nivel = 5
 movimiento = ExtResource("3_t43xe")
 
-[sub_resource type="Resource" id="Resource_7246h"]
+[sub_resource type="Resource" id="Resource_d1v8c"]
 script = ExtResource("1_8bn5d")
 nivel = 10
 movimiento = ExtResource("5_84gsv")
 
-[sub_resource type="Resource" id="Resource_8383i"]
+[sub_resource type="Resource" id="Resource_uqv3p"]
 script = ExtResource("1_8bn5d")
 nivel = 14
 movimiento = ExtResource("6_7w50l")
 
-[sub_resource type="Resource" id="Resource_2rm3g"]
+[sub_resource type="Resource" id="Resource_4o3jn"]
 script = ExtResource("1_8bn5d")
 nivel = 20
 movimiento = ExtResource("7_d1v8c")
 
-[sub_resource type="Resource" id="Resource_qbq51"]
+[sub_resource type="Resource" id="Resource_3ivx8"]
 script = ExtResource("1_8bn5d")
 nivel = 25
 movimiento = ExtResource("8_uqv3p")
 
-[sub_resource type="Resource" id="Resource_4gqec"]
+[sub_resource type="Resource" id="Resource_eultr"]
 script = ExtResource("1_8bn5d")
 nivel = 30
 movimiento = ExtResource("9_4o3jn")
 
-[sub_resource type="Resource" id="Resource_ycprl"]
+[sub_resource type="Resource" id="Resource_r3a1t"]
 script = ExtResource("1_8bn5d")
 nivel = 33
 movimiento = ExtResource("10_3ivx8")
 
-[sub_resource type="Resource" id="Resource_x2i4c"]
+[sub_resource type="Resource" id="Resource_smflt"]
 script = ExtResource("1_8bn5d")
 nivel = 40
 movimiento = ExtResource("11_eultr")
 
-[sub_resource type="Resource" id="Resource_iief4"]
+[sub_resource type="Resource" id="Resource_lc77q"]
 script = ExtResource("1_8bn5d")
 nivel = 48
 movimiento = ExtResource("12_r3a1t")
 
-[sub_resource type="Resource" id="Resource_x0njc"]
+[sub_resource type="Resource" id="Resource_5n37s"]
 script = ExtResource("1_8bn5d")
 nivel = 55
 movimiento = ExtResource("13_smflt")
 
-[sub_resource type="Resource" id="Resource_xyq3g"]
+[sub_resource type="Resource" id="Resource_xnxfb"]
 script = ExtResource("1_8bn5d")
 nivel = 63
 movimiento = ExtResource("14_lc77q")
 
-[sub_resource type="Resource" id="Resource_8rqm5"]
+[sub_resource type="Resource" id="Resource_ojetj"]
 script = ExtResource("1_8bn5d")
 nivel = 71
 movimiento = ExtResource("15_5n37s")
 
-[sub_resource type="Resource" id="Resource_xpft4"]
+[sub_resource type="Resource" id="Resource_n0m7g"]
 script = ExtResource("1_8bn5d")
 nivel = 79
 movimiento = ExtResource("16_xnxfb")
@@ -110,10 +110,10 @@ script = ExtResource("17_ojetj")
 id = "ampharos"
 numero = 181
 nombre = "Ampharos"
-tipos = ["electrico"]
+tipos = PackedStringArray("electrico")
 ps = 90
 ataque = 75
-defensa = 85
+defensa = 75
 at_esp = 115
 def_esp = 90
 velocidad = 55
@@ -122,12 +122,15 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 3
 }
-aprende = Array[ExtResource("1_8bn5d")]([SubResource("Resource_me7um"), SubResource("Resource_bnicp"), SubResource("Resource_340g0"), SubResource("Resource_073y8"), SubResource("Resource_yypsa"), SubResource("Resource_3doob"), SubResource("Resource_7246h"), SubResource("Resource_8383i"), SubResource("Resource_2rm3g"), SubResource("Resource_qbq51"), SubResource("Resource_4gqec"), SubResource("Resource_ycprl"), SubResource("Resource_x2i4c"), SubResource("Resource_iief4"), SubResource("Resource_x0njc"), SubResource("Resource_xyq3g"), SubResource("Resource_8rqm5"), SubResource("Resource_xpft4")])
+habilidades = PackedStringArray("static")
+habilidad_oculta = "plus"
+categoria = "Pokémon Luz"
+altura = 1.4
+peso_kg = 61.5
+descripcion = "La punta de su cola reluce brillantemente y puede ser vista desde lejos. Es usado como faro."
+aprende = Array[ExtResource("1_8bn5d")]([SubResource("Resource_8bn5d"), SubResource("Resource_gpry3"), SubResource("Resource_t43xe"), SubResource("Resource_al5ef"), SubResource("Resource_84gsv"), SubResource("Resource_7w50l"), SubResource("Resource_d1v8c"), SubResource("Resource_uqv3p"), SubResource("Resource_4o3jn"), SubResource("Resource_3ivx8"), SubResource("Resource_eultr"), SubResource("Resource_r3a1t"), SubResource("Resource_smflt"), SubResource("Resource_lc77q"), SubResource("Resource_5n37s"), SubResource("Resource_xnxfb"), SubResource("Resource_ojetj"), SubResource("Resource_n0m7g")])
 sprite_frente = ExtResource("19_i47mm")
 sprite_espalda = ExtResource("18_n0m7g")
 cuadros_frente = 36
 cuadros_espalda = 36
 fps_sprite = 8.57
-habilidades = PackedStringArray("Electricidad Estática")
-habilidad_oculta = "Más"
-evoluciones = Array[Dictionary]([])

@@ -12,37 +12,33 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/mind_reader.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/circle_throw.tres" id="11"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_v4omx"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_e7gw0"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_ylgpm"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_eqefh"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_7a6gx"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_ld18i"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_h4ljm"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("11")
@@ -53,23 +49,25 @@ id = "poliwrath"
 numero = 62
 nombre = "Poliwrath"
 tipos = PackedStringArray("agua", "lucha")
-habilidades = PackedStringArray("Absorbeagua/Absorbe Agua", "Humedad")
-habilidad_oculta = "Nado Rápido"
 ps = 90
-ataque = 95
+ataque = 85
 defensa = 95
 at_esp = 70
 def_esp = 90
 velocidad = 70
-exp_base = 225
-ratio_captura = 45
-ratio_genero = 4
+exp_base = 230
 crecimiento = "medium-slow"
-evs_otorgados = {"defensa": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6")])
+evs_otorgados = {
+"defensa": 3
+}
+habilidades = PackedStringArray("water_absorb", "damp")
+habilidad_oculta = "swift_swim"
+categoria = "Pokémon Renacuajo"
+altura = 1.3
+peso_kg = 54.0
+descripcion = "Tiene músculos muy desarrollados. Es capaz de nadar en el océano sin descanso."
+aprende = Array[ExtResource("2")]([SubResource("Resource_v4omx"), SubResource("Resource_e7gw0"), SubResource("Resource_ylgpm"), SubResource("Resource_eqefh"), SubResource("Resource_7a6gx"), SubResource("Resource_ld18i"), SubResource("Resource_h4ljm")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 9
 cuadros_espalda = 8
-fps_sprite = 10.0

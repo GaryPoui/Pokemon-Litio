@@ -10,4 +10,6 @@ tipo = "agua"
 poder = 40
 pp = 20
 prioridad = 1
-descripcion = "Ataque de una rapidez espeluznante. Este movimiento tiene prioridad alta. "
+descripcion = "Ataque de una rapidez espeluznante. Este movimiento tiene prioridad alta."
+numero = 453
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

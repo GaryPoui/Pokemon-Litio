@@ -21,82 +21,81 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/charm.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/magic_room.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_jmiv6"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_i702g"]
 script = ExtResource("2")
 nivel = 3
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_mnyft"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_6y4h3"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_2ghpl"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_l2t52"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_ogd1r"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_4g4i2"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_rnvl6"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_hpv27"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_3eykf"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_l7g5o"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_nmfkx"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_w1nrd"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_ed0r3"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_m14gu"]
 script = ExtResource("2")
 nivel = 48
 movimiento = ExtResource("20")
@@ -107,11 +106,8 @@ id = "gothita"
 numero = 574
 nombre = "Gothita"
 tipos = PackedStringArray("psiquico")
-habilidades = PackedStringArray("Inspección/Cacheo", "Tenacidad")
-habilidad_oculta = "Sombra Trampa"
 ps = 45
 ataque = 30
-defensa = 50
 at_esp = 55
 def_esp = 65
 velocidad = 45
@@ -119,11 +115,23 @@ exp_base = 58
 ratio_captura = 200
 ratio_genero = 6
 crecimiento = "medium-slow"
-evs_otorgados = {"def_esp": 1}
-evoluciones = Array[Dictionary]([{"especie": "gothorita", "metodo": "nivel", "condicion": "Nivel 32", "nivel": 32}])
+evs_otorgados = {
+"def_esp": 1
+}
 evoluciona_a = "gothorita"
 nivel_evolucion = 32
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evoluciones = Array[Dictionary]([{
+"especie": "gothorita",
+"metodo": "nivel",
+"nivel": 32
+}])
+habilidades = PackedStringArray("frisk")
+habilidad_oculta = "shadow_tag"
+categoria = "Pokémon Inquisitivo"
+altura = 0.4
+peso_kg = 5.8
+descripcion = "Amplifica su poder psíquico con sus antenitas en forma de lazo. Siempre está mirando algo fijamente."
+aprende = Array[ExtResource("2")]([SubResource("Resource_jmiv6"), SubResource("Resource_i702g"), SubResource("Resource_mnyft"), SubResource("Resource_6y4h3"), SubResource("Resource_2ghpl"), SubResource("Resource_l2t52"), SubResource("Resource_ogd1r"), SubResource("Resource_4g4i2"), SubResource("Resource_rnvl6"), SubResource("Resource_hpv27"), SubResource("Resource_3eykf"), SubResource("Resource_l7g5o"), SubResource("Resource_nmfkx"), SubResource("Resource_w1nrd"), SubResource("Resource_ed0r3"), SubResource("Resource_m14gu")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 70

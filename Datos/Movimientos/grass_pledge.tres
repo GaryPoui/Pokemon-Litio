@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_smsx8"]
+
+[resource]
+script = ExtResource("1_smsx8")
+id = "grass_pledge"
+nombre = "Voto Planta"
+tipo = "planta"
+categoria = "especial"
+poder = 50
+descripcion = "Ataca con columnas de hojas. Combinado con Voto Agua, crea un pantano y aumenta su potencia."
+numero = 520
+banderas = PackedStringArray("metronome", "mirror", "nonsky", "pledgecombo", "protect")

@@ -16,67 +16,62 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="15"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_neb15"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_0lpnh"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_yrtut"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_wpibu"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_1cncy"]
+script = ExtResource("2")
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_7irl4"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_lr8d6"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_jmcb7"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ny4vx"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_s0ine"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_5736o"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_8hrfs"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_v6bsf"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("15")
@@ -87,21 +82,22 @@ id = "swellow"
 numero = 277
 nombre = "Swellow"
 tipos = PackedStringArray("normal", "volador")
-habilidades = PackedStringArray("Agallas")
-habilidad_oculta = "Intrépido"
 ps = 60
 ataque = 85
 defensa = 60
-at_esp = 50
-def_esp = 50
 velocidad = 125
-exp_base = 151
-ratio_captura = 45
-ratio_genero = 4
+exp_base = 159
 crecimiento = "medium-slow"
-evs_otorgados = {"velocidad": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12")])
+evs_otorgados = {
+"velocidad": 2
+}
+habilidades = PackedStringArray("guts")
+habilidad_oculta = "scrappy"
+categoria = "Pokémon Buche"
+altura = 0.7
+peso_kg = 19.8
+descripcion = "Cuando se encuentra bien, pone firmes las plumas de la cola doble que tiene. Remonta el vuelo de forma muy elegante."
+aprende = Array[ExtResource("2")]([SubResource("Resource_neb15"), SubResource("Resource_0lpnh"), SubResource("Resource_yrtut"), SubResource("Resource_wpibu"), SubResource("Resource_1cncy"), SubResource("Resource_7irl4"), SubResource("Resource_lr8d6"), SubResource("Resource_jmcb7"), SubResource("Resource_ny4vx"), SubResource("Resource_s0ine"), SubResource("Resource_5736o"), SubResource("Resource_8hrfs"), SubResource("Resource_v6bsf")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 64

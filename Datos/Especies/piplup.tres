@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dqamllaet1gfm"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_se0un"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_se0un"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="2_28fsb"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_y8wg0"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="4_so1e2"]
@@ -14,70 +14,70 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/mist.tres" id="12_qiyuk"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/drill_peck.tres" id="13_800g7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="14_yx8ek"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_6hfm6"]
-[ext_resource type="Texture2D" uid="uid://cw6rny8sgwfq4" path="res://Assets/Pokemones/batalla/piplup_espalda.png" id="16_buowb"]
-[ext_resource type="Texture2D" uid="uid://b5p2o1aamj1ue" path="res://Assets/Pokemones/batalla/piplup_frente.png" id="17_vyfmy"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="15_6hfm6"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/piplup_espalda.png" id="16_buowb"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/piplup_frente.png" id="17_vyfmy"]
 
-[sub_resource type="Resource" id="Resource_fe0ph"]
+[sub_resource type="Resource" id="Resource_se0un"]
 script = ExtResource("1_se0un")
 movimiento = ExtResource("2_28fsb")
 
-[sub_resource type="Resource" id="Resource_nesgg"]
+[sub_resource type="Resource" id="Resource_28fsb"]
 script = ExtResource("1_se0un")
 nivel = 4
 movimiento = ExtResource("3_y8wg0")
 
-[sub_resource type="Resource" id="Resource_fd41s"]
+[sub_resource type="Resource" id="Resource_y8wg0"]
 script = ExtResource("1_se0un")
 nivel = 8
 movimiento = ExtResource("4_so1e2")
 
-[sub_resource type="Resource" id="Resource_w76vf"]
+[sub_resource type="Resource" id="Resource_so1e2"]
 script = ExtResource("1_se0un")
 nivel = 11
 movimiento = ExtResource("5_3fg08")
 
-[sub_resource type="Resource" id="Resource_ktrww"]
+[sub_resource type="Resource" id="Resource_3fg08"]
 script = ExtResource("1_se0un")
 nivel = 15
 movimiento = ExtResource("6_63ehr")
 
-[sub_resource type="Resource" id="Resource_32kcv"]
+[sub_resource type="Resource" id="Resource_63ehr"]
 script = ExtResource("1_se0un")
 nivel = 18
 movimiento = ExtResource("7_g3mfy")
 
-[sub_resource type="Resource" id="Resource_sl8g4"]
+[sub_resource type="Resource" id="Resource_g3mfy"]
 script = ExtResource("1_se0un")
 nivel = 22
 movimiento = ExtResource("8_8iiiy")
 
-[sub_resource type="Resource" id="Resource_wl8hv"]
+[sub_resource type="Resource" id="Resource_8iiiy"]
 script = ExtResource("1_se0un")
 nivel = 25
 movimiento = ExtResource("9_8mqp5")
 
-[sub_resource type="Resource" id="Resource_or4b3"]
+[sub_resource type="Resource" id="Resource_8mqp5"]
 script = ExtResource("1_se0un")
 nivel = 29
 movimiento = ExtResource("10_nw1es")
 
-[sub_resource type="Resource" id="Resource_uqb1l"]
+[sub_resource type="Resource" id="Resource_nw1es"]
 script = ExtResource("1_se0un")
 nivel = 32
 movimiento = ExtResource("11_eih0x")
 
-[sub_resource type="Resource" id="Resource_4jfeg"]
+[sub_resource type="Resource" id="Resource_eih0x"]
 script = ExtResource("1_se0un")
 nivel = 36
 movimiento = ExtResource("12_qiyuk")
 
-[sub_resource type="Resource" id="Resource_6f7qq"]
+[sub_resource type="Resource" id="Resource_qiyuk"]
 script = ExtResource("1_se0un")
 nivel = 39
 movimiento = ExtResource("13_800g7")
 
-[sub_resource type="Resource" id="Resource_1oawo"]
+[sub_resource type="Resource" id="Resource_800g7"]
 script = ExtResource("1_se0un")
 nivel = 43
 movimiento = ExtResource("14_yx8ek")
@@ -87,7 +87,7 @@ script = ExtResource("15_6hfm6")
 id = "piplup"
 numero = 393
 nombre = "Piplup"
-tipos = ["agua"]
+tipos = PackedStringArray("agua")
 ps = 53
 ataque = 51
 defensa = 53
@@ -102,11 +102,19 @@ evs_otorgados = {
 }
 evoluciona_a = "prinplup"
 nivel_evolucion = 16
-aprende = Array[ExtResource("1_se0un")]([SubResource("Resource_fe0ph"), SubResource("Resource_nesgg"), SubResource("Resource_fd41s"), SubResource("Resource_w76vf"), SubResource("Resource_ktrww"), SubResource("Resource_32kcv"), SubResource("Resource_sl8g4"), SubResource("Resource_wl8hv"), SubResource("Resource_or4b3"), SubResource("Resource_uqb1l"), SubResource("Resource_4jfeg"), SubResource("Resource_6f7qq"), SubResource("Resource_1oawo")])
+evoluciones = Array[Dictionary]([{
+"especie": "prinplup",
+"metodo": "nivel",
+"nivel": 16
+}])
+habilidades = PackedStringArray("torrent")
+habilidad_oculta = "defiant"
+categoria = "Pokémon Pingüino"
+altura = 0.4
+peso_kg = 5.2
+descripcion = "No le gusta que lo cuiden. Como no aprecia el apoyo de su Entrenador, le cuesta coger confianza con él."
+aprende = Array[ExtResource("1_se0un")]([SubResource("Resource_se0un"), SubResource("Resource_28fsb"), SubResource("Resource_y8wg0"), SubResource("Resource_so1e2"), SubResource("Resource_3fg08"), SubResource("Resource_63ehr"), SubResource("Resource_g3mfy"), SubResource("Resource_8iiiy"), SubResource("Resource_8mqp5"), SubResource("Resource_nw1es"), SubResource("Resource_eih0x"), SubResource("Resource_qiyuk"), SubResource("Resource_800g7")])
 sprite_frente = ExtResource("17_vyfmy")
 sprite_espalda = ExtResource("16_buowb")
 cuadros_frente = 75
 cuadros_espalda = 75
-habilidades = PackedStringArray("Torrente")
-habilidad_oculta = "Tenacidad"
-evoluciones = Array[Dictionary]([{"especie": "prinplup", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

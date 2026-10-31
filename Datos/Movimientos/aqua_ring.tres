@@ -13,3 +13,5 @@ pp = 20
 objetivo = "user"
 meta = "unique"
 descripcion = "Un manto de agua cubre al Pokémon que lo usa. Recupera algunos PS en cada turno."
+numero = 392
+banderas = PackedStringArray("metronome", "snatch")

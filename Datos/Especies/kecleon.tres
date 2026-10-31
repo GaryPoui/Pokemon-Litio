@@ -23,92 +23,87 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/ancient_power.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/synchronoise.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_m62kt"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_tuox4"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_ab7o4"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_srhcs"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_x5ljl"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_omvej"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_0mjup"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_sfu3m"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_v84gc"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_cjho7"]
 script = ExtResource("2")
 nivel = 18
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_11uyv"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_i0co7"]
 script = ExtResource("2")
 nivel = 27
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_bl2gl"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_dvdut"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_8efoh"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_sn1da"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_8d0yh"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_w8tno"]
 script = ExtResource("2")
 nivel = 58
 movimiento = ExtResource("22")
@@ -119,8 +114,6 @@ id = "kecleon"
 numero = 352
 nombre = "Kecleon"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Cambio de Color/Cambio Color")
-habilidad_oculta = "Mutatipo"
 ps = 60
 ataque = 90
 defensa = 70
@@ -129,11 +122,16 @@ def_esp = 120
 velocidad = 40
 exp_base = 154
 ratio_captura = 200
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"def_esp": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"def_esp": 1
+}
+habilidades = PackedStringArray("color_change")
+categoria = "Pokémon Camaleónico"
+altura = 1.0
+peso_kg = 22.0
+descripcion = "Puede mudar el color de su cuerpo a voluntad, pero el dibujo en zigzag de su panza nunca desaparece."
+aprende = Array[ExtResource("2")]([SubResource("Resource_m62kt"), SubResource("Resource_tuox4"), SubResource("Resource_ab7o4"), SubResource("Resource_srhcs"), SubResource("Resource_x5ljl"), SubResource("Resource_omvej"), SubResource("Resource_0mjup"), SubResource("Resource_sfu3m"), SubResource("Resource_v84gc"), SubResource("Resource_cjho7"), SubResource("Resource_11uyv"), SubResource("Resource_i0co7"), SubResource("Resource_bl2gl"), SubResource("Resource_dvdut"), SubResource("Resource_8efoh"), SubResource("Resource_sn1da"), SubResource("Resource_8d0yh"), SubResource("Resource_w8tno")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 48

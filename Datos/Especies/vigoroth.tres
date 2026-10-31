@@ -16,67 +16,63 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/focus_punch.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="15"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_nsp25"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_e54aa"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_xjmi0"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_pal7e"]
+script = ExtResource("2")
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_q7phi"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_508sa"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_swbd5"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_vpmhg"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_wjh7i"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_luf7t"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_jqowc"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_j2ypy"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_gtx3a"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("15")
@@ -87,8 +83,6 @@ id = "vigoroth"
 numero = 288
 nombre = "Vigoroth"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Espíritu Vital")
-habilidad_oculta = ""
 ps = 80
 ataque = 80
 defensa = 80
@@ -97,13 +91,23 @@ def_esp = 55
 velocidad = 90
 exp_base = 154
 ratio_captura = 120
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "slaking", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])
+evs_otorgados = {
+"velocidad": 2
+}
 evoluciona_a = "slaking"
 nivel_evolucion = 36
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12")])
+evoluciones = Array[Dictionary]([{
+"especie": "slaking",
+"metodo": "nivel",
+"nivel": 36
+}])
+habilidades = PackedStringArray("vital_spirit")
+categoria = "Pokémon Mono Feroz"
+altura = 1.4
+peso_kg = 46.5
+descripcion = "Su corazón palpita a un ritmo frenético, haciendo que su sangre bulla, así que no puede estarse quieto ni un segundo."
+aprende = Array[ExtResource("2")]([SubResource("Resource_nsp25"), SubResource("Resource_e54aa"), SubResource("Resource_xjmi0"), SubResource("Resource_pal7e"), SubResource("Resource_q7phi"), SubResource("Resource_508sa"), SubResource("Resource_swbd5"), SubResource("Resource_vpmhg"), SubResource("Resource_wjh7i"), SubResource("Resource_luf7t"), SubResource("Resource_jqowc"), SubResource("Resource_j2ypy"), SubResource("Resource_gtx3a")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 26

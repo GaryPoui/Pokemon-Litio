@@ -20,77 +20,76 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sludge_bomb.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flatter.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_fsll6"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_e5wo7"]
 script = ExtResource("2")
 nivel = 3
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_n6csa"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_dggb2"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_ylb6c"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_ohhdh"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_460pu"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_i7u43"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_oiaon"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_clwmu"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_e5yfo"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_442bp"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_ei1ej"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_fmt8s"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_522p6"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("19")
@@ -101,23 +100,31 @@ id = "croagunk"
 numero = 453
 nombre = "Croagunk"
 tipos = PackedStringArray("veneno", "lucha")
-habilidades = PackedStringArray("Anticipación", "Piel Seca")
-habilidad_oculta = "Contacto Tóxico/Toque Tóxico"
 ps = 48
 ataque = 61
 defensa = 40
 at_esp = 61
 def_esp = 40
-velocidad = 50
 exp_base = 60
 ratio_captura = 140
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "toxicroak", "metodo": "nivel", "condicion": "Nivel 37", "nivel": 37}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "toxicroak"
 nivel_evolucion = 37
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evoluciones = Array[Dictionary]([{
+"especie": "toxicroak",
+"metodo": "nivel",
+"nivel": 37
+}])
+amistad_base = 100
+habilidades = PackedStringArray("anticipation", "dry_skin")
+habilidad_oculta = "poison_touch"
+categoria = "Pokémon Boca Tóxica"
+altura = 0.7
+peso_kg = 23.0
+descripcion = "Tiene bolsas venenosas en las mejillas. Pilla desprevenidos a sus rivales para pincharles."
+aprende = Array[ExtResource("2")]([SubResource("Resource_fsll6"), SubResource("Resource_e5wo7"), SubResource("Resource_n6csa"), SubResource("Resource_dggb2"), SubResource("Resource_ylb6c"), SubResource("Resource_ohhdh"), SubResource("Resource_460pu"), SubResource("Resource_i7u43"), SubResource("Resource_oiaon"), SubResource("Resource_clwmu"), SubResource("Resource_e5yfo"), SubResource("Resource_442bp"), SubResource("Resource_ei1ej"), SubResource("Resource_fmt8s"), SubResource("Resource_522p6")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 78

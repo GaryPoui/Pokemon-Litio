@@ -15,3 +15,5 @@ meta = "damage-ailment"
 descripcion = "Ataca con una gran ráfaga de fuego que causa quemaduras."
 estado = "burn"
 prob_estado = 100
+numero = 517
+banderas = PackedStringArray("metronome", "mirror", "protect")

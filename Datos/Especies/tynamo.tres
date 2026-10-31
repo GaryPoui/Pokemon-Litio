@@ -1,27 +1,27 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bi4i2lx6po1bu"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_hyf1o"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_hyf1o"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/charge_beam.tres" id="2_nvids"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/spark.tres" id="3_hqptp"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_rqash"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="5_qetga"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="6_glt0t"]
-[ext_resource type="Texture2D" uid="uid://dpnqdtrwn8bhu" path="res://Assets/Pokemones/batalla/tynamo_espalda.png" id="7_73lat"]
-[ext_resource type="Texture2D" uid="uid://brur2yo5dxynp" path="res://Assets/Pokemones/batalla/tynamo_frente.png" id="8_l8wqy"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="6_glt0t"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tynamo_espalda.png" id="7_73lat"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tynamo_frente.png" id="8_l8wqy"]
 
-[sub_resource type="Resource" id="Resource_wr86v"]
+[sub_resource type="Resource" id="Resource_hyf1o"]
 script = ExtResource("1_hyf1o")
 movimiento = ExtResource("2_nvids")
 
-[sub_resource type="Resource" id="Resource_hax3j"]
+[sub_resource type="Resource" id="Resource_nvids"]
 script = ExtResource("1_hyf1o")
 movimiento = ExtResource("3_hqptp")
 
-[sub_resource type="Resource" id="Resource_stwox"]
+[sub_resource type="Resource" id="Resource_hqptp"]
 script = ExtResource("1_hyf1o")
 movimiento = ExtResource("4_rqash")
 
-[sub_resource type="Resource" id="Resource_b5u5m"]
+[sub_resource type="Resource" id="Resource_rqash"]
 script = ExtResource("1_hyf1o")
 movimiento = ExtResource("5_qetga")
 
@@ -30,7 +30,7 @@ script = ExtResource("6_glt0t")
 id = "tynamo"
 numero = 602
 nombre = "Tynamo"
-tipos = ["electrico"]
+tipos = PackedStringArray("electrico")
 ps = 35
 ataque = 55
 defensa = 40
@@ -45,12 +45,19 @@ evs_otorgados = {
 }
 evoluciona_a = "eelektrik"
 nivel_evolucion = 39
-aprende = Array[ExtResource("1_hyf1o")]([SubResource("Resource_wr86v"), SubResource("Resource_hax3j"), SubResource("Resource_stwox"), SubResource("Resource_b5u5m")])
+evoluciones = Array[Dictionary]([{
+"especie": "eelektrik",
+"metodo": "nivel",
+"nivel": 39
+}])
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Electropez"
+altura = 0.2
+peso_kg = 0.3
+descripcion = "La electricidad de uno solo es diminuta, pero, si multitud de Tynamo se conectan, consiguen la potencia de un rayo."
+aprende = Array[ExtResource("1_hyf1o")]([SubResource("Resource_hyf1o"), SubResource("Resource_nvids"), SubResource("Resource_hqptp"), SubResource("Resource_rqash")])
 sprite_frente = ExtResource("8_l8wqy")
 sprite_espalda = ExtResource("7_73lat")
 cuadros_frente = 148
 cuadros_espalda = 149
 fps_sprite = 12.74
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
-evoluciones = Array[Dictionary]([{"especie": "eelektrik", "metodo": "nivel", "condicion": "Nivel 39", "nivel": 39}])

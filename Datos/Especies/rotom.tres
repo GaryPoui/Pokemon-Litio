@@ -19,72 +19,67 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_5wgok"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_xojus"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_viil8"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_x4xp5"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_5bp0e"]
+script = ExtResource("2")
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_6vxle"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_61um2"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_nk8re"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ueirm"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_cwv5k"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_3dg36"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_bobss"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_dhc4s"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_kyfel"]
 script = ExtResource("2")
 nivel = 64
 movimiento = ExtResource("18")
@@ -95,21 +90,22 @@ id = "rotom"
 numero = 479
 nombre = "Rotom"
 tipos = PackedStringArray("electrico", "fantasma")
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
-ps = 50
-ataque = 50
 defensa = 77
 at_esp = 95
 def_esp = 77
 velocidad = 91
 exp_base = 154
-ratio_captura = 45
 ratio_genero = -1
-crecimiento = "medium"
-evs_otorgados = {"at_esp": 1, "velocidad": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+evs_otorgados = {
+"at_esp": 1,
+"velocidad": 1
+}
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Plasma"
+altura = 0.3
+peso_kg = 0.3
+descripcion = "Desde hace mucho tiempo se estudia su singular motor como fuente de energía motriz."
+aprende = Array[ExtResource("2")]([SubResource("Resource_5wgok"), SubResource("Resource_xojus"), SubResource("Resource_viil8"), SubResource("Resource_x4xp5"), SubResource("Resource_5bp0e"), SubResource("Resource_6vxle"), SubResource("Resource_61um2"), SubResource("Resource_nk8re"), SubResource("Resource_ueirm"), SubResource("Resource_cwv5k"), SubResource("Resource_3dg36"), SubResource("Resource_bobss"), SubResource("Resource_dhc4s"), SubResource("Resource_kyfel")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 48

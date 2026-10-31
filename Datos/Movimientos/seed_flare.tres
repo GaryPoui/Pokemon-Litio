@@ -5,11 +5,17 @@
 [resource]
 script = ExtResource("1")
 id = "seed_flare"
-nombre = "Fogonazo"
+nombre = "Fulgor Semilla"
 tipo = "planta"
 categoria = "especial"
 poder = 120
 precision = 85
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-lower"
+descripcion = "Una onda de choque se libera del cuerpo. Puede bajar mucho la Defensa Especial del objetivo."
+cambios_stats = {
+"def_esp": -2
+}
+prob_stat = 40
+numero = 465
+banderas = PackedStringArray("metronome", "mirror", "protect")

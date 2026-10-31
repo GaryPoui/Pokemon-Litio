@@ -9,4 +9,6 @@ nombre = "Hierba Lazo"
 tipo = "planta"
 categoria = "especial"
 pp = 20
-descripcion = "Enreda al objetivo con hierba y lo derriba. Cuanto más pesado es el objetivo, más daño inflige. "
+descripcion = "Enreda al objetivo con hierba y lo derriba. Cuanto más pesado es el objetivo, más daño inflige."
+numero = 447
+banderas = PackedStringArray("contact", "metronome", "mirror", "nonsky", "protect")

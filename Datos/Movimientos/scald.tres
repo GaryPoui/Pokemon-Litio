@@ -14,3 +14,5 @@ meta = "damage-ailment"
 descripcion = "Ataca arrojando agua hirviendo al objetivo. Puede causar quemaduras."
 estado = "burn"
 prob_estado = 30
+numero = 503
+banderas = PackedStringArray("defrost", "metronome", "mirror", "protect")

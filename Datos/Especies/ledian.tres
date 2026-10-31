@@ -18,77 +18,74 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="17"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_vwvyh"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_g77qr"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_coki8"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_mnm44"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_m7jy1"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 14
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 14
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_p0vlv"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_wjt0f"]
+script = ExtResource("2")
+nivel = 14
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_6owxr"]
+script = ExtResource("2")
+nivel = 14
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_g2073"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_gkwb4"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_qwjbv"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_2dgf6"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_d5u2a"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_0wprs"]
 script = ExtResource("2")
 nivel = 48
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_4n64c"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("17")
@@ -99,21 +96,24 @@ id = "ledian"
 numero = 166
 nombre = "Ledian"
 tipos = PackedStringArray("bicho", "volador")
-habilidades = PackedStringArray("Enjambre", "Madrugador/Madrugar")
-habilidad_oculta = "Puño Férreo"
 ps = 55
 ataque = 35
-defensa = 50
 at_esp = 55
 def_esp = 110
 velocidad = 85
 exp_base = 137
 ratio_captura = 90
-ratio_genero = 4
 crecimiento = "fast"
-evs_otorgados = {"def_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"def_esp": 2
+}
+habilidades = PackedStringArray("swarm", "early_bird")
+habilidad_oculta = "iron_fist"
+categoria = "Pokémon 5 Estrellas"
+altura = 1.4
+peso_kg = 35.6
+descripcion = "Cuando parpadean las estrellas en el cielo nocturno, se mece desprendiendo un polvo brillante."
+aprende = Array[ExtResource("2")]([SubResource("Resource_vwvyh"), SubResource("Resource_g77qr"), SubResource("Resource_coki8"), SubResource("Resource_mnm44"), SubResource("Resource_m7jy1"), SubResource("Resource_p0vlv"), SubResource("Resource_wjt0f"), SubResource("Resource_6owxr"), SubResource("Resource_g2073"), SubResource("Resource_gkwb4"), SubResource("Resource_qwjbv"), SubResource("Resource_2dgf6"), SubResource("Resource_d5u2a"), SubResource("Resource_0wprs"), SubResource("Resource_4n64c")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 60

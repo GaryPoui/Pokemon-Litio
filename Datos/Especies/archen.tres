@@ -23,92 +23,89 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/dragon_claw.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_pydg1"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_82sbj"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_62ho1"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_2ub71"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_y52tn"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_7yp4a"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_db7bj"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_6s2ob"]
 script = ExtResource("2")
 nivel = 18
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_2w77d"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_73g88"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_tien1"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_848fg"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_b6etf"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_jrcxt"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_i35eg"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_iqsf7"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_ianak"]
 script = ExtResource("2")
 nivel = 48
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_b5wn1"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("22")
@@ -119,8 +116,6 @@ id = "archen"
 numero = 566
 nombre = "Archen"
 tipos = PackedStringArray("roca", "volador")
-habilidades = PackedStringArray("Flaquear/Flaqueza")
-habilidad_oculta = ""
 ps = 55
 ataque = 112
 defensa = 45
@@ -128,14 +123,23 @@ at_esp = 74
 def_esp = 45
 velocidad = 70
 exp_base = 71
-ratio_captura = 45
 ratio_genero = 1
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "archeops", "metodo": "nivel", "condicion": "Nivel 37", "nivel": 37}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "archeops"
 nivel_evolucion = 37
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evoluciones = Array[Dictionary]([{
+"especie": "archeops",
+"metodo": "nivel",
+"nivel": 37
+}])
+habilidades = PackedStringArray("defeatist")
+categoria = "Pokémon Protopájaro"
+altura = 0.5
+peso_kg = 9.5
+descripcion = "Pokémon que renació de un fósil. Dicen que es el antepasado de todos los Pokémon pájaro."
+aprende = Array[ExtResource("2")]([SubResource("Resource_pydg1"), SubResource("Resource_82sbj"), SubResource("Resource_62ho1"), SubResource("Resource_2ub71"), SubResource("Resource_y52tn"), SubResource("Resource_7yp4a"), SubResource("Resource_db7bj"), SubResource("Resource_6s2ob"), SubResource("Resource_2w77d"), SubResource("Resource_73g88"), SubResource("Resource_tien1"), SubResource("Resource_848fg"), SubResource("Resource_b6etf"), SubResource("Resource_jrcxt"), SubResource("Resource_i35eg"), SubResource("Resource_iqsf7"), SubResource("Resource_ianak"), SubResource("Resource_b5wn1")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 72

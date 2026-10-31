@@ -16,3 +16,5 @@ cambios_stats = {
 "ataque": 1
 }
 prob_stat = 10
+numero = 232
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

@@ -18,82 +18,77 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dragon_rush.tres" id="17"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_7gfds"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_0jtv3"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_nkcrf"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_b3ga7"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_qds7m"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_3gurr"]
 script = ExtResource("2")
 nivel = 3
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_f25vu"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_n48ko"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_okbhu"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_5s1mk"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_0cnr8"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_xlsgp"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_j04ss"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_fg8wd"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_ylob7"]
 script = ExtResource("2")
 nivel = 48
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_5ax8o"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("17")
@@ -104,8 +99,6 @@ id = "garchomp"
 numero = 445
 nombre = "Garchomp"
 tipos = PackedStringArray("dragon", "tierra")
-habilidades = PackedStringArray("Velo de Arena/Velo Arena")
-habilidad_oculta = "Piel Tosca"
 ps = 108
 ataque = 130
 defensa = 95
@@ -113,12 +106,17 @@ at_esp = 80
 def_esp = 85
 velocidad = 102
 exp_base = 270
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"ataque": 3
+}
+habilidades = PackedStringArray("sand_veil")
+habilidad_oculta = "rough_skin"
+categoria = "Pokémon Mach"
+altura = 1.9
+peso_kg = 95.0
+descripcion = "Cuando despliega su cuerpo y sus alas, parece un avión a reacción. Vuela a velocidad sónica."
+aprende = Array[ExtResource("2")]([SubResource("Resource_7gfds"), SubResource("Resource_0jtv3"), SubResource("Resource_nkcrf"), SubResource("Resource_b3ga7"), SubResource("Resource_qds7m"), SubResource("Resource_3gurr"), SubResource("Resource_f25vu"), SubResource("Resource_n48ko"), SubResource("Resource_okbhu"), SubResource("Resource_5s1mk"), SubResource("Resource_0cnr8"), SubResource("Resource_xlsgp"), SubResource("Resource_j04ss"), SubResource("Resource_fg8wd"), SubResource("Resource_ylob7"), SubResource("Resource_5ax8o")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 45

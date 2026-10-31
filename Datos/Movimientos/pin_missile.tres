@@ -11,3 +11,7 @@ poder = 14
 precision = 85
 pp = 20
 descripcion = "Lanza finas púas que hieren de dos a cinco veces."
+numero = 42
+banderas = PackedStringArray("metronome", "mirror", "protect")
+golpes_min = 2
+golpes_max = 5

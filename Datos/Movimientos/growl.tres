@@ -14,3 +14,5 @@ descripcion = "Dulce gruñido que reduce el Ataque del equipo rival."
 cambios_stats = {
 "ataque": -1
 }
+numero = 45
+banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "reflectable", "sound")

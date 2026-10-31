@@ -13,3 +13,5 @@ pp = 25
 objetivo = "all-opponents"
 descripcion = "Corta con hojas afiladas. Un ataque que suele ser crítico."
 critico = 1
+numero = 75
+banderas = PackedStringArray("metronome", "mirror", "protect", "slicing")

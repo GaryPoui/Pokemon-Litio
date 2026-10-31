@@ -22,97 +22,93 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/heavy_slam.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_cs8cv"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_uo43f"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_08ffx"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_rd135"]
+script = ExtResource("2")
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_rwr8r"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_u8p80"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_1j4q6"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_n1ycx"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_hcgk4"]
 script = ExtResource("2")
 nivel = 18
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_aqq5f"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_gmx0p"]
 script = ExtResource("2")
 nivel = 27
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_d5mjr"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_e7vix"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_th8v0"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_nkmjp"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_qlj0u"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_0avc2"]
 script = ExtResource("2")
 nivel = 58
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_ofpta"]
 script = ExtResource("2")
 nivel = 64
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_acuuo"]
 script = ExtResource("2")
 nivel = 69
 movimiento = ExtResource("21")
@@ -123,21 +119,24 @@ id = "golem"
 numero = 76
 nombre = "Golem"
 tipos = PackedStringArray("roca", "tierra")
-habilidades = PackedStringArray("Cabeza Roca", "Robustez")
-habilidad_oculta = "Velo de Arena/Velo Arena"
 ps = 80
 ataque = 110
 defensa = 130
 at_esp = 55
 def_esp = 65
 velocidad = 45
-exp_base = 218
-ratio_captura = 45
-ratio_genero = 4
+exp_base = 223
 crecimiento = "medium-slow"
-evs_otorgados = {"defensa": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18")])
+evs_otorgados = {
+"defensa": 3
+}
+habilidades = PackedStringArray("rock_head", "sturdy")
+habilidad_oculta = "sand_veil"
+categoria = "Pokémon Megatón"
+altura = 1.4
+peso_kg = 300.0
+descripcion = "Se lanza montaña abajo y deja un surco desde la cima hasta el pie. Es mejor mantenerse alejado."
+aprende = Array[ExtResource("2")]([SubResource("Resource_cs8cv"), SubResource("Resource_uo43f"), SubResource("Resource_08ffx"), SubResource("Resource_rd135"), SubResource("Resource_rwr8r"), SubResource("Resource_u8p80"), SubResource("Resource_1j4q6"), SubResource("Resource_n1ycx"), SubResource("Resource_hcgk4"), SubResource("Resource_aqq5f"), SubResource("Resource_gmx0p"), SubResource("Resource_d5mjr"), SubResource("Resource_e7vix"), SubResource("Resource_th8v0"), SubResource("Resource_nkmjp"), SubResource("Resource_qlj0u"), SubResource("Resource_0avc2"), SubResource("Resource_ofpta"), SubResource("Resource_acuuo")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 46

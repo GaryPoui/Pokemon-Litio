@@ -18,69 +18,67 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="17"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_3tj0b"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_rr3q3"]
 script = ExtResource("2")
-nivel = 5
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_8e1nj"]
+script = ExtResource("2")
+nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_ksoj5"]
 script = ExtResource("2")
-nivel = 8
+nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_udjep"]
 script = ExtResource("2")
-nivel = 12
+nivel = 14
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_0a8bj"]
 script = ExtResource("2")
-nivel = 15
-movimiento = ExtResource("10")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 19
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 22
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 26
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 29
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 33
+nivel = 17
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_k47h7"]
 script = ExtResource("2")
-nivel = 36
+nivel = 22
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_f85uo"]
+script = ExtResource("2")
+nivel = 25
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Resource_w4e2v"]
+script = ExtResource("2")
+nivel = 30
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Resource_nrkjp"]
+script = ExtResource("2")
+nivel = 33
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_3e3w0"]
+script = ExtResource("2")
+nivel = 38
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Resource_41sa8"]
+script = ExtResource("2")
+nivel = 41
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_3enxb"]
 script = ExtResource("2")
-nivel = 40
+nivel = 46
 movimiento = ExtResource("17")
 
 [resource]
@@ -89,9 +87,6 @@ id = "bonsly"
 numero = 438
 nombre = "Bonsly"
 tipos = PackedStringArray("roca")
-habilidades = PackedStringArray("Cabeza Roca", "Robustez")
-habilidad_oculta = "Cobardía"
-ps = 50
 ataque = 80
 defensa = 95
 at_esp = 10
@@ -99,12 +94,21 @@ def_esp = 45
 velocidad = 10
 exp_base = 58
 ratio_captura = 255
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "sudowoodo", "metodo": "especial", "condicion": "Conociendo mimético + nivel"}])
-evoluciona_a = "sudowoodo"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12")])
+evs_otorgados = {
+"defensa": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "sudowoodo",
+"metodo": "movimiento",
+"movimiento": "mimic"
+}])
+habilidades = PackedStringArray("sturdy", "rock_head")
+habilidad_oculta = "rattled"
+categoria = "Pokémon Bonsái"
+altura = 0.5
+peso_kg = 15.0
+descripcion = "Prefiere entornos áridos. Sus ojos expulsan agua para ajustar los niveles de fluido corporal."
+aprende = Array[ExtResource("2")]([SubResource("Resource_3tj0b"), SubResource("Resource_rr3q3"), SubResource("Resource_8e1nj"), SubResource("Resource_ksoj5"), SubResource("Resource_udjep"), SubResource("Resource_0a8bj"), SubResource("Resource_k47h7"), SubResource("Resource_f85uo"), SubResource("Resource_w4e2v"), SubResource("Resource_nrkjp"), SubResource("Resource_3e3w0"), SubResource("Resource_41sa8"), SubResource("Resource_3enxb")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 92

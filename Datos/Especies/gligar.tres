@@ -16,83 +16,76 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/u_turn.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/x_scissor.tres" id="16"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/sky_uppercut.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/swords_dance.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/guillotine.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_0qh5x"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_1a5km"]
 script = ExtResource("2")
-nivel = 4
+nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_35378"]
 script = ExtResource("2")
-nivel = 7
+nivel = 9
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_sdiof"]
 script = ExtResource("2")
-nivel = 10
+nivel = 12
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 13
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_4t5ee"]
 script = ExtResource("2")
 nivel = 16
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_4rw5p"]
+script = ExtResource("2")
+nivel = 20
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_06qlr"]
 script = ExtResource("2")
-nivel = 19
+nivel = 23
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 22
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_lplwv"]
 script = ExtResource("2")
 nivel = 27
-movimiento = ExtResource("13")
+movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_qw6e2"]
 script = ExtResource("2")
-nivel = 30
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 35
+nivel = 31
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_wkhtt"]
 script = ExtResource("2")
-nivel = 40
-movimiento = ExtResource("16")
+nivel = 34
+movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_07grk"]
 script = ExtResource("2")
-nivel = 45
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_13"]
-script = ExtResource("2")
-nivel = 50
+nivel = 38
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_c1c2o"]
 script = ExtResource("2")
-nivel = 55
+nivel = 42
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_8rcc4"]
+script = ExtResource("2")
+nivel = 45
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Resource_wavh2"]
+script = ExtResource("2")
+nivel = 49
 movimiento = ExtResource("19")
 
 [resource]
@@ -101,8 +94,6 @@ id = "gligar"
 numero = 207
 nombre = "Gligar"
 tipos = PackedStringArray("tierra", "volador")
-habilidades = PackedStringArray("Corte Fuerte", "Velo de Arena/Velo Arena")
-habilidad_oculta = "Inmunidad"
 ps = 65
 ataque = 75
 defensa = 105
@@ -111,12 +102,23 @@ def_esp = 65
 velocidad = 85
 exp_base = 86
 ratio_captura = 60
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "gliscor", "metodo": "especial", "condicion": "Nivel (noche) equipado con colmillo agudo"}])
-evoluciona_a = "gliscor"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"defensa": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "gliscor",
+"hora": "noche",
+"metodo": "objeto",
+"objeto": "razor_fang"
+}])
+habilidades = PackedStringArray("hyper_cutter", "sand_veil")
+habilidad_oculta = "immunity"
+categoria = "Pokémon Escorpiala"
+altura = 1.1
+peso_kg = 64.8
+descripcion = "A veces se sujeta a los precipicios. Cuando divisa una presa, despliega sus alas y planea para atacar."
+aprende = Array[ExtResource("2")]([SubResource("Resource_0qh5x"), SubResource("Resource_1a5km"), SubResource("Resource_35378"), SubResource("Resource_sdiof"), SubResource("Resource_4t5ee"), SubResource("Resource_4rw5p"), SubResource("Resource_06qlr"), SubResource("Resource_lplwv"), SubResource("Resource_qw6e2"), SubResource("Resource_wkhtt"), SubResource("Resource_07grk"), SubResource("Resource_c1c2o"), SubResource("Resource_8rcc4"), SubResource("Resource_wavh2")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 38

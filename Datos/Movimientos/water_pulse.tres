@@ -14,3 +14,7 @@ meta = "damage-ailment"
 descripcion = "Ataca con un potente chorro de agua. Puede confundir al objetivo."
 estado = "confusion"
 prob_estado = 20
+numero = 352
+banderas = PackedStringArray("distance", "metronome", "mirror", "protect", "pulse")
+turnos_min = 2
+turnos_max = 5

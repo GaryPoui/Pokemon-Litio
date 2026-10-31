@@ -23,94 +23,94 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lanturn_espalda.png" id="21_gtxyy"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lanturn_frente.png" id="22_v4fw3"]
 
-[sub_resource type="Resource" id="Resource_63muj"]
+[sub_resource type="Resource" id="Resource_3yg5u"]
 script = ExtResource("1_3yg5u")
 movimiento = ExtResource("2_biava")
 
-[sub_resource type="Resource" id="Resource_euc02"]
+[sub_resource type="Resource" id="Resource_biava"]
 script = ExtResource("1_3yg5u")
 movimiento = ExtResource("3_17uu4")
 
-[sub_resource type="Resource" id="Resource_dxqhi"]
+[sub_resource type="Resource" id="Resource_17uu4"]
 script = ExtResource("1_3yg5u")
 movimiento = ExtResource("4_hpwey")
 
-[sub_resource type="Resource" id="Resource_8basl"]
+[sub_resource type="Resource" id="Resource_hpwey"]
 script = ExtResource("1_3yg5u")
 nivel = 6
 movimiento = ExtResource("4_hpwey")
 
-[sub_resource type="Resource" id="Resource_kp6bj"]
+[sub_resource type="Resource" id="Resource_rblu5"]
 script = ExtResource("1_3yg5u")
 nivel = 9
 movimiento = ExtResource("5_rblu5")
 
-[sub_resource type="Resource" id="Resource_ocok6"]
+[sub_resource type="Resource" id="Resource_qw6om"]
 script = ExtResource("1_3yg5u")
 nivel = 12
 movimiento = ExtResource("6_qw6om")
 
-[sub_resource type="Resource" id="Resource_hakef"]
+[sub_resource type="Resource" id="Resource_ub6jd"]
 script = ExtResource("1_3yg5u")
 nivel = 17
 movimiento = ExtResource("7_ub6jd")
 
-[sub_resource type="Resource" id="Resource_k2mam"]
+[sub_resource type="Resource" id="Resource_5twuc"]
 script = ExtResource("1_3yg5u")
 nivel = 20
 movimiento = ExtResource("8_5twuc")
 
-[sub_resource type="Resource" id="Resource_c7ipe"]
+[sub_resource type="Resource" id="Resource_aewo2"]
 script = ExtResource("1_3yg5u")
 nivel = 23
 movimiento = ExtResource("9_aewo2")
 
-[sub_resource type="Resource" id="Resource_yc7yg"]
+[sub_resource type="Resource" id="Resource_8pw6x"]
 script = ExtResource("1_3yg5u")
 nivel = 27
 movimiento = ExtResource("10_8pw6x")
 
-[sub_resource type="Resource" id="Resource_g4lfd"]
+[sub_resource type="Resource" id="Resource_wxf60"]
 script = ExtResource("1_3yg5u")
 nivel = 27
 movimiento = ExtResource("11_wxf60")
 
-[sub_resource type="Resource" id="Resource_i7pc6"]
+[sub_resource type="Resource" id="Resource_f0jai"]
 script = ExtResource("1_3yg5u")
 nivel = 27
 movimiento = ExtResource("12_f0jai")
 
-[sub_resource type="Resource" id="Resource_mwniy"]
+[sub_resource type="Resource" id="Resource_wkv5e"]
 script = ExtResource("1_3yg5u")
 nivel = 30
 movimiento = ExtResource("13_wkv5e")
 
-[sub_resource type="Resource" id="Resource_nsuul"]
+[sub_resource type="Resource" id="Resource_7p4sa"]
 script = ExtResource("1_3yg5u")
 nivel = 35
 movimiento = ExtResource("14_7p4sa")
 
-[sub_resource type="Resource" id="Resource_la5vi"]
+[sub_resource type="Resource" id="Resource_xv506"]
 script = ExtResource("1_3yg5u")
 nivel = 40
 movimiento = ExtResource("15_xv506")
 
-[sub_resource type="Resource" id="Resource_7j07a"]
+[sub_resource type="Resource" id="Resource_xihlo"]
 script = ExtResource("1_3yg5u")
 nivel = 47
 movimiento = ExtResource("16_xihlo")
 
-[sub_resource type="Resource" id="Resource_lramf"]
+[sub_resource type="Resource" id="Resource_tcg60"]
 script = ExtResource("1_3yg5u")
 nivel = 52
 movimiento = ExtResource("17_tcg60")
 
-[sub_resource type="Resource" id="Resource_c8c5f"]
+[sub_resource type="Resource" id="Resource_otbgl"]
 script = ExtResource("1_3yg5u")
 nivel = 57
 movimiento = ExtResource("18_otbgl")
 
-[sub_resource type="Resource" id="Resource_4u7ta"]
+[sub_resource type="Resource" id="Resource_5dl18"]
 script = ExtResource("1_3yg5u")
 nivel = 64
 movimiento = ExtResource("19_5dl18")
@@ -120,7 +120,7 @@ script = ExtResource("20_ct3fm")
 id = "lanturn"
 numero = 171
 nombre = "Lanturn"
-tipos = ["agua", "electrico"]
+tipos = PackedStringArray("agua", "electrico")
 ps = 125
 ataque = 58
 defensa = 58
@@ -133,12 +133,15 @@ crecimiento = "slow"
 evs_otorgados = {
 "ps": 2
 }
-aprende = Array[ExtResource("1_3yg5u")]([SubResource("Resource_63muj"), SubResource("Resource_euc02"), SubResource("Resource_dxqhi"), SubResource("Resource_8basl"), SubResource("Resource_kp6bj"), SubResource("Resource_ocok6"), SubResource("Resource_hakef"), SubResource("Resource_k2mam"), SubResource("Resource_c7ipe"), SubResource("Resource_yc7yg"), SubResource("Resource_g4lfd"), SubResource("Resource_i7pc6"), SubResource("Resource_mwniy"), SubResource("Resource_nsuul"), SubResource("Resource_la5vi"), SubResource("Resource_7j07a"), SubResource("Resource_lramf"), SubResource("Resource_c8c5f"), SubResource("Resource_4u7ta")])
+habilidades = PackedStringArray("volt_absorb", "illuminate")
+habilidad_oculta = "water_absorb"
+categoria = "Pokémon Luz"
+altura = 1.2
+peso_kg = 22.5
+descripcion = "La luz de Lanturn se puede ver desde lo más profundo. Se le llama la Estrella de Alta Mar."
+aprende = Array[ExtResource("1_3yg5u")]([SubResource("Resource_3yg5u"), SubResource("Resource_biava"), SubResource("Resource_17uu4"), SubResource("Resource_hpwey"), SubResource("Resource_rblu5"), SubResource("Resource_qw6om"), SubResource("Resource_ub6jd"), SubResource("Resource_5twuc"), SubResource("Resource_aewo2"), SubResource("Resource_8pw6x"), SubResource("Resource_wxf60"), SubResource("Resource_f0jai"), SubResource("Resource_wkv5e"), SubResource("Resource_7p4sa"), SubResource("Resource_xv506"), SubResource("Resource_xihlo"), SubResource("Resource_tcg60"), SubResource("Resource_otbgl"), SubResource("Resource_5dl18")])
 sprite_frente = ExtResource("22_v4fw3")
 sprite_espalda = ExtResource("21_gtxyy")
 cuadros_frente = 126
 cuadros_espalda = 126
 fps_sprite = 20.0
-habilidades = PackedStringArray("Absorbevoltios/Absorbe Electricidad", "Iluminación")
-habilidad_oculta = "Absorbeagua/Absorbe Agua"
-evoluciones = Array[Dictionary]([])

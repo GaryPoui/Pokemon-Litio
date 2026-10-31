@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dt2cipj1ff1lc"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ljnfh"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ljnfh"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="2_ut63e"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fire_fang.tres" id="3_itgpk"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/ice_fang.tres" id="4_mes4v"]
@@ -17,89 +17,89 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="15_khmta"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="16_ttupe"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/giga_impact.tres" id="17_aqasr"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_j8mly"]
-[ext_resource type="Texture2D" uid="uid://c6kqdrt52wk6w" path="res://Assets/Pokemones/batalla/stoutland_espalda.png" id="19_uiq1s"]
-[ext_resource type="Texture2D" uid="uid://bwtdtvkaompm1" path="res://Assets/Pokemones/batalla/stoutland_frente.png" id="20_8op53"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_j8mly"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/stoutland_espalda.png" id="19_uiq1s"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/stoutland_frente.png" id="20_8op53"]
 
-[sub_resource type="Resource" id="Resource_ii3b0"]
+[sub_resource type="Resource" id="Resource_ljnfh"]
 script = ExtResource("1_ljnfh")
 movimiento = ExtResource("2_ut63e")
 
-[sub_resource type="Resource" id="Resource_as5l6"]
+[sub_resource type="Resource" id="Resource_ut63e"]
 script = ExtResource("1_ljnfh")
 movimiento = ExtResource("3_itgpk")
 
-[sub_resource type="Resource" id="Resource_pbgi5"]
+[sub_resource type="Resource" id="Resource_itgpk"]
 script = ExtResource("1_ljnfh")
 movimiento = ExtResource("4_mes4v")
 
-[sub_resource type="Resource" id="Resource_d0pc3"]
+[sub_resource type="Resource" id="Resource_mes4v"]
 script = ExtResource("1_ljnfh")
 movimiento = ExtResource("5_g0d5c")
 
-[sub_resource type="Resource" id="Resource_eg0fg"]
+[sub_resource type="Resource" id="Resource_g0d5c"]
 script = ExtResource("1_ljnfh")
 movimiento = ExtResource("6_bic7n")
 
-[sub_resource type="Resource" id="Resource_4c5jr"]
+[sub_resource type="Resource" id="Resource_bic7n"]
 script = ExtResource("1_ljnfh")
 movimiento = ExtResource("7_l4ocf")
 
-[sub_resource type="Resource" id="Resource_pnutx"]
+[sub_resource type="Resource" id="Resource_l4ocf"]
 script = ExtResource("1_ljnfh")
 movimiento = ExtResource("8_rtx7w")
 
-[sub_resource type="Resource" id="Resource_ywe8g"]
+[sub_resource type="Resource" id="Resource_rtx7w"]
 script = ExtResource("1_ljnfh")
 nivel = 5
 movimiento = ExtResource("6_bic7n")
 
-[sub_resource type="Resource" id="Resource_sf27t"]
+[sub_resource type="Resource" id="Resource_75ebt"]
 script = ExtResource("1_ljnfh")
 nivel = 8
 movimiento = ExtResource("2_ut63e")
 
-[sub_resource type="Resource" id="Resource_nrgpq"]
+[sub_resource type="Resource" id="Resource_1ebqw"]
 script = ExtResource("1_ljnfh")
 nivel = 12
 movimiento = ExtResource("9_75ebt")
 
-[sub_resource type="Resource" id="Resource_6jmsk"]
+[sub_resource type="Resource" id="Resource_takcl"]
 script = ExtResource("1_ljnfh")
 nivel = 15
 movimiento = ExtResource("10_1ebqw")
 
-[sub_resource type="Resource" id="Resource_fv5mk"]
+[sub_resource type="Resource" id="Resource_hdal7"]
 script = ExtResource("1_ljnfh")
 nivel = 20
 movimiento = ExtResource("11_takcl")
 
-[sub_resource type="Resource" id="Resource_u7vep"]
+[sub_resource type="Resource" id="Resource_7qnhq"]
 script = ExtResource("1_ljnfh")
 nivel = 24
 movimiento = ExtResource("12_hdal7")
 
-[sub_resource type="Resource" id="Resource_xj60d"]
+[sub_resource type="Resource" id="Resource_qyfvm"]
 script = ExtResource("1_ljnfh")
 nivel = 29
 movimiento = ExtResource("13_7qnhq")
 
-[sub_resource type="Resource" id="Resource_g5djg"]
+[sub_resource type="Resource" id="Resource_khmta"]
 script = ExtResource("1_ljnfh")
 nivel = 36
 movimiento = ExtResource("14_qyfvm")
 
-[sub_resource type="Resource" id="Resource_4588n"]
+[sub_resource type="Resource" id="Resource_ttupe"]
 script = ExtResource("1_ljnfh")
 nivel = 42
 movimiento = ExtResource("15_khmta")
 
-[sub_resource type="Resource" id="Resource_t5bof"]
+[sub_resource type="Resource" id="Resource_aqasr"]
 script = ExtResource("1_ljnfh")
 nivel = 51
 movimiento = ExtResource("16_ttupe")
 
-[sub_resource type="Resource" id="Resource_d0lvo"]
+[sub_resource type="Resource" id="Resource_j8mly"]
 script = ExtResource("1_ljnfh")
 nivel = 59
 movimiento = ExtResource("17_aqasr")
@@ -109,8 +109,9 @@ script = ExtResource("18_j8mly")
 id = "stoutland"
 numero = 508
 nombre = "Stoutland"
+tipos = PackedStringArray("normal")
 ps = 85
-ataque = 110
+ataque = 100
 defensa = 90
 at_esp = 45
 def_esp = 90
@@ -120,11 +121,14 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-aprende = Array[ExtResource("1_ljnfh")]([SubResource("Resource_ii3b0"), SubResource("Resource_as5l6"), SubResource("Resource_pbgi5"), SubResource("Resource_d0pc3"), SubResource("Resource_eg0fg"), SubResource("Resource_4c5jr"), SubResource("Resource_pnutx"), SubResource("Resource_ywe8g"), SubResource("Resource_sf27t"), SubResource("Resource_nrgpq"), SubResource("Resource_6jmsk"), SubResource("Resource_fv5mk"), SubResource("Resource_u7vep"), SubResource("Resource_xj60d"), SubResource("Resource_g5djg"), SubResource("Resource_4588n"), SubResource("Resource_t5bof"), SubResource("Resource_d0lvo")])
+habilidades = PackedStringArray("intimidate", "sand_rush")
+habilidad_oculta = "scrappy"
+categoria = "Pokémon Magnánimo"
+altura = 1.2
+peso_kg = 61.0
+descripcion = "Socorre a humanos perdidos en montañas azotadas por ventiscas. Su largo pelaje le protege del frío."
+aprende = Array[ExtResource("1_ljnfh")]([SubResource("Resource_ljnfh"), SubResource("Resource_ut63e"), SubResource("Resource_itgpk"), SubResource("Resource_mes4v"), SubResource("Resource_g0d5c"), SubResource("Resource_bic7n"), SubResource("Resource_l4ocf"), SubResource("Resource_rtx7w"), SubResource("Resource_75ebt"), SubResource("Resource_1ebqw"), SubResource("Resource_takcl"), SubResource("Resource_hdal7"), SubResource("Resource_7qnhq"), SubResource("Resource_qyfvm"), SubResource("Resource_khmta"), SubResource("Resource_ttupe"), SubResource("Resource_aqasr"), SubResource("Resource_j8mly")])
 sprite_frente = ExtResource("20_8op53")
 sprite_espalda = ExtResource("19_uiq1s")
 cuadros_frente = 76
 cuadros_espalda = 76
-habilidades = PackedStringArray("Intimidación", "Ímpetu Arena")
-habilidad_oculta = "Intrépido"
-evoluciones = Array[Dictionary]([])

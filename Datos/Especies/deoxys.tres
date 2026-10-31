@@ -19,72 +19,70 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/psycho_boost.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_beam.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_o15qy"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_c1tt7"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_nws2u"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_iww6w"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_ue1qj"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_2e3sp"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_pyayx"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_3edwr"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_pndga"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_xed6f"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_k4dmg"]
 script = ExtResource("2")
 nivel = 73
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_r8dfc"]
 script = ExtResource("2")
 nivel = 81
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_a5add"]
 script = ExtResource("2")
 nivel = 89
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_cnelq"]
 script = ExtResource("2")
 nivel = 97
 movimiento = ExtResource("18")
@@ -95,21 +93,25 @@ id = "deoxys"
 numero = 386
 nombre = "Deoxys"
 tipos = PackedStringArray("psiquico")
-habilidades = PackedStringArray("Presión")
-habilidad_oculta = ""
-ps = 50
 ataque = 150
-defensa = 50
 at_esp = 150
-def_esp = 50
 velocidad = 150
 exp_base = 270
 ratio_captura = 3
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"ataque": 1, "at_esp": 1, "velocidad": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+evs_otorgados = {
+"at_esp": 1,
+"ataque": 1,
+"velocidad": 1
+}
+amistad_base = 0
+habilidades = PackedStringArray("pressure")
+categoria = "Pokémon ADN"
+altura = 1.7
+peso_kg = 60.8
+descripcion = "Surgió a raíz de la mutación de ADN de un virus alienígena que cayó a la Tierra en un meteorito."
+aprende = Array[ExtResource("2")]([SubResource("Resource_o15qy"), SubResource("Resource_c1tt7"), SubResource("Resource_nws2u"), SubResource("Resource_iww6w"), SubResource("Resource_ue1qj"), SubResource("Resource_2e3sp"), SubResource("Resource_pyayx"), SubResource("Resource_3edwr"), SubResource("Resource_pndga"), SubResource("Resource_xed6f"), SubResource("Resource_k4dmg"), SubResource("Resource_r8dfc"), SubResource("Resource_a5add"), SubResource("Resource_cnelq")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 72

@@ -18,3 +18,5 @@ cambios_stats = {
 "at_esp": -1
 }
 prob_stat = 100
+numero = 555
+banderas = PackedStringArray("bypasssub", "mirror", "protect", "sound")

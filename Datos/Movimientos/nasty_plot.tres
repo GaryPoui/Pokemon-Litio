@@ -16,3 +16,5 @@ descripcion = "Estimula su cerebro pensando en cosas malas. Aumenta mucho el Ata
 cambios_stats = {
 "at_esp": 2
 }
+numero = 417
+banderas = PackedStringArray("metronome", "snatch")

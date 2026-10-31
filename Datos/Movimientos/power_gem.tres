@@ -11,3 +11,5 @@ categoria = "especial"
 poder = 70
 pp = 20
 descripcion = "Ataca con un rayo de luz que centellea como si lo formaran miles de joyas."
+numero = 408
+banderas = PackedStringArray("metronome", "mirror", "protect")

@@ -17,62 +17,60 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/natural_gift.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_qt838"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_am83g"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_ltd8u"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_hggso"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_mmowy"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_65aob"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_x7l17"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_fiq1h"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_m2ysa"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_vtt5d"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_knr1b"]
 script = ExtResource("2")
 nivel = 66
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_uh7fv"]
 script = ExtResource("2")
 nivel = 76
 movimiento = ExtResource("16")
@@ -83,8 +81,6 @@ id = "azelf"
 numero = 482
 nombre = "Azelf"
 tipos = PackedStringArray("psiquico")
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
 ps = 75
 ataque = 125
 defensa = 70
@@ -95,11 +91,18 @@ exp_base = 261
 ratio_captura = 3
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"ataque": 2, "at_esp": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evs_otorgados = {
+"at_esp": 1,
+"ataque": 2
+}
+amistad_base = 140
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Voluntad"
+altura = 0.3
+peso_kg = 0.3
+descripcion = "Se le conoce como el Ser de la Voluntad. Duerme en el fondo de un lago para equilibrar el mundo."
+aprende = Array[ExtResource("2")]([SubResource("Resource_qt838"), SubResource("Resource_am83g"), SubResource("Resource_ltd8u"), SubResource("Resource_hggso"), SubResource("Resource_mmowy"), SubResource("Resource_65aob"), SubResource("Resource_x7l17"), SubResource("Resource_fiq1h"), SubResource("Resource_m2ysa"), SubResource("Resource_vtt5d"), SubResource("Resource_knr1b"), SubResource("Resource_uh7fv")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 66
 cuadros_espalda = 66
-fps_sprite = 10.0

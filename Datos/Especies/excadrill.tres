@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dqf85dt3xflkq"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vhtrg"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vhtrg"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="2_jlmox"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mud_sport.tres" id="3_ngc1b"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rapid_spin.tres" id="4_ct65b"]
@@ -17,92 +17,92 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sandstorm.tres" id="15_2bpia"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/drill_run.tres" id="16_ku224"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fissure.tres" id="17_kmqv7"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_wxr27"]
-[ext_resource type="Texture2D" uid="uid://bkvy40pijgpvc" path="res://Assets/Pokemones/batalla/excadrill_espalda.png" id="19_js3wy"]
-[ext_resource type="Texture2D" uid="uid://drgjvmtht7xnj" path="res://Assets/Pokemones/batalla/excadrill_frente.png" id="20_a0kue"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_wxr27"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/excadrill_espalda.png" id="19_js3wy"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/excadrill_frente.png" id="20_a0kue"]
 
-[sub_resource type="Resource" id="Resource_una18"]
+[sub_resource type="Resource" id="Resource_vhtrg"]
 script = ExtResource("1_vhtrg")
 movimiento = ExtResource("2_jlmox")
 
-[sub_resource type="Resource" id="Resource_i6dl4"]
+[sub_resource type="Resource" id="Resource_jlmox"]
 script = ExtResource("1_vhtrg")
 movimiento = ExtResource("3_ngc1b")
 
-[sub_resource type="Resource" id="Resource_01eix"]
+[sub_resource type="Resource" id="Resource_ngc1b"]
 script = ExtResource("1_vhtrg")
 movimiento = ExtResource("4_ct65b")
 
-[sub_resource type="Resource" id="Resource_uui5t"]
+[sub_resource type="Resource" id="Resource_ct65b"]
 script = ExtResource("1_vhtrg")
 movimiento = ExtResource("5_q066p")
 
-[sub_resource type="Resource" id="Resource_mt1xg"]
+[sub_resource type="Resource" id="Resource_q066p"]
 script = ExtResource("1_vhtrg")
 nivel = 5
 movimiento = ExtResource("4_ct65b")
 
-[sub_resource type="Resource" id="Resource_n6cjp"]
+[sub_resource type="Resource" id="Resource_qqkti"]
 script = ExtResource("1_vhtrg")
 nivel = 8
 movimiento = ExtResource("2_jlmox")
 
-[sub_resource type="Resource" id="Resource_ni0um"]
+[sub_resource type="Resource" id="Resource_mc5c1"]
 script = ExtResource("1_vhtrg")
 nivel = 12
 movimiento = ExtResource("6_qqkti")
 
-[sub_resource type="Resource" id="Resource_f52ym"]
+[sub_resource type="Resource" id="Resource_xr8og"]
 script = ExtResource("1_vhtrg")
 nivel = 15
 movimiento = ExtResource("7_mc5c1")
 
-[sub_resource type="Resource" id="Resource_acxqn"]
+[sub_resource type="Resource" id="Resource_ngmb7"]
 script = ExtResource("1_vhtrg")
 nivel = 19
 movimiento = ExtResource("8_xr8og")
 
-[sub_resource type="Resource" id="Resource_a5tkf"]
+[sub_resource type="Resource" id="Resource_03wrb"]
 script = ExtResource("1_vhtrg")
 nivel = 22
 movimiento = ExtResource("9_ngmb7")
 
-[sub_resource type="Resource" id="Resource_xhqkv"]
+[sub_resource type="Resource" id="Resource_cc88j"]
 script = ExtResource("1_vhtrg")
 nivel = 26
 movimiento = ExtResource("10_03wrb")
 
-[sub_resource type="Resource" id="Resource_t8ehg"]
+[sub_resource type="Resource" id="Resource_blh47"]
 script = ExtResource("1_vhtrg")
 nivel = 29
 movimiento = ExtResource("11_cc88j")
 
-[sub_resource type="Resource" id="Resource_jagc6"]
+[sub_resource type="Resource" id="Resource_lcfsd"]
 script = ExtResource("1_vhtrg")
 nivel = 31
 movimiento = ExtResource("12_blh47")
 
-[sub_resource type="Resource" id="Resource_pu6fi"]
+[sub_resource type="Resource" id="Resource_dmmx3"]
 script = ExtResource("1_vhtrg")
 nivel = 36
 movimiento = ExtResource("13_lcfsd")
 
-[sub_resource type="Resource" id="Resource_wvvol"]
+[sub_resource type="Resource" id="Resource_2bpia"]
 script = ExtResource("1_vhtrg")
 nivel = 42
 movimiento = ExtResource("14_dmmx3")
 
-[sub_resource type="Resource" id="Resource_bp87l"]
+[sub_resource type="Resource" id="Resource_ku224"]
 script = ExtResource("1_vhtrg")
 nivel = 49
 movimiento = ExtResource("15_2bpia")
 
-[sub_resource type="Resource" id="Resource_uglwb"]
+[sub_resource type="Resource" id="Resource_kmqv7"]
 script = ExtResource("1_vhtrg")
 nivel = 55
 movimiento = ExtResource("16_ku224")
 
-[sub_resource type="Resource" id="Resource_off0o"]
+[sub_resource type="Resource" id="Resource_wxr27"]
 script = ExtResource("1_vhtrg")
 nivel = 62
 movimiento = ExtResource("17_kmqv7")
@@ -112,7 +112,7 @@ script = ExtResource("18_wxr27")
 id = "excadrill"
 numero = 530
 nombre = "Excadrill"
-tipos = ["tierra", "acero"]
+tipos = PackedStringArray("tierra", "acero")
 ps = 110
 ataque = 135
 defensa = 60
@@ -123,12 +123,15 @@ ratio_captura = 60
 evs_otorgados = {
 "ataque": 2
 }
-aprende = Array[ExtResource("1_vhtrg")]([SubResource("Resource_una18"), SubResource("Resource_i6dl4"), SubResource("Resource_01eix"), SubResource("Resource_uui5t"), SubResource("Resource_mt1xg"), SubResource("Resource_n6cjp"), SubResource("Resource_ni0um"), SubResource("Resource_f52ym"), SubResource("Resource_acxqn"), SubResource("Resource_a5tkf"), SubResource("Resource_xhqkv"), SubResource("Resource_t8ehg"), SubResource("Resource_jagc6"), SubResource("Resource_pu6fi"), SubResource("Resource_wvvol"), SubResource("Resource_bp87l"), SubResource("Resource_uglwb"), SubResource("Resource_off0o")])
+habilidades = PackedStringArray("sand_rush", "sand_force")
+habilidad_oculta = "mold_breaker"
+categoria = "Pokémon Subterráneo"
+altura = 0.7
+peso_kg = 40.4
+descripcion = "Su taladro ha evolucionado y es capaz de atravesar una lámina de hierro. Es muy útil para construir túneles."
+aprende = Array[ExtResource("1_vhtrg")]([SubResource("Resource_vhtrg"), SubResource("Resource_jlmox"), SubResource("Resource_ngc1b"), SubResource("Resource_ct65b"), SubResource("Resource_q066p"), SubResource("Resource_qqkti"), SubResource("Resource_mc5c1"), SubResource("Resource_xr8og"), SubResource("Resource_ngmb7"), SubResource("Resource_03wrb"), SubResource("Resource_cc88j"), SubResource("Resource_blh47"), SubResource("Resource_lcfsd"), SubResource("Resource_dmmx3"), SubResource("Resource_2bpia"), SubResource("Resource_ku224"), SubResource("Resource_kmqv7"), SubResource("Resource_wxr27")])
 sprite_frente = ExtResource("20_a0kue")
 sprite_espalda = ExtResource("19_js3wy")
 cuadros_frente = 92
 cuadros_espalda = 92
 fps_sprite = 10.42
-habilidades = PackedStringArray("Ímpetu Arena", "Poder Arenoso/Poder Arena")
-habilidad_oculta = "Rompemoldes"
-evoluciones = Array[Dictionary]([])

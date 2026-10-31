@@ -14,3 +14,5 @@ descripcion = "Arroja arena a la cara y baja la Precisión."
 cambios_stats = {
 "precision": -1
 }
+numero = 28
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")

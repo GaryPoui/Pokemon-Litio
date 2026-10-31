@@ -17,62 +17,61 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/rest.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_ffsri"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_gaw8h"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_oag3o"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_u1wnr"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_v5wc7"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_mc6qv"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_6dwjv"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_st41p"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_uql7k"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 45
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_qm83e"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_onnr0"]
+script = ExtResource("2")
+nivel = 45
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_jb5gc"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("16")
@@ -83,8 +82,6 @@ id = "whismur"
 numero = 293
 nombre = "Whismur"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Insonorización/Insonorizar")
-habilidad_oculta = "Cobardía"
 ps = 64
 ataque = 51
 defensa = 23
@@ -93,13 +90,24 @@ def_esp = 23
 velocidad = 28
 exp_base = 48
 ratio_captura = 190
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([{"especie": "loudred", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}])
+evs_otorgados = {
+"ps": 1
+}
 evoluciona_a = "loudred"
 nivel_evolucion = 20
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evoluciones = Array[Dictionary]([{
+"especie": "loudred",
+"metodo": "nivel",
+"nivel": 20
+}])
+habilidades = PackedStringArray("soundproof")
+habilidad_oculta = "rattled"
+categoria = "Pokémon Susurro"
+altura = 0.6
+peso_kg = 16.3
+descripcion = "Normalmente murmulla, pero cuando siente que hay peligro se pone a chillar. Solo para cuando se le cierran las orejas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_ffsri"), SubResource("Resource_gaw8h"), SubResource("Resource_oag3o"), SubResource("Resource_u1wnr"), SubResource("Resource_v5wc7"), SubResource("Resource_mc6qv"), SubResource("Resource_6dwjv"), SubResource("Resource_st41p"), SubResource("Resource_uql7k"), SubResource("Resource_qm83e"), SubResource("Resource_onnr0"), SubResource("Resource_jb5gc")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 33

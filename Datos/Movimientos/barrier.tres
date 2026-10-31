@@ -8,8 +8,13 @@ id = "barrier"
 nombre = "Barrera"
 tipo = "psiquico"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 20
+precision = 0
+pp = 30
 objetivo = "user"
-meta = "unique"
+meta = "net-good-stats"
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+cambios_stats = {
+"defensa": 2
+}
+numero = 112
+banderas = PackedStringArray("metronome", "snatch")

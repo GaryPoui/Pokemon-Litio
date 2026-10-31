@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/drifloon_frente.png" id="3"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/drifloon_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/minimize.tres" id="5"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="5_42o7p"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/constrict.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="8"]
@@ -15,78 +16,75 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/swallow.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/spit_up.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/shadow_ball.tres" id="15"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/baton_pass.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_42o7p"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_47toc"]
 script = ExtResource("2")
-nivel = 4
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_jhm75"]
+script = ExtResource("2")
+nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_pj0p6"]
 script = ExtResource("2")
-nivel = 13
+nivel = 11
+movimiento = ExtResource("5_42o7p")
+
+[sub_resource type="Resource" id="Resource_6vnlh"]
+script = ExtResource("2")
+nivel = 14
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_w13yi"]
 script = ExtResource("2")
-nivel = 16
+nivel = 17
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_gip3y"]
 script = ExtResource("2")
-nivel = 20
-movimiento = ExtResource("10")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 25
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 27
+nivel = 22
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_0dijx"]
 script = ExtResource("2")
-nivel = 32
-movimiento = ExtResource("13")
+nivel = 27
+movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ni1sv"]
 script = ExtResource("2")
-nivel = 32
+nivel = 30
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_64v7q"]
 script = ExtResource("2")
-nivel = 36
-movimiento = ExtResource("15")
+nivel = 30
+movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_7r2kc"]
 script = ExtResource("2")
-nivel = 40
-movimiento = ExtResource("16")
+nivel = 33
+movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_gvtu8"]
 script = ExtResource("2")
-nivel = 44
+nivel = 38
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_vshol"]
 script = ExtResource("2")
-nivel = 50
+nivel = 43
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Resource_i2yod"]
+script = ExtResource("2")
+nivel = 46
 movimiento = ExtResource("18")
 
 [resource]
@@ -95,25 +93,32 @@ id = "drifloon"
 numero = 425
 nombre = "Drifloon"
 tipos = PackedStringArray("fantasma", "volador")
-habilidades = PackedStringArray("Secuela/Detonación", "Liviano")
-habilidad_oculta = "Ímpetu Ardiente"
 ps = 90
-ataque = 50
 defensa = 34
 at_esp = 60
 def_esp = 44
 velocidad = 70
 exp_base = 70
 ratio_captura = 125
-ratio_genero = 4
 crecimiento = "fast-then-very-slow"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([{"especie": "drifblim", "metodo": "nivel", "condicion": "Nivel 28", "nivel": 28}])
+evs_otorgados = {
+"ps": 1
+}
 evoluciona_a = "drifblim"
 nivel_evolucion = 28
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+evoluciones = Array[Dictionary]([{
+"especie": "drifblim",
+"metodo": "nivel",
+"nivel": 28
+}])
+habilidades = PackedStringArray("aftermath", "unburden")
+habilidad_oculta = "flare_boost"
+categoria = "Pokémon Globo"
+altura = 0.4
+peso_kg = 1.2
+descripcion = "Está formado por los espíritus de personas y Pokémon. Le encantan las estaciones húmedas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_42o7p"), SubResource("Resource_47toc"), SubResource("Resource_jhm75"), SubResource("Resource_pj0p6"), SubResource("Resource_6vnlh"), SubResource("Resource_w13yi"), SubResource("Resource_gip3y"), SubResource("Resource_0dijx"), SubResource("Resource_ni1sv"), SubResource("Resource_64v7q"), SubResource("Resource_7r2kc"), SubResource("Resource_gvtu8"), SubResource("Resource_vshol"), SubResource("Resource_i2yod")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 64
 cuadros_espalda = 64
-fps_sprite = 10.0

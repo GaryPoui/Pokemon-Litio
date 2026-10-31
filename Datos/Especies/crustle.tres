@@ -19,92 +19,88 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rock_wrecker.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_gr161"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_2cqqg"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_1am6o"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_opvlx"]
+script = ExtResource("2")
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_b40kl"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_mo8ep"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_lj826"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_fe67x"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_vt6up"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_hkdfj"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_axu14"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_4tjfk"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_e3pr7"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_fptse"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_slihb"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_203vx"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_ubq26"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_i1xrg"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("18")
@@ -115,23 +111,25 @@ id = "crustle"
 numero = 558
 nombre = "Crustle"
 tipos = PackedStringArray("bicho", "roca")
-habilidades = PackedStringArray("Robustez", "Caparazón")
-habilidad_oculta = "Armadura Frágil"
 ps = 70
-ataque = 105
+ataque = 95
 defensa = 125
 at_esp = 65
 def_esp = 75
 velocidad = 45
-exp_base = 166
+exp_base = 170
 ratio_captura = 75
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"defensa": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"defensa": 2
+}
+habilidades = PackedStringArray("sturdy", "shell_armor")
+habilidad_oculta = "weak_armor"
+categoria = "Pokémon Casarroca"
+altura = 1.4
+peso_kg = 200.0
+descripcion = "Su inmensa capacidad motriz le permite desplazarse cargando a sus espaldas rocas enormes durante días."
+aprende = Array[ExtResource("2")]([SubResource("Resource_gr161"), SubResource("Resource_2cqqg"), SubResource("Resource_1am6o"), SubResource("Resource_opvlx"), SubResource("Resource_b40kl"), SubResource("Resource_mo8ep"), SubResource("Resource_lj826"), SubResource("Resource_fe67x"), SubResource("Resource_vt6up"), SubResource("Resource_hkdfj"), SubResource("Resource_axu14"), SubResource("Resource_4tjfk"), SubResource("Resource_e3pr7"), SubResource("Resource_fptse"), SubResource("Resource_slihb"), SubResource("Resource_203vx"), SubResource("Resource_ubq26"), SubResource("Resource_i1xrg")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 60
 cuadros_espalda = 60
-fps_sprite = 10.0

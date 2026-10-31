@@ -5,11 +5,9 @@
 [resource]
 script = ExtResource("1")
 id = "pay_day"
-nombre = "Día de pago"
-tipo = "normal"
-categoria = "fisico"
+nombre = "Día de Pago"
 poder = 40
-precision = 100
 pp = 20
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Arroja monedas al objetivo y las recupera al final del combate."
+numero = 6
+banderas = PackedStringArray("metronome", "mirror", "protect")

@@ -3,10 +3,12 @@
 [ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
 [ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/volcarona_frente.png" id="3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="3_e4emf"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/volcarona_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/string_shot.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leech_life.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlwind.tres" id="7_dykhf"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fire_spin.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/silver_wind.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/quiver_dance.tres" id="10"]
@@ -16,62 +18,73 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hurricane.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fiery_dance.tres" id="15"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_e4emf"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_dykhf"]
+script = ExtResource("2")
+movimiento = ExtResource("3_e4emf")
+
+[sub_resource type="Resource" id="Resource_kqit6"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_pgh4e"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_iog70"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_eujut"]
+script = ExtResource("2")
+nivel = 20
+movimiento = ExtResource("3_e4emf")
+
+[sub_resource type="Resource" id="Resource_rkjuk"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_7xomn"]
+script = ExtResource("2")
+nivel = 40
+movimiento = ExtResource("7_dykhf")
+
+[sub_resource type="Resource" id="Resource_87nie"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_ckuuk"]
 script = ExtResource("2")
 nivel = 59
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_lqm3d"]
 script = ExtResource("2")
 nivel = 60
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_gpuos"]
 script = ExtResource("2")
 nivel = 70
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_fhbc7"]
 script = ExtResource("2")
 nivel = 80
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_iuuw8"]
 script = ExtResource("2")
 nivel = 90
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_eysg5"]
 script = ExtResource("2")
 nivel = 100
 movimiento = ExtResource("15")
@@ -82,8 +95,6 @@ id = "volcarona"
 numero = 637
 nombre = "Volcarona"
 tipos = PackedStringArray("bicho", "fuego")
-habilidades = PackedStringArray("Cuerpo de Fuego/Cuerpo Llama")
-habilidad_oculta = "Enjambre"
 ps = 85
 ataque = 60
 defensa = 65
@@ -92,11 +103,17 @@ def_esp = 105
 velocidad = 100
 exp_base = 248
 ratio_captura = 15
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"at_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evs_otorgados = {
+"at_esp": 3
+}
+habilidades = PackedStringArray("flame_body")
+habilidad_oculta = "swarm"
+categoria = "Pokémon Sol"
+altura = 1.6
+peso_kg = 46.0
+descripcion = "Cuando combate, despide escamas ardientes de sus seis alas y genera un mar ígneo a su alrededor."
+aprende = Array[ExtResource("2")]([SubResource("Resource_e4emf"), SubResource("Resource_dykhf"), SubResource("Resource_kqit6"), SubResource("Resource_pgh4e"), SubResource("Resource_iog70"), SubResource("Resource_eujut"), SubResource("Resource_rkjuk"), SubResource("Resource_7xomn"), SubResource("Resource_87nie"), SubResource("Resource_ckuuk"), SubResource("Resource_lqm3d"), SubResource("Resource_gpuos"), SubResource("Resource_fhbc7"), SubResource("Resource_iuuw8"), SubResource("Resource_eysg5")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 72

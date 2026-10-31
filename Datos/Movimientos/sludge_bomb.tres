@@ -13,3 +13,5 @@ meta = "damage-ailment"
 descripcion = "Arroja residuos al objetivo. Puede llegar a envenenar."
 estado = "poison"
 prob_estado = 30
+numero = 188
+banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")

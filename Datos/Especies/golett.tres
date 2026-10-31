@@ -20,77 +20,74 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hammer_arm.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/focus_punch.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_sdhp4"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_sou58"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_uvso3"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_5qvv7"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_k12i2"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_6xr0x"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_420eg"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_pws1l"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ya05w"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_xgqed"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_iw3o4"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_u0iqa"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_7jo5m"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_ltbc8"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_vrvfh"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("19")
@@ -101,25 +98,32 @@ id = "golett"
 numero = 622
 nombre = "Golett"
 tipos = PackedStringArray("tierra", "fantasma")
-habilidades = PackedStringArray("Puño Férreo", "Torpeza/Zoquete")
-habilidad_oculta = "Indefenso"
 ps = 59
 ataque = 74
-defensa = 50
 at_esp = 35
-def_esp = 50
 velocidad = 35
 exp_base = 61
 ratio_captura = 190
 ratio_genero = -1
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "golurk", "metodo": "nivel", "condicion": "Nivel 43", "nivel": 43}])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"ataque": 1
+}
+evoluciona_a = "golurk"
+nivel_evolucion = 43
+evoluciones = Array[Dictionary]([{
+"especie": "golurk",
+"metodo": "nivel",
+"nivel": 43
+}])
+habilidades = PackedStringArray("iron_fist", "klutz")
+habilidad_oculta = "no_guard"
+categoria = "Pokémon Autómata"
+altura = 1.0
+peso_kg = 92.0
+descripcion = "Se mueve gracias a la energía que quema dentro de su cuerpo, pero el origen de esta energía es incierto."
+aprende = Array[ExtResource("2")]([SubResource("Resource_sdhp4"), SubResource("Resource_sou58"), SubResource("Resource_uvso3"), SubResource("Resource_5qvv7"), SubResource("Resource_k12i2"), SubResource("Resource_6xr0x"), SubResource("Resource_420eg"), SubResource("Resource_pws1l"), SubResource("Resource_ya05w"), SubResource("Resource_xgqed"), SubResource("Resource_iw3o4"), SubResource("Resource_u0iqa"), SubResource("Resource_7jo5m"), SubResource("Resource_ltbc8"), SubResource("Resource_vrvfh")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 60
 cuadros_espalda = 60
 fps_sprite = 13.45
-evoluciona_a = "golurk"
-nivel_evolucion = 43

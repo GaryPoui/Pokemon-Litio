@@ -12,4 +12,6 @@ precision = 0
 pp = 30
 objetivo = "users-field"
 meta = "field-effect"
-descripcion = "Rodea de fina niebla al usuario y protege las características de su equipo durante cinco turnos. "
+descripcion = "Rodea de fina niebla al usuario y protege las características de su equipo durante cinco turnos."
+numero = 54
+banderas = PackedStringArray("metronome", "snatch")

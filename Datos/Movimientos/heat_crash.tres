@@ -8,3 +8,5 @@ id = "heat_crash"
 nombre = "Golpe Calor"
 tipo = "fuego"
 descripcion = "El usuario ataca con su cuerpo ardiente. Cuanto mayor sea su peso comparado con el del objetivo, más daño causará."
+numero = 535
+banderas = PackedStringArray("contact", "metronome", "minimize", "mirror", "nonsky", "protect")

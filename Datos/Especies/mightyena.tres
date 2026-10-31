@@ -19,83 +19,83 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/mightyena_espalda.png" id="17_iu6bv"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/mightyena_frente.png" id="18_21ewg"]
 
-[sub_resource type="Resource" id="Resource_xvba0"]
+[sub_resource type="Resource" id="Resource_4a2xc"]
 script = ExtResource("1_4a2xc")
 movimiento = ExtResource("2_gg7mg")
 
-[sub_resource type="Resource" id="Resource_7x0gj"]
+[sub_resource type="Resource" id="Resource_gg7mg"]
 script = ExtResource("1_4a2xc")
 movimiento = ExtResource("3_g7pih")
 
-[sub_resource type="Resource" id="Resource_b7yxf"]
+[sub_resource type="Resource" id="Resource_g7pih"]
 script = ExtResource("1_4a2xc")
 movimiento = ExtResource("4_hrt78")
 
-[sub_resource type="Resource" id="Resource_lbxrq"]
+[sub_resource type="Resource" id="Resource_hrt78"]
 script = ExtResource("1_4a2xc")
 movimiento = ExtResource("5_n5dpn")
 
-[sub_resource type="Resource" id="Resource_qif34"]
+[sub_resource type="Resource" id="Resource_n5dpn"]
 script = ExtResource("1_4a2xc")
 nivel = 5
 movimiento = ExtResource("3_g7pih")
 
-[sub_resource type="Resource" id="Resource_ds7t4"]
+[sub_resource type="Resource" id="Resource_v0vuq"]
 script = ExtResource("1_4a2xc")
 nivel = 9
 movimiento = ExtResource("4_hrt78")
 
-[sub_resource type="Resource" id="Resource_d6ly1"]
+[sub_resource type="Resource" id="Resource_8y6ou"]
 script = ExtResource("1_4a2xc")
 nivel = 13
 movimiento = ExtResource("2_gg7mg")
 
-[sub_resource type="Resource" id="Resource_ckbmj"]
+[sub_resource type="Resource" id="Resource_rethd"]
 script = ExtResource("1_4a2xc")
 nivel = 17
 movimiento = ExtResource("6_v0vuq")
 
-[sub_resource type="Resource" id="Resource_8j2g0"]
+[sub_resource type="Resource" id="Resource_f5yiq"]
 script = ExtResource("1_4a2xc")
 nivel = 22
 movimiento = ExtResource("7_8y6ou")
 
-[sub_resource type="Resource" id="Resource_nhqqu"]
+[sub_resource type="Resource" id="Resource_nr0ar"]
 script = ExtResource("1_4a2xc")
 nivel = 27
 movimiento = ExtResource("8_rethd")
 
-[sub_resource type="Resource" id="Resource_8i50q"]
+[sub_resource type="Resource" id="Resource_8kjsu"]
 script = ExtResource("1_4a2xc")
 nivel = 32
 movimiento = ExtResource("9_f5yiq")
 
-[sub_resource type="Resource" id="Resource_h7hmr"]
+[sub_resource type="Resource" id="Resource_evgfq"]
 script = ExtResource("1_4a2xc")
 nivel = 37
 movimiento = ExtResource("10_nr0ar")
 
-[sub_resource type="Resource" id="Resource_38r1l"]
+[sub_resource type="Resource" id="Resource_mpa7n"]
 script = ExtResource("1_4a2xc")
 nivel = 42
 movimiento = ExtResource("11_8kjsu")
 
-[sub_resource type="Resource" id="Resource_ltwjy"]
+[sub_resource type="Resource" id="Resource_wuo2e"]
 script = ExtResource("1_4a2xc")
 nivel = 47
 movimiento = ExtResource("12_evgfq")
 
-[sub_resource type="Resource" id="Resource_k38qs"]
+[sub_resource type="Resource" id="Resource_iqhmv"]
 script = ExtResource("1_4a2xc")
 nivel = 52
 movimiento = ExtResource("13_mpa7n")
 
-[sub_resource type="Resource" id="Resource_8d480"]
+[sub_resource type="Resource" id="Resource_l1rnl"]
 script = ExtResource("1_4a2xc")
 nivel = 57
 movimiento = ExtResource("14_wuo2e")
 
-[sub_resource type="Resource" id="Resource_fuhuq"]
+[sub_resource type="Resource" id="Resource_iu6bv"]
 script = ExtResource("1_4a2xc")
 nivel = 62
 movimiento = ExtResource("15_iqhmv")
@@ -105,7 +105,7 @@ script = ExtResource("16_l1rnl")
 id = "mightyena"
 numero = 262
 nombre = "Mightyena"
-tipos = ["siniestro"]
+tipos = PackedStringArray("siniestro")
 ps = 70
 ataque = 90
 defensa = 70
@@ -117,12 +117,15 @@ ratio_captura = 127
 evs_otorgados = {
 "ataque": 2
 }
-aprende = Array[ExtResource("1_4a2xc")]([SubResource("Resource_xvba0"), SubResource("Resource_7x0gj"), SubResource("Resource_b7yxf"), SubResource("Resource_lbxrq"), SubResource("Resource_qif34"), SubResource("Resource_ds7t4"), SubResource("Resource_d6ly1"), SubResource("Resource_ckbmj"), SubResource("Resource_8j2g0"), SubResource("Resource_nhqqu"), SubResource("Resource_8i50q"), SubResource("Resource_h7hmr"), SubResource("Resource_38r1l"), SubResource("Resource_ltwjy"), SubResource("Resource_k38qs"), SubResource("Resource_8d480"), SubResource("Resource_fuhuq")])
+habilidades = PackedStringArray("intimidate", "quick_feet")
+habilidad_oculta = "moxie"
+categoria = "Pokémon Mordisco"
+altura = 1.0
+peso_kg = 37.0
+descripcion = "Siempre obedece a los buenos Entrenadores. Está acostumbrado a vivir en jaurías en estado salvaje."
+aprende = Array[ExtResource("1_4a2xc")]([SubResource("Resource_4a2xc"), SubResource("Resource_gg7mg"), SubResource("Resource_g7pih"), SubResource("Resource_hrt78"), SubResource("Resource_n5dpn"), SubResource("Resource_v0vuq"), SubResource("Resource_8y6ou"), SubResource("Resource_rethd"), SubResource("Resource_f5yiq"), SubResource("Resource_nr0ar"), SubResource("Resource_8kjsu"), SubResource("Resource_evgfq"), SubResource("Resource_mpa7n"), SubResource("Resource_wuo2e"), SubResource("Resource_iqhmv"), SubResource("Resource_l1rnl"), SubResource("Resource_iu6bv")])
 sprite_frente = ExtResource("18_21ewg")
 sprite_espalda = ExtResource("17_iu6bv")
 cuadros_frente = 64
 cuadros_espalda = 64
 fps_sprite = 12.9
-habilidades = PackedStringArray("Intimidación", "Pies Rápidos")
-habilidad_oculta = "Autoestima"
-evoluciones = Array[Dictionary]([])

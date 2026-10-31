@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bfar660sofc3v"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_4a35w"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_4a35w"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dark_pulse.tres" id="2_klda4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/detect.tres" id="3_fb58c"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/foresight.tres" id="4_rp7ki"]
@@ -20,96 +20,96 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/close_combat.tres" id="18_u18bd"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dragon_pulse.tres" id="19_dm4gb"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/extreme_speed.tres" id="20_rpuxg"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="21_rcyb3"]
-[ext_resource type="Texture2D" uid="uid://c3vpovbfkthi4" path="res://Assets/Pokemones/batalla/lucario_espalda.png" id="22_u8bib"]
-[ext_resource type="Texture2D" uid="uid://duvflkhoyxg6" path="res://Assets/Pokemones/batalla/lucario_frente.png" id="23_8iug5"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="21_rcyb3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lucario_espalda.png" id="22_u8bib"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lucario_frente.png" id="23_8iug5"]
 
-[sub_resource type="Resource" id="Resource_rhkw1"]
+[sub_resource type="Resource" id="Resource_4a35w"]
 script = ExtResource("1_4a35w")
 movimiento = ExtResource("2_klda4")
 
-[sub_resource type="Resource" id="Resource_xvcuf"]
+[sub_resource type="Resource" id="Resource_klda4"]
 script = ExtResource("1_4a35w")
 movimiento = ExtResource("3_fb58c")
 
-[sub_resource type="Resource" id="Resource_jros2"]
+[sub_resource type="Resource" id="Resource_fb58c"]
 script = ExtResource("1_4a35w")
 movimiento = ExtResource("4_rp7ki")
 
-[sub_resource type="Resource" id="Resource_vscec"]
+[sub_resource type="Resource" id="Resource_rp7ki"]
 script = ExtResource("1_4a35w")
 movimiento = ExtResource("5_wkhqr")
 
-[sub_resource type="Resource" id="Resource_unxhl"]
+[sub_resource type="Resource" id="Resource_wkhqr"]
 script = ExtResource("1_4a35w")
 movimiento = ExtResource("6_e8j3b")
 
-[sub_resource type="Resource" id="Resource_qbro4"]
+[sub_resource type="Resource" id="Resource_e8j3b"]
 script = ExtResource("1_4a35w")
 nivel = 6
 movimiento = ExtResource("7_lis80")
 
-[sub_resource type="Resource" id="Resource_5hohc"]
+[sub_resource type="Resource" id="Resource_lis80"]
 script = ExtResource("1_4a35w")
 nivel = 11
 movimiento = ExtResource("8_q32ln")
 
-[sub_resource type="Resource" id="Resource_ws76e"]
+[sub_resource type="Resource" id="Resource_q32ln"]
 script = ExtResource("1_4a35w")
 nivel = 15
 movimiento = ExtResource("9_8u7y2")
 
-[sub_resource type="Resource" id="Resource_shj77"]
+[sub_resource type="Resource" id="Resource_8u7y2"]
 script = ExtResource("1_4a35w")
 nivel = 19
 movimiento = ExtResource("10_2mk1o")
 
-[sub_resource type="Resource" id="Resource_4apnv"]
+[sub_resource type="Resource" id="Resource_2mk1o"]
 script = ExtResource("1_4a35w")
 nivel = 24
 movimiento = ExtResource("11_l7mj0")
 
-[sub_resource type="Resource" id="Resource_wrqps"]
+[sub_resource type="Resource" id="Resource_l7mj0"]
 script = ExtResource("1_4a35w")
 nivel = 29
 movimiento = ExtResource("12_kr2h3")
 
-[sub_resource type="Resource" id="Resource_0bytj"]
+[sub_resource type="Resource" id="Resource_kr2h3"]
 script = ExtResource("1_4a35w")
 nivel = 33
 movimiento = ExtResource("13_pku4t")
 
-[sub_resource type="Resource" id="Resource_gqxjw"]
+[sub_resource type="Resource" id="Resource_pku4t"]
 script = ExtResource("1_4a35w")
 nivel = 37
 movimiento = ExtResource("14_5i0rc")
 
-[sub_resource type="Resource" id="Resource_6i3yw"]
+[sub_resource type="Resource" id="Resource_5i0rc"]
 script = ExtResource("1_4a35w")
 nivel = 42
 movimiento = ExtResource("15_v6w3v")
 
-[sub_resource type="Resource" id="Resource_jo0m4"]
+[sub_resource type="Resource" id="Resource_v6w3v"]
 script = ExtResource("1_4a35w")
 nivel = 47
 movimiento = ExtResource("16_s5gen")
 
-[sub_resource type="Resource" id="Resource_oqfct"]
+[sub_resource type="Resource" id="Resource_s5gen"]
 script = ExtResource("1_4a35w")
 nivel = 51
 movimiento = ExtResource("17_fsi13")
 
-[sub_resource type="Resource" id="Resource_m8c1f"]
+[sub_resource type="Resource" id="Resource_fsi13"]
 script = ExtResource("1_4a35w")
 nivel = 55
 movimiento = ExtResource("18_u18bd")
 
-[sub_resource type="Resource" id="Resource_iqa5f"]
+[sub_resource type="Resource" id="Resource_u18bd"]
 script = ExtResource("1_4a35w")
 nivel = 60
 movimiento = ExtResource("19_dm4gb")
 
-[sub_resource type="Resource" id="Resource_rlvlm"]
+[sub_resource type="Resource" id="Resource_dm4gb"]
 script = ExtResource("1_4a35w")
 nivel = 65
 movimiento = ExtResource("20_rpuxg")
@@ -119,7 +119,7 @@ script = ExtResource("21_rcyb3")
 id = "lucario"
 numero = 448
 nombre = "Lucario"
-tipos = ["lucha", "acero"]
+tipos = PackedStringArray("lucha", "acero")
 ps = 70
 ataque = 110
 defensa = 70
@@ -133,11 +133,14 @@ evs_otorgados = {
 "at_esp": 1,
 "ataque": 1
 }
-aprende = Array[ExtResource("1_4a35w")]([SubResource("Resource_rhkw1"), SubResource("Resource_xvcuf"), SubResource("Resource_jros2"), SubResource("Resource_vscec"), SubResource("Resource_unxhl"), SubResource("Resource_qbro4"), SubResource("Resource_5hohc"), SubResource("Resource_ws76e"), SubResource("Resource_shj77"), SubResource("Resource_4apnv"), SubResource("Resource_wrqps"), SubResource("Resource_0bytj"), SubResource("Resource_gqxjw"), SubResource("Resource_6i3yw"), SubResource("Resource_jo0m4"), SubResource("Resource_oqfct"), SubResource("Resource_m8c1f"), SubResource("Resource_iqa5f"), SubResource("Resource_rlvlm")])
+habilidades = PackedStringArray("steadfast", "inner_focus")
+habilidad_oculta = "justified"
+categoria = "Pokémon Aura"
+altura = 1.2
+peso_kg = 54.0
+descripcion = "Puede leer los pensamientos y movimientos de su adversario a través de su aura."
+aprende = Array[ExtResource("1_4a35w")]([SubResource("Resource_4a35w"), SubResource("Resource_klda4"), SubResource("Resource_fb58c"), SubResource("Resource_rp7ki"), SubResource("Resource_wkhqr"), SubResource("Resource_e8j3b"), SubResource("Resource_lis80"), SubResource("Resource_q32ln"), SubResource("Resource_8u7y2"), SubResource("Resource_2mk1o"), SubResource("Resource_l7mj0"), SubResource("Resource_kr2h3"), SubResource("Resource_pku4t"), SubResource("Resource_5i0rc"), SubResource("Resource_v6w3v"), SubResource("Resource_s5gen"), SubResource("Resource_fsi13"), SubResource("Resource_u18bd"), SubResource("Resource_dm4gb")])
 sprite_frente = ExtResource("23_8iug5")
 sprite_espalda = ExtResource("22_u8bib")
 cuadros_frente = 72
 cuadros_espalda = 72
-habilidades = PackedStringArray("Impasible", "Fuerza Mental")
-habilidad_oculta = "Justiciero"
-evoluciones = Array[Dictionary]([])

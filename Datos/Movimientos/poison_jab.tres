@@ -5,11 +5,13 @@
 [resource]
 script = ExtResource("1")
 id = "poison_jab"
-nombre = "Puya nociva"
+nombre = "Puya Nociva"
 tipo = "veneno"
-categoria = "fisico"
 poder = 80
-precision = 100
 pp = 20
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-ailment"
+descripcion = "Pincha al objetivo con un tentáculo o brazo envenenado. Puede llegar a envenenar al objetivo."
+estado = "poison"
+prob_estado = 30
+numero = 398
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

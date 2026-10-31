@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://b6hatogp2u525"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_quy5v"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_quy5v"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_31lvf"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_ns64f"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="4_yd5dr"]
@@ -15,79 +15,79 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/mist.tres" id="13_c5hqf"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/drill_peck.tres" id="14_vnuu1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="15_iim1p"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_o0p4x"]
-[ext_resource type="Texture2D" uid="uid://b46r8hk2e1sre" path="res://Assets/Pokemones/batalla/prinplup_espalda.png" id="17_anbnr"]
-[ext_resource type="Texture2D" uid="uid://dg73vcvw7gfns" path="res://Assets/Pokemones/batalla/prinplup_frente.png" id="18_1sqm1"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_o0p4x"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/prinplup_espalda.png" id="17_anbnr"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/prinplup_frente.png" id="18_1sqm1"]
 
-[sub_resource type="Resource" id="Resource_v7yuk"]
+[sub_resource type="Resource" id="Resource_quy5v"]
 script = ExtResource("1_quy5v")
 movimiento = ExtResource("2_31lvf")
 
-[sub_resource type="Resource" id="Resource_n6ef2"]
+[sub_resource type="Resource" id="Resource_31lvf"]
 script = ExtResource("1_quy5v")
 movimiento = ExtResource("3_ns64f")
 
-[sub_resource type="Resource" id="Resource_emn7a"]
+[sub_resource type="Resource" id="Resource_ns64f"]
 script = ExtResource("1_quy5v")
 nivel = 4
 movimiento = ExtResource("2_31lvf")
 
-[sub_resource type="Resource" id="Resource_eh4p6"]
+[sub_resource type="Resource" id="Resource_yd5dr"]
 script = ExtResource("1_quy5v")
 nivel = 8
 movimiento = ExtResource("4_yd5dr")
 
-[sub_resource type="Resource" id="Resource_dk0xx"]
+[sub_resource type="Resource" id="Resource_voyh5"]
 script = ExtResource("1_quy5v")
 nivel = 11
 movimiento = ExtResource("5_voyh5")
 
-[sub_resource type="Resource" id="Resource_4d1ih"]
+[sub_resource type="Resource" id="Resource_rwfgq"]
 script = ExtResource("1_quy5v")
 nivel = 15
 movimiento = ExtResource("6_rwfgq")
 
-[sub_resource type="Resource" id="Resource_kolds"]
+[sub_resource type="Resource" id="Resource_i2oa3"]
 script = ExtResource("1_quy5v")
 nivel = 16
 movimiento = ExtResource("7_i2oa3")
 
-[sub_resource type="Resource" id="Resource_a2rdv"]
+[sub_resource type="Resource" id="Resource_es53g"]
 script = ExtResource("1_quy5v")
 nivel = 19
 movimiento = ExtResource("8_es53g")
 
-[sub_resource type="Resource" id="Resource_j14ro"]
+[sub_resource type="Resource" id="Resource_n3ma3"]
 script = ExtResource("1_quy5v")
 nivel = 24
 movimiento = ExtResource("9_n3ma3")
 
-[sub_resource type="Resource" id="Resource_oflst"]
+[sub_resource type="Resource" id="Resource_thblk"]
 script = ExtResource("1_quy5v")
 nivel = 28
 movimiento = ExtResource("10_thblk")
 
-[sub_resource type="Resource" id="Resource_pwn3y"]
+[sub_resource type="Resource" id="Resource_msjcp"]
 script = ExtResource("1_quy5v")
 nivel = 33
 movimiento = ExtResource("11_msjcp")
 
-[sub_resource type="Resource" id="Resource_h7x80"]
+[sub_resource type="Resource" id="Resource_vhgbs"]
 script = ExtResource("1_quy5v")
 nivel = 37
 movimiento = ExtResource("12_vhgbs")
 
-[sub_resource type="Resource" id="Resource_4apde"]
+[sub_resource type="Resource" id="Resource_c5hqf"]
 script = ExtResource("1_quy5v")
 nivel = 42
 movimiento = ExtResource("13_c5hqf")
 
-[sub_resource type="Resource" id="Resource_t8ut7"]
+[sub_resource type="Resource" id="Resource_vnuu1"]
 script = ExtResource("1_quy5v")
 nivel = 46
 movimiento = ExtResource("14_vnuu1")
 
-[sub_resource type="Resource" id="Resource_r4cl2"]
+[sub_resource type="Resource" id="Resource_iim1p"]
 script = ExtResource("1_quy5v")
 nivel = 51
 movimiento = ExtResource("15_iim1p")
@@ -97,7 +97,7 @@ script = ExtResource("16_o0p4x")
 id = "prinplup"
 numero = 394
 nombre = "Prinplup"
-tipos = ["agua"]
+tipos = PackedStringArray("agua")
 ps = 64
 ataque = 66
 defensa = 68
@@ -111,12 +111,20 @@ evs_otorgados = {
 }
 evoluciona_a = "empoleon"
 nivel_evolucion = 36
-aprende = Array[ExtResource("1_quy5v")]([SubResource("Resource_v7yuk"), SubResource("Resource_n6ef2"), SubResource("Resource_emn7a"), SubResource("Resource_eh4p6"), SubResource("Resource_dk0xx"), SubResource("Resource_4d1ih"), SubResource("Resource_kolds"), SubResource("Resource_a2rdv"), SubResource("Resource_j14ro"), SubResource("Resource_oflst"), SubResource("Resource_pwn3y"), SubResource("Resource_h7x80"), SubResource("Resource_4apde"), SubResource("Resource_t8ut7"), SubResource("Resource_r4cl2")])
+evoluciones = Array[Dictionary]([{
+"especie": "empoleon",
+"metodo": "nivel",
+"nivel": 36
+}])
+habilidades = PackedStringArray("torrent")
+habilidad_oculta = "defiant"
+categoria = "Pokémon Pingüino"
+altura = 0.8
+peso_kg = 23.0
+descripcion = "Vive solo, alejado de los demás. Cada uno piensa que es el más importante."
+aprende = Array[ExtResource("1_quy5v")]([SubResource("Resource_quy5v"), SubResource("Resource_31lvf"), SubResource("Resource_ns64f"), SubResource("Resource_yd5dr"), SubResource("Resource_voyh5"), SubResource("Resource_rwfgq"), SubResource("Resource_i2oa3"), SubResource("Resource_es53g"), SubResource("Resource_n3ma3"), SubResource("Resource_thblk"), SubResource("Resource_msjcp"), SubResource("Resource_vhgbs"), SubResource("Resource_c5hqf"), SubResource("Resource_vnuu1"), SubResource("Resource_iim1p")])
 sprite_frente = ExtResource("18_1sqm1")
 sprite_espalda = ExtResource("17_anbnr")
 cuadros_frente = 63
 cuadros_espalda = 63
 fps_sprite = 9.55
-habilidades = PackedStringArray("Torrente")
-habilidad_oculta = "Tenacidad"
-evoluciones = Array[Dictionary]([{"especie": "empoleon", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

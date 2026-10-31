@@ -25,6 +25,7 @@ var desplazando:= false
 var base_y :=0.0
 
 const LINEAS_VISIBLES:= 2
+const MAX_OPCIONES :=8
 
 func _ready() -> void:
 	layer= 110
@@ -76,15 +77,14 @@ func preguntar(contenido: String, opciones: Array= ["SÍ", "NO"]) -> int:
 	while escribiendo:
 		await get_tree().process_frame
 	flecha.visible= false
-	caja_opciones.size.y =10+ opciones.size()* 12
-	caja_opciones.position.y= 142- caja_opciones.size.y
-	var ancho:= 56.0
-	for o in opciones:
-		ancho= maxf(ancho, texto.get_theme_font("font").get_string_size(str(o), HORIZONTAL_ALIGNMENT_LEFT, -1, texto.get_theme_font_size("font_size")).x+ 24.0)
-	caja_opciones.size.x =ancho
-	caja_opciones.position.x= 252.0- ancho
-	lista.size.x= ancho- 8.0
+	lista.max_visibles= MAX_OPCIONES
+	lista.size.x =240.0
 	lista.poner(opciones)
+	var ancho:= maxf(56.0, lista.ancho_necesario()+ 12.0)
+	caja_opciones.size= Vector2(ancho, lista.alto_necesario()+ 10.0)
+	caja_opciones.position =Vector2(252.0- ancho, 142.0- caja_opciones.size.y)
+	lista.size= Vector2(ancho- 8.0, lista.alto_necesario())
+	lista.refrescar()
 	caja_opciones.visible= true
 	eligiendo =true
 	var r: int= await elegido

@@ -20,77 +20,73 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/magic_coat.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/zap_cannon.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_vj285"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_kgmc8"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_4r7aw"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_ak5wl"]
+script = ExtResource("2")
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_kckyf"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_sb86o"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_d6prf"]
 script = ExtResource("2")
 nivel = 18
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_lxq6k"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_fqh73"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_icsq7"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_etnmv"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_514hk"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_wdn4a"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_w3ugx"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_q6p0o"]
 script = ExtResource("2")
 nivel = 62
 movimiento = ExtResource("19")
@@ -101,8 +97,6 @@ id = "porygon"
 numero = 137
 nombre = "Porygon"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Calco", "Descarga")
-habilidad_oculta = "Cálculo Final"
 ps = 65
 ataque = 60
 defensa = 70
@@ -110,13 +104,22 @@ at_esp = 85
 def_esp = 75
 velocidad = 40
 exp_base = 79
-ratio_captura = 45
 ratio_genero = -1
-crecimiento = "medium"
-evs_otorgados = {"at_esp": 1}
-evoluciones = Array[Dictionary]([{"especie": "porygon2", "metodo": "intercambio", "condicion": "Intercambio equipado con mejora"}])
-evoluciona_a = "porygon2"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"at_esp": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "porygon2",
+"metodo": "intercambio",
+"objeto": "up_grade"
+}])
+habilidades = PackedStringArray("trace", "download")
+habilidad_oculta = "analytic"
+categoria = "Pokémon Virtual"
+altura = 0.8
+peso_kg = 36.5
+descripcion = "Pokémon creado por el hombre tras muchas investigaciones. Sus habilidades son básicas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_vj285"), SubResource("Resource_kgmc8"), SubResource("Resource_4r7aw"), SubResource("Resource_ak5wl"), SubResource("Resource_kckyf"), SubResource("Resource_sb86o"), SubResource("Resource_d6prf"), SubResource("Resource_lxq6k"), SubResource("Resource_fqh73"), SubResource("Resource_icsq7"), SubResource("Resource_etnmv"), SubResource("Resource_514hk"), SubResource("Resource_wdn4a"), SubResource("Resource_w3ugx"), SubResource("Resource_q6p0o")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 83

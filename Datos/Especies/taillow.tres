@@ -15,52 +15,50 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="14"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_avvvw"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_etyqj"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_6wdvy"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_xhdct"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_kpf6d"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_l5ur6"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_n1vj6"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_5hmru"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_muq15"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ehx7b"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("14")
@@ -71,8 +69,6 @@ id = "taillow"
 numero = 276
 nombre = "Taillow"
 tipos = PackedStringArray("normal", "volador")
-habilidades = PackedStringArray("Agallas")
-habilidad_oculta = "Intrépido"
 ps = 40
 ataque = 55
 defensa = 30
@@ -81,13 +77,24 @@ def_esp = 30
 velocidad = 85
 exp_base = 54
 ratio_captura = 200
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "swellow", "metodo": "nivel", "condicion": "Nivel 22", "nivel": 22}])
+evs_otorgados = {
+"velocidad": 1
+}
 evoluciona_a = "swellow"
 nivel_evolucion = 22
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9")])
+evoluciones = Array[Dictionary]([{
+"especie": "swellow",
+"metodo": "nivel",
+"nivel": 22
+}])
+habilidades = PackedStringArray("guts")
+habilidad_oculta = "scrappy"
+categoria = "Pokémon Pequebuche"
+altura = 0.3
+peso_kg = 2.3
+descripcion = "Es un Pokémon valiente que no teme a los rivales fuertes. Vuela en busca de climas templados."
+aprende = Array[ExtResource("2")]([SubResource("Resource_avvvw"), SubResource("Resource_etyqj"), SubResource("Resource_6wdvy"), SubResource("Resource_xhdct"), SubResource("Resource_kpf6d"), SubResource("Resource_l5ur6"), SubResource("Resource_n1vj6"), SubResource("Resource_5hmru"), SubResource("Resource_muq15"), SubResource("Resource_ehx7b")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 45

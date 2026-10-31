@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1")
 id = "bullet_punch"
-nombre = "Puño bala"
+nombre = "Puño Bala"
 tipo = "acero"
-categoria = "fisico"
 poder = 40
-precision = 100
 pp = 30
-objetivo = "selected-pokemon"
-meta = "damage"
+prioridad = 1
+descripcion = "Ataca con fuertes puñetazos tan rápidos como proyectiles. Este movimiento tiene prioridad alta."
+numero = 418
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")

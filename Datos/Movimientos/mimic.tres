@@ -6,10 +6,9 @@
 script = ExtResource("1")
 id = "mimic"
 nombre = "Mimético"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
+precision = 0
 meta = "unique"
+descripcion = "Copia el último movimiento usado por el objetivo, y puede utilizarlo mientras esté en el combate."
+numero = 102
+banderas = PackedStringArray("allyanim", "bypasssub", "failcopycat", "failencore", "failinstruct", "failmimic", "noassist", "nosleeptalk", "protect")

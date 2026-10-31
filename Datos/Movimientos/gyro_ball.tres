@@ -8,4 +8,6 @@ id = "gyro_ball"
 nombre = "Giro Bola"
 tipo = "acero"
 pp = 5
-descripcion = "Embiste al objetivo con un potente ataque giratorio. Cuanto más lento es el usuario, más daño causa. "
+descripcion = "Embiste al objetivo con un potente ataque giratorio. Cuanto más lento es el usuario, más daño causa."
+numero = 360
+banderas = PackedStringArray("bullet", "contact", "metronome", "mirror", "protect")

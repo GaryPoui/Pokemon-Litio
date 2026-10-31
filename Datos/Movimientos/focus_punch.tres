@@ -11,3 +11,5 @@ poder = 150
 pp = 20
 prioridad = -3
 descripcion = "Se concentra para dar un puñetazo. Falla si se sufre un golpe antes de su uso."
+numero = 264
+banderas = PackedStringArray("contact", "failcopycat", "failinstruct", "failmefirst", "noassist", "nosleeptalk", "protect", "punch")

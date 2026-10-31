@@ -13,3 +13,5 @@ objetivo = "user"
 meta = "heal"
 descripcion = "El usuario se relaja y restaura la mitad de sus PS máximos."
 curacion = 50
+numero = 303
+banderas = PackedStringArray("heal", "metronome", "snatch")

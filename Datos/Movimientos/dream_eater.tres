@@ -13,3 +13,5 @@ pp = 15
 meta = "damage-heal"
 descripcion = "Restaura al usuario la mitad del daño causado a un objetivo dormido."
 drenaje = 50
+numero = 138
+banderas = PackedStringArray("heal", "metronome", "mirror", "protect")

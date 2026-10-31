@@ -15,3 +15,5 @@ descripcion = "Adhiere esporas a los rivales para reducir mucho su Velocidad."
 cambios_stats = {
 "velocidad": -2
 }
+numero = 178
+banderas = PackedStringArray("metronome", "mirror", "powder", "protect", "reflectable")

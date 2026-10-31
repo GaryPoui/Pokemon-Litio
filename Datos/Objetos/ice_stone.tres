@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/ice_stone.png" id="1_21kko"]
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="2_cdbe8"]
+
+[resource]
+script = ExtResource("2_cdbe8")
+id = "ice_stone"
+nombre = "Piedra Hielo"
+descripcion = "Una piedra peculiar que hace evolucionar a algunos Pokémon. Presenta motivos que recuerdan a los cristales de hielo."
+precio = 2100
+icono = ExtResource("1_21kko")
+uso_especial = "evolucion"

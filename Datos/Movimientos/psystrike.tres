@@ -5,11 +5,10 @@
 [resource]
 script = ExtResource("1")
 id = "psystrike"
-nombre = "Onda mental"
+nombre = "Onda Mental"
 tipo = "psiquico"
 categoria = "especial"
 poder = 100
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Crea una onda psíquica que causa daño físico al objetivo."
+numero = 540
+banderas = PackedStringArray("metronome", "mirror", "protect")

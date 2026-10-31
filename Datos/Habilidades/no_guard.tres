@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_d5yrc"]
+
+[resource]
+script = ExtResource("1_d5yrc")
+id = "no_guard"
+nombre = "Indefenso"
+descripcion = "El movimiento del Pokémon y el del rival acertarán."

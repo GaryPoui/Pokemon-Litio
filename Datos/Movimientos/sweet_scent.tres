@@ -14,3 +14,5 @@ descripcion = "Un dulce aroma engatusa al objetivo, por lo que se reduce mucho s
 cambios_stats = {
 "evasion": -2
 }
+numero = 230
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")

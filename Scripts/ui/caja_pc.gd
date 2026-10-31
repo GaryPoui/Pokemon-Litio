@@ -39,7 +39,8 @@ func _ready() -> void:
 	$Caja/Titulo.text ="CAJA"
 	EstiloUI.label(nombre, 9)
 	EstiloUI.label(ayuda, 6, EstiloUI.TENUE)
-	EstiloUI.label($Caja/Flechas, 6, EstiloUI.TENUE)
+	EstiloUI.label($Caja/Flechas, 8, EstiloUI.TENUE)
+	EstiloUI.fuente_batalla($Caja/Flechas)
 	var m:= StyleBoxFlat.new()
 	m.bg_color= Color(0, 0, 0, 0)
 	m.set_border_width_all(2)
@@ -81,6 +82,9 @@ func _poner_icono(h: Panel, p: PokemonInstancia) -> void:
 	else:
 		ic.texture= EstiloUI.icono(p.especie)
 		ic.hframes =1
+	var base:= EstiloUI.posicion_icono(ic.texture, ic.hframes, TAM_CELDA/ 2.0+ Vector2(0, 1), true)
+	ic.set_meta("base", base)
+	ic.position= base
 
 func seleccionado() -> PokemonInstancia:
 	if lado== 0:
@@ -131,7 +135,7 @@ func _process(delta: float) -> void:
 		var elegido:= (lado== 0 and i== indice) or (lado== 1 and i- celdas_equipo.size()== indice- scroll* COLS_CAJA)
 		var fase:= int(tiempo/ (0.14 if elegido else 0.3))% 2
 		ic.frame= fase
-		ic.position.y =ICONO_Y- fase* (2 if elegido else 0)
+		ic.position.y =float(ic.get_meta("base", Vector2(0, ICONO_Y)).y)- fase* (2 if elegido else 0)
 
 func _unhandled_input(event: InputEvent) -> void:
 	if ocupado or GestorEscenas.en_transicion or Dialogo.esta_abierto:

@@ -17,62 +17,61 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/healing_wish.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/seed_flare.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_rd8ag"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_g3mkn"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_8a1hq"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_vjyu4"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_erxap"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_6oe5b"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_7048h"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_py2li"]
 script = ExtResource("2")
 nivel = 64
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_rr7wa"]
 script = ExtResource("2")
 nivel = 73
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_r6ojw"]
 script = ExtResource("2")
 nivel = 82
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_xtvrj"]
 script = ExtResource("2")
 nivel = 91
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_mc73r"]
 script = ExtResource("2")
 nivel = 100
 movimiento = ExtResource("16")
@@ -83,8 +82,6 @@ id = "shaymin"
 numero = 492
 nombre = "Shaymin"
 tipos = PackedStringArray("planta")
-habilidades = PackedStringArray("Curación Natural/Cura NaturalFT", "DichaFC")
-habilidad_oculta = ""
 ps = 100
 ataque = 100
 defensa = 100
@@ -92,12 +89,18 @@ at_esp = 100
 def_esp = 100
 velocidad = 100
 exp_base = 270
-ratio_captura = 45
 ratio_genero = -1
 crecimiento = "medium-slow"
-evs_otorgados = {"ps": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evs_otorgados = {
+"ps": 3
+}
+amistad_base = 100
+habilidades = PackedStringArray("natural_cure")
+categoria = "Pokémon Gratitud"
+altura = 0.2
+peso_kg = 2.1
+descripcion = "Puede disolver las toxinas del aire para transformar tierra yerma en campos de flores."
+aprende = Array[ExtResource("2")]([SubResource("Resource_rd8ag"), SubResource("Resource_g3mkn"), SubResource("Resource_8a1hq"), SubResource("Resource_vjyu4"), SubResource("Resource_erxap"), SubResource("Resource_6oe5b"), SubResource("Resource_7048h"), SubResource("Resource_py2li"), SubResource("Resource_rr7wa"), SubResource("Resource_r6ojw"), SubResource("Resource_xtvrj"), SubResource("Resource_mc73r")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 60

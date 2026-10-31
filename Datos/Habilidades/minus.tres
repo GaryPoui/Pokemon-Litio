@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_q7mn1"]
+
+[resource]
+script = ExtResource("1_q7mn1")
+id = "minus"
+nombre = "Menos"
+descripcion = "Potencia el At. Esp. si algún otro Pokémon tiene Más o Menos."

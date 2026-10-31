@@ -5,11 +5,12 @@
 [resource]
 script = ExtResource("1")
 id = "magic_room"
-nombre = "Zona mágica"
+nombre = "Zona Mágica"
 tipo = "psiquico"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
-meta = "unique"
+precision = 0
+objetivo = "entire-field"
+meta = "whole-field-effect"
+descripcion = "Crea un espacio misterioso que inutiliza todos los objetos de los Pokémon durante cinco turnos."
+numero = 478
+banderas = PackedStringArray("metronome", "mirror")

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dj6ib1dy0o2nf"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_xn3hb"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_xn3hb"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="2_1q3nv"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leech_life.tres" id="3_r3cbl"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="4_5byja"]
@@ -14,77 +14,77 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/poison_fang.tres" id="12_xp51n"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/haze.tres" id="13_dtiap"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="14_4ni1c"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_8p8tl"]
-[ext_resource type="Texture2D" uid="uid://dqvu2s1m0kl3s" path="res://Assets/Pokemones/batalla/golbat_espalda.png" id="16_534qk"]
-[ext_resource type="Texture2D" uid="uid://fr1rcvjhp8tb" path="res://Assets/Pokemones/batalla/golbat_frente.png" id="17_vrm41"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="15_8p8tl"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/golbat_espalda.png" id="16_534qk"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/golbat_frente.png" id="17_vrm41"]
 
-[sub_resource type="Resource" id="Resource_q4nmw"]
+[sub_resource type="Resource" id="Resource_xn3hb"]
 script = ExtResource("1_xn3hb")
 movimiento = ExtResource("2_1q3nv")
 
-[sub_resource type="Resource" id="Resource_ogwpw"]
+[sub_resource type="Resource" id="Resource_1q3nv"]
 script = ExtResource("1_xn3hb")
 movimiento = ExtResource("3_r3cbl")
 
-[sub_resource type="Resource" id="Resource_5m5ha"]
+[sub_resource type="Resource" id="Resource_r3cbl"]
 script = ExtResource("1_xn3hb")
 movimiento = ExtResource("4_5byja")
 
-[sub_resource type="Resource" id="Resource_udo44"]
+[sub_resource type="Resource" id="Resource_5byja"]
 script = ExtResource("1_xn3hb")
 movimiento = ExtResource("5_u3drb")
 
-[sub_resource type="Resource" id="Resource_6buc0"]
+[sub_resource type="Resource" id="Resource_u3drb"]
 script = ExtResource("1_xn3hb")
 nivel = 5
 movimiento = ExtResource("5_u3drb")
 
-[sub_resource type="Resource" id="Resource_23k7j"]
+[sub_resource type="Resource" id="Resource_ysocj"]
 script = ExtResource("1_xn3hb")
 nivel = 9
 movimiento = ExtResource("2_1q3nv")
 
-[sub_resource type="Resource" id="Resource_yjq63"]
+[sub_resource type="Resource" id="Resource_8m7wb"]
 script = ExtResource("1_xn3hb")
 nivel = 13
 movimiento = ExtResource("6_ysocj")
 
-[sub_resource type="Resource" id="Resource_4qnih"]
+[sub_resource type="Resource" id="Resource_pwq1r"]
 script = ExtResource("1_xn3hb")
 nivel = 17
 movimiento = ExtResource("7_8m7wb")
 
-[sub_resource type="Resource" id="Resource_gqpf7"]
+[sub_resource type="Resource" id="Resource_u0xcv"]
 script = ExtResource("1_xn3hb")
 nivel = 21
 movimiento = ExtResource("8_pwq1r")
 
-[sub_resource type="Resource" id="Resource_djrgh"]
+[sub_resource type="Resource" id="Resource_385lf"]
 script = ExtResource("1_xn3hb")
 nivel = 27
 movimiento = ExtResource("9_u0xcv")
 
-[sub_resource type="Resource" id="Resource_6g4yf"]
+[sub_resource type="Resource" id="Resource_becer"]
 script = ExtResource("1_xn3hb")
 nivel = 33
 movimiento = ExtResource("10_385lf")
 
-[sub_resource type="Resource" id="Resource_tv8ms"]
+[sub_resource type="Resource" id="Resource_xp51n"]
 script = ExtResource("1_xn3hb")
 nivel = 39
 movimiento = ExtResource("11_becer")
 
-[sub_resource type="Resource" id="Resource_2iclx"]
+[sub_resource type="Resource" id="Resource_dtiap"]
 script = ExtResource("1_xn3hb")
 nivel = 45
 movimiento = ExtResource("12_xp51n")
 
-[sub_resource type="Resource" id="Resource_88vtw"]
+[sub_resource type="Resource" id="Resource_4ni1c"]
 script = ExtResource("1_xn3hb")
 nivel = 51
 movimiento = ExtResource("13_dtiap")
 
-[sub_resource type="Resource" id="Resource_56f2f"]
+[sub_resource type="Resource" id="Resource_8p8tl"]
 script = ExtResource("1_xn3hb")
 nivel = 57
 movimiento = ExtResource("14_4ni1c")
@@ -94,7 +94,7 @@ script = ExtResource("15_8p8tl")
 id = "golbat"
 numero = 42
 nombre = "Golbat"
-tipos = ["veneno", "volador"]
+tipos = PackedStringArray("veneno", "volador")
 ps = 75
 ataque = 80
 defensa = 70
@@ -106,13 +106,20 @@ ratio_captura = 90
 evs_otorgados = {
 "velocidad": 2
 }
-aprende = Array[ExtResource("1_xn3hb")]([SubResource("Resource_q4nmw"), SubResource("Resource_ogwpw"), SubResource("Resource_5m5ha"), SubResource("Resource_udo44"), SubResource("Resource_6buc0"), SubResource("Resource_23k7j"), SubResource("Resource_yjq63"), SubResource("Resource_4qnih"), SubResource("Resource_gqpf7"), SubResource("Resource_djrgh"), SubResource("Resource_6g4yf"), SubResource("Resource_tv8ms"), SubResource("Resource_2iclx"), SubResource("Resource_88vtw"), SubResource("Resource_56f2f")])
+evoluciones = Array[Dictionary]([{
+"amistad": 220,
+"especie": "crobat",
+"metodo": "amistad"
+}])
+habilidades = PackedStringArray("inner_focus")
+habilidad_oculta = "infiltrator"
+categoria = "Pokémon Murciélago"
+altura = 1.6
+peso_kg = 55.0
+descripcion = "Cuando ataque, seguirá chupando energía de su víctima, aunque pese tanto que ya no pueda volar."
+aprende = Array[ExtResource("1_xn3hb")]([SubResource("Resource_xn3hb"), SubResource("Resource_1q3nv"), SubResource("Resource_r3cbl"), SubResource("Resource_5byja"), SubResource("Resource_u3drb"), SubResource("Resource_ysocj"), SubResource("Resource_8m7wb"), SubResource("Resource_pwq1r"), SubResource("Resource_u0xcv"), SubResource("Resource_385lf"), SubResource("Resource_becer"), SubResource("Resource_xp51n"), SubResource("Resource_dtiap"), SubResource("Resource_4ni1c"), SubResource("Resource_8p8tl")])
 sprite_frente = ExtResource("17_vrm41")
 sprite_espalda = ExtResource("16_534qk")
 cuadros_frente = 16
 cuadros_espalda = 16
 fps_sprite = 20.0
-habilidades = PackedStringArray("Fuerza Mental")
-habilidad_oculta = "Allanamiento"
-evoluciones = Array[Dictionary]([{"especie": "crobat", "metodo": "amistad", "condicion": "Amistad + nivel"}])
-evoluciona_a = "crobat"

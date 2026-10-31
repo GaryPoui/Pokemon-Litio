@@ -14,3 +14,5 @@ objetivo = "all-opponents"
 meta = "ailment"
 descripcion = "Lanza una nube de gas tóxico al objetivo. Produce envenenamiento."
 estado = "poison"
+numero = 139
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")

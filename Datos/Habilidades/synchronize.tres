@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_xnmsi"]
+
+[resource]
+script = ExtResource("1_xnmsi")
+id = "synchronize"
+nombre = "Sincronía"
+descripcion = "Contagia envenenamiento, parálisis o quemaduras."

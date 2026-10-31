@@ -10,3 +10,5 @@ tipo = "veneno"
 categoria = "estado"
 meta = "unique"
 descripcion = "El usuario arroja sus jugos biliares al objetivo, lo que anula el efecto de la habilidad en uso."
+numero = 380
+banderas = PackedStringArray("allyanim", "metronome", "mirror", "protect", "reflectable")

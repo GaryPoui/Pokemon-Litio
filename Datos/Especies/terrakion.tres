@@ -19,72 +19,70 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/close_combat.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_ffs3h"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_poty3"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_1crrs"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_0qisa"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_oxlcx"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_gh1v8"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_hyau2"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_ve0f4"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_2031p"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_0eehx"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_qm1sh"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_xc5ik"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_1tnto"]
 script = ExtResource("2")
 nivel = 67
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_f413a"]
 script = ExtResource("2")
 nivel = 73
 movimiento = ExtResource("18")
@@ -95,8 +93,6 @@ id = "terrakion"
 numero = 639
 nombre = "Terrakion"
 tipos = PackedStringArray("roca", "lucha")
-habilidades = PackedStringArray("Justiciero")
-habilidad_oculta = ""
 ps = 91
 ataque = 129
 defensa = 90
@@ -107,9 +103,16 @@ exp_base = 261
 ratio_captura = 3
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"ataque": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+evs_otorgados = {
+"ataque": 3
+}
+amistad_base = 35
+habilidades = PackedStringArray("justified")
+categoria = "Pokémon Gruta"
+altura = 1.9
+peso_kg = 260.0
+descripcion = "Su potencia al embestir es capaz de derribar las murallas de un castillo. Las leyendas hablan de sus proezas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_ffs3h"), SubResource("Resource_poty3"), SubResource("Resource_1crrs"), SubResource("Resource_0qisa"), SubResource("Resource_oxlcx"), SubResource("Resource_gh1v8"), SubResource("Resource_hyau2"), SubResource("Resource_ve0f4"), SubResource("Resource_2031p"), SubResource("Resource_0eehx"), SubResource("Resource_qm1sh"), SubResource("Resource_xc5ik"), SubResource("Resource_1tnto"), SubResource("Resource_f413a")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 80

@@ -4,8 +4,10 @@
 [ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/pidgey_frente.png" id="3"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/pidgey_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="4_mg2ql"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlwind.tres" id="6_x2vo1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/twister.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/feather_dance.tres" id="9"]
@@ -17,62 +19,71 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hurricane.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_mg2ql"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_x2vo1"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_7bfx8"]
+script = ExtResource("2")
+nivel = 9
+movimiento = ExtResource("4_mg2ql")
+
+[sub_resource type="Resource" id="Resource_bmou2"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_xw8q2"]
+script = ExtResource("2")
+nivel = 17
+movimiento = ExtResource("6_x2vo1")
+
+[sub_resource type="Resource" id="Resource_72ey3"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_6uh12"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_eou52"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_qgsdu"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_b00pr"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_lvvdd"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_8yeva"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_qk53q"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_li2ra"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("16")
@@ -83,23 +94,31 @@ id = "pidgey"
 numero = 16
 nombre = "Pidgey"
 tipos = PackedStringArray("normal", "volador")
-habilidades = PackedStringArray("Perspicacia/Vista Lince", "Tambaleo/Tumbos")
-habilidad_oculta = "Sacapecho"
 ps = 40
 ataque = 45
 defensa = 40
 at_esp = 35
 def_esp = 35
 velocidad = 56
-exp_base = 50
 ratio_captura = 255
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "pidgeotto", "metodo": "nivel", "condicion": "Nivel 18", "nivel": 18}])
+evs_otorgados = {
+"velocidad": 1
+}
 evoluciona_a = "pidgeotto"
 nivel_evolucion = 18
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evoluciones = Array[Dictionary]([{
+"especie": "pidgeotto",
+"metodo": "nivel",
+"nivel": 18
+}])
+habilidades = PackedStringArray("keen_eye", "tangled_feet")
+habilidad_oculta = "big_pecks"
+categoria = "Pokémon Pajarito"
+altura = 0.3
+peso_kg = 1.8
+descripcion = "Muy común en bosques y selvas. Aletea al nivel del suelo para levantar la gravilla."
+aprende = Array[ExtResource("2")]([SubResource("Resource_mg2ql"), SubResource("Resource_x2vo1"), SubResource("Resource_7bfx8"), SubResource("Resource_bmou2"), SubResource("Resource_xw8q2"), SubResource("Resource_72ey3"), SubResource("Resource_6uh12"), SubResource("Resource_eou52"), SubResource("Resource_qgsdu"), SubResource("Resource_b00pr"), SubResource("Resource_lvvdd"), SubResource("Resource_8yeva"), SubResource("Resource_qk53q"), SubResource("Resource_li2ra")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 20

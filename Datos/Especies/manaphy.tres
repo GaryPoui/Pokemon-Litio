@@ -9,6 +9,7 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_glow.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/charm.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="9"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlpool.tres" id="9_g3ln5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble_beam.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/acid_armor.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/water_pulse.tres" id="12"]
@@ -17,62 +18,64 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/heart_swap.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_g3ln5"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_bdvte"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_1a7an"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_i5kfq"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_wfj88"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_n48yl"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_jwgjq"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_65xvj"]
+script = ExtResource("2")
+nivel = 39
+movimiento = ExtResource("9_g3ln5")
+
+[sub_resource type="Resource" id="Resource_mo8bl"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_yiyug"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_pfm1d"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_j4twx"]
 script = ExtResource("2")
 nivel = 69
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_xbol4"]
 script = ExtResource("2")
 nivel = 76
 movimiento = ExtResource("16")
@@ -83,8 +86,6 @@ id = "manaphy"
 numero = 490
 nombre = "Manaphy"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Hidratación")
-habilidad_oculta = ""
 ps = 100
 ataque = 100
 defensa = 100
@@ -95,12 +96,16 @@ exp_base = 270
 ratio_captura = 3
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"ps": 3}
-evoluciones = Array[Dictionary]([{"especie": "phione", "metodo": "especial", "condicion": "Criando de Manaphy junto con un Ditto"}])
-evoluciona_a = "phione"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evs_otorgados = {
+"ps": 3
+}
+habilidades = PackedStringArray("hydration")
+categoria = "Pokémon Náutico"
+altura = 0.3
+peso_kg = 1.4
+descripcion = "Nace con un maravilloso poder que le permite establecer vínculos con cualquier tipo de Pokémon."
+aprende = Array[ExtResource("2")]([SubResource("Resource_g3ln5"), SubResource("Resource_bdvte"), SubResource("Resource_1a7an"), SubResource("Resource_i5kfq"), SubResource("Resource_wfj88"), SubResource("Resource_n48yl"), SubResource("Resource_jwgjq"), SubResource("Resource_65xvj"), SubResource("Resource_mo8bl"), SubResource("Resource_yiyug"), SubResource("Resource_pfm1d"), SubResource("Resource_j4twx"), SubResource("Resource_xbol4")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 60
 cuadros_espalda = 60
-fps_sprite = 10.0

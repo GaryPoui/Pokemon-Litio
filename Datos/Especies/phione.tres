@@ -8,6 +8,7 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/water_sport.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/charm.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlpool.tres" id="8_14d32"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble_beam.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/acid_armor.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/water_pulse.tres" id="11"]
@@ -15,52 +16,55 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/dive.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="14"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_14d32"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_bam8v"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_gc5g3"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_trgkg"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_k81lr"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_s5pqn"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_3hxei"]
+script = ExtResource("2")
+nivel = 39
+movimiento = ExtResource("8_14d32")
+
+[sub_resource type="Resource" id="Resource_3ppoo"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_hcfao"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_bsncg"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_rtpx5"]
 script = ExtResource("2")
 nivel = 69
 movimiento = ExtResource("14")
@@ -71,8 +75,6 @@ id = "phione"
 numero = 489
 nombre = "Phione"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Hidratación")
-habilidad_oculta = ""
 ps = 80
 ataque = 80
 defensa = 80
@@ -83,11 +85,16 @@ exp_base = 216
 ratio_captura = 30
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9")])
+evs_otorgados = {
+"ps": 1
+}
+habilidades = PackedStringArray("hydration")
+categoria = "Pokémon Marino"
+altura = 0.4
+peso_kg = 3.1
+descripcion = "Si sube la temperatura del mar, infla el flotador de su cabeza y flota en grupo en la superficie."
+aprende = Array[ExtResource("2")]([SubResource("Resource_14d32"), SubResource("Resource_bam8v"), SubResource("Resource_gc5g3"), SubResource("Resource_trgkg"), SubResource("Resource_k81lr"), SubResource("Resource_s5pqn"), SubResource("Resource_3hxei"), SubResource("Resource_3ppoo"), SubResource("Resource_hcfao"), SubResource("Resource_bsncg"), SubResource("Resource_rtpx5")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 72
 cuadros_espalda = 72
-fps_sprite = 10.0

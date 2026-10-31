@@ -11,7 +11,6 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/horn_attack.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fury_attack.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/aerial_ace.tres" id="11"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/chip_away.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/counter.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/brick_break.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="15"]
@@ -20,79 +19,69 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/megahorn.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_2vowm"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_im444"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_ges15"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_5qttu"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_gr76o"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_ucubs"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_wwmly"]
 script = ExtResource("2")
-nivel = 10
+nivel = 13
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 16
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_4klfu"]
 script = ExtResource("2")
 nivel = 19
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 25
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_ep8xt"]
 script = ExtResource("2")
-nivel = 28
+nivel = 25
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_85y68"]
+script = ExtResource("2")
+nivel = 31
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 34
-movimiento = ExtResource("16")
-
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_rnh5h"]
 script = ExtResource("2")
 nivel = 37
-movimiento = ExtResource("17")
+movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_lbikm"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_thdwh"]
 script = ExtResource("2")
-nivel = 46
+nivel = 49
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Resource_s0kn5"]
+script = ExtResource("2")
+nivel = 55
 movimiento = ExtResource("19")
 
 [resource]
@@ -101,8 +90,6 @@ id = "heracross"
 numero = 214
 nombre = "Heracross"
 tipos = PackedStringArray("bicho", "lucha")
-habilidades = PackedStringArray("Enjambre", "Agallas")
-habilidad_oculta = "Autoestima"
 ps = 80
 ataque = 125
 defensa = 75
@@ -110,12 +97,17 @@ at_esp = 40
 def_esp = 95
 velocidad = 85
 exp_base = 175
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"ataque": 2
+}
+habilidades = PackedStringArray("swarm", "guts")
+habilidad_oculta = "moxie"
+categoria = "Pokémon Cuerno"
+altura = 1.5
+peso_kg = 54.0
+descripcion = "Este fuerte Pokémon clava su preciado cuerno en la tripa del enemigo, lo eleva y luego lo arroja."
+aprende = Array[ExtResource("2")]([SubResource("Resource_2vowm"), SubResource("Resource_im444"), SubResource("Resource_ges15"), SubResource("Resource_5qttu"), SubResource("Resource_gr76o"), SubResource("Resource_ucubs"), SubResource("Resource_wwmly"), SubResource("Resource_4klfu"), SubResource("Resource_ep8xt"), SubResource("Resource_85y68"), SubResource("Resource_rnh5h"), SubResource("Resource_lbikm"), SubResource("Resource_thdwh"), SubResource("Resource_s0kn5")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 77

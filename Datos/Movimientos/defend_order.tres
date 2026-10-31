@@ -5,11 +5,16 @@
 [resource]
 script = ExtResource("1")
 id = "defend_order"
-nombre = "A defender"
+nombre = "A Defender"
 tipo = "bicho"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 10
+precision = 0
 objetivo = "user"
-meta = "unique"
+meta = "net-good-stats"
+descripcion = "El usuario llama a sus súbditos para que formen un escudo viviente. Sube la Defensa y la Defensa Especial."
+cambios_stats = {
+"def_esp": 1,
+"defensa": 1
+}
+numero = 455
+banderas = PackedStringArray("metronome", "snatch")

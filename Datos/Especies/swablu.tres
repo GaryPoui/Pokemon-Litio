@@ -11,7 +11,6 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/fury_attack.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/safeguard.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mist.tres" id="11"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/round.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/natural_gift.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/refresh.tres" id="15"]
@@ -20,79 +19,72 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/dragon_pulse.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/perish_song.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_ini8g"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_wm33t"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_25r4i"]
 script = ExtResource("2")
-nivel = 4
+nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_bb3qn"]
 script = ExtResource("2")
-nivel = 8
+nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 10
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_o41hn"]
 script = ExtResource("2")
 nivel = 13
-movimiento = ExtResource("10")
+movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 15
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_1jp6d"]
 script = ExtResource("2")
 nivel = 18
-movimiento = ExtResource("12")
+movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_34ce8"]
 script = ExtResource("2")
-nivel = 21
-movimiento = ExtResource("13")
+nivel = 23
+movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_wkuh7"]
 script = ExtResource("2")
-nivel = 25
+nivel = 28
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_6d8yb"]
 script = ExtResource("2")
-nivel = 29
-movimiento = ExtResource("15")
+nivel = 32
+movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_0d4d2"]
 script = ExtResource("2")
-nivel = 34
+nivel = 36
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_k5q51"]
 script = ExtResource("2")
-nivel = 39
+nivel = 40
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_bebua"]
 script = ExtResource("2")
-nivel = 42
+nivel = 45
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Resource_vxrfa"]
+script = ExtResource("2")
+nivel = 50
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_670lq"]
 script = ExtResource("2")
-nivel = 48
+nivel = 55
 movimiento = ExtResource("19")
 
 [resource]
@@ -101,23 +93,31 @@ id = "swablu"
 numero = 333
 nombre = "Swablu"
 tipos = PackedStringArray("normal", "volador")
-habilidades = PackedStringArray("Curación Natural/Cura Natural")
-habilidad_oculta = "Aclimatación"
 ps = 45
 ataque = 40
 defensa = 60
 at_esp = 40
 def_esp = 75
-velocidad = 50
 exp_base = 62
 ratio_captura = 255
-ratio_genero = 4
 crecimiento = "slow-then-very-fast"
-evs_otorgados = {"def_esp": 1}
-evoluciones = Array[Dictionary]([{"especie": "altaria", "metodo": "nivel", "condicion": "Nivel 35", "nivel": 35}])
+evs_otorgados = {
+"def_esp": 1
+}
 evoluciona_a = "altaria"
 nivel_evolucion = 35
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evoluciones = Array[Dictionary]([{
+"especie": "altaria",
+"metodo": "nivel",
+"nivel": 35
+}])
+habilidades = PackedStringArray("natural_cure")
+habilidad_oculta = "cloud_nine"
+categoria = "Pokémon Ave Algodón"
+altura = 0.4
+peso_kg = 1.2
+descripcion = "Se desconoce el porqué, pero le encanta posarse sobre la cabeza de los humanos y fingir que es un gorro."
+aprende = Array[ExtResource("2")]([SubResource("Resource_ini8g"), SubResource("Resource_wm33t"), SubResource("Resource_25r4i"), SubResource("Resource_bb3qn"), SubResource("Resource_o41hn"), SubResource("Resource_1jp6d"), SubResource("Resource_34ce8"), SubResource("Resource_wkuh7"), SubResource("Resource_6d8yb"), SubResource("Resource_0d4d2"), SubResource("Resource_k5q51"), SubResource("Resource_bebua"), SubResource("Resource_vxrfa"), SubResource("Resource_670lq")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 12

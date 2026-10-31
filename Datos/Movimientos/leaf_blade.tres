@@ -11,3 +11,5 @@ poder = 90
 pp = 15
 descripcion = "Acuchilla con una hoja fina. Suele dar un golpe crítico."
 critico = 1
+numero = 348
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "slicing")

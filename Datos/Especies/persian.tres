@@ -13,7 +13,6 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/taunt.tres" id="13"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/swift.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/power_gem.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="17"]
@@ -22,97 +21,87 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/night_slash.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/feint.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_m4ngx"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_vwqlp"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_41t1r"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_jgjh8"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_wx0fx"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_s1rqp"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_swel5"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_erf88"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_d2ugf"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_hmyfr"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_6cb2w"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 28
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_rkn1d"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_gd60t"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_eo20t"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_af5ay"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_moct8"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_6qot4"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_hd0v4"]
 script = ExtResource("2")
 nivel = 68
 movimiento = ExtResource("21")
@@ -123,8 +112,6 @@ id = "persian"
 numero = 53
 nombre = "Persian"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Flexibilidad", "Experto")
-habilidad_oculta = "Nerviosismo"
 ps = 65
 ataque = 70
 defensa = 60
@@ -133,13 +120,17 @@ def_esp = 65
 velocidad = 115
 exp_base = 154
 ratio_captura = 90
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18")])
+evs_otorgados = {
+"velocidad": 2
+}
+habilidades = PackedStringArray("limber", "technician")
+habilidad_oculta = "unnerve"
+categoria = "Pokémon Gato Fino"
+altura = 1.0
+peso_kg = 32.0
+descripcion = "Aunque es muy admirado por el pelo, es difícil de entrenar como mascota, porque es un poco travieso."
+aprende = Array[ExtResource("2")]([SubResource("Resource_m4ngx"), SubResource("Resource_vwqlp"), SubResource("Resource_41t1r"), SubResource("Resource_jgjh8"), SubResource("Resource_wx0fx"), SubResource("Resource_s1rqp"), SubResource("Resource_swel5"), SubResource("Resource_erf88"), SubResource("Resource_d2ugf"), SubResource("Resource_hmyfr"), SubResource("Resource_6cb2w"), SubResource("Resource_rkn1d"), SubResource("Resource_gd60t"), SubResource("Resource_eo20t"), SubResource("Resource_af5ay"), SubResource("Resource_moct8"), SubResource("Resource_6qot4"), SubResource("Resource_hd0v4")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 27
 cuadros_espalda = 27
-fps_sprite = 10.0

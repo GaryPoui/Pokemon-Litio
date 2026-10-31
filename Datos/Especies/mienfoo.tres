@@ -21,82 +21,81 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/aura_sphere.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_edlrb"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_6rp1p"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_63hpc"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_p0uw3"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_ny1f8"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_80gmx"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_5wl04"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_2pyao"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_k3lut"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_e4yqq"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_sjnjc"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_vvnys"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_1ik7l"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_glxsv"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_tmvkt"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_2kn8t"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("20")
@@ -107,23 +106,30 @@ id = "mienfoo"
 numero = 619
 nombre = "Mienfoo"
 tipos = PackedStringArray("lucha")
-habilidades = PackedStringArray("Fuerza Mental", "Regeneración")
-habilidad_oculta = "Audaz"
 ps = 45
 ataque = 85
-defensa = 50
 at_esp = 55
-def_esp = 50
 velocidad = 65
 exp_base = 70
 ratio_captura = 180
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "mienshao", "metodo": "nivel", "condicion": "Nivel 50", "nivel": 50}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "mienshao"
 nivel_evolucion = 50
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evoluciones = Array[Dictionary]([{
+"especie": "mienshao",
+"metodo": "nivel",
+"nivel": 50
+}])
+habilidades = PackedStringArray("inner_focus", "regenerator")
+habilidad_oculta = "reckless"
+categoria = "Pokémon Arte Marcial"
+altura = 0.9
+peso_kg = 20.0
+descripcion = "La velocidad de sus ataques es su gran orgullo. Lo que le falta de fuerza bruta lo compensa en cantidad de golpes."
+aprende = Array[ExtResource("2")]([SubResource("Resource_edlrb"), SubResource("Resource_6rp1p"), SubResource("Resource_63hpc"), SubResource("Resource_p0uw3"), SubResource("Resource_ny1f8"), SubResource("Resource_80gmx"), SubResource("Resource_5wl04"), SubResource("Resource_2pyao"), SubResource("Resource_k3lut"), SubResource("Resource_e4yqq"), SubResource("Resource_sjnjc"), SubResource("Resource_vvnys"), SubResource("Resource_1ik7l"), SubResource("Resource_glxsv"), SubResource("Resource_tmvkt"), SubResource("Resource_2kn8t")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 80

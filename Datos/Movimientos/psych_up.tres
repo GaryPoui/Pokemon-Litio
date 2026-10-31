@@ -10,3 +10,5 @@ categoria = "estado"
 precision = 0
 meta = "unique"
 descripcion = "Quien lo usa se sume en un trance y copia cualquier cambio que haya en las características de su objetivo."
+numero = 244
+banderas = PackedStringArray("allyanim", "bypasssub", "metronome")

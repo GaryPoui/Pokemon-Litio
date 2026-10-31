@@ -16,97 +16,99 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/tailwind.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/crush_claw.tres" id="16"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlwind.tres" id="16_xdmin"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sky_drop.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/superpower.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/brave_bird.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_xdmin"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_qu47p"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
+movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_3ffbg"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_jjct2"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_xdspb"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_rwpwj"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_7tu2r"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_plysv"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_utl3q"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_00vju"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_k1rc1"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_al0uo"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_mg4be"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_w3meb"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_xpql1"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_x8etu"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_plshl"]
+script = ExtResource("2")
+nivel = 57
+movimiento = ExtResource("16_xdmin")
+
+[sub_resource type="Resource" id="Resource_5vkqn"]
 script = ExtResource("2")
 nivel = 63
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_fvwv1"]
 script = ExtResource("2")
 nivel = 70
 movimiento = ExtResource("20")
@@ -117,8 +119,6 @@ id = "braviary"
 numero = 628
 nombre = "Braviary"
 tipos = PackedStringArray("normal", "volador")
-habilidades = PackedStringArray("Perspicacia/Vista Lince", "Potencia Bruta")
-habilidad_oculta = "Competitivo"
 ps = 100
 ataque = 123
 defensa = 75
@@ -129,11 +129,17 @@ exp_base = 179
 ratio_captura = 60
 ratio_genero = 0
 crecimiento = "slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"ataque": 2
+}
+habilidades = PackedStringArray("keen_eye", "sheer_force")
+habilidad_oculta = "defiant"
+categoria = "Pokémon Aguerrido"
+altura = 1.5
+peso_kg = 41.0
+descripcion = "Un valiente guerrero del cielo que no duda en luchar por sus compañeros por graves que sean sus heridas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_xdmin"), SubResource("Resource_qu47p"), SubResource("Resource_3ffbg"), SubResource("Resource_jjct2"), SubResource("Resource_xdspb"), SubResource("Resource_rwpwj"), SubResource("Resource_7tu2r"), SubResource("Resource_plysv"), SubResource("Resource_utl3q"), SubResource("Resource_00vju"), SubResource("Resource_k1rc1"), SubResource("Resource_al0uo"), SubResource("Resource_mg4be"), SubResource("Resource_w3meb"), SubResource("Resource_xpql1"), SubResource("Resource_x8etu"), SubResource("Resource_plshl"), SubResource("Resource_5vkqn"), SubResource("Resource_fvwv1")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 21
 cuadros_espalda = 21
-fps_sprite = 10.0

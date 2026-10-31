@@ -15,52 +15,45 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/leaf_blade.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="14"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_3006j"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("10")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_dx85d"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_mrxke"]
+script = ExtResource("2")
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Resource_l1cil"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_377n3"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_o8nw7"]
+script = ExtResource("2")
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_1istl"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_5k17i"]
 script = ExtResource("2")
 nivel = 27
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_sw8tt"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_2womo"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("14")
@@ -71,23 +64,25 @@ id = "victreebel"
 numero = 71
 nombre = "Victreebel"
 tipos = PackedStringArray("planta", "veneno")
-habilidades = PackedStringArray("Clorofila")
-habilidad_oculta = "Gula"
 ps = 80
 ataque = 105
 defensa = 65
 at_esp = 100
-def_esp = 70
+def_esp = 60
 velocidad = 70
-exp_base = 216
-ratio_captura = 45
-ratio_genero = 4
+exp_base = 221
 crecimiento = "medium-slow"
-evs_otorgados = {"ataque": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9")])
+evs_otorgados = {
+"ataque": 3
+}
+habilidades = PackedStringArray("chlorophyll")
+habilidad_oculta = "gluttony"
+categoria = "Pokémon Matamoscas"
+altura = 1.7
+peso_kg = 15.5
+descripcion = "Dicen que vive en grandes colonias en el interior de las junglas, aunque nadie ha podido verificarlo."
+aprende = Array[ExtResource("2")]([SubResource("Resource_3006j"), SubResource("Resource_dx85d"), SubResource("Resource_mrxke"), SubResource("Resource_l1cil"), SubResource("Resource_377n3"), SubResource("Resource_o8nw7"), SubResource("Resource_1istl"), SubResource("Resource_5k17i"), SubResource("Resource_sw8tt"), SubResource("Resource_2womo")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 18
 cuadros_espalda = 18
-fps_sprite = 10.0

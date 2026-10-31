@@ -21,92 +21,92 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/vanilluxe_espalda.png" id="19_qt8b3"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/vanilluxe_frente.png" id="20_mrfgf"]
 
-[sub_resource type="Resource" id="Resource_nf23v"]
+[sub_resource type="Resource" id="Resource_a0rgv"]
 script = ExtResource("1_a0rgv")
 movimiento = ExtResource("2_5ymcb")
 
-[sub_resource type="Resource" id="Resource_sf0jr"]
+[sub_resource type="Resource" id="Resource_5ymcb"]
 script = ExtResource("1_a0rgv")
 movimiento = ExtResource("3_t0me8")
 
-[sub_resource type="Resource" id="Resource_xgmjb"]
+[sub_resource type="Resource" id="Resource_t0me8"]
 script = ExtResource("1_a0rgv")
 movimiento = ExtResource("4_f8ysy")
 
-[sub_resource type="Resource" id="Resource_hdtat"]
+[sub_resource type="Resource" id="Resource_f8ysy"]
 script = ExtResource("1_a0rgv")
 movimiento = ExtResource("5_ubd0t")
 
-[sub_resource type="Resource" id="Resource_ok70x"]
+[sub_resource type="Resource" id="Resource_ubd0t"]
 script = ExtResource("1_a0rgv")
 movimiento = ExtResource("6_t76xm")
 
-[sub_resource type="Resource" id="Resource_ssy0h"]
+[sub_resource type="Resource" id="Resource_t76xm"]
 script = ExtResource("1_a0rgv")
 nivel = 4
 movimiento = ExtResource("3_t0me8")
 
-[sub_resource type="Resource" id="Resource_x0ren"]
+[sub_resource type="Resource" id="Resource_eokx2"]
 script = ExtResource("1_a0rgv")
 nivel = 7
 movimiento = ExtResource("2_5ymcb")
 
-[sub_resource type="Resource" id="Resource_so6ef"]
+[sub_resource type="Resource" id="Resource_1erdt"]
 script = ExtResource("1_a0rgv")
 nivel = 10
 movimiento = ExtResource("5_ubd0t")
 
-[sub_resource type="Resource" id="Resource_6g0ca"]
+[sub_resource type="Resource" id="Resource_rjkvj"]
 script = ExtResource("1_a0rgv")
 nivel = 13
 movimiento = ExtResource("7_eokx2")
 
-[sub_resource type="Resource" id="Resource_khwqi"]
+[sub_resource type="Resource" id="Resource_wg0r5"]
 script = ExtResource("1_a0rgv")
 nivel = 16
 movimiento = ExtResource("8_1erdt")
 
-[sub_resource type="Resource" id="Resource_bd0vk"]
+[sub_resource type="Resource" id="Resource_upt28"]
 script = ExtResource("1_a0rgv")
 nivel = 19
 movimiento = ExtResource("9_rjkvj")
 
-[sub_resource type="Resource" id="Resource_kec7j"]
+[sub_resource type="Resource" id="Resource_1l5bv"]
 script = ExtResource("1_a0rgv")
 nivel = 22
 movimiento = ExtResource("10_wg0r5")
 
-[sub_resource type="Resource" id="Resource_o3vk6"]
+[sub_resource type="Resource" id="Resource_gskgt"]
 script = ExtResource("1_a0rgv")
 nivel = 26
 movimiento = ExtResource("11_upt28")
 
-[sub_resource type="Resource" id="Resource_lru1f"]
+[sub_resource type="Resource" id="Resource_r7ns8"]
 script = ExtResource("1_a0rgv")
 nivel = 31
 movimiento = ExtResource("12_1l5bv")
 
-[sub_resource type="Resource" id="Resource_7ld7h"]
+[sub_resource type="Resource" id="Resource_oh6e6"]
 script = ExtResource("1_a0rgv")
 nivel = 36
 movimiento = ExtResource("13_gskgt")
 
-[sub_resource type="Resource" id="Resource_0b4yh"]
+[sub_resource type="Resource" id="Resource_uj3hn"]
 script = ExtResource("1_a0rgv")
 nivel = 42
 movimiento = ExtResource("14_r7ns8")
 
-[sub_resource type="Resource" id="Resource_s3ljw"]
+[sub_resource type="Resource" id="Resource_2i63r"]
 script = ExtResource("1_a0rgv")
 nivel = 50
 movimiento = ExtResource("15_oh6e6")
 
-[sub_resource type="Resource" id="Resource_p8igm"]
+[sub_resource type="Resource" id="Resource_nevpl"]
 script = ExtResource("1_a0rgv")
 nivel = 59
 movimiento = ExtResource("16_uj3hn")
 
-[sub_resource type="Resource" id="Resource_dhana"]
+[sub_resource type="Resource" id="Resource_qt8b3"]
 script = ExtResource("1_a0rgv")
 nivel = 67
 movimiento = ExtResource("17_2i63r")
@@ -116,7 +116,7 @@ script = ExtResource("18_nevpl")
 id = "vanilluxe"
 numero = 584
 nombre = "Vanilluxe"
-tipos = ["hielo"]
+tipos = PackedStringArray("hielo")
 ps = 71
 ataque = 95
 defensa = 85
@@ -128,12 +128,15 @@ crecimiento = "slow"
 evs_otorgados = {
 "at_esp": 3
 }
-aprende = Array[ExtResource("1_a0rgv")]([SubResource("Resource_nf23v"), SubResource("Resource_sf0jr"), SubResource("Resource_xgmjb"), SubResource("Resource_hdtat"), SubResource("Resource_ok70x"), SubResource("Resource_ssy0h"), SubResource("Resource_x0ren"), SubResource("Resource_so6ef"), SubResource("Resource_6g0ca"), SubResource("Resource_khwqi"), SubResource("Resource_bd0vk"), SubResource("Resource_kec7j"), SubResource("Resource_o3vk6"), SubResource("Resource_lru1f"), SubResource("Resource_7ld7h"), SubResource("Resource_0b4yh"), SubResource("Resource_s3ljw"), SubResource("Resource_p8igm"), SubResource("Resource_dhana")])
+habilidades = PackedStringArray("ice_body")
+habilidad_oculta = "weak_armor"
+categoria = "Pokémon Nieve Gélida"
+altura = 1.3
+peso_kg = 57.5
+descripcion = "Si sus dos cabezas se irritan al mismo tiempo, genera una ventisca desde su cuerno cubriendo su entorno con nieve."
+aprende = Array[ExtResource("1_a0rgv")]([SubResource("Resource_a0rgv"), SubResource("Resource_5ymcb"), SubResource("Resource_t0me8"), SubResource("Resource_f8ysy"), SubResource("Resource_ubd0t"), SubResource("Resource_t76xm"), SubResource("Resource_eokx2"), SubResource("Resource_1erdt"), SubResource("Resource_rjkvj"), SubResource("Resource_wg0r5"), SubResource("Resource_upt28"), SubResource("Resource_1l5bv"), SubResource("Resource_gskgt"), SubResource("Resource_r7ns8"), SubResource("Resource_oh6e6"), SubResource("Resource_uj3hn"), SubResource("Resource_2i63r"), SubResource("Resource_nevpl"), SubResource("Resource_qt8b3")])
 sprite_frente = ExtResource("20_mrfgf")
 sprite_espalda = ExtResource("19_qt8b3")
 cuadros_frente = 169
 cuadros_espalda = 169
 fps_sprite = 15.16
-habilidades = PackedStringArray("Cuerpo de Hielo/Gélido", "Nevada")
-habilidad_oculta = "Armadura Frágil"
-evoluciones = Array[Dictionary]([])

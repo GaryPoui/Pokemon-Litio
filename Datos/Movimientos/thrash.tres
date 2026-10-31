@@ -9,3 +9,5 @@ nombre = "Saña"
 poder = 120
 objetivo = "random-opponent"
 descripcion = "Ataque de dos a tres turnos que acaba confundiendo al agresor."
+numero = 37
+banderas = PackedStringArray("contact", "failinstruct", "metronome", "mirror", "protect")

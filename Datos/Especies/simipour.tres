@@ -9,25 +9,21 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/fury_swipes.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="8"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_s07pt"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_u02la"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_urry8"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_26a25"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
 
 [resource]
 script = ExtResource("1")
@@ -35,8 +31,6 @@ id = "simipour"
 numero = 516
 nombre = "Simipour"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Gula")
-habilidad_oculta = "Torrente"
 ps = 75
 ataque = 98
 defensa = 63
@@ -46,10 +40,16 @@ velocidad = 101
 exp_base = 174
 ratio_captura = 75
 ratio_genero = 1
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+evs_otorgados = {
+"velocidad": 2
+}
+habilidades = PackedStringArray("gluttony")
+habilidad_oculta = "torrent"
+categoria = "Pokémon Drenaje"
+altura = 1.0
+peso_kg = 29.0
+descripcion = "Cuando lanza agua a alta presión con su cola, puede incluso resquebrajar una pared de cemento."
+aprende = Array[ExtResource("2")]([SubResource("Resource_s07pt"), SubResource("Resource_u02la"), SubResource("Resource_urry8"), SubResource("Resource_26a25")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 50

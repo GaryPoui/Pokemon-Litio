@@ -14,3 +14,5 @@ descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidar
 cambios_stats = {
 "at_esp": -2
 }
+numero = 445
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")

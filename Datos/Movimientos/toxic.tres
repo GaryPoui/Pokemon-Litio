@@ -12,3 +12,7 @@ precision = 90
 meta = "ailment"
 descripcion = "Envenena gravemente al objetivo y causa un daño mayor en cada turno."
 estado = "poison"
+numero = 92
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")
+turnos_min = 15
+turnos_max = 15

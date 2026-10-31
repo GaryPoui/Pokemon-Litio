@@ -11,4 +11,6 @@ categoria = "especial"
 poder = 150
 pp = 5
 objetivo = "all-opponents"
-descripcion = "Furia explosiva. Cuanto menor sea el número de PS del usuario, menos daño hará el ataque. "
+descripcion = "Furia explosiva. Cuanto menor sea el número de PS del usuario, menos daño hará el ataque."
+numero = 284
+banderas = PackedStringArray("metronome", "mirror", "protect")

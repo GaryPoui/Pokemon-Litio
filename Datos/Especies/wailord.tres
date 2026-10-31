@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/wailord_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/splash.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlpool.tres" id="6_yanm7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rollout.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="9"]
@@ -20,92 +21,93 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/heavy_slam.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_yanm7"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_w5vws"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_afur7"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_c2xr7"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_6emij"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_1n2f5"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_nesxp"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_n6ih5"]
+script = ExtResource("2")
+nivel = 14
+movimiento = ExtResource("6_yanm7")
+
+[sub_resource type="Resource" id="Resource_j1x7i"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_nnsy7"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_8sfba"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_8s5g0"]
 script = ExtResource("2")
 nivel = 27
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_nidp6"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_ovt3a"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_yw6ml"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_mspdd"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_mync2"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_mpw1e"]
 script = ExtResource("2")
 nivel = 62
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_lhlpd"]
 script = ExtResource("2")
 nivel = 70
 movimiento = ExtResource("19")
@@ -116,8 +118,6 @@ id = "wailord"
 numero = 321
 nombre = "Wailord"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Velo de Agua/Velo Agua", "Despistado/Despiste")
-habilidad_oculta = "Presión"
 ps = 170
 ataque = 90
 defensa = 45
@@ -126,13 +126,18 @@ def_esp = 45
 velocidad = 60
 exp_base = 175
 ratio_captura = 60
-ratio_genero = 4
 crecimiento = "fast-then-very-slow"
-evs_otorgados = {"ps": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"ps": 2
+}
+habilidades = PackedStringArray("water_veil", "oblivious")
+habilidad_oculta = "pressure"
+categoria = "Pokémon Ballenaflot"
+altura = 14.5
+peso_kg = 398.0
+descripcion = "Puede dejar fuera de combate a sus oponentes con el impacto de su enorme cuerpo al caer en el agua tras un salto."
+aprende = Array[ExtResource("2")]([SubResource("Resource_yanm7"), SubResource("Resource_w5vws"), SubResource("Resource_afur7"), SubResource("Resource_c2xr7"), SubResource("Resource_6emij"), SubResource("Resource_1n2f5"), SubResource("Resource_nesxp"), SubResource("Resource_n6ih5"), SubResource("Resource_j1x7i"), SubResource("Resource_nnsy7"), SubResource("Resource_8sfba"), SubResource("Resource_8s5g0"), SubResource("Resource_nidp6"), SubResource("Resource_ovt3a"), SubResource("Resource_yw6ml"), SubResource("Resource_mspdd"), SubResource("Resource_mync2"), SubResource("Resource_mpw1e"), SubResource("Resource_lhlpd")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 28
 cuadros_espalda = 28
-fps_sprite = 10.0

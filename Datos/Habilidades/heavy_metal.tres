@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_qv1xd"]
+
+[resource]
+script = ExtResource("1_qv1xd")
+id = "heavy_metal"
+nombre = "Metal Pesado"
+descripcion = "Duplica el peso del Pokémon."

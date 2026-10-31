@@ -23,92 +23,90 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/cotton_guard.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/after_you.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_i3cum"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_8lnfd"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_w1l3w"]
 script = ExtResource("2")
 nivel = 3
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_mrfjp"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_ue5ah"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_s65xb"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_8cnou"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_tfxwx"]
 script = ExtResource("2")
 nivel = 18
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_5bxpc"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_eciar"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_4o4l4"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_dwjdg"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_uqwol"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_h065s"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_48lrt"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_beq6h"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_j4wf2"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_v5e2f"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("22")
@@ -119,8 +117,6 @@ id = "maractus"
 numero = 556
 nombre = "Maractus"
 tipos = PackedStringArray("planta")
-habilidades = PackedStringArray("Absorbeagua/Absorbe Agua", "Clorofila")
-habilidad_oculta = "Colector"
 ps = 75
 ataque = 86
 defensa = 67
@@ -129,11 +125,16 @@ def_esp = 67
 velocidad = 60
 exp_base = 161
 ratio_captura = 255
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"at_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"at_esp": 2
+}
+habilidades = PackedStringArray("water_absorb", "chlorophyll")
+habilidad_oculta = "storm_drain"
+categoria = "Pokémon Cactus"
+altura = 1.0
+peso_kg = 28.0
+descripcion = "Espanta a los Pokémon pájaro con un baile rápido y haciendo ruido para evitar que picoteen las semillas de sus flores."
+aprende = Array[ExtResource("2")]([SubResource("Resource_i3cum"), SubResource("Resource_8lnfd"), SubResource("Resource_w1l3w"), SubResource("Resource_mrfjp"), SubResource("Resource_ue5ah"), SubResource("Resource_s65xb"), SubResource("Resource_8cnou"), SubResource("Resource_tfxwx"), SubResource("Resource_5bxpc"), SubResource("Resource_eciar"), SubResource("Resource_4o4l4"), SubResource("Resource_dwjdg"), SubResource("Resource_uqwol"), SubResource("Resource_h065s"), SubResource("Resource_48lrt"), SubResource("Resource_beq6h"), SubResource("Resource_j4wf2"), SubResource("Resource_v5e2f")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 84

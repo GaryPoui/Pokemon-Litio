@@ -20,87 +20,82 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/belly_drum.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fling.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_fhjrq"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_eo8i3"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_3kaev"]
+script = ExtResource("2")
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_fywq4"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_d5n3n"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_yykpx"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_yihks"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_nrmrm"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_xocdb"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_rp71q"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_uwav0"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_smsku"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_t4013"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_ixoxf"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_1wbdi"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_5j41w"]
 script = ExtResource("2")
 nivel = 59
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_8o1y8"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("19")
@@ -111,21 +106,23 @@ id = "linoone"
 numero = 264
 nombre = "Linoone"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Recolección/Recogida", "Gula")
-habilidad_oculta = "Pies Rápidos"
 ps = 78
 ataque = 70
 defensa = 61
-at_esp = 50
 def_esp = 61
 velocidad = 100
 exp_base = 147
 ratio_captura = 90
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"velocidad": 2
+}
+habilidades = PackedStringArray("pickup", "gluttony")
+habilidad_oculta = "quick_feet"
+categoria = "Pokémon Lanzado"
+altura = 0.5
+peso_kg = 32.5
+descripcion = "En línea recta corre a algo más de 100 km/h, pero no es tan hábil si hay curvas de por medio."
+aprende = Array[ExtResource("2")]([SubResource("Resource_fhjrq"), SubResource("Resource_eo8i3"), SubResource("Resource_3kaev"), SubResource("Resource_fywq4"), SubResource("Resource_d5n3n"), SubResource("Resource_yykpx"), SubResource("Resource_yihks"), SubResource("Resource_nrmrm"), SubResource("Resource_xocdb"), SubResource("Resource_rp71q"), SubResource("Resource_uwav0"), SubResource("Resource_smsku"), SubResource("Resource_t4013"), SubResource("Resource_ixoxf"), SubResource("Resource_1wbdi"), SubResource("Resource_5j41w"), SubResource("Resource_8o1y8")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 65

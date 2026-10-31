@@ -16,57 +16,55 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/roost.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/drill_peck.tres" id="15"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_2momd"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_ahjrb"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_8y1mh"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_s2xf8"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_0hvxn"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_roe6b"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_ere27"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_t2kpk"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_emuql"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_h0tve"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_h7j0p"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("15")
@@ -77,8 +75,6 @@ id = "spearow"
 numero = 21
 nombre = "Spearow"
 tipos = PackedStringArray("normal", "volador")
-habilidades = PackedStringArray("Perspicacia/Vista Lince")
-habilidad_oculta = "Puntería/Francotirador"
 ps = 40
 ataque = 60
 defensa = 30
@@ -87,13 +83,23 @@ def_esp = 31
 velocidad = 70
 exp_base = 52
 ratio_captura = 255
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "fearow", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}])
+evs_otorgados = {
+"velocidad": 1
+}
 evoluciona_a = "fearow"
 nivel_evolucion = 20
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10")])
+evoluciones = Array[Dictionary]([{
+"especie": "fearow",
+"metodo": "nivel",
+"nivel": 20
+}])
+habilidades = PackedStringArray("keen_eye")
+habilidad_oculta = "sniper"
+categoria = "Pokémon Pajarito"
+altura = 0.3
+peso_kg = 2.0
+descripcion = "Muy protector de su territorio, mueve sus cortas alas sin descanso para lanzarse a toda velocidad."
+aprende = Array[ExtResource("2")]([SubResource("Resource_2momd"), SubResource("Resource_ahjrb"), SubResource("Resource_8y1mh"), SubResource("Resource_s2xf8"), SubResource("Resource_0hvxn"), SubResource("Resource_roe6b"), SubResource("Resource_ere27"), SubResource("Resource_t2kpk"), SubResource("Resource_emuql"), SubResource("Resource_h0tve"), SubResource("Resource_h7j0p")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 30

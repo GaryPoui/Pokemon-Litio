@@ -17,62 +17,60 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/ancient_power.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/wring_out.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_mq4bb"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_3sfp6"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_kjbcj"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_4vobj"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_pgjbm"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_e7inn"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_xe4lx"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_dvl0u"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_8g8gn"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_dv1na"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_vrdnu"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_tm8h1"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("16")
@@ -83,8 +81,6 @@ id = "kabuto"
 numero = 140
 nombre = "Kabuto"
 tipos = PackedStringArray("roca", "agua")
-habilidades = PackedStringArray("Armadura Batalla", "Nado Rápido")
-habilidad_oculta = "Armadura Frágil"
 ps = 30
 ataque = 80
 defensa = 90
@@ -92,14 +88,24 @@ at_esp = 55
 def_esp = 45
 velocidad = 55
 exp_base = 71
-ratio_captura = 45
 ratio_genero = 1
-crecimiento = "medium"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "kabutops", "metodo": "nivel", "condicion": "Nivel 40", "nivel": 40}])
+evs_otorgados = {
+"defensa": 1
+}
 evoluciona_a = "kabutops"
 nivel_evolucion = 40
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evoluciones = Array[Dictionary]([{
+"especie": "kabutops",
+"metodo": "nivel",
+"nivel": 40
+}])
+habilidades = PackedStringArray("swift_swim", "battle_armor")
+habilidad_oculta = "weak_armor"
+categoria = "Pokémon Armazón"
+altura = 0.5
+peso_kg = 11.5
+descripcion = "Se cree que habitó las playas hace 300 millones de años. Se protege con una dura concha."
+aprende = Array[ExtResource("2")]([SubResource("Resource_mq4bb"), SubResource("Resource_3sfp6"), SubResource("Resource_kjbcj"), SubResource("Resource_4vobj"), SubResource("Resource_pgjbm"), SubResource("Resource_e7inn"), SubResource("Resource_xe4lx"), SubResource("Resource_dvl0u"), SubResource("Resource_8g8gn"), SubResource("Resource_dv1na"), SubResource("Resource_vrdnu"), SubResource("Resource_tm8h1")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 63

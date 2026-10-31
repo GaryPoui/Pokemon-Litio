@@ -10,3 +10,5 @@ tipo = "planta"
 poder = 120
 precision = 85
 descripcion = "El usuario agita violentamente sus lianas o tentáculos para golpear al objetivo."
+numero = 438
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

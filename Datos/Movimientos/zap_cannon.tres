@@ -15,3 +15,5 @@ meta = "damage-ailment"
 descripcion = "Dispara una descarga eléctrica que causa daño y parálisis."
 estado = "paralysis"
 prob_estado = 100
+numero = 192
+banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")

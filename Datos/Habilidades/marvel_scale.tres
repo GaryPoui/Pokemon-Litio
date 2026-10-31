@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_hg8df"]
+
+[resource]
+script = ExtResource("1_hg8df")
+id = "marvel_scale"
+nombre = "Escama Especial"
+descripcion = "Sube la Defensa si sufre un problema de estado."

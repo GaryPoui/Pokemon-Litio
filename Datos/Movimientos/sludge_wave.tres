@@ -5,11 +5,14 @@
 [resource]
 script = ExtResource("1")
 id = "sludge_wave"
-nombre = "Onda tóxica"
+nombre = "Onda Tóxica"
 tipo = "veneno"
 categoria = "especial"
 poder = 95
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+objetivo = "all-other-pokemon"
+meta = "damage-ailment"
+descripcion = "Una onda tóxica que daña a los Pokémon de alrededor. Puede envenenar."
+estado = "poison"
+prob_estado = 10
+numero = 482
+banderas = PackedStringArray("metronome", "mirror", "protect")

@@ -10,6 +10,7 @@ var ocupado:= false
 
 const ESCENA_OPCIONES :="res://Escenas/UI/Opciones.tscn"
 const SELECCION:= preload("res://Scripts/ui/seleccion_archivo.gd")
+const ZONA_SPRITE :=Rect2(8, 62, 240, 130)
 
 func _ready() -> void:
 	$Opciones.add_theme_stylebox_override("panel", EstiloUI.panel())
@@ -24,11 +25,15 @@ func _ready() -> void:
 	$Pie.size =Vector2(256, 24)
 	var ids:= BaseDatos.ids(BaseDatos.ESPECIES)
 	if not ids.is_empty():
-		sprite.mostrar(BaseDatos.especie(ids[randi_range(0, ids.size()- 1)]), false)
+		mostrar_especie(BaseDatos.especie(ids[randi_range(0, ids.size()- 1)]))
 	opciones= ["JUGAR", "OPCIONES"]
 	$Opciones.size.y =10+ opciones.size()* 14
 	lista.poner(opciones)
 	Sonido.musica("titulo")
+
+func mostrar_especie(e: EspeciePokemon) -> void:
+	sprite.mostrar(e, false)
+	sprite.scale= sprite.ajustar(Vector2.ONE, ZONA_SPRITE, true)
 
 func _unhandled_input(event: InputEvent) -> void:
 	if GestorEscenas.en_transicion or ocupado:

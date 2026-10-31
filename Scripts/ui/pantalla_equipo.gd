@@ -6,7 +6,7 @@ const ESCENA_RESUMEN:= "res://Escenas/UI/Resumen.tscn"
 const ESCENA_TRINKETS :="res://Escenas/UI/TrinketsPokemon.tscn"
 const P :="res://Assets/Menus-Equipo/"
 const ICONOS:= "res://Assets/Pokemones/iconos/"
-const ICONO_Y :=-6.0
+const ICONO_Y :=-4.0
 const CANCELAR:= 6
 const COLOR_ESTADO :={"que": Color("e05030"), "env": Color("a040a0"), "par": Color("c8a018"), "dor": Color("808080"), "con": Color("48a8d8"), "deb": Color("c03028")}
 
@@ -55,6 +55,17 @@ func _ready() -> void:
 		estado.add_theme_constant_override("shadow_offset_y", 0)
 	EstiloUI.label($Cancelar/Texto, 9, Color.WHITE)
 	EstiloUI.label($Cancelar/Cruz, 9, Color("f03830"))
+	var tc: Label= $Cancelar/Texto
+	var cz: Label= $Cancelar/Cruz
+	var wt:= tc.get_combined_minimum_size().x
+	var wc:= cz.get_combined_minimum_size().x
+	var x0:= roundf((boton_cancelar.size.x- wt- 2.0- wc)/ 2.0)
+	tc.position.x= x0
+	tc.size.x =wt
+	cz.position.x= x0+ wt+ 2.0
+	cz.size.x =wc
+	mensaje.autowrap_mode= TextServer.AUTOWRAP_WORD_SMART
+	mensaje.add_theme_constant_override("line_spacing", -3)
 
 func abrir(m: String= "ver", texto: String= "Elige un Pokémon.", validacion: Callable= Callable(), cancelable: bool= true) -> void:
 	modo= m
@@ -103,6 +114,8 @@ func _construir() -> void:
 			fondo.bg_color =COLOR_ESTADO[clave]
 			fondo.set_border_width_all(1)
 			fondo.border_color= COLOR_ESTADO[clave].darkened(0.4)
+			fondo.content_margin_top= 0
+			fondo.content_margin_bottom =0
 			estado.add_theme_stylebox_override("normal", fondo)
 	_pintar()
 

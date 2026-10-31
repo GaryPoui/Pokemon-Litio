@@ -14,3 +14,5 @@ descripcion = "Agita la cola para bajar la Defensa del equipo rival."
 cambios_stats = {
 "defensa": -1
 }
+numero = 39
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")

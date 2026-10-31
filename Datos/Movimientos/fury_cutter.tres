@@ -11,3 +11,5 @@ poder = 20
 precision = 95
 pp = 20
 descripcion = "Ataque con garras o guadaña que crece en intensidad si se usa repetidas veces."
+numero = 210
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "slicing")

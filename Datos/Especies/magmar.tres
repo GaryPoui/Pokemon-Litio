@@ -10,7 +10,6 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/smokescreen.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fire_spin.tres" id="10"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/clear_smog.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flame_burst.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confuse_ray.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fire_punch.tres" id="14"]
@@ -19,79 +18,71 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/flamethrower.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fire_blast.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_8ackr"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_im84k"]
+script = ExtResource("2")
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_oplv7"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_aeht2"]
 script = ExtResource("2")
-nivel = 5
+nivel = 6
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_hkxwe"]
 script = ExtResource("2")
-nivel = 8
+nivel = 11
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_8u85y"]
 script = ExtResource("2")
-nivel = 12
+nivel = 16
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_ecypk"]
 script = ExtResource("2")
-nivel = 15
+nivel = 21
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 19
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 22
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_0vhcj"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_cq65s"]
 script = ExtResource("2")
-nivel = 29
+nivel = 32
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Resource_vctmp"]
+script = ExtResource("2")
+nivel = 38
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_0dx0g"]
 script = ExtResource("2")
-nivel = 36
+nivel = 44
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_t1omh"]
 script = ExtResource("2")
-nivel = 42
-movimiento = ExtResource("16")
-
-[sub_resource type="Resource" id="Move_13"]
-script = ExtResource("2")
-nivel = 49
+nivel = 50
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_8pdwl"]
 script = ExtResource("2")
-nivel = 55
+nivel = 56
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Resource_ye4pj"]
+script = ExtResource("2")
+nivel = 62
 movimiento = ExtResource("18")
 
 [resource]
@@ -100,8 +91,6 @@ id = "magmar"
 numero = 126
 nombre = "Magmar"
 tipos = PackedStringArray("fuego")
-habilidades = PackedStringArray("Cuerpo de Fuego/Cuerpo Llama")
-habilidad_oculta = "Espíritu Vital"
 ps = 65
 ataque = 95
 defensa = 57
@@ -109,13 +98,22 @@ at_esp = 100
 def_esp = 85
 velocidad = 93
 exp_base = 173
-ratio_captura = 45
 ratio_genero = 2
-crecimiento = "medium"
-evs_otorgados = {"at_esp": 2}
-evoluciones = Array[Dictionary]([{"especie": "magmortar", "metodo": "intercambio", "condicion": "Intercambio equipado con magmatizador"}])
-evoluciona_a = "magmortar"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"at_esp": 2
+}
+evoluciones = Array[Dictionary]([{
+"especie": "magmortar",
+"metodo": "intercambio",
+"objeto": "magmarizer"
+}])
+habilidades = PackedStringArray("flame_body")
+habilidad_oculta = "vital_spirit"
+categoria = "Pokémon Escupefuego"
+altura = 1.3
+peso_kg = 44.5
+descripcion = "A este Pokémon se lo encontraron cerca de un volcán. Esta criatura ígnea tiene una temperatura corporal de unos 1200 °C."
+aprende = Array[ExtResource("2")]([SubResource("Resource_8ackr"), SubResource("Resource_im84k"), SubResource("Resource_oplv7"), SubResource("Resource_aeht2"), SubResource("Resource_hkxwe"), SubResource("Resource_8u85y"), SubResource("Resource_ecypk"), SubResource("Resource_0vhcj"), SubResource("Resource_cq65s"), SubResource("Resource_vctmp"), SubResource("Resource_0dx0g"), SubResource("Resource_t1omh"), SubResource("Resource_8pdwl"), SubResource("Resource_ye4pj")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 33

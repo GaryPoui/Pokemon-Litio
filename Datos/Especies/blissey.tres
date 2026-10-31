@@ -22,87 +22,84 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/healing_wish.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_nfua2"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_5weq6"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_l8w0k"]
+script = ExtResource("2")
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_kp1he"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_dhvt7"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_bt3dk"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_nwtte"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_lilpn"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_yxwm8"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_mdi7k"]
 script = ExtResource("2")
 nivel = 27
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_0l68o"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_5aatf"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_0g2ow"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_v5r6n"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_6l4mn"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_f43fm"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_omcii"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("21")
@@ -113,8 +110,6 @@ id = "blissey"
 numero = 242
 nombre = "Blissey"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Curación Natural/Cura Natural", "Dicha")
-habilidad_oculta = "Alma Sanadora/Alma Cura"
 ps = 255
 ataque = 10
 defensa = 10
@@ -125,9 +120,17 @@ exp_base = 608
 ratio_captura = 30
 ratio_genero = 8
 crecimiento = "fast"
-evs_otorgados = {"ps": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"ps": 3
+}
+amistad_base = 140
+habilidades = PackedStringArray("natural_cure", "serene_grace")
+habilidad_oculta = "healer"
+categoria = "Pokémon Felicidad"
+altura = 1.5
+peso_kg = 46.8
+descripcion = "Los huevos que pone están llenos de felicidad. Solo con probar un poquito de uno, cualquiera sonríe."
+aprende = Array[ExtResource("2")]([SubResource("Resource_nfua2"), SubResource("Resource_5weq6"), SubResource("Resource_l8w0k"), SubResource("Resource_kp1he"), SubResource("Resource_dhvt7"), SubResource("Resource_bt3dk"), SubResource("Resource_nwtte"), SubResource("Resource_lilpn"), SubResource("Resource_yxwm8"), SubResource("Resource_mdi7k"), SubResource("Resource_0l68o"), SubResource("Resource_5aatf"), SubResource("Resource_0g2ow"), SubResource("Resource_v5r6n"), SubResource("Resource_6l4mn"), SubResource("Resource_f43fm"), SubResource("Resource_omcii")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 64

@@ -11,3 +11,5 @@ poder = 90
 pp = 15
 descripcion = "Carga eléctrica muy potente que también hiere ligeramente a quien la usa."
 drenaje = -25
+numero = 528
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

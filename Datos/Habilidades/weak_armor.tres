@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_m3bl5"]
+
+[resource]
+script = ExtResource("1_m3bl5")
+id = "weak_armor"
+nombre = "Armadura Frágil"
+descripcion = "Un ataque físico baja la Defensa y sube la Velocidad."

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/moon_stone.png" id="1_kryd6"]
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="2_xim64"]
+
+[resource]
+script = ExtResource("2_xim64")
+id = "moon_stone"
+nombre = "Piedra Lunar"
+descripcion = "Curiosa piedra que hace evolucionar a determinadas especies de Pokémon. Es negra como el azabache."
+precio = 2100
+icono = ExtResource("1_kryd6")
+uso_especial = "evolucion"

@@ -15,3 +15,7 @@ meta = "damage-ailment"
 descripcion = "Una tromba de agua atrapa al objetivo durante cuatro o cinco turnos."
 estado = "trap"
 prob_estado = 100
+numero = 250
+banderas = PackedStringArray("metronome", "mirror", "protect")
+turnos_min = 5
+turnos_max = 6

@@ -9,25 +9,21 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/lucky_chant.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="8"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_pnpmj"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
+movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_6eiqo"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_rfhut"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_ow8ty"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
+movimiento = ExtResource("5")
 
 [resource]
 script = ExtResource("1")
@@ -35,8 +31,6 @@ id = "musharna"
 numero = 518
 nombre = "Musharna"
 tipos = PackedStringArray("psiquico")
-habilidades = PackedStringArray("Alerta", "Sincronía")
-habilidad_oculta = "Telepatía"
 ps = 116
 ataque = 55
 defensa = 85
@@ -45,11 +39,17 @@ def_esp = 95
 velocidad = 29
 exp_base = 170
 ratio_captura = 75
-ratio_genero = 4
 crecimiento = "fast"
-evs_otorgados = {"ps": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+evs_otorgados = {
+"ps": 2
+}
+habilidades = PackedStringArray("forewarn", "synchronize")
+habilidad_oculta = "telepathy"
+categoria = "Pokémon Duermevela"
+altura = 1.1
+peso_kg = 60.5
+descripcion = "Multitud de sueños de humanos y Pokémon se encuentran atrapados en el humo que despide por su frente."
+aprende = Array[ExtResource("2")]([SubResource("Resource_pnpmj"), SubResource("Resource_6eiqo"), SubResource("Resource_rfhut"), SubResource("Resource_ow8ty")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 45

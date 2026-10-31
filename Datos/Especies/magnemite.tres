@@ -14,7 +14,6 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/mirror_shot.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/metal_sound.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/electro_ball.tres" id="14"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/flash_cannon.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/lock_on.tres" id="18"]
@@ -22,89 +21,82 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/gyro_ball.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/zap_cannon.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_fetca"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 4
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 7
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 11
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 15
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 18
-movimiento = ExtResource("10")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 21
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 25
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_m872y"]
 script = ExtResource("2")
-nivel = 32
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_plcpx"]
+script = ExtResource("2")
+nivel = 6
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_vuwv6"]
+script = ExtResource("2")
+nivel = 11
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_d8gia"]
+script = ExtResource("2")
+nivel = 14
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_m0rm2"]
+script = ExtResource("2")
+nivel = 17
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_7nbqy"]
+script = ExtResource("2")
+nivel = 22
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Resource_f0228"]
+script = ExtResource("2")
+nivel = 27
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_rtef3"]
 script = ExtResource("2")
-nivel = 35
-movimiento = ExtResource("15")
+nivel = 30
+movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_mh3ma"]
 script = ExtResource("2")
-nivel = 39
+nivel = 33
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Resource_4wn17"]
+script = ExtResource("2")
+nivel = 38
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_8x3ch"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_inxl8"]
 script = ExtResource("2")
 nivel = 46
-movimiento = ExtResource("18")
+movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_5xh00"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_m2qtc"]
 script = ExtResource("2")
-nivel = 53
+nivel = 54
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_g28jf"]
 script = ExtResource("2")
-nivel = 57
+nivel = 59
 movimiento = ExtResource("21")
 
 [resource]
@@ -113,8 +105,6 @@ id = "magnemite"
 numero = 81
 nombre = "Magnemite"
 tipos = PackedStringArray("electrico", "acero")
-habilidades = PackedStringArray("Imán", "Robustez")
-habilidad_oculta = "Cálculo Final"
 ps = 25
 ataque = 35
 defensa = 70
@@ -124,12 +114,23 @@ velocidad = 45
 exp_base = 65
 ratio_captura = 190
 ratio_genero = -1
-crecimiento = "medium"
-evs_otorgados = {"at_esp": 1}
-evoluciones = Array[Dictionary]([{"especie": "magneton", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])
+evs_otorgados = {
+"at_esp": 1
+}
 evoluciona_a = "magneton"
 nivel_evolucion = 30
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evoluciones = Array[Dictionary]([{
+"especie": "magneton",
+"metodo": "nivel",
+"nivel": 30
+}])
+habilidades = PackedStringArray("magnet_pull", "sturdy")
+habilidad_oculta = "analytic"
+categoria = "Pokémon Imán"
+altura = 0.3
+peso_kg = 6.0
+descripcion = "Las unidades a los lados de su cuerpo generan energía antigravitatoria para mantenerlo en el aire."
+aprende = Array[ExtResource("2")]([SubResource("Resource_fetca"), SubResource("Resource_m872y"), SubResource("Resource_plcpx"), SubResource("Resource_vuwv6"), SubResource("Resource_d8gia"), SubResource("Resource_m0rm2"), SubResource("Resource_7nbqy"), SubResource("Resource_f0228"), SubResource("Resource_rtef3"), SubResource("Resource_mh3ma"), SubResource("Resource_4wn17"), SubResource("Resource_8x3ch"), SubResource("Resource_inxl8"), SubResource("Resource_5xh00"), SubResource("Resource_m2qtc"), SubResource("Resource_g28jf")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 52

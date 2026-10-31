@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_wrw6t"]
+
+[resource]
+script = ExtResource("1_wrw6t")
+id = "illusion"
+nombre = "Ilusión"
+descripcion = "Se convierte en el último Pokémon del equipo."

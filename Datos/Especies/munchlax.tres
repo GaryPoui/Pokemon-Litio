@@ -22,87 +22,84 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/snatch.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_p18dk"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_5p1om"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_0872x"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_obcvx"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_1nhsa"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_3pfr4"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_1qgw7"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_0ut71"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_3l71f"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_bblcr"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_xwx0y"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_ywy04"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_l0neq"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_vm1w0"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_4qedg"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_g2pw3"]
 script = ExtResource("2")
 nivel = 52
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_nejws"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("21")
@@ -113,8 +110,6 @@ id = "munchlax"
 numero = 446
 nombre = "Munchlax"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Recolección/Recogida", "Sebo")
-habilidad_oculta = "Gula"
 ps = 135
 ataque = 85
 defensa = 40
@@ -125,10 +120,21 @@ exp_base = 78
 ratio_captura = 50
 ratio_genero = 1
 crecimiento = "slow"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([{"especie": "snorlax", "metodo": "amistad", "condicion": "Amistad + nivel"}])
-evoluciona_a = "snorlax"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"ps": 1
+}
+evoluciones = Array[Dictionary]([{
+"amistad": 220,
+"especie": "snorlax",
+"metodo": "amistad"
+}])
+habilidades = PackedStringArray("pickup", "thick_fat")
+habilidad_oculta = "gluttony"
+categoria = "Pokémon Comilón"
+altura = 0.6
+peso_kg = 105.0
+descripcion = "Esconde comida bajo el largo pelo de su cuerpo, pero más tarde lo olvida."
+aprende = Array[ExtResource("2")]([SubResource("Resource_p18dk"), SubResource("Resource_5p1om"), SubResource("Resource_0872x"), SubResource("Resource_obcvx"), SubResource("Resource_1nhsa"), SubResource("Resource_3pfr4"), SubResource("Resource_1qgw7"), SubResource("Resource_0ut71"), SubResource("Resource_3l71f"), SubResource("Resource_bblcr"), SubResource("Resource_xwx0y"), SubResource("Resource_ywy04"), SubResource("Resource_l0neq"), SubResource("Resource_vm1w0"), SubResource("Resource_4qedg"), SubResource("Resource_g2pw3"), SubResource("Resource_nejws")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 72

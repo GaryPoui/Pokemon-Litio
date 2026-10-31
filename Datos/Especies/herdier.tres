@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://wjk84kc0mt25"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_lpo7g"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_lpo7g"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="2_uqcgv"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_ka0i0"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/odor_sleuth.tres" id="4_bb015"]
@@ -14,77 +14,77 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="12_1y14c"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="13_laa72"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/giga_impact.tres" id="14_cwhtj"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_r7j3x"]
-[ext_resource type="Texture2D" uid="uid://cxo64vnas62r3" path="res://Assets/Pokemones/batalla/herdier_espalda.png" id="16_bw2s8"]
-[ext_resource type="Texture2D" uid="uid://dqxdt0fypkbea" path="res://Assets/Pokemones/batalla/herdier_frente.png" id="17_h72hg"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="15_r7j3x"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/herdier_espalda.png" id="16_bw2s8"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/herdier_frente.png" id="17_h72hg"]
 
-[sub_resource type="Resource" id="Resource_tmssk"]
+[sub_resource type="Resource" id="Resource_lpo7g"]
 script = ExtResource("1_lpo7g")
 movimiento = ExtResource("2_uqcgv")
 
-[sub_resource type="Resource" id="Resource_b1b3n"]
+[sub_resource type="Resource" id="Resource_uqcgv"]
 script = ExtResource("1_lpo7g")
 movimiento = ExtResource("3_ka0i0")
 
-[sub_resource type="Resource" id="Resource_n1ut4"]
+[sub_resource type="Resource" id="Resource_ka0i0"]
 script = ExtResource("1_lpo7g")
 movimiento = ExtResource("4_bb015")
 
-[sub_resource type="Resource" id="Resource_4nwta"]
+[sub_resource type="Resource" id="Resource_bb015"]
 script = ExtResource("1_lpo7g")
 movimiento = ExtResource("5_0pb1u")
 
-[sub_resource type="Resource" id="Resource_w1fdf"]
+[sub_resource type="Resource" id="Resource_0pb1u"]
 script = ExtResource("1_lpo7g")
 nivel = 5
 movimiento = ExtResource("4_bb015")
 
-[sub_resource type="Resource" id="Resource_wfcvf"]
+[sub_resource type="Resource" id="Resource_nvw38"]
 script = ExtResource("1_lpo7g")
 nivel = 8
 movimiento = ExtResource("2_uqcgv")
 
-[sub_resource type="Resource" id="Resource_xq87p"]
+[sub_resource type="Resource" id="Resource_lgdu1"]
 script = ExtResource("1_lpo7g")
 nivel = 12
 movimiento = ExtResource("6_nvw38")
 
-[sub_resource type="Resource" id="Resource_vqf8x"]
+[sub_resource type="Resource" id="Resource_elr58"]
 script = ExtResource("1_lpo7g")
 nivel = 15
 movimiento = ExtResource("7_lgdu1")
 
-[sub_resource type="Resource" id="Resource_upc0b"]
+[sub_resource type="Resource" id="Resource_6mnyx"]
 script = ExtResource("1_lpo7g")
 nivel = 20
 movimiento = ExtResource("8_elr58")
 
-[sub_resource type="Resource" id="Resource_u8gei"]
+[sub_resource type="Resource" id="Resource_s07rc"]
 script = ExtResource("1_lpo7g")
 nivel = 24
 movimiento = ExtResource("9_6mnyx")
 
-[sub_resource type="Resource" id="Resource_bdekb"]
+[sub_resource type="Resource" id="Resource_sxpd2"]
 script = ExtResource("1_lpo7g")
 nivel = 29
 movimiento = ExtResource("10_s07rc")
 
-[sub_resource type="Resource" id="Resource_psyj1"]
+[sub_resource type="Resource" id="Resource_1y14c"]
 script = ExtResource("1_lpo7g")
 nivel = 33
 movimiento = ExtResource("11_sxpd2")
 
-[sub_resource type="Resource" id="Resource_4hgck"]
+[sub_resource type="Resource" id="Resource_laa72"]
 script = ExtResource("1_lpo7g")
 nivel = 38
 movimiento = ExtResource("12_1y14c")
 
-[sub_resource type="Resource" id="Resource_b6xsa"]
+[sub_resource type="Resource" id="Resource_cwhtj"]
 script = ExtResource("1_lpo7g")
 nivel = 42
 movimiento = ExtResource("13_laa72")
 
-[sub_resource type="Resource" id="Resource_url5s"]
+[sub_resource type="Resource" id="Resource_r7j3x"]
 script = ExtResource("1_lpo7g")
 nivel = 47
 movimiento = ExtResource("14_cwhtj")
@@ -94,6 +94,7 @@ script = ExtResource("15_r7j3x")
 id = "herdier"
 numero = 507
 nombre = "Herdier"
+tipos = PackedStringArray("normal")
 ps = 65
 ataque = 80
 defensa = 65
@@ -108,12 +109,20 @@ evs_otorgados = {
 }
 evoluciona_a = "stoutland"
 nivel_evolucion = 32
-aprende = Array[ExtResource("1_lpo7g")]([SubResource("Resource_tmssk"), SubResource("Resource_b1b3n"), SubResource("Resource_n1ut4"), SubResource("Resource_4nwta"), SubResource("Resource_w1fdf"), SubResource("Resource_wfcvf"), SubResource("Resource_xq87p"), SubResource("Resource_vqf8x"), SubResource("Resource_upc0b"), SubResource("Resource_u8gei"), SubResource("Resource_bdekb"), SubResource("Resource_psyj1"), SubResource("Resource_4hgck"), SubResource("Resource_b6xsa"), SubResource("Resource_url5s")])
+evoluciones = Array[Dictionary]([{
+"especie": "stoutland",
+"metodo": "nivel",
+"nivel": 32
+}])
+habilidades = PackedStringArray("intimidate", "sand_rush")
+habilidad_oculta = "scrappy"
+categoria = "Pokémon Leal"
+altura = 0.9
+peso_kg = 14.7
+descripcion = "Este Pokémon es muy leal. No solo ayuda a Entrenadores, sino que también se preocupa por otros Pokémon."
+aprende = Array[ExtResource("1_lpo7g")]([SubResource("Resource_lpo7g"), SubResource("Resource_uqcgv"), SubResource("Resource_ka0i0"), SubResource("Resource_bb015"), SubResource("Resource_0pb1u"), SubResource("Resource_nvw38"), SubResource("Resource_lgdu1"), SubResource("Resource_elr58"), SubResource("Resource_6mnyx"), SubResource("Resource_s07rc"), SubResource("Resource_sxpd2"), SubResource("Resource_1y14c"), SubResource("Resource_laa72"), SubResource("Resource_cwhtj"), SubResource("Resource_r7j3x")])
 sprite_frente = ExtResource("17_h72hg")
 sprite_espalda = ExtResource("16_bw2s8")
 cuadros_frente = 58
 cuadros_espalda = 58
 fps_sprite = 8.29
-habilidades = PackedStringArray("Intimidación", "Ímpetu Arena")
-habilidad_oculta = "Intrépido"
-evoluciones = Array[Dictionary]([{"especie": "stoutland", "metodo": "nivel", "condicion": "Nivel 32", "nivel": 32}])

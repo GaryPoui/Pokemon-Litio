@@ -20,87 +20,84 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sludge_bomb.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flatter.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_dd77m"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_fryeb"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_80bij"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_aq7pv"]
 script = ExtResource("2")
 nivel = 3
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_58vms"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_qbbrh"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_yvtq6"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_7fy4n"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_hrkae"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_gik5v"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_phhit"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_ouymw"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_874wy"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_pew3d"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_ilrs3"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_7ys06"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_tf1qb"]
 script = ExtResource("2")
 nivel = 62
 movimiento = ExtResource("19")
@@ -111,8 +108,6 @@ id = "toxicroak"
 numero = 454
 nombre = "Toxicroak"
 tipos = PackedStringArray("veneno", "lucha")
-habilidades = PackedStringArray("Anticipación", "Piel Seca")
-habilidad_oculta = "Contacto Tóxico/Toque Tóxico"
 ps = 83
 ataque = 106
 defensa = 65
@@ -121,11 +116,16 @@ def_esp = 65
 velocidad = 85
 exp_base = 172
 ratio_captura = 75
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"ataque": 2
+}
+habilidades = PackedStringArray("anticipation", "dry_skin")
+habilidad_oculta = "poison_touch"
+categoria = "Pokémon Boca Tóxica"
+altura = 1.3
+peso_kg = 44.4
+descripcion = "Almacena veneno en una bolsa de la garganta. Cuando croa, este se agita para lograr mayor potencia."
+aprende = Array[ExtResource("2")]([SubResource("Resource_dd77m"), SubResource("Resource_fryeb"), SubResource("Resource_80bij"), SubResource("Resource_aq7pv"), SubResource("Resource_58vms"), SubResource("Resource_qbbrh"), SubResource("Resource_yvtq6"), SubResource("Resource_7fy4n"), SubResource("Resource_hrkae"), SubResource("Resource_gik5v"), SubResource("Resource_phhit"), SubResource("Resource_ouymw"), SubResource("Resource_874wy"), SubResource("Resource_pew3d"), SubResource("Resource_ilrs3"), SubResource("Resource_7ys06"), SubResource("Resource_tf1qb")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 64

@@ -5,11 +5,12 @@
 [resource]
 script = ExtResource("1")
 id = "doom_desire"
-nombre = "Deseo oculto"
+nombre = "Deseo Oculto"
 tipo = "acero"
 categoria = "especial"
 poder = 140
-precision = 100
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "unique"
+descripcion = "Concentra un haz de luz y ataca dos turnos después."
+numero = 353
+banderas = PackedStringArray("futuremove", "metronome")

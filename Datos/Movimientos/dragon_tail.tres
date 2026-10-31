@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1")
 id = "dragon_tail"
-nombre = "Cola dragón"
+nombre = "Cola Dragón"
 tipo = "dragon"
-categoria = "fisico"
 poder = 60
 precision = 90
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+prioridad = -6
+descripcion = "Ataca al objetivo y lo obliga a cambiarse por otro Pokémon. Si es uno salvaje, acaba el combate."
+numero = 525
+banderas = PackedStringArray("contact", "failcopycat", "metronome", "mirror", "noassist", "protect")

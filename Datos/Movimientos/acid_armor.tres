@@ -16,3 +16,5 @@ descripcion = "Transforma la estructura celular para hacerse líquido y aumenta 
 cambios_stats = {
 "defensa": 2
 }
+numero = 151
+banderas = PackedStringArray("metronome", "snatch")

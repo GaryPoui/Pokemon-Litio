@@ -10,7 +10,6 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/low_kick.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/swift.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/shock_wave.tres" id="10"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/electro_ball.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/light_screen.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thunder_punch.tres" id="14"]
@@ -19,74 +18,67 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/thunderbolt.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thunder.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_w5c5q"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_phtg3"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_wkpew"]
 script = ExtResource("2")
-nivel = 5
+nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_6amya"]
 script = ExtResource("2")
-nivel = 8
+nivel = 11
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_mpepq"]
 script = ExtResource("2")
-nivel = 12
+nivel = 16
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_0eae2"]
 script = ExtResource("2")
-nivel = 15
+nivel = 21
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 19
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 22
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_23bhi"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_s6mmc"]
 script = ExtResource("2")
-nivel = 29
-movimiento = ExtResource("14")
+nivel = 31
+movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 33
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_65hgf"]
 script = ExtResource("2")
 nivel = 36
-movimiento = ExtResource("16")
+movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_njlks"]
 script = ExtResource("2")
-nivel = 40
+nivel = 41
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Resource_uuuy1"]
+script = ExtResource("2")
+nivel = 46
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_k51mv"]
 script = ExtResource("2")
-nivel = 43
+nivel = 51
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Resource_g42vc"]
+script = ExtResource("2")
+nivel = 56
 movimiento = ExtResource("18")
 
 [resource]
@@ -95,8 +87,6 @@ id = "elekid"
 numero = 239
 nombre = "Elekid"
 tipos = PackedStringArray("electrico")
-habilidades = PackedStringArray("Electricidad Estática")
-habilidad_oculta = "Espíritu Vital"
 ps = 45
 ataque = 63
 defensa = 37
@@ -104,14 +94,24 @@ at_esp = 65
 def_esp = 55
 velocidad = 95
 exp_base = 72
-ratio_captura = 45
 ratio_genero = 2
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "electabuzz", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])
+evs_otorgados = {
+"velocidad": 1
+}
 evoluciona_a = "electabuzz"
 nivel_evolucion = 30
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+evoluciones = Array[Dictionary]([{
+"especie": "electabuzz",
+"metodo": "nivel",
+"nivel": 30
+}])
+habilidades = PackedStringArray("static")
+habilidad_oculta = "vital_spirit"
+categoria = "Pokémon Eléctrico"
+altura = 0.6
+peso_kg = 23.5
+descripcion = "Genera electricidad girando los brazos. No obstante, es incapaz de almacenar la energía creada."
+aprende = Array[ExtResource("2")]([SubResource("Resource_w5c5q"), SubResource("Resource_phtg3"), SubResource("Resource_wkpew"), SubResource("Resource_6amya"), SubResource("Resource_mpepq"), SubResource("Resource_0eae2"), SubResource("Resource_23bhi"), SubResource("Resource_s6mmc"), SubResource("Resource_65hgf"), SubResource("Resource_njlks"), SubResource("Resource_uuuy1"), SubResource("Resource_k51mv"), SubResource("Resource_g42vc")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 55

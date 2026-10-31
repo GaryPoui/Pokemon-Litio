@@ -24,6 +24,18 @@ extends Resource
 @export_group("Evolución")
 @export var evoluciona_a: String= ""
 @export var nivel_evolucion: int =0
+@export var evoluciones: Array[Dictionary]= []
+@export var amistad_base :int= 70
+
+@export_group("Habilidades")
+@export var habilidades: PackedStringArray= []
+@export var habilidad_oculta: String =""
+
+@export_group("Pokédex")
+@export var categoria: String= ""
+@export var altura :float= 0.0
+@export var peso_kg: float =0.0
+@export_multiline var descripcion: String= ""
 
 @export_group("Movimientos")
 @export var aprende: Array[MovimientoNivel]= []

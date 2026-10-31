@@ -12,37 +12,36 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sunny_day.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="11"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_se2uo"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_iduvu"]
 script = ExtResource("2")
 nivel = 3
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_il7r5"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_6gsnx"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_l1ayp"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_61qfv"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_mr883"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("11")
@@ -53,23 +52,31 @@ id = "seedot"
 numero = 273
 nombre = "Seedot"
 tipos = PackedStringArray("planta")
-habilidades = PackedStringArray("Clorofila", "Madrugador/Madrugar")
-habilidad_oculta = "Hurto"
 ps = 40
 ataque = 40
-defensa = 50
 at_esp = 30
 def_esp = 30
 velocidad = 30
 exp_base = 44
 ratio_captura = 255
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "nuzleaf", "metodo": "nivel", "condicion": "Nivel 14", "nivel": 14}])
+evs_otorgados = {
+"defensa": 1
+}
 evoluciona_a = "nuzleaf"
 nivel_evolucion = 14
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6")])
+evoluciones = Array[Dictionary]([{
+"especie": "nuzleaf",
+"metodo": "nivel",
+"nivel": 14
+}])
+habilidades = PackedStringArray("chlorophyll", "early_bird")
+habilidad_oculta = "pickpocket"
+categoria = "Pokémon Bellota"
+altura = 0.5
+peso_kg = 4.0
+descripcion = "Se cuelga de las ramas con el extremo de su cabeza. A veces se cae cuando soplan vientos fuertes."
+aprende = Array[ExtResource("2")]([SubResource("Resource_se2uo"), SubResource("Resource_iduvu"), SubResource("Resource_il7r5"), SubResource("Resource_6gsnx"), SubResource("Resource_l1ayp"), SubResource("Resource_61qfv"), SubResource("Resource_mr883")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 193

@@ -10,30 +10,25 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sweet_scent.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="9"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_ljyvc"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_kfcil"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
+movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_qnoyp"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_uvsbs"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_gensh"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("9")
+movimiento = ExtResource("6")
 
 [resource]
 script = ExtResource("1")
@@ -41,21 +36,25 @@ id = "roserade"
 numero = 407
 nombre = "Roserade"
 tipos = PackedStringArray("planta", "veneno")
-habilidades = PackedStringArray("Curación Natural/Cura Natural", "Punto Tóxico")
-habilidad_oculta = "Experto"
 ps = 60
 ataque = 70
-defensa = 65
+defensa = 55
 at_esp = 125
 def_esp = 105
 velocidad = 90
-exp_base = 227
+exp_base = 232
 ratio_captura = 75
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"at_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4")])
+evs_otorgados = {
+"at_esp": 3
+}
+habilidades = PackedStringArray("natural_cure", "poison_point")
+habilidad_oculta = "technician"
+categoria = "Pokémon Ramillete"
+altura = 0.9
+peso_kg = 14.5
+descripcion = "Atrae a sus presas con una dulce fragancia y usa sus cepas venenosas para atenazarlas y acabar con ellas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_ljyvc"), SubResource("Resource_kfcil"), SubResource("Resource_qnoyp"), SubResource("Resource_uvsbs"), SubResource("Resource_gensh")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 102

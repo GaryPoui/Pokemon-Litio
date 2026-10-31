@@ -12,3 +12,7 @@ pp = 15
 meta = "ailment"
 descripcion = "Esparce esporas que inducen al sueño."
 estado = "sleep"
+numero = 147
+banderas = PackedStringArray("metronome", "mirror", "powder", "protect", "reflectable")
+turnos_min = 2
+turnos_max = 4

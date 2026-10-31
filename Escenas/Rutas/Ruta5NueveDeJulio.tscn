@@ -27,9 +27,9 @@
 [ext_resource type="SpriteFrames" uid="uid://cop8j46pdthlq" path="res://Recursos/Personajes/rutas_turista.tres" id="25_3wk0m"]
 [ext_resource type="Script" uid="uid://c24rn5xa76k05" path="res://Scripts/rival.gd" id="26_f0lo5"]
 [ext_resource type="SpriteFrames" uid="uid://cpk1kgmdm6ill" path="res://Recursos/Personajes/rival_facu.tres" id="27_hfbft"]
-[ext_resource type="Resource" uid="uid://tdkeyn6l66a7" path="res://Datos/Entrenadores/facu_cabildo_snivy.tres" id="27_vw5qr"]
-[ext_resource type="Resource" uid="uid://cmhixm55s7xcc" path="res://Datos/Entrenadores/facu_cabildo_tepig.tres" id="28_vs5ud"]
-[ext_resource type="Resource" uid="uid://c66abb3d3hi4m" path="res://Datos/Entrenadores/facu_cabildo_oshawott.tres" id="29_jd2xp"]
+[ext_resource type="Resource" uid="uid://bcsiywkp4cw2w" path="res://Datos/Entrenadores/facu_cabildo_snivy.tres" id="27_vw5qr"]
+[ext_resource type="Resource" uid="uid://dyfqnpxsxpg3p" path="res://Datos/Entrenadores/facu_cabildo_tepig.tres" id="28_vs5ud"]
+[ext_resource type="Resource" uid="uid://dq0pxyru33g8n" path="res://Datos/Entrenadores/facu_cabildo_oshawott.tres" id="29_jd2xp"]
 [ext_resource type="SpriteFrames" uid="uid://bla2ql07euub3" path="res://Recursos/Personajes/rutas_oficinista.tres" id="31_1y83a"]
 [ext_resource type="SpriteFrames" uid="uid://ca1hpcrt52cx0" path="res://Recursos/Personajes/villa31_musico.tres" id="32_q1ij6"]
 
@@ -174,6 +174,7 @@ script = ExtResource("18_nfgos")
 texto = "RUTA 5 · AVENIDA 9 DE JULIO
 
 Zona protegida: los Pokémon no se combaten, solo se atrapan. Al sur: Línea C del subte."
+mostrar_encuentros = true
 
 [node name="CartelColon" type="Node2D" parent="." unique_id=806011806]
 position = Vector2(360, 88)

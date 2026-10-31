@@ -22,87 +22,84 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/roost.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dream_eater.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_dd7x8"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_xlp5x"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_p4jnd"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_vcs6r"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_jja3k"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_fu5ks"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_bru04"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_bjed0"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_uo61g"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_0mtws"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_n6bpq"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_iq135"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_tm348"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_g08xy"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_tj8ka"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_62bp4"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_eo1qy"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("21")
@@ -113,23 +110,30 @@ id = "hoothoot"
 numero = 163
 nombre = "Hoothoot"
 tipos = PackedStringArray("normal", "volador")
-habilidades = PackedStringArray("Insomnio", "Perspicacia/Vista Lince")
-habilidad_oculta = "Cromolente"
 ps = 60
 ataque = 30
 defensa = 30
 at_esp = 36
 def_esp = 56
-velocidad = 50
 exp_base = 52
 ratio_captura = 255
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([{"especie": "noctowl", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}])
+evs_otorgados = {
+"ps": 1
+}
 evoluciona_a = "noctowl"
 nivel_evolucion = 20
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evoluciones = Array[Dictionary]([{
+"especie": "noctowl",
+"metodo": "nivel",
+"nivel": 20
+}])
+habilidades = PackedStringArray("insomnia", "keen_eye")
+habilidad_oculta = "tinted_lens"
+categoria = "Pokémon Búho"
+altura = 0.7
+peso_kg = 21.2
+descripcion = "Su percepción del tiempo es exacta. Ocurra lo que ocurra, lleva el ritmo moviendo la cabeza."
+aprende = Array[ExtResource("2")]([SubResource("Resource_dd7x8"), SubResource("Resource_xlp5x"), SubResource("Resource_p4jnd"), SubResource("Resource_vcs6r"), SubResource("Resource_jja3k"), SubResource("Resource_fu5ks"), SubResource("Resource_bru04"), SubResource("Resource_bjed0"), SubResource("Resource_uo61g"), SubResource("Resource_0mtws"), SubResource("Resource_n6bpq"), SubResource("Resource_iq135"), SubResource("Resource_tm348"), SubResource("Resource_g08xy"), SubResource("Resource_tj8ka"), SubResource("Resource_62bp4"), SubResource("Resource_eo1qy")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 82

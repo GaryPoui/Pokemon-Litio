@@ -17,62 +17,61 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/seed_bomb.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/spore.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_qe5ul"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_jsdsn"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_banin"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_77kd5"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_kw248"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_j2r27"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_i0jxr"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_pfeel"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_vwegc"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_u2cfd"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_ygdsg"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_46cuq"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("16")
@@ -83,8 +82,6 @@ id = "shroomish"
 numero = 285
 nombre = "Shroomish"
 tipos = PackedStringArray("planta")
-habilidades = PackedStringArray("Efecto Espora", "Antídoto")
-habilidad_oculta = "Pies Rápidos"
 ps = 60
 ataque = 40
 defensa = 60
@@ -93,13 +90,24 @@ def_esp = 60
 velocidad = 35
 exp_base = 59
 ratio_captura = 255
-ratio_genero = 4
 crecimiento = "fast-then-very-slow"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([{"especie": "breloom", "metodo": "nivel", "condicion": "Nivel 23", "nivel": 23}])
+evs_otorgados = {
+"ps": 1
+}
 evoluciona_a = "breloom"
 nivel_evolucion = 23
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evoluciones = Array[Dictionary]([{
+"especie": "breloom",
+"metodo": "nivel",
+"nivel": 23
+}])
+habilidades = PackedStringArray("effect_spore", "poison_heal")
+habilidad_oculta = "quick_feet"
+categoria = "Pokémon Hongo"
+altura = 0.4
+peso_kg = 4.5
+descripcion = "Prefiere los sitios húmedos. De día está tranquilamente en el bosque, a la sombra. Expulsa polvo tóxico por la cabeza."
+aprende = Array[ExtResource("2")]([SubResource("Resource_qe5ul"), SubResource("Resource_jsdsn"), SubResource("Resource_banin"), SubResource("Resource_77kd5"), SubResource("Resource_kw248"), SubResource("Resource_j2r27"), SubResource("Resource_i0jxr"), SubResource("Resource_pfeel"), SubResource("Resource_vwegc"), SubResource("Resource_u2cfd"), SubResource("Resource_ygdsg"), SubResource("Resource_46cuq")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 32

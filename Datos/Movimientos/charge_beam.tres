@@ -16,3 +16,5 @@ cambios_stats = {
 "at_esp": 1
 }
 prob_stat = 70
+numero = 451
+banderas = PackedStringArray("metronome", "mirror", "protect")

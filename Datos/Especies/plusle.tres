@@ -22,92 +22,91 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/entrainment.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_a62vy"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_v5jw0"]
 script = ExtResource("2")
 nivel = 3
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_wum88"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_to7bl"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_7ko2j"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_t78ob"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_17f85"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_8v7kp"]
 script = ExtResource("2")
-nivel = 25
+nivel = 24
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_6n881"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_8uled"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_m2xj0"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_kam3n"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_54qpd"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_7y13f"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_y4foj"]
 script = ExtResource("2")
 nivel = 48
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_4y71g"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_7bku4"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_brcev"]
 script = ExtResource("2")
 nivel = 63
 movimiento = ExtResource("21")
@@ -118,21 +117,22 @@ id = "plusle"
 numero = 311
 nombre = "Plusle"
 tipos = PackedStringArray("electrico")
-habilidades = PackedStringArray("Más")
-habilidad_oculta = "Pararrayos"
 ps = 60
-ataque = 50
 defensa = 40
 at_esp = 85
 def_esp = 75
 velocidad = 95
 exp_base = 142
 ratio_captura = 200
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"velocidad": 1
+}
+habilidades = PackedStringArray("plus")
+categoria = "Pokémon Ánimo"
+altura = 0.4
+peso_kg = 4.2
+descripcion = "Anima a sus compañeros con pompones de chispas. Roba energía de los postes telefónicos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_a62vy"), SubResource("Resource_v5jw0"), SubResource("Resource_wum88"), SubResource("Resource_to7bl"), SubResource("Resource_7ko2j"), SubResource("Resource_t78ob"), SubResource("Resource_17f85"), SubResource("Resource_8v7kp"), SubResource("Resource_6n881"), SubResource("Resource_8uled"), SubResource("Resource_m2xj0"), SubResource("Resource_kam3n"), SubResource("Resource_54qpd"), SubResource("Resource_7y13f"), SubResource("Resource_y4foj"), SubResource("Resource_4y71g"), SubResource("Resource_7bku4"), SubResource("Resource_brcev")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 99

@@ -5,11 +5,13 @@
 [resource]
 script = ExtResource("1")
 id = "soft_boiled"
-nombre = "Amortiguador"
-tipo = "normal"
+nombre = "Ovocuración"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 5
 objetivo = "user"
-meta = "unique"
+meta = "heal"
+descripcion = "Restaura la mitad de los PS máximos del usuario."
+curacion = 50
+numero = 135
+banderas = PackedStringArray("heal", "metronome", "snatch")

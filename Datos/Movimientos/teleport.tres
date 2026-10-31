@@ -14,3 +14,5 @@ prioridad = -6
 objetivo = "user"
 meta = "unique"
 descripcion = "Permite al usuario cambiarse por otro Pokémon del equipo, si es posible. Si un Pokémon salvaje usa este movimiento, huye del combate."
+numero = 100
+banderas = PackedStringArray("metronome")

@@ -9,36 +9,29 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/aura_sphere.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/extreme_speed.tres" id="8"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_6w5id"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_an50o"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_jitsy"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_2rttd"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
 
 [resource]
 script = ExtResource("1")
 id = "togekiss"
 numero = 468
 nombre = "Togekiss"
-tipos = PackedStringArray("volador")
-habilidades = PackedStringArray("Entusiasmo", "Dicha")
-habilidad_oculta = "Supersuerte/Afortunado"
+tipos = PackedStringArray("normal", "volador")
 ps = 85
-ataque = 50
 defensa = 95
 at_esp = 120
 def_esp = 115
@@ -47,11 +40,18 @@ exp_base = 245
 ratio_captura = 30
 ratio_genero = 1
 crecimiento = "fast"
-evs_otorgados = {"at_esp": 2, "def_esp": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+evs_otorgados = {
+"at_esp": 2,
+"def_esp": 1
+}
+habilidades = PackedStringArray("hustle", "serene_grace")
+habilidad_oculta = "super_luck"
+categoria = "Pokémon Festejo"
+altura = 1.5
+peso_kg = 38.0
+descripcion = "Se dice que aparece en zonas pacíficas y las bendice con sus dones."
+aprende = Array[ExtResource("2")]([SubResource("Resource_6w5id"), SubResource("Resource_an50o"), SubResource("Resource_jitsy"), SubResource("Resource_2rttd")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 48
 cuadros_espalda = 48
-fps_sprite = 10.0

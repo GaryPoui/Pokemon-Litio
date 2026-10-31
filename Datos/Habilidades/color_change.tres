@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_5bkhe"]
+
+[resource]
+script = ExtResource("1_5bkhe")
+id = "color_change"
+nombre = "Cambio Color"
+descripcion = "Adopta el tipo del último movimiento del que sea blanco."

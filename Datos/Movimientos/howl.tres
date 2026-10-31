@@ -11,7 +11,9 @@ precision = 0
 pp = 40
 objetivo = "user-and-allies"
 meta = "net-good-stats"
-descripcion = "Aullido que sube el ánimo y aumenta el Ataque del equipo. "
+descripcion = "Aullido que sube el ánimo y aumenta el Ataque del equipo."
 cambios_stats = {
 "ataque": 1
 }
+numero = 336
+banderas = PackedStringArray("metronome", "snatch", "sound")

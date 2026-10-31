@@ -12,3 +12,5 @@ pp = 20
 prioridad = -5
 objetivo = "specific-move"
 descripcion = "Responde a un ataque especial ocasionando el doble del daño recibido."
+numero = 243
+banderas = PackedStringArray("failmefirst", "noassist", "protect")

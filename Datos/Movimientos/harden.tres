@@ -15,3 +15,5 @@ descripcion = "Tensa la musculatura del usuario para aumentar la Defensa."
 cambios_stats = {
 "defensa": 1
 }
+numero = 106
+banderas = PackedStringArray("metronome", "snatch")

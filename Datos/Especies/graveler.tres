@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://b6ukdcs5sa0ui"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_1p6dm"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_1p6dm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="2_jd1p1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mud_sport.tres" id="3_6ul6b"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rock_polish.tres" id="4_q65in"]
@@ -17,92 +17,92 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="15_62lmf"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="16_upwp5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="17_lse1f"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_mjy0h"]
-[ext_resource type="Texture2D" uid="uid://wrt0ee0ofl5y" path="res://Assets/Pokemones/batalla/graveler_espalda.png" id="19_bcwei"]
-[ext_resource type="Texture2D" uid="uid://eye846rlpu1i" path="res://Assets/Pokemones/batalla/graveler_frente.png" id="20_0j04l"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_mjy0h"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/graveler_espalda.png" id="19_bcwei"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/graveler_frente.png" id="20_0j04l"]
 
-[sub_resource type="Resource" id="Resource_mfs6e"]
+[sub_resource type="Resource" id="Resource_1p6dm"]
 script = ExtResource("1_1p6dm")
 movimiento = ExtResource("2_jd1p1")
 
-[sub_resource type="Resource" id="Resource_6rk16"]
+[sub_resource type="Resource" id="Resource_jd1p1"]
 script = ExtResource("1_1p6dm")
 movimiento = ExtResource("3_6ul6b")
 
-[sub_resource type="Resource" id="Resource_8oecp"]
+[sub_resource type="Resource" id="Resource_6ul6b"]
 script = ExtResource("1_1p6dm")
 movimiento = ExtResource("4_q65in")
 
-[sub_resource type="Resource" id="Resource_rqmrl"]
+[sub_resource type="Resource" id="Resource_q65in"]
 script = ExtResource("1_1p6dm")
 movimiento = ExtResource("5_0ycvd")
 
-[sub_resource type="Resource" id="Resource_43uia"]
+[sub_resource type="Resource" id="Resource_0ycvd"]
 script = ExtResource("1_1p6dm")
 nivel = 4
 movimiento = ExtResource("3_6ul6b")
 
-[sub_resource type="Resource" id="Resource_31ipm"]
+[sub_resource type="Resource" id="Resource_jc8ae"]
 script = ExtResource("1_1p6dm")
 nivel = 8
 movimiento = ExtResource("4_q65in")
 
-[sub_resource type="Resource" id="Resource_lev26"]
+[sub_resource type="Resource" id="Resource_1ktds"]
 script = ExtResource("1_1p6dm")
 nivel = 11
 movimiento = ExtResource("6_jc8ae")
 
-[sub_resource type="Resource" id="Resource_3yrhy"]
+[sub_resource type="Resource" id="Resource_38m46"]
 script = ExtResource("1_1p6dm")
 nivel = 15
 movimiento = ExtResource("7_1ktds")
 
-[sub_resource type="Resource" id="Resource_q3nlq"]
+[sub_resource type="Resource" id="Resource_obgso"]
 script = ExtResource("1_1p6dm")
 nivel = 18
 movimiento = ExtResource("8_38m46")
 
-[sub_resource type="Resource" id="Resource_iy7me"]
+[sub_resource type="Resource" id="Resource_21tfd"]
 script = ExtResource("1_1p6dm")
 nivel = 22
 movimiento = ExtResource("9_obgso")
 
-[sub_resource type="Resource" id="Resource_ov5gs"]
+[sub_resource type="Resource" id="Resource_m24f1"]
 script = ExtResource("1_1p6dm")
 nivel = 27
 movimiento = ExtResource("10_21tfd")
 
-[sub_resource type="Resource" id="Resource_334n4"]
+[sub_resource type="Resource" id="Resource_0tmlj"]
 script = ExtResource("1_1p6dm")
 nivel = 31
 movimiento = ExtResource("11_m24f1")
 
-[sub_resource type="Resource" id="Resource_2ik1x"]
+[sub_resource type="Resource" id="Resource_pec2x"]
 script = ExtResource("1_1p6dm")
 nivel = 36
 movimiento = ExtResource("12_0tmlj")
 
-[sub_resource type="Resource" id="Resource_xn4wn"]
+[sub_resource type="Resource" id="Resource_1wqn1"]
 script = ExtResource("1_1p6dm")
 nivel = 42
 movimiento = ExtResource("13_pec2x")
 
-[sub_resource type="Resource" id="Resource_6ctkh"]
+[sub_resource type="Resource" id="Resource_62lmf"]
 script = ExtResource("1_1p6dm")
 nivel = 47
 movimiento = ExtResource("14_1wqn1")
 
-[sub_resource type="Resource" id="Resource_uwkdb"]
+[sub_resource type="Resource" id="Resource_upwp5"]
 script = ExtResource("1_1p6dm")
 nivel = 53
 movimiento = ExtResource("15_62lmf")
 
-[sub_resource type="Resource" id="Resource_uuo74"]
+[sub_resource type="Resource" id="Resource_lse1f"]
 script = ExtResource("1_1p6dm")
 nivel = 58
 movimiento = ExtResource("16_upwp5")
 
-[sub_resource type="Resource" id="Resource_xulwd"]
+[sub_resource type="Resource" id="Resource_mjy0h"]
 script = ExtResource("1_1p6dm")
 nivel = 64
 movimiento = ExtResource("17_lse1f")
@@ -112,7 +112,7 @@ script = ExtResource("18_mjy0h")
 id = "graveler"
 numero = 75
 nombre = "Graveler"
-tipos = ["roca", "tierra"]
+tipos = PackedStringArray("roca", "tierra")
 ps = 55
 ataque = 95
 defensa = 115
@@ -125,13 +125,19 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "defensa": 2
 }
-aprende = Array[ExtResource("1_1p6dm")]([SubResource("Resource_mfs6e"), SubResource("Resource_6rk16"), SubResource("Resource_8oecp"), SubResource("Resource_rqmrl"), SubResource("Resource_43uia"), SubResource("Resource_31ipm"), SubResource("Resource_lev26"), SubResource("Resource_3yrhy"), SubResource("Resource_q3nlq"), SubResource("Resource_iy7me"), SubResource("Resource_ov5gs"), SubResource("Resource_334n4"), SubResource("Resource_2ik1x"), SubResource("Resource_xn4wn"), SubResource("Resource_6ctkh"), SubResource("Resource_uwkdb"), SubResource("Resource_uuo74"), SubResource("Resource_xulwd")])
+evoluciones = Array[Dictionary]([{
+"especie": "golem",
+"metodo": "intercambio"
+}])
+habilidades = PackedStringArray("rock_head", "sturdy")
+habilidad_oculta = "sand_veil"
+categoria = "Pokémon Roca"
+altura = 1.0
+peso_kg = 105.0
+descripcion = "De naturaleza descuidada y libre, no le importa dañarse cuando baja rodando montañas."
+aprende = Array[ExtResource("1_1p6dm")]([SubResource("Resource_1p6dm"), SubResource("Resource_jd1p1"), SubResource("Resource_6ul6b"), SubResource("Resource_q65in"), SubResource("Resource_0ycvd"), SubResource("Resource_jc8ae"), SubResource("Resource_1ktds"), SubResource("Resource_38m46"), SubResource("Resource_obgso"), SubResource("Resource_21tfd"), SubResource("Resource_m24f1"), SubResource("Resource_0tmlj"), SubResource("Resource_pec2x"), SubResource("Resource_1wqn1"), SubResource("Resource_62lmf"), SubResource("Resource_upwp5"), SubResource("Resource_lse1f"), SubResource("Resource_mjy0h")])
 sprite_frente = ExtResource("20_0j04l")
 sprite_espalda = ExtResource("19_bcwei")
 cuadros_frente = 8
 cuadros_espalda = 8
 fps_sprite = 7.77
-habilidades = PackedStringArray("Cabeza Roca", "Robustez")
-habilidad_oculta = "Velo de Arena/Velo Arena"
-evoluciones = Array[Dictionary]([{"especie": "golem", "metodo": "intercambio", "condicion": "Intercambio; o cordón unión"}])
-evoluciona_a = "golem"

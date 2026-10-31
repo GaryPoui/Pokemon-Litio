@@ -13,3 +13,7 @@ pp = 20
 meta = "ailment"
 descripcion = "Ataque hipnótico que hace dormir profundamente al objetivo."
 estado = "sleep"
+numero = 95
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")
+turnos_min = 2
+turnos_max = 4

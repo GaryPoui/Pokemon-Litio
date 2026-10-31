@@ -21,87 +21,84 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hex.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/nightmare.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_yojbk"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_ljqsd"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_60yl8"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_r05im"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_6y3lg"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_te7i5"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_tr5j3"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_sxqck"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_otbwr"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_iie7o"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_sq3vj"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_ccy2r"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_sqiwt"]
 script = ExtResource("2")
 nivel = 39
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_4tyba"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_y4nkv"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_2g14w"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_w33vi"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("20")
@@ -112,8 +109,6 @@ id = "gengar"
 numero = 94
 nombre = "Gengar"
 tipos = PackedStringArray("fantasma", "veneno")
-habilidades = PackedStringArray("Levitación", "Cuerpo Maldito")
-habilidad_oculta = ""
 ps = 60
 ataque = 65
 defensa = 60
@@ -121,12 +116,16 @@ at_esp = 130
 def_esp = 75
 velocidad = 110
 exp_base = 225
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"at_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"at_esp": 3
+}
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Sombra"
+altura = 1.5
+peso_kg = 40.5
+descripcion = "Se esconde entre las sombras. Se dice que donde Gengar acecha, la temperatura baja 5 °C."
+aprende = Array[ExtResource("2")]([SubResource("Resource_yojbk"), SubResource("Resource_ljqsd"), SubResource("Resource_60yl8"), SubResource("Resource_r05im"), SubResource("Resource_6y3lg"), SubResource("Resource_te7i5"), SubResource("Resource_tr5j3"), SubResource("Resource_sxqck"), SubResource("Resource_otbwr"), SubResource("Resource_iie7o"), SubResource("Resource_sq3vj"), SubResource("Resource_ccy2r"), SubResource("Resource_sqiwt"), SubResource("Resource_4tyba"), SubResource("Resource_y4nkv"), SubResource("Resource_2g14w"), SubResource("Resource_w33vi")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 60

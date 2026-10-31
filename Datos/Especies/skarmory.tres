@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dfpp1gwpglkyi"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_cbfku"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_cbfku"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_n6jw7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/peck.tres" id="3_t2oru"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="4_l44j0"]
@@ -16,79 +16,79 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="14_etcdu"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="15_4caej"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/night_slash.tres" id="16_hiq1m"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_6sacj"]
-[ext_resource type="Texture2D" uid="uid://d4l703ob6k1e0" path="res://Assets/Pokemones/batalla/skarmory_espalda.png" id="18_gnvy7"]
-[ext_resource type="Texture2D" uid="uid://cban2j3b7m2jh" path="res://Assets/Pokemones/batalla/skarmory_frente.png" id="19_hmxgx"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_6sacj"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/skarmory_espalda.png" id="18_gnvy7"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/skarmory_frente.png" id="19_hmxgx"]
 
-[sub_resource type="Resource" id="Resource_da1pa"]
+[sub_resource type="Resource" id="Resource_cbfku"]
 script = ExtResource("1_cbfku")
 movimiento = ExtResource("2_n6jw7")
 
-[sub_resource type="Resource" id="Resource_5uynb"]
+[sub_resource type="Resource" id="Resource_n6jw7"]
 script = ExtResource("1_cbfku")
 movimiento = ExtResource("3_t2oru")
 
-[sub_resource type="Resource" id="Resource_3t3gn"]
+[sub_resource type="Resource" id="Resource_t2oru"]
 script = ExtResource("1_cbfku")
 nivel = 6
 movimiento = ExtResource("4_l44j0")
 
-[sub_resource type="Resource" id="Resource_dbkoi"]
+[sub_resource type="Resource" id="Resource_l44j0"]
 script = ExtResource("1_cbfku")
 nivel = 9
 movimiento = ExtResource("5_uav40")
 
-[sub_resource type="Resource" id="Resource_k8dlk"]
+[sub_resource type="Resource" id="Resource_uav40"]
 script = ExtResource("1_cbfku")
 nivel = 12
 movimiento = ExtResource("6_w6wsp")
 
-[sub_resource type="Resource" id="Resource_g6hys"]
+[sub_resource type="Resource" id="Resource_w6wsp"]
 script = ExtResource("1_cbfku")
 nivel = 17
 movimiento = ExtResource("7_o8a1d")
 
-[sub_resource type="Resource" id="Resource_kj1eb"]
+[sub_resource type="Resource" id="Resource_o8a1d"]
 script = ExtResource("1_cbfku")
 nivel = 20
 movimiento = ExtResource("8_qtne1")
 
-[sub_resource type="Resource" id="Resource_kllbc"]
+[sub_resource type="Resource" id="Resource_qtne1"]
 script = ExtResource("1_cbfku")
 nivel = 23
 movimiento = ExtResource("9_7vtxu")
 
-[sub_resource type="Resource" id="Resource_oad26"]
+[sub_resource type="Resource" id="Resource_7vtxu"]
 script = ExtResource("1_cbfku")
 nivel = 28
 movimiento = ExtResource("10_gk4hy")
 
-[sub_resource type="Resource" id="Resource_afk4t"]
+[sub_resource type="Resource" id="Resource_gk4hy"]
 script = ExtResource("1_cbfku")
 nivel = 31
 movimiento = ExtResource("11_b1yca")
 
-[sub_resource type="Resource" id="Resource_tokff"]
+[sub_resource type="Resource" id="Resource_b1yca"]
 script = ExtResource("1_cbfku")
 nivel = 34
 movimiento = ExtResource("12_x7knp")
 
-[sub_resource type="Resource" id="Resource_7jne0"]
+[sub_resource type="Resource" id="Resource_x7knp"]
 script = ExtResource("1_cbfku")
 nivel = 39
 movimiento = ExtResource("13_qwgdn")
 
-[sub_resource type="Resource" id="Resource_obbob"]
+[sub_resource type="Resource" id="Resource_qwgdn"]
 script = ExtResource("1_cbfku")
 nivel = 42
 movimiento = ExtResource("14_etcdu")
 
-[sub_resource type="Resource" id="Resource_v57yu"]
+[sub_resource type="Resource" id="Resource_etcdu"]
 script = ExtResource("1_cbfku")
 nivel = 45
 movimiento = ExtResource("15_4caej")
 
-[sub_resource type="Resource" id="Resource_8jlyx"]
+[sub_resource type="Resource" id="Resource_4caej"]
 script = ExtResource("1_cbfku")
 nivel = 50
 movimiento = ExtResource("16_hiq1m")
@@ -98,7 +98,7 @@ script = ExtResource("17_6sacj")
 id = "skarmory"
 numero = 227
 nombre = "Skarmory"
-tipos = ["acero", "volador"]
+tipos = PackedStringArray("acero", "volador")
 ps = 65
 ataque = 80
 defensa = 140
@@ -111,12 +111,15 @@ crecimiento = "slow"
 evs_otorgados = {
 "defensa": 2
 }
-aprende = Array[ExtResource("1_cbfku")]([SubResource("Resource_da1pa"), SubResource("Resource_5uynb"), SubResource("Resource_3t3gn"), SubResource("Resource_dbkoi"), SubResource("Resource_k8dlk"), SubResource("Resource_g6hys"), SubResource("Resource_kj1eb"), SubResource("Resource_kllbc"), SubResource("Resource_oad26"), SubResource("Resource_afk4t"), SubResource("Resource_tokff"), SubResource("Resource_7jne0"), SubResource("Resource_obbob"), SubResource("Resource_v57yu"), SubResource("Resource_8jlyx")])
+habilidades = PackedStringArray("keen_eye", "sturdy")
+habilidad_oculta = "weak_armor"
+categoria = "Pokémon Coraza Ave"
+altura = 1.7
+peso_kg = 50.5
+descripcion = "Después de anidar en zarzas, las alas de sus polluelos crecen fortalecidas por los rasguños."
+aprende = Array[ExtResource("1_cbfku")]([SubResource("Resource_cbfku"), SubResource("Resource_n6jw7"), SubResource("Resource_t2oru"), SubResource("Resource_l44j0"), SubResource("Resource_uav40"), SubResource("Resource_w6wsp"), SubResource("Resource_o8a1d"), SubResource("Resource_qtne1"), SubResource("Resource_7vtxu"), SubResource("Resource_gk4hy"), SubResource("Resource_b1yca"), SubResource("Resource_x7knp"), SubResource("Resource_qwgdn"), SubResource("Resource_etcdu"), SubResource("Resource_4caej")])
 sprite_frente = ExtResource("19_hmxgx")
 sprite_espalda = ExtResource("18_gnvy7")
 cuadros_frente = 136
 cuadros_espalda = 139
 fps_sprite = 28.57
-habilidades = PackedStringArray("Perspicacia/Vista Lince", "Robustez")
-habilidad_oculta = "Armadura Frágil"
-evoluciones = Array[Dictionary]([])

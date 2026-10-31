@@ -11,3 +11,5 @@ poder = 30
 pp = 15
 descripcion = "Lanza un grito tan tremendo que impresiona y puede amedrentar al objetivo."
 prob_retroceso = 30
+numero = 310
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

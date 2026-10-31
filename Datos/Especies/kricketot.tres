@@ -9,22 +9,20 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/struggle_bug.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="8"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_fvgoh"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_28rgy"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_gugfs"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_5mpw0"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("8")
@@ -35,8 +33,6 @@ id = "kricketot"
 numero = 401
 nombre = "Kricketot"
 tipos = PackedStringArray("bicho")
-habilidades = PackedStringArray("Mudar")
-habilidad_oculta = "Fuga"
 ps = 37
 ataque = 25
 defensa = 41
@@ -45,13 +41,24 @@ def_esp = 41
 velocidad = 25
 exp_base = 39
 ratio_captura = 255
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "kricketune", "metodo": "nivel", "condicion": "Nivel 10", "nivel": 10}])
+evs_otorgados = {
+"defensa": 1
+}
 evoluciona_a = "kricketune"
 nivel_evolucion = 10
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+evoluciones = Array[Dictionary]([{
+"especie": "kricketune",
+"metodo": "nivel",
+"nivel": 10
+}])
+habilidades = PackedStringArray("shed_skin")
+habilidad_oculta = "run_away"
+categoria = "Pokémon Grillo"
+altura = 0.3
+peso_kg = 2.2
+descripcion = "Hablan entre sí chocando las antenas. Los sonidos producidos son muy característicos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_fvgoh"), SubResource("Resource_28rgy"), SubResource("Resource_gugfs"), SubResource("Resource_5mpw0")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 71

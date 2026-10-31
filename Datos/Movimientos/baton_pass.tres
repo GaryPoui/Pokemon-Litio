@@ -12,3 +12,5 @@ pp = 40
 objetivo = "user"
 meta = "unique"
 descripcion = "Cambia el puesto con otro miembro del equipo y le pasa los cambios de características."
+numero = 226
+banderas = PackedStringArray("metronome")

@@ -6,10 +6,9 @@
 script = ExtResource("1")
 id = "mega_punch"
 nombre = "Megapuño"
-tipo = "normal"
-categoria = "fisico"
 poder = 80
 precision = 85
 pp = 20
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Un puñetazo de gran potencia."
+numero = 5
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")

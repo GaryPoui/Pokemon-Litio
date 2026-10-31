@@ -6,10 +6,14 @@
 script = ExtResource("1")
 id = "minimize"
 nombre = "Reducción"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 10
+precision = 0
+pp = 20
 objetivo = "user"
-meta = "unique"
+meta = "net-good-stats"
+descripcion = "El usuario mengua para aumentar mucho la Evasión."
+cambios_stats = {
+"evasion": 2
+}
+numero = 107
+banderas = PackedStringArray("metronome", "snatch")

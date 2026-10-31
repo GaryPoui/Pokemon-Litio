@@ -21,82 +21,93 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/outrage.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/giga_impact.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_pcn6c"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_7srjp"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_t651y"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_07eji"]
+script = ExtResource("2")
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_2773l"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_cct01"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_abl05"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_w3uo8"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_t24m7"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_pe1ei"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_2131c"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_cc1aq"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_pfywq"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_hhs5w"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_rk1w7"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_u0xm4"]
 script = ExtResource("2")
 nivel = 48
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_fy0nc"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_4jp55"]
 script = ExtResource("2")
 nivel = 60
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_521q0"]
 script = ExtResource("2")
 nivel = 66
 movimiento = ExtResource("20")
@@ -107,23 +118,32 @@ id = "fraxure"
 numero = 611
 nombre = "Fraxure"
 tipos = PackedStringArray("dragon")
-habilidades = PackedStringArray("Rivalidad", "Rompemoldes")
-habilidad_oculta = "Nerviosismo"
 ps = 66
 ataque = 117
 defensa = 70
 at_esp = 40
-def_esp = 50
 velocidad = 67
 exp_base = 144
 ratio_captura = 60
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([{"especie": "haxorus", "metodo": "nivel", "condicion": "Nivel 48", "nivel": 48}])
+evs_otorgados = {
+"ataque": 2
+}
 evoluciona_a = "haxorus"
 nivel_evolucion = 48
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evoluciones = Array[Dictionary]([{
+"especie": "haxorus",
+"metodo": "nivel",
+"nivel": 48
+}])
+amistad_base = 35
+habilidades = PackedStringArray("rivalry", "mold_breaker")
+habilidad_oculta = "unnerve"
+categoria = "Pokémon Boca Hacha"
+altura = 1.0
+peso_kg = 36.0
+descripcion = "Sus colmillos pueden hacer añicos rocas inmensas. Las luchas territoriales de los Fraxure son encarnizadas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_pcn6c"), SubResource("Resource_7srjp"), SubResource("Resource_t651y"), SubResource("Resource_07eji"), SubResource("Resource_2773l"), SubResource("Resource_cct01"), SubResource("Resource_abl05"), SubResource("Resource_w3uo8"), SubResource("Resource_t24m7"), SubResource("Resource_pe1ei"), SubResource("Resource_2131c"), SubResource("Resource_cc1aq"), SubResource("Resource_pfywq"), SubResource("Resource_hhs5w"), SubResource("Resource_rk1w7"), SubResource("Resource_u0xm4"), SubResource("Resource_fy0nc"), SubResource("Resource_4jp55"), SubResource("Resource_521q0")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 55

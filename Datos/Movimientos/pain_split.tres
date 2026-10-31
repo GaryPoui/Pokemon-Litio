@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1")
 id = "pain_split"
-nombre = "Divide dolor"
-tipo = "normal"
+nombre = "Divide Dolor"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 20
-objetivo = "selected-pokemon"
 meta = "unique"
+descripcion = "Suma los PS del usuario a los del objetivo y los reparte a partes iguales."
+numero = 220
+banderas = PackedStringArray("allyanim", "metronome", "mirror", "protect")

@@ -12,8 +12,10 @@ precision = 0
 pp = 20
 objetivo = "user"
 meta = "net-good-stats"
-descripcion = "Aumenta la concentración y calma el espíritu para subir el Ataque Especial y la Defensa Especial. "
+descripcion = "Aumenta la concentración y calma el espíritu para subir el Ataque Especial y la Defensa Especial."
 cambios_stats = {
 "at_esp": 1,
 "def_esp": 1
 }
+numero = 347
+banderas = PackedStringArray("metronome", "snatch")

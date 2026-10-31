@@ -8,8 +8,11 @@ id = "memento"
 nombre = "Legado"
 tipo = "siniestro"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
 meta = "unique"
+descripcion = "El usuario se debilita, pero baja mucho tanto el Ataque como el Ataque Especial del objetivo."
+cambios_stats = {
+"at_esp": -2,
+"ataque": -2
+}
+numero = 262
+banderas = PackedStringArray("metronome", "mirror", "protect")

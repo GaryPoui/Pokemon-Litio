@@ -12,93 +12,78 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/rock_polish.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/psywave.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/embargo.tres" id="12"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/rock_slide.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/cosmic_power.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/heal_block.tres" id="16"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/future_sight.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/magic_room.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_g0stm"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_6w2a3"]
 script = ExtResource("2")
-nivel = 5
-movimiento = ExtResource("8")
+movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_5vmh7"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_jfkfi"]
 script = ExtResource("2")
 nivel = 9
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_hmaid"]
+script = ExtResource("2")
+nivel = 12
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_66dw1"]
 script = ExtResource("2")
-nivel = 13
+nivel = 20
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_2rkt4"]
 script = ExtResource("2")
-nivel = 17
+nivel = 23
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_61l72"]
 script = ExtResource("2")
-nivel = 21
+nivel = 31
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_tltf2"]
 script = ExtResource("2")
-nivel = 25
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 29
+nivel = 34
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_u2uiv"]
 script = ExtResource("2")
-nivel = 33
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 37
+nivel = 42
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 41
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_b24p8"]
 script = ExtResource("2")
 nivel = 45
-movimiento = ExtResource("18")
+movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
-script = ExtResource("2")
-nivel = 49
-movimiento = ExtResource("19")
-
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_2mtng"]
 script = ExtResource("2")
 nivel = 53
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Resource_e0hlw"]
+script = ExtResource("2")
+nivel = 56
+movimiento = ExtResource("19")
+
+[sub_resource type="Resource" id="Resource_ywrtb"]
+script = ExtResource("2")
+nivel = 64
 movimiento = ExtResource("20")
 
 [resource]
@@ -107,21 +92,24 @@ id = "lunatone"
 numero = 337
 nombre = "Lunatone"
 tipos = PackedStringArray("roca", "psiquico")
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
-ps = 90
+ps = 70
 ataque = 55
 defensa = 65
 at_esp = 95
 def_esp = 85
 velocidad = 70
-exp_base = 154
-ratio_captura = 45
+exp_base = 161
 ratio_genero = -1
 crecimiento = "fast"
-evs_otorgados = {"at_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"at_esp": 2
+}
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Meteorito"
+altura = 1.0
+peso_kg = 168.0
+descripcion = "Se piensa que está muy influido por las fases lunares, ya que solo actúa en noches de luna llena."
+aprende = Array[ExtResource("2")]([SubResource("Resource_g0stm"), SubResource("Resource_6w2a3"), SubResource("Resource_5vmh7"), SubResource("Resource_jfkfi"), SubResource("Resource_hmaid"), SubResource("Resource_66dw1"), SubResource("Resource_2rkt4"), SubResource("Resource_61l72"), SubResource("Resource_tltf2"), SubResource("Resource_u2uiv"), SubResource("Resource_b24p8"), SubResource("Resource_2mtng"), SubResource("Resource_e0hlw"), SubResource("Resource_ywrtb")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 84

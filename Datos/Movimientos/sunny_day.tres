@@ -13,3 +13,5 @@ pp = 5
 objetivo = "entire-field"
 meta = "whole-field-effect"
 descripcion = "Hace que se intensifique el efecto del sol durante cinco turnos, lo que potencia los movimientos de tipo Fuego y debilita los de tipo Agua."
+numero = 241
+banderas = PackedStringArray("metronome")

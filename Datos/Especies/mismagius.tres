@@ -11,34 +11,28 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/lucky_chant.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/spite.tres" id="10"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_6cgn7"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_n6aah"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_ld6n7"]
+script = ExtResource("2")
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_30llu"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_j7ttx"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_vuj2v"]
+script = ExtResource("2")
 movimiento = ExtResource("10")
 
 [resource]
@@ -47,8 +41,6 @@ id = "mismagius"
 numero = 429
 nombre = "Mismagius"
 tipos = PackedStringArray("fantasma")
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
 ps = 60
 ataque = 60
 defensa = 60
@@ -56,14 +48,19 @@ at_esp = 105
 def_esp = 105
 velocidad = 105
 exp_base = 173
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "fast"
-evs_otorgados = {"at_esp": 1, "def_esp": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5")])
+evs_otorgados = {
+"at_esp": 1,
+"def_esp": 1
+}
+amistad_base = 35
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Mágico"
+altura = 0.9
+peso_kg = 4.4
+descripcion = "Recita cánticos. Algunos de ellos atormentan a sus rivales, mientras que otros producen felicidad."
+aprende = Array[ExtResource("2")]([SubResource("Resource_6cgn7"), SubResource("Resource_n6aah"), SubResource("Resource_ld6n7"), SubResource("Resource_30llu"), SubResource("Resource_j7ttx"), SubResource("Resource_vuj2v")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 15
 cuadros_espalda = 15
-fps_sprite = 10.0

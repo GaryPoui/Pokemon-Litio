@@ -20,77 +20,76 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mirror_coat.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_4sujb"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_igf3f"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_814qe"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_2ucmt"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_k7vy8"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_b3d2g"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_4f0qg"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_h0wxn"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_es8b3"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_6fwtd"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_3u1xn"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_w0qjn"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_mvd7e"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_u8qrp"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_aj813"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("19")
@@ -101,23 +100,31 @@ id = "voltorb"
 numero = 100
 nombre = "Voltorb"
 tipos = PackedStringArray("electrico")
-habilidades = PackedStringArray("Insonorización/Insonorizar", "Electricidad Estática")
-habilidad_oculta = "Secuela/Detonación"
 ps = 40
 ataque = 30
-defensa = 50
 at_esp = 55
 def_esp = 55
 velocidad = 100
 exp_base = 66
 ratio_captura = 190
 ratio_genero = -1
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "electrode", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])
+evs_otorgados = {
+"velocidad": 1
+}
 evoluciona_a = "electrode"
 nivel_evolucion = 30
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evoluciones = Array[Dictionary]([{
+"especie": "electrode",
+"metodo": "nivel",
+"nivel": 30
+}])
+habilidades = PackedStringArray("soundproof", "static")
+habilidad_oculta = "aftermath"
+categoria = "Pokémon Bola"
+altura = 0.5
+peso_kg = 10.4
+descripcion = "Fue descubierto cuando se crearon las Poké Balls. Se dice que tiene algo que ver con ellas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_4sujb"), SubResource("Resource_igf3f"), SubResource("Resource_814qe"), SubResource("Resource_2ucmt"), SubResource("Resource_k7vy8"), SubResource("Resource_b3d2g"), SubResource("Resource_4f0qg"), SubResource("Resource_h0wxn"), SubResource("Resource_es8b3"), SubResource("Resource_6fwtd"), SubResource("Resource_3u1xn"), SubResource("Resource_w0qjn"), SubResource("Resource_mvd7e"), SubResource("Resource_u8qrp"), SubResource("Resource_aj813")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 45

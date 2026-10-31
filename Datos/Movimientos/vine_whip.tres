@@ -10,3 +10,5 @@ tipo = "planta"
 poder = 35
 pp = 15
 descripcion = "Azota al objetivo con ramas finas."
+numero = 22
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

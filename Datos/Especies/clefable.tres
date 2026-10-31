@@ -9,25 +9,21 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/minimize.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/metronome.tres" id="8"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_jd7kq"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_3celu"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
+movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_ivw6b"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_1svrf"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
+movimiento = ExtResource("6")
 
 [resource]
 script = ExtResource("1")
@@ -35,21 +31,27 @@ id = "clefable"
 numero = 36
 nombre = "Clefable"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Gran Encanto", "Muro Mágico")
-habilidad_oculta = "Ignorancia/Ignorante"
 ps = 95
 ataque = 70
 defensa = 73
-at_esp = 95
+at_esp = 85
 def_esp = 90
 velocidad = 60
-exp_base = 213
+exp_base = 217
 ratio_captura = 25
 ratio_genero = 6
 crecimiento = "fast"
-evs_otorgados = {"ps": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+evs_otorgados = {
+"ps": 3
+}
+amistad_base = 140
+habilidades = PackedStringArray("cute_charm", "magic_guard")
+habilidad_oculta = "unaware"
+categoria = "Pokémon Hada"
+altura = 1.3
+peso_kg = 40.0
+descripcion = "Su oído es tan agudo que puede oír una aguja caer a 1 km. Vive en montañas solitarias."
+aprende = Array[ExtResource("2")]([SubResource("Resource_jd7kq"), SubResource("Resource_3celu"), SubResource("Resource_ivw6b"), SubResource("Resource_1svrf")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 54

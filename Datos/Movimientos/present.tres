@@ -6,10 +6,8 @@
 script = ExtResource("1")
 id = "present"
 nombre = "Presente"
-tipo = "normal"
-categoria = "fisico"
-poder = 0
 precision = 90
 pp = 15
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Quien lo usa ataca al objetivo dándole un regalo con una bomba trampa. Sin embargo, a veces restaura sus PS."
+numero = 217
+banderas = PackedStringArray("metronome", "mirror", "protect")

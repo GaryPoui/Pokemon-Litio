@@ -15,3 +15,5 @@ descripcion = "Se enrosca para ocultar sus puntos débiles y aumentar la Defensa
 cambios_stats = {
 "defensa": 1
 }
+numero = 111
+banderas = PackedStringArray("metronome", "snatch")

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://b6pbha04f4rs5"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_dqvty"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_dqvty"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_0ej6v"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_o8g84"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/odor_sleuth.tres" id="4_1f3p3"]
@@ -14,69 +14,69 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="12_cpiy4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="13_fmvap"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/giga_impact.tres" id="14_qbil4"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_xr0ts"]
-[ext_resource type="Texture2D" uid="uid://w8ec7kc887x1" path="res://Assets/Pokemones/batalla/lillipup_espalda.png" id="16_xg1h7"]
-[ext_resource type="Texture2D" uid="uid://dm2c7p475cqlu" path="res://Assets/Pokemones/batalla/lillipup_frente.png" id="17_n5vdr"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="15_xr0ts"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lillipup_espalda.png" id="16_xg1h7"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/lillipup_frente.png" id="17_n5vdr"]
 
-[sub_resource type="Resource" id="Resource_cuagd"]
+[sub_resource type="Resource" id="Resource_dqvty"]
 script = ExtResource("1_dqvty")
 movimiento = ExtResource("2_0ej6v")
 
-[sub_resource type="Resource" id="Resource_diogo"]
+[sub_resource type="Resource" id="Resource_0ej6v"]
 script = ExtResource("1_dqvty")
 movimiento = ExtResource("3_o8g84")
 
-[sub_resource type="Resource" id="Resource_q72op"]
+[sub_resource type="Resource" id="Resource_o8g84"]
 script = ExtResource("1_dqvty")
 nivel = 5
 movimiento = ExtResource("4_1f3p3")
 
-[sub_resource type="Resource" id="Resource_otf4n"]
+[sub_resource type="Resource" id="Resource_1f3p3"]
 script = ExtResource("1_dqvty")
 nivel = 8
 movimiento = ExtResource("5_udty1")
 
-[sub_resource type="Resource" id="Resource_yafen"]
+[sub_resource type="Resource" id="Resource_udty1"]
 script = ExtResource("1_dqvty")
 nivel = 12
 movimiento = ExtResource("6_xj03e")
 
-[sub_resource type="Resource" id="Resource_t2iop"]
+[sub_resource type="Resource" id="Resource_xj03e"]
 script = ExtResource("1_dqvty")
 nivel = 15
 movimiento = ExtResource("7_lnrds")
 
-[sub_resource type="Resource" id="Resource_3e77d"]
+[sub_resource type="Resource" id="Resource_lnrds"]
 script = ExtResource("1_dqvty")
 nivel = 19
 movimiento = ExtResource("8_c8bkk")
 
-[sub_resource type="Resource" id="Resource_typ0g"]
+[sub_resource type="Resource" id="Resource_c8bkk"]
 script = ExtResource("1_dqvty")
 nivel = 22
 movimiento = ExtResource("9_xnel8")
 
-[sub_resource type="Resource" id="Resource_5txka"]
+[sub_resource type="Resource" id="Resource_xnel8"]
 script = ExtResource("1_dqvty")
 nivel = 26
 movimiento = ExtResource("10_b8p7m")
 
-[sub_resource type="Resource" id="Resource_gurl6"]
+[sub_resource type="Resource" id="Resource_b8p7m"]
 script = ExtResource("1_dqvty")
 nivel = 29
 movimiento = ExtResource("11_gd7cr")
 
-[sub_resource type="Resource" id="Resource_5xym0"]
+[sub_resource type="Resource" id="Resource_gd7cr"]
 script = ExtResource("1_dqvty")
 nivel = 33
 movimiento = ExtResource("12_cpiy4")
 
-[sub_resource type="Resource" id="Resource_e74m5"]
+[sub_resource type="Resource" id="Resource_cpiy4"]
 script = ExtResource("1_dqvty")
 nivel = 36
 movimiento = ExtResource("13_fmvap")
 
-[sub_resource type="Resource" id="Resource_h5hlg"]
+[sub_resource type="Resource" id="Resource_fmvap"]
 script = ExtResource("1_dqvty")
 nivel = 40
 movimiento = ExtResource("14_qbil4")
@@ -86,6 +86,7 @@ script = ExtResource("15_xr0ts")
 id = "lillipup"
 numero = 506
 nombre = "Lillipup"
+tipos = PackedStringArray("normal")
 ps = 45
 ataque = 60
 defensa = 45
@@ -100,11 +101,19 @@ evs_otorgados = {
 }
 evoluciona_a = "herdier"
 nivel_evolucion = 16
-aprende = Array[ExtResource("1_dqvty")]([SubResource("Resource_cuagd"), SubResource("Resource_diogo"), SubResource("Resource_q72op"), SubResource("Resource_otf4n"), SubResource("Resource_yafen"), SubResource("Resource_t2iop"), SubResource("Resource_3e77d"), SubResource("Resource_typ0g"), SubResource("Resource_5txka"), SubResource("Resource_gurl6"), SubResource("Resource_5xym0"), SubResource("Resource_e74m5"), SubResource("Resource_h5hlg")])
+evoluciones = Array[Dictionary]([{
+"especie": "herdier",
+"metodo": "nivel",
+"nivel": 16
+}])
+habilidades = PackedStringArray("vital_spirit", "pickup")
+habilidad_oculta = "run_away"
+categoria = "Pokémon Perrito"
+altura = 0.4
+peso_kg = 4.1
+descripcion = "Los mechones que cubren su cara actúan como un magnífico radar para detectar con precisión lo que hay a su alrededor."
+aprende = Array[ExtResource("1_dqvty")]([SubResource("Resource_dqvty"), SubResource("Resource_0ej6v"), SubResource("Resource_o8g84"), SubResource("Resource_1f3p3"), SubResource("Resource_udty1"), SubResource("Resource_xj03e"), SubResource("Resource_lnrds"), SubResource("Resource_c8bkk"), SubResource("Resource_xnel8"), SubResource("Resource_b8p7m"), SubResource("Resource_gd7cr"), SubResource("Resource_cpiy4"), SubResource("Resource_fmvap")])
 sprite_frente = ExtResource("17_n5vdr")
 sprite_espalda = ExtResource("16_xg1h7")
 cuadros_frente = 64
 cuadros_espalda = 64
-habilidades = PackedStringArray("Espíritu Vital", "Recolección/Recogida")
-habilidad_oculta = "Fuga"
-evoluciones = Array[Dictionary]([{"especie": "herdier", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

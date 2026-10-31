@@ -6,10 +6,10 @@
 script = ExtResource("1")
 id = "mind_reader"
 nombre = "Telépata"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 5
-objetivo = "selected-pokemon"
 meta = "unique"
+descripcion = "El usuario adivina los movimientos del objetivo para hacer que su siguiente ataque no falle."
+numero = 170
+banderas = PackedStringArray("metronome", "mirror", "protect")

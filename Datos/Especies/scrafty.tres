@@ -21,88 +21,88 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/scrafty_espalda.png" id="19_4fwxx"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/scrafty_frente.png" id="20_nqmet"]
 
-[sub_resource type="Resource" id="Resource_qpymd"]
+[sub_resource type="Resource" id="Resource_prgh1"]
 script = ExtResource("1_prgh1")
 movimiento = ExtResource("2_r8tft")
 
-[sub_resource type="Resource" id="Resource_rgwdo"]
+[sub_resource type="Resource" id="Resource_r8tft"]
 script = ExtResource("1_prgh1")
 movimiento = ExtResource("3_c3ufn")
 
-[sub_resource type="Resource" id="Resource_nfjry"]
+[sub_resource type="Resource" id="Resource_c3ufn"]
 script = ExtResource("1_prgh1")
 movimiento = ExtResource("4_7k6no")
 
-[sub_resource type="Resource" id="Resource_bikeo"]
+[sub_resource type="Resource" id="Resource_7k6no"]
 script = ExtResource("1_prgh1")
 movimiento = ExtResource("5_qev0x")
 
-[sub_resource type="Resource" id="Resource_he2nh"]
+[sub_resource type="Resource" id="Resource_qev0x"]
 script = ExtResource("1_prgh1")
 nivel = 5
 movimiento = ExtResource("5_qev0x")
 
-[sub_resource type="Resource" id="Resource_l7xe4"]
+[sub_resource type="Resource" id="Resource_cl32w"]
 script = ExtResource("1_prgh1")
 nivel = 9
 movimiento = ExtResource("2_r8tft")
 
-[sub_resource type="Resource" id="Resource_6idq6"]
+[sub_resource type="Resource" id="Resource_6jppl"]
 script = ExtResource("1_prgh1")
 nivel = 12
 movimiento = ExtResource("6_cl32w")
 
-[sub_resource type="Resource" id="Resource_3wdcn"]
+[sub_resource type="Resource" id="Resource_2qbep"]
 script = ExtResource("1_prgh1")
 nivel = 16
 movimiento = ExtResource("7_6jppl")
 
-[sub_resource type="Resource" id="Resource_y37p1"]
+[sub_resource type="Resource" id="Resource_l0ac6"]
 script = ExtResource("1_prgh1")
 nivel = 20
 movimiento = ExtResource("8_2qbep")
 
-[sub_resource type="Resource" id="Resource_4smrs"]
+[sub_resource type="Resource" id="Resource_vcoew"]
 script = ExtResource("1_prgh1")
 nivel = 23
 movimiento = ExtResource("9_l0ac6")
 
-[sub_resource type="Resource" id="Resource_pbuwi"]
+[sub_resource type="Resource" id="Resource_gkgwx"]
 script = ExtResource("1_prgh1")
 nivel = 27
 movimiento = ExtResource("10_vcoew")
 
-[sub_resource type="Resource" id="Resource_2tklg"]
+[sub_resource type="Resource" id="Resource_2qe5v"]
 script = ExtResource("1_prgh1")
 nivel = 31
 movimiento = ExtResource("11_gkgwx")
 
-[sub_resource type="Resource" id="Resource_l3o6j"]
+[sub_resource type="Resource" id="Resource_wpnmp"]
 script = ExtResource("1_prgh1")
 nivel = 34
 movimiento = ExtResource("12_2qe5v")
 
-[sub_resource type="Resource" id="Resource_jev73"]
+[sub_resource type="Resource" id="Resource_thvk4"]
 script = ExtResource("1_prgh1")
 nivel = 38
 movimiento = ExtResource("13_wpnmp")
 
-[sub_resource type="Resource" id="Resource_xccpr"]
+[sub_resource type="Resource" id="Resource_xentw"]
 script = ExtResource("1_prgh1")
 nivel = 45
 movimiento = ExtResource("14_thvk4")
 
-[sub_resource type="Resource" id="Resource_42nrs"]
+[sub_resource type="Resource" id="Resource_smiam"]
 script = ExtResource("1_prgh1")
 nivel = 51
 movimiento = ExtResource("15_xentw")
 
-[sub_resource type="Resource" id="Resource_ae68p"]
+[sub_resource type="Resource" id="Resource_qlip8"]
 script = ExtResource("1_prgh1")
 nivel = 58
 movimiento = ExtResource("16_smiam")
 
-[sub_resource type="Resource" id="Resource_gqrm0"]
+[sub_resource type="Resource" id="Resource_qhnld"]
 script = ExtResource("1_prgh1")
 nivel = 65
 movimiento = ExtResource("17_qlip8")
@@ -112,7 +112,7 @@ script = ExtResource("18_qhnld")
 id = "scrafty"
 numero = 560
 nombre = "Scrafty"
-tipos = ["siniestro", "lucha"]
+tipos = PackedStringArray("siniestro", "lucha")
 ps = 65
 ataque = 90
 defensa = 115
@@ -125,12 +125,15 @@ evs_otorgados = {
 "def_esp": 1,
 "defensa": 1
 }
-aprende = Array[ExtResource("1_prgh1")]([SubResource("Resource_qpymd"), SubResource("Resource_rgwdo"), SubResource("Resource_nfjry"), SubResource("Resource_bikeo"), SubResource("Resource_he2nh"), SubResource("Resource_l7xe4"), SubResource("Resource_6idq6"), SubResource("Resource_3wdcn"), SubResource("Resource_y37p1"), SubResource("Resource_4smrs"), SubResource("Resource_pbuwi"), SubResource("Resource_2tklg"), SubResource("Resource_l3o6j"), SubResource("Resource_jev73"), SubResource("Resource_xccpr"), SubResource("Resource_42nrs"), SubResource("Resource_ae68p"), SubResource("Resource_gqrm0")])
+habilidades = PackedStringArray("shed_skin", "moxie")
+habilidad_oculta = "intimidate"
+categoria = "Pokémon Gamberro"
+altura = 1.1
+peso_kg = 30.0
+descripcion = "Se protege de los ataques con la muda de su piel mientras reparte patadas. Cuanto mayor es su cresta, más se le respeta."
+aprende = Array[ExtResource("1_prgh1")]([SubResource("Resource_prgh1"), SubResource("Resource_r8tft"), SubResource("Resource_c3ufn"), SubResource("Resource_7k6no"), SubResource("Resource_qev0x"), SubResource("Resource_cl32w"), SubResource("Resource_6jppl"), SubResource("Resource_2qbep"), SubResource("Resource_l0ac6"), SubResource("Resource_vcoew"), SubResource("Resource_gkgwx"), SubResource("Resource_2qe5v"), SubResource("Resource_wpnmp"), SubResource("Resource_thvk4"), SubResource("Resource_xentw"), SubResource("Resource_smiam"), SubResource("Resource_qlip8"), SubResource("Resource_qhnld")])
 sprite_frente = ExtResource("20_nqmet")
 sprite_espalda = ExtResource("19_4fwxx")
 cuadros_frente = 137
 cuadros_espalda = 82
 fps_sprite = 15.71
-habilidades = PackedStringArray("Mudar", "Autoestima")
-habilidad_oculta = "Intimidación"
-evoluciones = Array[Dictionary]([])

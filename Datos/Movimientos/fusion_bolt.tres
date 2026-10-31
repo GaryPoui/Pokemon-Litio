@@ -5,11 +5,10 @@
 [resource]
 script = ExtResource("1")
 id = "fusion_bolt"
-nombre = "Rayo fusión"
+nombre = "Rayo Fusión"
 tipo = "electrico"
-categoria = "fisico"
 poder = 100
-precision = 100
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Ataca con una enorme descarga eléctrica. Aumenta su potencia si es influenciada por una gigantesca llamarada."
+numero = 559
+banderas = PackedStringArray("metronome", "mirror", "protect")

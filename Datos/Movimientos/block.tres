@@ -6,10 +6,10 @@
 script = ExtResource("1")
 id = "block"
 nombre = "Bloqueo"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 5
-objetivo = "selected-pokemon"
 meta = "unique"
+descripcion = "Le corta el paso al objetivo para que no pueda escapar."
+numero = 335
+banderas = PackedStringArray("metronome", "mirror", "reflectable")

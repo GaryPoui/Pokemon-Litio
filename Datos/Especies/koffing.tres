@@ -19,74 +19,72 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/destiny_bond.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/memento.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_cwm3o"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_etvhe"]
 script = ExtResource("2")
-nivel = 4
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_vm2yx"]
+script = ExtResource("2")
+nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_qnp0r"]
 script = ExtResource("2")
-nivel = 7
+nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 12
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_abedy"]
 script = ExtResource("2")
 nivel = 15
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_ncj1p"]
+script = ExtResource("2")
+nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_6jjid"]
 script = ExtResource("2")
-nivel = 18
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 23
+nivel = 24
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_qjxhv"]
 script = ExtResource("2")
-nivel = 26
+nivel = 28
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Resource_won10"]
+script = ExtResource("2")
+nivel = 33
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 29
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 34
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_tteb2"]
 script = ExtResource("2")
 nivel = 37
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_aidjn"]
+script = ExtResource("2")
+nivel = 42
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_5rk0p"]
 script = ExtResource("2")
-nivel = 40
+nivel = 46
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Resource_mkxvy"]
+script = ExtResource("2")
+nivel = 51
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_0mps4"]
 script = ExtResource("2")
-nivel = 45
+nivel = 55
 movimiento = ExtResource("18")
 
 [resource]
@@ -95,8 +93,6 @@ id = "koffing"
 numero = 109
 nombre = "Koffing"
 tipos = PackedStringArray("veneno")
-habilidades = PackedStringArray("Levitación", "Gas Reactivo")
-habilidad_oculta = "Hedor"
 ps = 40
 ataque = 65
 defensa = 95
@@ -105,14 +101,24 @@ def_esp = 45
 velocidad = 35
 exp_base = 68
 ratio_captura = 190
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "weezing", "metodo": "especial", "condicion": "Nivel 35 (fuera de Galar)"}])
+evs_otorgados = {
+"defensa": 1
+}
 evoluciona_a = "weezing"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+nivel_evolucion = 35
+evoluciones = Array[Dictionary]([{
+"especie": "weezing",
+"metodo": "nivel",
+"nivel": 35
+}])
+habilidades = PackedStringArray("levitate")
+habilidad_oculta = "stench"
+categoria = "Pokémon Gas Venenoso"
+altura = 0.6
+peso_kg = 1.0
+descripcion = "Tiene forma de globo y es muy ligero. Está compuesto por gases tóxicos y apesta."
+aprende = Array[ExtResource("2")]([SubResource("Resource_cwm3o"), SubResource("Resource_etvhe"), SubResource("Resource_vm2yx"), SubResource("Resource_qnp0r"), SubResource("Resource_abedy"), SubResource("Resource_ncj1p"), SubResource("Resource_6jjid"), SubResource("Resource_qjxhv"), SubResource("Resource_won10"), SubResource("Resource_tteb2"), SubResource("Resource_aidjn"), SubResource("Resource_5rk0p"), SubResource("Resource_mkxvy"), SubResource("Resource_0mps4")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 11
 cuadros_espalda = 11
-fps_sprite = 10.0

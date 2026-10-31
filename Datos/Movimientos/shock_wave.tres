@@ -12,3 +12,5 @@ poder = 60
 precision = 0
 pp = 20
 descripcion = "Ataque eléctrico muy rápido e ineludible."
+numero = 351
+banderas = PackedStringArray("metronome", "mirror", "protect")

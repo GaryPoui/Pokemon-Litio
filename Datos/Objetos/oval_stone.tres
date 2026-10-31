@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/oval_stone.png" id="1_7dqh0"]
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="2_e7lne"]
+
+[resource]
+script = ExtResource("2_e7lne")
+id = "oval_stone"
+nombre = "Piedra Oval"
+descripcion = "Una piedra peculiar que hace evolucionar a algunos Pokémon. Tiene forma de huevo."
+precio = 2100
+icono = ExtResource("1_7dqh0")
+uso_especial = "evolucion"

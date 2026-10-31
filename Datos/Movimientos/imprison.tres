@@ -12,3 +12,5 @@ precision = 0
 objetivo = "user"
 meta = "unique"
 descripcion = "Impide a los contrincantes usar ataques conocidos por el usuario durante el combate."
+numero = 286
+banderas = PackedStringArray("bypasssub", "metronome", "mustpressure", "snatch")

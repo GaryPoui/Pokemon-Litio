@@ -11,3 +11,5 @@ poder = 120
 pp = 15
 descripcion = "Pliega sus alas y ataca con un vuelo rasante. El Pokémon que lo usa también resulta seriamente dañado."
 drenaje = -33
+numero = 413
+banderas = PackedStringArray("contact", "distance", "metronome", "mirror", "protect")

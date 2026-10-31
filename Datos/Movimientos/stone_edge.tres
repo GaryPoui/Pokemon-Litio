@@ -12,3 +12,5 @@ precision = 80
 pp = 5
 descripcion = "Clava piedras muy afiladas al objetivo. Suele ser crítico."
 critico = 1
+numero = 444
+banderas = PackedStringArray("metronome", "mirror", "protect")

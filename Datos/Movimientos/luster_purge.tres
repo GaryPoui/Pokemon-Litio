@@ -9,7 +9,12 @@ nombre = "Resplandor"
 tipo = "psiquico"
 categoria = "especial"
 poder = 95
-precision = 100
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-lower"
+descripcion = "Fogonazo de luz que puede bajar la Defensa Especial del objetivo."
+cambios_stats = {
+"def_esp": -1
+}
+prob_stat = 50
+numero = 295
+banderas = PackedStringArray("metronome", "mirror", "protect")

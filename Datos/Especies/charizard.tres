@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dbt4d4ej8ynkg"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vcw67"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vcw67"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="2_imeei"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dragon_claw.tres" id="3_8dcrd"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="4_3cwby"]
@@ -19,99 +19,99 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/inferno.tres" id="17_1wm7y"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/heat_wave.tres" id="18_efovs"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flare_blitz.tres" id="19_uj30o"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="20_0sx4c"]
-[ext_resource type="Texture2D" uid="uid://c346c1lolo60g" path="res://Assets/Pokemones/batalla/charizard_espalda.png" id="21_552q7"]
-[ext_resource type="Texture2D" uid="uid://cbn5rg8bshjn4" path="res://Assets/Pokemones/batalla/charizard_frente.png" id="22_vejma"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="20_0sx4c"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/charizard_espalda.png" id="21_552q7"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/charizard_frente.png" id="22_vejma"]
 
-[sub_resource type="Resource" id="Resource_h3nqi"]
+[sub_resource type="Resource" id="Resource_vcw67"]
 script = ExtResource("1_vcw67")
 movimiento = ExtResource("2_imeei")
 
-[sub_resource type="Resource" id="Resource_ykin3"]
+[sub_resource type="Resource" id="Resource_imeei"]
 script = ExtResource("1_vcw67")
 movimiento = ExtResource("3_8dcrd")
 
-[sub_resource type="Resource" id="Resource_x7lx1"]
+[sub_resource type="Resource" id="Resource_8dcrd"]
 script = ExtResource("1_vcw67")
 movimiento = ExtResource("4_3cwby")
 
-[sub_resource type="Resource" id="Resource_ril0i"]
+[sub_resource type="Resource" id="Resource_3cwby"]
 script = ExtResource("1_vcw67")
 movimiento = ExtResource("5_ui7qs")
 
-[sub_resource type="Resource" id="Resource_gn2vq"]
+[sub_resource type="Resource" id="Resource_ui7qs"]
 script = ExtResource("1_vcw67")
 movimiento = ExtResource("6_lvpif")
 
-[sub_resource type="Resource" id="Resource_p28sk"]
+[sub_resource type="Resource" id="Resource_lvpif"]
 script = ExtResource("1_vcw67")
 movimiento = ExtResource("7_c3jl6")
 
-[sub_resource type="Resource" id="Resource_aujb2"]
+[sub_resource type="Resource" id="Resource_c3jl6"]
 script = ExtResource("1_vcw67")
 movimiento = ExtResource("8_mvdu8")
 
-[sub_resource type="Resource" id="Resource_258d0"]
+[sub_resource type="Resource" id="Resource_mvdu8"]
 script = ExtResource("1_vcw67")
 nivel = 7
 movimiento = ExtResource("4_3cwby")
 
-[sub_resource type="Resource" id="Resource_2c8n3"]
+[sub_resource type="Resource" id="Resource_uh24i"]
 script = ExtResource("1_vcw67")
 nivel = 10
 movimiento = ExtResource("8_mvdu8")
 
-[sub_resource type="Resource" id="Resource_bb35e"]
+[sub_resource type="Resource" id="Resource_p00ft"]
 script = ExtResource("1_vcw67")
 nivel = 17
 movimiento = ExtResource("9_uh24i")
 
-[sub_resource type="Resource" id="Resource_y6ugp"]
+[sub_resource type="Resource" id="Resource_dkwoa"]
 script = ExtResource("1_vcw67")
 nivel = 21
 movimiento = ExtResource("10_p00ft")
 
-[sub_resource type="Resource" id="Resource_kx5a3"]
+[sub_resource type="Resource" id="Resource_1phmv"]
 script = ExtResource("1_vcw67")
 nivel = 28
 movimiento = ExtResource("11_dkwoa")
 
-[sub_resource type="Resource" id="Resource_yu01o"]
+[sub_resource type="Resource" id="Resource_wlmxq"]
 script = ExtResource("1_vcw67")
 nivel = 32
 movimiento = ExtResource("12_1phmv")
 
-[sub_resource type="Resource" id="Resource_5kn08"]
+[sub_resource type="Resource" id="Resource_srs5l"]
 script = ExtResource("1_vcw67")
 nivel = 36
 movimiento = ExtResource("13_wlmxq")
 
-[sub_resource type="Resource" id="Resource_ushv7"]
+[sub_resource type="Resource" id="Resource_qiym4"]
 script = ExtResource("1_vcw67")
 nivel = 41
 movimiento = ExtResource("14_srs5l")
 
-[sub_resource type="Resource" id="Resource_ciwbb"]
+[sub_resource type="Resource" id="Resource_tcue2"]
 script = ExtResource("1_vcw67")
 nivel = 47
 movimiento = ExtResource("15_qiym4")
 
-[sub_resource type="Resource" id="Resource_sq8ia"]
+[sub_resource type="Resource" id="Resource_1wm7y"]
 script = ExtResource("1_vcw67")
 nivel = 56
 movimiento = ExtResource("16_tcue2")
 
-[sub_resource type="Resource" id="Resource_lrtpo"]
+[sub_resource type="Resource" id="Resource_efovs"]
 script = ExtResource("1_vcw67")
 nivel = 62
 movimiento = ExtResource("17_1wm7y")
 
-[sub_resource type="Resource" id="Resource_asfo2"]
+[sub_resource type="Resource" id="Resource_uj30o"]
 script = ExtResource("1_vcw67")
 nivel = 71
 movimiento = ExtResource("18_efovs")
 
-[sub_resource type="Resource" id="Resource_m656o"]
+[sub_resource type="Resource" id="Resource_0sx4c"]
 script = ExtResource("1_vcw67")
 nivel = 77
 movimiento = ExtResource("19_uj30o")
@@ -121,7 +121,7 @@ script = ExtResource("20_0sx4c")
 id = "charizard"
 numero = 6
 nombre = "Charizard"
-tipos = ["fuego", "volador"]
+tipos = PackedStringArray("fuego", "volador")
 ps = 78
 ataque = 84
 defensa = 78
@@ -134,11 +134,14 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 3
 }
-aprende = Array[ExtResource("1_vcw67")]([SubResource("Resource_h3nqi"), SubResource("Resource_ykin3"), SubResource("Resource_x7lx1"), SubResource("Resource_ril0i"), SubResource("Resource_gn2vq"), SubResource("Resource_p28sk"), SubResource("Resource_aujb2"), SubResource("Resource_258d0"), SubResource("Resource_2c8n3"), SubResource("Resource_bb35e"), SubResource("Resource_y6ugp"), SubResource("Resource_kx5a3"), SubResource("Resource_yu01o"), SubResource("Resource_5kn08"), SubResource("Resource_ushv7"), SubResource("Resource_ciwbb"), SubResource("Resource_sq8ia"), SubResource("Resource_lrtpo"), SubResource("Resource_asfo2"), SubResource("Resource_m656o")])
+habilidades = PackedStringArray("blaze")
+habilidad_oculta = "solar_power"
+categoria = "Pokémon Llama"
+altura = 1.7
+peso_kg = 90.5
+descripcion = "Cuando lanza una descarga de fuego supercaliente, la roja llama de su cola brilla más intensamente."
+aprende = Array[ExtResource("1_vcw67")]([SubResource("Resource_vcw67"), SubResource("Resource_imeei"), SubResource("Resource_8dcrd"), SubResource("Resource_3cwby"), SubResource("Resource_ui7qs"), SubResource("Resource_lvpif"), SubResource("Resource_c3jl6"), SubResource("Resource_mvdu8"), SubResource("Resource_uh24i"), SubResource("Resource_p00ft"), SubResource("Resource_dkwoa"), SubResource("Resource_1phmv"), SubResource("Resource_wlmxq"), SubResource("Resource_srs5l"), SubResource("Resource_qiym4"), SubResource("Resource_tcue2"), SubResource("Resource_1wm7y"), SubResource("Resource_efovs"), SubResource("Resource_uj30o"), SubResource("Resource_0sx4c")])
 sprite_frente = ExtResource("22_vejma")
 sprite_espalda = ExtResource("21_552q7")
 cuadros_frente = 72
 cuadros_espalda = 72
-habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
-habilidad_oculta = "Poder Solar"
-evoluciones = Array[Dictionary]([])

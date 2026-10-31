@@ -16,3 +16,5 @@ descripcion = "Lanza seda a los rivales y reduce mucho su Velocidad."
 cambios_stats = {
 "velocidad": -2
 }
+numero = 81
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")

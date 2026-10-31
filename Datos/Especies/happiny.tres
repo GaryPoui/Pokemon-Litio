@@ -10,27 +10,25 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/refresh.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sweet_kiss.tres" id="9"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_xntnk"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_hqa6y"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_tuoml"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_u134o"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_d0a2d"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("9")
@@ -41,8 +39,6 @@ id = "happiny"
 numero = 440
 nombre = "Happiny"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Curación Natural/Cura Natural", "Dicha")
-habilidad_oculta = "Compiescolta"
 ps = 100
 ataque = 5
 defensa = 5
@@ -53,10 +49,23 @@ exp_base = 110
 ratio_captura = 130
 ratio_genero = 8
 crecimiento = "fast"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([{"especie": "chansey", "metodo": "piedra", "condicion": "Nivel (día) equipada con Piedra oval"}])
-evoluciona_a = "chansey"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4")])
+evs_otorgados = {
+"ps": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "chansey",
+"hora": "dia",
+"metodo": "objeto",
+"objeto": "oval_stone"
+}])
+amistad_base = 140
+habilidades = PackedStringArray("natural_cure", "serene_grace")
+habilidad_oculta = "friend_guard"
+categoria = "Pokémon Casita"
+altura = 0.6
+peso_kg = 24.4
+descripcion = "Les da a sus amigos una roca con forma de huevo que transporta en la bolsa de su panza."
+aprende = Array[ExtResource("2")]([SubResource("Resource_xntnk"), SubResource("Resource_hqa6y"), SubResource("Resource_tuoml"), SubResource("Resource_u134o"), SubResource("Resource_d0a2d")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 37

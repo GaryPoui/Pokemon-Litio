@@ -13,115 +13,96 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pin_missile.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/acupressure.tres" id="13"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/poison_fang.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/venoshock.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hone_claws.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/toxic_spikes.tres" id="19"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/night_slash.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="22"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/cross_poison.tres" id="23"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_mgvnh"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_itpdp"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_bemkd"]
+script = ExtResource("2")
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_o54bb"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 5
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_55aqa"]
 script = ExtResource("2")
-nivel = 9
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Resource_lo48n"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_tjq0m"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_i6jd6"]
+script = ExtResource("2")
+nivel = 6
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_sparc"]
+script = ExtResource("2")
+nivel = 12
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_a6k5r"]
 script = ExtResource("2")
-nivel = 13
+nivel = 17
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 16
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 20
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_1uuf8"]
 script = ExtResource("2")
 nivel = 23
-movimiento = ExtResource("16")
-
-[sub_resource type="Resource" id="Move_13"]
-script = ExtResource("2")
-nivel = 27
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_14"]
-script = ExtResource("2")
-nivel = 30
-movimiento = ExtResource("18")
-
-[sub_resource type="Resource" id="Move_15"]
-script = ExtResource("2")
-nivel = 34
-movimiento = ExtResource("19")
-
-[sub_resource type="Resource" id="Move_16"]
-script = ExtResource("2")
-nivel = 38
-movimiento = ExtResource("20")
-
-[sub_resource type="Resource" id="Move_17"]
-script = ExtResource("2")
-nivel = 43
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_pgvc4"]
 script = ExtResource("2")
-nivel = 49
+nivel = 28
+movimiento = ExtResource("19")
+
+[sub_resource type="Resource" id="Resource_43qao"]
+script = ExtResource("2")
+nivel = 34
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Resource_7euun"]
+script = ExtResource("2")
+nivel = 39
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Resource_skwoi"]
+script = ExtResource("2")
+nivel = 48
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Resource_kfgn1"]
+script = ExtResource("2")
+nivel = 56
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Resource_oghdp"]
+script = ExtResource("2")
+nivel = 65
 movimiento = ExtResource("22")
 
-[sub_resource type="Resource" id="Move_19"]
+[sub_resource type="Resource" id="Resource_0ocrs"]
 script = ExtResource("2")
-nivel = 57
+nivel = 73
 movimiento = ExtResource("23")
 
 [resource]
@@ -130,8 +111,6 @@ id = "drapion"
 numero = 452
 nombre = "Drapion"
 tipos = PackedStringArray("veneno", "siniestro")
-habilidades = PackedStringArray("Armadura Batalla", "Puntería/Francotirador")
-habilidad_oculta = "Perspicacia/Vista Lince"
 ps = 70
 ataque = 90
 defensa = 110
@@ -139,12 +118,17 @@ at_esp = 60
 def_esp = 75
 velocidad = 95
 exp_base = 175
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"defensa": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18"), SubResource("Move_19")])
+evs_otorgados = {
+"defensa": 2
+}
+habilidades = PackedStringArray("battle_armor", "sniper")
+habilidad_oculta = "keen_eye"
+categoria = "Pokémon Escorpiogro"
+altura = 1.3
+peso_kg = 61.5
+descripcion = "Aunque sabe que puede aplastar al rival con su gran fuerza, le gusta dar el golpe de gracia con su virulento veneno."
+aprende = Array[ExtResource("2")]([SubResource("Resource_mgvnh"), SubResource("Resource_itpdp"), SubResource("Resource_bemkd"), SubResource("Resource_o54bb"), SubResource("Resource_55aqa"), SubResource("Resource_lo48n"), SubResource("Resource_tjq0m"), SubResource("Resource_i6jd6"), SubResource("Resource_sparc"), SubResource("Resource_a6k5r"), SubResource("Resource_1uuf8"), SubResource("Resource_pgvc4"), SubResource("Resource_43qao"), SubResource("Resource_7euun"), SubResource("Resource_skwoi"), SubResource("Resource_kfgn1"), SubResource("Resource_oghdp"), SubResource("Resource_0ocrs")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 91

@@ -12,37 +12,33 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/bounce.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="11"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_m056b"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_qtgtd"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_vg7rh"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_fldw7"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_imykc"]
 script = ExtResource("2")
 nivel = 27
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_qt3h0"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_w134m"]
 script = ExtResource("2")
 nivel = 48
 movimiento = ExtResource("11")
@@ -53,8 +49,6 @@ id = "politoed"
 numero = 186
 nombre = "Politoed"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Absorbeagua/Absorbe Agua", "Humedad")
-habilidad_oculta = "Llovizna"
 ps = 90
 ataque = 75
 defensa = 75
@@ -62,14 +56,18 @@ at_esp = 90
 def_esp = 100
 velocidad = 70
 exp_base = 225
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"def_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6")])
+evs_otorgados = {
+"def_esp": 3
+}
+habilidades = PackedStringArray("water_absorb", "damp")
+habilidad_oculta = "drizzle"
+categoria = "Pokémon Rana"
+altura = 1.1
+peso_kg = 33.9
+descripcion = "Cuando tres o más de estos se juntan, emiten un sonido muy fuerte parecido a un bramido."
+aprende = Array[ExtResource("2")]([SubResource("Resource_m056b"), SubResource("Resource_qtgtd"), SubResource("Resource_vg7rh"), SubResource("Resource_fldw7"), SubResource("Resource_imykc"), SubResource("Resource_qt3h0"), SubResource("Resource_w134m")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 48
 cuadros_espalda = 48
-fps_sprite = 10.0

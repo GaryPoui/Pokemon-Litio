@@ -20,77 +20,70 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/payback.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_0pcsj"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("10")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_cabxi"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_rsyi7"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_6th60"]
+script = ExtResource("2")
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Resource_fo5aj"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_yn7fk"]
+script = ExtResource("2")
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_s5k3p"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_yeioy"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_kvtag"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_alyyn"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_e2crb"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_g4h70"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_1qff6"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_nwrg7"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_k8qme"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("19")
@@ -101,11 +94,8 @@ id = "snubbull"
 numero = 209
 nombre = "Snubbull"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Intimidación", "Fuga")
-habilidad_oculta = "Cobardía"
 ps = 60
 ataque = 80
-defensa = 50
 at_esp = 40
 def_esp = 40
 velocidad = 30
@@ -113,11 +103,23 @@ exp_base = 60
 ratio_captura = 190
 ratio_genero = 6
 crecimiento = "fast"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "granbull", "metodo": "nivel", "condicion": "Nivel 23", "nivel": 23}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "granbull"
 nivel_evolucion = 23
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evoluciones = Array[Dictionary]([{
+"especie": "granbull",
+"metodo": "nivel",
+"nivel": 23
+}])
+habilidades = PackedStringArray("intimidate", "run_away")
+habilidad_oculta = "rattled"
+categoria = "Pokémon Hada"
+altura = 0.6
+peso_kg = 7.8
+descripcion = "Muy travieso por naturaleza, a muchas mujeres les gusta jugar con él porque es muy cariñoso."
+aprende = Array[ExtResource("2")]([SubResource("Resource_0pcsj"), SubResource("Resource_cabxi"), SubResource("Resource_rsyi7"), SubResource("Resource_6th60"), SubResource("Resource_fo5aj"), SubResource("Resource_yn7fk"), SubResource("Resource_s5k3p"), SubResource("Resource_yeioy"), SubResource("Resource_kvtag"), SubResource("Resource_alyyn"), SubResource("Resource_e2crb"), SubResource("Resource_g4h70"), SubResource("Resource_1qff6"), SubResource("Resource_nwrg7"), SubResource("Resource_k8qme")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 62

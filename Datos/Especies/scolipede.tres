@@ -21,87 +21,87 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/scolipede_espalda.png" id="19_2s2yu"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/scolipede_frente.png" id="20_at8et"]
 
-[sub_resource type="Resource" id="Resource_blib5"]
+[sub_resource type="Resource" id="Resource_lx7fh"]
 script = ExtResource("1_lx7fh")
 movimiento = ExtResource("2_sjcnp")
 
-[sub_resource type="Resource" id="Resource_f050f"]
+[sub_resource type="Resource" id="Resource_sjcnp"]
 script = ExtResource("1_lx7fh")
 movimiento = ExtResource("3_xbmc8")
 
-[sub_resource type="Resource" id="Resource_icj6g"]
+[sub_resource type="Resource" id="Resource_xbmc8"]
 script = ExtResource("1_lx7fh")
 movimiento = ExtResource("4_pjbue")
 
-[sub_resource type="Resource" id="Resource_hd0hg"]
+[sub_resource type="Resource" id="Resource_pjbue"]
 script = ExtResource("1_lx7fh")
 movimiento = ExtResource("5_g5knb")
 
-[sub_resource type="Resource" id="Resource_px4dg"]
+[sub_resource type="Resource" id="Resource_g5knb"]
 script = ExtResource("1_lx7fh")
 movimiento = ExtResource("6_1mrrc")
 
-[sub_resource type="Resource" id="Resource_i3emu"]
+[sub_resource type="Resource" id="Resource_1mrrc"]
 script = ExtResource("1_lx7fh")
 nivel = 5
 movimiento = ExtResource("4_pjbue")
 
-[sub_resource type="Resource" id="Resource_rbdvv"]
+[sub_resource type="Resource" id="Resource_76ugr"]
 script = ExtResource("1_lx7fh")
 nivel = 8
 movimiento = ExtResource("6_1mrrc")
 
-[sub_resource type="Resource" id="Resource_5yd3k"]
+[sub_resource type="Resource" id="Resource_vhbvl"]
 script = ExtResource("1_lx7fh")
 nivel = 12
 movimiento = ExtResource("7_76ugr")
 
-[sub_resource type="Resource" id="Resource_e4b1a"]
+[sub_resource type="Resource" id="Resource_4bv23"]
 script = ExtResource("1_lx7fh")
 nivel = 15
 movimiento = ExtResource("8_vhbvl")
 
-[sub_resource type="Resource" id="Resource_d4bhj"]
+[sub_resource type="Resource" id="Resource_fon2l"]
 script = ExtResource("1_lx7fh")
 nivel = 19
 movimiento = ExtResource("9_4bv23")
 
-[sub_resource type="Resource" id="Resource_bvbys"]
+[sub_resource type="Resource" id="Resource_tm4ie"]
 script = ExtResource("1_lx7fh")
 nivel = 23
 movimiento = ExtResource("10_fon2l")
 
-[sub_resource type="Resource" id="Resource_s57dw"]
+[sub_resource type="Resource" id="Resource_yvood"]
 script = ExtResource("1_lx7fh")
 nivel = 28
 movimiento = ExtResource("11_tm4ie")
 
-[sub_resource type="Resource" id="Resource_gbsqd"]
+[sub_resource type="Resource" id="Resource_vnkse"]
 script = ExtResource("1_lx7fh")
 nivel = 30
 movimiento = ExtResource("12_yvood")
 
-[sub_resource type="Resource" id="Resource_u1uqa"]
+[sub_resource type="Resource" id="Resource_pc2vy"]
 script = ExtResource("1_lx7fh")
 nivel = 33
 movimiento = ExtResource("13_vnkse")
 
-[sub_resource type="Resource" id="Resource_10fvx"]
+[sub_resource type="Resource" id="Resource_lo10b"]
 script = ExtResource("1_lx7fh")
 nivel = 39
 movimiento = ExtResource("14_pc2vy")
 
-[sub_resource type="Resource" id="Resource_41dj1"]
+[sub_resource type="Resource" id="Resource_lr30h"]
 script = ExtResource("1_lx7fh")
 nivel = 44
 movimiento = ExtResource("15_lo10b")
 
-[sub_resource type="Resource" id="Resource_gy1te"]
+[sub_resource type="Resource" id="Resource_w3pf0"]
 script = ExtResource("1_lx7fh")
 nivel = 50
 movimiento = ExtResource("16_lr30h")
 
-[sub_resource type="Resource" id="Resource_b8157"]
+[sub_resource type="Resource" id="Resource_ssvf1"]
 script = ExtResource("1_lx7fh")
 nivel = 55
 movimiento = ExtResource("17_w3pf0")
@@ -111,9 +111,9 @@ script = ExtResource("18_ssvf1")
 id = "scolipede"
 numero = 545
 nombre = "Scolipede"
-tipos = ["bicho", "veneno"]
+tipos = PackedStringArray("bicho", "veneno")
 ps = 60
-ataque = 100
+ataque = 90
 defensa = 89
 at_esp = 55
 def_esp = 69
@@ -123,12 +123,15 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "velocidad": 3
 }
-aprende = Array[ExtResource("1_lx7fh")]([SubResource("Resource_blib5"), SubResource("Resource_f050f"), SubResource("Resource_icj6g"), SubResource("Resource_hd0hg"), SubResource("Resource_px4dg"), SubResource("Resource_i3emu"), SubResource("Resource_rbdvv"), SubResource("Resource_5yd3k"), SubResource("Resource_e4b1a"), SubResource("Resource_d4bhj"), SubResource("Resource_bvbys"), SubResource("Resource_s57dw"), SubResource("Resource_gbsqd"), SubResource("Resource_u1uqa"), SubResource("Resource_10fvx"), SubResource("Resource_41dj1"), SubResource("Resource_gy1te"), SubResource("Resource_b8157")])
+habilidades = PackedStringArray("poison_point", "swarm")
+habilidad_oculta = "quick_feet"
+categoria = "Pokémon Megaciempiés"
+altura = 2.5
+peso_kg = 200.5
+descripcion = "Atenaza a sus presas con las garras que sobresalen de su cuello hasta que no se pueden mover y las remata con veneno."
+aprende = Array[ExtResource("1_lx7fh")]([SubResource("Resource_lx7fh"), SubResource("Resource_sjcnp"), SubResource("Resource_xbmc8"), SubResource("Resource_pjbue"), SubResource("Resource_g5knb"), SubResource("Resource_1mrrc"), SubResource("Resource_76ugr"), SubResource("Resource_vhbvl"), SubResource("Resource_4bv23"), SubResource("Resource_fon2l"), SubResource("Resource_tm4ie"), SubResource("Resource_yvood"), SubResource("Resource_vnkse"), SubResource("Resource_pc2vy"), SubResource("Resource_lo10b"), SubResource("Resource_lr30h"), SubResource("Resource_w3pf0"), SubResource("Resource_ssvf1")])
 sprite_frente = ExtResource("20_at8et")
 sprite_espalda = ExtResource("19_2s2yu")
 cuadros_frente = 134
 cuadros_espalda = 134
 fps_sprite = 9.74
-habilidades = PackedStringArray("Enjambre", "Punto Tóxico")
-habilidad_oculta = "Pies Rápidos"
-evoluciones = Array[Dictionary]([])

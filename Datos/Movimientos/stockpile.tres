@@ -16,3 +16,5 @@ cambios_stats = {
 "def_esp": 1,
 "defensa": 1
 }
+numero = 254
+banderas = PackedStringArray("metronome", "snatch")

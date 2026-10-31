@@ -2,26 +2,24 @@
 
 [ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
 [ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="2_girmo"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/combee_frente.png" id="3"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/combee_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sweet_scent.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="6"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="7"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_girmo"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("2_girmo")
+
+[sub_resource type="Resource" id="Resource_uanxr"]
+script = ExtResource("2")
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_sgsii"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 29
-movimiento = ExtResource("7")
 
 [resource]
 script = ExtResource("1")
@@ -29,8 +27,6 @@ id = "combee"
 numero = 415
 nombre = "Combee"
 tipos = PackedStringArray("bicho", "volador")
-habilidades = PackedStringArray("Cosechamiel/Recogemiel")
-habilidad_oculta = "Entusiasmo"
 ps = 30
 ataque = 30
 defensa = 42
@@ -41,10 +37,22 @@ exp_base = 49
 ratio_captura = 120
 ratio_genero = 1
 crecimiento = "medium-slow"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "vespiquen", "metodo": "especial", "condicion": "Nivel 21 + ♀"}])
-evoluciona_a = "vespiquen"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2")])
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "vespiquen",
+"genero": "hembra",
+"metodo": "nivel",
+"nivel": 21
+}])
+habilidades = PackedStringArray("honey_gather")
+habilidad_oculta = "hustle"
+categoria = "Pokémon Abejita"
+altura = 0.3
+peso_kg = 5.5
+descripcion = "El trío se forma al nacer y se pasa la vida recogiendo miel de las flores para satisfacer a Vespiquen."
+aprende = Array[ExtResource("2")]([SubResource("Resource_girmo"), SubResource("Resource_uanxr"), SubResource("Resource_sgsii")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 96

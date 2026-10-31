@@ -26,5 +26,7 @@ func crear_equipo(rng: RandomNumberGenerator= null) -> Array[PokemonInstancia]:
 					p.movimientos.append(mov)
 					p.pp.append(mov.pp)
 		p.ia.assign(m.ia)
+		if m.habilidad!= "":
+			p.habilidad= m.habilidad
 		lista.append(p)
 	return lista

@@ -16,3 +16,5 @@ descripcion = "El usuario se resguarda en su coraza, por lo que le sube la Defen
 cambios_stats = {
 "defensa": 1
 }
+numero = 110
+banderas = PackedStringArray("metronome", "snatch")

@@ -11,7 +11,6 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/thunder_punch.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fire_spin.tres" id="11"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/clear_smog.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flame_burst.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confuse_ray.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fire_punch.tres" id="15"]
@@ -21,94 +20,84 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/fire_blast.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_beam.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_hlpfb"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_ss4e0"]
+script = ExtResource("2")
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_ssqsl"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_mtjkm"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 5
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 8
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_d2r4n"]
 script = ExtResource("2")
-nivel = 12
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_1k035"]
+script = ExtResource("2")
+nivel = 6
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_7yh3t"]
+script = ExtResource("2")
+nivel = 11
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_w8dkp"]
+script = ExtResource("2")
+nivel = 16
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_mb03c"]
 script = ExtResource("2")
-nivel = 15
+nivel = 21
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 19
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 22
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_eny2q"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_tnv0u"]
 script = ExtResource("2")
-nivel = 29
+nivel = 32
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_dpbpb"]
+script = ExtResource("2")
+nivel = 38
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_rgt10"]
 script = ExtResource("2")
-nivel = 36
+nivel = 44
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_n0snj"]
 script = ExtResource("2")
-nivel = 42
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_15"]
-script = ExtResource("2")
-nivel = 49
+nivel = 50
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_557il"]
 script = ExtResource("2")
-nivel = 55
-movimiento = ExtResource("19")
+nivel = 56
+movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_myvyg"]
 script = ExtResource("2")
 nivel = 62
+movimiento = ExtResource("19")
+
+[sub_resource type="Resource" id="Resource_vw6hh"]
+script = ExtResource("2")
+nivel = 68
 movimiento = ExtResource("20")
 
 [resource]
@@ -117,8 +106,6 @@ id = "magmortar"
 numero = 467
 nombre = "Magmortar"
 tipos = PackedStringArray("fuego")
-habilidades = PackedStringArray("Cuerpo de Fuego/Cuerpo Llama")
-habilidad_oculta = "Espíritu Vital"
 ps = 75
 ataque = 95
 defensa = 67
@@ -128,10 +115,16 @@ velocidad = 83
 exp_base = 243
 ratio_captura = 30
 ratio_genero = 2
-crecimiento = "medium"
-evs_otorgados = {"at_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"at_esp": 3
+}
+habilidades = PackedStringArray("flame_body")
+habilidad_oculta = "vital_spirit"
+categoria = "Pokémon Explosión"
+altura = 1.6
+peso_kg = 68.0
+descripcion = "Sus brazos disparan bolas de fuego de más de 2000 °C. Vive en cráteres volcánicos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_hlpfb"), SubResource("Resource_ss4e0"), SubResource("Resource_ssqsl"), SubResource("Resource_mtjkm"), SubResource("Resource_d2r4n"), SubResource("Resource_1k035"), SubResource("Resource_7yh3t"), SubResource("Resource_w8dkp"), SubResource("Resource_mb03c"), SubResource("Resource_eny2q"), SubResource("Resource_tnv0u"), SubResource("Resource_dpbpb"), SubResource("Resource_rgt10"), SubResource("Resource_n0snj"), SubResource("Resource_557il"), SubResource("Resource_myvyg"), SubResource("Resource_vw6hh")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 168

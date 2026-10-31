@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_i3qfk"]
+
+[resource]
+script = ExtResource("1_i3qfk")
+id = "overcoat"
+nombre = "Funda"
+descripcion = "Protege del polvo, la arena y el granizo."

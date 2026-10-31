@@ -12,37 +12,35 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/copycat.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/magical_leaf.tres" id="11"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_fh3ad"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_tvwo0"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_tuc3f"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_ulm0o"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_tuwgo"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_7w7bq"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_bxyfn"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("11")
@@ -53,9 +51,6 @@ id = "cleffa"
 numero = 173
 nombre = "Cleffa"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Gran Encanto", "Muro Mágico")
-habilidad_oculta = "Compiescolta"
-ps = 50
 ataque = 25
 defensa = 28
 at_esp = 45
@@ -65,10 +60,22 @@ exp_base = 44
 ratio_captura = 150
 ratio_genero = 6
 crecimiento = "fast"
-evs_otorgados = {"def_esp": 1}
-evoluciones = Array[Dictionary]([{"especie": "clefairy", "metodo": "amistad", "condicion": "Amistad + nivel"}])
-evoluciona_a = "clefairy"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6")])
+evs_otorgados = {
+"def_esp": 1
+}
+evoluciones = Array[Dictionary]([{
+"amistad": 220,
+"especie": "clefairy",
+"metodo": "amistad"
+}])
+amistad_base = 140
+habilidades = PackedStringArray("cute_charm", "magic_guard")
+habilidad_oculta = "friend_guard"
+categoria = "Pokémon Estrella"
+altura = 0.3
+peso_kg = 3.0
+descripcion = "Por su inusual forma estrellada, la gente cree que procede de un meteorito que cayó a la tierra."
+aprende = Array[ExtResource("2")]([SubResource("Resource_fh3ad"), SubResource("Resource_tvwo0"), SubResource("Resource_tuc3f"), SubResource("Resource_ulm0o"), SubResource("Resource_tuwgo"), SubResource("Resource_7w7bq"), SubResource("Resource_bxyfn")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 58

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_1c10x"]
+
+[resource]
+script = ExtResource("1_1c10x")
+id = "chlorophyll"
+nombre = "Clorofila"
+descripcion = "Sube la Velocidad cuando hay sol."

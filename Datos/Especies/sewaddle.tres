@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dihbcrwtne58v"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_4x4c8"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_4x4c8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/string_shot.tres" id="2_n0nla"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_6jtcj"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="4_fod51"]
@@ -9,44 +9,44 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/endure.tres" id="7_h5p3f"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="8_32ix7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="9_tjbka"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="10_yxbpt"]
-[ext_resource type="Texture2D" uid="uid://u6n8bfv4gkqk" path="res://Assets/Pokemones/batalla/sewaddle_espalda.png" id="11_w168k"]
-[ext_resource type="Texture2D" uid="uid://cu6hfamgs65h5" path="res://Assets/Pokemones/batalla/sewaddle_frente.png" id="12_rhbkq"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="10_yxbpt"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/sewaddle_espalda.png" id="11_w168k"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/sewaddle_frente.png" id="12_rhbkq"]
 
-[sub_resource type="Resource" id="Resource_tk7qo"]
+[sub_resource type="Resource" id="Resource_4x4c8"]
 script = ExtResource("1_4x4c8")
 movimiento = ExtResource("2_n0nla")
 
-[sub_resource type="Resource" id="Resource_u7sit"]
+[sub_resource type="Resource" id="Resource_n0nla"]
 script = ExtResource("1_4x4c8")
 movimiento = ExtResource("3_6jtcj")
 
-[sub_resource type="Resource" id="Resource_vjjco"]
+[sub_resource type="Resource" id="Resource_6jtcj"]
 script = ExtResource("1_4x4c8")
 nivel = 8
 movimiento = ExtResource("4_fod51")
 
-[sub_resource type="Resource" id="Resource_s3w56"]
+[sub_resource type="Resource" id="Resource_fod51"]
 script = ExtResource("1_4x4c8")
 nivel = 15
 movimiento = ExtResource("5_lxqaj")
 
-[sub_resource type="Resource" id="Resource_cy3un"]
+[sub_resource type="Resource" id="Resource_lxqaj"]
 script = ExtResource("1_4x4c8")
 nivel = 22
 movimiento = ExtResource("6_3boa7")
 
-[sub_resource type="Resource" id="Resource_kdf5h"]
+[sub_resource type="Resource" id="Resource_3boa7"]
 script = ExtResource("1_4x4c8")
 nivel = 29
 movimiento = ExtResource("7_h5p3f")
 
-[sub_resource type="Resource" id="Resource_odd0y"]
+[sub_resource type="Resource" id="Resource_h5p3f"]
 script = ExtResource("1_4x4c8")
 nivel = 36
 movimiento = ExtResource("8_32ix7")
 
-[sub_resource type="Resource" id="Resource_nbdwc"]
+[sub_resource type="Resource" id="Resource_32ix7"]
 script = ExtResource("1_4x4c8")
 nivel = 43
 movimiento = ExtResource("9_tjbka")
@@ -56,7 +56,7 @@ script = ExtResource("10_yxbpt")
 id = "sewaddle"
 numero = 540
 nombre = "Sewaddle"
-tipos = ["bicho", "planta"]
+tipos = PackedStringArray("bicho", "planta")
 ps = 45
 ataque = 53
 defensa = 70
@@ -71,11 +71,19 @@ evs_otorgados = {
 }
 evoluciona_a = "swadloon"
 nivel_evolucion = 20
-aprende = Array[ExtResource("1_4x4c8")]([SubResource("Resource_tk7qo"), SubResource("Resource_u7sit"), SubResource("Resource_vjjco"), SubResource("Resource_s3w56"), SubResource("Resource_cy3un"), SubResource("Resource_kdf5h"), SubResource("Resource_odd0y"), SubResource("Resource_nbdwc")])
+evoluciones = Array[Dictionary]([{
+"especie": "swadloon",
+"metodo": "nivel",
+"nivel": 20
+}])
+habilidades = PackedStringArray("swarm", "chlorophyll")
+habilidad_oculta = "overcoat"
+categoria = "Pokémon Sastre"
+altura = 0.3
+peso_kg = 2.5
+descripcion = "Recorta hojas y las teje con el líquido viscoso que segrega por la boca para hacerse su propia ropa."
+aprende = Array[ExtResource("1_4x4c8")]([SubResource("Resource_4x4c8"), SubResource("Resource_n0nla"), SubResource("Resource_6jtcj"), SubResource("Resource_fod51"), SubResource("Resource_lxqaj"), SubResource("Resource_3boa7"), SubResource("Resource_h5p3f"), SubResource("Resource_32ix7")])
 sprite_frente = ExtResource("12_rhbkq")
 sprite_espalda = ExtResource("11_w168k")
 cuadros_frente = 80
 cuadros_espalda = 80
-habilidades = PackedStringArray("Enjambre", "Clorofila")
-habilidad_oculta = "Funda"
-evoluciones = Array[Dictionary]([{"especie": "swadloon", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}])

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_wk4ks"]
+
+[resource]
+script = ExtResource("1_wk4ks")
+id = "forecast"
+nombre = "Predicción"
+descripcion = "Se transforma según el tiempo atmosférico."

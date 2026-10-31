@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_yht7a"]
+
+[resource]
+script = ExtResource("1_yht7a")
+id = "damp"
+nombre = "Humedad"
+descripcion = "Evita que un Pokémon pueda autodestruirse."

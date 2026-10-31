@@ -13,3 +13,5 @@ pp = 20
 objetivo = "all-opponents"
 descripcion = "Crea un violento tornado para hacer trizas al objetivo. Puede amedrentarlo."
 prob_retroceso = 20
+numero = 239
+banderas = PackedStringArray("metronome", "mirror", "protect", "wind")

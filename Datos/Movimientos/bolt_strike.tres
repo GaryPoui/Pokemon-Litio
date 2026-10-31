@@ -5,11 +5,14 @@
 [resource]
 script = ExtResource("1")
 id = "bolt_strike"
-nombre = "Ataque fulgor"
+nombre = "Ataque Fulgor"
 tipo = "electrico"
-categoria = "fisico"
 poder = 130
 precision = 85
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-ailment"
+descripcion = "Ataca envolviéndose de una gran carga eléctrica y embistiendo al objetivo con ella. Puede paralizar."
+estado = "paralysis"
+prob_estado = 20
+numero = 550
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

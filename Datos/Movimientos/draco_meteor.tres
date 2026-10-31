@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_q4u4b"]
+
+[resource]
+script = ExtResource("1_q4u4b")
+id = "draco_meteor"
+nombre = "Cometa Draco"
+tipo = "dragon"
+categoria = "especial"
+poder = 140
+precision = 90
+pp = 5
+meta = "damage-raise"
+descripcion = "Hace que grandes cometas caigan del cielo sobre el objetivo. Baja mucho el Ataque Especial del que lo usa."
+cambios_stats = {
+"at_esp": -2
+}
+prob_stat = 100
+numero = 434
+banderas = PackedStringArray("metronome", "mirror", "protect")

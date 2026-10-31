@@ -14,3 +14,5 @@ descripcion = "Patada que suele ser un golpe crítico y puede causar quemaduras.
 estado = "burn"
 prob_estado = 10
 critico = 1
+numero = 299
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

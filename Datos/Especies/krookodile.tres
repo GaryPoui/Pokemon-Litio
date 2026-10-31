@@ -22,93 +22,93 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/krookodile_espalda.png" id="20_dsebw"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/krookodile_frente.png" id="21_tl7d7"]
 
-[sub_resource type="Resource" id="Resource_aphm1"]
+[sub_resource type="Resource" id="Resource_1gip0"]
 script = ExtResource("1_1gip0")
 movimiento = ExtResource("2_gyhem")
 
-[sub_resource type="Resource" id="Resource_8dp4p"]
+[sub_resource type="Resource" id="Resource_gyhem"]
 script = ExtResource("1_1gip0")
 movimiento = ExtResource("3_xrxjo")
 
-[sub_resource type="Resource" id="Resource_th83w"]
+[sub_resource type="Resource" id="Resource_xrxjo"]
 script = ExtResource("1_1gip0")
 movimiento = ExtResource("4_7wm7n")
 
-[sub_resource type="Resource" id="Resource_0x6kb"]
+[sub_resource type="Resource" id="Resource_7wm7n"]
 script = ExtResource("1_1gip0")
 movimiento = ExtResource("5_g8i8u")
 
-[sub_resource type="Resource" id="Resource_rwahh"]
+[sub_resource type="Resource" id="Resource_g8i8u"]
 script = ExtResource("1_1gip0")
 nivel = 4
 movimiento = ExtResource("2_gyhem")
 
-[sub_resource type="Resource" id="Resource_fd31j"]
+[sub_resource type="Resource" id="Resource_xig4r"]
 script = ExtResource("1_1gip0")
 nivel = 7
 movimiento = ExtResource("5_g8i8u")
 
-[sub_resource type="Resource" id="Resource_nlhb6"]
+[sub_resource type="Resource" id="Resource_u0e3m"]
 script = ExtResource("1_1gip0")
 nivel = 10
 movimiento = ExtResource("6_xig4r")
 
-[sub_resource type="Resource" id="Resource_8rtr0"]
+[sub_resource type="Resource" id="Resource_ret2c"]
 script = ExtResource("1_1gip0")
 nivel = 13
 movimiento = ExtResource("7_u0e3m")
 
-[sub_resource type="Resource" id="Resource_n1tw8"]
+[sub_resource type="Resource" id="Resource_uhaeb"]
 script = ExtResource("1_1gip0")
 nivel = 16
 movimiento = ExtResource("8_ret2c")
 
-[sub_resource type="Resource" id="Resource_3dfjn"]
+[sub_resource type="Resource" id="Resource_na6rt"]
 script = ExtResource("1_1gip0")
 nivel = 19
 movimiento = ExtResource("9_uhaeb")
 
-[sub_resource type="Resource" id="Resource_iskjv"]
+[sub_resource type="Resource" id="Resource_u2261"]
 script = ExtResource("1_1gip0")
 nivel = 22
 movimiento = ExtResource("10_na6rt")
 
-[sub_resource type="Resource" id="Resource_emjoo"]
+[sub_resource type="Resource" id="Resource_7me3k"]
 script = ExtResource("1_1gip0")
 nivel = 25
 movimiento = ExtResource("11_u2261")
 
-[sub_resource type="Resource" id="Resource_cg5ww"]
+[sub_resource type="Resource" id="Resource_ebr3e"]
 script = ExtResource("1_1gip0")
 nivel = 28
 movimiento = ExtResource("12_7me3k")
 
-[sub_resource type="Resource" id="Resource_qug5k"]
+[sub_resource type="Resource" id="Resource_vs3i3"]
 script = ExtResource("1_1gip0")
 nivel = 32
 movimiento = ExtResource("13_ebr3e")
 
-[sub_resource type="Resource" id="Resource_gvmgh"]
+[sub_resource type="Resource" id="Resource_56v0v"]
 script = ExtResource("1_1gip0")
 nivel = 36
 movimiento = ExtResource("14_vs3i3")
 
-[sub_resource type="Resource" id="Resource_e0ojk"]
+[sub_resource type="Resource" id="Resource_wt8hb"]
 script = ExtResource("1_1gip0")
 nivel = 42
 movimiento = ExtResource("15_56v0v")
 
-[sub_resource type="Resource" id="Resource_sj2wl"]
+[sub_resource type="Resource" id="Resource_7uxr3"]
 script = ExtResource("1_1gip0")
 nivel = 48
 movimiento = ExtResource("16_wt8hb")
 
-[sub_resource type="Resource" id="Resource_uat81"]
+[sub_resource type="Resource" id="Resource_sfa58"]
 script = ExtResource("1_1gip0")
 nivel = 54
 movimiento = ExtResource("17_7uxr3")
 
-[sub_resource type="Resource" id="Resource_tq4w6"]
+[sub_resource type="Resource" id="Resource_ik3oc"]
 script = ExtResource("1_1gip0")
 nivel = 60
 movimiento = ExtResource("18_sfa58")
@@ -118,10 +118,10 @@ script = ExtResource("19_ik3oc")
 id = "krookodile"
 numero = 553
 nombre = "Krookodile"
-tipos = ["tierra", "siniestro"]
+tipos = PackedStringArray("tierra", "siniestro")
 ps = 95
 ataque = 117
-defensa = 80
+defensa = 70
 at_esp = 65
 def_esp = 70
 velocidad = 92
@@ -130,12 +130,15 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-aprende = Array[ExtResource("1_1gip0")]([SubResource("Resource_aphm1"), SubResource("Resource_8dp4p"), SubResource("Resource_th83w"), SubResource("Resource_0x6kb"), SubResource("Resource_rwahh"), SubResource("Resource_fd31j"), SubResource("Resource_nlhb6"), SubResource("Resource_8rtr0"), SubResource("Resource_n1tw8"), SubResource("Resource_3dfjn"), SubResource("Resource_iskjv"), SubResource("Resource_emjoo"), SubResource("Resource_cg5ww"), SubResource("Resource_qug5k"), SubResource("Resource_gvmgh"), SubResource("Resource_e0ojk"), SubResource("Resource_sj2wl"), SubResource("Resource_uat81"), SubResource("Resource_tq4w6")])
+habilidades = PackedStringArray("intimidate", "moxie")
+habilidad_oculta = "anger_point"
+categoria = "Pokémon Amenazador"
+altura = 1.5
+peso_kg = 96.3
+descripcion = "Un Pokémon bastante violento. Ataca todo lo que se mueva delante de él con sus mortíferas mandíbulas."
+aprende = Array[ExtResource("1_1gip0")]([SubResource("Resource_1gip0"), SubResource("Resource_gyhem"), SubResource("Resource_xrxjo"), SubResource("Resource_7wm7n"), SubResource("Resource_g8i8u"), SubResource("Resource_xig4r"), SubResource("Resource_u0e3m"), SubResource("Resource_ret2c"), SubResource("Resource_uhaeb"), SubResource("Resource_na6rt"), SubResource("Resource_u2261"), SubResource("Resource_7me3k"), SubResource("Resource_ebr3e"), SubResource("Resource_vs3i3"), SubResource("Resource_56v0v"), SubResource("Resource_wt8hb"), SubResource("Resource_7uxr3"), SubResource("Resource_sfa58"), SubResource("Resource_ik3oc")])
 sprite_frente = ExtResource("21_tl7d7")
 sprite_espalda = ExtResource("20_dsebw")
 cuadros_frente = 84
 cuadros_espalda = 103
 fps_sprite = 15.56
-habilidades = PackedStringArray("Intimidación", "Autoestima")
-habilidad_oculta = "Irascible"
-evoluciones = Array[Dictionary]([])

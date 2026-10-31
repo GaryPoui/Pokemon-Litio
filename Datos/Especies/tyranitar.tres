@@ -23,102 +23,95 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_beam.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/giga_impact.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_cn03f"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_fs8tk"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_jfbtw"]
+script = ExtResource("2")
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_wyw77"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("10")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_y33if"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_voxfh"]
+script = ExtResource("2")
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Resource_ip3gf"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_838lg"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_6oc5g"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_x34m5"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_nyl3i"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_6p3d3"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_rsmn6"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_pu40f"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_rmkau"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_yqi3c"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_phhyt"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_i3l42"]
 script = ExtResource("2")
 nivel = 63
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_agmmk"]
 script = ExtResource("2")
 nivel = 73
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_19"]
+[sub_resource type="Resource" id="Resource_j70vv"]
 script = ExtResource("2")
 nivel = 82
 movimiento = ExtResource("22")
@@ -129,8 +122,6 @@ id = "tyranitar"
 numero = 248
 nombre = "Tyranitar"
 tipos = PackedStringArray("roca", "siniestro")
-habilidades = PackedStringArray("Chorro de Arena/Chorro Arena")
-habilidad_oculta = "Nerviosismo"
 ps = 100
 ataque = 134
 defensa = 110
@@ -138,12 +129,18 @@ at_esp = 95
 def_esp = 100
 velocidad = 61
 exp_base = 270
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18"), SubResource("Move_19")])
+evs_otorgados = {
+"ataque": 3
+}
+amistad_base = 35
+habilidades = PackedStringArray("sand_stream")
+habilidad_oculta = "unnerve"
+categoria = "Pokémon Coraza"
+altura = 2.0
+peso_kg = 202.0
+descripcion = "En una de sus poderosas garras tiene el poder de hacer temblar la tierra y las montañas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_cn03f"), SubResource("Resource_fs8tk"), SubResource("Resource_jfbtw"), SubResource("Resource_wyw77"), SubResource("Resource_y33if"), SubResource("Resource_voxfh"), SubResource("Resource_ip3gf"), SubResource("Resource_838lg"), SubResource("Resource_6oc5g"), SubResource("Resource_x34m5"), SubResource("Resource_nyl3i"), SubResource("Resource_6p3d3"), SubResource("Resource_rsmn6"), SubResource("Resource_pu40f"), SubResource("Resource_rmkau"), SubResource("Resource_yqi3c"), SubResource("Resource_phhyt"), SubResource("Resource_i3l42"), SubResource("Resource_agmmk"), SubResource("Resource_j70vv")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 42

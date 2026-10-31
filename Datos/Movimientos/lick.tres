@@ -13,3 +13,5 @@ meta = "damage-ailment"
 descripcion = "Una lengua ataca al objetivo. Puede causar parálisis."
 estado = "paralysis"
 prob_estado = 30
+numero = 122
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_xp5wh"]
+
+[resource]
+script = ExtResource("1_xp5wh")
+id = "blast_burn"
+nombre = "Anillo Ígneo"
+tipo = "fuego"
+categoria = "especial"
+poder = 150
+precision = 90
+pp = 5
+descripcion = "Explosión de fuego. El atacante debe descansar el siguiente turno."
+numero = 307
+banderas = PackedStringArray("metronome", "mirror", "protect", "recharge")

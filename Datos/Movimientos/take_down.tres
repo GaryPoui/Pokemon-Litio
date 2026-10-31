@@ -11,3 +11,5 @@ precision = 85
 pp = 20
 descripcion = "Carga desmedida que también hiere al agresor."
 drenaje = -25
+numero = 36
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

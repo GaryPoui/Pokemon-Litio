@@ -16,7 +16,7 @@ texture = ExtResource("2_wo666")
 offset_left = 4.0
 offset_top = 4.0
 offset_right = 252.0
-offset_bottom = 28.0
+offset_bottom = 30.0
 
 [node name="Icono" type="Sprite2D" parent="Cabecera" unique_id=498567508]
 position = Vector2(4, -6)
@@ -26,38 +26,38 @@ hframes = 2
 [node name="Nombre" type="Label" parent="Cabecera" unique_id=1305698067]
 layout_mode = 0
 offset_left = 40.0
-offset_top = 4.0
+offset_top = 6.0
 offset_right = 150.0
-offset_bottom = 18.0
+offset_bottom = 20.0
 
 [node name="Cuenta" type="Label" parent="Cabecera" unique_id=1007317700]
 layout_mode = 0
 offset_left = 130.0
-offset_top = 6.0
+offset_top = 7.0
 offset_right = 242.0
-offset_bottom = 20.0
+offset_bottom = 21.0
 horizontal_alignment = 2
 
 [node name="Equipados" type="Panel" parent="." unique_id=2121969492]
 offset_left = 4.0
-offset_top = 32.0
+offset_top = 34.0
 offset_right = 122.0
 offset_bottom = 122.0
 
 [node name="Titulo" type="Label" parent="Equipados" unique_id=1490526607]
 layout_mode = 0
 offset_left = 6.0
-offset_top = 3.0
+offset_top = 1.0
 offset_right = 112.0
-offset_bottom = 17.0
+offset_bottom = 15.0
 text = "EQUIPADOS"
 
 [node name="S0" type="Control" parent="Equipados" unique_id=442985035]
 anchors_preset = 0
 offset_left = 14.0
-offset_top = 16.0
+offset_top = 14.0
 offset_right = 40.0
-offset_bottom = 42.0
+offset_bottom = 40.0
 
 [node name="Fondo" type="Panel" parent="Equipados/S0" unique_id=2134246692]
 layout_mode = 0
@@ -83,9 +83,9 @@ horizontal_alignment = 2
 [node name="S1" type="Control" parent="Equipados" unique_id=1824994668]
 anchors_preset = 0
 offset_left = 46.0
-offset_top = 16.0
+offset_top = 14.0
 offset_right = 72.0
-offset_bottom = 42.0
+offset_bottom = 40.0
 
 [node name="Fondo" type="Panel" parent="Equipados/S1" unique_id=121219215]
 layout_mode = 0
@@ -111,9 +111,9 @@ horizontal_alignment = 2
 [node name="S2" type="Control" parent="Equipados" unique_id=1069697264]
 anchors_preset = 0
 offset_left = 78.0
-offset_top = 16.0
+offset_top = 14.0
 offset_right = 104.0
-offset_bottom = 42.0
+offset_bottom = 40.0
 
 [node name="Fondo" type="Panel" parent="Equipados/S2" unique_id=85808455]
 layout_mode = 0
@@ -139,9 +139,9 @@ horizontal_alignment = 2
 [node name="S3" type="Control" parent="Equipados" unique_id=174594740]
 anchors_preset = 0
 offset_left = 14.0
-offset_top = 44.0
+offset_top = 42.0
 offset_right = 40.0
-offset_bottom = 70.0
+offset_bottom = 68.0
 
 [node name="Fondo" type="Panel" parent="Equipados/S3" unique_id=135878663]
 layout_mode = 0
@@ -167,9 +167,9 @@ horizontal_alignment = 2
 [node name="S4" type="Control" parent="Equipados" unique_id=1196616178]
 anchors_preset = 0
 offset_left = 46.0
-offset_top = 44.0
+offset_top = 42.0
 offset_right = 72.0
-offset_bottom = 70.0
+offset_bottom = 68.0
 
 [node name="Fondo" type="Panel" parent="Equipados/S4" unique_id=1940043872]
 layout_mode = 0
@@ -203,32 +203,32 @@ mouse_filter = 2
 [node name="Seleccion" type="Label" parent="Equipados" unique_id=539197862]
 layout_mode = 0
 offset_left = 6.0
-offset_top = 73.0
+offset_top = 71.0
 offset_right = 112.0
-offset_bottom = 87.0
+offset_bottom = 85.0
 horizontal_alignment = 1
 text_overrun_behavior = 3
 
 [node name="Lista" type="Panel" parent="." unique_id=1400785541]
 offset_left = 126.0
-offset_top = 32.0
+offset_top = 34.0
 offset_right = 252.0
 offset_bottom = 122.0
 
 [node name="Titulo" type="Label" parent="Lista" unique_id=1773034985]
 layout_mode = 0
 offset_left = 6.0
-offset_top = 3.0
+offset_top = 1.0
 offset_right = 120.0
-offset_bottom = 17.0
+offset_bottom = 15.0
 text = "TUS TRINKETS"
 
 [node name="R0" type="Control" parent="Lista" unique_id=1719278324]
 anchors_preset = 0
 offset_left = 12.0
-offset_top = 17.0
+offset_top = 15.0
 offset_right = 122.0
-offset_bottom = 41.0
+offset_bottom = 39.0
 
 [node name="Icono" type="TextureRect" parent="Lista/R0" unique_id=945236770]
 layout_mode = 0
@@ -254,9 +254,9 @@ horizontal_alignment = 2
 [node name="R1" type="Control" parent="Lista" unique_id=79209961]
 anchors_preset = 0
 offset_left = 12.0
-offset_top = 41.0
+offset_top = 39.0
 offset_right = 122.0
-offset_bottom = 65.0
+offset_bottom = 63.0
 
 [node name="Icono" type="TextureRect" parent="Lista/R1" unique_id=1925515151]
 layout_mode = 0
@@ -282,9 +282,9 @@ horizontal_alignment = 2
 [node name="R2" type="Control" parent="Lista" unique_id=1852286242]
 anchors_preset = 0
 offset_left = 12.0
-offset_top = 65.0
+offset_top = 63.0
 offset_right = 122.0
-offset_bottom = 89.0
+offset_bottom = 87.0
 
 [node name="Icono" type="TextureRect" parent="Lista/R2" unique_id=942361105]
 layout_mode = 0
@@ -311,9 +311,9 @@ horizontal_alignment = 2
 visible = false
 layout_mode = 0
 offset_left = 6.0
-offset_top = 30.0
+offset_top = 28.0
 offset_right = 120.0
-offset_bottom = 60.0
+offset_bottom = 58.0
 text = "(ninguno)"
 horizontal_alignment = 1
 

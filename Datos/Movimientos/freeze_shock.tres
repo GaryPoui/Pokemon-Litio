@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_v6vlo"]
+
+[resource]
+script = ExtResource("1_v6vlo")
+id = "freeze_shock"
+nombre = "Rayo Gélido"
+tipo = "hielo"
+poder = 140
+precision = 90
+pp = 5
+meta = "damage-ailment"
+descripcion = "El usuario carga un bloque de hielo con electricidad en el primer turno y ataca con él en el segundo. Puede paralizar."
+estado = "paralysis"
+prob_estado = 30
+numero = 553
+banderas = PackedStringArray("charge", "failinstruct", "mirror", "nosleeptalk", "protect")

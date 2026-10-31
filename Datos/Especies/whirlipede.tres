@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://53auv1x07igt"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vvhmd"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vvhmd"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="2_ade60"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/poison_sting.tres" id="3_an78f"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rollout.tres" id="4_h4ox1"]
@@ -16,87 +16,87 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/toxic.tres" id="14_44lxn"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rock_climb.tres" id="15_mdycc"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="16_24wqy"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_ugb1t"]
-[ext_resource type="Texture2D" uid="uid://b5cnupjbs3gjn" path="res://Assets/Pokemones/batalla/whirlipede_espalda.png" id="18_gk1ce"]
-[ext_resource type="Texture2D" uid="uid://dps7jrgq55ktu" path="res://Assets/Pokemones/batalla/whirlipede_frente.png" id="19_77r4l"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_ugb1t"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/whirlipede_espalda.png" id="18_gk1ce"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/whirlipede_frente.png" id="19_77r4l"]
 
-[sub_resource type="Resource" id="Resource_8u3vk"]
+[sub_resource type="Resource" id="Resource_vvhmd"]
 script = ExtResource("1_vvhmd")
 movimiento = ExtResource("2_ade60")
 
-[sub_resource type="Resource" id="Resource_bbpvr"]
+[sub_resource type="Resource" id="Resource_ade60"]
 script = ExtResource("1_vvhmd")
 movimiento = ExtResource("3_an78f")
 
-[sub_resource type="Resource" id="Resource_vooii"]
+[sub_resource type="Resource" id="Resource_an78f"]
 script = ExtResource("1_vvhmd")
 movimiento = ExtResource("4_h4ox1")
 
-[sub_resource type="Resource" id="Resource_0b287"]
+[sub_resource type="Resource" id="Resource_h4ox1"]
 script = ExtResource("1_vvhmd")
 movimiento = ExtResource("5_xjhp5")
 
-[sub_resource type="Resource" id="Resource_hfrh7"]
+[sub_resource type="Resource" id="Resource_xjhp5"]
 script = ExtResource("1_vvhmd")
 nivel = 5
 movimiento = ExtResource("3_an78f")
 
-[sub_resource type="Resource" id="Resource_phwhm"]
+[sub_resource type="Resource" id="Resource_xt0xj"]
 script = ExtResource("1_vvhmd")
 nivel = 8
 movimiento = ExtResource("5_xjhp5")
 
-[sub_resource type="Resource" id="Resource_f6pwv"]
+[sub_resource type="Resource" id="Resource_u2w5g"]
 script = ExtResource("1_vvhmd")
 nivel = 12
 movimiento = ExtResource("6_xt0xj")
 
-[sub_resource type="Resource" id="Resource_ieyov"]
+[sub_resource type="Resource" id="Resource_cc05k"]
 script = ExtResource("1_vvhmd")
 nivel = 15
 movimiento = ExtResource("7_u2w5g")
 
-[sub_resource type="Resource" id="Resource_6rw6s"]
+[sub_resource type="Resource" id="Resource_nkrrw"]
 script = ExtResource("1_vvhmd")
 nivel = 19
 movimiento = ExtResource("8_cc05k")
 
-[sub_resource type="Resource" id="Resource_bi73g"]
+[sub_resource type="Resource" id="Resource_n1hd7"]
 script = ExtResource("1_vvhmd")
 nivel = 22
 movimiento = ExtResource("9_nkrrw")
 
-[sub_resource type="Resource" id="Resource_ks0hd"]
+[sub_resource type="Resource" id="Resource_ndgqk"]
 script = ExtResource("1_vvhmd")
 nivel = 23
 movimiento = ExtResource("10_n1hd7")
 
-[sub_resource type="Resource" id="Resource_nm0lw"]
+[sub_resource type="Resource" id="Resource_c65eo"]
 script = ExtResource("1_vvhmd")
 nivel = 28
 movimiento = ExtResource("11_ndgqk")
 
-[sub_resource type="Resource" id="Resource_2fswf"]
+[sub_resource type="Resource" id="Resource_7c5i8"]
 script = ExtResource("1_vvhmd")
 nivel = 32
 movimiento = ExtResource("12_c65eo")
 
-[sub_resource type="Resource" id="Resource_ws6yf"]
+[sub_resource type="Resource" id="Resource_44lxn"]
 script = ExtResource("1_vvhmd")
 nivel = 37
 movimiento = ExtResource("13_7c5i8")
 
-[sub_resource type="Resource" id="Resource_1aefx"]
+[sub_resource type="Resource" id="Resource_mdycc"]
 script = ExtResource("1_vvhmd")
 nivel = 41
 movimiento = ExtResource("14_44lxn")
 
-[sub_resource type="Resource" id="Resource_v0o8r"]
+[sub_resource type="Resource" id="Resource_24wqy"]
 script = ExtResource("1_vvhmd")
 nivel = 46
 movimiento = ExtResource("15_mdycc")
 
-[sub_resource type="Resource" id="Resource_7awl3"]
+[sub_resource type="Resource" id="Resource_ugb1t"]
 script = ExtResource("1_vvhmd")
 nivel = 50
 movimiento = ExtResource("16_24wqy")
@@ -106,7 +106,7 @@ script = ExtResource("17_ugb1t")
 id = "whirlipede"
 numero = 544
 nombre = "Whirlipede"
-tipos = ["bicho", "veneno"]
+tipos = PackedStringArray("bicho", "veneno")
 ps = 40
 ataque = 55
 defensa = 99
@@ -121,12 +121,20 @@ evs_otorgados = {
 }
 evoluciona_a = "scolipede"
 nivel_evolucion = 30
-aprende = Array[ExtResource("1_vvhmd")]([SubResource("Resource_8u3vk"), SubResource("Resource_bbpvr"), SubResource("Resource_vooii"), SubResource("Resource_0b287"), SubResource("Resource_hfrh7"), SubResource("Resource_phwhm"), SubResource("Resource_f6pwv"), SubResource("Resource_ieyov"), SubResource("Resource_6rw6s"), SubResource("Resource_bi73g"), SubResource("Resource_ks0hd"), SubResource("Resource_nm0lw"), SubResource("Resource_2fswf"), SubResource("Resource_ws6yf"), SubResource("Resource_1aefx"), SubResource("Resource_v0o8r"), SubResource("Resource_7awl3")])
+evoluciones = Array[Dictionary]([{
+"especie": "scolipede",
+"metodo": "nivel",
+"nivel": 30
+}])
+habilidades = PackedStringArray("poison_point", "swarm")
+habilidad_oculta = "quick_feet"
+categoria = "Pokémon Pupaciempiés"
+altura = 1.2
+peso_kg = 58.5
+descripcion = "Lo protege un duro caparazón. Gira como una rueda y realiza brutales placajes contra sus enemigos."
+aprende = Array[ExtResource("1_vvhmd")]([SubResource("Resource_vvhmd"), SubResource("Resource_ade60"), SubResource("Resource_an78f"), SubResource("Resource_h4ox1"), SubResource("Resource_xjhp5"), SubResource("Resource_xt0xj"), SubResource("Resource_u2w5g"), SubResource("Resource_cc05k"), SubResource("Resource_nkrrw"), SubResource("Resource_n1hd7"), SubResource("Resource_ndgqk"), SubResource("Resource_c65eo"), SubResource("Resource_7c5i8"), SubResource("Resource_44lxn"), SubResource("Resource_mdycc"), SubResource("Resource_24wqy"), SubResource("Resource_ugb1t")])
 sprite_frente = ExtResource("19_77r4l")
 sprite_espalda = ExtResource("18_gk1ce")
 cuadros_frente = 96
 cuadros_espalda = 98
 fps_sprite = 13.6
-habilidades = PackedStringArray("Enjambre", "Punto Tóxico")
-habilidad_oculta = "Pies Rápidos"
-evoluciones = Array[Dictionary]([{"especie": "scolipede", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])

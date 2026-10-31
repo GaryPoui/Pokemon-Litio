@@ -15,82 +15,79 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sleep_powder.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/worry_seed.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="15_lih8a"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/natural_gift.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="17"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/extrasensory.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bestow.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_lih8a"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_pwj75"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_qf6oc"]
+script = ExtResource("2")
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_lr17o"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_w4ym3"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_okfls"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_g5oeb"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_lce40"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_iair2"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_w1ibj"]
 script = ExtResource("2")
 nivel = 27
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_devc7"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_xhpl5"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_vxlct"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_jefhd"]
 script = ExtResource("2")
 nivel = 47
-movimiento = ExtResource("18")
+movimiento = ExtResource("15_lih8a")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_wwag1"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("19")
@@ -101,8 +98,6 @@ id = "exeggcute"
 numero = 102
 nombre = "Exeggcute"
 tipos = PackedStringArray("planta", "psiquico")
-habilidades = PackedStringArray("Clorofila")
-habilidad_oculta = "Cosecha"
 ps = 60
 ataque = 40
 defensa = 80
@@ -111,12 +106,22 @@ def_esp = 45
 velocidad = 40
 exp_base = 65
 ratio_captura = 90
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "exeggutor", "metodo": "piedra", "condicion": "Piedra hoja (fuera de Alola)"}])
-evoluciona_a = "exeggutor"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"defensa": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "exeggutor",
+"metodo": "piedra",
+"objeto": "leaf_stone"
+}])
+habilidades = PackedStringArray("chlorophyll")
+habilidad_oculta = "harvest"
+categoria = "Pokémon Huevo"
+altura = 0.4
+peso_kg = 2.5
+descripcion = "Estos seis huevos se comunican por telepatía. Si se separan, se pueden reunir rápidamente."
+aprende = Array[ExtResource("2")]([SubResource("Resource_lih8a"), SubResource("Resource_pwj75"), SubResource("Resource_qf6oc"), SubResource("Resource_lr17o"), SubResource("Resource_w4ym3"), SubResource("Resource_okfls"), SubResource("Resource_g5oeb"), SubResource("Resource_lce40"), SubResource("Resource_iair2"), SubResource("Resource_w1ibj"), SubResource("Resource_devc7"), SubResource("Resource_xhpl5"), SubResource("Resource_vxlct"), SubResource("Resource_jefhd"), SubResource("Resource_wwag1")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 9

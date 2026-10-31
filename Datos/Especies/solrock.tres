@@ -14,91 +14,76 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/embargo.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rock_slide.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/cosmic_power.tres" id="14"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/heal_block.tres" id="16"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/wonder_room.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_o55t2"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_0bkxd"]
 script = ExtResource("2")
-nivel = 5
-movimiento = ExtResource("8")
+movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_3vugh"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_7itdi"]
 script = ExtResource("2")
 nivel = 9
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_o13va"]
+script = ExtResource("2")
+nivel = 12
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_j20pn"]
 script = ExtResource("2")
-nivel = 13
+nivel = 20
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_cg526"]
 script = ExtResource("2")
-nivel = 17
+nivel = 23
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_1dtud"]
 script = ExtResource("2")
-nivel = 21
+nivel = 31
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_f2ow6"]
 script = ExtResource("2")
-nivel = 25
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 29
+nivel = 34
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_2b3lc"]
 script = ExtResource("2")
-nivel = 33
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 37
+nivel = 42
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 41
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_umcxx"]
 script = ExtResource("2")
 nivel = 45
-movimiento = ExtResource("18")
+movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_14"]
-script = ExtResource("2")
-nivel = 49
-movimiento = ExtResource("19")
-
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_lblp1"]
 script = ExtResource("2")
 nivel = 53
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Resource_e8efq"]
+script = ExtResource("2")
+nivel = 56
+movimiento = ExtResource("19")
+
+[sub_resource type="Resource" id="Resource_cjjrd"]
+script = ExtResource("2")
+nivel = 64
 movimiento = ExtResource("20")
 
 [resource]
@@ -107,21 +92,24 @@ id = "solrock"
 numero = 338
 nombre = "Solrock"
 tipos = PackedStringArray("roca", "psiquico")
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
-ps = 90
+ps = 70
 ataque = 95
 defensa = 85
 at_esp = 55
 def_esp = 65
 velocidad = 70
-exp_base = 154
-ratio_captura = 45
+exp_base = 161
 ratio_genero = -1
 crecimiento = "fast"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"ataque": 2
+}
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Meteorito"
+altura = 1.2
+peso_kg = 154.0
+descripcion = "Usa el sol como fuente de energía, por lo que es más poderoso de día. Brilla al rotar."
+aprende = Array[ExtResource("2")]([SubResource("Resource_o55t2"), SubResource("Resource_0bkxd"), SubResource("Resource_3vugh"), SubResource("Resource_7itdi"), SubResource("Resource_o13va"), SubResource("Resource_j20pn"), SubResource("Resource_cg526"), SubResource("Resource_1dtud"), SubResource("Resource_f2ow6"), SubResource("Resource_2b3lc"), SubResource("Resource_umcxx"), SubResource("Resource_lblp1"), SubResource("Resource_e8efq"), SubResource("Resource_cjjrd")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 112

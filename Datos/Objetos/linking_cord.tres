@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/linking_cord.png" id="1_4j8wa"]
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="2_jtm82"]
+
+[resource]
+script = ExtResource("2_jtm82")
+id = "linking_cord"
+nombre = "Cordón Unión"
+precio = 3000
+icono = ExtResource("1_4j8wa")
+uso_especial = "cordon"

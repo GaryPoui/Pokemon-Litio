@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_i2vo6"]
+
+[resource]
+script = ExtResource("1_i2vo6")
+id = "sand_veil"
+nombre = "Velo Arena"
+descripcion = "Aumenta la Evasión en las tormentas de arena."

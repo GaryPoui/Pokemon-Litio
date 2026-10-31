@@ -15,52 +15,50 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/metal_claw.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dig.tres" id="14"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_0qvh0"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_jf3ff"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_xigfx"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_06r3w"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_jwug4"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_1o0fn"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_2ascv"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_tn3al"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_tmcaa"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_qtvd2"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("14")
@@ -71,8 +69,6 @@ id = "nincada"
 numero = 290
 nombre = "Nincada"
 tipos = PackedStringArray("bicho", "tierra")
-habilidades = PackedStringArray("Ojo Compuesto")
-habilidad_oculta = "Fuga"
 ps = 31
 ataque = 45
 defensa = 90
@@ -81,13 +77,28 @@ def_esp = 30
 velocidad = 40
 exp_base = 53
 ratio_captura = 255
-ratio_genero = 4
 crecimiento = "slow-then-very-fast"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "ninjask", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}, {"especie": "shedinja", "metodo": "especial", "condicion": "Al evolucionar a Ninjask: espacio en el equipo y una Poke Ball."}])
+evs_otorgados = {
+"defensa": 1
+}
 evoluciona_a = "ninjask"
 nivel_evolucion = 20
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9")])
+evoluciones = Array[Dictionary]([{
+"especie": "ninjask",
+"metodo": "nivel",
+"nivel": 20
+}, {
+"especie": "shedinja",
+"metodo": "muda",
+"nivel": 20
+}])
+habilidades = PackedStringArray("compound_eyes")
+habilidad_oculta = "run_away"
+categoria = "Pokémon Aprendiz"
+altura = 0.5
+peso_kg = 5.5
+descripcion = "Como se ha pasado casi toda la vida viviendo bajo tierra, no ve bien. Las antenas que tiene le ayudan a orientarse."
+aprende = Array[ExtResource("2")]([SubResource("Resource_0qvh0"), SubResource("Resource_jf3ff"), SubResource("Resource_xigfx"), SubResource("Resource_06r3w"), SubResource("Resource_jwug4"), SubResource("Resource_1o0fn"), SubResource("Resource_2ascv"), SubResource("Resource_tn3al"), SubResource("Resource_tmcaa"), SubResource("Resource_qtvd2")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 54

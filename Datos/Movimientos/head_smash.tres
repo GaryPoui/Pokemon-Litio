@@ -12,3 +12,5 @@ precision = 80
 pp = 5
 descripcion = "El usuario arriesga su vida y lanza un cabezazo con toda su fuerza. El agresor resulta seriamente dañado."
 drenaje = -50
+numero = 457
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

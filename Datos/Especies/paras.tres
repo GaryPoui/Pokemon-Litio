@@ -17,62 +17,61 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/rage_powder.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/x_scissor.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_y261s"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_mqnbm"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_uk50j"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_bokeu"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_0e2u5"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_x83v8"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_ka5c6"]
 script = ExtResource("2")
 nivel = 27
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_b4nrs"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_d3umn"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_c81mq"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_13fif"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_crlau"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("16")
@@ -83,8 +82,6 @@ id = "paras"
 numero = 46
 nombre = "Paras"
 tipos = PackedStringArray("bicho", "planta")
-habilidades = PackedStringArray("Efecto Espora", "Piel Seca")
-habilidad_oculta = "Humedad"
 ps = 35
 ataque = 70
 defensa = 55
@@ -93,13 +90,23 @@ def_esp = 55
 velocidad = 25
 exp_base = 57
 ratio_captura = 190
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "parasect", "metodo": "nivel", "condicion": "Nivel 24", "nivel": 24}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "parasect"
 nivel_evolucion = 24
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evoluciones = Array[Dictionary]([{
+"especie": "parasect",
+"metodo": "nivel",
+"nivel": 24
+}])
+habilidades = PackedStringArray("effect_spore", "dry_skin")
+habilidad_oculta = "damp"
+categoria = "Pokémon Hongo"
+altura = 0.3
+peso_kg = 5.4
+descripcion = "Lleva en el lomo dos setas parásitas llamadas tochukaso, que crecen con él."
+aprende = Array[ExtResource("2")]([SubResource("Resource_y261s"), SubResource("Resource_mqnbm"), SubResource("Resource_uk50j"), SubResource("Resource_bokeu"), SubResource("Resource_0e2u5"), SubResource("Resource_x83v8"), SubResource("Resource_ka5c6"), SubResource("Resource_b4nrs"), SubResource("Resource_d3umn"), SubResource("Resource_c81mq"), SubResource("Resource_13fif"), SubResource("Resource_crlau")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 36

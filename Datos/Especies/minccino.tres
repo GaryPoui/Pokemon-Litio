@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://mboqaox23eoj"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_cr2k7"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_cr2k7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="2_bmvn2"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_orr32"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/helping_hand.tres" id="4_2aro8"]
@@ -18,90 +18,90 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="16_4wycm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="17_0u6l6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/after_you.tres" id="18_1j0qq"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="19_iuva8"]
-[ext_resource type="Texture2D" uid="uid://ccb4oxqi5l38b" path="res://Assets/Pokemones/batalla/minccino_espalda.png" id="20_n56cw"]
-[ext_resource type="Texture2D" uid="uid://dajw4uqmn40to" path="res://Assets/Pokemones/batalla/minccino_frente.png" id="21_jhrwk"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="19_iuva8"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/minccino_espalda.png" id="20_n56cw"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/minccino_frente.png" id="21_jhrwk"]
 
-[sub_resource type="Resource" id="Resource_3b21h"]
+[sub_resource type="Resource" id="Resource_cr2k7"]
 script = ExtResource("1_cr2k7")
 movimiento = ExtResource("2_bmvn2")
 
-[sub_resource type="Resource" id="Resource_fj3nr"]
+[sub_resource type="Resource" id="Resource_bmvn2"]
 script = ExtResource("1_cr2k7")
 nivel = 3
 movimiento = ExtResource("3_orr32")
 
-[sub_resource type="Resource" id="Resource_b2504"]
+[sub_resource type="Resource" id="Resource_orr32"]
 script = ExtResource("1_cr2k7")
 nivel = 7
 movimiento = ExtResource("4_2aro8")
 
-[sub_resource type="Resource" id="Resource_cqobi"]
+[sub_resource type="Resource" id="Resource_2aro8"]
 script = ExtResource("1_cr2k7")
 nivel = 9
 movimiento = ExtResource("5_hom6v")
 
-[sub_resource type="Resource" id="Resource_u12h1"]
+[sub_resource type="Resource" id="Resource_hom6v"]
 script = ExtResource("1_cr2k7")
 nivel = 13
 movimiento = ExtResource("6_1iu65")
 
-[sub_resource type="Resource" id="Resource_67mob"]
+[sub_resource type="Resource" id="Resource_1iu65"]
 script = ExtResource("1_cr2k7")
 nivel = 15
 movimiento = ExtResource("7_5i53g")
 
-[sub_resource type="Resource" id="Resource_k18dw"]
+[sub_resource type="Resource" id="Resource_5i53g"]
 script = ExtResource("1_cr2k7")
 nivel = 19
 movimiento = ExtResource("8_ppnv1")
 
-[sub_resource type="Resource" id="Resource_3drop"]
+[sub_resource type="Resource" id="Resource_ppnv1"]
 script = ExtResource("1_cr2k7")
 nivel = 21
 movimiento = ExtResource("9_rgs3r")
 
-[sub_resource type="Resource" id="Resource_8xiv1"]
+[sub_resource type="Resource" id="Resource_rgs3r"]
 script = ExtResource("1_cr2k7")
 nivel = 25
 movimiento = ExtResource("10_w3gnm")
 
-[sub_resource type="Resource" id="Resource_ne73o"]
+[sub_resource type="Resource" id="Resource_w3gnm"]
 script = ExtResource("1_cr2k7")
 nivel = 27
 movimiento = ExtResource("11_icum5")
 
-[sub_resource type="Resource" id="Resource_72ydu"]
+[sub_resource type="Resource" id="Resource_icum5"]
 script = ExtResource("1_cr2k7")
 nivel = 31
 movimiento = ExtResource("12_ycjgo")
 
-[sub_resource type="Resource" id="Resource_lh200"]
+[sub_resource type="Resource" id="Resource_ycjgo"]
 script = ExtResource("1_cr2k7")
 nivel = 33
 movimiento = ExtResource("13_bvuf8")
 
-[sub_resource type="Resource" id="Resource_de7jc"]
+[sub_resource type="Resource" id="Resource_bvuf8"]
 script = ExtResource("1_cr2k7")
 nivel = 37
 movimiento = ExtResource("14_naf2s")
 
-[sub_resource type="Resource" id="Resource_7mmnr"]
+[sub_resource type="Resource" id="Resource_naf2s"]
 script = ExtResource("1_cr2k7")
 nivel = 39
 movimiento = ExtResource("15_phpus")
 
-[sub_resource type="Resource" id="Resource_npjhf"]
+[sub_resource type="Resource" id="Resource_phpus"]
 script = ExtResource("1_cr2k7")
 nivel = 43
 movimiento = ExtResource("16_4wycm")
 
-[sub_resource type="Resource" id="Resource_tshpr"]
+[sub_resource type="Resource" id="Resource_4wycm"]
 script = ExtResource("1_cr2k7")
 nivel = 45
 movimiento = ExtResource("17_0u6l6")
 
-[sub_resource type="Resource" id="Resource_kd4un"]
+[sub_resource type="Resource" id="Resource_0u6l6"]
 script = ExtResource("1_cr2k7")
 nivel = 49
 movimiento = ExtResource("18_1j0qq")
@@ -111,6 +111,7 @@ script = ExtResource("19_iuva8")
 id = "minccino"
 numero = 572
 nombre = "Minccino"
+tipos = PackedStringArray("normal")
 ps = 55
 defensa = 40
 at_esp = 40
@@ -123,13 +124,20 @@ crecimiento = "fast"
 evs_otorgados = {
 "velocidad": 1
 }
-aprende = Array[ExtResource("1_cr2k7")]([SubResource("Resource_3b21h"), SubResource("Resource_fj3nr"), SubResource("Resource_b2504"), SubResource("Resource_cqobi"), SubResource("Resource_u12h1"), SubResource("Resource_67mob"), SubResource("Resource_k18dw"), SubResource("Resource_3drop"), SubResource("Resource_8xiv1"), SubResource("Resource_ne73o"), SubResource("Resource_72ydu"), SubResource("Resource_lh200"), SubResource("Resource_de7jc"), SubResource("Resource_7mmnr"), SubResource("Resource_npjhf"), SubResource("Resource_tshpr"), SubResource("Resource_kd4un")])
+evoluciones = Array[Dictionary]([{
+"especie": "cinccino",
+"metodo": "piedra",
+"objeto": "shiny_stone"
+}])
+habilidades = PackedStringArray("cute_charm", "technician")
+habilidad_oculta = "skill_link"
+categoria = "Pokémon Chinchilla"
+altura = 0.4
+peso_kg = 5.8
+descripcion = "Se saludan entre sí frotándose con la cola y limpiándose a conciencia."
+aprende = Array[ExtResource("1_cr2k7")]([SubResource("Resource_cr2k7"), SubResource("Resource_bmvn2"), SubResource("Resource_orr32"), SubResource("Resource_2aro8"), SubResource("Resource_hom6v"), SubResource("Resource_1iu65"), SubResource("Resource_5i53g"), SubResource("Resource_ppnv1"), SubResource("Resource_rgs3r"), SubResource("Resource_w3gnm"), SubResource("Resource_icum5"), SubResource("Resource_ycjgo"), SubResource("Resource_bvuf8"), SubResource("Resource_naf2s"), SubResource("Resource_phpus"), SubResource("Resource_4wycm"), SubResource("Resource_0u6l6")])
 sprite_frente = ExtResource("21_jhrwk")
 sprite_espalda = ExtResource("20_n56cw")
 cuadros_frente = 96
 cuadros_espalda = 104
 fps_sprite = 13.11
-habilidades = PackedStringArray("Gran Encanto", "Experto")
-habilidad_oculta = "Encadenado"
-evoluciones = Array[Dictionary]([{"especie": "cinccino", "metodo": "piedra", "condicion": "Piedra día"}])
-evoluciona_a = "cinccino"

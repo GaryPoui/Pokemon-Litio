@@ -17,62 +17,60 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/dream_eater.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dark_pulse.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_j083h"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_gm0xq"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_8mcyk"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_nc0e7"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_hpn13"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_hepag"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_ydp71"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_b0jtk"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_rjo4k"]
 script = ExtResource("2")
 nivel = 66
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_k7fck"]
 script = ExtResource("2")
 nivel = 75
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_0c4rg"]
 script = ExtResource("2")
 nivel = 84
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_lcel1"]
 script = ExtResource("2")
 nivel = 93
 movimiento = ExtResource("16")
@@ -83,8 +81,6 @@ id = "darkrai"
 numero = 491
 nombre = "Darkrai"
 tipos = PackedStringArray("siniestro")
-habilidades = PackedStringArray("Mal Sueño")
-habilidad_oculta = ""
 ps = 70
 ataque = 90
 defensa = 90
@@ -95,9 +91,17 @@ exp_base = 270
 ratio_captura = 3
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"at_esp": 2, "velocidad": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evs_otorgados = {
+"at_esp": 2,
+"velocidad": 1
+}
+amistad_base = 0
+habilidades = PackedStringArray("bad_dreams")
+categoria = "Pokémon Oscuridad"
+altura = 1.5
+peso_kg = 50.5
+descripcion = "Defiende su territorio de personas y Pokémon haciéndoles dormir y provocándoles pesadillas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_j083h"), SubResource("Resource_gm0xq"), SubResource("Resource_8mcyk"), SubResource("Resource_nc0e7"), SubResource("Resource_hpn13"), SubResource("Resource_hepag"), SubResource("Resource_ydp71"), SubResource("Resource_b0jtk"), SubResource("Resource_rjo4k"), SubResource("Resource_k7fck"), SubResource("Resource_0c4rg"), SubResource("Resource_lcel1")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 72

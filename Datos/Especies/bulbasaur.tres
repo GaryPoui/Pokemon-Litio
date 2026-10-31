@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dags6j7cmd52l"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_7disl"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_7disl"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_q1vn5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_we5lm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leech_seed.tres" id="4_7hy0v"]
@@ -15,75 +15,75 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/worry_seed.tres" id="13_vp5i0"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/synthesis.tres" id="14_gq6e3"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/seed_bomb.tres" id="15_v5fk3"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_dcw2u"]
-[ext_resource type="Texture2D" uid="uid://cq8sqaj7evr0k" path="res://Assets/Pokemones/batalla/bulbasaur_espalda.png" id="17_x285b"]
-[ext_resource type="Texture2D" uid="uid://cs1mub6e0an3p" path="res://Assets/Pokemones/batalla/bulbasaur_frente.png" id="18_de6n2"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_dcw2u"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/bulbasaur_espalda.png" id="17_x285b"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/bulbasaur_frente.png" id="18_de6n2"]
 
-[sub_resource type="Resource" id="Resource_0deoq"]
+[sub_resource type="Resource" id="Resource_7disl"]
 script = ExtResource("1_7disl")
 movimiento = ExtResource("2_q1vn5")
 
-[sub_resource type="Resource" id="Resource_lqffr"]
+[sub_resource type="Resource" id="Resource_q1vn5"]
 script = ExtResource("1_7disl")
 nivel = 3
 movimiento = ExtResource("3_we5lm")
 
-[sub_resource type="Resource" id="Resource_wkjra"]
+[sub_resource type="Resource" id="Resource_we5lm"]
 script = ExtResource("1_7disl")
 nivel = 7
 movimiento = ExtResource("4_7hy0v")
 
-[sub_resource type="Resource" id="Resource_q2htc"]
+[sub_resource type="Resource" id="Resource_7hy0v"]
 script = ExtResource("1_7disl")
 nivel = 9
 movimiento = ExtResource("5_alx6s")
 
-[sub_resource type="Resource" id="Resource_d4r0x"]
+[sub_resource type="Resource" id="Resource_alx6s"]
 script = ExtResource("1_7disl")
 nivel = 13
 movimiento = ExtResource("6_5m87w")
 
-[sub_resource type="Resource" id="Resource_2mfcr"]
+[sub_resource type="Resource" id="Resource_5m87w"]
 script = ExtResource("1_7disl")
 nivel = 13
 movimiento = ExtResource("7_17cfl")
 
-[sub_resource type="Resource" id="Resource_gnda7"]
+[sub_resource type="Resource" id="Resource_17cfl"]
 script = ExtResource("1_7disl")
 nivel = 15
 movimiento = ExtResource("8_36y7r")
 
-[sub_resource type="Resource" id="Resource_x0ao2"]
+[sub_resource type="Resource" id="Resource_36y7r"]
 script = ExtResource("1_7disl")
 nivel = 19
 movimiento = ExtResource("9_f38cg")
 
-[sub_resource type="Resource" id="Resource_ofv7e"]
+[sub_resource type="Resource" id="Resource_f38cg"]
 script = ExtResource("1_7disl")
 nivel = 21
 movimiento = ExtResource("10_oqbvp")
 
-[sub_resource type="Resource" id="Resource_i80kc"]
+[sub_resource type="Resource" id="Resource_oqbvp"]
 script = ExtResource("1_7disl")
 nivel = 25
 movimiento = ExtResource("11_t75dc")
 
-[sub_resource type="Resource" id="Resource_ev6i4"]
+[sub_resource type="Resource" id="Resource_t75dc"]
 script = ExtResource("1_7disl")
 nivel = 27
 movimiento = ExtResource("12_vsk50")
 
-[sub_resource type="Resource" id="Resource_ttjax"]
+[sub_resource type="Resource" id="Resource_vsk50"]
 script = ExtResource("1_7disl")
 nivel = 31
 movimiento = ExtResource("13_vp5i0")
 
-[sub_resource type="Resource" id="Resource_midvx"]
+[sub_resource type="Resource" id="Resource_vp5i0"]
 script = ExtResource("1_7disl")
 nivel = 33
 movimiento = ExtResource("14_gq6e3")
 
-[sub_resource type="Resource" id="Resource_bqjvt"]
+[sub_resource type="Resource" id="Resource_gq6e3"]
 script = ExtResource("1_7disl")
 nivel = 37
 movimiento = ExtResource("15_v5fk3")
@@ -93,7 +93,7 @@ script = ExtResource("16_dcw2u")
 id = "bulbasaur"
 numero = 1
 nombre = "Bulbasaur"
-tipos = ["planta", "veneno"]
+tipos = PackedStringArray("planta", "veneno")
 ps = 45
 ataque = 49
 defensa = 49
@@ -108,12 +108,20 @@ evs_otorgados = {
 }
 evoluciona_a = "ivysaur"
 nivel_evolucion = 16
-aprende = Array[ExtResource("1_7disl")]([SubResource("Resource_0deoq"), SubResource("Resource_lqffr"), SubResource("Resource_wkjra"), SubResource("Resource_q2htc"), SubResource("Resource_d4r0x"), SubResource("Resource_2mfcr"), SubResource("Resource_gnda7"), SubResource("Resource_x0ao2"), SubResource("Resource_ofv7e"), SubResource("Resource_i80kc"), SubResource("Resource_ev6i4"), SubResource("Resource_ttjax"), SubResource("Resource_midvx"), SubResource("Resource_bqjvt")])
+evoluciones = Array[Dictionary]([{
+"especie": "ivysaur",
+"metodo": "nivel",
+"nivel": 16
+}])
+habilidades = PackedStringArray("overgrow")
+habilidad_oculta = "chlorophyll"
+categoria = "Pokémon Semilla"
+altura = 0.7
+peso_kg = 6.9
+descripcion = "Una rara semilla le fue plantada en el lomo al nacer. La planta brota y crece con este Pokémon."
+aprende = Array[ExtResource("1_7disl")]([SubResource("Resource_7disl"), SubResource("Resource_q1vn5"), SubResource("Resource_we5lm"), SubResource("Resource_7hy0v"), SubResource("Resource_alx6s"), SubResource("Resource_5m87w"), SubResource("Resource_17cfl"), SubResource("Resource_36y7r"), SubResource("Resource_f38cg"), SubResource("Resource_oqbvp"), SubResource("Resource_t75dc"), SubResource("Resource_vsk50"), SubResource("Resource_vp5i0"), SubResource("Resource_gq6e3")])
 sprite_frente = ExtResource("18_de6n2")
 sprite_espalda = ExtResource("17_x285b")
 cuadros_frente = 50
 cuadros_espalda = 50
 fps_sprite = 9.8
-habilidades = PackedStringArray("Espesura")
-habilidad_oculta = "Clorofila"
-evoluciones = Array[Dictionary]([{"especie": "ivysaur", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

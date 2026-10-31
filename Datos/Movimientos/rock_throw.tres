@@ -11,3 +11,5 @@ poder = 50
 precision = 90
 pp = 15
 descripcion = "Tira una pequeña roca al objetivo."
+numero = 88
+banderas = PackedStringArray("metronome", "mirror", "protect")

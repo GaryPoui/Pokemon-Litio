@@ -15,105 +15,88 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/rock_tomb.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/block.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rock_slide.tres" id="15"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/counter.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="18"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hammer_arm.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_buei4"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_8hyx8"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
+movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_1bkx8"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_4vwqi"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_x3bc3"]
+script = ExtResource("2")
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_jwep6"]
 script = ExtResource("2")
-nivel = 1
+nivel = 6
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_xa1sk"]
 script = ExtResource("2")
-nivel = 5
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 8
+nivel = 9
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_ubf6v"]
 script = ExtResource("2")
-nivel = 12
+nivel = 14
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_o3nca"]
 script = ExtResource("2")
-nivel = 15
+nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 15
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 19
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_osroh"]
 script = ExtResource("2")
 nivel = 22
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 26
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_k50hl"]
 script = ExtResource("2")
-nivel = 29
-movimiento = ExtResource("15")
+nivel = 25
+movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_76wbs"]
+script = ExtResource("2")
+nivel = 30
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_6x1ne"]
 script = ExtResource("2")
 nivel = 33
-movimiento = ExtResource("16")
+movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_l7hdi"]
 script = ExtResource("2")
-nivel = 36
+nivel = 38
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Resource_oky6p"]
+script = ExtResource("2")
+nivel = 41
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_1elc7"]
 script = ExtResource("2")
-nivel = 40
+nivel = 46
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_d4s0w"]
 script = ExtResource("2")
-nivel = 43
-movimiento = ExtResource("19")
-
-[sub_resource type="Resource" id="Move_18"]
-script = ExtResource("2")
-nivel = 47
+nivel = 49
 movimiento = ExtResource("20")
 
 [resource]
@@ -122,8 +105,6 @@ id = "sudowoodo"
 numero = 185
 nombre = "Sudowoodo"
 tipos = PackedStringArray("roca")
-habilidades = PackedStringArray("Robustez", "Cabeza Roca")
-habilidad_oculta = "Cobardía"
 ps = 70
 ataque = 100
 defensa = 115
@@ -132,11 +113,16 @@ def_esp = 65
 velocidad = 30
 exp_base = 144
 ratio_captura = 65
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"defensa": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18")])
+evs_otorgados = {
+"defensa": 2
+}
+habilidades = PackedStringArray("sturdy", "rock_head")
+habilidad_oculta = "rattled"
+categoria = "Pokémon Imitación"
+altura = 1.2
+peso_kg = 38.0
+descripcion = "Aunque pretende ser un árbol, en su composición se parece más a una roca que a una planta."
+aprende = Array[ExtResource("2")]([SubResource("Resource_buei4"), SubResource("Resource_8hyx8"), SubResource("Resource_1bkx8"), SubResource("Resource_4vwqi"), SubResource("Resource_x3bc3"), SubResource("Resource_jwep6"), SubResource("Resource_xa1sk"), SubResource("Resource_ubf6v"), SubResource("Resource_o3nca"), SubResource("Resource_osroh"), SubResource("Resource_k50hl"), SubResource("Resource_76wbs"), SubResource("Resource_6x1ne"), SubResource("Resource_l7hdi"), SubResource("Resource_oky6p"), SubResource("Resource_1elc7"), SubResource("Resource_d4s0w")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 34

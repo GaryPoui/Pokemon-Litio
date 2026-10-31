@@ -9,3 +9,5 @@ nombre = "Buena Baza"
 tipo = "siniestro"
 poder = 50
 descripcion = "Si el objetivo ya ha sufrido daño en ese turno, la fuerza del ataque se duplica."
+numero = 372
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

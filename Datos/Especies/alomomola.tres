@@ -22,87 +22,85 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/healing_wish.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_g5quy"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_6sl4v"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_hsoy1"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_6juvs"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_hcair"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_v4k58"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_0dl1t"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_aeut1"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_iuqws"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_hrf58"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_shq0t"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_7myxo"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_2xh7g"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_rp5ij"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_72x2w"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_vvk2m"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_yshnt"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("21")
@@ -113,8 +111,6 @@ id = "alomomola"
 numero = 594
 nombre = "Alomomola"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Alma Sanadora/Alma Cura", "Hidratación")
-habilidad_oculta = "Regeneración"
 ps = 165
 ataque = 75
 defensa = 80
@@ -123,13 +119,18 @@ def_esp = 45
 velocidad = 65
 exp_base = 165
 ratio_captura = 75
-ratio_genero = 4
 crecimiento = "fast"
-evs_otorgados = {"ps": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"ps": 2
+}
+habilidades = PackedStringArray("healer", "hydration")
+habilidad_oculta = "regenerator"
+categoria = "Pokémon Socorrista"
+altura = 1.2
+peso_kg = 31.6
+descripcion = "Vive flotando a la deriva en mar abierto. Siempre que encuentra un Pokémon herido, lo abraza y lo lleva a la costa."
+aprende = Array[ExtResource("2")]([SubResource("Resource_g5quy"), SubResource("Resource_6sl4v"), SubResource("Resource_hsoy1"), SubResource("Resource_6juvs"), SubResource("Resource_hcair"), SubResource("Resource_v4k58"), SubResource("Resource_0dl1t"), SubResource("Resource_aeut1"), SubResource("Resource_iuqws"), SubResource("Resource_hrf58"), SubResource("Resource_shq0t"), SubResource("Resource_7myxo"), SubResource("Resource_2xh7g"), SubResource("Resource_rp5ij"), SubResource("Resource_72x2w"), SubResource("Resource_vvk2m"), SubResource("Resource_yshnt")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 64
 cuadros_espalda = 64
-fps_sprite = 10.0

@@ -15,3 +15,7 @@ meta = "damage-ailment"
 descripcion = "Un aro de fuego que atrapa al objetivo de cuatro a cinco turnos."
 estado = "trap"
 prob_estado = 100
+numero = 83
+banderas = PackedStringArray("metronome", "mirror", "protect")
+turnos_min = 5
+turnos_max = 6

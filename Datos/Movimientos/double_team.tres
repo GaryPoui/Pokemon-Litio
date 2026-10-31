@@ -15,3 +15,5 @@ descripcion = "Crea copias de sí mismo para mejorar la Evasión."
 cambios_stats = {
 "evasion": 1
 }
+numero = 104
+banderas = PackedStringArray("metronome", "snatch")

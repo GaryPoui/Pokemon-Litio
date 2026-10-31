@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/up_grade.png" id="1_dpujp"]
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="2_ogjki"]
+
+[resource]
+script = ExtResource("2_ogjki")
+id = "up_grade"
+nombre = "Mejora"
+descripcion = "Prolonga la duración de barreras como Reflejo y Pantalla de Luz. Debe llevarla un Pokémon."
+precio = 2000
+icono = ExtResource("1_dpujp")

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
 [ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="2_uvuo5"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/vullaby_frente.png" id="3"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/vullaby_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="5"]
@@ -15,76 +16,85 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/tailwind.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dark_pulse.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlwind.tres" id="15_eo1su"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/embargo.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/brave_bird.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mirror_move.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_uvuo5"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("2_uvuo5")
+
+[sub_resource type="Resource" id="Resource_eo1su"]
+script = ExtResource("2")
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_reuxg"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_sr7h7"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_a3s3c"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_ewqic"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_n4wxf"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_ytwdj"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_s0d55"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_wlgji"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_3lww1"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_yt711"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_nerw1"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_s5twc"]
+script = ExtResource("2")
+nivel = 55
+movimiento = ExtResource("15_eo1su")
+
+[sub_resource type="Resource" id="Resource_ytq2l"]
 script = ExtResource("2")
 nivel = 59
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_wcys5"]
 script = ExtResource("2")
 nivel = 64
 movimiento = ExtResource("18")
@@ -95,8 +105,6 @@ id = "vullaby"
 numero = 629
 nombre = "Vullaby"
 tipos = PackedStringArray("siniestro", "volador")
-habilidades = PackedStringArray("Sacapecho", "Funda")
-habilidad_oculta = "Armadura Frágil"
 ps = 70
 ataque = 55
 defensa = 75
@@ -107,11 +115,24 @@ exp_base = 74
 ratio_captura = 190
 ratio_genero = 8
 crecimiento = "slow"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "mandibuzz", "metodo": "nivel", "condicion": "Nivel 54", "nivel": 54}])
+evs_otorgados = {
+"defensa": 1
+}
 evoluciona_a = "mandibuzz"
 nivel_evolucion = 54
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+evoluciones = Array[Dictionary]([{
+"especie": "mandibuzz",
+"metodo": "nivel",
+"nivel": 54
+}])
+amistad_base = 35
+habilidades = PackedStringArray("big_pecks", "overcoat")
+habilidad_oculta = "weak_armor"
+categoria = "Pokémon Pañal"
+altura = 0.5
+peso_kg = 9.0
+descripcion = "No puede volar porque sus alas son muy pequeñas. Cuando va a evolucionar, se deshace de su calavera."
+aprende = Array[ExtResource("2")]([SubResource("Resource_uvuo5"), SubResource("Resource_eo1su"), SubResource("Resource_reuxg"), SubResource("Resource_sr7h7"), SubResource("Resource_a3s3c"), SubResource("Resource_ewqic"), SubResource("Resource_n4wxf"), SubResource("Resource_ytwdj"), SubResource("Resource_s0d55"), SubResource("Resource_wlgji"), SubResource("Resource_3lww1"), SubResource("Resource_yt711"), SubResource("Resource_nerw1"), SubResource("Resource_s5twc"), SubResource("Resource_ytq2l"), SubResource("Resource_wcys5")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 77

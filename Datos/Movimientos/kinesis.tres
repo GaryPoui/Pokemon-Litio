@@ -15,3 +15,5 @@ descripcion = "Dobla una cuchara para distraer al objetivo y bajar su nivel de P
 cambios_stats = {
 "precision": -1
 }
+numero = 134
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")

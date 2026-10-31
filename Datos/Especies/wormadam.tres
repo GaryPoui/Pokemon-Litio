@@ -7,63 +7,80 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/protect.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/razor_leaf.tres" id="7_owst4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hidden_power.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/growth.tres" id="8_0xw0a"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/psybeam.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/captivate.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/attract.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="14"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="14_2i2n1"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_owst4"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_0xw0a"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_2i2n1"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_wq1ou"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_4v8x6"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_innmj"]
+script = ExtResource("2")
+nivel = 26
+movimiento = ExtResource("7_owst4")
+
+[sub_resource type="Resource" id="Resource_5kh5l"]
+script = ExtResource("2")
+nivel = 29
+movimiento = ExtResource("8_0xw0a")
+
+[sub_resource type="Resource" id="Resource_jaln0"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_pi36k"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_2vloi"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_u8qr3"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_y6vvp"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_piut8"]
+script = ExtResource("2")
+nivel = 47
+movimiento = ExtResource("14_2i2n1")
 
 [resource]
 script = ExtResource("1")
@@ -71,8 +88,6 @@ id = "wormadam"
 numero = 413
 nombre = "Wormadam"
 tipos = PackedStringArray("bicho", "planta")
-habilidades = PackedStringArray("Anticipación")
-habilidad_oculta = "Funda"
 ps = 60
 ataque = 59
 defensa = 85
@@ -80,12 +95,17 @@ at_esp = 79
 def_esp = 105
 velocidad = 36
 exp_base = 148
-ratio_captura = 45
 ratio_genero = 8
-crecimiento = "medium"
-evs_otorgados = {"def_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9")])
+evs_otorgados = {
+"def_esp": 2
+}
+habilidades = PackedStringArray("anticipation")
+habilidad_oculta = "overcoat"
+categoria = "Pokémon Larva"
+altura = 0.5
+peso_kg = 6.5
+descripcion = "Su apariencia varía según dónde evolucione. Los materiales que haya pasan a formar parte de su cuerpo."
+aprende = Array[ExtResource("2")]([SubResource("Resource_owst4"), SubResource("Resource_0xw0a"), SubResource("Resource_2i2n1"), SubResource("Resource_wq1ou"), SubResource("Resource_4v8x6"), SubResource("Resource_innmj"), SubResource("Resource_5kh5l"), SubResource("Resource_jaln0"), SubResource("Resource_pi36k"), SubResource("Resource_2vloi"), SubResource("Resource_u8qr3"), SubResource("Resource_y6vvp"), SubResource("Resource_piut8")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 112

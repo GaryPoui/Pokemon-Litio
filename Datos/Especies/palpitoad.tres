@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://up00ufkmjiam"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_fumlo"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_fumlo"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="2_v675x"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_bksao"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/round.tres" id="4_6tup3"]
@@ -15,82 +15,82 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/echoed_voice.tres" id="13_jsky4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="14_qhowv"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="15_7hqrk"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_tv344"]
-[ext_resource type="Texture2D" uid="uid://bmgbs4eu3jlnp" path="res://Assets/Pokemones/batalla/palpitoad_espalda.png" id="17_kkai2"]
-[ext_resource type="Texture2D" uid="uid://bx3edb88ccrw7" path="res://Assets/Pokemones/batalla/palpitoad_frente.png" id="18_r58b0"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_tv344"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/palpitoad_espalda.png" id="17_kkai2"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/palpitoad_frente.png" id="18_r58b0"]
 
-[sub_resource type="Resource" id="Resource_3wumq"]
+[sub_resource type="Resource" id="Resource_fumlo"]
 script = ExtResource("1_fumlo")
 movimiento = ExtResource("2_v675x")
 
-[sub_resource type="Resource" id="Resource_yfh6k"]
+[sub_resource type="Resource" id="Resource_v675x"]
 script = ExtResource("1_fumlo")
 movimiento = ExtResource("3_bksao")
 
-[sub_resource type="Resource" id="Resource_vs4sa"]
+[sub_resource type="Resource" id="Resource_bksao"]
 script = ExtResource("1_fumlo")
 movimiento = ExtResource("4_6tup3")
 
-[sub_resource type="Resource" id="Resource_caorf"]
+[sub_resource type="Resource" id="Resource_6tup3"]
 script = ExtResource("1_fumlo")
 movimiento = ExtResource("5_7k75a")
 
-[sub_resource type="Resource" id="Resource_d8ngf"]
+[sub_resource type="Resource" id="Resource_7k75a"]
 script = ExtResource("1_fumlo")
 nivel = 5
 movimiento = ExtResource("5_7k75a")
 
-[sub_resource type="Resource" id="Resource_qjif0"]
+[sub_resource type="Resource" id="Resource_5u1ib"]
 script = ExtResource("1_fumlo")
 nivel = 9
 movimiento = ExtResource("4_6tup3")
 
-[sub_resource type="Resource" id="Resource_fvpvb"]
+[sub_resource type="Resource" id="Resource_c7xjt"]
 script = ExtResource("1_fumlo")
 nivel = 12
 movimiento = ExtResource("6_5u1ib")
 
-[sub_resource type="Resource" id="Resource_m54xj"]
+[sub_resource type="Resource" id="Resource_jkvox"]
 script = ExtResource("1_fumlo")
 nivel = 16
 movimiento = ExtResource("7_c7xjt")
 
-[sub_resource type="Resource" id="Resource_ytanu"]
+[sub_resource type="Resource" id="Resource_sa4dt"]
 script = ExtResource("1_fumlo")
 nivel = 20
 movimiento = ExtResource("8_jkvox")
 
-[sub_resource type="Resource" id="Resource_8dlv0"]
+[sub_resource type="Resource" id="Resource_1pla8"]
 script = ExtResource("1_fumlo")
 nivel = 23
 movimiento = ExtResource("9_sa4dt")
 
-[sub_resource type="Resource" id="Resource_2fslm"]
+[sub_resource type="Resource" id="Resource_o2alo"]
 script = ExtResource("1_fumlo")
 nivel = 28
 movimiento = ExtResource("10_1pla8")
 
-[sub_resource type="Resource" id="Resource_dht0r"]
+[sub_resource type="Resource" id="Resource_b3vjw"]
 script = ExtResource("1_fumlo")
 nivel = 33
 movimiento = ExtResource("11_o2alo")
 
-[sub_resource type="Resource" id="Resource_130sj"]
+[sub_resource type="Resource" id="Resource_jsky4"]
 script = ExtResource("1_fumlo")
 nivel = 37
 movimiento = ExtResource("12_b3vjw")
 
-[sub_resource type="Resource" id="Resource_m8kdl"]
+[sub_resource type="Resource" id="Resource_qhowv"]
 script = ExtResource("1_fumlo")
 nivel = 42
 movimiento = ExtResource("13_jsky4")
 
-[sub_resource type="Resource" id="Resource_il124"]
+[sub_resource type="Resource" id="Resource_7hqrk"]
 script = ExtResource("1_fumlo")
 nivel = 47
 movimiento = ExtResource("14_qhowv")
 
-[sub_resource type="Resource" id="Resource_r1kne"]
+[sub_resource type="Resource" id="Resource_tv344"]
 script = ExtResource("1_fumlo")
 nivel = 51
 movimiento = ExtResource("15_7hqrk")
@@ -100,7 +100,7 @@ script = ExtResource("16_tv344")
 id = "palpitoad"
 numero = 536
 nombre = "Palpitoad"
-tipos = ["agua", "tierra"]
+tipos = PackedStringArray("agua", "tierra")
 ps = 75
 ataque = 65
 defensa = 55
@@ -115,12 +115,20 @@ evs_otorgados = {
 }
 evoluciona_a = "seismitoad"
 nivel_evolucion = 36
-aprende = Array[ExtResource("1_fumlo")]([SubResource("Resource_3wumq"), SubResource("Resource_yfh6k"), SubResource("Resource_vs4sa"), SubResource("Resource_caorf"), SubResource("Resource_d8ngf"), SubResource("Resource_qjif0"), SubResource("Resource_fvpvb"), SubResource("Resource_m54xj"), SubResource("Resource_ytanu"), SubResource("Resource_8dlv0"), SubResource("Resource_2fslm"), SubResource("Resource_dht0r"), SubResource("Resource_130sj"), SubResource("Resource_m8kdl"), SubResource("Resource_il124"), SubResource("Resource_r1kne")])
+evoluciones = Array[Dictionary]([{
+"especie": "seismitoad",
+"metodo": "nivel",
+"nivel": 36
+}])
+habilidades = PackedStringArray("swift_swim", "hydration")
+habilidad_oculta = "water_absorb"
+categoria = "Pokémon Vibrante"
+altura = 0.8
+peso_kg = 17.0
+descripcion = "Cuando hace vibrar el bulto de su cabeza, no solo se embravece el mar, sino que la tierra también tiembla."
+aprende = Array[ExtResource("1_fumlo")]([SubResource("Resource_fumlo"), SubResource("Resource_v675x"), SubResource("Resource_bksao"), SubResource("Resource_6tup3"), SubResource("Resource_7k75a"), SubResource("Resource_5u1ib"), SubResource("Resource_c7xjt"), SubResource("Resource_jkvox"), SubResource("Resource_sa4dt"), SubResource("Resource_1pla8"), SubResource("Resource_o2alo"), SubResource("Resource_b3vjw"), SubResource("Resource_jsky4"), SubResource("Resource_qhowv"), SubResource("Resource_7hqrk"), SubResource("Resource_tv344")])
 sprite_frente = ExtResource("18_r58b0")
 sprite_espalda = ExtResource("17_kkai2")
 cuadros_frente = 54
 cuadros_espalda = 71
 fps_sprite = 9.2
-habilidades = PackedStringArray("Nado Rápido", "Hidratación")
-habilidad_oculta = "Absorbeagua/Absorbe Agua"
-evoluciones = Array[Dictionary]([{"especie": "seismitoad", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

@@ -9,3 +9,5 @@ nombre = "Excavar"
 tipo = "tierra"
 poder = 80
 descripcion = "El usuario cava durante el primer turno y ataca en el segundo."
+numero = 91
+banderas = PackedStringArray("charge", "contact", "failinstruct", "metronome", "mirror", "noassist", "nonsky", "nosleeptalk", "protect")

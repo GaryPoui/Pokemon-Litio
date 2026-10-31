@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1")
 id = "shadow_sneak"
-nombre = "Sombra vil"
+nombre = "Sombra Vil"
 tipo = "fantasma"
-categoria = "fisico"
 poder = 40
-precision = 100
 pp = 30
-objetivo = "selected-pokemon"
-meta = "damage"
+prioridad = 1
+descripcion = "Extiende su sombra y ataca al objetivo por la espalda. Este movimiento tiene prioridad alta."
+numero = 425
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

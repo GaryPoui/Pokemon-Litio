@@ -10,3 +10,5 @@ tipo = "volador"
 poder = 35
 pp = 35
 descripcion = "Ensarta al objetivo con un cuerno o pico punzante."
+numero = 64
+banderas = PackedStringArray("contact", "distance", "metronome", "mirror", "protect")

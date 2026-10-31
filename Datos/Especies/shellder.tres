@@ -12,6 +12,7 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/clamp.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/ice_shard.tres" id="12"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlpool.tres" id="12_s8x8j"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/razor_shell.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/aurora_beam.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/brine.tres" id="15"]
@@ -20,77 +21,81 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/shell_smash.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_s8x8j"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_orpd8"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_vh8lv"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_j31e8"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_jss0o"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_e6qau"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_20f24"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_yoeeb"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_1qyop"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ecvge"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_toej3"]
+script = ExtResource("2")
+nivel = 40
+movimiento = ExtResource("12_s8x8j")
+
+[sub_resource type="Resource" id="Resource_f6d2c"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_qd4or"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_xmhxf"]
 script = ExtResource("2")
 nivel = 52
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_isl3k"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_nuwrh"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("19")
@@ -101,8 +106,6 @@ id = "shellder"
 numero = 90
 nombre = "Shellder"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Caparazón", "Encadenado")
-habilidad_oculta = "Funda"
 ps = 30
 ataque = 65
 defensa = 100
@@ -111,14 +114,23 @@ def_esp = 25
 velocidad = 40
 exp_base = 61
 ratio_captura = 190
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "cloyster", "metodo": "piedra", "condicion": "Piedra Agua"}])
-evoluciona_a = "cloyster"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"defensa": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "cloyster",
+"metodo": "piedra",
+"objeto": "water_stone"
+}])
+habilidades = PackedStringArray("shell_armor", "skill_link")
+habilidad_oculta = "overcoat"
+categoria = "Pokémon Bivalvo"
+altura = 0.3
+peso_kg = 4.0
+descripcion = "La concha lo protege de cualquier tipo de ataque. Solo es vulnerable cuando se abre."
+aprende = Array[ExtResource("2")]([SubResource("Resource_s8x8j"), SubResource("Resource_orpd8"), SubResource("Resource_vh8lv"), SubResource("Resource_j31e8"), SubResource("Resource_jss0o"), SubResource("Resource_e6qau"), SubResource("Resource_20f24"), SubResource("Resource_yoeeb"), SubResource("Resource_1qyop"), SubResource("Resource_ecvge"), SubResource("Resource_toej3"), SubResource("Resource_f6d2c"), SubResource("Resource_qd4or"), SubResource("Resource_xmhxf"), SubResource("Resource_isl3k"), SubResource("Resource_nuwrh")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 44
 cuadros_espalda = 44
-fps_sprite = 10.0

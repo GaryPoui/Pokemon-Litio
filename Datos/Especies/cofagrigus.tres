@@ -21,92 +21,88 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/mean_look.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/destiny_bond.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_irelk"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_fdakv"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_yr5jo"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_jl0hd"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_inn6t"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_nnyqj"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_hgux1"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_rrpes"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_c8wbu"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_2ysg2"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_2ef77"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_84tey"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_vikmb"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_f7fs8"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_kg3e5"]
 script = ExtResource("2")
 nivel = 39
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_yo1ca"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_kqeqy"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_74yeu"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("20")
@@ -117,21 +113,22 @@ id = "cofagrigus"
 numero = 563
 nombre = "Cofagrigus"
 tipos = PackedStringArray("fantasma")
-habilidades = PackedStringArray("Momia")
-habilidad_oculta = ""
 ps = 58
-ataque = 50
 defensa = 145
 at_esp = 95
 def_esp = 105
 velocidad = 30
 exp_base = 169
 ratio_captura = 90
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"defensa": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"defensa": 2
+}
+habilidades = PackedStringArray("mummy")
+categoria = "Pokémon Sepultura"
+altura = 1.7
+peso_kg = 76.5
+descripcion = "Se comenta que engulle a todo humano que se le acerca y lo momifica. Su comida favorita son las pepitas de oro."
+aprende = Array[ExtResource("2")]([SubResource("Resource_irelk"), SubResource("Resource_fdakv"), SubResource("Resource_yr5jo"), SubResource("Resource_jl0hd"), SubResource("Resource_inn6t"), SubResource("Resource_nnyqj"), SubResource("Resource_hgux1"), SubResource("Resource_rrpes"), SubResource("Resource_c8wbu"), SubResource("Resource_2ysg2"), SubResource("Resource_2ef77"), SubResource("Resource_84tey"), SubResource("Resource_vikmb"), SubResource("Resource_f7fs8"), SubResource("Resource_kg3e5"), SubResource("Resource_yo1ca"), SubResource("Resource_kqeqy"), SubResource("Resource_74yeu")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 85

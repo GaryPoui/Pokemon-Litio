@@ -8,17 +8,16 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="7"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_ewv0n"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_6qlyr"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_nlook"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("7")
@@ -29,8 +28,6 @@ id = "feebas"
 numero = 349
 nombre = "Feebas"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Nado Rápido", "Despistado/Despiste")
-habilidad_oculta = "Adaptable"
 ps = 20
 ataque = 15
 defensa = 20
@@ -39,14 +36,23 @@ def_esp = 55
 velocidad = 80
 exp_base = 40
 ratio_captura = 255
-ratio_genero = 4
 crecimiento = "slow-then-very-fast"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "milotic", "metodo": "intercambio", "condicion": "Belleza alta + nivel; o intercambio equipado con escama bella"}])
-evoluciona_a = "milotic"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2")])
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "milotic",
+"metodo": "intercambio",
+"objeto": "prism_scale"
+}])
+habilidades = PackedStringArray("swift_swim")
+habilidad_oculta = "adaptability"
+categoria = "Pokémon Pez"
+altura = 0.6
+peso_kg = 7.4
+descripcion = "Come de todo, por lo que puede vivir en aguas contaminadas. Nadie le presta atención."
+aprende = Array[ExtResource("2")]([SubResource("Resource_ewv0n"), SubResource("Resource_6qlyr"), SubResource("Resource_nlook")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 23
 cuadros_espalda = 23
-fps_sprite = 10.0

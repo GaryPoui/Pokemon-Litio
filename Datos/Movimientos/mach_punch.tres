@@ -11,3 +11,5 @@ poder = 40
 pp = 30
 prioridad = 1
 descripcion = "Puñetazo de velocidad fulminante. Este movimiento tiene prioridad alta."
+numero = 183
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")

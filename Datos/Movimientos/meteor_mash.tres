@@ -5,11 +5,15 @@
 [resource]
 script = ExtResource("1")
 id = "meteor_mash"
-nombre = "Puño meteoro"
+nombre = "Puño Meteoro"
 tipo = "acero"
-categoria = "fisico"
-poder = 90
-precision = 90
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+poder = 100
+precision = 85
+meta = "damage-raise"
+descripcion = "Puñetazo que impacta como un meteorito y puede subir el Ataque del agresor."
+cambios_stats = {
+"ataque": 1
+}
+prob_stat = 20
+numero = 309
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")

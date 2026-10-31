@@ -14,3 +14,5 @@ descripcion = "El Pokémon se cubre de llamas y carga contra el objetivo, aunque
 estado = "burn"
 prob_estado = 10
 drenaje = -33
+numero = 394
+banderas = PackedStringArray("contact", "defrost", "metronome", "mirror", "protect")

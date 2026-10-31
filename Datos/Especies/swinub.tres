@@ -16,83 +16,75 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mist.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="16"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/blizzard.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_e27fu"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_srgeq"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_55ars"]
 script = ExtResource("2")
-nivel = 5
+nivel = 4
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_jgtja"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_0vicv"]
 script = ExtResource("2")
-nivel = 11
+nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_3rb7g"]
 script = ExtResource("2")
-nivel = 14
+nivel = 16
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_n4xgn"]
 script = ExtResource("2")
-nivel = 18
+nivel = 20
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_bsu06"]
 script = ExtResource("2")
-nivel = 21
+nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 24
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_mjncp"]
 script = ExtResource("2")
 nivel = 28
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_drpyv"]
+script = ExtResource("2")
+nivel = 32
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 35
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_pm14r"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_es3t6"]
 script = ExtResource("2")
 nivel = 40
-movimiento = ExtResource("17")
+movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_m8lpy"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_31y6t"]
 script = ExtResource("2")
-nivel = 48
+nivel = 49
 movimiento = ExtResource("19")
 
 [resource]
@@ -101,25 +93,29 @@ id = "swinub"
 numero = 220
 nombre = "Swinub"
 tipos = PackedStringArray("hielo", "tierra")
-habilidades = PackedStringArray("Despistado/Despiste", "Manto Níveo")
-habilidad_oculta = "Sebo"
-ps = 50
-ataque = 50
 defensa = 40
 at_esp = 30
 def_esp = 30
-velocidad = 50
-exp_base = 50
 ratio_captura = 225
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "piloswine", "metodo": "nivel", "condicion": "Nivel 33", "nivel": 33}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "piloswine"
 nivel_evolucion = 33
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evoluciones = Array[Dictionary]([{
+"especie": "piloswine",
+"metodo": "nivel",
+"nivel": 33
+}])
+habilidades = PackedStringArray("oblivious", "snow_cloak")
+habilidad_oculta = "thick_fat"
+categoria = "Pokémon Cerdo"
+altura = 0.4
+peso_kg = 6.5
+descripcion = "Frota su hocico contra el suelo para desenterrar comida. A veces descubre aguas termales."
+aprende = Array[ExtResource("2")]([SubResource("Resource_e27fu"), SubResource("Resource_srgeq"), SubResource("Resource_55ars"), SubResource("Resource_jgtja"), SubResource("Resource_0vicv"), SubResource("Resource_3rb7g"), SubResource("Resource_n4xgn"), SubResource("Resource_bsu06"), SubResource("Resource_mjncp"), SubResource("Resource_drpyv"), SubResource("Resource_pm14r"), SubResource("Resource_es3t6"), SubResource("Resource_m8lpy"), SubResource("Resource_31y6t")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 8
 cuadros_espalda = 8
-fps_sprite = 10.0

@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1")
 id = "conversion_2"
-nombre = "Conversión2"
-tipo = "normal"
+nombre = "Conversión 2"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 30
-objetivo = "selected-pokemon"
 meta = "unique"
+descripcion = "El usuario cambia de tipo para hacerse resistente al último tipo de movimiento usado por el objetivo."
+numero = 176
+banderas = PackedStringArray("bypasssub", "metronome")

@@ -5,11 +5,13 @@
 [resource]
 script = ExtResource("1")
 id = "dual_chop"
-nombre = "Golpe bis"
+nombre = "Golpe Bis"
 tipo = "dragon"
-categoria = "fisico"
 poder = 40
 precision = 90
 pp = 15
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Golpea dos veces seguidas con las partes más recias de su cuerpo."
+numero = 530
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+golpes_min = 2
+golpes_max = 2

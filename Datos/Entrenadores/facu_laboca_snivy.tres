@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="EquipoEntrenador" format=3]
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://bu1em2x2ydmue"]
 
 [ext_resource type="Script" path="res://Scripts/datos/encuentro_entrada.gd" id="1_jvlmu"]
 [ext_resource type="Resource" path="res://Datos/Especies/tepig.tres" id="2_id6vi"]

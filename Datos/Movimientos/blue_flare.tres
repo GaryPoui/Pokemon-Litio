@@ -5,11 +5,15 @@
 [resource]
 script = ExtResource("1")
 id = "blue_flare"
-nombre = "Llama azul"
+nombre = "Llama Azul"
 tipo = "fuego"
 categoria = "especial"
 poder = 130
 precision = 85
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-ailment"
+descripcion = "Ataca con una bella pero potente llama azul que rodea al objetivo. Puede quemarlo."
+estado = "burn"
+prob_estado = 20
+numero = 551
+banderas = PackedStringArray("metronome", "mirror", "protect")

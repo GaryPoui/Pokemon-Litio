@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dj6fo0fem04oe"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_hun36"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_hun36"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="2_gm625"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="3_pj2tn"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="4_44tcs"]
@@ -16,79 +16,79 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/aqua_ring.tres" id="14_rumu6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="15_5usq2"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="16_ewvpp"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_fyq4g"]
-[ext_resource type="Texture2D" uid="uid://cqr2y2dqmn247" path="res://Assets/Pokemones/batalla/chinchou_espalda.png" id="18_lvdy1"]
-[ext_resource type="Texture2D" uid="uid://baha4nvo10pbn" path="res://Assets/Pokemones/batalla/chinchou_frente.png" id="19_rflt8"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_fyq4g"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/chinchou_espalda.png" id="18_lvdy1"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/chinchou_frente.png" id="19_rflt8"]
 
-[sub_resource type="Resource" id="Resource_e7xd8"]
+[sub_resource type="Resource" id="Resource_hun36"]
 script = ExtResource("1_hun36")
 movimiento = ExtResource("2_gm625")
 
-[sub_resource type="Resource" id="Resource_i1c28"]
+[sub_resource type="Resource" id="Resource_gm625"]
 script = ExtResource("1_hun36")
 movimiento = ExtResource("3_pj2tn")
 
-[sub_resource type="Resource" id="Resource_xu6ht"]
+[sub_resource type="Resource" id="Resource_pj2tn"]
 script = ExtResource("1_hun36")
 nivel = 6
 movimiento = ExtResource("4_44tcs")
 
-[sub_resource type="Resource" id="Resource_qob4d"]
+[sub_resource type="Resource" id="Resource_44tcs"]
 script = ExtResource("1_hun36")
 nivel = 9
 movimiento = ExtResource("5_x7w0f")
 
-[sub_resource type="Resource" id="Resource_r4swf"]
+[sub_resource type="Resource" id="Resource_x7w0f"]
 script = ExtResource("1_hun36")
 nivel = 12
 movimiento = ExtResource("6_c67up")
 
-[sub_resource type="Resource" id="Resource_kw8jy"]
+[sub_resource type="Resource" id="Resource_c67up"]
 script = ExtResource("1_hun36")
 nivel = 17
 movimiento = ExtResource("7_jnqta")
 
-[sub_resource type="Resource" id="Resource_8w4sp"]
+[sub_resource type="Resource" id="Resource_jnqta"]
 script = ExtResource("1_hun36")
 nivel = 20
 movimiento = ExtResource("8_o2fov")
 
-[sub_resource type="Resource" id="Resource_00jjp"]
+[sub_resource type="Resource" id="Resource_o2fov"]
 script = ExtResource("1_hun36")
 nivel = 23
 movimiento = ExtResource("9_12qgh")
 
-[sub_resource type="Resource" id="Resource_ev0fo"]
+[sub_resource type="Resource" id="Resource_12qgh"]
 script = ExtResource("1_hun36")
 nivel = 28
 movimiento = ExtResource("10_30hgw")
 
-[sub_resource type="Resource" id="Resource_0k752"]
+[sub_resource type="Resource" id="Resource_30hgw"]
 script = ExtResource("1_hun36")
 nivel = 31
 movimiento = ExtResource("11_rc1dd")
 
-[sub_resource type="Resource" id="Resource_0yh81"]
+[sub_resource type="Resource" id="Resource_rc1dd"]
 script = ExtResource("1_hun36")
 nivel = 34
 movimiento = ExtResource("12_8e4s3")
 
-[sub_resource type="Resource" id="Resource_m20mp"]
+[sub_resource type="Resource" id="Resource_8e4s3"]
 script = ExtResource("1_hun36")
 nivel = 39
 movimiento = ExtResource("13_5cxe8")
 
-[sub_resource type="Resource" id="Resource_b507l"]
+[sub_resource type="Resource" id="Resource_5cxe8"]
 script = ExtResource("1_hun36")
 nivel = 42
 movimiento = ExtResource("14_rumu6")
 
-[sub_resource type="Resource" id="Resource_wi4rr"]
+[sub_resource type="Resource" id="Resource_rumu6"]
 script = ExtResource("1_hun36")
 nivel = 45
 movimiento = ExtResource("15_5usq2")
 
-[sub_resource type="Resource" id="Resource_8wlcc"]
+[sub_resource type="Resource" id="Resource_5usq2"]
 script = ExtResource("1_hun36")
 nivel = 50
 movimiento = ExtResource("16_ewvpp")
@@ -98,7 +98,7 @@ script = ExtResource("17_fyq4g")
 id = "chinchou"
 numero = 170
 nombre = "Chinchou"
-tipos = ["agua", "electrico"]
+tipos = PackedStringArray("agua", "electrico")
 ps = 75
 ataque = 38
 defensa = 38
@@ -113,12 +113,20 @@ evs_otorgados = {
 }
 evoluciona_a = "lanturn"
 nivel_evolucion = 27
-aprende = Array[ExtResource("1_hun36")]([SubResource("Resource_e7xd8"), SubResource("Resource_i1c28"), SubResource("Resource_xu6ht"), SubResource("Resource_qob4d"), SubResource("Resource_r4swf"), SubResource("Resource_kw8jy"), SubResource("Resource_8w4sp"), SubResource("Resource_00jjp"), SubResource("Resource_ev0fo"), SubResource("Resource_0k752"), SubResource("Resource_0yh81"), SubResource("Resource_m20mp"), SubResource("Resource_b507l"), SubResource("Resource_wi4rr"), SubResource("Resource_8wlcc")])
+evoluciones = Array[Dictionary]([{
+"especie": "lanturn",
+"metodo": "nivel",
+"nivel": 27
+}])
+habilidades = PackedStringArray("volt_absorb", "illuminate")
+habilidad_oculta = "water_absorb"
+categoria = "Pokémon Rape"
+altura = 0.5
+peso_kg = 12.0
+descripcion = "En el oscuro fondo del océano, su único modo de comunicarse es emitiendo luces parpadeantes."
+aprende = Array[ExtResource("1_hun36")]([SubResource("Resource_hun36"), SubResource("Resource_gm625"), SubResource("Resource_pj2tn"), SubResource("Resource_44tcs"), SubResource("Resource_x7w0f"), SubResource("Resource_c67up"), SubResource("Resource_jnqta"), SubResource("Resource_o2fov"), SubResource("Resource_12qgh"), SubResource("Resource_30hgw"), SubResource("Resource_rc1dd"), SubResource("Resource_8e4s3"), SubResource("Resource_5cxe8"), SubResource("Resource_rumu6"), SubResource("Resource_5usq2")])
 sprite_frente = ExtResource("19_rflt8")
 sprite_espalda = ExtResource("18_lvdy1")
 cuadros_frente = 32
 cuadros_espalda = 32
 fps_sprite = 7.69
-habilidades = PackedStringArray("Absorbevoltios/Absorbe Electricidad", "Iluminación")
-habilidad_oculta = "Absorbeagua/Absorbe Agua"
-evoluciones = Array[Dictionary]([{"especie": "lanturn", "metodo": "nivel", "condicion": "Nivel 27", "nivel": 27}])

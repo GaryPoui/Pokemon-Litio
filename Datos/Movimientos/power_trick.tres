@@ -5,11 +5,12 @@
 [resource]
 script = ExtResource("1")
 id = "power_trick"
-nombre = "Truco fuerza"
+nombre = "Truco Fuerza"
 tipo = "psiquico"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 10
+precision = 0
 objetivo = "user"
 meta = "unique"
+descripcion = "Usa sus poderes mentales para intercambiar sus características de Ataque y Defensa."
+numero = 379
+banderas = PackedStringArray("metronome", "snatch")

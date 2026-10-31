@@ -18,3 +18,4 @@ extends Resource
 @export var revivir :float= 0.0
 @export var pasos_repelente: int= 0
 @export var movimiento_mt :String= ""
+@export_enum("ninguno", "evolucion", "cordon", "parche_habilidad") var uso_especial: String= "ninguno"

@@ -19,72 +19,67 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fling.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_pnq1b"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_q7mnf"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_wtrsg"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_6cih7"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_upa4x"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_luve0"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_3xf3r"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_bhr7h"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ok8l1"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_j5xn1"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_vlafy"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_a85h6"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_k8loe"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_l6mol"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("18")
@@ -95,23 +90,28 @@ id = "teddiursa"
 numero = 216
 nombre = "Teddiursa"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Recolección/Recogida", "Pies Rápidos")
-habilidad_oculta = "Cosechamiel/Recogemiel"
 ps = 60
 ataque = 80
-defensa = 50
-at_esp = 50
-def_esp = 50
 velocidad = 40
 exp_base = 66
 ratio_captura = 120
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "ursaring", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "ursaring"
 nivel_evolucion = 30
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+evoluciones = Array[Dictionary]([{
+"especie": "ursaring",
+"metodo": "nivel",
+"nivel": 30
+}])
+habilidades = PackedStringArray("pickup", "quick_feet")
+habilidad_oculta = "honey_gather"
+categoria = "Pokémon Osito"
+altura = 0.6
+peso_kg = 8.8
+descripcion = "Si encuentra miel, brillará la marca de su frente. Se lame las garras cuando están llenas de miel."
+aprende = Array[ExtResource("2")]([SubResource("Resource_pnq1b"), SubResource("Resource_q7mnf"), SubResource("Resource_wtrsg"), SubResource("Resource_6cih7"), SubResource("Resource_upa4x"), SubResource("Resource_luve0"), SubResource("Resource_3xf3r"), SubResource("Resource_bhr7h"), SubResource("Resource_ok8l1"), SubResource("Resource_j5xn1"), SubResource("Resource_vlafy"), SubResource("Resource_a85h6"), SubResource("Resource_k8loe"), SubResource("Resource_l6mol")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 60

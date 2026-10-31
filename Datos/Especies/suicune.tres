@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/suicune_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="6_ms1dk"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble_beam.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/aurora_beam.tres" id="9"]
@@ -18,67 +19,70 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/calm_mind.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/blizzard.tres" id="17"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_ms1dk"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_0blyn"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_8wty7"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_6c8e1"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_bpbe6"]
+script = ExtResource("2")
+nivel = 22
+movimiento = ExtResource("6_ms1dk")
+
+[sub_resource type="Resource" id="Resource_le8rb"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_eni7c"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_3oykd"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_b6bjs"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_u8mu8"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_j3do6"]
 script = ExtResource("2")
 nivel = 64
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_gx27v"]
 script = ExtResource("2")
 nivel = 71
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_i3e7h"]
 script = ExtResource("2")
 nivel = 78
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_qpy05"]
 script = ExtResource("2")
 nivel = 85
 movimiento = ExtResource("17")
@@ -89,8 +93,6 @@ id = "suicune"
 numero = 245
 nombre = "Suicune"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Presión")
-habilidad_oculta = "Fuerza Mental"
 ps = 100
 ataque = 75
 defensa = 115
@@ -101,11 +103,19 @@ exp_base = 261
 ratio_captura = 3
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"defensa": 1, "def_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12")])
+evs_otorgados = {
+"def_esp": 2,
+"defensa": 1
+}
+amistad_base = 35
+habilidades = PackedStringArray("pressure")
+habilidad_oculta = "water_absorb"
+categoria = "Pokémon Aurora"
+altura = 2.0
+peso_kg = 187.0
+descripcion = "Recorre el mundo para purificar agua contaminada. Corre veloz con el viento del norte."
+aprende = Array[ExtResource("2")]([SubResource("Resource_ms1dk"), SubResource("Resource_0blyn"), SubResource("Resource_8wty7"), SubResource("Resource_6c8e1"), SubResource("Resource_bpbe6"), SubResource("Resource_le8rb"), SubResource("Resource_eni7c"), SubResource("Resource_3oykd"), SubResource("Resource_b6bjs"), SubResource("Resource_u8mu8"), SubResource("Resource_j3do6"), SubResource("Resource_gx27v"), SubResource("Resource_i3e7h"), SubResource("Resource_qpy05")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 48
 cuadros_espalda = 48
-fps_sprite = 10.0

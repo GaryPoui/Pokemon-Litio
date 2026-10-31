@@ -16,57 +16,55 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/swagger.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/extrasensory.tres" id="15"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_dwc54"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_hs380"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_iahsj"]
 script = ExtResource("2")
 nivel = 3
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_cvgco"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_u75ag"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_7bpbe"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_1i7rb"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_nvcsh"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_eorfv"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_18ph0"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_a1oxh"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("15")
@@ -77,8 +75,6 @@ id = "nuzleaf"
 numero = 274
 nombre = "Nuzleaf"
 tipos = PackedStringArray("planta", "siniestro")
-habilidades = PackedStringArray("Clorofila", "Madrugador/Madrugar")
-habilidad_oculta = "Hurto"
 ps = 70
 ataque = 70
 defensa = 40
@@ -87,12 +83,22 @@ def_esp = 40
 velocidad = 60
 exp_base = 119
 ratio_captura = 120
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([{"especie": "shiftry", "metodo": "piedra", "condicion": "Piedra hoja"}])
-evoluciona_a = "shiftry"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10")])
+evs_otorgados = {
+"ataque": 2
+}
+evoluciones = Array[Dictionary]([{
+"especie": "shiftry",
+"metodo": "piedra",
+"objeto": "leaf_stone"
+}])
+habilidades = PackedStringArray("chlorophyll", "early_bird")
+habilidad_oculta = "pickpocket"
+categoria = "Pokémon Astuto"
+altura = 1.0
+peso_kg = 28.0
+descripcion = "Cuando usa la hoja de su cabeza como flauta, asusta a la gente. Vive en lo más profundo de los bosques."
+aprende = Array[ExtResource("2")]([SubResource("Resource_dwc54"), SubResource("Resource_hs380"), SubResource("Resource_iahsj"), SubResource("Resource_cvgco"), SubResource("Resource_u75ag"), SubResource("Resource_7bpbe"), SubResource("Resource_1i7rb"), SubResource("Resource_nvcsh"), SubResource("Resource_eorfv"), SubResource("Resource_18ph0"), SubResource("Resource_a1oxh")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 15

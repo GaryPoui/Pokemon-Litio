@@ -10,3 +10,5 @@ tipo = "fantasma"
 categoria = "especial"
 pp = 15
 descripcion = "Produce un espejismo ante el objetivo, que pierde tantos PS como nivel tenga el usuario."
+numero = 101
+banderas = PackedStringArray("metronome", "mirror", "protect")

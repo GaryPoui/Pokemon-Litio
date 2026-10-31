@@ -11,3 +11,5 @@ categoria = "estado"
 precision = 0
 meta = "unique"
 descripcion = "Imita al objetivo por completo y copia su habilidad."
+numero = 272
+banderas = PackedStringArray("allyanim", "bypasssub", "metronome")

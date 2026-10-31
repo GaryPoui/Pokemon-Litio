@@ -21,82 +21,76 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/zen_headbutt.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_cydu6"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_1lldn"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_gs0uu"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_gs2av"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_sqxc6"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_e6dbd"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_lbh0h"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_11u6x"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_0yi1r"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_b6wuo"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_40ves"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_xkax7"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_33fab"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_kt2mp"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_odcbg"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_h0em1"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("20")
@@ -107,8 +101,6 @@ id = "girafarig"
 numero = 203
 nombre = "Girafarig"
 tipos = PackedStringArray("normal", "psiquico")
-habilidades = PackedStringArray("Fuerza Mental", "Madrugador/Madrugar")
-habilidad_oculta = "Herbívoro"
 ps = 70
 ataque = 80
 defensa = 65
@@ -117,11 +109,16 @@ def_esp = 65
 velocidad = 85
 exp_base = 159
 ratio_captura = 60
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"at_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"at_esp": 2
+}
+habilidades = PackedStringArray("inner_focus", "early_bird")
+habilidad_oculta = "sap_sipper"
+categoria = "Pokémon Gran Cuello"
+altura = 1.5
+peso_kg = 41.5
+descripcion = "Cuando duerme, la cabeza de su cola se queda vigilando, ya que ella no necesita dormir."
+aprende = Array[ExtResource("2")]([SubResource("Resource_cydu6"), SubResource("Resource_1lldn"), SubResource("Resource_gs0uu"), SubResource("Resource_gs2av"), SubResource("Resource_sqxc6"), SubResource("Resource_e6dbd"), SubResource("Resource_lbh0h"), SubResource("Resource_11u6x"), SubResource("Resource_0yi1r"), SubResource("Resource_b6wuo"), SubResource("Resource_40ves"), SubResource("Resource_xkax7"), SubResource("Resource_33fab"), SubResource("Resource_kt2mp"), SubResource("Resource_odcbg"), SubResource("Resource_h0em1")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 62

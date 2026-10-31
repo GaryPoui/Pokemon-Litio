@@ -103,7 +103,7 @@ func _al_terminar_paso(celda: Vector2i) -> void:
 		_quitar_rara()
 		var raro:= encuentros_raros.elegir(rng) if encuentros_raros!= null else null
 		if raro!= null:
-			_encuentro(raro)
+			_encuentro(raro, true)
 			return
 
 	if Estado.pasos_repelente> 0:
@@ -136,15 +136,16 @@ func salir_empujando(celda: Vector2i, dir: Vector2) -> bool:
 			return true
 	return false
 
-func _encuentro(e: EncuentroEntrada) -> void:
+func _encuentro(e: EncuentroEntrada, raro:= false) -> void:
 	var nivel:= rng.randi_range(e.nivel_min, e.nivel_max)
 	var guia:= Equipo.primero_util()
 	if Estado.pasos_repelente> 0 and guia!= null and nivel< guia.nivel:
 		return
+	var oculta:= Combate.PROB_OCULTA_RARA if raro else Combate.PROB_OCULTA
 	if safari:
-		Combate.iniciar_safari(e.especie, nivel, zona_id)
+		Combate.iniciar_safari(e.especie, nivel, zona_id, oculta)
 	else:
-		Combate.iniciar_salvaje(e.especie, nivel)
+		Combate.iniciar_salvaje(e.especie, nivel, oculta)
 
 func _avanzar_rara(celda: Vector2i) -> void:
 	if not safari or encuentros_raros== null:

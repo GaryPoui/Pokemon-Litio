@@ -17,62 +17,60 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/iron_head.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/heavy_slam.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_i45hj"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_nreed"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_6pyjv"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_nb6gi"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_nryt6"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_cteyk"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_wcfxn"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_yc81g"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_4x557"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ppsxf"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_ikvla"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_2wy02"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("16")
@@ -83,8 +81,6 @@ id = "shieldon"
 numero = 410
 nombre = "Shieldon"
 tipos = PackedStringArray("roca", "acero")
-habilidades = PackedStringArray("Robustez")
-habilidad_oculta = "Insonorización/Insonorizar"
 ps = 30
 ataque = 42
 defensa = 118
@@ -92,16 +88,27 @@ at_esp = 42
 def_esp = 88
 velocidad = 30
 exp_base = 70
-ratio_captura = 45
 ratio_genero = 1
 crecimiento = "slow-then-very-fast"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "bastiodon", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evs_otorgados = {
+"defensa": 1
+}
+evoluciona_a = "bastiodon"
+nivel_evolucion = 30
+evoluciones = Array[Dictionary]([{
+"especie": "bastiodon",
+"metodo": "nivel",
+"nivel": 30
+}])
+habilidades = PackedStringArray("sturdy")
+habilidad_oculta = "soundproof"
+categoria = "Pokémon Escudo"
+altura = 0.5
+peso_kg = 57.0
+descripcion = "Se abrillanta la cara frotándola contra los árboles. Es vulnerable a los ataques por la espalda."
+aprende = Array[ExtResource("2")]([SubResource("Resource_i45hj"), SubResource("Resource_nreed"), SubResource("Resource_6pyjv"), SubResource("Resource_nb6gi"), SubResource("Resource_nryt6"), SubResource("Resource_cteyk"), SubResource("Resource_wcfxn"), SubResource("Resource_yc81g"), SubResource("Resource_4x557"), SubResource("Resource_ppsxf"), SubResource("Resource_ikvla"), SubResource("Resource_2wy02")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 68
 cuadros_espalda = 68
 fps_sprite = 11.37
-evoluciona_a = "bastiodon"
-nivel_evolucion = 30

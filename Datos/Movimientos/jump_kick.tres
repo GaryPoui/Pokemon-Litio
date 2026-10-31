@@ -10,3 +10,5 @@ tipo = "lucha"
 poder = 100
 precision = 95
 descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+numero = 26
+banderas = PackedStringArray("contact", "gravity", "metronome", "mirror", "protect")

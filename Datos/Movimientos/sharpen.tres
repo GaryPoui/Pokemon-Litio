@@ -6,10 +6,14 @@
 script = ExtResource("1")
 id = "sharpen"
 nombre = "Afilar"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 30
 objetivo = "user"
-meta = "unique"
+meta = "net-good-stats"
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+cambios_stats = {
+"ataque": 1
+}
+numero = 159
+banderas = PackedStringArray("metronome", "snatch")

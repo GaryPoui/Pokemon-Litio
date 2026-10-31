@@ -13,3 +13,7 @@ pp = 15
 meta = "ailment"
 descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
 estado = "sleep"
+numero = 320
+banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "reflectable", "sound")
+turnos_min = 2
+turnos_max = 4

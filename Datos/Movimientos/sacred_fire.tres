@@ -5,11 +5,14 @@
 [resource]
 script = ExtResource("1")
 id = "sacred_fire"
-nombre = "Fuego sagrado"
+nombre = "Fuego Sagrado"
 tipo = "fuego"
-categoria = "fisico"
 poder = 100
 precision = 95
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-ailment"
+descripcion = "Fuego místico de gran intensidad que puede causar quemaduras."
+estado = "burn"
+prob_estado = 50
+numero = 221
+banderas = PackedStringArray("defrost", "metronome", "mirror", "protect")

@@ -8,8 +8,14 @@ id = "overheat"
 nombre = "Sofoco"
 tipo = "fuego"
 categoria = "especial"
-poder = 130
+poder = 140
 precision = 90
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-raise"
+descripcion = "Ataque en toda regla que baja mucho el Ataque Especial de quien lo usa."
+cambios_stats = {
+"at_esp": -2
+}
+prob_stat = 100
+numero = 315
+banderas = PackedStringArray("metronome", "mirror", "protect")

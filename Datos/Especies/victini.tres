@@ -22,87 +22,82 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/stored_power.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/overheat.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_oibm4"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_853u2"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_uiovs"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_blo7m"]
+script = ExtResource("2")
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_yua4c"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_bnnyh"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_hhprh"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_cg0ks"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_2dvxx"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_45veb"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_gixmo"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_t180c"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_vqrsl"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_b2t71"]
 script = ExtResource("2")
 nivel = 73
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_rldj2"]
 script = ExtResource("2")
 nivel = 81
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_xe4jj"]
 script = ExtResource("2")
 nivel = 89
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_0r8i8"]
 script = ExtResource("2")
 nivel = 97
 movimiento = ExtResource("21")
@@ -113,8 +108,6 @@ id = "victini"
 numero = 494
 nombre = "Victini"
 tipos = PackedStringArray("psiquico", "fuego")
-habilidades = PackedStringArray("Tinovictoria")
-habilidad_oculta = ""
 ps = 100
 ataque = 100
 defensa = 100
@@ -125,9 +118,16 @@ exp_base = 270
 ratio_captura = 3
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"ps": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"ps": 3
+}
+amistad_base = 100
+habilidades = PackedStringArray("victory_star")
+categoria = "Pokémon Victoria"
+altura = 0.4
+peso_kg = 4.0
+descripcion = "Pokémon que atrae la victoria. Dicen que el Entrenador que lo lleve saldrá vencedor de cualquier batalla."
+aprende = Array[ExtResource("2")]([SubResource("Resource_oibm4"), SubResource("Resource_853u2"), SubResource("Resource_uiovs"), SubResource("Resource_blo7m"), SubResource("Resource_yua4c"), SubResource("Resource_bnnyh"), SubResource("Resource_hhprh"), SubResource("Resource_cg0ks"), SubResource("Resource_2dvxx"), SubResource("Resource_45veb"), SubResource("Resource_gixmo"), SubResource("Resource_t180c"), SubResource("Resource_vqrsl"), SubResource("Resource_b2t71"), SubResource("Resource_rldj2"), SubResource("Resource_xe4jj"), SubResource("Resource_0r8i8")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 55

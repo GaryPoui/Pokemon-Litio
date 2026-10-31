@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://d1qh54p3ppbqk"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_x14mo"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_x14mo"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="2_42rnc"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_esgh6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="4_mnc1h"]
@@ -14,77 +14,77 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/detect.tres" id="12_vth00"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/false_swipe.tres" id="13_p2vxu"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="14_lci3j"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_mhoa3"]
-[ext_resource type="Texture2D" uid="uid://qvnajrejmkan" path="res://Assets/Pokemones/batalla/grovyle_espalda.png" id="16_hhog4"]
-[ext_resource type="Texture2D" uid="uid://scvd0085432n" path="res://Assets/Pokemones/batalla/grovyle_frente.png" id="17_g2r41"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="15_mhoa3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/grovyle_espalda.png" id="16_hhog4"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/grovyle_frente.png" id="17_g2r41"]
 
-[sub_resource type="Resource" id="Resource_1pglf"]
+[sub_resource type="Resource" id="Resource_x14mo"]
 script = ExtResource("1_x14mo")
 movimiento = ExtResource("2_42rnc")
 
-[sub_resource type="Resource" id="Resource_aqi41"]
+[sub_resource type="Resource" id="Resource_42rnc"]
 script = ExtResource("1_x14mo")
 movimiento = ExtResource("3_esgh6")
 
-[sub_resource type="Resource" id="Resource_3j4gj"]
+[sub_resource type="Resource" id="Resource_esgh6"]
 script = ExtResource("1_x14mo")
 movimiento = ExtResource("4_mnc1h")
 
-[sub_resource type="Resource" id="Resource_7xusi"]
+[sub_resource type="Resource" id="Resource_mnc1h"]
 script = ExtResource("1_x14mo")
 movimiento = ExtResource("5_q8apg")
 
-[sub_resource type="Resource" id="Resource_1cw33"]
+[sub_resource type="Resource" id="Resource_q8apg"]
 script = ExtResource("1_x14mo")
 nivel = 6
 movimiento = ExtResource("2_42rnc")
 
-[sub_resource type="Resource" id="Resource_1fv6v"]
+[sub_resource type="Resource" id="Resource_32k5i"]
 script = ExtResource("1_x14mo")
 nivel = 11
 movimiento = ExtResource("5_q8apg")
 
-[sub_resource type="Resource" id="Resource_3anwo"]
+[sub_resource type="Resource" id="Resource_m1pq4"]
 script = ExtResource("1_x14mo")
 nivel = 16
 movimiento = ExtResource("6_32k5i")
 
-[sub_resource type="Resource" id="Resource_5b5n5"]
+[sub_resource type="Resource" id="Resource_3nwwp"]
 script = ExtResource("1_x14mo")
 nivel = 17
 movimiento = ExtResource("7_m1pq4")
 
-[sub_resource type="Resource" id="Resource_wjolk"]
+[sub_resource type="Resource" id="Resource_j45k7"]
 script = ExtResource("1_x14mo")
 nivel = 23
 movimiento = ExtResource("8_3nwwp")
 
-[sub_resource type="Resource" id="Resource_pxi0q"]
+[sub_resource type="Resource" id="Resource_k3ak1"]
 script = ExtResource("1_x14mo")
 nivel = 29
 movimiento = ExtResource("9_j45k7")
 
-[sub_resource type="Resource" id="Resource_jlwbs"]
+[sub_resource type="Resource" id="Resource_oj2bf"]
 script = ExtResource("1_x14mo")
 nivel = 35
 movimiento = ExtResource("10_k3ak1")
 
-[sub_resource type="Resource" id="Resource_0w2y8"]
+[sub_resource type="Resource" id="Resource_vth00"]
 script = ExtResource("1_x14mo")
 nivel = 41
 movimiento = ExtResource("11_oj2bf")
 
-[sub_resource type="Resource" id="Resource_u0xiw"]
+[sub_resource type="Resource" id="Resource_p2vxu"]
 script = ExtResource("1_x14mo")
 nivel = 47
 movimiento = ExtResource("12_vth00")
 
-[sub_resource type="Resource" id="Resource_chdua"]
+[sub_resource type="Resource" id="Resource_lci3j"]
 script = ExtResource("1_x14mo")
 nivel = 53
 movimiento = ExtResource("13_p2vxu")
 
-[sub_resource type="Resource" id="Resource_qbl0t"]
+[sub_resource type="Resource" id="Resource_mhoa3"]
 script = ExtResource("1_x14mo")
 nivel = 59
 movimiento = ExtResource("14_lci3j")
@@ -94,7 +94,7 @@ script = ExtResource("15_mhoa3")
 id = "grovyle"
 numero = 253
 nombre = "Grovyle"
-tipos = ["planta"]
+tipos = PackedStringArray("planta")
 ataque = 65
 defensa = 45
 at_esp = 85
@@ -108,12 +108,20 @@ evs_otorgados = {
 }
 evoluciona_a = "sceptile"
 nivel_evolucion = 36
-aprende = Array[ExtResource("1_x14mo")]([SubResource("Resource_1pglf"), SubResource("Resource_aqi41"), SubResource("Resource_3j4gj"), SubResource("Resource_7xusi"), SubResource("Resource_1cw33"), SubResource("Resource_1fv6v"), SubResource("Resource_3anwo"), SubResource("Resource_5b5n5"), SubResource("Resource_wjolk"), SubResource("Resource_pxi0q"), SubResource("Resource_jlwbs"), SubResource("Resource_0w2y8"), SubResource("Resource_u0xiw"), SubResource("Resource_chdua"), SubResource("Resource_qbl0t")])
+evoluciones = Array[Dictionary]([{
+"especie": "sceptile",
+"metodo": "nivel",
+"nivel": 36
+}])
+habilidades = PackedStringArray("overgrow")
+habilidad_oculta = "unburden"
+categoria = "Pokémon Geco Bosque"
+altura = 0.9
+peso_kg = 21.6
+descripcion = "Los desarrollados músculos que tiene en las extremidades inferiores le hacen ser muy ágil y le permiten dar grandes saltos."
+aprende = Array[ExtResource("1_x14mo")]([SubResource("Resource_x14mo"), SubResource("Resource_42rnc"), SubResource("Resource_esgh6"), SubResource("Resource_mnc1h"), SubResource("Resource_q8apg"), SubResource("Resource_32k5i"), SubResource("Resource_m1pq4"), SubResource("Resource_3nwwp"), SubResource("Resource_j45k7"), SubResource("Resource_k3ak1"), SubResource("Resource_oj2bf"), SubResource("Resource_vth00"), SubResource("Resource_p2vxu"), SubResource("Resource_lci3j"), SubResource("Resource_mhoa3")])
 sprite_frente = ExtResource("17_g2r41")
 sprite_espalda = ExtResource("16_hhog4")
 cuadros_frente = 116
 cuadros_espalda = 114
 fps_sprite = 10.27
-habilidades = PackedStringArray("Espesura")
-habilidad_oculta = "Liviano"
-evoluciones = Array[Dictionary]([{"especie": "sceptile", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

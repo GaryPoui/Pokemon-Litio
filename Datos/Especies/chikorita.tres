@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://wwjxk3unh22v"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_uh1io"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_uh1io"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_ilw8p"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_viive"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/razor_leaf.tres" id="4_lclmq"]
@@ -15,74 +15,74 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/safeguard.tres" id="13_8b335"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/aromatherapy.tres" id="14_rba7v"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="15_yg3es"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_ikyfe"]
-[ext_resource type="Texture2D" uid="uid://bmsasam0d07jd" path="res://Assets/Pokemones/batalla/chikorita_espalda.png" id="17_srp31"]
-[ext_resource type="Texture2D" uid="uid://cq7as6kujfj0r" path="res://Assets/Pokemones/batalla/chikorita_frente.png" id="18_pnqep"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_ikyfe"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/chikorita_espalda.png" id="17_srp31"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/chikorita_frente.png" id="18_pnqep"]
 
-[sub_resource type="Resource" id="Resource_pis3i"]
+[sub_resource type="Resource" id="Resource_uh1io"]
 script = ExtResource("1_uh1io")
 movimiento = ExtResource("2_ilw8p")
 
-[sub_resource type="Resource" id="Resource_3gc21"]
+[sub_resource type="Resource" id="Resource_ilw8p"]
 script = ExtResource("1_uh1io")
 movimiento = ExtResource("3_viive")
 
-[sub_resource type="Resource" id="Resource_2xdyh"]
+[sub_resource type="Resource" id="Resource_viive"]
 script = ExtResource("1_uh1io")
 nivel = 6
 movimiento = ExtResource("4_lclmq")
 
-[sub_resource type="Resource" id="Resource_vysub"]
+[sub_resource type="Resource" id="Resource_lclmq"]
 script = ExtResource("1_uh1io")
 nivel = 9
 movimiento = ExtResource("5_sahx6")
 
-[sub_resource type="Resource" id="Resource_q22jw"]
+[sub_resource type="Resource" id="Resource_sahx6"]
 script = ExtResource("1_uh1io")
 nivel = 12
 movimiento = ExtResource("6_fvrql")
 
-[sub_resource type="Resource" id="Resource_gk30v"]
+[sub_resource type="Resource" id="Resource_fvrql"]
 script = ExtResource("1_uh1io")
 nivel = 17
 movimiento = ExtResource("7_jx6j4")
 
-[sub_resource type="Resource" id="Resource_786ys"]
+[sub_resource type="Resource" id="Resource_jx6j4"]
 script = ExtResource("1_uh1io")
 nivel = 20
 movimiento = ExtResource("8_2fbd7")
 
-[sub_resource type="Resource" id="Resource_olqie"]
+[sub_resource type="Resource" id="Resource_2fbd7"]
 script = ExtResource("1_uh1io")
 nivel = 23
 movimiento = ExtResource("9_uach2")
 
-[sub_resource type="Resource" id="Resource_neepu"]
+[sub_resource type="Resource" id="Resource_uach2"]
 script = ExtResource("1_uh1io")
 nivel = 28
 movimiento = ExtResource("10_8ysd8")
 
-[sub_resource type="Resource" id="Resource_nqois"]
+[sub_resource type="Resource" id="Resource_8ysd8"]
 script = ExtResource("1_uh1io")
 nivel = 31
 movimiento = ExtResource("11_5cqke")
 
-[sub_resource type="Resource" id="Resource_bh5tt"]
+[sub_resource type="Resource" id="Resource_5cqke"]
 script = ExtResource("1_uh1io")
 nivel = 34
 movimiento = ExtResource("12_wmhum")
 
-[sub_resource type="Resource" id="Resource_hed0p"]
+[sub_resource type="Resource" id="Resource_wmhum"]
 script = ExtResource("1_uh1io")
 nivel = 39
 movimiento = ExtResource("13_8b335")
 
-[sub_resource type="Resource" id="Resource_3jte0"]
+[sub_resource type="Resource" id="Resource_8b335"]
 script = ExtResource("1_uh1io")
 nivel = 42
 movimiento = ExtResource("14_rba7v")
 
-[sub_resource type="Resource" id="Resource_hb7l2"]
+[sub_resource type="Resource" id="Resource_rba7v"]
 script = ExtResource("1_uh1io")
 nivel = 45
 movimiento = ExtResource("15_yg3es")
@@ -92,7 +92,7 @@ script = ExtResource("16_ikyfe")
 id = "chikorita"
 numero = 152
 nombre = "Chikorita"
-tipos = ["planta"]
+tipos = PackedStringArray("planta")
 ps = 45
 ataque = 49
 defensa = 65
@@ -107,12 +107,20 @@ evs_otorgados = {
 }
 evoluciona_a = "bayleef"
 nivel_evolucion = 16
-aprende = Array[ExtResource("1_uh1io")]([SubResource("Resource_pis3i"), SubResource("Resource_3gc21"), SubResource("Resource_2xdyh"), SubResource("Resource_vysub"), SubResource("Resource_q22jw"), SubResource("Resource_gk30v"), SubResource("Resource_786ys"), SubResource("Resource_olqie"), SubResource("Resource_neepu"), SubResource("Resource_nqois"), SubResource("Resource_bh5tt"), SubResource("Resource_hed0p"), SubResource("Resource_3jte0"), SubResource("Resource_hb7l2")])
+evoluciones = Array[Dictionary]([{
+"especie": "bayleef",
+"metodo": "nivel",
+"nivel": 16
+}])
+habilidades = PackedStringArray("overgrow")
+habilidad_oculta = "leaf_guard"
+categoria = "Pokémon Hoja"
+altura = 0.9
+peso_kg = 6.4
+descripcion = "Un dulce aroma se desprende de la hoja de su cabeza. Es dócil y le encanta absorber los rayos de sol."
+aprende = Array[ExtResource("1_uh1io")]([SubResource("Resource_uh1io"), SubResource("Resource_ilw8p"), SubResource("Resource_viive"), SubResource("Resource_lclmq"), SubResource("Resource_sahx6"), SubResource("Resource_fvrql"), SubResource("Resource_jx6j4"), SubResource("Resource_2fbd7"), SubResource("Resource_uach2"), SubResource("Resource_8ysd8"), SubResource("Resource_5cqke"), SubResource("Resource_wmhum"), SubResource("Resource_8b335"), SubResource("Resource_rba7v")])
 sprite_frente = ExtResource("18_pnqep")
 sprite_espalda = ExtResource("17_srp31")
 cuadros_frente = 26
 cuadros_espalda = 26
 fps_sprite = 7.69
-habilidades = PackedStringArray("Espesura")
-habilidad_oculta = "Defensa Hoja"
-evoluciones = Array[Dictionary]([{"especie": "bayleef", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

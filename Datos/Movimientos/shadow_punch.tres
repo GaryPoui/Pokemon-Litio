@@ -11,3 +11,5 @@ poder = 60
 precision = 0
 pp = 20
 descripcion = "Puñetazo ineludible procedente de las sombras."
+numero = 325
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_seqn1"]
+
+[resource]
+script = ExtResource("1_seqn1")
+id = "cursed_body"
+nombre = "Cuerpo Maldito"
+descripcion = "Puede anular el movimiento usado en su contra."

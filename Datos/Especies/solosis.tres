@@ -21,82 +21,81 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/heal_block.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/wonder_room.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_58gek"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_5ldux"]
 script = ExtResource("2")
 nivel = 3
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_nh0dn"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_hooq0"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_sp6gn"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_p2kbg"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_hcd7a"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_sbl5p"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_w8w3h"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_hfgaf"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_7ng6d"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_mr86q"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_7r0ph"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_3cv80"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_wyon5"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_caup3"]
 script = ExtResource("2")
 nivel = 48
 movimiento = ExtResource("20")
@@ -107,25 +106,32 @@ id = "solosis"
 numero = 577
 nombre = "Solosis"
 tipos = PackedStringArray("psiquico")
-habilidades = PackedStringArray("Funda", "Muro Mágico")
-habilidad_oculta = "Regeneración"
 ps = 45
 ataque = 30
 defensa = 40
 at_esp = 105
-def_esp = 50
 velocidad = 20
 exp_base = 58
 ratio_captura = 200
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"at_esp": 1}
-evoluciones = Array[Dictionary]([{"especie": "duosion", "metodo": "nivel", "condicion": "Nivel 32", "nivel": 32}])
+evs_otorgados = {
+"at_esp": 1
+}
 evoluciona_a = "duosion"
 nivel_evolucion = 32
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evoluciones = Array[Dictionary]([{
+"especie": "duosion",
+"metodo": "nivel",
+"nivel": 32
+}])
+habilidades = PackedStringArray("overcoat", "magic_guard")
+habilidad_oculta = "regenerator"
+categoria = "Pokémon Célula"
+altura = 0.3
+peso_kg = 1.0
+descripcion = "Gracias a la sustancia viscosa que envuelve su cuerpo, permanece tranquilo por dura o rigurosa que sea la situación."
+aprende = Array[ExtResource("2")]([SubResource("Resource_58gek"), SubResource("Resource_5ldux"), SubResource("Resource_nh0dn"), SubResource("Resource_hooq0"), SubResource("Resource_sp6gn"), SubResource("Resource_p2kbg"), SubResource("Resource_hcd7a"), SubResource("Resource_sbl5p"), SubResource("Resource_w8w3h"), SubResource("Resource_hfgaf"), SubResource("Resource_7ng6d"), SubResource("Resource_mr86q"), SubResource("Resource_7r0ph"), SubResource("Resource_3cv80"), SubResource("Resource_wyon5"), SubResource("Resource_caup3")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 64
 cuadros_espalda = 64
-fps_sprite = 10.0

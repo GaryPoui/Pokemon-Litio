@@ -13,3 +13,5 @@ pp = 20
 objetivo = "opponents-field"
 meta = "field-effect"
 descripcion = "Lanza una trampa de púas tóxicas a los pies del objetivo. El veneno afecta a los Pokémon oponentes que entran en combate."
+numero = 390
+banderas = PackedStringArray("metronome", "mustpressure", "nonsky", "reflectable")

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_43dvj"]
+
+[resource]
+script = ExtResource("1_43dvj")
+id = "drizzle"
+nombre = "Llovizna"
+descripcion = "Hace que llueva cuando entra en combate."

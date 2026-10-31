@@ -22,97 +22,97 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/bisharp_espalda.png" id="20_1siaj"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/bisharp_frente.png" id="21_q43kc"]
 
-[sub_resource type="Resource" id="Resource_7wo2u"]
+[sub_resource type="Resource" id="Resource_a7h78"]
 script = ExtResource("1_a7h78")
 movimiento = ExtResource("2_khpln")
 
-[sub_resource type="Resource" id="Resource_lio0l"]
+[sub_resource type="Resource" id="Resource_khpln"]
 script = ExtResource("1_a7h78")
 movimiento = ExtResource("3_e7xh3")
 
-[sub_resource type="Resource" id="Resource_4xmig"]
+[sub_resource type="Resource" id="Resource_e7xh3"]
 script = ExtResource("1_a7h78")
 movimiento = ExtResource("4_3fslp")
 
-[sub_resource type="Resource" id="Resource_o35tm"]
+[sub_resource type="Resource" id="Resource_3fslp"]
 script = ExtResource("1_a7h78")
 movimiento = ExtResource("5_ootwd")
 
-[sub_resource type="Resource" id="Resource_wvtrq"]
+[sub_resource type="Resource" id="Resource_ootwd"]
 script = ExtResource("1_a7h78")
 movimiento = ExtResource("6_you0d")
 
-[sub_resource type="Resource" id="Resource_pv6ef"]
+[sub_resource type="Resource" id="Resource_you0d"]
 script = ExtResource("1_a7h78")
 nivel = 6
 movimiento = ExtResource("3_e7xh3")
 
-[sub_resource type="Resource" id="Resource_2lp58"]
+[sub_resource type="Resource" id="Resource_l6kum"]
 script = ExtResource("1_a7h78")
 nivel = 9
 movimiento = ExtResource("2_khpln")
 
-[sub_resource type="Resource" id="Resource_ruucg"]
+[sub_resource type="Resource" id="Resource_dbkev"]
 script = ExtResource("1_a7h78")
 nivel = 14
 movimiento = ExtResource("6_you0d")
 
-[sub_resource type="Resource" id="Resource_wqvar"]
+[sub_resource type="Resource" id="Resource_ohef2"]
 script = ExtResource("1_a7h78")
 nivel = 17
 movimiento = ExtResource("7_l6kum")
 
-[sub_resource type="Resource" id="Resource_e1bfl"]
+[sub_resource type="Resource" id="Resource_81d2n"]
 script = ExtResource("1_a7h78")
 nivel = 22
 movimiento = ExtResource("8_dbkev")
 
-[sub_resource type="Resource" id="Resource_dk0md"]
+[sub_resource type="Resource" id="Resource_dqqi1"]
 script = ExtResource("1_a7h78")
 nivel = 25
 movimiento = ExtResource("9_ohef2")
 
-[sub_resource type="Resource" id="Resource_k62g1"]
+[sub_resource type="Resource" id="Resource_5wtd5"]
 script = ExtResource("1_a7h78")
 nivel = 30
 movimiento = ExtResource("10_81d2n")
 
-[sub_resource type="Resource" id="Resource_we6u3"]
+[sub_resource type="Resource" id="Resource_w0c66"]
 script = ExtResource("1_a7h78")
 nivel = 33
 movimiento = ExtResource("11_dqqi1")
 
-[sub_resource type="Resource" id="Resource_8smrr"]
+[sub_resource type="Resource" id="Resource_ll784"]
 script = ExtResource("1_a7h78")
 nivel = 38
 movimiento = ExtResource("12_5wtd5")
 
-[sub_resource type="Resource" id="Resource_i3n2n"]
+[sub_resource type="Resource" id="Resource_0dxb5"]
 script = ExtResource("1_a7h78")
 nivel = 41
 movimiento = ExtResource("13_w0c66")
 
-[sub_resource type="Resource" id="Resource_5vxqu"]
+[sub_resource type="Resource" id="Resource_ln6a3"]
 script = ExtResource("1_a7h78")
 nivel = 46
 movimiento = ExtResource("14_ll784")
 
-[sub_resource type="Resource" id="Resource_608c6"]
+[sub_resource type="Resource" id="Resource_i1okt"]
 script = ExtResource("1_a7h78")
 nivel = 49
 movimiento = ExtResource("15_0dxb5")
 
-[sub_resource type="Resource" id="Resource_pe2y5"]
+[sub_resource type="Resource" id="Resource_5nt6i"]
 script = ExtResource("1_a7h78")
 nivel = 57
 movimiento = ExtResource("16_ln6a3")
 
-[sub_resource type="Resource" id="Resource_pfw00"]
+[sub_resource type="Resource" id="Resource_6w7xe"]
 script = ExtResource("1_a7h78")
 nivel = 63
 movimiento = ExtResource("17_i1okt")
 
-[sub_resource type="Resource" id="Resource_7x82o"]
+[sub_resource type="Resource" id="Resource_1siaj"]
 script = ExtResource("1_a7h78")
 nivel = 71
 movimiento = ExtResource("18_5nt6i")
@@ -122,7 +122,7 @@ script = ExtResource("19_6w7xe")
 id = "bisharp"
 numero = 625
 nombre = "Bisharp"
-tipos = ["siniestro", "acero"]
+tipos = PackedStringArray("siniestro", "acero")
 ps = 65
 ataque = 125
 defensa = 100
@@ -133,12 +133,16 @@ exp_base = 172
 evs_otorgados = {
 "ataque": 2
 }
-aprende = Array[ExtResource("1_a7h78")]([SubResource("Resource_7wo2u"), SubResource("Resource_lio0l"), SubResource("Resource_4xmig"), SubResource("Resource_o35tm"), SubResource("Resource_wvtrq"), SubResource("Resource_pv6ef"), SubResource("Resource_2lp58"), SubResource("Resource_ruucg"), SubResource("Resource_wqvar"), SubResource("Resource_e1bfl"), SubResource("Resource_dk0md"), SubResource("Resource_k62g1"), SubResource("Resource_we6u3"), SubResource("Resource_8smrr"), SubResource("Resource_i3n2n"), SubResource("Resource_5vxqu"), SubResource("Resource_608c6"), SubResource("Resource_pe2y5"), SubResource("Resource_pfw00"), SubResource("Resource_7x82o")])
+amistad_base = 35
+habilidades = PackedStringArray("defiant", "inner_focus")
+habilidad_oculta = "pressure"
+categoria = "Pokémon Filo"
+altura = 1.6
+peso_kg = 70.0
+descripcion = "Un Pokémon temible que remata a su presa una vez que su séquito de Pawniard la ha debilitado e inmovilizado."
+aprende = Array[ExtResource("1_a7h78")]([SubResource("Resource_a7h78"), SubResource("Resource_khpln"), SubResource("Resource_e7xh3"), SubResource("Resource_3fslp"), SubResource("Resource_ootwd"), SubResource("Resource_you0d"), SubResource("Resource_l6kum"), SubResource("Resource_dbkev"), SubResource("Resource_ohef2"), SubResource("Resource_81d2n"), SubResource("Resource_dqqi1"), SubResource("Resource_5wtd5"), SubResource("Resource_w0c66"), SubResource("Resource_ll784"), SubResource("Resource_0dxb5"), SubResource("Resource_ln6a3"), SubResource("Resource_i1okt"), SubResource("Resource_5nt6i"), SubResource("Resource_6w7xe"), SubResource("Resource_1siaj")])
 sprite_frente = ExtResource("21_q43kc")
 sprite_espalda = ExtResource("20_1siaj")
 cuadros_frente = 88
 cuadros_espalda = 88
 fps_sprite = 10.09
-habilidades = PackedStringArray("Competitivo", "Fuerza Mental")
-habilidad_oculta = "Presión"
-evoluciones = Array[Dictionary]([])

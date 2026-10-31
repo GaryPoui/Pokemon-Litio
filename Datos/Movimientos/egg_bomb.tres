@@ -5,11 +5,9 @@
 [resource]
 script = ExtResource("1")
 id = "egg_bomb"
-nombre = "Bomba huevo"
-tipo = "normal"
-categoria = "fisico"
+nombre = "Bomba Huevo"
 poder = 100
 precision = 75
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+numero = 121
+banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")

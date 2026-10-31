@@ -5,11 +5,15 @@
 [resource]
 script = ExtResource("1")
 id = "searing_shot"
-nombre = "Bomba ígnea"
+nombre = "Bomba Ígnea"
 tipo = "fuego"
 categoria = "especial"
 poder = 100
-precision = 100
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+objetivo = "all-other-pokemon"
+meta = "damage-ailment"
+descripcion = "Un infierno de llamas daña a los Pokémon adyacentes en combate. Puede quemar."
+estado = "burn"
+prob_estado = 30
+numero = 545
+banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")

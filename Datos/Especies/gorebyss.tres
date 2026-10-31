@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
 [ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlpool.tres" id="2_m8cco"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/gorebyss_frente.png" id="3"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/gorebyss_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="5"]
@@ -16,57 +17,61 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/aqua_tail.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="15"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_m8cco"]
+script = ExtResource("2")
+movimiento = ExtResource("2_m8cco")
+
+[sub_resource type="Resource" id="Resource_jsngb"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_awovo"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_3h62i"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_j6cwh"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_mguk0"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_vvpoa"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_0c1hw"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_ayo7y"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_7l1y7"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_pvpn2"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_trjy3"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("15")
@@ -77,8 +82,6 @@ id = "gorebyss"
 numero = 368
 nombre = "Gorebyss"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Nado Rápido")
-habilidad_oculta = "Hidratación"
 ps = 55
 ataque = 84
 defensa = 105
@@ -87,11 +90,17 @@ def_esp = 75
 velocidad = 52
 exp_base = 170
 ratio_captura = 60
-ratio_genero = 4
 crecimiento = "slow-then-very-fast"
-evs_otorgados = {"at_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10")])
+evs_otorgados = {
+"at_esp": 2
+}
+habilidades = PackedStringArray("swift_swim")
+habilidad_oculta = "hydration"
+categoria = "Pokémon Mar del Sur"
+altura = 1.8
+peso_kg = 22.6
+descripcion = "Vive en el fondo del mar. En primavera, su cuerpo rosado adquiere colores más vivos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_m8cco"), SubResource("Resource_jsngb"), SubResource("Resource_awovo"), SubResource("Resource_3h62i"), SubResource("Resource_j6cwh"), SubResource("Resource_mguk0"), SubResource("Resource_vvpoa"), SubResource("Resource_0c1hw"), SubResource("Resource_ayo7y"), SubResource("Resource_7l1y7"), SubResource("Resource_pvpn2"), SubResource("Resource_trjy3")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 62

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_qccvx"]
+
+[resource]
+script = ExtResource("1_qccvx")
+id = "stall"
+nombre = "Rezagado"
+descripcion = "El Pokémon se mueve tras todos los demás."

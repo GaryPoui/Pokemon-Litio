@@ -6,10 +6,11 @@
 script = ExtResource("1")
 id = "acupressure"
 nombre = "Acupresión"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 30
-objetivo = "selected-pokemon"
+objetivo = "user-or-ally"
 meta = "unique"
+descripcion = "Aplica presión en puntos clave del cuerpo para potenciar mucho una de sus características."
+numero = 367
+banderas = PackedStringArray("metronome")

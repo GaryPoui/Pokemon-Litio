@@ -15,3 +15,5 @@ meta = "damage-ailment"
 descripcion = "Un infierno de llamas daña a los Pokémon adyacentes en combate. Puede quemar."
 estado = "burn"
 prob_estado = 30
+numero = 436
+banderas = PackedStringArray("metronome", "mirror", "protect")

@@ -16,3 +16,5 @@ cambios_stats = {
 "at_esp": 1,
 "ataque": 1
 }
+numero = 74
+banderas = PackedStringArray("metronome", "snatch")

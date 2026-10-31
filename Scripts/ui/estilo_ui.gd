@@ -3,7 +3,7 @@ extends RefCounted
 
 const TEXTO:= Color("f0f2f6")
 const SOMBRA :=Color("141a26")
-const FONDO:= Color(0.09, 0.11, 0.16, 0.94)
+const FONDO:= Color(0.09, 0.11, 0.16)
 const BORDE :=Color("8aa0c8")
 const TENUE:= Color("9fb0cc")
 const TEXTO_OSCURO :=Color("383838")
@@ -19,10 +19,13 @@ const COLORES_TIPO:= {
 }
 const ABREV_ESTADO :={"que": "QUE", "env": "ENV", "par": "PAR", "dor": "DOR", "con": "CON"}
 const ANCHO_INSIGNIA:= 48
+const ALTO_INSIGNIA :=13
 const FUENTE_NORMAL:= preload("res://Assets/Fuentes/TruthAndIdeals.ttf")
 const FUENTE_PEQUENA :=preload("res://Assets/Fuentes/SmallTruths.ttf")
 const FUENTE_BATALLA:= preload("res://Assets/Fuentes/FightingIdeals.ttf")
 const MADERA :=preload("res://Assets/Botones/boton_madera_1x.png")
+
+static var cajas_icono:= {}
 
 static func panel(fondo: Color= FONDO, borde: Color= BORDE) -> StyleBoxFlat:
 	var e:= StyleBoxFlat.new()
@@ -86,7 +89,7 @@ static func color_tipo(tipo: String) -> Color:
 static func insignia_tipo(tipo: String, pos: Vector2) -> Panel:
 	var p:= Panel.new()
 	p.position= pos
-	p.size =Vector2(ANCHO_INSIGNIA, 11)
+	p.size =Vector2(ANCHO_INSIGNIA, ALTO_INSIGNIA)
 	p.add_theme_stylebox_override("panel", panel(color_tipo(tipo), color_tipo(tipo).darkened(0.35)))
 	var l:= nuevo_label(Tipos.nombre(tipo).to_upper(), 6, Vector2(0, 0), Color.WHITE)
 	l.horizontal_alignment =HORIZONTAL_ALIGNMENT_CENTER
@@ -101,6 +104,43 @@ static func icono(especie: EspeciePokemon) -> AtlasTexture:
 	var ancho:= floori(especie.sprite_frente.get_width()/ float(maxi(1, especie.cuadros_frente)))
 	at.region =Rect2(0, 0, ancho, especie.sprite_frente.get_height())
 	return at
+
+static func caja_icono(tex: Texture2D, cuadros: int= 1) -> Rect2i:
+	if tex== null:
+		return Rect2i()
+	var clave:= "%d:%d" % [tex.get_instance_id(), cuadros]
+	if cajas_icono.has(clave):
+		return cajas_icono[clave]
+	var r:= Rect2i()
+	var img:= tex.get_image()
+	if img!= null:
+		if img.is_compressed():
+			img.decompress()
+		var w:= img.get_width()/ maxi(1, cuadros)
+		for k in maxi(1, cuadros):
+			var u:= img.get_region(Rect2i(k* w, 0, w, img.get_height())).get_used_rect()
+			if u.size.x> 0:
+				r= u if r.size.x== 0 else r.merge(u)
+	cajas_icono[clave]= r
+	return r
+
+static func posicion_icono(tex: Texture2D, cuadros: int, centro: Vector2, centrado: bool) -> Vector2:
+	var r:= caja_icono(tex, cuadros)
+	if r.size.x== 0:
+		return centro
+	var medio:= Vector2(r.position)+ Vector2(r.size)/ 2.0
+	if centrado:
+		medio-= Vector2(tex.get_width()/ maxi(1, cuadros), tex.get_height())/ 2.0
+	return (centro- medio).round()
+
+static func pastilla(fondo: Color= FONDO, borde: Color= BORDE) -> StyleBoxFlat:
+	var e:= panel(fondo, borde)
+	e.set_border_width_all(1)
+	e.content_margin_left= 2
+	e.content_margin_right =2
+	e.content_margin_top= 0
+	e.content_margin_bottom =0
+	return e
 
 static func envolver(texto: String, l: Label, ancho: float) -> Array[String]:
 	var f:= l.get_theme_font("font")

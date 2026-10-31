@@ -16,3 +16,5 @@ cambios_stats = {
 "precision": -1
 }
 prob_stat = 30
+numero = 426
+banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")

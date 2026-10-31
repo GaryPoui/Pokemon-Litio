@@ -8,17 +8,15 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="7"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_ujx54"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_881vq"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_mb333"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("7")
@@ -29,8 +27,6 @@ id = "caterpie"
 numero = 10
 nombre = "Caterpie"
 tipos = PackedStringArray("bicho")
-habilidades = PackedStringArray("Polvo Escudo")
-habilidad_oculta = "Fuga"
 ps = 45
 ataque = 30
 defensa = 35
@@ -39,13 +35,23 @@ def_esp = 20
 velocidad = 45
 exp_base = 39
 ratio_captura = 255
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([{"especie": "metapod", "metodo": "nivel", "condicion": "Nivel 7", "nivel": 7}])
+evs_otorgados = {
+"ps": 1
+}
 evoluciona_a = "metapod"
 nivel_evolucion = 7
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2")])
+evoluciones = Array[Dictionary]([{
+"especie": "metapod",
+"metodo": "nivel",
+"nivel": 7
+}])
+habilidades = PackedStringArray("shield_dust")
+habilidad_oculta = "run_away"
+categoria = "Pokémon Gusano"
+altura = 0.3
+peso_kg = 2.9
+descripcion = "Para protegerse despide un hedor horrible de sus antenas, con el que repele a sus enemigos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_ujx54"), SubResource("Resource_881vq"), SubResource("Resource_mb333")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 40

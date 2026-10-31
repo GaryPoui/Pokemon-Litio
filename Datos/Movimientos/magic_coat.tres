@@ -5,11 +5,14 @@
 [resource]
 script = ExtResource("1")
 id = "magic_coat"
-nombre = "Capa mágica"
+nombre = "Capa Mágica"
 tipo = "psiquico"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 15
+prioridad = 4
 objetivo = "user"
 meta = "unique"
+descripcion = "Barrera capaz de devolver al agresor movimientos como Drenadoras y otros que alteran el estado o las características."
+numero = 277
+banderas = PackedStringArray("metronome")

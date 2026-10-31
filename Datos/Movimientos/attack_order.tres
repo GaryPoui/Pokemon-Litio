@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1")
 id = "attack_order"
-nombre = "Al ataque"
+nombre = "Al Ataque"
 tipo = "bicho"
-categoria = "fisico"
 poder = 90
-precision = 100
 pp = 15
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "El usuario llama a sus súbditos para que ataquen al objetivo. Suele ser crítico."
+critico = 1
+numero = 454
+banderas = PackedStringArray("metronome", "mirror", "protect")

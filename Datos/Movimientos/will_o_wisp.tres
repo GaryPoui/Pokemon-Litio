@@ -5,11 +5,13 @@
 [resource]
 script = ExtResource("1")
 id = "will_o_wisp"
-nombre = "Fuego fatuo"
+nombre = "Fuego Fatuo"
 tipo = "fuego"
 categoria = "estado"
-poder = 0
-precision = 85
+precision = 75
 pp = 15
-objetivo = "selected-pokemon"
-meta = "unique"
+meta = "ailment"
+descripcion = "Siniestra llama morada que produce quemaduras."
+estado = "burn"
+numero = 261
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")

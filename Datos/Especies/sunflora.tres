@@ -13,98 +13,77 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/leech_seed.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/razor_leaf.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/worry_seed.tres" id="13"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/giga_drain.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bullet_seed.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/petal_dance.tres" id="16"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/natural_gift.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="18"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sunny_day.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_7tvy3"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_ccx6n"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_06jb8"]
+script = ExtResource("2")
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_li1t7"]
 script = ExtResource("2")
-nivel = 4
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 7
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 10
+nivel = 5
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_g8ui8"]
+script = ExtResource("2")
+nivel = 9
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_7xjmj"]
 script = ExtResource("2")
 nivel = 13
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_qt84j"]
+script = ExtResource("2")
+nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_tywvn"]
 script = ExtResource("2")
-nivel = 16
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 19
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 22
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 25
+nivel = 21
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_cr2bb"]
 script = ExtResource("2")
-nivel = 28
+nivel = 25
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_608aw"]
+script = ExtResource("2")
+nivel = 29
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Resource_6al0u"]
+script = ExtResource("2")
+nivel = 33
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 31
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_13"]
-script = ExtResource("2")
-nivel = 34
-movimiento = ExtResource("18")
-
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_6vkpk"]
 script = ExtResource("2")
 nivel = 37
-movimiento = ExtResource("19")
-
-[sub_resource type="Resource" id="Move_15"]
-script = ExtResource("2")
-nivel = 40
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_yq3jt"]
 script = ExtResource("2")
-nivel = 43
+nivel = 41
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Resource_837tf"]
+script = ExtResource("2")
+nivel = 45
 movimiento = ExtResource("21")
 
 [resource]
@@ -113,8 +92,6 @@ id = "sunflora"
 numero = 192
 nombre = "Sunflora"
 tipos = PackedStringArray("planta")
-habilidades = PackedStringArray("Clorofila", "Poder Solar")
-habilidad_oculta = "Madrugador/Madrugar"
 ps = 75
 ataque = 75
 defensa = 55
@@ -123,11 +100,17 @@ def_esp = 85
 velocidad = 30
 exp_base = 149
 ratio_captura = 120
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"at_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"at_esp": 2
+}
+habilidades = PackedStringArray("chlorophyll", "solar_power")
+habilidad_oculta = "early_bird"
+categoria = "Pokémon Sol"
+altura = 0.8
+peso_kg = 8.5
+descripcion = "A medida que se acerca el verano, va adquiriendo un color más vivo e intenso en los pétalos de la cara."
+aprende = Array[ExtResource("2")]([SubResource("Resource_7tvy3"), SubResource("Resource_ccx6n"), SubResource("Resource_06jb8"), SubResource("Resource_li1t7"), SubResource("Resource_g8ui8"), SubResource("Resource_7xjmj"), SubResource("Resource_qt84j"), SubResource("Resource_tywvn"), SubResource("Resource_cr2bb"), SubResource("Resource_608aw"), SubResource("Resource_6al0u"), SubResource("Resource_6vkpk"), SubResource("Resource_yq3jt"), SubResource("Resource_837tf")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 18

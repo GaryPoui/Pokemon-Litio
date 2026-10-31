@@ -12,3 +12,5 @@ precision = 30
 pp = 5
 meta = "ohko"
 descripcion = "Debilita al objetivo de un solo golpe. Si lo usa un Pokémon que no sea de tipo Hielo, es difícil que acierte."
+numero = 329
+banderas = PackedStringArray("metronome", "mirror", "protect")

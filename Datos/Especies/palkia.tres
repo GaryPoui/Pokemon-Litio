@@ -17,67 +17,65 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/spacial_rend.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_ww5oc"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_xb706"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_uda0d"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_a3ars"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_dcm08"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_5u6at"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_t8ahd"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_bc3eh"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_l1tgk"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_nn50l"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_ygnp8"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_dli3w"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_11jyq"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("16")
@@ -88,8 +86,6 @@ id = "palkia"
 numero = 484
 nombre = "Palkia"
 tipos = PackedStringArray("agua", "dragon")
-habilidades = PackedStringArray("Presión")
-habilidad_oculta = "Telepatía"
 ps = 90
 ataque = 120
 defensa = 100
@@ -100,9 +96,17 @@ exp_base = 306
 ratio_captura = 3
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"at_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12")])
+evs_otorgados = {
+"at_esp": 3
+}
+amistad_base = 0
+habilidades = PackedStringArray("pressure")
+habilidad_oculta = "telepathy"
+categoria = "Pokémon Espacial"
+altura = 4.2
+peso_kg = 336.0
+descripcion = "Se dice que vive en una dimensión espacial paralela. Aparece en la mitología."
+aprende = Array[ExtResource("2")]([SubResource("Resource_ww5oc"), SubResource("Resource_xb706"), SubResource("Resource_uda0d"), SubResource("Resource_a3ars"), SubResource("Resource_dcm08"), SubResource("Resource_5u6at"), SubResource("Resource_t8ahd"), SubResource("Resource_bc3eh"), SubResource("Resource_l1tgk"), SubResource("Resource_nn50l"), SubResource("Resource_ygnp8"), SubResource("Resource_dli3w"), SubResource("Resource_11jyq")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 63

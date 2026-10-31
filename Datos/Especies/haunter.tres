@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bipcfu5mev4vu"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_mblpj"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_mblpj"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hypnosis.tres" id="2_jem2p"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/lick.tres" id="3_lqgkb"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/spite.tres" id="4_i0bix"]
@@ -17,88 +17,88 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/destiny_bond.tres" id="15_tap2l"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hex.tres" id="16_r7dtr"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/nightmare.tres" id="17_l4vy3"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_05wm3"]
-[ext_resource type="Texture2D" uid="uid://bvkma5nwuxp4l" path="res://Assets/Pokemones/batalla/haunter_espalda.png" id="19_o2uto"]
-[ext_resource type="Texture2D" uid="uid://dkbhlb0jghr5w" path="res://Assets/Pokemones/batalla/haunter_frente.png" id="20_aoo7f"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_05wm3"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/haunter_espalda.png" id="19_o2uto"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/haunter_frente.png" id="20_aoo7f"]
 
-[sub_resource type="Resource" id="Resource_xyo6e"]
+[sub_resource type="Resource" id="Resource_mblpj"]
 script = ExtResource("1_mblpj")
 movimiento = ExtResource("2_jem2p")
 
-[sub_resource type="Resource" id="Resource_kaq2b"]
+[sub_resource type="Resource" id="Resource_jem2p"]
 script = ExtResource("1_mblpj")
 movimiento = ExtResource("3_lqgkb")
 
-[sub_resource type="Resource" id="Resource_26h66"]
+[sub_resource type="Resource" id="Resource_lqgkb"]
 script = ExtResource("1_mblpj")
 movimiento = ExtResource("4_i0bix")
 
-[sub_resource type="Resource" id="Resource_g1ay3"]
+[sub_resource type="Resource" id="Resource_i0bix"]
 script = ExtResource("1_mblpj")
 nivel = 5
 movimiento = ExtResource("4_i0bix")
 
-[sub_resource type="Resource" id="Resource_7acey"]
+[sub_resource type="Resource" id="Resource_fsu6p"]
 script = ExtResource("1_mblpj")
 nivel = 8
 movimiento = ExtResource("5_fsu6p")
 
-[sub_resource type="Resource" id="Resource_vld6k"]
+[sub_resource type="Resource" id="Resource_icmd3"]
 script = ExtResource("1_mblpj")
 nivel = 12
 movimiento = ExtResource("6_icmd3")
 
-[sub_resource type="Resource" id="Resource_73vse"]
+[sub_resource type="Resource" id="Resource_tg5ef"]
 script = ExtResource("1_mblpj")
 nivel = 15
 movimiento = ExtResource("7_tg5ef")
 
-[sub_resource type="Resource" id="Resource_qqytm"]
+[sub_resource type="Resource" id="Resource_a6wl1"]
 script = ExtResource("1_mblpj")
 nivel = 19
 movimiento = ExtResource("8_a6wl1")
 
-[sub_resource type="Resource" id="Resource_m0kkd"]
+[sub_resource type="Resource" id="Resource_cu170"]
 script = ExtResource("1_mblpj")
 nivel = 22
 movimiento = ExtResource("9_cu170")
 
-[sub_resource type="Resource" id="Resource_f6yho"]
+[sub_resource type="Resource" id="Resource_qulm4"]
 script = ExtResource("1_mblpj")
 nivel = 25
 movimiento = ExtResource("10_qulm4")
 
-[sub_resource type="Resource" id="Resource_3jhgm"]
+[sub_resource type="Resource" id="Resource_8ctgt"]
 script = ExtResource("1_mblpj")
 nivel = 28
 movimiento = ExtResource("11_8ctgt")
 
-[sub_resource type="Resource" id="Resource_6rg6j"]
+[sub_resource type="Resource" id="Resource_sfait"]
 script = ExtResource("1_mblpj")
 nivel = 33
 movimiento = ExtResource("12_sfait")
 
-[sub_resource type="Resource" id="Resource_2in50"]
+[sub_resource type="Resource" id="Resource_sb4pj"]
 script = ExtResource("1_mblpj")
 nivel = 39
 movimiento = ExtResource("13_sb4pj")
 
-[sub_resource type="Resource" id="Resource_u052p"]
+[sub_resource type="Resource" id="Resource_afuah"]
 script = ExtResource("1_mblpj")
 nivel = 44
 movimiento = ExtResource("14_afuah")
 
-[sub_resource type="Resource" id="Resource_vvx43"]
+[sub_resource type="Resource" id="Resource_tap2l"]
 script = ExtResource("1_mblpj")
 nivel = 50
 movimiento = ExtResource("15_tap2l")
 
-[sub_resource type="Resource" id="Resource_6a3f5"]
+[sub_resource type="Resource" id="Resource_r7dtr"]
 script = ExtResource("1_mblpj")
 nivel = 55
 movimiento = ExtResource("16_r7dtr")
 
-[sub_resource type="Resource" id="Resource_pkg0s"]
+[sub_resource type="Resource" id="Resource_l4vy3"]
 script = ExtResource("1_mblpj")
 nivel = 61
 movimiento = ExtResource("17_l4vy3")
@@ -108,7 +108,7 @@ script = ExtResource("18_05wm3")
 id = "haunter"
 numero = 93
 nombre = "Haunter"
-tipos = ["fantasma", "veneno"]
+tipos = PackedStringArray("fantasma", "veneno")
 ps = 45
 defensa = 45
 at_esp = 115
@@ -120,13 +120,18 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 2
 }
-aprende = Array[ExtResource("1_mblpj")]([SubResource("Resource_xyo6e"), SubResource("Resource_kaq2b"), SubResource("Resource_26h66"), SubResource("Resource_g1ay3"), SubResource("Resource_7acey"), SubResource("Resource_vld6k"), SubResource("Resource_73vse"), SubResource("Resource_qqytm"), SubResource("Resource_m0kkd"), SubResource("Resource_f6yho"), SubResource("Resource_3jhgm"), SubResource("Resource_6rg6j"), SubResource("Resource_2in50"), SubResource("Resource_u052p"), SubResource("Resource_vvx43"), SubResource("Resource_6a3f5"), SubResource("Resource_pkg0s")])
+evoluciones = Array[Dictionary]([{
+"especie": "gengar",
+"metodo": "intercambio"
+}])
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Gas"
+altura = 1.6
+peso_kg = 0.1
+descripcion = "Cuando tienes la sensación de que te están observando, seguro que es porque Haunter está cerca."
+aprende = Array[ExtResource("1_mblpj")]([SubResource("Resource_mblpj"), SubResource("Resource_jem2p"), SubResource("Resource_lqgkb"), SubResource("Resource_i0bix"), SubResource("Resource_fsu6p"), SubResource("Resource_icmd3"), SubResource("Resource_tg5ef"), SubResource("Resource_a6wl1"), SubResource("Resource_cu170"), SubResource("Resource_qulm4"), SubResource("Resource_8ctgt"), SubResource("Resource_sfait"), SubResource("Resource_sb4pj"), SubResource("Resource_afuah"), SubResource("Resource_tap2l"), SubResource("Resource_r7dtr"), SubResource("Resource_l4vy3")])
 sprite_frente = ExtResource("20_aoo7f")
 sprite_espalda = ExtResource("19_o2uto")
 cuadros_frente = 25
 cuadros_espalda = 25
 fps_sprite = 20.0
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
-evoluciones = Array[Dictionary]([{"especie": "gengar", "metodo": "intercambio", "condicion": "Intercambio; o cordón unión"}])
-evoluciona_a = "gengar"

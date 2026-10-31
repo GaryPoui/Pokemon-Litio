@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://vobho5y4b4jh"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_df6tr"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_df6tr"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="2_w0trm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_evfux"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/lick.tres" id="4_0jy53"]
@@ -16,80 +16,80 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/recycle.tres" id="14_f3r73"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/natural_gift.tres" id="15_mk2gd"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="16_k4gks"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_26lxq"]
-[ext_resource type="Texture2D" uid="uid://bt02onficba3g" path="res://Assets/Pokemones/batalla/panpour_espalda.png" id="18_vnwy7"]
-[ext_resource type="Texture2D" uid="uid://cdoui42yhesuj" path="res://Assets/Pokemones/batalla/panpour_frente.png" id="19_4edti"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_26lxq"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/panpour_espalda.png" id="18_vnwy7"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/panpour_frente.png" id="19_4edti"]
 
-[sub_resource type="Resource" id="Resource_7sel8"]
+[sub_resource type="Resource" id="Resource_df6tr"]
 script = ExtResource("1_df6tr")
 movimiento = ExtResource("2_w0trm")
 
-[sub_resource type="Resource" id="Resource_c4mwl"]
+[sub_resource type="Resource" id="Resource_w0trm"]
 script = ExtResource("1_df6tr")
 nivel = 4
 movimiento = ExtResource("3_evfux")
 
-[sub_resource type="Resource" id="Resource_g1xj0"]
+[sub_resource type="Resource" id="Resource_evfux"]
 script = ExtResource("1_df6tr")
 nivel = 7
 movimiento = ExtResource("4_0jy53")
 
-[sub_resource type="Resource" id="Resource_b2vqj"]
+[sub_resource type="Resource" id="Resource_0jy53"]
 script = ExtResource("1_df6tr")
 nivel = 10
 movimiento = ExtResource("5_8g5e8")
 
-[sub_resource type="Resource" id="Resource_2n06f"]
+[sub_resource type="Resource" id="Resource_8g5e8"]
 script = ExtResource("1_df6tr")
 nivel = 13
 movimiento = ExtResource("6_707cg")
 
-[sub_resource type="Resource" id="Resource_3rbl3"]
+[sub_resource type="Resource" id="Resource_707cg"]
 script = ExtResource("1_df6tr")
 nivel = 16
 movimiento = ExtResource("7_3kf65")
 
-[sub_resource type="Resource" id="Resource_inpni"]
+[sub_resource type="Resource" id="Resource_3kf65"]
 script = ExtResource("1_df6tr")
 nivel = 19
 movimiento = ExtResource("8_8hutf")
 
-[sub_resource type="Resource" id="Resource_jk8ki"]
+[sub_resource type="Resource" id="Resource_8hutf"]
 script = ExtResource("1_df6tr")
 nivel = 22
 movimiento = ExtResource("9_cwtka")
 
-[sub_resource type="Resource" id="Resource_07kjk"]
+[sub_resource type="Resource" id="Resource_cwtka"]
 script = ExtResource("1_df6tr")
 nivel = 25
 movimiento = ExtResource("10_g1ouj")
 
-[sub_resource type="Resource" id="Resource_nsw1p"]
+[sub_resource type="Resource" id="Resource_g1ouj"]
 script = ExtResource("1_df6tr")
 nivel = 28
 movimiento = ExtResource("11_7620p")
 
-[sub_resource type="Resource" id="Resource_b4cp0"]
+[sub_resource type="Resource" id="Resource_7620p"]
 script = ExtResource("1_df6tr")
 nivel = 31
 movimiento = ExtResource("12_qdkku")
 
-[sub_resource type="Resource" id="Resource_1jv0g"]
+[sub_resource type="Resource" id="Resource_qdkku"]
 script = ExtResource("1_df6tr")
 nivel = 34
 movimiento = ExtResource("13_fc5vg")
 
-[sub_resource type="Resource" id="Resource_dtcml"]
+[sub_resource type="Resource" id="Resource_fc5vg"]
 script = ExtResource("1_df6tr")
 nivel = 37
 movimiento = ExtResource("14_f3r73")
 
-[sub_resource type="Resource" id="Resource_dki2e"]
+[sub_resource type="Resource" id="Resource_f3r73"]
 script = ExtResource("1_df6tr")
 nivel = 40
 movimiento = ExtResource("15_mk2gd")
 
-[sub_resource type="Resource" id="Resource_1gax6"]
+[sub_resource type="Resource" id="Resource_mk2gd"]
 script = ExtResource("1_df6tr")
 nivel = 43
 movimiento = ExtResource("16_k4gks")
@@ -99,7 +99,7 @@ script = ExtResource("17_26lxq")
 id = "panpour"
 numero = 515
 nombre = "Panpour"
-tipos = ["agua"]
+tipos = PackedStringArray("agua")
 ataque = 53
 defensa = 48
 at_esp = 53
@@ -111,13 +111,20 @@ ratio_genero = 1
 evs_otorgados = {
 "velocidad": 1
 }
-aprende = Array[ExtResource("1_df6tr")]([SubResource("Resource_7sel8"), SubResource("Resource_c4mwl"), SubResource("Resource_g1xj0"), SubResource("Resource_b2vqj"), SubResource("Resource_2n06f"), SubResource("Resource_3rbl3"), SubResource("Resource_inpni"), SubResource("Resource_jk8ki"), SubResource("Resource_07kjk"), SubResource("Resource_nsw1p"), SubResource("Resource_b4cp0"), SubResource("Resource_1jv0g"), SubResource("Resource_dtcml"), SubResource("Resource_dki2e"), SubResource("Resource_1gax6")])
+evoluciones = Array[Dictionary]([{
+"especie": "simipour",
+"metodo": "piedra",
+"objeto": "water_stone"
+}])
+habilidades = PackedStringArray("gluttony")
+habilidad_oculta = "torrent"
+categoria = "Pokémon Salpicadura"
+altura = 0.6
+peso_kg = 13.5
+descripcion = "El agua acumulada en su mata de pelo es rica en nutrientes. Usa su cola para regar plantas con esa misma agua."
+aprende = Array[ExtResource("1_df6tr")]([SubResource("Resource_df6tr"), SubResource("Resource_w0trm"), SubResource("Resource_evfux"), SubResource("Resource_0jy53"), SubResource("Resource_8g5e8"), SubResource("Resource_707cg"), SubResource("Resource_3kf65"), SubResource("Resource_8hutf"), SubResource("Resource_cwtka"), SubResource("Resource_g1ouj"), SubResource("Resource_7620p"), SubResource("Resource_qdkku"), SubResource("Resource_fc5vg"), SubResource("Resource_f3r73"), SubResource("Resource_mk2gd")])
 sprite_frente = ExtResource("19_4edti")
 sprite_espalda = ExtResource("18_vnwy7")
 cuadros_frente = 38
 cuadros_espalda = 39
 fps_sprite = 7.92
-habilidades = PackedStringArray("Gula")
-habilidad_oculta = "Torrente"
-evoluciones = Array[Dictionary]([{"especie": "simipour", "metodo": "piedra", "condicion": "Piedra agua"}])
-evoluciona_a = "simipour"

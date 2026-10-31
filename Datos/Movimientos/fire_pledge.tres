@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_t3854"]
+
+[resource]
+script = ExtResource("1_t3854")
+id = "fire_pledge"
+nombre = "Voto Fuego"
+tipo = "fuego"
+categoria = "especial"
+poder = 50
+descripcion = "Ataca con columnas de fuego. Combinado con Voto Planta, crea un mar de llamas y aumenta su potencia."
+numero = 519
+banderas = PackedStringArray("metronome", "mirror", "nonsky", "pledgecombo", "protect")

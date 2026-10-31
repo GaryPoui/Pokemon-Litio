@@ -11,34 +11,29 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/extreme_speed.tres" id="10"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_hmq4l"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_k0fjn"]
 script = ExtResource("2")
-nivel = 34
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_aqatj"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_0usbp"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_fjx6l"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_glj8f"]
+script = ExtResource("2")
+nivel = 39
 movimiento = ExtResource("10")
 
 [resource]
@@ -47,8 +42,6 @@ id = "arcanine"
 numero = 59
 nombre = "Arcanine"
 tipos = PackedStringArray("fuego")
-habilidades = PackedStringArray("Intimidación", "Absorbefuego/Absorbe Fuego")
-habilidad_oculta = "Justiciero"
 ps = 90
 ataque = 110
 defensa = 80
@@ -59,11 +52,17 @@ exp_base = 194
 ratio_captura = 75
 ratio_genero = 2
 crecimiento = "slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5")])
+evs_otorgados = {
+"ataque": 2
+}
+habilidades = PackedStringArray("intimidate", "flash_fire")
+habilidad_oculta = "justified"
+categoria = "Pokémon Leyenda"
+altura = 1.9
+peso_kg = 155.0
+descripcion = "Un Pokémon muy admirado desde la antigüedad por su belleza. Corre ágilmente como si tuviera alas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_hmq4l"), SubResource("Resource_k0fjn"), SubResource("Resource_aqatj"), SubResource("Resource_0usbp"), SubResource("Resource_fjx6l"), SubResource("Resource_glj8f")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 9
 cuadros_espalda = 9
-fps_sprite = 10.0

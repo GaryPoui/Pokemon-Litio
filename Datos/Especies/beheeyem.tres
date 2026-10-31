@@ -23,107 +23,103 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/synchronoise.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/wonder_room.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_61o1j"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_k87ww"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_vlv0a"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_hoyvt"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_fbd1f"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_wyikf"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_tq3tc"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_dbhrb"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_f5ceg"]
 script = ExtResource("2")
 nivel = 18
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_rekw7"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_pxfk6"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_acqmg"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_hu7ca"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_oivrl"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_k1web"]
 script = ExtResource("2")
 nivel = 39
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_m7kol"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_ai62s"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_dt61b"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_k6mcq"]
 script = ExtResource("2")
 nivel = 58
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_19"]
+[sub_resource type="Resource" id="Resource_2qp1f"]
 script = ExtResource("2")
 nivel = 63
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_20"]
+[sub_resource type="Resource" id="Resource_pqrlx"]
 script = ExtResource("2")
 nivel = 68
 movimiento = ExtResource("22")
@@ -134,8 +130,6 @@ id = "beheeyem"
 numero = 606
 nombre = "Beheeyem"
 tipos = PackedStringArray("psiquico")
-habilidades = PackedStringArray("Telepatía", "Sincronía")
-habilidad_oculta = "Cálculo Final"
 ps = 75
 ataque = 75
 defensa = 75
@@ -144,11 +138,16 @@ def_esp = 95
 velocidad = 40
 exp_base = 170
 ratio_captura = 90
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"at_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18"), SubResource("Move_19"), SubResource("Move_20")])
+evs_otorgados = {
+"at_esp": 2
+}
+habilidades = PackedStringArray("telepathy", "synchronize")
+habilidad_oculta = "analytic"
+categoria = "Pokémon Cerebro"
+altura = 1.0
+peso_kg = 34.5
+descripcion = "Parece que se comunica haciendo brillar sus dedos tricolores, pero nadie ha conseguido descifrar aún su patrón."
+aprende = Array[ExtResource("2")]([SubResource("Resource_61o1j"), SubResource("Resource_k87ww"), SubResource("Resource_vlv0a"), SubResource("Resource_hoyvt"), SubResource("Resource_fbd1f"), SubResource("Resource_wyikf"), SubResource("Resource_tq3tc"), SubResource("Resource_dbhrb"), SubResource("Resource_f5ceg"), SubResource("Resource_rekw7"), SubResource("Resource_pxfk6"), SubResource("Resource_acqmg"), SubResource("Resource_hu7ca"), SubResource("Resource_oivrl"), SubResource("Resource_k1web"), SubResource("Resource_m7kol"), SubResource("Resource_ai62s"), SubResource("Resource_dt61b"), SubResource("Resource_k6mcq"), SubResource("Resource_2qp1f"), SubResource("Resource_pqrlx")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 52

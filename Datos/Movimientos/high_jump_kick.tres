@@ -10,3 +10,5 @@ tipo = "lucha"
 poder = 130
 precision = 90
 descripcion = "El usuario salta muy alto y da un rodillazo. Si falla, se hará daño."
+numero = 136
+banderas = PackedStringArray("contact", "gravity", "metronome", "mirror", "protect")

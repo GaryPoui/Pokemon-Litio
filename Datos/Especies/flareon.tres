@@ -19,75 +19,72 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fire_blast.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_o3bsx"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_ir68g"]
 script = ExtResource("2")
-nivel = 5
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_tec0i"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_cbs5v"]
+script = ExtResource("2")
+nivel = 8
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_ddgb4"]
 script = ExtResource("2")
-nivel = 9
+nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_hagpp"]
 script = ExtResource("2")
-nivel = 13
+nivel = 22
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 17
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 21
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 25
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_gn71f"]
 script = ExtResource("2")
 nivel = 29
-movimiento = ExtResource("14")
+movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_0qv7u"]
 script = ExtResource("2")
-nivel = 33
-movimiento = ExtResource("15")
+nivel = 36
+movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_lx31m"]
 script = ExtResource("2")
-nivel = 37
-movimiento = ExtResource("16")
+nivel = 43
+movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_eb2iv"]
 script = ExtResource("2")
-nivel = 41
+nivel = 50
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_xutwi"]
 script = ExtResource("2")
-nivel = 45
+nivel = 57
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Resource_twks7"]
+script = ExtResource("2")
+nivel = 64
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_wif1k"]
+script = ExtResource("2")
+nivel = 71
 movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Resource_qdhsx"]
+script = ExtResource("2")
+nivel = 78
+movimiento = ExtResource("16")
 
 [resource]
 script = ExtResource("1")
@@ -95,8 +92,6 @@ id = "flareon"
 numero = 136
 nombre = "Flareon"
 tipos = PackedStringArray("fuego")
-habilidades = PackedStringArray("Absorbefuego/Absorbe Fuego")
-habilidad_oculta = "Agallas"
 ps = 65
 ataque = 130
 defensa = 60
@@ -104,12 +99,17 @@ at_esp = 95
 def_esp = 110
 velocidad = 65
 exp_base = 184
-ratio_captura = 45
 ratio_genero = 1
-crecimiento = "medium"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+evs_otorgados = {
+"ataque": 2
+}
+habilidades = PackedStringArray("flash_fire")
+habilidad_oculta = "guts"
+categoria = "Pokémon Llama"
+altura = 0.9
+peso_kg = 25.0
+descripcion = "Almacena llamas en su cuerpo, que alcanza una temperatura de 900 °C antes de un combate."
+aprende = Array[ExtResource("2")]([SubResource("Resource_o3bsx"), SubResource("Resource_ir68g"), SubResource("Resource_tec0i"), SubResource("Resource_cbs5v"), SubResource("Resource_ddgb4"), SubResource("Resource_hagpp"), SubResource("Resource_gn71f"), SubResource("Resource_0qv7u"), SubResource("Resource_lx31m"), SubResource("Resource_eb2iv"), SubResource("Resource_xutwi"), SubResource("Resource_twks7"), SubResource("Resource_wif1k"), SubResource("Resource_qdhsx")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 108

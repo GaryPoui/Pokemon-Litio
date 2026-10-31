@@ -10,3 +10,5 @@ categoria = "estado"
 pp = 15
 meta = "unique"
 descripcion = "Lanza una onda psíquica que hace que la habilidad del objetivo pase a ser Simple."
+numero = 493
+banderas = PackedStringArray("allyanim", "metronome", "mirror", "protect", "reflectable")

@@ -12,37 +12,33 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/quiver_dance.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/petal_dance.tres" id="11"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_c0jbm"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_h3crm"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
+movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_h3oxm"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_km5dh"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_jhbc8"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_veb3q"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_uewf2"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("11")
@@ -53,8 +49,6 @@ id = "lilligant"
 numero = 549
 nombre = "Lilligant"
 tipos = PackedStringArray("planta")
-habilidades = PackedStringArray("Clorofila", "Ritmo Propio")
-habilidad_oculta = "Defensa Hoja"
 ps = 70
 ataque = 60
 defensa = 75
@@ -64,10 +58,16 @@ velocidad = 90
 exp_base = 168
 ratio_captura = 75
 ratio_genero = 8
-crecimiento = "medium"
-evs_otorgados = {"at_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6")])
+evs_otorgados = {
+"at_esp": 2
+}
+habilidades = PackedStringArray("chlorophyll", "own_tempo")
+habilidad_oculta = "leaf_guard"
+categoria = "Pokémon Adornofloral"
+altura = 1.1
+peso_kg = 16.3
+descripcion = "El aroma de la flor de su tocado relaja a cualquiera a su alrededor. Hay que cuidarle mucho para que no se marchite."
+aprende = Array[ExtResource("2")]([SubResource("Resource_c0jbm"), SubResource("Resource_h3crm"), SubResource("Resource_h3oxm"), SubResource("Resource_km5dh"), SubResource("Resource_jhbc8"), SubResource("Resource_veb3q"), SubResource("Resource_uewf2")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 67

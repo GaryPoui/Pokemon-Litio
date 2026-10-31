@@ -9,3 +9,5 @@ nombre = "Patada Baja"
 tipo = "lucha"
 pp = 20
 descripcion = "Patada baja que derriba al oponente. Cuanto más pesa el objetivo, más daño le causa."
+numero = 67
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

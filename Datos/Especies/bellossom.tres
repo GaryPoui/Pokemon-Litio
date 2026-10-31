@@ -12,37 +12,32 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/magical_leaf.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="11"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_t2d2m"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_17lnj"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_26mo2"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_od1wj"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_7tywq"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_eipa2"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_jxewg"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("11")
@@ -53,21 +48,23 @@ id = "bellossom"
 numero = 182
 nombre = "Bellossom"
 tipos = PackedStringArray("planta")
-habilidades = PackedStringArray("Clorofila")
-habilidad_oculta = "Alma Sanadora/Alma Cura"
 ps = 75
 ataque = 80
-defensa = 95
+defensa = 85
 at_esp = 90
 def_esp = 100
-velocidad = 50
-exp_base = 216
-ratio_captura = 45
-ratio_genero = 4
+exp_base = 221
 crecimiento = "medium-slow"
-evs_otorgados = {"def_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6")])
+evs_otorgados = {
+"def_esp": 3
+}
+habilidades = PackedStringArray("chlorophyll")
+habilidad_oculta = "healer"
+categoria = "Pokémon Flor"
+altura = 0.4
+peso_kg = 5.8
+descripcion = "Los Bellossom suelen reunirse para bailar. Dicen que sus danzas son un ritual para invocar al sol."
+aprende = Array[ExtResource("2")]([SubResource("Resource_t2d2m"), SubResource("Resource_17lnj"), SubResource("Resource_26mo2"), SubResource("Resource_od1wj"), SubResource("Resource_7tywq"), SubResource("Resource_eipa2"), SubResource("Resource_jxewg")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 53

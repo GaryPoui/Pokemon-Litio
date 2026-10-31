@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_hfeyy"]
+
+[resource]
+script = ExtResource("1_hfeyy")
+id = "justified"
+nombre = "Justiciero"
+descripcion = "Sube el Ataque al recibir uno de tipo Siniestro."

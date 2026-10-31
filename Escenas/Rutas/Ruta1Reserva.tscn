@@ -120,6 +120,7 @@ script = ExtResource("12_q2c5o")
 texto = "RUTA 1 · RESERVA ECOLÓGICA COSTANERA SUR
 
 Zona protegida: los Pokémon no se combaten, solo se atrapan. Al norte: Puerto Madero."
+mostrar_encuentros = true
 
 [node name="CartelCoipos" type="Node2D" parent="." unique_id=707584749]
 position = Vector2(184, 472)

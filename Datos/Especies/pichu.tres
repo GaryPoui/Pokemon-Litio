@@ -11,32 +11,30 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sweet_kiss.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="10"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_lsixl"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_flmg4"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_fwywl"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_0wv7h"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_m55rs"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_t3txp"]
 script = ExtResource("2")
 nivel = 18
 movimiento = ExtResource("10")
@@ -47,8 +45,6 @@ id = "pichu"
 numero = 172
 nombre = "Pichu"
 tipos = PackedStringArray("electrico")
-habilidades = PackedStringArray("Electricidad Estática")
-habilidad_oculta = "Pararrayos"
 ps = 20
 ataque = 40
 defensa = 15
@@ -57,12 +53,21 @@ def_esp = 35
 velocidad = 60
 exp_base = 41
 ratio_captura = 190
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "pikachu", "metodo": "amistad", "condicion": "Amistad + nivel"}])
-evoluciona_a = "pikachu"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5")])
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciones = Array[Dictionary]([{
+"amistad": 220,
+"especie": "pikachu",
+"metodo": "amistad"
+}])
+habilidades = PackedStringArray("static")
+habilidad_oculta = "lightning_rod"
+categoria = "Pokémon Ratoncito"
+altura = 0.3
+peso_kg = 2.0
+descripcion = "Cuando juegan, se tocan las colas y emiten chispas. Al parecer, es una prueba de valor."
+aprende = Array[ExtResource("2")]([SubResource("Resource_lsixl"), SubResource("Resource_flmg4"), SubResource("Resource_fwywl"), SubResource("Resource_0wv7h"), SubResource("Resource_m55rs"), SubResource("Resource_t3txp")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 57

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://b5ah2qju5upf4"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_bkvtf"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_bkvtf"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/poison_gas.tres" id="2_a6y7k"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="3_nfxvk"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/recycle.tres" id="4_c867h"]
@@ -17,84 +17,84 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="15_gtruk"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/gunk_shot.tres" id="16_iyap7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="17_xm1oi"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_jkwdd"]
-[ext_resource type="Texture2D" uid="uid://bynyersft1ghk" path="res://Assets/Pokemones/batalla/trubbish_espalda.png" id="19_mff6a"]
-[ext_resource type="Texture2D" uid="uid://7ivjcdr1wq7o" path="res://Assets/Pokemones/batalla/trubbish_frente.png" id="20_6tdl1"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_jkwdd"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/trubbish_espalda.png" id="19_mff6a"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/trubbish_frente.png" id="20_6tdl1"]
 
-[sub_resource type="Resource" id="Resource_ino2t"]
+[sub_resource type="Resource" id="Resource_bkvtf"]
 script = ExtResource("1_bkvtf")
 movimiento = ExtResource("2_a6y7k")
 
-[sub_resource type="Resource" id="Resource_xmenb"]
+[sub_resource type="Resource" id="Resource_a6y7k"]
 script = ExtResource("1_bkvtf")
 movimiento = ExtResource("3_nfxvk")
 
-[sub_resource type="Resource" id="Resource_iang0"]
+[sub_resource type="Resource" id="Resource_nfxvk"]
 script = ExtResource("1_bkvtf")
 nivel = 3
 movimiento = ExtResource("4_c867h")
 
-[sub_resource type="Resource" id="Resource_huve6"]
+[sub_resource type="Resource" id="Resource_c867h"]
 script = ExtResource("1_bkvtf")
 nivel = 7
 movimiento = ExtResource("5_ew2w0")
 
-[sub_resource type="Resource" id="Resource_b4jym"]
+[sub_resource type="Resource" id="Resource_ew2w0"]
 script = ExtResource("1_bkvtf")
 nivel = 12
 movimiento = ExtResource("6_r1kyx")
 
-[sub_resource type="Resource" id="Resource_h5ka2"]
+[sub_resource type="Resource" id="Resource_r1kyx"]
 script = ExtResource("1_bkvtf")
 nivel = 14
 movimiento = ExtResource("7_0b8ij")
 
-[sub_resource type="Resource" id="Resource_u6bjq"]
+[sub_resource type="Resource" id="Resource_0b8ij"]
 script = ExtResource("1_bkvtf")
 nivel = 18
 movimiento = ExtResource("8_jt4we")
 
-[sub_resource type="Resource" id="Resource_i28p7"]
+[sub_resource type="Resource" id="Resource_jt4we"]
 script = ExtResource("1_bkvtf")
 nivel = 23
 movimiento = ExtResource("9_4klm8")
 
-[sub_resource type="Resource" id="Resource_8vo6y"]
+[sub_resource type="Resource" id="Resource_4klm8"]
 script = ExtResource("1_bkvtf")
 nivel = 23
 movimiento = ExtResource("10_2681k")
 
-[sub_resource type="Resource" id="Resource_j0tpn"]
+[sub_resource type="Resource" id="Resource_2681k"]
 script = ExtResource("1_bkvtf")
 nivel = 25
 movimiento = ExtResource("11_kpoet")
 
-[sub_resource type="Resource" id="Resource_lbvti"]
+[sub_resource type="Resource" id="Resource_kpoet"]
 script = ExtResource("1_bkvtf")
 nivel = 29
 movimiento = ExtResource("12_6vn7g")
 
-[sub_resource type="Resource" id="Resource_llluf"]
+[sub_resource type="Resource" id="Resource_6vn7g"]
 script = ExtResource("1_bkvtf")
 nivel = 34
 movimiento = ExtResource("13_6yoas")
 
-[sub_resource type="Resource" id="Resource_26lge"]
+[sub_resource type="Resource" id="Resource_6yoas"]
 script = ExtResource("1_bkvtf")
 nivel = 36
 movimiento = ExtResource("14_sfmpj")
 
-[sub_resource type="Resource" id="Resource_mhilo"]
+[sub_resource type="Resource" id="Resource_sfmpj"]
 script = ExtResource("1_bkvtf")
 nivel = 40
 movimiento = ExtResource("15_gtruk")
 
-[sub_resource type="Resource" id="Resource_m32eo"]
+[sub_resource type="Resource" id="Resource_gtruk"]
 script = ExtResource("1_bkvtf")
 nivel = 45
 movimiento = ExtResource("16_iyap7")
 
-[sub_resource type="Resource" id="Resource_gkb2l"]
+[sub_resource type="Resource" id="Resource_iyap7"]
 script = ExtResource("1_bkvtf")
 nivel = 47
 movimiento = ExtResource("17_xm1oi")
@@ -104,7 +104,7 @@ script = ExtResource("18_jkwdd")
 id = "trubbish"
 numero = 568
 nombre = "Trubbish"
-tipos = ["veneno"]
+tipos = PackedStringArray("veneno")
 defensa = 62
 at_esp = 40
 def_esp = 62
@@ -116,11 +116,19 @@ evs_otorgados = {
 }
 evoluciona_a = "garbodor"
 nivel_evolucion = 36
-aprende = Array[ExtResource("1_bkvtf")]([SubResource("Resource_ino2t"), SubResource("Resource_xmenb"), SubResource("Resource_iang0"), SubResource("Resource_huve6"), SubResource("Resource_b4jym"), SubResource("Resource_h5ka2"), SubResource("Resource_u6bjq"), SubResource("Resource_i28p7"), SubResource("Resource_8vo6y"), SubResource("Resource_j0tpn"), SubResource("Resource_lbvti"), SubResource("Resource_llluf"), SubResource("Resource_26lge"), SubResource("Resource_mhilo"), SubResource("Resource_m32eo"), SubResource("Resource_gkb2l")])
+evoluciones = Array[Dictionary]([{
+"especie": "garbodor",
+"metodo": "nivel",
+"nivel": 36
+}])
+habilidades = PackedStringArray("stench", "sticky_hold")
+habilidad_oculta = "aftermath"
+categoria = "Pokémon Bolsa Basura"
+altura = 0.6
+peso_kg = 31.0
+descripcion = "Pokémon nacido de la reacción química entre una bolsa de basura y residuos industriales."
+aprende = Array[ExtResource("1_bkvtf")]([SubResource("Resource_bkvtf"), SubResource("Resource_a6y7k"), SubResource("Resource_nfxvk"), SubResource("Resource_c867h"), SubResource("Resource_ew2w0"), SubResource("Resource_r1kyx"), SubResource("Resource_0b8ij"), SubResource("Resource_jt4we"), SubResource("Resource_4klm8"), SubResource("Resource_2681k"), SubResource("Resource_kpoet"), SubResource("Resource_6vn7g"), SubResource("Resource_6yoas"), SubResource("Resource_sfmpj"), SubResource("Resource_gtruk"), SubResource("Resource_iyap7")])
 sprite_frente = ExtResource("20_6tdl1")
 sprite_espalda = ExtResource("19_mff6a")
 cuadros_frente = 102
 cuadros_espalda = 102
-habilidades = PackedStringArray("Hedor", "Viscosidad")
-habilidad_oculta = "Secuela/Detonación"
-evoluciones = Array[Dictionary]([{"especie": "garbodor", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

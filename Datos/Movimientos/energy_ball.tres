@@ -15,3 +15,5 @@ cambios_stats = {
 "def_esp": -1
 }
 prob_stat = 10
+numero = 412
+banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")

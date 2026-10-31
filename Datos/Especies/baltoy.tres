@@ -22,89 +22,88 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/heal_block.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_pv833"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_771q8"]
 script = ExtResource("2")
 nivel = 4
-movimiento = ExtResource("7")
+movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_bi0hi"]
 script = ExtResource("2")
 nivel = 7
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_6et73"]
+script = ExtResource("2")
+nivel = 11
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_h1bll"]
 script = ExtResource("2")
-nivel = 10
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 13
+nivel = 15
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_mhbar"]
 script = ExtResource("2")
-nivel = 17
-movimiento = ExtResource("11")
+nivel = 18
+movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_e4up8"]
 script = ExtResource("2")
 nivel = 21
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_i1yxb"]
 script = ExtResource("2")
-nivel = 28
-movimiento = ExtResource("14")
+nivel = 26
+movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_anrxr"]
 script = ExtResource("2")
 nivel = 31
-movimiento = ExtResource("15")
+movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_56w2a"]
 script = ExtResource("2")
 nivel = 34
-movimiento = ExtResource("16")
-
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 34
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_13"]
-script = ExtResource("2")
-nivel = 37
-movimiento = ExtResource("18")
-
-[sub_resource type="Resource" id="Move_14"]
-script = ExtResource("2")
-nivel = 41
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_ldvyj"]
 script = ExtResource("2")
-nivel = 45
+nivel = 37
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Resource_2id0q"]
+script = ExtResource("2")
+nivel = 43
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_7jsqi"]
+script = ExtResource("2")
+nivel = 48
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Resource_d25nn"]
+script = ExtResource("2")
+nivel = 48
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Resource_5wnbx"]
+script = ExtResource("2")
+nivel = 51
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Resource_hkjwl"]
+script = ExtResource("2")
+nivel = 54
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_v8y3a"]
 script = ExtResource("2")
-nivel = 49
+nivel = 60
 movimiento = ExtResource("21")
 
 [resource]
@@ -113,8 +112,6 @@ id = "baltoy"
 numero = 343
 nombre = "Baltoy"
 tipos = PackedStringArray("tierra", "psiquico")
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
 ps = 40
 ataque = 40
 defensa = 55
@@ -124,12 +121,22 @@ velocidad = 55
 exp_base = 60
 ratio_captura = 255
 ratio_genero = -1
-crecimiento = "medium"
-evs_otorgados = {"def_esp": 1}
-evoluciones = Array[Dictionary]([{"especie": "claydol", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])
+evs_otorgados = {
+"def_esp": 1
+}
 evoluciona_a = "claydol"
 nivel_evolucion = 36
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evoluciones = Array[Dictionary]([{
+"especie": "claydol",
+"metodo": "nivel",
+"nivel": 36
+}])
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Muñeca Barro"
+altura = 0.5
+peso_kg = 21.5
+descripcion = "Se mueve girando sobre su eje. También se le puede ver girando cabeza abajo."
+aprende = Array[ExtResource("2")]([SubResource("Resource_pv833"), SubResource("Resource_771q8"), SubResource("Resource_bi0hi"), SubResource("Resource_6et73"), SubResource("Resource_h1bll"), SubResource("Resource_mhbar"), SubResource("Resource_e4up8"), SubResource("Resource_i1yxb"), SubResource("Resource_anrxr"), SubResource("Resource_56w2a"), SubResource("Resource_ldvyj"), SubResource("Resource_2id0q"), SubResource("Resource_7jsqi"), SubResource("Resource_d25nn"), SubResource("Resource_5wnbx"), SubResource("Resource_hkjwl"), SubResource("Resource_v8y3a")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 40

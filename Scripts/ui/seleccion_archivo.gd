@@ -7,7 +7,7 @@ const DIBUJO :=preload("res://Scripts/ui/dibujo_archivo.gd")
 const ANCHO_CARTA:= 76
 const ALTO_CARTA :=136
 const X_CARTAS:= [7, 90, 173]
-const Y_CARTA :=18
+const Y_CARTA :=20
 const ALZADA:= 3
 const ICONOS_STAT :=["pokedex", "vistos", "tiempo", "pasos", "trinkets"]
 
@@ -44,7 +44,7 @@ func _ready() -> void:
 		dibujos.append(d)
 		var hoja:= Panel.new()
 		hoja.position= Vector2(4, 72)
-		hoja.size =Vector2(68, 60)
+		hoja.size =Vector2(68, 58)
 		hoja.add_theme_stylebox_override("panel", EstiloUI.hoja())
 		c.add_child(hoja)
 		var ls:= []
@@ -56,7 +56,8 @@ func _ready() -> void:
 			ic.texture_filter= CanvasItem.TEXTURE_FILTER_NEAREST
 			hoja.add_child(ic)
 			ics.append(ic)
-			var l:= EstiloUI.nuevo_label("", 8, Vector2(13, 1+ k* 11))
+			var l:= EstiloUI.nuevo_label("", 8, Vector2(13, k* 11))
+			EstiloUI.fuente_batalla(l)
 			hoja.add_child(l)
 			ls.append(l)
 		lineas.append(ls)
@@ -93,7 +94,9 @@ func refrescar() -> void:
 			var textos:= ["", "NUEVA", "PARTIDA", "", ""]
 			for k in 5:
 				ls[k].text= textos[k]
-				ls[k].position.x =14
+				ls[k].position.x =0
+				ls[k].size.x= 68
+				ls[k].horizontal_alignment= HORIZONTAL_ALIGNMENT_CENTER
 		else:
 			ls[0].text= "%d/%d" % [r["capturados"], r["total"]]
 			ls[1].text ="%d" % r["vistos"]
@@ -102,6 +105,8 @@ func refrescar() -> void:
 			ls[4].text= "%d/%d" % [r["trinkets"], r["total_trinkets"]]
 			for l in ls:
 				l.position.x= 13
+				l.size.x =54
+				l.horizontal_alignment= HORIZONTAL_ALIGNMENT_LEFT
 	_pintar()
 
 static func texto_tiempo(s: float) -> String:

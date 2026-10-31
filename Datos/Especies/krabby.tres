@@ -20,77 +20,75 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/crabhammer.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_to8dx"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_jgp4e"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_g0k2r"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_1v0ay"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_6ssjd"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_bp47s"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_njs7v"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_oxofk"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_1inmm"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_nk5p5"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_uuuf6"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_honki"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_3lyqh"]
 script = ExtResource("2")
 nivel = 39
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_2gew1"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_sdxe6"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("19")
@@ -101,23 +99,30 @@ id = "krabby"
 numero = 98
 nombre = "Krabby"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Corte Fuerte", "Caparazón")
-habilidad_oculta = "Potencia Bruta"
 ps = 30
 ataque = 105
 defensa = 90
 at_esp = 25
 def_esp = 25
-velocidad = 50
 exp_base = 65
 ratio_captura = 225
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "kingler", "metodo": "nivel", "condicion": "Nivel 28", "nivel": 28}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "kingler"
 nivel_evolucion = 28
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evoluciones = Array[Dictionary]([{
+"especie": "kingler",
+"metodo": "nivel",
+"nivel": 28
+}])
+habilidades = PackedStringArray("hyper_cutter", "shell_armor")
+habilidad_oculta = "sheer_force"
+categoria = "Pokémon Cangrejo"
+altura = 0.4
+peso_kg = 6.5
+descripcion = "Ante el peligro, se camufla con las burbujas que desprende su boca, para parecer más grande."
+aprende = Array[ExtResource("2")]([SubResource("Resource_to8dx"), SubResource("Resource_jgp4e"), SubResource("Resource_g0k2r"), SubResource("Resource_1v0ay"), SubResource("Resource_6ssjd"), SubResource("Resource_bp47s"), SubResource("Resource_njs7v"), SubResource("Resource_oxofk"), SubResource("Resource_1inmm"), SubResource("Resource_nk5p5"), SubResource("Resource_uuuf6"), SubResource("Resource_honki"), SubResource("Resource_3lyqh"), SubResource("Resource_2gew1"), SubResource("Resource_sdxe6")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 18

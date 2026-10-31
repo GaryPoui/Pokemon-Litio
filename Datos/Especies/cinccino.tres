@@ -11,35 +11,29 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_slap.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/helping_hand.tres" id="10"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_rq1av"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_t1g8m"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
+movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_ijh82"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_ulhje"]
+script = ExtResource("2")
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_maihi"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_v75u5"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("10")
+movimiento = ExtResource("7")
 
 [resource]
 script = ExtResource("1")
@@ -47,8 +41,6 @@ id = "cinccino"
 numero = 573
 nombre = "Cinccino"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Gran Encanto", "Experto")
-habilidad_oculta = "Encadenado"
 ps = 75
 ataque = 95
 defensa = 60
@@ -59,9 +51,16 @@ exp_base = 165
 ratio_captura = 60
 ratio_genero = 6
 crecimiento = "fast"
-evs_otorgados = {"velocidad": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5")])
+evs_otorgados = {
+"velocidad": 2
+}
+habilidades = PackedStringArray("cute_charm", "technician")
+habilidad_oculta = "skill_link"
+categoria = "Pokémon Estola"
+altura = 0.5
+peso_kg = 7.5
+descripcion = "El pelo que cubre su cuerpo proporciona una agradable sensación al tocarlo. No acumula ni polvo ni electricidad estática."
+aprende = Array[ExtResource("2")]([SubResource("Resource_rq1av"), SubResource("Resource_t1g8m"), SubResource("Resource_ijh82"), SubResource("Resource_ulhje"), SubResource("Resource_maihi"), SubResource("Resource_v75u5")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 59

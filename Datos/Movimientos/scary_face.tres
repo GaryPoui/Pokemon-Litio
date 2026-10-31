@@ -12,3 +12,5 @@ descripcion = "Asusta al objetivo para reducir mucho su Velocidad."
 cambios_stats = {
 "velocidad": -2
 }
+numero = 184
+banderas = PackedStringArray("allyanim", "metronome", "mirror", "protect", "reflectable")

@@ -15,3 +15,5 @@ descripcion = "Baile frenético que aumenta mucho el Ataque."
 cambios_stats = {
 "ataque": 2
 }
+numero = 14
+banderas = PackedStringArray("dance", "metronome", "snatch")

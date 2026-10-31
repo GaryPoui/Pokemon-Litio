@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_tyovd"]
+
+[resource]
+script = ExtResource("1_tyovd")
+id = "struggle"
+nombre = "Forcejeo"
+poder = 50
+precision = 0
+pp = 1
+objetivo = "random-opponent"
+descripcion = "Solo se usa como último recurso al acabarse los PP. Hiere un poco al agresor."
+curacion = -25
+numero = 165
+banderas = PackedStringArray("contact", "failcopycat", "failencore", "failinstruct", "failmefirst", "failmimic", "noassist", "nosketch", "nosleeptalk", "protect")

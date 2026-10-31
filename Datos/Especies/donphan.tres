@@ -21,82 +21,76 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/giga_impact.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_5adxc"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_mqt7v"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_datg6"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_ir3gu"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_wnxqo"]
+script = ExtResource("2")
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_yphpq"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_icykw"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_ciy76"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ca6ol"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_cf17v"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_qpsvo"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_ay8ro"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_r1bwh"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_ov4ya"]
 script = ExtResource("2")
 nivel = 39
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_niqle"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_hfj0o"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("20")
@@ -107,23 +101,25 @@ id = "donphan"
 numero = 232
 nombre = "Donphan"
 tipos = PackedStringArray("tierra")
-habilidades = PackedStringArray("Robustez")
-habilidad_oculta = "Velo de Arena/Velo Arena"
 ps = 90
 ataque = 120
 defensa = 120
 at_esp = 60
 def_esp = 60
-velocidad = 50
 exp_base = 175
 ratio_captura = 60
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1, "defensa": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"ataque": 1,
+"defensa": 1
+}
+habilidades = PackedStringArray("sturdy")
+habilidad_oculta = "sand_veil"
+categoria = "Pokémon Coraza"
+altura = 1.1
+peso_kg = 120.0
+descripcion = "Tiene afilados y duros colmillos, y una gruesa piel. Su Placaje es tan fuerte que puede derribar una casa."
+aprende = Array[ExtResource("2")]([SubResource("Resource_5adxc"), SubResource("Resource_mqt7v"), SubResource("Resource_datg6"), SubResource("Resource_ir3gu"), SubResource("Resource_wnxqo"), SubResource("Resource_yphpq"), SubResource("Resource_icykw"), SubResource("Resource_ciy76"), SubResource("Resource_ca6ol"), SubResource("Resource_cf17v"), SubResource("Resource_qpsvo"), SubResource("Resource_ay8ro"), SubResource("Resource_r1bwh"), SubResource("Resource_ov4ya"), SubResource("Resource_niqle"), SubResource("Resource_hfj0o")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 64
 cuadros_espalda = 64
-fps_sprite = 10.0

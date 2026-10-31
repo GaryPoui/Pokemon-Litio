@@ -12,3 +12,5 @@ pp = 20
 meta = "ailment"
 descripcion = "Una ligera descarga que paraliza al objetivo si lo alcanza."
 estado = "paralysis"
+numero = 86
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")

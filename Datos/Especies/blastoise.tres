@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://b4pgjorkbxg8d"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_4ckd3"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_4ckd3"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="2_q2778"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flash_cannon.tres" id="3_g107t"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_kp754"]
@@ -16,91 +16,91 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/iron_defense.tres" id="14_14iax"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="15_us5xx"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="16_nchxr"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_7db61"]
-[ext_resource type="Texture2D" uid="uid://buyjiplx6c04d" path="res://Assets/Pokemones/batalla/blastoise_espalda.png" id="18_p1xou"]
-[ext_resource type="Texture2D" uid="uid://hds4nbu4gpgn" path="res://Assets/Pokemones/batalla/blastoise_frente.png" id="19_f7iam"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_7db61"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/blastoise_espalda.png" id="18_p1xou"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/blastoise_frente.png" id="19_f7iam"]
 
-[sub_resource type="Resource" id="Resource_hbm78"]
+[sub_resource type="Resource" id="Resource_4ckd3"]
 script = ExtResource("1_4ckd3")
 movimiento = ExtResource("2_q2778")
 
-[sub_resource type="Resource" id="Resource_gcslr"]
+[sub_resource type="Resource" id="Resource_q2778"]
 script = ExtResource("1_4ckd3")
 movimiento = ExtResource("3_g107t")
 
-[sub_resource type="Resource" id="Resource_lpy8n"]
+[sub_resource type="Resource" id="Resource_g107t"]
 script = ExtResource("1_4ckd3")
 movimiento = ExtResource("4_kp754")
 
-[sub_resource type="Resource" id="Resource_fsex8"]
+[sub_resource type="Resource" id="Resource_kp754"]
 script = ExtResource("1_4ckd3")
 movimiento = ExtResource("5_0m07y")
 
-[sub_resource type="Resource" id="Resource_7txca"]
+[sub_resource type="Resource" id="Resource_0m07y"]
 script = ExtResource("1_4ckd3")
 movimiento = ExtResource("6_b25i6")
 
-[sub_resource type="Resource" id="Resource_g5tdt"]
+[sub_resource type="Resource" id="Resource_b25i6"]
 script = ExtResource("1_4ckd3")
 nivel = 4
 movimiento = ExtResource("5_0m07y")
 
-[sub_resource type="Resource" id="Resource_su6c3"]
+[sub_resource type="Resource" id="Resource_ijf1x"]
 script = ExtResource("1_4ckd3")
 nivel = 7
 movimiento = ExtResource("2_q2778")
 
-[sub_resource type="Resource" id="Resource_x82ts"]
+[sub_resource type="Resource" id="Resource_a72r1"]
 script = ExtResource("1_4ckd3")
 nivel = 10
 movimiento = ExtResource("6_b25i6")
 
-[sub_resource type="Resource" id="Resource_mxlhj"]
+[sub_resource type="Resource" id="Resource_mfb34"]
 script = ExtResource("1_4ckd3")
 nivel = 13
 movimiento = ExtResource("7_ijf1x")
 
-[sub_resource type="Resource" id="Resource_3de52"]
+[sub_resource type="Resource" id="Resource_vh706"]
 script = ExtResource("1_4ckd3")
 nivel = 16
 movimiento = ExtResource("8_a72r1")
 
-[sub_resource type="Resource" id="Resource_edwa0"]
+[sub_resource type="Resource" id="Resource_detp2"]
 script = ExtResource("1_4ckd3")
 nivel = 20
 movimiento = ExtResource("9_mfb34")
 
-[sub_resource type="Resource" id="Resource_fa6a8"]
+[sub_resource type="Resource" id="Resource_3vur5"]
 script = ExtResource("1_4ckd3")
 nivel = 24
 movimiento = ExtResource("10_vh706")
 
-[sub_resource type="Resource" id="Resource_kvcy2"]
+[sub_resource type="Resource" id="Resource_fuxke"]
 script = ExtResource("1_4ckd3")
 nivel = 28
 movimiento = ExtResource("11_detp2")
 
-[sub_resource type="Resource" id="Resource_p0738"]
+[sub_resource type="Resource" id="Resource_14iax"]
 script = ExtResource("1_4ckd3")
 nivel = 32
 movimiento = ExtResource("12_3vur5")
 
-[sub_resource type="Resource" id="Resource_wagt6"]
+[sub_resource type="Resource" id="Resource_us5xx"]
 script = ExtResource("1_4ckd3")
 nivel = 39
 movimiento = ExtResource("13_fuxke")
 
-[sub_resource type="Resource" id="Resource_bh27s"]
+[sub_resource type="Resource" id="Resource_nchxr"]
 script = ExtResource("1_4ckd3")
 nivel = 46
 movimiento = ExtResource("14_14iax")
 
-[sub_resource type="Resource" id="Resource_ttqle"]
+[sub_resource type="Resource" id="Resource_7db61"]
 script = ExtResource("1_4ckd3")
 nivel = 53
 movimiento = ExtResource("15_us5xx")
 
-[sub_resource type="Resource" id="Resource_pk2m0"]
+[sub_resource type="Resource" id="Resource_p1xou"]
 script = ExtResource("1_4ckd3")
 nivel = 60
 movimiento = ExtResource("16_nchxr")
@@ -110,7 +110,7 @@ script = ExtResource("17_7db61")
 id = "blastoise"
 numero = 9
 nombre = "Blastoise"
-tipos = ["agua"]
+tipos = PackedStringArray("agua")
 ps = 79
 ataque = 83
 defensa = 100
@@ -123,12 +123,15 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "def_esp": 3
 }
-aprende = Array[ExtResource("1_4ckd3")]([SubResource("Resource_hbm78"), SubResource("Resource_gcslr"), SubResource("Resource_lpy8n"), SubResource("Resource_fsex8"), SubResource("Resource_7txca"), SubResource("Resource_g5tdt"), SubResource("Resource_su6c3"), SubResource("Resource_x82ts"), SubResource("Resource_mxlhj"), SubResource("Resource_3de52"), SubResource("Resource_edwa0"), SubResource("Resource_fa6a8"), SubResource("Resource_kvcy2"), SubResource("Resource_p0738"), SubResource("Resource_wagt6"), SubResource("Resource_bh27s"), SubResource("Resource_ttqle"), SubResource("Resource_pk2m0")])
+habilidades = PackedStringArray("torrent")
+habilidad_oculta = "rain_dish"
+categoria = "Pokémon Armazón"
+altura = 1.6
+peso_kg = 85.5
+descripcion = "Para acabar con su enemigo, lo aplasta con el peso de su cuerpo. En momentos de apuro, se esconde en el caparazón."
+aprende = Array[ExtResource("1_4ckd3")]([SubResource("Resource_4ckd3"), SubResource("Resource_q2778"), SubResource("Resource_g107t"), SubResource("Resource_kp754"), SubResource("Resource_0m07y"), SubResource("Resource_b25i6"), SubResource("Resource_ijf1x"), SubResource("Resource_a72r1"), SubResource("Resource_mfb34"), SubResource("Resource_vh706"), SubResource("Resource_detp2"), SubResource("Resource_3vur5"), SubResource("Resource_fuxke"), SubResource("Resource_14iax"), SubResource("Resource_us5xx"), SubResource("Resource_nchxr"), SubResource("Resource_7db61"), SubResource("Resource_p1xou")])
 sprite_frente = ExtResource("19_f7iam")
 sprite_espalda = ExtResource("18_p1xou")
 cuadros_frente = 143
 cuadros_espalda = 143
 fps_sprite = 11.85
-habilidades = PackedStringArray("Torrente")
-habilidad_oculta = "Curación Pluvial/Cura Lluvia"
-evoluciones = Array[Dictionary]([])

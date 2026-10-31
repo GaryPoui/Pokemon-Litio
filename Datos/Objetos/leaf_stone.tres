@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/leaf_stone.png" id="1_lcklq"]
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="2_vrnua"]
+
+[resource]
+script = ExtResource("2_vrnua")
+id = "leaf_stone"
+nombre = "Piedra Hoja"
+descripcion = "Curiosa piedra que hace evolucionar a determinadas especies de Pokémon. Tiene grabada una hoja."
+precio = 2100
+icono = ExtResource("1_lcklq")
+uso_especial = "evolucion"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_c3pyt"]
+
+[resource]
+script = ExtResource("1_c3pyt")
+id = "volt_tackle"
+nombre = "Placaje Eléctrico"
+tipo = "electrico"
+poder = 120
+pp = 15
+meta = "damage-ailment"
+descripcion = "Quien lo usa electrifica su cuerpo para luego atacar. Se hiere mucho a sí mismo, pero puede paralizar al objetivo."
+estado = "paralysis"
+prob_estado = 10
+drenaje = -33
+numero = 344
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

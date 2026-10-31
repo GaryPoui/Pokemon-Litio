@@ -13,3 +13,5 @@ pp = 5
 objetivo = "user-and-allies"
 meta = "unique"
 descripcion = "Cura todos los problemas de estado del equipo con un suave aroma."
+numero = 312
+banderas = PackedStringArray("distance", "metronome", "snatch")

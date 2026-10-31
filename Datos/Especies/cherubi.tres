@@ -16,57 +16,55 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/lucky_chant.tres" id="15"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_to6wm"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_uasuj"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_7upqr"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_0xwyl"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_rlisd"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_g0dil"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_bkkrr"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_l01ow"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ho8qb"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_2qf15"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_yea2q"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("15")
@@ -77,8 +75,6 @@ id = "cherubi"
 numero = 420
 nombre = "Cherubi"
 tipos = PackedStringArray("planta")
-habilidades = PackedStringArray("Clorofila")
-habilidad_oculta = ""
 ps = 45
 ataque = 35
 defensa = 45
@@ -87,13 +83,22 @@ def_esp = 53
 velocidad = 35
 exp_base = 55
 ratio_captura = 190
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"at_esp": 1}
-evoluciones = Array[Dictionary]([{"especie": "cherrim", "metodo": "nivel", "condicion": "Nivel 25", "nivel": 25}])
+evs_otorgados = {
+"at_esp": 1
+}
 evoluciona_a = "cherrim"
 nivel_evolucion = 25
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10")])
+evoluciones = Array[Dictionary]([{
+"especie": "cherrim",
+"metodo": "nivel",
+"nivel": 25
+}])
+habilidades = PackedStringArray("chlorophyll")
+categoria = "Pokémon Cereza"
+altura = 0.4
+peso_kg = 3.3
+descripcion = "Bajo la luz solar es rojo. La esfera pequeña pierde sus nutrientes y se seca para anunciar la evolución."
+aprende = Array[ExtResource("2")]([SubResource("Resource_to6wm"), SubResource("Resource_uasuj"), SubResource("Resource_7upqr"), SubResource("Resource_0xwyl"), SubResource("Resource_rlisd"), SubResource("Resource_g0dil"), SubResource("Resource_bkkrr"), SubResource("Resource_l01ow"), SubResource("Resource_ho8qb"), SubResource("Resource_2qf15"), SubResource("Resource_yea2q")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 92

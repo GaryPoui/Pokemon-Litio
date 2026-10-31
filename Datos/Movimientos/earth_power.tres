@@ -5,11 +5,15 @@
 [resource]
 script = ExtResource("1")
 id = "earth_power"
-nombre = "Tierra viva"
+nombre = "Tierra Viva"
 tipo = "tierra"
 categoria = "especial"
 poder = 90
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-lower"
+descripcion = "La tierra a los pies del objetivo erupciona violentamente. Puede disminuir la Defensa Especial del objetivo."
+cambios_stats = {
+"def_esp": -1
+}
+prob_stat = 10
+numero = 414
+banderas = PackedStringArray("metronome", "mirror", "nonsky", "protect")

@@ -11,9 +11,7 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/block.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thunder_wave.tres" id="11"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/rock_blast.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rest.tres" id="13"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/spark.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rock_slide.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/power_gem.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sandstorm.tres" id="17"]
@@ -23,110 +21,94 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/lock_on.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/zap_cannon.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_c03oh"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
+movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_wxc8w"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_320jy"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_wo5uy"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("10")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 4
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 8
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 11
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_a3rjy"]
 script = ExtResource("2")
-nivel = 15
-movimiento = ExtResource("11")
+movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_7y1q5"]
 script = ExtResource("2")
-nivel = 18
-movimiento = ExtResource("12")
+movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_r8i14"]
 script = ExtResource("2")
-nivel = 22
-movimiento = ExtResource("13")
+nivel = 7
+movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_rfg2e"]
+script = ExtResource("2")
+nivel = 13
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_u4xf7"]
+script = ExtResource("2")
+nivel = 19
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_2b12e"]
 script = ExtResource("2")
 nivel = 25
-movimiento = ExtResource("14")
+movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_fuxv3"]
 script = ExtResource("2")
-nivel = 29
+nivel = 31
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_ku5dg"]
 script = ExtResource("2")
-nivel = 32
-movimiento = ExtResource("16")
-
-[sub_resource type="Resource" id="Move_15"]
-script = ExtResource("2")
-nivel = 36
+nivel = 37
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_16"]
-script = ExtResource("2")
-nivel = 39
-movimiento = ExtResource("18")
-
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_ddqjf"]
 script = ExtResource("2")
 nivel = 43
-movimiento = ExtResource("19")
+movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_uu2l1"]
 script = ExtResource("2")
-nivel = 46
+nivel = 49
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Resource_gy4wv"]
+script = ExtResource("2")
+nivel = 55
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Resource_a7u5r"]
+script = ExtResource("2")
+nivel = 61
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_19"]
+[sub_resource type="Resource" id="Resource_arwon"]
 script = ExtResource("2")
-nivel = 50
+nivel = 67
+movimiento = ExtResource("22")
+
+[sub_resource type="Resource" id="Resource_w32ni"]
+script = ExtResource("2")
+nivel = 73
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_20"]
+[sub_resource type="Resource" id="Resource_tl5x3"]
 script = ExtResource("2")
-nivel = 50
-movimiento = ExtResource("22")
+nivel = 79
+movimiento = ExtResource("19")
 
 [resource]
 script = ExtResource("1")
@@ -134,8 +116,6 @@ id = "probopass"
 numero = 476
 nombre = "Probopass"
 tipos = PackedStringArray("roca", "acero")
-habilidades = PackedStringArray("Imán", "Robustez")
-habilidad_oculta = "Poder Arenoso/Poder Arena"
 ps = 60
 ataque = 55
 defensa = 145
@@ -144,11 +124,17 @@ def_esp = 150
 velocidad = 40
 exp_base = 184
 ratio_captura = 60
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"defensa": 1, "def_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18"), SubResource("Move_19"), SubResource("Move_20")])
+evs_otorgados = {
+"def_esp": 2,
+"defensa": 1
+}
+habilidades = PackedStringArray("sturdy", "magnet_pull")
+habilidad_oculta = "sand_force"
+categoria = "Pokémon Brújula"
+altura = 1.4
+peso_kg = 340.0
+descripcion = "Emana un fuerte magnetismo. Controla tres pequeñas unidades llamadas mininarices."
+aprende = Array[ExtResource("2")]([SubResource("Resource_c03oh"), SubResource("Resource_wxc8w"), SubResource("Resource_320jy"), SubResource("Resource_wo5uy"), SubResource("Resource_a3rjy"), SubResource("Resource_7y1q5"), SubResource("Resource_r8i14"), SubResource("Resource_rfg2e"), SubResource("Resource_u4xf7"), SubResource("Resource_2b12e"), SubResource("Resource_fuxv3"), SubResource("Resource_ku5dg"), SubResource("Resource_ddqjf"), SubResource("Resource_uu2l1"), SubResource("Resource_gy4wv"), SubResource("Resource_a7u5r"), SubResource("Resource_arwon"), SubResource("Resource_w32ni"), SubResource("Resource_tl5x3")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 122

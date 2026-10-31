@@ -10,3 +10,5 @@ tipo = "lucha"
 poder = 60
 prioridad = -4
 descripcion = "Ataque que produce el doble de daño si el usuario resulta herido en el mismo turno."
+numero = 279
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

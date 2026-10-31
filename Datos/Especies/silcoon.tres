@@ -6,12 +6,11 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/silcoon_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="5"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_wgd5i"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_5w6p1"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("5")
@@ -22,9 +21,6 @@ id = "silcoon"
 numero = 266
 nombre = "Silcoon"
 tipos = PackedStringArray("bicho")
-habilidades = PackedStringArray("Mudar")
-habilidad_oculta = ""
-ps = 50
 ataque = 35
 defensa = 55
 at_esp = 25
@@ -32,15 +28,24 @@ def_esp = 25
 velocidad = 15
 exp_base = 72
 ratio_captura = 120
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"defensa": 2}
-evoluciones = Array[Dictionary]([{"especie": "beautifly", "metodo": "nivel", "condicion": "Nivel 10", "nivel": 10}])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1")])
+evs_otorgados = {
+"defensa": 2
+}
+evoluciona_a = "beautifly"
+nivel_evolucion = 10
+evoluciones = Array[Dictionary]([{
+"especie": "beautifly",
+"metodo": "nivel",
+"nivel": 10
+}])
+habilidades = PackedStringArray("shed_skin")
+categoria = "Pokémon Capullo"
+altura = 0.6
+peso_kg = 10.0
+descripcion = "Se agarra con su seda a las ramas de un árbol y espera su evolución bebiendo agua de lluvia."
+aprende = Array[ExtResource("2")]([SubResource("Resource_wgd5i"), SubResource("Resource_5w6p1")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 52
 cuadros_espalda = 52
 fps_sprite = 8.51
-evoluciona_a = "beautifly"
-nivel_evolucion = 10

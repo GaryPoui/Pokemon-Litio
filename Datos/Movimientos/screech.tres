@@ -14,3 +14,5 @@ descripcion = "Alarido agudo que reduce mucho la Defensa del objetivo."
 cambios_stats = {
 "defensa": -2
 }
+numero = 103
+banderas = PackedStringArray("allyanim", "bypasssub", "metronome", "mirror", "protect", "reflectable", "sound")

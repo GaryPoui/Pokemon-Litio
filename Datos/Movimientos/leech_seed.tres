@@ -12,3 +12,5 @@ precision = 90
 meta = "ailment"
 descripcion = "Planta semillas que absorben PS del objetivo en cada turno y que le sirven para recuperarse."
 estado = "leech-seed"
+numero = 73
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")

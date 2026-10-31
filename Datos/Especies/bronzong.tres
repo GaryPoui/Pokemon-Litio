@@ -11,12 +11,10 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confuse_ray.tres" id="11"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/psywave.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/iron_defense.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/safeguard.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/future_sight.tres" id="16"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/metal_sound.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/block.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/gyro_ball.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/extrasensory.tres" id="20"]
@@ -24,109 +22,93 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/heal_block.tres" id="22"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/heavy_slam.tres" id="23"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_twin0"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_4ktpr"]
 script = ExtResource("2")
-nivel = 5
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_0khw5"]
 script = ExtResource("2")
-nivel = 9
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_tlgcs"]
 script = ExtResource("2")
-nivel = 11
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_xtaat"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_8jljd"]
+script = ExtResource("2")
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_7o878"]
+script = ExtResource("2")
+nivel = 7
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_3ltng"]
+script = ExtResource("2")
+nivel = 12
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_jsxyy"]
+script = ExtResource("2")
+nivel = 14
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 15
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_4f0qw"]
 script = ExtResource("2")
 nivel = 19
+movimiento = ExtResource("20")
+
+[sub_resource type="Resource" id="Resource_3amtb"]
+script = ExtResource("2")
+nivel = 26
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_n3am3"]
 script = ExtResource("2")
-nivel = 21
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 25
+nivel = 30
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
-script = ExtResource("2")
-nivel = 29
-movimiento = ExtResource("16")
-
-[sub_resource type="Resource" id="Move_14"]
-script = ExtResource("2")
-nivel = 31
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_tsmji"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_qqr55"]
 script = ExtResource("2")
-nivel = 36
+nivel = 38
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_mfiei"]
 script = ExtResource("2")
-nivel = 42
-movimiento = ExtResource("20")
+nivel = 43
+movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_8ftb2"]
 script = ExtResource("2")
-nivel = 46
+nivel = 50
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_e8cw7"]
+script = ExtResource("2")
+nivel = 61
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_19"]
+[sub_resource type="Resource" id="Resource_jmr3m"]
 script = ExtResource("2")
-nivel = 52
+nivel = 67
 movimiento = ExtResource("22")
 
-[sub_resource type="Resource" id="Move_20"]
+[sub_resource type="Resource" id="Resource_hnmn0"]
 script = ExtResource("2")
-nivel = 58
+nivel = 72
 movimiento = ExtResource("23")
 
 [resource]
@@ -135,8 +117,6 @@ id = "bronzong"
 numero = 437
 nombre = "Bronzong"
 tipos = PackedStringArray("acero", "psiquico")
-habilidades = PackedStringArray("Levitación", "Ignífugo")
-habilidad_oculta = "Metal Pesado"
 ps = 67
 ataque = 89
 defensa = 116
@@ -146,10 +126,17 @@ velocidad = 33
 exp_base = 175
 ratio_captura = 90
 ratio_genero = -1
-crecimiento = "medium"
-evs_otorgados = {"defensa": 1, "def_esp": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18"), SubResource("Move_19"), SubResource("Move_20")])
+evs_otorgados = {
+"def_esp": 1,
+"defensa": 1
+}
+habilidades = PackedStringArray("levitate", "heatproof")
+habilidad_oculta = "heavy_metal"
+categoria = "Pokémon Campana Bronce"
+altura = 1.3
+peso_kg = 187.0
+descripcion = "Desde antaño se adora a este Pokémon para que propicie lluvias abundantes. A veces se esconde bajo tierra."
+aprende = Array[ExtResource("2")]([SubResource("Resource_twin0"), SubResource("Resource_4ktpr"), SubResource("Resource_0khw5"), SubResource("Resource_tlgcs"), SubResource("Resource_xtaat"), SubResource("Resource_8jljd"), SubResource("Resource_7o878"), SubResource("Resource_3ltng"), SubResource("Resource_jsxyy"), SubResource("Resource_4f0qw"), SubResource("Resource_3amtb"), SubResource("Resource_n3am3"), SubResource("Resource_tsmji"), SubResource("Resource_qqr55"), SubResource("Resource_mfiei"), SubResource("Resource_8ftb2"), SubResource("Resource_e8cw7"), SubResource("Resource_jmr3m"), SubResource("Resource_hnmn0")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 54

@@ -5,11 +5,17 @@
 [resource]
 script = ExtResource("1")
 id = "magma_storm"
-nombre = "Lluvia ígnea"
+nombre = "Lluvia Ígnea"
 tipo = "fuego"
 categoria = "especial"
-poder = 100
+poder = 120
 precision = 75
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-ailment"
+descripcion = "El objetivo queda atrapado en una tormenta de fuego que dura de cuatro a cinco turnos."
+estado = "trap"
+prob_estado = 100
+numero = 463
+banderas = PackedStringArray("metronome", "mirror", "protect")
+turnos_min = 5
+turnos_max = 6

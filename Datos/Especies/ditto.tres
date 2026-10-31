@@ -6,9 +6,8 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ditto_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/transform.tres" id="5"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_5egg5"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
 [resource]
@@ -17,8 +16,6 @@ id = "ditto"
 numero = 132
 nombre = "Ditto"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Flexibilidad")
-habilidad_oculta = "Impostor"
 ps = 48
 ataque = 48
 defensa = 48
@@ -28,10 +25,16 @@ velocidad = 48
 exp_base = 101
 ratio_captura = 35
 ratio_genero = -1
-crecimiento = "medium"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0")])
+evs_otorgados = {
+"ps": 1
+}
+habilidades = PackedStringArray("limber")
+habilidad_oculta = "imposter"
+categoria = "Pokémon Transformación"
+altura = 0.3
+peso_kg = 4.0
+descripcion = "Puede alterar por completo su estructura celular para emular cualquier objeto que vea."
+aprende = Array[ExtResource("2")]([SubResource("Resource_5egg5")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 24

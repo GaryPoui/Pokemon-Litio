@@ -11,3 +11,5 @@ poder = 30
 precision = 90
 pp = 20
 descripcion = "El atacante rueda contra el objetivo durante cinco turnos, cada vez con mayor fuerza."
+numero = 205
+banderas = PackedStringArray("contact", "failinstruct", "metronome", "mirror", "noparentalbond", "protect")

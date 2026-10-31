@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_0llfg"]
+
+[resource]
+script = ExtResource("1_0llfg")
+id = "vital_spirit"
+nombre = "Espíritu Vital"
+descripcion = "Evita el quedarse dormido."

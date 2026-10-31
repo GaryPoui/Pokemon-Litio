@@ -5,6 +5,7 @@ const ESPECIES:= "res://Datos/Especies/"
 const MOVIMIENTOS :="res://Datos/Movimientos/"
 const OBJETOS:= "res://Datos/Objetos/"
 const TRINKETS :="res://Datos/Trinkets/"
+const HABILIDADES:= "res://Datos/Habilidades/"
 const PESOS:= "res://Datos/pesos.json"
 
 static var _pesos :={}
@@ -32,6 +33,11 @@ static func objeto(id: String) -> Objeto:
 
 static func trinket(id: String) -> Trinket:
 	return _cargar(TRINKETS, id) as Trinket
+
+static func habilidad(id: String) -> Habilidad:
+	if id== "":
+		return null
+	return _cargar(HABILIDADES, id) as Habilidad
 
 static func ids(carpeta: String) -> PackedStringArray:
 	var lista: PackedStringArray= []

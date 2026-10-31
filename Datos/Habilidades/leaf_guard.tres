@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_ld5od"]
+
+[resource]
+script = ExtResource("1_ld5od")
+id = "leaf_guard"
+nombre = "Defensa Hoja"
+descripcion = "Evita los problemas de estado si hace sol."

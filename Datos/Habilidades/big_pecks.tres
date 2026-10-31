@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_xrsxy"]
+
+[resource]
+script = ExtResource("1_xrsxy")
+id = "big_pecks"
+nombre = "Sacapecho"
+descripcion = "Protege de los ataques que bajan la Defensa."

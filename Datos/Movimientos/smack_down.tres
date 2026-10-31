@@ -12,3 +12,5 @@ pp = 15
 descripcion = "Ataca lanzando una piedra o un proyectil. Si el objetivo está en el aire, lo estrella contra el suelo."
 estado = "unknown"
 prob_estado = 100
+numero = 479
+banderas = PackedStringArray("metronome", "mirror", "nonsky", "protect")

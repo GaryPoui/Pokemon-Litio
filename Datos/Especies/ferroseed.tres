@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cuu4ymuc6xvjr"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_jq0mg"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_jq0mg"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="2_n3s76"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_04lqc"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rollout.tres" id="4_abtsm"]
@@ -16,79 +16,79 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/payback.tres" id="14_hcc7n"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flash_cannon.tres" id="15_6pul1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="16_baruf"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_imn7i"]
-[ext_resource type="Texture2D" uid="uid://c6dr50t4bl7r2" path="res://Assets/Pokemones/batalla/ferroseed_espalda.png" id="18_psxoj"]
-[ext_resource type="Texture2D" uid="uid://darbi8yenigi1" path="res://Assets/Pokemones/batalla/ferroseed_frente.png" id="19_yil38"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_imn7i"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ferroseed_espalda.png" id="18_psxoj"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ferroseed_frente.png" id="19_yil38"]
 
-[sub_resource type="Resource" id="Resource_unl1h"]
+[sub_resource type="Resource" id="Resource_jq0mg"]
 script = ExtResource("1_jq0mg")
 movimiento = ExtResource("2_n3s76")
 
-[sub_resource type="Resource" id="Resource_yiutv"]
+[sub_resource type="Resource" id="Resource_n3s76"]
 script = ExtResource("1_jq0mg")
 movimiento = ExtResource("3_04lqc")
 
-[sub_resource type="Resource" id="Resource_o2nc7"]
+[sub_resource type="Resource" id="Resource_04lqc"]
 script = ExtResource("1_jq0mg")
 nivel = 6
 movimiento = ExtResource("4_abtsm")
 
-[sub_resource type="Resource" id="Resource_oslfh"]
+[sub_resource type="Resource" id="Resource_abtsm"]
 script = ExtResource("1_jq0mg")
 nivel = 9
 movimiento = ExtResource("5_bj0ui")
 
-[sub_resource type="Resource" id="Resource_7gjve"]
+[sub_resource type="Resource" id="Resource_bj0ui"]
 script = ExtResource("1_jq0mg")
 nivel = 14
 movimiento = ExtResource("6_bml6n")
 
-[sub_resource type="Resource" id="Resource_kb7bi"]
+[sub_resource type="Resource" id="Resource_bml6n"]
 script = ExtResource("1_jq0mg")
 nivel = 18
 movimiento = ExtResource("7_8rjfa")
 
-[sub_resource type="Resource" id="Resource_mjurh"]
+[sub_resource type="Resource" id="Resource_8rjfa"]
 script = ExtResource("1_jq0mg")
 nivel = 21
 movimiento = ExtResource("8_mhj1o")
 
-[sub_resource type="Resource" id="Resource_w8efs"]
+[sub_resource type="Resource" id="Resource_mhj1o"]
 script = ExtResource("1_jq0mg")
 nivel = 26
 movimiento = ExtResource("9_o5jp6")
 
-[sub_resource type="Resource" id="Resource_03qt5"]
+[sub_resource type="Resource" id="Resource_o5jp6"]
 script = ExtResource("1_jq0mg")
 nivel = 30
 movimiento = ExtResource("10_qtp8w")
 
-[sub_resource type="Resource" id="Resource_0rxm3"]
+[sub_resource type="Resource" id="Resource_qtp8w"]
 script = ExtResource("1_jq0mg")
 nivel = 35
 movimiento = ExtResource("11_acaoe")
 
-[sub_resource type="Resource" id="Resource_ajq1j"]
+[sub_resource type="Resource" id="Resource_acaoe"]
 script = ExtResource("1_jq0mg")
 nivel = 38
 movimiento = ExtResource("12_j06ei")
 
-[sub_resource type="Resource" id="Resource_0jwuq"]
+[sub_resource type="Resource" id="Resource_j06ei"]
 script = ExtResource("1_jq0mg")
 nivel = 43
 movimiento = ExtResource("13_marrx")
 
-[sub_resource type="Resource" id="Resource_l4rbd"]
+[sub_resource type="Resource" id="Resource_marrx"]
 script = ExtResource("1_jq0mg")
 nivel = 47
 movimiento = ExtResource("14_hcc7n")
 
-[sub_resource type="Resource" id="Resource_yrvx1"]
+[sub_resource type="Resource" id="Resource_hcc7n"]
 script = ExtResource("1_jq0mg")
 nivel = 52
 movimiento = ExtResource("15_6pul1")
 
-[sub_resource type="Resource" id="Resource_6fsu8"]
+[sub_resource type="Resource" id="Resource_6pul1"]
 script = ExtResource("1_jq0mg")
 nivel = 55
 movimiento = ExtResource("16_baruf")
@@ -98,7 +98,7 @@ script = ExtResource("17_imn7i")
 id = "ferroseed"
 numero = 597
 nombre = "Ferroseed"
-tipos = ["planta", "acero"]
+tipos = PackedStringArray("planta", "acero")
 ps = 44
 defensa = 91
 at_esp = 24
@@ -111,12 +111,19 @@ evs_otorgados = {
 }
 evoluciona_a = "ferrothorn"
 nivel_evolucion = 40
-aprende = Array[ExtResource("1_jq0mg")]([SubResource("Resource_unl1h"), SubResource("Resource_yiutv"), SubResource("Resource_o2nc7"), SubResource("Resource_oslfh"), SubResource("Resource_7gjve"), SubResource("Resource_kb7bi"), SubResource("Resource_mjurh"), SubResource("Resource_w8efs"), SubResource("Resource_03qt5"), SubResource("Resource_0rxm3"), SubResource("Resource_ajq1j"), SubResource("Resource_0jwuq"), SubResource("Resource_l4rbd"), SubResource("Resource_yrvx1"), SubResource("Resource_6fsu8")])
+evoluciones = Array[Dictionary]([{
+"especie": "ferrothorn",
+"metodo": "nivel",
+"nivel": 40
+}])
+habilidades = PackedStringArray("iron_barbs")
+categoria = "Pokémon Fruto Espina"
+altura = 0.6
+peso_kg = 18.8
+descripcion = "Lanza numerosas púas al detectar peligro. En cuanto tiene ocasión, echa a rodar y se escapa."
+aprende = Array[ExtResource("1_jq0mg")]([SubResource("Resource_jq0mg"), SubResource("Resource_n3s76"), SubResource("Resource_04lqc"), SubResource("Resource_abtsm"), SubResource("Resource_bj0ui"), SubResource("Resource_bml6n"), SubResource("Resource_8rjfa"), SubResource("Resource_mhj1o"), SubResource("Resource_o5jp6"), SubResource("Resource_qtp8w"), SubResource("Resource_acaoe"), SubResource("Resource_j06ei"), SubResource("Resource_marrx"), SubResource("Resource_hcc7n"), SubResource("Resource_6pul1")])
 sprite_frente = ExtResource("19_yil38")
 sprite_espalda = ExtResource("18_psxoj")
 cuadros_frente = 204
 cuadros_espalda = 226
 fps_sprite = 15.04
-habilidades = PackedStringArray("Punta Acero")
-habilidad_oculta = ""
-evoluciones = Array[Dictionary]([{"especie": "ferrothorn", "metodo": "nivel", "condicion": "Nivel 40", "nivel": 40}])

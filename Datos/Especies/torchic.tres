@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://darcawhpd4342"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_nhgmn"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_nhgmn"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_3285f"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="3_eu8g1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="4_h6sqv"]
@@ -12,59 +12,59 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="10_jya4y"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mirror_move.tres" id="11_dsvdl"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flamethrower.tres" id="12_1ld2j"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="13_bj73e"]
-[ext_resource type="Texture2D" uid="uid://bbw0sysg2nb1u" path="res://Assets/Pokemones/batalla/torchic_espalda.png" id="14_0etfg"]
-[ext_resource type="Texture2D" uid="uid://d3gsl451chdvu" path="res://Assets/Pokemones/batalla/torchic_frente.png" id="15_dfdgk"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="13_bj73e"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/torchic_espalda.png" id="14_0etfg"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/torchic_frente.png" id="15_dfdgk"]
 
-[sub_resource type="Resource" id="Resource_u2cil"]
+[sub_resource type="Resource" id="Resource_nhgmn"]
 script = ExtResource("1_nhgmn")
 movimiento = ExtResource("2_3285f")
 
-[sub_resource type="Resource" id="Resource_v8m2l"]
+[sub_resource type="Resource" id="Resource_3285f"]
 script = ExtResource("1_nhgmn")
 movimiento = ExtResource("3_eu8g1")
 
-[sub_resource type="Resource" id="Resource_t671d"]
+[sub_resource type="Resource" id="Resource_eu8g1"]
 script = ExtResource("1_nhgmn")
 nivel = 7
 movimiento = ExtResource("4_h6sqv")
 
-[sub_resource type="Resource" id="Resource_yl8bu"]
+[sub_resource type="Resource" id="Resource_h6sqv"]
 script = ExtResource("1_nhgmn")
 nivel = 10
 movimiento = ExtResource("5_l8t0a")
 
-[sub_resource type="Resource" id="Resource_if2i3"]
+[sub_resource type="Resource" id="Resource_l8t0a"]
 script = ExtResource("1_nhgmn")
 nivel = 16
 movimiento = ExtResource("6_mstjj")
 
-[sub_resource type="Resource" id="Resource_wsa6i"]
+[sub_resource type="Resource" id="Resource_mstjj"]
 script = ExtResource("1_nhgmn")
 nivel = 19
 movimiento = ExtResource("7_f62vf")
 
-[sub_resource type="Resource" id="Resource_5mb2r"]
+[sub_resource type="Resource" id="Resource_f62vf"]
 script = ExtResource("1_nhgmn")
 nivel = 25
 movimiento = ExtResource("8_gd0os")
 
-[sub_resource type="Resource" id="Resource_opjnj"]
+[sub_resource type="Resource" id="Resource_gd0os"]
 script = ExtResource("1_nhgmn")
 nivel = 28
 movimiento = ExtResource("9_jrogr")
 
-[sub_resource type="Resource" id="Resource_d8qcr"]
+[sub_resource type="Resource" id="Resource_jrogr"]
 script = ExtResource("1_nhgmn")
 nivel = 34
 movimiento = ExtResource("10_jya4y")
 
-[sub_resource type="Resource" id="Resource_nytww"]
+[sub_resource type="Resource" id="Resource_jya4y"]
 script = ExtResource("1_nhgmn")
 nivel = 37
 movimiento = ExtResource("11_dsvdl")
 
-[sub_resource type="Resource" id="Resource_w0njn"]
+[sub_resource type="Resource" id="Resource_dsvdl"]
 script = ExtResource("1_nhgmn")
 nivel = 43
 movimiento = ExtResource("12_1ld2j")
@@ -74,7 +74,7 @@ script = ExtResource("13_bj73e")
 id = "torchic"
 numero = 255
 nombre = "Torchic"
-tipos = ["fuego"]
+tipos = PackedStringArray("fuego")
 ps = 45
 ataque = 60
 defensa = 40
@@ -88,11 +88,19 @@ evs_otorgados = {
 }
 evoluciona_a = "combusken"
 nivel_evolucion = 16
-aprende = Array[ExtResource("1_nhgmn")]([SubResource("Resource_u2cil"), SubResource("Resource_v8m2l"), SubResource("Resource_t671d"), SubResource("Resource_yl8bu"), SubResource("Resource_if2i3"), SubResource("Resource_wsa6i"), SubResource("Resource_5mb2r"), SubResource("Resource_opjnj"), SubResource("Resource_d8qcr"), SubResource("Resource_nytww"), SubResource("Resource_w0njn")])
+evoluciones = Array[Dictionary]([{
+"especie": "combusken",
+"metodo": "nivel",
+"nivel": 16
+}])
+habilidades = PackedStringArray("blaze")
+habilidad_oculta = "speed_boost"
+categoria = "Pokémon Polluelo"
+altura = 0.4
+peso_kg = 2.5
+descripcion = "En su interior, guarda una llama que arde sin cesar. Si se le abraza, se nota que tiene una temperatura muy alta."
+aprende = Array[ExtResource("1_nhgmn")]([SubResource("Resource_nhgmn"), SubResource("Resource_3285f"), SubResource("Resource_eu8g1"), SubResource("Resource_h6sqv"), SubResource("Resource_l8t0a"), SubResource("Resource_mstjj"), SubResource("Resource_f62vf"), SubResource("Resource_gd0os"), SubResource("Resource_jrogr"), SubResource("Resource_jya4y"), SubResource("Resource_dsvdl")])
 sprite_frente = ExtResource("15_dfdgk")
 sprite_espalda = ExtResource("14_0etfg")
 cuadros_frente = 88
 cuadros_espalda = 88
-habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
-habilidad_oculta = "Impulso"
-evoluciones = Array[Dictionary]([{"especie": "combusken", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

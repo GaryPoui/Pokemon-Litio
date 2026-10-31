@@ -15,52 +15,51 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/muddy_water.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/recover.tres" id="14"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_tmhb5"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_xocxm"]
 script = ExtResource("2")
 nivel = 2
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_yn1vj"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_g1te1"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_3web7"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_6q6lm"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_hv1oc"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_1samp"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_e7w4j"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_g8sk6"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("14")
@@ -71,8 +70,6 @@ id = "shellos"
 numero = 422
 nombre = "Shellos"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Viscosidad", "Colector")
-habilidad_oculta = "Poder Arenoso/Poder Arena"
 ps = 76
 ataque = 48
 defensa = 48
@@ -81,13 +78,23 @@ def_esp = 62
 velocidad = 34
 exp_base = 65
 ratio_captura = 190
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([{"especie": "gastrodon", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])
+evs_otorgados = {
+"ps": 1
+}
 evoluciona_a = "gastrodon"
 nivel_evolucion = 30
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9")])
+evoluciones = Array[Dictionary]([{
+"especie": "gastrodon",
+"metodo": "nivel",
+"nivel": 30
+}])
+habilidades = PackedStringArray("sticky_hold", "storm_drain")
+habilidad_oculta = "sand_force"
+categoria = "Pokémon Babosa Marina"
+altura = 0.3
+peso_kg = 6.3
+descripcion = "No hay que apretarle muy fuerte, ya que, si lo haces, secreta un misterioso fluido morado."
+aprende = Array[ExtResource("2")]([SubResource("Resource_tmhb5"), SubResource("Resource_xocxm"), SubResource("Resource_yn1vj"), SubResource("Resource_g1te1"), SubResource("Resource_3web7"), SubResource("Resource_6q6lm"), SubResource("Resource_hv1oc"), SubResource("Resource_1samp"), SubResource("Resource_e7w4j"), SubResource("Resource_g8sk6")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 60

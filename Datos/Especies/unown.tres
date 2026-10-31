@@ -6,9 +6,8 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/unown_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hidden_power.tres" id="5"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_lxgvc"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
 [resource]
@@ -17,8 +16,6 @@ id = "unown"
 numero = 201
 nombre = "Unown"
 tipos = PackedStringArray("psiquico")
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
 ps = 48
 ataque = 72
 defensa = 48
@@ -28,12 +25,17 @@ velocidad = 48
 exp_base = 118
 ratio_captura = 225
 ratio_genero = -1
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1, "at_esp": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0")])
+evs_otorgados = {
+"at_esp": 1,
+"ataque": 1
+}
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Símbolo"
+altura = 0.5
+peso_kg = 5.0
+descripcion = "Su cuerpo fino y plano aparece siempre en los muros. Su forma parece tener algún significado."
+aprende = Array[ExtResource("2")]([SubResource("Resource_lxgvc")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 16
 cuadros_espalda = 16
-fps_sprite = 10.0

@@ -23,102 +23,96 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_y1ivv"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_r2exb"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_pyv88"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_ubbr3"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_c02vi"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_5tmrt"]
+script = ExtResource("2")
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_5kgha"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_ixqeq"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_jsj1c"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ytwbu"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_m1xgv"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_77xxq"]
 script = ExtResource("2")
 nivel = 27
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_le7ta"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_fk1e2"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_38rf3"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_ypm6x"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_2inuh"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_r7nef"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_i7hme"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_19"]
+[sub_resource type="Resource" id="Resource_tje24"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("22")
@@ -129,8 +123,6 @@ id = "yanmega"
 numero = 469
 nombre = "Yanmega"
 tipos = PackedStringArray("bicho", "volador")
-habilidades = PackedStringArray("Impulso", "Cromolente")
-habilidad_oculta = "Inspección/Cacheo"
 ps = 86
 ataque = 76
 defensa = 86
@@ -139,11 +131,16 @@ def_esp = 56
 velocidad = 95
 exp_base = 180
 ratio_captura = 30
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18"), SubResource("Move_19")])
+evs_otorgados = {
+"ataque": 2
+}
+habilidades = PackedStringArray("speed_boost", "tinted_lens")
+habilidad_oculta = "frisk"
+categoria = "Pokémon Libélula"
+altura = 1.9
+peso_kg = 51.5
+descripcion = "Su técnica favorita consiste en volar a gran velocidad y despedazar con su mandíbula a su oponente en un instante."
+aprende = Array[ExtResource("2")]([SubResource("Resource_y1ivv"), SubResource("Resource_r2exb"), SubResource("Resource_pyv88"), SubResource("Resource_ubbr3"), SubResource("Resource_c02vi"), SubResource("Resource_5tmrt"), SubResource("Resource_5kgha"), SubResource("Resource_ixqeq"), SubResource("Resource_jsj1c"), SubResource("Resource_ytwbu"), SubResource("Resource_m1xgv"), SubResource("Resource_77xxq"), SubResource("Resource_le7ta"), SubResource("Resource_fk1e2"), SubResource("Resource_38rf3"), SubResource("Resource_ypm6x"), SubResource("Resource_2inuh"), SubResource("Resource_r7nef"), SubResource("Resource_i7hme"), SubResource("Resource_tje24")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 168

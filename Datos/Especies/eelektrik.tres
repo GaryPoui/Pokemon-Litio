@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cndgcmsvc6c4o"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_s8v2i"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_s8v2i"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/charge_beam.tres" id="2_c757p"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/headbutt.tres" id="3_s45a1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/spark.tres" id="4_jel6o"]
@@ -16,77 +16,77 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/gastro_acid.tres" id="14_bxuj7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/zap_cannon.tres" id="15_41s5j"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="16_8rfn3"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_xxo83"]
-[ext_resource type="Texture2D" uid="uid://tpasvoskgn2v" path="res://Assets/Pokemones/batalla/eelektrik_espalda.png" id="18_imirk"]
-[ext_resource type="Texture2D" uid="uid://cwglwj1nfe1um" path="res://Assets/Pokemones/batalla/eelektrik_frente.png" id="19_eigbw"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_xxo83"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/eelektrik_espalda.png" id="18_imirk"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/eelektrik_frente.png" id="19_eigbw"]
 
-[sub_resource type="Resource" id="Resource_vdg76"]
+[sub_resource type="Resource" id="Resource_s8v2i"]
 script = ExtResource("1_s8v2i")
 movimiento = ExtResource("2_c757p")
 
-[sub_resource type="Resource" id="Resource_5atus"]
+[sub_resource type="Resource" id="Resource_c757p"]
 script = ExtResource("1_s8v2i")
 movimiento = ExtResource("3_s45a1")
 
-[sub_resource type="Resource" id="Resource_lsuyr"]
+[sub_resource type="Resource" id="Resource_s45a1"]
 script = ExtResource("1_s8v2i")
 movimiento = ExtResource("4_jel6o")
 
-[sub_resource type="Resource" id="Resource_d4mhu"]
+[sub_resource type="Resource" id="Resource_jel6o"]
 script = ExtResource("1_s8v2i")
 movimiento = ExtResource("5_6fd0i")
 
-[sub_resource type="Resource" id="Resource_gl1qk"]
+[sub_resource type="Resource" id="Resource_6fd0i"]
 script = ExtResource("1_s8v2i")
 nivel = 9
 movimiento = ExtResource("6_uyg6i")
 
-[sub_resource type="Resource" id="Resource_uymbl"]
+[sub_resource type="Resource" id="Resource_uyg6i"]
 script = ExtResource("1_s8v2i")
 nivel = 19
 movimiento = ExtResource("7_4ymav")
 
-[sub_resource type="Resource" id="Resource_3qny5"]
+[sub_resource type="Resource" id="Resource_4ymav"]
 script = ExtResource("1_s8v2i")
 nivel = 29
 movimiento = ExtResource("8_frefj")
 
-[sub_resource type="Resource" id="Resource_ae2xf"]
+[sub_resource type="Resource" id="Resource_frefj"]
 script = ExtResource("1_s8v2i")
 nivel = 39
 movimiento = ExtResource("9_1j1jb")
 
-[sub_resource type="Resource" id="Resource_4yty3"]
+[sub_resource type="Resource" id="Resource_1j1jb"]
 script = ExtResource("1_s8v2i")
 nivel = 44
 movimiento = ExtResource("10_7wedr")
 
-[sub_resource type="Resource" id="Resource_gj3qi"]
+[sub_resource type="Resource" id="Resource_7wedr"]
 script = ExtResource("1_s8v2i")
 nivel = 49
 movimiento = ExtResource("11_qauwk")
 
-[sub_resource type="Resource" id="Resource_q2r4u"]
+[sub_resource type="Resource" id="Resource_qauwk"]
 script = ExtResource("1_s8v2i")
 nivel = 54
 movimiento = ExtResource("12_a5jvv")
 
-[sub_resource type="Resource" id="Resource_of5ke"]
+[sub_resource type="Resource" id="Resource_a5jvv"]
 script = ExtResource("1_s8v2i")
 nivel = 59
 movimiento = ExtResource("13_c2rjf")
 
-[sub_resource type="Resource" id="Resource_as037"]
+[sub_resource type="Resource" id="Resource_c2rjf"]
 script = ExtResource("1_s8v2i")
 nivel = 64
 movimiento = ExtResource("14_bxuj7")
 
-[sub_resource type="Resource" id="Resource_ps27e"]
+[sub_resource type="Resource" id="Resource_bxuj7"]
 script = ExtResource("1_s8v2i")
 nivel = 69
 movimiento = ExtResource("15_41s5j")
 
-[sub_resource type="Resource" id="Resource_cleh8"]
+[sub_resource type="Resource" id="Resource_41s5j"]
 script = ExtResource("1_s8v2i")
 nivel = 74
 movimiento = ExtResource("16_8rfn3")
@@ -96,7 +96,7 @@ script = ExtResource("17_xxo83")
 id = "eelektrik"
 numero = 603
 nombre = "Eelektrik"
-tipos = ["electrico"]
+tipos = PackedStringArray("electrico")
 ps = 65
 ataque = 85
 defensa = 70
@@ -109,13 +109,19 @@ crecimiento = "slow"
 evs_otorgados = {
 "ataque": 2
 }
-aprende = Array[ExtResource("1_s8v2i")]([SubResource("Resource_vdg76"), SubResource("Resource_5atus"), SubResource("Resource_lsuyr"), SubResource("Resource_d4mhu"), SubResource("Resource_gl1qk"), SubResource("Resource_uymbl"), SubResource("Resource_3qny5"), SubResource("Resource_ae2xf"), SubResource("Resource_4yty3"), SubResource("Resource_gj3qi"), SubResource("Resource_q2r4u"), SubResource("Resource_of5ke"), SubResource("Resource_as037"), SubResource("Resource_ps27e"), SubResource("Resource_cleh8")])
+evoluciones = Array[Dictionary]([{
+"especie": "eelektross",
+"metodo": "piedra",
+"objeto": "thunder_stone"
+}])
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Electropez"
+altura = 1.2
+peso_kg = 22.0
+descripcion = "Se enrolla alrededor de su presa, la paraliza con la electricidad de sus marcas circulares y le asesta mordiscos."
+aprende = Array[ExtResource("1_s8v2i")]([SubResource("Resource_s8v2i"), SubResource("Resource_c757p"), SubResource("Resource_s45a1"), SubResource("Resource_jel6o"), SubResource("Resource_6fd0i"), SubResource("Resource_uyg6i"), SubResource("Resource_4ymav"), SubResource("Resource_frefj"), SubResource("Resource_1j1jb"), SubResource("Resource_7wedr"), SubResource("Resource_qauwk"), SubResource("Resource_a5jvv"), SubResource("Resource_c2rjf"), SubResource("Resource_bxuj7"), SubResource("Resource_41s5j")])
 sprite_frente = ExtResource("19_eigbw")
 sprite_espalda = ExtResource("18_imirk")
 cuadros_frente = 81
 cuadros_espalda = 81
 fps_sprite = 13.52
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
-evoluciones = Array[Dictionary]([{"especie": "eelektross", "metodo": "piedra", "condicion": "Piedra trueno"}])
-evoluciona_a = "eelektross"

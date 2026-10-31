@@ -146,6 +146,7 @@ script = ExtResource("16_o3q8m")
 texto = "RUTA 3 · PLAYA FERROVIARIA DE RETIRO
 
 Vías en desuso donde volvió a crecer el pasto. Zona protegida. Al este: Barrio Padre Carlos Mugica."
+mostrar_encuentros = true
 
 [node name="CartelTorre" type="Node2D" parent="." unique_id=599890972]
 position = Vector2(168, 456)

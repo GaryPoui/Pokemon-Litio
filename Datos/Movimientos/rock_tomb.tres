@@ -5,11 +5,15 @@
 [resource]
 script = ExtResource("1")
 id = "rock_tomb"
-nombre = "Tumba rocas"
+nombre = "Tumba Rocas"
 tipo = "roca"
-categoria = "fisico"
-poder = 60
-precision = 95
-pp = 15
-objetivo = "selected-pokemon"
-meta = "damage"
+poder = 50
+precision = 80
+meta = "damage-lower"
+descripcion = "Tira rocas que detienen al objetivo y bajan su Velocidad."
+cambios_stats = {
+"velocidad": -1
+}
+prob_stat = 100
+numero = 317
+banderas = PackedStringArray("metronome", "mirror", "protect")

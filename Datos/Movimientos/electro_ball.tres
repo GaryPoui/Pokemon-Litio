@@ -9,3 +9,5 @@ nombre = "Bola Voltio"
 tipo = "electrico"
 categoria = "especial"
 descripcion = "Lanza una bola eléctrica. Cuanto mayor sea la Velocidad del usuario en comparación con la del objetivo, mayor será el daño causado."
+numero = 486
+banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")

@@ -6,10 +6,10 @@
 script = ExtResource("1")
 id = "belly_drum"
 nombre = "Tambor"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 10
+precision = 0
 objetivo = "user"
 meta = "unique"
+descripcion = "Reduce la mitad de los PS máximos para mejorar al máximo el Ataque."
+numero = 187
+banderas = PackedStringArray("metronome", "snatch")

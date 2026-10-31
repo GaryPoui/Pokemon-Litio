@@ -6,10 +6,8 @@
 script = ExtResource("1")
 id = "horn_attack"
 nombre = "Cornada"
-tipo = "normal"
-categoria = "fisico"
 poder = 65
-precision = 100
 pp = 25
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Ataca al objetivo con una cornada."
+numero = 30
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

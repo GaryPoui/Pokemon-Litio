@@ -18,82 +18,77 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/dragon_dance.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dragon_pulse.tres" id="17"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_v6e5o"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_eh1d0"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_gigtm"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_dapqn"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_jwklx"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_j0qrv"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_jx35n"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_lstup"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_47i8s"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_tm3gr"]
 script = ExtResource("2")
 nivel = 18
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_mrny7"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_dp4o8"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_yqwle"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_lmcg0"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_mp1xa"]
 script = ExtResource("2")
 nivel = 48
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_spbgu"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("17")
@@ -104,8 +99,6 @@ id = "kingdra"
 numero = 230
 nombre = "Kingdra"
 tipos = PackedStringArray("agua", "dragon")
-habilidades = PackedStringArray("Nado Rápido", "Puntería/Francotirador")
-habilidad_oculta = "Humedad"
 ps = 75
 ataque = 95
 defensa = 95
@@ -113,12 +106,18 @@ at_esp = 95
 def_esp = 95
 velocidad = 85
 exp_base = 243
-ratio_captura = 45
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1, "at_esp": 1, "def_esp": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"at_esp": 1,
+"ataque": 1,
+"def_esp": 1
+}
+habilidades = PackedStringArray("swift_swim", "sniper")
+habilidad_oculta = "damp"
+categoria = "Pokémon Dragón"
+altura = 1.8
+peso_kg = 152.0
+descripcion = "Dicen que suele esconderse en cuevas submarinas. Puede crear torbellinos al bostezar."
+aprende = Array[ExtResource("2")]([SubResource("Resource_v6e5o"), SubResource("Resource_eh1d0"), SubResource("Resource_gigtm"), SubResource("Resource_dapqn"), SubResource("Resource_jwklx"), SubResource("Resource_j0qrv"), SubResource("Resource_jx35n"), SubResource("Resource_lstup"), SubResource("Resource_47i8s"), SubResource("Resource_tm3gr"), SubResource("Resource_mrny7"), SubResource("Resource_dp4o8"), SubResource("Resource_yqwle"), SubResource("Resource_lmcg0"), SubResource("Resource_mp1xa"), SubResource("Resource_spbgu")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 54

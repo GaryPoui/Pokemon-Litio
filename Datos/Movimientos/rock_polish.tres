@@ -16,3 +16,5 @@ descripcion = "Reduce la resistencia puliendo su cuerpo. Aumenta mucho la Veloci
 cambios_stats = {
 "velocidad": 2
 }
+numero = 397
+banderas = PackedStringArray("metronome", "snatch")

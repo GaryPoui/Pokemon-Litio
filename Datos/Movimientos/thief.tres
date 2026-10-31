@@ -9,3 +9,5 @@ nombre = "Ladrón"
 tipo = "siniestro"
 poder = 40
 descripcion = "El agresor ataca y le quita el objeto al objetivo siempre y cuando no lleve ninguno."
+numero = 168
+banderas = PackedStringArray("contact", "failcopycat", "failmefirst", "mirror", "noassist", "protect")

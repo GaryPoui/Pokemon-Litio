@@ -9,3 +9,5 @@ nombre = "Agarre"
 poder = 55
 pp = 30
 descripcion = "Atrapa y atenaza al objetivo."
+numero = 11
+banderas = PackedStringArray()

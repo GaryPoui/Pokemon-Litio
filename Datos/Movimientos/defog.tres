@@ -15,3 +15,5 @@ descripcion = "Potente viento que barre el reflejo o la pantalla de luz creada p
 cambios_stats = {
 "evasion": -1
 }
+numero = 432
+banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "reflectable")

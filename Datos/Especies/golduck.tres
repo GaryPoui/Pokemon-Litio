@@ -21,87 +21,87 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/golduck_espalda.png" id="19_xuik4"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/golduck_frente.png" id="20_t6ci5"]
 
-[sub_resource type="Resource" id="Resource_3oafd"]
+[sub_resource type="Resource" id="Resource_ctxo5"]
 script = ExtResource("1_ctxo5")
 movimiento = ExtResource("2_rq5et")
 
-[sub_resource type="Resource" id="Resource_n6k0h"]
+[sub_resource type="Resource" id="Resource_rq5et"]
 script = ExtResource("1_ctxo5")
 movimiento = ExtResource("3_uqcas")
 
-[sub_resource type="Resource" id="Resource_cqb5x"]
+[sub_resource type="Resource" id="Resource_uqcas"]
 script = ExtResource("1_ctxo5")
 movimiento = ExtResource("4_2qt7x")
 
-[sub_resource type="Resource" id="Resource_vhcwk"]
+[sub_resource type="Resource" id="Resource_2qt7x"]
 script = ExtResource("1_ctxo5")
 movimiento = ExtResource("5_7rjax")
 
-[sub_resource type="Resource" id="Resource_6xoyr"]
+[sub_resource type="Resource" id="Resource_7rjax"]
 script = ExtResource("1_ctxo5")
 movimiento = ExtResource("6_1jb4n")
 
-[sub_resource type="Resource" id="Resource_sk6fi"]
+[sub_resource type="Resource" id="Resource_1jb4n"]
 script = ExtResource("1_ctxo5")
 nivel = 5
 movimiento = ExtResource("4_2qt7x")
 
-[sub_resource type="Resource" id="Resource_0ytp4"]
+[sub_resource type="Resource" id="Resource_jlvfy"]
 script = ExtResource("1_ctxo5")
 nivel = 9
 movimiento = ExtResource("5_7rjax")
 
-[sub_resource type="Resource" id="Resource_4xvhq"]
+[sub_resource type="Resource" id="Resource_f27cy"]
 script = ExtResource("1_ctxo5")
 nivel = 14
 movimiento = ExtResource("7_jlvfy")
 
-[sub_resource type="Resource" id="Resource_sqi2c"]
+[sub_resource type="Resource" id="Resource_mkhku"]
 script = ExtResource("1_ctxo5")
 nivel = 18
 movimiento = ExtResource("8_f27cy")
 
-[sub_resource type="Resource" id="Resource_8tje5"]
+[sub_resource type="Resource" id="Resource_o52f4"]
 script = ExtResource("1_ctxo5")
 nivel = 22
 movimiento = ExtResource("9_mkhku")
 
-[sub_resource type="Resource" id="Resource_rty3d"]
+[sub_resource type="Resource" id="Resource_s4k0m"]
 script = ExtResource("1_ctxo5")
 nivel = 27
 movimiento = ExtResource("10_o52f4")
 
-[sub_resource type="Resource" id="Resource_e7w2e"]
+[sub_resource type="Resource" id="Resource_lnc68"]
 script = ExtResource("1_ctxo5")
 nivel = 31
 movimiento = ExtResource("11_s4k0m")
 
-[sub_resource type="Resource" id="Resource_nt17i"]
+[sub_resource type="Resource" id="Resource_kuoet"]
 script = ExtResource("1_ctxo5")
 nivel = 37
 movimiento = ExtResource("12_lnc68")
 
-[sub_resource type="Resource" id="Resource_dbpdr"]
+[sub_resource type="Resource" id="Resource_rkbr1"]
 script = ExtResource("1_ctxo5")
 nivel = 44
 movimiento = ExtResource("13_kuoet")
 
-[sub_resource type="Resource" id="Resource_165ap"]
+[sub_resource type="Resource" id="Resource_nyo5m"]
 script = ExtResource("1_ctxo5")
 nivel = 50
 movimiento = ExtResource("14_rkbr1")
 
-[sub_resource type="Resource" id="Resource_adagr"]
+[sub_resource type="Resource" id="Resource_bhlwr"]
 script = ExtResource("1_ctxo5")
 nivel = 56
 movimiento = ExtResource("15_nyo5m")
 
-[sub_resource type="Resource" id="Resource_seqeh"]
+[sub_resource type="Resource" id="Resource_j15jc"]
 script = ExtResource("1_ctxo5")
 nivel = 63
 movimiento = ExtResource("16_bhlwr")
 
-[sub_resource type="Resource" id="Resource_dypyy"]
+[sub_resource type="Resource" id="Resource_ubfjy"]
 script = ExtResource("1_ctxo5")
 nivel = 69
 movimiento = ExtResource("17_j15jc")
@@ -111,7 +111,7 @@ script = ExtResource("18_ubfjy")
 id = "golduck"
 numero = 55
 nombre = "Golduck"
-tipos = ["agua"]
+tipos = PackedStringArray("agua")
 ps = 80
 ataque = 82
 defensa = 78
@@ -123,12 +123,15 @@ ratio_captura = 75
 evs_otorgados = {
 "at_esp": 2
 }
-aprende = Array[ExtResource("1_ctxo5")]([SubResource("Resource_3oafd"), SubResource("Resource_n6k0h"), SubResource("Resource_cqb5x"), SubResource("Resource_vhcwk"), SubResource("Resource_6xoyr"), SubResource("Resource_sk6fi"), SubResource("Resource_0ytp4"), SubResource("Resource_4xvhq"), SubResource("Resource_sqi2c"), SubResource("Resource_8tje5"), SubResource("Resource_rty3d"), SubResource("Resource_e7w2e"), SubResource("Resource_nt17i"), SubResource("Resource_dbpdr"), SubResource("Resource_165ap"), SubResource("Resource_adagr"), SubResource("Resource_seqeh"), SubResource("Resource_dypyy")])
+habilidades = PackedStringArray("damp", "cloud_nine")
+habilidad_oculta = "swift_swim"
+categoria = "Pokémon Pato"
+altura = 1.7
+peso_kg = 76.6
+descripcion = "Aparece en ríos al anochecer. Puede usar poderes telequinéticos si su frente brilla misteriosamente."
+aprende = Array[ExtResource("1_ctxo5")]([SubResource("Resource_ctxo5"), SubResource("Resource_rq5et"), SubResource("Resource_uqcas"), SubResource("Resource_2qt7x"), SubResource("Resource_7rjax"), SubResource("Resource_1jb4n"), SubResource("Resource_jlvfy"), SubResource("Resource_f27cy"), SubResource("Resource_mkhku"), SubResource("Resource_o52f4"), SubResource("Resource_s4k0m"), SubResource("Resource_lnc68"), SubResource("Resource_kuoet"), SubResource("Resource_rkbr1"), SubResource("Resource_nyo5m"), SubResource("Resource_bhlwr"), SubResource("Resource_j15jc"), SubResource("Resource_ubfjy")])
 sprite_frente = ExtResource("20_t6ci5")
 sprite_espalda = ExtResource("19_xuik4")
 cuadros_frente = 39
 cuadros_espalda = 41
 fps_sprite = 9.51
-habilidades = PackedStringArray("Humedad", "Aclimatación")
-habilidad_oculta = "Nado Rápido"
-evoluciones = Array[Dictionary]([])

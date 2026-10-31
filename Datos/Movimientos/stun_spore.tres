@@ -13,3 +13,5 @@ pp = 30
 meta = "ailment"
 descripcion = "Esparce polvo que paraliza al objetivo."
 estado = "paralysis"
+numero = 78
+banderas = PackedStringArray("metronome", "mirror", "powder", "protect", "reflectable")

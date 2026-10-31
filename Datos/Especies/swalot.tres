@@ -21,97 +21,93 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/wring_out.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/gunk_shot.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_24mev"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_8karn"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_r21aa"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_fkc5m"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_50gj8"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_5y77j"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_yjqcg"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_6gusr"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_k1f60"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_mf340"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_e2v43"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_4kpws"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 45
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_uianj"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_1cfok"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_g58tm"]
+script = ExtResource("2")
+nivel = 45
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_u26do"]
 script = ExtResource("2")
 nivel = 52
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_g0cbq"]
 script = ExtResource("2")
 nivel = 59
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_l7cxg"]
 script = ExtResource("2")
 nivel = 66
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_25v1n"]
 script = ExtResource("2")
 nivel = 73
 movimiento = ExtResource("20")
@@ -122,8 +118,6 @@ id = "swalot"
 numero = 317
 nombre = "Swalot"
 tipos = PackedStringArray("veneno")
-habilidades = PackedStringArray("Toxisecreción/Viscosecreción", "Viscosidad")
-habilidad_oculta = "Gula"
 ps = 100
 ataque = 73
 defensa = 83
@@ -132,11 +126,17 @@ def_esp = 83
 velocidad = 55
 exp_base = 163
 ratio_captura = 75
-ratio_genero = 4
 crecimiento = "fast-then-very-slow"
-evs_otorgados = {"ps": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18")])
+evs_otorgados = {
+"ps": 2
+}
+habilidades = PackedStringArray("liquid_ooze", "sticky_hold")
+habilidad_oculta = "gluttony"
+categoria = "Pokémon Bolsa Veneno"
+altura = 1.7
+peso_kg = 80.0
+descripcion = "Se traga cualquier cosa de una pieza. Sus poros segregan fluidos tóxicos que dañan a sus enemigos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_24mev"), SubResource("Resource_8karn"), SubResource("Resource_r21aa"), SubResource("Resource_fkc5m"), SubResource("Resource_50gj8"), SubResource("Resource_5y77j"), SubResource("Resource_yjqcg"), SubResource("Resource_6gusr"), SubResource("Resource_k1f60"), SubResource("Resource_mf340"), SubResource("Resource_e2v43"), SubResource("Resource_4kpws"), SubResource("Resource_uianj"), SubResource("Resource_1cfok"), SubResource("Resource_g58tm"), SubResource("Resource_u26do"), SubResource("Resource_g0cbq"), SubResource("Resource_l7cxg"), SubResource("Resource_25v1n")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 50

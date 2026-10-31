@@ -13,3 +13,5 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Frena todos los ataques, pero puede fallar si se usa repetidamente."
 estado = "protect"
+numero = 182
+banderas = PackedStringArray("failcopycat", "noassist")

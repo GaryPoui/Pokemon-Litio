@@ -5,11 +5,10 @@
 [resource]
 script = ExtResource("1")
 id = "sacred_sword"
-nombre = "Espada santa"
+nombre = "Espada Santa"
 tipo = "lucha"
-categoria = "fisico"
 poder = 90
-precision = 100
-pp = 15
-objetivo = "selected-pokemon"
-meta = "damage"
+pp = 20
+descripcion = "El usuario ataca con una espada, ignorando cualquier cambio en las características del objetivo."
+numero = 533
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "slicing")

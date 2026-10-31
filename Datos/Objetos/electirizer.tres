@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/electirizer.png" id="1_iy48u"]
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="2_we3m4"]
+
+[resource]
+script = ExtResource("2_we3m4")
+id = "electirizer"
+nombre = "Electrizador"
+descripcion = "Provoca un ataque de ira en el objetivo que solo le permite usar movimientos de ataque durante tres turnos."
+precio = 2000
+icono = ExtResource("1_iy48u")

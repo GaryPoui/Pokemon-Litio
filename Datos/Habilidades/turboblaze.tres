@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_ibeh8"]
+
+[resource]
+script = ExtResource("1_ibeh8")
+id = "turboblaze"
+nombre = "Turbollama"
+descripcion = "Usa movimientos sin que importen las habilidades."

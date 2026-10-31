@@ -5,11 +5,13 @@
 [resource]
 script = ExtResource("1")
 id = "spacial_rend"
-nombre = "Corte vacío"
+nombre = "Corte Vacío"
 tipo = "dragon"
 categoria = "especial"
 poder = 100
 precision = 95
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Desgarra al objetivo y el espacio a su alrededor. Suele ser crítico."
+critico = 1
+numero = 460
+banderas = PackedStringArray("metronome", "mirror", "protect")

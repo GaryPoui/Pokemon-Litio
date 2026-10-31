@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://du1b740y567tn"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vbfj8"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vbfj8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_basai"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rage.tres" id="3_kcbb2"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="4_7b46x"]
@@ -18,97 +18,97 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/aqua_tail.tres" id="16_frqse"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/superpower.tres" id="17_cbm3v"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="18_5qdut"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="19_r24uf"]
-[ext_resource type="Texture2D" uid="uid://dk021b0kcnvbi" path="res://Assets/Pokemones/batalla/feraligatr_espalda.png" id="20_4bh86"]
-[ext_resource type="Texture2D" uid="uid://db7h1uih6qsoo" path="res://Assets/Pokemones/batalla/feraligatr_frente.png" id="21_8b4x1"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="19_r24uf"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/feraligatr_espalda.png" id="20_4bh86"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/feraligatr_frente.png" id="21_8b4x1"]
 
-[sub_resource type="Resource" id="Resource_c0ffn"]
+[sub_resource type="Resource" id="Resource_vbfj8"]
 script = ExtResource("1_vbfj8")
 movimiento = ExtResource("2_basai")
 
-[sub_resource type="Resource" id="Resource_jkst1"]
+[sub_resource type="Resource" id="Resource_basai"]
 script = ExtResource("1_vbfj8")
 movimiento = ExtResource("3_kcbb2")
 
-[sub_resource type="Resource" id="Resource_gk227"]
+[sub_resource type="Resource" id="Resource_kcbb2"]
 script = ExtResource("1_vbfj8")
 movimiento = ExtResource("4_7b46x")
 
-[sub_resource type="Resource" id="Resource_6yqv3"]
+[sub_resource type="Resource" id="Resource_7b46x"]
 script = ExtResource("1_vbfj8")
 movimiento = ExtResource("5_48wut")
 
-[sub_resource type="Resource" id="Resource_0uxiy"]
+[sub_resource type="Resource" id="Resource_48wut"]
 script = ExtResource("1_vbfj8")
 nivel = 6
 movimiento = ExtResource("5_48wut")
 
-[sub_resource type="Resource" id="Resource_qtbfx"]
+[sub_resource type="Resource" id="Resource_dg2rb"]
 script = ExtResource("1_vbfj8")
 nivel = 8
 movimiento = ExtResource("3_kcbb2")
 
-[sub_resource type="Resource" id="Resource_u66yd"]
+[sub_resource type="Resource" id="Resource_7d3v6"]
 script = ExtResource("1_vbfj8")
 nivel = 13
 movimiento = ExtResource("6_dg2rb")
 
-[sub_resource type="Resource" id="Resource_xl5iy"]
+[sub_resource type="Resource" id="Resource_d8tv3"]
 script = ExtResource("1_vbfj8")
 nivel = 15
 movimiento = ExtResource("7_7d3v6")
 
-[sub_resource type="Resource" id="Resource_tj6kl"]
+[sub_resource type="Resource" id="Resource_gwubt"]
 script = ExtResource("1_vbfj8")
 nivel = 21
 movimiento = ExtResource("8_d8tv3")
 
-[sub_resource type="Resource" id="Resource_wfbir"]
+[sub_resource type="Resource" id="Resource_owdop"]
 script = ExtResource("1_vbfj8")
 nivel = 24
 movimiento = ExtResource("9_gwubt")
 
-[sub_resource type="Resource" id="Resource_dk36g"]
+[sub_resource type="Resource" id="Resource_xkccc"]
 script = ExtResource("1_vbfj8")
 nivel = 30
 movimiento = ExtResource("10_owdop")
 
-[sub_resource type="Resource" id="Resource_7pfv8"]
+[sub_resource type="Resource" id="Resource_g5kg5"]
 script = ExtResource("1_vbfj8")
 nivel = 32
 movimiento = ExtResource("11_xkccc")
 
-[sub_resource type="Resource" id="Resource_ly13y"]
+[sub_resource type="Resource" id="Resource_yyfp2"]
 script = ExtResource("1_vbfj8")
 nivel = 37
 movimiento = ExtResource("12_g5kg5")
 
-[sub_resource type="Resource" id="Resource_hnsy7"]
+[sub_resource type="Resource" id="Resource_37vtb"]
 script = ExtResource("1_vbfj8")
 nivel = 45
 movimiento = ExtResource("13_yyfp2")
 
-[sub_resource type="Resource" id="Resource_4gr6l"]
+[sub_resource type="Resource" id="Resource_mwqxq"]
 script = ExtResource("1_vbfj8")
 nivel = 50
 movimiento = ExtResource("14_37vtb")
 
-[sub_resource type="Resource" id="Resource_vnyjy"]
+[sub_resource type="Resource" id="Resource_frqse"]
 script = ExtResource("1_vbfj8")
 nivel = 58
 movimiento = ExtResource("15_mwqxq")
 
-[sub_resource type="Resource" id="Resource_i503y"]
+[sub_resource type="Resource" id="Resource_cbm3v"]
 script = ExtResource("1_vbfj8")
 nivel = 63
 movimiento = ExtResource("16_frqse")
 
-[sub_resource type="Resource" id="Resource_cfnt2"]
+[sub_resource type="Resource" id="Resource_5qdut"]
 script = ExtResource("1_vbfj8")
 nivel = 71
 movimiento = ExtResource("17_cbm3v")
 
-[sub_resource type="Resource" id="Resource_v6k1e"]
+[sub_resource type="Resource" id="Resource_r24uf"]
 script = ExtResource("1_vbfj8")
 nivel = 76
 movimiento = ExtResource("18_5qdut")
@@ -118,7 +118,7 @@ script = ExtResource("19_r24uf")
 id = "feraligatr"
 numero = 160
 nombre = "Feraligatr"
-tipos = ["agua"]
+tipos = PackedStringArray("agua")
 ps = 85
 ataque = 105
 defensa = 100
@@ -132,12 +132,15 @@ evs_otorgados = {
 "ataque": 2,
 "defensa": 1
 }
-aprende = Array[ExtResource("1_vbfj8")]([SubResource("Resource_c0ffn"), SubResource("Resource_jkst1"), SubResource("Resource_gk227"), SubResource("Resource_6yqv3"), SubResource("Resource_0uxiy"), SubResource("Resource_qtbfx"), SubResource("Resource_u66yd"), SubResource("Resource_xl5iy"), SubResource("Resource_tj6kl"), SubResource("Resource_wfbir"), SubResource("Resource_dk36g"), SubResource("Resource_7pfv8"), SubResource("Resource_ly13y"), SubResource("Resource_hnsy7"), SubResource("Resource_4gr6l"), SubResource("Resource_vnyjy"), SubResource("Resource_i503y"), SubResource("Resource_cfnt2"), SubResource("Resource_v6k1e")])
+habilidades = PackedStringArray("torrent")
+habilidad_oculta = "sheer_force"
+categoria = "Pokémon Fauces"
+altura = 2.3
+peso_kg = 88.8
+descripcion = "Se suele mover lento, pero alcanza velocidades de vértigo al atacar y morder a sus enemigos."
+aprende = Array[ExtResource("1_vbfj8")]([SubResource("Resource_vbfj8"), SubResource("Resource_basai"), SubResource("Resource_kcbb2"), SubResource("Resource_7b46x"), SubResource("Resource_48wut"), SubResource("Resource_dg2rb"), SubResource("Resource_7d3v6"), SubResource("Resource_d8tv3"), SubResource("Resource_gwubt"), SubResource("Resource_owdop"), SubResource("Resource_xkccc"), SubResource("Resource_g5kg5"), SubResource("Resource_yyfp2"), SubResource("Resource_37vtb"), SubResource("Resource_mwqxq"), SubResource("Resource_frqse"), SubResource("Resource_cbm3v"), SubResource("Resource_5qdut"), SubResource("Resource_r24uf")])
 sprite_frente = ExtResource("21_8b4x1")
 sprite_espalda = ExtResource("20_4bh86")
 cuadros_frente = 41
 cuadros_espalda = 41
 fps_sprite = 7.5
-habilidades = PackedStringArray("Torrente")
-habilidad_oculta = "Potencia Bruta"
-evoluciones = Array[Dictionary]([])

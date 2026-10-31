@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bmiwu1x2x5dyt"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_omppl"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_omppl"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="2_07kgc"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_jaoyo"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/assist.tres" id="4_rpiyj"]
@@ -17,85 +17,85 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/snatch.tres" id="15_ucr51"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="16_rkmkf"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="17_y3dgd"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_jdqom"]
-[ext_resource type="Texture2D" uid="uid://bld0m52qtvgcp" path="res://Assets/Pokemones/batalla/purrloin_espalda.png" id="19_ih2pv"]
-[ext_resource type="Texture2D" uid="uid://cufoacaqe3bs4" path="res://Assets/Pokemones/batalla/purrloin_frente.png" id="20_xxlfd"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_jdqom"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/purrloin_espalda.png" id="19_ih2pv"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/purrloin_frente.png" id="20_xxlfd"]
 
-[sub_resource type="Resource" id="Resource_5r4hj"]
+[sub_resource type="Resource" id="Resource_omppl"]
 script = ExtResource("1_omppl")
 movimiento = ExtResource("2_07kgc")
 
-[sub_resource type="Resource" id="Resource_kydjd"]
+[sub_resource type="Resource" id="Resource_07kgc"]
 script = ExtResource("1_omppl")
 nivel = 3
 movimiento = ExtResource("3_jaoyo")
 
-[sub_resource type="Resource" id="Resource_h1t4p"]
+[sub_resource type="Resource" id="Resource_jaoyo"]
 script = ExtResource("1_omppl")
 nivel = 6
 movimiento = ExtResource("4_rpiyj")
 
-[sub_resource type="Resource" id="Resource_80prj"]
+[sub_resource type="Resource" id="Resource_rpiyj"]
 script = ExtResource("1_omppl")
 nivel = 10
 movimiento = ExtResource("5_37fn5")
 
-[sub_resource type="Resource" id="Resource_0bhj8"]
+[sub_resource type="Resource" id="Resource_37fn5"]
 script = ExtResource("1_omppl")
 nivel = 12
 movimiento = ExtResource("6_gr576")
 
-[sub_resource type="Resource" id="Resource_brnij"]
+[sub_resource type="Resource" id="Resource_gr576"]
 script = ExtResource("1_omppl")
 nivel = 15
 movimiento = ExtResource("7_sxbbt")
 
-[sub_resource type="Resource" id="Resource_3mw60"]
+[sub_resource type="Resource" id="Resource_sxbbt"]
 script = ExtResource("1_omppl")
 nivel = 19
 movimiento = ExtResource("8_eyni3")
 
-[sub_resource type="Resource" id="Resource_ffu2h"]
+[sub_resource type="Resource" id="Resource_eyni3"]
 script = ExtResource("1_omppl")
 nivel = 21
 movimiento = ExtResource("9_8xhb6")
 
-[sub_resource type="Resource" id="Resource_qssli"]
+[sub_resource type="Resource" id="Resource_8xhb6"]
 script = ExtResource("1_omppl")
 nivel = 24
 movimiento = ExtResource("10_xatnb")
 
-[sub_resource type="Resource" id="Resource_pccj3"]
+[sub_resource type="Resource" id="Resource_xatnb"]
 script = ExtResource("1_omppl")
 nivel = 28
 movimiento = ExtResource("11_n5nr0")
 
-[sub_resource type="Resource" id="Resource_xxune"]
+[sub_resource type="Resource" id="Resource_n5nr0"]
 script = ExtResource("1_omppl")
 nivel = 30
 movimiento = ExtResource("12_2tnbd")
 
-[sub_resource type="Resource" id="Resource_tuxny"]
+[sub_resource type="Resource" id="Resource_2tnbd"]
 script = ExtResource("1_omppl")
 nivel = 33
 movimiento = ExtResource("13_ssusw")
 
-[sub_resource type="Resource" id="Resource_fh85o"]
+[sub_resource type="Resource" id="Resource_ssusw"]
 script = ExtResource("1_omppl")
 nivel = 37
 movimiento = ExtResource("14_5rbkx")
 
-[sub_resource type="Resource" id="Resource_4n86h"]
+[sub_resource type="Resource" id="Resource_5rbkx"]
 script = ExtResource("1_omppl")
 nivel = 39
 movimiento = ExtResource("15_ucr51")
 
-[sub_resource type="Resource" id="Resource_vobnj"]
+[sub_resource type="Resource" id="Resource_ucr51"]
 script = ExtResource("1_omppl")
 nivel = 42
 movimiento = ExtResource("16_rkmkf")
 
-[sub_resource type="Resource" id="Resource_grvml"]
+[sub_resource type="Resource" id="Resource_rkmkf"]
 script = ExtResource("1_omppl")
 nivel = 46
 movimiento = ExtResource("17_y3dgd")
@@ -105,7 +105,7 @@ script = ExtResource("18_jdqom")
 id = "purrloin"
 numero = 509
 nombre = "Purrloin"
-tipos = ["siniestro"]
+tipos = PackedStringArray("siniestro")
 ps = 41
 defensa = 37
 def_esp = 37
@@ -117,12 +117,20 @@ evs_otorgados = {
 }
 evoluciona_a = "liepard"
 nivel_evolucion = 20
-aprende = Array[ExtResource("1_omppl")]([SubResource("Resource_5r4hj"), SubResource("Resource_kydjd"), SubResource("Resource_h1t4p"), SubResource("Resource_80prj"), SubResource("Resource_0bhj8"), SubResource("Resource_brnij"), SubResource("Resource_3mw60"), SubResource("Resource_ffu2h"), SubResource("Resource_qssli"), SubResource("Resource_pccj3"), SubResource("Resource_xxune"), SubResource("Resource_tuxny"), SubResource("Resource_fh85o"), SubResource("Resource_4n86h"), SubResource("Resource_vobnj"), SubResource("Resource_grvml")])
+evoluciones = Array[Dictionary]([{
+"especie": "liepard",
+"metodo": "nivel",
+"nivel": 20
+}])
+habilidades = PackedStringArray("limber", "unburden")
+habilidad_oculta = "prankster"
+categoria = "Pokémon Malicioso"
+altura = 0.4
+peso_kg = 10.1
+descripcion = "Distrae a su oponente con movimientos gráciles y sustrae sus pertenencias. Cuando se enfada, ataca con las garras."
+aprende = Array[ExtResource("1_omppl")]([SubResource("Resource_omppl"), SubResource("Resource_07kgc"), SubResource("Resource_jaoyo"), SubResource("Resource_rpiyj"), SubResource("Resource_37fn5"), SubResource("Resource_gr576"), SubResource("Resource_sxbbt"), SubResource("Resource_eyni3"), SubResource("Resource_8xhb6"), SubResource("Resource_xatnb"), SubResource("Resource_n5nr0"), SubResource("Resource_2tnbd"), SubResource("Resource_ssusw"), SubResource("Resource_5rbkx"), SubResource("Resource_ucr51"), SubResource("Resource_rkmkf")])
 sprite_frente = ExtResource("20_xxlfd")
 sprite_espalda = ExtResource("19_ih2pv")
 cuadros_frente = 32
 cuadros_espalda = 32
 fps_sprite = 6.4
-habilidades = PackedStringArray("Flexibilidad", "Liviano")
-habilidad_oculta = "Timador/Bromista"
-evoluciones = Array[Dictionary]([{"especie": "liepard", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}])

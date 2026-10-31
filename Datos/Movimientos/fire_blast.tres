@@ -15,3 +15,5 @@ meta = "damage-ailment"
 descripcion = "Llama intensa que chamusca y puede causar quemaduras."
 estado = "burn"
 prob_estado = 10
+numero = 126
+banderas = PackedStringArray("metronome", "mirror", "protect")

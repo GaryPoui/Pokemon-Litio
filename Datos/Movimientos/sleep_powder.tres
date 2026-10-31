@@ -13,3 +13,7 @@ pp = 15
 meta = "ailment"
 descripcion = "Esparce polvo que duerme al objetivo."
 estado = "sleep"
+numero = 79
+banderas = PackedStringArray("metronome", "mirror", "powder", "protect", "reflectable")
+turnos_min = 2
+turnos_max = 4

@@ -14,3 +14,7 @@ meta = "damage-ailment"
 descripcion = "Débil ataque telequinético que puede causar confusión."
 estado = "confusion"
 prob_estado = 10
+numero = 93
+banderas = PackedStringArray("metronome", "mirror", "protect")
+turnos_min = 2
+turnos_max = 5

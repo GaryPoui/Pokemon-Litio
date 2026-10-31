@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_ml643"]
+
+[resource]
+script = ExtResource("1_ml643")
+id = "rain_dish"
+nombre = "Cura Lluvia"
+descripcion = "Recupera PS de forma gradual cuando llueve."

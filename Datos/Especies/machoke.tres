@@ -19,82 +19,78 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/scary_face.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dynamic_punch.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_0fp04"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_jylyv"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_ldk4o"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_j073g"]
+script = ExtResource("2")
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_fm2w7"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_kw2ow"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_7spfq"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_f27o2"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_6b2ug"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_8ofql"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_mewrk"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_p4l44"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_2hnwc"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_lo7ya"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_j3qxb"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_soip1"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("18")
@@ -105,22 +101,29 @@ id = "machoke"
 numero = 67
 nombre = "Machoke"
 tipos = PackedStringArray("lucha")
-habilidades = PackedStringArray("Agallas", "Indefenso")
-habilidad_oculta = "Impasible"
 ps = 80
 ataque = 100
 defensa = 70
-at_esp = 50
 def_esp = 60
 velocidad = 45
 exp_base = 142
 ratio_captura = 90
 ratio_genero = 2
 crecimiento = "medium-slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([{"especie": "machamp", "metodo": "intercambio", "condicion": "Intercambio; o cordón unión"}])
-evoluciona_a = "machamp"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"ataque": 2
+}
+evoluciones = Array[Dictionary]([{
+"especie": "machamp",
+"metodo": "intercambio"
+}])
+habilidades = PackedStringArray("guts", "no_guard")
+habilidad_oculta = "steadfast"
+categoria = "Pokémon Superpoder"
+altura = 1.5
+peso_kg = 70.5
+descripcion = "Su musculoso cuerpo es tan fuerte que usa un cinto antifuerza para controlar sus movimientos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_0fp04"), SubResource("Resource_jylyv"), SubResource("Resource_ldk4o"), SubResource("Resource_j073g"), SubResource("Resource_fm2w7"), SubResource("Resource_kw2ow"), SubResource("Resource_7spfq"), SubResource("Resource_f27o2"), SubResource("Resource_6b2ug"), SubResource("Resource_8ofql"), SubResource("Resource_mewrk"), SubResource("Resource_p4l44"), SubResource("Resource_2hnwc"), SubResource("Resource_lo7ya"), SubResource("Resource_j3qxb"), SubResource("Resource_soip1")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 17

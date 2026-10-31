@@ -10,3 +10,5 @@ poder = 200
 pp = 5
 objetivo = "all-other-pokemon"
 descripcion = "El atacante explota y hiere a todos a su alrededor. El usuario se debilita de inmediato."
+numero = 120
+banderas = PackedStringArray("metronome", "mirror", "noparentalbond", "protect")

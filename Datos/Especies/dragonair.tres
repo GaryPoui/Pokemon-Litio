@@ -19,82 +19,78 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/outrage.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_beam.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_f6wn1"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_xddua"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_wsnn1"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_86fp8"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_ou5ij"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_ak64u"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_g1rge"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_0ejln"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_oqih5"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_xaqmd"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_1b2by"]
 script = ExtResource("2")
 nivel = 39
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_6u34t"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_pyuy7"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_mfghf"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_p0rps"]
 script = ExtResource("2")
 nivel = 67
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_2qwhe"]
 script = ExtResource("2")
 nivel = 75
 movimiento = ExtResource("18")
@@ -105,8 +101,6 @@ id = "dragonair"
 numero = 148
 nombre = "Dragonair"
 tipos = PackedStringArray("dragon")
-habilidades = PackedStringArray("Mudar")
-habilidad_oculta = "Escama Especial"
 ps = 61
 ataque = 84
 defensa = 65
@@ -114,16 +108,26 @@ at_esp = 70
 def_esp = 70
 velocidad = 70
 exp_base = 147
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([{"especie": "dragonite", "metodo": "nivel", "condicion": "Nivel 55", "nivel": 55}])
+evs_otorgados = {
+"ataque": 2
+}
 evoluciona_a = "dragonite"
 nivel_evolucion = 55
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evoluciones = Array[Dictionary]([{
+"especie": "dragonite",
+"metodo": "nivel",
+"nivel": 55
+}])
+amistad_base = 35
+habilidades = PackedStringArray("shed_skin")
+habilidad_oculta = "marvel_scale"
+categoria = "Pokémon Dragón"
+altura = 4.0
+peso_kg = 16.5
+descripcion = "Sus cristalinos orbes parecen darle al Pokémon el poder de controlar el clima libremente."
+aprende = Array[ExtResource("2")]([SubResource("Resource_f6wn1"), SubResource("Resource_xddua"), SubResource("Resource_wsnn1"), SubResource("Resource_86fp8"), SubResource("Resource_ou5ij"), SubResource("Resource_ak64u"), SubResource("Resource_g1rge"), SubResource("Resource_0ejln"), SubResource("Resource_oqih5"), SubResource("Resource_xaqmd"), SubResource("Resource_1b2by"), SubResource("Resource_6u34t"), SubResource("Resource_pyuy7"), SubResource("Resource_mfghf"), SubResource("Resource_p0rps"), SubResource("Resource_2qwhe")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 64
 cuadros_espalda = 64
-fps_sprite = 10.0

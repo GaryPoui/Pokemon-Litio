@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_uvkkd"]
+
+[resource]
+script = ExtResource("1_uvkkd")
+id = "snow_cloak"
+nombre = "Manto Níveo"
+descripcion = "Sube la Evasión durante una tormenta de granizo."

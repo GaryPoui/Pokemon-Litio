@@ -5,11 +5,10 @@
 [resource]
 script = ExtResource("1")
 id = "sonic_boom"
-nombre = "Bomba sónica"
-tipo = "normal"
+nombre = "Bomba Sónica"
 categoria = "especial"
-poder = 0
 precision = 90
 pp = 20
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+numero = 49
+banderas = PackedStringArray("metronome", "mirror", "protect")

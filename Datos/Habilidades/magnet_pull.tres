@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_bm4ir"]
+
+[resource]
+script = ExtResource("1_bm4ir")
+id = "magnet_pull"
+nombre = "Imán"
+descripcion = "Impide huir a los Pokémon de tipo Acero."

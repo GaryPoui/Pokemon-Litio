@@ -17,62 +17,60 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flare_blitz.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_3s7gq"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_xjosl"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_sk7bl"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_2ehsb"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_36htk"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_e7m1r"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_yrx3t"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_hy1u0"]
 script = ExtResource("2")
 nivel = 60
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_1resx"]
 script = ExtResource("2")
 nivel = 70
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_85jl1"]
 script = ExtResource("2")
 nivel = 80
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_pmyyd"]
 script = ExtResource("2")
 nivel = 90
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_utgco"]
 script = ExtResource("2")
 nivel = 100
 movimiento = ExtResource("16")
@@ -83,23 +81,30 @@ id = "larvesta"
 numero = 636
 nombre = "Larvesta"
 tipos = PackedStringArray("bicho", "fuego")
-habilidades = PackedStringArray("Cuerpo de Fuego/Cuerpo Llama")
-habilidad_oculta = "Enjambre"
 ps = 55
 ataque = 85
 defensa = 55
-at_esp = 50
 def_esp = 55
 velocidad = 60
 exp_base = 72
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "volcarona", "metodo": "nivel", "condicion": "Nivel 59", "nivel": 59}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "volcarona"
 nivel_evolucion = 59
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evoluciones = Array[Dictionary]([{
+"especie": "volcarona",
+"metodo": "nivel",
+"nivel": 59
+}])
+habilidades = PackedStringArray("flame_body")
+habilidad_oculta = "swarm"
+categoria = "Pokémon Antorcha"
+altura = 1.1
+peso_kg = 28.8
+descripcion = "Se dice que nació del sol. Al evolucionar, cubre su cuerpo con llamas que brotan de sus cuernos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_3s7gq"), SubResource("Resource_xjosl"), SubResource("Resource_sk7bl"), SubResource("Resource_2ehsb"), SubResource("Resource_36htk"), SubResource("Resource_e7m1r"), SubResource("Resource_yrx3t"), SubResource("Resource_hy1u0"), SubResource("Resource_1resx"), SubResource("Resource_85jl1"), SubResource("Resource_pmyyd"), SubResource("Resource_utgco")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 158

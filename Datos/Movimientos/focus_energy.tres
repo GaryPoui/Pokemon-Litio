@@ -12,3 +12,5 @@ pp = 30
 objetivo = "user"
 meta = "unique"
 descripcion = "Concentra energía para aumentar las posibilidades de asestar un golpe crítico."
+numero = 116
+banderas = PackedStringArray("metronome", "snatch")

@@ -16,57 +16,55 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fissure.tres" id="15"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_uj671"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_yayqr"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_ouqvr"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_84m2o"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 19
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_ekv3c"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_m5ewi"]
+script = ExtResource("2")
+nivel = 19
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_6w3vf"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_gysi0"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_206i2"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_7dynr"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_4p27c"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("15")
@@ -77,8 +75,6 @@ id = "hippopotas"
 numero = 449
 nombre = "Hippopotas"
 tipos = PackedStringArray("tierra")
-habilidades = PackedStringArray("Chorro de Arena/Chorro Arena")
-habilidad_oculta = "Poder Arenoso/Poder Arena"
 ps = 68
 ataque = 72
 defensa = 78
@@ -87,13 +83,24 @@ def_esp = 42
 velocidad = 32
 exp_base = 66
 ratio_captura = 140
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "hippowdon", "metodo": "nivel", "condicion": "Nivel 34", "nivel": 34}])
+evs_otorgados = {
+"defensa": 1
+}
 evoluciona_a = "hippowdon"
 nivel_evolucion = 34
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10")])
+evoluciones = Array[Dictionary]([{
+"especie": "hippowdon",
+"metodo": "nivel",
+"nivel": 34
+}])
+habilidades = PackedStringArray("sand_stream")
+habilidad_oculta = "sand_force"
+categoria = "Pokémon Hipo"
+altura = 0.8
+peso_kg = 49.5
+descripcion = "Vive en zonas áridas. En lugar de sudar, su cuerpo expulsa granos de arena."
+aprende = Array[ExtResource("2")]([SubResource("Resource_uj671"), SubResource("Resource_yayqr"), SubResource("Resource_ouqvr"), SubResource("Resource_84m2o"), SubResource("Resource_ekv3c"), SubResource("Resource_m5ewi"), SubResource("Resource_6w3vf"), SubResource("Resource_gysi0"), SubResource("Resource_206i2"), SubResource("Resource_7dynr"), SubResource("Resource_4p27c")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 188

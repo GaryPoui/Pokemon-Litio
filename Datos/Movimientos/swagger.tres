@@ -15,3 +15,7 @@ cambios_stats = {
 "ataque": 2
 }
 estado = "confusion"
+numero = 207
+banderas = PackedStringArray("allyanim", "metronome", "mirror", "protect", "reflectable")
+turnos_min = 2
+turnos_max = 5

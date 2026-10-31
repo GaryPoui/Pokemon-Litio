@@ -6,12 +6,11 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/kakuna_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="5"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_3y80c"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_04yo3"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("5")
@@ -22,23 +21,29 @@ id = "kakuna"
 numero = 14
 nombre = "Kakuna"
 tipos = PackedStringArray("bicho", "veneno")
-habilidades = PackedStringArray("Mudar")
-habilidad_oculta = ""
 ps = 45
 ataque = 25
-defensa = 50
 at_esp = 25
 def_esp = 25
 velocidad = 35
 exp_base = 72
 ratio_captura = 120
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"defensa": 2}
-evoluciones = Array[Dictionary]([{"especie": "beedrill", "metodo": "nivel", "condicion": "Nivel 10", "nivel": 10}])
+evs_otorgados = {
+"defensa": 2
+}
 evoluciona_a = "beedrill"
 nivel_evolucion = 10
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1")])
+evoluciones = Array[Dictionary]([{
+"especie": "beedrill",
+"metodo": "nivel",
+"nivel": 10
+}])
+habilidades = PackedStringArray("shed_skin")
+categoria = "Pokémon Capullo"
+altura = 0.6
+peso_kg = 10.0
+descripcion = "Casi incapaz de moverse, este Pokémon solo puede endurecer su caparazón para protegerse."
+aprende = Array[ExtResource("2")]([SubResource("Resource_3y80c"), SubResource("Resource_04yo3")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 39

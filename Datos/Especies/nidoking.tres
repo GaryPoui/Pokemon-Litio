@@ -13,42 +13,38 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/earth_power.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/megahorn.tres" id="12"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_eegtb"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_meagu"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_def0y"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_68cdj"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_0e7sv"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_v60wm"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_cre1e"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_xathi"]
 script = ExtResource("2")
 nivel = 58
 movimiento = ExtResource("12")
@@ -59,21 +55,25 @@ id = "nidoking"
 numero = 34
 nombre = "Nidoking"
 tipos = PackedStringArray("veneno", "tierra")
-habilidades = PackedStringArray("Punto Tóxico", "Rivalidad")
-habilidad_oculta = "Potencia Bruta"
 ps = 81
-ataque = 102
+ataque = 92
 defensa = 77
 at_esp = 85
 def_esp = 75
 velocidad = 85
-exp_base = 223
-ratio_captura = 45
+exp_base = 227
 ratio_genero = 0
 crecimiento = "medium-slow"
-evs_otorgados = {"ataque": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7")])
+evs_otorgados = {
+"ataque": 3
+}
+habilidades = PackedStringArray("poison_point", "rivalry")
+habilidad_oculta = "sheer_force"
+categoria = "Pokémon Taladro"
+altura = 1.4
+peso_kg = 62.0
+descripcion = "Es fácil reconocerlo por tener una dura piel y un gran cuerno lleno de peligrosísimo veneno."
+aprende = Array[ExtResource("2")]([SubResource("Resource_eegtb"), SubResource("Resource_meagu"), SubResource("Resource_def0y"), SubResource("Resource_68cdj"), SubResource("Resource_0e7sv"), SubResource("Resource_v60wm"), SubResource("Resource_cre1e"), SubResource("Resource_xathi")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 49

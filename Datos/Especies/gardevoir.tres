@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bm2ms5gnwmeab"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ds6tt"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ds6tt"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="2_etg7q"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_team.tres" id="3_bk3r5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="4_m4peg"]
@@ -17,96 +17,96 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hypnosis.tres" id="15_rrtgh"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dream_eater.tres" id="16_upm6k"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/stored_power.tres" id="17_u5n1e"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_0hn54"]
-[ext_resource type="Texture2D" uid="uid://cxpq83r7imkn" path="res://Assets/Pokemones/batalla/gardevoir_espalda.png" id="19_lwp7j"]
-[ext_resource type="Texture2D" uid="uid://qosemawolwii" path="res://Assets/Pokemones/batalla/gardevoir_frente.png" id="20_3masu"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_0hn54"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/gardevoir_espalda.png" id="19_lwp7j"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/gardevoir_frente.png" id="20_3masu"]
 
-[sub_resource type="Resource" id="Resource_2pgoh"]
+[sub_resource type="Resource" id="Resource_ds6tt"]
 script = ExtResource("1_ds6tt")
 movimiento = ExtResource("2_etg7q")
 
-[sub_resource type="Resource" id="Resource_1c0q7"]
+[sub_resource type="Resource" id="Resource_etg7q"]
 script = ExtResource("1_ds6tt")
 movimiento = ExtResource("3_bk3r5")
 
-[sub_resource type="Resource" id="Resource_ufjum"]
+[sub_resource type="Resource" id="Resource_bk3r5"]
 script = ExtResource("1_ds6tt")
 movimiento = ExtResource("4_m4peg")
 
-[sub_resource type="Resource" id="Resource_vq732"]
+[sub_resource type="Resource" id="Resource_m4peg"]
 script = ExtResource("1_ds6tt")
 movimiento = ExtResource("5_loukt")
 
-[sub_resource type="Resource" id="Resource_oxcua"]
+[sub_resource type="Resource" id="Resource_loukt"]
 script = ExtResource("1_ds6tt")
 movimiento = ExtResource("6_u03vg")
 
-[sub_resource type="Resource" id="Resource_a6avk"]
+[sub_resource type="Resource" id="Resource_u03vg"]
 script = ExtResource("1_ds6tt")
 nivel = 6
 movimiento = ExtResource("2_etg7q")
 
-[sub_resource type="Resource" id="Resource_e1lnw"]
+[sub_resource type="Resource" id="Resource_l1wlx"]
 script = ExtResource("1_ds6tt")
 nivel = 10
 movimiento = ExtResource("3_bk3r5")
 
-[sub_resource type="Resource" id="Resource_efy8v"]
+[sub_resource type="Resource" id="Resource_nlqvu"]
 script = ExtResource("1_ds6tt")
 nivel = 12
 movimiento = ExtResource("6_u03vg")
 
-[sub_resource type="Resource" id="Resource_wlobb"]
+[sub_resource type="Resource" id="Resource_ld7jn"]
 script = ExtResource("1_ds6tt")
 nivel = 17
 movimiento = ExtResource("7_l1wlx")
 
-[sub_resource type="Resource" id="Resource_8gucf"]
+[sub_resource type="Resource" id="Resource_evfb0"]
 script = ExtResource("1_ds6tt")
 nivel = 22
 movimiento = ExtResource("8_nlqvu")
 
-[sub_resource type="Resource" id="Resource_evrne"]
+[sub_resource type="Resource" id="Resource_eo2rl"]
 script = ExtResource("1_ds6tt")
 nivel = 25
 movimiento = ExtResource("9_ld7jn")
 
-[sub_resource type="Resource" id="Resource_xbrgw"]
+[sub_resource type="Resource" id="Resource_tgptb"]
 script = ExtResource("1_ds6tt")
 nivel = 33
 movimiento = ExtResource("10_evfb0")
 
-[sub_resource type="Resource" id="Resource_11fh6"]
+[sub_resource type="Resource" id="Resource_ovg76"]
 script = ExtResource("1_ds6tt")
 nivel = 40
 movimiento = ExtResource("11_eo2rl")
 
-[sub_resource type="Resource" id="Resource_rn3ye"]
+[sub_resource type="Resource" id="Resource_d1ke6"]
 script = ExtResource("1_ds6tt")
 nivel = 45
 movimiento = ExtResource("12_tgptb")
 
-[sub_resource type="Resource" id="Resource_giadg"]
+[sub_resource type="Resource" id="Resource_rrtgh"]
 script = ExtResource("1_ds6tt")
 nivel = 53
 movimiento = ExtResource("13_ovg76")
 
-[sub_resource type="Resource" id="Resource_7jalx"]
+[sub_resource type="Resource" id="Resource_upm6k"]
 script = ExtResource("1_ds6tt")
 nivel = 60
 movimiento = ExtResource("14_d1ke6")
 
-[sub_resource type="Resource" id="Resource_5h6ey"]
+[sub_resource type="Resource" id="Resource_u5n1e"]
 script = ExtResource("1_ds6tt")
 nivel = 65
 movimiento = ExtResource("15_rrtgh")
 
-[sub_resource type="Resource" id="Resource_t8jkh"]
+[sub_resource type="Resource" id="Resource_0hn54"]
 script = ExtResource("1_ds6tt")
 nivel = 73
 movimiento = ExtResource("16_upm6k")
 
-[sub_resource type="Resource" id="Resource_52etf"]
+[sub_resource type="Resource" id="Resource_lwp7j"]
 script = ExtResource("1_ds6tt")
 nivel = 80
 movimiento = ExtResource("17_u5n1e")
@@ -116,7 +116,7 @@ script = ExtResource("18_0hn54")
 id = "gardevoir"
 numero = 282
 nombre = "Gardevoir"
-tipos = ["psiquico"]
+tipos = PackedStringArray("psiquico")
 ps = 68
 ataque = 65
 defensa = 65
@@ -128,12 +128,16 @@ crecimiento = "slow"
 evs_otorgados = {
 "at_esp": 3
 }
-aprende = Array[ExtResource("1_ds6tt")]([SubResource("Resource_2pgoh"), SubResource("Resource_1c0q7"), SubResource("Resource_ufjum"), SubResource("Resource_vq732"), SubResource("Resource_oxcua"), SubResource("Resource_a6avk"), SubResource("Resource_e1lnw"), SubResource("Resource_efy8v"), SubResource("Resource_wlobb"), SubResource("Resource_8gucf"), SubResource("Resource_evrne"), SubResource("Resource_xbrgw"), SubResource("Resource_11fh6"), SubResource("Resource_rn3ye"), SubResource("Resource_giadg"), SubResource("Resource_7jalx"), SubResource("Resource_5h6ey"), SubResource("Resource_t8jkh"), SubResource("Resource_52etf")])
+amistad_base = 35
+habilidades = PackedStringArray("synchronize", "trace")
+habilidad_oculta = "telepathy"
+categoria = "Pokémon Envolvente"
+altura = 1.6
+peso_kg = 48.4
+descripcion = "Para proteger a su Entrenador, emplea todo su poder psíquico en crear un pequeño agujero negro."
+aprende = Array[ExtResource("1_ds6tt")]([SubResource("Resource_ds6tt"), SubResource("Resource_etg7q"), SubResource("Resource_bk3r5"), SubResource("Resource_m4peg"), SubResource("Resource_loukt"), SubResource("Resource_u03vg"), SubResource("Resource_l1wlx"), SubResource("Resource_nlqvu"), SubResource("Resource_ld7jn"), SubResource("Resource_evfb0"), SubResource("Resource_eo2rl"), SubResource("Resource_tgptb"), SubResource("Resource_ovg76"), SubResource("Resource_d1ke6"), SubResource("Resource_rrtgh"), SubResource("Resource_upm6k"), SubResource("Resource_u5n1e"), SubResource("Resource_0hn54"), SubResource("Resource_lwp7j")])
 sprite_frente = ExtResource("20_3masu")
 sprite_espalda = ExtResource("19_lwp7j")
 cuadros_frente = 183
 cuadros_espalda = 183
 fps_sprite = 14.07
-habilidades = PackedStringArray("Sincronía", "Calco")
-habilidad_oculta = "Telepatía"
-evoluciones = Array[Dictionary]([])

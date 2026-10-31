@@ -23,97 +23,97 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/zoroark_espalda.png" id="21_fab06"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/zoroark_frente.png" id="22_273um"]
 
-[sub_resource type="Resource" id="Resource_4dxaf"]
+[sub_resource type="Resource" id="Resource_l50cs"]
 script = ExtResource("1_l50cs")
 movimiento = ExtResource("2_lfjjh")
 
-[sub_resource type="Resource" id="Resource_mc2q0"]
+[sub_resource type="Resource" id="Resource_lfjjh"]
 script = ExtResource("1_l50cs")
 movimiento = ExtResource("3_6t5u6")
 
-[sub_resource type="Resource" id="Resource_y8j5a"]
+[sub_resource type="Resource" id="Resource_6t5u6"]
 script = ExtResource("1_l50cs")
 movimiento = ExtResource("4_qd0ee")
 
-[sub_resource type="Resource" id="Resource_h7ibf"]
+[sub_resource type="Resource" id="Resource_qd0ee"]
 script = ExtResource("1_l50cs")
 movimiento = ExtResource("5_atww4")
 
-[sub_resource type="Resource" id="Resource_3kfxp"]
+[sub_resource type="Resource" id="Resource_atww4"]
 script = ExtResource("1_l50cs")
 movimiento = ExtResource("6_3oxf2")
 
-[sub_resource type="Resource" id="Resource_x1o2i"]
+[sub_resource type="Resource" id="Resource_3oxf2"]
 script = ExtResource("1_l50cs")
 nivel = 5
 movimiento = ExtResource("4_qd0ee")
 
-[sub_resource type="Resource" id="Resource_k5elm"]
+[sub_resource type="Resource" id="Resource_qipxo"]
 script = ExtResource("1_l50cs")
 nivel = 9
 movimiento = ExtResource("2_lfjjh")
 
-[sub_resource type="Resource" id="Resource_0bi8x"]
+[sub_resource type="Resource" id="Resource_8uqlf"]
 script = ExtResource("1_l50cs")
 nivel = 13
 movimiento = ExtResource("7_qipxo")
 
-[sub_resource type="Resource" id="Resource_oby4e"]
+[sub_resource type="Resource" id="Resource_dupgr"]
 script = ExtResource("1_l50cs")
 nivel = 17
 movimiento = ExtResource("8_8uqlf")
 
-[sub_resource type="Resource" id="Resource_kifbt"]
+[sub_resource type="Resource" id="Resource_vi4rk"]
 script = ExtResource("1_l50cs")
 nivel = 21
 movimiento = ExtResource("9_dupgr")
 
-[sub_resource type="Resource" id="Resource_aciok"]
+[sub_resource type="Resource" id="Resource_byob4"]
 script = ExtResource("1_l50cs")
 nivel = 25
 movimiento = ExtResource("10_vi4rk")
 
-[sub_resource type="Resource" id="Resource_3crv2"]
+[sub_resource type="Resource" id="Resource_fr8v0"]
 script = ExtResource("1_l50cs")
 nivel = 29
 movimiento = ExtResource("11_byob4")
 
-[sub_resource type="Resource" id="Resource_2ax4t"]
+[sub_resource type="Resource" id="Resource_7l86r"]
 script = ExtResource("1_l50cs")
 nivel = 30
 movimiento = ExtResource("12_fr8v0")
 
-[sub_resource type="Resource" id="Resource_fcib6"]
+[sub_resource type="Resource" id="Resource_7poly"]
 script = ExtResource("1_l50cs")
 nivel = 34
 movimiento = ExtResource("13_7l86r")
 
-[sub_resource type="Resource" id="Resource_8cimk"]
+[sub_resource type="Resource" id="Resource_hp4iy"]
 script = ExtResource("1_l50cs")
 nivel = 39
 movimiento = ExtResource("14_7poly")
 
-[sub_resource type="Resource" id="Resource_pudfw"]
+[sub_resource type="Resource" id="Resource_vqyyi"]
 script = ExtResource("1_l50cs")
 nivel = 44
 movimiento = ExtResource("15_hp4iy")
 
-[sub_resource type="Resource" id="Resource_kwof3"]
+[sub_resource type="Resource" id="Resource_sd6fb"]
 script = ExtResource("1_l50cs")
 nivel = 49
 movimiento = ExtResource("16_vqyyi")
 
-[sub_resource type="Resource" id="Resource_54dnf"]
+[sub_resource type="Resource" id="Resource_dmsu4"]
 script = ExtResource("1_l50cs")
 nivel = 54
 movimiento = ExtResource("17_sd6fb")
 
-[sub_resource type="Resource" id="Resource_rlbh0"]
+[sub_resource type="Resource" id="Resource_fsr6k"]
 script = ExtResource("1_l50cs")
 nivel = 59
 movimiento = ExtResource("18_dmsu4")
 
-[sub_resource type="Resource" id="Resource_o12y0"]
+[sub_resource type="Resource" id="Resource_jnejh"]
 script = ExtResource("1_l50cs")
 nivel = 64
 movimiento = ExtResource("19_fsr6k")
@@ -123,7 +123,7 @@ script = ExtResource("20_jnejh")
 id = "zoroark"
 numero = 571
 nombre = "Zoroark"
-tipos = ["siniestro"]
+tipos = PackedStringArray("siniestro")
 ps = 60
 ataque = 105
 defensa = 60
@@ -136,11 +136,13 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 2
 }
-aprende = Array[ExtResource("1_l50cs")]([SubResource("Resource_4dxaf"), SubResource("Resource_mc2q0"), SubResource("Resource_y8j5a"), SubResource("Resource_h7ibf"), SubResource("Resource_3kfxp"), SubResource("Resource_x1o2i"), SubResource("Resource_k5elm"), SubResource("Resource_0bi8x"), SubResource("Resource_oby4e"), SubResource("Resource_kifbt"), SubResource("Resource_aciok"), SubResource("Resource_3crv2"), SubResource("Resource_2ax4t"), SubResource("Resource_fcib6"), SubResource("Resource_8cimk"), SubResource("Resource_pudfw"), SubResource("Resource_kwof3"), SubResource("Resource_54dnf"), SubResource("Resource_rlbh0"), SubResource("Resource_o12y0")])
+habilidades = PackedStringArray("illusion")
+categoria = "Pokémon Disfrazorro"
+altura = 1.6
+peso_kg = 81.1
+descripcion = "Tiene la facultad de confundir a muchos humanos a la vez. Protege su guarida creando un paisaje ilusorio."
+aprende = Array[ExtResource("1_l50cs")]([SubResource("Resource_l50cs"), SubResource("Resource_lfjjh"), SubResource("Resource_6t5u6"), SubResource("Resource_qd0ee"), SubResource("Resource_atww4"), SubResource("Resource_3oxf2"), SubResource("Resource_qipxo"), SubResource("Resource_8uqlf"), SubResource("Resource_dupgr"), SubResource("Resource_vi4rk"), SubResource("Resource_byob4"), SubResource("Resource_fr8v0"), SubResource("Resource_7l86r"), SubResource("Resource_7poly"), SubResource("Resource_hp4iy"), SubResource("Resource_vqyyi"), SubResource("Resource_sd6fb"), SubResource("Resource_dmsu4"), SubResource("Resource_fsr6k"), SubResource("Resource_jnejh")])
 sprite_frente = ExtResource("22_273um")
 sprite_espalda = ExtResource("21_fab06")
 cuadros_frente = 90
 cuadros_espalda = 90
-habilidades = PackedStringArray("Ilusión")
-habilidad_oculta = ""
-evoluciones = Array[Dictionary]([])

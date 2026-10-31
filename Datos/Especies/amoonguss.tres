@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cgwpjf5gr7l1"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ytrn2"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ytrn2"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="2_jgdvd"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="3_wqwjm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bide.tres" id="4_h8oyu"]
@@ -16,92 +16,92 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="14_yl3q4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rage_powder.tres" id="15_41lpd"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/spore.tres" id="16_d7sut"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_xtbiv"]
-[ext_resource type="Texture2D" uid="uid://dhrbkgspeqesl" path="res://Assets/Pokemones/batalla/amoonguss_espalda.png" id="18_hh3s0"]
-[ext_resource type="Texture2D" uid="uid://whqrcfvnb6jm" path="res://Assets/Pokemones/batalla/amoonguss_frente.png" id="19_put44"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_xtbiv"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/amoonguss_espalda.png" id="18_hh3s0"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/amoonguss_frente.png" id="19_put44"]
 
-[sub_resource type="Resource" id="Resource_outd3"]
+[sub_resource type="Resource" id="Resource_ytrn2"]
 script = ExtResource("1_ytrn2")
 movimiento = ExtResource("2_jgdvd")
 
-[sub_resource type="Resource" id="Resource_7pvt2"]
+[sub_resource type="Resource" id="Resource_jgdvd"]
 script = ExtResource("1_ytrn2")
 movimiento = ExtResource("3_wqwjm")
 
-[sub_resource type="Resource" id="Resource_8ogyk"]
+[sub_resource type="Resource" id="Resource_wqwjm"]
 script = ExtResource("1_ytrn2")
 movimiento = ExtResource("4_h8oyu")
 
-[sub_resource type="Resource" id="Resource_f1jcj"]
+[sub_resource type="Resource" id="Resource_h8oyu"]
 script = ExtResource("1_ytrn2")
 movimiento = ExtResource("5_2idqt")
 
-[sub_resource type="Resource" id="Resource_mlabx"]
+[sub_resource type="Resource" id="Resource_2idqt"]
 script = ExtResource("1_ytrn2")
 nivel = 6
 movimiento = ExtResource("5_2idqt")
 
-[sub_resource type="Resource" id="Resource_1i5cg"]
+[sub_resource type="Resource" id="Resource_k03y3"]
 script = ExtResource("1_ytrn2")
 nivel = 8
 movimiento = ExtResource("3_wqwjm")
 
-[sub_resource type="Resource" id="Resource_pqjrd"]
+[sub_resource type="Resource" id="Resource_pb1mv"]
 script = ExtResource("1_ytrn2")
 nivel = 12
 movimiento = ExtResource("4_h8oyu")
 
-[sub_resource type="Resource" id="Resource_edd0f"]
+[sub_resource type="Resource" id="Resource_wyhl1"]
 script = ExtResource("1_ytrn2")
 nivel = 15
 movimiento = ExtResource("6_k03y3")
 
-[sub_resource type="Resource" id="Resource_5xa7s"]
+[sub_resource type="Resource" id="Resource_5bf0h"]
 script = ExtResource("1_ytrn2")
 nivel = 18
 movimiento = ExtResource("7_pb1mv")
 
-[sub_resource type="Resource" id="Resource_xdirp"]
+[sub_resource type="Resource" id="Resource_hfi0h"]
 script = ExtResource("1_ytrn2")
 nivel = 20
 movimiento = ExtResource("8_wyhl1")
 
-[sub_resource type="Resource" id="Resource_p1yk3"]
+[sub_resource type="Resource" id="Resource_jjy0s"]
 script = ExtResource("1_ytrn2")
 nivel = 24
 movimiento = ExtResource("9_5bf0h")
 
-[sub_resource type="Resource" id="Resource_m13lr"]
+[sub_resource type="Resource" id="Resource_pwt4l"]
 script = ExtResource("1_ytrn2")
 nivel = 28
 movimiento = ExtResource("10_hfi0h")
 
-[sub_resource type="Resource" id="Resource_0ivx6"]
+[sub_resource type="Resource" id="Resource_bpaqp"]
 script = ExtResource("1_ytrn2")
 nivel = 32
 movimiento = ExtResource("11_jjy0s")
 
-[sub_resource type="Resource" id="Resource_fewp2"]
+[sub_resource type="Resource" id="Resource_yl3q4"]
 script = ExtResource("1_ytrn2")
 nivel = 35
 movimiento = ExtResource("12_pwt4l")
 
-[sub_resource type="Resource" id="Resource_drffu"]
+[sub_resource type="Resource" id="Resource_41lpd"]
 script = ExtResource("1_ytrn2")
 nivel = 43
 movimiento = ExtResource("13_bpaqp")
 
-[sub_resource type="Resource" id="Resource_4gtll"]
+[sub_resource type="Resource" id="Resource_d7sut"]
 script = ExtResource("1_ytrn2")
 nivel = 49
 movimiento = ExtResource("14_yl3q4")
 
-[sub_resource type="Resource" id="Resource_yhqad"]
+[sub_resource type="Resource" id="Resource_xtbiv"]
 script = ExtResource("1_ytrn2")
 nivel = 54
 movimiento = ExtResource("15_41lpd")
 
-[sub_resource type="Resource" id="Resource_g2omj"]
+[sub_resource type="Resource" id="Resource_hh3s0"]
 script = ExtResource("1_ytrn2")
 nivel = 62
 movimiento = ExtResource("16_d7sut")
@@ -111,7 +111,7 @@ script = ExtResource("17_xtbiv")
 id = "amoonguss"
 numero = 591
 nombre = "Amoonguss"
-tipos = ["planta", "veneno"]
+tipos = PackedStringArray("planta", "veneno")
 ps = 114
 ataque = 85
 defensa = 70
@@ -123,11 +123,14 @@ ratio_captura = 75
 evs_otorgados = {
 "ps": 2
 }
-aprende = Array[ExtResource("1_ytrn2")]([SubResource("Resource_outd3"), SubResource("Resource_7pvt2"), SubResource("Resource_8ogyk"), SubResource("Resource_f1jcj"), SubResource("Resource_mlabx"), SubResource("Resource_1i5cg"), SubResource("Resource_pqjrd"), SubResource("Resource_edd0f"), SubResource("Resource_5xa7s"), SubResource("Resource_xdirp"), SubResource("Resource_p1yk3"), SubResource("Resource_m13lr"), SubResource("Resource_0ivx6"), SubResource("Resource_fewp2"), SubResource("Resource_drffu"), SubResource("Resource_4gtll"), SubResource("Resource_yhqad"), SubResource("Resource_g2omj")])
+habilidades = PackedStringArray("effect_spore")
+habilidad_oculta = "regenerator"
+categoria = "Pokémon Hongo"
+altura = 0.6
+peso_kg = 10.5
+descripcion = "Aunque intenta pasar por parte superior de una Poké Ball para atraer a sus presas, consigue engañar a pocos."
+aprende = Array[ExtResource("1_ytrn2")]([SubResource("Resource_ytrn2"), SubResource("Resource_jgdvd"), SubResource("Resource_wqwjm"), SubResource("Resource_h8oyu"), SubResource("Resource_2idqt"), SubResource("Resource_k03y3"), SubResource("Resource_pb1mv"), SubResource("Resource_wyhl1"), SubResource("Resource_5bf0h"), SubResource("Resource_hfi0h"), SubResource("Resource_jjy0s"), SubResource("Resource_pwt4l"), SubResource("Resource_bpaqp"), SubResource("Resource_yl3q4"), SubResource("Resource_41lpd"), SubResource("Resource_d7sut"), SubResource("Resource_xtbiv"), SubResource("Resource_hh3s0")])
 sprite_frente = ExtResource("19_put44")
 sprite_espalda = ExtResource("18_hh3s0")
 cuadros_frente = 48
 cuadros_espalda = 48
-habilidades = PackedStringArray("Efecto Espora")
-habilidad_oculta = "Regeneración"
-evoluciones = Array[Dictionary]([])

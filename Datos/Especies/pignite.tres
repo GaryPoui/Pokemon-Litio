@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://jl20n7im15nj"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_rj87r"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_rj87r"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="2_kw8dm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/odor_sleuth.tres" id="3_x6uaw"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_7i31d"]
@@ -17,97 +17,97 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/head_smash.tres" id="15_82ij1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/roar.tres" id="16_he3rc"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flare_blitz.tres" id="17_5bpam"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_p17io"]
-[ext_resource type="Texture2D" uid="uid://dw15il64baqqm" path="res://Assets/Pokemones/batalla/pignite_espalda.png" id="19_0nx24"]
-[ext_resource type="Texture2D" uid="uid://cjpj8oodn22vn" path="res://Assets/Pokemones/batalla/pignite_frente.png" id="20_2jx5w"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_p17io"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/pignite_espalda.png" id="19_0nx24"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/pignite_frente.png" id="20_2jx5w"]
 
-[sub_resource type="Resource" id="Resource_arjup"]
+[sub_resource type="Resource" id="Resource_rj87r"]
 script = ExtResource("1_rj87r")
 movimiento = ExtResource("2_kw8dm")
 
-[sub_resource type="Resource" id="Resource_ukgf1"]
+[sub_resource type="Resource" id="Resource_kw8dm"]
 script = ExtResource("1_rj87r")
 movimiento = ExtResource("3_x6uaw")
 
-[sub_resource type="Resource" id="Resource_o413k"]
+[sub_resource type="Resource" id="Resource_x6uaw"]
 script = ExtResource("1_rj87r")
 movimiento = ExtResource("4_7i31d")
 
-[sub_resource type="Resource" id="Resource_qwyx2"]
+[sub_resource type="Resource" id="Resource_7i31d"]
 script = ExtResource("1_rj87r")
 movimiento = ExtResource("5_kfknv")
 
-[sub_resource type="Resource" id="Resource_2p5ci"]
+[sub_resource type="Resource" id="Resource_kfknv"]
 script = ExtResource("1_rj87r")
 nivel = 3
 movimiento = ExtResource("5_kfknv")
 
-[sub_resource type="Resource" id="Resource_ms013"]
+[sub_resource type="Resource" id="Resource_7a56s"]
 script = ExtResource("1_rj87r")
 nivel = 7
 movimiento = ExtResource("2_kw8dm")
 
-[sub_resource type="Resource" id="Resource_sj1qc"]
+[sub_resource type="Resource" id="Resource_3sh8p"]
 script = ExtResource("1_rj87r")
 nivel = 9
 movimiento = ExtResource("3_x6uaw")
 
-[sub_resource type="Resource" id="Resource_7keen"]
+[sub_resource type="Resource" id="Resource_hqudu"]
 script = ExtResource("1_rj87r")
 nivel = 13
 movimiento = ExtResource("6_7a56s")
 
-[sub_resource type="Resource" id="Resource_a2u48"]
+[sub_resource type="Resource" id="Resource_uec2i"]
 script = ExtResource("1_rj87r")
 nivel = 15
 movimiento = ExtResource("7_3sh8p")
 
-[sub_resource type="Resource" id="Resource_1jqdp"]
+[sub_resource type="Resource" id="Resource_1bcxh"]
 script = ExtResource("1_rj87r")
 nivel = 17
 movimiento = ExtResource("8_hqudu")
 
-[sub_resource type="Resource" id="Resource_r81b1"]
+[sub_resource type="Resource" id="Resource_sd8ey"]
 script = ExtResource("1_rj87r")
 nivel = 20
 movimiento = ExtResource("9_uec2i")
 
-[sub_resource type="Resource" id="Resource_qpkcy"]
+[sub_resource type="Resource" id="Resource_pmycx"]
 script = ExtResource("1_rj87r")
 nivel = 23
 movimiento = ExtResource("10_1bcxh")
 
-[sub_resource type="Resource" id="Resource_r4wdm"]
+[sub_resource type="Resource" id="Resource_dw7jp"]
 script = ExtResource("1_rj87r")
 nivel = 28
 movimiento = ExtResource("11_sd8ey")
 
-[sub_resource type="Resource" id="Resource_x31qv"]
+[sub_resource type="Resource" id="Resource_3716l"]
 script = ExtResource("1_rj87r")
 nivel = 31
 movimiento = ExtResource("12_pmycx")
 
-[sub_resource type="Resource" id="Resource_hh85a"]
+[sub_resource type="Resource" id="Resource_82ij1"]
 script = ExtResource("1_rj87r")
 nivel = 36
 movimiento = ExtResource("13_dw7jp")
 
-[sub_resource type="Resource" id="Resource_wnyu6"]
+[sub_resource type="Resource" id="Resource_he3rc"]
 script = ExtResource("1_rj87r")
 nivel = 39
 movimiento = ExtResource("14_3716l")
 
-[sub_resource type="Resource" id="Resource_dubcu"]
+[sub_resource type="Resource" id="Resource_5bpam"]
 script = ExtResource("1_rj87r")
 nivel = 44
 movimiento = ExtResource("15_82ij1")
 
-[sub_resource type="Resource" id="Resource_5gsil"]
+[sub_resource type="Resource" id="Resource_p17io"]
 script = ExtResource("1_rj87r")
 nivel = 47
 movimiento = ExtResource("16_he3rc")
 
-[sub_resource type="Resource" id="Resource_pl71h"]
+[sub_resource type="Resource" id="Resource_0nx24"]
 script = ExtResource("1_rj87r")
 nivel = 52
 movimiento = ExtResource("17_5bpam")
@@ -117,7 +117,7 @@ script = ExtResource("18_p17io")
 id = "pignite"
 numero = 499
 nombre = "Pignite"
-tipos = ["fuego", "lucha"]
+tipos = PackedStringArray("fuego", "lucha")
 ps = 90
 ataque = 93
 defensa = 55
@@ -132,12 +132,20 @@ evs_otorgados = {
 }
 evoluciona_a = "emboar"
 nivel_evolucion = 36
-aprende = Array[ExtResource("1_rj87r")]([SubResource("Resource_arjup"), SubResource("Resource_ukgf1"), SubResource("Resource_o413k"), SubResource("Resource_qwyx2"), SubResource("Resource_2p5ci"), SubResource("Resource_ms013"), SubResource("Resource_sj1qc"), SubResource("Resource_7keen"), SubResource("Resource_a2u48"), SubResource("Resource_1jqdp"), SubResource("Resource_r81b1"), SubResource("Resource_qpkcy"), SubResource("Resource_r4wdm"), SubResource("Resource_x31qv"), SubResource("Resource_hh85a"), SubResource("Resource_wnyu6"), SubResource("Resource_dubcu"), SubResource("Resource_5gsil"), SubResource("Resource_pl71h")])
+evoluciones = Array[Dictionary]([{
+"especie": "emboar",
+"metodo": "nivel",
+"nivel": 36
+}])
+habilidades = PackedStringArray("blaze")
+habilidad_oculta = "thick_fat"
+categoria = "Pokémon Cerdo Fuego"
+altura = 1.0
+peso_kg = 55.5
+descripcion = "Cuanto más come, más combustible tiene en su interior para avivar sus llamas, con lo que también aumenta su poder."
+aprende = Array[ExtResource("1_rj87r")]([SubResource("Resource_rj87r"), SubResource("Resource_kw8dm"), SubResource("Resource_x6uaw"), SubResource("Resource_7i31d"), SubResource("Resource_kfknv"), SubResource("Resource_7a56s"), SubResource("Resource_3sh8p"), SubResource("Resource_hqudu"), SubResource("Resource_uec2i"), SubResource("Resource_1bcxh"), SubResource("Resource_sd8ey"), SubResource("Resource_pmycx"), SubResource("Resource_dw7jp"), SubResource("Resource_3716l"), SubResource("Resource_82ij1"), SubResource("Resource_he3rc"), SubResource("Resource_5bpam"), SubResource("Resource_p17io"), SubResource("Resource_0nx24")])
 sprite_frente = ExtResource("20_2jx5w")
 sprite_espalda = ExtResource("19_0nx24")
 cuadros_frente = 63
 cuadros_espalda = 64
 fps_sprite = 9.84
-habilidades = PackedStringArray("Mar de Llamas/Mar Llamas")
-habilidad_oculta = "Sebo"
-evoluciones = Array[Dictionary]([{"especie": "emboar", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

@@ -8,100 +8,66 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sonic_boom.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/feint_attack.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="8"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="9"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/bide.tres" id="10"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/bulldoze.tres" id="11"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/rock_slide.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dragon_breath.tres" id="15"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/earth_power.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sandstorm.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_beam.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_scauw"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_1xqyl"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_abh76"]
+script = ExtResource("2")
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_23jve"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_73nb7"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
+nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 4
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 7
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 10
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 13
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_yv1ft"]
 script = ExtResource("2")
 nivel = 17
-movimiento = ExtResource("10")
+movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 21
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_3en8c"]
 script = ExtResource("2")
 nivel = 25
-movimiento = ExtResource("12")
+movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_ocnh1"]
 script = ExtResource("2")
-nivel = 29
+nivel = 33
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 34
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_vnf2m"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_xs5qx"]
 script = ExtResource("2")
-nivel = 39
-movimiento = ExtResource("16")
+nivel = 41
+movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_15"]
-script = ExtResource("2")
-nivel = 44
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_sc65i"]
 script = ExtResource("2")
 nivel = 49
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Resource_e04wn"]
+script = ExtResource("2")
+nivel = 57
 movimiento = ExtResource("18")
 
 [resource]
@@ -110,23 +76,28 @@ id = "vibrava"
 numero = 329
 nombre = "Vibrava"
 tipos = PackedStringArray("tierra", "dragon")
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
-ps = 50
 ataque = 70
-defensa = 50
-at_esp = 50
-def_esp = 50
 velocidad = 70
 exp_base = 119
 ratio_captura = 120
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"ataque": 1, "velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "flygon", "metodo": "nivel", "condicion": "Nivel 45", "nivel": 45}])
+evs_otorgados = {
+"ataque": 1,
+"velocidad": 1
+}
 evoluciona_a = "flygon"
 nivel_evolucion = 45
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evoluciones = Array[Dictionary]([{
+"especie": "flygon",
+"metodo": "nivel",
+"nivel": 45
+}])
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Vibrante"
+altura = 1.1
+peso_kg = 15.3
+descripcion = "Al agitar a gran velocidad ambas alas, emite ondas ultrasónicas que provocan fuertes dolores de cabeza."
+aprende = Array[ExtResource("2")]([SubResource("Resource_scauw"), SubResource("Resource_1xqyl"), SubResource("Resource_abh76"), SubResource("Resource_23jve"), SubResource("Resource_73nb7"), SubResource("Resource_yv1ft"), SubResource("Resource_3en8c"), SubResource("Resource_ocnh1"), SubResource("Resource_vnf2m"), SubResource("Resource_xs5qx"), SubResource("Resource_sc65i"), SubResource("Resource_e04wn")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 46

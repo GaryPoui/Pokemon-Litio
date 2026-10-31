@@ -12,3 +12,5 @@ objetivo = "user"
 meta = "heal"
 descripcion = "Absorbe la energía acumulada con Reserva para recobrar salud. Cuanta más se haya acumulado, mayor será el número de PS que se recuperen."
 curacion = 25
+numero = 256
+banderas = PackedStringArray("heal", "metronome", "snatch")

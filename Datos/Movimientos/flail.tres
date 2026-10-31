@@ -8,3 +8,5 @@ id = "flail"
 nombre = "Azote"
 pp = 15
 descripcion = "Ataque frenético. Cuantos menos PS tenga el usuario, más daño producirá."
+numero = 175
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

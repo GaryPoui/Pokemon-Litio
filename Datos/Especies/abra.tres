@@ -1,12 +1,12 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bdhvxgo4ysutj"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_g0tu5"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_g0tu5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/teleport.tres" id="2_hwcav"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="3_o3s7w"]
-[ext_resource type="Texture2D" uid="uid://brvviid128mqg" path="res://Assets/Pokemones/batalla/abra_espalda.png" id="4_gjkqh"]
-[ext_resource type="Texture2D" uid="uid://2snysug40gdj" path="res://Assets/Pokemones/batalla/abra_frente.png" id="5_1r02y"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="3_o3s7w"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/abra_espalda.png" id="4_gjkqh"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/abra_frente.png" id="5_1r02y"]
 
-[sub_resource type="Resource" id="Resource_ry0qp"]
+[sub_resource type="Resource" id="Resource_g0tu5"]
 script = ExtResource("1_g0tu5")
 movimiento = ExtResource("2_hwcav")
 
@@ -15,7 +15,7 @@ script = ExtResource("3_o3s7w")
 id = "abra"
 numero = 63
 nombre = "Abra"
-tipos = ["psiquico"]
+tipos = PackedStringArray("psiquico")
 ps = 25
 ataque = 20
 defensa = 15
@@ -31,12 +31,20 @@ evs_otorgados = {
 }
 evoluciona_a = "kadabra"
 nivel_evolucion = 16
-aprende = Array[ExtResource("1_g0tu5")]([SubResource("Resource_ry0qp")])
+evoluciones = Array[Dictionary]([{
+"especie": "kadabra",
+"metodo": "nivel",
+"nivel": 16
+}])
+habilidades = PackedStringArray("synchronize", "inner_focus")
+habilidad_oculta = "magic_guard"
+categoria = "Pokémon Psi"
+altura = 0.9
+peso_kg = 19.5
+descripcion = "Duerme 18 horas al día y mientras lo hace es capaz de usar una serie de poderes extrasensoriales."
+aprende = Array[ExtResource("1_g0tu5")]([SubResource("Resource_g0tu5")])
 sprite_frente = ExtResource("5_1r02y")
 sprite_espalda = ExtResource("4_gjkqh")
 cuadros_frente = 56
 cuadros_espalda = 56
 fps_sprite = 9.82
-habilidades = PackedStringArray("Sincronía", "Fuerza Mental")
-habilidad_oculta = "Muro Mágico"
-evoluciones = Array[Dictionary]([{"especie": "kadabra", "metodo": "nivel", "condicion": "Nivel 16", "nivel": 16}])

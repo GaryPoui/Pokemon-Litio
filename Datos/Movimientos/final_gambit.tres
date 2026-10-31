@@ -10,3 +10,5 @@ tipo = "lucha"
 categoria = "especial"
 pp = 5
 descripcion = "El usuario se sacrifica causándole un daño al objetivo equivalente a sus propios PS perdidos."
+numero = 515
+banderas = PackedStringArray("metronome", "noparentalbond", "protect")

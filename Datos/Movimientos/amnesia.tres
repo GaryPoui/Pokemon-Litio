@@ -16,3 +16,5 @@ descripcion = "El usuario olvida sus preocupaciones y aumenta mucho la Defensa E
 cambios_stats = {
 "def_esp": 2
 }
+numero = 133
+banderas = PackedStringArray("metronome", "snatch")

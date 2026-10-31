@@ -11,32 +11,30 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sweet_kiss.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/copycat.tres" id="10"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_7d2ix"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_aoven"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_jh2wk"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_qphtb"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_2e4mg"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_ke2qt"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
@@ -47,8 +45,6 @@ id = "igglybuff"
 numero = 174
 nombre = "Igglybuff"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Gran Encanto", "Tenacidad")
-habilidad_oculta = "Compiescolta"
 ps = 90
 ataque = 30
 defensa = 15
@@ -59,12 +55,22 @@ exp_base = 42
 ratio_captura = 170
 ratio_genero = 6
 crecimiento = "fast"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([{"especie": "jigglypuff", "metodo": "amistad", "condicion": "Amistad + nivel"}])
-evoluciona_a = "jigglypuff"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5")])
+evs_otorgados = {
+"ps": 1
+}
+evoluciones = Array[Dictionary]([{
+"amistad": 220,
+"especie": "jigglypuff",
+"metodo": "amistad"
+}])
+habilidades = PackedStringArray("cute_charm")
+habilidad_oculta = "friend_guard"
+categoria = "Pokémon Globo"
+altura = 0.3
+peso_kg = 1.0
+descripcion = "Para caminar, en lugar de usar los pies que tiene, opta por dar botes con su cuerpo redondo y blandito."
+aprende = Array[ExtResource("2")]([SubResource("Resource_7d2ix"), SubResource("Resource_aoven"), SubResource("Resource_jh2wk"), SubResource("Resource_qphtb"), SubResource("Resource_2e4mg"), SubResource("Resource_ke2qt")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 81
 cuadros_espalda = 81
-fps_sprite = 10.0

@@ -59,19 +59,25 @@ func _ready() -> void:
 	icono.size =Vector2(30, 30)
 	desc.add_child(icono)
 	desc_lbl= EstiloUI.nuevo_label("", 8, Vector2(38, 3))
-	desc_lbl.size= Vector2(204, 40)
+	EstiloUI.fuente_batalla(desc_lbl)
+	desc_lbl.size= Vector2(204, 36)
 	desc_lbl.autowrap_mode= TextServer.AUTOWRAP_WORD_SMART
-	desc_lbl.add_theme_constant_override("line_spacing", -3)
+	desc_lbl.add_theme_constant_override("line_spacing", -1)
 	desc.add_child(desc_lbl)
-	tenes_lbl= EstiloUI.nuevo_label("", 8, Vector2(6, 44), EstiloUI.TENUE)
+	tenes_lbl= EstiloUI.nuevo_label("", 8, Vector2(38, 42), EstiloUI.TENUE)
+	EstiloUI.fuente_batalla(tenes_lbl)
 	desc.add_child(tenes_lbl)
-	caja_cant= _panel(Rect2(150, 96, 100, 30))
-	cant_lbl= EstiloUI.nuevo_label("", 9, Vector2(6, 2))
-	total_lbl= EstiloUI.nuevo_label("", 9, Vector2(6, 15))
-	total_lbl.size.x= 88
+	caja_cant= Panel.new()
+	caja_cant.size= Vector2(100, 15)
+	caja_cant.add_theme_stylebox_override("panel", EstiloUI.pastilla(EstiloUI.FONDO, Color("ffd84a")))
+	lista.add_child(caja_cant)
+	cant_lbl= EstiloUI.nuevo_label("", 8, Vector2(5, 1))
+	total_lbl= EstiloUI.nuevo_label("", 8, Vector2(40, 1))
+	total_lbl.size.x= 55
 	total_lbl.horizontal_alignment= HORIZONTAL_ALIGNMENT_RIGHT
-	caja_cant.add_child(cant_lbl)
-	caja_cant.add_child(total_lbl)
+	for l in [cant_lbl, total_lbl]:
+		EstiloUI.fuente_batalla(l)
+		caja_cant.add_child(l)
 	caja_cant.visible= false
 	_pintar()
 
@@ -110,8 +116,14 @@ func precio(o: Objeto) -> int:
 func _pintar() -> void:
 	if titulo_lbl== null:
 		return
-	titulo_lbl.text= "%s · %s" % [titulo_tienda, "VENDER" if vender else "COMPRAR"]
 	dinero_lbl.text ="%d$" % Estado.dinero
+	var modo:= "VENDER" if vender else "COMPRAR"
+	var libre:= 236.0- dinero_lbl.get_combined_minimum_size().x- 10.0
+	titulo_lbl.text= modo
+	for t in ["%s · %s" % [titulo_tienda, modo], titulo_tienda]:
+		if _ancho(titulo_lbl, t)<= libre:
+			titulo_lbl.text= t
+			break
 	fila= clampi(fila, 0, maxi(0, stock.size()))
 	if fila< arriba:
 		arriba= fila
@@ -123,7 +135,7 @@ func _pintar() -> void:
 		var pr: Label =filas[i][1]
 		if k< stock.size():
 			var o:= Inventario.get_objeto(stock[k])
-			n.text= o.nombre if not vender else "%s x%d" % [o.nombre, Inventario.cantidad_de(o.id)]
+			n.text= o.nombre if not vender else "%s ×%d" % [o.nombre, Inventario.cantidad_de(o.id)]
 			pr.text ="%d$" % precio(o)
 		elif k== stock.size():
 			n.text= "SALIR"
@@ -146,6 +158,10 @@ func _pintar() -> void:
 		var o:= Inventario.get_objeto(stock[fila])
 		cant_lbl.text= "× %02d" % cantidad
 		total_lbl.text ="%d$" % (precio(o)* cantidad)
+		caja_cant.position= Vector2(lista.size.x- caja_cant.size.x- 4, 1+ (fila- arriba)* ALTO_FILA)
+
+func _ancho(l: Label, t: String) -> float:
+	return l.get_theme_font("font").get_string_size(t, HORIZONTAL_ALIGNMENT_LEFT, -1, l.get_theme_font_size("font_size")).x
 
 func _maximo(o: Objeto) -> int:
 	if vender:

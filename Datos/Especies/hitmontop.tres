@@ -21,82 +21,80 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/close_combat.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/endeavor.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_tjwy7"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_s10wk"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_po61l"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_c4m35"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_rwbdy"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_85jdq"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_onqp5"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_figje"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_5utrm"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_7b8ea"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_onhjc"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 46
-movimiento = ExtResource("16")
-
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_55we3"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_ljii3"]
+script = ExtResource("2")
+nivel = 46
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Resource_p0mln"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_n4o3b"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_jk8qb"]
 script = ExtResource("2")
 nivel = 60
 movimiento = ExtResource("20")
@@ -107,21 +105,23 @@ id = "hitmontop"
 numero = 237
 nombre = "Hitmontop"
 tipos = PackedStringArray("lucha")
-habilidades = PackedStringArray("Intimidación", "Experto")
-habilidad_oculta = "Impasible"
-ps = 50
 ataque = 95
 defensa = 95
 at_esp = 35
 def_esp = 110
 velocidad = 70
 exp_base = 159
-ratio_captura = 45
 ratio_genero = 0
-crecimiento = "medium"
-evs_otorgados = {"def_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"def_esp": 2
+}
+habilidades = PackedStringArray("intimidate", "technician")
+habilidad_oculta = "steadfast"
+categoria = "Pokémon Boca Abajo"
+altura = 1.4
+peso_kg = 48.0
+descripcion = "Gira a gran velocidad al luchar. La fuerza centrífuga multiplica su poder de destrucción por diez."
+aprende = Array[ExtResource("2")]([SubResource("Resource_tjwy7"), SubResource("Resource_s10wk"), SubResource("Resource_po61l"), SubResource("Resource_c4m35"), SubResource("Resource_rwbdy"), SubResource("Resource_85jdq"), SubResource("Resource_onqp5"), SubResource("Resource_figje"), SubResource("Resource_5utrm"), SubResource("Resource_7b8ea"), SubResource("Resource_onhjc"), SubResource("Resource_55we3"), SubResource("Resource_ljii3"), SubResource("Resource_p0mln"), SubResource("Resource_n4o3b"), SubResource("Resource_jk8qb")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 64

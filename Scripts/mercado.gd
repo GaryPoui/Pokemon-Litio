@@ -3,8 +3,9 @@ extends "res://Scripts/npc.gd"
 const TIENDA:= preload("res://Scripts/ui/tienda_objetos.gd")
 const STOCK_POR_MEDALLAS :=[
 	["pokeball", "potion", "antidote", "paralyze_heal", "awakening", "repel"],
-	["greatball", "super_potion", "burn_heal", "ice_heal", "super_repel"],
-	["revive", "full_heal"],
+	["greatball", "super_potion", "burn_heal", "ice_heal", "super_repel", "fire_stone", "water_stone", "thunder_stone", "leaf_stone", "moon_stone"],
+	["revive", "full_heal", "sun_stone", "shiny_stone", "dusk_stone", "dawn_stone", "ice_stone", "oval_stone", "linking_cord"],
+	["kings_rock", "metal_coat", "dragon_scale", "up_grade", "dubious_disc", "protector", "electirizer", "magmarizer", "reaper_cloth", "deep_sea_tooth", "deep_sea_scale", "prism_scale", "razor_fang", "razor_claw", "ability_patch"],
 ]
 
 @export_group("Almacén")

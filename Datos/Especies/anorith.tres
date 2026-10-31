@@ -17,62 +17,60 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/crush_claw.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/x_scissor.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_skmqh"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_uy8q7"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_vaid5"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_2q5fw"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_7vgy3"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_6v2w5"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_usjrf"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_so65q"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_hvqph"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_jx2ws"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_vc423"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_tfy5n"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("16")
@@ -83,23 +81,30 @@ id = "anorith"
 numero = 347
 nombre = "Anorith"
 tipos = PackedStringArray("roca", "bicho")
-habilidades = PackedStringArray("Armadura Batalla")
-habilidad_oculta = "Nado Rápido"
 ps = 45
 ataque = 95
-defensa = 50
 at_esp = 40
-def_esp = 50
 velocidad = 75
 exp_base = 71
-ratio_captura = 45
 ratio_genero = 1
 crecimiento = "slow-then-very-fast"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "armaldo", "metodo": "nivel", "condicion": "Nivel 40", "nivel": 40}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "armaldo"
 nivel_evolucion = 40
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evoluciones = Array[Dictionary]([{
+"especie": "armaldo",
+"metodo": "nivel",
+"nivel": 40
+}])
+habilidades = PackedStringArray("battle_armor")
+habilidad_oculta = "swift_swim"
+categoria = "Pokémon Camarón"
+altura = 0.7
+peso_kg = 12.5
+descripcion = "Es una especie de Pokémon predecesor. Estira las pinzas para cazar a sus presas, que se esconden en las rocas del mar."
+aprende = Array[ExtResource("2")]([SubResource("Resource_skmqh"), SubResource("Resource_uy8q7"), SubResource("Resource_vaid5"), SubResource("Resource_2q5fw"), SubResource("Resource_7vgy3"), SubResource("Resource_6v2w5"), SubResource("Resource_usjrf"), SubResource("Resource_so65q"), SubResource("Resource_hvqph"), SubResource("Resource_jx2ws"), SubResource("Resource_vc423"), SubResource("Resource_tfy5n")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 52

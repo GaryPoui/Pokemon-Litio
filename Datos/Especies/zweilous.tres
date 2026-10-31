@@ -8,6 +8,7 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/dragon_rage.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/roar.tres" id="8_8irmm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/headbutt.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dragon_breath.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="11"]
@@ -20,87 +21,88 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/outrage.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_8irmm"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_ng0es"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_dahsf"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_7vrgg"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_6sceb"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_b5fl5"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_w7q7l"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_m5dve"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_vph7r"]
+script = ExtResource("2")
+nivel = 20
+movimiento = ExtResource("8_8irmm")
+
+[sub_resource type="Resource" id="Resource_rgyg6"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_poi3v"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_xepov"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_glstf"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_d4qqm"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_5gbyq"]
 script = ExtResource("2")
 nivel = 48
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_30hg3"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_i6xqv"]
 script = ExtResource("2")
 nivel = 64
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_j7of3"]
 script = ExtResource("2")
 nivel = 71
 movimiento = ExtResource("19")
@@ -111,8 +113,6 @@ id = "zweilous"
 numero = 634
 nombre = "Zweilous"
 tipos = PackedStringArray("siniestro", "dragon")
-habilidades = PackedStringArray("Entusiasmo")
-habilidad_oculta = ""
 ps = 72
 ataque = 85
 defensa = 70
@@ -120,14 +120,24 @@ at_esp = 65
 def_esp = 70
 velocidad = 58
 exp_base = 147
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([{"especie": "hydreigon", "metodo": "nivel", "condicion": "Nivel 64", "nivel": 64}])
+evs_otorgados = {
+"ataque": 2
+}
 evoluciona_a = "hydreigon"
 nivel_evolucion = 64
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evoluciones = Array[Dictionary]([{
+"especie": "hydreigon",
+"metodo": "nivel",
+"nivel": 64
+}])
+amistad_base = 35
+habilidades = PackedStringArray("hustle")
+categoria = "Pokémon Violento"
+altura = 1.4
+peso_kg = 50.0
+descripcion = "Sus dos cabezas se llevan fatal, y la que consigue comer más que la otra es la que lleva la voz cantante."
+aprende = Array[ExtResource("2")]([SubResource("Resource_8irmm"), SubResource("Resource_ng0es"), SubResource("Resource_dahsf"), SubResource("Resource_7vrgg"), SubResource("Resource_6sceb"), SubResource("Resource_b5fl5"), SubResource("Resource_w7q7l"), SubResource("Resource_m5dve"), SubResource("Resource_vph7r"), SubResource("Resource_rgyg6"), SubResource("Resource_poi3v"), SubResource("Resource_xepov"), SubResource("Resource_glstf"), SubResource("Resource_d4qqm"), SubResource("Resource_5gbyq"), SubResource("Resource_30hg3"), SubResource("Resource_i6xqv"), SubResource("Resource_j7of3")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 59

@@ -5,11 +5,16 @@
 [resource]
 script = ExtResource("1")
 id = "mist_ball"
-nombre = "Bola neblina"
+nombre = "Bola Neblina"
 tipo = "psiquico"
 categoria = "especial"
-poder = 95
-precision = 100
+poder = 70
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-lower"
+descripcion = "Banco de niebla que puede bajar el Ataque Especial del objetivo."
+cambios_stats = {
+"at_esp": -1
+}
+prob_stat = 50
+numero = 296
+banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")

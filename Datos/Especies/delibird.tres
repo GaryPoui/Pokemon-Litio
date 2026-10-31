@@ -6,9 +6,8 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/delibird_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/present.tres" id="5"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_u8qvg"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
 [resource]
@@ -17,8 +16,6 @@ id = "delibird"
 numero = 225
 nombre = "Delibird"
 tipos = PackedStringArray("hielo", "volador")
-habilidades = PackedStringArray("Espíritu Vital", "Entusiasmo")
-habilidad_oculta = "Insomnio"
 ps = 45
 ataque = 55
 defensa = 45
@@ -26,12 +23,17 @@ at_esp = 65
 def_esp = 45
 velocidad = 75
 exp_base = 116
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "fast"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0")])
+evs_otorgados = {
+"velocidad": 1
+}
+habilidades = PackedStringArray("vital_spirit", "hustle")
+habilidad_oculta = "insomnia"
+categoria = "Pokémon Reparto"
+altura = 0.9
+peso_kg = 16.0
+descripcion = "Transporta alimentos en su cola enrollada. Le gusta compartir su comida con los montañistas perdidos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_u8qvg")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 86

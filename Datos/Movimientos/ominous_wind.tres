@@ -5,11 +5,21 @@
 [resource]
 script = ExtResource("1")
 id = "ominous_wind"
-nombre = "Viento aciago"
+nombre = "Viento Aciago"
 tipo = "fantasma"
 categoria = "especial"
 poder = 60
-precision = 100
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-raise"
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+cambios_stats = {
+"at_esp": 1,
+"ataque": 1,
+"def_esp": 1,
+"defensa": 1,
+"velocidad": 1
+}
+prob_estado = 10
+prob_stat = 10
+numero = 466
+banderas = PackedStringArray("metronome", "mirror", "protect")

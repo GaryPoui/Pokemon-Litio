@@ -20,82 +20,77 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/blizzard.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sheer_cold.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_8vfje"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_07u8o"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_trsmm"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_haich"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_lu88e"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_wtxjy"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_4b7wv"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_f262y"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ll1sy"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ps56k"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_3j2sq"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 39
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_cmv56"]
 script = ExtResource("2")
 nivel = 39
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_rdi5p"]
+script = ExtResource("2")
+nivel = 39
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Resource_2yil8"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_oev02"]
 script = ExtResource("2")
 nivel = 52
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_emkh7"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("19")
@@ -106,8 +101,6 @@ id = "walrein"
 numero = 365
 nombre = "Walrein"
 tipos = PackedStringArray("hielo", "agua")
-habilidades = PackedStringArray("Sebo", "Cuerpo de Hielo/Gélido")
-habilidad_oculta = "Despistado/Despiste"
 ps = 110
 ataque = 80
 defensa = 90
@@ -115,12 +108,17 @@ at_esp = 95
 def_esp = 90
 velocidad = 65
 exp_base = 239
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"ps": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"ps": 3
+}
+habilidades = PackedStringArray("thick_fat", "ice_body")
+habilidad_oculta = "oblivious"
+categoria = "Pokémon Rompehielo"
+altura = 1.4
+peso_kg = 150.6
+descripcion = "Rompe el hielo con sus colmillos. Su gruesa capa de grasa le protege del frío y de los enemigos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_8vfje"), SubResource("Resource_07u8o"), SubResource("Resource_trsmm"), SubResource("Resource_haich"), SubResource("Resource_lu88e"), SubResource("Resource_wtxjy"), SubResource("Resource_4b7wv"), SubResource("Resource_f262y"), SubResource("Resource_ll1sy"), SubResource("Resource_ps56k"), SubResource("Resource_3j2sq"), SubResource("Resource_cmv56"), SubResource("Resource_rdi5p"), SubResource("Resource_2yil8"), SubResource("Resource_oev02"), SubResource("Resource_emkh7")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 62

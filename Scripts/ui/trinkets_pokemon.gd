@@ -39,7 +39,7 @@ func _ready() -> void:
 		var c: Label= equipados.get_node("S%d/Cuenta" % i)
 		EstiloUI.label(c, 8, Color.WHITE)
 		EstiloUI.fuente_batalla(c)
-		c.add_theme_color_override("font_shadow_color", Color(0, 0, 0, 0.9))
+		c.add_theme_stylebox_override("normal", EstiloUI.pastilla())
 	EstiloUI.fuente_batalla(seleccion)
 	for i in EfectosTrinket.MAX_POR_POKEMON:
 		var hueco:= StyleBoxFlat.new()
@@ -58,6 +58,18 @@ func _ready() -> void:
 		for n in ["Nombre", "Cant"]:
 			EstiloUI.label(lista.get_node("R%d/%s" % [i, n]), 8)
 			EstiloUI.fuente_batalla(lista.get_node("R%d/%s" % [i, n]))
+		var nl: Label= lista.get_node("R%d/Nombre" % i)
+		nl.text_overrun_behavior= TextServer.OVERRUN_NO_TRIMMING
+		nl.autowrap_mode =TextServer.AUTOWRAP_WORD_SMART
+		nl.vertical_alignment= VERTICAL_ALIGNMENT_CENTER
+		nl.add_theme_constant_override("line_spacing", -3)
+		nl.position= Vector2(26, 0)
+		nl.size =Vector2(67, 24)
+		var cl: Label= lista.get_node("R%d/Cant" % i)
+		cl.vertical_alignment= VERTICAL_ALIGNMENT_CENTER
+		cl.position =Vector2(95, 0)
+		cl.size= Vector2(15, 24)
+	seleccion.text_overrun_behavior= TextServer.OVERRUN_NO_TRIMMING
 
 func abrir(p: PokemonInstancia) -> void:
 	pokemon= p
@@ -68,6 +80,8 @@ func abrir(p: PokemonInstancia) -> void:
 	else:
 		icono_poke.texture= EstiloUI.icono(p.especie)
 		icono_poke.hframes =1
+	icono_poke.centered= true
+	icono_poke.position= EstiloUI.posicion_icono(icono_poke.texture, icono_poke.hframes, Vector2(22, $Cabecera.size.y/ 2.0), true)
 	nombre_poke.text= p.nombre()
 	columna= 0 if not p.trinkets.is_empty() else 1
 	fila =0
@@ -83,7 +97,14 @@ func _pintar() -> void:
 		var t:= BaseDatos.trinket(huecos[i]) if hay else null
 		(s.get_node("Icono") as TextureRect).texture= EfectosTrinket.icono(t) if t!= null else null
 		var n:= pokemon.trinkets.count(huecos[i]) if hay else 0
-		(s.get_node("Cuenta") as Label).text= "×%d" % n if n> 1 else ""
+		var cl: Label= s.get_node("Cuenta")
+		cl.text= "×%d" % n if n> 1 else ""
+		cl.visible =n> 1
+		cl.size= cl.get_combined_minimum_size()
+		cl.position =Vector2(24.0- cl.size.x, 24.0- cl.size.y)
+		var ic: TextureRect= s.get_node("Icono")
+		if ic.texture!= null:
+			ic.position= EstiloUI.posicion_icono(ic.texture, 1, Vector2(13, 13), false)
 	var n_lista:= maxi(1, libres.size())
 	if columna== 1:
 		fila= clampi(fila, 0, n_lista- 1)
@@ -106,8 +127,11 @@ func _pintar() -> void:
 	var slot:= clampi(fila if columna== 0 else ultimo_slot, 0, EfectosTrinket.MAX_POR_POKEMON- 1)
 	var id_slot:= huecos[slot] if slot< huecos.size() else ""
 	var apilados:= pokemon.trinkets.count(id_slot) if id_slot!= "" else 0
-	seleccion.text= (BaseDatos.trinket(id_slot).nombre+ (" ×%d" % apilados if apilados> 1 else "")) if id_slot!= "" else "- vacío -"
-	seleccion.modulate =Color.WHITE if id_slot!= "" else Color(1, 1, 1, 0.45)
+	if columna== 1:
+		seleccion.text= "A: equipar"
+	else:
+		seleccion.text= ("A: quitar uno" if apilados> 1 else "A: quitar") if id_slot!= "" else "- vacío -"
+	seleccion.modulate =Color.WHITE if id_slot!= "" or columna== 1 else Color(1, 1, 1, 0.45)
 	marco.position= equipados.get_node("S%d" % slot).position- Vector2(1, 1)
 	marco.visible =columna== 0
 	cursor_lbl.visible= columna== 1

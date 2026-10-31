@@ -22,93 +22,93 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/krokorok_espalda.png" id="20_dojo6"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/krokorok_frente.png" id="21_5t0cf"]
 
-[sub_resource type="Resource" id="Resource_wbnpm"]
+[sub_resource type="Resource" id="Resource_4yljt"]
 script = ExtResource("1_4yljt")
 movimiento = ExtResource("2_jrarq")
 
-[sub_resource type="Resource" id="Resource_15wow"]
+[sub_resource type="Resource" id="Resource_jrarq"]
 script = ExtResource("1_4yljt")
 movimiento = ExtResource("3_ltknu")
 
-[sub_resource type="Resource" id="Resource_wkmlm"]
+[sub_resource type="Resource" id="Resource_ltknu"]
 script = ExtResource("1_4yljt")
 movimiento = ExtResource("4_hjirm")
 
-[sub_resource type="Resource" id="Resource_jfgjl"]
+[sub_resource type="Resource" id="Resource_hjirm"]
 script = ExtResource("1_4yljt")
 movimiento = ExtResource("5_qr6u8")
 
-[sub_resource type="Resource" id="Resource_j44ig"]
+[sub_resource type="Resource" id="Resource_qr6u8"]
 script = ExtResource("1_4yljt")
 nivel = 4
 movimiento = ExtResource("2_jrarq")
 
-[sub_resource type="Resource" id="Resource_xddvv"]
+[sub_resource type="Resource" id="Resource_3y6ra"]
 script = ExtResource("1_4yljt")
 nivel = 7
 movimiento = ExtResource("5_qr6u8")
 
-[sub_resource type="Resource" id="Resource_7srvf"]
+[sub_resource type="Resource" id="Resource_l4b5w"]
 script = ExtResource("1_4yljt")
 nivel = 10
 movimiento = ExtResource("6_3y6ra")
 
-[sub_resource type="Resource" id="Resource_omryh"]
+[sub_resource type="Resource" id="Resource_8re53"]
 script = ExtResource("1_4yljt")
 nivel = 13
 movimiento = ExtResource("7_l4b5w")
 
-[sub_resource type="Resource" id="Resource_08dar"]
+[sub_resource type="Resource" id="Resource_oyfy3"]
 script = ExtResource("1_4yljt")
 nivel = 16
 movimiento = ExtResource("8_8re53")
 
-[sub_resource type="Resource" id="Resource_0t727"]
+[sub_resource type="Resource" id="Resource_cqk2l"]
 script = ExtResource("1_4yljt")
 nivel = 19
 movimiento = ExtResource("9_oyfy3")
 
-[sub_resource type="Resource" id="Resource_xttft"]
+[sub_resource type="Resource" id="Resource_aoinl"]
 script = ExtResource("1_4yljt")
 nivel = 22
 movimiento = ExtResource("10_cqk2l")
 
-[sub_resource type="Resource" id="Resource_lwwos"]
+[sub_resource type="Resource" id="Resource_1mbe7"]
 script = ExtResource("1_4yljt")
 nivel = 25
 movimiento = ExtResource("11_aoinl")
 
-[sub_resource type="Resource" id="Resource_8lw6e"]
+[sub_resource type="Resource" id="Resource_0s3wl"]
 script = ExtResource("1_4yljt")
 nivel = 28
 movimiento = ExtResource("12_1mbe7")
 
-[sub_resource type="Resource" id="Resource_rg26m"]
+[sub_resource type="Resource" id="Resource_6iefy"]
 script = ExtResource("1_4yljt")
 nivel = 32
 movimiento = ExtResource("13_0s3wl")
 
-[sub_resource type="Resource" id="Resource_livlh"]
+[sub_resource type="Resource" id="Resource_2ohio"]
 script = ExtResource("1_4yljt")
 nivel = 36
 movimiento = ExtResource("14_6iefy")
 
-[sub_resource type="Resource" id="Resource_pbdog"]
+[sub_resource type="Resource" id="Resource_mhahg"]
 script = ExtResource("1_4yljt")
 nivel = 40
 movimiento = ExtResource("15_2ohio")
 
-[sub_resource type="Resource" id="Resource_bmb0d"]
+[sub_resource type="Resource" id="Resource_y36o5"]
 script = ExtResource("1_4yljt")
 nivel = 44
 movimiento = ExtResource("16_mhahg")
 
-[sub_resource type="Resource" id="Resource_0a8em"]
+[sub_resource type="Resource" id="Resource_wayje"]
 script = ExtResource("1_4yljt")
 nivel = 48
 movimiento = ExtResource("17_y36o5")
 
-[sub_resource type="Resource" id="Resource_h7dxk"]
+[sub_resource type="Resource" id="Resource_dnyiq"]
 script = ExtResource("1_4yljt")
 nivel = 52
 movimiento = ExtResource("18_wayje")
@@ -118,7 +118,7 @@ script = ExtResource("19_dnyiq")
 id = "krokorok"
 numero = 552
 nombre = "Krokorok"
-tipos = ["tierra", "siniestro"]
+tipos = PackedStringArray("tierra", "siniestro")
 ps = 60
 ataque = 82
 defensa = 45
@@ -133,12 +133,20 @@ evs_otorgados = {
 }
 evoluciona_a = "krookodile"
 nivel_evolucion = 40
-aprende = Array[ExtResource("1_4yljt")]([SubResource("Resource_wbnpm"), SubResource("Resource_15wow"), SubResource("Resource_wkmlm"), SubResource("Resource_jfgjl"), SubResource("Resource_j44ig"), SubResource("Resource_xddvv"), SubResource("Resource_7srvf"), SubResource("Resource_omryh"), SubResource("Resource_08dar"), SubResource("Resource_0t727"), SubResource("Resource_xttft"), SubResource("Resource_lwwos"), SubResource("Resource_8lw6e"), SubResource("Resource_rg26m"), SubResource("Resource_livlh"), SubResource("Resource_pbdog"), SubResource("Resource_bmb0d"), SubResource("Resource_0a8em"), SubResource("Resource_h7dxk")])
+evoluciones = Array[Dictionary]([{
+"especie": "krookodile",
+"metodo": "nivel",
+"nivel": 40
+}])
+habilidades = PackedStringArray("intimidate", "moxie")
+habilidad_oculta = "anger_point"
+categoria = "Pokémon Desierdrilo"
+altura = 1.0
+peso_kg = 33.4
+descripcion = "Viven en manadas. La membrana que cubre sus ojos los protege de la arena."
+aprende = Array[ExtResource("1_4yljt")]([SubResource("Resource_4yljt"), SubResource("Resource_jrarq"), SubResource("Resource_ltknu"), SubResource("Resource_hjirm"), SubResource("Resource_qr6u8"), SubResource("Resource_3y6ra"), SubResource("Resource_l4b5w"), SubResource("Resource_8re53"), SubResource("Resource_oyfy3"), SubResource("Resource_cqk2l"), SubResource("Resource_aoinl"), SubResource("Resource_1mbe7"), SubResource("Resource_0s3wl"), SubResource("Resource_6iefy"), SubResource("Resource_2ohio"), SubResource("Resource_mhahg"), SubResource("Resource_y36o5"), SubResource("Resource_wayje"), SubResource("Resource_dnyiq")])
 sprite_frente = ExtResource("21_5t0cf")
 sprite_espalda = ExtResource("20_dojo6")
 cuadros_frente = 80
 cuadros_espalda = 84
 fps_sprite = 12.7
-habilidades = PackedStringArray("Intimidación", "Autoestima")
-habilidad_oculta = "Irascible"
-evoluciones = Array[Dictionary]([{"especie": "krookodile", "metodo": "nivel", "condicion": "Nivel 40", "nivel": 40}])

@@ -20,9 +20,11 @@ const MAX_MOVIMIENTOS:= 4
 @export var genero: String =""
 @export var ball: String= "pokeball"
 @export var trinkets: Array[String] =[]
+@export var habilidad: String= ""
+@export var amistad :int= 70
 var ia: Array[String]= []
 
-static func crear(esp: EspeciePokemon, niv: int, rng: RandomNumberGenerator= null) -> PokemonInstancia:
+static func crear(esp: EspeciePokemon, niv: int, rng: RandomNumberGenerator= null, prob_oculta:= 0.0) -> PokemonInstancia:
 	if rng== null:
 		rng =RandomNumberGenerator.new()
 		rng.randomize()
@@ -40,8 +42,27 @@ static func crear(esp: EspeciePokemon, niv: int, rng: RandomNumberGenerator= nul
 		p.movimientos.append(m)
 		p.pp.append(m.pp)
 	p.genero= sortear_genero(esp, rng)
+	p.habilidad =sortear_habilidad(esp, rng, prob_oculta)
+	p.amistad= esp.amistad_base
 	p.ps_actuales= p.ps_max()
 	return p
+
+static func sortear_habilidad(esp: EspeciePokemon, rng: RandomNumberGenerator, prob_oculta:= 0.0) -> String:
+	if esp.habilidad_oculta!= "" and prob_oculta> 0.0 and rng.randf()< prob_oculta:
+		return esp.habilidad_oculta
+	if esp.habilidades.is_empty():
+		return esp.habilidad_oculta
+	return esp.habilidades[rng.randi_range(0, esp.habilidades.size()- 1)]
+
+func tiene_oculta() -> bool:
+	return habilidad!= "" and habilidad== especie.habilidad_oculta and not especie.habilidades.has(habilidad)
+
+func nombre_habilidad() -> String:
+	var h:= BaseDatos.habilidad(habilidad)
+	return h.nombre if h!= null else ""
+
+func subir_amistad(cantidad: int) -> void:
+	amistad= clampi(amistad+ cantidad, 0, 255)
 
 static func sortear_genero(esp: EspeciePokemon, rng: RandomNumberGenerator) -> String:
 	if esp.ratio_genero< 0:
@@ -107,6 +128,7 @@ func ganar_experiencia(cantidad: int) -> Array[Dictionary]:
 		var antes:= ps_max()
 		nivel+= 1
 		ps_actuales +=ps_max()- antes
+		subir_amistad(5 if amistad< 100 else (3 if amistad< 200 else 2))
 		eventos.append({"tipo": "nivel", "nivel": nivel, "ps": ps_actuales, "ps_max": ps_max()})
 		for m in especie.movimientos_en(nivel):
 			if movimientos.has(m):
@@ -121,11 +143,17 @@ func ganar_experiencia(cantidad: int) -> Array[Dictionary]:
 		experiencia= Crecimiento.exp_para_nivel(especie.crecimiento, NIVEL_MAX)
 	return eventos
 
-func puede_evolucionar() -> bool:
-	return especie.evoluciona_a!= "" and especie.nivel_evolucion> 0 and nivel>= especie.nivel_evolucion and not esta_debilitado() and BaseDatos.especie(especie.evoluciona_a)!= null
+func puede_evolucionar(equipo: Array= []) -> bool:
+	return Evoluciones.por_nivel(self, equipo)!= ""
 
 func evolucionar(nueva: EspeciePokemon) -> void:
 	var antes:= ps_max()
+	var oculta:= tiene_oculta()
+	var hueco:= especie.habilidades.find(habilidad)
+	if oculta and nueva.habilidad_oculta!= "":
+		habilidad= nueva.habilidad_oculta
+	elif not nueva.habilidades.is_empty():
+		habilidad =nueva.habilidades[clampi(hueco, 0, nueva.habilidades.size()- 1)]
 	var arbol:= Engine.get_main_loop() as SceneTree
 	var estado: Node= arbol.root.get_node_or_null("Estado") if arbol!= null else null
 	if estado!= null:
@@ -164,6 +192,8 @@ func a_diccionario() -> Dictionary:
 		"genero": genero,
 		"ball": ball,
 		"trinkets": trinkets.duplicate(),
+		"habilidad": habilidad,
+		"amistad": amistad,
 	}
 
 static func desde_diccionario(d: Dictionary) -> PokemonInstancia:
@@ -186,4 +216,11 @@ static func desde_diccionario(d: Dictionary) -> PokemonInstancia:
 	p.genero =str(d.get("genero", ""))
 	p.ball= str(d.get("ball", "pokeball"))
 	p.trinkets.assign(Array(d.get("trinkets", [])).map(func(x): return str(x)))
+	p.habilidad= str(d.get("habilidad", ""))
+	if p.habilidad== "" and not p.especie.habilidades.is_empty():
+		var suma:= 0
+		for s in STATS:
+			suma+= int(p.ivs.get(s, 0))
+		p.habilidad= p.especie.habilidades[suma% p.especie.habilidades.size()]
+	p.amistad= int(d.get("amistad", p.especie.amistad_base))
 	return p

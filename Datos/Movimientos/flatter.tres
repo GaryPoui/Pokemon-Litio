@@ -8,8 +8,14 @@ id = "flatter"
 nombre = "Camelo"
 tipo = "siniestro"
 categoria = "estado"
-poder = 0
-precision = 100
 pp = 15
-objetivo = "selected-pokemon"
-meta = "unique"
+meta = "swagger"
+descripcion = "Halaga al objetivo y lo confunde, pero también sube su Ataque Especial."
+cambios_stats = {
+"at_esp": 1
+}
+estado = "confusion"
+numero = 260
+banderas = PackedStringArray("allyanim", "metronome", "mirror", "protect", "reflectable")
+turnos_min = 2
+turnos_max = 5

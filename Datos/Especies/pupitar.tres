@@ -19,82 +19,78 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_beam.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_hh1xr"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_7pjps"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_qa1rf"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_puus7"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_4vjyv"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_viuo2"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_6t0a2"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_4arh3"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_cceea"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_6d1m4"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_ypfna"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_sgwap"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_8qmul"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_15o4e"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_u4735"]
 script = ExtResource("2")
 nivel = 60
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_km8uv"]
 script = ExtResource("2")
 nivel = 67
 movimiento = ExtResource("18")
@@ -105,8 +101,6 @@ id = "pupitar"
 numero = 247
 nombre = "Pupitar"
 tipos = PackedStringArray("roca", "tierra")
-habilidades = PackedStringArray("Mudar")
-habilidad_oculta = ""
 ps = 70
 ataque = 84
 defensa = 70
@@ -114,16 +108,26 @@ at_esp = 65
 def_esp = 70
 velocidad = 51
 exp_base = 144
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([{"especie": "tyranitar", "metodo": "nivel", "condicion": "Nivel 55", "nivel": 55}])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"ataque": 2
+}
+evoluciona_a = "tyranitar"
+nivel_evolucion = 55
+evoluciones = Array[Dictionary]([{
+"especie": "tyranitar",
+"metodo": "nivel",
+"nivel": 55
+}])
+amistad_base = 35
+habilidades = PackedStringArray("shed_skin")
+categoria = "Pokémon Caparazón"
+altura = 1.2
+peso_kg = 152.0
+descripcion = "Su cuerpo es duro como la roca. Se autopropulsa como un cohete soltando los gases de su interior."
+aprende = Array[ExtResource("2")]([SubResource("Resource_hh1xr"), SubResource("Resource_7pjps"), SubResource("Resource_qa1rf"), SubResource("Resource_puus7"), SubResource("Resource_4vjyv"), SubResource("Resource_viuo2"), SubResource("Resource_6t0a2"), SubResource("Resource_4arh3"), SubResource("Resource_cceea"), SubResource("Resource_6d1m4"), SubResource("Resource_ypfna"), SubResource("Resource_sgwap"), SubResource("Resource_8qmul"), SubResource("Resource_15o4e"), SubResource("Resource_u4735"), SubResource("Resource_km8uv")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 43
 cuadros_espalda = 43
 fps_sprite = 11.68
-evoluciona_a = "tyranitar"
-nivel_evolucion = 55

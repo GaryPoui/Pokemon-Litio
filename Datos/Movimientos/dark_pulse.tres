@@ -12,3 +12,5 @@ poder = 80
 pp = 15
 descripcion = "Libera una horrible aura llena de malos pensamientos que puede amedrentar al objetivo."
 prob_retroceso = 20
+numero = 399
+banderas = PackedStringArray("distance", "metronome", "mirror", "protect", "pulse")

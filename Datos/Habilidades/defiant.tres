@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_kfwl6"]
+
+[resource]
+script = ExtResource("1_kfwl6")
+id = "defiant"
+nombre = "Competitivo"
+descripcion = "Sube el Ataque cuando el rival le baja las características."

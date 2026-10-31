@@ -10,3 +10,5 @@ precision = 30
 pp = 5
 meta = "ohko"
 descripcion = "Ataque cortante que debilita al oponente de un golpe si acierta."
+numero = 12
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

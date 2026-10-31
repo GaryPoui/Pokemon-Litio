@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1")
 id = "power_swap"
-nombre = "Cambia fuerza"
+nombre = "Cambiafuerza"
 tipo = "psiquico"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
+precision = 0
 meta = "unique"
+descripcion = "El usuario emplea su poder mental para intercambiar los cambios en el Ataque y Ataque Especial con el objetivo."
+numero = 384
+banderas = PackedStringArray("allyanim", "bypasssub", "metronome", "mirror", "protect")

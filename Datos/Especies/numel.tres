@@ -13,86 +13,72 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/lava_plume.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/earth_power.tres" id="13"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/curse.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="15"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/yawn.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/earthquake.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flamethrower.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_faqbo"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_yhy07"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_1ux58"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_dblmc"]
 script = ExtResource("2")
-nivel = 8
+nivel = 11
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 12
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_rp2kq"]
 script = ExtResource("2")
 nivel = 15
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_5qc7p"]
+script = ExtResource("2")
+nivel = 21
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_5k8bf"]
 script = ExtResource("2")
-nivel = 19
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 22
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 26
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 29
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 31
+nivel = 25
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_rjvr4"]
 script = ExtResource("2")
-nivel = 36
-movimiento = ExtResource("16")
+nivel = 31
+movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_flppv"]
 script = ExtResource("2")
-nivel = 40
+nivel = 35
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Resource_r7mjm"]
+script = ExtResource("2")
+nivel = 41
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_l0v8i"]
+script = ExtResource("2")
+nivel = 45
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_pdagg"]
 script = ExtResource("2")
-nivel = 43
+nivel = 51
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_c68q2"]
 script = ExtResource("2")
-nivel = 47
+nivel = 55
 movimiento = ExtResource("19")
 
 [resource]
@@ -101,8 +87,6 @@ id = "numel"
 numero = 322
 nombre = "Numel"
 tipos = PackedStringArray("fuego", "tierra")
-habilidades = PackedStringArray("Despistado/Despiste", "Simple")
-habilidad_oculta = "Ritmo Propio"
 ps = 60
 ataque = 60
 defensa = 40
@@ -111,13 +95,23 @@ def_esp = 45
 velocidad = 35
 exp_base = 61
 ratio_captura = 255
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"at_esp": 1}
-evoluciones = Array[Dictionary]([{"especie": "camerupt", "metodo": "nivel", "condicion": "Nivel 33", "nivel": 33}])
+evs_otorgados = {
+"at_esp": 1
+}
 evoluciona_a = "camerupt"
 nivel_evolucion = 33
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evoluciones = Array[Dictionary]([{
+"especie": "camerupt",
+"metodo": "nivel",
+"nivel": 33
+}])
+habilidades = PackedStringArray("oblivious", "simple")
+habilidad_oculta = "own_tempo"
+categoria = "Pokémon Torpe"
+altura = 0.7
+peso_kg = 24.0
+descripcion = "En su joroba almacena magma ardiente que se enfría cuando llueve y lo ralentiza."
+aprende = Array[ExtResource("2")]([SubResource("Resource_faqbo"), SubResource("Resource_yhy07"), SubResource("Resource_1ux58"), SubResource("Resource_dblmc"), SubResource("Resource_rp2kq"), SubResource("Resource_5qc7p"), SubResource("Resource_5k8bf"), SubResource("Resource_rjvr4"), SubResource("Resource_flppv"), SubResource("Resource_r7mjm"), SubResource("Resource_l0v8i"), SubResource("Resource_pdagg"), SubResource("Resource_c68q2")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 25

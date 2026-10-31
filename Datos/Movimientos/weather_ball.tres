@@ -9,3 +9,5 @@ nombre = "Meteorobola"
 categoria = "especial"
 poder = 50
 descripcion = "El tipo y fuerza del ataque varían según el tiempo que haga."
+numero = 311
+banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")

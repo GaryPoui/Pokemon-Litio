@@ -16,3 +16,5 @@ cambios_stats = {
 "velocidad": -1
 }
 prob_stat = 10
+numero = 61
+banderas = PackedStringArray("metronome", "mirror", "protect")

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_hj7hs"]
+
+[resource]
+script = ExtResource("1_hj7hs")
+id = "focus_blast"
+nombre = "Onda Certera"
+tipo = "lucha"
+categoria = "especial"
+poder = 120
+precision = 70
+pp = 5
+meta = "damage-lower"
+descripcion = "Agudiza la concentración mental y libera su poder. Puede disminuir la Defensa Especial del objetivo."
+cambios_stats = {
+"def_esp": -1
+}
+prob_stat = 10
+numero = 411
+banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")

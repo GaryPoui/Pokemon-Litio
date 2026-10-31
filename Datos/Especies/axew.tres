@@ -21,82 +21,81 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/outrage.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/giga_impact.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_5itrm"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_htl62"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_aronl"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_f0gnu"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_0gckl"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_3crns"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_yc2o4"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_ohc8y"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_7bhf7"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_efdf4"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_43of2"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_ok3w7"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_af24c"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_s6bwj"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_68xwt"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_gc6dl"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("20")
@@ -107,8 +106,6 @@ id = "axew"
 numero = 610
 nombre = "Axew"
 tipos = PackedStringArray("dragon")
-habilidades = PackedStringArray("Rivalidad", "Rompemoldes")
-habilidad_oculta = "Nerviosismo"
 ps = 46
 ataque = 87
 defensa = 60
@@ -117,13 +114,25 @@ def_esp = 40
 velocidad = 57
 exp_base = 64
 ratio_captura = 75
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "fraxure", "metodo": "nivel", "condicion": "Nivel 38", "nivel": 38}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "fraxure"
 nivel_evolucion = 38
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evoluciones = Array[Dictionary]([{
+"especie": "fraxure",
+"metodo": "nivel",
+"nivel": 38
+}])
+amistad_base = 35
+habilidades = PackedStringArray("rivalry", "mold_breaker")
+habilidad_oculta = "unnerve"
+categoria = "Pokémon Colmillo"
+altura = 0.6
+peso_kg = 18.0
+descripcion = "Usa sus colmillos para romper las bayas que come. Estos se regeneran una y otra vez, por eso son tan fuertes y afilados."
+aprende = Array[ExtResource("2")]([SubResource("Resource_5itrm"), SubResource("Resource_htl62"), SubResource("Resource_aronl"), SubResource("Resource_f0gnu"), SubResource("Resource_0gckl"), SubResource("Resource_3crns"), SubResource("Resource_yc2o4"), SubResource("Resource_ohc8y"), SubResource("Resource_7bhf7"), SubResource("Resource_efdf4"), SubResource("Resource_43of2"), SubResource("Resource_ok3w7"), SubResource("Resource_af24c"), SubResource("Resource_s6bwj"), SubResource("Resource_68xwt"), SubResource("Resource_gc6dl")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 90

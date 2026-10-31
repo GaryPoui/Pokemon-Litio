@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://ea6661cen24x"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_wc43w"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_wc43w"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_6b54j"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_ftuql"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="4_17wh0"]
@@ -13,64 +13,64 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="11_7hwjx"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/brave_bird.tres" id="12_td031"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/final_gambit.tres" id="13_32d0l"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_voeyx"]
-[ext_resource type="Texture2D" uid="uid://v74logqamfs" path="res://Assets/Pokemones/batalla/starly_espalda.png" id="15_pels7"]
-[ext_resource type="Texture2D" uid="uid://ckoeafen8183h" path="res://Assets/Pokemones/batalla/starly_frente.png" id="16_e1id8"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="14_voeyx"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/starly_espalda.png" id="15_pels7"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/starly_frente.png" id="16_e1id8"]
 
-[sub_resource type="Resource" id="Resource_e1mgh"]
+[sub_resource type="Resource" id="Resource_wc43w"]
 script = ExtResource("1_wc43w")
 movimiento = ExtResource("2_6b54j")
 
-[sub_resource type="Resource" id="Resource_bpubc"]
+[sub_resource type="Resource" id="Resource_6b54j"]
 script = ExtResource("1_wc43w")
 movimiento = ExtResource("3_ftuql")
 
-[sub_resource type="Resource" id="Resource_32cas"]
+[sub_resource type="Resource" id="Resource_ftuql"]
 script = ExtResource("1_wc43w")
 nivel = 5
 movimiento = ExtResource("4_17wh0")
 
-[sub_resource type="Resource" id="Resource_4mld3"]
+[sub_resource type="Resource" id="Resource_17wh0"]
 script = ExtResource("1_wc43w")
 nivel = 9
 movimiento = ExtResource("5_bv7ec")
 
-[sub_resource type="Resource" id="Resource_ubcv5"]
+[sub_resource type="Resource" id="Resource_bv7ec"]
 script = ExtResource("1_wc43w")
 nivel = 13
 movimiento = ExtResource("6_dx5do")
 
-[sub_resource type="Resource" id="Resource_pfkjd"]
+[sub_resource type="Resource" id="Resource_dx5do"]
 script = ExtResource("1_wc43w")
 nivel = 17
 movimiento = ExtResource("7_cyqe8")
 
-[sub_resource type="Resource" id="Resource_a26ha"]
+[sub_resource type="Resource" id="Resource_cyqe8"]
 script = ExtResource("1_wc43w")
 nivel = 21
 movimiento = ExtResource("8_2x0la")
 
-[sub_resource type="Resource" id="Resource_ifsr0"]
+[sub_resource type="Resource" id="Resource_2x0la"]
 script = ExtResource("1_wc43w")
 nivel = 25
 movimiento = ExtResource("9_lug3d")
 
-[sub_resource type="Resource" id="Resource_q30db"]
+[sub_resource type="Resource" id="Resource_lug3d"]
 script = ExtResource("1_wc43w")
 nivel = 29
 movimiento = ExtResource("10_vtxrw")
 
-[sub_resource type="Resource" id="Resource_0trq1"]
+[sub_resource type="Resource" id="Resource_vtxrw"]
 script = ExtResource("1_wc43w")
 nivel = 33
 movimiento = ExtResource("11_7hwjx")
 
-[sub_resource type="Resource" id="Resource_fe8fx"]
+[sub_resource type="Resource" id="Resource_7hwjx"]
 script = ExtResource("1_wc43w")
 nivel = 37
 movimiento = ExtResource("12_td031")
 
-[sub_resource type="Resource" id="Resource_jvw4d"]
+[sub_resource type="Resource" id="Resource_td031"]
 script = ExtResource("1_wc43w")
 nivel = 41
 movimiento = ExtResource("13_32d0l")
@@ -80,7 +80,7 @@ script = ExtResource("14_voeyx")
 id = "starly"
 numero = 396
 nombre = "Starly"
-tipos = ["normal", "volador"]
+tipos = PackedStringArray("normal", "volador")
 ps = 40
 ataque = 55
 defensa = 30
@@ -95,12 +95,19 @@ evs_otorgados = {
 }
 evoluciona_a = "staravia"
 nivel_evolucion = 14
-aprende = Array[ExtResource("1_wc43w")]([SubResource("Resource_e1mgh"), SubResource("Resource_bpubc"), SubResource("Resource_32cas"), SubResource("Resource_4mld3"), SubResource("Resource_ubcv5"), SubResource("Resource_pfkjd"), SubResource("Resource_a26ha"), SubResource("Resource_ifsr0"), SubResource("Resource_q30db"), SubResource("Resource_0trq1"), SubResource("Resource_fe8fx"), SubResource("Resource_jvw4d")])
+evoluciones = Array[Dictionary]([{
+"especie": "staravia",
+"metodo": "nivel",
+"nivel": 14
+}])
+habilidades = PackedStringArray("keen_eye")
+categoria = "Pokémon Estornino"
+altura = 0.3
+peso_kg = 2.0
+descripcion = "Viaja en grandes bandadas. Aunque es pequeño, agita las alas con gran fuerza."
+aprende = Array[ExtResource("1_wc43w")]([SubResource("Resource_wc43w"), SubResource("Resource_6b54j"), SubResource("Resource_ftuql"), SubResource("Resource_17wh0"), SubResource("Resource_bv7ec"), SubResource("Resource_dx5do"), SubResource("Resource_cyqe8"), SubResource("Resource_2x0la"), SubResource("Resource_lug3d"), SubResource("Resource_vtxrw"), SubResource("Resource_7hwjx"), SubResource("Resource_td031")])
 sprite_frente = ExtResource("16_e1id8")
 sprite_espalda = ExtResource("15_pels7")
 cuadros_frente = 61
 cuadros_espalda = 61
 fps_sprite = 11.3
-habilidades = PackedStringArray("Perspicacia/Vista Lince")
-habilidad_oculta = "Audaz"
-evoluciones = Array[Dictionary]([{"especie": "staravia", "metodo": "nivel", "condicion": "Nivel 14", "nivel": 14}])

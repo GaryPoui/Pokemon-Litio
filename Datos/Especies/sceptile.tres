@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://ds3wwc203akv2"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_07syp"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_07syp"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="2_d3ya1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_kkyo7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/night_slash.tres" id="4_ywrcu"]
@@ -15,81 +15,81 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/detect.tres" id="13_hbe6s"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/false_swipe.tres" id="14_cawyo"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="15_voegs"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_ia5k6"]
-[ext_resource type="Texture2D" uid="uid://uc2haiahxe27" path="res://Assets/Pokemones/batalla/sceptile_espalda.png" id="17_3pny8"]
-[ext_resource type="Texture2D" uid="uid://nlyn056437q4" path="res://Assets/Pokemones/batalla/sceptile_frente.png" id="18_e0gc3"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_ia5k6"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/sceptile_espalda.png" id="17_3pny8"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/sceptile_frente.png" id="18_e0gc3"]
 
-[sub_resource type="Resource" id="Resource_1jyec"]
+[sub_resource type="Resource" id="Resource_07syp"]
 script = ExtResource("1_07syp")
 movimiento = ExtResource("2_d3ya1")
 
-[sub_resource type="Resource" id="Resource_ua07i"]
+[sub_resource type="Resource" id="Resource_d3ya1"]
 script = ExtResource("1_07syp")
 movimiento = ExtResource("3_kkyo7")
 
-[sub_resource type="Resource" id="Resource_ekwbx"]
+[sub_resource type="Resource" id="Resource_kkyo7"]
 script = ExtResource("1_07syp")
 movimiento = ExtResource("4_ywrcu")
 
-[sub_resource type="Resource" id="Resource_awcpg"]
+[sub_resource type="Resource" id="Resource_ywrcu"]
 script = ExtResource("1_07syp")
 movimiento = ExtResource("5_7sow6")
 
-[sub_resource type="Resource" id="Resource_31hs0"]
+[sub_resource type="Resource" id="Resource_7sow6"]
 script = ExtResource("1_07syp")
 movimiento = ExtResource("6_twhah")
 
-[sub_resource type="Resource" id="Resource_3wqq7"]
+[sub_resource type="Resource" id="Resource_twhah"]
 script = ExtResource("1_07syp")
 nivel = 6
 movimiento = ExtResource("2_d3ya1")
 
-[sub_resource type="Resource" id="Resource_r4swn"]
+[sub_resource type="Resource" id="Resource_f8brx"]
 script = ExtResource("1_07syp")
 nivel = 11
 movimiento = ExtResource("6_twhah")
 
-[sub_resource type="Resource" id="Resource_3gr7g"]
+[sub_resource type="Resource" id="Resource_dir7j"]
 script = ExtResource("1_07syp")
 nivel = 16
 movimiento = ExtResource("7_f8brx")
 
-[sub_resource type="Resource" id="Resource_ax3jv"]
+[sub_resource type="Resource" id="Resource_7q4ed"]
 script = ExtResource("1_07syp")
 nivel = 17
 movimiento = ExtResource("8_dir7j")
 
-[sub_resource type="Resource" id="Resource_rganc"]
+[sub_resource type="Resource" id="Resource_is6lh"]
 script = ExtResource("1_07syp")
 nivel = 23
 movimiento = ExtResource("9_7q4ed")
 
-[sub_resource type="Resource" id="Resource_pm04r"]
+[sub_resource type="Resource" id="Resource_4yttq"]
 script = ExtResource("1_07syp")
 nivel = 29
 movimiento = ExtResource("10_is6lh")
 
-[sub_resource type="Resource" id="Resource_3knqf"]
+[sub_resource type="Resource" id="Resource_eco7f"]
 script = ExtResource("1_07syp")
 nivel = 35
 movimiento = ExtResource("11_4yttq")
 
-[sub_resource type="Resource" id="Resource_uemrq"]
+[sub_resource type="Resource" id="Resource_hbe6s"]
 script = ExtResource("1_07syp")
 nivel = 43
 movimiento = ExtResource("12_eco7f")
 
-[sub_resource type="Resource" id="Resource_a04ws"]
+[sub_resource type="Resource" id="Resource_cawyo"]
 script = ExtResource("1_07syp")
 nivel = 51
 movimiento = ExtResource("13_hbe6s")
 
-[sub_resource type="Resource" id="Resource_4b2m1"]
+[sub_resource type="Resource" id="Resource_voegs"]
 script = ExtResource("1_07syp")
 nivel = 59
 movimiento = ExtResource("14_cawyo")
 
-[sub_resource type="Resource" id="Resource_e8ljl"]
+[sub_resource type="Resource" id="Resource_ia5k6"]
 script = ExtResource("1_07syp")
 nivel = 67
 movimiento = ExtResource("15_voegs")
@@ -99,7 +99,7 @@ script = ExtResource("16_ia5k6")
 id = "sceptile"
 numero = 254
 nombre = "Sceptile"
-tipos = ["planta"]
+tipos = PackedStringArray("planta")
 ps = 70
 ataque = 85
 defensa = 65
@@ -112,12 +112,15 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "velocidad": 3
 }
-aprende = Array[ExtResource("1_07syp")]([SubResource("Resource_1jyec"), SubResource("Resource_ua07i"), SubResource("Resource_ekwbx"), SubResource("Resource_awcpg"), SubResource("Resource_31hs0"), SubResource("Resource_3wqq7"), SubResource("Resource_r4swn"), SubResource("Resource_3gr7g"), SubResource("Resource_ax3jv"), SubResource("Resource_rganc"), SubResource("Resource_pm04r"), SubResource("Resource_3knqf"), SubResource("Resource_uemrq"), SubResource("Resource_a04ws"), SubResource("Resource_4b2m1"), SubResource("Resource_e8ljl")])
+habilidades = PackedStringArray("overgrow")
+habilidad_oculta = "unburden"
+categoria = "Pokémon Monte"
+altura = 1.7
+peso_kg = 52.2
+descripcion = "Las hojas de sus brazos pueden cortar gruesos árboles. Invencible en los combates en la jungla."
+aprende = Array[ExtResource("1_07syp")]([SubResource("Resource_07syp"), SubResource("Resource_d3ya1"), SubResource("Resource_kkyo7"), SubResource("Resource_ywrcu"), SubResource("Resource_7sow6"), SubResource("Resource_twhah"), SubResource("Resource_f8brx"), SubResource("Resource_dir7j"), SubResource("Resource_7q4ed"), SubResource("Resource_is6lh"), SubResource("Resource_4yttq"), SubResource("Resource_eco7f"), SubResource("Resource_hbe6s"), SubResource("Resource_cawyo"), SubResource("Resource_voegs"), SubResource("Resource_ia5k6")])
 sprite_frente = ExtResource("18_e0gc3")
 sprite_espalda = ExtResource("17_3pny8")
 cuadros_frente = 62
 cuadros_espalda = 62
 fps_sprite = 5.54
-habilidades = PackedStringArray("Espesura")
-habilidad_oculta = "Liviano"
-evoluciones = Array[Dictionary]([])

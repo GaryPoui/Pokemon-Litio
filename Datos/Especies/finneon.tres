@@ -6,73 +6,84 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/finneon_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="6"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="6_mte5w"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/attract.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rain_dance.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/water_pulse.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/captivate.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/safeguard.tres" id="11"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlpool.tres" id="11_hc6fh"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/aqua_ring.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/u_turn.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bounce.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/silver_wind.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/soak.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_mte5w"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_hc6fh"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_ql0qs"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_0o1gl"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_jyyjv"]
+script = ExtResource("2")
+nivel = 17
+movimiento = ExtResource("6_mte5w")
+
+[sub_resource type="Resource" id="Resource_w7gw6"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_dxk3s"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_jxr57"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_4edjw"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_lreuf"]
+script = ExtResource("2")
+nivel = 38
+movimiento = ExtResource("11_hc6fh")
+
+[sub_resource type="Resource" id="Resource_7l350"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_qnv5l"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_srwur"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_rgbh3"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("16")
@@ -83,8 +94,6 @@ id = "finneon"
 numero = 456
 nombre = "Finneon"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Nado Rápido", "Colector")
-habilidad_oculta = "Velo de Agua/Velo Agua"
 ps = 49
 ataque = 49
 defensa = 56
@@ -93,13 +102,24 @@ def_esp = 61
 velocidad = 66
 exp_base = 66
 ratio_captura = 190
-ratio_genero = 4
 crecimiento = "slow-then-very-fast"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "lumineon", "metodo": "nivel", "condicion": "Nivel 31", "nivel": 31}])
+evs_otorgados = {
+"velocidad": 1
+}
 evoluciona_a = "lumineon"
 nivel_evolucion = 31
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evoluciones = Array[Dictionary]([{
+"especie": "lumineon",
+"metodo": "nivel",
+"nivel": 31
+}])
+habilidades = PackedStringArray("swift_swim", "storm_drain")
+habilidad_oculta = "water_veil"
+categoria = "Pokémon Pez Ala"
+altura = 0.4
+peso_kg = 7.0
+descripcion = "La línea que le recorre el costado puede almacenar luz solar. Brilla con mucha fuerza por la noche."
+aprende = Array[ExtResource("2")]([SubResource("Resource_mte5w"), SubResource("Resource_hc6fh"), SubResource("Resource_ql0qs"), SubResource("Resource_0o1gl"), SubResource("Resource_jyyjv"), SubResource("Resource_w7gw6"), SubResource("Resource_dxk3s"), SubResource("Resource_jxr57"), SubResource("Resource_4edjw"), SubResource("Resource_lreuf"), SubResource("Resource_7l350"), SubResource("Resource_qnv5l"), SubResource("Resource_srwur"), SubResource("Resource_rgbh3")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 184

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cb0dn6lifpyn1"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_j7102"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_j7102"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leech_life.tres" id="2_dixs1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/spider_web.tres" id="3_1hia3"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/string_shot.tres" id="4_xfys6"]
@@ -17,83 +17,83 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="15_himed"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="16_b1556"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="17_xo6sc"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_jfdr1"]
-[ext_resource type="Texture2D" uid="uid://d3fwxqnneoddd" path="res://Assets/Pokemones/batalla/joltik_espalda.png" id="19_x5345"]
-[ext_resource type="Texture2D" uid="uid://rm1pqnrh7dah" path="res://Assets/Pokemones/batalla/joltik_frente.png" id="20_lc0p4"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_jfdr1"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/joltik_espalda.png" id="19_x5345"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/joltik_frente.png" id="20_lc0p4"]
 
-[sub_resource type="Resource" id="Resource_w1j33"]
+[sub_resource type="Resource" id="Resource_j7102"]
 script = ExtResource("1_j7102")
 movimiento = ExtResource("2_dixs1")
 
-[sub_resource type="Resource" id="Resource_05348"]
+[sub_resource type="Resource" id="Resource_dixs1"]
 script = ExtResource("1_j7102")
 movimiento = ExtResource("3_1hia3")
 
-[sub_resource type="Resource" id="Resource_0xa3i"]
+[sub_resource type="Resource" id="Resource_1hia3"]
 script = ExtResource("1_j7102")
 movimiento = ExtResource("4_xfys6")
 
-[sub_resource type="Resource" id="Resource_8ojp6"]
+[sub_resource type="Resource" id="Resource_xfys6"]
 script = ExtResource("1_j7102")
 nivel = 4
 movimiento = ExtResource("5_yjeeo")
 
-[sub_resource type="Resource" id="Resource_mpnjd"]
+[sub_resource type="Resource" id="Resource_yjeeo"]
 script = ExtResource("1_j7102")
 nivel = 7
 movimiento = ExtResource("6_4xvba")
 
-[sub_resource type="Resource" id="Resource_gmuwp"]
+[sub_resource type="Resource" id="Resource_4xvba"]
 script = ExtResource("1_j7102")
 nivel = 12
 movimiento = ExtResource("7_2m7qy")
 
-[sub_resource type="Resource" id="Resource_einu8"]
+[sub_resource type="Resource" id="Resource_2m7qy"]
 script = ExtResource("1_j7102")
 nivel = 15
 movimiento = ExtResource("8_3v7x3")
 
-[sub_resource type="Resource" id="Resource_tpa68"]
+[sub_resource type="Resource" id="Resource_3v7x3"]
 script = ExtResource("1_j7102")
 nivel = 18
 movimiento = ExtResource("9_kobie")
 
-[sub_resource type="Resource" id="Resource_kq50u"]
+[sub_resource type="Resource" id="Resource_kobie"]
 script = ExtResource("1_j7102")
 nivel = 23
 movimiento = ExtResource("10_oiyw8")
 
-[sub_resource type="Resource" id="Resource_ktf18"]
+[sub_resource type="Resource" id="Resource_oiyw8"]
 script = ExtResource("1_j7102")
 nivel = 26
 movimiento = ExtResource("11_rgro6")
 
-[sub_resource type="Resource" id="Resource_8w74t"]
+[sub_resource type="Resource" id="Resource_rgro6"]
 script = ExtResource("1_j7102")
 nivel = 29
 movimiento = ExtResource("12_1ao6s")
 
-[sub_resource type="Resource" id="Resource_0m5p3"]
+[sub_resource type="Resource" id="Resource_1ao6s"]
 script = ExtResource("1_j7102")
 nivel = 34
 movimiento = ExtResource("13_jy678")
 
-[sub_resource type="Resource" id="Resource_xdqa3"]
+[sub_resource type="Resource" id="Resource_jy678"]
 script = ExtResource("1_j7102")
 nivel = 37
 movimiento = ExtResource("14_q43x6")
 
-[sub_resource type="Resource" id="Resource_foo5f"]
+[sub_resource type="Resource" id="Resource_q43x6"]
 script = ExtResource("1_j7102")
 nivel = 40
 movimiento = ExtResource("15_himed")
 
-[sub_resource type="Resource" id="Resource_wpv17"]
+[sub_resource type="Resource" id="Resource_himed"]
 script = ExtResource("1_j7102")
 nivel = 45
 movimiento = ExtResource("16_b1556")
 
-[sub_resource type="Resource" id="Resource_uyhlg"]
+[sub_resource type="Resource" id="Resource_b1556"]
 script = ExtResource("1_j7102")
 nivel = 48
 movimiento = ExtResource("17_xo6sc")
@@ -103,7 +103,7 @@ script = ExtResource("18_jfdr1")
 id = "joltik"
 numero = 595
 nombre = "Joltik"
-tipos = ["bicho", "electrico"]
+tipos = PackedStringArray("bicho", "electrico")
 ataque = 47
 at_esp = 57
 velocidad = 65
@@ -114,12 +114,20 @@ evs_otorgados = {
 }
 evoluciona_a = "galvantula"
 nivel_evolucion = 36
-aprende = Array[ExtResource("1_j7102")]([SubResource("Resource_w1j33"), SubResource("Resource_05348"), SubResource("Resource_0xa3i"), SubResource("Resource_8ojp6"), SubResource("Resource_mpnjd"), SubResource("Resource_gmuwp"), SubResource("Resource_einu8"), SubResource("Resource_tpa68"), SubResource("Resource_kq50u"), SubResource("Resource_ktf18"), SubResource("Resource_8w74t"), SubResource("Resource_0m5p3"), SubResource("Resource_xdqa3"), SubResource("Resource_foo5f"), SubResource("Resource_wpv17"), SubResource("Resource_uyhlg")])
+evoluciones = Array[Dictionary]([{
+"especie": "galvantula",
+"metodo": "nivel",
+"nivel": 36
+}])
+habilidades = PackedStringArray("compound_eyes", "unnerve")
+habilidad_oculta = "swarm"
+categoria = "Pokémon Lapa"
+altura = 0.1
+peso_kg = 0.6
+descripcion = "No puede generar electricidad por sí mismo, así que se encarama a Pokémon grandes y absorbe su energía estática."
+aprende = Array[ExtResource("1_j7102")]([SubResource("Resource_j7102"), SubResource("Resource_dixs1"), SubResource("Resource_1hia3"), SubResource("Resource_xfys6"), SubResource("Resource_yjeeo"), SubResource("Resource_4xvba"), SubResource("Resource_2m7qy"), SubResource("Resource_3v7x3"), SubResource("Resource_kobie"), SubResource("Resource_oiyw8"), SubResource("Resource_rgro6"), SubResource("Resource_1ao6s"), SubResource("Resource_jy678"), SubResource("Resource_q43x6"), SubResource("Resource_himed"), SubResource("Resource_b1556")])
 sprite_frente = ExtResource("20_lc0p4")
 sprite_espalda = ExtResource("19_x5345")
 cuadros_frente = 65
 cuadros_espalda = 65
 fps_sprite = 14.1
-habilidades = PackedStringArray("Ojo Compuesto", "Nerviosismo")
-habilidad_oculta = "Enjambre"
-evoluciones = Array[Dictionary]([{"especie": "galvantula", "metodo": "nivel", "condicion": "Nivel 36", "nivel": 36}])

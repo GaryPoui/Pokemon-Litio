@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/protector.png" id="1_4er1l"]
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="2_gf540"]
+
+[resource]
+script = ExtResource("2_gf540")
+id = "protector"
+nombre = "Protector"
+descripcion = "Quien lo usa intensifica el efecto del sol durante cinco turnos, lo que potencia los movimientos de tipo Fuego."
+precio = 2000
+icono = ExtResource("1_4er1l")

@@ -28,11 +28,15 @@ func _blanco(v: float) -> void:
 func _esperar(t: float) -> void:
 	await get_tree().create_timer(t).timeout
 
-func evolucionar(p: PokemonInstancia) -> bool:
+func evolucionar(p: PokemonInstancia, destino:= "") -> bool:
 	var vieja:= p.especie
-	var nueva:= BaseDatos.especie(vieja.evoluciona_a)
+	var por_objeto:= destino!= ""
+	if destino== "":
+		destino= Evoluciones.por_nivel(p, Equipo.miembros)
+	var nueva:= BaseDatos.especie(destino)
 	if nueva== null:
 		return false
+	var muda:= Evoluciones.muda(p) if not por_objeto else ""
 	var nombre_viejo:= p.nombre()
 	sprite.mostrar(vieja, false)
 	Sonido.detener_musica(0.3)
@@ -41,7 +45,7 @@ func evolucionar(p: PokemonInstancia) -> bool:
 	await Dialogo.mostrar("¿Qué? ¡%s está evolucionando!" % nombre_viejo)
 	Sonido.musica("evolucion", 0.0)
 	cancelado= false
-	cancelable =true
+	cancelable =not por_objeto
 	var t:= create_tween()
 	t.tween_method(_blanco, 0.0, 1.0, 0.8)
 	await t.finished
@@ -78,6 +82,23 @@ func evolucionar(p: PokemonInstancia) -> bool:
 	await Dialogo.mostrar("¡Enhorabuena! ¡Tu %s ha evolucionado a %s!" % [nombre_viejo, nueva.nombre])
 	Sonido.cortar_jingle()
 	await _aprender(p, nueva.movimientos_en(p.nivel))
+	if muda!= "" and not Equipo.esta_lleno() and Inventario.cantidad_de("pokeball")> 0:
+		var esp_muda:= BaseDatos.especie(muda)
+		if esp_muda!= null:
+			Inventario.consumir("pokeball")
+			var nuevo:= PokemonInstancia.crear(esp_muda, p.nivel)
+			nuevo.ivs= p.ivs.duplicate()
+			nuevo.evs =p.evs.duplicate()
+			nuevo.naturaleza= p.naturaleza
+			nuevo.movimientos.assign(p.movimientos.duplicate())
+			nuevo.pp.assign(nuevo.movimientos.map(func(m): return m.pp))
+			nuevo.genero= ""
+			nuevo.ps_actuales= nuevo.ps_max()
+			Equipo.agregar(nuevo)
+			Estado.capturar(esp_muda.id)
+			Sonido.jingle("captura")
+			await Dialogo.mostrar("¡En la Poké Ball apareció %s!" % esp_muda.nombre)
+			Sonido.cortar_jingle()
 	return true
 
 func _aprender(p: PokemonInstancia, lista: Array[Movimiento]) -> void:

@@ -10,3 +10,5 @@ tipo = "psiquico"
 categoria = "estado"
 meta = "unique"
 descripcion = "Engaña al objetivo desprevenido e intercambia objetos."
+numero = 271
+banderas = PackedStringArray("allyanim", "failcopycat", "mirror", "noassist", "protect")

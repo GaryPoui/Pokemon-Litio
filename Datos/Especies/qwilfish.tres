@@ -23,92 +23,89 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/destiny_bond.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_wdjld"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_b7qoe"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_k2uww"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_10ll7"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_fx14r"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_jhydi"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_s1myj"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_xcnmq"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_fd143"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_7pxiw"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_s64j2"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_tpyhn"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_hvejo"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_d0bua"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_tha3v"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_duart"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_8mcsm"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_g2xhi"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("22")
@@ -119,21 +116,23 @@ id = "qwilfish"
 numero = 211
 nombre = "Qwilfish"
 tipos = PackedStringArray("agua", "veneno")
-habilidades = PackedStringArray("Nado Rápido", "Punto Tóxico")
-habilidad_oculta = "Intimidación"
 ps = 65
 ataque = 95
-defensa = 85
+defensa = 75
 at_esp = 55
 def_esp = 55
 velocidad = 85
-exp_base = 86
-ratio_captura = 45
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+exp_base = 88
+evs_otorgados = {
+"ataque": 1
+}
+habilidades = PackedStringArray("poison_point", "swift_swim")
+habilidad_oculta = "intimidate"
+categoria = "Pokémon Globo"
+altura = 0.5
+peso_kg = 3.9
+descripcion = "Para arrojar sus venenosas púas, infla su cuerpo bebiendo hasta diez litros de agua de una sola vez."
+aprende = Array[ExtResource("2")]([SubResource("Resource_wdjld"), SubResource("Resource_b7qoe"), SubResource("Resource_k2uww"), SubResource("Resource_10ll7"), SubResource("Resource_fx14r"), SubResource("Resource_jhydi"), SubResource("Resource_s1myj"), SubResource("Resource_xcnmq"), SubResource("Resource_fd143"), SubResource("Resource_7pxiw"), SubResource("Resource_s64j2"), SubResource("Resource_tpyhn"), SubResource("Resource_hvejo"), SubResource("Resource_d0bua"), SubResource("Resource_tha3v"), SubResource("Resource_duart"), SubResource("Resource_8mcsm"), SubResource("Resource_g2xhi")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 44

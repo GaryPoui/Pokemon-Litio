@@ -12,3 +12,5 @@ meta = "damage-ailment"
 descripcion = "Ataca al objetivo con una onda de choque y puede llegar a paralizarlo."
 estado = "paralysis"
 prob_estado = 30
+numero = 395
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

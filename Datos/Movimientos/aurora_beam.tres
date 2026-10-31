@@ -5,11 +5,16 @@
 [resource]
 script = ExtResource("1")
 id = "aurora_beam"
-nombre = "Rayo aurora"
+nombre = "Rayo Aurora"
 tipo = "hielo"
 categoria = "especial"
 poder = 65
-precision = 100
 pp = 20
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-lower"
+descripcion = "Rayo multicolor que puede reducir el Ataque."
+cambios_stats = {
+"ataque": -1
+}
+prob_stat = 10
+numero = 62
+banderas = PackedStringArray("metronome", "mirror", "protect")

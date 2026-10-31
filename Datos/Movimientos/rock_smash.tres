@@ -5,11 +5,15 @@
 [resource]
 script = ExtResource("1")
 id = "rock_smash"
-nombre = "Golpe roca"
+nombre = "Golpe Roca"
 tipo = "lucha"
-categoria = "fisico"
 poder = 40
-precision = 100
 pp = 15
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-lower"
+descripcion = "Ataque con los puños. Puede bajar la Defensa del objetivo."
+cambios_stats = {
+"defensa": -1
+}
+prob_stat = 50
+numero = 249
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

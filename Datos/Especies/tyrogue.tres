@@ -9,25 +9,21 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/helping_hand.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fake_out.tres" id="8"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_mydt2"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_4cudk"]
+script = ExtResource("2")
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_p276o"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_qwmjl"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
+movimiento = ExtResource("6")
 
 [resource]
 script = ExtResource("1")
@@ -35,8 +31,6 @@ id = "tyrogue"
 numero = 236
 nombre = "Tyrogue"
 tipos = PackedStringArray("lucha")
-habilidades = PackedStringArray("Agallas", "Impasible")
-habilidad_oculta = "Espíritu Vital"
 ps = 35
 ataque = 35
 defensa = 35
@@ -46,10 +40,32 @@ velocidad = 35
 exp_base = 42
 ratio_captura = 75
 ratio_genero = 0
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "hitmonlee", "metodo": "especial", "condicion": "Nivel 20 Ataque > Defensa"}, {"especie": "hitmonchan", "metodo": "especial", "condicion": "Nivel 20 Ataque < Defensa"}, {"especie": "hitmontop", "metodo": "especial", "condicion": "Nivel 20 Ataque = Defensa"}])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+evs_otorgados = {
+"ataque": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "hitmonlee",
+"metodo": "nivel",
+"nivel": 20,
+"stats": 1
+}, {
+"especie": "hitmonchan",
+"metodo": "nivel",
+"nivel": 20,
+"stats": -1
+}, {
+"especie": "hitmontop",
+"metodo": "nivel",
+"nivel": 20,
+"stats": 0
+}])
+habilidades = PackedStringArray("guts", "steadfast")
+habilidad_oculta = "vital_spirit"
+categoria = "Pokémon Peleón"
+altura = 0.7
+peso_kg = 21.0
+descripcion = "Ataca siempre con mucha energía. Para fortalecerse a sí mismo, sigue luchando aunque pierda."
+aprende = Array[ExtResource("2")]([SubResource("Resource_mydt2"), SubResource("Resource_4cudk"), SubResource("Resource_p276o"), SubResource("Resource_qwmjl")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 43

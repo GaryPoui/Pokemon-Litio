@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cydlih6vmt57u"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_sg7t0"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_sg7t0"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="2_mplwx"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_team.tres" id="3_hlf23"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="4_sfs7p"]
@@ -16,92 +16,92 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hypnosis.tres" id="14_ixacp"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dream_eater.tres" id="15_jxkwm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/stored_power.tres" id="16_nk1tt"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_esrwk"]
-[ext_resource type="Texture2D" uid="uid://kx0av4r5anxc" path="res://Assets/Pokemones/batalla/kirlia_espalda.png" id="18_appk7"]
-[ext_resource type="Texture2D" uid="uid://cow5va2o53ihg" path="res://Assets/Pokemones/batalla/kirlia_frente.png" id="19_373c8"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_esrwk"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/kirlia_espalda.png" id="18_appk7"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/kirlia_frente.png" id="19_373c8"]
 
-[sub_resource type="Resource" id="Resource_ykd3f"]
+[sub_resource type="Resource" id="Resource_sg7t0"]
 script = ExtResource("1_sg7t0")
 movimiento = ExtResource("2_mplwx")
 
-[sub_resource type="Resource" id="Resource_mykgm"]
+[sub_resource type="Resource" id="Resource_mplwx"]
 script = ExtResource("1_sg7t0")
 movimiento = ExtResource("3_hlf23")
 
-[sub_resource type="Resource" id="Resource_0ttu5"]
+[sub_resource type="Resource" id="Resource_hlf23"]
 script = ExtResource("1_sg7t0")
 movimiento = ExtResource("4_sfs7p")
 
-[sub_resource type="Resource" id="Resource_v2aa3"]
+[sub_resource type="Resource" id="Resource_sfs7p"]
 script = ExtResource("1_sg7t0")
 movimiento = ExtResource("5_rl0k1")
 
-[sub_resource type="Resource" id="Resource_eje82"]
+[sub_resource type="Resource" id="Resource_rl0k1"]
 script = ExtResource("1_sg7t0")
 nivel = 6
 movimiento = ExtResource("2_mplwx")
 
-[sub_resource type="Resource" id="Resource_vr0hr"]
+[sub_resource type="Resource" id="Resource_k667y"]
 script = ExtResource("1_sg7t0")
 nivel = 10
 movimiento = ExtResource("3_hlf23")
 
-[sub_resource type="Resource" id="Resource_8cepi"]
+[sub_resource type="Resource" id="Resource_ywf2w"]
 script = ExtResource("1_sg7t0")
 nivel = 12
 movimiento = ExtResource("5_rl0k1")
 
-[sub_resource type="Resource" id="Resource_nrfvn"]
+[sub_resource type="Resource" id="Resource_xo7mr"]
 script = ExtResource("1_sg7t0")
 nivel = 17
 movimiento = ExtResource("6_k667y")
 
-[sub_resource type="Resource" id="Resource_nycys"]
+[sub_resource type="Resource" id="Resource_jgkfh"]
 script = ExtResource("1_sg7t0")
 nivel = 22
 movimiento = ExtResource("7_ywf2w")
 
-[sub_resource type="Resource" id="Resource_dm2xj"]
+[sub_resource type="Resource" id="Resource_uka38"]
 script = ExtResource("1_sg7t0")
 nivel = 25
 movimiento = ExtResource("8_xo7mr")
 
-[sub_resource type="Resource" id="Resource_x8i04"]
+[sub_resource type="Resource" id="Resource_3am8a"]
 script = ExtResource("1_sg7t0")
 nivel = 31
 movimiento = ExtResource("9_jgkfh")
 
-[sub_resource type="Resource" id="Resource_ogms2"]
+[sub_resource type="Resource" id="Resource_8gfkf"]
 script = ExtResource("1_sg7t0")
 nivel = 36
 movimiento = ExtResource("10_uka38")
 
-[sub_resource type="Resource" id="Resource_ygk51"]
+[sub_resource type="Resource" id="Resource_j4idc"]
 script = ExtResource("1_sg7t0")
 nivel = 39
 movimiento = ExtResource("11_3am8a")
 
-[sub_resource type="Resource" id="Resource_07lp0"]
+[sub_resource type="Resource" id="Resource_ixacp"]
 script = ExtResource("1_sg7t0")
 nivel = 45
 movimiento = ExtResource("12_8gfkf")
 
-[sub_resource type="Resource" id="Resource_pmjv6"]
+[sub_resource type="Resource" id="Resource_jxkwm"]
 script = ExtResource("1_sg7t0")
 nivel = 50
 movimiento = ExtResource("13_j4idc")
 
-[sub_resource type="Resource" id="Resource_0ai26"]
+[sub_resource type="Resource" id="Resource_nk1tt"]
 script = ExtResource("1_sg7t0")
 nivel = 53
 movimiento = ExtResource("14_ixacp")
 
-[sub_resource type="Resource" id="Resource_tjb2w"]
+[sub_resource type="Resource" id="Resource_esrwk"]
 script = ExtResource("1_sg7t0")
 nivel = 59
 movimiento = ExtResource("15_jxkwm")
 
-[sub_resource type="Resource" id="Resource_cn7yw"]
+[sub_resource type="Resource" id="Resource_appk7"]
 script = ExtResource("1_sg7t0")
 nivel = 64
 movimiento = ExtResource("16_nk1tt")
@@ -111,7 +111,7 @@ script = ExtResource("17_esrwk")
 id = "kirlia"
 numero = 281
 nombre = "Kirlia"
-tipos = ["psiquico"]
+tipos = PackedStringArray("psiquico")
 ps = 38
 ataque = 35
 defensa = 35
@@ -125,12 +125,26 @@ evs_otorgados = {
 }
 evoluciona_a = "gardevoir"
 nivel_evolucion = 30
-aprende = Array[ExtResource("1_sg7t0")]([SubResource("Resource_ykd3f"), SubResource("Resource_mykgm"), SubResource("Resource_0ttu5"), SubResource("Resource_v2aa3"), SubResource("Resource_eje82"), SubResource("Resource_vr0hr"), SubResource("Resource_8cepi"), SubResource("Resource_nrfvn"), SubResource("Resource_nycys"), SubResource("Resource_dm2xj"), SubResource("Resource_x8i04"), SubResource("Resource_ogms2"), SubResource("Resource_ygk51"), SubResource("Resource_07lp0"), SubResource("Resource_pmjv6"), SubResource("Resource_0ai26"), SubResource("Resource_tjb2w"), SubResource("Resource_cn7yw")])
+evoluciones = Array[Dictionary]([{
+"especie": "gardevoir",
+"metodo": "nivel",
+"nivel": 30
+}, {
+"especie": "gallade",
+"genero": "macho",
+"metodo": "piedra",
+"objeto": "dawn_stone"
+}])
+amistad_base = 35
+habilidades = PackedStringArray("synchronize", "trace")
+habilidad_oculta = "telepathy"
+categoria = "Pokémon Sensorio"
+altura = 0.8
+peso_kg = 20.2
+descripcion = "Al percibir la alegría de su Entrenador refuerza sus ataques psicoquinéticos. Cuando está contento, da vueltas y baila."
+aprende = Array[ExtResource("1_sg7t0")]([SubResource("Resource_sg7t0"), SubResource("Resource_mplwx"), SubResource("Resource_hlf23"), SubResource("Resource_sfs7p"), SubResource("Resource_rl0k1"), SubResource("Resource_k667y"), SubResource("Resource_ywf2w"), SubResource("Resource_xo7mr"), SubResource("Resource_jgkfh"), SubResource("Resource_uka38"), SubResource("Resource_3am8a"), SubResource("Resource_8gfkf"), SubResource("Resource_j4idc"), SubResource("Resource_ixacp"), SubResource("Resource_jxkwm"), SubResource("Resource_nk1tt"), SubResource("Resource_esrwk"), SubResource("Resource_appk7")])
 sprite_frente = ExtResource("19_373c8")
 sprite_espalda = ExtResource("18_appk7")
 cuadros_frente = 50
 cuadros_espalda = 50
 fps_sprite = 8.93
-habilidades = PackedStringArray("Sincronía", "Calco")
-habilidad_oculta = "Telepatía"
-evoluciones = Array[Dictionary]([{"especie": "gardevoir", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}, {"especie": "gallade", "metodo": "piedra", "condicion": "♂ + Piedra alba"}])

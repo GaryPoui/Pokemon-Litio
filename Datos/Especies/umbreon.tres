@@ -19,74 +19,71 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/guard_swap.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_efm8l"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_asshv"]
 script = ExtResource("2")
-nivel = 5
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_rg4ra"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_hl700"]
+script = ExtResource("2")
+nivel = 8
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_2coeb"]
 script = ExtResource("2")
-nivel = 9
+nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_7iy1t"]
 script = ExtResource("2")
-nivel = 13
+nivel = 22
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 17
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 21
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 25
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ufqnl"]
 script = ExtResource("2")
 nivel = 29
-movimiento = ExtResource("14")
+movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_gcfw0"]
 script = ExtResource("2")
-nivel = 33
-movimiento = ExtResource("15")
+nivel = 36
+movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_mbkoa"]
 script = ExtResource("2")
-nivel = 37
-movimiento = ExtResource("16")
+nivel = 43
+movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_rf05k"]
 script = ExtResource("2")
-nivel = 41
+nivel = 50
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_v7skc"]
 script = ExtResource("2")
-nivel = 45
+nivel = 57
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Resource_jma6u"]
+script = ExtResource("2")
+nivel = 64
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_gql5j"]
+script = ExtResource("2")
+nivel = 71
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Resource_byxef"]
+script = ExtResource("2")
+nivel = 78
 movimiento = ExtResource("18")
 
 [resource]
@@ -95,8 +92,6 @@ id = "umbreon"
 numero = 197
 nombre = "Umbreon"
 tipos = PackedStringArray("siniestro")
-habilidades = PackedStringArray("Sincronía")
-habilidad_oculta = "Fuerza Mental"
 ps = 95
 ataque = 65
 defensa = 110
@@ -104,12 +99,18 @@ at_esp = 60
 def_esp = 130
 velocidad = 65
 exp_base = 184
-ratio_captura = 45
 ratio_genero = 1
-crecimiento = "medium"
-evs_otorgados = {"def_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+evs_otorgados = {
+"def_esp": 2
+}
+amistad_base = 35
+habilidades = PackedStringArray("synchronize")
+habilidad_oculta = "inner_focus"
+categoria = "Pokémon Luz Lunar"
+altura = 1.0
+peso_kg = 27.0
+descripcion = "Creado cuando la luz lunar alteró la estructura genética de Eevee. Busca presas en la oscuridad."
+aprende = Array[ExtResource("2")]([SubResource("Resource_efm8l"), SubResource("Resource_asshv"), SubResource("Resource_rg4ra"), SubResource("Resource_hl700"), SubResource("Resource_2coeb"), SubResource("Resource_7iy1t"), SubResource("Resource_ufqnl"), SubResource("Resource_gcfw0"), SubResource("Resource_mbkoa"), SubResource("Resource_rf05k"), SubResource("Resource_v7skc"), SubResource("Resource_jma6u"), SubResource("Resource_gql5j"), SubResource("Resource_byxef")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 32

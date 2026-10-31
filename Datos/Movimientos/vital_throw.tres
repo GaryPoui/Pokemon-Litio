@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1")
 id = "vital_throw"
-nombre = "Tiro vital"
+nombre = "Llave Vital"
 tipo = "lucha"
-categoria = "fisico"
 poder = 70
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+precision = 0
+prioridad = -1
+descripcion = "El usuario ataca el último, pero no falla."
+numero = 233
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

@@ -5,11 +5,18 @@
 [resource]
 script = ExtResource("1")
 id = "quiver_dance"
-nombre = "Danza aleteo"
+nombre = "Danza Aleteo"
 tipo = "bicho"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 20
 objetivo = "user"
-meta = "unique"
+meta = "net-good-stats"
+descripcion = "Danza mística que sube el Ataque Especial, la Defensa Especial y la Velocidad."
+cambios_stats = {
+"at_esp": 1,
+"def_esp": 1,
+"velocidad": 1
+}
+numero = 483
+banderas = PackedStringArray("dance", "metronome", "snatch")

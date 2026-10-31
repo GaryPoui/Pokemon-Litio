@@ -16,3 +16,5 @@ descripcion = "Fortalece el cuerpo como si fuera de hierro y sube mucho la Defen
 cambios_stats = {
 "defensa": 2
 }
+numero = 334
+banderas = PackedStringArray("metronome", "snatch")

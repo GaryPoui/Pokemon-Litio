@@ -13,3 +13,5 @@ precision = 95
 pp = 20
 descripcion = "Ataca con un viento afilado que incluso corta el aire. También puede amedrentar al objetivo."
 prob_retroceso = 30
+numero = 403
+banderas = PackedStringArray("distance", "metronome", "mirror", "protect", "slicing")

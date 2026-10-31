@@ -8,3 +8,5 @@ id = "fling"
 nombre = "Lanzamiento"
 tipo = "siniestro"
 descripcion = "El usuario lanza contra el objetivo el objeto que lleva. La fuerza del ataque y su efecto varían según el objeto."
+numero = 374
+banderas = PackedStringArray("allyanim", "metronome", "mirror", "noparentalbond", "protect")

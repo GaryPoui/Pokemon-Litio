@@ -22,87 +22,84 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hammer_arm.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_846pl"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_mmpxw"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_fmaeo"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_7tdb8"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_sjyuh"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_lp62a"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_cn5s2"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_f5g5i"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ja18b"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_f2rtl"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_sux8y"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_m1fwp"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_2yu1f"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_0cyb0"]
 script = ExtResource("2")
 nivel = 67
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_7ihwt"]
 script = ExtResource("2")
 nivel = 73
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_nvym8"]
 script = ExtResource("2")
 nivel = 79
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_ohyd7"]
 script = ExtResource("2")
 nivel = 85
 movimiento = ExtResource("21")
@@ -113,8 +110,6 @@ id = "thundurus"
 numero = 642
 nombre = "Thundurus"
 tipos = PackedStringArray("electrico", "volador")
-habilidades = PackedStringArray("Timador/BromistaFA", "Absorbevoltios/Absorbe ElectricidadFT")
-habilidad_oculta = "CompetitivoFA"
 ps = 79
 ataque = 115
 defensa = 70
@@ -125,9 +120,17 @@ exp_base = 261
 ratio_captura = 3
 ratio_genero = 0
 crecimiento = "slow"
-evs_otorgados = {"ataque": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"ataque": 3
+}
+amistad_base = 90
+habilidades = PackedStringArray("prankster")
+habilidad_oculta = "defiant"
+categoria = "Pokémon Centella"
+altura = 1.5
+peso_kg = 61.0
+descripcion = "Lanza descargas eléctricas por las púas de su cola. Sobrevuela Teselia dejando caer rayos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_846pl"), SubResource("Resource_mmpxw"), SubResource("Resource_fmaeo"), SubResource("Resource_7tdb8"), SubResource("Resource_sjyuh"), SubResource("Resource_lp62a"), SubResource("Resource_cn5s2"), SubResource("Resource_f5g5i"), SubResource("Resource_ja18b"), SubResource("Resource_f2rtl"), SubResource("Resource_sux8y"), SubResource("Resource_m1fwp"), SubResource("Resource_2yu1f"), SubResource("Resource_0cyb0"), SubResource("Resource_7ihwt"), SubResource("Resource_nvym8"), SubResource("Resource_ohyd7")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 132

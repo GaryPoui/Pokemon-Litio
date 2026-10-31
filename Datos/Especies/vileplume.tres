@@ -11,32 +11,28 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/petal_dance.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/solar_beam.tres" id="10"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_qpjp2"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_rni5k"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_wed68"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_x74oy"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_yaikw"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_q31th"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("10")
@@ -47,23 +43,24 @@ id = "vileplume"
 numero = 45
 nombre = "Vileplume"
 tipos = PackedStringArray("planta", "veneno")
-habilidades = PackedStringArray("Clorofila")
-habilidad_oculta = "Efecto Espora"
 ps = 75
 ataque = 80
 defensa = 85
-at_esp = 110
+at_esp = 100
 def_esp = 90
-velocidad = 50
-exp_base = 216
-ratio_captura = 45
-ratio_genero = 4
+exp_base = 221
 crecimiento = "medium-slow"
-evs_otorgados = {"at_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5")])
+evs_otorgados = {
+"at_esp": 3
+}
+habilidades = PackedStringArray("chlorophyll")
+habilidad_oculta = "effect_spore"
+categoria = "Pokémon Flor"
+altura = 1.2
+peso_kg = 18.6
+descripcion = "Cuanto mayores son sus pétalos, más tóxico es su polen. Le pesa la cabeza y le cuesta mantenerla erguida."
+aprende = Array[ExtResource("2")]([SubResource("Resource_qpjp2"), SubResource("Resource_rni5k"), SubResource("Resource_wed68"), SubResource("Resource_x74oy"), SubResource("Resource_yaikw"), SubResource("Resource_q31th")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 9
 cuadros_espalda = 9
-fps_sprite = 10.0

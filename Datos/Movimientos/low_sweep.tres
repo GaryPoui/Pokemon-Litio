@@ -7,9 +7,13 @@ script = ExtResource("1")
 id = "low_sweep"
 nombre = "Puntapié"
 tipo = "lucha"
-categoria = "fisico"
-poder = 65
-precision = 100
+poder = 60
 pp = 20
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-lower"
+descripcion = "Ataque rápido dirigido a los pies del objetivo que le hace perder Velocidad."
+cambios_stats = {
+"velocidad": -1
+}
+prob_stat = 100
+numero = 490
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

@@ -9,20 +9,26 @@ const ESCENA_APRENDER :="res://Escenas/UI/AprenderMovimiento.tscn"
 
 const POOL_HALLAZGO:= ["potion", "super_potion", "pokeball", "greatball", "oran", "repel"]
 
+const FICHA:= preload("res://Scripts/ui/ficha_pokedex.gd")
+const TECLADO :=preload("res://Scripts/ui/teclado_mote.gd")
+
 var activo:= false
+var presentar_capturas:= true
 var ultima: Node
 var ultimo_resultado :={}
 var rng:= RandomNumberGenerator.new()
+const PROB_OCULTA:= 0.05
+const PROB_OCULTA_RARA :=0.25
 
 func _ready() -> void:
 	rng.randomize()
 
-func iniciar_salvaje(especie: EspeciePokemon, nivel: int) -> String:
-	var rivales: Array[PokemonInstancia]= [PokemonInstancia.crear(especie, nivel)]
+func iniciar_salvaje(especie: EspeciePokemon, nivel: int, prob_oculta:= PROB_OCULTA) -> String:
+	var rivales: Array[PokemonInstancia]= [PokemonInstancia.crear(especie, nivel, rng, prob_oculta)]
 	return await _iniciar(rivales, true, "")
 
-func iniciar_safari(especie: EspeciePokemon, nivel: int, ruta: String) -> String:
-	var rivales: Array[PokemonInstancia]= [PokemonInstancia.crear(especie, nivel)]
+func iniciar_safari(especie: EspeciePokemon, nivel: int, ruta: String, prob_oculta:= PROB_OCULTA) -> String:
+	var rivales: Array[PokemonInstancia]= [PokemonInstancia.crear(especie, nivel, rng, prob_oculta)]
 	var res:= await _iniciar(rivales, true, "", {"safari": ruta})
 	if res== "captura":
 		Estado.registrar_safari(ruta, especie.id)
@@ -52,6 +58,7 @@ func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String, c
 	Sonido.musica(pista, 0.0)
 	if salvaje:
 		await GestorEscenas.barras_cubrir()
+	var nuevo_dex:= salvaje and not Estado.capturados.has(rivales[0].especie.id)
 	var b= load(ESCENA).instantiate()
 	b.entrada_barras= salvaje
 	b.pista= pista
@@ -84,6 +91,8 @@ func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String, c
 		Sonido.jingle("curacion")
 	else:
 		Estado.sumar_dinero(logica.dinero_ganado)
+		if res== "captura" and presentar_capturas:
+			await presentar_nuevo(rivales[0], nuevo_dex)
 		if escena!= null and "musica" in escena:
 			Sonido.musica(str(escena.get("musica")), 0.8)
 		if res in ["victoria", "captura"] and not safari:
@@ -92,7 +101,7 @@ func _iniciar(rivales: Array[PokemonInstancia], salvaje: bool, nombre: String, c
 			await _hallazgo()
 		var evoluciono:= false
 		for p in subieron:
-			if Equipo.miembros.has(p) and p.puede_evolucionar():
+			if Equipo.miembros.has(p) and p.puede_evolucionar(Equipo.miembros):
 				await _evolucionar(p)
 				evoluciono= true
 		if evoluciono and escena!= null and "musica" in escena:
@@ -136,7 +145,7 @@ func subir_nivel(p: PokemonInstancia) -> void:
 				await Dialogo.mostrar("¡%s aprendió %s!" % [p.nombre(), e["movimiento"].nombre])
 			"quiere_aprender":
 				await _aprender_fuera(p, e["movimiento"])
-	if p.puede_evolucionar():
+	if p.puede_evolucionar(Equipo.miembros):
 		await _evolucionar(p)
 		var escena:= get_tree().current_scene
 		if escena!= null and "musica" in escena:
@@ -156,9 +165,41 @@ func _aprender_fuera(p: PokemonInstancia, m: Movimiento) -> void:
 	Sonido.jingle("aprender")
 	await Dialogo.mostrar("1, 2 y... ¡Tachán! %s olvidó %s y aprendió %s." % [p.nombre(), viejo, m.nombre])
 
-func _evolucionar(p: PokemonInstancia) -> bool:
+func presentar_nuevo(p: PokemonInstancia, ficha: bool) -> void:
+	if ficha:
+		var f= FICHA.new()
+		await GestorEscenas.fundido(func():
+			add_child(f)
+			f.armar(p.especie))
+		await f.esperar()
+		await GestorEscenas.fundido(func(): f.queue_free())
+	await pedir_mote(p)
+
+func pedir_mote(p: PokemonInstancia) -> void:
+	if not presentar_capturas:
+		return
+	var r: int= await Dialogo.preguntar("¿Querés ponerle un mote a %s?" % p.especie.nombre)
+	if r!= 0:
+		return
+	var t= TECLADO.new()
+	await GestorEscenas.fundido(func():
+		add_child(t)
+		t.armar(p))
+	var mote: String= await t.esperar()
+	await GestorEscenas.fundido(func(): t.queue_free())
+	if mote!= "" and mote!= p.especie.nombre:
+		p.apodo= mote
+
+func evolucionar_con(p: PokemonInstancia, destino: String) -> bool:
+	var r:= await _evolucionar(p, destino)
+	var escena:= get_tree().current_scene
+	if escena!= null and "musica" in escena:
+		Sonido.musica(str(escena.get("musica")), 0.8)
+	return r
+
+func _evolucionar(p: PokemonInstancia, destino:= "") -> bool:
 	var e= load(ESCENA_EVOLUCION).instantiate()
 	await GestorEscenas.fundido(func(): add_child(e))
-	var r: bool= await e.evolucionar(p)
+	var r: bool= await e.evolucionar(p, destino)
 	await GestorEscenas.fundido(func(): e.queue_free())
 	return r

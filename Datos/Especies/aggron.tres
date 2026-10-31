@@ -21,94 +21,95 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/metal_burst.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_5ai8o"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_c665c"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 4
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 8
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_j20jc"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_feohf"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_inutt"]
+script = ExtResource("2")
+nivel = 4
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_mkixe"]
+script = ExtResource("2")
+nivel = 8
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_b7c43"]
 script = ExtResource("2")
 nivel = 11
-movimiento = ExtResource("9")
+movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_dp1i1"]
 script = ExtResource("2")
 nivel = 15
-movimiento = ExtResource("10")
+movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_vm6m6"]
 script = ExtResource("2")
 nivel = 18
-movimiento = ExtResource("11")
+movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_a5h1n"]
 script = ExtResource("2")
 nivel = 22
-movimiento = ExtResource("12")
+movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_212k3"]
 script = ExtResource("2")
 nivel = 25
-movimiento = ExtResource("13")
+movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_1h38v"]
 script = ExtResource("2")
 nivel = 29
-movimiento = ExtResource("14")
+movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_fe55q"]
 script = ExtResource("2")
 nivel = 34
-movimiento = ExtResource("15")
+movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_28aa3"]
 script = ExtResource("2")
 nivel = 40
-movimiento = ExtResource("16")
+movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_q8qil"]
 script = ExtResource("2")
 nivel = 48
-movimiento = ExtResource("17")
+movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_bjrql"]
 script = ExtResource("2")
 nivel = 57
-movimiento = ExtResource("18")
+movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_foqwq"]
 script = ExtResource("2")
 nivel = 65
-movimiento = ExtResource("19")
+movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_wh4ny"]
 script = ExtResource("2")
 nivel = 74
+movimiento = ExtResource("19")
+
+[sub_resource type="Resource" id="Resource_uqp78"]
+script = ExtResource("2")
+nivel = 82
 movimiento = ExtResource("20")
 
 [resource]
@@ -117,21 +118,24 @@ id = "aggron"
 numero = 306
 nombre = "Aggron"
 tipos = PackedStringArray("acero", "roca")
-habilidades = PackedStringArray("Robustez", "Cabeza Roca")
-habilidad_oculta = "Metal Pesado"
 ps = 70
 ataque = 110
 defensa = 180
 at_esp = 60
 def_esp = 60
-velocidad = 50
 exp_base = 239
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"defensa": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"defensa": 3
+}
+amistad_base = 35
+habilidades = PackedStringArray("sturdy", "rock_head")
+habilidad_oculta = "heavy_metal"
+categoria = "Pokémon Coraza Férrea"
+altura = 2.1
+peso_kg = 360.0
+descripcion = "Hacen de toda una montaña su territorio. Cuantas más cicatrices tienen, más curtidos en disputas. ¡Mucha atención!"
+aprende = Array[ExtResource("2")]([SubResource("Resource_5ai8o"), SubResource("Resource_c665c"), SubResource("Resource_j20jc"), SubResource("Resource_feohf"), SubResource("Resource_inutt"), SubResource("Resource_mkixe"), SubResource("Resource_b7c43"), SubResource("Resource_dp1i1"), SubResource("Resource_vm6m6"), SubResource("Resource_a5h1n"), SubResource("Resource_212k3"), SubResource("Resource_1h38v"), SubResource("Resource_fe55q"), SubResource("Resource_28aa3"), SubResource("Resource_q8qil"), SubResource("Resource_bjrql"), SubResource("Resource_foqwq"), SubResource("Resource_wh4ny"), SubResource("Resource_uqp78")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 82

@@ -15,3 +15,5 @@ descripcion = "Horrible chirrido metálico que baja mucho la Defensa Especial de
 cambios_stats = {
 "def_esp": -2
 }
+numero = 319
+banderas = PackedStringArray("allyanim", "bypasssub", "metronome", "mirror", "protect", "reflectable", "sound")

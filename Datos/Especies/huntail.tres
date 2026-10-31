@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
 [ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlpool.tres" id="2_gpeg1"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/huntail_frente.png" id="3"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/huntail_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="5"]
@@ -16,57 +17,61 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/aqua_tail.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="15"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_gpeg1"]
+script = ExtResource("2")
+movimiento = ExtResource("2_gpeg1")
+
+[sub_resource type="Resource" id="Resource_1qdwd"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_bku2j"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_f3n2m"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_e5hpk"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_wnmd4"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_gocuk"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_lfmud"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_0iadn"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_m1r23"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_fb325"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_8yw8x"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("15")
@@ -77,8 +82,6 @@ id = "huntail"
 numero = 367
 nombre = "Huntail"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Nado Rápido")
-habilidad_oculta = "Velo de Agua/Velo Agua"
 ps = 55
 ataque = 104
 defensa = 105
@@ -87,11 +90,18 @@ def_esp = 75
 velocidad = 52
 exp_base = 170
 ratio_captura = 60
-ratio_genero = 4
 crecimiento = "slow-then-very-fast"
-evs_otorgados = {"ataque": 1, "defensa": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10")])
+evs_otorgados = {
+"ataque": 1,
+"defensa": 1
+}
+habilidades = PackedStringArray("swift_swim")
+habilidad_oculta = "water_veil"
+categoria = "Pokémon Abisal"
+altura = 1.7
+peso_kg = 27.0
+descripcion = "Vive en los abismos marinos, donde no se filtra la luz. Tiene una cola en forma de pez, que enciende para atraer a su presa."
+aprende = Array[ExtResource("2")]([SubResource("Resource_gpeg1"), SubResource("Resource_1qdwd"), SubResource("Resource_bku2j"), SubResource("Resource_f3n2m"), SubResource("Resource_e5hpk"), SubResource("Resource_wnmd4"), SubResource("Resource_gocuk"), SubResource("Resource_lfmud"), SubResource("Resource_0iadn"), SubResource("Resource_m1r23"), SubResource("Resource_fb325"), SubResource("Resource_8yw8x")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 64

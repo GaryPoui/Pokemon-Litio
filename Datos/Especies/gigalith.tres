@@ -19,87 +19,83 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_n6hio"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_bybfn"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_vq0qx"]
+script = ExtResource("2")
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_mahp8"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_bmbcd"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_451rr"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_il4p4"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_1mjn0"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_hmxx7"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ifwns"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_vo3np"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_xg4ei"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_glvet"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_vm7sr"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_bmaal"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_ht6pe"]
 script = ExtResource("2")
 nivel = 48
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_amb3d"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("18")
@@ -110,21 +106,24 @@ id = "gigalith"
 numero = 526
 nombre = "Gigalith"
 tipos = PackedStringArray("roca")
-habilidades = PackedStringArray("Robustez", "Chorro de Arena/Chorro Arena")
-habilidad_oculta = "Poder Arenoso/Poder Arena"
 ps = 85
 ataque = 135
 defensa = 130
 at_esp = 60
-def_esp = 80
+def_esp = 70
 velocidad = 25
-exp_base = 227
-ratio_captura = 45
-ratio_genero = 4
+exp_base = 232
 crecimiento = "medium-slow"
-evs_otorgados = {"ataque": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"ataque": 3
+}
+habilidades = PackedStringArray("sturdy")
+habilidad_oculta = "sand_force"
+categoria = "Pokémon Presurizado"
+altura = 1.7
+peso_kg = 260.0
+descripcion = "Absorbe los rayos solares, procesa esa energía en su núcleo y lanza poderosas bolas de luz a sus enemigos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_n6hio"), SubResource("Resource_bybfn"), SubResource("Resource_vq0qx"), SubResource("Resource_mahp8"), SubResource("Resource_bmbcd"), SubResource("Resource_451rr"), SubResource("Resource_il4p4"), SubResource("Resource_1mjn0"), SubResource("Resource_hmxx7"), SubResource("Resource_ifwns"), SubResource("Resource_vo3np"), SubResource("Resource_xg4ei"), SubResource("Resource_glvet"), SubResource("Resource_vm7sr"), SubResource("Resource_bmaal"), SubResource("Resource_ht6pe"), SubResource("Resource_amb3d")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 99

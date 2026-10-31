@@ -11,32 +11,31 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/mega_drain.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/worry_seed.tres" id="10"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_cod73"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_fdqlg"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_dqrej"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_uylet"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_xlcsj"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_c5ov5"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("10")
@@ -47,22 +46,30 @@ id = "budew"
 numero = 406
 nombre = "Budew"
 tipos = PackedStringArray("planta", "veneno")
-habilidades = PackedStringArray("Curación Natural/Cura Natural", "Punto Tóxico")
-habilidad_oculta = "Defensa Hoja"
 ps = 40
 ataque = 30
 defensa = 35
-at_esp = 50
 def_esp = 70
 velocidad = 55
 exp_base = 56
 ratio_captura = 255
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"at_esp": 1}
-evoluciones = Array[Dictionary]([{"especie": "roselia", "metodo": "amistad", "condicion": "Amistad + nivel (día)"}])
-evoluciona_a = "roselia"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5")])
+evs_otorgados = {
+"at_esp": 1
+}
+evoluciones = Array[Dictionary]([{
+"amistad": 220,
+"especie": "roselia",
+"hora": "dia",
+"metodo": "amistad"
+}])
+habilidades = PackedStringArray("natural_cure", "poison_point")
+habilidad_oculta = "leaf_guard"
+categoria = "Pokémon Brote"
+altura = 0.2
+peso_kg = 1.2
+descripcion = "Vive cerca de aguas cristalinas. Su cabello se abre y esparce polen cuando le bañan los rayos del sol."
+aprende = Array[ExtResource("2")]([SubResource("Resource_cod73"), SubResource("Resource_fdqlg"), SubResource("Resource_dqrej"), SubResource("Resource_uylet"), SubResource("Resource_xlcsj"), SubResource("Resource_c5ov5")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 77

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_qdc14"]
+
+[resource]
+script = ExtResource("1_qdc14")
+id = "quick_feet"
+nombre = "Pies Rápidos"
+descripcion = "Potencia la Velocidad si hay problemas de estado."

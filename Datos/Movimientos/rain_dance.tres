@@ -13,3 +13,5 @@ pp = 5
 objetivo = "entire-field"
 meta = "whole-field-effect"
 descripcion = "Genera una fuerte lluvia que refuerza los movimientos de tipo Agua durante cinco turnos y debilita los de tipo Fuego."
+numero = 240
+banderas = PackedStringArray("metronome")

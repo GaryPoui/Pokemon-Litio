@@ -5,11 +5,15 @@
 [resource]
 script = ExtResource("1")
 id = "dark_void"
-nombre = "Brecha negra"
+nombre = "Brecha Negra"
 tipo = "siniestro"
 categoria = "estado"
-poder = 0
-precision = 50
-pp = 10
-objetivo = "selected-pokemon"
-meta = "unique"
+precision = 80
+objetivo = "all-opponents"
+meta = "ailment"
+descripcion = "El objetivo es enviado a un mundo de tinieblas que lo hace dormir."
+estado = "sleep"
+numero = 464
+banderas = PackedStringArray("metronome", "mirror", "nosketch", "protect", "reflectable")
+turnos_min = 2
+turnos_max = 4

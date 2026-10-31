@@ -5,7 +5,7 @@ signal elegido(indice: int)
 const UI:= "res://Assets/Batalla/ui_nueva/"
 const BOTONES_TIPO :="res://Assets/Botones/tipos/"
 const APAGADO:= Color(0.78, 0.78, 0.78)
-const X_IZQ :=16.0
+const X_IZQ :=12.0
 const EMPUJE:= 6.0
 const SALIR:= 4
 
@@ -66,7 +66,10 @@ func elegir(p: PokemonInstancia, m: Movimiento) -> int:
 		if b.visible:
 			_boton(b, p.movimientos[i])
 	_boton(nuevo_btn, m)
-	salir.get_node("Texto").text ="No aprender"
+	var ts: Label= salir.get_node("Texto")
+	ts.text ="No aprender"
+	ts.text_overrun_behavior= TextServer.OVERRUN_NO_TRIMMING
+	ts.size.x= salir.size.x
 	cursor= 0
 	ultimo_izq =0
 	_pintar(false)
@@ -85,7 +88,13 @@ func elegir(p: PokemonInstancia, m: Movimiento) -> int:
 
 func _boton(b: NinePatchRect, m: Movimiento) -> void:
 	b.texture= load(BOTONES_TIPO+ "%s.png" % m.tipo)
-	b.get_node("Texto").text =m.nombre
+	var t: Label= b.get_node("Texto")
+	t.text =m.nombre
+	t.text_overrun_behavior= TextServer.OVERRUN_NO_TRIMMING
+	t.horizontal_alignment =HORIZONTAL_ALIGNMENT_LEFT
+	var w:= t.get_combined_minimum_size().x
+	t.position.x= maxf(17.0, roundf((b.size.x- w)/ 2.0))
+	t.size.x= w
 	b.get_node("Tipo").tipo= m.tipo
 
 func _pintar(animar: bool) -> void:
@@ -117,7 +126,7 @@ func _detalle(lado: Control, m: Movimiento, pp_actual: int) -> void:
 	lado.get_node("Cat").texture= load(UI+ "categoria_%s.png" % m.categoria)
 	var pot:= str(m.poder) if m.categoria!= "estado" and m.poder> 0 else "-"
 	var prec:= str(m.precision) if m.precision> 0 else "-"
-	lado.get_node("Datos").text ="Pot %s Prec %s  PP %d/%d" % [pot, prec, pp_actual, m.pp]
+	lado.get_node("Datos").text ="Pot %s  Prec %s  PP %d/%d" % [pot, prec, pp_actual, m.pp]
 	lado.get_node("Desc").text= m.descripcion
 
 func _vacio(lado: Control) -> void:

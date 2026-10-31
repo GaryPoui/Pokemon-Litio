@@ -14,3 +14,5 @@ prioridad = 3
 objetivo = "users-field"
 meta = "field-effect"
 descripcion = "Se protege a sí mismo y a sus aliados de movimientos con prioridad."
+numero = 501
+banderas = PackedStringArray("snatch")

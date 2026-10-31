@@ -20,97 +20,89 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/flamethrower.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/heat_wave.tres" id="20"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/outrage.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flare_blitz.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_celpf"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_mxiq3"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_wpijn"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_a2v1k"]
 script = ExtResource("2")
-nivel = 8
+nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_f516b"]
 script = ExtResource("2")
-nivel = 10
+nivel = 14
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 12
-movimiento = ExtResource("10")
-
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_shxco"]
 script = ExtResource("2")
 nivel = 17
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Resource_rnp53"]
+script = ExtResource("2")
+nivel = 20
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_8hyok"]
 script = ExtResource("2")
-nivel = 19
+nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 21
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 23
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_a5bbl"]
 script = ExtResource("2")
 nivel = 28
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_iqoiu"]
+script = ExtResource("2")
+nivel = 31
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 30
-movimiento = ExtResource("16")
-
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 32
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_aig1e"]
 script = ExtResource("2")
 nivel = 34
-movimiento = ExtResource("18")
+movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_m2p0b"]
 script = ExtResource("2")
 nivel = 39
-movimiento = ExtResource("19")
+movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_et6lo"]
 script = ExtResource("2")
-nivel = 41
-movimiento = ExtResource("20")
+nivel = 42
+movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_16"]
-script = ExtResource("2")
-nivel = 43
-movimiento = ExtResource("21")
-
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_083ul"]
 script = ExtResource("2")
 nivel = 45
+movimiento = ExtResource("19")
+
+[sub_resource type="Resource" id="Resource_dypcs"]
+script = ExtResource("2")
+nivel = 48
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Resource_56n1i"]
+script = ExtResource("2")
+nivel = 51
+movimiento = ExtResource("20")
+
+[sub_resource type="Resource" id="Resource_eqhb8"]
+script = ExtResource("2")
+nivel = 56
 movimiento = ExtResource("22")
 
 [resource]
@@ -119,22 +111,30 @@ id = "growlithe"
 numero = 58
 nombre = "Growlithe"
 tipos = PackedStringArray("fuego")
-habilidades = PackedStringArray("Intimidación", "Absorbefuego/Absorbe Fuego")
-habilidad_oculta = "Justiciero"
 ps = 55
 ataque = 70
 defensa = 45
 at_esp = 70
-def_esp = 50
 velocidad = 60
 exp_base = 70
 ratio_captura = 190
 ratio_genero = 2
 crecimiento = "slow"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "arcanine", "metodo": "piedra", "condicion": "Piedra fuego"}])
-evoluciona_a = "arcanine"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"ataque": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "arcanine",
+"metodo": "piedra",
+"objeto": "fire_stone"
+}])
+habilidades = PackedStringArray("intimidate", "flash_fire")
+habilidad_oculta = "justified"
+categoria = "Pokémon Perrito"
+altura = 0.7
+peso_kg = 19.0
+descripcion = "Es muy agradable y leal. Para ahuyentar al enemigo, se pone a ladrar y a dar bocados."
+aprende = Array[ExtResource("2")]([SubResource("Resource_celpf"), SubResource("Resource_mxiq3"), SubResource("Resource_wpijn"), SubResource("Resource_a2v1k"), SubResource("Resource_f516b"), SubResource("Resource_shxco"), SubResource("Resource_rnp53"), SubResource("Resource_8hyok"), SubResource("Resource_a5bbl"), SubResource("Resource_iqoiu"), SubResource("Resource_aig1e"), SubResource("Resource_m2p0b"), SubResource("Resource_et6lo"), SubResource("Resource_083ul"), SubResource("Resource_dypcs"), SubResource("Resource_56n1i"), SubResource("Resource_eqhb8")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 74

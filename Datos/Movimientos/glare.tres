@@ -6,10 +6,11 @@
 script = ExtResource("1")
 id = "glare"
 nombre = "Deslumbrar"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 90
 pp = 30
-objetivo = "selected-pokemon"
-meta = "unique"
+meta = "ailment"
+descripcion = "Intimida y asusta al objetivo con la mirada para dejarlo paralizado."
+estado = "paralysis"
+numero = 137
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")

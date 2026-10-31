@@ -11,3 +11,5 @@ poder = 70
 pp = 15
 descripcion = "Ataca al objetivo a la primera oportunidad. Suele ser crítico."
 critico = 1
+numero = 400
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "slicing")

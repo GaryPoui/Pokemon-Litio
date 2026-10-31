@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://q0w0xcpduaa5"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_f6gfk"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_f6gfk"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/vice_grip.tres" id="2_hlbo2"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="3_tdid7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thunder_shock.tres" id="4_o5rje"]
@@ -16,80 +16,80 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/lock_on.tres" id="14_570wr"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/zap_cannon.tres" id="15_vas74"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_beam.tres" id="16_yomrp"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_yuiw0"]
-[ext_resource type="Texture2D" uid="uid://dhkwind8g7u5e" path="res://Assets/Pokemones/batalla/klink_espalda.png" id="18_fxhqu"]
-[ext_resource type="Texture2D" uid="uid://bswtibgdwe4gd" path="res://Assets/Pokemones/batalla/klink_frente.png" id="19_gacfw"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_yuiw0"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/klink_espalda.png" id="18_fxhqu"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/klink_frente.png" id="19_gacfw"]
 
-[sub_resource type="Resource" id="Resource_umw4w"]
+[sub_resource type="Resource" id="Resource_f6gfk"]
 script = ExtResource("1_f6gfk")
 movimiento = ExtResource("2_hlbo2")
 
-[sub_resource type="Resource" id="Resource_j10ku"]
+[sub_resource type="Resource" id="Resource_hlbo2"]
 script = ExtResource("1_f6gfk")
 nivel = 6
 movimiento = ExtResource("3_tdid7")
 
-[sub_resource type="Resource" id="Resource_1pjvn"]
+[sub_resource type="Resource" id="Resource_tdid7"]
 script = ExtResource("1_f6gfk")
 nivel = 11
 movimiento = ExtResource("4_o5rje")
 
-[sub_resource type="Resource" id="Resource_tunpl"]
+[sub_resource type="Resource" id="Resource_o5rje"]
 script = ExtResource("1_f6gfk")
 nivel = 16
 movimiento = ExtResource("5_8ney1")
 
-[sub_resource type="Resource" id="Resource_geamh"]
+[sub_resource type="Resource" id="Resource_8ney1"]
 script = ExtResource("1_f6gfk")
 nivel = 21
 movimiento = ExtResource("6_lkgfe")
 
-[sub_resource type="Resource" id="Resource_1s2qr"]
+[sub_resource type="Resource" id="Resource_lkgfe"]
 script = ExtResource("1_f6gfk")
 nivel = 26
 movimiento = ExtResource("7_etyfk")
 
-[sub_resource type="Resource" id="Resource_3hqjs"]
+[sub_resource type="Resource" id="Resource_etyfk"]
 script = ExtResource("1_f6gfk")
 nivel = 31
 movimiento = ExtResource("8_0a5ti")
 
-[sub_resource type="Resource" id="Resource_b16uu"]
+[sub_resource type="Resource" id="Resource_0a5ti"]
 script = ExtResource("1_f6gfk")
 nivel = 36
 movimiento = ExtResource("9_q46ap")
 
-[sub_resource type="Resource" id="Resource_y55bx"]
+[sub_resource type="Resource" id="Resource_q46ap"]
 script = ExtResource("1_f6gfk")
 nivel = 39
 movimiento = ExtResource("10_sd47h")
 
-[sub_resource type="Resource" id="Resource_crkim"]
+[sub_resource type="Resource" id="Resource_sd47h"]
 script = ExtResource("1_f6gfk")
 nivel = 42
 movimiento = ExtResource("11_sa323")
 
-[sub_resource type="Resource" id="Resource_5cghs"]
+[sub_resource type="Resource" id="Resource_sa323"]
 script = ExtResource("1_f6gfk")
 nivel = 45
 movimiento = ExtResource("12_nc20n")
 
-[sub_resource type="Resource" id="Resource_c783d"]
+[sub_resource type="Resource" id="Resource_nc20n"]
 script = ExtResource("1_f6gfk")
 nivel = 48
 movimiento = ExtResource("13_1vyqs")
 
-[sub_resource type="Resource" id="Resource_7n4di"]
+[sub_resource type="Resource" id="Resource_1vyqs"]
 script = ExtResource("1_f6gfk")
 nivel = 51
 movimiento = ExtResource("14_570wr")
 
-[sub_resource type="Resource" id="Resource_xdwyi"]
+[sub_resource type="Resource" id="Resource_570wr"]
 script = ExtResource("1_f6gfk")
 nivel = 54
 movimiento = ExtResource("15_vas74")
 
-[sub_resource type="Resource" id="Resource_g5voc"]
+[sub_resource type="Resource" id="Resource_vas74"]
 script = ExtResource("1_f6gfk")
 nivel = 57
 movimiento = ExtResource("16_yomrp")
@@ -99,7 +99,7 @@ script = ExtResource("17_yuiw0")
 id = "klink"
 numero = 599
 nombre = "Klink"
-tipos = ["acero"]
+tipos = PackedStringArray("acero")
 ps = 40
 ataque = 55
 defensa = 70
@@ -115,12 +115,20 @@ evs_otorgados = {
 }
 evoluciona_a = "klang"
 nivel_evolucion = 38
-aprende = Array[ExtResource("1_f6gfk")]([SubResource("Resource_umw4w"), SubResource("Resource_j10ku"), SubResource("Resource_1pjvn"), SubResource("Resource_tunpl"), SubResource("Resource_geamh"), SubResource("Resource_1s2qr"), SubResource("Resource_3hqjs"), SubResource("Resource_b16uu"), SubResource("Resource_y55bx"), SubResource("Resource_crkim"), SubResource("Resource_5cghs"), SubResource("Resource_c783d"), SubResource("Resource_7n4di"), SubResource("Resource_xdwyi"), SubResource("Resource_g5voc")])
+evoluciones = Array[Dictionary]([{
+"especie": "klang",
+"metodo": "nivel",
+"nivel": 38
+}])
+habilidades = PackedStringArray("plus", "minus")
+habilidad_oculta = "clear_body"
+categoria = "Pokémon Engranaje"
+altura = 0.3
+peso_kg = 21.0
+descripcion = "Genera la energía vital que necesita haciendo girar sus dos cuerpos."
+aprende = Array[ExtResource("1_f6gfk")]([SubResource("Resource_f6gfk"), SubResource("Resource_hlbo2"), SubResource("Resource_tdid7"), SubResource("Resource_o5rje"), SubResource("Resource_8ney1"), SubResource("Resource_lkgfe"), SubResource("Resource_etyfk"), SubResource("Resource_0a5ti"), SubResource("Resource_q46ap"), SubResource("Resource_sd47h"), SubResource("Resource_sa323"), SubResource("Resource_nc20n"), SubResource("Resource_1vyqs"), SubResource("Resource_570wr"), SubResource("Resource_vas74")])
 sprite_frente = ExtResource("19_gacfw")
 sprite_espalda = ExtResource("18_fxhqu")
 cuadros_frente = 16
 cuadros_espalda = 4
 fps_sprite = 14.29
-habilidades = PackedStringArray("Más", "Menos")
-habilidad_oculta = "Cuerpo Puro"
-evoluciones = Array[Dictionary]([{"especie": "klang", "metodo": "nivel", "condicion": "Nivel 38", "nivel": 38}])

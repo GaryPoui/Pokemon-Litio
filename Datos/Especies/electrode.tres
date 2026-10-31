@@ -20,92 +20,88 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mirror_coat.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_exmde"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_1msiy"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_eybdy"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_0rd7u"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_iftsh"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_di5nv"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_b82jr"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_fk3qa"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_oaqsa"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_qy461"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_pessy"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_gwlxw"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_bux1e"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_1nqs2"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_dw84c"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_y3e3q"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_8dt4t"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_0slae"]
 script = ExtResource("2")
 nivel = 62
 movimiento = ExtResource("19")
@@ -116,21 +112,24 @@ id = "electrode"
 numero = 101
 nombre = "Electrode"
 tipos = PackedStringArray("electrico")
-habilidades = PackedStringArray("Insonorización/Insonorizar", "Electricidad Estática")
-habilidad_oculta = "Secuela/Detonación"
 ps = 60
-ataque = 50
 defensa = 70
 at_esp = 80
 def_esp = 80
-velocidad = 150
-exp_base = 168
+velocidad = 140
+exp_base = 172
 ratio_captura = 60
 ratio_genero = -1
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"velocidad": 2
+}
+habilidades = PackedStringArray("soundproof", "static")
+habilidad_oculta = "aftermath"
+categoria = "Pokémon Bola"
+altura = 1.2
+peso_kg = 66.6
+descripcion = "Explotan a la mínima. Por eso se les tiene mucho miedo. Estos Pokémon reciben el mote de Bomba Ball."
+aprende = Array[ExtResource("2")]([SubResource("Resource_exmde"), SubResource("Resource_1msiy"), SubResource("Resource_eybdy"), SubResource("Resource_0rd7u"), SubResource("Resource_iftsh"), SubResource("Resource_di5nv"), SubResource("Resource_b82jr"), SubResource("Resource_fk3qa"), SubResource("Resource_oaqsa"), SubResource("Resource_qy461"), SubResource("Resource_pessy"), SubResource("Resource_gwlxw"), SubResource("Resource_bux1e"), SubResource("Resource_1nqs2"), SubResource("Resource_dw84c"), SubResource("Resource_y3e3q"), SubResource("Resource_8dt4t"), SubResource("Resource_0slae")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 29

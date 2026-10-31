@@ -11,3 +11,5 @@ poder = 60
 pp = 25
 descripcion = "Un voraz bocado que puede amedrentar al objetivo."
 prob_retroceso = 30
+numero = 44
+banderas = PackedStringArray("bite", "contact", "metronome", "mirror", "protect")

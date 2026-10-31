@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_udpxd"]
+
+[resource]
+script = ExtResource("1_udpxd")
+id = "v_create"
+nombre = "V de Fuego"
+tipo = "fuego"
+poder = 180
+precision = 95
+pp = 5
+meta = "damage-raise"
+descripcion = "Golpea con una V de llamas al objetivo. Baja la Defensa, la Defensa Especial y la Velocidad de quien lo usa."
+cambios_stats = {
+"def_esp": -1,
+"defensa": -1,
+"velocidad": -1
+}
+prob_stat = 100
+numero = 557
+banderas = PackedStringArray("contact", "mirror", "protect")

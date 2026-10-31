@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cih11gjsnldqw"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_bpwog"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_bpwog"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/assist.tres" id="2_bs4te"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_2xvdg"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="4_ic3u5"]
@@ -17,97 +17,97 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/snatch.tres" id="15_26hlw"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="16_8on2h"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="17_sjwxi"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_aulby"]
-[ext_resource type="Texture2D" uid="uid://c43fl4j4it5c8" path="res://Assets/Pokemones/batalla/liepard_espalda.png" id="19_mviu1"]
-[ext_resource type="Texture2D" uid="uid://baqw6xiyaakhi" path="res://Assets/Pokemones/batalla/liepard_frente.png" id="20_1al8b"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_aulby"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/liepard_espalda.png" id="19_mviu1"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/liepard_frente.png" id="20_1al8b"]
 
-[sub_resource type="Resource" id="Resource_pqdho"]
+[sub_resource type="Resource" id="Resource_bpwog"]
 script = ExtResource("1_bpwog")
 movimiento = ExtResource("2_bs4te")
 
-[sub_resource type="Resource" id="Resource_rrowa"]
+[sub_resource type="Resource" id="Resource_bs4te"]
 script = ExtResource("1_bpwog")
 movimiento = ExtResource("3_2xvdg")
 
-[sub_resource type="Resource" id="Resource_7g6jj"]
+[sub_resource type="Resource" id="Resource_2xvdg"]
 script = ExtResource("1_bpwog")
 movimiento = ExtResource("4_ic3u5")
 
-[sub_resource type="Resource" id="Resource_0jm7v"]
+[sub_resource type="Resource" id="Resource_ic3u5"]
 script = ExtResource("1_bpwog")
 movimiento = ExtResource("5_fnq45")
 
-[sub_resource type="Resource" id="Resource_ig3ot"]
+[sub_resource type="Resource" id="Resource_fnq45"]
 script = ExtResource("1_bpwog")
 nivel = 3
 movimiento = ExtResource("3_2xvdg")
 
-[sub_resource type="Resource" id="Resource_a1yxh"]
+[sub_resource type="Resource" id="Resource_gucri"]
 script = ExtResource("1_bpwog")
 nivel = 6
 movimiento = ExtResource("2_bs4te")
 
-[sub_resource type="Resource" id="Resource_ixij8"]
+[sub_resource type="Resource" id="Resource_1o68q"]
 script = ExtResource("1_bpwog")
 nivel = 10
 movimiento = ExtResource("4_ic3u5")
 
-[sub_resource type="Resource" id="Resource_ho64i"]
+[sub_resource type="Resource" id="Resource_gpi4p"]
 script = ExtResource("1_bpwog")
 nivel = 12
 movimiento = ExtResource("6_gucri")
 
-[sub_resource type="Resource" id="Resource_vfje1"]
+[sub_resource type="Resource" id="Resource_sv257"]
 script = ExtResource("1_bpwog")
 nivel = 15
 movimiento = ExtResource("7_1o68q")
 
-[sub_resource type="Resource" id="Resource_xih34"]
+[sub_resource type="Resource" id="Resource_7q44x"]
 script = ExtResource("1_bpwog")
 nivel = 19
 movimiento = ExtResource("8_gpi4p")
 
-[sub_resource type="Resource" id="Resource_gipsj"]
+[sub_resource type="Resource" id="Resource_v2sat"]
 script = ExtResource("1_bpwog")
 nivel = 22
 movimiento = ExtResource("9_sv257")
 
-[sub_resource type="Resource" id="Resource_i5ceg"]
+[sub_resource type="Resource" id="Resource_vur8q"]
 script = ExtResource("1_bpwog")
 nivel = 26
 movimiento = ExtResource("10_7q44x")
 
-[sub_resource type="Resource" id="Resource_lwjp5"]
+[sub_resource type="Resource" id="Resource_glan2"]
 script = ExtResource("1_bpwog")
 nivel = 31
 movimiento = ExtResource("11_v2sat")
 
-[sub_resource type="Resource" id="Resource_1q125"]
+[sub_resource type="Resource" id="Resource_fodhp"]
 script = ExtResource("1_bpwog")
 nivel = 34
 movimiento = ExtResource("12_vur8q")
 
-[sub_resource type="Resource" id="Resource_eahj7"]
+[sub_resource type="Resource" id="Resource_26hlw"]
 script = ExtResource("1_bpwog")
 nivel = 38
 movimiento = ExtResource("13_glan2")
 
-[sub_resource type="Resource" id="Resource_7dik1"]
+[sub_resource type="Resource" id="Resource_8on2h"]
 script = ExtResource("1_bpwog")
 nivel = 43
 movimiento = ExtResource("14_fodhp")
 
-[sub_resource type="Resource" id="Resource_ghr3x"]
+[sub_resource type="Resource" id="Resource_sjwxi"]
 script = ExtResource("1_bpwog")
 nivel = 47
 movimiento = ExtResource("15_26hlw")
 
-[sub_resource type="Resource" id="Resource_husxf"]
+[sub_resource type="Resource" id="Resource_aulby"]
 script = ExtResource("1_bpwog")
 nivel = 50
 movimiento = ExtResource("16_8on2h")
 
-[sub_resource type="Resource" id="Resource_pu1mp"]
+[sub_resource type="Resource" id="Resource_mviu1"]
 script = ExtResource("1_bpwog")
 nivel = 55
 movimiento = ExtResource("17_sjwxi")
@@ -117,7 +117,7 @@ script = ExtResource("18_aulby")
 id = "liepard"
 numero = 510
 nombre = "Liepard"
-tipos = ["siniestro"]
+tipos = PackedStringArray("siniestro")
 ps = 64
 ataque = 88
 at_esp = 88
@@ -127,12 +127,15 @@ ratio_captura = 90
 evs_otorgados = {
 "velocidad": 2
 }
-aprende = Array[ExtResource("1_bpwog")]([SubResource("Resource_pqdho"), SubResource("Resource_rrowa"), SubResource("Resource_7g6jj"), SubResource("Resource_0jm7v"), SubResource("Resource_ig3ot"), SubResource("Resource_a1yxh"), SubResource("Resource_ixij8"), SubResource("Resource_ho64i"), SubResource("Resource_vfje1"), SubResource("Resource_xih34"), SubResource("Resource_gipsj"), SubResource("Resource_i5ceg"), SubResource("Resource_lwjp5"), SubResource("Resource_1q125"), SubResource("Resource_eahj7"), SubResource("Resource_7dik1"), SubResource("Resource_ghr3x"), SubResource("Resource_husxf"), SubResource("Resource_pu1mp")])
+habilidades = PackedStringArray("limber", "unburden")
+habilidad_oculta = "prankster"
+categoria = "Pokémon Calculador"
+altura = 1.1
+peso_kg = 37.5
+descripcion = "Su bella y grácil silueta le viene dada por su desarrollada musculatura, que le permite andar de noche sin hacer ruido."
+aprende = Array[ExtResource("1_bpwog")]([SubResource("Resource_bpwog"), SubResource("Resource_bs4te"), SubResource("Resource_2xvdg"), SubResource("Resource_ic3u5"), SubResource("Resource_fnq45"), SubResource("Resource_gucri"), SubResource("Resource_1o68q"), SubResource("Resource_gpi4p"), SubResource("Resource_sv257"), SubResource("Resource_7q44x"), SubResource("Resource_v2sat"), SubResource("Resource_vur8q"), SubResource("Resource_glan2"), SubResource("Resource_fodhp"), SubResource("Resource_26hlw"), SubResource("Resource_8on2h"), SubResource("Resource_sjwxi"), SubResource("Resource_aulby"), SubResource("Resource_mviu1")])
 sprite_frente = ExtResource("20_1al8b")
 sprite_espalda = ExtResource("19_mviu1")
 cuadros_frente = 98
 cuadros_espalda = 74
 fps_sprite = 12.37
-habilidades = PackedStringArray("Flexibilidad", "Liviano")
-habilidad_oculta = "Timador/Bromista"
-evoluciones = Array[Dictionary]([])

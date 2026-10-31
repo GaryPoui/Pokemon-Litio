@@ -54,6 +54,8 @@ func _ready() -> void:
 		filas.append(f)
 	EstiloUI.label(nombre_bolsillo, 9, EstiloUI.TEXTO_OSCURO)
 	EstiloUI.label(footer_label, 9, Color.WHITE)
+	EstiloUI.fuente_batalla(footer_label)
+	footer_label.add_theme_constant_override("line_spacing", -1)
 	action_panel.add_theme_stylebox_override("panel", EstiloUI.panel())
 	bolsa_y= bolsa.position.y
 	inventory.inventory_changed.connect(_on_inventory_changed)
@@ -193,8 +195,14 @@ func _refresh_selection() -> void:
 		if not f.visible:
 			continue
 		var item: Dictionary =current_items[k]
-		(f.get_node("Nombre") as Label).text= str(item.get("name", ""))
-		(f.get_node("Cantidad") as Label).text ="" if item.get("category", "")== "CLAVE" else "×%d" % int(item.get("quantity", 0))
+		var nl: Label= f.get_node("Nombre")
+		var cl: Label= f.get_node("Cantidad")
+		nl.text= str(item.get("name", ""))
+		cl.text ="" if item.get("category", "") in ["CLAVE", "MT / MO"] else "×%d" % int(item.get("quantity", 0))
+		EstiloUI.label(nl, 9, EstiloUI.TEXTO_OSCURO)
+		var libre:= cl.position.x+ cl.size.x- (cl.get_combined_minimum_size().x+ 4.0 if cl.text!= "" else 0.0)
+		if nl.get_combined_minimum_size().x> libre:
+			EstiloUI.fuente_batalla(nl)
 	marco.visible= not current_items.is_empty()
 	marco.position.y =filas[0].position.y+ (item_index- scroll)* ALTO_FILA
 	nombre_bolsillo.text= inventory.nombre_bolsillo(categories[category_index])
@@ -226,11 +234,14 @@ func _open_action_menu() -> void:
 		if bool(item.get("can_toss", true)):
 			acciones.append("TIRAR")
 		acciones.append("CANCELAR")
-	action_list.size.y= acciones.size()* ALTO_ACCION
-	action_panel.size.y =action_list.size.y+ 8
-	action_panel.position.y= 139- action_panel.size.y
 	action_list.alto_fila= ALTO_ACCION
+	action_list.size.x =200.0
 	action_list.poner(acciones)
+	var ancho:= action_list.position.x* 2.0+ action_list.ancho_necesario()
+	action_list.size= Vector2(action_list.ancho_necesario(), acciones.size()* ALTO_ACCION)
+	action_panel.size =Vector2(ancho, action_list.size.y+ 8)
+	action_panel.position= Vector2(248.0- ancho, 133.0- action_panel.size.y)
+	action_list.refrescar()
 	action_mode =true
 	action_panel.visible= true
 
@@ -356,12 +367,72 @@ func _usar(item_id: String) -> void:
 		Inventario.consumir(item_id)
 		Sonido.efecto("curar_ps")
 		_show_status("%s recuperó %d PS." % [p.nombre(), p.curar_ps(o.cura_ps)])
+	elif o.uso_especial in ["evolucion", "cordon"]:
+		await _usar_evolutivo(o)
+	elif o.uso_especial== "parche_habilidad":
+		await _usar_parche(o)
 	elif item_id== "repel":
 		Inventario.consumir(item_id)
 		Estado.pasos_repelente= 100
 		_show_status("Usaste Repelente. Los Pokémon débiles no aparecerán.")
 	else:
 		_error("¡No es momento de usar esto!")
+
+func _destino_evo(p: PokemonInstancia, o: Objeto) -> Dictionary:
+	if o.uso_especial== "cordon":
+		return Evoluciones.por_cordon(p, func(id): return Inventario.cantidad_de(id)> 0)
+	var d:= Evoluciones.por_objeto(p, o.id)
+	return {} if d== "" else {"especie": d, "objeto": ""}
+
+func _usar_evolutivo(o: Objeto) -> void:
+	if Equipo.miembros.is_empty():
+		_error("No tienes ningún Pokémon.")
+		return
+	var valida:= func(i: int) -> String:
+		return "" if not _destino_evo(Equipo.miembros[i], o).is_empty() else "No tendrá ningún efecto."
+	ocupado= true
+	var pe= await _abrir_equipo("¿En qué Pokémon usar %s?" % o.nombre, valida)
+	await pe.cerrado
+	var i: int= pe.resultado
+	await GestorEscenas.fundido(func(): pe.queue_free())
+	if i< 0:
+		ocupado= false
+		return
+	var p:= Equipo.miembros[i]
+	var d:= _destino_evo(p, o)
+	if d.is_empty():
+		ocupado= false
+		_error("No tendrá ningún efecto.")
+		return
+	Inventario.consumir(o.id)
+	if str(d.get("objeto", ""))!= "":
+		Inventario.consumir(str(d["objeto"]))
+	await Combate.evolucionar_con(p, str(d["especie"]))
+	ocupado =false
+	_refresh_items()
+
+func _usar_parche(o: Objeto) -> void:
+	var valida:= func(i: int) -> String:
+		var q:= Equipo.miembros[i]
+		if q.especie.habilidad_oculta== "" or q.especie.habilidades.is_empty() or q.especie.habilidades.has(q.especie.habilidad_oculta):
+			return "No tendrá ningún efecto."
+		return ""
+	ocupado= true
+	var pe= await _abrir_equipo("¿En qué Pokémon usar %s?" % o.nombre, valida)
+	await pe.cerrado
+	var i: int= pe.resultado
+	await GestorEscenas.fundido(func(): pe.queue_free())
+	ocupado =false
+	if i< 0:
+		return
+	var p:= Equipo.miembros[i]
+	if p.especie.habilidad_oculta== "" or p.especie.habilidades.is_empty():
+		_error("No tendrá ningún efecto.")
+		return
+	Inventario.consumir(o.id)
+	p.habilidad= p.especie.habilidades[0] if p.tiene_oculta() else p.especie.habilidad_oculta
+	Sonido.efecto("habilidad")
+	_show_status("¡La habilidad de %s ahora es %s!" % [p.nombre(), p.nombre_habilidad()])
 
 func _usar_mt(o: Objeto) -> void:
 	var m:= BaseDatos.movimiento(o.movimiento_mt)

@@ -13,3 +13,5 @@ meta = "damage-ailment"
 descripcion = "Lanza un aguijón tóxico que puede envenenar al objetivo."
 estado = "poison"
 prob_estado = 30
+numero = 40
+banderas = PackedStringArray("metronome", "mirror", "protect")

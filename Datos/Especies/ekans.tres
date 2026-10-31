@@ -21,82 +21,80 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/coil.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/gunk_shot.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_f57cm"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_haqqc"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_lobbd"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_t5hww"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_x70rx"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_3pawr"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_ptsvl"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_3wsgk"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_g7kdn"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ot3a0"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_lo16p"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_gixvj"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_c5c5c"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_i77do"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_exuam"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_q4duu"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("20")
@@ -107,8 +105,6 @@ id = "ekans"
 numero = 23
 nombre = "Ekans"
 tipos = PackedStringArray("veneno")
-habilidades = PackedStringArray("Intimidación", "Mudar")
-habilidad_oculta = "Nerviosismo"
 ps = 35
 ataque = 60
 defensa = 44
@@ -117,15 +113,24 @@ def_esp = 54
 velocidad = 55
 exp_base = 58
 ratio_captura = 255
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "arbok", "metodo": "nivel", "condicion": "Nivel 22", "nivel": 22}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "arbok"
 nivel_evolucion = 22
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evoluciones = Array[Dictionary]([{
+"especie": "arbok",
+"metodo": "nivel",
+"nivel": 22
+}])
+habilidades = PackedStringArray("intimidate", "shed_skin")
+habilidad_oculta = "unnerve"
+categoria = "Pokémon Serpiente"
+altura = 2.0
+peso_kg = 6.9
+descripcion = "Cuanto más viejo, más crece este Pokémon. Por la noche, descansa en las ramas de los árboles."
+aprende = Array[ExtResource("2")]([SubResource("Resource_f57cm"), SubResource("Resource_haqqc"), SubResource("Resource_lobbd"), SubResource("Resource_t5hww"), SubResource("Resource_x70rx"), SubResource("Resource_3pawr"), SubResource("Resource_ptsvl"), SubResource("Resource_3wsgk"), SubResource("Resource_g7kdn"), SubResource("Resource_ot3a0"), SubResource("Resource_lo16p"), SubResource("Resource_gixvj"), SubResource("Resource_c5c5c"), SubResource("Resource_i77do"), SubResource("Resource_exuam"), SubResource("Resource_q4duu")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 18
 cuadros_espalda = 18
-fps_sprite = 10.0

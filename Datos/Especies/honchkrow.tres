@@ -15,52 +15,48 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/quash.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dark_pulse.tres" id="14"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_65cba"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_yh1ah"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_ef4c3"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_t2i0x"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_s705h"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_73pnp"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_mi3cc"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_01q6i"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_w3sr3"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_2noh8"]
 script = ExtResource("2")
 nivel = 75
 movimiento = ExtResource("14")
@@ -71,8 +67,6 @@ id = "honchkrow"
 numero = 430
 nombre = "Honchkrow"
 tipos = PackedStringArray("siniestro", "volador")
-habilidades = PackedStringArray("Insomnio", "Supersuerte/Afortunado")
-habilidad_oculta = "Autoestima"
 ps = 100
 ataque = 125
 defensa = 52
@@ -81,11 +75,18 @@ def_esp = 52
 velocidad = 71
 exp_base = 177
 ratio_captura = 30
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9")])
+evs_otorgados = {
+"ataque": 2
+}
+amistad_base = 35
+habilidades = PackedStringArray("insomnia", "super_luck")
+habilidad_oculta = "moxie"
+categoria = "Pokémon Gran Jefe"
+altura = 0.9
+peso_kg = 27.3
+descripcion = "Si uno lanza un grito profundo, los demás acuden. Por eso se le llama también Invocador de la Noche."
+aprende = Array[ExtResource("2")]([SubResource("Resource_65cba"), SubResource("Resource_yh1ah"), SubResource("Resource_ef4c3"), SubResource("Resource_t2i0x"), SubResource("Resource_s705h"), SubResource("Resource_73pnp"), SubResource("Resource_mi3cc"), SubResource("Resource_01q6i"), SubResource("Resource_w3sr3"), SubResource("Resource_2noh8")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 42

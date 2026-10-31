@@ -146,6 +146,7 @@ script = ExtResource("15_uydfk")
 texto = "RUTA 4 · BARRANCAS DE RETIRO
 
 Zona protegida: los Pokémon no se combaten, solo se atrapan. Al sur: Avenida 9 de Julio."
+mostrar_encuentros = true
 
 [node name="CartelPlaza" type="Node2D" parent="." unique_id=656561005]
 position = Vector2(184, 184)

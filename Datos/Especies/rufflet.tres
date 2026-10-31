@@ -15,82 +15,86 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/defog.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tailwind.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="15"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlwind.tres" id="15_e2ucu"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/crush_claw.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sky_drop.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/brave_bird.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_e2ucu"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_y36q2"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_kqdyd"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_kl02t"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_xhjuq"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_dedgj"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_8ii4x"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_no5wq"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ei223"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_bre7x"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_haddc"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_44ltq"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_vkdo7"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_j5rey"]
+script = ExtResource("2")
+nivel = 55
+movimiento = ExtResource("15_e2ucu")
+
+[sub_resource type="Resource" id="Resource_3mphq"]
 script = ExtResource("2")
 nivel = 59
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_lvecc"]
 script = ExtResource("2")
 nivel = 64
 movimiento = ExtResource("19")
@@ -101,22 +105,31 @@ id = "rufflet"
 numero = 627
 nombre = "Rufflet"
 tipos = PackedStringArray("normal", "volador")
-habilidades = PackedStringArray("Perspicacia/Vista Lince", "Potencia Bruta")
-habilidad_oculta = "Entusiasmo"
 ps = 70
 ataque = 83
-defensa = 50
 at_esp = 37
-def_esp = 50
 velocidad = 60
 exp_base = 70
 ratio_captura = 190
 ratio_genero = 0
 crecimiento = "slow"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "braviary", "metodo": "especial", "condicion": "Nivel 54 (fuera de Hisui)"}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "braviary"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+nivel_evolucion = 54
+evoluciones = Array[Dictionary]([{
+"especie": "braviary",
+"metodo": "nivel",
+"nivel": 54
+}])
+habilidades = PackedStringArray("keen_eye", "sheer_force")
+habilidad_oculta = "hustle"
+categoria = "Pokémon Aguilucho"
+altura = 0.5
+peso_kg = 10.5
+descripcion = "Quiebra bayas con sus extremidades. Se enfrenta con valentía a todo enemigo por fuerte que este sea."
+aprende = Array[ExtResource("2")]([SubResource("Resource_e2ucu"), SubResource("Resource_y36q2"), SubResource("Resource_kqdyd"), SubResource("Resource_kl02t"), SubResource("Resource_xhjuq"), SubResource("Resource_dedgj"), SubResource("Resource_8ii4x"), SubResource("Resource_no5wq"), SubResource("Resource_ei223"), SubResource("Resource_bre7x"), SubResource("Resource_haddc"), SubResource("Resource_44ltq"), SubResource("Resource_vkdo7"), SubResource("Resource_j5rey"), SubResource("Resource_3mphq"), SubResource("Resource_lvecc")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 84

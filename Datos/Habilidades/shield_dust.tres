@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_tv0rt"]
+
+[resource]
+script = ExtResource("1_tv0rt")
+id = "shield_dust"
+nombre = "Polvo Escudo"
+descripcion = "Anula el efecto secundario del ataque sufrido."

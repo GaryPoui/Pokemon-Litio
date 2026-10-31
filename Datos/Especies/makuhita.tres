@@ -8,6 +8,7 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/arm_thrust.tres" id="8"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlwind.tres" id="8_4splm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/vital_throw.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fake_out.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/knock_off.tres" id="11"]
@@ -21,82 +22,85 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/reversal.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/heavy_slam.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_4splm"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_4bn87"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_oyvyw"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_2qu74"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_frxyu"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_lhkly"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_snqcl"]
+script = ExtResource("2")
+nivel = 16
+movimiento = ExtResource("8_4splm")
+
+[sub_resource type="Resource" id="Resource_tfyux"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_tbp48"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_wf1xr"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_cmlfk"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_h1rc6"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_i8gyr"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_j3pmd"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_3qven"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_arhmq"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_x530p"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("20")
@@ -107,8 +111,6 @@ id = "makuhita"
 numero = 296
 nombre = "Makuhita"
 tipos = PackedStringArray("lucha")
-habilidades = PackedStringArray("Sebo", "Agallas")
-habilidad_oculta = "Potencia Bruta"
 ps = 72
 ataque = 60
 defensa = 30
@@ -119,11 +121,23 @@ exp_base = 47
 ratio_captura = 180
 ratio_genero = 2
 crecimiento = "fast-then-very-slow"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([{"especie": "hariyama", "metodo": "nivel", "condicion": "Nivel 24", "nivel": 24}])
+evs_otorgados = {
+"ps": 1
+}
 evoluciona_a = "hariyama"
 nivel_evolucion = 24
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evoluciones = Array[Dictionary]([{
+"especie": "hariyama",
+"metodo": "nivel",
+"nivel": 24
+}])
+habilidades = PackedStringArray("thick_fat", "guts")
+habilidad_oculta = "sheer_force"
+categoria = "Pokémon Valiente"
+altura = 1.0
+peso_kg = 86.4
+descripcion = "Endurece su cuerpo golpeando grandes árboles sin perder jamás el ánimo."
+aprende = Array[ExtResource("2")]([SubResource("Resource_4splm"), SubResource("Resource_4bn87"), SubResource("Resource_oyvyw"), SubResource("Resource_2qu74"), SubResource("Resource_frxyu"), SubResource("Resource_lhkly"), SubResource("Resource_snqcl"), SubResource("Resource_tfyux"), SubResource("Resource_tbp48"), SubResource("Resource_wf1xr"), SubResource("Resource_cmlfk"), SubResource("Resource_h1rc6"), SubResource("Resource_i8gyr"), SubResource("Resource_j3pmd"), SubResource("Resource_3qven"), SubResource("Resource_arhmq"), SubResource("Resource_x530p")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 66

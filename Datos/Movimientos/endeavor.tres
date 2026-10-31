@@ -8,3 +8,5 @@ id = "endeavor"
 nombre = "Esfuerzo"
 pp = 5
 descripcion = "Reduce los PS del objetivo para que igualen a los del atacante."
+numero = 283
+banderas = PackedStringArray("contact", "metronome", "mirror", "noparentalbond", "protect")

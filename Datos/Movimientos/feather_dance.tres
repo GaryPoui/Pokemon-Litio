@@ -14,3 +14,5 @@ descripcion = "Envuelve al objetivo con un manto de plumas para reducir mucho su
 cambios_stats = {
 "ataque": -2
 }
+numero = 297
+banderas = PackedStringArray("allyanim", "dance", "metronome", "mirror", "protect", "reflectable")

@@ -6,10 +6,10 @@
 script = ExtResource("1")
 id = "sleep_talk"
 nombre = "Sonámbulo"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 10
+precision = 0
 objetivo = "user"
 meta = "unique"
+descripcion = "Mientras duerme, usa uno de sus movimientos elegido al azar."
+numero = 214
+banderas = PackedStringArray("failcopycat", "failencore", "failinstruct", "failmimic", "noassist", "nosleeptalk")

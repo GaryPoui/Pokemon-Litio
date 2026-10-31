@@ -18,67 +18,66 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mud_bomb.tres" id="17"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_heh3i"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_ne4fl"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_c0ckb"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_o75v8"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_giogi"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_4ewcb"]
 script = ExtResource("2")
 nivel = 18
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_0ppdr"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_lpir6"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_6qf50"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_dm80b"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_7njxb"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_2ymeu"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_sa7tg"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("17")
@@ -89,23 +88,31 @@ id = "poliwag"
 numero = 60
 nombre = "Poliwag"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Absorbeagua/Absorbe Agua", "Humedad")
-habilidad_oculta = "Nado Rápido"
 ps = 40
-ataque = 50
 defensa = 40
 at_esp = 40
 def_esp = 40
 velocidad = 90
 exp_base = 60
 ratio_captura = 255
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "poliwhirl", "metodo": "nivel", "condicion": "Nivel 25", "nivel": 25}])
+evs_otorgados = {
+"velocidad": 1
+}
 evoluciona_a = "poliwhirl"
 nivel_evolucion = 25
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12")])
+evoluciones = Array[Dictionary]([{
+"especie": "poliwhirl",
+"metodo": "nivel",
+"nivel": 25
+}])
+habilidades = PackedStringArray("water_absorb", "damp")
+habilidad_oculta = "swift_swim"
+categoria = "Pokémon Renacuajo"
+altura = 0.6
+peso_kg = 12.4
+descripcion = "Tiene una piel extraordinaria, fina y húmeda, que deja entrever las vísceras que tiene dispuestas en espiral."
+aprende = Array[ExtResource("2")]([SubResource("Resource_heh3i"), SubResource("Resource_ne4fl"), SubResource("Resource_c0ckb"), SubResource("Resource_o75v8"), SubResource("Resource_giogi"), SubResource("Resource_4ewcb"), SubResource("Resource_0ppdr"), SubResource("Resource_lpir6"), SubResource("Resource_6qf50"), SubResource("Resource_dm80b"), SubResource("Resource_7njxb"), SubResource("Resource_2ymeu"), SubResource("Resource_sa7tg")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 61

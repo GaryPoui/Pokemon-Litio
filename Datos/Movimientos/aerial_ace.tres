@@ -11,3 +11,5 @@ poder = 60
 precision = 0
 pp = 20
 descripcion = "El usuario lanza un ataque muy rápido e ineludible."
+numero = 332
+banderas = PackedStringArray("contact", "distance", "metronome", "mirror", "protect", "slicing")

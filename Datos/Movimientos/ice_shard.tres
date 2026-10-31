@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1")
 id = "ice_shard"
-nombre = "Canto helado"
+nombre = "Esquirla Helada"
 tipo = "hielo"
-categoria = "fisico"
 poder = 40
-precision = 100
 pp = 30
-objetivo = "selected-pokemon"
-meta = "damage"
+prioridad = 1
+descripcion = "Crea bolas de hielo y las lanza a gran velocidad. Este movimiento tiene prioridad alta."
+numero = 420
+banderas = PackedStringArray("metronome", "mirror", "protect")

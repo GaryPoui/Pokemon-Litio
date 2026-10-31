@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://4s26j6ixu508"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_8he6m"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_8he6m"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_0ktkv"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/withdraw.tres" id="3_qrfho"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="4_ggjn6"]
@@ -13,65 +13,65 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="11_8i8uf"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/giga_drain.tres" id="12_h7q0a"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="13_8h57o"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_l1s7v"]
-[ext_resource type="Texture2D" uid="uid://1evn14phwtk1" path="res://Assets/Pokemones/batalla/turtwig_espalda.png" id="15_y7l76"]
-[ext_resource type="Texture2D" uid="uid://bbqselb7udtlf" path="res://Assets/Pokemones/batalla/turtwig_frente.png" id="16_cxclr"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="14_l1s7v"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/turtwig_espalda.png" id="15_y7l76"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/turtwig_frente.png" id="16_cxclr"]
 
-[sub_resource type="Resource" id="Resource_cffwq"]
+[sub_resource type="Resource" id="Resource_8he6m"]
 script = ExtResource("1_8he6m")
 movimiento = ExtResource("2_0ktkv")
 
-[sub_resource type="Resource" id="Resource_j46vm"]
+[sub_resource type="Resource" id="Resource_0ktkv"]
 script = ExtResource("1_8he6m")
 nivel = 5
 movimiento = ExtResource("3_qrfho")
 
-[sub_resource type="Resource" id="Resource_ged01"]
+[sub_resource type="Resource" id="Resource_qrfho"]
 script = ExtResource("1_8he6m")
 nivel = 9
 movimiento = ExtResource("4_ggjn6")
 
-[sub_resource type="Resource" id="Resource_qb2d7"]
+[sub_resource type="Resource" id="Resource_ggjn6"]
 script = ExtResource("1_8he6m")
 nivel = 13
 movimiento = ExtResource("5_m1rs3")
 
-[sub_resource type="Resource" id="Resource_mxgn5"]
+[sub_resource type="Resource" id="Resource_m1rs3"]
 script = ExtResource("1_8he6m")
 nivel = 17
 movimiento = ExtResource("6_lw27g")
 
-[sub_resource type="Resource" id="Resource_5cmlr"]
+[sub_resource type="Resource" id="Resource_lw27g"]
 script = ExtResource("1_8he6m")
 nivel = 21
 movimiento = ExtResource("7_udlod")
 
-[sub_resource type="Resource" id="Resource_vjewc"]
+[sub_resource type="Resource" id="Resource_udlod"]
 script = ExtResource("1_8he6m")
 nivel = 25
 movimiento = ExtResource("8_y0xi4")
 
-[sub_resource type="Resource" id="Resource_kofcn"]
+[sub_resource type="Resource" id="Resource_y0xi4"]
 script = ExtResource("1_8he6m")
 nivel = 29
 movimiento = ExtResource("9_8utas")
 
-[sub_resource type="Resource" id="Resource_b2qxl"]
+[sub_resource type="Resource" id="Resource_8utas"]
 script = ExtResource("1_8he6m")
 nivel = 33
 movimiento = ExtResource("10_74go7")
 
-[sub_resource type="Resource" id="Resource_m1knc"]
+[sub_resource type="Resource" id="Resource_74go7"]
 script = ExtResource("1_8he6m")
 nivel = 37
 movimiento = ExtResource("11_8i8uf")
 
-[sub_resource type="Resource" id="Resource_ec5oh"]
+[sub_resource type="Resource" id="Resource_8i8uf"]
 script = ExtResource("1_8he6m")
 nivel = 41
 movimiento = ExtResource("12_h7q0a")
 
-[sub_resource type="Resource" id="Resource_kr8tg"]
+[sub_resource type="Resource" id="Resource_h7q0a"]
 script = ExtResource("1_8he6m")
 nivel = 45
 movimiento = ExtResource("13_8h57o")
@@ -81,7 +81,7 @@ script = ExtResource("14_l1s7v")
 id = "turtwig"
 numero = 387
 nombre = "Turtwig"
-tipos = ["planta"]
+tipos = PackedStringArray("planta")
 ps = 55
 ataque = 68
 defensa = 64
@@ -96,12 +96,20 @@ evs_otorgados = {
 }
 evoluciona_a = "grotle"
 nivel_evolucion = 18
-aprende = Array[ExtResource("1_8he6m")]([SubResource("Resource_cffwq"), SubResource("Resource_j46vm"), SubResource("Resource_ged01"), SubResource("Resource_qb2d7"), SubResource("Resource_mxgn5"), SubResource("Resource_5cmlr"), SubResource("Resource_vjewc"), SubResource("Resource_kofcn"), SubResource("Resource_b2qxl"), SubResource("Resource_m1knc"), SubResource("Resource_ec5oh"), SubResource("Resource_kr8tg")])
+evoluciones = Array[Dictionary]([{
+"especie": "grotle",
+"metodo": "nivel",
+"nivel": 18
+}])
+habilidades = PackedStringArray("overgrow")
+habilidad_oculta = "shell_armor"
+categoria = "Pokémon Hojita"
+altura = 0.4
+peso_kg = 10.2
+descripcion = "Realiza la fotosíntesis al bañarle los rayos de sol. Su concha está formada por tierra endurecida."
+aprende = Array[ExtResource("1_8he6m")]([SubResource("Resource_8he6m"), SubResource("Resource_0ktkv"), SubResource("Resource_qrfho"), SubResource("Resource_ggjn6"), SubResource("Resource_m1rs3"), SubResource("Resource_lw27g"), SubResource("Resource_udlod"), SubResource("Resource_y0xi4"), SubResource("Resource_8utas"), SubResource("Resource_74go7"), SubResource("Resource_8i8uf"), SubResource("Resource_h7q0a")])
 sprite_frente = ExtResource("16_cxclr")
 sprite_espalda = ExtResource("15_y7l76")
 cuadros_frente = 50
 cuadros_espalda = 54
 fps_sprite = 11.36
-habilidades = PackedStringArray("Espesura")
-habilidad_oculta = "Caparazón"
-evoluciones = Array[Dictionary]([{"especie": "grotle", "metodo": "nivel", "condicion": "Nivel 18", "nivel": 18}])

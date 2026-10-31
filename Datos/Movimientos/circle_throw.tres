@@ -5,11 +5,11 @@
 [resource]
 script = ExtResource("1")
 id = "circle_throw"
-nombre = "Llave giro"
+nombre = "Llave Giro"
 tipo = "lucha"
-categoria = "fisico"
 poder = 60
 precision = 90
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+prioridad = -6
+descripcion = "Lanza por los aires al objetivo y hace que salga otro Pokémon. Si es uno salvaje, acaba el combate."
+numero = 509
+banderas = PackedStringArray("contact", "failcopycat", "metronome", "mirror", "noassist", "protect")

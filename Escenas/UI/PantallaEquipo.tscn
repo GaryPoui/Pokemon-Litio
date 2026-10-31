@@ -100,9 +100,9 @@ offset_bottom = 44.0
 [node name="Estado" type="Label" parent="Tarjetas/S0" unique_id=1342110983]
 layout_mode = 0
 offset_left = 36.0
-offset_top = 31.0
+offset_top = 30.0
 offset_right = 58.0
-offset_bottom = 45.0
+offset_bottom = 42.0
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -183,9 +183,9 @@ offset_bottom = 44.0
 [node name="Estado" type="Label" parent="Tarjetas/S1" unique_id=844604504]
 layout_mode = 0
 offset_left = 36.0
-offset_top = 31.0
+offset_top = 30.0
 offset_right = 58.0
-offset_bottom = 45.0
+offset_bottom = 42.0
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -266,9 +266,9 @@ offset_bottom = 44.0
 [node name="Estado" type="Label" parent="Tarjetas/S2" unique_id=1558268119]
 layout_mode = 0
 offset_left = 36.0
-offset_top = 31.0
+offset_top = 30.0
 offset_right = 58.0
-offset_bottom = 45.0
+offset_bottom = 42.0
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -349,9 +349,9 @@ offset_bottom = 44.0
 [node name="Estado" type="Label" parent="Tarjetas/S3" unique_id=861963447]
 layout_mode = 0
 offset_left = 36.0
-offset_top = 31.0
+offset_top = 30.0
 offset_right = 58.0
-offset_bottom = 45.0
+offset_bottom = 42.0
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -432,9 +432,9 @@ offset_bottom = 44.0
 [node name="Estado" type="Label" parent="Tarjetas/S4" unique_id=1674551233]
 layout_mode = 0
 offset_left = 36.0
-offset_top = 31.0
+offset_top = 30.0
 offset_right = 58.0
-offset_bottom = 45.0
+offset_bottom = 42.0
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -515,9 +515,9 @@ offset_bottom = 44.0
 [node name="Estado" type="Label" parent="Tarjetas/S5" unique_id=800208533]
 layout_mode = 0
 offset_left = 36.0
-offset_top = 31.0
+offset_top = 30.0
 offset_right = 58.0
-offset_bottom = 45.0
+offset_bottom = 42.0
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -530,9 +530,9 @@ offset_bottom = 191.0
 [node name="Texto" type="Label" parent="Mensaje" unique_id=318847174]
 layout_mode = 0
 offset_left = 6.0
-offset_top = 3.0
+offset_top = 2.0
 offset_right = 176.0
-offset_bottom = 27.0
+offset_bottom = 26.0
 vertical_alignment = 1
 
 [node name="Cancelar" type="Panel" parent="." unique_id=1310083922]

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_v44wd"]
+
+[resource]
+script = ExtResource("1_v44wd")
+id = "frost_breath"
+nombre = "Vaho Gélido"
+tipo = "hielo"
+categoria = "especial"
+poder = 40
+precision = 90
+descripcion = "Quien lo usa ataca lanzando un aliento gélido. Siempre asesta un golpe crítico."
+prob_estado = 100
+critico = 6
+numero = 524
+banderas = PackedStringArray("metronome", "mirror", "protect")

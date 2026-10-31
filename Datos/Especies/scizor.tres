@@ -23,92 +23,89 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/swords_dance.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/feint.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_bh4to"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_kx2fy"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_ww4wl"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_p8nup"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_7vit1"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_hlf0g"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_tq1oj"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_cg03p"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_j1sac"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_x2stt"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_g8cq7"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_2ehcf"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_tio7b"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_jl14g"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_t8h5b"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_nppnk"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_p3eoo"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_srbej"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("22")
@@ -119,8 +116,6 @@ id = "scizor"
 numero = 212
 nombre = "Scizor"
 tipos = PackedStringArray("bicho", "acero")
-habilidades = PackedStringArray("Enjambre", "Experto")
-habilidad_oculta = "Metal Liviano"
 ps = 70
 ataque = 130
 defensa = 100
@@ -129,11 +124,16 @@ def_esp = 80
 velocidad = 65
 exp_base = 175
 ratio_captura = 25
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"ataque": 2
+}
+habilidades = PackedStringArray("swarm", "technician")
+habilidad_oculta = "light_metal"
+categoria = "Pokémon Tenaza"
+altura = 1.8
+peso_kg = 118.0
+descripcion = "Las pinzas que posee tienen acero. Con ellas, no hay nada que se le resista. Rompen todo lo que pillan."
+aprende = Array[ExtResource("2")]([SubResource("Resource_bh4to"), SubResource("Resource_kx2fy"), SubResource("Resource_ww4wl"), SubResource("Resource_p8nup"), SubResource("Resource_7vit1"), SubResource("Resource_hlf0g"), SubResource("Resource_tq1oj"), SubResource("Resource_cg03p"), SubResource("Resource_j1sac"), SubResource("Resource_x2stt"), SubResource("Resource_g8cq7"), SubResource("Resource_2ehcf"), SubResource("Resource_tio7b"), SubResource("Resource_jl14g"), SubResource("Resource_t8h5b"), SubResource("Resource_nppnk"), SubResource("Resource_p3eoo"), SubResource("Resource_srbej")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 130

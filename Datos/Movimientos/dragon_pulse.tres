@@ -10,3 +10,5 @@ tipo = "dragon"
 categoria = "especial"
 poder = 90
 descripcion = "Abre mucho la boca y libera una onda de choque que ataca al objetivo."
+numero = 406
+banderas = PackedStringArray("distance", "metronome", "mirror", "protect", "pulse")

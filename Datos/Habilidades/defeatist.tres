@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_aasa1"]
+
+[resource]
+script = ExtResource("1_aasa1")
+id = "defeatist"
+nombre = "Flaqueza"
+descripcion = "Baja las características al llegar a la mitad los PS."

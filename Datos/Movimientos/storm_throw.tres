@@ -5,11 +5,10 @@
 [resource]
 script = ExtResource("1")
 id = "storm_throw"
-nombre = "Llave corsé"
+nombre = "Llave Corsé"
 tipo = "lucha"
-categoria = "fisico"
-poder = 60
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+poder = 40
+descripcion = "Lanza un golpe devastador. Siempre asesta un golpe crítico."
+critico = 6
+numero = 480
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

@@ -23,92 +23,89 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/swords_dance.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/feint.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_ntyqc"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_ui6pf"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_jik73"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_lm3xx"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_hrtmh"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_c7pia"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_ce0bp"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_vw6bq"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_1wv7o"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_4w6o6"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_sr2uf"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_yopd1"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_b4l8l"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_8a50j"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_50omy"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_us6h5"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_y4cef"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_wjjla"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("22")
@@ -119,8 +116,6 @@ id = "scyther"
 numero = 123
 nombre = "Scyther"
 tipos = PackedStringArray("bicho", "volador")
-habilidades = PackedStringArray("Enjambre", "Experto")
-habilidad_oculta = "Impasible"
 ps = 70
 ataque = 110
 defensa = 80
@@ -128,13 +123,21 @@ at_esp = 55
 def_esp = 80
 velocidad = 105
 exp_base = 100
-ratio_captura = 45
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "scizor", "metodo": "intercambio", "condicion": "Intercambio equipado con revestimiento metálico"}])
-evoluciona_a = "scizor"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"ataque": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "scizor",
+"metodo": "intercambio",
+"objeto": "metal_coat"
+}])
+habilidades = PackedStringArray("swarm", "technician")
+habilidad_oculta = "steadfast"
+categoria = "Pokémon Mantis"
+altura = 1.5
+peso_kg = 56.0
+descripcion = "Destroza a su presa con las guadañas que tiene. No es común que use las alas para volar."
+aprende = Array[ExtResource("2")]([SubResource("Resource_ntyqc"), SubResource("Resource_ui6pf"), SubResource("Resource_jik73"), SubResource("Resource_lm3xx"), SubResource("Resource_hrtmh"), SubResource("Resource_c7pia"), SubResource("Resource_ce0bp"), SubResource("Resource_vw6bq"), SubResource("Resource_1wv7o"), SubResource("Resource_4w6o6"), SubResource("Resource_sr2uf"), SubResource("Resource_yopd1"), SubResource("Resource_b4l8l"), SubResource("Resource_8a50j"), SubResource("Resource_50omy"), SubResource("Resource_us6h5"), SubResource("Resource_y4cef"), SubResource("Resource_wjjla")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 68

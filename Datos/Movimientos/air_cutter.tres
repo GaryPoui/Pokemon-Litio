@@ -14,3 +14,5 @@ pp = 25
 objetivo = "all-opponents"
 descripcion = "Viento cortante que azota. Suele ser un golpe crítico."
 critico = 1
+numero = 314
+banderas = PackedStringArray("metronome", "mirror", "protect", "slicing", "wind")

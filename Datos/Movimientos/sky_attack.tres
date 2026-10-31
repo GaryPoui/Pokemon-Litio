@@ -13,3 +13,5 @@ pp = 5
 descripcion = "Ataca durante dos turnos y suele asestar un golpe crítico. También puede amedrentar al objetivo."
 critico = 1
 prob_retroceso = 30
+numero = 143
+banderas = PackedStringArray("charge", "distance", "failinstruct", "metronome", "mirror", "nosleeptalk", "protect")

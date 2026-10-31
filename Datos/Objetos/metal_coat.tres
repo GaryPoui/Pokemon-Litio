@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/metal_coat.png" id="1_yjdn2"]
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="2_dinck"]
+
+[resource]
+script = ExtResource("2_dinck")
+id = "metal_coat"
+nombre = "Revest. Metálico"
+descripcion = "Colmillo de gran dureza que refuerza los movimientos de tipo Dragón. Debe llevarlo un Pokémon."
+precio = 2000
+icono = ExtResource("1_yjdn2")

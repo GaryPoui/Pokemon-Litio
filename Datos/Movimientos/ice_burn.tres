@@ -5,11 +5,15 @@
 [resource]
 script = ExtResource("1")
 id = "ice_burn"
-nombre = "Llama gélida"
+nombre = "Llama Gélida"
 tipo = "hielo"
 categoria = "especial"
 poder = 140
 precision = 90
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-ailment"
+descripcion = "Ataca al objetivo en el segundo turno rodeándolo de un aire gélido. Puede causar quemaduras."
+estado = "burn"
+prob_estado = 30
+numero = 554
+banderas = PackedStringArray("charge", "failinstruct", "mirror", "nosleeptalk", "protect")

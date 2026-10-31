@@ -20,87 +20,83 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/horn_drill.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/megahorn.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_vc5jo"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_d1mg7"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_4jbdg"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_exqtv"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_7nkr0"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_adbuy"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_td3yt"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_tesl2"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_8v2ll"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_v1gvw"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_82uy5"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_sufka"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_1row7"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_x3222"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_fl5qo"]
 script = ExtResource("2")
 nivel = 62
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_pjd1c"]
 script = ExtResource("2")
 nivel = 71
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_kbmje"]
 script = ExtResource("2")
 nivel = 77
 movimiento = ExtResource("19")
@@ -111,8 +107,6 @@ id = "rhydon"
 numero = 112
 nombre = "Rhydon"
 tipos = PackedStringArray("tierra", "roca")
-habilidades = PackedStringArray("Pararrayos", "Cabeza Roca")
-habilidad_oculta = "Audaz"
 ps = 105
 ataque = 130
 defensa = 120
@@ -121,12 +115,22 @@ def_esp = 45
 velocidad = 40
 exp_base = 170
 ratio_captura = 60
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([{"especie": "rhyperior", "metodo": "intercambio", "condicion": "Intercambio equipado con protector"}])
-evoluciona_a = "rhyperior"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"ataque": 2
+}
+evoluciones = Array[Dictionary]([{
+"especie": "rhyperior",
+"metodo": "intercambio",
+"objeto": "protector"
+}])
+habilidades = PackedStringArray("lightning_rod", "rock_head")
+habilidad_oculta = "reckless"
+categoria = "Pokémon Taladro"
+altura = 1.9
+peso_kg = 120.0
+descripcion = "La piel le sirve de escudo protector. Puede vivir en lava líquida a 2000 °C de temperatura."
+aprende = Array[ExtResource("2")]([SubResource("Resource_vc5jo"), SubResource("Resource_d1mg7"), SubResource("Resource_4jbdg"), SubResource("Resource_exqtv"), SubResource("Resource_7nkr0"), SubResource("Resource_adbuy"), SubResource("Resource_td3yt"), SubResource("Resource_tesl2"), SubResource("Resource_8v2ll"), SubResource("Resource_v1gvw"), SubResource("Resource_82uy5"), SubResource("Resource_sufka"), SubResource("Resource_1row7"), SubResource("Resource_x3222"), SubResource("Resource_fl5qo"), SubResource("Resource_pjd1c"), SubResource("Resource_kbmje")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 96

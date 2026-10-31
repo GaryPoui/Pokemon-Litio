@@ -5,11 +5,12 @@
 [resource]
 script = ExtResource("1")
 id = "heal_bell"
-nombre = "Campana cura"
-tipo = "normal"
+nombre = "Cascabel Cura"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 5
-objetivo = "selected-pokemon"
+objetivo = "user-and-allies"
 meta = "unique"
+descripcion = "Tañido que cura los problemas de estado de todos los Pokémon del equipo."
+numero = 215
+banderas = PackedStringArray("bypasssub", "distance", "metronome", "snatch", "sound")

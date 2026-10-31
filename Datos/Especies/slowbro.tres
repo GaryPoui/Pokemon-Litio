@@ -22,92 +22,88 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/psych_up.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/heal_pulse.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_2t1l8"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_1hoob"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_ta6f7"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_yb1py"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_atgql"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_wxmq0"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_8h3x5"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_6lc25"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_oyc7k"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_3dxdq"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_jjthx"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_rsumg"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_b416w"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_jclgi"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_h8kka"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_lptob"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_523w8"]
 script = ExtResource("2")
 nivel = 62
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_gapyk"]
 script = ExtResource("2")
 nivel = 68
 movimiento = ExtResource("21")
@@ -118,8 +114,6 @@ id = "slowbro"
 numero = 80
 nombre = "Slowbro"
 tipos = PackedStringArray("agua", "psiquico")
-habilidades = PackedStringArray("Despistado/Despiste", "Ritmo Propio")
-habilidad_oculta = "Regeneración"
 ps = 95
 ataque = 75
 defensa = 110
@@ -128,11 +122,16 @@ def_esp = 80
 velocidad = 30
 exp_base = 172
 ratio_captura = 75
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"defensa": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"defensa": 2
+}
+habilidades = PackedStringArray("oblivious", "own_tempo")
+habilidad_oculta = "regenerator"
+categoria = "Pokémon Ermitaño"
+altura = 1.6
+peso_kg = 78.5
+descripcion = "Tiene una cola tan apetecible, que el Shellder que va enganchado a ella no se soltará por nada del mundo."
+aprende = Array[ExtResource("2")]([SubResource("Resource_2t1l8"), SubResource("Resource_1hoob"), SubResource("Resource_ta6f7"), SubResource("Resource_yb1py"), SubResource("Resource_atgql"), SubResource("Resource_wxmq0"), SubResource("Resource_8h3x5"), SubResource("Resource_6lc25"), SubResource("Resource_oyc7k"), SubResource("Resource_3dxdq"), SubResource("Resource_jjthx"), SubResource("Resource_rsumg"), SubResource("Resource_b416w"), SubResource("Resource_jclgi"), SubResource("Resource_h8kka"), SubResource("Resource_lptob"), SubResource("Resource_523w8"), SubResource("Resource_gapyk")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 61

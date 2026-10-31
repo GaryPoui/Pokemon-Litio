@@ -6,52 +6,51 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/smeargle_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sketch.tres" id="5"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_0d6j1"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_xr2ta"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_x7617"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_y3w11"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_pflsb"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_jtr1a"]
 script = ExtResource("2")
 nivel = 51
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_tib0b"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_l0tdt"]
 script = ExtResource("2")
 nivel = 71
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_tijtd"]
 script = ExtResource("2")
 nivel = 81
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_wu14a"]
 script = ExtResource("2")
 nivel = 91
 movimiento = ExtResource("5")
@@ -62,8 +61,6 @@ id = "smeargle"
 numero = 235
 nombre = "Smeargle"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Ritmo Propio", "Experto")
-habilidad_oculta = "Temperamental/Veleta"
 ps = 55
 ataque = 20
 defensa = 35
@@ -71,12 +68,17 @@ at_esp = 20
 def_esp = 45
 velocidad = 75
 exp_base = 88
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "fast"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9")])
+evs_otorgados = {
+"velocidad": 1
+}
+habilidades = PackedStringArray("own_tempo", "technician")
+habilidad_oculta = "moody"
+categoria = "Pokémon Pintor"
+altura = 1.2
+peso_kg = 58.0
+descripcion = "Marca su territorio usando su cola a modo de pincel. Ha hecho más de 5000 marcas diferentes."
+aprende = Array[ExtResource("2")]([SubResource("Resource_0d6j1"), SubResource("Resource_xr2ta"), SubResource("Resource_x7617"), SubResource("Resource_y3w11"), SubResource("Resource_pflsb"), SubResource("Resource_jtr1a"), SubResource("Resource_tib0b"), SubResource("Resource_l0tdt"), SubResource("Resource_tijtd"), SubResource("Resource_wu14a")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 48

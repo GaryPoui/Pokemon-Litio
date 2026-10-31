@@ -18,77 +18,74 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/slam.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/wring_out.tres" id="17"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_uy56x"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_jxpxj"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_ccbi5"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_cmmvc"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_r1tds"]
 script = ExtResource("2")
 nivel = 11
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_o0ab7"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_yrx2o"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_w8v4o"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_bt1qv"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_0uxp3"]
 script = ExtResource("2")
 nivel = 27
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_f10y4"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_moxc0"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_jgi2a"]
 script = ExtResource("2")
 nivel = 39
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_jek73"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_juapd"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("17")
@@ -99,22 +96,29 @@ id = "weepinbell"
 numero = 70
 nombre = "Weepinbell"
 tipos = PackedStringArray("planta", "veneno")
-habilidades = PackedStringArray("Clorofila")
-habilidad_oculta = "Gula"
 ps = 65
 ataque = 90
-defensa = 50
 at_esp = 85
 def_esp = 45
 velocidad = 55
 exp_base = 137
 ratio_captura = 120
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([{"especie": "victreebel", "metodo": "piedra", "condicion": "Piedra hoja"}])
-evoluciona_a = "victreebel"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"ataque": 2
+}
+evoluciones = Array[Dictionary]([{
+"especie": "victreebel",
+"metodo": "piedra",
+"objeto": "leaf_stone"
+}])
+habilidades = PackedStringArray("chlorophyll")
+habilidad_oculta = "gluttony"
+categoria = "Pokémon Matamoscas"
+altura = 1.0
+peso_kg = 6.4
+descripcion = "Las hojas que tiene actúan como cuchillas en combate. Otra de sus armas es el corrosivo fluido que expulsa."
+aprende = Array[ExtResource("2")]([SubResource("Resource_uy56x"), SubResource("Resource_jxpxj"), SubResource("Resource_ccbi5"), SubResource("Resource_cmmvc"), SubResource("Resource_r1tds"), SubResource("Resource_o0ab7"), SubResource("Resource_yrx2o"), SubResource("Resource_w8v4o"), SubResource("Resource_bt1qv"), SubResource("Resource_0uxp3"), SubResource("Resource_f10y4"), SubResource("Resource_moxc0"), SubResource("Resource_jgi2a"), SubResource("Resource_jek73"), SubResource("Resource_juapd")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 48

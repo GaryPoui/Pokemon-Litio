@@ -8,3 +8,4 @@ extends Resource
 @export var trinkets: Array[String] =[]
 @export var movimientos: Array[String]= []
 @export var ia :Array[String]= []
+@export var habilidad: String= ""

@@ -5,11 +5,13 @@
 [resource]
 script = ExtResource("1")
 id = "sweet_kiss"
-nombre = "Beso dulce"
-tipo = "normal"
+nombre = "Beso Dulce"
 categoria = "estado"
-poder = 0
 precision = 75
-pp = 10
-objetivo = "selected-pokemon"
-meta = "unique"
+meta = "ailment"
+descripcion = "Da un beso con tal dulzura que causa confusión."
+estado = "confusion"
+numero = 186
+banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")
+turnos_min = 2
+turnos_max = 5

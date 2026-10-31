@@ -15,90 +15,82 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/minimize.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/gyro_ball.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/light_screen.tres" id="15"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/brine.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/reflect_type.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/power_gem.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/cosmic_power.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_eh5xh"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_0t5cb"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_vhcl4"]
 script = ExtResource("2")
 nivel = 6
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_xrlk1"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 12
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_57wue"]
 script = ExtResource("2")
 nivel = 15
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_db2e7"]
+script = ExtResource("2")
+nivel = 19
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_8lyml"]
 script = ExtResource("2")
-nivel = 18
+nivel = 24
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_qsumd"]
 script = ExtResource("2")
-nivel = 22
+nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 25
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 30
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_h0y4q"]
 script = ExtResource("2")
 nivel = 33
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_714vd"]
+script = ExtResource("2")
+nivel = 37
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_628bp"]
+script = ExtResource("2")
+nivel = 42
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_meufp"]
 script = ExtResource("2")
-nivel = 36
-movimiento = ExtResource("16")
-
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 40
+nivel = 46
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_cxcid"]
 script = ExtResource("2")
-nivel = 43
+nivel = 51
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_hb5pd"]
 script = ExtResource("2")
-nivel = 48
+nivel = 55
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_xhs57"]
 script = ExtResource("2")
-nivel = 52
+nivel = 60
 movimiento = ExtResource("20")
 
 [resource]
@@ -107,8 +99,6 @@ id = "staryu"
 numero = 120
 nombre = "Staryu"
 tipos = PackedStringArray("agua")
-habilidades = PackedStringArray("Iluminación", "Curación Natural/Cura Natural")
-habilidad_oculta = "Cálculo Final"
 ps = 30
 ataque = 45
 defensa = 55
@@ -119,12 +109,22 @@ exp_base = 68
 ratio_captura = 225
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "starmie", "metodo": "piedra", "condicion": "Piedra agua"}])
-evoluciona_a = "starmie"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "starmie",
+"metodo": "piedra",
+"objeto": "water_stone"
+}])
+habilidades = PackedStringArray("illuminate", "natural_cure")
+habilidad_oculta = "analytic"
+categoria = "Pokémon Estrella"
+altura = 0.8
+peso_kg = 34.5
+descripcion = "Aunque sus brazos se rompan podrán regenerarse, siempre y cuando su núcleo siga intacto."
+aprende = Array[ExtResource("2")]([SubResource("Resource_eh5xh"), SubResource("Resource_0t5cb"), SubResource("Resource_vhcl4"), SubResource("Resource_xrlk1"), SubResource("Resource_57wue"), SubResource("Resource_db2e7"), SubResource("Resource_8lyml"), SubResource("Resource_qsumd"), SubResource("Resource_h0y4q"), SubResource("Resource_714vd"), SubResource("Resource_628bp"), SubResource("Resource_meufp"), SubResource("Resource_cxcid"), SubResource("Resource_hb5pd"), SubResource("Resource_xhs57")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 20
 cuadros_espalda = 20
-fps_sprite = 10.0

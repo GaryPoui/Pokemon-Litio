@@ -21,82 +21,80 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/outrage.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_ef08t"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_hdcah"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_sbmks"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_dk72h"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_ewebj"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_yyurt"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_gwvxg"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_8m8pw"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_epov5"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ucmyc"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_d60tw"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_0y5ag"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_uduvn"]
 script = ExtResource("2")
 nivel = 48
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_y62ff"]
 script = ExtResource("2")
 nivel = 52
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_vcykn"]
 script = ExtResource("2")
 nivel = 58
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_1i7f6"]
 script = ExtResource("2")
 nivel = 62
 movimiento = ExtResource("20")
@@ -107,23 +105,29 @@ id = "deino"
 numero = 633
 nombre = "Deino"
 tipos = PackedStringArray("siniestro", "dragon")
-habilidades = PackedStringArray("Entusiasmo")
-habilidad_oculta = ""
 ps = 52
 ataque = 65
-defensa = 50
 at_esp = 45
-def_esp = 50
 velocidad = 38
 exp_base = 60
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "zweilous", "metodo": "nivel", "condicion": "Nivel 50", "nivel": 50}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "zweilous"
 nivel_evolucion = 50
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evoluciones = Array[Dictionary]([{
+"especie": "zweilous",
+"metodo": "nivel",
+"nivel": 50
+}])
+amistad_base = 35
+habilidades = PackedStringArray("hustle")
+categoria = "Pokémon Tosco"
+altura = 0.8
+peso_kg = 17.3
+descripcion = "No ve, por eso va haciendo placajes y dando mordiscos a diestro y siniestro. Su cuerpo está plagado de heridas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_ef08t"), SubResource("Resource_hdcah"), SubResource("Resource_sbmks"), SubResource("Resource_dk72h"), SubResource("Resource_ewebj"), SubResource("Resource_yyurt"), SubResource("Resource_gwvxg"), SubResource("Resource_8m8pw"), SubResource("Resource_epov5"), SubResource("Resource_ucmyc"), SubResource("Resource_d60tw"), SubResource("Resource_0y5ag"), SubResource("Resource_uduvn"), SubResource("Resource_y62ff"), SubResource("Resource_vcykn"), SubResource("Resource_1i7f6")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 79

@@ -11,3 +11,5 @@ precision = 0
 pp = 5
 meta = "unique"
 descripcion = "Mal de ojo que impide al objetivo huir del combate."
+numero = 212
+banderas = PackedStringArray("metronome", "mirror", "reflectable")

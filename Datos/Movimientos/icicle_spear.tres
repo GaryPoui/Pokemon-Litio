@@ -10,3 +10,7 @@ tipo = "hielo"
 poder = 25
 pp = 30
 descripcion = "Ataca lanzando de dos a cinco ráfagas consecutivas de carámbanos."
+numero = 333
+banderas = PackedStringArray("metronome", "mirror", "protect")
+golpes_min = 2
+golpes_max = 5

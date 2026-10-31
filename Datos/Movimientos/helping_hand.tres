@@ -13,3 +13,5 @@ prioridad = 5
 objetivo = "ally"
 meta = "unique"
 descripcion = "El usuario ayuda a un aliado reforzando la potencia de su ataque."
+numero = 270
+banderas = PackedStringArray("bypasssub", "failcopycat", "noassist")

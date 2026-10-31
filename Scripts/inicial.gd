@@ -24,11 +24,13 @@ func interactuar(jugador: Node) -> void:
 		if c== 0:
 			id= OPCIONES[r]
 	var especie:= BaseDatos.especie(id)
-	var destino:= Equipo.recibir(PokemonInstancia.crear(especie, regalo_nivel))
+	var nuevo_p:= PokemonInstancia.crear(especie, regalo_nivel)
+	var destino:= Equipo.recibir(nuevo_p)
 	Estado.marcar("inicial_" +id)
 	Sonido.jingle("captura")
 	await Dialogo.mostrar("¡Recibiste a %s!" % especie.nombre+ ("" if destino== "equipo" else " Como tu equipo está lleno, fue enviado a la Caja del PC."))
 	Sonido.cortar_jingle()
+	await Combate.pedir_mote(nuevo_p)
 	await Dialogo.mostrar("¡Cuidalo mucho!")
 	for r in get_tree().get_nodes_in_group("rival"):
 		if r.has_method("al_elegir_inicial"):

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_rc02l"]
+
+[resource]
+script = ExtResource("1_rc02l")
+id = "water_veil"
+nombre = "Velo Agua"
+descripcion = "Evita las quemaduras."

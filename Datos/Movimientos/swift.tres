@@ -12,3 +12,5 @@ precision = 0
 pp = 20
 objetivo = "all-opponents"
 descripcion = "Lanza rayos en forma de estrella que no fallan nunca."
+numero = 129
+banderas = PackedStringArray("metronome", "mirror", "protect")

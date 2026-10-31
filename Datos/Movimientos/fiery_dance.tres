@@ -5,11 +5,15 @@
 [resource]
 script = ExtResource("1")
 id = "fiery_dance"
-nombre = "Danza llama"
+nombre = "Danza Llama"
 tipo = "fuego"
 categoria = "especial"
 poder = 80
-precision = 100
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-raise"
+descripcion = "Envuelve en llamas y daña al objetivo. Puede aumentar el Ataque Especial de quien lo usa."
+cambios_stats = {
+"at_esp": 1
+}
+prob_stat = 50
+numero = 552
+banderas = PackedStringArray("dance", "metronome", "mirror", "protect")

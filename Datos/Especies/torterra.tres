@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bvnr5wci0yg3w"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_kd31t"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_kd31t"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/absorb.tres" id="2_gk8fe"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/razor_leaf.tres" id="3_myskg"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="4_bm3sl"]
@@ -15,86 +15,86 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="13_w28u0"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/giga_drain.tres" id="14_k3v8o"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leaf_storm.tres" id="15_w64ae"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_sw37w"]
-[ext_resource type="Texture2D" uid="uid://ctk4752fj5bb7" path="res://Assets/Pokemones/batalla/torterra_espalda.png" id="17_kj41j"]
-[ext_resource type="Texture2D" uid="uid://cjung2f1ku71o" path="res://Assets/Pokemones/batalla/torterra_frente.png" id="18_3763f"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_sw37w"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/torterra_espalda.png" id="17_kj41j"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/torterra_frente.png" id="18_3763f"]
 
-[sub_resource type="Resource" id="Resource_it0kq"]
+[sub_resource type="Resource" id="Resource_kd31t"]
 script = ExtResource("1_kd31t")
 movimiento = ExtResource("2_gk8fe")
 
-[sub_resource type="Resource" id="Resource_nyuhb"]
+[sub_resource type="Resource" id="Resource_gk8fe"]
 script = ExtResource("1_kd31t")
 movimiento = ExtResource("3_myskg")
 
-[sub_resource type="Resource" id="Resource_0mu8n"]
+[sub_resource type="Resource" id="Resource_myskg"]
 script = ExtResource("1_kd31t")
 movimiento = ExtResource("4_bm3sl")
 
-[sub_resource type="Resource" id="Resource_fwyow"]
+[sub_resource type="Resource" id="Resource_bm3sl"]
 script = ExtResource("1_kd31t")
 movimiento = ExtResource("5_aqkpj")
 
-[sub_resource type="Resource" id="Resource_0mp73"]
+[sub_resource type="Resource" id="Resource_aqkpj"]
 script = ExtResource("1_kd31t")
 movimiento = ExtResource("6_fk8ek")
 
-[sub_resource type="Resource" id="Resource_eefiq"]
+[sub_resource type="Resource" id="Resource_fk8ek"]
 script = ExtResource("1_kd31t")
 nivel = 5
 movimiento = ExtResource("5_aqkpj")
 
-[sub_resource type="Resource" id="Resource_lx26d"]
+[sub_resource type="Resource" id="Resource_4m087"]
 script = ExtResource("1_kd31t")
 nivel = 9
 movimiento = ExtResource("2_gk8fe")
 
-[sub_resource type="Resource" id="Resource_kq5t8"]
+[sub_resource type="Resource" id="Resource_8vav2"]
 script = ExtResource("1_kd31t")
 nivel = 13
 movimiento = ExtResource("3_myskg")
 
-[sub_resource type="Resource" id="Resource_2veb8"]
+[sub_resource type="Resource" id="Resource_1gojn"]
 script = ExtResource("1_kd31t")
 nivel = 17
 movimiento = ExtResource("7_4m087")
 
-[sub_resource type="Resource" id="Resource_qxj16"]
+[sub_resource type="Resource" id="Resource_275qh"]
 script = ExtResource("1_kd31t")
 nivel = 22
 movimiento = ExtResource("8_8vav2")
 
-[sub_resource type="Resource" id="Resource_anslt"]
+[sub_resource type="Resource" id="Resource_sid6s"]
 script = ExtResource("1_kd31t")
 nivel = 27
 movimiento = ExtResource("9_1gojn")
 
-[sub_resource type="Resource" id="Resource_5f6v1"]
+[sub_resource type="Resource" id="Resource_lkhrr"]
 script = ExtResource("1_kd31t")
 nivel = 32
 movimiento = ExtResource("10_275qh")
 
-[sub_resource type="Resource" id="Resource_mqmgc"]
+[sub_resource type="Resource" id="Resource_w28u0"]
 script = ExtResource("1_kd31t")
 nivel = 33
 movimiento = ExtResource("11_sid6s")
 
-[sub_resource type="Resource" id="Resource_a8y2j"]
+[sub_resource type="Resource" id="Resource_k3v8o"]
 script = ExtResource("1_kd31t")
 nivel = 39
 movimiento = ExtResource("12_lkhrr")
 
-[sub_resource type="Resource" id="Resource_t6ppm"]
+[sub_resource type="Resource" id="Resource_w64ae"]
 script = ExtResource("1_kd31t")
 nivel = 45
 movimiento = ExtResource("13_w28u0")
 
-[sub_resource type="Resource" id="Resource_6t350"]
+[sub_resource type="Resource" id="Resource_sw37w"]
 script = ExtResource("1_kd31t")
 nivel = 51
 movimiento = ExtResource("14_k3v8o")
 
-[sub_resource type="Resource" id="Resource_4icfm"]
+[sub_resource type="Resource" id="Resource_kj41j"]
 script = ExtResource("1_kd31t")
 nivel = 57
 movimiento = ExtResource("15_w64ae")
@@ -104,7 +104,7 @@ script = ExtResource("16_sw37w")
 id = "torterra"
 numero = 389
 nombre = "Torterra"
-tipos = ["planta", "tierra"]
+tipos = PackedStringArray("planta", "tierra")
 ps = 95
 ataque = 109
 defensa = 105
@@ -118,12 +118,15 @@ evs_otorgados = {
 "ataque": 2,
 "defensa": 1
 }
-aprende = Array[ExtResource("1_kd31t")]([SubResource("Resource_it0kq"), SubResource("Resource_nyuhb"), SubResource("Resource_0mu8n"), SubResource("Resource_fwyow"), SubResource("Resource_0mp73"), SubResource("Resource_eefiq"), SubResource("Resource_lx26d"), SubResource("Resource_kq5t8"), SubResource("Resource_2veb8"), SubResource("Resource_qxj16"), SubResource("Resource_anslt"), SubResource("Resource_5f6v1"), SubResource("Resource_mqmgc"), SubResource("Resource_a8y2j"), SubResource("Resource_t6ppm"), SubResource("Resource_6t350"), SubResource("Resource_4icfm")])
+habilidades = PackedStringArray("overgrow")
+habilidad_oculta = "shell_armor"
+categoria = "Pokémon Continente"
+altura = 2.2
+peso_kg = 310.0
+descripcion = "Las gentes de antaño creían que el planeta se sustentaba en la espalda de un gran Torterra."
+aprende = Array[ExtResource("1_kd31t")]([SubResource("Resource_kd31t"), SubResource("Resource_gk8fe"), SubResource("Resource_myskg"), SubResource("Resource_bm3sl"), SubResource("Resource_aqkpj"), SubResource("Resource_fk8ek"), SubResource("Resource_4m087"), SubResource("Resource_8vav2"), SubResource("Resource_1gojn"), SubResource("Resource_275qh"), SubResource("Resource_sid6s"), SubResource("Resource_lkhrr"), SubResource("Resource_w28u0"), SubResource("Resource_k3v8o"), SubResource("Resource_w64ae"), SubResource("Resource_sw37w"), SubResource("Resource_kj41j")])
 sprite_frente = ExtResource("18_3763f")
 sprite_espalda = ExtResource("17_kj41j")
 cuadros_frente = 59
 cuadros_espalda = 54
 fps_sprite = 7.69
-habilidades = PackedStringArray("Espesura")
-habilidad_oculta = "Caparazón"
-evoluciones = Array[Dictionary]([])

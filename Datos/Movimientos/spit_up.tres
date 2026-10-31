@@ -8,3 +8,5 @@ id = "spit_up"
 nombre = "Escupir"
 categoria = "especial"
 descripcion = "Libera de una vez la energía acumulada con Reserva. La potencia del ataque será proporcional a la cantidad de energía acumulada."
+numero = 255
+banderas = PackedStringArray("metronome", "protect")

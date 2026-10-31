@@ -6,10 +6,11 @@
 script = ExtResource("1")
 id = "conversion"
 nombre = "Conversión"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 30
 objetivo = "user"
 meta = "unique"
+descripcion = "Cambia el tipo del usuario por el del primero de sus movimientos."
+numero = 160
+banderas = PackedStringArray("metronome", "snatch")

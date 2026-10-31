@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://brha2uhu7dn34"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_pq6rs"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_pq6rs"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="2_wcncg"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_rwj01"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="4_wufr0"]
@@ -15,74 +15,74 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/echoed_voice.tres" id="13_wnnsb"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="14_gaajy"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="15_70ypm"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_7ifi4"]
-[ext_resource type="Texture2D" uid="uid://5lleawuejlpt" path="res://Assets/Pokemones/batalla/tympole_espalda.png" id="17_nmnji"]
-[ext_resource type="Texture2D" uid="uid://o2oum8wua3sf" path="res://Assets/Pokemones/batalla/tympole_frente.png" id="18_sjd3b"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_7ifi4"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tympole_espalda.png" id="17_nmnji"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tympole_frente.png" id="18_sjd3b"]
 
-[sub_resource type="Resource" id="Resource_p8p3w"]
+[sub_resource type="Resource" id="Resource_pq6rs"]
 script = ExtResource("1_pq6rs")
 movimiento = ExtResource("2_wcncg")
 
-[sub_resource type="Resource" id="Resource_ok5d8"]
+[sub_resource type="Resource" id="Resource_wcncg"]
 script = ExtResource("1_pq6rs")
 movimiento = ExtResource("3_rwj01")
 
-[sub_resource type="Resource" id="Resource_okdp0"]
+[sub_resource type="Resource" id="Resource_rwj01"]
 script = ExtResource("1_pq6rs")
 nivel = 5
 movimiento = ExtResource("4_wufr0")
 
-[sub_resource type="Resource" id="Resource_2wxss"]
+[sub_resource type="Resource" id="Resource_wufr0"]
 script = ExtResource("1_pq6rs")
 nivel = 9
 movimiento = ExtResource("5_hbj5e")
 
-[sub_resource type="Resource" id="Resource_a7nua"]
+[sub_resource type="Resource" id="Resource_hbj5e"]
 script = ExtResource("1_pq6rs")
 nivel = 12
 movimiento = ExtResource("6_ju4rb")
 
-[sub_resource type="Resource" id="Resource_cu26u"]
+[sub_resource type="Resource" id="Resource_ju4rb"]
 script = ExtResource("1_pq6rs")
 nivel = 16
 movimiento = ExtResource("7_q0acd")
 
-[sub_resource type="Resource" id="Resource_qe56a"]
+[sub_resource type="Resource" id="Resource_q0acd"]
 script = ExtResource("1_pq6rs")
 nivel = 20
 movimiento = ExtResource("8_pifd8")
 
-[sub_resource type="Resource" id="Resource_t2vwk"]
+[sub_resource type="Resource" id="Resource_pifd8"]
 script = ExtResource("1_pq6rs")
 nivel = 23
 movimiento = ExtResource("9_ldd2t")
 
-[sub_resource type="Resource" id="Resource_o81oh"]
+[sub_resource type="Resource" id="Resource_ldd2t"]
 script = ExtResource("1_pq6rs")
 nivel = 27
 movimiento = ExtResource("10_3g48u")
 
-[sub_resource type="Resource" id="Resource_0sqep"]
+[sub_resource type="Resource" id="Resource_3g48u"]
 script = ExtResource("1_pq6rs")
 nivel = 31
 movimiento = ExtResource("11_nayby")
 
-[sub_resource type="Resource" id="Resource_anxsq"]
+[sub_resource type="Resource" id="Resource_nayby"]
 script = ExtResource("1_pq6rs")
 nivel = 34
 movimiento = ExtResource("12_y2sa5")
 
-[sub_resource type="Resource" id="Resource_jsg71"]
+[sub_resource type="Resource" id="Resource_y2sa5"]
 script = ExtResource("1_pq6rs")
 nivel = 38
 movimiento = ExtResource("13_wnnsb")
 
-[sub_resource type="Resource" id="Resource_33wgw"]
+[sub_resource type="Resource" id="Resource_wnnsb"]
 script = ExtResource("1_pq6rs")
 nivel = 42
 movimiento = ExtResource("14_gaajy")
 
-[sub_resource type="Resource" id="Resource_862ta"]
+[sub_resource type="Resource" id="Resource_gaajy"]
 script = ExtResource("1_pq6rs")
 nivel = 45
 movimiento = ExtResource("15_70ypm")
@@ -92,7 +92,7 @@ script = ExtResource("16_7ifi4")
 id = "tympole"
 numero = 535
 nombre = "Tympole"
-tipos = ["agua"]
+tipos = PackedStringArray("agua")
 defensa = 40
 def_esp = 40
 velocidad = 64
@@ -104,12 +104,20 @@ evs_otorgados = {
 }
 evoluciona_a = "palpitoad"
 nivel_evolucion = 25
-aprende = Array[ExtResource("1_pq6rs")]([SubResource("Resource_p8p3w"), SubResource("Resource_ok5d8"), SubResource("Resource_okdp0"), SubResource("Resource_2wxss"), SubResource("Resource_a7nua"), SubResource("Resource_cu26u"), SubResource("Resource_qe56a"), SubResource("Resource_t2vwk"), SubResource("Resource_o81oh"), SubResource("Resource_0sqep"), SubResource("Resource_anxsq"), SubResource("Resource_jsg71"), SubResource("Resource_33wgw"), SubResource("Resource_862ta")])
+evoluciones = Array[Dictionary]([{
+"especie": "palpitoad",
+"metodo": "nivel",
+"nivel": 25
+}])
+habilidades = PackedStringArray("swift_swim", "hydration")
+habilidad_oculta = "water_absorb"
+categoria = "Pokémon Renacuajo"
+altura = 0.5
+peso_kg = 4.5
+descripcion = "Emite sonidos imperceptibles para los humanos con la vibración de sus mejillas y advierte de algún peligro a los suyos."
+aprende = Array[ExtResource("1_pq6rs")]([SubResource("Resource_pq6rs"), SubResource("Resource_wcncg"), SubResource("Resource_rwj01"), SubResource("Resource_wufr0"), SubResource("Resource_hbj5e"), SubResource("Resource_ju4rb"), SubResource("Resource_q0acd"), SubResource("Resource_pifd8"), SubResource("Resource_ldd2t"), SubResource("Resource_3g48u"), SubResource("Resource_nayby"), SubResource("Resource_y2sa5"), SubResource("Resource_wnnsb"), SubResource("Resource_gaajy")])
 sprite_frente = ExtResource("18_sjd3b")
 sprite_espalda = ExtResource("17_nmnji")
 cuadros_frente = 109
 cuadros_espalda = 113
 fps_sprite = 11.77
-habilidades = PackedStringArray("Nado Rápido", "Hidratación")
-habilidad_oculta = "Absorbeagua/Absorbe Agua"
-evoluciones = Array[Dictionary]([{"especie": "palpitoad", "metodo": "nivel", "condicion": "Nivel 25", "nivel": 25}])

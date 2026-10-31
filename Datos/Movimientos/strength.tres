@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_40x80"]
+
+[resource]
+script = ExtResource("1_40x80")
+id = "strength"
+nombre = "Fuerza"
+poder = 80
+pp = 15
+descripcion = "Propina un potente puñetazo con todas sus fuerzas."
+numero = 70
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

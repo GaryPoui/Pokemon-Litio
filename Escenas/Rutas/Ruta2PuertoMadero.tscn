@@ -177,6 +177,7 @@ script = ExtResource("17_sl4x2")
 texto = "RUTA 2 · PUERTO MADERO
 
 El antiguo puerto de Buenos Aires. Parques protegidos: solo se atrapa. Al norte: Retiro."
+mostrar_encuentros = true
 
 [node name="CartelPuente" type="Node2D" parent="." unique_id=1547005003]
 position = Vector2(344, 232)

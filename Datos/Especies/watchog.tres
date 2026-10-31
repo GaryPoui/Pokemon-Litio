@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cmrjeqb35g1mr"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_qok32"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_qok32"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="2_nmj7f"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="3_a8ck1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/low_kick.tres" id="4_nk1f8"]
@@ -18,97 +18,97 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/mean_look.tres" id="16_8f1ox"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/baton_pass.tres" id="17_0boii"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/slam.tres" id="18_pd1l7"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="19_gjv3u"]
-[ext_resource type="Texture2D" uid="uid://4oc5q3q6abih" path="res://Assets/Pokemones/batalla/watchog_espalda.png" id="20_urkse"]
-[ext_resource type="Texture2D" uid="uid://rvgx5wlrcexn" path="res://Assets/Pokemones/batalla/watchog_frente.png" id="21_ku22k"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="19_gjv3u"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/watchog_espalda.png" id="20_urkse"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/watchog_frente.png" id="21_ku22k"]
 
-[sub_resource type="Resource" id="Resource_tfeoh"]
+[sub_resource type="Resource" id="Resource_qok32"]
 script = ExtResource("1_qok32")
 movimiento = ExtResource("2_nmj7f")
 
-[sub_resource type="Resource" id="Resource_14aoc"]
+[sub_resource type="Resource" id="Resource_nmj7f"]
 script = ExtResource("1_qok32")
 movimiento = ExtResource("3_a8ck1")
 
-[sub_resource type="Resource" id="Resource_r4j0j"]
+[sub_resource type="Resource" id="Resource_a8ck1"]
 script = ExtResource("1_qok32")
 movimiento = ExtResource("4_nk1f8")
 
-[sub_resource type="Resource" id="Resource_xb5cc"]
+[sub_resource type="Resource" id="Resource_nk1f8"]
 script = ExtResource("1_qok32")
 movimiento = ExtResource("5_fy02i")
 
-[sub_resource type="Resource" id="Resource_e085j"]
+[sub_resource type="Resource" id="Resource_fy02i"]
 script = ExtResource("1_qok32")
 nivel = 3
 movimiento = ExtResource("3_a8ck1")
 
-[sub_resource type="Resource" id="Resource_hd0fb"]
+[sub_resource type="Resource" id="Resource_da3fo"]
 script = ExtResource("1_qok32")
 nivel = 6
 movimiento = ExtResource("2_nmj7f")
 
-[sub_resource type="Resource" id="Resource_5ym3x"]
+[sub_resource type="Resource" id="Resource_5f505"]
 script = ExtResource("1_qok32")
 nivel = 8
 movimiento = ExtResource("6_da3fo")
 
-[sub_resource type="Resource" id="Resource_vmywv"]
+[sub_resource type="Resource" id="Resource_dueun"]
 script = ExtResource("1_qok32")
 nivel = 11
 movimiento = ExtResource("7_5f505")
 
-[sub_resource type="Resource" id="Resource_a3lo4"]
+[sub_resource type="Resource" id="Resource_uw2yh"]
 script = ExtResource("1_qok32")
 nivel = 13
 movimiento = ExtResource("8_dueun")
 
-[sub_resource type="Resource" id="Resource_vdrr3"]
+[sub_resource type="Resource" id="Resource_bek1d"]
 script = ExtResource("1_qok32")
 nivel = 16
 movimiento = ExtResource("9_uw2yh")
 
-[sub_resource type="Resource" id="Resource_4ot30"]
+[sub_resource type="Resource" id="Resource_bv5c2"]
 script = ExtResource("1_qok32")
 nivel = 18
 movimiento = ExtResource("10_bek1d")
 
-[sub_resource type="Resource" id="Resource_u5auv"]
+[sub_resource type="Resource" id="Resource_oimcr"]
 script = ExtResource("1_qok32")
 nivel = 20
 movimiento = ExtResource("11_bv5c2")
 
-[sub_resource type="Resource" id="Resource_f142c"]
+[sub_resource type="Resource" id="Resource_go812"]
 script = ExtResource("1_qok32")
 nivel = 22
 movimiento = ExtResource("12_oimcr")
 
-[sub_resource type="Resource" id="Resource_uhdik"]
+[sub_resource type="Resource" id="Resource_w3otg"]
 script = ExtResource("1_qok32")
 nivel = 25
 movimiento = ExtResource("13_go812")
 
-[sub_resource type="Resource" id="Resource_tv0rf"]
+[sub_resource type="Resource" id="Resource_164vs"]
 script = ExtResource("1_qok32")
 nivel = 29
 movimiento = ExtResource("14_w3otg")
 
-[sub_resource type="Resource" id="Resource_woith"]
+[sub_resource type="Resource" id="Resource_8f1ox"]
 script = ExtResource("1_qok32")
 nivel = 32
 movimiento = ExtResource("15_164vs")
 
-[sub_resource type="Resource" id="Resource_ccnht"]
+[sub_resource type="Resource" id="Resource_0boii"]
 script = ExtResource("1_qok32")
 nivel = 36
 movimiento = ExtResource("16_8f1ox")
 
-[sub_resource type="Resource" id="Resource_uxaqr"]
+[sub_resource type="Resource" id="Resource_pd1l7"]
 script = ExtResource("1_qok32")
 nivel = 39
 movimiento = ExtResource("17_0boii")
 
-[sub_resource type="Resource" id="Resource_act7x"]
+[sub_resource type="Resource" id="Resource_gjv3u"]
 script = ExtResource("1_qok32")
 nivel = 43
 movimiento = ExtResource("18_pd1l7")
@@ -118,6 +118,7 @@ script = ExtResource("19_gjv3u")
 id = "watchog"
 numero = 505
 nombre = "Watchog"
+tipos = PackedStringArray("normal")
 ps = 60
 ataque = 85
 defensa = 69
@@ -129,12 +130,15 @@ ratio_captura = 255
 evs_otorgados = {
 "ataque": 2
 }
-aprende = Array[ExtResource("1_qok32")]([SubResource("Resource_tfeoh"), SubResource("Resource_14aoc"), SubResource("Resource_r4j0j"), SubResource("Resource_xb5cc"), SubResource("Resource_e085j"), SubResource("Resource_hd0fb"), SubResource("Resource_5ym3x"), SubResource("Resource_vmywv"), SubResource("Resource_a3lo4"), SubResource("Resource_vdrr3"), SubResource("Resource_4ot30"), SubResource("Resource_u5auv"), SubResource("Resource_f142c"), SubResource("Resource_uhdik"), SubResource("Resource_tv0rf"), SubResource("Resource_woith"), SubResource("Resource_ccnht"), SubResource("Resource_uxaqr"), SubResource("Resource_act7x")])
+habilidades = PackedStringArray("illuminate", "keen_eye")
+habilidad_oculta = "analytic"
+categoria = "Pokémon Alerta"
+altura = 1.1
+peso_kg = 27.0
+descripcion = "Los componentes luminiscentes de su interior hacen que sus ojos y su cuerpo brillen, y así intimida a sus rivales."
+aprende = Array[ExtResource("1_qok32")]([SubResource("Resource_qok32"), SubResource("Resource_nmj7f"), SubResource("Resource_a8ck1"), SubResource("Resource_nk1f8"), SubResource("Resource_fy02i"), SubResource("Resource_da3fo"), SubResource("Resource_5f505"), SubResource("Resource_dueun"), SubResource("Resource_uw2yh"), SubResource("Resource_bek1d"), SubResource("Resource_bv5c2"), SubResource("Resource_oimcr"), SubResource("Resource_go812"), SubResource("Resource_w3otg"), SubResource("Resource_164vs"), SubResource("Resource_8f1ox"), SubResource("Resource_0boii"), SubResource("Resource_pd1l7"), SubResource("Resource_gjv3u")])
 sprite_frente = ExtResource("21_ku22k")
 sprite_espalda = ExtResource("20_urkse")
 cuadros_frente = 83
 cuadros_espalda = 84
 fps_sprite = 9.22
-habilidades = PackedStringArray("Perspicacia/Vista Lince", "Iluminación")
-habilidad_oculta = "Cálculo Final"
-evoluciones = Array[Dictionary]([])

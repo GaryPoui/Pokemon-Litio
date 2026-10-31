@@ -14,3 +14,7 @@ meta = "damage-ailment"
 descripcion = "Puñetazo con toda la fuerza concentrada. Causa confusión si atina."
 estado = "confusion"
 prob_estado = 100
+numero = 223
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")
+turnos_min = 2
+turnos_max = 5

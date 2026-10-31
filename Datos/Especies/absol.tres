@@ -23,92 +23,90 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/me_first.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/perish_song.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_dhb2f"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_oysir"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_yjw0q"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_0mdt0"]
 script = ExtResource("2")
 nivel = 9
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 12
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_kgwnx"]
 script = ExtResource("2")
-nivel = 20
-movimiento = ExtResource("11")
+nivel = 12
+movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_y7ece"]
 script = ExtResource("2")
-nivel = 25
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 28
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 33
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 36
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 41
-movimiento = ExtResource("16")
-
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 44
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_13"]
-script = ExtResource("2")
-nivel = 49
-movimiento = ExtResource("18")
-
-[sub_resource type="Resource" id="Move_14"]
-script = ExtResource("2")
-nivel = 52
-movimiento = ExtResource("19")
-
-[sub_resource type="Resource" id="Move_15"]
-script = ExtResource("2")
-nivel = 57
+nivel = 17
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_7hqqr"]
 script = ExtResource("2")
-nivel = 60
+nivel = 20
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_f6fp5"]
+script = ExtResource("2")
+nivel = 25
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_p6jks"]
+script = ExtResource("2")
+nivel = 28
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Resource_vl851"]
+script = ExtResource("2")
+nivel = 33
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Resource_8xdbk"]
+script = ExtResource("2")
+nivel = 36
+movimiento = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_eg2ke"]
+script = ExtResource("2")
+nivel = 41
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Resource_a7ox4"]
+script = ExtResource("2")
+nivel = 44
+movimiento = ExtResource("19")
+
+[sub_resource type="Resource" id="Resource_g85ao"]
+script = ExtResource("2")
+nivel = 49
+movimiento = ExtResource("17")
+
+[sub_resource type="Resource" id="Resource_i7w74"]
+script = ExtResource("2")
+nivel = 52
+movimiento = ExtResource("16")
+
+[sub_resource type="Resource" id="Resource_s62aj"]
+script = ExtResource("2")
+nivel = 57
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_onm1h"]
+script = ExtResource("2")
+nivel = 60
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Resource_p2yxu"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("22")
@@ -119,8 +117,6 @@ id = "absol"
 numero = 359
 nombre = "Absol"
 tipos = PackedStringArray("siniestro")
-habilidades = PackedStringArray("Presión", "Supersuerte/Afortunado")
-habilidad_oculta = "Justiciero"
 ps = 65
 ataque = 130
 defensa = 60
@@ -129,11 +125,18 @@ def_esp = 60
 velocidad = 75
 exp_base = 163
 ratio_captura = 30
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"ataque": 2
+}
+amistad_base = 35
+habilidades = PackedStringArray("pressure", "super_luck")
+habilidad_oculta = "justified"
+categoria = "Pokémon Catástrofe"
+altura = 1.2
+peso_kg = 47.0
+descripcion = "Presiente desastres inminentes y se aparece a la gente para advertir del peligro."
+aprende = Array[ExtResource("2")]([SubResource("Resource_dhb2f"), SubResource("Resource_oysir"), SubResource("Resource_yjw0q"), SubResource("Resource_0mdt0"), SubResource("Resource_kgwnx"), SubResource("Resource_y7ece"), SubResource("Resource_7hqqr"), SubResource("Resource_f6fp5"), SubResource("Resource_p6jks"), SubResource("Resource_vl851"), SubResource("Resource_8xdbk"), SubResource("Resource_eg2ke"), SubResource("Resource_a7ox4"), SubResource("Resource_g85ao"), SubResource("Resource_i7w74"), SubResource("Resource_s62aj"), SubResource("Resource_onm1h"), SubResource("Resource_p2yxu")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 83

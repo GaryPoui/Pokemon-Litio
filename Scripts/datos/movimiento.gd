@@ -22,3 +22,14 @@ extends Resource
 @export var curacion: int =0
 @export var critico: int= 0
 @export var prob_retroceso: int =0
+
+@export_group("Datos")
+@export var numero: int= 0
+@export var banderas: PackedStringArray =[]
+@export var golpes_min: int= 1
+@export var golpes_max :int= 1
+@export var turnos_min: int =0
+@export var turnos_max: int= 0
+
+func tiene(bandera: String) -> bool:
+	return banderas.has(bandera)

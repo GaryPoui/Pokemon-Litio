@@ -17,88 +17,73 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/beat_up.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/screech.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/slash.tres" id="17"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/snatch.tres" id="18"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/punishment.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/ice_shard.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_5q86k"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_f4ybn"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_wrml1"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_s1gem"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_3dwe2"]
 script = ExtResource("2")
 nivel = 10
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 14
-movimiento = ExtResource("10")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 16
-movimiento = ExtResource("11")
-
-[sub_resource type="Resource" id="Move_7"]
-script = ExtResource("2")
-nivel = 20
-movimiento = ExtResource("12")
-
-[sub_resource type="Resource" id="Move_8"]
-script = ExtResource("2")
-nivel = 22
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 25
-movimiento = ExtResource("14")
-
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 28
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 32
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_bc34j"]
+script = ExtResource("2")
+nivel = 14
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_e1e86"]
+script = ExtResource("2")
+nivel = 21
+movimiento = ExtResource("11")
+
+[sub_resource type="Resource" id="Resource_0c0k6"]
+script = ExtResource("2")
+nivel = 24
+movimiento = ExtResource("12")
+
+[sub_resource type="Resource" id="Resource_gdyyw"]
+script = ExtResource("2")
+nivel = 28
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Resource_hmos4"]
 script = ExtResource("2")
 nivel = 35
+movimiento = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_anfty"]
+script = ExtResource("2")
+nivel = 38
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_28775"]
 script = ExtResource("2")
-nivel = 40
-movimiento = ExtResource("18")
+nivel = 42
+movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_pyh8c"]
 script = ExtResource("2")
-nivel = 44
-movimiento = ExtResource("19")
+nivel = 49
+movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_c66by"]
 script = ExtResource("2")
-nivel = 47
+nivel = 51
 movimiento = ExtResource("20")
 
 [resource]
@@ -107,8 +92,6 @@ id = "sneasel"
 numero = 215
 nombre = "Sneasel"
 tipos = PackedStringArray("siniestro", "hielo")
-habilidades = PackedStringArray("Fuerza Mental", "Perspicacia/Vista Lince")
-habilidad_oculta = "Hurto"
 ps = 55
 ataque = 95
 defensa = 55
@@ -117,12 +100,24 @@ def_esp = 75
 velocidad = 115
 exp_base = 86
 ratio_captura = 60
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"velocidad": 1}
-evoluciones = Array[Dictionary]([{"especie": "weavile", "metodo": "especial", "condicion": "Nivel (noche) equipado con garra afilada"}])
-evoluciona_a = "weavile"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"velocidad": 1
+}
+evoluciones = Array[Dictionary]([{
+"especie": "weavile",
+"hora": "noche",
+"metodo": "objeto",
+"objeto": "razor_claw"
+}])
+amistad_base = 35
+habilidades = PackedStringArray("inner_focus", "keen_eye")
+habilidad_oculta = "pickpocket"
+categoria = "Pokémon Garra Filo"
+altura = 0.9
+peso_kg = 28.0
+descripcion = "Se alimenta de huevos robados en nidos. Clava sus afiladas garras en los puntos débiles de sus rivales."
+aprende = Array[ExtResource("2")]([SubResource("Resource_5q86k"), SubResource("Resource_f4ybn"), SubResource("Resource_wrml1"), SubResource("Resource_s1gem"), SubResource("Resource_3dwe2"), SubResource("Resource_bc34j"), SubResource("Resource_e1e86"), SubResource("Resource_0c0k6"), SubResource("Resource_gdyyw"), SubResource("Resource_hmos4"), SubResource("Resource_anfty"), SubResource("Resource_28775"), SubResource("Resource_pyh8c"), SubResource("Resource_c66by")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 85

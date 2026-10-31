@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_la1ww"]
+
+[resource]
+script = ExtResource("1_la1ww")
+id = "infiltrator"
+nombre = "Allanamiento"
+descripcion = "Ataca rodeando la barrera del rival."

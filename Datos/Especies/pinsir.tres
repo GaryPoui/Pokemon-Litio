@@ -14,86 +14,78 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/vital_throw.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/submission.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/x_scissor.tres" id="14"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/storm_throw.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thrash.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/swords_dance.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/superpower.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/guillotine.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_efj25"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_hih2x"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_ugbxs"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_50aub"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_7miso"]
 script = ExtResource("2")
-nivel = 11
+nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 15
-movimiento = ExtResource("10")
-
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_t3ycg"]
 script = ExtResource("2")
 nivel = 18
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Resource_gohib"]
+script = ExtResource("2")
+nivel = 21
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_yl7m4"]
 script = ExtResource("2")
-nivel = 22
+nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_aquqs"]
 script = ExtResource("2")
-nivel = 26
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_9"]
-script = ExtResource("2")
-nivel = 29
+nivel = 30
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_e5gfb"]
 script = ExtResource("2")
-nivel = 33
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 36
+nivel = 35
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_0js61"]
 script = ExtResource("2")
-nivel = 40
+nivel = 38
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_e2jww"]
 script = ExtResource("2")
-nivel = 43
-movimiento = ExtResource("18")
+nivel = 42
+movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_nttns"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("19")
+
+[sub_resource type="Resource" id="Resource_q7054"]
+script = ExtResource("2")
+nivel = 52
+movimiento = ExtResource("18")
 
 [resource]
 script = ExtResource("1")
@@ -101,8 +93,6 @@ id = "pinsir"
 numero = 127
 nombre = "Pinsir"
 tipos = PackedStringArray("bicho")
-habilidades = PackedStringArray("Corte Fuerte", "Rompemoldes")
-habilidad_oculta = "Autoestima"
 ps = 65
 ataque = 125
 defensa = 100
@@ -110,14 +100,18 @@ at_esp = 55
 def_esp = 70
 velocidad = 85
 exp_base = 175
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"ataque": 2
+}
+habilidades = PackedStringArray("hyper_cutter", "mold_breaker")
+habilidad_oculta = "moxie"
+categoria = "Pokémon Escarabajo"
+altura = 1.5
+peso_kg = 55.0
+descripcion = "Atrapa presas con sus pinzas hasta que las parte en dos. Lanza lejos lo que no puede quebrar."
+aprende = Array[ExtResource("2")]([SubResource("Resource_efj25"), SubResource("Resource_hih2x"), SubResource("Resource_ugbxs"), SubResource("Resource_50aub"), SubResource("Resource_7miso"), SubResource("Resource_t3ycg"), SubResource("Resource_gohib"), SubResource("Resource_yl7m4"), SubResource("Resource_aquqs"), SubResource("Resource_e5gfb"), SubResource("Resource_0js61"), SubResource("Resource_e2jww"), SubResource("Resource_nttns"), SubResource("Resource_q7054")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 24
 cuadros_espalda = 24
-fps_sprite = 10.0

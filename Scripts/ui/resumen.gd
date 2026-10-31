@@ -9,6 +9,8 @@ const SUBE :=Color("ff8a70")
 const BAJA:= Color("80b0ff")
 const UI :="res://Assets/Batalla/ui_nueva/"
 const BOTONES_TIPO:= "res://Assets/Botones/tipos/"
+const MARCO_SPRITE :=Rect2(14, 26, 76, 82)
+const FILA:= 13.0
 
 @onready var sprite: Sprite2D= $Sprite
 @onready var contenido: Control =$Contenido
@@ -30,7 +32,7 @@ func _ready() -> void:
 		var t:= Panel.new()
 		t.position= Vector2(i* 46, 0)
 		t.size =Vector2(44, 14)
-		var l:= EstiloUI.nuevo_label(PAGINAS[i], 8, Vector2.ZERO)
+		var l:= EstiloUI.nuevo_label(PAGINAS[i], 8, Vector2(0, -1))
 		EstiloUI.fuente_batalla(l)
 		l.size= t.size
 		l.horizontal_alignment =HORIZONTAL_ALIGNMENT_CENTER
@@ -94,17 +96,12 @@ func _mostrar() -> void:
 	for i in tabs.size():
 		tabs[i].add_theme_stylebox_override("panel", _pestana(i== pagina))
 	sprite.mostrar(p.especie, false)
+	sprite.encajar_en(MARCO_SPRITE)
 	_limpiar(datos_izq)
 	var nombre:= EstiloUI.nuevo_label(p.nombre(), 9, Vector2(6, 2))
 	datos_izq.add_child(nombre)
 	var gen:= EstiloUI.nuevo_label(p.simbolo_genero(), 9, Vector2(6+ nombre.get_combined_minimum_size().x+ 2, 2), p.color_genero())
 	datos_izq.add_child(gen)
-	var ball:= BaseDatos.objeto(p.ball)
-	if ball!= null and ball.icono!= null:
-		var ic:= TextureRect.new()
-		ic.texture= ball.icono
-		ic.position =Vector2(66, -6)
-		datos_izq.add_child(ic)
 	var nv:= EstiloUI.nuevo_label("Nv. %d" % p.nivel, 8, Vector2(8, 110))
 	EstiloUI.fuente_batalla(nv)
 	datos_izq.add_child(nv)
@@ -112,9 +109,24 @@ func _mostrar() -> void:
 		var st:= EstiloUI.nuevo_label(EstiloUI.ABREV_ESTADO[p.estado], 8, Vector2(62, 110), SUBE)
 		EstiloUI.fuente_batalla(st)
 		datos_izq.add_child(st)
-	for k in p.especie.tipos.size():
-		datos_izq.add_child(EstiloUI.insignia_tipo(p.especie.tipos[k], Vector2(24, 126+ k* 13)))
-	var ayuda:= EstiloUI.nuevo_label("◀▶ página\n▲▼ Pokémon", 6, Vector2(8, 158), EstiloUI.TENUE)
+	var n_tipos:= p.especie.tipos.size()
+	var alto_tipos:= n_tipos* EstiloUI.ALTO_INSIGNIA+ (n_tipos- 1)* 2
+	var ball:= BaseDatos.objeto(p.ball)
+	var usado:= Rect2i()
+	if ball!= null and ball.icono!= null:
+		usado= ball.icono.get_image().get_used_rect()
+	var ancho_grupo:= EstiloUI.ANCHO_INSIGNIA+ (usado.size.x+ 4 if usado.size.x> 0 else 0)
+	var x0:= floori((96- ancho_grupo)/ 2.0)
+	if usado.size.x> 0:
+		var ic:= TextureRect.new()
+		ic.texture= ball.icono
+		ic.position =Vector2(x0- usado.position.x, 126+ floori((alto_tipos- usado.size.y)/ 2.0)- usado.position.y)
+		datos_izq.add_child(ic)
+		x0+= usado.size.x+ 4
+	for k in n_tipos:
+		datos_izq.add_child(EstiloUI.insignia_tipo(p.especie.tipos[k], Vector2(x0, 126+ k* (EstiloUI.ALTO_INSIGNIA+ 2))))
+	var ayuda:= EstiloUI.nuevo_label("◀▶ página\n▲▼ Pokémon", 8, Vector2(8, 154), EstiloUI.TENUE)
+	EstiloUI.fuente_batalla(ayuda)
 	datos_izq.add_child(ayuda)
 	_limpiar(contenido)
 	match pagina:
@@ -151,21 +163,35 @@ func _barra(pos: Vector2, ancho: float, frac: float, color: Color) -> void:
 func _pagina_info(p: PokemonInstancia) -> void:
 	var e:= p.especie
 	_fila("N.º Pokédex", "%03d" % e.numero, 2)
-	_fila("Especie", e.nombre, 16)
-	_fila("Naturaleza", Naturalezas.nombre(p.naturaleza), 30)
+	_fila("Especie", e.nombre, 2+ FILA)
+	_fila("Naturaleza", Naturalezas.nombre(p.naturaleza), 2+ FILA* 2)
 	var ball:= BaseDatos.objeto(p.ball)
-	_fila("Capturado en", ball.nombre if ball!= null else "-", 44)
+	_fila("Capturado en", ball.nombre if ball!= null else "-", 2+ FILA* 3)
 	var unicos:= {}
 	for id in p.trinkets:
 		unicos[id]= true
-	_fila("Trinkets", "%d (%d huecos)" % [p.trinkets.size(), unicos.size()] if not p.trinkets.is_empty() else "Ninguno", 58)
-	_fila("Puntos EXP", str(p.experiencia), 80)
+	_fila("Trinkets", "%d (%d huecos)" % [p.trinkets.size(), unicos.size()] if not p.trinkets.is_empty() else "Ninguno", 2+ FILA* 4)
+	_fila("Puntos EXP", str(p.experiencia), 2+ FILA* 5)
 	var maximo:= p.nivel>= PokemonInstancia.NIVEL_MAX
 	var falta:= 0 if maximo else maxi(0, p.exp_siguiente_nivel()- p.experiencia)
-	_fila("Para Nv. %d" % mini(p.nivel+ 1, PokemonInstancia.NIVEL_MAX), str(falta), 94)
+	_fila("Para Nv. %d" % mini(p.nivel+ 1, PokemonInstancia.NIVEL_MAX), str(falta), 2+ FILA* 6)
 	var base:= Crecimiento.exp_para_nivel(e.crecimiento, p.nivel)
 	var sig:= p.exp_siguiente_nivel()
-	_barra(Vector2(4, 110), 124, 1.0 if maximo else float(p.experiencia- base)/ maxf(1.0, sig- base), Color("58a8f8"))
+	_barra(Vector2(4, 2+ FILA* 7+ 2), 124, 1.0 if maximo else float(p.experiencia- base)/ maxf(1.0, sig- base), Color("58a8f8"))
+	var hab:= BaseDatos.habilidad(p.habilidad)
+	var y_hab:= 2+ FILA* 8
+	var titulo_hab:= EstiloUI.nuevo_label("Habilidad", 8, Vector2(4, y_hab), EstiloUI.TENUE)
+	EstiloUI.fuente_batalla(titulo_hab)
+	contenido.add_child(titulo_hab)
+	var nombre_hab:= EstiloUI.nuevo_label((hab.nombre if hab!= null else "-")+ ("*" if p.tiene_oculta() else ""), 8, Vector2(4, y_hab+ FILA), Color("ffd84a") if p.tiene_oculta() else EstiloUI.TEXTO)
+	EstiloUI.fuente_batalla(nombre_hab)
+	nombre_hab.name= "Habilidad"
+	contenido.add_child(nombre_hab)
+	if hab!= null:
+		var d:= EstiloUI.nuevo_label("", 6, Vector2(4, y_hab+ FILA* 2+ 1), EstiloUI.TENUE)
+		d.name= "DescHabilidad"
+		contenido.add_child(d)
+		d.text= "\n".join(EstiloUI.envolver(hab.descripcion, d, 124).slice(0, 2))
 
 func _pagina_stats(p: PokemonInstancia) -> void:
 	var y:= 2.0
@@ -179,9 +205,10 @@ func _pagina_stats(p: PokemonInstancia) -> void:
 		var color:= SUBE if pct> 100 else (BAJA if pct< 100 else EstiloUI.TEXTO)
 		_fila(NOMBRES_STAT[s]+ marca, valor, y, color)
 		var num:= float(p.ps_actuales if s== "ps" else p.stat(s))
-		_barra(Vector2(4, y+ 11), 124, num/ float(mayor), COLORES_STAT[s])
+		_barra(Vector2(4, y+ 12), 124, num/ float(mayor), COLORES_STAT[s])
 		y+= 20
-	var nota:= EstiloUI.nuevo_label("▲ sube / ▼ baja por naturaleza", 6, Vector2(4, 124), EstiloUI.TENUE)
+	var nota:= EstiloUI.nuevo_label("▲▼ = naturaleza", 8, Vector2(4, 124), EstiloUI.TENUE)
+	EstiloUI.fuente_batalla(nota)
 	contenido.add_child(nota)
 
 func _pagina_movimientos(p: PokemonInstancia) -> void:
@@ -198,7 +225,7 @@ func _pagina_movimientos(p: PokemonInstancia) -> void:
 		b.size= Vector2(106, 16)
 		contenido.add_child(b)
 		b.add_child(IconoTipo.crear(m.tipo, Vector2(3, 2)))
-		var n:= EstiloUI.nuevo_label(m.nombre, 9, Vector2(16, 0), Color.WHITE)
+		var n:= EstiloUI.nuevo_label(m.nombre, 9, Vector2(16, -1), Color.WHITE)
 		EstiloUI.fuente_batalla(n)
 		n.size= Vector2(88, 16)
 		n.vertical_alignment =VERTICAL_ALIGNMENT_CENTER

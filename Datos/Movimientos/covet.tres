@@ -6,10 +6,8 @@
 script = ExtResource("1")
 id = "covet"
 nombre = "Antojo"
-tipo = "normal"
-categoria = "fisico"
 poder = 60
-precision = 100
-pp = 25
-objetivo = "selected-pokemon"
-meta = "damage"
+pp = 40
+descripcion = "Se acerca con ternura al objetivo, pero le ataca y le roba el objeto que lleve."
+numero = 343
+banderas = PackedStringArray("contact", "failcopycat", "failmefirst", "mirror", "noassist", "protect")

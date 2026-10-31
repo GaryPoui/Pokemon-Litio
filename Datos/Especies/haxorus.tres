@@ -21,97 +21,93 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/outrage.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/giga_impact.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_1dhuc"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_jlq3o"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_js8pp"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_8gyv4"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_t2fk0"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_15353"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_syetg"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_lb0tg"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_kwu7s"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_jq4p4"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_6vxhd"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_mpi3r"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_hk3l1"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_tfpj5"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_1r1et"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_sn3de"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_dju8v"]
 script = ExtResource("2")
 nivel = 58
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_ab3i3"]
 script = ExtResource("2")
 nivel = 66
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_lcv1c"]
 script = ExtResource("2")
 nivel = 74
 movimiento = ExtResource("20")
@@ -122,8 +118,6 @@ id = "haxorus"
 numero = 612
 nombre = "Haxorus"
 tipos = PackedStringArray("dragon")
-habilidades = PackedStringArray("Rivalidad", "Rompemoldes")
-habilidad_oculta = "Nerviosismo"
 ps = 76
 ataque = 147
 defensa = 90
@@ -131,12 +125,18 @@ at_esp = 60
 def_esp = 70
 velocidad = 97
 exp_base = 243
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18")])
+evs_otorgados = {
+"ataque": 3
+}
+amistad_base = 35
+habilidades = PackedStringArray("rivalry", "mold_breaker")
+habilidad_oculta = "unnerve"
+categoria = "Pokémon Boca Hacha"
+altura = 1.8
+peso_kg = 105.5
+descripcion = "Es gentil, pero no perdona a todo el que ose invadir su territorio. Su mayor baza son sus colmillos, que cortan el acero."
+aprende = Array[ExtResource("2")]([SubResource("Resource_1dhuc"), SubResource("Resource_jlq3o"), SubResource("Resource_js8pp"), SubResource("Resource_8gyv4"), SubResource("Resource_t2fk0"), SubResource("Resource_15353"), SubResource("Resource_syetg"), SubResource("Resource_lb0tg"), SubResource("Resource_kwu7s"), SubResource("Resource_jq4p4"), SubResource("Resource_6vxhd"), SubResource("Resource_mpi3r"), SubResource("Resource_hk3l1"), SubResource("Resource_tfpj5"), SubResource("Resource_1r1et"), SubResource("Resource_sn3de"), SubResource("Resource_dju8v"), SubResource("Resource_ab3i3"), SubResource("Resource_lcv1c")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 105

@@ -17,62 +17,60 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/blizzard.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sheer_cold.tres" id="16"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_lno10"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_mnjbq"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_slt5h"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_ls3x0"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_ovruj"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_gxy3x"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_q1l8p"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_1yn5r"]
 script = ExtResource("2")
 nivel = 26
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_plmh5"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_b7sm5"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_f2s56"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_cm3vt"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("16")
@@ -83,23 +81,31 @@ id = "snover"
 numero = 459
 nombre = "Snover"
 tipos = PackedStringArray("planta", "hielo")
-habilidades = PackedStringArray("Nevada")
-habilidad_oculta = "Insonorización/Insonorizar"
 ps = 60
 ataque = 62
-defensa = 50
 at_esp = 62
 def_esp = 60
 velocidad = 40
 exp_base = 67
 ratio_captura = 120
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "abomasnow", "metodo": "nivel", "condicion": "Nivel 40", "nivel": 40}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "abomasnow"
 nivel_evolucion = 40
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11")])
+evoluciones = Array[Dictionary]([{
+"especie": "abomasnow",
+"metodo": "nivel",
+"nivel": 40
+}])
+habilidades = PackedStringArray("snow_warning")
+habilidad_oculta = "soundproof"
+categoria = "Pokémon Árbol Nieve"
+altura = 1.0
+peso_kg = 50.5
+descripcion = "En las estaciones frías baja al pie de la montaña, pero regresa a las cimas nevadas en primavera."
+aprende = Array[ExtResource("2")]([SubResource("Resource_lno10"), SubResource("Resource_mnjbq"), SubResource("Resource_slt5h"), SubResource("Resource_ls3x0"), SubResource("Resource_ovruj"), SubResource("Resource_gxy3x"), SubResource("Resource_q1l8p"), SubResource("Resource_1yn5r"), SubResource("Resource_plmh5"), SubResource("Resource_b7sm5"), SubResource("Resource_f2s56"), SubResource("Resource_cm3vt")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 56

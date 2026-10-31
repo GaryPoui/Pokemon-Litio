@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_j74g8"]
+
+[resource]
+script = ExtResource("1_j74g8")
+id = "sand_rush"
+nombre = "Ímpetu Arena"
+descripcion = "Aumenta la Velocidad durante las tormentas de arena."

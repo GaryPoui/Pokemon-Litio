@@ -9,25 +9,21 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/fury_swipes.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="8"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_0sdgt"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_do4f7"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_04p55"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_xdg8i"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
 
 [resource]
 script = ExtResource("1")
@@ -35,8 +31,6 @@ id = "simisage"
 numero = 512
 nombre = "Simisage"
 tipos = PackedStringArray("planta")
-habilidades = PackedStringArray("Gula")
-habilidad_oculta = "Espesura"
 ps = 75
 ataque = 98
 defensa = 63
@@ -46,10 +40,16 @@ velocidad = 101
 exp_base = 174
 ratio_captura = 75
 ratio_genero = 1
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+evs_otorgados = {
+"velocidad": 2
+}
+habilidades = PackedStringArray("gluttony")
+habilidad_oculta = "overgrow"
+categoria = "Pokémon Mono Pincho"
+altura = 1.1
+peso_kg = 30.5
+descripcion = "Ataca estampando las espinas de su cola en el enemigo. Es un Pokémon con mucho temperamento."
+aprende = Array[ExtResource("2")]([SubResource("Resource_0sdgt"), SubResource("Resource_do4f7"), SubResource("Resource_04p55"), SubResource("Resource_xdg8i")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 77

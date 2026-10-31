@@ -16,12 +16,16 @@ Pokémon Litio es un fan game sin fines de lucro. Pokémon y sus personajes son 
 - Poké Balls de Pokémon Negro/Blanco (animación de lanzamiento): redblueyellow (The Spriters Resource).
 - Pantalla de equipo de Pokémon Negro/Blanco (fondo, paneles, barra de PS): Floofy Panthar (The Spriters Resource).
 - Íconos de menú de Pokémon de 5.ª generación: Ploaj (The Spriters Resource).
-- Íconos de menú de Pokémon de 1.ª a 4.ª generación: hojas de Pokémon Platino ripeadas por spaceemotion (The Spriters Resource).
+- Íconos de menú de Pokémon de 1.ª a 4.ª generación: hojas de Pokémon Platino ripeadas por spaceemotion (The Spriters Resource); los que faltaban, íconos de Pokémon Negro/Blanco de Serebii.net.
 - Interior del Centro Pokémon y sprite de la Enfermera Joy: Pokémon Diamante/Perla, ripeado por Gamedude (The Spriters Resource).
 - Exterior del Centro Pokémon: modelo 3D de Pokémon Diamante/Perla subido por Cheesy Mac n Cheese a The Models Resource; renderizado en 2D para este proyecto.
 - Fondos de menús (fondos de Caja de Pokémon Negro/Blanco): Barubary (The Spriters Resource).
 - Hierba alta y su efecto al pisarla: texturas de la Ruta 1 de Pokémon HeartGold/SoulSilver, subidas por Kuramapika1 a The Models Resource.
 - Escenario de combate (campo de hierba) y plataformas de combate por terreno (pasto, campo, orilla, agua, cemento y roca): modelos 3D "Battle Backgrounds" de Pokémon Negro 2/Blanco 2, subidos por Snivy a The Models Resource; renderizados a 256×192 para este proyecto.
+
+## Datos
+- Especies, movimientos, habilidades, objetos y textos de la Pokédex (valores de 5.ª generación, nombres y descripciones en español): PokéAPI (https://pokeapi.co).
+- Propiedades de los movimientos (contacto, polvo, sonido, golpes múltiples, etc.): Pokémon Showdown (https://github.com/smogon/pokemon-showdown).
 
 ## Audio
 - Música y jingles: Pokémon Negro/Blanco, © Nintendo / Game Freak. Rip del juego publicado en KHInsider ("Pokémon Black and White (DS) (gamerip)"); los puntos de bucle se midieron para este proyecto.

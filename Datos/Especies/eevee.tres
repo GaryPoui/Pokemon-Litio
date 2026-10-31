@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://d1ayx0kklf0el"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_hcrwx"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_hcrwx"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/helping_hand.tres" id="2_vm66n"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_oor41"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="4_3xgrc"]
@@ -12,58 +12,58 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="10_yapny"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="11_m36s7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/trump_card.tres" id="12_0xqf5"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="13_bgxus"]
-[ext_resource type="Texture2D" uid="uid://cy8uatvk127im" path="res://Assets/Pokemones/batalla/eevee_espalda.png" id="14_2pgku"]
-[ext_resource type="Texture2D" uid="uid://bh4idqncc4l03" path="res://Assets/Pokemones/batalla/eevee_frente.png" id="15_g3r83"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="13_bgxus"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/eevee_espalda.png" id="14_2pgku"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/eevee_frente.png" id="15_g3r83"]
 
-[sub_resource type="Resource" id="Resource_4cnqb"]
+[sub_resource type="Resource" id="Resource_hcrwx"]
 script = ExtResource("1_hcrwx")
 movimiento = ExtResource("2_vm66n")
 
-[sub_resource type="Resource" id="Resource_56ke2"]
+[sub_resource type="Resource" id="Resource_vm66n"]
 script = ExtResource("1_hcrwx")
 movimiento = ExtResource("3_oor41")
 
-[sub_resource type="Resource" id="Resource_tra2i"]
+[sub_resource type="Resource" id="Resource_oor41"]
 script = ExtResource("1_hcrwx")
 movimiento = ExtResource("4_3xgrc")
 
-[sub_resource type="Resource" id="Resource_1cea3"]
+[sub_resource type="Resource" id="Resource_3xgrc"]
 script = ExtResource("1_hcrwx")
 nivel = 8
 movimiento = ExtResource("5_qdq3l")
 
-[sub_resource type="Resource" id="Resource_tydqy"]
+[sub_resource type="Resource" id="Resource_qdq3l"]
 script = ExtResource("1_hcrwx")
 nivel = 15
 movimiento = ExtResource("6_5ci4l")
 
-[sub_resource type="Resource" id="Resource_bp76j"]
+[sub_resource type="Resource" id="Resource_5ci4l"]
 script = ExtResource("1_hcrwx")
 nivel = 22
 movimiento = ExtResource("7_c4gag")
 
-[sub_resource type="Resource" id="Resource_h2382"]
+[sub_resource type="Resource" id="Resource_c4gag"]
 script = ExtResource("1_hcrwx")
 nivel = 29
 movimiento = ExtResource("8_mitra")
 
-[sub_resource type="Resource" id="Resource_yeri2"]
+[sub_resource type="Resource" id="Resource_mitra"]
 script = ExtResource("1_hcrwx")
 nivel = 36
 movimiento = ExtResource("9_1ee36")
 
-[sub_resource type="Resource" id="Resource_muy78"]
+[sub_resource type="Resource" id="Resource_1ee36"]
 script = ExtResource("1_hcrwx")
 nivel = 43
 movimiento = ExtResource("10_yapny")
 
-[sub_resource type="Resource" id="Resource_5hhkp"]
+[sub_resource type="Resource" id="Resource_yapny"]
 script = ExtResource("1_hcrwx")
 nivel = 50
 movimiento = ExtResource("11_m36s7")
 
-[sub_resource type="Resource" id="Resource_s6lv7"]
+[sub_resource type="Resource" id="Resource_m36s7"]
 script = ExtResource("1_hcrwx")
 nivel = 57
 movimiento = ExtResource("12_0xqf5")
@@ -73,6 +73,7 @@ script = ExtResource("13_bgxus")
 id = "eevee"
 numero = 133
 nombre = "Eevee"
+tipos = PackedStringArray("normal")
 ps = 55
 ataque = 55
 at_esp = 45
@@ -83,12 +84,46 @@ ratio_genero = 1
 evs_otorgados = {
 "def_esp": 1
 }
-aprende = Array[ExtResource("1_hcrwx")]([SubResource("Resource_4cnqb"), SubResource("Resource_56ke2"), SubResource("Resource_tra2i"), SubResource("Resource_1cea3"), SubResource("Resource_tydqy"), SubResource("Resource_bp76j"), SubResource("Resource_h2382"), SubResource("Resource_yeri2"), SubResource("Resource_muy78"), SubResource("Resource_5hhkp"), SubResource("Resource_s6lv7")])
+evoluciones = Array[Dictionary]([{
+"especie": "vaporeon",
+"metodo": "piedra",
+"objeto": "water_stone"
+}, {
+"especie": "jolteon",
+"metodo": "piedra",
+"objeto": "thunder_stone"
+}, {
+"especie": "flareon",
+"metodo": "piedra",
+"objeto": "fire_stone"
+}, {
+"amistad": 220,
+"especie": "espeon",
+"hora": "dia",
+"metodo": "amistad"
+}, {
+"amistad": 220,
+"especie": "umbreon",
+"hora": "noche",
+"metodo": "amistad"
+}, {
+"especie": "leafeon",
+"metodo": "piedra",
+"objeto": "leaf_stone"
+}, {
+"especie": "glaceon",
+"metodo": "piedra",
+"objeto": "ice_stone"
+}])
+habilidades = PackedStringArray("run_away", "adaptability")
+habilidad_oculta = "anticipation"
+categoria = "Pokémon Evolución"
+altura = 0.3
+peso_kg = 6.5
+descripcion = "Un extraño Pokémon que se adapta a los entornos más hostiles gracias a sus diferentes evoluciones."
+aprende = Array[ExtResource("1_hcrwx")]([SubResource("Resource_hcrwx"), SubResource("Resource_vm66n"), SubResource("Resource_oor41"), SubResource("Resource_3xgrc"), SubResource("Resource_qdq3l"), SubResource("Resource_5ci4l"), SubResource("Resource_c4gag"), SubResource("Resource_mitra"), SubResource("Resource_1ee36"), SubResource("Resource_yapny"), SubResource("Resource_m36s7")])
 sprite_frente = ExtResource("15_g3r83")
 sprite_espalda = ExtResource("14_2pgku")
 cuadros_frente = 74
 cuadros_espalda = 80
 fps_sprite = 11.46
-habilidades = PackedStringArray("Fuga", "Adaptable")
-habilidad_oculta = "Anticipación"
-evoluciones = Array[Dictionary]([{"especie": "vaporeon", "metodo": "piedra", "condicion": "Piedra agua"}, {"especie": "jolteon", "metodo": "piedra", "condicion": "Piedra trueno"}, {"especie": "flareon", "metodo": "piedra", "condicion": "Piedra fuego"}, {"especie": "espeon", "metodo": "amistad", "condicion": "Amistad + nivel (día)"}, {"especie": "umbreon", "metodo": "amistad", "condicion": "Amistad + nivel (noche)"}, {"especie": "leafeon", "metodo": "piedra", "condicion": "Subir nivel cerca de la roca musgo ; o piedra hoja"}, {"especie": "glaceon", "metodo": "piedra", "condicion": "Subir nivel cerca de la roca hielo ; o piedra hielo"}])

@@ -23,92 +23,91 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/dragon_pulse.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/healing_wish.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_iv8dn"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_rxrmf"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_hckyf"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_tliiq"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_7e58q"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_vd01f"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_lqdtp"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_5n725"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_rxert"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_03sn3"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_qer0j"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_e5nl7"]
 script = ExtResource("2")
 nivel = 55
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_pi7wa"]
 script = ExtResource("2")
 nivel = 60
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_fa3sn"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_fgd3c"]
 script = ExtResource("2")
 nivel = 70
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_rhsad"]
 script = ExtResource("2")
 nivel = 75
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_3p6iu"]
 script = ExtResource("2")
 nivel = 80
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_0svem"]
 script = ExtResource("2")
 nivel = 85
 movimiento = ExtResource("22")
@@ -119,8 +118,6 @@ id = "latias"
 numero = 380
 nombre = "Latias"
 tipos = PackedStringArray("dragon", "psiquico")
-habilidades = PackedStringArray("Levitación")
-habilidad_oculta = ""
 ps = 80
 ataque = 80
 defensa = 90
@@ -131,9 +128,16 @@ exp_base = 270
 ratio_captura = 3
 ratio_genero = 8
 crecimiento = "slow"
-evs_otorgados = {"def_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evs_otorgados = {
+"def_esp": 3
+}
+amistad_base = 90
+habilidades = PackedStringArray("levitate")
+categoria = "Pokémon Eón"
+altura = 1.4
+peso_kg = 40.0
+descripcion = "Se comunica por telepatía. Su plumaje refleja la luz, lo que le permite hacerse invisible."
+aprende = Array[ExtResource("2")]([SubResource("Resource_iv8dn"), SubResource("Resource_rxrmf"), SubResource("Resource_hckyf"), SubResource("Resource_tliiq"), SubResource("Resource_7e58q"), SubResource("Resource_vd01f"), SubResource("Resource_lqdtp"), SubResource("Resource_5n725"), SubResource("Resource_rxert"), SubResource("Resource_03sn3"), SubResource("Resource_qer0j"), SubResource("Resource_e5nl7"), SubResource("Resource_pi7wa"), SubResource("Resource_fa3sn"), SubResource("Resource_fgd3c"), SubResource("Resource_rhsad"), SubResource("Resource_3p6iu"), SubResource("Resource_0svem")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 56

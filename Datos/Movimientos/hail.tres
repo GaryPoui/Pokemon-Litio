@@ -12,3 +12,5 @@ precision = 0
 objetivo = "entire-field"
 meta = "whole-field-effect"
 descripcion = "Tormenta de granizo que dura cinco turnos. Hiere a todos los Pokémon excepto a los de tipo Hielo."
+numero = 258
+banderas = PackedStringArray("metronome")

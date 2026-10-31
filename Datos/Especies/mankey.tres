@@ -21,82 +21,77 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/close_combat.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/final_gambit.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_7vqjl"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_fkx8d"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_kvm7w"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_5wc2f"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_rl1y0"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_ysn54"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_1uj2a"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_epr4h"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ui15c"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_cxavh"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_kmfk4"]
 script = ExtResource("2")
 nivel = 33
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_pgsqm"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_3i8s6"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_wc2eb"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_b8vky"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_rmcar"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("20")
@@ -107,8 +102,6 @@ id = "mankey"
 numero = 56
 nombre = "Mankey"
 tipos = PackedStringArray("lucha")
-habilidades = PackedStringArray("Espíritu Vital", "Irascible")
-habilidad_oculta = "Competitivo"
 ps = 40
 ataque = 80
 defensa = 35
@@ -117,13 +110,23 @@ def_esp = 45
 velocidad = 70
 exp_base = 61
 ratio_captura = 190
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "primeape", "metodo": "nivel", "condicion": "Nivel 28", "nivel": 28}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "primeape"
 nivel_evolucion = 28
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evoluciones = Array[Dictionary]([{
+"especie": "primeape",
+"metodo": "nivel",
+"nivel": 28
+}])
+habilidades = PackedStringArray("vital_spirit", "anger_point")
+habilidad_oculta = "defiant"
+categoria = "Pokémon Mono Cerdo"
+altura = 0.5
+peso_kg = 28.0
+descripcion = "Es peligroso acercarse si se enfada sin razón aparente, ya que no distingue entre amigos y enemigos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_7vqjl"), SubResource("Resource_fkx8d"), SubResource("Resource_kvm7w"), SubResource("Resource_5wc2f"), SubResource("Resource_rl1y0"), SubResource("Resource_ysn54"), SubResource("Resource_1uj2a"), SubResource("Resource_epr4h"), SubResource("Resource_ui15c"), SubResource("Resource_cxavh"), SubResource("Resource_kmfk4"), SubResource("Resource_pgsqm"), SubResource("Resource_3i8s6"), SubResource("Resource_wc2eb"), SubResource("Resource_b8vky"), SubResource("Resource_rmcar")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 90

@@ -10,3 +10,5 @@ poder = 80
 precision = 75
 pp = 20
 descripcion = "Golpea con la cola o con lianas, por ejemplo, para causar daño al objetivo."
+numero = 21
+banderas = PackedStringArray("contact", "metronome", "mirror", "nonsky", "protect")

@@ -10,3 +10,5 @@ poder = 100
 pp = 15
 descripcion = "El usuario se prepara y sube su Defensa en el primer turno y en el segundo arremete con un cabezazo."
 prob_estado = 100
+numero = 130
+banderas = PackedStringArray("charge", "contact", "failinstruct", "metronome", "mirror", "nosleeptalk", "protect")

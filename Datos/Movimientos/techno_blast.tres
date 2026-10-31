@@ -5,11 +5,10 @@
 [resource]
 script = ExtResource("1")
 id = "techno_blast"
-nombre = "Tecno shock"
-tipo = "normal"
+nombre = "Tecno Shock"
 categoria = "especial"
-poder = 120
-precision = 100
+poder = 85
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Ataca al objetivo con un gran láser. El tipo del ataque lo determina el cartucho que porta el usuario."
+numero = 546
+banderas = PackedStringArray("mirror", "protect")

@@ -15,3 +15,5 @@ descripcion = "El usuario muerde al objetivo con colmillos electrificados y pued
 estado = "paralysis"
 prob_estado = 10
 prob_retroceso = 10
+numero = 422
+banderas = PackedStringArray("bite", "contact", "metronome", "mirror", "protect")

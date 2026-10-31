@@ -20,79 +20,78 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/grudge.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/trick.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_u4lub"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_2iv64"]
 script = ExtResource("2")
-nivel = 4
+nivel = 5
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_11k1g"]
 script = ExtResource("2")
-nivel = 7
+nivel = 8
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 10
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_gqi2o"]
 script = ExtResource("2")
 nivel = 13
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 16
-movimiento = ExtResource("10")
-
-[sub_resource type="Resource" id="Move_6"]
-script = ExtResource("2")
-nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_bt6x0"]
 script = ExtResource("2")
-nivel = 22
+nivel = 16
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_klluh"]
+script = ExtResource("2")
+nivel = 20
+movimiento = ExtResource("10")
+
+[sub_resource type="Resource" id="Resource_ogtav"]
+script = ExtResource("2")
+nivel = 23
+movimiento = ExtResource("9")
+
+[sub_resource type="Resource" id="Resource_6snqd"]
+script = ExtResource("2")
+nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_eiqsg"]
 script = ExtResource("2")
-nivel = 26
+nivel = 31
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_avmd1"]
 script = ExtResource("2")
-nivel = 30
+nivel = 35
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
-script = ExtResource("2")
-nivel = 34
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_mxa1y"]
 script = ExtResource("2")
 nivel = 38
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Resource_tv8h1"]
+script = ExtResource("2")
+nivel = 43
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
-script = ExtResource("2")
-nivel = 42
-movimiento = ExtResource("17")
-
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_444m5"]
 script = ExtResource("2")
 nivel = 46
-movimiento = ExtResource("18")
+movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_q001t"]
 script = ExtResource("2")
 nivel = 50
+movimiento = ExtResource("18")
+
+[sub_resource type="Resource" id="Resource_nfkn2"]
+script = ExtResource("2")
+nivel = 55
 movimiento = ExtResource("19")
 
 [resource]
@@ -101,8 +100,6 @@ id = "shuppet"
 numero = 353
 nombre = "Shuppet"
 tipos = PackedStringArray("fantasma")
-habilidades = PackedStringArray("Insomnio", "Inspección/Cacheo")
-habilidad_oculta = "Cuerpo Maldito"
 ps = 44
 ataque = 75
 defensa = 35
@@ -111,13 +108,25 @@ def_esp = 33
 velocidad = 45
 exp_base = 59
 ratio_captura = 225
-ratio_genero = 4
 crecimiento = "fast"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "banette", "metodo": "nivel", "condicion": "Nivel 37", "nivel": 37}])
+evs_otorgados = {
+"ataque": 1
+}
 evoluciona_a = "banette"
 nivel_evolucion = 37
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evoluciones = Array[Dictionary]([{
+"especie": "banette",
+"metodo": "nivel",
+"nivel": 37
+}])
+amistad_base = 35
+habilidades = PackedStringArray("insomnia", "frisk")
+habilidad_oculta = "cursed_body"
+categoria = "Pokémon Títere"
+altura = 0.6
+peso_kg = 2.3
+descripcion = "Dicen que con su cuerno se alimenta de sentimientos de celos y envidia. Es muy activo a medianoche."
+aprende = Array[ExtResource("2")]([SubResource("Resource_u4lub"), SubResource("Resource_2iv64"), SubResource("Resource_11k1g"), SubResource("Resource_gqi2o"), SubResource("Resource_bt6x0"), SubResource("Resource_klluh"), SubResource("Resource_ogtav"), SubResource("Resource_6snqd"), SubResource("Resource_eiqsg"), SubResource("Resource_avmd1"), SubResource("Resource_mxa1y"), SubResource("Resource_tv8h1"), SubResource("Resource_444m5"), SubResource("Resource_q001t"), SubResource("Resource_nfkn2")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 50

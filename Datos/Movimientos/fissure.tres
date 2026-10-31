@@ -11,3 +11,5 @@ precision = 30
 pp = 5
 meta = "ohko"
 descripcion = "Abre una grieta en el suelo y mete al objetivo en ella. Fulmina en un golpe."
+numero = 90
+banderas = PackedStringArray("metronome", "mirror", "nonsky", "protect")

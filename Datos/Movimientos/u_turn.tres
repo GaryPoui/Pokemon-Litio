@@ -10,3 +10,5 @@ tipo = "bicho"
 poder = 70
 pp = 20
 descripcion = "Tras atacar, el usuario vuelve a toda prisa para dar paso a otro Pokémon del equipo."
+numero = 369
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

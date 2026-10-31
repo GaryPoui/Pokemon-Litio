@@ -29,11 +29,13 @@ func interactuar(jugador: Node) -> void:
 	_mirar(-jugador.last_direction)
 	if regalo!= null and clave_regalo!= "" and not Estado.tiene(clave_regalo):
 		await Dialogo.mostrar(texto_regalo)
-		var destino:= Equipo.recibir(PokemonInstancia.crear(regalo, regalo_nivel))
+		var nuevo_p:= PokemonInstancia.crear(regalo, regalo_nivel)
+		var destino:= Equipo.recibir(nuevo_p)
 		Estado.marcar(clave_regalo)
 		Sonido.jingle("captura")
 		await Dialogo.mostrar("¡Recibiste a %s!" % regalo.nombre+ ("" if destino== "equipo" else " Como tu equipo está lleno, fue enviado a la Caja del PC."))
 		Sonido.cortar_jingle()
+		await Combate.pedir_mote(nuevo_p)
 		return
 	await Dialogo.mostrar(texto)
 

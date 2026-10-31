@@ -7,63 +7,38 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/splash.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="7"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/water_sport.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/charm.tres" id="10"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/bubble_beam.tres" id="11"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/helping_hand.tres" id="12"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/slam.tres" id="13"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/bounce.tres" id="14"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_3gi1y"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_q7iwj"]
 script = ExtResource("2")
 nivel = 2
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 5
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 7
-movimiento = ExtResource("9")
-
-[sub_resource type="Resource" id="Move_5"]
-script = ExtResource("2")
-nivel = 10
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_ek68c"]
 script = ExtResource("2")
-nivel = 13
-movimiento = ExtResource("11")
+nivel = 7
+movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_yxj2l"]
 script = ExtResource("2")
-nivel = 16
-movimiento = ExtResource("12")
+nivel = 10
+movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_x0ktl"]
 script = ExtResource("2")
-nivel = 20
+nivel = 15
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_u58fa"]
 script = ExtResource("2")
-nivel = 23
-movimiento = ExtResource("14")
+nivel = 18
+movimiento = ExtResource("9")
 
 [resource]
 script = ExtResource("1")
@@ -71,9 +46,6 @@ id = "azurill"
 numero = 298
 nombre = "Azurill"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Sebo", "Potencia")
-habilidad_oculta = "Herbívoro"
-ps = 50
 ataque = 20
 defensa = 40
 at_esp = 20
@@ -83,10 +55,21 @@ exp_base = 38
 ratio_captura = 150
 ratio_genero = 6
 crecimiento = "fast"
-evs_otorgados = {"ps": 1}
-evoluciones = Array[Dictionary]([{"especie": "marill", "metodo": "amistad", "condicion": "Amistad + nivel"}])
-evoluciona_a = "marill"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9")])
+evs_otorgados = {
+"ps": 1
+}
+evoluciones = Array[Dictionary]([{
+"amistad": 220,
+"especie": "marill",
+"metodo": "amistad"
+}])
+habilidades = PackedStringArray("thick_fat", "huge_power")
+habilidad_oculta = "sap_sipper"
+categoria = "Pokémon A Topos"
+altura = 0.2
+peso_kg = 2.0
+descripcion = "Vive cerca del agua. En la tierra se mueve muy rápido botando sobre su gran cola."
+aprende = Array[ExtResource("2")]([SubResource("Resource_3gi1y"), SubResource("Resource_q7iwj"), SubResource("Resource_ek68c"), SubResource("Resource_yxj2l"), SubResource("Resource_x0ktl"), SubResource("Resource_u58fa")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 83

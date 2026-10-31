@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/magmarizer.png" id="1_ctpms"]
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="2_uo06s"]
+
+[resource]
+script = ExtResource("2_uo06s")
+id = "magmarizer"
+nombre = "Magmatizador"
+descripcion = "Ataca al objetivo con un rayo de hielo que puede llegar a congelarlo."
+precio = 2000
+icono = ExtResource("1_ctpms")

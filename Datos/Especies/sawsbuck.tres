@@ -22,92 +22,92 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/sawsbuck_espalda.png" id="20_ipvrf"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/sawsbuck_frente.png" id="21_20wnm"]
 
-[sub_resource type="Resource" id="Resource_3lujb"]
+[sub_resource type="Resource" id="Resource_io7k3"]
 script = ExtResource("1_io7k3")
 movimiento = ExtResource("2_kuiil")
 
-[sub_resource type="Resource" id="Resource_8ybd1"]
+[sub_resource type="Resource" id="Resource_kuiil"]
 script = ExtResource("1_io7k3")
 movimiento = ExtResource("3_8y7nj")
 
-[sub_resource type="Resource" id="Resource_n11x2"]
+[sub_resource type="Resource" id="Resource_8y7nj"]
 script = ExtResource("1_io7k3")
 movimiento = ExtResource("4_5pu6g")
 
-[sub_resource type="Resource" id="Resource_gek46"]
+[sub_resource type="Resource" id="Resource_5pu6g"]
 script = ExtResource("1_io7k3")
 movimiento = ExtResource("5_4e3gp")
 
-[sub_resource type="Resource" id="Resource_sesw2"]
+[sub_resource type="Resource" id="Resource_4e3gp"]
 script = ExtResource("1_io7k3")
 movimiento = ExtResource("6_00i0v")
 
-[sub_resource type="Resource" id="Resource_usu64"]
+[sub_resource type="Resource" id="Resource_00i0v"]
 script = ExtResource("1_io7k3")
 nivel = 4
 movimiento = ExtResource("3_8y7nj")
 
-[sub_resource type="Resource" id="Resource_apphp"]
+[sub_resource type="Resource" id="Resource_7tiju"]
 script = ExtResource("1_io7k3")
 nivel = 7
 movimiento = ExtResource("5_4e3gp")
 
-[sub_resource type="Resource" id="Resource_4i4bn"]
+[sub_resource type="Resource" id="Resource_dk8da"]
 script = ExtResource("1_io7k3")
 nivel = 10
 movimiento = ExtResource("7_7tiju")
 
-[sub_resource type="Resource" id="Resource_jafhr"]
+[sub_resource type="Resource" id="Resource_20qlg"]
 script = ExtResource("1_io7k3")
 nivel = 13
 movimiento = ExtResource("8_dk8da")
 
-[sub_resource type="Resource" id="Resource_v6v4d"]
+[sub_resource type="Resource" id="Resource_ds4vn"]
 script = ExtResource("1_io7k3")
 nivel = 16
 movimiento = ExtResource("9_20qlg")
 
-[sub_resource type="Resource" id="Resource_0ifni"]
+[sub_resource type="Resource" id="Resource_rmdki"]
 script = ExtResource("1_io7k3")
 nivel = 20
 movimiento = ExtResource("10_ds4vn")
 
-[sub_resource type="Resource" id="Resource_3o10u"]
+[sub_resource type="Resource" id="Resource_fvrlc"]
 script = ExtResource("1_io7k3")
 nivel = 24
 movimiento = ExtResource("11_rmdki")
 
-[sub_resource type="Resource" id="Resource_6kymq"]
+[sub_resource type="Resource" id="Resource_nh8xf"]
 script = ExtResource("1_io7k3")
 nivel = 28
 movimiento = ExtResource("12_fvrlc")
 
-[sub_resource type="Resource" id="Resource_v8sdm"]
+[sub_resource type="Resource" id="Resource_i6mt0"]
 script = ExtResource("1_io7k3")
 nivel = 32
 movimiento = ExtResource("13_nh8xf")
 
-[sub_resource type="Resource" id="Resource_sqmrn"]
+[sub_resource type="Resource" id="Resource_vg4s5"]
 script = ExtResource("1_io7k3")
 nivel = 36
 movimiento = ExtResource("14_i6mt0")
 
-[sub_resource type="Resource" id="Resource_y4oen"]
+[sub_resource type="Resource" id="Resource_clmbo"]
 script = ExtResource("1_io7k3")
 nivel = 37
 movimiento = ExtResource("15_vg4s5")
 
-[sub_resource type="Resource" id="Resource_5ws12"]
+[sub_resource type="Resource" id="Resource_57c04"]
 script = ExtResource("1_io7k3")
 nivel = 44
 movimiento = ExtResource("16_clmbo")
 
-[sub_resource type="Resource" id="Resource_rph81"]
+[sub_resource type="Resource" id="Resource_afts6"]
 script = ExtResource("1_io7k3")
 nivel = 52
 movimiento = ExtResource("17_57c04")
 
-[sub_resource type="Resource" id="Resource_omn57"]
+[sub_resource type="Resource" id="Resource_gv1au"]
 script = ExtResource("1_io7k3")
 nivel = 60
 movimiento = ExtResource("18_afts6")
@@ -117,7 +117,7 @@ script = ExtResource("19_gv1au")
 id = "sawsbuck"
 numero = 586
 nombre = "Sawsbuck"
-tipos = ["normal", "planta"]
+tipos = PackedStringArray("normal", "planta")
 ps = 80
 ataque = 100
 defensa = 70
@@ -129,11 +129,14 @@ ratio_captura = 75
 evs_otorgados = {
 "ataque": 2
 }
-aprende = Array[ExtResource("1_io7k3")]([SubResource("Resource_3lujb"), SubResource("Resource_8ybd1"), SubResource("Resource_n11x2"), SubResource("Resource_gek46"), SubResource("Resource_sesw2"), SubResource("Resource_usu64"), SubResource("Resource_apphp"), SubResource("Resource_4i4bn"), SubResource("Resource_jafhr"), SubResource("Resource_v6v4d"), SubResource("Resource_0ifni"), SubResource("Resource_3o10u"), SubResource("Resource_6kymq"), SubResource("Resource_v8sdm"), SubResource("Resource_sqmrn"), SubResource("Resource_y4oen"), SubResource("Resource_5ws12"), SubResource("Resource_rph81"), SubResource("Resource_omn57")])
+habilidades = PackedStringArray("chlorophyll", "sap_sipper")
+habilidad_oculta = "serene_grace"
+categoria = "Pokémon Estacional"
+altura = 1.9
+peso_kg = 92.5
+descripcion = "Cambia de morada dependiendo de las estaciones. Observando sus cuernos, la gente sabe cuándo estas van a cambiar."
+aprende = Array[ExtResource("1_io7k3")]([SubResource("Resource_io7k3"), SubResource("Resource_kuiil"), SubResource("Resource_8y7nj"), SubResource("Resource_5pu6g"), SubResource("Resource_4e3gp"), SubResource("Resource_00i0v"), SubResource("Resource_7tiju"), SubResource("Resource_dk8da"), SubResource("Resource_20qlg"), SubResource("Resource_ds4vn"), SubResource("Resource_rmdki"), SubResource("Resource_fvrlc"), SubResource("Resource_nh8xf"), SubResource("Resource_i6mt0"), SubResource("Resource_vg4s5"), SubResource("Resource_clmbo"), SubResource("Resource_57c04"), SubResource("Resource_afts6"), SubResource("Resource_gv1au")])
 sprite_frente = ExtResource("21_20wnm")
 sprite_espalda = ExtResource("20_ipvrf")
 cuadros_frente = 70
 cuadros_espalda = 70
-habilidades = PackedStringArray("Clorofila", "Herbívoro")
-habilidad_oculta = "Dicha"
-evoluciones = Array[Dictionary]([])

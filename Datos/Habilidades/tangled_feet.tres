@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_4khll"]
+
+[resource]
+script = ExtResource("1_4khll")
+id = "tangled_feet"
+nombre = "Tumbos"
+descripcion = "Sube la Evasión si el Pokémon está confuso."

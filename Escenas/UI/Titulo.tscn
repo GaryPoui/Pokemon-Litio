@@ -25,7 +25,7 @@ offset_bottom = 192.0
 color = Color(0.12, 0.2, 0.42, 1)
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=752988741]
-position = Vector2(128, 110)
+position = Vector2(128, 120)
 script = ExtResource("1_4lttk")
 
 [node name="Logo" type="Label" parent="." unique_id=621980151]
@@ -47,9 +47,9 @@ horizontal_alignment = 1
 [node name="Opciones" type="Panel" parent="." unique_id=818148596]
 layout_mode = 0
 offset_left = 74.0
-offset_top = 114.0
+offset_top = 124.0
 offset_right = 182.0
-offset_bottom = 152.0
+offset_bottom = 162.0
 
 [node name="Lista" type="Control" parent="Opciones" unique_id=132159635]
 anchors_preset = 0

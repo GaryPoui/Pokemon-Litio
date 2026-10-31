@@ -6,10 +6,18 @@
 script = ExtResource("1")
 id = "shell_smash"
 nombre = "Rompecoraza"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 15
 objetivo = "user"
 meta = "unique"
+descripcion = "El usuario rompe su coraza y baja su Defensa y Defensa Especial, pero aumenta mucho su Ataque, Ataque Especial y Velocidad."
+cambios_stats = {
+"at_esp": 2,
+"ataque": 2,
+"def_esp": -1,
+"defensa": -1,
+"velocidad": 2
+}
+numero = 504
+banderas = PackedStringArray("metronome", "snatch")

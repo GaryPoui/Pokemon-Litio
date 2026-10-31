@@ -8,8 +8,13 @@ id = "meditate"
 nombre = "Meditación"
 tipo = "psiquico"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 40
 objetivo = "user"
-meta = "unique"
+meta = "net-good-stats"
+descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+cambios_stats = {
+"ataque": 1
+}
+numero = 96
+banderas = PackedStringArray("metronome", "snatch")

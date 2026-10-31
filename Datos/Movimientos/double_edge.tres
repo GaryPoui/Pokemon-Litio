@@ -10,3 +10,5 @@ poder = 120
 pp = 15
 descripcion = "Ataque arriesgado que también hiere al agresor."
 drenaje = -33
+numero = 38
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

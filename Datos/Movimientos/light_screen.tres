@@ -13,3 +13,5 @@ pp = 30
 objetivo = "users-field"
 meta = "field-effect"
 descripcion = "Pared de luz que reduce durante cinco turnos el daño producido por los ataques especiales."
+numero = 113
+banderas = PackedStringArray("metronome", "snatch")

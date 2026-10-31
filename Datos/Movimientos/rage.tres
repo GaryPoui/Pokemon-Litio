@@ -9,3 +9,5 @@ nombre = "Furia"
 poder = 20
 pp = 20
 descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
+numero = 99
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

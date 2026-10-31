@@ -10,3 +10,5 @@ tipo = "planta"
 categoria = "estado"
 meta = "unique"
 descripcion = "Planta una semilla en el objetivo que le causa pesar. Sustituye la habilidad del objetivo por Insomnio y le impide dormirse."
+numero = 388
+banderas = PackedStringArray("allyanim", "metronome", "mirror", "protect", "reflectable")

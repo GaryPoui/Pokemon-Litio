@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cfeicotxmqami"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_qf1hw"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_qf1hw"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_not7u"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/howl.tres" id="3_3xykv"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="4_7nwv6"]
@@ -15,75 +15,75 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="13_86hfs"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="14_0nyoa"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/crunch.tres" id="15_r5nhq"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_plh4a"]
-[ext_resource type="Texture2D" uid="uid://bml2vivwn78af" path="res://Assets/Pokemones/batalla/poochyena_espalda.png" id="17_k7pwy"]
-[ext_resource type="Texture2D" uid="uid://dfetq3arbvoyc" path="res://Assets/Pokemones/batalla/poochyena_frente.png" id="18_i45rg"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_plh4a"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/poochyena_espalda.png" id="17_k7pwy"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/poochyena_frente.png" id="18_i45rg"]
 
-[sub_resource type="Resource" id="Resource_xv1su"]
+[sub_resource type="Resource" id="Resource_qf1hw"]
 script = ExtResource("1_qf1hw")
 movimiento = ExtResource("2_not7u")
 
-[sub_resource type="Resource" id="Resource_n0dhu"]
+[sub_resource type="Resource" id="Resource_not7u"]
 script = ExtResource("1_qf1hw")
 nivel = 5
 movimiento = ExtResource("3_3xykv")
 
-[sub_resource type="Resource" id="Resource_g0djv"]
+[sub_resource type="Resource" id="Resource_3xykv"]
 script = ExtResource("1_qf1hw")
 nivel = 9
 movimiento = ExtResource("4_7nwv6")
 
-[sub_resource type="Resource" id="Resource_ip0sh"]
+[sub_resource type="Resource" id="Resource_7nwv6"]
 script = ExtResource("1_qf1hw")
 nivel = 13
 movimiento = ExtResource("5_2ek3w")
 
-[sub_resource type="Resource" id="Resource_vcwxy"]
+[sub_resource type="Resource" id="Resource_2ek3w"]
 script = ExtResource("1_qf1hw")
 nivel = 17
 movimiento = ExtResource("6_beaks")
 
-[sub_resource type="Resource" id="Resource_u62ur"]
+[sub_resource type="Resource" id="Resource_beaks"]
 script = ExtResource("1_qf1hw")
 nivel = 21
 movimiento = ExtResource("7_7g4uk")
 
-[sub_resource type="Resource" id="Resource_mh4l8"]
+[sub_resource type="Resource" id="Resource_7g4uk"]
 script = ExtResource("1_qf1hw")
 nivel = 25
 movimiento = ExtResource("8_r6rds")
 
-[sub_resource type="Resource" id="Resource_g5gts"]
+[sub_resource type="Resource" id="Resource_r6rds"]
 script = ExtResource("1_qf1hw")
 nivel = 29
 movimiento = ExtResource("9_3rs55")
 
-[sub_resource type="Resource" id="Resource_7mr3c"]
+[sub_resource type="Resource" id="Resource_3rs55"]
 script = ExtResource("1_qf1hw")
 nivel = 33
 movimiento = ExtResource("10_xso38")
 
-[sub_resource type="Resource" id="Resource_xh4m4"]
+[sub_resource type="Resource" id="Resource_xso38"]
 script = ExtResource("1_qf1hw")
 nivel = 37
 movimiento = ExtResource("11_j1eho")
 
-[sub_resource type="Resource" id="Resource_fhyjm"]
+[sub_resource type="Resource" id="Resource_j1eho"]
 script = ExtResource("1_qf1hw")
 nivel = 41
 movimiento = ExtResource("12_kavvy")
 
-[sub_resource type="Resource" id="Resource_tx3pe"]
+[sub_resource type="Resource" id="Resource_kavvy"]
 script = ExtResource("1_qf1hw")
 nivel = 45
 movimiento = ExtResource("13_86hfs")
 
-[sub_resource type="Resource" id="Resource_vfjyy"]
+[sub_resource type="Resource" id="Resource_86hfs"]
 script = ExtResource("1_qf1hw")
 nivel = 49
 movimiento = ExtResource("14_0nyoa")
 
-[sub_resource type="Resource" id="Resource_2q3om"]
+[sub_resource type="Resource" id="Resource_0nyoa"]
 script = ExtResource("1_qf1hw")
 nivel = 53
 movimiento = ExtResource("15_r5nhq")
@@ -93,7 +93,7 @@ script = ExtResource("16_plh4a")
 id = "poochyena"
 numero = 261
 nombre = "Poochyena"
-tipos = ["siniestro"]
+tipos = PackedStringArray("siniestro")
 ps = 35
 ataque = 55
 defensa = 35
@@ -107,12 +107,20 @@ evs_otorgados = {
 }
 evoluciona_a = "mightyena"
 nivel_evolucion = 18
-aprende = Array[ExtResource("1_qf1hw")]([SubResource("Resource_xv1su"), SubResource("Resource_n0dhu"), SubResource("Resource_g0djv"), SubResource("Resource_ip0sh"), SubResource("Resource_vcwxy"), SubResource("Resource_u62ur"), SubResource("Resource_mh4l8"), SubResource("Resource_g5gts"), SubResource("Resource_7mr3c"), SubResource("Resource_xh4m4"), SubResource("Resource_fhyjm"), SubResource("Resource_tx3pe"), SubResource("Resource_vfjyy"), SubResource("Resource_2q3om")])
+evoluciones = Array[Dictionary]([{
+"especie": "mightyena",
+"metodo": "nivel",
+"nivel": 18
+}])
+habilidades = PackedStringArray("run_away", "quick_feet")
+habilidad_oculta = "rattled"
+categoria = "Pokémon Mordisco"
+altura = 0.5
+peso_kg = 13.6
+descripcion = "Es muy persistente. Si se fija en una presa, no la dejará hasta que caiga agotada."
+aprende = Array[ExtResource("1_qf1hw")]([SubResource("Resource_qf1hw"), SubResource("Resource_not7u"), SubResource("Resource_3xykv"), SubResource("Resource_7nwv6"), SubResource("Resource_2ek3w"), SubResource("Resource_beaks"), SubResource("Resource_7g4uk"), SubResource("Resource_r6rds"), SubResource("Resource_3rs55"), SubResource("Resource_xso38"), SubResource("Resource_j1eho"), SubResource("Resource_kavvy"), SubResource("Resource_86hfs"), SubResource("Resource_0nyoa")])
 sprite_frente = ExtResource("18_i45rg")
 sprite_espalda = ExtResource("17_k7pwy")
 cuadros_frente = 59
 cuadros_espalda = 52
 fps_sprite = 12.32
-habilidades = PackedStringArray("Fuga", "Pies Rápidos")
-habilidad_oculta = "Cobardía"
-evoluciones = Array[Dictionary]([{"especie": "mightyena", "metodo": "nivel", "condicion": "Nivel 18", "nivel": 18}])

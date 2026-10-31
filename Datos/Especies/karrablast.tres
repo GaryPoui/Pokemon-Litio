@@ -20,77 +20,76 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/swords_dance.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_ogh8b"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_ha40s"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_yrh8b"]
 script = ExtResource("2")
 nivel = 8
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_p6r63"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_f657o"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_745yd"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_c7g00"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_xrme5"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_cxah1"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_wg7bn"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_772ni"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_h0j4o"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_nfhvf"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_tjmmi"]
 script = ExtResource("2")
 nivel = 52
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_vumr1"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("19")
@@ -101,9 +100,6 @@ id = "karrablast"
 numero = 588
 nombre = "Karrablast"
 tipos = PackedStringArray("bicho")
-habilidades = PackedStringArray("Enjambre", "Mudar")
-habilidad_oculta = "Indefenso"
-ps = 50
 ataque = 75
 defensa = 45
 at_esp = 40
@@ -111,12 +107,21 @@ def_esp = 45
 velocidad = 60
 exp_base = 63
 ratio_captura = 200
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1}
-evoluciones = Array[Dictionary]([{"especie": "escavalier", "metodo": "intercambio", "condicion": "Intercambio por Shelmet"}])
-evoluciona_a = "escavalier"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"ataque": 1
+}
+evoluciones = Array[Dictionary]([{
+"con": "shelmet",
+"especie": "escavalier",
+"metodo": "intercambio"
+}])
+habilidades = PackedStringArray("swarm", "shed_skin")
+habilidad_oculta = "no_guard"
+categoria = "Pokémon Bocado"
+altura = 0.5
+peso_kg = 5.9
+descripcion = "Si recibe un estímulo eléctrico al estar en contacto con un Shelmet, evoluciona."
+aprende = Array[ExtResource("2")]([SubResource("Resource_ogh8b"), SubResource("Resource_ha40s"), SubResource("Resource_yrh8b"), SubResource("Resource_p6r63"), SubResource("Resource_f657o"), SubResource("Resource_745yd"), SubResource("Resource_c7g00"), SubResource("Resource_xrme5"), SubResource("Resource_cxah1"), SubResource("Resource_wg7bn"), SubResource("Resource_772ni"), SubResource("Resource_h0j4o"), SubResource("Resource_nfhvf"), SubResource("Resource_tjmmi"), SubResource("Resource_vumr1")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 105

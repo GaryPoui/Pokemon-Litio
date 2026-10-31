@@ -6,10 +6,10 @@
 script = ExtResource("1")
 id = "metronome"
 nombre = "Metrónomo"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 10
+precision = 0
 objetivo = "user"
 meta = "unique"
+descripcion = "Mueve un dedo y estimula su cerebro para usar al azar casi cualquier movimiento."
+numero = 118
+banderas = PackedStringArray("failcopycat", "failencore", "failinstruct", "failmimic", "noassist", "nosleeptalk")

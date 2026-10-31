@@ -6,9 +6,8 @@
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/beldum_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="5"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_476g0"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
 [resource]
@@ -17,8 +16,6 @@ id = "beldum"
 numero = 374
 nombre = "Beldum"
 tipos = PackedStringArray("acero", "psiquico")
-habilidades = PackedStringArray("Cuerpo Puro")
-habilidad_oculta = "Metal Liviano"
 ps = 40
 ataque = 55
 defensa = 80
@@ -29,11 +26,24 @@ exp_base = 60
 ratio_captura = 3
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"defensa": 1}
-evoluciones = Array[Dictionary]([{"especie": "metang", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}])
+evs_otorgados = {
+"defensa": 1
+}
 evoluciona_a = "metang"
 nivel_evolucion = 20
-aprende = Array[ExtResource("2")]([SubResource("Move_0")])
+evoluciones = Array[Dictionary]([{
+"especie": "metang",
+"metodo": "nivel",
+"nivel": 20
+}])
+amistad_base = 35
+habilidades = PackedStringArray("clear_body")
+habilidad_oculta = "light_metal"
+categoria = "Pokémon Bola Hierro"
+altura = 0.6
+peso_kg = 95.2
+descripcion = "Los pulsos magnéticos de su cuerpo repelen la gravedad, lo que le permite flotar en el aire."
+aprende = Array[ExtResource("2")]([SubResource("Resource_476g0")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 35

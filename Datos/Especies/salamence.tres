@@ -22,102 +22,96 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_edge.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dragon_tail.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_e6u7q"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_fnwl7"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_ib2a8"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_qgwiv"]
+script = ExtResource("2")
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_l7nda"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_rk6mn"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_g1s6v"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_ip1fa"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_r1f0f"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_63d4j"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_sukmt"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_wgf70"]
 script = ExtResource("2")
 nivel = 30
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_2470k"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_fo3lr"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_cg0t6"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_cb8kf"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_he2i2"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_l5jt1"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_3pent"]
 script = ExtResource("2")
 nivel = 70
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_19"]
+[sub_resource type="Resource" id="Resource_kyytw"]
 script = ExtResource("2")
 nivel = 80
 movimiento = ExtResource("21")
@@ -128,8 +122,6 @@ id = "salamence"
 numero = 373
 nombre = "Salamence"
 tipos = PackedStringArray("dragon", "volador")
-habilidades = PackedStringArray("Intimidación")
-habilidad_oculta = "Autoestima"
 ps = 95
 ataque = 135
 defensa = 80
@@ -137,12 +129,18 @@ at_esp = 110
 def_esp = 80
 velocidad = 100
 exp_base = 270
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"ataque": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18"), SubResource("Move_19")])
+evs_otorgados = {
+"ataque": 3
+}
+amistad_base = 35
+habilidades = PackedStringArray("intimidate")
+habilidad_oculta = "moxie"
+categoria = "Pokémon Dragón"
+altura = 1.5
+peso_kg = 102.6
+descripcion = "Si se enfada, no hay forma de calmarlo; lo destruye todo lanzando arañazos y llamas."
+aprende = Array[ExtResource("2")]([SubResource("Resource_e6u7q"), SubResource("Resource_fnwl7"), SubResource("Resource_ib2a8"), SubResource("Resource_qgwiv"), SubResource("Resource_l7nda"), SubResource("Resource_rk6mn"), SubResource("Resource_g1s6v"), SubResource("Resource_ip1fa"), SubResource("Resource_r1f0f"), SubResource("Resource_63d4j"), SubResource("Resource_sukmt"), SubResource("Resource_wgf70"), SubResource("Resource_2470k"), SubResource("Resource_fo3lr"), SubResource("Resource_cg0t6"), SubResource("Resource_cb8kf"), SubResource("Resource_he2i2"), SubResource("Resource_l5jt1"), SubResource("Resource_3pent"), SubResource("Resource_kyytw")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 62

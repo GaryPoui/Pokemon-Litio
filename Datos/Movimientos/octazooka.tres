@@ -10,6 +10,11 @@ tipo = "agua"
 categoria = "especial"
 poder = 65
 precision = 85
-pp = 10
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-lower"
+descripcion = "Dispara tinta a la cara. Puede bajar la Precisión."
+cambios_stats = {
+"precision": -1
+}
+prob_stat = 50
+numero = 190
+banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")

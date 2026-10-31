@@ -22,97 +22,92 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sandstorm.tres" id="20"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/destiny_bond.tres" id="21"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_cxhmx"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_hu36x"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_1yetj"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_dc85i"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_qvchp"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_spul3"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_a7258"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_glab6"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_tk0ni"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_ka2nm"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_s1fkr"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_jpf2j"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_8fmxx"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_72ilm"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_ohdk0"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_wobaf"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_7skr0"]
 script = ExtResource("2")
 nivel = 59
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_jr3w1"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_q2sym"]
 script = ExtResource("2")
 nivel = 71
 movimiento = ExtResource("21")
@@ -123,8 +118,6 @@ id = "cacturne"
 numero = 332
 nombre = "Cacturne"
 tipos = PackedStringArray("planta", "siniestro")
-habilidades = PackedStringArray("Velo de Arena/Velo Arena")
-habilidad_oculta = "Absorbeagua/Absorbe Agua"
 ps = 70
 ataque = 115
 defensa = 60
@@ -133,11 +126,19 @@ def_esp = 60
 velocidad = 55
 exp_base = 166
 ratio_captura = 60
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"ataque": 1, "at_esp": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18")])
+evs_otorgados = {
+"at_esp": 1,
+"ataque": 1
+}
+amistad_base = 35
+habilidades = PackedStringArray("sand_veil")
+habilidad_oculta = "water_absorb"
+categoria = "Pokémon Espantajo"
+altura = 1.3
+peso_kg = 77.4
+descripcion = "Es un Pokémon nocturno. Busca presas agotadas por el calor diurno del desierto."
+aprende = Array[ExtResource("2")]([SubResource("Resource_cxhmx"), SubResource("Resource_hu36x"), SubResource("Resource_1yetj"), SubResource("Resource_dc85i"), SubResource("Resource_qvchp"), SubResource("Resource_spul3"), SubResource("Resource_a7258"), SubResource("Resource_glab6"), SubResource("Resource_tk0ni"), SubResource("Resource_ka2nm"), SubResource("Resource_s1fkr"), SubResource("Resource_jpf2j"), SubResource("Resource_8fmxx"), SubResource("Resource_72ilm"), SubResource("Resource_ohdk0"), SubResource("Resource_wobaf"), SubResource("Resource_7skr0"), SubResource("Resource_jr3w1"), SubResource("Resource_q2sym")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 60

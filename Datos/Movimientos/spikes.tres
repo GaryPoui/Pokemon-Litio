@@ -12,4 +12,6 @@ precision = 0
 pp = 20
 objetivo = "opponents-field"
 meta = "field-effect"
-descripcion = "Esparce púas alrededor del equipo rival que hieren a los Pokémon rivales que entran en combate. "
+descripcion = "Esparce púas alrededor del equipo rival que hieren a los Pokémon rivales que entran en combate."
+numero = 191
+banderas = PackedStringArray("metronome", "mustpressure", "nonsky", "reflectable")

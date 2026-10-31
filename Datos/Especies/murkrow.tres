@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dujt7cdaoi0wm"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_4n4bp"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_4n4bp"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="2_6y2sd"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/peck.tres" id="3_qkipp"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="4_15qvk"]
@@ -16,79 +16,79 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sucker_punch.tres" id="14_yv17j"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/torment.tres" id="15_q3jnx"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/quash.tres" id="16_yjkhi"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_a40kc"]
-[ext_resource type="Texture2D" uid="uid://i3uysl7t6w6o" path="res://Assets/Pokemones/batalla/murkrow_espalda.png" id="18_q5fci"]
-[ext_resource type="Texture2D" uid="uid://djbquhamjjyhv" path="res://Assets/Pokemones/batalla/murkrow_frente.png" id="19_7nv4n"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_a40kc"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/murkrow_espalda.png" id="18_q5fci"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/murkrow_frente.png" id="19_7nv4n"]
 
-[sub_resource type="Resource" id="Resource_cyekk"]
+[sub_resource type="Resource" id="Resource_4n4bp"]
 script = ExtResource("1_4n4bp")
 movimiento = ExtResource("2_6y2sd")
 
-[sub_resource type="Resource" id="Resource_afokd"]
+[sub_resource type="Resource" id="Resource_6y2sd"]
 script = ExtResource("1_4n4bp")
 movimiento = ExtResource("3_qkipp")
 
-[sub_resource type="Resource" id="Resource_ggxph"]
+[sub_resource type="Resource" id="Resource_qkipp"]
 script = ExtResource("1_4n4bp")
 nivel = 5
 movimiento = ExtResource("4_15qvk")
 
-[sub_resource type="Resource" id="Resource_uo7sn"]
+[sub_resource type="Resource" id="Resource_15qvk"]
 script = ExtResource("1_4n4bp")
 nivel = 11
 movimiento = ExtResource("5_uqk8m")
 
-[sub_resource type="Resource" id="Resource_uiiii"]
+[sub_resource type="Resource" id="Resource_uqk8m"]
 script = ExtResource("1_4n4bp")
 nivel = 15
 movimiento = ExtResource("6_3bd1p")
 
-[sub_resource type="Resource" id="Resource_faqj4"]
+[sub_resource type="Resource" id="Resource_3bd1p"]
 script = ExtResource("1_4n4bp")
 nivel = 21
 movimiento = ExtResource("7_8u63e")
 
-[sub_resource type="Resource" id="Resource_iitwl"]
+[sub_resource type="Resource" id="Resource_8u63e"]
 script = ExtResource("1_4n4bp")
 nivel = 25
 movimiento = ExtResource("8_elhfj")
 
-[sub_resource type="Resource" id="Resource_6nn8a"]
+[sub_resource type="Resource" id="Resource_elhfj"]
 script = ExtResource("1_4n4bp")
 nivel = 31
 movimiento = ExtResource("9_gb1kg")
 
-[sub_resource type="Resource" id="Resource_bdnhp"]
+[sub_resource type="Resource" id="Resource_gb1kg"]
 script = ExtResource("1_4n4bp")
 nivel = 35
 movimiento = ExtResource("10_xolcy")
 
-[sub_resource type="Resource" id="Resource_3orkw"]
+[sub_resource type="Resource" id="Resource_xolcy"]
 script = ExtResource("1_4n4bp")
 nivel = 41
 movimiento = ExtResource("11_brumn")
 
-[sub_resource type="Resource" id="Resource_8qdoq"]
+[sub_resource type="Resource" id="Resource_brumn"]
 script = ExtResource("1_4n4bp")
 nivel = 45
 movimiento = ExtResource("12_tmnpv")
 
-[sub_resource type="Resource" id="Resource_ayd8d"]
+[sub_resource type="Resource" id="Resource_tmnpv"]
 script = ExtResource("1_4n4bp")
 nivel = 51
 movimiento = ExtResource("13_da8qi")
 
-[sub_resource type="Resource" id="Resource_acw6o"]
+[sub_resource type="Resource" id="Resource_da8qi"]
 script = ExtResource("1_4n4bp")
 nivel = 55
 movimiento = ExtResource("14_yv17j")
 
-[sub_resource type="Resource" id="Resource_chcr7"]
+[sub_resource type="Resource" id="Resource_yv17j"]
 script = ExtResource("1_4n4bp")
 nivel = 61
 movimiento = ExtResource("15_q3jnx")
 
-[sub_resource type="Resource" id="Resource_43dy3"]
+[sub_resource type="Resource" id="Resource_q3jnx"]
 script = ExtResource("1_4n4bp")
 nivel = 65
 movimiento = ExtResource("16_yjkhi")
@@ -98,7 +98,7 @@ script = ExtResource("17_a40kc")
 id = "murkrow"
 numero = 198
 nombre = "Murkrow"
-tipos = ["siniestro", "volador"]
+tipos = PackedStringArray("siniestro", "volador")
 ps = 60
 ataque = 85
 defensa = 42
@@ -111,13 +111,21 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "velocidad": 1
 }
-aprende = Array[ExtResource("1_4n4bp")]([SubResource("Resource_cyekk"), SubResource("Resource_afokd"), SubResource("Resource_ggxph"), SubResource("Resource_uo7sn"), SubResource("Resource_uiiii"), SubResource("Resource_faqj4"), SubResource("Resource_iitwl"), SubResource("Resource_6nn8a"), SubResource("Resource_bdnhp"), SubResource("Resource_3orkw"), SubResource("Resource_8qdoq"), SubResource("Resource_ayd8d"), SubResource("Resource_acw6o"), SubResource("Resource_chcr7"), SubResource("Resource_43dy3")])
+evoluciones = Array[Dictionary]([{
+"especie": "honchkrow",
+"metodo": "piedra",
+"objeto": "dusk_stone"
+}])
+amistad_base = 35
+habilidades = PackedStringArray("insomnia", "super_luck")
+habilidad_oculta = "prankster"
+categoria = "Pokémon Oscuridad"
+altura = 0.5
+peso_kg = 2.1
+descripcion = "Esconde objetos brillantes en un lugar secreto. Meowth y Murkrow suelen saquear su escondite."
+aprende = Array[ExtResource("1_4n4bp")]([SubResource("Resource_4n4bp"), SubResource("Resource_6y2sd"), SubResource("Resource_qkipp"), SubResource("Resource_15qvk"), SubResource("Resource_uqk8m"), SubResource("Resource_3bd1p"), SubResource("Resource_8u63e"), SubResource("Resource_elhfj"), SubResource("Resource_gb1kg"), SubResource("Resource_xolcy"), SubResource("Resource_brumn"), SubResource("Resource_tmnpv"), SubResource("Resource_da8qi"), SubResource("Resource_yv17j"), SubResource("Resource_q3jnx")])
 sprite_frente = ExtResource("19_7nv4n")
 sprite_espalda = ExtResource("18_q5fci")
 cuadros_frente = 10
 cuadros_espalda = 10
 fps_sprite = 9.09
-habilidades = PackedStringArray("Insomnio", "Supersuerte/Afortunado")
-habilidad_oculta = "Timador/Bromista"
-evoluciones = Array[Dictionary]([{"especie": "honchkrow", "metodo": "piedra", "condicion": "Piedra noche"}])
-evoluciona_a = "honchkrow"

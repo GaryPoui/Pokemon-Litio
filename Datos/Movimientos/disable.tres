@@ -11,3 +11,7 @@ pp = 20
 meta = "unique"
 descripcion = "Desactiva el último movimiento del objetivo durante cuatro turnos."
 estado = "disable"
+numero = 50
+banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "reflectable")
+turnos_min = 4
+turnos_max = 4

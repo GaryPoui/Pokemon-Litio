@@ -11,3 +11,5 @@ categoria = "especial"
 poder = 100
 meta = "unique"
 descripcion = "Concentra energía psíquica para golpear al objetivo dos turnos después."
+numero = 248
+banderas = PackedStringArray("allyanim", "futuremove", "metronome")

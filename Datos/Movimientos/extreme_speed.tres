@@ -10,3 +10,5 @@ poder = 80
 pp = 5
 prioridad = 2
 descripcion = "Ataque de una velocidad extrema. Este movimiento tiene prioridad alta."
+numero = 245
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

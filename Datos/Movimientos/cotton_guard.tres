@@ -15,3 +15,5 @@ descripcion = "Cubre al Pokémon con una madeja protectora. Aumenta muchísimo l
 cambios_stats = {
 "defensa": 3
 }
+numero = 538
+banderas = PackedStringArray("metronome", "snatch")

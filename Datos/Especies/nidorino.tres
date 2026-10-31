@@ -18,67 +18,65 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/captivate.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/horn_drill.tres" id="17"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_fpulu"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_qooxi"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_2tepq"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_0r7q3"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_pdnkf"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_dvjcd"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_emi4q"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_8hfjt"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_glsta"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_eb3fa"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_y58q0"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_wmcjx"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_nvc58"]
 script = ExtResource("2")
 nivel = 58
 movimiento = ExtResource("17")
@@ -89,8 +87,6 @@ id = "nidorino"
 numero = 33
 nombre = "Nidorino"
 tipos = PackedStringArray("veneno")
-habilidades = PackedStringArray("Punto Tóxico", "Rivalidad")
-habilidad_oculta = "Entusiasmo"
 ps = 61
 ataque = 72
 defensa = 57
@@ -101,10 +97,21 @@ exp_base = 128
 ratio_captura = 120
 ratio_genero = 0
 crecimiento = "medium-slow"
-evs_otorgados = {"ataque": 2}
-evoluciones = Array[Dictionary]([{"especie": "nidoking", "metodo": "piedra", "condicion": "Piedra lunar"}])
-evoluciona_a = "nidoking"
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12")])
+evs_otorgados = {
+"ataque": 2
+}
+evoluciones = Array[Dictionary]([{
+"especie": "nidoking",
+"metodo": "piedra",
+"objeto": "moon_stone"
+}])
+habilidades = PackedStringArray("poison_point", "rivalry")
+habilidad_oculta = "hustle"
+categoria = "Pokémon Pin Veneno"
+altura = 0.9
+peso_kg = 19.5
+descripcion = "Levanta sus grandes orejas para vigilar. Si detecta algo, atacará de inmediato."
+aprende = Array[ExtResource("2")]([SubResource("Resource_fpulu"), SubResource("Resource_qooxi"), SubResource("Resource_2tepq"), SubResource("Resource_0r7q3"), SubResource("Resource_pdnkf"), SubResource("Resource_dvjcd"), SubResource("Resource_emi4q"), SubResource("Resource_8hfjt"), SubResource("Resource_glsta"), SubResource("Resource_eb3fa"), SubResource("Resource_y58q0"), SubResource("Resource_wmcjx"), SubResource("Resource_nvc58")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 49

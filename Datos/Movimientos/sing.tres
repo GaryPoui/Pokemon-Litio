@@ -12,3 +12,7 @@ pp = 15
 meta = "ailment"
 descripcion = "Cancioncilla que hace dormir profundamente al objetivo."
 estado = "sleep"
+numero = 47
+banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "reflectable", "sound")
+turnos_min = 2
+turnos_max = 4

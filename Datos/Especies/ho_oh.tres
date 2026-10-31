@@ -3,7 +3,9 @@
 [ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
 [ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ho_oh_frente.png" id="3"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/whirlwind.tres" id="3_dtad2"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ho_oh_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="4_026c4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/weather_ball.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/brave_bird.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/extrasensory.tres" id="7"]
@@ -19,72 +21,80 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/calm_mind.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sky_attack.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_dtad2"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_026c4"]
+script = ExtResource("2")
+movimiento = ExtResource("3_dtad2")
+
+[sub_resource type="Resource" id="Resource_o4ipj"]
+script = ExtResource("2")
+nivel = 9
+movimiento = ExtResource("4_026c4")
+
+[sub_resource type="Resource" id="Resource_2lowl"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_sec6e"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_qwpyv"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_tjblv"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_fucl5"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_4vobe"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_442qt"]
 script = ExtResource("2")
 nivel = 57
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_3pbkh"]
 script = ExtResource("2")
 nivel = 65
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_f8yry"]
 script = ExtResource("2")
 nivel = 71
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_uvswn"]
 script = ExtResource("2")
 nivel = 79
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_1agkk"]
 script = ExtResource("2")
 nivel = 85
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_glg25"]
 script = ExtResource("2")
 nivel = 93
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_dt61w"]
 script = ExtResource("2")
 nivel = 99
 movimiento = ExtResource("18")
@@ -95,8 +105,6 @@ id = "ho_oh"
 numero = 250
 nombre = "Ho-Oh"
 tipos = PackedStringArray("fuego", "volador")
-habilidades = PackedStringArray("Presión")
-habilidad_oculta = "Regeneración"
 ps = 106
 ataque = 130
 defensa = 90
@@ -107,9 +115,17 @@ exp_base = 306
 ratio_captura = 3
 ratio_genero = -1
 crecimiento = "slow"
-evs_otorgados = {"def_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13")])
+evs_otorgados = {
+"def_esp": 3
+}
+amistad_base = 0
+habilidades = PackedStringArray("pressure")
+habilidad_oculta = "regenerator"
+categoria = "Pokémon Arcoíris"
+altura = 3.8
+peso_kg = 199.0
+descripcion = "Cuenta la leyenda que brilla en siete colores. Dicen que deja un arcoíris tras de sí al volar."
+aprende = Array[ExtResource("2")]([SubResource("Resource_dtad2"), SubResource("Resource_026c4"), SubResource("Resource_o4ipj"), SubResource("Resource_2lowl"), SubResource("Resource_sec6e"), SubResource("Resource_qwpyv"), SubResource("Resource_tjblv"), SubResource("Resource_fucl5"), SubResource("Resource_4vobe"), SubResource("Resource_442qt"), SubResource("Resource_3pbkh"), SubResource("Resource_f8yry"), SubResource("Resource_uvswn"), SubResource("Resource_1agkk"), SubResource("Resource_glg25"), SubResource("Resource_dt61w")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 42

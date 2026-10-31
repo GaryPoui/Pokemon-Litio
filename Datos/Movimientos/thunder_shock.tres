@@ -14,3 +14,5 @@ meta = "damage-ailment"
 descripcion = "Ataque eléctrico que puede paralizar al objetivo."
 estado = "paralysis"
 prob_estado = 10
+numero = 84
+banderas = PackedStringArray("metronome", "mirror", "protect")

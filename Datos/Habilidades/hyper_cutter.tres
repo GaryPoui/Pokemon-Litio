@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_pio1r"]
+
+[resource]
+script = ExtResource("1_pio1r")
+id = "hyper_cutter"
+nombre = "Corte Fuerte"
+descripcion = "Evita que disminuya el Ataque."

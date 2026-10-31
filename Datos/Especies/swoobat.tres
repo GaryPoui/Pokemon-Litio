@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/swoobat_frente.png" id="3"]
 [ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/swoobat_espalda.png" id="4"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="4_3bfyg"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/odor_sleuth.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/assurance.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="7"]
@@ -18,77 +19,83 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/endeavor.tres" id="17"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_3bfyg"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_q1eit"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_bvvvm"]
+script = ExtResource("2")
+movimiento = ExtResource("4_3bfyg")
+
+[sub_resource type="Resource" id="Resource_imh6v"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_fg1cy"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_gnfn5"]
+script = ExtResource("2")
+nivel = 8
+movimiento = ExtResource("4_3bfyg")
+
+[sub_resource type="Resource" id="Resource_2kira"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_smi3h"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_mdwbb"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_6lxpn"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_o325c"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_u8sq7"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_8jwpn"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_gwr18"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_sw3kp"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_mp52t"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_2i3rw"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("17")
@@ -99,8 +106,6 @@ id = "swoobat"
 numero = 528
 nombre = "Swoobat"
 tipos = PackedStringArray("psiquico", "volador")
-habilidades = PackedStringArray("Ignorancia/Ignorante", "Torpeza/Zoquete")
-habilidad_oculta = "Simple"
 ps = 67
 ataque = 57
 defensa = 55
@@ -108,12 +113,16 @@ at_esp = 77
 def_esp = 55
 velocidad = 114
 exp_base = 149
-ratio_captura = 45
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14")])
+evs_otorgados = {
+"velocidad": 2
+}
+habilidades = PackedStringArray("unaware", "klutz")
+habilidad_oculta = "simple"
+categoria = "Pokémon Galante"
+altura = 0.9
+peso_kg = 10.5
+descripcion = "Cuando emite ondas ultrasónicas, que incluso pueden reventar el cemento, agita su cola con vehemencia."
+aprende = Array[ExtResource("2")]([SubResource("Resource_3bfyg"), SubResource("Resource_q1eit"), SubResource("Resource_bvvvm"), SubResource("Resource_imh6v"), SubResource("Resource_fg1cy"), SubResource("Resource_gnfn5"), SubResource("Resource_2kira"), SubResource("Resource_smi3h"), SubResource("Resource_mdwbb"), SubResource("Resource_6lxpn"), SubResource("Resource_o325c"), SubResource("Resource_u8sq7"), SubResource("Resource_8jwpn"), SubResource("Resource_gwr18"), SubResource("Resource_sw3kp"), SubResource("Resource_mp52t"), SubResource("Resource_2i3rw")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 115

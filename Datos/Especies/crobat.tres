@@ -12,7 +12,6 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="10"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/wing_attack.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confuse_ray.tres" id="12"]
-[ext_resource type="Resource" path="res://Datos/Movimientos/swift.tres" id="13"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_cutter.tres" id="14"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/acrobatics.tres" id="15"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mean_look.tres" id="16"]
@@ -20,89 +19,79 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/haze.tres" id="18"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/air_slash.tres" id="19"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_n1l56"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_hcuwn"]
+script = ExtResource("2")
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_uee4n"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
-
-[sub_resource type="Resource" id="Move_4"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_3bf48"]
 script = ExtResource("2")
-nivel = 4
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_757cf"]
+script = ExtResource("2")
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_23beo"]
 script = ExtResource("2")
-nivel = 8
+nivel = 5
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_w64pq"]
+script = ExtResource("2")
+nivel = 9
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_li54t"]
 script = ExtResource("2")
-nivel = 12
+nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_y28dp"]
 script = ExtResource("2")
-nivel = 15
+nivel = 17
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_gnwhm"]
 script = ExtResource("2")
-nivel = 19
+nivel = 21
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_66c6l"]
 script = ExtResource("2")
-nivel = 24
-movimiento = ExtResource("13")
-
-[sub_resource type="Resource" id="Move_11"]
-script = ExtResource("2")
-nivel = 28
+nivel = 27
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_7rjjo"]
 script = ExtResource("2")
 nivel = 33
-movimiento = ExtResource("15")
-
-[sub_resource type="Resource" id="Move_13"]
-script = ExtResource("2")
-nivel = 38
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_ulpyp"]
 script = ExtResource("2")
-nivel = 42
+nivel = 39
+movimiento = ExtResource("15")
+
+[sub_resource type="Resource" id="Resource_pyxu5"]
+script = ExtResource("2")
+nivel = 45
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_wahkn"]
 script = ExtResource("2")
-nivel = 47
+nivel = 51
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_gsgab"]
 script = ExtResource("2")
-nivel = 52
+nivel = 57
 movimiento = ExtResource("19")
 
 [resource]
@@ -111,8 +100,6 @@ id = "crobat"
 numero = 169
 nombre = "Crobat"
 tipos = PackedStringArray("veneno", "volador")
-habilidades = PackedStringArray("Fuerza Mental")
-habilidad_oculta = "Allanamiento"
 ps = 85
 ataque = 90
 defensa = 80
@@ -121,11 +108,16 @@ def_esp = 80
 velocidad = 130
 exp_base = 241
 ratio_captura = 90
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16")])
+evs_otorgados = {
+"velocidad": 3
+}
+habilidades = PackedStringArray("inner_focus")
+habilidad_oculta = "infiltrator"
+categoria = "Pokémon Murciélago"
+altura = 1.8
+peso_kg = 75.0
+descripcion = "Es tan silencioso cuando vuela en la oscuridad con sus cuatro alas, que cuesta percibirlo cuando se acerca."
+aprende = Array[ExtResource("2")]([SubResource("Resource_n1l56"), SubResource("Resource_hcuwn"), SubResource("Resource_uee4n"), SubResource("Resource_3bf48"), SubResource("Resource_757cf"), SubResource("Resource_23beo"), SubResource("Resource_w64pq"), SubResource("Resource_li54t"), SubResource("Resource_y28dp"), SubResource("Resource_gnwhm"), SubResource("Resource_66c6l"), SubResource("Resource_7rjjo"), SubResource("Resource_ulpyp"), SubResource("Resource_pyxu5"), SubResource("Resource_wahkn"), SubResource("Resource_gsgab")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 18

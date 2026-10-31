@@ -12,3 +12,5 @@ poder = 30
 pp = 15
 objetivo = "all-opponents"
 descripcion = "Llamas que golpean a los objetivos adyacentes. Si estos llevan bayas o ciertos objetos, se quemarán y ya no se podrán usar."
+numero = 510
+banderas = PackedStringArray("metronome", "mirror", "protect")

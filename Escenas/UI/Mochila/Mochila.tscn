@@ -40,7 +40,9 @@ texture = ExtResource("2_2da3a")
 
 [node name="Placa" type="TextureRect" parent="Pantalla" unique_id=1216245279]
 layout_mode = 0
+offset_left = -3.0
 offset_top = 4.0
+offset_right = -3.0
 offset_bottom = 4.0
 texture = ExtResource("3_7s2t4")
 
@@ -62,7 +64,7 @@ texture = ExtResource("5_d4abh")
 
 [node name="Nombre" type="Label" parent="Pantalla/Placa" unique_id=1328933456]
 layout_mode = 0
-offset_left = 5.0
+offset_left = 6.0
 offset_top = 23.0
 offset_right = 96.0
 offset_bottom = 39.0

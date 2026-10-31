@@ -5,11 +5,12 @@
 [resource]
 script = ExtResource("1")
 id = "vacuum_wave"
-nombre = "Onda vacío"
+nombre = "Onda Vacío"
 tipo = "lucha"
 categoria = "especial"
 poder = 40
-precision = 100
 pp = 30
-objetivo = "selected-pokemon"
-meta = "damage"
+prioridad = 1
+descripcion = "Gira los puños y libera una onda de vacío contra el objetivo. Este movimiento tiene prioridad alta."
+numero = 410
+banderas = PackedStringArray("metronome", "mirror", "protect")

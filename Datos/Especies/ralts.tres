@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cs1lecece2aqo"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_squrd"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_squrd"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_na4p8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="3_qlntr"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/double_team.tres" id="4_f00ws"]
@@ -16,80 +16,80 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hypnosis.tres" id="14_eq5pe"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/dream_eater.tres" id="15_31tyo"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/stored_power.tres" id="16_lwdib"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_mpwaj"]
-[ext_resource type="Texture2D" uid="uid://bkoi7kqosm1am" path="res://Assets/Pokemones/batalla/ralts_espalda.png" id="18_fapgs"]
-[ext_resource type="Texture2D" uid="uid://davjbl3aop6hn" path="res://Assets/Pokemones/batalla/ralts_frente.png" id="19_ho4rf"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_mpwaj"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ralts_espalda.png" id="18_fapgs"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/ralts_frente.png" id="19_ho4rf"]
 
-[sub_resource type="Resource" id="Resource_7x3l2"]
+[sub_resource type="Resource" id="Resource_squrd"]
 script = ExtResource("1_squrd")
 movimiento = ExtResource("2_na4p8")
 
-[sub_resource type="Resource" id="Resource_famq8"]
+[sub_resource type="Resource" id="Resource_na4p8"]
 script = ExtResource("1_squrd")
 nivel = 6
 movimiento = ExtResource("3_qlntr")
 
-[sub_resource type="Resource" id="Resource_eq5ga"]
+[sub_resource type="Resource" id="Resource_qlntr"]
 script = ExtResource("1_squrd")
 nivel = 10
 movimiento = ExtResource("4_f00ws")
 
-[sub_resource type="Resource" id="Resource_pluul"]
+[sub_resource type="Resource" id="Resource_f00ws"]
 script = ExtResource("1_squrd")
 nivel = 12
 movimiento = ExtResource("5_4bt77")
 
-[sub_resource type="Resource" id="Resource_qb84p"]
+[sub_resource type="Resource" id="Resource_4bt77"]
 script = ExtResource("1_squrd")
 nivel = 17
 movimiento = ExtResource("6_dxgen")
 
-[sub_resource type="Resource" id="Resource_b5apx"]
+[sub_resource type="Resource" id="Resource_dxgen"]
 script = ExtResource("1_squrd")
 nivel = 21
 movimiento = ExtResource("7_u4vi2")
 
-[sub_resource type="Resource" id="Resource_otumg"]
+[sub_resource type="Resource" id="Resource_u4vi2"]
 script = ExtResource("1_squrd")
 nivel = 23
 movimiento = ExtResource("8_kf7w3")
 
-[sub_resource type="Resource" id="Resource_ptjkg"]
+[sub_resource type="Resource" id="Resource_kf7w3"]
 script = ExtResource("1_squrd")
 nivel = 28
 movimiento = ExtResource("9_u0j5k")
 
-[sub_resource type="Resource" id="Resource_lrunb"]
+[sub_resource type="Resource" id="Resource_u0j5k"]
 script = ExtResource("1_squrd")
 nivel = 32
 movimiento = ExtResource("10_gmjnc")
 
-[sub_resource type="Resource" id="Resource_aqlnw"]
+[sub_resource type="Resource" id="Resource_gmjnc"]
 script = ExtResource("1_squrd")
 nivel = 34
 movimiento = ExtResource("11_gsb58")
 
-[sub_resource type="Resource" id="Resource_c1qsn"]
+[sub_resource type="Resource" id="Resource_gsb58"]
 script = ExtResource("1_squrd")
 nivel = 39
 movimiento = ExtResource("12_7djgb")
 
-[sub_resource type="Resource" id="Resource_u6cg8"]
+[sub_resource type="Resource" id="Resource_7djgb"]
 script = ExtResource("1_squrd")
 nivel = 43
 movimiento = ExtResource("13_hvcu4")
 
-[sub_resource type="Resource" id="Resource_plj4b"]
+[sub_resource type="Resource" id="Resource_hvcu4"]
 script = ExtResource("1_squrd")
 nivel = 45
 movimiento = ExtResource("14_eq5pe")
 
-[sub_resource type="Resource" id="Resource_pck6b"]
+[sub_resource type="Resource" id="Resource_eq5pe"]
 script = ExtResource("1_squrd")
 nivel = 50
 movimiento = ExtResource("15_31tyo")
 
-[sub_resource type="Resource" id="Resource_6eonf"]
+[sub_resource type="Resource" id="Resource_31tyo"]
 script = ExtResource("1_squrd")
 nivel = 54
 movimiento = ExtResource("16_lwdib")
@@ -99,7 +99,7 @@ script = ExtResource("17_mpwaj")
 id = "ralts"
 numero = 280
 nombre = "Ralts"
-tipos = ["psiquico"]
+tipos = PackedStringArray("psiquico")
 ps = 28
 ataque = 25
 defensa = 25
@@ -114,12 +114,21 @@ evs_otorgados = {
 }
 evoluciona_a = "kirlia"
 nivel_evolucion = 20
-aprende = Array[ExtResource("1_squrd")]([SubResource("Resource_7x3l2"), SubResource("Resource_famq8"), SubResource("Resource_eq5ga"), SubResource("Resource_pluul"), SubResource("Resource_qb84p"), SubResource("Resource_b5apx"), SubResource("Resource_otumg"), SubResource("Resource_ptjkg"), SubResource("Resource_lrunb"), SubResource("Resource_aqlnw"), SubResource("Resource_c1qsn"), SubResource("Resource_u6cg8"), SubResource("Resource_plj4b"), SubResource("Resource_pck6b"), SubResource("Resource_6eonf")])
+evoluciones = Array[Dictionary]([{
+"especie": "kirlia",
+"metodo": "nivel",
+"nivel": 20
+}])
+amistad_base = 35
+habilidades = PackedStringArray("synchronize", "trace")
+habilidad_oculta = "telepathy"
+categoria = "Pokémon Sensible"
+altura = 0.4
+peso_kg = 6.6
+descripcion = "Si sus cuernos perciben emociones positivas de personas o Pokémon, su cuerpo se calienta un poco."
+aprende = Array[ExtResource("1_squrd")]([SubResource("Resource_squrd"), SubResource("Resource_na4p8"), SubResource("Resource_qlntr"), SubResource("Resource_f00ws"), SubResource("Resource_4bt77"), SubResource("Resource_dxgen"), SubResource("Resource_u4vi2"), SubResource("Resource_kf7w3"), SubResource("Resource_u0j5k"), SubResource("Resource_gmjnc"), SubResource("Resource_gsb58"), SubResource("Resource_7djgb"), SubResource("Resource_hvcu4"), SubResource("Resource_eq5pe"), SubResource("Resource_31tyo")])
 sprite_frente = ExtResource("19_ho4rf")
 sprite_espalda = ExtResource("18_fapgs")
 cuadros_frente = 13
 cuadros_espalda = 13
 fps_sprite = 8.12
-habilidades = PackedStringArray("Sincronía", "Calco")
-habilidad_oculta = "Telepatía"
-evoluciones = Array[Dictionary]([{"especie": "kirlia", "metodo": "nivel", "condicion": "Nivel 20", "nivel": 20}])

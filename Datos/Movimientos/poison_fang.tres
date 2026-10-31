@@ -13,3 +13,5 @@ meta = "damage-ailment"
 descripcion = "Colmillos tóxicos que pueden envenenar gravemente al objetivo."
 estado = "poison"
 prob_estado = 50
+numero = 305
+banderas = PackedStringArray("bite", "contact", "metronome", "mirror", "protect")

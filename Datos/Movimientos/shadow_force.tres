@@ -5,11 +5,10 @@
 [resource]
 script = ExtResource("1")
 id = "shadow_force"
-nombre = "Golpe umbrío"
+nombre = "Golpe Umbrío"
 tipo = "fantasma"
-categoria = "fisico"
 poder = 120
-precision = 100
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "En el primer turno, desaparece. En el segundo, golpea al objetivo aunque se esté protegiendo."
+numero = 467
+banderas = PackedStringArray("charge", "contact", "failinstruct", "metronome", "mirror", "noassist", "nosleeptalk")

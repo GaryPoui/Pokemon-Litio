@@ -19,82 +19,78 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/me_first.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_cmjfu"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_qoh33"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
+movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_t3jif"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_1q8rl"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_ql1f0"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_imgb4"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_28hpf"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_unnwi"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ee803"]
 script = ExtResource("2")
 nivel = 21
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_rmco6"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_tcjdn"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_hmeix"]
 script = ExtResource("2")
 nivel = 36
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_q202k"]
 script = ExtResource("2")
 nivel = 42
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_atigk"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_lqjmp"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_8wob1"]
 script = ExtResource("2")
 nivel = 56
 movimiento = ExtResource("18")
@@ -105,8 +101,6 @@ id = "furret"
 numero = 162
 nombre = "Furret"
 tipos = PackedStringArray("normal")
-habilidades = PackedStringArray("Fuga", "Perspicacia/Vista Lince")
-habilidad_oculta = "Inspección/Cacheo"
 ps = 85
 ataque = 76
 defensa = 64
@@ -115,11 +109,16 @@ def_esp = 55
 velocidad = 90
 exp_base = 145
 ratio_captura = 90
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"velocidad": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"velocidad": 2
+}
+habilidades = PackedStringArray("run_away", "keen_eye")
+habilidad_oculta = "frisk"
+categoria = "Pokémon Alargado"
+altura = 1.8
+peso_kg = 32.5
+descripcion = "Acurruca a sus crías para que duerman. Acorrala a los enemigos con su enorme velocidad."
+aprende = Array[ExtResource("2")]([SubResource("Resource_cmjfu"), SubResource("Resource_qoh33"), SubResource("Resource_t3jif"), SubResource("Resource_1q8rl"), SubResource("Resource_ql1f0"), SubResource("Resource_imgb4"), SubResource("Resource_28hpf"), SubResource("Resource_unnwi"), SubResource("Resource_ee803"), SubResource("Resource_rmco6"), SubResource("Resource_tcjdn"), SubResource("Resource_hmeix"), SubResource("Resource_q202k"), SubResource("Resource_atigk"), SubResource("Resource_lqjmp"), SubResource("Resource_8wob1")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 55

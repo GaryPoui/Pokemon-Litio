@@ -19,82 +19,78 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/wring_out.tres" id="17"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/water_spout.tres" id="18"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_8rvnx"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_r7sxs"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_pkfag"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_w3h3t"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_jxs1y"]
 script = ExtResource("2")
 nivel = 5
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_fpoxm"]
 script = ExtResource("2")
 nivel = 9
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_5ae3l"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_q15st"]
 script = ExtResource("2")
 nivel = 17
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_ql7p1"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_vaeo3"]
 script = ExtResource("2")
 nivel = 27
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_goahi"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_dd8du"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_bp188"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_nuhvp"]
 script = ExtResource("2")
 nivel = 53
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_vxewu"]
 script = ExtResource("2")
 nivel = 61
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_4obto"]
 script = ExtResource("2")
 nivel = 69
 movimiento = ExtResource("18")
@@ -105,8 +101,6 @@ id = "jellicent"
 numero = 593
 nombre = "Jellicent"
 tipos = PackedStringArray("agua", "fantasma")
-habilidades = PackedStringArray("Absorbeagua/Absorbe Agua", "Cuerpo Maldito")
-habilidad_oculta = "Humedad"
 ps = 100
 ataque = 60
 defensa = 70
@@ -115,11 +109,16 @@ def_esp = 105
 velocidad = 60
 exp_base = 168
 ratio_captura = 60
-ratio_genero = 4
-crecimiento = "medium"
-evs_otorgados = {"def_esp": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15")])
+evs_otorgados = {
+"def_esp": 2
+}
+habilidades = PackedStringArray("water_absorb", "cursed_body")
+habilidad_oculta = "damp"
+categoria = "Pokémon Ingrávido"
+altura = 2.2
+peso_kg = 135.0
+descripcion = "Su cuerpo se compone de agua salada. Dicen que ha construido un palacio en el fondo del mar con restos de barcos."
+aprende = Array[ExtResource("2")]([SubResource("Resource_8rvnx"), SubResource("Resource_r7sxs"), SubResource("Resource_pkfag"), SubResource("Resource_w3h3t"), SubResource("Resource_jxs1y"), SubResource("Resource_fpoxm"), SubResource("Resource_5ae3l"), SubResource("Resource_q15st"), SubResource("Resource_ql7p1"), SubResource("Resource_vaeo3"), SubResource("Resource_goahi"), SubResource("Resource_dd8du"), SubResource("Resource_bp188"), SubResource("Resource_nuhvp"), SubResource("Resource_vxewu"), SubResource("Resource_4obto")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 69

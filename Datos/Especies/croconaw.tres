@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bema76nnis7kq"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_g315f"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_g315f"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_3efdl"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="3_rccxi"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/water_gun.tres" id="4_gq3pg"]
@@ -17,88 +17,88 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/aqua_tail.tres" id="15_1nyot"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/superpower.tres" id="16_cbi6s"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="17_pma6x"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_a2d0u"]
-[ext_resource type="Texture2D" uid="uid://c1rcrblfovsso" path="res://Assets/Pokemones/batalla/croconaw_espalda.png" id="19_xcid6"]
-[ext_resource type="Texture2D" uid="uid://lsi4aafps23c" path="res://Assets/Pokemones/batalla/croconaw_frente.png" id="20_8uu8j"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_a2d0u"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/croconaw_espalda.png" id="19_xcid6"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/croconaw_frente.png" id="20_8uu8j"]
 
-[sub_resource type="Resource" id="Resource_w061b"]
+[sub_resource type="Resource" id="Resource_g315f"]
 script = ExtResource("1_g315f")
 movimiento = ExtResource("2_3efdl")
 
-[sub_resource type="Resource" id="Resource_bjjpk"]
+[sub_resource type="Resource" id="Resource_3efdl"]
 script = ExtResource("1_g315f")
 movimiento = ExtResource("3_rccxi")
 
-[sub_resource type="Resource" id="Resource_v74fr"]
+[sub_resource type="Resource" id="Resource_rccxi"]
 script = ExtResource("1_g315f")
 movimiento = ExtResource("4_gq3pg")
 
-[sub_resource type="Resource" id="Resource_r5slf"]
+[sub_resource type="Resource" id="Resource_gq3pg"]
 script = ExtResource("1_g315f")
 nivel = 6
 movimiento = ExtResource("4_gq3pg")
 
-[sub_resource type="Resource" id="Resource_d6m6k"]
+[sub_resource type="Resource" id="Resource_j2riu"]
 script = ExtResource("1_g315f")
 nivel = 8
 movimiento = ExtResource("5_j2riu")
 
-[sub_resource type="Resource" id="Resource_vajju"]
+[sub_resource type="Resource" id="Resource_h7eje"]
 script = ExtResource("1_g315f")
 nivel = 13
 movimiento = ExtResource("6_h7eje")
 
-[sub_resource type="Resource" id="Resource_m528l"]
+[sub_resource type="Resource" id="Resource_rd74x"]
 script = ExtResource("1_g315f")
 nivel = 15
 movimiento = ExtResource("7_rd74x")
 
-[sub_resource type="Resource" id="Resource_kdia7"]
+[sub_resource type="Resource" id="Resource_qfrl2"]
 script = ExtResource("1_g315f")
 nivel = 21
 movimiento = ExtResource("8_qfrl2")
 
-[sub_resource type="Resource" id="Resource_17pc0"]
+[sub_resource type="Resource" id="Resource_ho4lk"]
 script = ExtResource("1_g315f")
 nivel = 24
 movimiento = ExtResource("9_ho4lk")
 
-[sub_resource type="Resource" id="Resource_lb1s7"]
+[sub_resource type="Resource" id="Resource_6hos0"]
 script = ExtResource("1_g315f")
 nivel = 30
 movimiento = ExtResource("10_6hos0")
 
-[sub_resource type="Resource" id="Resource_a8wf0"]
+[sub_resource type="Resource" id="Resource_68wof"]
 script = ExtResource("1_g315f")
 nivel = 33
 movimiento = ExtResource("11_68wof")
 
-[sub_resource type="Resource" id="Resource_j4emk"]
+[sub_resource type="Resource" id="Resource_yvlwk"]
 script = ExtResource("1_g315f")
 nivel = 39
 movimiento = ExtResource("12_yvlwk")
 
-[sub_resource type="Resource" id="Resource_rt2tl"]
+[sub_resource type="Resource" id="Resource_2tpnc"]
 script = ExtResource("1_g315f")
 nivel = 42
 movimiento = ExtResource("13_2tpnc")
 
-[sub_resource type="Resource" id="Resource_i3a6e"]
+[sub_resource type="Resource" id="Resource_bjk5o"]
 script = ExtResource("1_g315f")
 nivel = 48
 movimiento = ExtResource("14_bjk5o")
 
-[sub_resource type="Resource" id="Resource_fxrt2"]
+[sub_resource type="Resource" id="Resource_1nyot"]
 script = ExtResource("1_g315f")
 nivel = 51
 movimiento = ExtResource("15_1nyot")
 
-[sub_resource type="Resource" id="Resource_ol0r7"]
+[sub_resource type="Resource" id="Resource_cbi6s"]
 script = ExtResource("1_g315f")
 nivel = 57
 movimiento = ExtResource("16_cbi6s")
 
-[sub_resource type="Resource" id="Resource_ckdqn"]
+[sub_resource type="Resource" id="Resource_pma6x"]
 script = ExtResource("1_g315f")
 nivel = 60
 movimiento = ExtResource("17_pma6x")
@@ -108,7 +108,7 @@ script = ExtResource("18_a2d0u")
 id = "croconaw"
 numero = 159
 nombre = "Croconaw"
-tipos = ["agua"]
+tipos = PackedStringArray("agua")
 ps = 65
 ataque = 80
 defensa = 80
@@ -124,11 +124,19 @@ evs_otorgados = {
 }
 evoluciona_a = "feraligatr"
 nivel_evolucion = 30
-aprende = Array[ExtResource("1_g315f")]([SubResource("Resource_w061b"), SubResource("Resource_bjjpk"), SubResource("Resource_v74fr"), SubResource("Resource_r5slf"), SubResource("Resource_d6m6k"), SubResource("Resource_vajju"), SubResource("Resource_m528l"), SubResource("Resource_kdia7"), SubResource("Resource_17pc0"), SubResource("Resource_lb1s7"), SubResource("Resource_a8wf0"), SubResource("Resource_j4emk"), SubResource("Resource_rt2tl"), SubResource("Resource_i3a6e"), SubResource("Resource_fxrt2"), SubResource("Resource_ol0r7"), SubResource("Resource_ckdqn")])
+evoluciones = Array[Dictionary]([{
+"especie": "feraligatr",
+"metodo": "nivel",
+"nivel": 30
+}])
+habilidades = PackedStringArray("torrent")
+habilidad_oculta = "sheer_force"
+categoria = "Pokémon Fauces"
+altura = 1.1
+peso_kg = 25.0
+descripcion = "Si pierde un colmillo, le crecerá otro en su lugar. Siempre tiene 48 colmillos en su boca."
+aprende = Array[ExtResource("1_g315f")]([SubResource("Resource_g315f"), SubResource("Resource_3efdl"), SubResource("Resource_rccxi"), SubResource("Resource_gq3pg"), SubResource("Resource_j2riu"), SubResource("Resource_h7eje"), SubResource("Resource_rd74x"), SubResource("Resource_qfrl2"), SubResource("Resource_ho4lk"), SubResource("Resource_6hos0"), SubResource("Resource_68wof"), SubResource("Resource_yvlwk"), SubResource("Resource_2tpnc"), SubResource("Resource_bjk5o"), SubResource("Resource_1nyot"), SubResource("Resource_cbi6s"), SubResource("Resource_pma6x")])
 sprite_frente = ExtResource("20_8uu8j")
 sprite_espalda = ExtResource("19_xcid6")
 cuadros_frente = 90
 cuadros_espalda = 96
-habilidades = PackedStringArray("Torrente")
-habilidad_oculta = "Potencia Bruta"
-evoluciones = Array[Dictionary]([{"especie": "feraligatr", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])

@@ -9,24 +9,20 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/confuse_ray.tres" id="7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/smog.tres" id="8"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_h1lwc"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_hd677"]
 script = ExtResource("2")
-nivel = 1
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_paogk"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_47imi"]
+script = ExtResource("2")
 movimiento = ExtResource("8")
 
 [resource]
@@ -35,8 +31,6 @@ id = "chandelure"
 numero = 609
 nombre = "Chandelure"
 tipos = PackedStringArray("fantasma", "fuego")
-habilidades = PackedStringArray("Absorbefuego/Absorbe Fuego", "Cuerpo de Fuego/Cuerpo Llama")
-habilidad_oculta = "Sombra Trampa"
 ps = 60
 ataque = 55
 defensa = 90
@@ -44,14 +38,18 @@ at_esp = 145
 def_esp = 90
 velocidad = 80
 exp_base = 234
-ratio_captura = 45
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"at_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3")])
+evs_otorgados = {
+"at_esp": 3
+}
+habilidades = PackedStringArray("flash_fire", "flame_body")
+habilidad_oculta = "shadow_tag"
+categoria = "Pokémon Señuelo"
+altura = 1.0
+peso_kg = 34.3
+descripcion = "Sus llamas absorben el alma del enemigo y la abrasan, dejando solo su cuerpo inerte."
+aprende = Array[ExtResource("2")]([SubResource("Resource_h1lwc"), SubResource("Resource_hd677"), SubResource("Resource_paogk"), SubResource("Resource_47imi")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 84
 cuadros_espalda = 84
-fps_sprite = 10.0

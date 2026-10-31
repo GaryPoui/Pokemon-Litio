@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_cp6k3"]
+
+[resource]
+script = ExtResource("1_cp6k3")
+id = "unaware"
+nombre = "Ignorante"
+descripcion = "No tiene en cuenta las mejoras en las características del rival."

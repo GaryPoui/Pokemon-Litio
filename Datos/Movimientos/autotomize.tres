@@ -16,3 +16,5 @@ descripcion = "El usuario se desprende de partes prescindibles de su cuerpo para
 cambios_stats = {
 "velocidad": 2
 }
+numero = 475
+banderas = PackedStringArray("metronome", "snatch")

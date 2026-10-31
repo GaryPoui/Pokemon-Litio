@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cmj6rglyeerhh"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_51a8v"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_51a8v"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_eimfm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="3_bgtmj"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="4_qqg0y"]
@@ -17,84 +17,84 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/nasty_plot.tres" id="15_qy3ab"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/imprison.tres" id="16_lgjj7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/night_daze.tres" id="17_uda8o"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_3l8u1"]
-[ext_resource type="Texture2D" uid="uid://dvuc3sqw1ra15" path="res://Assets/Pokemones/batalla/zorua_espalda.png" id="19_i7b25"]
-[ext_resource type="Texture2D" uid="uid://dv7yvmfmy5er6" path="res://Assets/Pokemones/batalla/zorua_frente.png" id="20_xlpn5"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_3l8u1"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/zorua_espalda.png" id="19_i7b25"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/zorua_frente.png" id="20_xlpn5"]
 
-[sub_resource type="Resource" id="Resource_wxoxq"]
+[sub_resource type="Resource" id="Resource_51a8v"]
 script = ExtResource("1_51a8v")
 movimiento = ExtResource("2_eimfm")
 
-[sub_resource type="Resource" id="Resource_iyh6v"]
+[sub_resource type="Resource" id="Resource_eimfm"]
 script = ExtResource("1_51a8v")
 movimiento = ExtResource("3_bgtmj")
 
-[sub_resource type="Resource" id="Resource_0ugnn"]
+[sub_resource type="Resource" id="Resource_bgtmj"]
 script = ExtResource("1_51a8v")
 nivel = 5
 movimiento = ExtResource("4_qqg0y")
 
-[sub_resource type="Resource" id="Resource_36qax"]
+[sub_resource type="Resource" id="Resource_qqg0y"]
 script = ExtResource("1_51a8v")
 nivel = 9
 movimiento = ExtResource("5_47b8r")
 
-[sub_resource type="Resource" id="Resource_mdpxi"]
+[sub_resource type="Resource" id="Resource_47b8r"]
 script = ExtResource("1_51a8v")
 nivel = 13
 movimiento = ExtResource("6_wju7l")
 
-[sub_resource type="Resource" id="Resource_kayxy"]
+[sub_resource type="Resource" id="Resource_wju7l"]
 script = ExtResource("1_51a8v")
 nivel = 17
 movimiento = ExtResource("7_hgqkg")
 
-[sub_resource type="Resource" id="Resource_qvi5q"]
+[sub_resource type="Resource" id="Resource_hgqkg"]
 script = ExtResource("1_51a8v")
 nivel = 21
 movimiento = ExtResource("8_p0ton")
 
-[sub_resource type="Resource" id="Resource_ryc87"]
+[sub_resource type="Resource" id="Resource_p0ton"]
 script = ExtResource("1_51a8v")
 nivel = 25
 movimiento = ExtResource("9_4m0yw")
 
-[sub_resource type="Resource" id="Resource_mcxja"]
+[sub_resource type="Resource" id="Resource_4m0yw"]
 script = ExtResource("1_51a8v")
 nivel = 29
 movimiento = ExtResource("10_g00r0")
 
-[sub_resource type="Resource" id="Resource_u75fp"]
+[sub_resource type="Resource" id="Resource_g00r0"]
 script = ExtResource("1_51a8v")
 nivel = 33
 movimiento = ExtResource("11_kqjnc")
 
-[sub_resource type="Resource" id="Resource_4gvp3"]
+[sub_resource type="Resource" id="Resource_kqjnc"]
 script = ExtResource("1_51a8v")
 nivel = 37
 movimiento = ExtResource("12_4c6e1")
 
-[sub_resource type="Resource" id="Resource_gr2gg"]
+[sub_resource type="Resource" id="Resource_4c6e1"]
 script = ExtResource("1_51a8v")
 nivel = 41
 movimiento = ExtResource("13_awlng")
 
-[sub_resource type="Resource" id="Resource_bmr43"]
+[sub_resource type="Resource" id="Resource_awlng"]
 script = ExtResource("1_51a8v")
 nivel = 45
 movimiento = ExtResource("14_prbl6")
 
-[sub_resource type="Resource" id="Resource_kfl7q"]
+[sub_resource type="Resource" id="Resource_prbl6"]
 script = ExtResource("1_51a8v")
 nivel = 49
 movimiento = ExtResource("15_qy3ab")
 
-[sub_resource type="Resource" id="Resource_3j33x"]
+[sub_resource type="Resource" id="Resource_qy3ab"]
 script = ExtResource("1_51a8v")
 nivel = 53
 movimiento = ExtResource("16_lgjj7")
 
-[sub_resource type="Resource" id="Resource_pwtci"]
+[sub_resource type="Resource" id="Resource_lgjj7"]
 script = ExtResource("1_51a8v")
 nivel = 57
 movimiento = ExtResource("17_uda8o")
@@ -104,7 +104,7 @@ script = ExtResource("18_3l8u1")
 id = "zorua"
 numero = 570
 nombre = "Zorua"
-tipos = ["siniestro"]
+tipos = PackedStringArray("siniestro")
 ps = 40
 ataque = 65
 defensa = 40
@@ -120,12 +120,19 @@ evs_otorgados = {
 }
 evoluciona_a = "zoroark"
 nivel_evolucion = 30
-aprende = Array[ExtResource("1_51a8v")]([SubResource("Resource_wxoxq"), SubResource("Resource_iyh6v"), SubResource("Resource_0ugnn"), SubResource("Resource_36qax"), SubResource("Resource_mdpxi"), SubResource("Resource_kayxy"), SubResource("Resource_qvi5q"), SubResource("Resource_ryc87"), SubResource("Resource_mcxja"), SubResource("Resource_u75fp"), SubResource("Resource_4gvp3"), SubResource("Resource_gr2gg"), SubResource("Resource_bmr43"), SubResource("Resource_kfl7q"), SubResource("Resource_3j33x"), SubResource("Resource_pwtci")])
+evoluciones = Array[Dictionary]([{
+"especie": "zoroark",
+"metodo": "nivel",
+"nivel": 30
+}])
+habilidades = PackedStringArray("illusion")
+categoria = "Pokémon Zorro Pillo"
+altura = 0.7
+peso_kg = 12.5
+descripcion = "Adopta la apariencia de su enemigo para engañarlo vilmente y aprovecha su estupor para poner tierra por medio."
+aprende = Array[ExtResource("1_51a8v")]([SubResource("Resource_51a8v"), SubResource("Resource_eimfm"), SubResource("Resource_bgtmj"), SubResource("Resource_qqg0y"), SubResource("Resource_47b8r"), SubResource("Resource_wju7l"), SubResource("Resource_hgqkg"), SubResource("Resource_p0ton"), SubResource("Resource_4m0yw"), SubResource("Resource_g00r0"), SubResource("Resource_kqjnc"), SubResource("Resource_4c6e1"), SubResource("Resource_awlng"), SubResource("Resource_prbl6"), SubResource("Resource_qy3ab"), SubResource("Resource_lgjj7")])
 sprite_frente = ExtResource("20_xlpn5")
 sprite_espalda = ExtResource("19_i7b25")
 cuadros_frente = 69
 cuadros_espalda = 69
 fps_sprite = 11.08
-habilidades = PackedStringArray("Ilusión")
-habilidad_oculta = ""
-evoluciones = Array[Dictionary]([{"especie": "zoroark", "metodo": "nivel", "condicion": "Nivel 30", "nivel": 30}])

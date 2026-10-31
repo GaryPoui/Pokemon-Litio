@@ -5,11 +5,12 @@
 [resource]
 script = ExtResource("1")
 id = "lunar_dance"
-nombre = "Danza lunar"
+nombre = "Danza Lunar"
 tipo = "psiquico"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 10
+precision = 0
 objetivo = "user"
 meta = "unique"
+descripcion = "El usuario se debilita, pero el Pokémon que lo sustituye recupera su estado, los PS y los PP."
+numero = 461
+banderas = PackedStringArray("dance", "heal", "metronome", "snatch")

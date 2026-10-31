@@ -6,10 +6,7 @@
 script = ExtResource("1")
 id = "crush_grip"
 nombre = "Agarrón"
-tipo = "normal"
-categoria = "fisico"
-poder = 0
-precision = 100
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Estruja al objetivo con gran fuerza. Cuantos más PS le queden al objetivo, más fuerte será el ataque."
+numero = 462
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

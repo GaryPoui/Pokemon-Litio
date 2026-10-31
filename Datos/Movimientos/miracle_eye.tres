@@ -13,3 +13,5 @@ pp = 40
 meta = "ailment"
 descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
 estado = "no-type-immunity"
+numero = 357
+banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "reflectable")

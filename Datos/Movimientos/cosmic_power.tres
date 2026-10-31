@@ -5,11 +5,17 @@
 [resource]
 script = ExtResource("1")
 id = "cosmic_power"
-nombre = "Masa cósmica"
+nombre = "Masa Cósmica"
 tipo = "psiquico"
 categoria = "estado"
-poder = 0
-precision = 100
+precision = 0
 pp = 20
 objetivo = "user"
-meta = "unique"
+meta = "net-good-stats"
+descripcion = "Sube la Defensa y la Defensa Especial propias con energía mística."
+cambios_stats = {
+"def_esp": 1,
+"defensa": 1
+}
+numero = 322
+banderas = PackedStringArray("metronome", "snatch")

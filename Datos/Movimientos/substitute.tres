@@ -6,10 +6,10 @@
 script = ExtResource("1")
 id = "substitute"
 nombre = "Sustituto"
-tipo = "normal"
 categoria = "estado"
-poder = 0
-precision = 100
-pp = 10
+precision = 0
 objetivo = "user"
 meta = "unique"
+descripcion = "Utiliza parte de los PS propios para crear un sustituto que actúa como señuelo."
+numero = 164
+banderas = PackedStringArray("metronome", "nonsky", "snatch")

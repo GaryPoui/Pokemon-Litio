@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_j5j3u"]
+
+[resource]
+script = ExtResource("1_j5j3u")
+id = "cut"
+nombre = "Corte"
+poder = 50
+precision = 95
+pp = 30
+descripcion = "Corta al adversario con garras, guadañas, etc."
+numero = 15
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "slicing")

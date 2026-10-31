@@ -5,11 +5,20 @@
 [resource]
 script = ExtResource("1")
 id = "ancient_power"
-nombre = "Poder pasado"
+nombre = "Poder Pasado"
 tipo = "roca"
 categoria = "especial"
 poder = 60
-precision = 100
 pp = 5
-objetivo = "selected-pokemon"
-meta = "damage"
+meta = "damage-raise"
+descripcion = "Ataque prehistórico que puede subir todas las características."
+cambios_stats = {
+"at_esp": 1,
+"ataque": 1,
+"def_esp": 1,
+"defensa": 1,
+"velocidad": 1
+}
+prob_stat = 10
+numero = 246
+banderas = PackedStringArray("metronome", "mirror", "protect")

@@ -13,42 +13,37 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/spikes.tres" id="11"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/icicle_crash.tres" id="12"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_bxg3d"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_qfm1x"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_kk5ga"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("8")
+movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_25bqh"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_3pfol"]
+script = ExtResource("2")
+movimiento = ExtResource("8")
+
+[sub_resource type="Resource" id="Resource_bs5o4"]
 script = ExtResource("2")
 nivel = 13
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_nmwqc"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_deaq6"]
 script = ExtResource("2")
 nivel = 52
 movimiento = ExtResource("12")
@@ -59,9 +54,6 @@ id = "cloyster"
 numero = 91
 nombre = "Cloyster"
 tipos = PackedStringArray("agua", "hielo")
-habilidades = PackedStringArray("Caparazón", "Encadenado")
-habilidad_oculta = "Funda"
-ps = 50
 ataque = 95
 defensa = 180
 at_esp = 85
@@ -69,13 +61,18 @@ def_esp = 45
 velocidad = 70
 exp_base = 184
 ratio_captura = 60
-ratio_genero = 4
 crecimiento = "slow"
-evs_otorgados = {"defensa": 2}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7")])
+evs_otorgados = {
+"defensa": 2
+}
+habilidades = PackedStringArray("shell_armor", "skill_link")
+habilidad_oculta = "overcoat"
+categoria = "Pokémon Bivalvo"
+altura = 1.5
+peso_kg = 132.5
+descripcion = "A los Cloyster que viven en las fuertes corrientes marinas les crecen largas y afiladas púas en la concha."
+aprende = Array[ExtResource("2")]([SubResource("Resource_bxg3d"), SubResource("Resource_qfm1x"), SubResource("Resource_kk5ga"), SubResource("Resource_25bqh"), SubResource("Resource_3pfol"), SubResource("Resource_bs5o4"), SubResource("Resource_nmwqc"), SubResource("Resource_deaq6")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 17
 cuadros_espalda = 17
-fps_sprite = 10.0

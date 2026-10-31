@@ -14,3 +14,7 @@ meta = "damage-ailment"
 descripcion = "Golpea al objetivo con un fuerte torbellino que envuelve al rival y puede confundirlo."
 estado = "confusion"
 prob_estado = 30
+numero = 542
+banderas = PackedStringArray("distance", "metronome", "mirror", "protect", "wind")
+turnos_min = 2
+turnos_max = 5

@@ -16,3 +16,5 @@ meta = "damage-ailment"
 descripcion = "Tormenta de hielo que puede llegar a congelar."
 estado = "freeze"
 prob_estado = 10
+numero = 59
+banderas = PackedStringArray("metronome", "mirror", "protect", "wind")

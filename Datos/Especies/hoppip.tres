@@ -23,92 +23,91 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/bounce.tres" id="21"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/memento.tres" id="22"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_rs8go"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_1y53y"]
 script = ExtResource("2")
 nivel = 4
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_gsyur"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_5sjlh"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_wkgm3"]
 script = ExtResource("2")
 nivel = 12
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_0e6bm"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_jmddr"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_1dxsh"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_4kheg"]
 script = ExtResource("2")
 nivel = 22
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_dtdjn"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_syg7x"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_k4gfu"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_ho23f"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_b80wq"]
 script = ExtResource("2")
 nivel = 37
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_pjaw6"]
 script = ExtResource("2")
 nivel = 40
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_xt57b"]
 script = ExtResource("2")
 nivel = 43
 movimiento = ExtResource("20")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_jbkgl"]
 script = ExtResource("2")
 nivel = 46
 movimiento = ExtResource("21")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_ubo4a"]
 script = ExtResource("2")
 nivel = 49
 movimiento = ExtResource("22")
@@ -119,23 +118,30 @@ id = "hoppip"
 numero = 187
 nombre = "Hoppip"
 tipos = PackedStringArray("planta", "volador")
-habilidades = PackedStringArray("Clorofila", "Defensa Hoja")
-habilidad_oculta = "Allanamiento"
 ps = 35
 ataque = 35
 defensa = 40
 at_esp = 35
 def_esp = 55
-velocidad = 50
-exp_base = 50
 ratio_captura = 255
-ratio_genero = 4
 crecimiento = "medium-slow"
-evs_otorgados = {"def_esp": 1}
-evoluciones = Array[Dictionary]([{"especie": "skiploom", "metodo": "nivel", "condicion": "Nivel 18", "nivel": 18}])
+evs_otorgados = {
+"def_esp": 1
+}
 evoluciona_a = "skiploom"
 nivel_evolucion = 18
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17")])
+evoluciones = Array[Dictionary]([{
+"especie": "skiploom",
+"metodo": "nivel",
+"nivel": 18
+}])
+habilidades = PackedStringArray("chlorophyll", "leaf_guard")
+habilidad_oculta = "infiltrator"
+categoria = "Pokémon Algadón"
+altura = 0.4
+peso_kg = 0.5
+descripcion = "Su cuerpo es tan ligero, que debe agarrarse bien al suelo con las patas para no irse con el viento."
+aprende = Array[ExtResource("2")]([SubResource("Resource_rs8go"), SubResource("Resource_1y53y"), SubResource("Resource_gsyur"), SubResource("Resource_5sjlh"), SubResource("Resource_wkgm3"), SubResource("Resource_0e6bm"), SubResource("Resource_jmddr"), SubResource("Resource_1dxsh"), SubResource("Resource_4kheg"), SubResource("Resource_dtdjn"), SubResource("Resource_syg7x"), SubResource("Resource_k4gfu"), SubResource("Resource_ho23f"), SubResource("Resource_b80wq"), SubResource("Resource_pjaw6"), SubResource("Resource_xt57b"), SubResource("Resource_jbkgl"), SubResource("Resource_ubo4a")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 78

@@ -16,3 +16,5 @@ descripcion = "Recarga energía para potenciar el siguiente movimiento de tipo E
 cambios_stats = {
 "def_esp": 1
 }
+numero = 268
+banderas = PackedStringArray("metronome", "snatch")

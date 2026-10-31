@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Objeto" format=3]
+
+[ext_resource type="Texture2D" path="res://Assets/Objetos/iconos/dusk_stone.png" id="1_6leu4"]
+[ext_resource type="Script" path="res://Scripts/datos/objeto.gd" id="2_r7pyx"]
+
+[resource]
+script = ExtResource("2_r7pyx")
+id = "dusk_stone"
+nombre = "Piedra Noche"
+descripcion = "Una piedra peculiar que hace evolucionar a algunos Pokémon. Es oscura como la noche."
+precio = 2100
+icono = ExtResource("1_6leu4")
+uso_especial = "evolucion"

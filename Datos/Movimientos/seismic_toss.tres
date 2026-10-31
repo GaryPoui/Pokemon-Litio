@@ -5,11 +5,9 @@
 [resource]
 script = ExtResource("1")
 id = "seismic_toss"
-nombre = "Movimiento sísmico"
+nombre = "Sísmico"
 tipo = "lucha"
-categoria = "fisico"
-poder = 0
-precision = 100
 pp = 20
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Aprovecha la gravedad para derribar al objetivo. Le resta tantos PS como nivel tenga el usuario."
+numero = 69
+banderas = PackedStringArray("contact", "metronome", "mirror", "nonsky", "protect")

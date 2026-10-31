@@ -21,97 +21,93 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/charm.tres" id="19"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/magic_room.tres" id="20"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_q7d7a"]
 script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("5")
-
-[sub_resource type="Resource" id="Move_1"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("6")
-
-[sub_resource type="Resource" id="Move_2"]
-script = ExtResource("2")
-nivel = 1
-movimiento = ExtResource("7")
-
-[sub_resource type="Resource" id="Move_3"]
-script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_i4mhj"]
+script = ExtResource("2")
+movimiento = ExtResource("7")
+
+[sub_resource type="Resource" id="Resource_3oiro"]
+script = ExtResource("2")
+movimiento = ExtResource("6")
+
+[sub_resource type="Resource" id="Resource_0tgi2"]
+script = ExtResource("2")
+movimiento = ExtResource("5")
+
+[sub_resource type="Resource" id="Resource_mcfcr"]
 script = ExtResource("2")
 nivel = 3
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_6yb0g"]
 script = ExtResource("2")
 nivel = 7
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_d76ye"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_mxtnc"]
 script = ExtResource("2")
 nivel = 14
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_j6xhy"]
 script = ExtResource("2")
 nivel = 16
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_q563d"]
 script = ExtResource("2")
 nivel = 19
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_aynxi"]
 script = ExtResource("2")
 nivel = 24
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_hl3p3"]
 script = ExtResource("2")
 nivel = 25
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_u0aia"]
 script = ExtResource("2")
 nivel = 28
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_13"]
+[sub_resource type="Resource" id="Resource_lytll"]
 script = ExtResource("2")
 nivel = 31
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_14"]
+[sub_resource type="Resource" id="Resource_ndh2r"]
 script = ExtResource("2")
 nivel = 34
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_15"]
+[sub_resource type="Resource" id="Resource_nlcd8"]
 script = ExtResource("2")
 nivel = 39
 movimiento = ExtResource("17")
 
-[sub_resource type="Resource" id="Move_16"]
+[sub_resource type="Resource" id="Resource_8sy1g"]
 script = ExtResource("2")
 nivel = 45
 movimiento = ExtResource("18")
 
-[sub_resource type="Resource" id="Move_17"]
+[sub_resource type="Resource" id="Resource_o3nlt"]
 script = ExtResource("2")
 nivel = 54
 movimiento = ExtResource("19")
 
-[sub_resource type="Resource" id="Move_18"]
+[sub_resource type="Resource" id="Resource_4hmr4"]
 script = ExtResource("2")
 nivel = 59
 movimiento = ExtResource("20")
@@ -122,8 +118,6 @@ id = "gothitelle"
 numero = 576
 nombre = "Gothitelle"
 tipos = PackedStringArray("psiquico")
-habilidades = PackedStringArray("Inspección/Cacheo", "Tenacidad")
-habilidad_oculta = "Sombra Trampa"
 ps = 70
 ataque = 55
 defensa = 95
@@ -134,11 +128,17 @@ exp_base = 221
 ratio_captura = 50
 ratio_genero = 6
 crecimiento = "medium-slow"
-evs_otorgados = {"def_esp": 3}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12"), SubResource("Move_13"), SubResource("Move_14"), SubResource("Move_15"), SubResource("Move_16"), SubResource("Move_17"), SubResource("Move_18")])
+evs_otorgados = {
+"def_esp": 3
+}
+habilidades = PackedStringArray("frisk")
+habilidad_oculta = "shadow_tag"
+categoria = "Pokémon Astro"
+altura = 1.5
+peso_kg = 44.0
+descripcion = "Su inmenso poder psíquico distorsiona el espacio y le permite reflejar incluso estrellas a años luz de distancia."
+aprende = Array[ExtResource("2")]([SubResource("Resource_q7d7a"), SubResource("Resource_i4mhj"), SubResource("Resource_3oiro"), SubResource("Resource_0tgi2"), SubResource("Resource_mcfcr"), SubResource("Resource_6yb0g"), SubResource("Resource_d76ye"), SubResource("Resource_mxtnc"), SubResource("Resource_j6xhy"), SubResource("Resource_q563d"), SubResource("Resource_aynxi"), SubResource("Resource_hl3p3"), SubResource("Resource_u0aia"), SubResource("Resource_lytll"), SubResource("Resource_ndh2r"), SubResource("Resource_nlcd8"), SubResource("Resource_8sy1g"), SubResource("Resource_o3nlt"), SubResource("Resource_4hmr4")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 96
 cuadros_espalda = 96
-fps_sprite = 10.0

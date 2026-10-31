@@ -6,10 +6,9 @@
 script = ExtResource("1")
 id = "head_charge"
 nombre = "Ariete"
-tipo = "normal"
-categoria = "fisico"
 poder = 120
-precision = 100
 pp = 15
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Propina un tremendo cabezazo. También daña al usuario un poco."
+drenaje = -25
+numero = 543
+banderas = PackedStringArray("contact", "metronome", "mirror", "protect")

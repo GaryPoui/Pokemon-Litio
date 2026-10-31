@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Movimiento" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/movimiento.gd" id="1_0far0"]
+
+[resource]
+script = ExtResource("1_0far0")
+id = "relic_song"
+nombre = "Canto Arcaico"
+categoria = "especial"
+poder = 75
+objetivo = "all-opponents"
+meta = "damage-ailment"
+descripcion = "Ataca conmoviendo a los rivales de alrededor con un antiguo canto. Puede dormirlos."
+estado = "sleep"
+prob_estado = 10
+numero = 547
+banderas = PackedStringArray("bypasssub", "mirror", "protect", "sound")
+turnos_min = 2
+turnos_max = 4

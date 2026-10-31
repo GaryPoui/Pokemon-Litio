@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dvafuwkcjwppn"]
 
-[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ye0g1"]
+[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_ye0g1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="2_qhmdo"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/headbutt.tres" id="3_scsk6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="4_rxjpf"]
@@ -15,87 +15,87 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sandstorm.tres" id="13_wsfpj"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="14_p0o8u"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="15_2csc6"]
-[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_ar3yn"]
-[ext_resource type="Texture2D" uid="uid://cymak2xst623o" path="res://Assets/Pokemones/batalla/boldore_espalda.png" id="17_f6ioq"]
-[ext_resource type="Texture2D" uid="uid://rcp58kmar2ym" path="res://Assets/Pokemones/batalla/boldore_frente.png" id="18_c52d3"]
+[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_ar3yn"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/boldore_espalda.png" id="17_f6ioq"]
+[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/boldore_frente.png" id="18_c52d3"]
 
-[sub_resource type="Resource" id="Resource_dbe6f"]
+[sub_resource type="Resource" id="Resource_ye0g1"]
 script = ExtResource("1_ye0g1")
 movimiento = ExtResource("2_qhmdo")
 
-[sub_resource type="Resource" id="Resource_th12o"]
+[sub_resource type="Resource" id="Resource_qhmdo"]
 script = ExtResource("1_ye0g1")
 movimiento = ExtResource("3_scsk6")
 
-[sub_resource type="Resource" id="Resource_0mtem"]
+[sub_resource type="Resource" id="Resource_scsk6"]
 script = ExtResource("1_ye0g1")
 movimiento = ExtResource("4_rxjpf")
 
-[sub_resource type="Resource" id="Resource_5qk2b"]
+[sub_resource type="Resource" id="Resource_rxjpf"]
 script = ExtResource("1_ye0g1")
 movimiento = ExtResource("5_svpwx")
 
-[sub_resource type="Resource" id="Resource_y1jky"]
+[sub_resource type="Resource" id="Resource_svpwx"]
 script = ExtResource("1_ye0g1")
 nivel = 4
 movimiento = ExtResource("2_qhmdo")
 
-[sub_resource type="Resource" id="Resource_gm7er"]
+[sub_resource type="Resource" id="Resource_xwbue"]
 script = ExtResource("1_ye0g1")
 nivel = 7
 movimiento = ExtResource("4_rxjpf")
 
-[sub_resource type="Resource" id="Resource_7khed"]
+[sub_resource type="Resource" id="Resource_0ybbc"]
 script = ExtResource("1_ye0g1")
 nivel = 10
 movimiento = ExtResource("3_scsk6")
 
-[sub_resource type="Resource" id="Resource_p2w6y"]
+[sub_resource type="Resource" id="Resource_sxbfu"]
 script = ExtResource("1_ye0g1")
 nivel = 14
 movimiento = ExtResource("6_xwbue")
 
-[sub_resource type="Resource" id="Resource_d3fdr"]
+[sub_resource type="Resource" id="Resource_btv16"]
 script = ExtResource("1_ye0g1")
 nivel = 17
 movimiento = ExtResource("7_0ybbc")
 
-[sub_resource type="Resource" id="Resource_rvprn"]
+[sub_resource type="Resource" id="Resource_ejb5q"]
 script = ExtResource("1_ye0g1")
 nivel = 20
 movimiento = ExtResource("8_sxbfu")
 
-[sub_resource type="Resource" id="Resource_itydh"]
+[sub_resource type="Resource" id="Resource_yot1u"]
 script = ExtResource("1_ye0g1")
 nivel = 23
 movimiento = ExtResource("9_btv16")
 
-[sub_resource type="Resource" id="Resource_h6f1c"]
+[sub_resource type="Resource" id="Resource_8aypw"]
 script = ExtResource("1_ye0g1")
 nivel = 25
 movimiento = ExtResource("10_ejb5q")
 
-[sub_resource type="Resource" id="Resource_xs5fc"]
+[sub_resource type="Resource" id="Resource_wsfpj"]
 script = ExtResource("1_ye0g1")
 nivel = 30
 movimiento = ExtResource("11_yot1u")
 
-[sub_resource type="Resource" id="Resource_eg7so"]
+[sub_resource type="Resource" id="Resource_p0o8u"]
 script = ExtResource("1_ye0g1")
 nivel = 36
 movimiento = ExtResource("12_8aypw")
 
-[sub_resource type="Resource" id="Resource_7wlm6"]
+[sub_resource type="Resource" id="Resource_2csc6"]
 script = ExtResource("1_ye0g1")
 nivel = 42
 movimiento = ExtResource("13_wsfpj")
 
-[sub_resource type="Resource" id="Resource_vp7nh"]
+[sub_resource type="Resource" id="Resource_ar3yn"]
 script = ExtResource("1_ye0g1")
 nivel = 48
 movimiento = ExtResource("14_p0o8u")
 
-[sub_resource type="Resource" id="Resource_42re1"]
+[sub_resource type="Resource" id="Resource_f6ioq"]
 script = ExtResource("1_ye0g1")
 nivel = 55
 movimiento = ExtResource("15_2csc6")
@@ -105,7 +105,7 @@ script = ExtResource("16_ar3yn")
 id = "boldore"
 numero = 525
 nombre = "Boldore"
-tipos = ["roca"]
+tipos = PackedStringArray("roca")
 ps = 70
 ataque = 105
 defensa = 105
@@ -118,13 +118,19 @@ evs_otorgados = {
 "ataque": 1,
 "defensa": 1
 }
-aprende = Array[ExtResource("1_ye0g1")]([SubResource("Resource_dbe6f"), SubResource("Resource_th12o"), SubResource("Resource_0mtem"), SubResource("Resource_5qk2b"), SubResource("Resource_y1jky"), SubResource("Resource_gm7er"), SubResource("Resource_7khed"), SubResource("Resource_p2w6y"), SubResource("Resource_d3fdr"), SubResource("Resource_rvprn"), SubResource("Resource_itydh"), SubResource("Resource_h6f1c"), SubResource("Resource_xs5fc"), SubResource("Resource_eg7so"), SubResource("Resource_7wlm6"), SubResource("Resource_vp7nh"), SubResource("Resource_42re1")])
+evoluciones = Array[Dictionary]([{
+"especie": "gigalith",
+"metodo": "intercambio"
+}])
+habilidades = PackedStringArray("sturdy")
+habilidad_oculta = "sand_force"
+categoria = "Pokémon Mineral"
+altura = 0.9
+peso_kg = 102.0
+descripcion = "La energía que no puede contener en el interior de su cuerpo se escapa formando cristales naranjas."
+aprende = Array[ExtResource("1_ye0g1")]([SubResource("Resource_ye0g1"), SubResource("Resource_qhmdo"), SubResource("Resource_scsk6"), SubResource("Resource_rxjpf"), SubResource("Resource_svpwx"), SubResource("Resource_xwbue"), SubResource("Resource_0ybbc"), SubResource("Resource_sxbfu"), SubResource("Resource_btv16"), SubResource("Resource_ejb5q"), SubResource("Resource_yot1u"), SubResource("Resource_8aypw"), SubResource("Resource_wsfpj"), SubResource("Resource_p0o8u"), SubResource("Resource_2csc6"), SubResource("Resource_ar3yn"), SubResource("Resource_f6ioq")])
 sprite_frente = ExtResource("18_c52d3")
 sprite_espalda = ExtResource("17_f6ioq")
 cuadros_frente = 58
 cuadros_espalda = 58
 fps_sprite = 7.44
-habilidades = PackedStringArray("Robustez", "Armadura Frágil")
-habilidad_oculta = "Poder Arenoso/Poder Arena"
-evoluciones = Array[Dictionary]([{"especie": "gigalith", "metodo": "intercambio", "condicion": "Intercambio"}])
-evoluciona_a = "gigalith"

@@ -6,10 +6,10 @@
 script = ExtResource("1")
 id = "snore"
 nombre = "Ronquido"
-tipo = "normal"
 categoria = "especial"
-poder = 50
-precision = 100
+poder = 40
 pp = 15
-objetivo = "selected-pokemon"
-meta = "damage"
+descripcion = "Fuerte ronquido que solo puede usarse dormido. Puede amedrentar al objetivo."
+prob_retroceso = 30
+numero = 173
+banderas = PackedStringArray("bypasssub", "mirror", "protect", "sound")

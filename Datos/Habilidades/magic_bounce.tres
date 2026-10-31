@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Habilidad" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/habilidad.gd" id="1_o0flk"]
+
+[resource]
+script = ExtResource("1_o0flk")
+id = "magic_bounce"
+nombre = "Espejo Mágico"
+descripcion = "Permite devolver los ataques de estado."

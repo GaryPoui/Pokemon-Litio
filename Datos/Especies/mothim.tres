@@ -7,6 +7,7 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/protect.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="7"]
+[ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="7_rx82j"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hidden_power.tres" id="8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="9"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/poison_powder.tres" id="10"]
@@ -18,67 +19,71 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="16"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/quiver_dance.tres" id="17"]
 
-[sub_resource type="Resource" id="Move_0"]
+[sub_resource type="Resource" id="Resource_rx82j"]
 script = ExtResource("2")
-nivel = 1
 movimiento = ExtResource("5")
 
-[sub_resource type="Resource" id="Move_1"]
+[sub_resource type="Resource" id="Resource_oxmgq"]
 script = ExtResource("2")
 nivel = 10
 movimiento = ExtResource("6")
 
-[sub_resource type="Resource" id="Move_2"]
+[sub_resource type="Resource" id="Resource_b7vt5"]
 script = ExtResource("2")
 nivel = 15
 movimiento = ExtResource("7")
 
-[sub_resource type="Resource" id="Move_3"]
+[sub_resource type="Resource" id="Resource_luxo0"]
 script = ExtResource("2")
 nivel = 20
 movimiento = ExtResource("8")
 
-[sub_resource type="Resource" id="Move_4"]
+[sub_resource type="Resource" id="Resource_jv6y6"]
 script = ExtResource("2")
 nivel = 23
 movimiento = ExtResource("9")
 
-[sub_resource type="Resource" id="Move_5"]
+[sub_resource type="Resource" id="Resource_xif18"]
+script = ExtResource("2")
+nivel = 26
+movimiento = ExtResource("7_rx82j")
+
+[sub_resource type="Resource" id="Resource_skxul"]
 script = ExtResource("2")
 nivel = 29
 movimiento = ExtResource("10")
 
-[sub_resource type="Resource" id="Move_6"]
+[sub_resource type="Resource" id="Resource_3ahdn"]
 script = ExtResource("2")
 nivel = 32
 movimiento = ExtResource("11")
 
-[sub_resource type="Resource" id="Move_7"]
+[sub_resource type="Resource" id="Resource_u2t4s"]
 script = ExtResource("2")
 nivel = 35
 movimiento = ExtResource("12")
 
-[sub_resource type="Resource" id="Move_8"]
+[sub_resource type="Resource" id="Resource_xstv2"]
 script = ExtResource("2")
 nivel = 38
 movimiento = ExtResource("13")
 
-[sub_resource type="Resource" id="Move_9"]
+[sub_resource type="Resource" id="Resource_t70q4"]
 script = ExtResource("2")
 nivel = 41
 movimiento = ExtResource("14")
 
-[sub_resource type="Resource" id="Move_10"]
+[sub_resource type="Resource" id="Resource_72skd"]
 script = ExtResource("2")
 nivel = 44
 movimiento = ExtResource("15")
 
-[sub_resource type="Resource" id="Move_11"]
+[sub_resource type="Resource" id="Resource_m00as"]
 script = ExtResource("2")
 nivel = 47
 movimiento = ExtResource("16")
 
-[sub_resource type="Resource" id="Move_12"]
+[sub_resource type="Resource" id="Resource_gj1y4"]
 script = ExtResource("2")
 nivel = 50
 movimiento = ExtResource("17")
@@ -89,21 +94,23 @@ id = "mothim"
 numero = 414
 nombre = "Mothim"
 tipos = PackedStringArray("bicho", "volador")
-habilidades = PackedStringArray("Enjambre")
-habilidad_oculta = "Cromolente"
 ps = 70
 ataque = 94
-defensa = 50
 at_esp = 94
-def_esp = 50
 velocidad = 66
 exp_base = 148
-ratio_captura = 45
 ratio_genero = 0
-crecimiento = "medium"
-evs_otorgados = {"ataque": 1, "at_esp": 1}
-evoluciones = Array[Dictionary]([])
-aprende = Array[ExtResource("2")]([SubResource("Move_0"), SubResource("Move_1"), SubResource("Move_2"), SubResource("Move_3"), SubResource("Move_4"), SubResource("Move_5"), SubResource("Move_6"), SubResource("Move_7"), SubResource("Move_8"), SubResource("Move_9"), SubResource("Move_10"), SubResource("Move_11"), SubResource("Move_12")])
+evs_otorgados = {
+"at_esp": 1,
+"ataque": 1
+}
+habilidades = PackedStringArray("swarm")
+habilidad_oculta = "tinted_lens"
+categoria = "Pokémon Polilla"
+altura = 0.9
+peso_kg = 23.3
+descripcion = "Le encanta la miel de las flores y roba la que recoge Combee."
+aprende = Array[ExtResource("2")]([SubResource("Resource_rx82j"), SubResource("Resource_oxmgq"), SubResource("Resource_b7vt5"), SubResource("Resource_luxo0"), SubResource("Resource_jv6y6"), SubResource("Resource_xif18"), SubResource("Resource_skxul"), SubResource("Resource_3ahdn"), SubResource("Resource_u2t4s"), SubResource("Resource_xstv2"), SubResource("Resource_t70q4"), SubResource("Resource_72skd"), SubResource("Resource_m00as"), SubResource("Resource_gj1y4")])
 sprite_frente = ExtResource("3")
 sprite_espalda = ExtResource("4")
 cuadros_frente = 33
