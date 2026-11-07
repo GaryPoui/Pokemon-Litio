@@ -129,7 +129,7 @@ script = ExtResource("1")
 id = "skiploom"
 numero = 188
 nombre = "Skiploom"
-tipos = PackedStringArray("planta", "volador")
+tipos = ["planta", "volador"]
 ps = 55
 ataque = 45
 at_esp = 45
@@ -148,7 +148,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 27
 }])
-habilidades = PackedStringArray("chlorophyll", "leaf_guard")
+habilidades = ["chlorophyll", "leaf_guard"]
 habilidad_oculta = "infiltrator"
 categoria = "Pokémon Algadón"
 altura = 0.6

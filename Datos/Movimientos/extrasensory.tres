@@ -13,4 +13,4 @@ pp = 30
 descripcion = "Emite una energía muy extraña que puede amedrentar al objetivo."
 prob_retroceso = 10
 numero = 326
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

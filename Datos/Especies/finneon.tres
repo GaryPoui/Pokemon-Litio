@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "finneon"
 numero = 456
 nombre = "Finneon"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 49
 ataque = 49
 defensa = 56
@@ -113,7 +113,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 31
 }])
-habilidades = PackedStringArray("swift_swim", "storm_drain")
+habilidades = ["swift_swim", "storm_drain"]
 habilidad_oculta = "water_veil"
 categoria = "Pokémon Pez Ala"
 altura = 0.4

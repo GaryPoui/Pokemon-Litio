@@ -87,7 +87,7 @@ script = ExtResource("1")
 id = "regigigas"
 numero = 486
 nombre = "Regigigas"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 110
 ataque = 160
 defensa = 110
@@ -102,7 +102,7 @@ evs_otorgados = {
 "ataque": 3
 }
 amistad_base = 0
-habilidades = PackedStringArray("slow_start")
+habilidades = ["slow_start"]
 categoria = "Pokémon Colosal"
 altura = 3.7
 peso_kg = 420.0

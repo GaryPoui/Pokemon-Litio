@@ -13,4 +13,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Cambia el tipo del usuario por el del primero de sus movimientos."
 numero = 160
-banderas = PackedStringArray("metronome", "snatch")
+banderas = ["metronome", "snatch"]

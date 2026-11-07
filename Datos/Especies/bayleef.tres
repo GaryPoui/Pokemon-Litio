@@ -100,7 +100,7 @@ script = ExtResource("16_045r8")
 id = "bayleef"
 numero = 153
 nombre = "Bayleef"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 60
 ataque = 62
 defensa = 80
@@ -121,7 +121,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 32
 }])
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "leaf_guard"
 categoria = "Pokémon Hoja"
 altura = 1.2

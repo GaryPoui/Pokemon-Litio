@@ -101,7 +101,7 @@ script = ExtResource("1")
 id = "lumineon"
 numero = 457
 nombre = "Lumineon"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 69
 ataque = 69
 defensa = 76
@@ -114,7 +114,7 @@ crecimiento = "slow-then-very-fast"
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("swift_swim", "storm_drain")
+habilidades = ["swift_swim", "storm_drain"]
 habilidad_oculta = "water_veil"
 categoria = "Pokémon Neón"
 altura = 1.2

@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "staryu"
 numero = 120
 nombre = "Staryu"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 30
 ataque = 45
 defensa = 55
@@ -117,7 +117,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "water_stone"
 }])
-habilidades = PackedStringArray("illuminate", "natural_cure")
+habilidades = ["illuminate", "natural_cure"]
 habilidad_oculta = "analytic"
 categoria = "Pokémon Estrella"
 altura = 0.8

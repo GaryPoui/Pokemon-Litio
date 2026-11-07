@@ -12,4 +12,4 @@ pp = 5
 meta = "unique"
 descripcion = "Fija el blanco para que el siguiente ataque no falle."
 numero = 199
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

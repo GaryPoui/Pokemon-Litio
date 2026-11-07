@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "shellder"
 numero = 90
 nombre = "Shellder"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 30
 ataque = 65
 defensa = 100
@@ -123,7 +123,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "water_stone"
 }])
-habilidades = PackedStringArray("shell_armor", "skill_link")
+habilidades = ["shell_armor", "skill_link"]
 habilidad_oculta = "overcoat"
 categoria = "Pokémon Bivalvo"
 altura = 0.3

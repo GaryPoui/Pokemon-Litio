@@ -16,4 +16,4 @@ estado = "burn"
 prob_estado = 10
 prob_retroceso = 10
 numero = 424
-banderas = PackedStringArray("bite", "contact", "metronome", "mirror", "protect")
+banderas = ["bite", "contact", "metronome", "mirror", "protect"]

@@ -12,4 +12,4 @@ pp = 15
 descripcion = "Arremete contra el objetivo con su robusto cuerpo. El agresor también sufre bastante daño."
 drenaje = -33
 numero = 452
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

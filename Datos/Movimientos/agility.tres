@@ -17,4 +17,4 @@ cambios_stats = {
 "velocidad": 2
 }
 numero = 97
-banderas = PackedStringArray("metronome", "snatch")
+banderas = ["metronome", "snatch"]

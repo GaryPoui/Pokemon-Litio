@@ -11,4 +11,4 @@ categoria = "especial"
 poder = 120
 descripcion = "El usuario absorbe luz en el primer turno y en el segundo lanza un potente rayo de energía."
 numero = 76
-banderas = PackedStringArray("charge", "failinstruct", "metronome", "mirror", "nosleeptalk", "protect")
+banderas = ["charge", "failinstruct", "metronome", "mirror", "nosleeptalk", "protect"]

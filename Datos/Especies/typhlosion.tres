@@ -111,7 +111,7 @@ script = ExtResource("18_pbwqf")
 id = "typhlosion"
 numero = 157
 nombre = "Typhlosion"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 78
 ataque = 84
 defensa = 78
@@ -124,7 +124,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "flash_fire"
 categoria = "Pokémon Volcán"
 altura = 1.7

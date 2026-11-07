@@ -115,7 +115,7 @@ script = ExtResource("1")
 id = "scizor"
 numero = 212
 nombre = "Scizor"
-tipos = PackedStringArray("bicho", "acero")
+tipos = ["bicho", "acero"]
 ps = 70
 ataque = 130
 defensa = 100
@@ -127,7 +127,7 @@ ratio_captura = 25
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("swarm", "technician")
+habilidades = ["swarm", "technician"]
 habilidad_oculta = "light_metal"
 categoria = "Pokémon Tenaza"
 altura = 1.8

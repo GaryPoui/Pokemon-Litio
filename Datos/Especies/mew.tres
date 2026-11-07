@@ -85,7 +85,7 @@ script = ExtResource("1")
 id = "mew"
 numero = 151
 nombre = "Mew"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 100
 ataque = 100
 defensa = 100
@@ -99,7 +99,7 @@ evs_otorgados = {
 "ps": 3
 }
 amistad_base = 100
-habilidades = PackedStringArray("synchronize")
+habilidades = ["synchronize"]
 categoria = "Pokémon Nueva Especie"
 altura = 0.4
 peso_kg = 4.0

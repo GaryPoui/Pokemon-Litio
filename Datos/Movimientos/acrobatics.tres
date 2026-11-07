@@ -11,4 +11,4 @@ poder = 55
 pp = 15
 descripcion = "Golpea ágilmente. Si el usuario no porta ningún objeto, el objetivo resulta seriamente dañado."
 numero = 512
-banderas = PackedStringArray("contact", "distance", "metronome", "mirror", "protect")
+banderas = ["contact", "distance", "metronome", "mirror", "protect"]

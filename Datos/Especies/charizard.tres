@@ -121,7 +121,7 @@ script = ExtResource("20_0sx4c")
 id = "charizard"
 numero = 6
 nombre = "Charizard"
-tipos = PackedStringArray("fuego", "volador")
+tipos = ["fuego", "volador"]
 ps = 78
 ataque = 84
 defensa = 78
@@ -134,7 +134,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "solar_power"
 categoria = "Pokémon Llama"
 altura = 1.7

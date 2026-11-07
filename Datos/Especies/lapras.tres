@@ -97,7 +97,7 @@ script = ExtResource("1")
 id = "lapras"
 numero = 131
 nombre = "Lapras"
-tipos = PackedStringArray("agua", "hielo")
+tipos = ["agua", "hielo"]
 ps = 130
 ataque = 85
 defensa = 80
@@ -109,7 +109,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("water_absorb", "shell_armor")
+habilidades = ["water_absorb", "shell_armor"]
 habilidad_oculta = "hydration"
 categoria = "Pokémon Transporte"
 altura = 2.5

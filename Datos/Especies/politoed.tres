@@ -48,7 +48,7 @@ script = ExtResource("1")
 id = "politoed"
 numero = 186
 nombre = "Politoed"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 90
 ataque = 75
 defensa = 75
@@ -60,7 +60,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "def_esp": 3
 }
-habilidades = PackedStringArray("water_absorb", "damp")
+habilidades = ["water_absorb", "damp"]
 habilidad_oculta = "drizzle"
 categoria = "Pokémon Rana"
 altura = 1.1

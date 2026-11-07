@@ -121,7 +121,7 @@ script = ExtResource("1")
 id = "salamence"
 numero = 373
 nombre = "Salamence"
-tipos = PackedStringArray("dragon", "volador")
+tipos = ["dragon", "volador"]
 ps = 95
 ataque = 135
 defensa = 80
@@ -134,7 +134,7 @@ evs_otorgados = {
 "ataque": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("intimidate")
+habilidades = ["intimidate"]
 habilidad_oculta = "moxie"
 categoria = "Pokémon Dragón"
 altura = 1.5

@@ -14,4 +14,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Si el usuario se debilita al recibir un ataque, todos los PP de este último ataque serán eliminados."
 numero = 288
-banderas = PackedStringArray("bypasssub", "metronome")
+banderas = ["bypasssub", "metronome"]

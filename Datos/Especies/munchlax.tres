@@ -109,7 +109,7 @@ script = ExtResource("1")
 id = "munchlax"
 numero = 446
 nombre = "Munchlax"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 135
 ataque = 85
 defensa = 40
@@ -128,7 +128,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "snorlax",
 "metodo": "amistad"
 }])
-habilidades = PackedStringArray("pickup", "thick_fat")
+habilidades = ["pickup", "thick_fat"]
 habilidad_oculta = "gluttony"
 categoria = "Pokémon Comilón"
 altura = 0.6

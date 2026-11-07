@@ -111,7 +111,7 @@ script = ExtResource("1")
 id = "togetic"
 numero = 176
 nombre = "Togetic"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 55
 ataque = 40
 defensa = 85
@@ -130,7 +130,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "shiny_stone"
 }])
-habilidades = PackedStringArray("hustle", "serene_grace")
+habilidades = ["hustle", "serene_grace"]
 habilidad_oculta = "super_luck"
 categoria = "Pokémon Felicidad"
 altura = 0.6

@@ -90,7 +90,7 @@ script = ExtResource("1")
 id = "shuckle"
 numero = 213
 nombre = "Shuckle"
-tipos = PackedStringArray("bicho", "roca")
+tipos = ["bicho", "roca"]
 ps = 20
 ataque = 10
 defensa = 230
@@ -104,7 +104,7 @@ evs_otorgados = {
 "def_esp": 1,
 "defensa": 1
 }
-habilidades = PackedStringArray("sturdy", "gluttony")
+habilidades = ["sturdy", "gluttony"]
 habilidad_oculta = "contrary"
 categoria = "Pokémon Moho"
 altura = 0.6

@@ -91,7 +91,7 @@ script = ExtResource("15_5us10")
 id = "bibarel"
 numero = 400
 nombre = "Bibarel"
-tipos = PackedStringArray("normal", "agua")
+tipos = ["normal", "agua"]
 ps = 79
 ataque = 85
 defensa = 60
@@ -103,7 +103,7 @@ ratio_captura = 127
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("simple", "unaware")
+habilidades = ["simple", "unaware"]
 habilidad_oculta = "moody"
 categoria = "Pokémon Castor"
 altura = 1.0

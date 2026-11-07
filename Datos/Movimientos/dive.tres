@@ -10,4 +10,4 @@ tipo = "agua"
 poder = 80
 descripcion = "El usuario se sumerge en el primer turno y ataca en el segundo."
 numero = 291
-banderas = PackedStringArray("allyanim", "charge", "contact", "failinstruct", "metronome", "mirror", "noassist", "nonsky", "nosleeptalk", "protect")
+banderas = ["allyanim", "charge", "contact", "failinstruct", "metronome", "mirror", "noassist", "nonsky", "nosleeptalk", "protect"]

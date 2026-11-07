@@ -38,7 +38,7 @@ func _ready() -> void:
 
 func _linterna() -> void:
 	var j:= get_parent().get_node_or_null("Jugador")
-	if j== null or j.has_node("Linterna"):
+	if j== null or j.has_node("Linterna") or Seguidor.en(get_parent())!= null:
 		return
 	var l:= nueva_luz(radio_jugador, Color(1.0, 0.95, 0.85), 1.0)
 	l.name= "Linterna"

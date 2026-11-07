@@ -12,4 +12,4 @@ pp = 20
 meta = "unique"
 descripcion = "Usa el poder de la naturaleza para atacar. Su efecto varía según el entorno de combate."
 numero = 267
-banderas = PackedStringArray("failcopycat", "failencore", "failinstruct", "failmimic", "noassist", "nosleeptalk")
+banderas = ["failcopycat", "failencore", "failinstruct", "failmimic", "noassist", "nosleeptalk"]

@@ -13,4 +13,4 @@ descripcion = "Ataque triple que puede paralizar, quemar o congelar al objetivo.
 estado = "unknown"
 prob_estado = 20
 numero = 161
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

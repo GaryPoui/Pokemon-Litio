@@ -35,7 +35,7 @@ script = ExtResource("1")
 id = "ninetales"
 numero = 38
 nombre = "Ninetales"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 73
 ataque = 76
 defensa = 75
@@ -49,7 +49,7 @@ evs_otorgados = {
 "def_esp": 1,
 "velocidad": 1
 }
-habilidades = PackedStringArray("flash_fire")
+habilidades = ["flash_fire"]
 habilidad_oculta = "drought"
 categoria = "Pokémon Zorro"
 altura = 1.1

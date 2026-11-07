@@ -12,4 +12,4 @@ pp = 20
 meta = "unique"
 descripcion = "Potente lluvia que transforma al objetivo en un Pokémon de tipo Agua."
 numero = 487
-banderas = PackedStringArray("allyanim", "metronome", "mirror", "protect", "reflectable")
+banderas = ["allyanim", "metronome", "mirror", "protect", "reflectable"]

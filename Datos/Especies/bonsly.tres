@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "bonsly"
 numero = 438
 nombre = "Bonsly"
-tipos = PackedStringArray("roca")
+tipos = ["roca"]
 ataque = 80
 defensa = 95
 at_esp = 10
@@ -102,7 +102,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "movimiento",
 "movimiento": "mimic"
 }])
-habilidades = PackedStringArray("sturdy", "rock_head")
+habilidades = ["sturdy", "rock_head"]
 habilidad_oculta = "rattled"
 categoria = "Pokémon Bonsái"
 altura = 0.5

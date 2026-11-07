@@ -11,4 +11,4 @@ pp = 20
 descripcion = "Tremendo pisotón que puede hacer que el objetivo se amedrente."
 prob_retroceso = 30
 numero = 23
-banderas = PackedStringArray("contact", "metronome", "minimize", "mirror", "nonsky", "protect")
+banderas = ["contact", "metronome", "minimize", "mirror", "nonsky", "protect"]

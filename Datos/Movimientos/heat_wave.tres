@@ -16,4 +16,4 @@ descripcion = "Provoca un viento abrasador que puede quemar al objetivo."
 estado = "burn"
 prob_estado = 10
 numero = 257
-banderas = PackedStringArray("metronome", "mirror", "protect", "wind")
+banderas = ["metronome", "mirror", "protect", "wind"]

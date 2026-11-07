@@ -11,6 +11,6 @@ poder = 25
 precision = 90
 descripcion = "Lanza pedruscos al objetivo de dos a cinco veces consecutivas."
 numero = 350
-banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")
+banderas = ["bullet", "metronome", "mirror", "protect"]
 golpes_min = 2
 golpes_max = 5

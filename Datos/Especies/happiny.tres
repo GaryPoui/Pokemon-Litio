@@ -38,7 +38,7 @@ script = ExtResource("1")
 id = "happiny"
 numero = 440
 nombre = "Happiny"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 100
 ataque = 5
 defensa = 5
@@ -59,7 +59,7 @@ evoluciones = Array[Dictionary]([{
 "objeto": "oval_stone"
 }])
 amistad_base = 140
-habilidades = PackedStringArray("natural_cure", "serene_grace")
+habilidades = ["natural_cure", "serene_grace"]
 habilidad_oculta = "friend_guard"
 categoria = "Pokémon Casita"
 altura = 0.6

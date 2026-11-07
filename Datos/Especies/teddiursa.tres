@@ -89,7 +89,7 @@ script = ExtResource("1")
 id = "teddiursa"
 numero = 216
 nombre = "Teddiursa"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 60
 ataque = 80
 velocidad = 40
@@ -105,7 +105,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("pickup", "quick_feet")
+habilidades = ["pickup", "quick_feet"]
 habilidad_oculta = "honey_gather"
 categoria = "Pokémon Osito"
 altura = 0.6

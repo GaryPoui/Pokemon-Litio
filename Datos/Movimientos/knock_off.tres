@@ -11,4 +11,4 @@ poder = 20
 pp = 20
 descripcion = "Impide al objetivo usar el objeto que lleva durante el combate. La potencia del movimiento se multiplica si el objetivo lleva un objeto."
 numero = 282
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

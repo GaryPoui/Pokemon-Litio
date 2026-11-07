@@ -110,7 +110,7 @@ script = ExtResource("1")
 id = "litwick"
 numero = 607
 nombre = "Litwick"
-tipos = PackedStringArray("fantasma", "fuego")
+tipos = ["fantasma", "fuego"]
 ataque = 30
 defensa = 55
 at_esp = 65
@@ -129,7 +129,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 41
 }])
-habilidades = PackedStringArray("flash_fire", "flame_body")
+habilidades = ["flash_fire", "flame_body"]
 habilidad_oculta = "shadow_tag"
 categoria = "Pokémon Vela"
 altura = 0.3

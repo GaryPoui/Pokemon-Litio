@@ -10,4 +10,4 @@ tipo = "acero"
 pp = 5
 descripcion = "Embiste al objetivo con un potente ataque giratorio. Cuanto más lento es el usuario, más daño causa."
 numero = 360
-banderas = PackedStringArray("bullet", "contact", "metronome", "mirror", "protect")
+banderas = ["bullet", "contact", "metronome", "mirror", "protect"]

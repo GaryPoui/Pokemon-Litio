@@ -11,4 +11,4 @@ pp = 20
 descripcion = "Ataca con cuchillas o con pinzas. Suele asestar un golpe crítico."
 critico = 1
 numero = 163
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "slicing")
+banderas = ["contact", "metronome", "mirror", "protect", "slicing"]

@@ -118,7 +118,7 @@ script = ExtResource("19_dnyiq")
 id = "krokorok"
 numero = 552
 nombre = "Krokorok"
-tipos = PackedStringArray("tierra", "siniestro")
+tipos = ["tierra", "siniestro"]
 ps = 60
 ataque = 82
 defensa = 45
@@ -138,7 +138,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 40
 }])
-habilidades = PackedStringArray("intimidate", "moxie")
+habilidades = ["intimidate", "moxie"]
 habilidad_oculta = "anger_point"
 categoria = "Pokémon Desierdrilo"
 altura = 1.0

@@ -30,7 +30,7 @@ script = ExtResource("1")
 id = "chandelure"
 numero = 609
 nombre = "Chandelure"
-tipos = PackedStringArray("fantasma", "fuego")
+tipos = ["fantasma", "fuego"]
 ps = 60
 ataque = 55
 defensa = 90
@@ -42,7 +42,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("flash_fire", "flame_body")
+habilidades = ["flash_fire", "flame_body"]
 habilidad_oculta = "shadow_tag"
 categoria = "Pokémon Señuelo"
 altura = 1.0

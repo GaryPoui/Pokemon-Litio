@@ -109,7 +109,7 @@ script = ExtResource("1")
 id = "mantine"
 numero = 226
 nombre = "Mantine"
-tipos = PackedStringArray("agua", "volador")
+tipos = ["agua", "volador"]
 ps = 65
 ataque = 40
 defensa = 70
@@ -122,7 +122,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("swift_swim", "water_absorb")
+habilidades = ["swift_swim", "water_absorb"]
 habilidad_oculta = "water_veil"
 categoria = "Pokémon Milano"
 altura = 2.1

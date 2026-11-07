@@ -94,7 +94,7 @@ script = ExtResource("1")
 id = "bastiodon"
 numero = 411
 nombre = "Bastiodon"
-tipos = PackedStringArray("roca", "acero")
+tipos = ["roca", "acero"]
 ps = 60
 ataque = 52
 defensa = 168
@@ -107,7 +107,7 @@ crecimiento = "slow-then-very-fast"
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("sturdy")
+habilidades = ["sturdy"]
 habilidad_oculta = "soundproof"
 categoria = "Pokémon Escudo"
 altura = 1.3

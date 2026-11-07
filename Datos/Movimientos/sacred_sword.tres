@@ -11,4 +11,4 @@ poder = 90
 pp = 20
 descripcion = "El usuario ataca con una espada, ignorando cualquier cambio en las características del objetivo."
 numero = 533
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "slicing")
+banderas = ["contact", "metronome", "mirror", "protect", "slicing"]

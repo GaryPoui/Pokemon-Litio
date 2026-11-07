@@ -123,7 +123,7 @@ script = ExtResource("1")
 id = "reuniclus"
 numero = 579
 nombre = "Reuniclus"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 110
 ataque = 65
 defensa = 75
@@ -136,7 +136,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("overcoat", "magic_guard")
+habilidades = ["overcoat", "magic_guard"]
 habilidad_oculta = "regenerator"
 categoria = "Pokémon Ampliación"
 altura = 1.0

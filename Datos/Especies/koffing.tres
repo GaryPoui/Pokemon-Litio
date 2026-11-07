@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "koffing"
 numero = 109
 nombre = "Koffing"
-tipos = PackedStringArray("veneno")
+tipos = ["veneno"]
 ps = 40
 ataque = 65
 defensa = 95
@@ -111,7 +111,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 35
 }])
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 habilidad_oculta = "stench"
 categoria = "Pokémon Gas Venenoso"
 altura = 0.6

@@ -8,6 +8,7 @@ const CERCA :=6
 @export var kit_alfajores :=3
 @export var kit_barro:= 3
 @export var premio_trinket: String =""
+@export var tablas: Array= []
 @export_multiline var texto_bienvenida: String= "¡Bienvenido a la reserva! Acá los Pokémon están protegidos: no se pelea, solo se observa y se atrapa."
 @export_multiline var texto_reglas :String= "Tirales Alfajores para que se queden comiendo, o Barro para enojarlos: enojados se atrapan más fácil, pero se van antes."
 
@@ -24,10 +25,15 @@ func especies() -> Array[String]:
 	var m:= get_tree().current_scene
 	if m== null:
 		return lista
+	var fuentes: Array= []
 	for campo in ["encuentros", "encuentros_raros"]:
 		var t= m.get(campo) if campo in m else null
-		if t== null:
-			continue
+		if t!= null:
+			fuentes.append(t)
+	for ruta in tablas:
+		if ResourceLoader.exists(str(ruta)):
+			fuentes.append(load(str(ruta)))
+	for t in fuentes:
 		for e in t.entradas:
 			if e.especie!= null and e.peso> 0 and not lista.has(e.especie.id):
 				lista.append(e.especie.id)

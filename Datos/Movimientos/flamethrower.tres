@@ -15,4 +15,4 @@ descripcion = "Ataca con una gran ráfaga de fuego que puede causar quemaduras."
 estado = "burn"
 prob_estado = 10
 numero = 53
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

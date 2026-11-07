@@ -84,7 +84,7 @@ script = ExtResource("1")
 id = "spheal"
 numero = 363
 nombre = "Spheal"
-tipos = PackedStringArray("hielo", "agua")
+tipos = ["hielo", "agua"]
 ps = 70
 ataque = 40
 at_esp = 55
@@ -102,7 +102,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 32
 }])
-habilidades = PackedStringArray("thick_fat", "ice_body")
+habilidades = ["thick_fat", "ice_body"]
 habilidad_oculta = "oblivious"
 categoria = "Pokémon Aplauso"
 altura = 0.8

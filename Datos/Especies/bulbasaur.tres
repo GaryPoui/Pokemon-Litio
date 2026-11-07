@@ -93,7 +93,7 @@ script = ExtResource("16_dcw2u")
 id = "bulbasaur"
 numero = 1
 nombre = "Bulbasaur"
-tipos = PackedStringArray("planta", "veneno")
+tipos = ["planta", "veneno"]
 ps = 45
 ataque = 49
 defensa = 49
@@ -113,7 +113,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 16
 }])
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "chlorophyll"
 categoria = "Pokémon Semilla"
 altura = 0.7

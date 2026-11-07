@@ -112,7 +112,7 @@ script = ExtResource("18_wxr27")
 id = "excadrill"
 numero = 530
 nombre = "Excadrill"
-tipos = PackedStringArray("tierra", "acero")
+tipos = ["tierra", "acero"]
 ps = 110
 ataque = 135
 defensa = 60
@@ -123,7 +123,7 @@ ratio_captura = 60
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("sand_rush", "sand_force")
+habilidades = ["sand_rush", "sand_force"]
 habilidad_oculta = "mold_breaker"
 categoria = "Pokémon Subterráneo"
 altura = 0.7

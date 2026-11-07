@@ -96,7 +96,7 @@ script = ExtResource("1")
 id = "skuntank"
 numero = 435
 nombre = "Skuntank"
-tipos = PackedStringArray("veneno", "siniestro")
+tipos = ["veneno", "siniestro"]
 ps = 103
 ataque = 93
 defensa = 67
@@ -108,7 +108,7 @@ ratio_captura = 60
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("stench", "aftermath")
+habilidades = ["stench", "aftermath"]
 habilidad_oculta = "keen_eye"
 categoria = "Pokémon Mofeta"
 altura = 1.0

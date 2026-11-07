@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "sneasel"
 numero = 215
 nombre = "Sneasel"
-tipos = PackedStringArray("siniestro", "hielo")
+tipos = ["siniestro", "hielo"]
 ps = 55
 ataque = 95
 defensa = 55
@@ -111,7 +111,7 @@ evoluciones = Array[Dictionary]([{
 "objeto": "razor_claw"
 }])
 amistad_base = 35
-habilidades = PackedStringArray("inner_focus", "keen_eye")
+habilidades = ["inner_focus", "keen_eye"]
 habilidad_oculta = "pickpocket"
 categoria = "Pokémon Garra Filo"
 altura = 0.9

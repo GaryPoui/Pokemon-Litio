@@ -111,7 +111,7 @@ script = ExtResource("17_et3rr")
 id = "swanna"
 numero = 581
 nombre = "Swanna"
-tipos = PackedStringArray("agua", "volador")
+tipos = ["agua", "volador"]
 ps = 75
 ataque = 87
 defensa = 63
@@ -122,7 +122,7 @@ exp_base = 166
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("keen_eye", "big_pecks")
+habilidades = ["keen_eye", "big_pecks"]
 habilidad_oculta = "hydration"
 categoria = "Pokémon Cisne"
 altura = 1.3

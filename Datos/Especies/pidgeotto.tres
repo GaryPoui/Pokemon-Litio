@@ -101,7 +101,7 @@ script = ExtResource("1")
 id = "pidgeotto"
 numero = 17
 nombre = "Pidgeotto"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 63
 ataque = 60
 defensa = 55
@@ -119,7 +119,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("keen_eye", "tangled_feet")
+habilidades = ["keen_eye", "tangled_feet"]
 habilidad_oculta = "big_pecks"
 categoria = "Pokémon Pájaro"
 altura = 1.1

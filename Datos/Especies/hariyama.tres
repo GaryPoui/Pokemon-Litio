@@ -123,7 +123,7 @@ script = ExtResource("1")
 id = "hariyama"
 numero = 297
 nombre = "Hariyama"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 144
 ataque = 120
 defensa = 60
@@ -136,7 +136,7 @@ crecimiento = "fast-then-very-slow"
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("thick_fat", "guts")
+habilidades = ["thick_fat", "guts"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Empuje"
 altura = 2.3

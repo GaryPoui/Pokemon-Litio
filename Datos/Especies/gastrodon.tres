@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "gastrodon"
 numero = 423
 nombre = "Gastrodon"
-tipos = PackedStringArray("agua", "tierra")
+tipos = ["agua", "tierra"]
 ps = 111
 ataque = 83
 defensa = 68
@@ -93,7 +93,7 @@ ratio_captura = 75
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("sticky_hold", "storm_drain")
+habilidades = ["sticky_hold", "storm_drain"]
 habilidad_oculta = "sand_force"
 categoria = "Pokémon Babosa Marina"
 altura = 0.9

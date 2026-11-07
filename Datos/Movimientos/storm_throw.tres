@@ -11,4 +11,4 @@ poder = 40
 descripcion = "Lanza un golpe devastador. Siempre asesta un golpe crítico."
 critico = 6
 numero = 480
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

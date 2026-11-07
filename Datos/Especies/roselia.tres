@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "roselia"
 numero = 315
 nombre = "Roselia"
-tipos = PackedStringArray("planta", "veneno")
+tipos = ["planta", "veneno"]
 ataque = 60
 defensa = 45
 at_esp = 100
@@ -122,7 +122,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "shiny_stone"
 }])
-habilidades = PackedStringArray("natural_cure", "poison_point")
+habilidades = ["natural_cure", "poison_point"]
 habilidad_oculta = "leaf_guard"
 categoria = "Pokémon Espina"
 altura = 0.3

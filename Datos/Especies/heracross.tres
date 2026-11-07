@@ -89,7 +89,7 @@ script = ExtResource("1")
 id = "heracross"
 numero = 214
 nombre = "Heracross"
-tipos = PackedStringArray("bicho", "lucha")
+tipos = ["bicho", "lucha"]
 ps = 80
 ataque = 125
 defensa = 75
@@ -101,7 +101,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("swarm", "guts")
+habilidades = ["swarm", "guts"]
 habilidad_oculta = "moxie"
 categoria = "Pokémon Cuerno"
 altura = 1.5

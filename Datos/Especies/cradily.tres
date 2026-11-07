@@ -94,7 +94,7 @@ script = ExtResource("1")
 id = "cradily"
 numero = 346
 nombre = "Cradily"
-tipos = PackedStringArray("roca", "planta")
+tipos = ["roca", "planta"]
 ps = 86
 ataque = 81
 defensa = 97
@@ -107,7 +107,7 @@ crecimiento = "slow-then-very-fast"
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("suction_cups")
+habilidades = ["suction_cups"]
 habilidad_oculta = "storm_drain"
 categoria = "Pokémon Percebe"
 altura = 1.5

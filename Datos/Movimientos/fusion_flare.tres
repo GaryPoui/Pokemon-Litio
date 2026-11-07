@@ -12,4 +12,4 @@ poder = 100
 pp = 5
 descripcion = "Ataca con una llamarada gigantesca. Aumenta su potencia si es influenciada por una gran energía eléctrica."
 numero = 558
-banderas = PackedStringArray("defrost", "metronome", "mirror", "protect")
+banderas = ["defrost", "metronome", "mirror", "protect"]

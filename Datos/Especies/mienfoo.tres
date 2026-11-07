@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "mienfoo"
 numero = 619
 nombre = "Mienfoo"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 45
 ataque = 85
 at_esp = 55
@@ -123,7 +123,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 50
 }])
-habilidades = PackedStringArray("inner_focus", "regenerator")
+habilidades = ["inner_focus", "regenerator"]
 habilidad_oculta = "reckless"
 categoria = "Pokémon Arte Marcial"
 altura = 0.9

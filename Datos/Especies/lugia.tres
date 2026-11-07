@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "lugia"
 numero = 249
 nombre = "Lugia"
-tipos = PackedStringArray("psiquico", "volador")
+tipos = ["psiquico", "volador"]
 ps = 106
 ataque = 90
 defensa = 130
@@ -119,7 +119,7 @@ evs_otorgados = {
 "def_esp": 3
 }
 amistad_base = 0
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 habilidad_oculta = "multiscale"
 categoria = "Pokémon Buceo"
 altura = 5.2

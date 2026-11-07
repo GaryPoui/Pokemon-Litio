@@ -48,7 +48,7 @@ script = ExtResource("1")
 id = "poliwrath"
 numero = 62
 nombre = "Poliwrath"
-tipos = PackedStringArray("agua", "lucha")
+tipos = ["agua", "lucha"]
 ps = 90
 ataque = 85
 defensa = 95
@@ -60,7 +60,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "defensa": 3
 }
-habilidades = PackedStringArray("water_absorb", "damp")
+habilidades = ["water_absorb", "damp"]
 habilidad_oculta = "swift_swim"
 categoria = "Pokémon Renacuajo"
 altura = 1.3

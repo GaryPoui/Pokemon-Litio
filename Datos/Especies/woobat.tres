@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dbdnn4bovwqhw"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_gqp6f"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_gqp6f"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/confusion.tres" id="2_84umx"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/odor_sleuth.tres" id="3_lt24u"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/gust.tres" id="4_2h6x2"]
@@ -15,9 +15,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/future_sight.tres" id="13_d11um"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/psychic.tres" id="14_w2uub"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/endeavor.tres" id="15_krc0u"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_0qg4t"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/woobat_espalda.png" id="17_bljwn"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/woobat_frente.png" id="18_4joqh"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_0qg4t"]
+[ext_resource type="Texture2D" uid="uid://b1ig4mu8abw8" path="res://Assets/Pokemones/batalla/woobat_espalda.png" id="17_bljwn"]
+[ext_resource type="Texture2D" uid="uid://b44rtaavsjj0d" path="res://Assets/Pokemones/batalla/woobat_frente.png" id="18_4joqh"]
 
 [sub_resource type="Resource" id="Resource_gqp6f"]
 script = ExtResource("1_gqp6f")
@@ -93,7 +93,7 @@ script = ExtResource("16_0qg4t")
 id = "woobat"
 numero = 527
 nombre = "Woobat"
-tipos = PackedStringArray("psiquico", "volador")
+tipos = ["psiquico", "volador"]
 ps = 55
 ataque = 45
 defensa = 43
@@ -110,7 +110,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "swoobat",
 "metodo": "amistad"
 }])
-habilidades = PackedStringArray("unaware", "klutz")
+habilidades = ["unaware", "klutz"]
 habilidad_oculta = "simple"
 categoria = "Pokémon Murciélago"
 altura = 0.4

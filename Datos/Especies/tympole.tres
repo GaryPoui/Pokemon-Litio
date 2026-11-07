@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://brha2uhu7dn34"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_pq6rs"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_pq6rs"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bubble.tres" id="2_wcncg"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_rwj01"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/supersonic.tres" id="4_wufr0"]
@@ -15,9 +15,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/echoed_voice.tres" id="13_wnnsb"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hydro_pump.tres" id="14_gaajy"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="15_70ypm"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_7ifi4"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tympole_espalda.png" id="17_nmnji"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tympole_frente.png" id="18_sjd3b"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_7ifi4"]
+[ext_resource type="Texture2D" uid="uid://5lleawuejlpt" path="res://Assets/Pokemones/batalla/tympole_espalda.png" id="17_nmnji"]
+[ext_resource type="Texture2D" uid="uid://o2oum8wua3sf" path="res://Assets/Pokemones/batalla/tympole_frente.png" id="18_sjd3b"]
 
 [sub_resource type="Resource" id="Resource_pq6rs"]
 script = ExtResource("1_pq6rs")
@@ -92,7 +92,7 @@ script = ExtResource("16_7ifi4")
 id = "tympole"
 numero = 535
 nombre = "Tympole"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 defensa = 40
 def_esp = 40
 velocidad = 64
@@ -109,7 +109,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 25
 }])
-habilidades = PackedStringArray("swift_swim", "hydration")
+habilidades = ["swift_swim", "hydration"]
 habilidad_oculta = "water_absorb"
 categoria = "Pokémon Renacuajo"
 altura = 0.5

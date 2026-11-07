@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "horsea"
 numero = 116
 nombre = "Horsea"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 30
 ataque = 40
 defensa = 70
@@ -100,7 +100,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 32
 }])
-habilidades = PackedStringArray("swift_swim", "sniper")
+habilidades = ["swift_swim", "sniper"]
 habilidad_oculta = "damp"
 categoria = "Pokémon Dragón"
 altura = 0.4

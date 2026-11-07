@@ -107,7 +107,7 @@ script = ExtResource("1")
 id = "victini"
 numero = 494
 nombre = "Victini"
-tipos = PackedStringArray("psiquico", "fuego")
+tipos = ["psiquico", "fuego"]
 ps = 100
 ataque = 100
 defensa = 100
@@ -122,7 +122,7 @@ evs_otorgados = {
 "ps": 3
 }
 amistad_base = 100
-habilidades = PackedStringArray("victory_star")
+habilidades = ["victory_star"]
 categoria = "Pokémon Victoria"
 altura = 0.4
 peso_kg = 4.0

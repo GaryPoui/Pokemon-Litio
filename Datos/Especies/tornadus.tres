@@ -109,7 +109,7 @@ script = ExtResource("1")
 id = "tornadus"
 numero = 641
 nombre = "Tornadus"
-tipos = PackedStringArray("volador")
+tipos = ["volador"]
 ps = 79
 ataque = 115
 defensa = 70
@@ -124,7 +124,7 @@ evs_otorgados = {
 "ataque": 3
 }
 amistad_base = 90
-habilidades = PackedStringArray("prankster")
+habilidades = ["prankster"]
 habilidad_oculta = "defiant"
 categoria = "Pokémon Torbellino"
 altura = 1.5

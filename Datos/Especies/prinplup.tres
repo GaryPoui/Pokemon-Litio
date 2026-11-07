@@ -97,7 +97,7 @@ script = ExtResource("16_o0p4x")
 id = "prinplup"
 numero = 394
 nombre = "Prinplup"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 64
 ataque = 66
 defensa = 68
@@ -116,7 +116,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("torrent")
+habilidades = ["torrent"]
 habilidad_oculta = "defiant"
 categoria = "Pokémon Pingüino"
 altura = 0.8

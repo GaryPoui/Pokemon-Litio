@@ -118,7 +118,7 @@ script = ExtResource("1")
 id = "venomoth"
 numero = 49
 nombre = "Venomoth"
-tipos = PackedStringArray("bicho", "veneno")
+tipos = ["bicho", "veneno"]
 ps = 70
 ataque = 65
 defensa = 60
@@ -131,7 +131,7 @@ evs_otorgados = {
 "at_esp": 1,
 "velocidad": 1
 }
-habilidades = PackedStringArray("shield_dust", "tinted_lens")
+habilidades = ["shield_dust", "tinted_lens"]
 habilidad_oculta = "wonder_skin"
 categoria = "Pokémon Polilla Ven."
 altura = 1.5

@@ -14,6 +14,6 @@ meta = "ailment"
 descripcion = "El objetivo es enviado a un mundo de tinieblas que lo hace dormir."
 estado = "sleep"
 numero = 464
-banderas = PackedStringArray("metronome", "mirror", "nosketch", "protect", "reflectable")
+banderas = ["metronome", "mirror", "nosketch", "protect", "reflectable"]
 turnos_min = 2
 turnos_max = 4

@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "drifloon"
 numero = 425
 nombre = "Drifloon"
-tipos = PackedStringArray("fantasma", "volador")
+tipos = ["fantasma", "volador"]
 ps = 90
 defensa = 34
 at_esp = 60
@@ -111,7 +111,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 28
 }])
-habilidades = PackedStringArray("aftermath", "unburden")
+habilidades = ["aftermath", "unburden"]
 habilidad_oculta = "flare_boost"
 categoria = "Pokémon Globo"
 altura = 0.4

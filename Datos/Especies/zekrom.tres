@@ -103,7 +103,7 @@ script = ExtResource("1")
 id = "zekrom"
 numero = 644
 nombre = "Zekrom"
-tipos = PackedStringArray("dragon", "electrico")
+tipos = ["dragon", "electrico"]
 ps = 100
 ataque = 150
 defensa = 120
@@ -118,7 +118,7 @@ evs_otorgados = {
 "ataque": 3
 }
 amistad_base = 0
-habilidades = PackedStringArray("teravolt")
+habilidades = ["teravolt"]
 categoria = "Pokémon Negro Puro"
 altura = 2.9
 peso_kg = 345.0

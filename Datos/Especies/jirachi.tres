@@ -103,7 +103,7 @@ script = ExtResource("1")
 id = "jirachi"
 numero = 385
 nombre = "Jirachi"
-tipos = PackedStringArray("acero", "psiquico")
+tipos = ["acero", "psiquico"]
 ps = 100
 ataque = 100
 defensa = 100
@@ -118,7 +118,7 @@ evs_otorgados = {
 "ps": 3
 }
 amistad_base = 100
-habilidades = PackedStringArray("serene_grace")
+habilidades = ["serene_grace"]
 categoria = "Pokémon Deseo"
 altura = 0.3
 peso_kg = 1.1

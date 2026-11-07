@@ -86,7 +86,7 @@ script = ExtResource("15_j405f")
 id = "chimchar"
 numero = 390
 nombre = "Chimchar"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 44
 ataque = 58
 defensa = 44
@@ -106,7 +106,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 14
 }])
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "iron_fist"
 categoria = "Pokémon Chimpancé"
 altura = 0.5

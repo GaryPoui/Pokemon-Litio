@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "ho_oh"
 numero = 250
 nombre = "Ho-Oh"
-tipos = PackedStringArray("fuego", "volador")
+tipos = ["fuego", "volador"]
 ps = 106
 ataque = 130
 defensa = 90
@@ -119,7 +119,7 @@ evs_otorgados = {
 "def_esp": 3
 }
 amistad_base = 0
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 habilidad_oculta = "regenerator"
 categoria = "Pokémon Arcoíris"
 altura = 3.8

@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "leafeon"
 numero = 470
 nombre = "Leafeon"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 65
 ataque = 110
 defensa = 130
@@ -104,7 +104,7 @@ evs_otorgados = {
 "defensa": 2
 }
 amistad_base = 35
-habilidades = PackedStringArray("leaf_guard")
+habilidades = ["leaf_guard"]
 habilidad_oculta = "chlorophyll"
 categoria = "Pokémon Verdor"
 altura = 1.0

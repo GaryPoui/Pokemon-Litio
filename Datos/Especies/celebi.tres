@@ -90,7 +90,7 @@ script = ExtResource("1")
 id = "celebi"
 numero = 251
 nombre = "Celebi"
-tipos = PackedStringArray("psiquico", "planta")
+tipos = ["psiquico", "planta"]
 ps = 100
 ataque = 100
 defensa = 100
@@ -104,7 +104,7 @@ evs_otorgados = {
 "ps": 3
 }
 amistad_base = 100
-habilidades = PackedStringArray("natural_cure")
+habilidades = ["natural_cure"]
 categoria = "Pokémon Viajetiempo"
 altura = 0.6
 peso_kg = 5.0

@@ -94,7 +94,7 @@ script = ExtResource("1")
 id = "froslass"
 numero = 478
 nombre = "Froslass"
-tipos = PackedStringArray("hielo", "fantasma")
+tipos = ["hielo", "fantasma"]
 ps = 70
 ataque = 80
 defensa = 70
@@ -107,7 +107,7 @@ ratio_genero = 8
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("snow_cloak")
+habilidades = ["snow_cloak"]
 habilidad_oculta = "cursed_body"
 categoria = "Pokémon Tierra Fría"
 altura = 1.3

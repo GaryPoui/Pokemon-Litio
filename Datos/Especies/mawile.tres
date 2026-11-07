@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "mawile"
 numero = 303
 nombre = "Mawile"
-tipos = PackedStringArray("acero")
+tipos = ["acero"]
 ataque = 85
 defensa = 85
 at_esp = 55
@@ -104,7 +104,7 @@ evs_otorgados = {
 "ataque": 1,
 "defensa": 1
 }
-habilidades = PackedStringArray("hyper_cutter", "intimidate")
+habilidades = ["hyper_cutter", "intimidate"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Tramposo"
 altura = 0.6

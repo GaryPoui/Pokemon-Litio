@@ -98,7 +98,7 @@ script = ExtResource("17_yerk6")
 id = "durant"
 numero = 632
 nombre = "Durant"
-tipos = PackedStringArray("bicho", "acero")
+tipos = ["bicho", "acero"]
 ps = 58
 ataque = 109
 defensa = 112
@@ -110,7 +110,7 @@ ratio_captura = 90
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("swarm", "hustle")
+habilidades = ["swarm", "hustle"]
 habilidad_oculta = "truant"
 categoria = "Pokémon Hormigacero"
 altura = 0.3

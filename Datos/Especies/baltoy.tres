@@ -111,7 +111,7 @@ script = ExtResource("1")
 id = "baltoy"
 numero = 343
 nombre = "Baltoy"
-tipos = PackedStringArray("tierra", "psiquico")
+tipos = ["tierra", "psiquico"]
 ps = 40
 ataque = 40
 defensa = 55
@@ -131,7 +131,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Muñeca Barro"
 altura = 0.5
 peso_kg = 21.5

@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "snubbull"
 numero = 209
 nombre = "Snubbull"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 60
 ataque = 80
 at_esp = 40
@@ -113,7 +113,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 23
 }])
-habilidades = PackedStringArray("intimidate", "run_away")
+habilidades = ["intimidate", "run_away"]
 habilidad_oculta = "rattled"
 categoria = "Pokémon Hada"
 altura = 0.6

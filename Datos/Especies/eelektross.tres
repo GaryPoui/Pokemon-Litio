@@ -35,7 +35,7 @@ script = ExtResource("7_b2q8e")
 id = "eelektross"
 numero = 604
 nombre = "Eelektross"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 85
 ataque = 115
 defensa = 80
@@ -47,7 +47,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Electropez"
 altura = 2.1
 peso_kg = 80.5

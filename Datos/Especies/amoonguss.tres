@@ -111,7 +111,7 @@ script = ExtResource("17_xtbiv")
 id = "amoonguss"
 numero = 591
 nombre = "Amoonguss"
-tipos = PackedStringArray("planta", "veneno")
+tipos = ["planta", "veneno"]
 ps = 114
 ataque = 85
 defensa = 70
@@ -123,7 +123,7 @@ ratio_captura = 75
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("effect_spore")
+habilidades = ["effect_spore"]
 habilidad_oculta = "regenerator"
 categoria = "Pokémon Hongo"
 altura = 0.6

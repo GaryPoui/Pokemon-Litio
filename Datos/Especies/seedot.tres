@@ -51,7 +51,7 @@ script = ExtResource("1")
 id = "seedot"
 numero = 273
 nombre = "Seedot"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 40
 ataque = 40
 at_esp = 30
@@ -70,7 +70,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 14
 }])
-habilidades = PackedStringArray("chlorophyll", "early_bird")
+habilidades = ["chlorophyll", "early_bird"]
 habilidad_oculta = "pickpocket"
 categoria = "Pokémon Bellota"
 altura = 0.5

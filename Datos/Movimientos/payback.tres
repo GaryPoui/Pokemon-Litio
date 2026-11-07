@@ -10,4 +10,4 @@ tipo = "siniestro"
 poder = 50
 descripcion = "El usuario contraataca con el doble de fuerza si el objetivo usa un movimiento antes."
 numero = 371
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

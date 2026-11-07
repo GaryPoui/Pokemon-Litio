@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "articuno"
 numero = 144
 nombre = "Articuno"
-tipos = PackedStringArray("hielo", "volador")
+tipos = ["hielo", "volador"]
 ps = 90
 ataque = 85
 defensa = 100
@@ -107,7 +107,7 @@ evs_otorgados = {
 "def_esp": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 habilidad_oculta = "snow_cloak"
 categoria = "Pokémon Congelar"
 altura = 1.7

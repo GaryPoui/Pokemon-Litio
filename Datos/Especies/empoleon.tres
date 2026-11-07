@@ -107,7 +107,7 @@ script = ExtResource("17_4yq86")
 id = "empoleon"
 numero = 395
 nombre = "Empoleon"
-tipos = PackedStringArray("agua", "acero")
+tipos = ["agua", "acero"]
 ps = 84
 ataque = 86
 defensa = 88
@@ -120,7 +120,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("torrent")
+habilidades = ["torrent"]
 habilidad_oculta = "defiant"
 categoria = "Pokémon Emperador"
 altura = 1.7

@@ -89,7 +89,7 @@ script = ExtResource("1")
 id = "ursaring"
 numero = 217
 nombre = "Ursaring"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 90
 ataque = 130
 defensa = 75
@@ -101,7 +101,7 @@ ratio_captura = 60
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("guts", "quick_feet")
+habilidades = ["guts", "quick_feet"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Hibernante"
 altura = 1.8

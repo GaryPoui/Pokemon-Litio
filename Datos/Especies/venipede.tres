@@ -92,7 +92,7 @@ script = ExtResource("16_j5pqq")
 id = "venipede"
 numero = 543
 nombre = "Venipede"
-tipos = PackedStringArray("bicho", "veneno")
+tipos = ["bicho", "veneno"]
 ps = 30
 ataque = 45
 defensa = 59
@@ -112,7 +112,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 22
 }])
-habilidades = PackedStringArray("poison_point", "swarm")
+habilidades = ["poison_point", "swarm"]
 habilidad_oculta = "quick_feet"
 categoria = "Pokémon Ciempiés"
 altura = 0.4

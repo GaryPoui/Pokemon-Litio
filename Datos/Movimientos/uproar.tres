@@ -11,6 +11,6 @@ poder = 90
 objetivo = "random-opponent"
 descripcion = "Ataca de forma alborotada durante tres turnos. Mantiene despiertos a todos."
 numero = 253
-banderas = PackedStringArray("bypasssub", "failinstruct", "metronome", "mirror", "nosleeptalk", "protect", "sound")
+banderas = ["bypasssub", "failinstruct", "metronome", "mirror", "nosleeptalk", "protect", "sound"]
 turnos_min = 3
 turnos_max = 3

@@ -11,4 +11,4 @@ precision = 95
 pp = 30
 descripcion = "Corta al adversario con garras, guadañas, etc."
 numero = 15
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "slicing")
+banderas = ["contact", "metronome", "mirror", "protect", "slicing"]

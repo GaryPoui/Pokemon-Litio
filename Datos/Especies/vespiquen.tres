@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "vespiquen"
 numero = 416
 nombre = "Vespiquen"
-tipos = PackedStringArray("bicho", "volador")
+tipos = ["bicho", "volador"]
 ps = 70
 ataque = 80
 defensa = 102
@@ -118,7 +118,7 @@ evs_otorgados = {
 "def_esp": 1,
 "defensa": 1
 }
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Colmena"
 altura = 1.2

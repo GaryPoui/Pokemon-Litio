@@ -40,7 +40,7 @@ script = ExtResource("1")
 id = "mismagius"
 numero = 429
 nombre = "Mismagius"
-tipos = PackedStringArray("fantasma")
+tipos = ["fantasma"]
 ps = 60
 ataque = 60
 defensa = 60
@@ -54,7 +54,7 @@ evs_otorgados = {
 "def_esp": 1
 }
 amistad_base = 35
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Mágico"
 altura = 0.9
 peso_kg = 4.4

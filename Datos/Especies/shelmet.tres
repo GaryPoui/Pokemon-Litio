@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "shelmet"
 numero = 616
 nombre = "Shelmet"
-tipos = PackedStringArray("bicho")
+tipos = ["bicho"]
 ataque = 40
 defensa = 85
 at_esp = 40
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "accelgor",
 "metodo": "intercambio"
 }])
-habilidades = PackedStringArray("hydration", "shell_armor")
+habilidades = ["hydration", "shell_armor"]
 habilidad_oculta = "overcoat"
 categoria = "Pokémon Caracol"
 altura = 0.4

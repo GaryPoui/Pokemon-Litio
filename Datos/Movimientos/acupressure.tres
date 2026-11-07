@@ -13,4 +13,4 @@ objetivo = "user-or-ally"
 meta = "unique"
 descripcion = "Aplica presión en puntos clave del cuerpo para potenciar mucho una de sus características."
 numero = 367
-banderas = PackedStringArray("metronome")
+banderas = ["metronome"]

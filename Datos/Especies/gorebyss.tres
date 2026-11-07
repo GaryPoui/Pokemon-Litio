@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "gorebyss"
 numero = 368
 nombre = "Gorebyss"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 55
 ataque = 84
 defensa = 105
@@ -94,7 +94,7 @@ crecimiento = "slow-then-very-fast"
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("swift_swim")
+habilidades = ["swift_swim"]
 habilidad_oculta = "hydration"
 categoria = "Pokémon Mar del Sur"
 altura = 1.8

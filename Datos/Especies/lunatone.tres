@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "lunatone"
 numero = 337
 nombre = "Lunatone"
-tipos = PackedStringArray("roca", "psiquico")
+tipos = ["roca", "psiquico"]
 ps = 70
 ataque = 55
 defensa = 65
@@ -104,7 +104,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Meteorito"
 altura = 1.0
 peso_kg = 168.0

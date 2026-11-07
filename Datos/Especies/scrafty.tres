@@ -112,7 +112,7 @@ script = ExtResource("18_qhnld")
 id = "scrafty"
 numero = 560
 nombre = "Scrafty"
-tipos = PackedStringArray("siniestro", "lucha")
+tipos = ["siniestro", "lucha"]
 ps = 65
 ataque = 90
 defensa = 115
@@ -125,7 +125,7 @@ evs_otorgados = {
 "def_esp": 1,
 "defensa": 1
 }
-habilidades = PackedStringArray("shed_skin", "moxie")
+habilidades = ["shed_skin", "moxie"]
 habilidad_oculta = "intimidate"
 categoria = "Pokémon Gamberro"
 altura = 1.1

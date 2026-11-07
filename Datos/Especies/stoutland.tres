@@ -109,7 +109,7 @@ script = ExtResource("18_j8mly")
 id = "stoutland"
 numero = 508
 nombre = "Stoutland"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 85
 ataque = 100
 defensa = 90
@@ -121,7 +121,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("intimidate", "sand_rush")
+habilidades = ["intimidate", "sand_rush"]
 habilidad_oculta = "scrappy"
 categoria = "Pokémon Magnánimo"
 altura = 1.2

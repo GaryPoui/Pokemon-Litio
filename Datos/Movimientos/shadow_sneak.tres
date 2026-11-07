@@ -12,4 +12,4 @@ pp = 30
 prioridad = 1
 descripcion = "Extiende su sombra y ataca al objetivo por la espalda. Este movimiento tiene prioridad alta."
 numero = 425
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

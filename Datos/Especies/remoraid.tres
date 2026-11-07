@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "remoraid"
 numero = 223
 nombre = "Remoraid"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 35
 ataque = 65
 defensa = 35
@@ -100,7 +100,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 25
 }])
-habilidades = PackedStringArray("hustle", "sniper")
+habilidades = ["hustle", "sniper"]
 habilidad_oculta = "moody"
 categoria = "Pokémon Reactor"
 altura = 0.6

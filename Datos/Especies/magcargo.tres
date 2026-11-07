@@ -106,7 +106,7 @@ script = ExtResource("1")
 id = "magcargo"
 numero = 219
 nombre = "Magcargo"
-tipos = PackedStringArray("fuego", "roca")
+tipos = ["fuego", "roca"]
 defensa = 120
 at_esp = 80
 def_esp = 80
@@ -116,7 +116,7 @@ ratio_captura = 75
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("magma_armor", "flame_body")
+habilidades = ["magma_armor", "flame_body"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Lava"
 altura = 0.8

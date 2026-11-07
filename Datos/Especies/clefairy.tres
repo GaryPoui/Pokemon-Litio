@@ -128,7 +128,7 @@ script = ExtResource("1")
 id = "clefairy"
 numero = 35
 nombre = "Clefairy"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 70
 ataque = 45
 defensa = 48
@@ -148,7 +148,7 @@ evoluciones = Array[Dictionary]([{
 "objeto": "moon_stone"
 }])
 amistad_base = 140
-habilidades = PackedStringArray("cute_charm", "magic_guard")
+habilidades = ["cute_charm", "magic_guard"]
 habilidad_oculta = "friend_guard"
 categoria = "Pokémon Hada"
 altura = 0.6

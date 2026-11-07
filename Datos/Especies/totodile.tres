@@ -104,7 +104,7 @@ script = ExtResource("18_x6dte")
 id = "totodile"
 numero = 158
 nombre = "Totodile"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ataque = 65
 defensa = 64
 at_esp = 44
@@ -123,7 +123,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 18
 }])
-habilidades = PackedStringArray("torrent")
+habilidades = ["torrent"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Fauces"
 altura = 0.6

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bipcfu5mev4vu"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_mblpj"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_mblpj"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hypnosis.tres" id="2_jem2p"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/lick.tres" id="3_lqgkb"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/spite.tres" id="4_i0bix"]
@@ -17,9 +17,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/destiny_bond.tres" id="15_tap2l"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hex.tres" id="16_r7dtr"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/nightmare.tres" id="17_l4vy3"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_05wm3"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/haunter_espalda.png" id="19_o2uto"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/haunter_frente.png" id="20_aoo7f"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_05wm3"]
+[ext_resource type="Texture2D" uid="uid://bvkma5nwuxp4l" path="res://Assets/Pokemones/batalla/haunter_espalda.png" id="19_o2uto"]
+[ext_resource type="Texture2D" uid="uid://dkbhlb0jghr5w" path="res://Assets/Pokemones/batalla/haunter_frente.png" id="20_aoo7f"]
 
 [sub_resource type="Resource" id="Resource_mblpj"]
 script = ExtResource("1_mblpj")
@@ -108,7 +108,7 @@ script = ExtResource("18_05wm3")
 id = "haunter"
 numero = 93
 nombre = "Haunter"
-tipos = PackedStringArray("fantasma", "veneno")
+tipos = ["fantasma", "veneno"]
 ps = 45
 defensa = 45
 at_esp = 115
@@ -124,7 +124,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "gengar",
 "metodo": "intercambio"
 }])
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Gas"
 altura = 1.6
 peso_kg = 0.1

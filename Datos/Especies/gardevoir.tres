@@ -116,7 +116,7 @@ script = ExtResource("18_0hn54")
 id = "gardevoir"
 numero = 282
 nombre = "Gardevoir"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 68
 ataque = 65
 defensa = 65
@@ -129,7 +129,7 @@ evs_otorgados = {
 "at_esp": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("synchronize", "trace")
+habilidades = ["synchronize", "trace"]
 habilidad_oculta = "telepathy"
 categoria = "Pokémon Envolvente"
 altura = 1.6

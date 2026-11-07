@@ -129,7 +129,7 @@ script = ExtResource("1")
 id = "jumpluff"
 numero = 189
 nombre = "Jumpluff"
-tipos = PackedStringArray("planta", "volador")
+tipos = ["planta", "volador"]
 ps = 75
 ataque = 55
 defensa = 70
@@ -141,7 +141,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "velocidad": 3
 }
-habilidades = PackedStringArray("chlorophyll", "leaf_guard")
+habilidades = ["chlorophyll", "leaf_guard"]
 habilidad_oculta = "infiltrator"
 categoria = "Pokémon Algadón"
 altura = 0.8

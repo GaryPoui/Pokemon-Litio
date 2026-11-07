@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "mesprit"
 numero = 481
 nombre = "Mesprit"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 80
 ataque = 105
 defensa = 105
@@ -97,7 +97,7 @@ evs_otorgados = {
 "def_esp": 1
 }
 amistad_base = 140
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Sensorio"
 altura = 0.3
 peso_kg = 0.3

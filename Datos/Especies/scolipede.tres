@@ -111,7 +111,7 @@ script = ExtResource("18_ssvf1")
 id = "scolipede"
 numero = 545
 nombre = "Scolipede"
-tipos = PackedStringArray("bicho", "veneno")
+tipos = ["bicho", "veneno"]
 ps = 60
 ataque = 90
 defensa = 89
@@ -123,7 +123,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "velocidad": 3
 }
-habilidades = PackedStringArray("poison_point", "swarm")
+habilidades = ["poison_point", "swarm"]
 habilidad_oculta = "quick_feet"
 categoria = "Pokémon Megaciempiés"
 altura = 2.5

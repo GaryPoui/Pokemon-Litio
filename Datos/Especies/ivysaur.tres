@@ -101,7 +101,7 @@ script = ExtResource("16_hmo4p")
 id = "ivysaur"
 numero = 2
 nombre = "Ivysaur"
-tipos = PackedStringArray("planta", "veneno")
+tipos = ["planta", "veneno"]
 ps = 60
 ataque = 62
 defensa = 63
@@ -122,7 +122,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 32
 }])
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "chlorophyll"
 categoria = "Pokémon Semilla"
 altura = 1.0

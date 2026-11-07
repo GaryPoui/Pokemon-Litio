@@ -30,7 +30,7 @@ script = ExtResource("1")
 id = "simipour"
 numero = 516
 nombre = "Simipour"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 75
 ataque = 98
 defensa = 63
@@ -43,7 +43,7 @@ ratio_genero = 1
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("gluttony")
+habilidades = ["gluttony"]
 habilidad_oculta = "torrent"
 categoria = "Pokémon Drenaje"
 altura = 1.0

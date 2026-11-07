@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "wailord"
 numero = 321
 nombre = "Wailord"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 170
 ataque = 90
 defensa = 45
@@ -130,7 +130,7 @@ crecimiento = "fast-then-very-slow"
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("water_veil", "oblivious")
+habilidades = ["water_veil", "oblivious"]
 habilidad_oculta = "pressure"
 categoria = "Pokémon Ballenaflot"
 altura = 14.5

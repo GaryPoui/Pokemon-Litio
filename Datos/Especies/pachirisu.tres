@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "pachirisu"
 numero = 417
 nombre = "Pachirisu"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 60
 ataque = 45
 defensa = 70
@@ -105,7 +105,7 @@ evs_otorgados = {
 "velocidad": 1
 }
 amistad_base = 100
-habilidades = PackedStringArray("run_away", "pickup")
+habilidades = ["run_away", "pickup"]
 habilidad_oculta = "volt_absorb"
 categoria = "Pokémon Ardillalec"
 altura = 0.4

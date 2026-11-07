@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "glaceon"
 numero = 471
 nombre = "Glaceon"
-tipos = PackedStringArray("hielo")
+tipos = ["hielo"]
 ps = 65
 ataque = 60
 defensa = 110
@@ -104,7 +104,7 @@ evs_otorgados = {
 "at_esp": 2
 }
 amistad_base = 35
-habilidades = PackedStringArray("snow_cloak")
+habilidades = ["snow_cloak"]
 habilidad_oculta = "ice_body"
 categoria = "Pokémon Nieve Fresca"
 altura = 0.8

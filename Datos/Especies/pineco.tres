@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "pineco"
 numero = 204
 nombre = "Pineco"
-tipos = PackedStringArray("bicho")
+tipos = ["bicho"]
 ataque = 65
 defensa = 90
 at_esp = 35
@@ -110,7 +110,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 31
 }])
-habilidades = PackedStringArray("sturdy")
+habilidades = ["sturdy"]
 habilidad_oculta = "overcoat"
 categoria = "Pokémon Larva"
 altura = 0.6

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://d1ayx0kklf0el"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_hcrwx"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_hcrwx"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/helping_hand.tres" id="2_vm66n"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_oor41"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="4_3xgrc"]
@@ -12,9 +12,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/take_down.tres" id="10_yapny"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="11_m36s7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/trump_card.tres" id="12_0xqf5"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="13_bgxus"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/eevee_espalda.png" id="14_2pgku"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/eevee_frente.png" id="15_g3r83"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="13_bgxus"]
+[ext_resource type="Texture2D" uid="uid://cy8uatvk127im" path="res://Assets/Pokemones/batalla/eevee_espalda.png" id="14_2pgku"]
+[ext_resource type="Texture2D" uid="uid://bh4idqncc4l03" path="res://Assets/Pokemones/batalla/eevee_frente.png" id="15_g3r83"]
 
 [sub_resource type="Resource" id="Resource_hcrwx"]
 script = ExtResource("1_hcrwx")
@@ -73,7 +73,6 @@ script = ExtResource("13_bgxus")
 id = "eevee"
 numero = 133
 nombre = "Eevee"
-tipos = PackedStringArray("normal")
 ps = 55
 ataque = 55
 at_esp = 45
@@ -115,7 +114,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "ice_stone"
 }])
-habilidades = PackedStringArray("run_away", "adaptability")
+habilidades = ["run_away", "adaptability"]
 habilidad_oculta = "anticipation"
 categoria = "Pokémon Evolución"
 altura = 0.3

@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "diglett"
 numero = 50
 nombre = "Diglett"
-tipos = PackedStringArray("tierra")
+tipos = ["tierra"]
 ps = 10
 ataque = 55
 defensa = 25
@@ -111,7 +111,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 26
 }])
-habilidades = PackedStringArray("sand_veil", "arena_trap")
+habilidades = ["sand_veil", "arena_trap"]
 habilidad_oculta = "sand_force"
 categoria = "Pokémon Topo"
 altura = 0.2

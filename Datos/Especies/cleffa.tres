@@ -50,7 +50,7 @@ script = ExtResource("1")
 id = "cleffa"
 numero = 173
 nombre = "Cleffa"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ataque = 25
 defensa = 28
 at_esp = 45
@@ -69,7 +69,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "amistad"
 }])
 amistad_base = 140
-habilidades = PackedStringArray("cute_charm", "magic_guard")
+habilidades = ["cute_charm", "magic_guard"]
 habilidad_oculta = "friend_guard"
 categoria = "Pokémon Estrella"
 altura = 0.3

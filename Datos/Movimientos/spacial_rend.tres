@@ -14,4 +14,4 @@ pp = 5
 descripcion = "Desgarra al objetivo y el espacio a su alrededor. Suele ser crítico."
 critico = 1
 numero = 460
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

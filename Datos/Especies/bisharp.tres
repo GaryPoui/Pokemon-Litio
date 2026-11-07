@@ -122,7 +122,7 @@ script = ExtResource("19_6w7xe")
 id = "bisharp"
 numero = 625
 nombre = "Bisharp"
-tipos = PackedStringArray("siniestro", "acero")
+tipos = ["siniestro", "acero"]
 ps = 65
 ataque = 125
 defensa = 100
@@ -134,7 +134,7 @@ evs_otorgados = {
 "ataque": 2
 }
 amistad_base = 35
-habilidades = PackedStringArray("defiant", "inner_focus")
+habilidades = ["defiant", "inner_focus"]
 habilidad_oculta = "pressure"
 categoria = "Pokémon Filo"
 altura = 1.6

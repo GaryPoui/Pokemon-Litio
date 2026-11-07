@@ -97,7 +97,7 @@ script = ExtResource("1")
 id = "golett"
 numero = 622
 nombre = "Golett"
-tipos = PackedStringArray("tierra", "fantasma")
+tipos = ["tierra", "fantasma"]
 ps = 59
 ataque = 74
 at_esp = 35
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 43
 }])
-habilidades = PackedStringArray("iron_fist", "klutz")
+habilidades = ["iron_fist", "klutz"]
 habilidad_oculta = "no_guard"
 categoria = "Pokémon Autómata"
 altura = 1.0

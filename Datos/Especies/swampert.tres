@@ -100,7 +100,7 @@ script = ExtResource("16_rxc0j")
 id = "swampert"
 numero = 260
 nombre = "Swampert"
-tipos = PackedStringArray("agua", "tierra")
+tipos = ["agua", "tierra"]
 ps = 100
 ataque = 110
 defensa = 90
@@ -113,7 +113,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("torrent")
+habilidades = ["torrent"]
 habilidad_oculta = "damp"
 categoria = "Pokémon Pez Lodo"
 altura = 1.5

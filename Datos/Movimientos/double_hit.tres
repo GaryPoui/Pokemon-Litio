@@ -10,6 +10,6 @@ poder = 35
 precision = 90
 descripcion = "Golpea al objetivo dos veces seguidas con la cola u otras partes de su cuerpo."
 numero = 458
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]
 golpes_min = 2
 golpes_max = 2

@@ -79,7 +79,7 @@ script = ExtResource("1")
 id = "gabite"
 numero = 444
 nombre = "Gabite"
-tipos = PackedStringArray("dragon", "tierra")
+tipos = ["dragon", "tierra"]
 ps = 68
 ataque = 90
 defensa = 65
@@ -97,7 +97,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 48
 }])
-habilidades = PackedStringArray("sand_veil")
+habilidades = ["sand_veil"]
 habilidad_oculta = "rough_skin"
 categoria = "Pokémon Cueva"
 altura = 1.4

@@ -12,4 +12,4 @@ precision = 0
 meta = "unique"
 descripcion = "El usuario emplea su poder mental para intercambiar los cambios en la Defensa y Defensa Especial con el objetivo."
 numero = 385
-banderas = PackedStringArray("allyanim", "bypasssub", "metronome", "mirror", "protect")
+banderas = ["allyanim", "bypasssub", "metronome", "mirror", "protect"]

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://bi7gw3f4gt6q"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_2exgi"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_2exgi"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_yikcm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="3_sj3cs"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sand_attack.tres" id="4_2tb14"]
@@ -14,9 +14,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sandstorm.tres" id="12_14ilt"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="13_qx0fv"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="14_swajb"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="15_ygho8"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/roggenrola_espalda.png" id="16_jes8r"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/roggenrola_frente.png" id="17_rx6p3"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="15_ygho8"]
+[ext_resource type="Texture2D" uid="uid://dc782gb2u8lya" path="res://Assets/Pokemones/batalla/roggenrola_espalda.png" id="16_jes8r"]
+[ext_resource type="Texture2D" uid="uid://o25gas1pig01" path="res://Assets/Pokemones/batalla/roggenrola_frente.png" id="17_rx6p3"]
 
 [sub_resource type="Resource" id="Resource_2exgi"]
 script = ExtResource("1_2exgi")
@@ -87,7 +87,7 @@ script = ExtResource("15_ygho8")
 id = "roggenrola"
 numero = 524
 nombre = "Roggenrola"
-tipos = PackedStringArray("roca")
+tipos = ["roca"]
 ps = 55
 ataque = 75
 defensa = 85
@@ -107,7 +107,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 25
 }])
-habilidades = PackedStringArray("sturdy")
+habilidades = ["sturdy"]
 habilidad_oculta = "sand_force"
 categoria = "Pokémon Manto"
 altura = 0.4

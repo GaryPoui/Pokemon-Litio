@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "gothita"
 numero = 574
 nombre = "Gothita"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 45
 ataque = 30
 at_esp = 55
@@ -125,7 +125,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 32
 }])
-habilidades = PackedStringArray("frisk")
+habilidades = ["frisk"]
 habilidad_oculta = "shadow_tag"
 categoria = "Pokémon Inquisitivo"
 altura = 0.4

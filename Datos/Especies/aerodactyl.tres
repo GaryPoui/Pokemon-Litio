@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "aerodactyl"
 numero = 142
 nombre = "Aerodactyl"
-tipos = PackedStringArray("roca", "volador")
+tipos = ["roca", "volador"]
 ps = 80
 ataque = 105
 defensa = 65
@@ -118,7 +118,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("rock_head", "pressure")
+habilidades = ["rock_head", "pressure"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Fósil"
 altura = 1.8

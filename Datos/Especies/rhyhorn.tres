@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "rhyhorn"
 numero = 111
 nombre = "Rhyhorn"
-tipos = PackedStringArray("tierra", "roca")
+tipos = ["tierra", "roca"]
 ps = 80
 ataque = 85
 defensa = 95
@@ -112,7 +112,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 42
 }])
-habilidades = PackedStringArray("lightning_rod", "rock_head")
+habilidades = ["lightning_rod", "rock_head"]
 habilidad_oculta = "reckless"
 categoria = "Pokémon Clavos"
 altura = 1.0

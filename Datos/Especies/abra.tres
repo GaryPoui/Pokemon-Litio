@@ -15,7 +15,7 @@ script = ExtResource("3_o3s7w")
 id = "abra"
 numero = 63
 nombre = "Abra"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 25
 ataque = 20
 defensa = 15
@@ -36,7 +36,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 16
 }])
-habilidades = PackedStringArray("synchronize", "inner_focus")
+habilidades = ["synchronize", "inner_focus"]
 habilidad_oculta = "magic_guard"
 categoria = "Pokémon Psi"
 altura = 0.9

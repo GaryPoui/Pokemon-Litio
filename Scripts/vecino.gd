@@ -8,6 +8,7 @@ extends "res://Scripts/npc.gd"
 @export_multiline var texto_antes :String= ""
 @export_multiline var texto_despues: String =""
 @export var requiere_tipos: Array[String]= []
+@export var requiere_especies :Array[String]= []
 @export_multiline var texto_falta :String= ""
 
 func interactuar(jugador: Node) -> void:
@@ -16,7 +17,7 @@ func interactuar(jugador: Node) -> void:
 	if not tiene_regalo or Estado.tiene(clave_objeto):
 		await Dialogo.mostrar(texto_despues if tiene_regalo and texto_despues!= "" else texto)
 		return
-	if not requiere_tipos.is_empty() and mostrar_tipo()== null:
+	if (not requiere_tipos.is_empty() or not requiere_especies.is_empty()) and mostrar_tipo()== null:
 		await Dialogo.mostrar(texto_falta if texto_falta!= "" else texto)
 		return
 	await Dialogo.mostrar(texto_antes if texto_antes!= "" else texto)
@@ -38,6 +39,8 @@ func interactuar(jugador: Node) -> void:
 
 func mostrar_tipo() -> PokemonInstancia:
 	for p in Equipo.miembros:
+		if requiere_especies.has(p.especie.id):
+			return p
 		for t in p.especie.tipos:
 			if requiere_tipos.has(str(t)):
 				return p

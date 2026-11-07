@@ -12,4 +12,4 @@ pp = 5
 meta = "unique"
 descripcion = "El usuario adivina los movimientos del objetivo para hacer que su siguiente ataque no falle."
 numero = 170
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

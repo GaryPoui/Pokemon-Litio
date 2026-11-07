@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "houndoom"
 numero = 229
 nombre = "Houndoom"
-tipos = PackedStringArray("siniestro", "fuego")
+tipos = ["siniestro", "fuego"]
 ps = 75
 ataque = 90
 at_esp = 110
@@ -129,7 +129,7 @@ evs_otorgados = {
 "at_esp": 2
 }
 amistad_base = 35
-habilidades = PackedStringArray("early_bird", "flash_fire")
+habilidades = ["early_bird", "flash_fire"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Siniestro"
 altura = 1.4

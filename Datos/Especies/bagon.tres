@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "bagon"
 numero = 371
 nombre = "Bagon"
-tipos = PackedStringArray("dragon")
+tipos = ["dragon"]
 ps = 45
 ataque = 75
 defensa = 60
@@ -100,7 +100,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 30
 }])
 amistad_base = 35
-habilidades = PackedStringArray("rock_head")
+habilidades = ["rock_head"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Cabeza Roca"
 altura = 0.6

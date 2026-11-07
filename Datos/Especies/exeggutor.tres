@@ -59,7 +59,7 @@ script = ExtResource("1")
 id = "exeggutor"
 numero = 103
 nombre = "Exeggutor"
-tipos = PackedStringArray("planta", "psiquico")
+tipos = ["planta", "psiquico"]
 ps = 95
 ataque = 95
 defensa = 85
@@ -71,7 +71,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("chlorophyll")
+habilidades = ["chlorophyll"]
 habilidad_oculta = "harvest"
 categoria = "Pokémon Coco"
 altura = 2.0

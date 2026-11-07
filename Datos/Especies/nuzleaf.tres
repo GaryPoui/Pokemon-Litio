@@ -74,7 +74,7 @@ script = ExtResource("1")
 id = "nuzleaf"
 numero = 274
 nombre = "Nuzleaf"
-tipos = PackedStringArray("planta", "siniestro")
+tipos = ["planta", "siniestro"]
 ps = 70
 ataque = 70
 defensa = 40
@@ -92,7 +92,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "leaf_stone"
 }])
-habilidades = PackedStringArray("chlorophyll", "early_bird")
+habilidades = ["chlorophyll", "early_bird"]
 habilidad_oculta = "pickpocket"
 categoria = "Pokémon Astuto"
 altura = 1.0

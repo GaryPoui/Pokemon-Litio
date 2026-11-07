@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "voltorb"
 numero = 100
 nombre = "Voltorb"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 40
 ataque = 30
 at_esp = 55
@@ -118,7 +118,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("soundproof", "static")
+habilidades = ["soundproof", "static"]
 habilidad_oculta = "aftermath"
 categoria = "Pokémon Bola"
 altura = 0.5

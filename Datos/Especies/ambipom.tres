@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "ambipom"
 numero = 424
 nombre = "Ambipom"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 75
 ataque = 100
 defensa = 66
@@ -113,7 +113,7 @@ evs_otorgados = {
 "velocidad": 2
 }
 amistad_base = 100
-habilidades = PackedStringArray("technician", "pickup")
+habilidades = ["technician", "pickup"]
 habilidad_oculta = "skill_link"
 categoria = "Pokémon Cola Larga"
 altura = 1.2

@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "pidgeot"
 numero = 18
 nombre = "Pidgeot"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 83
 ataque = 80
 defensa = 75
@@ -117,7 +117,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "velocidad": 3
 }
-habilidades = PackedStringArray("keen_eye", "tangled_feet")
+habilidades = ["keen_eye", "tangled_feet"]
 habilidad_oculta = "big_pecks"
 categoria = "Pokémon Pájaro"
 altura = 1.5

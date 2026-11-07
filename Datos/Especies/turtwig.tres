@@ -81,7 +81,7 @@ script = ExtResource("14_l1s7v")
 id = "turtwig"
 numero = 387
 nombre = "Turtwig"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 55
 ataque = 68
 defensa = 64
@@ -101,7 +101,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 18
 }])
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "shell_armor"
 categoria = "Pokémon Hojita"
 altura = 0.4

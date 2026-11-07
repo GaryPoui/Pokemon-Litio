@@ -90,7 +90,7 @@ script = ExtResource("1")
 id = "electabuzz"
 numero = 125
 nombre = "Electabuzz"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 65
 ataque = 83
 defensa = 57
@@ -107,7 +107,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "intercambio",
 "objeto": "electirizer"
 }])
-habilidades = PackedStringArray("static")
+habilidades = ["static"]
 habilidad_oculta = "vital_spirit"
 categoria = "Pokémon Eléctrico"
 altura = 1.1

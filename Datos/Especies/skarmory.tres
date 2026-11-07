@@ -98,7 +98,7 @@ script = ExtResource("17_6sacj")
 id = "skarmory"
 numero = 227
 nombre = "Skarmory"
-tipos = PackedStringArray("acero", "volador")
+tipos = ["acero", "volador"]
 ps = 65
 ataque = 80
 defensa = 140
@@ -111,7 +111,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("keen_eye", "sturdy")
+habilidades = ["keen_eye", "sturdy"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Coraza Ave"
 altura = 1.7

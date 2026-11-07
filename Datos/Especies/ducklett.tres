@@ -99,7 +99,7 @@ script = ExtResource("17_n1lkp")
 id = "ducklett"
 numero = 580
 nombre = "Ducklett"
-tipos = PackedStringArray("agua", "volador")
+tipos = ["agua", "volador"]
 ps = 62
 ataque = 44
 at_esp = 44
@@ -116,7 +116,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 35
 }])
-habilidades = PackedStringArray("keen_eye", "big_pecks")
+habilidades = ["keen_eye", "big_pecks"]
 habilidad_oculta = "hydration"
 categoria = "Pokémon Ave Agua"
 altura = 0.5

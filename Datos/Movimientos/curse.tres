@@ -13,4 +13,4 @@ objetivo = "specific-move"
 meta = "unique"
 descripcion = "Un movimiento que tiene efectos distintos si el usuario es de tipo Fantasma o no."
 numero = 174
-banderas = PackedStringArray("bypasssub", "metronome")
+banderas = ["bypasssub", "metronome"]

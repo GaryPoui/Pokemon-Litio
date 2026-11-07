@@ -80,7 +80,7 @@ script = ExtResource("14_cf5c6")
 id = "treecko"
 numero = 252
 nombre = "Treecko"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 40
 ataque = 45
 defensa = 35
@@ -100,7 +100,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 16
 }])
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "unburden"
 categoria = "Pokémon Geco Bosque"
 altura = 0.5

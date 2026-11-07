@@ -30,7 +30,7 @@ script = ExtResource("1")
 id = "wobbuffet"
 numero = 202
 nombre = "Wobbuffet"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 190
 ataque = 33
 defensa = 58
@@ -41,7 +41,7 @@ exp_base = 142
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("shadow_tag")
+habilidades = ["shadow_tag"]
 habilidad_oculta = "telepathy"
 categoria = "Pokémon Paciente"
 altura = 1.3

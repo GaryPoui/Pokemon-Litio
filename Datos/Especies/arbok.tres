@@ -133,7 +133,7 @@ script = ExtResource("1")
 id = "arbok"
 numero = 24
 nombre = "Arbok"
-tipos = PackedStringArray("veneno")
+tipos = ["veneno"]
 ps = 60
 ataque = 85
 defensa = 69
@@ -145,7 +145,7 @@ ratio_captura = 90
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("intimidate", "shed_skin")
+habilidades = ["intimidate", "shed_skin"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Cobra"
 altura = 3.5

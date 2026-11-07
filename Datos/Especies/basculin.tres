@@ -104,7 +104,7 @@ script = ExtResource("18_igkbl")
 id = "basculin"
 numero = 550
 nombre = "Basculin"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 70
 ataque = 92
 defensa = 65
@@ -116,7 +116,7 @@ ratio_captura = 25
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("reckless", "adaptability")
+habilidades = ["reckless", "adaptability"]
 habilidad_oculta = "mold_breaker"
 categoria = "Pokémon Violento"
 altura = 1.0

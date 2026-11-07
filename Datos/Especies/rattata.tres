@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "rattata"
 numero = 19
 nombre = "Rattata"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 30
 ataque = 56
 defensa = 35
@@ -105,7 +105,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 20
 }])
-habilidades = PackedStringArray("run_away", "guts")
+habilidades = ["run_away", "guts"]
 habilidad_oculta = "hustle"
 categoria = "Pokémon Ratón"
 altura = 0.3

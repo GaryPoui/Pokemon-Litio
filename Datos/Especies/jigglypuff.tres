@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "jigglypuff"
 numero = 39
 nombre = "Jigglypuff"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 115
 ataque = 45
 defensa = 20
@@ -112,7 +112,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "moon_stone"
 }])
-habilidades = PackedStringArray("cute_charm")
+habilidades = ["cute_charm"]
 habilidad_oculta = "friend_guard"
 categoria = "Pokémon Globo"
 altura = 0.5

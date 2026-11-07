@@ -12,4 +12,4 @@ precision = 90
 pp = 5
 descripcion = "Es eficaz, pero el atacante deberá descansar en el siguiente turno."
 numero = 63
-banderas = PackedStringArray("metronome", "mirror", "protect", "recharge")
+banderas = ["metronome", "mirror", "protect", "recharge"]

@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "dodrio"
 numero = 85
 nombre = "Dodrio"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 60
 ataque = 110
 defensa = 70
@@ -110,7 +110,7 @@ exp_base = 165
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("run_away", "early_bird")
+habilidades = ["run_away", "early_bird"]
 habilidad_oculta = "tangled_feet"
 categoria = "Pokémon Ave Triple"
 altura = 1.8

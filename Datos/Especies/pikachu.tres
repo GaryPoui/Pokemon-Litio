@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dldekbx8kkmwe"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_jefls"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_jefls"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_jhhua"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thunder_shock.tres" id="3_p4isv"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="4_jj30t"]
@@ -15,9 +15,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="13_w4ra0"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/light_screen.tres" id="14_wxmfy"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thunder.tres" id="15_pvbvr"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="16_slixf"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/pikachu_espalda.png" id="17_2w8jj"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/pikachu_frente.png" id="18_vnx7t"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="16_slixf"]
+[ext_resource type="Texture2D" uid="uid://2uopxig0yehr" path="res://Assets/Pokemones/batalla/pikachu_espalda.png" id="17_2w8jj"]
+[ext_resource type="Texture2D" uid="uid://c0o5npnyr5up" path="res://Assets/Pokemones/batalla/pikachu_frente.png" id="18_vnx7t"]
 
 [sub_resource type="Resource" id="Resource_jefls"]
 script = ExtResource("1_jefls")
@@ -92,7 +92,7 @@ script = ExtResource("16_slixf")
 id = "pikachu"
 numero = 25
 nombre = "Pikachu"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 35
 ataque = 55
 defensa = 30
@@ -108,7 +108,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "thunder_stone"
 }])
-habilidades = PackedStringArray("static")
+habilidades = ["static"]
 habilidad_oculta = "lightning_rod"
 categoria = "Pokémon Ratón"
 altura = 0.4

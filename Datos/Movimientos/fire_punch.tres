@@ -14,4 +14,4 @@ descripcion = "Puñetazo ardiente que puede causar quemaduras."
 estado = "burn"
 prob_estado = 10
 numero = 7
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")
+banderas = ["contact", "metronome", "mirror", "protect", "punch"]

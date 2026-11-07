@@ -87,7 +87,7 @@ script = ExtResource("1")
 id = "rayquaza"
 numero = 384
 nombre = "Rayquaza"
-tipos = PackedStringArray("dragon", "volador")
+tipos = ["dragon", "volador"]
 ps = 105
 ataque = 150
 defensa = 90
@@ -102,7 +102,7 @@ evs_otorgados = {
 "ataque": 2
 }
 amistad_base = 0
-habilidades = PackedStringArray("air_lock")
+habilidades = ["air_lock"]
 categoria = "Pokémon Cielo"
 altura = 7.0
 peso_kg = 206.5

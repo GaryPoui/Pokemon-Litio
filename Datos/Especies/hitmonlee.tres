@@ -110,7 +110,7 @@ script = ExtResource("1")
 id = "hitmonlee"
 numero = 106
 nombre = "Hitmonlee"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ataque = 120
 defensa = 53
 at_esp = 35
@@ -121,7 +121,7 @@ ratio_genero = 0
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("limber", "reckless")
+habilidades = ["limber", "reckless"]
 habilidad_oculta = "unburden"
 categoria = "Pokémon Patada"
 altura = 1.5

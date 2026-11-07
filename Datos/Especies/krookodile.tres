@@ -118,7 +118,7 @@ script = ExtResource("19_ik3oc")
 id = "krookodile"
 numero = 553
 nombre = "Krookodile"
-tipos = PackedStringArray("tierra", "siniestro")
+tipos = ["tierra", "siniestro"]
 ps = 95
 ataque = 117
 defensa = 70
@@ -130,7 +130,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("intimidate", "moxie")
+habilidades = ["intimidate", "moxie"]
 habilidad_oculta = "anger_point"
 categoria = "Pokémon Amenazador"
 altura = 1.5

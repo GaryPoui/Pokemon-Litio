@@ -15,4 +15,4 @@ meta = "heal"
 descripcion = "Restaura PS del usuario. La cantidad varía según el tiempo que haga."
 curacion = 50
 numero = 235
-banderas = PackedStringArray("heal", "metronome", "snatch")
+banderas = ["heal", "metronome", "snatch"]

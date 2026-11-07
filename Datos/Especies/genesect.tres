@@ -119,7 +119,7 @@ script = ExtResource("1")
 id = "genesect"
 numero = 649
 nombre = "Genesect"
-tipos = PackedStringArray("bicho", "acero")
+tipos = ["bicho", "acero"]
 ps = 71
 ataque = 120
 defensa = 95
@@ -136,7 +136,7 @@ evs_otorgados = {
 "velocidad": 1
 }
 amistad_base = 0
-habilidades = PackedStringArray("download")
+habilidades = ["download"]
 categoria = "Pokémon Paleozoico"
 altura = 1.5
 peso_kg = 82.5

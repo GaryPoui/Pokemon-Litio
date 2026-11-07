@@ -12,4 +12,4 @@ pp = 15
 descripcion = "Embiste con un gran impulso que puede llegar a amedrentar."
 prob_retroceso = 20
 numero = 127
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

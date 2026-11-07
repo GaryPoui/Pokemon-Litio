@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "zapdos"
 numero = 145
 nombre = "Zapdos"
-tipos = PackedStringArray("electrico", "volador")
+tipos = ["electrico", "volador"]
 ps = 90
 ataque = 90
 defensa = 85
@@ -107,7 +107,7 @@ evs_otorgados = {
 "at_esp": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 habilidad_oculta = "lightning_rod"
 categoria = "Pokémon Eléctrico"
 altura = 1.6

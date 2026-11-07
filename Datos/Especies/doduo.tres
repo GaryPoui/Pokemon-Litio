@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "doduo"
 numero = 84
 nombre = "Doduo"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 35
 ataque = 85
 defensa = 45
@@ -105,7 +105,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 31
 }])
-habilidades = PackedStringArray("run_away", "early_bird")
+habilidades = ["run_away", "early_bird"]
 habilidad_oculta = "tangled_feet"
 categoria = "Pokémon Ave Gemela"
 altura = 1.4

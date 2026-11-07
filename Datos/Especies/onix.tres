@@ -120,7 +120,7 @@ script = ExtResource("1")
 id = "onix"
 numero = 95
 nombre = "Onix"
-tipos = PackedStringArray("roca", "tierra")
+tipos = ["roca", "tierra"]
 ps = 35
 ataque = 45
 defensa = 160
@@ -136,7 +136,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "intercambio",
 "objeto": "metal_coat"
 }])
-habilidades = PackedStringArray("rock_head", "sturdy")
+habilidades = ["rock_head", "sturdy"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Serpiente Roca"
 altura = 8.8

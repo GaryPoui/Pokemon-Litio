@@ -122,7 +122,7 @@ script = ExtResource("1")
 id = "beartic"
 numero = 614
 nombre = "Beartic"
-tipos = PackedStringArray("hielo")
+tipos = ["hielo"]
 ps = 95
 ataque = 110
 defensa = 80
@@ -133,7 +133,7 @@ ratio_captura = 60
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("snow_cloak")
+habilidades = ["snow_cloak"]
 habilidad_oculta = "swift_swim"
 categoria = "Pokémon Glaciación"
 altura = 2.6

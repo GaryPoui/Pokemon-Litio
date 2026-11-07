@@ -15,4 +15,4 @@ descripcion = "Un poderoso rayo que daña al objetivo y puede paralizarlo."
 estado = "paralysis"
 prob_estado = 30
 numero = 87
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

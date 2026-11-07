@@ -11,4 +11,4 @@ precision = 90
 pp = 5
 descripcion = "El usuario carga contra el objetivo con toda la fuerza que tiene y descansa durante el siguiente turno."
 numero = 416
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "recharge")
+banderas = ["contact", "metronome", "mirror", "protect", "recharge"]

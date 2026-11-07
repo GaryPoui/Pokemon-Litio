@@ -82,7 +82,7 @@ script = ExtResource("1")
 id = "vigoroth"
 numero = 288
 nombre = "Vigoroth"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 80
 ataque = 80
 defensa = 80
@@ -102,7 +102,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("vital_spirit")
+habilidades = ["vital_spirit"]
 categoria = "Pokémon Mono Feroz"
 altura = 1.4
 peso_kg = 46.5

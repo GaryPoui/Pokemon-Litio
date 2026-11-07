@@ -98,7 +98,7 @@ script = ExtResource("17_gr0ja")
 id = "cyndaquil"
 numero = 155
 nombre = "Cyndaquil"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 39
 ataque = 52
 defensa = 43
@@ -117,7 +117,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 14
 }])
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "flash_fire"
 categoria = "Pokémon Ratón Fuego"
 altura = 0.5

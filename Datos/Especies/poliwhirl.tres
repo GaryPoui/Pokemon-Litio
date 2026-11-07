@@ -95,7 +95,7 @@ script = ExtResource("1")
 id = "poliwhirl"
 numero = 61
 nombre = "Poliwhirl"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 65
 ataque = 65
 defensa = 65
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "intercambio",
 "objeto": "kings_rock"
 }])
-habilidades = PackedStringArray("water_absorb", "damp")
+habilidades = ["water_absorb", "damp"]
 habilidad_oculta = "swift_swim"
 categoria = "Pokémon Renacuajo"
 altura = 1.0

@@ -115,7 +115,7 @@ script = ExtResource("1")
 id = "scyther"
 numero = 123
 nombre = "Scyther"
-tipos = PackedStringArray("bicho", "volador")
+tipos = ["bicho", "volador"]
 ps = 70
 ataque = 110
 defensa = 80
@@ -131,7 +131,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "intercambio",
 "objeto": "metal_coat"
 }])
-habilidades = PackedStringArray("swarm", "technician")
+habilidades = ["swarm", "technician"]
 habilidad_oculta = "steadfast"
 categoria = "Pokémon Mantis"
 altura = 1.5

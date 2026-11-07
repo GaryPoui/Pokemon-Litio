@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "fraxure"
 numero = 611
 nombre = "Fraxure"
-tipos = PackedStringArray("dragon")
+tipos = ["dragon"]
 ps = 66
 ataque = 117
 defensa = 70
@@ -137,7 +137,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 48
 }])
 amistad_base = 35
-habilidades = PackedStringArray("rivalry", "mold_breaker")
+habilidades = ["rivalry", "mold_breaker"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Boca Hacha"
 altura = 1.0

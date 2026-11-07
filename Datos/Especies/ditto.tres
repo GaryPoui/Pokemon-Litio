@@ -15,7 +15,7 @@ script = ExtResource("1")
 id = "ditto"
 numero = 132
 nombre = "Ditto"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 48
 ataque = 48
 defensa = 48
@@ -28,7 +28,7 @@ ratio_genero = -1
 evs_otorgados = {
 "ps": 1
 }
-habilidades = PackedStringArray("limber")
+habilidades = ["limber"]
 habilidad_oculta = "imposter"
 categoria = "Pokémon Transformación"
 altura = 0.3

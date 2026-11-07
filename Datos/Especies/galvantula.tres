@@ -107,7 +107,7 @@ script = ExtResource("18_qyqdx")
 id = "galvantula"
 numero = 596
 nombre = "Galvantula"
-tipos = PackedStringArray("bicho", "electrico")
+tipos = ["bicho", "electrico"]
 ps = 70
 ataque = 77
 defensa = 60
@@ -119,7 +119,7 @@ ratio_captura = 75
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("compound_eyes", "unnerve")
+habilidades = ["compound_eyes", "unnerve"]
 habilidad_oculta = "swarm"
 categoria = "Pokémon Electroaraña"
 altura = 0.8

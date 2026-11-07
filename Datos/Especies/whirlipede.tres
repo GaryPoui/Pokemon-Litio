@@ -106,7 +106,7 @@ script = ExtResource("17_ugb1t")
 id = "whirlipede"
 numero = 544
 nombre = "Whirlipede"
-tipos = PackedStringArray("bicho", "veneno")
+tipos = ["bicho", "veneno"]
 ps = 40
 ataque = 55
 defensa = 99
@@ -126,7 +126,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("poison_point", "swarm")
+habilidades = ["poison_point", "swarm"]
 habilidad_oculta = "quick_feet"
 categoria = "Pokémon Pupaciempiés"
 altura = 1.2

@@ -93,7 +93,7 @@ script = ExtResource("16_plh4a")
 id = "poochyena"
 numero = 261
 nombre = "Poochyena"
-tipos = PackedStringArray("siniestro")
+tipos = ["siniestro"]
 ps = 35
 ataque = 55
 defensa = 35
@@ -112,7 +112,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 18
 }])
-habilidades = PackedStringArray("run_away", "quick_feet")
+habilidades = ["run_away", "quick_feet"]
 habilidad_oculta = "rattled"
 categoria = "Pokémon Mordisco"
 altura = 0.5

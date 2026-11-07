@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "raikou"
 numero = 243
 nombre = "Raikou"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 90
 ataque = 85
 defensa = 75
@@ -108,7 +108,7 @@ evs_otorgados = {
 "velocidad": 2
 }
 amistad_base = 35
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 habilidad_oculta = "volt_absorb"
 categoria = "Pokémon Trueno"
 altura = 1.9

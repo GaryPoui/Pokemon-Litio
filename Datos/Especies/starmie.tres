@@ -36,7 +36,7 @@ script = ExtResource("1")
 id = "starmie"
 numero = 121
 nombre = "Starmie"
-tipos = PackedStringArray("agua", "psiquico")
+tipos = ["agua", "psiquico"]
 ps = 60
 ataque = 75
 defensa = 85
@@ -50,7 +50,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("illuminate", "natural_cure")
+habilidades = ["illuminate", "natural_cure"]
 habilidad_oculta = "analytic"
 categoria = "Pokémon Misterioso"
 altura = 1.1

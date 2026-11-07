@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://c3hk0y2djpxvp"]
 
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/miltank_frente.png" id="3"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/miltank_espalda.png" id="4"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://byae1l13fusu3" path="res://Assets/Pokemones/batalla/miltank_frente.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cj30t6bhag8gj" path="res://Assets/Pokemones/batalla/miltank_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="7"]
@@ -87,7 +87,6 @@ script = ExtResource("1")
 id = "miltank"
 numero = 241
 nombre = "Miltank"
-tipos = PackedStringArray("normal")
 ps = 95
 ataque = 80
 defensa = 105
@@ -100,7 +99,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("thick_fat", "scrappy")
+habilidades = ["thick_fat", "scrappy"]
 habilidad_oculta = "sap_sipper"
 categoria = "Pokémon Lechera"
 altura = 1.2

@@ -119,7 +119,7 @@ script = ExtResource("1")
 id = "archeops"
 numero = 567
 nombre = "Archeops"
-tipos = PackedStringArray("roca", "volador")
+tipos = ["roca", "volador"]
 ps = 75
 ataque = 140
 defensa = 65
@@ -131,7 +131,7 @@ ratio_genero = 1
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("defeatist")
+habilidades = ["defeatist"]
 categoria = "Pokémon Protopájaro"
 altura = 1.4
 peso_kg = 32.0

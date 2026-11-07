@@ -13,4 +13,4 @@ objetivo = "entire-field"
 meta = "whole-field-effect"
 descripcion = "Tormenta de arena que dura cinco turnos y hiere a todos, excepto a los de tipo Roca, Tierra y Acero, y aumenta la Defensa Especial de los de tipo Roca."
 numero = 201
-banderas = PackedStringArray("metronome", "wind")
+banderas = ["metronome", "wind"]

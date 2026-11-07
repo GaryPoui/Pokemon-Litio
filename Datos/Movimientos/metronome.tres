@@ -12,4 +12,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Mueve un dedo y estimula su cerebro para usar al azar casi cualquier movimiento."
 numero = 118
-banderas = PackedStringArray("failcopycat", "failencore", "failinstruct", "failmimic", "noassist", "nosleeptalk")
+banderas = ["failcopycat", "failencore", "failinstruct", "failmimic", "noassist", "nosleeptalk"]

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d1iod5pskkagg"]
+
+[ext_resource type="Texture2D" uid="uid://cajw2kijtsesg" path="res://Assets/Overworld/Rutas7/monumento_1871.png" id="1_flr87"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_flr87"]
+size = Vector2(32, 16)
+
+[node name="Monumento1871" type="StaticBody2D" unique_id=1647445608]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=412269728]
+position = Vector2(-16, -51)
+texture = ExtResource("1_flr87")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1053275322]
+shape = SubResource("RectangleShape2D_flr87")

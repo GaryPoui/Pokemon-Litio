@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "mothim"
 numero = 414
 nombre = "Mothim"
-tipos = PackedStringArray("bicho", "volador")
+tipos = ["bicho", "volador"]
 ps = 70
 ataque = 94
 at_esp = 94
@@ -104,7 +104,7 @@ evs_otorgados = {
 "at_esp": 1,
 "ataque": 1
 }
-habilidades = PackedStringArray("swarm")
+habilidades = ["swarm"]
 habilidad_oculta = "tinted_lens"
 categoria = "Pokémon Polilla"
 altura = 0.9

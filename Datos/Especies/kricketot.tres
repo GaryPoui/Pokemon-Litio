@@ -32,7 +32,7 @@ script = ExtResource("1")
 id = "kricketot"
 numero = 401
 nombre = "Kricketot"
-tipos = PackedStringArray("bicho")
+tipos = ["bicho"]
 ps = 37
 ataque = 25
 defensa = 41
@@ -52,7 +52,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 10
 }])
-habilidades = PackedStringArray("shed_skin")
+habilidades = ["shed_skin"]
 habilidad_oculta = "run_away"
 categoria = "Pokémon Grillo"
 altura = 0.3

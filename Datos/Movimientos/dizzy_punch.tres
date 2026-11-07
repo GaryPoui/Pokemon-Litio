@@ -12,6 +12,6 @@ descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidar
 estado = "confusion"
 prob_estado = 20
 numero = 146
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")
+banderas = ["contact", "metronome", "mirror", "protect", "punch"]
 turnos_min = 2
 turnos_max = 5

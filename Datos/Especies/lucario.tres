@@ -119,7 +119,7 @@ script = ExtResource("21_rcyb3")
 id = "lucario"
 numero = 448
 nombre = "Lucario"
-tipos = PackedStringArray("lucha", "acero")
+tipos = ["lucha", "acero"]
 ps = 70
 ataque = 110
 defensa = 70
@@ -133,7 +133,7 @@ evs_otorgados = {
 "at_esp": 1,
 "ataque": 1
 }
-habilidades = PackedStringArray("steadfast", "inner_focus")
+habilidades = ["steadfast", "inner_focus"]
 habilidad_oculta = "justified"
 categoria = "Pokémon Aura"
 altura = 1.2

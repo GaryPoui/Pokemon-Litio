@@ -118,7 +118,7 @@ script = ExtResource("1")
 id = "pelipper"
 numero = 279
 nombre = "Pelipper"
-tipos = PackedStringArray("agua", "volador")
+tipos = ["agua", "volador"]
 ps = 60
 defensa = 100
 at_esp = 85
@@ -128,7 +128,7 @@ exp_base = 154
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("keen_eye")
+habilidades = ["keen_eye"]
 habilidad_oculta = "rain_dish"
 categoria = "Pokémon Ave Agua"
 altura = 1.2

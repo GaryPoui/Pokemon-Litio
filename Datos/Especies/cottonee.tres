@@ -105,7 +105,7 @@ script = ExtResource("18_mv4mo")
 id = "cottonee"
 numero = 546
 nombre = "Cottonee"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 40
 ataque = 27
 defensa = 60
@@ -121,7 +121,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "sun_stone"
 }])
-habilidades = PackedStringArray("prankster", "infiltrator")
+habilidades = ["prankster", "infiltrator"]
 habilidad_oculta = "chlorophyll"
 categoria = "Pokémon Bolalgodón"
 altura = 0.3

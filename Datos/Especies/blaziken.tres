@@ -110,7 +110,7 @@ script = ExtResource("18_b0c3j")
 id = "blaziken"
 numero = 257
 nombre = "Blaziken"
-tipos = PackedStringArray("fuego", "lucha")
+tipos = ["fuego", "lucha"]
 ps = 80
 ataque = 120
 defensa = 70
@@ -123,7 +123,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "speed_boost"
 categoria = "Pokémon Llameante"
 altura = 1.9

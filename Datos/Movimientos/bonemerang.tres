@@ -11,6 +11,6 @@ poder = 50
 precision = 90
 descripcion = "Lanza un hueso a modo de bumerán que golpea dos veces."
 numero = 155
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]
 golpes_min = 2
 golpes_max = 2

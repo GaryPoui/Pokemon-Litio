@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "gothitelle"
 numero = 576
 nombre = "Gothitelle"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 70
 ataque = 55
 defensa = 95
@@ -131,7 +131,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "def_esp": 3
 }
-habilidades = PackedStringArray("frisk")
+habilidades = ["frisk"]
 habilidad_oculta = "shadow_tag"
 categoria = "Pokémon Astro"
 altura = 1.5

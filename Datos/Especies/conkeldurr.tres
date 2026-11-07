@@ -112,7 +112,7 @@ script = ExtResource("1")
 id = "conkeldurr"
 numero = 534
 nombre = "Conkeldurr"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 105
 ataque = 140
 defensa = 95
@@ -125,7 +125,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("guts", "sheer_force")
+habilidades = ["guts", "sheer_force"]
 habilidad_oculta = "iron_fist"
 categoria = "Pokémon Musculoso"
 altura = 1.4

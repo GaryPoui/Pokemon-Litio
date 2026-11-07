@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "furret"
 numero = 162
 nombre = "Furret"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 85
 ataque = 76
 defensa = 64
@@ -112,7 +112,7 @@ ratio_captura = 90
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("run_away", "keen_eye")
+habilidades = ["run_away", "keen_eye"]
 habilidad_oculta = "frisk"
 categoria = "Pokémon Alargado"
 altura = 1.8

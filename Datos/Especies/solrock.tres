@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "solrock"
 numero = 338
 nombre = "Solrock"
-tipos = PackedStringArray("roca", "psiquico")
+tipos = ["roca", "psiquico"]
 ps = 70
 ataque = 95
 defensa = 85
@@ -104,7 +104,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Meteorito"
 altura = 1.2
 peso_kg = 154.0

@@ -74,7 +74,7 @@ script = ExtResource("1")
 id = "spearow"
 numero = 21
 nombre = "Spearow"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 40
 ataque = 60
 defensa = 30
@@ -93,7 +93,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 20
 }])
-habilidades = PackedStringArray("keen_eye")
+habilidades = ["keen_eye"]
 habilidad_oculta = "sniper"
 categoria = "Pokémon Pajarito"
 altura = 0.3

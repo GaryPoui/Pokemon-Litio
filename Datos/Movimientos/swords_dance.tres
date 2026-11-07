@@ -16,4 +16,4 @@ cambios_stats = {
 "ataque": 2
 }
 numero = 14
-banderas = PackedStringArray("dance", "metronome", "snatch")
+banderas = ["dance", "metronome", "snatch"]

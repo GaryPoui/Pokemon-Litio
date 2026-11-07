@@ -47,7 +47,7 @@ script = ExtResource("1")
 id = "bellossom"
 numero = 182
 nombre = "Bellossom"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 75
 ataque = 80
 defensa = 85
@@ -58,7 +58,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "def_esp": 3
 }
-habilidades = PackedStringArray("chlorophyll")
+habilidades = ["chlorophyll"]
 habilidad_oculta = "healer"
 categoria = "Pokémon Flor"
 altura = 0.4

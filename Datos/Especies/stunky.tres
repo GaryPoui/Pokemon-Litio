@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "stunky"
 numero = 434
 nombre = "Stunky"
-tipos = PackedStringArray("veneno", "siniestro")
+tipos = ["veneno", "siniestro"]
 ps = 63
 ataque = 63
 defensa = 47
@@ -105,7 +105,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 34
 }])
-habilidades = PackedStringArray("stench", "aftermath")
+habilidades = ["stench", "aftermath"]
 habilidad_oculta = "keen_eye"
 categoria = "Pokémon Mofeta"
 altura = 0.4

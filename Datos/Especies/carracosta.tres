@@ -119,7 +119,7 @@ script = ExtResource("1")
 id = "carracosta"
 numero = 565
 nombre = "Carracosta"
-tipos = PackedStringArray("agua", "roca")
+tipos = ["agua", "roca"]
 ps = 74
 ataque = 108
 defensa = 133
@@ -131,7 +131,7 @@ ratio_genero = 1
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("solid_rock", "sturdy")
+habilidades = ["solid_rock", "sturdy"]
 habilidad_oculta = "swift_swim"
 categoria = "Pokémon Pretortuga"
 altura = 1.2

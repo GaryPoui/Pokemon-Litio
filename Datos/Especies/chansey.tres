@@ -109,7 +109,7 @@ script = ExtResource("1")
 id = "chansey"
 numero = 113
 nombre = "Chansey"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 250
 ataque = 5
 defensa = 5
@@ -128,7 +128,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "amistad"
 }])
 amistad_base = 140
-habilidades = PackedStringArray("natural_cure", "serene_grace")
+habilidades = ["natural_cure", "serene_grace"]
 habilidad_oculta = "healer"
 categoria = "Pokémon Huevo"
 altura = 1.1

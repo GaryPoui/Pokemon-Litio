@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "dratini"
 numero = 147
 nombre = "Dratini"
-tipos = PackedStringArray("dragon")
+tipos = ["dragon"]
 ps = 41
 ataque = 64
 defensa = 45
@@ -109,7 +109,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 30
 }])
 amistad_base = 35
-habilidades = PackedStringArray("shed_skin")
+habilidades = ["shed_skin"]
 habilidad_oculta = "marvel_scale"
 categoria = "Pokémon Dragón"
 altura = 1.8

@@ -75,7 +75,7 @@ script = ExtResource("1")
 id = "vibrava"
 numero = 329
 nombre = "Vibrava"
-tipos = PackedStringArray("tierra", "dragon")
+tipos = ["tierra", "dragon"]
 ataque = 70
 velocidad = 70
 exp_base = 119
@@ -92,7 +92,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 45
 }])
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Vibrante"
 altura = 1.1
 peso_kg = 15.3

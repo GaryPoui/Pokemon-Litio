@@ -84,7 +84,7 @@ script = ExtResource("1")
 id = "cherrim"
 numero = 421
 nombre = "Cherrim"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 70
 ataque = 60
 defensa = 70
@@ -96,7 +96,7 @@ ratio_captura = 75
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("flower_gift")
+habilidades = ["flower_gift"]
 categoria = "Pokémon Floración"
 altura = 0.5
 peso_kg = 9.3

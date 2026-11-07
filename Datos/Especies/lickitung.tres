@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "lickitung"
 numero = 108
 nombre = "Lickitung"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 90
 ataque = 55
 defensa = 75
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "movimiento",
 "movimiento": "rollout"
 }])
-habilidades = PackedStringArray("own_tempo", "oblivious")
+habilidades = ["own_tempo", "oblivious"]
 habilidad_oculta = "cloud_nine"
 categoria = "Pokémon Lametazo"
 altura = 1.2

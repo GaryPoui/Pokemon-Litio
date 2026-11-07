@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "larvitar"
 numero = 246
 nombre = "Larvitar"
-tipos = PackedStringArray("roca", "tierra")
+tipos = ["roca", "tierra"]
 ataque = 64
 at_esp = 45
 velocidad = 41
@@ -109,7 +109,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 30
 }])
 amistad_base = 35
-habilidades = PackedStringArray("guts")
+habilidades = ["guts"]
 habilidad_oculta = "sand_veil"
 categoria = "Pokémon Piel Roca"
 altura = 0.6

@@ -94,7 +94,7 @@ script = ExtResource("1")
 id = "floatzel"
 numero = 419
 nombre = "Floatzel"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 85
 ataque = 105
 defensa = 55
@@ -105,7 +105,7 @@ ratio_captura = 75
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("swift_swim")
+habilidades = ["swift_swim"]
 habilidad_oculta = "water_veil"
 categoria = "Pokémon Nutria Mar."
 altura = 1.1

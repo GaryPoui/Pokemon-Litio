@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://b5ah2qju5upf4"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_bkvtf"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_bkvtf"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/poison_gas.tres" id="2_a6y7k"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="3_nfxvk"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/recycle.tres" id="4_c867h"]
@@ -17,9 +17,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/amnesia.tres" id="15_gtruk"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/gunk_shot.tres" id="16_iyap7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/explosion.tres" id="17_xm1oi"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_jkwdd"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/trubbish_espalda.png" id="19_mff6a"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/trubbish_frente.png" id="20_6tdl1"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_jkwdd"]
+[ext_resource type="Texture2D" uid="uid://bynyersft1ghk" path="res://Assets/Pokemones/batalla/trubbish_espalda.png" id="19_mff6a"]
+[ext_resource type="Texture2D" uid="uid://7ivjcdr1wq7o" path="res://Assets/Pokemones/batalla/trubbish_frente.png" id="20_6tdl1"]
 
 [sub_resource type="Resource" id="Resource_bkvtf"]
 script = ExtResource("1_bkvtf")
@@ -104,7 +104,7 @@ script = ExtResource("18_jkwdd")
 id = "trubbish"
 numero = 568
 nombre = "Trubbish"
-tipos = PackedStringArray("veneno")
+tipos = ["veneno"]
 defensa = 62
 at_esp = 40
 def_esp = 62
@@ -121,7 +121,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("stench", "sticky_hold")
+habilidades = ["stench", "sticky_hold"]
 habilidad_oculta = "aftermath"
 categoria = "Pokémon Bolsa Basura"
 altura = 0.6

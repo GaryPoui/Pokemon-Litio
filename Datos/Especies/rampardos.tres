@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "rampardos"
 numero = 409
 nombre = "Rampardos"
-tipos = PackedStringArray("roca")
+tipos = ["roca"]
 ps = 97
 ataque = 165
 defensa = 60
@@ -98,7 +98,7 @@ crecimiento = "slow-then-very-fast"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("mold_breaker")
+habilidades = ["mold_breaker"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Cabezazo"
 altura = 1.6

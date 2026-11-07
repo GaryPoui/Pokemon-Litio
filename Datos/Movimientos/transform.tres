@@ -11,4 +11,4 @@ precision = 0
 meta = "unique"
 descripcion = "El usuario se transforma en una copia del objetivo, con los mismos movimientos."
 numero = 144
-banderas = PackedStringArray("allyanim", "failcopycat", "failencore", "failinstruct", "failmimic", "noassist")
+banderas = ["allyanim", "failcopycat", "failencore", "failinstruct", "failmimic", "noassist"]

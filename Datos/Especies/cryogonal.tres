@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "cryogonal"
 numero = 615
 nombre = "Cryogonal"
-tipos = PackedStringArray("hielo")
+tipos = ["hielo"]
 ps = 70
 ataque = 30
 at_esp = 95
@@ -129,7 +129,7 @@ ratio_genero = -1
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Cristal"
 altura = 1.1
 peso_kg = 148.0

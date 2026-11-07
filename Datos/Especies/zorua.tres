@@ -104,7 +104,7 @@ script = ExtResource("18_3l8u1")
 id = "zorua"
 numero = 570
 nombre = "Zorua"
-tipos = PackedStringArray("siniestro")
+tipos = ["siniestro"]
 ps = 40
 ataque = 65
 defensa = 40
@@ -125,7 +125,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("illusion")
+habilidades = ["illusion"]
 categoria = "Pokémon Zorro Pillo"
 altura = 0.7
 peso_kg = 12.5

@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "nosepass"
 numero = 299
 nombre = "Nosepass"
-tipos = PackedStringArray("roca")
+tipos = ["roca"]
 ps = 30
 ataque = 45
 defensa = 135
@@ -110,7 +110,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "thunder_stone"
 }])
-habilidades = PackedStringArray("sturdy", "magnet_pull")
+habilidades = ["sturdy", "magnet_pull"]
 habilidad_oculta = "sand_force"
 categoria = "Pokémon Brújula"
 altura = 1.0

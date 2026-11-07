@@ -11,4 +11,4 @@ poder = 90
 objetivo = "all-opponents"
 descripcion = "Grito desgarrador que inflige daño al objetivo."
 numero = 304
-banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "sound")
+banderas = ["bypasssub", "metronome", "mirror", "protect", "sound"]

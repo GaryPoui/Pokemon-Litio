@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "shroomish"
 numero = 285
 nombre = "Shroomish"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 60
 ataque = 40
 defensa = 60
@@ -101,7 +101,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 23
 }])
-habilidades = PackedStringArray("effect_spore", "poison_heal")
+habilidades = ["effect_spore", "poison_heal"]
 habilidad_oculta = "quick_feet"
 categoria = "Pokémon Hongo"
 altura = 0.4

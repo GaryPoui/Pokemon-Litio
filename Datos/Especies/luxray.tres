@@ -89,7 +89,7 @@ script = ExtResource("14_h0lfo")
 id = "luxray"
 numero = 405
 nombre = "Luxray"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 80
 ataque = 120
 defensa = 79
@@ -101,7 +101,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("rivalry", "intimidate")
+habilidades = ["rivalry", "intimidate"]
 habilidad_oculta = "guts"
 categoria = "Pokémon Chispa Ojos"
 altura = 1.4

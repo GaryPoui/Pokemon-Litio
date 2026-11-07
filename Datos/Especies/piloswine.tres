@@ -111,7 +111,7 @@ script = ExtResource("1")
 id = "piloswine"
 numero = 221
 nombre = "Piloswine"
-tipos = PackedStringArray("hielo", "tierra")
+tipos = ["hielo", "tierra"]
 ps = 100
 ataque = 100
 defensa = 80
@@ -129,7 +129,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "movimiento",
 "movimiento": "ancient_power"
 }])
-habilidades = PackedStringArray("oblivious", "snow_cloak")
+habilidades = ["oblivious", "snow_cloak"]
 habilidad_oculta = "thick_fat"
 categoria = "Pokémon Puerco"
 altura = 1.1

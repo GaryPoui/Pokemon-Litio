@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "ponyta"
 numero = 77
 nombre = "Ponyta"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ataque = 85
 defensa = 55
 at_esp = 65
@@ -110,7 +110,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 40
 }])
-habilidades = PackedStringArray("run_away", "flash_fire")
+habilidades = ["run_away", "flash_fire"]
 habilidad_oculta = "flame_body"
 categoria = "Pokémon Caballo Fuego"
 altura = 1.0

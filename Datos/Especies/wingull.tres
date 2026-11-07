@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "wingull"
 numero = 278
 nombre = "Wingull"
-tipos = PackedStringArray("agua", "volador")
+tipos = ["agua", "volador"]
 ps = 40
 ataque = 30
 defensa = 30
@@ -105,7 +105,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 25
 }])
-habilidades = PackedStringArray("keen_eye")
+habilidades = ["keen_eye"]
 habilidad_oculta = "rain_dish"
 categoria = "Pokémon Gaviota"
 altura = 0.6

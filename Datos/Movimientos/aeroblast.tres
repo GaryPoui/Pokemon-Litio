@@ -14,4 +14,4 @@ pp = 5
 descripcion = "Lanza un chorro de aire que suele asestar un golpe crítico."
 critico = 1
 numero = 177
-banderas = PackedStringArray("distance", "metronome", "mirror", "protect", "wind")
+banderas = ["distance", "metronome", "mirror", "protect", "wind"]

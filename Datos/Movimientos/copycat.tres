@@ -13,4 +13,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Imita el movimiento usado justo antes. El movimiento falla si no se ha usado aún ninguno."
 numero = 383
-banderas = PackedStringArray("failcopycat", "failencore", "failinstruct", "failmimic", "noassist", "nosleeptalk")
+banderas = ["failcopycat", "failencore", "failinstruct", "failmimic", "noassist", "nosleeptalk"]

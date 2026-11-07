@@ -12,4 +12,4 @@ precision = 0
 meta = "unique"
 descripcion = "El usuario emplea sus poderes para hacer la media de su Ataque y Ataque Especial con los de su objetivo y compartirlos."
 numero = 471
-banderas = PackedStringArray("allyanim", "metronome", "protect")
+banderas = ["allyanim", "metronome", "protect"]

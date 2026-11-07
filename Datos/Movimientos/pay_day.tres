@@ -10,4 +10,4 @@ poder = 40
 pp = 20
 descripcion = "Arroja monedas al objetivo y las recupera al final del combate."
 numero = 6
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

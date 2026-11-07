@@ -111,7 +111,7 @@ script = ExtResource("1")
 id = "vulpix"
 numero = 37
 nombre = "Vulpix"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 38
 ataque = 41
 defensa = 40
@@ -128,7 +128,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "fire_stone"
 }])
-habilidades = PackedStringArray("flash_fire")
+habilidades = ["flash_fire"]
 habilidad_oculta = "drought"
 categoria = "Pokémon Zorro"
 altura = 0.6

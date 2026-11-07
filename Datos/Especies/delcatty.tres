@@ -30,7 +30,7 @@ script = ExtResource("1")
 id = "delcatty"
 numero = 301
 nombre = "Delcatty"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 70
 ataque = 65
 defensa = 65
@@ -45,7 +45,7 @@ evs_otorgados = {
 "ps": 1,
 "velocidad": 1
 }
-habilidades = PackedStringArray("cute_charm", "normalize")
+habilidades = ["cute_charm", "normalize"]
 habilidad_oculta = "wonder_skin"
 categoria = "Pokémon Cursi"
 altura = 1.1

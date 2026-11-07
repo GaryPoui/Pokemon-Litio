@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "barboach"
 numero = 339
 nombre = "Barboach"
-tipos = PackedStringArray("agua", "tierra")
+tipos = ["agua", "tierra"]
 ataque = 48
 defensa = 43
 at_esp = 46
@@ -111,7 +111,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("oblivious", "anticipation")
+habilidades = ["oblivious", "anticipation"]
 habilidad_oculta = "hydration"
 categoria = "Pokémon Bigotudo"
 altura = 0.4

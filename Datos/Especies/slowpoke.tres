@@ -103,7 +103,7 @@ script = ExtResource("1")
 id = "slowpoke"
 numero = 79
 nombre = "Slowpoke"
-tipos = PackedStringArray("agua", "psiquico")
+tipos = ["agua", "psiquico"]
 ps = 90
 ataque = 65
 defensa = 65
@@ -126,7 +126,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "intercambio",
 "objeto": "kings_rock"
 }])
-habilidades = PackedStringArray("oblivious", "own_tempo")
+habilidades = ["oblivious", "own_tempo"]
 habilidad_oculta = "regenerator"
 categoria = "Pokémon Atontado"
 altura = 1.2

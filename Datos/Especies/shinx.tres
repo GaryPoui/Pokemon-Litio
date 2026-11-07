@@ -81,7 +81,7 @@ script = ExtResource("14_y55r6")
 id = "shinx"
 numero = 403
 nombre = "Shinx"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 45
 ataque = 65
 defensa = 34
@@ -101,7 +101,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 15
 }])
-habilidades = PackedStringArray("rivalry", "intimidate")
+habilidades = ["rivalry", "intimidate"]
 habilidad_oculta = "guts"
 categoria = "Pokémon Flash"
 altura = 0.5

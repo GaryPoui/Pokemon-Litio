@@ -84,7 +84,7 @@ script = ExtResource("1")
 id = "phanpy"
 numero = 231
 nombre = "Phanpy"
-tipos = PackedStringArray("tierra")
+tipos = ["tierra"]
 ps = 90
 ataque = 60
 defensa = 60
@@ -103,7 +103,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 25
 }])
-habilidades = PackedStringArray("pickup")
+habilidades = ["pickup"]
 habilidad_oculta = "sand_veil"
 categoria = "Pokémon Narizotas"
 altura = 0.5

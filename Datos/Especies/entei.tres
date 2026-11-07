@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "entei"
 numero = 244
 nombre = "Entei"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 115
 ataque = 115
 defensa = 85
@@ -108,7 +108,7 @@ evs_otorgados = {
 "ps": 1
 }
 amistad_base = 35
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 habilidad_oculta = "flash_fire"
 categoria = "Pokémon Volcán"
 altura = 2.1

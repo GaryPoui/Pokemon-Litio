@@ -111,7 +111,7 @@ script = ExtResource("18_ubfjy")
 id = "golduck"
 numero = 55
 nombre = "Golduck"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 80
 ataque = 82
 defensa = 78
@@ -123,7 +123,7 @@ ratio_captura = 75
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("damp", "cloud_nine")
+habilidades = ["damp", "cloud_nine"]
 habilidad_oculta = "swift_swim"
 categoria = "Pokémon Pato"
 altura = 1.7

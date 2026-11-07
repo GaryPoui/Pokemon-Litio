@@ -10,4 +10,4 @@ poder = 70
 pp = 20
 descripcion = "Si el usuario está quemado, paralizado o envenenado, ataca con el doble de potencia."
 numero = 263
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

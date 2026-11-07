@@ -97,7 +97,7 @@ script = ExtResource("1")
 id = "hippowdon"
 numero = 450
 nombre = "Hippowdon"
-tipos = PackedStringArray("tierra")
+tipos = ["tierra"]
 ps = 108
 ataque = 112
 defensa = 118
@@ -110,7 +110,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("sand_stream")
+habilidades = ["sand_stream"]
 habilidad_oculta = "sand_force"
 categoria = "Pokémon Peso Pesado"
 altura = 2.0

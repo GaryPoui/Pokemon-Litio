@@ -68,7 +68,7 @@ script = ExtResource("1")
 id = "nincada"
 numero = 290
 nombre = "Nincada"
-tipos = PackedStringArray("bicho", "tierra")
+tipos = ["bicho", "tierra"]
 ps = 31
 ataque = 45
 defensa = 90
@@ -92,7 +92,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "muda",
 "nivel": 20
 }])
-habilidades = PackedStringArray("compound_eyes")
+habilidades = ["compound_eyes"]
 habilidad_oculta = "run_away"
 categoria = "Pokémon Aprendiz"
 altura = 0.5

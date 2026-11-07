@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "machoke"
 numero = 67
 nombre = "Machoke"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 80
 ataque = 100
 defensa = 70
@@ -117,7 +117,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "machamp",
 "metodo": "intercambio"
 }])
-habilidades = PackedStringArray("guts", "no_guard")
+habilidades = ["guts", "no_guard"]
 habilidad_oculta = "steadfast"
 categoria = "Pokémon Superpoder"
 altura = 1.5

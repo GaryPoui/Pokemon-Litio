@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "magnemite"
 numero = 81
 nombre = "Magnemite"
-tipos = PackedStringArray("electrico", "acero")
+tipos = ["electrico", "acero"]
 ps = 25
 ataque = 35
 defensa = 70
@@ -124,7 +124,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("magnet_pull", "sturdy")
+habilidades = ["magnet_pull", "sturdy"]
 habilidad_oculta = "analytic"
 categoria = "Pokémon Imán"
 altura = 0.3

@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "altaria"
 numero = 334
 nombre = "Altaria"
-tipos = PackedStringArray("dragon", "volador")
+tipos = ["dragon", "volador"]
 ps = 75
 ataque = 70
 defensa = 90
@@ -129,7 +129,7 @@ crecimiento = "slow-then-very-fast"
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("natural_cure")
+habilidades = ["natural_cure"]
 habilidad_oculta = "cloud_nine"
 categoria = "Pokémon Cantor"
 altura = 1.1

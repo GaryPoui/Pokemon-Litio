@@ -12,4 +12,4 @@ meta = "ailment"
 descripcion = "Si el objetivo es del sexo opuesto, se enamorará y bajará la posibilidad de que ataque."
 estado = "infatuation"
 numero = 213
-banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "reflectable")
+banderas = ["bypasssub", "metronome", "mirror", "protect", "reflectable"]

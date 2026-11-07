@@ -90,7 +90,7 @@ script = ExtResource("1")
 id = "magmar"
 numero = 126
 nombre = "Magmar"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 65
 ataque = 95
 defensa = 57
@@ -107,7 +107,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "intercambio",
 "objeto": "magmarizer"
 }])
-habilidades = PackedStringArray("flame_body")
+habilidades = ["flame_body"]
 habilidad_oculta = "vital_spirit"
 categoria = "Pokémon Escupefuego"
 altura = 1.3

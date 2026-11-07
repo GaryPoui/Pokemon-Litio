@@ -11,4 +11,4 @@ pp = 15
 descripcion = "Propina un tremendo cabezazo. También daña al usuario un poco."
 drenaje = -25
 numero = 543
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

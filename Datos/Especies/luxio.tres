@@ -85,7 +85,7 @@ script = ExtResource("14_hurmm")
 id = "luxio"
 numero = 404
 nombre = "Luxio"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 60
 ataque = 85
 defensa = 49
@@ -106,7 +106,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 30
 }])
 amistad_base = 100
-habilidades = PackedStringArray("rivalry", "intimidate")
+habilidades = ["rivalry", "intimidate"]
 habilidad_oculta = "guts"
 categoria = "Pokémon Chispa"
 altura = 0.9

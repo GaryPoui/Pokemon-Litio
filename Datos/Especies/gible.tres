@@ -69,7 +69,7 @@ script = ExtResource("1")
 id = "gible"
 numero = 443
 nombre = "Gible"
-tipos = PackedStringArray("dragon", "tierra")
+tipos = ["dragon", "tierra"]
 ps = 58
 ataque = 70
 defensa = 45
@@ -88,7 +88,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 24
 }])
-habilidades = PackedStringArray("sand_veil")
+habilidades = ["sand_veil"]
 habilidad_oculta = "rough_skin"
 categoria = "Pokémon Terrascualo"
 altura = 0.7

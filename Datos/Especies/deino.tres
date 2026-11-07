@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "deino"
 numero = 633
 nombre = "Deino"
-tipos = PackedStringArray("siniestro", "dragon")
+tipos = ["siniestro", "dragon"]
 ps = 52
 ataque = 65
 at_esp = 45
@@ -122,7 +122,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 50
 }])
 amistad_base = 35
-habilidades = PackedStringArray("hustle")
+habilidades = ["hustle"]
 categoria = "Pokémon Tosco"
 altura = 0.8
 peso_kg = 17.3

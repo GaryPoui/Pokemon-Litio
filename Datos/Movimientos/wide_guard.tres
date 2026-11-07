@@ -14,4 +14,4 @@ objetivo = "users-field"
 meta = "field-effect"
 descripcion = "Bloquea los ataques de objetivo múltiple lanzados contra tu equipo durante un turno."
 numero = 469
-banderas = PackedStringArray("snatch")
+banderas = ["snatch"]

@@ -104,7 +104,7 @@ script = ExtResource("18_tceuu")
 id = "geodude"
 numero = 74
 nombre = "Geodude"
-tipos = PackedStringArray("roca", "tierra")
+tipos = ["roca", "tierra"]
 ps = 40
 ataque = 80
 defensa = 100
@@ -124,7 +124,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 25
 }])
-habilidades = PackedStringArray("rock_head", "sturdy")
+habilidades = ["rock_head", "sturdy"]
 habilidad_oculta = "sand_veil"
 categoria = "Pokémon Roca"
 altura = 0.4

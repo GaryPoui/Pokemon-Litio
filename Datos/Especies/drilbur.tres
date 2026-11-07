@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dknhqu0lvmtwe"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_i2wvr"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_i2wvr"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mud_sport.tres" id="2_dsull"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="3_q548r"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rapid_spin.tres" id="4_q4d8v"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/sandstorm.tres" id="14_0pxvb"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/drill_run.tres" id="15_6c7h2"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fissure.tres" id="16_qvs3m"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_pp887"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/drilbur_espalda.png" id="18_bks63"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/drilbur_frente.png" id="19_f776f"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_pp887"]
+[ext_resource type="Texture2D" uid="uid://c0n4u5d7jerxt" path="res://Assets/Pokemones/batalla/drilbur_espalda.png" id="18_bks63"]
+[ext_resource type="Texture2D" uid="uid://mxwrgkva50lc" path="res://Assets/Pokemones/batalla/drilbur_frente.png" id="19_f776f"]
 
 [sub_resource type="Resource" id="Resource_i2wvr"]
 script = ExtResource("1_i2wvr")
@@ -98,7 +98,7 @@ script = ExtResource("17_pp887")
 id = "drilbur"
 numero = 529
 nombre = "Drilbur"
-tipos = PackedStringArray("tierra")
+tipos = ["tierra"]
 ps = 60
 ataque = 85
 defensa = 40
@@ -117,7 +117,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 31
 }])
-habilidades = PackedStringArray("sand_rush", "sand_force")
+habilidades = ["sand_rush", "sand_force"]
 habilidad_oculta = "mold_breaker"
 categoria = "Pokémon Topo"
 altura = 0.3

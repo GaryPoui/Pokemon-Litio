@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "gligar"
 numero = 207
 nombre = "Gligar"
-tipos = PackedStringArray("tierra", "volador")
+tipos = ["tierra", "volador"]
 ps = 65
 ataque = 75
 defensa = 105
@@ -112,7 +112,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "objeto",
 "objeto": "razor_fang"
 }])
-habilidades = PackedStringArray("hyper_cutter", "sand_veil")
+habilidades = ["hyper_cutter", "sand_veil"]
 habilidad_oculta = "immunity"
 categoria = "Pokémon Escorpiala"
 altura = 1.1

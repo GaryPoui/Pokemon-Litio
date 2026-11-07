@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "kricketune"
 numero = 402
 nombre = "Kricketune"
-tipos = PackedStringArray("bicho")
+tipos = ["bicho"]
 ps = 77
 ataque = 85
 defensa = 51
@@ -98,7 +98,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("swarm")
+habilidades = ["swarm"]
 habilidad_oculta = "technician"
 categoria = "Pokémon Grillo"
 altura = 1.0

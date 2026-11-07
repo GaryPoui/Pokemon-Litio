@@ -113,7 +113,7 @@ script = ExtResource("1")
 id = "farfetchd"
 numero = 83
 nombre = "Farfetch’d"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 52
 ataque = 65
 defensa = 55
@@ -124,7 +124,7 @@ exp_base = 132
 evs_otorgados = {
 "ataque": 1
 }
-habilidades = PackedStringArray("keen_eye", "inner_focus")
+habilidades = ["keen_eye", "inner_focus"]
 habilidad_oculta = "defiant"
 categoria = "Pokémon Pato Salvaje"
 altura = 0.8

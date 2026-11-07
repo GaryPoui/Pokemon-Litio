@@ -105,7 +105,7 @@ script = ExtResource("18_4smuc")
 id = "pawniard"
 numero = 624
 nombre = "Pawniard"
-tipos = PackedStringArray("siniestro", "acero")
+tipos = ["siniestro", "acero"]
 ps = 45
 ataque = 85
 defensa = 70
@@ -125,7 +125,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 52
 }])
 amistad_base = 35
-habilidades = PackedStringArray("defiant", "inner_focus")
+habilidades = ["defiant", "inner_focus"]
 habilidad_oculta = "pressure"
 categoria = "Pokémon Tajo"
 altura = 0.5

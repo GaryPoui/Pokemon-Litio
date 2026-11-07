@@ -105,7 +105,7 @@ script = ExtResource("16_ar3yn")
 id = "boldore"
 numero = 525
 nombre = "Boldore"
-tipos = PackedStringArray("roca")
+tipos = ["roca"]
 ps = 70
 ataque = 105
 defensa = 105
@@ -122,7 +122,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "gigalith",
 "metodo": "intercambio"
 }])
-habilidades = PackedStringArray("sturdy")
+habilidades = ["sturdy"]
 habilidad_oculta = "sand_force"
 categoria = "Pokémon Mineral"
 altura = 0.9

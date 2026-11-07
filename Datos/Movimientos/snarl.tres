@@ -19,4 +19,4 @@ cambios_stats = {
 }
 prob_stat = 100
 numero = 555
-banderas = PackedStringArray("bypasssub", "mirror", "protect", "sound")
+banderas = ["bypasssub", "mirror", "protect", "sound"]

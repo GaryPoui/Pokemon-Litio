@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "walrein"
 numero = 365
 nombre = "Walrein"
-tipos = PackedStringArray("hielo", "agua")
+tipos = ["hielo", "agua"]
 ps = 110
 ataque = 80
 defensa = 90
@@ -112,7 +112,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ps": 3
 }
-habilidades = PackedStringArray("thick_fat", "ice_body")
+habilidades = ["thick_fat", "ice_body"]
 habilidad_oculta = "oblivious"
 categoria = "Pokémon Rompehielo"
 altura = 1.4

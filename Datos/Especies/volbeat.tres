@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "volbeat"
 numero = 313
 nombre = "Volbeat"
-tipos = PackedStringArray("bicho")
+tipos = ["bicho"]
 ps = 65
 ataque = 73
 defensa = 55
@@ -100,7 +100,7 @@ crecimiento = "slow-then-very-fast"
 evs_otorgados = {
 "velocidad": 1
 }
-habilidades = PackedStringArray("illuminate", "swarm")
+habilidades = ["illuminate", "swarm"]
 habilidad_oculta = "prankster"
 categoria = "Pokémon Luciérnaga"
 altura = 0.7

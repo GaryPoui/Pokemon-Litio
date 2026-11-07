@@ -112,7 +112,7 @@ script = ExtResource("1")
 id = "dugtrio"
 numero = 51
 nombre = "Dugtrio"
-tipos = PackedStringArray("tierra")
+tipos = ["tierra"]
 ps = 35
 ataque = 80
 def_esp = 70
@@ -122,7 +122,7 @@ ratio_captura = 50
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("sand_veil", "arena_trap")
+habilidades = ["sand_veil", "arena_trap"]
 habilidad_oculta = "sand_force"
 categoria = "Pokémon Topo"
 altura = 0.7

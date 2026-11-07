@@ -13,4 +13,4 @@ descripcion = "Salta sobre el objetivo con todo su peso y puede llegar a paraliz
 estado = "paralysis"
 prob_estado = 30
 numero = 34
-banderas = PackedStringArray("contact", "metronome", "minimize", "mirror", "nonsky", "protect")
+banderas = ["contact", "metronome", "minimize", "mirror", "nonsky", "protect"]

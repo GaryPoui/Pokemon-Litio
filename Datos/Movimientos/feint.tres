@@ -10,4 +10,4 @@ poder = 30
 prioridad = 2
 descripcion = "Permite golpear a objetivos que han utilizado movimientos como Protección o Detección y anula sus efectos."
 numero = 364
-banderas = PackedStringArray("failcopycat", "mirror", "noassist")
+banderas = ["failcopycat", "mirror", "noassist"]

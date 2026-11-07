@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "heatmor"
 numero = 631
 nombre = "Heatmor"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 85
 ataque = 97
 defensa = 66
@@ -116,7 +116,7 @@ ratio_captura = 90
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("gluttony", "flash_fire")
+habilidades = ["gluttony", "flash_fire"]
 habilidad_oculta = "white_smoke"
 categoria = "Pokémon Hormiguero"
 altura = 1.4

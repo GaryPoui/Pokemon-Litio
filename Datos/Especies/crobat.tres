@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "crobat"
 numero = 169
 nombre = "Crobat"
-tipos = PackedStringArray("veneno", "volador")
+tipos = ["veneno", "volador"]
 ps = 85
 ataque = 90
 defensa = 80
@@ -111,7 +111,7 @@ ratio_captura = 90
 evs_otorgados = {
 "velocidad": 3
 }
-habilidades = PackedStringArray("inner_focus")
+habilidades = ["inner_focus"]
 habilidad_oculta = "infiltrator"
 categoria = "Pokémon Murciélago"
 altura = 1.8

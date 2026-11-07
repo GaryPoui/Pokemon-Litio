@@ -109,7 +109,7 @@ script = ExtResource("1")
 id = "blissey"
 numero = 242
 nombre = "Blissey"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 255
 ataque = 10
 defensa = 10
@@ -124,7 +124,7 @@ evs_otorgados = {
 "ps": 3
 }
 amistad_base = 140
-habilidades = PackedStringArray("natural_cure", "serene_grace")
+habilidades = ["natural_cure", "serene_grace"]
 habilidad_oculta = "healer"
 categoria = "Pokémon Felicidad"
 altura = 1.5

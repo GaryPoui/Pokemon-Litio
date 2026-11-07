@@ -5,6 +5,8 @@ extends Node2D
 @export var clave: String= ""
 @export var brillo :=true
 
+const RADIO_DETECTOR :=3
+
 var tiempo:= 0.0
 var encendido :=false
 
@@ -19,12 +21,23 @@ func _ready() -> void:
 func celda() -> Vector2i:
 	return Rejilla.celda(self)
 
+func cerca_de(c: Vector2i, radio: int) -> bool:
+	var d:= (c -celda()).abs()
+	return maxi(d.x, d.y)<= radio
+
+func _periodo() -> float:
+	var escena:= get_tree().current_scene
+	var j: Node= escena.get_node_or_null("Jugador") if escena!= null else null
+	if j!= null and cerca_de(j.celda(), RADIO_DETECTOR) and EfectosTrinket.total("detector", null, Equipo.miembros)> 0.0:
+		return 1.2
+	return 4.5
+
 func _process(delta: float) -> void:
 	if not brillo:
 		return
 	tiempo+= delta
 	var antes:= encendido
-	encendido= fmod(tiempo, 4.5)< 0.18
+	encendido= fmod(tiempo, _periodo())< 0.18
 	if antes!= encendido:
 		queue_redraw()
 

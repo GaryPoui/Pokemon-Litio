@@ -41,7 +41,7 @@ script = ExtResource("1")
 id = "arcanine"
 numero = 59
 nombre = "Arcanine"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 90
 ataque = 110
 defensa = 80
@@ -55,7 +55,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("intimidate", "flash_fire")
+habilidades = ["intimidate", "flash_fire"]
 habilidad_oculta = "justified"
 categoria = "Pokémon Leyenda"
 altura = 1.9

@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "rufflet"
 numero = 627
 nombre = "Rufflet"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 70
 ataque = 83
 at_esp = 37
@@ -123,7 +123,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 54
 }])
-habilidades = PackedStringArray("keen_eye", "sheer_force")
+habilidades = ["keen_eye", "sheer_force"]
 habilidad_oculta = "hustle"
 categoria = "Pokémon Aguilucho"
 altura = 0.5

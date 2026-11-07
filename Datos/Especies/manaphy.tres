@@ -85,7 +85,7 @@ script = ExtResource("1")
 id = "manaphy"
 numero = 490
 nombre = "Manaphy"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 100
 ataque = 100
 defensa = 100
@@ -99,7 +99,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ps": 3
 }
-habilidades = PackedStringArray("hydration")
+habilidades = ["hydration"]
 categoria = "Pokémon Náutico"
 altura = 0.3
 peso_kg = 1.4

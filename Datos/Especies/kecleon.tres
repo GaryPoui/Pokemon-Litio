@@ -113,7 +113,7 @@ script = ExtResource("1")
 id = "kecleon"
 numero = 352
 nombre = "Kecleon"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 60
 ataque = 90
 defensa = 70
@@ -126,7 +126,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "def_esp": 1
 }
-habilidades = PackedStringArray("color_change")
+habilidades = ["color_change"]
 categoria = "Pokémon Camaleónico"
 altura = 1.0
 peso_kg = 22.0

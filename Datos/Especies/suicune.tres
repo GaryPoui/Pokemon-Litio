@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "suicune"
 numero = 245
 nombre = "Suicune"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 100
 ataque = 75
 defensa = 115
@@ -108,7 +108,7 @@ evs_otorgados = {
 "defensa": 1
 }
 amistad_base = 35
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 habilidad_oculta = "water_absorb"
 categoria = "Pokémon Aurora"
 altura = 2.0

@@ -14,6 +14,6 @@ descripcion = "Oprime al objetivo de cuatro a cinco turnos con ramas o con su cu
 estado = "trap"
 prob_estado = 100
 numero = 35
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]
 turnos_min = 2
 turnos_max = 4

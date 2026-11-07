@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "giratina"
 numero = 487
 nombre = "Giratina"
-tipos = PackedStringArray("fantasma", "dragon")
+tipos = ["fantasma", "dragon"]
 ps = 150
 ataque = 100
 defensa = 120
@@ -101,7 +101,7 @@ evs_otorgados = {
 "ps": 3
 }
 amistad_base = 0
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 habilidad_oculta = "telepathy"
 categoria = "Pokémon Renegado"
 altura = 4.5

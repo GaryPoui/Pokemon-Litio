@@ -11,4 +11,4 @@ poder = 120
 precision = 85
 descripcion = "Violenta embestida con cuernos imponentes."
 numero = 224
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

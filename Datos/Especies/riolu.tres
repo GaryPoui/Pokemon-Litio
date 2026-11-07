@@ -73,7 +73,7 @@ script = ExtResource("13_dl4s7")
 id = "riolu"
 numero = 447
 nombre = "Riolu"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 40
 ataque = 70
 defensa = 40
@@ -93,7 +93,7 @@ evoluciones = Array[Dictionary]([{
 "hora": "dia",
 "metodo": "amistad"
 }])
-habilidades = PackedStringArray("steadfast", "inner_focus")
+habilidades = ["steadfast", "inner_focus"]
 habilidad_oculta = "prankster"
 categoria = "Pokémon Emanación"
 altura = 0.7

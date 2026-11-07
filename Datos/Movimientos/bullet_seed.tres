@@ -11,6 +11,6 @@ poder = 25
 pp = 30
 descripcion = "Dispara rápido de dos a cinco ráfagas de semillas de manera consecutiva."
 numero = 331
-banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")
+banderas = ["bullet", "metronome", "mirror", "protect"]
 golpes_min = 2
 golpes_max = 5

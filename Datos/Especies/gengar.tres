@@ -108,7 +108,7 @@ script = ExtResource("1")
 id = "gengar"
 numero = 94
 nombre = "Gengar"
-tipos = PackedStringArray("fantasma", "veneno")
+tipos = ["fantasma", "veneno"]
 ps = 60
 ataque = 65
 defensa = 60
@@ -120,7 +120,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Sombra"
 altura = 1.5
 peso_kg = 40.5

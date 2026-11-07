@@ -45,7 +45,7 @@ script = ExtResource("1")
 id = "budew"
 numero = 406
 nombre = "Budew"
-tipos = PackedStringArray("planta", "veneno")
+tipos = ["planta", "veneno"]
 ps = 40
 ataque = 30
 defensa = 35
@@ -63,7 +63,7 @@ evoluciones = Array[Dictionary]([{
 "hora": "dia",
 "metodo": "amistad"
 }])
-habilidades = PackedStringArray("natural_cure", "poison_point")
+habilidades = ["natural_cure", "poison_point"]
 habilidad_oculta = "leaf_guard"
 categoria = "Pokémon Brote"
 altura = 0.2

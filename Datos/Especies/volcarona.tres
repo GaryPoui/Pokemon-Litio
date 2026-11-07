@@ -94,7 +94,7 @@ script = ExtResource("1")
 id = "volcarona"
 numero = 637
 nombre = "Volcarona"
-tipos = PackedStringArray("bicho", "fuego")
+tipos = ["bicho", "fuego"]
 ps = 85
 ataque = 60
 defensa = 65
@@ -107,7 +107,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("flame_body")
+habilidades = ["flame_body"]
 habilidad_oculta = "swarm"
 categoria = "Pokémon Sol"
 altura = 1.6

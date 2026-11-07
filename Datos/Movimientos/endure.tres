@@ -13,4 +13,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Resiste cualquier ataque y deja al menos 1 PS. Puede fallar si se usa repetidamente."
 numero = 203
-banderas = PackedStringArray("failcopycat", "noassist")
+banderas = ["failcopycat", "noassist"]

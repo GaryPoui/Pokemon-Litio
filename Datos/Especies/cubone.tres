@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "cubone"
 numero = 104
 nombre = "Cubone"
-tipos = PackedStringArray("tierra")
+tipos = ["tierra"]
 defensa = 95
 at_esp = 40
 velocidad = 35
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 28
 }])
-habilidades = PackedStringArray("rock_head", "lightning_rod")
+habilidades = ["rock_head", "lightning_rod"]
 habilidad_oculta = "battle_armor"
 categoria = "Pokémon Solitario"
 altura = 0.4

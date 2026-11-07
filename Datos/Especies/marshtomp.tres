@@ -94,7 +94,7 @@ script = ExtResource("15_gwno8")
 id = "marshtomp"
 numero = 259
 nombre = "Marshtomp"
-tipos = PackedStringArray("agua", "tierra")
+tipos = ["agua", "tierra"]
 ps = 70
 ataque = 85
 defensa = 70
@@ -113,7 +113,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("torrent")
+habilidades = ["torrent"]
 habilidad_oculta = "damp"
 categoria = "Pokémon Pez Lodo"
 altura = 0.7

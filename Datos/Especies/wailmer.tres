@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "wailmer"
 numero = 320
 nombre = "Wailmer"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 130
 ataque = 70
 defensa = 35
@@ -125,7 +125,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 40
 }])
-habilidades = PackedStringArray("water_veil", "oblivious")
+habilidades = ["water_veil", "oblivious"]
 habilidad_oculta = "pressure"
 categoria = "Pokémon Ballenabola"
 altura = 2.0

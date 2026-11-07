@@ -111,7 +111,7 @@ script = ExtResource("17_6wior")
 id = "servine"
 numero = 496
 nombre = "Servine"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 60
 ataque = 60
 defensa = 75
@@ -131,7 +131,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "contrary"
 categoria = "Pokémon Serp. Hierba"
 altura = 0.8

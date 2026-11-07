@@ -15,4 +15,4 @@ descripcion = "El usuario carga un bloque de hielo con electricidad en el primer
 estado = "paralysis"
 prob_estado = 30
 numero = 553
-banderas = PackedStringArray("charge", "failinstruct", "mirror", "nosleeptalk", "protect")
+banderas = ["charge", "failinstruct", "mirror", "nosleeptalk", "protect"]

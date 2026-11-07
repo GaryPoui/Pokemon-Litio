@@ -14,4 +14,4 @@ meta = "ailment"
 descripcion = "Polvo tóxico que envenena al objetivo."
 estado = "poison"
 numero = 77
-banderas = PackedStringArray("metronome", "mirror", "powder", "protect", "reflectable")
+banderas = ["metronome", "mirror", "powder", "protect", "reflectable"]

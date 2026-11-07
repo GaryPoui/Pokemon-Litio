@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "slaking"
 numero = 289
 nombre = "Slaking"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 150
 ataque = 160
 defensa = 100
@@ -112,7 +112,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ps": 3
 }
-habilidades = PackedStringArray("truant")
+habilidades = ["truant"]
 categoria = "Pokémon Holgazán"
 altura = 2.0
 peso_kg = 130.5

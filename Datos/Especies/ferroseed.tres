@@ -98,7 +98,7 @@ script = ExtResource("17_imn7i")
 id = "ferroseed"
 numero = 597
 nombre = "Ferroseed"
-tipos = PackedStringArray("planta", "acero")
+tipos = ["planta", "acero"]
 ps = 44
 defensa = 91
 at_esp = 24
@@ -116,7 +116,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 40
 }])
-habilidades = PackedStringArray("iron_barbs")
+habilidades = ["iron_barbs"]
 categoria = "Pokémon Fruto Espina"
 altura = 0.6
 peso_kg = 18.8

@@ -89,7 +89,7 @@ script = ExtResource("1")
 id = "sealeo"
 numero = 364
 nombre = "Sealeo"
-tipos = PackedStringArray("hielo", "agua")
+tipos = ["hielo", "agua"]
 ps = 90
 ataque = 60
 defensa = 70
@@ -109,7 +109,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 44
 }])
-habilidades = PackedStringArray("thick_fat", "ice_body")
+habilidades = ["thick_fat", "ice_body"]
 habilidad_oculta = "oblivious"
 categoria = "Pokémon Rodabola"
 altura = 1.1

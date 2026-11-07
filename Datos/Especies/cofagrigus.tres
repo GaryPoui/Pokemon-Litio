@@ -112,7 +112,7 @@ script = ExtResource("1")
 id = "cofagrigus"
 numero = 563
 nombre = "Cofagrigus"
-tipos = PackedStringArray("fantasma")
+tipos = ["fantasma"]
 ps = 58
 defensa = 145
 at_esp = 95
@@ -123,7 +123,7 @@ ratio_captura = 90
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("mummy")
+habilidades = ["mummy"]
 categoria = "Pokémon Sepultura"
 altura = 1.7
 peso_kg = 76.5

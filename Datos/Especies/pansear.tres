@@ -99,7 +99,7 @@ script = ExtResource("17_054dn")
 id = "pansear"
 numero = 513
 nombre = "Pansear"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ataque = 53
 defensa = 48
 at_esp = 53
@@ -116,7 +116,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "fire_stone"
 }])
-habilidades = PackedStringArray("gluttony")
+habilidades = ["gluttony"]
 habilidad_oculta = "blaze"
 categoria = "Pokémon Ardiente"
 altura = 0.6

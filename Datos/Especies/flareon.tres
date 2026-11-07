@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "flareon"
 numero = 136
 nombre = "Flareon"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 65
 ataque = 130
 defensa = 60
@@ -103,7 +103,7 @@ ratio_genero = 1
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("flash_fire")
+habilidades = ["flash_fire"]
 habilidad_oculta = "guts"
 categoria = "Pokémon Llama"
 altura = 0.9

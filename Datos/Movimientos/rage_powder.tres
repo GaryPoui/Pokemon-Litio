@@ -15,4 +15,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Usa un polvo que irrita y centra en el usuario la atención y los ataques de los rivales."
 numero = 476
-banderas = PackedStringArray("failcopycat", "noassist", "powder")
+banderas = ["failcopycat", "noassist", "powder"]

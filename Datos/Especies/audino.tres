@@ -91,7 +91,7 @@ script = ExtResource("16_6ibor")
 id = "audino"
 numero = 531
 nombre = "Audino"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 103
 ataque = 60
 defensa = 86
@@ -103,7 +103,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("healer", "regenerator")
+habilidades = ["healer", "regenerator"]
 habilidad_oculta = "klutz"
 categoria = "Pokémon Escucha"
 altura = 1.1

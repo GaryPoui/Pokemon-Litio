@@ -44,7 +44,7 @@ script = ExtResource("1")
 id = "pichu"
 numero = 172
 nombre = "Pichu"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 20
 ataque = 40
 defensa = 15
@@ -61,7 +61,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "pikachu",
 "metodo": "amistad"
 }])
-habilidades = PackedStringArray("static")
+habilidades = ["static"]
 habilidad_oculta = "lightning_rod"
 categoria = "Pokémon Ratoncito"
 altura = 0.3

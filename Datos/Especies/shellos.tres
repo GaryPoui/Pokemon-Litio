@@ -69,7 +69,7 @@ script = ExtResource("1")
 id = "shellos"
 numero = 422
 nombre = "Shellos"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 76
 ataque = 48
 defensa = 48
@@ -88,7 +88,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("sticky_hold", "storm_drain")
+habilidades = ["sticky_hold", "storm_drain"]
 habilidad_oculta = "sand_force"
 categoria = "Pokémon Babosa Marina"
 altura = 0.3

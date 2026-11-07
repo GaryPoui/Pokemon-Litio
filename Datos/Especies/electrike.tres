@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "electrike"
 numero = 309
 nombre = "Electrike"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 40
 ataque = 45
 defensa = 40
@@ -113,7 +113,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 26
 }])
-habilidades = PackedStringArray("static", "lightning_rod")
+habilidades = ["static", "lightning_rod"]
 habilidad_oculta = "minus"
 categoria = "Pokémon Calambre"
 altura = 0.6

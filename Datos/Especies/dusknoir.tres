@@ -127,7 +127,7 @@ script = ExtResource("1")
 id = "dusknoir"
 numero = 477
 nombre = "Dusknoir"
-tipos = PackedStringArray("fantasma")
+tipos = ["fantasma"]
 ps = 45
 ataque = 100
 defensa = 135
@@ -141,7 +141,7 @@ evs_otorgados = {
 "defensa": 1
 }
 amistad_base = 35
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 categoria = "Pokémon Grilletes"
 altura = 2.2
 peso_kg = 106.6

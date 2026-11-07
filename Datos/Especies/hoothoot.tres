@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://4lufvuotvfwb"]
 
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/hoothoot_frente.png" id="3"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/hoothoot_espalda.png" id="4"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://3ogotglb0kst" path="res://Assets/Pokemones/batalla/hoothoot_frente.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://kclj1ivytrj" path="res://Assets/Pokemones/batalla/hoothoot_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/foresight.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="7"]
@@ -109,7 +109,7 @@ script = ExtResource("1")
 id = "hoothoot"
 numero = 163
 nombre = "Hoothoot"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 60
 ataque = 30
 defensa = 30
@@ -127,7 +127,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 20
 }])
-habilidades = PackedStringArray("insomnia", "keen_eye")
+habilidades = ["insomnia", "keen_eye"]
 habilidad_oculta = "tinted_lens"
 categoria = "Pokémon Búho"
 altura = 0.7

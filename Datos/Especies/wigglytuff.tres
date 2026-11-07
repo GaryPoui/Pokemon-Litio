@@ -30,7 +30,7 @@ script = ExtResource("1")
 id = "wigglytuff"
 numero = 40
 nombre = "Wigglytuff"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 140
 ataque = 70
 defensa = 45
@@ -43,7 +43,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "ps": 3
 }
-habilidades = PackedStringArray("cute_charm")
+habilidades = ["cute_charm"]
 habilidad_oculta = "frisk"
 categoria = "Pokémon Globo"
 altura = 1.0

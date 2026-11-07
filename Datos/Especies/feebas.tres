@@ -27,7 +27,7 @@ script = ExtResource("1")
 id = "feebas"
 numero = 349
 nombre = "Feebas"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 20
 ataque = 15
 defensa = 20
@@ -45,7 +45,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "intercambio",
 "objeto": "prism_scale"
 }])
-habilidades = PackedStringArray("swift_swim")
+habilidades = ["swift_swim"]
 habilidad_oculta = "adaptability"
 categoria = "Pokémon Pez"
 altura = 0.6

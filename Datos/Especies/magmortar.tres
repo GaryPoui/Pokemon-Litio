@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "magmortar"
 numero = 467
 nombre = "Magmortar"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 75
 ataque = 95
 defensa = 67
@@ -118,7 +118,7 @@ ratio_genero = 2
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("flame_body")
+habilidades = ["flame_body"]
 habilidad_oculta = "vital_spirit"
 categoria = "Pokémon Explosión"
 altura = 1.6

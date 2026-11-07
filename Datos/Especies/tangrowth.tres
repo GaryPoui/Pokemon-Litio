@@ -116,7 +116,7 @@ script = ExtResource("1")
 id = "tangrowth"
 numero = 465
 nombre = "Tangrowth"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 100
 ataque = 100
 defensa = 125
@@ -126,7 +126,7 @@ ratio_captura = 30
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("chlorophyll", "leaf_guard")
+habilidades = ["chlorophyll", "leaf_guard"]
 habilidad_oculta = "regenerator"
 categoria = "Pokémon Enredadera"
 altura = 2.0

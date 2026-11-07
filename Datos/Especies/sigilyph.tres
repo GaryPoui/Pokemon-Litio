@@ -110,7 +110,7 @@ script = ExtResource("1")
 id = "sigilyph"
 numero = 561
 nombre = "Sigilyph"
-tipos = PackedStringArray("psiquico", "volador")
+tipos = ["psiquico", "volador"]
 ps = 72
 ataque = 58
 defensa = 80
@@ -121,7 +121,7 @@ exp_base = 172
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("wonder_skin", "magic_guard")
+habilidades = ["wonder_skin", "magic_guard"]
 habilidad_oculta = "tinted_lens"
 categoria = "Pokémon Pseudopájaro"
 altura = 1.4

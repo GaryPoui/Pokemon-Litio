@@ -11,4 +11,4 @@ pp = 5
 meta = "ohko"
 descripcion = "Ataque con un cuerno giratorio que fulmina de un solo golpe al objetivo si lo alcanza."
 numero = 32
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

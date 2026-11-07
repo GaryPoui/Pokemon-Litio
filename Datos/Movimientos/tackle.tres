@@ -10,4 +10,4 @@ poder = 50
 pp = 35
 descripcion = "Embestida con todo el cuerpo."
 numero = 33
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

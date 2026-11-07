@@ -14,4 +14,4 @@ descripcion = "Puñetazo eléctrico que puede paralizar al adversario."
 estado = "paralysis"
 prob_estado = 10
 numero = 9
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")
+banderas = ["contact", "metronome", "mirror", "protect", "punch"]

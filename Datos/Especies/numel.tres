@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "numel"
 numero = 322
 nombre = "Numel"
-tipos = PackedStringArray("fuego", "tierra")
+tipos = ["fuego", "tierra"]
 ps = 60
 ataque = 60
 defensa = 40
@@ -105,7 +105,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 33
 }])
-habilidades = PackedStringArray("oblivious", "simple")
+habilidades = ["oblivious", "simple"]
 habilidad_oculta = "own_tempo"
 categoria = "Pokémon Torpe"
 altura = 0.7

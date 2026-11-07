@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "camerupt"
 numero = 323
 nombre = "Camerupt"
-tipos = PackedStringArray("fuego", "tierra")
+tipos = ["fuego", "tierra"]
 ps = 70
 ataque = 100
 defensa = 70
@@ -113,7 +113,7 @@ evs_otorgados = {
 "at_esp": 1,
 "ataque": 1
 }
-habilidades = PackedStringArray("magma_armor", "solid_rock")
+habilidades = ["magma_armor", "solid_rock"]
 habilidad_oculta = "anger_point"
 categoria = "Pokémon Erupción"
 altura = 1.9

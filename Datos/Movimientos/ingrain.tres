@@ -15,4 +15,4 @@ meta = "ailment"
 descripcion = "Echa raíces para recuperar PS en cada turno, pero impide el relevo."
 estado = "ingrain"
 numero = 275
-banderas = PackedStringArray("metronome", "nonsky", "snatch")
+banderas = ["metronome", "nonsky", "snatch"]

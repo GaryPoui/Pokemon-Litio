@@ -110,7 +110,7 @@ script = ExtResource("1")
 id = "weavile"
 numero = 461
 nombre = "Weavile"
-tipos = PackedStringArray("siniestro", "hielo")
+tipos = ["siniestro", "hielo"]
 ps = 70
 ataque = 120
 defensa = 65
@@ -124,7 +124,7 @@ evs_otorgados = {
 "velocidad": 1
 }
 amistad_base = 35
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 habilidad_oculta = "pickpocket"
 categoria = "Pokémon Garra Filo"
 altura = 1.1

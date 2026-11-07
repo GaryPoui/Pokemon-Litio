@@ -116,7 +116,7 @@ script = ExtResource("1")
 id = "maractus"
 numero = 556
 nombre = "Maractus"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 75
 ataque = 86
 defensa = 67
@@ -128,7 +128,7 @@ ratio_captura = 255
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("water_absorb", "chlorophyll")
+habilidades = ["water_absorb", "chlorophyll"]
 habilidad_oculta = "storm_drain"
 categoria = "Pokémon Cactus"
 altura = 1.0

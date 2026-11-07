@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "pupitar"
 numero = 247
 nombre = "Pupitar"
-tipos = PackedStringArray("roca", "tierra")
+tipos = ["roca", "tierra"]
 ps = 70
 ataque = 84
 defensa = 70
@@ -120,7 +120,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 55
 }])
 amistad_base = 35
-habilidades = PackedStringArray("shed_skin")
+habilidades = ["shed_skin"]
 categoria = "Pokémon Caparazón"
 altura = 1.2
 peso_kg = 152.0

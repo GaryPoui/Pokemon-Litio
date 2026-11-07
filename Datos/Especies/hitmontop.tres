@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "hitmontop"
 numero = 237
 nombre = "Hitmontop"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ataque = 95
 defensa = 95
 at_esp = 35
@@ -115,7 +115,7 @@ ratio_genero = 0
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("intimidate", "technician")
+habilidades = ["intimidate", "technician"]
 habilidad_oculta = "steadfast"
 categoria = "Pokémon Boca Abajo"
 altura = 1.4

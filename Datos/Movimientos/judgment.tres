@@ -10,4 +10,4 @@ categoria = "especial"
 poder = 100
 descripcion = "Emite incontables haces de luz. El tipo del movimiento varía según la tabla que lleve el usuario."
 numero = 449
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

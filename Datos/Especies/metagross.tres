@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "metagross"
 numero = 376
 nombre = "Metagross"
-tipos = PackedStringArray("acero", "psiquico")
+tipos = ["acero", "psiquico"]
 ps = 80
 ataque = 135
 defensa = 130
@@ -115,7 +115,7 @@ evs_otorgados = {
 "defensa": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("clear_body")
+habilidades = ["clear_body"]
 habilidad_oculta = "light_metal"
 categoria = "Pokémon Pata Hierro"
 altura = 1.6

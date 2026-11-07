@@ -11,6 +11,6 @@ precision = 85
 pp = 20
 descripcion = "Cornea al objetivo de dos a cinco veces."
 numero = 31
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]
 golpes_min = 2
 golpes_max = 5

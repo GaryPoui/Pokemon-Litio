@@ -16,4 +16,4 @@ cambios_stats = {
 "evasion": -1
 }
 numero = 432
-banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "reflectable")
+banderas = ["bypasssub", "metronome", "mirror", "protect", "reflectable"]

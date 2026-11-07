@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "drifblim"
 numero = 426
 nombre = "Drifblim"
-tipos = PackedStringArray("fantasma", "volador")
+tipos = ["fantasma", "volador"]
 ps = 150
 ataque = 80
 defensa = 44
@@ -113,7 +113,7 @@ crecimiento = "fast-then-very-slow"
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("aftermath", "unburden")
+habilidades = ["aftermath", "unburden"]
 habilidad_oculta = "flare_boost"
 categoria = "Pokémon Dirigible"
 altura = 1.2

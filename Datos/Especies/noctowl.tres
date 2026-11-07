@@ -118,7 +118,7 @@ script = ExtResource("1")
 id = "noctowl"
 numero = 164
 nombre = "Noctowl"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 100
 at_esp = 76
 def_esp = 96
@@ -128,7 +128,7 @@ ratio_captura = 90
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("insomnia", "keen_eye")
+habilidades = ["insomnia", "keen_eye"]
 habilidad_oculta = "tinted_lens"
 categoria = "Pokémon Búho"
 altura = 1.6

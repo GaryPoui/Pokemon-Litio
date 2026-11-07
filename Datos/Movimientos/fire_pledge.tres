@@ -11,4 +11,4 @@ categoria = "especial"
 poder = 50
 descripcion = "Ataca con columnas de fuego. Combinado con Voto Planta, crea un mar de llamas y aumenta su potencia."
 numero = 519
-banderas = PackedStringArray("metronome", "mirror", "nonsky", "pledgecombo", "protect")
+banderas = ["metronome", "mirror", "nonsky", "pledgecombo", "protect"]

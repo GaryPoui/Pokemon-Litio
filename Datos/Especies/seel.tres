@@ -111,7 +111,7 @@ script = ExtResource("1")
 id = "seel"
 numero = 86
 nombre = "Seel"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 65
 ataque = 45
 defensa = 55
@@ -130,7 +130,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 34
 }])
-habilidades = PackedStringArray("thick_fat", "hydration")
+habilidades = ["thick_fat", "hydration"]
 habilidad_oculta = "ice_body"
 categoria = "Pokémon León Marino"
 altura = 1.1

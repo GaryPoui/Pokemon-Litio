@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "abomasnow"
 numero = 460
 nombre = "Abomasnow"
-tipos = PackedStringArray("planta", "hielo")
+tipos = ["planta", "hielo"]
 ps = 90
 ataque = 92
 defensa = 75
@@ -107,7 +107,7 @@ evs_otorgados = {
 "at_esp": 1,
 "ataque": 1
 }
-habilidades = PackedStringArray("snow_warning")
+habilidades = ["snow_warning"]
 habilidad_oculta = "soundproof"
 categoria = "Pokémon Árbol Nieve"
 altura = 2.2

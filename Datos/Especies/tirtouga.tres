@@ -115,7 +115,7 @@ script = ExtResource("1")
 id = "tirtouga"
 numero = 564
 nombre = "Tirtouga"
-tipos = PackedStringArray("agua", "roca")
+tipos = ["agua", "roca"]
 ps = 54
 ataque = 78
 defensa = 103
@@ -134,7 +134,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 37
 }])
-habilidades = PackedStringArray("solid_rock", "sturdy")
+habilidades = ["solid_rock", "sturdy"]
 habilidad_oculta = "swift_swim"
 categoria = "Pokémon Pretortuga"
 altura = 0.7

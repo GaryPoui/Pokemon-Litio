@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "shedinja"
 numero = 292
 nombre = "Shedinja"
-tipos = PackedStringArray("bicho", "fantasma")
+tipos = ["bicho", "fantasma"]
 ps = 1
 ataque = 90
 defensa = 45
@@ -93,7 +93,7 @@ crecimiento = "slow-then-very-fast"
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("wonder_guard")
+habilidades = ["wonder_guard"]
 categoria = "Pokémon Muda"
 altura = 0.8
 peso_kg = 1.2

@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "magby"
 numero = 240
 nombre = "Magby"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 45
 ataque = 75
 defensa = 37
@@ -105,7 +105,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("flame_body")
+habilidades = ["flame_body"]
 habilidad_oculta = "vital_spirit"
 categoria = "Pokémon Ascuas"
 altura = 0.7

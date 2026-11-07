@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "fearow"
 numero = 22
 nombre = "Fearow"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 65
 ataque = 90
 defensa = 65
@@ -105,7 +105,7 @@ ratio_captura = 90
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("keen_eye")
+habilidades = ["keen_eye"]
 habilidad_oculta = "sniper"
 categoria = "Pokémon Pico"
 altura = 1.2

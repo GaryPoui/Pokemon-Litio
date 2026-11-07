@@ -10,4 +10,4 @@ poder = 40
 pp = 35
 descripcion = "Araña con afiladas garras."
 numero = 10
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

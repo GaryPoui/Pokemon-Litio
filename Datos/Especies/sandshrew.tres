@@ -87,7 +87,7 @@ script = ExtResource("1")
 id = "sandshrew"
 numero = 27
 nombre = "Sandshrew"
-tipos = PackedStringArray("tierra")
+tipos = ["tierra"]
 ataque = 75
 defensa = 85
 at_esp = 20
@@ -105,7 +105,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 22
 }])
-habilidades = PackedStringArray("sand_veil")
+habilidades = ["sand_veil"]
 habilidad_oculta = "sand_rush"
 categoria = "Pokémon Ratón"
 altura = 0.6

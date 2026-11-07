@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://q0w0xcpduaa5"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_f6gfk"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_f6gfk"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/vice_grip.tres" id="2_hlbo2"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/charge.tres" id="3_tdid7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thunder_shock.tres" id="4_o5rje"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/lock_on.tres" id="14_570wr"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/zap_cannon.tres" id="15_vas74"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_beam.tres" id="16_yomrp"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_yuiw0"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/klink_espalda.png" id="18_fxhqu"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/klink_frente.png" id="19_gacfw"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_yuiw0"]
+[ext_resource type="Texture2D" uid="uid://dhkwind8g7u5e" path="res://Assets/Pokemones/batalla/klink_espalda.png" id="18_fxhqu"]
+[ext_resource type="Texture2D" uid="uid://bswtibgdwe4gd" path="res://Assets/Pokemones/batalla/klink_frente.png" id="19_gacfw"]
 
 [sub_resource type="Resource" id="Resource_f6gfk"]
 script = ExtResource("1_f6gfk")
@@ -99,7 +99,7 @@ script = ExtResource("17_yuiw0")
 id = "klink"
 numero = 599
 nombre = "Klink"
-tipos = PackedStringArray("acero")
+tipos = ["acero"]
 ps = 40
 ataque = 55
 defensa = 70
@@ -120,7 +120,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 38
 }])
-habilidades = PackedStringArray("plus", "minus")
+habilidades = ["plus", "minus"]
 habilidad_oculta = "clear_body"
 categoria = "Pokémon Engranaje"
 altura = 0.3

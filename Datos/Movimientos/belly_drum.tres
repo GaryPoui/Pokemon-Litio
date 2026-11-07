@@ -12,4 +12,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Reduce la mitad de los PS máximos para mejorar al máximo el Ataque."
 numero = 187
-banderas = PackedStringArray("metronome", "snatch")
+banderas = ["metronome", "snatch"]

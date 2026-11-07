@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "cacnea"
 numero = 331
 nombre = "Cacnea"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ataque = 85
 defensa = 40
 at_esp = 85
@@ -124,7 +124,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 32
 }])
 amistad_base = 35
-habilidades = PackedStringArray("sand_veil")
+habilidades = ["sand_veil"]
 habilidad_oculta = "water_absorb"
 categoria = "Pokémon Cactus"
 altura = 0.4

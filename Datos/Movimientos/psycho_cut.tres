@@ -12,4 +12,4 @@ pp = 20
 descripcion = "Ataca al objetivo con cuchillas formadas por energía psíquica. Suele ser crítico."
 critico = 1
 numero = 427
-banderas = PackedStringArray("metronome", "mirror", "protect", "slicing")
+banderas = ["metronome", "mirror", "protect", "slicing"]

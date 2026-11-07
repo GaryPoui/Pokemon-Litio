@@ -15,4 +15,4 @@ descripcion = "Lanza contra el objetivo basura asquerosa y puede envenenarlo."
 estado = "poison"
 prob_estado = 30
 numero = 441
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

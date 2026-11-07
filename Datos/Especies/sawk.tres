@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "sawk"
 numero = 539
 nombre = "Sawk"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 75
 ataque = 125
 defensa = 75
@@ -110,7 +110,7 @@ ratio_genero = 0
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("sturdy", "inner_focus")
+habilidades = ["sturdy", "inner_focus"]
 habilidad_oculta = "mold_breaker"
 categoria = "Pokémon Kárate"
 altura = 1.4

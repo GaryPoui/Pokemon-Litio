@@ -105,7 +105,7 @@ script = ExtResource("18_yws7e")
 id = "petilil"
 numero = 548
 nombre = "Petilil"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 45
 ataque = 35
 at_esp = 70
@@ -121,7 +121,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "sun_stone"
 }])
-habilidades = PackedStringArray("chlorophyll", "own_tempo")
+habilidades = ["chlorophyll", "own_tempo"]
 habilidad_oculta = "leaf_guard"
 categoria = "Pokémon Bulbo"
 altura = 0.5

@@ -14,6 +14,6 @@ meta = "ailment"
 descripcion = "Si un Pokémon escucha este canto y no es cambiado por otro en tres turnos, acaba debilitándose."
 estado = "perish-song"
 numero = 195
-banderas = PackedStringArray("bypasssub", "distance", "metronome", "sound")
+banderas = ["bypasssub", "distance", "metronome", "sound"]
 turnos_min = 4
 turnos_max = 4

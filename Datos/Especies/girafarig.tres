@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "girafarig"
 numero = 203
 nombre = "Girafarig"
-tipos = PackedStringArray("normal", "psiquico")
+tipos = ["normal", "psiquico"]
 ps = 70
 ataque = 80
 defensa = 65
@@ -112,7 +112,7 @@ ratio_captura = 60
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("inner_focus", "early_bird")
+habilidades = ["inner_focus", "early_bird"]
 habilidad_oculta = "sap_sipper"
 categoria = "Pokémon Gran Cuello"
 altura = 1.5

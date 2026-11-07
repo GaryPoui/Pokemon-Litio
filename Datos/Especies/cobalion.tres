@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "cobalion"
 numero = 638
 nombre = "Cobalion"
-tipos = PackedStringArray("acero", "lucha")
+tipos = ["acero", "lucha"]
 ps = 91
 ataque = 90
 defensa = 129
@@ -107,7 +107,7 @@ evs_otorgados = {
 "defensa": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("justified")
+habilidades = ["justified"]
 categoria = "Pokémon Tesón Acero"
 altura = 2.1
 peso_kg = 250.0

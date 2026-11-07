@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "aipom"
 numero = 190
 nombre = "Aipom"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 55
 ataque = 70
 defensa = 55
@@ -109,7 +109,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "movimiento",
 "movimiento": "double_hit"
 }])
-habilidades = PackedStringArray("run_away", "pickup")
+habilidades = ["run_away", "pickup"]
 habilidad_oculta = "skill_link"
 categoria = "Pokémon Cola Larga"
 altura = 0.8

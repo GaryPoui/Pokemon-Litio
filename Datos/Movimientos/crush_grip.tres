@@ -9,4 +9,4 @@ nombre = "Agarrón"
 pp = 5
 descripcion = "Estruja al objetivo con gran fuerza. Cuantos más PS le queden al objetivo, más fuerte será el ataque."
 numero = 462
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

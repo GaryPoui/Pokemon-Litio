@@ -111,7 +111,7 @@ script = ExtResource("1")
 id = "grumpig"
 numero = 326
 nombre = "Grumpig"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 80
 ataque = 45
 defensa = 65
@@ -124,7 +124,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("thick_fat", "own_tempo")
+habilidades = ["thick_fat", "own_tempo"]
 habilidad_oculta = "gluttony"
 categoria = "Pokémon Manipulador"
 altura = 0.9

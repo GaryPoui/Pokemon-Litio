@@ -15,4 +15,4 @@ descripcion = "Poderosa ráfaga de aliento que golpea al objetivo y puede parali
 estado = "paralysis"
 prob_estado = 30
 numero = 225
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

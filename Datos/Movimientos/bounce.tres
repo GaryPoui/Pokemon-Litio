@@ -15,4 +15,4 @@ descripcion = "El usuario bota en el primer turno y golpea al objetivo en el seg
 estado = "paralysis"
 prob_estado = 30
 numero = 340
-banderas = PackedStringArray("charge", "contact", "distance", "failinstruct", "gravity", "metronome", "mirror", "noassist", "nosleeptalk", "protect")
+banderas = ["charge", "contact", "distance", "failinstruct", "gravity", "metronome", "mirror", "noassist", "nosleeptalk", "protect"]

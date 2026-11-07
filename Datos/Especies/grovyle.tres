@@ -94,7 +94,7 @@ script = ExtResource("15_mhoa3")
 id = "grovyle"
 numero = 253
 nombre = "Grovyle"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ataque = 65
 defensa = 45
 at_esp = 85
@@ -113,7 +113,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "unburden"
 categoria = "Pokémon Geco Bosque"
 altura = 0.9

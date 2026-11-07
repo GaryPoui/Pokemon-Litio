@@ -15,4 +15,4 @@ descripcion = "Potente ataque eléctrico que puede paralizar al objetivo."
 estado = "paralysis"
 prob_estado = 10
 numero = 85
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

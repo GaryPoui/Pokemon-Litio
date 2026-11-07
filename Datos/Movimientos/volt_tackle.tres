@@ -15,4 +15,4 @@ estado = "paralysis"
 prob_estado = 10
 drenaje = -33
 numero = 344
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

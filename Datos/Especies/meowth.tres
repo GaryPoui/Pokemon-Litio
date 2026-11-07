@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "meowth"
 numero = 52
 nombre = "Meowth"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 40
 ataque = 45
 defensa = 35
@@ -117,7 +117,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 28
 }])
-habilidades = PackedStringArray("pickup", "technician")
+habilidades = ["pickup", "technician"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Gato Araña"
 altura = 0.4

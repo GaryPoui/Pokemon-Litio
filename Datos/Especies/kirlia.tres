@@ -111,7 +111,7 @@ script = ExtResource("17_esrwk")
 id = "kirlia"
 numero = 281
 nombre = "Kirlia"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 38
 ataque = 35
 defensa = 35
@@ -136,7 +136,7 @@ evoluciones = Array[Dictionary]([{
 "objeto": "dawn_stone"
 }])
 amistad_base = 35
-habilidades = PackedStringArray("synchronize", "trace")
+habilidades = ["synchronize", "trace"]
 habilidad_oculta = "telepathy"
 categoria = "Pokémon Sensorio"
 altura = 0.8

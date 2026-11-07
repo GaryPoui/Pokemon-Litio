@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "larvesta"
 numero = 636
 nombre = "Larvesta"
-tipos = PackedStringArray("bicho", "fuego")
+tipos = ["bicho", "fuego"]
 ps = 55
 ataque = 85
 defensa = 55
@@ -98,7 +98,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 59
 }])
-habilidades = PackedStringArray("flame_body")
+habilidades = ["flame_body"]
 habilidad_oculta = "swarm"
 categoria = "Pokémon Antorcha"
 altura = 1.1

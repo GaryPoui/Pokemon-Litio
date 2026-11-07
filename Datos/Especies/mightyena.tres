@@ -105,7 +105,7 @@ script = ExtResource("16_l1rnl")
 id = "mightyena"
 numero = 262
 nombre = "Mightyena"
-tipos = PackedStringArray("siniestro")
+tipos = ["siniestro"]
 ps = 70
 ataque = 90
 defensa = 70
@@ -117,7 +117,7 @@ ratio_captura = 127
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("intimidate", "quick_feet")
+habilidades = ["intimidate", "quick_feet"]
 habilidad_oculta = "moxie"
 categoria = "Pokémon Mordisco"
 altura = 1.0

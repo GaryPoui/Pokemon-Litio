@@ -12,4 +12,4 @@ prioridad = -5
 objetivo = "specific-move"
 descripcion = "Devuelve un golpe físico por duplicado."
 numero = 68
-banderas = PackedStringArray("contact", "failcopycat", "failmefirst", "noassist", "protect")
+banderas = ["contact", "failcopycat", "failmefirst", "noassist", "protect"]

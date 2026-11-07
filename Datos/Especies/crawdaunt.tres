@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "crawdaunt"
 numero = 342
 nombre = "Crawdaunt"
-tipos = PackedStringArray("agua", "siniestro")
+tipos = ["agua", "siniestro"]
 ps = 63
 ataque = 120
 defensa = 85
@@ -118,7 +118,7 @@ crecimiento = "fast-then-very-slow"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("hyper_cutter", "shell_armor")
+habilidades = ["hyper_cutter", "shell_armor"]
 habilidad_oculta = "adaptability"
 categoria = "Pokémon Granuja"
 altura = 1.1

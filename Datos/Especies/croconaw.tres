@@ -108,7 +108,7 @@ script = ExtResource("18_a2d0u")
 id = "croconaw"
 numero = 159
 nombre = "Croconaw"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 65
 ataque = 80
 defensa = 80
@@ -129,7 +129,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("torrent")
+habilidades = ["torrent"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Fauces"
 altura = 1.1

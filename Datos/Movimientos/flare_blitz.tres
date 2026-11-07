@@ -15,4 +15,4 @@ estado = "burn"
 prob_estado = 10
 drenaje = -33
 numero = 394
-banderas = PackedStringArray("contact", "defrost", "metronome", "mirror", "protect")
+banderas = ["contact", "defrost", "metronome", "mirror", "protect"]

@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "venonat"
 numero = 48
 nombre = "Venonat"
-tipos = PackedStringArray("bicho", "veneno")
+tipos = ["bicho", "veneno"]
 ps = 60
 ataque = 55
 at_esp = 40
@@ -109,7 +109,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 31
 }])
-habilidades = PackedStringArray("compound_eyes", "tinted_lens")
+habilidades = ["compound_eyes", "tinted_lens"]
 habilidad_oculta = "run_away"
 categoria = "Pokémon Insecto"
 altura = 1.0

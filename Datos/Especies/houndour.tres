@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "houndour"
 numero = 228
 nombre = "Houndour"
-tipos = PackedStringArray("siniestro", "fuego")
+tipos = ["siniestro", "fuego"]
 ps = 45
 ataque = 60
 defensa = 30
@@ -124,7 +124,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 24
 }])
 amistad_base = 35
-habilidades = PackedStringArray("early_bird", "flash_fire")
+habilidades = ["early_bird", "flash_fire"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Siniestro"
 altura = 0.6

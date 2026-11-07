@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "meloetta"
 numero = 648
 nombre = "Meloetta"
-tipos = PackedStringArray("normal", "psiquico")
+tipos = ["normal", "psiquico"]
 ps = 100
 ataque = 77
 defensa = 77
@@ -116,7 +116,7 @@ evs_otorgados = {
 "velocidad": 1
 }
 amistad_base = 100
-habilidades = PackedStringArray("serene_grace")
+habilidades = ["serene_grace"]
 categoria = "Pokémon Melodía"
 altura = 0.6
 peso_kg = 6.5

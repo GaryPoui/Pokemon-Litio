@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "regirock"
 numero = 377
 nombre = "Regirock"
-tipos = PackedStringArray("roca")
+tipos = ["roca"]
 ps = 80
 ataque = 100
 defensa = 200
@@ -99,7 +99,7 @@ evs_otorgados = {
 "defensa": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("clear_body")
+habilidades = ["clear_body"]
 habilidad_oculta = "sturdy"
 categoria = "Pokémon Pico Roca"
 altura = 1.7

@@ -48,7 +48,7 @@ script = ExtResource("1")
 id = "lilligant"
 numero = 549
 nombre = "Lilligant"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 70
 ataque = 60
 defensa = 75
@@ -61,7 +61,7 @@ ratio_genero = 8
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("chlorophyll", "own_tempo")
+habilidades = ["chlorophyll", "own_tempo"]
 habilidad_oculta = "leaf_guard"
 categoria = "Pokémon Adornofloral"
 altura = 1.1

@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "paras"
 numero = 46
 nombre = "Paras"
-tipos = PackedStringArray("bicho", "planta")
+tipos = ["bicho", "planta"]
 ps = 35
 ataque = 70
 defensa = 55
@@ -100,7 +100,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 24
 }])
-habilidades = PackedStringArray("effect_spore", "dry_skin")
+habilidades = ["effect_spore", "dry_skin"]
 habilidad_oculta = "damp"
 categoria = "Pokémon Hongo"
 altura = 0.3

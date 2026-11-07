@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "haxorus"
 numero = 612
 nombre = "Haxorus"
-tipos = PackedStringArray("dragon")
+tipos = ["dragon"]
 ps = 76
 ataque = 147
 defensa = 90
@@ -130,7 +130,7 @@ evs_otorgados = {
 "ataque": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("rivalry", "mold_breaker")
+habilidades = ["rivalry", "mold_breaker"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Boca Hacha"
 altura = 1.8

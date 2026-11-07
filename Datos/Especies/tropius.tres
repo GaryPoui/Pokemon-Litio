@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "tropius"
 numero = 357
 nombre = "Tropius"
-tipos = PackedStringArray("planta", "volador")
+tipos = ["planta", "volador"]
 ps = 99
 ataque = 68
 defensa = 83
@@ -117,7 +117,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("chlorophyll", "solar_power")
+habilidades = ["chlorophyll", "solar_power"]
 habilidad_oculta = "harvest"
 categoria = "Pokémon Fruto"
 altura = 2.0

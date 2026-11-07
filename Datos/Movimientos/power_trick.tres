@@ -13,4 +13,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Usa sus poderes mentales para intercambiar sus características de Ataque y Defensa."
 numero = 379
-banderas = PackedStringArray("metronome", "snatch")
+banderas = ["metronome", "snatch"]

@@ -75,7 +75,7 @@ script = ExtResource("1")
 id = "lotad"
 numero = 270
 nombre = "Lotad"
-tipos = PackedStringArray("agua", "planta")
+tipos = ["agua", "planta"]
 ps = 40
 ataque = 30
 defensa = 30
@@ -94,7 +94,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 14
 }])
-habilidades = PackedStringArray("swift_swim", "rain_dish")
+habilidades = ["swift_swim", "rain_dish"]
 habilidad_oculta = "own_tempo"
 categoria = "Pokémon Lenteja Agua"
 altura = 0.5

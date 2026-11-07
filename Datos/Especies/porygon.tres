@@ -96,7 +96,7 @@ script = ExtResource("1")
 id = "porygon"
 numero = 137
 nombre = "Porygon"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 65
 ataque = 60
 defensa = 70
@@ -113,7 +113,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "intercambio",
 "objeto": "up_grade"
 }])
-habilidades = PackedStringArray("trace", "download")
+habilidades = ["trace", "download"]
 habilidad_oculta = "analytic"
 categoria = "Pokémon Virtual"
 altura = 0.8

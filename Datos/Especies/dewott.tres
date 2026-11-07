@@ -111,7 +111,7 @@ script = ExtResource("17_2slf7")
 id = "dewott"
 numero = 502
 nombre = "Dewott"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 75
 ataque = 75
 defensa = 60
@@ -131,7 +131,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("torrent")
+habilidades = ["torrent"]
 habilidad_oculta = "shell_armor"
 categoria = "Pokémon Superación"
 altura = 0.8

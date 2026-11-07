@@ -94,7 +94,7 @@ script = ExtResource("1")
 id = "glalie"
 numero = 362
 nombre = "Glalie"
-tipos = PackedStringArray("hielo")
+tipos = ["hielo"]
 ps = 80
 ataque = 80
 defensa = 80
@@ -106,7 +106,7 @@ ratio_captura = 75
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("inner_focus", "ice_body")
+habilidades = ["inner_focus", "ice_body"]
 habilidad_oculta = "moody"
 categoria = "Pokémon Cara"
 altura = 1.5

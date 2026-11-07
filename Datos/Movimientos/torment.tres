@@ -13,4 +13,4 @@ meta = "ailment"
 descripcion = "Atormenta y enfurece al objetivo, que no puede usar dos veces seguidas el mismo movimiento."
 estado = "torment"
 numero = 259
-banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "reflectable")
+banderas = ["bypasssub", "metronome", "mirror", "protect", "reflectable"]

@@ -101,7 +101,7 @@ script = ExtResource("1")
 id = "mankey"
 numero = 56
 nombre = "Mankey"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 40
 ataque = 80
 defensa = 35
@@ -120,7 +120,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 28
 }])
-habilidades = PackedStringArray("vital_spirit", "anger_point")
+habilidades = ["vital_spirit", "anger_point"]
 habilidad_oculta = "defiant"
 categoria = "Pokémon Mono Cerdo"
 altura = 0.5

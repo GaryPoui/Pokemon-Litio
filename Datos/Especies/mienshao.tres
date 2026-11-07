@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "mienshao"
 numero = 620
 nombre = "Mienshao"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 65
 ataque = 125
 defensa = 60
@@ -129,7 +129,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("inner_focus", "regenerator")
+habilidades = ["inner_focus", "regenerator"]
 habilidad_oculta = "reckless"
 categoria = "Pokémon Arte Marcial"
 altura = 1.4

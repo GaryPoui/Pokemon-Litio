@@ -102,7 +102,7 @@ script = ExtResource("1")
 id = "alakazam"
 numero = 65
 nombre = "Alakazam"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 55
 defensa = 45
 at_esp = 135
@@ -115,7 +115,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("synchronize", "inner_focus")
+habilidades = ["synchronize", "inner_focus"]
 habilidad_oculta = "magic_guard"
 categoria = "Pokémon Psi"
 altura = 1.5

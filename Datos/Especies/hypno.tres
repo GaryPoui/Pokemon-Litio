@@ -127,7 +127,7 @@ script = ExtResource("1")
 id = "hypno"
 numero = 97
 nombre = "Hypno"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 85
 ataque = 73
 defensa = 70
@@ -139,7 +139,7 @@ ratio_captura = 75
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("insomnia", "forewarn")
+habilidades = ["insomnia", "forewarn"]
 habilidad_oculta = "inner_focus"
 categoria = "Pokémon Hipnosis"
 altura = 1.6

@@ -54,7 +54,7 @@ script = ExtResource("1")
 id = "nidoqueen"
 numero = 31
 nombre = "Nidoqueen"
-tipos = PackedStringArray("veneno", "tierra")
+tipos = ["veneno", "tierra"]
 ps = 90
 ataque = 82
 defensa = 87
@@ -67,7 +67,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ps": 3
 }
-habilidades = PackedStringArray("poison_point", "rivalry")
+habilidades = ["poison_point", "rivalry"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Taladro"
 altura = 1.3

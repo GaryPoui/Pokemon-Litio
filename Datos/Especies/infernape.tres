@@ -100,7 +100,7 @@ script = ExtResource("16_5f335")
 id = "infernape"
 numero = 392
 nombre = "Infernape"
-tipos = PackedStringArray("fuego", "lucha")
+tipos = ["fuego", "lucha"]
 ps = 76
 ataque = 104
 defensa = 71
@@ -115,7 +115,7 @@ evs_otorgados = {
 "ataque": 1,
 "velocidad": 1
 }
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "iron_fist"
 categoria = "Pokémon Llama"
 altura = 1.2

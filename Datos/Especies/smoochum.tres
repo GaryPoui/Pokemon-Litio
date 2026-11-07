@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "smoochum"
 numero = 238
 nombre = "Smoochum"
-tipos = PackedStringArray("hielo", "psiquico")
+tipos = ["hielo", "psiquico"]
 ps = 45
 ataque = 30
 defensa = 15
@@ -118,7 +118,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("oblivious", "forewarn")
+habilidades = ["oblivious", "forewarn"]
 habilidad_oculta = "hydration"
 categoria = "Pokémon Beso"
 altura = 0.4

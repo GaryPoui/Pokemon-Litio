@@ -15,7 +15,7 @@ script = ExtResource("1")
 id = "beldum"
 numero = 374
 nombre = "Beldum"
-tipos = PackedStringArray("acero", "psiquico")
+tipos = ["acero", "psiquico"]
 ps = 40
 ataque = 55
 defensa = 80
@@ -37,7 +37,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 20
 }])
 amistad_base = 35
-habilidades = PackedStringArray("clear_body")
+habilidades = ["clear_body"]
 habilidad_oculta = "light_metal"
 categoria = "Pokémon Bola Hierro"
 altura = 0.6

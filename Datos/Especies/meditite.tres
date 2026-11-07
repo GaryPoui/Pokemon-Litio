@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "meditite"
 numero = 307
 nombre = "Meditite"
-tipos = PackedStringArray("lucha", "psiquico")
+tipos = ["lucha", "psiquico"]
 ps = 30
 ataque = 40
 defensa = 55
@@ -118,7 +118,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 37
 }])
-habilidades = PackedStringArray("pure_power")
+habilidades = ["pure_power"]
 habilidad_oculta = "telepathy"
 categoria = "Pokémon Meditador"
 altura = 0.6

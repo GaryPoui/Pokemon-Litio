@@ -117,7 +117,7 @@ script = ExtResource("19_gv1au")
 id = "sawsbuck"
 numero = 586
 nombre = "Sawsbuck"
-tipos = PackedStringArray("normal", "planta")
+tipos = ["normal", "planta"]
 ps = 80
 ataque = 100
 defensa = 70
@@ -129,7 +129,7 @@ ratio_captura = 75
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("chlorophyll", "sap_sipper")
+habilidades = ["chlorophyll", "sap_sipper"]
 habilidad_oculta = "serene_grace"
 categoria = "Pokémon Estacional"
 altura = 1.9

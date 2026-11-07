@@ -135,7 +135,7 @@ script = ExtResource("1")
 id = "mr_mime"
 numero = 122
 nombre = "Mr. Mime"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 40
 ataque = 45
 defensa = 65
@@ -146,7 +146,7 @@ exp_base = 161
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("soundproof", "filter")
+habilidades = ["soundproof", "filter"]
 habilidad_oculta = "technician"
 categoria = "Pokémon Barrera"
 altura = 1.3

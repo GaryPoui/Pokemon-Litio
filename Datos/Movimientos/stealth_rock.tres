@@ -14,4 +14,4 @@ objetivo = "opponents-field"
 meta = "field-effect"
 descripcion = "Una trampa de rocas que flota en el aire y daña a los objetivos que entran en combate."
 numero = 446
-banderas = PackedStringArray("metronome", "mustpressure", "reflectable")
+banderas = ["metronome", "mustpressure", "reflectable"]

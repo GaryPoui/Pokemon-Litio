@@ -1,0 +1,82 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://7ywvwc1l2yvo"]
+
+[ext_resource type="Texture2D" uid="uid://dxhbhug4wcpgi" path="res://Assets/Personajes/pokemon/litwick_paseo.png" id="1_hoja"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abajo_0"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abajo_1"]
+atlas = ExtResource("1_hoja")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arriba_0"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arriba_1"]
+atlas = ExtResource("1_hoja")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_derecha_0"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_derecha_1"]
+atlas = ExtResource("1_hoja")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_izquierda_0"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_izquierda_1"]
+atlas = ExtResource("1_hoja")
+region = Rect2(32, 64, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abajo_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abajo_1")
+}],
+"loop": 1,
+"name": &"abajo",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arriba_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arriba_1")
+}],
+"loop": 1,
+"name": &"arriba",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_derecha_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_derecha_1")
+}],
+"loop": 1,
+"name": &"derecha",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_izquierda_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_izquierda_1")
+}],
+"loop": 1,
+"name": &"izquierda",
+"speed": 4.0
+}]

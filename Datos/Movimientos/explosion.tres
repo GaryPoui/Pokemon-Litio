@@ -11,4 +11,4 @@ pp = 5
 objetivo = "all-other-pokemon"
 descripcion = "El atacante causa una grandísima explosión y hiere a todos a su alrededor. El usuario se debilita de inmediato."
 numero = 153
-banderas = PackedStringArray("metronome", "mirror", "noparentalbond", "protect")
+banderas = ["metronome", "mirror", "noparentalbond", "protect"]

@@ -106,7 +106,7 @@ script = ExtResource("1")
 id = "muk"
 numero = 89
 nombre = "Muk"
-tipos = PackedStringArray("veneno")
+tipos = ["veneno"]
 ps = 105
 ataque = 105
 defensa = 75
@@ -118,7 +118,7 @@ evs_otorgados = {
 "ataque": 1,
 "ps": 1
 }
-habilidades = PackedStringArray("stench", "sticky_hold")
+habilidades = ["stench", "sticky_hold"]
 habilidad_oculta = "poison_touch"
 categoria = "Pokémon Lodo"
 altura = 1.2

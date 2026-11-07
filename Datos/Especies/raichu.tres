@@ -30,7 +30,7 @@ script = ExtResource("6_km1ml")
 id = "raichu"
 numero = 26
 nombre = "Raichu"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 60
 ataque = 90
 defensa = 55
@@ -42,7 +42,7 @@ ratio_captura = 75
 evs_otorgados = {
 "velocidad": 3
 }
-habilidades = PackedStringArray("static")
+habilidades = ["static"]
 habilidad_oculta = "lightning_rod"
 categoria = "Pokémon Ratón"
 altura = 0.8

@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "garchomp"
 numero = 445
 nombre = "Garchomp"
-tipos = PackedStringArray("dragon", "tierra")
+tipos = ["dragon", "tierra"]
 ps = 108
 ataque = 130
 defensa = 95
@@ -110,7 +110,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("sand_veil")
+habilidades = ["sand_veil"]
 habilidad_oculta = "rough_skin"
 categoria = "Pokémon Mach"
 altura = 1.9

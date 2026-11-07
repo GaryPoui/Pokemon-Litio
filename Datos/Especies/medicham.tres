@@ -126,7 +126,7 @@ script = ExtResource("1")
 id = "medicham"
 numero = 308
 nombre = "Medicham"
-tipos = PackedStringArray("lucha", "psiquico")
+tipos = ["lucha", "psiquico"]
 ps = 60
 ataque = 60
 defensa = 75
@@ -138,7 +138,7 @@ ratio_captura = 90
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("pure_power")
+habilidades = ["pure_power"]
 habilidad_oculta = "telepathy"
 categoria = "Pokémon Meditador"
 altura = 1.3

@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "vullaby"
 numero = 629
 nombre = "Vullaby"
-tipos = PackedStringArray("siniestro", "volador")
+tipos = ["siniestro", "volador"]
 ps = 70
 ataque = 55
 defensa = 75
@@ -126,7 +126,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 54
 }])
 amistad_base = 35
-habilidades = PackedStringArray("big_pecks", "overcoat")
+habilidades = ["big_pecks", "overcoat"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Pañal"
 altura = 0.5

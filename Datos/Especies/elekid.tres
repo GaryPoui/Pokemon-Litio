@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "elekid"
 numero = 239
 nombre = "Elekid"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 45
 ataque = 63
 defensa = 37
@@ -105,7 +105,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("static")
+habilidades = ["static"]
 habilidad_oculta = "vital_spirit"
 categoria = "Pokémon Eléctrico"
 altura = 0.6

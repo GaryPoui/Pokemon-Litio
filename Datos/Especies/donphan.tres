@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "donphan"
 numero = 232
 nombre = "Donphan"
-tipos = PackedStringArray("tierra")
+tipos = ["tierra"]
 ps = 90
 ataque = 120
 defensa = 120
@@ -112,7 +112,7 @@ evs_otorgados = {
 "ataque": 1,
 "defensa": 1
 }
-habilidades = PackedStringArray("sturdy")
+habilidades = ["sturdy"]
 habilidad_oculta = "sand_veil"
 categoria = "Pokémon Coraza"
 altura = 1.1

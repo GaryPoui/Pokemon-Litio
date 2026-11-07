@@ -14,4 +14,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Restaura todos los PS y cura todos los problemas de estado del usuario, que se duerme los dos turnos siguientes."
 numero = 156
-banderas = PackedStringArray("heal", "metronome", "snatch")
+banderas = ["heal", "metronome", "snatch"]

@@ -17,4 +17,4 @@ cambios_stats = {
 }
 prob_stat = 10
 numero = 61
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

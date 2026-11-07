@@ -94,7 +94,7 @@ script = ExtResource("15_457mm")
 id = "combusken"
 numero = 256
 nombre = "Combusken"
-tipos = PackedStringArray("fuego", "lucha")
+tipos = ["fuego", "lucha"]
 ps = 60
 ataque = 85
 defensa = 60
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "speed_boost"
 categoria = "Pokémon Ave Corral"
 altura = 0.9

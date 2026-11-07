@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "sentret"
 numero = 161
 nombre = "Sentret"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 35
 ataque = 46
 defensa = 34
@@ -111,7 +111,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 15
 }])
-habilidades = PackedStringArray("run_away", "keen_eye")
+habilidades = ["run_away", "keen_eye"]
 habilidad_oculta = "frisk"
 categoria = "Pokémon Explorador"
 altura = 0.8

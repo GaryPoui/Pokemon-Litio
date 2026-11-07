@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "shieldon"
 numero = 410
 nombre = "Shieldon"
-tipos = PackedStringArray("roca", "acero")
+tipos = ["roca", "acero"]
 ps = 30
 ataque = 42
 defensa = 118
@@ -100,7 +100,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("sturdy")
+habilidades = ["sturdy"]
 habilidad_oculta = "soundproof"
 categoria = "Pokémon Escudo"
 altura = 0.5

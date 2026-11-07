@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "whismur"
 numero = 293
 nombre = "Whismur"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 64
 ataque = 51
 defensa = 23
@@ -101,7 +101,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 20
 }])
-habilidades = PackedStringArray("soundproof")
+habilidades = ["soundproof"]
 habilidad_oculta = "rattled"
 categoria = "Pokémon Susurro"
 altura = 0.6

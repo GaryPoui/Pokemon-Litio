@@ -104,7 +104,7 @@ script = ExtResource("18_dgb6r")
 id = "scraggy"
 numero = 559
 nombre = "Scraggy"
-tipos = PackedStringArray("siniestro", "lucha")
+tipos = ["siniestro", "lucha"]
 ataque = 75
 defensa = 70
 at_esp = 35
@@ -123,7 +123,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 39
 }])
 amistad_base = 35
-habilidades = PackedStringArray("shed_skin", "moxie")
+habilidades = ["shed_skin", "moxie"]
 habilidad_oculta = "intimidate"
 categoria = "Pokémon Mudapiel"
 altura = 0.6

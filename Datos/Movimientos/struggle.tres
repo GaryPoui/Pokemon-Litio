@@ -13,4 +13,4 @@ objetivo = "random-opponent"
 descripcion = "Solo se usa como último recurso al acabarse los PP. Hiere un poco al agresor."
 curacion = -25
 numero = 165
-banderas = PackedStringArray("contact", "failcopycat", "failencore", "failinstruct", "failmefirst", "failmimic", "noassist", "nosketch", "nosleeptalk", "protect")
+banderas = ["contact", "failcopycat", "failencore", "failinstruct", "failmefirst", "failmimic", "noassist", "nosketch", "nosleeptalk", "protect"]

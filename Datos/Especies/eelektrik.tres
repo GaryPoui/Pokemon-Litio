@@ -96,7 +96,7 @@ script = ExtResource("17_xxo83")
 id = "eelektrik"
 numero = 603
 nombre = "Eelektrik"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 65
 ataque = 85
 defensa = 70
@@ -114,7 +114,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "thunder_stone"
 }])
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Electropez"
 altura = 1.2
 peso_kg = 22.0

@@ -118,7 +118,7 @@ script = ExtResource("1")
 id = "lampent"
 numero = 608
 nombre = "Lampent"
-tipos = PackedStringArray("fantasma", "fuego")
+tipos = ["fantasma", "fuego"]
 ps = 60
 ataque = 40
 defensa = 60
@@ -136,7 +136,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "dusk_stone"
 }])
-habilidades = PackedStringArray("flash_fire", "flame_body")
+habilidades = ["flash_fire", "flame_body"]
 habilidad_oculta = "shadow_tag"
 categoria = "Pokémon Farolillo"
 altura = 0.6

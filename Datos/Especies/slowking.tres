@@ -113,7 +113,7 @@ script = ExtResource("1")
 id = "slowking"
 numero = 199
 nombre = "Slowking"
-tipos = PackedStringArray("agua", "psiquico")
+tipos = ["agua", "psiquico"]
 ps = 95
 ataque = 75
 defensa = 80
@@ -125,7 +125,7 @@ ratio_captura = 70
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("oblivious", "own_tempo")
+habilidades = ["oblivious", "own_tempo"]
 habilidad_oculta = "regenerator"
 categoria = "Pokémon Regio"
 altura = 2.0

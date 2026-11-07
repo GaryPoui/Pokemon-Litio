@@ -113,7 +113,7 @@ script = ExtResource("1")
 id = "tentacruel"
 numero = 73
 nombre = "Tentacruel"
-tipos = PackedStringArray("agua", "veneno")
+tipos = ["agua", "veneno"]
 ps = 80
 ataque = 70
 defensa = 65
@@ -126,7 +126,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("clear_body", "liquid_ooze")
+habilidades = ["clear_body", "liquid_ooze"]
 habilidad_oculta = "rain_dish"
 categoria = "Pokémon Medusa"
 altura = 1.6

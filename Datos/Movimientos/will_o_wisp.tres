@@ -14,4 +14,4 @@ meta = "ailment"
 descripcion = "Siniestra llama morada que produce quemaduras."
 estado = "burn"
 numero = 261
-banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")
+banderas = ["metronome", "mirror", "protect", "reflectable"]

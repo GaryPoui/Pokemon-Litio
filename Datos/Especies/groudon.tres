@@ -87,7 +87,7 @@ script = ExtResource("1")
 id = "groudon"
 numero = 383
 nombre = "Groudon"
-tipos = PackedStringArray("tierra")
+tipos = ["tierra"]
 ps = 100
 ataque = 150
 defensa = 140
@@ -102,7 +102,7 @@ evs_otorgados = {
 "ataque": 3
 }
 amistad_base = 0
-habilidades = PackedStringArray("drought")
+habilidades = ["drought"]
 categoria = "Pokémon Continente"
 altura = 3.5
 peso_kg = 950.0

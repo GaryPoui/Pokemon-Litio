@@ -12,4 +12,4 @@ pp = 15
 meta = "unique"
 descripcion = "Cambia el tipo del Pokémon al mismo tipo que el del objetivo."
 numero = 513
-banderas = PackedStringArray("allyanim", "bypasssub", "metronome", "protect")
+banderas = ["allyanim", "bypasssub", "metronome", "protect"]

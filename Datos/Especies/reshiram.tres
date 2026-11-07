@@ -103,7 +103,7 @@ script = ExtResource("1")
 id = "reshiram"
 numero = 643
 nombre = "Reshiram"
-tipos = PackedStringArray("dragon", "fuego")
+tipos = ["dragon", "fuego"]
 ps = 100
 ataque = 120
 defensa = 100
@@ -118,7 +118,7 @@ evs_otorgados = {
 "at_esp": 3
 }
 amistad_base = 0
-habilidades = PackedStringArray("turboblaze")
+habilidades = ["turboblaze"]
 categoria = "Pokémon Blanco Veraz"
 altura = 3.2
 peso_kg = 330.0

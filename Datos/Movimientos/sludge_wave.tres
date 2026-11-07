@@ -15,4 +15,4 @@ descripcion = "Una onda tóxica que daña a los Pokémon de alrededor. Puede env
 estado = "poison"
 prob_estado = 10
 numero = 482
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

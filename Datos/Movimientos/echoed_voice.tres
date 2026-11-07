@@ -11,4 +11,4 @@ poder = 40
 pp = 15
 descripcion = "Un susurro que aumenta de potencia conforme el usuario y otros Pokémon lo van utilizando."
 numero = 497
-banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "sound")
+banderas = ["bypasssub", "metronome", "mirror", "protect", "sound"]

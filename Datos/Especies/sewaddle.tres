@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dihbcrwtne58v"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_4x4c8"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_4x4c8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/string_shot.tres" id="2_n0nla"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="3_6jtcj"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_bite.tres" id="4_fod51"]
@@ -9,9 +9,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/endure.tres" id="7_h5p3f"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bug_buzz.tres" id="8_32ix7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flail.tres" id="9_tjbka"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="10_yxbpt"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/sewaddle_espalda.png" id="11_w168k"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/sewaddle_frente.png" id="12_rhbkq"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="10_yxbpt"]
+[ext_resource type="Texture2D" uid="uid://u6n8bfv4gkqk" path="res://Assets/Pokemones/batalla/sewaddle_espalda.png" id="11_w168k"]
+[ext_resource type="Texture2D" uid="uid://cu6hfamgs65h5" path="res://Assets/Pokemones/batalla/sewaddle_frente.png" id="12_rhbkq"]
 
 [sub_resource type="Resource" id="Resource_4x4c8"]
 script = ExtResource("1_4x4c8")
@@ -56,7 +56,7 @@ script = ExtResource("10_yxbpt")
 id = "sewaddle"
 numero = 540
 nombre = "Sewaddle"
-tipos = PackedStringArray("bicho", "planta")
+tipos = ["bicho", "planta"]
 ps = 45
 ataque = 53
 defensa = 70
@@ -76,7 +76,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 20
 }])
-habilidades = PackedStringArray("swarm", "chlorophyll")
+habilidades = ["swarm", "chlorophyll"]
 habilidad_oculta = "overcoat"
 categoria = "Pokémon Sastre"
 altura = 0.3

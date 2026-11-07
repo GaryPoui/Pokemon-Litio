@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "zangoose"
 numero = 335
 nombre = "Zangoose"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 73
 ataque = 115
 defensa = 60
@@ -105,7 +105,7 @@ crecimiento = "slow-then-very-fast"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("immunity")
+habilidades = ["immunity"]
 habilidad_oculta = "toxic_boost"
 categoria = "Pokémon Gato Hurón"
 altura = 1.3

@@ -87,7 +87,7 @@ script = ExtResource("1")
 id = "spinda"
 numero = 327
 nombre = "Spinda"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 60
 ataque = 60
 defensa = 60
@@ -100,7 +100,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "at_esp": 1
 }
-habilidades = PackedStringArray("own_tempo", "tangled_feet")
+habilidades = ["own_tempo", "tangled_feet"]
 habilidad_oculta = "contrary"
 categoria = "Pokémon Panda Topos"
 altura = 1.1

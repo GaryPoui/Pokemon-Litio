@@ -116,7 +116,7 @@ script = ExtResource("18_nevpl")
 id = "vanilluxe"
 numero = 584
 nombre = "Vanilluxe"
-tipos = PackedStringArray("hielo")
+tipos = ["hielo"]
 ps = 71
 ataque = 95
 defensa = 85
@@ -128,7 +128,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("ice_body")
+habilidades = ["ice_body"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Nieve Gélida"
 altura = 1.3

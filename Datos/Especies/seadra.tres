@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "seadra"
 numero = 117
 nombre = "Seadra"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 55
 ataque = 65
 defensa = 95
@@ -111,7 +111,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "intercambio",
 "objeto": "dragon_scale"
 }])
-habilidades = PackedStringArray("poison_point", "sniper")
+habilidades = ["poison_point", "sniper"]
 habilidad_oculta = "damp"
 categoria = "Pokémon Dragón"
 altura = 1.2

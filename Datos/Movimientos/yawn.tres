@@ -12,6 +12,6 @@ meta = "ailment"
 descripcion = "Gran bostezo que induce al sueño al objetivo en el siguiente turno."
 estado = "yawn"
 numero = 281
-banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")
+banderas = ["metronome", "mirror", "protect", "reflectable"]
 turnos_min = 2
 turnos_max = 2

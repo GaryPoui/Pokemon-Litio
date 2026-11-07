@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "keldeo"
 numero = 647
 nombre = "Keldeo"
-tipos = PackedStringArray("agua", "lucha")
+tipos = ["agua", "lucha"]
 ps = 91
 ataque = 72
 defensa = 90
@@ -107,7 +107,7 @@ evs_otorgados = {
 "at_esp": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("justified")
+habilidades = ["justified"]
 categoria = "Pokémon Potro"
 altura = 1.4
 peso_kg = 48.5

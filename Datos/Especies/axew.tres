@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "axew"
 numero = 610
 nombre = "Axew"
-tipos = PackedStringArray("dragon")
+tipos = ["dragon"]
 ps = 46
 ataque = 87
 defensa = 60
@@ -126,7 +126,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 38
 }])
 amistad_base = 35
-habilidades = PackedStringArray("rivalry", "mold_breaker")
+habilidades = ["rivalry", "mold_breaker"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Colmillo"
 altura = 0.6

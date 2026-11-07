@@ -14,4 +14,4 @@ descripcion = "Ataca envuelto en fuego. Puede causar quemaduras."
 estado = "burn"
 prob_estado = 10
 numero = 172
-banderas = PackedStringArray("contact", "defrost", "metronome", "mirror", "protect")
+banderas = ["contact", "defrost", "metronome", "mirror", "protect"]

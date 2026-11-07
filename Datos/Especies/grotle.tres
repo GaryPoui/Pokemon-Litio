@@ -85,7 +85,7 @@ script = ExtResource("14_ktyp6")
 id = "grotle"
 numero = 388
 nombre = "Grotle"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 75
 ataque = 89
 defensa = 85
@@ -106,7 +106,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 32
 }])
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "shell_armor"
 categoria = "Pokémon Arboleda"
 altura = 1.1

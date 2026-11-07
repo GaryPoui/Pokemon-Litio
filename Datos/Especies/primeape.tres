@@ -107,7 +107,7 @@ script = ExtResource("1")
 id = "primeape"
 numero = 57
 nombre = "Primeape"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 65
 ataque = 105
 defensa = 60
@@ -119,7 +119,7 @@ ratio_captura = 75
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("vital_spirit", "anger_point")
+habilidades = ["vital_spirit", "anger_point"]
 habilidad_oculta = "defiant"
 categoria = "Pokémon Mono Cerdo"
 altura = 1.0

@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "umbreon"
 numero = 197
 nombre = "Umbreon"
-tipos = PackedStringArray("siniestro")
+tipos = ["siniestro"]
 ps = 95
 ataque = 65
 defensa = 110
@@ -104,7 +104,7 @@ evs_otorgados = {
 "def_esp": 2
 }
 amistad_base = 35
-habilidades = PackedStringArray("synchronize")
+habilidades = ["synchronize"]
 habilidad_oculta = "inner_focus"
 categoria = "Pokémon Luz Lunar"
 altura = 1.0

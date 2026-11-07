@@ -97,7 +97,7 @@ script = ExtResource("1")
 id = "kyurem"
 numero = 646
 nombre = "Kyurem"
-tipos = PackedStringArray("dragon", "hielo")
+tipos = ["dragon", "hielo"]
 ps = 125
 ataque = 130
 defensa = 90
@@ -114,7 +114,7 @@ evs_otorgados = {
 "ps": 1
 }
 amistad_base = 0
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 categoria = "Pokémon Frontera"
 altura = 3.0
 peso_kg = 325.0

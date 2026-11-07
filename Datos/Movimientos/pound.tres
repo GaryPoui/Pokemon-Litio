@@ -10,4 +10,4 @@ poder = 40
 pp = 35
 descripcion = "Golpea con las patas o la cola."
 numero = 1
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

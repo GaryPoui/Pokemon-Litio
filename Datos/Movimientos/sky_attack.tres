@@ -14,4 +14,4 @@ descripcion = "Ataca durante dos turnos y suele asestar un golpe crítico. Tambi
 critico = 1
 prob_retroceso = 30
 numero = 143
-banderas = PackedStringArray("charge", "distance", "failinstruct", "metronome", "mirror", "nosleeptalk", "protect")
+banderas = ["charge", "distance", "failinstruct", "metronome", "mirror", "nosleeptalk", "protect"]

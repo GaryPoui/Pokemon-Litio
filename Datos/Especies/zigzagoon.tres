@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "zigzagoon"
 numero = 263
 nombre = "Zigzagoon"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 38
 ataque = 30
 defensa = 41
@@ -111,7 +111,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 20
 }])
-habilidades = PackedStringArray("pickup", "gluttony")
+habilidades = ["pickup", "gluttony"]
 habilidad_oculta = "quick_feet"
 categoria = "Pokémon Mapachito"
 altura = 0.4

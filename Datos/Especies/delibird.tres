@@ -15,7 +15,7 @@ script = ExtResource("1")
 id = "delibird"
 numero = 225
 nombre = "Delibird"
-tipos = PackedStringArray("hielo", "volador")
+tipos = ["hielo", "volador"]
 ps = 45
 ataque = 55
 defensa = 45
@@ -27,7 +27,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "velocidad": 1
 }
-habilidades = PackedStringArray("vital_spirit", "hustle")
+habilidades = ["vital_spirit", "hustle"]
 habilidad_oculta = "insomnia"
 categoria = "Pokémon Reparto"
 altura = 0.9

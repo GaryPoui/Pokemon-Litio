@@ -87,7 +87,7 @@ script = ExtResource("15_h33mi")
 id = "mareep"
 numero = 179
 nombre = "Mareep"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 55
 ataque = 40
 defensa = 40
@@ -107,7 +107,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 15
 }])
-habilidades = PackedStringArray("static")
+habilidades = ["static"]
 habilidad_oculta = "plus"
 categoria = "Pokémon Lana"
 altura = 0.6

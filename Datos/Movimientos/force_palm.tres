@@ -13,4 +13,4 @@ descripcion = "Ataca al objetivo con una onda de choque y puede llegar a paraliz
 estado = "paralysis"
 prob_estado = 30
 numero = 395
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

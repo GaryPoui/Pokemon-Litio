@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "registeel"
 numero = 379
 nombre = "Registeel"
-tipos = PackedStringArray("acero")
+tipos = ["acero"]
 ps = 80
 ataque = 75
 defensa = 150
@@ -113,7 +113,7 @@ evs_otorgados = {
 "defensa": 2
 }
 amistad_base = 35
-habilidades = PackedStringArray("clear_body")
+habilidades = ["clear_body"]
 habilidad_oculta = "light_metal"
 categoria = "Pokémon Hierro"
 altura = 1.9

@@ -92,7 +92,7 @@ script = ExtResource("16_ikyfe")
 id = "chikorita"
 numero = 152
 nombre = "Chikorita"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 45
 ataque = 49
 defensa = 65
@@ -112,7 +112,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 16
 }])
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "leaf_guard"
 categoria = "Pokémon Hoja"
 altura = 0.9

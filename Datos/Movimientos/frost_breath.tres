@@ -14,4 +14,4 @@ descripcion = "Quien lo usa ataca lanzando un aliento gélido. Siempre asesta un
 prob_estado = 100
 critico = 6
 numero = 524
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

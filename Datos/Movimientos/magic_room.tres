@@ -13,4 +13,4 @@ objetivo = "entire-field"
 meta = "whole-field-effect"
 descripcion = "Crea un espacio misterioso que inutiliza todos los objetos de los Pokémon durante cinco turnos."
 numero = 478
-banderas = PackedStringArray("metronome", "mirror")
+banderas = ["metronome", "mirror"]

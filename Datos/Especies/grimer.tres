@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://g0cl7jr8smdg"]
 
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/grimer_frente.png" id="3"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/grimer_espalda.png" id="4"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://ciguuax1ivumy" path="res://Assets/Pokemones/batalla/grimer_frente.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://8kk2xy5iehsk" path="res://Assets/Pokemones/batalla/grimer_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/poison_gas.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="7"]
@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "grimer"
 numero = 88
 nombre = "Grimer"
-tipos = PackedStringArray("veneno")
+tipos = ["veneno"]
 ps = 80
 ataque = 80
 at_esp = 40
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 38
 }])
-habilidades = PackedStringArray("stench", "sticky_hold")
+habilidades = ["stench", "sticky_hold"]
 habilidad_oculta = "poison_touch"
 categoria = "Pokémon Lodo"
 altura = 0.9

@@ -14,4 +14,4 @@ objetivo = "entire-field"
 meta = "whole-field-effect"
 descripcion = "Durante cinco turnos, se anulan los movimientos que alzan el vuelo y los Pokémon de tipo Volador o que levitan son vulnerables a movimientos de tipo Tierra."
 numero = 356
-banderas = PackedStringArray("metronome", "nonsky")
+banderas = ["metronome", "nonsky"]

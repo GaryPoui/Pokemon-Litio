@@ -13,4 +13,4 @@ pp = 5
 descripcion = "Corte doble que suele propinar un golpe crítico."
 critico = 1
 numero = 238
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

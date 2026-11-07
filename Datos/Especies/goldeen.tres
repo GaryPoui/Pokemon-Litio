@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "goldeen"
 numero = 118
 nombre = "Goldeen"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 45
 ataque = 67
 defensa = 60
@@ -109,7 +109,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 33
 }])
-habilidades = PackedStringArray("swift_swim", "water_veil")
+habilidades = ["swift_swim", "water_veil"]
 habilidad_oculta = "lightning_rod"
 categoria = "Pokémon Pez Color"
 altura = 0.6

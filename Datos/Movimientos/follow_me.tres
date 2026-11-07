@@ -14,4 +14,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Llama la atención para concentrar todos los ataques de todos los del equipo rival hacia sí mismo."
 numero = 266
-banderas = PackedStringArray("failcopycat", "noassist")
+banderas = ["failcopycat", "noassist"]

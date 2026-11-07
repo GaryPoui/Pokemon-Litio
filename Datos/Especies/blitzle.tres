@@ -87,7 +87,7 @@ script = ExtResource("15_gci87")
 id = "blitzle"
 numero = 522
 nombre = "Blitzle"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 45
 ataque = 60
 defensa = 32
@@ -105,7 +105,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 27
 }])
-habilidades = PackedStringArray("lightning_rod", "motor_drive")
+habilidades = ["lightning_rod", "motor_drive"]
 habilidad_oculta = "sap_sipper"
 categoria = "Pokémon Electrizado"
 altura = 0.8

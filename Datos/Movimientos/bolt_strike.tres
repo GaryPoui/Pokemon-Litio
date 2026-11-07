@@ -15,4 +15,4 @@ descripcion = "Ataca envolviéndose de una gran carga eléctrica y embistiendo a
 estado = "paralysis"
 prob_estado = 20
 numero = 550
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

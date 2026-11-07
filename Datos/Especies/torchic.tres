@@ -74,7 +74,7 @@ script = ExtResource("13_bj73e")
 id = "torchic"
 numero = 255
 nombre = "Torchic"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 45
 ataque = 60
 defensa = 40
@@ -93,7 +93,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 16
 }])
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "speed_boost"
 categoria = "Pokémon Polluelo"
 altura = 0.4

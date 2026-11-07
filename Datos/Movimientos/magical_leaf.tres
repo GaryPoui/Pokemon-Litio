@@ -13,4 +13,4 @@ precision = 0
 pp = 20
 descripcion = "Esparce extrañas hojas que persiguen al objetivo. No se puede esquivar."
 numero = 345
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

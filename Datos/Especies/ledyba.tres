@@ -87,7 +87,7 @@ script = ExtResource("1")
 id = "ledyba"
 numero = 165
 nombre = "Ledyba"
-tipos = PackedStringArray("bicho", "volador")
+tipos = ["bicho", "volador"]
 ps = 40
 ataque = 20
 defensa = 30
@@ -107,7 +107,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 18
 }])
-habilidades = PackedStringArray("swarm", "early_bird")
+habilidades = ["swarm", "early_bird"]
 habilidad_oculta = "rattled"
 categoria = "Pokémon 5 Estrellas"
 altura = 1.0

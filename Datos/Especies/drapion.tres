@@ -110,7 +110,7 @@ script = ExtResource("1")
 id = "drapion"
 numero = 452
 nombre = "Drapion"
-tipos = PackedStringArray("veneno", "siniestro")
+tipos = ["veneno", "siniestro"]
 ps = 70
 ataque = 90
 defensa = 110
@@ -122,7 +122,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("battle_armor", "sniper")
+habilidades = ["battle_armor", "sniper"]
 habilidad_oculta = "keen_eye"
 categoria = "Pokémon Escorpiogro"
 altura = 1.3

@@ -15,4 +15,4 @@ descripcion = "Ataca con llamas pequeñas que pueden causar quemaduras."
 estado = "burn"
 prob_estado = 10
 numero = 52
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

@@ -12,4 +12,4 @@ precision = 90
 descripcion = "Lanza grandes carámbanos. Puede amedrentar al objetivo."
 prob_retroceso = 30
 numero = 556
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

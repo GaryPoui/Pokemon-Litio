@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "nidoran_m"
 numero = 32
 nombre = "Nidoran♂"
-tipos = PackedStringArray("veneno")
+tipos = ["veneno"]
 ps = 46
 ataque = 57
 defensa = 40
@@ -106,7 +106,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 16
 }])
-habilidades = PackedStringArray("poison_point", "rivalry")
+habilidades = ["poison_point", "rivalry"]
 habilidad_oculta = "hustle"
 categoria = "Pokémon Pin Veneno"
 altura = 0.5

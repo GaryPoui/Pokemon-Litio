@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "deoxys"
 numero = 386
 nombre = "Deoxys"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ataque = 150
 at_esp = 150
 velocidad = 150
@@ -106,7 +106,7 @@ evs_otorgados = {
 "velocidad": 1
 }
 amistad_base = 0
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 categoria = "Pokémon ADN"
 altura = 1.7
 peso_kg = 60.8

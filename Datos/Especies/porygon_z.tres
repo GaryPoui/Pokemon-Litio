@@ -107,7 +107,7 @@ script = ExtResource("1")
 id = "porygon_z"
 numero = 474
 nombre = "Porygon-Z"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 85
 ataque = 80
 defensa = 70
@@ -120,7 +120,7 @@ ratio_genero = -1
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("adaptability", "download")
+habilidades = ["adaptability", "download"]
 habilidad_oculta = "analytic"
 categoria = "Pokémon Virtual"
 altura = 0.9

@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "aron"
 numero = 304
 nombre = "Aron"
-tipos = PackedStringArray("acero", "roca")
+tipos = ["acero", "roca"]
 ataque = 70
 defensa = 100
 at_esp = 40
@@ -125,7 +125,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 32
 }])
 amistad_base = 35
-habilidades = PackedStringArray("sturdy", "rock_head")
+habilidades = ["sturdy", "rock_head"]
 habilidad_oculta = "heavy_metal"
 categoria = "Pokémon Coraza Férrea"
 altura = 0.4

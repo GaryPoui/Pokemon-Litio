@@ -11,4 +11,4 @@ categoria = "especial"
 poder = 50
 descripcion = "Ataca con columnas de hojas. Combinado con Voto Agua, crea un pantano y aumenta su potencia."
 numero = 520
-banderas = PackedStringArray("metronome", "mirror", "nonsky", "pledgecombo", "protect")
+banderas = ["metronome", "mirror", "nonsky", "pledgecombo", "protect"]

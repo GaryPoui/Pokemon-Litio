@@ -11,4 +11,4 @@ poder = 80
 pp = 20
 descripcion = "Picotazo giratorio y perforador muy potente."
 numero = 65
-banderas = PackedStringArray("contact", "distance", "metronome", "mirror", "protect")
+banderas = ["contact", "distance", "metronome", "mirror", "protect"]

@@ -42,7 +42,7 @@ script = ExtResource("1")
 id = "shiftry"
 numero = 275
 nombre = "Shiftry"
-tipos = PackedStringArray("planta", "siniestro")
+tipos = ["planta", "siniestro"]
 ps = 90
 ataque = 100
 defensa = 60
@@ -54,7 +54,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("chlorophyll", "early_bird")
+habilidades = ["chlorophyll", "early_bird"]
 habilidad_oculta = "pickpocket"
 categoria = "Pokémon Malvado"
 altura = 1.3

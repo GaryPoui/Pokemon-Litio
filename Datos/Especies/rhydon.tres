@@ -106,7 +106,7 @@ script = ExtResource("1")
 id = "rhydon"
 numero = 112
 nombre = "Rhydon"
-tipos = PackedStringArray("tierra", "roca")
+tipos = ["tierra", "roca"]
 ps = 105
 ataque = 130
 defensa = 120
@@ -124,7 +124,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "intercambio",
 "objeto": "protector"
 }])
-habilidades = PackedStringArray("lightning_rod", "rock_head")
+habilidades = ["lightning_rod", "rock_head"]
 habilidad_oculta = "reckless"
 categoria = "Pokémon Taladro"
 altura = 1.9

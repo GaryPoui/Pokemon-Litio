@@ -13,4 +13,4 @@ precision = 0
 pp = 15
 descripcion = "Ataca al objetivo con una singular bola de lodo que elimina cualquier cambio en sus características."
 numero = 499
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

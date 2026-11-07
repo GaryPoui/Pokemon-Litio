@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "natu"
 numero = 177
 nombre = "Natu"
-tipos = PackedStringArray("psiquico", "volador")
+tipos = ["psiquico", "volador"]
 ps = 40
 defensa = 45
 at_esp = 70
@@ -122,7 +122,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 25
 }])
-habilidades = PackedStringArray("synchronize", "early_bird")
+habilidades = ["synchronize", "early_bird"]
 habilidad_oculta = "magic_bounce"
 categoria = "Pokémon Pajarito"
 altura = 0.2

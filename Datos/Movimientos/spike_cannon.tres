@@ -10,6 +10,6 @@ poder = 20
 pp = 15
 descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
 numero = 131
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]
 golpes_min = 2
 golpes_max = 5

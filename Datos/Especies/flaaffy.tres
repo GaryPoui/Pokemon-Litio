@@ -95,7 +95,7 @@ script = ExtResource("15_ej4hv")
 id = "flaaffy"
 numero = 180
 nombre = "Flaaffy"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 70
 ataque = 55
 defensa = 55
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("static")
+habilidades = ["static"]
 habilidad_oculta = "plus"
 categoria = "Pokémon Lana"
 altura = 0.8

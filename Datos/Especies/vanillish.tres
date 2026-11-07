@@ -111,7 +111,7 @@ script = ExtResource("17_r5sbt")
 id = "vanillish"
 numero = 583
 nombre = "Vanillish"
-tipos = PackedStringArray("hielo")
+tipos = ["hielo"]
 ps = 51
 ataque = 65
 defensa = 65
@@ -131,7 +131,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 47
 }])
-habilidades = PackedStringArray("ice_body")
+habilidades = ["ice_body"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Nieve Helada"
 altura = 1.1

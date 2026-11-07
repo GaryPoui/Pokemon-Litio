@@ -99,7 +99,7 @@ script = ExtResource("17_880lx")
 id = "pansage"
 numero = 511
 nombre = "Pansage"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ataque = 53
 defensa = 48
 at_esp = 53
@@ -116,7 +116,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "leaf_stone"
 }])
-habilidades = PackedStringArray("gluttony")
+habilidades = ["gluttony"]
 habilidad_oculta = "overgrow"
 categoria = "Pokémon Mono Hierba"
 altura = 0.6

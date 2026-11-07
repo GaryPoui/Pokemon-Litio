@@ -87,7 +87,7 @@ script = ExtResource("1")
 id = "poliwag"
 numero = 60
 nombre = "Poliwag"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 40
 defensa = 40
 at_esp = 40
@@ -106,7 +106,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 25
 }])
-habilidades = PackedStringArray("water_absorb", "damp")
+habilidades = ["water_absorb", "damp"]
 habilidad_oculta = "swift_swim"
 categoria = "Pokémon Renacuajo"
 altura = 0.6

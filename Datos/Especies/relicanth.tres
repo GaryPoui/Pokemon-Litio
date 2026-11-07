@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "relicanth"
 numero = 369
 nombre = "Relicanth"
-tipos = PackedStringArray("agua", "roca")
+tipos = ["agua", "roca"]
 ps = 100
 ataque = 90
 defensa = 130
@@ -101,7 +101,7 @@ evs_otorgados = {
 "defensa": 1,
 "ps": 1
 }
-habilidades = PackedStringArray("swift_swim", "rock_head")
+habilidades = ["swift_swim", "rock_head"]
 habilidad_oculta = "sturdy"
 categoria = "Pokémon Longevo"
 altura = 1.0

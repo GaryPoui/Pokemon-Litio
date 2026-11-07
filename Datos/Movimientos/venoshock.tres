@@ -11,4 +11,4 @@ categoria = "especial"
 poder = 65
 descripcion = "Cubre al objetivo con un líquido venenoso. El daño será doble si este ya está envenenado."
 numero = 474
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

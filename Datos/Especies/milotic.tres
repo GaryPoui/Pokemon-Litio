@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "milotic"
 numero = 350
 nombre = "Milotic"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 95
 ataque = 60
 defensa = 79
@@ -105,7 +105,7 @@ crecimiento = "slow-then-very-fast"
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("marvel_scale")
+habilidades = ["marvel_scale"]
 habilidad_oculta = "cute_charm"
 categoria = "Pokémon Tierno"
 altura = 6.2

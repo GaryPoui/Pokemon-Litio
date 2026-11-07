@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "jellicent"
 numero = 593
 nombre = "Jellicent"
-tipos = PackedStringArray("agua", "fantasma")
+tipos = ["agua", "fantasma"]
 ps = 100
 ataque = 60
 defensa = 70
@@ -112,7 +112,7 @@ ratio_captura = 60
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("water_absorb", "cursed_body")
+habilidades = ["water_absorb", "cursed_body"]
 habilidad_oculta = "damp"
 categoria = "Pokémon Ingrávido"
 altura = 2.2

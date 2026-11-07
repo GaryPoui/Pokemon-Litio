@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "bronzor"
 numero = 436
 nombre = "Bronzor"
-tipos = PackedStringArray("acero", "psiquico")
+tipos = ["acero", "psiquico"]
 ps = 57
 ataque = 24
 defensa = 86
@@ -112,7 +112,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 33
 }])
-habilidades = PackedStringArray("levitate", "heatproof")
+habilidades = ["levitate", "heatproof"]
 habilidad_oculta = "heavy_metal"
 categoria = "Pokémon Bronce"
 altura = 0.5

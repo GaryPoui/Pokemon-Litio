@@ -101,7 +101,7 @@ script = ExtResource("1")
 id = "sandslash"
 numero = 28
 nombre = "Sandslash"
-tipos = PackedStringArray("tierra")
+tipos = ["tierra"]
 ps = 75
 ataque = 100
 defensa = 110
@@ -113,7 +113,7 @@ ratio_captura = 90
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("sand_veil")
+habilidades = ["sand_veil"]
 habilidad_oculta = "sand_rush"
 categoria = "Pokémon Ratón"
 altura = 1.0

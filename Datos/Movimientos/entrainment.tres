@@ -11,4 +11,4 @@ pp = 15
 meta = "unique"
 descripcion = "Una extraña danza que hace que el usuario y el objetivo tengan la misma habilidad."
 numero = 494
-banderas = PackedStringArray("allyanim", "metronome", "mirror", "protect", "reflectable")
+banderas = ["allyanim", "metronome", "mirror", "protect", "reflectable"]

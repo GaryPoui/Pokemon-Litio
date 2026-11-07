@@ -30,7 +30,7 @@ script = ExtResource("1")
 id = "ludicolo"
 numero = 272
 nombre = "Ludicolo"
-tipos = PackedStringArray("agua", "planta")
+tipos = ["agua", "planta"]
 ps = 80
 ataque = 70
 defensa = 70
@@ -42,7 +42,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "def_esp": 3
 }
-habilidades = PackedStringArray("swift_swim", "rain_dish")
+habilidades = ["swift_swim", "rain_dish"]
 habilidad_oculta = "own_tempo"
 categoria = "Pokémon Optimista"
 altura = 1.5

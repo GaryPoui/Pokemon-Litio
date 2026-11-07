@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "mantyke"
 numero = 458
 nombre = "Mantyke"
-tipos = PackedStringArray("agua", "volador")
+tipos = ["agua", "volador"]
 ps = 45
 ataque = 20
 at_esp = 60
@@ -102,7 +102,7 @@ evoluciones = Array[Dictionary]([{
 "especie_equipo": "remoraid",
 "metodo": "companero"
 }])
-habilidades = PackedStringArray("swift_swim", "water_absorb")
+habilidades = ["swift_swim", "water_absorb"]
 habilidad_oculta = "water_veil"
 categoria = "Pokémon Milano"
 altura = 1.0

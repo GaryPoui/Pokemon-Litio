@@ -99,7 +99,7 @@ script = ExtResource("17_mpwaj")
 id = "ralts"
 numero = 280
 nombre = "Ralts"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 28
 ataque = 25
 defensa = 25
@@ -120,7 +120,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 20
 }])
 amistad_base = 35
-habilidades = PackedStringArray("synchronize", "trace")
+habilidades = ["synchronize", "trace"]
 habilidad_oculta = "telepathy"
 categoria = "Pokémon Sensible"
 altura = 0.4

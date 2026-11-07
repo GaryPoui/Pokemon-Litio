@@ -45,7 +45,7 @@ script = ExtResource("1")
 id = "azurill"
 numero = 298
 nombre = "Azurill"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ataque = 20
 defensa = 40
 at_esp = 20
@@ -63,7 +63,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "marill",
 "metodo": "amistad"
 }])
-habilidades = PackedStringArray("thick_fat", "huge_power")
+habilidades = ["thick_fat", "huge_power"]
 habilidad_oculta = "sap_sipper"
 categoria = "Pokémon A Topos"
 altura = 0.2

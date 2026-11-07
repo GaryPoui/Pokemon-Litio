@@ -98,7 +98,7 @@ script = ExtResource("17_fyq4g")
 id = "chinchou"
 numero = 170
 nombre = "Chinchou"
-tipos = PackedStringArray("agua", "electrico")
+tipos = ["agua", "electrico"]
 ps = 75
 ataque = 38
 defensa = 38
@@ -118,7 +118,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 27
 }])
-habilidades = PackedStringArray("volt_absorb", "illuminate")
+habilidades = ["volt_absorb", "illuminate"]
 habilidad_oculta = "water_absorb"
 categoria = "Pokémon Rape"
 altura = 0.5

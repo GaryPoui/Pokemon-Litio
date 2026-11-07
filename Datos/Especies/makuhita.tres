@@ -110,7 +110,7 @@ script = ExtResource("1")
 id = "makuhita"
 numero = 296
 nombre = "Makuhita"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 72
 ataque = 60
 defensa = 30
@@ -131,7 +131,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 24
 }])
-habilidades = PackedStringArray("thick_fat", "guts")
+habilidades = ["thick_fat", "guts"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Valiente"
 altura = 1.0

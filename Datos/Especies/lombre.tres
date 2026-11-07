@@ -75,7 +75,7 @@ script = ExtResource("1")
 id = "lombre"
 numero = 271
 nombre = "Lombre"
-tipos = PackedStringArray("agua", "planta")
+tipos = ["agua", "planta"]
 ps = 60
 at_esp = 60
 def_esp = 70
@@ -90,7 +90,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "water_stone"
 }])
-habilidades = PackedStringArray("swift_swim", "rain_dish")
+habilidades = ["swift_swim", "rain_dish"]
 habilidad_oculta = "own_tempo"
 categoria = "Pokémon Alegre"
 altura = 1.2

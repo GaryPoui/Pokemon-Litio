@@ -87,7 +87,7 @@ script = ExtResource("1")
 id = "glameow"
 numero = 431
 nombre = "Glameow"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 49
 ataque = 55
 defensa = 42
@@ -108,7 +108,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 38
 }])
-habilidades = PackedStringArray("limber", "own_tempo")
+habilidades = ["limber", "own_tempo"]
 habilidad_oculta = "keen_eye"
 categoria = "Pokémon Gastuto"
 altura = 0.5

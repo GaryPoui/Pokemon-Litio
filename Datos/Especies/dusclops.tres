@@ -127,7 +127,7 @@ script = ExtResource("1")
 id = "dusclops"
 numero = 356
 nombre = "Dusclops"
-tipos = PackedStringArray("fantasma")
+tipos = ["fantasma"]
 ps = 40
 ataque = 70
 defensa = 130
@@ -147,7 +147,7 @@ evoluciones = Array[Dictionary]([{
 "objeto": "reaper_cloth"
 }])
 amistad_base = 35
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 categoria = "Pokémon Atrayente"
 altura = 1.6
 peso_kg = 30.6

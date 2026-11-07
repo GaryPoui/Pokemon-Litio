@@ -11,4 +11,4 @@ categoria = "especial"
 poder = 80
 descripcion = "Crea una onda psíquica que causa daño físico al objetivo."
 numero = 473
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

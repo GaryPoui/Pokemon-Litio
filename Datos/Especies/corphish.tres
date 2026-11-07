@@ -87,7 +87,7 @@ script = ExtResource("1")
 id = "corphish"
 numero = 341
 nombre = "Corphish"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 43
 ataque = 80
 defensa = 65
@@ -106,7 +106,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("hyper_cutter", "shell_armor")
+habilidades = ["hyper_cutter", "shell_armor"]
 habilidad_oculta = "adaptability"
 categoria = "Pokémon Rufián"
 altura = 0.6

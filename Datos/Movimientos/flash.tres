@@ -14,4 +14,4 @@ cambios_stats = {
 "precision": -1
 }
 numero = 148
-banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")
+banderas = ["metronome", "mirror", "protect", "reflectable"]

@@ -12,4 +12,4 @@ poder = 70
 pp = 20
 descripcion = "Tras atacar, el usuario vuelve a toda prisa para dar paso a otro Pokémon del equipo."
 numero = 521
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

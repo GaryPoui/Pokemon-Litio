@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "raticate"
 numero = 20
 nombre = "Raticate"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 55
 ataque = 81
 defensa = 60
@@ -116,7 +116,7 @@ ratio_captura = 127
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("run_away", "guts")
+habilidades = ["run_away", "guts"]
 habilidad_oculta = "hustle"
 categoria = "Pokémon Ratón"
 altura = 0.7

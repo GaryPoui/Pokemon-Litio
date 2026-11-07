@@ -68,7 +68,7 @@ script = ExtResource("1")
 id = "slakoth"
 numero = 287
 nombre = "Slakoth"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 60
 ataque = 60
 defensa = 60
@@ -88,7 +88,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 18
 }])
-habilidades = PackedStringArray("truant")
+habilidades = ["truant"]
 categoria = "Pokémon Gandul"
 altura = 0.8
 peso_kg = 24.0

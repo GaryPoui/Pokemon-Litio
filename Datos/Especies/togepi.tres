@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "togepi"
 numero = 175
 nombre = "Togepi"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 35
 ataque = 20
 defensa = 65
@@ -117,7 +117,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "togetic",
 "metodo": "amistad"
 }])
-habilidades = PackedStringArray("hustle", "serene_grace")
+habilidades = ["hustle", "serene_grace"]
 habilidad_oculta = "super_luck"
 categoria = "Pokémon Bolaclavos"
 altura = 0.3

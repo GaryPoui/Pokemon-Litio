@@ -13,4 +13,4 @@ pp = 15
 objetivo = "all-other-pokemon"
 descripcion = "Inunda el terreno de combate con una ola gigante."
 numero = 57
-banderas = PackedStringArray("metronome", "mirror", "nonsky", "protect")
+banderas = ["metronome", "mirror", "nonsky", "protect"]

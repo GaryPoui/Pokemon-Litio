@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "pidgey"
 numero = 16
 nombre = "Pidgey"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 40
 ataque = 45
 defensa = 40
@@ -112,7 +112,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 18
 }])
-habilidades = PackedStringArray("keen_eye", "tangled_feet")
+habilidades = ["keen_eye", "tangled_feet"]
 habilidad_oculta = "big_pecks"
 categoria = "Pokémon Pajarito"
 altura = 0.3

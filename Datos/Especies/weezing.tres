@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "weezing"
 numero = 110
 nombre = "Weezing"
-tipos = PackedStringArray("veneno")
+tipos = ["veneno"]
 ps = 65
 ataque = 90
 defensa = 120
@@ -112,7 +112,7 @@ ratio_captura = 60
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 habilidad_oculta = "stench"
 categoria = "Pokémon Gas Venenoso"
 altura = 1.2

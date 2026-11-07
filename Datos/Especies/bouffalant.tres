@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://ctg2vagtf5fe0"]
 
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/bouffalant_frente.png" id="3"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/bouffalant_espalda.png" id="4"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://brkv3qa2slq4v" path="res://Assets/Pokemones/batalla/bouffalant_frente.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://d3jbxrdhra44i" path="res://Assets/Pokemones/batalla/bouffalant_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pursuit.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/rage.tres" id="7"]
@@ -92,7 +92,6 @@ script = ExtResource("1")
 id = "bouffalant"
 numero = 626
 nombre = "Bouffalant"
-tipos = PackedStringArray("normal")
 ps = 95
 ataque = 110
 defensa = 95
@@ -103,7 +102,7 @@ exp_base = 172
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("reckless", "sap_sipper")
+habilidades = ["reckless", "sap_sipper"]
 habilidad_oculta = "soundproof"
 categoria = "Pokémon Torocabezazo"
 altura = 1.6

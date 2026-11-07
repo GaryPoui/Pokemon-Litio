@@ -27,7 +27,7 @@ script = ExtResource("5_l11i5")
 id = "magikarp"
 numero = 129
 nombre = "Magikarp"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 20
 ataque = 10
 defensa = 55
@@ -47,7 +47,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 20
 }])
-habilidades = PackedStringArray("swift_swim")
+habilidades = ["swift_swim"]
 habilidad_oculta = "rattled"
 categoria = "Pokémon Pez"
 altura = 0.9

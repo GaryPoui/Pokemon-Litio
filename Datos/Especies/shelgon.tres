@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "shelgon"
 numero = 372
 nombre = "Shelgon"
-tipos = PackedStringArray("dragon")
+tipos = ["dragon"]
 ps = 65
 ataque = 95
 defensa = 100
@@ -117,7 +117,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 50
 }])
 amistad_base = 35
-habilidades = PackedStringArray("rock_head")
+habilidades = ["rock_head"]
 habilidad_oculta = "overcoat"
 categoria = "Pokémon Resistencia"
 altura = 1.1

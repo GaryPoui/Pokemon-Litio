@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "granbull"
 numero = 210
 nombre = "Granbull"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 90
 ataque = 120
 defensa = 75
@@ -113,7 +113,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("intimidate", "quick_feet")
+habilidades = ["intimidate", "quick_feet"]
 habilidad_oculta = "rattled"
 categoria = "Pokémon Hada"
 altura = 1.4

@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "virizion"
 numero = 640
 nombre = "Virizion"
-tipos = PackedStringArray("planta", "lucha")
+tipos = ["planta", "lucha"]
 ps = 91
 ataque = 90
 defensa = 72
@@ -107,7 +107,7 @@ evs_otorgados = {
 "def_esp": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("justified")
+habilidades = ["justified"]
 categoria = "Pokémon Prado"
 altura = 2.0
 peso_kg = 200.0

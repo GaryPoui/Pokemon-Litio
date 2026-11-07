@@ -115,7 +115,7 @@ script = ExtResource("1")
 id = "archen"
 numero = 566
 nombre = "Archen"
-tipos = PackedStringArray("roca", "volador")
+tipos = ["roca", "volador"]
 ps = 55
 ataque = 112
 defensa = 45
@@ -134,7 +134,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 37
 }])
-habilidades = PackedStringArray("defeatist")
+habilidades = ["defeatist"]
 categoria = "Pokémon Protopájaro"
 altura = 0.5
 peso_kg = 9.5

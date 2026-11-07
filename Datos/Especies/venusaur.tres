@@ -111,7 +111,7 @@ script = ExtResource("17_qylqq")
 id = "venusaur"
 numero = 3
 nombre = "Venusaur"
-tipos = PackedStringArray("planta", "veneno")
+tipos = ["planta", "veneno"]
 ps = 80
 ataque = 82
 defensa = 83
@@ -125,7 +125,7 @@ evs_otorgados = {
 "at_esp": 2,
 "def_esp": 1
 }
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "chlorophyll"
 categoria = "Pokémon Semilla"
 altura = 2.0

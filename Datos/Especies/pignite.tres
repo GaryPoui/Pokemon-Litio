@@ -117,7 +117,7 @@ script = ExtResource("18_p17io")
 id = "pignite"
 numero = 499
 nombre = "Pignite"
-tipos = PackedStringArray("fuego", "lucha")
+tipos = ["fuego", "lucha"]
 ps = 90
 ataque = 93
 defensa = 55
@@ -137,7 +137,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "thick_fat"
 categoria = "Pokémon Cerdo Fuego"
 altura = 1.0

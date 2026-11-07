@@ -122,7 +122,7 @@ script = ExtResource("1")
 id = "yanmega"
 numero = 469
 nombre = "Yanmega"
-tipos = PackedStringArray("bicho", "volador")
+tipos = ["bicho", "volador"]
 ps = 86
 ataque = 76
 defensa = 86
@@ -134,7 +134,7 @@ ratio_captura = 30
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("speed_boost", "tinted_lens")
+habilidades = ["speed_boost", "tinted_lens"]
 habilidad_oculta = "frisk"
 categoria = "Pokémon Libélula"
 altura = 1.9

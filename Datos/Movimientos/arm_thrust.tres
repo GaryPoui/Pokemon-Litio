@@ -11,6 +11,6 @@ poder = 15
 pp = 20
 descripcion = "Fuertes empujones que golpean de dos a cinco veces seguidas."
 numero = 292
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]
 golpes_min = 2
 golpes_max = 5

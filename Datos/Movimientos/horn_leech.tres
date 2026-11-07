@@ -12,4 +12,4 @@ meta = "damage-heal"
 descripcion = "Un golpe que drena energía. El Pokémon recupera la mitad de los PS arrebatados al objetivo."
 drenaje = 50
 numero = 532
-banderas = PackedStringArray("contact", "heal", "metronome", "mirror", "protect")
+banderas = ["contact", "heal", "metronome", "mirror", "protect"]

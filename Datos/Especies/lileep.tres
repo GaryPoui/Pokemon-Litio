@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "lileep"
 numero = 345
 nombre = "Lileep"
-tipos = PackedStringArray("roca", "planta")
+tipos = ["roca", "planta"]
 ps = 66
 ataque = 41
 defensa = 77
@@ -106,7 +106,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 40
 }])
-habilidades = PackedStringArray("suction_cups")
+habilidades = ["suction_cups"]
 habilidad_oculta = "storm_drain"
 categoria = "Pokémon Lirio de Mar"
 altura = 1.0

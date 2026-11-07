@@ -94,7 +94,7 @@ script = ExtResource("15_8p8tl")
 id = "golbat"
 numero = 42
 nombre = "Golbat"
-tipos = PackedStringArray("veneno", "volador")
+tipos = ["veneno", "volador"]
 ps = 75
 ataque = 80
 defensa = 70
@@ -111,7 +111,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "crobat",
 "metodo": "amistad"
 }])
-habilidades = PackedStringArray("inner_focus")
+habilidades = ["inner_focus"]
 habilidad_oculta = "infiltrator"
 categoria = "Pokémon Murciélago"
 altura = 1.6

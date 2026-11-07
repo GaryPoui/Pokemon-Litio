@@ -12,4 +12,4 @@ poder = 40
 pp = 25
 descripcion = "Ataca disparando agua con gran potencia."
 numero = 55
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

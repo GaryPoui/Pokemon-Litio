@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "kabuto"
 numero = 140
 nombre = "Kabuto"
-tipos = PackedStringArray("roca", "agua")
+tipos = ["roca", "agua"]
 ps = 30
 ataque = 80
 defensa = 90
@@ -99,7 +99,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 40
 }])
-habilidades = PackedStringArray("swift_swim", "battle_armor")
+habilidades = ["swift_swim", "battle_armor"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Armazón"
 altura = 0.5

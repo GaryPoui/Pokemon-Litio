@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "sudowoodo"
 numero = 185
 nombre = "Sudowoodo"
-tipos = PackedStringArray("roca")
+tipos = ["roca"]
 ps = 70
 ataque = 100
 defensa = 115
@@ -116,7 +116,7 @@ ratio_captura = 65
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("sturdy", "rock_head")
+habilidades = ["sturdy", "rock_head"]
 habilidad_oculta = "rattled"
 categoria = "Pokémon Imitación"
 altura = 1.2

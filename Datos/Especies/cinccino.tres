@@ -40,7 +40,7 @@ script = ExtResource("1")
 id = "cinccino"
 numero = 573
 nombre = "Cinccino"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 75
 ataque = 95
 defensa = 60
@@ -54,7 +54,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("cute_charm", "technician")
+habilidades = ["cute_charm", "technician"]
 habilidad_oculta = "skill_link"
 categoria = "Pokémon Estola"
 altura = 0.5

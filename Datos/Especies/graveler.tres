@@ -112,7 +112,7 @@ script = ExtResource("18_mjy0h")
 id = "graveler"
 numero = 75
 nombre = "Graveler"
-tipos = PackedStringArray("roca", "tierra")
+tipos = ["roca", "tierra"]
 ps = 55
 ataque = 95
 defensa = 115
@@ -129,7 +129,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "golem",
 "metodo": "intercambio"
 }])
-habilidades = PackedStringArray("rock_head", "sturdy")
+habilidades = ["rock_head", "sturdy"]
 habilidad_oculta = "sand_veil"
 categoria = "Pokémon Roca"
 altura = 1.0

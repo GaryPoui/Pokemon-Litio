@@ -108,7 +108,7 @@ script = ExtResource("1")
 id = "skitty"
 numero = 300
 nombre = "Skitty"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ataque = 45
 defensa = 45
 at_esp = 35
@@ -125,7 +125,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "moon_stone"
 }])
-habilidades = PackedStringArray("cute_charm", "normalize")
+habilidades = ["cute_charm", "normalize"]
 habilidad_oculta = "wonder_skin"
 categoria = "Pokémon Gatito"
 altura = 0.6

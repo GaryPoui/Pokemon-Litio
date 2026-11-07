@@ -41,7 +41,7 @@ script = ExtResource("8_04tnk")
 id = "swadloon"
 numero = 541
 nombre = "Swadloon"
-tipos = PackedStringArray("bicho", "planta")
+tipos = ["bicho", "planta"]
 ps = 55
 ataque = 63
 defensa = 90
@@ -58,7 +58,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "leavanny",
 "metodo": "amistad"
 }])
-habilidades = PackedStringArray("leaf_guard", "chlorophyll")
+habilidades = ["leaf_guard", "chlorophyll"]
 habilidad_oculta = "overcoat"
 categoria = "Pokémon Arropado"
 altura = 0.5

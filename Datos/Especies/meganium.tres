@@ -106,7 +106,7 @@ script = ExtResource("17_s2kll")
 id = "meganium"
 numero = 154
 nombre = "Meganium"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 80
 ataque = 82
 defensa = 100
@@ -120,7 +120,7 @@ evs_otorgados = {
 "def_esp": 2,
 "defensa": 1
 }
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "leaf_guard"
 categoria = "Pokémon Hierba"
 altura = 1.8

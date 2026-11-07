@@ -84,7 +84,7 @@ script = ExtResource("14_tt7xf")
 id = "staravia"
 numero = 397
 nombre = "Staravia"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 55
 ataque = 75
 at_esp = 40
@@ -103,7 +103,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 34
 }])
-habilidades = PackedStringArray("intimidate")
+habilidades = ["intimidate"]
 habilidad_oculta = "reckless"
 categoria = "Pokémon Estornino"
 altura = 0.6

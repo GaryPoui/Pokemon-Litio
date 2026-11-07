@@ -11,4 +11,4 @@ categoria = "estado"
 meta = "unique"
 descripcion = "Intercambia con el objetivo los objetos que llevan tan rápido que es imposible verlo a simple vista."
 numero = 415
-banderas = PackedStringArray("allyanim", "failcopycat", "mirror", "noassist", "protect")
+banderas = ["allyanim", "failcopycat", "mirror", "noassist", "protect"]

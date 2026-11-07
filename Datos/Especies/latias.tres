@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "latias"
 numero = 380
 nombre = "Latias"
-tipos = PackedStringArray("dragon", "psiquico")
+tipos = ["dragon", "psiquico"]
 ps = 80
 ataque = 80
 defensa = 90
@@ -132,7 +132,7 @@ evs_otorgados = {
 "def_esp": 3
 }
 amistad_base = 90
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Eón"
 altura = 1.4
 peso_kg = 40.0

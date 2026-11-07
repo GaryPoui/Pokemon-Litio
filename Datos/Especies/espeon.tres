@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "espeon"
 numero = 196
 nombre = "Espeon"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 65
 ataque = 65
 defensa = 60
@@ -103,7 +103,7 @@ ratio_genero = 1
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("synchronize")
+habilidades = ["synchronize"]
 habilidad_oculta = "magic_bounce"
 categoria = "Pokémon Sol"
 altura = 0.9

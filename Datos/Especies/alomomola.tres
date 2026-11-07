@@ -110,7 +110,7 @@ script = ExtResource("1")
 id = "alomomola"
 numero = 594
 nombre = "Alomomola"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 165
 ataque = 75
 defensa = 80
@@ -123,7 +123,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("healer", "hydration")
+habilidades = ["healer", "hydration"]
 habilidad_oculta = "regenerator"
 categoria = "Pokémon Socorrista"
 altura = 1.2

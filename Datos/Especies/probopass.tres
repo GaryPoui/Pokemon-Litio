@@ -115,7 +115,7 @@ script = ExtResource("1")
 id = "probopass"
 numero = 476
 nombre = "Probopass"
-tipos = PackedStringArray("roca", "acero")
+tipos = ["roca", "acero"]
 ps = 60
 ataque = 55
 defensa = 145
@@ -128,7 +128,7 @@ evs_otorgados = {
 "def_esp": 2,
 "defensa": 1
 }
-habilidades = PackedStringArray("sturdy", "magnet_pull")
+habilidades = ["sturdy", "magnet_pull"]
 habilidad_oculta = "sand_force"
 categoria = "Pokémon Brújula"
 altura = 1.4

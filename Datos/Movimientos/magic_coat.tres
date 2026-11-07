@@ -15,4 +15,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Barrera capaz de devolver al agresor movimientos como Drenadoras y otros que alteran el estado o las características."
 numero = 277
-banderas = PackedStringArray("metronome")
+banderas = ["metronome"]

@@ -102,7 +102,7 @@ script = ExtResource("1")
 id = "buneary"
 numero = 427
 nombre = "Buneary"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 55
 ataque = 66
 defensa = 44
@@ -120,7 +120,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "amistad"
 }])
 amistad_base = 0
-habilidades = PackedStringArray("run_away", "klutz")
+habilidades = ["run_away", "klutz"]
 habilidad_oculta = "limber"
 categoria = "Pokémon Conejo"
 altura = 0.4

@@ -11,4 +11,4 @@ poder = 100
 objetivo = "all-other-pokemon"
 descripcion = "Un terremoto que afecta a todos los Pokémon que estén a su alrededor."
 numero = 89
-banderas = PackedStringArray("metronome", "mirror", "nonsky", "protect")
+banderas = ["metronome", "mirror", "nonsky", "protect"]

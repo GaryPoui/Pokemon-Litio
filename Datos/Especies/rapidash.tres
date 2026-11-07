@@ -116,7 +116,7 @@ script = ExtResource("1")
 id = "rapidash"
 numero = 78
 nombre = "Rapidash"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 65
 ataque = 100
 defensa = 70
@@ -128,7 +128,7 @@ ratio_captura = 60
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("run_away", "flash_fire")
+habilidades = ["run_away", "flash_fire"]
 habilidad_oculta = "flame_body"
 categoria = "Pokémon Caballo Fuego"
 altura = 1.7

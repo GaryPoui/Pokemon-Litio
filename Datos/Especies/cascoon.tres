@@ -20,7 +20,7 @@ script = ExtResource("1")
 id = "cascoon"
 numero = 268
 nombre = "Cascoon"
-tipos = PackedStringArray("bicho")
+tipos = ["bicho"]
 ataque = 35
 defensa = 55
 at_esp = 25
@@ -38,7 +38,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 10
 }])
-habilidades = PackedStringArray("shed_skin")
+habilidades = ["shed_skin"]
 categoria = "Pokémon Capullo"
 altura = 0.7
 peso_kg = 11.5

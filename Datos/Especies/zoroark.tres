@@ -123,7 +123,7 @@ script = ExtResource("20_jnejh")
 id = "zoroark"
 numero = 571
 nombre = "Zoroark"
-tipos = PackedStringArray("siniestro")
+tipos = ["siniestro"]
 ps = 60
 ataque = 105
 defensa = 60
@@ -136,7 +136,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("illusion")
+habilidades = ["illusion"]
 categoria = "Pokémon Disfrazorro"
 altura = 1.6
 peso_kg = 81.1

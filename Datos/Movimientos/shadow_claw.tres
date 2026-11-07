@@ -12,4 +12,4 @@ pp = 15
 descripcion = "Ataca con una garra afilada hecha de sombras. Suele ser crítico."
 critico = 1
 numero = 421
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

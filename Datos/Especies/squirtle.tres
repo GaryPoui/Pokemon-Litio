@@ -93,7 +93,7 @@ script = ExtResource("16_cgcd0")
 id = "squirtle"
 numero = 7
 nombre = "Squirtle"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 44
 ataque = 48
 defensa = 65
@@ -112,7 +112,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 16
 }])
-habilidades = PackedStringArray("torrent")
+habilidades = ["torrent"]
 habilidad_oculta = "rain_dish"
 categoria = "Pokémon Tortuguita"
 altura = 0.5

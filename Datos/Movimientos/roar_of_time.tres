@@ -13,4 +13,4 @@ precision = 90
 pp = 5
 descripcion = "Ataca al objetivo usando tal energía que el tiempo se distorsiona. El usuario descansa el siguiente turno."
 numero = 459
-banderas = PackedStringArray("metronome", "mirror", "protect", "recharge")
+banderas = ["metronome", "mirror", "protect", "recharge"]

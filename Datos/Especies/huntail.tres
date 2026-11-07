@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "huntail"
 numero = 367
 nombre = "Huntail"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 55
 ataque = 104
 defensa = 105
@@ -95,7 +95,7 @@ evs_otorgados = {
 "ataque": 1,
 "defensa": 1
 }
-habilidades = PackedStringArray("swift_swim")
+habilidades = ["swift_swim"]
 habilidad_oculta = "water_veil"
 categoria = "Pokémon Abisal"
 altura = 1.7

@@ -135,7 +135,7 @@ script = ExtResource("1")
 id = "steelix"
 numero = 208
 nombre = "Steelix"
-tipos = PackedStringArray("acero", "tierra")
+tipos = ["acero", "tierra"]
 ps = 75
 ataque = 85
 defensa = 200
@@ -147,7 +147,7 @@ ratio_captura = 25
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("rock_head", "sturdy")
+habilidades = ["rock_head", "sturdy"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Serpiente Férrea"
 altura = 9.2

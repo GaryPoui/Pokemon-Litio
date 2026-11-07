@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "ekans"
 numero = 23
 nombre = "Ekans"
-tipos = PackedStringArray("veneno")
+tipos = ["veneno"]
 ps = 35
 ataque = 60
 defensa = 44
@@ -123,7 +123,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 22
 }])
-habilidades = PackedStringArray("intimidate", "shed_skin")
+habilidades = ["intimidate", "shed_skin"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Serpiente"
 altura = 2.0

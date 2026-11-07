@@ -12,4 +12,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Utiliza parte de los PS propios para crear un sustituto que actúa como señuelo."
 numero = 164
-banderas = PackedStringArray("metronome", "nonsky", "snatch")
+banderas = ["metronome", "nonsky", "snatch"]

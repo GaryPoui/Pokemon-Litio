@@ -12,6 +12,6 @@ precision = 85
 pp = 15
 descripcion = "Rota dos engranajes de hierro sobre el objetivo. Golpea dos veces."
 numero = 544
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]
 golpes_min = 2
 golpes_max = 2

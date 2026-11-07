@@ -12,4 +12,4 @@ precision = 0
 meta = "unique"
 descripcion = "Usa el poder psíquico para intercambiar habilidades con el objetivo."
 numero = 285
-banderas = PackedStringArray("allyanim", "bypasssub", "metronome", "mirror", "protect")
+banderas = ["allyanim", "bypasssub", "metronome", "mirror", "protect"]

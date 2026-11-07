@@ -26,7 +26,7 @@ script = ExtResource("1")
 id = "weedle"
 numero = 13
 nombre = "Weedle"
-tipos = PackedStringArray("bicho", "veneno")
+tipos = ["bicho", "veneno"]
 ps = 40
 ataque = 35
 defensa = 30
@@ -44,7 +44,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 7
 }])
-habilidades = PackedStringArray("shield_dust")
+habilidades = ["shield_dust"]
 habilidad_oculta = "run_away"
 categoria = "Pokémon Oruga"
 altura = 0.3

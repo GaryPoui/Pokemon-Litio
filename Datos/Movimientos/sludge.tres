@@ -15,4 +15,4 @@ descripcion = "Arroja residuos al objetivo. Puede llegar a envenenar."
 estado = "poison"
 prob_estado = 30
 numero = 124
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

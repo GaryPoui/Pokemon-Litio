@@ -11,4 +11,4 @@ poder = 90
 precision = 90
 descripcion = "Ataca agitando la cola como si fuera una ola rabiosa en una tormenta devastadora."
 numero = 401
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

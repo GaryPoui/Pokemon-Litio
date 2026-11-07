@@ -117,7 +117,7 @@ script = ExtResource("18_aulby")
 id = "liepard"
 numero = 510
 nombre = "Liepard"
-tipos = PackedStringArray("siniestro")
+tipos = ["siniestro"]
 ps = 64
 ataque = 88
 at_esp = 88
@@ -127,7 +127,7 @@ ratio_captura = 90
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("limber", "unburden")
+habilidades = ["limber", "unburden"]
 habilidad_oculta = "prankster"
 categoria = "Pokémon Calculador"
 altura = 1.1

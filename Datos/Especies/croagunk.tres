@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://5104qy1r8bjf"]
 
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/croagunk_frente.png" id="3"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/croagunk_espalda.png" id="4"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://ctnmfttubekrk" path="res://Assets/Pokemones/batalla/croagunk_frente.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://vrp6oj5yu3p6" path="res://Assets/Pokemones/batalla/croagunk_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/mud_slap.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/poison_sting.tres" id="7"]
@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "croagunk"
 numero = 453
 nombre = "Croagunk"
-tipos = PackedStringArray("veneno", "lucha")
+tipos = ["veneno", "lucha"]
 ps = 48
 ataque = 61
 defensa = 40
@@ -118,7 +118,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 37
 }])
 amistad_base = 100
-habilidades = PackedStringArray("anticipation", "dry_skin")
+habilidades = ["anticipation", "dry_skin"]
 habilidad_oculta = "poison_touch"
 categoria = "Pokémon Boca Tóxica"
 altura = 0.7

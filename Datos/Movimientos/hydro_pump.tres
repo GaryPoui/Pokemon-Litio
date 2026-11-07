@@ -13,4 +13,4 @@ precision = 80
 pp = 5
 descripcion = "Lanza una gran masa de agua a presión para atacar."
 numero = 56
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

@@ -11,4 +11,4 @@ categoria = "especial"
 poder = 50
 descripcion = "Ataque que causa un gran daño a los objetivos que sufren problemas de estado."
 numero = 506
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

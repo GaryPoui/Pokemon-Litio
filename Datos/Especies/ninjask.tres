@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "ninjask"
 numero = 291
 nombre = "Ninjask"
-tipos = PackedStringArray("bicho", "volador")
+tipos = ["bicho", "volador"]
 ps = 61
 ataque = 90
 defensa = 45
@@ -116,7 +116,7 @@ crecimiento = "slow-then-very-fast"
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("speed_boost")
+habilidades = ["speed_boost"]
 habilidad_oculta = "infiltrator"
 categoria = "Pokémon Ninja"
 altura = 0.8

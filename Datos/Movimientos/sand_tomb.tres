@@ -15,6 +15,6 @@ descripcion = "Enreda al objetivo en un remolino de arena de cuatro a cinco turn
 estado = "trap"
 prob_estado = 100
 numero = 328
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]
 turnos_min = 5
 turnos_max = 6

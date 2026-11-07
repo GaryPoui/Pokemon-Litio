@@ -118,7 +118,7 @@ script = ExtResource("1")
 id = "mandibuzz"
 numero = 630
 nombre = "Mandibuzz"
-tipos = PackedStringArray("siniestro", "volador")
+tipos = ["siniestro", "volador"]
 ps = 110
 ataque = 65
 defensa = 105
@@ -133,7 +133,7 @@ evs_otorgados = {
 "at_esp": 2
 }
 amistad_base = 35
-habilidades = PackedStringArray("big_pecks", "overcoat")
+habilidades = ["big_pecks", "overcoat"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Buitre Hueso"
 altura = 1.2

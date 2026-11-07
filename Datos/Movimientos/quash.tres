@@ -12,4 +12,4 @@ pp = 15
 meta = "unique"
 descripcion = "Consigue que el objetivo sea el último en moverse."
 numero = 511
-banderas = PackedStringArray("mirror", "protect")
+banderas = ["mirror", "protect"]

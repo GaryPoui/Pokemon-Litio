@@ -95,7 +95,7 @@ script = ExtResource("1")
 id = "weepinbell"
 numero = 70
 nombre = "Weepinbell"
-tipos = PackedStringArray("planta", "veneno")
+tipos = ["planta", "veneno"]
 ps = 65
 ataque = 90
 at_esp = 85
@@ -112,7 +112,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "leaf_stone"
 }])
-habilidades = PackedStringArray("chlorophyll")
+habilidades = ["chlorophyll"]
 habilidad_oculta = "gluttony"
 categoria = "Pokémon Matamoscas"
 altura = 1.0

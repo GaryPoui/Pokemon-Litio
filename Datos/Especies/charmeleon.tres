@@ -84,7 +84,7 @@ script = ExtResource("14_ah1cg")
 id = "charmeleon"
 numero = 5
 nombre = "Charmeleon"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 58
 ataque = 64
 defensa = 58
@@ -105,7 +105,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "solar_power"
 categoria = "Pokémon Llama"
 altura = 1.1

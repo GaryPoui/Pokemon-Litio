@@ -79,7 +79,7 @@ script = ExtResource("1")
 id = "buizel"
 numero = 418
 nombre = "Buizel"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 55
 ataque = 65
 defensa = 35
@@ -98,7 +98,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 26
 }])
-habilidades = PackedStringArray("swift_swim")
+habilidades = ["swift_swim"]
 habilidad_oculta = "water_veil"
 categoria = "Pokémon Nutria Mar."
 altura = 0.7

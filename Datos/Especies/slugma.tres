@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "slugma"
 numero = 218
 nombre = "Slugma"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 40
 ataque = 40
 defensa = 40
@@ -110,7 +110,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 38
 }])
-habilidades = PackedStringArray("magma_armor", "flame_body")
+habilidades = ["magma_armor", "flame_body"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Lava"
 altura = 0.7

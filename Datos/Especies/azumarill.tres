@@ -87,7 +87,7 @@ script = ExtResource("1")
 id = "azumarill"
 numero = 184
 nombre = "Azumarill"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 100
 defensa = 80
 def_esp = 80
@@ -97,7 +97,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "ps": 3
 }
-habilidades = PackedStringArray("thick_fat", "huge_power")
+habilidades = ["thick_fat", "huge_power"]
 habilidad_oculta = "sap_sipper"
 categoria = "Pokémon Conejo Agua"
 altura = 0.8

@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "wooper"
 numero = 194
 nombre = "Wooper"
-tipos = PackedStringArray("agua", "tierra")
+tipos = ["agua", "tierra"]
 ps = 55
 ataque = 45
 defensa = 45
@@ -105,7 +105,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 20
 }])
-habilidades = PackedStringArray("damp", "water_absorb")
+habilidades = ["damp", "water_absorb"]
 habilidad_oculta = "unaware"
 categoria = "Pokémon Pez Agua"
 altura = 0.4

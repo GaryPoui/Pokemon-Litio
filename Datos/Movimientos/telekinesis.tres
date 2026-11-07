@@ -14,6 +14,6 @@ meta = "ailment"
 descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
 estado = "unknown"
 numero = 477
-banderas = PackedStringArray("allyanim", "gravity", "metronome", "mirror", "protect", "reflectable")
+banderas = ["allyanim", "gravity", "metronome", "mirror", "protect", "reflectable"]
 turnos_min = 3
 turnos_max = 3

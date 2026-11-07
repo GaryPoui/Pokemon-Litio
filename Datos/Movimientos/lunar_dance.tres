@@ -13,4 +13,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "El usuario se debilita, pero el Pokémon que lo sustituye recupera su estado, los PS y los PP."
 numero = 461
-banderas = PackedStringArray("dance", "heal", "metronome", "snatch")
+banderas = ["dance", "heal", "metronome", "snatch"]

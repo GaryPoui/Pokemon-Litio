@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://mboqaox23eoj"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_cr2k7"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_cr2k7"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="2_bmvn2"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_orr32"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/helping_hand.tres" id="4_2aro8"]
@@ -18,9 +18,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/hyper_voice.tres" id="16_4wycm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/last_resort.tres" id="17_0u6l6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/after_you.tres" id="18_1j0qq"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="19_iuva8"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/minccino_espalda.png" id="20_n56cw"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/minccino_frente.png" id="21_jhrwk"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="19_iuva8"]
+[ext_resource type="Texture2D" uid="uid://ccb4oxqi5l38b" path="res://Assets/Pokemones/batalla/minccino_espalda.png" id="20_n56cw"]
+[ext_resource type="Texture2D" uid="uid://dajw4uqmn40to" path="res://Assets/Pokemones/batalla/minccino_frente.png" id="21_jhrwk"]
 
 [sub_resource type="Resource" id="Resource_cr2k7"]
 script = ExtResource("1_cr2k7")
@@ -111,7 +111,6 @@ script = ExtResource("19_iuva8")
 id = "minccino"
 numero = 572
 nombre = "Minccino"
-tipos = PackedStringArray("normal")
 ps = 55
 defensa = 40
 at_esp = 40
@@ -129,7 +128,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "shiny_stone"
 }])
-habilidades = PackedStringArray("cute_charm", "technician")
+habilidades = ["cute_charm", "technician"]
 habilidad_oculta = "skill_link"
 categoria = "Pokémon Chinchilla"
 altura = 0.4

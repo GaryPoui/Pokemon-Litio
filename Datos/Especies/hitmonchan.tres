@@ -116,7 +116,7 @@ script = ExtResource("1")
 id = "hitmonchan"
 numero = 107
 nombre = "Hitmonchan"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ataque = 105
 defensa = 79
 at_esp = 35
@@ -127,7 +127,7 @@ ratio_genero = 0
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("keen_eye", "iron_fist")
+habilidades = ["keen_eye", "iron_fist"]
 habilidad_oculta = "inner_focus"
 categoria = "Pokémon Puñetazo"
 altura = 1.4

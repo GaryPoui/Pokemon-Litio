@@ -30,7 +30,7 @@ script = ExtResource("1")
 id = "simisage"
 numero = 512
 nombre = "Simisage"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 75
 ataque = 98
 defensa = 63
@@ -43,7 +43,7 @@ ratio_genero = 1
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("gluttony")
+habilidades = ["gluttony"]
 habilidad_oculta = "overgrow"
 categoria = "Pokémon Mono Pincho"
 altura = 1.1

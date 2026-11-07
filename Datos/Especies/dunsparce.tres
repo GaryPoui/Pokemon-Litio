@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "dunsparce"
 numero = 206
 nombre = "Dunsparce"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 100
 ataque = 70
 defensa = 70
@@ -111,7 +111,7 @@ ratio_captura = 190
 evs_otorgados = {
 "ps": 1
 }
-habilidades = PackedStringArray("serene_grace", "run_away")
+habilidades = ["serene_grace", "run_away"]
 habilidad_oculta = "rattled"
 categoria = "Pokémon Serpiente Tierra"
 altura = 1.5

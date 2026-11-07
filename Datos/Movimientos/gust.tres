@@ -12,4 +12,4 @@ poder = 40
 pp = 35
 descripcion = "Crea un tornado con las alas y lo lanza contra el objetivo."
 numero = 16
-banderas = PackedStringArray("distance", "metronome", "mirror", "protect", "wind")
+banderas = ["distance", "metronome", "mirror", "protect", "wind"]

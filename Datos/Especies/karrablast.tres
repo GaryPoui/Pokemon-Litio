@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "karrablast"
 numero = 588
 nombre = "Karrablast"
-tipos = PackedStringArray("bicho")
+tipos = ["bicho"]
 ataque = 75
 defensa = 45
 at_esp = 40
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "escavalier",
 "metodo": "intercambio"
 }])
-habilidades = PackedStringArray("swarm", "shed_skin")
+habilidades = ["swarm", "shed_skin"]
 habilidad_oculta = "no_guard"
 categoria = "Pokémon Bocado"
 altura = 0.5

@@ -13,6 +13,6 @@ meta = "ailment"
 descripcion = "Danza histérica que confunde a los Pokémon que están alrededor del usuario."
 estado = "confusion"
 numero = 298
-banderas = PackedStringArray("dance", "metronome", "mirror", "protect")
+banderas = ["dance", "metronome", "mirror", "protect"]
 turnos_min = 2
 turnos_max = 5

@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "kabutops"
 numero = 141
 nombre = "Kabutops"
-tipos = PackedStringArray("roca", "agua")
+tipos = ["roca", "agua"]
 ps = 60
 ataque = 115
 defensa = 105
@@ -117,7 +117,7 @@ ratio_genero = 1
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("swift_swim", "battle_armor")
+habilidades = ["swift_swim", "battle_armor"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Armazón"
 altura = 1.3

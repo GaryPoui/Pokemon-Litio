@@ -12,4 +12,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Restaura en el siguiente turno la mitad de los PS máximos del usuario o se los pasa al Pokémon que lo sustituye."
 numero = 273
-banderas = PackedStringArray("heal", "metronome", "snatch")
+banderas = ["heal", "metronome", "snatch"]

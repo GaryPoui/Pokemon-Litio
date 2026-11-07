@@ -118,7 +118,7 @@ script = ExtResource("1")
 id = "golem"
 numero = 76
 nombre = "Golem"
-tipos = PackedStringArray("roca", "tierra")
+tipos = ["roca", "tierra"]
 ps = 80
 ataque = 110
 defensa = 130
@@ -130,7 +130,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "defensa": 3
 }
-habilidades = PackedStringArray("rock_head", "sturdy")
+habilidades = ["rock_head", "sturdy"]
 habilidad_oculta = "sand_veil"
 categoria = "Pokémon Megatón"
 altura = 1.4

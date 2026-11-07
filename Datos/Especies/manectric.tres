@@ -110,7 +110,7 @@ script = ExtResource("1")
 id = "manectric"
 numero = 310
 nombre = "Manectric"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 70
 ataque = 75
 defensa = 60
@@ -122,7 +122,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("static", "lightning_rod")
+habilidades = ["static", "lightning_rod"]
 habilidad_oculta = "minus"
 categoria = "Pokémon Descarga"
 altura = 1.5

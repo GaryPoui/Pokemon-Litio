@@ -15,4 +15,4 @@ estado = "poison"
 prob_estado = 10
 critico = 1
 numero = 440
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "slicing")
+banderas = ["contact", "metronome", "mirror", "protect", "slicing"]

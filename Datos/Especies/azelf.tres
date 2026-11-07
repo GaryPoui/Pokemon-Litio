@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "azelf"
 numero = 482
 nombre = "Azelf"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 75
 ataque = 125
 defensa = 70
@@ -96,7 +96,7 @@ evs_otorgados = {
 "ataque": 2
 }
 amistad_base = 140
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Voluntad"
 altura = 0.3
 peso_kg = 0.3

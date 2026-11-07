@@ -129,7 +129,7 @@ script = ExtResource("1")
 id = "beheeyem"
 numero = 606
 nombre = "Beheeyem"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 75
 ataque = 75
 defensa = 75
@@ -141,7 +141,7 @@ ratio_captura = 90
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("telepathy", "synchronize")
+habilidades = ["telepathy", "synchronize"]
 habilidad_oculta = "analytic"
 categoria = "Pokémon Cerebro"
 altura = 1.0

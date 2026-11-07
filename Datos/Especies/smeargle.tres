@@ -60,7 +60,7 @@ script = ExtResource("1")
 id = "smeargle"
 numero = 235
 nombre = "Smeargle"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 55
 ataque = 20
 defensa = 35
@@ -72,7 +72,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "velocidad": 1
 }
-habilidades = PackedStringArray("own_tempo", "technician")
+habilidades = ["own_tempo", "technician"]
 habilidad_oculta = "moody"
 categoria = "Pokémon Pintor"
 altura = 1.2

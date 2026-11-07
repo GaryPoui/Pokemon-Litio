@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "cacturne"
 numero = 332
 nombre = "Cacturne"
-tipos = PackedStringArray("planta", "siniestro")
+tipos = ["planta", "siniestro"]
 ps = 70
 ataque = 115
 defensa = 60
@@ -132,7 +132,7 @@ evs_otorgados = {
 "ataque": 1
 }
 amistad_base = 35
-habilidades = PackedStringArray("sand_veil")
+habilidades = ["sand_veil"]
 habilidad_oculta = "water_absorb"
 categoria = "Pokémon Espantajo"
 altura = 1.3

@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "swoobat"
 numero = 528
 nombre = "Swoobat"
-tipos = PackedStringArray("psiquico", "volador")
+tipos = ["psiquico", "volador"]
 ps = 67
 ataque = 57
 defensa = 55
@@ -116,7 +116,7 @@ exp_base = 149
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("unaware", "klutz")
+habilidades = ["unaware", "klutz"]
 habilidad_oculta = "simple"
 categoria = "Pokémon Galante"
 altura = 0.9

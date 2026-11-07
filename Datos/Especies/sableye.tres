@@ -122,7 +122,7 @@ script = ExtResource("1")
 id = "sableye"
 numero = 302
 nombre = "Sableye"
-tipos = PackedStringArray("siniestro", "fantasma")
+tipos = ["siniestro", "fantasma"]
 ataque = 75
 defensa = 75
 at_esp = 65
@@ -134,7 +134,7 @@ evs_otorgados = {
 "defensa": 1
 }
 amistad_base = 35
-habilidades = PackedStringArray("keen_eye", "stall")
+habilidades = ["keen_eye", "stall"]
 habilidad_oculta = "prankster"
 categoria = "Pokémon Oscuridad"
 altura = 0.5

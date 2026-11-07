@@ -10,4 +10,4 @@ tipo = "lucha"
 pp = 15
 descripcion = "Ataque desesperado que causa más daño cuantos menos PS tenga el usuario."
 numero = 179
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

@@ -49,7 +49,7 @@ script = ExtResource("1")
 id = "wynaut"
 numero = 360
 nombre = "Wynaut"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 95
 ataque = 23
 defensa = 48
@@ -68,7 +68,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 15
 }])
-habilidades = PackedStringArray("shadow_tag")
+habilidades = ["shadow_tag"]
 habilidad_oculta = "telepathy"
 categoria = "Pokémon Radiante"
 altura = 0.6

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://c8doxstg2fpgo"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_1ws7l"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_1ws7l"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_cvi4p"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="3_n4jrk"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="4_nla71"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/head_smash.tres" id="14_enwwm"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/roar.tres" id="15_8q6b1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/flare_blitz.tres" id="16_bxx0u"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_d3imm"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tepig_espalda.png" id="18_2sys2"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/tepig_frente.png" id="19_2342r"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_d3imm"]
+[ext_resource type="Texture2D" uid="uid://bpttocif5d1lg" path="res://Assets/Pokemones/batalla/tepig_espalda.png" id="18_2sys2"]
+[ext_resource type="Texture2D" uid="uid://bfkexrk2qrsr2" path="res://Assets/Pokemones/batalla/tepig_frente.png" id="19_2342r"]
 
 [sub_resource type="Resource" id="Resource_1ws7l"]
 script = ExtResource("1_1ws7l")
@@ -99,7 +99,7 @@ script = ExtResource("17_d3imm")
 id = "tepig"
 numero = 498
 nombre = "Tepig"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 65
 ataque = 63
 defensa = 45
@@ -119,7 +119,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 17
 }])
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "thick_fat"
 categoria = "Pokémon Cerdo Fuego"
 altura = 0.5

@@ -13,4 +13,4 @@ objetivo = "user-and-allies"
 meta = "unique"
 descripcion = "Tañido que cura los problemas de estado de todos los Pokémon del equipo."
 numero = 215
-banderas = PackedStringArray("bypasssub", "distance", "metronome", "snatch", "sound")
+banderas = ["bypasssub", "distance", "metronome", "snatch", "sound"]

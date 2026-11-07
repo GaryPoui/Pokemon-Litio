@@ -118,7 +118,7 @@ script = ExtResource("19_gjv3u")
 id = "watchog"
 numero = 505
 nombre = "Watchog"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 60
 ataque = 85
 defensa = 69
@@ -130,7 +130,7 @@ ratio_captura = 255
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("illuminate", "keen_eye")
+habilidades = ["illuminate", "keen_eye"]
 habilidad_oculta = "analytic"
 categoria = "Pokémon Alerta"
 altura = 1.1

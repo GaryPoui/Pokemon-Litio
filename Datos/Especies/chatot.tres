@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "chatot"
 numero = 441
 nombre = "Chatot"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 76
 ataque = 65
 defensa = 45
@@ -113,7 +113,7 @@ evs_otorgados = {
 "ataque": 1
 }
 amistad_base = 35
-habilidades = PackedStringArray("keen_eye", "tangled_feet")
+habilidades = ["keen_eye", "tangled_feet"]
 habilidad_oculta = "big_pecks"
 categoria = "Pokémon Corchea"
 altura = 0.5

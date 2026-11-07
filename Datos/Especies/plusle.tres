@@ -116,7 +116,7 @@ script = ExtResource("1")
 id = "plusle"
 numero = 311
 nombre = "Plusle"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 60
 defensa = 40
 at_esp = 85
@@ -127,7 +127,7 @@ ratio_captura = 200
 evs_otorgados = {
 "velocidad": 1
 }
-habilidades = PackedStringArray("plus")
+habilidades = ["plus"]
 categoria = "Pokémon Ánimo"
 altura = 0.4
 peso_kg = 4.2

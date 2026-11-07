@@ -53,7 +53,7 @@ script = ExtResource("1")
 id = "cloyster"
 numero = 91
 nombre = "Cloyster"
-tipos = PackedStringArray("agua", "hielo")
+tipos = ["agua", "hielo"]
 ataque = 95
 defensa = 180
 at_esp = 85
@@ -65,7 +65,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("shell_armor", "skill_link")
+habilidades = ["shell_armor", "skill_link"]
 habilidad_oculta = "overcoat"
 categoria = "Pokémon Bivalvo"
 altura = 1.5

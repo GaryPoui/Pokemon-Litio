@@ -15,4 +15,4 @@ descripcion = "Fuego místico de gran intensidad que puede causar quemaduras."
 estado = "burn"
 prob_estado = 50
 numero = 221
-banderas = PackedStringArray("defrost", "metronome", "mirror", "protect")
+banderas = ["defrost", "metronome", "mirror", "protect"]

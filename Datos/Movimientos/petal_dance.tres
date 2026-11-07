@@ -12,4 +12,4 @@ poder = 120
 objetivo = "random-opponent"
 descripcion = "Lanza pétalos de dos a tres turnos y acaba confundiendo al atacante."
 numero = 80
-banderas = PackedStringArray("contact", "dance", "failinstruct", "metronome", "mirror", "protect")
+banderas = ["contact", "dance", "failinstruct", "metronome", "mirror", "protect"]

@@ -13,4 +13,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "No tiene ningún efecto. Solo salpica."
 numero = 150
-banderas = PackedStringArray("gravity", "metronome")
+banderas = ["gravity", "metronome"]

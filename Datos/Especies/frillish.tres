@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "frillish"
 numero = 592
 nombre = "Frillish"
-tipos = PackedStringArray("agua", "fantasma")
+tipos = ["agua", "fantasma"]
 ps = 55
 ataque = 40
 at_esp = 65
@@ -110,7 +110,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 40
 }])
-habilidades = PackedStringArray("water_absorb", "cursed_body")
+habilidades = ["water_absorb", "cursed_body"]
 habilidad_oculta = "damp"
 categoria = "Pokémon Ingrávido"
 altura = 1.2

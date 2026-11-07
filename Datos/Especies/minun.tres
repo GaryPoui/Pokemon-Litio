@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "minun"
 numero = 312
 nombre = "Minun"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 60
 ataque = 40
 at_esp = 75
@@ -128,7 +128,7 @@ ratio_captura = 200
 evs_otorgados = {
 "velocidad": 1
 }
-habilidades = PackedStringArray("minus")
+habilidades = ["minus"]
 categoria = "Pokémon Ánimo"
 altura = 0.4
 peso_kg = 4.2

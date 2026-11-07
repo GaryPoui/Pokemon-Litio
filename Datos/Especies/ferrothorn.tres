@@ -117,7 +117,7 @@ script = ExtResource("19_k2kai")
 id = "ferrothorn"
 numero = 598
 nombre = "Ferrothorn"
-tipos = PackedStringArray("planta", "acero")
+tipos = ["planta", "acero"]
 ps = 74
 ataque = 94
 defensa = 131
@@ -129,7 +129,7 @@ ratio_captura = 90
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("iron_barbs")
+habilidades = ["iron_barbs"]
 categoria = "Pokémon Bola Espina"
 altura = 1.0
 peso_kg = 110.0

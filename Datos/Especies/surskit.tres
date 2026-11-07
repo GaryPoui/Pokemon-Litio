@@ -63,7 +63,7 @@ script = ExtResource("1")
 id = "surskit"
 numero = 283
 nombre = "Surskit"
-tipos = PackedStringArray("bicho", "agua")
+tipos = ["bicho", "agua"]
 ps = 40
 ataque = 30
 defensa = 32
@@ -81,7 +81,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 22
 }])
-habilidades = PackedStringArray("swift_swim")
+habilidades = ["swift_swim"]
 habilidad_oculta = "rain_dish"
 categoria = "Pokémon Zapatero"
 altura = 0.5

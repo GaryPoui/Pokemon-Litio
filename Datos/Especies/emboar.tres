@@ -122,7 +122,7 @@ script = ExtResource("19_y62ti")
 id = "emboar"
 numero = 500
 nombre = "Emboar"
-tipos = PackedStringArray("fuego", "lucha")
+tipos = ["fuego", "lucha"]
 ps = 110
 ataque = 123
 defensa = 65
@@ -135,7 +135,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "reckless"
 categoria = "Pokémon Cerdo Ígneo"
 altura = 1.6

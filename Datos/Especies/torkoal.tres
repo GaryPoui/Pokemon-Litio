@@ -111,7 +111,7 @@ script = ExtResource("1")
 id = "torkoal"
 numero = 324
 nombre = "Torkoal"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 70
 ataque = 85
 defensa = 140
@@ -123,7 +123,7 @@ ratio_captura = 90
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("white_smoke")
+habilidades = ["white_smoke"]
 habilidad_oculta = "shell_armor"
 categoria = "Pokémon Carbón"
 altura = 0.5

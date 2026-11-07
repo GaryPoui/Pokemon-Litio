@@ -80,7 +80,7 @@ script = ExtResource("14_ipast")
 id = "mudkip"
 numero = 258
 nombre = "Mudkip"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ataque = 70
 velocidad = 40
 exp_base = 62
@@ -96,7 +96,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 16
 }])
-habilidades = PackedStringArray("torrent")
+habilidades = ["torrent"]
 habilidad_oculta = "damp"
 categoria = "Pokémon Pez Lodo"
 altura = 0.4

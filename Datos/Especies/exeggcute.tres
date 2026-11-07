@@ -97,7 +97,7 @@ script = ExtResource("1")
 id = "exeggcute"
 numero = 102
 nombre = "Exeggcute"
-tipos = PackedStringArray("planta", "psiquico")
+tipos = ["planta", "psiquico"]
 ps = 60
 ataque = 40
 defensa = 80
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "leaf_stone"
 }])
-habilidades = PackedStringArray("chlorophyll")
+habilidades = ["chlorophyll"]
 habilidad_oculta = "harvest"
 categoria = "Pokémon Huevo"
 altura = 0.4

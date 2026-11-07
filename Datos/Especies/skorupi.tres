@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "skorupi"
 numero = 451
 nombre = "Skorupi"
-tipos = PackedStringArray("veneno", "bicho")
+tipos = ["veneno", "bicho"]
 ps = 40
 defensa = 90
 at_esp = 30
@@ -110,7 +110,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 40
 }])
-habilidades = PackedStringArray("battle_armor", "sniper")
+habilidades = ["battle_armor", "sniper"]
 habilidad_oculta = "keen_eye"
 categoria = "Pokémon Escorpión"
 altura = 0.8

@@ -88,7 +88,7 @@ script = ExtResource("1")
 id = "armaldo"
 numero = 348
 nombre = "Armaldo"
-tipos = PackedStringArray("roca", "bicho")
+tipos = ["roca", "bicho"]
 ps = 75
 ataque = 125
 defensa = 100
@@ -101,7 +101,7 @@ crecimiento = "slow-then-very-fast"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("battle_armor")
+habilidades = ["battle_armor"]
 habilidad_oculta = "swift_swim"
 categoria = "Pokémon Armadura"
 altura = 1.5

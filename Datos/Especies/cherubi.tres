@@ -74,7 +74,7 @@ script = ExtResource("1")
 id = "cherubi"
 numero = 420
 nombre = "Cherubi"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 45
 ataque = 35
 defensa = 45
@@ -93,7 +93,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 25
 }])
-habilidades = PackedStringArray("chlorophyll")
+habilidades = ["chlorophyll"]
 categoria = "Pokémon Cereza"
 altura = 0.4
 peso_kg = 3.3

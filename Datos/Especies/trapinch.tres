@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "trapinch"
 numero = 328
 nombre = "Trapinch"
-tipos = PackedStringArray("tierra")
+tipos = ["tierra"]
 ps = 45
 ataque = 100
 defensa = 45
@@ -101,7 +101,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 35
 }])
-habilidades = PackedStringArray("hyper_cutter", "arena_trap")
+habilidades = ["hyper_cutter", "arena_trap"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Hormiga León"
 altura = 0.7

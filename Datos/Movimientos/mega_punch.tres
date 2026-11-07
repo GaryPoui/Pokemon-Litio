@@ -11,4 +11,4 @@ precision = 85
 pp = 20
 descripcion = "Un puñetazo de gran potencia."
 numero = 5
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")
+banderas = ["contact", "metronome", "mirror", "protect", "punch"]

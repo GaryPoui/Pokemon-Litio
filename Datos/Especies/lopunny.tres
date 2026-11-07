@@ -112,7 +112,7 @@ script = ExtResource("1")
 id = "lopunny"
 numero = 428
 nombre = "Lopunny"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 65
 ataque = 76
 defensa = 84
@@ -125,7 +125,7 @@ evs_otorgados = {
 "velocidad": 2
 }
 amistad_base = 140
-habilidades = PackedStringArray("cute_charm", "klutz")
+habilidades = ["cute_charm", "klutz"]
 habilidad_oculta = "limber"
 categoria = "Pokémon Conejo"
 altura = 1.2

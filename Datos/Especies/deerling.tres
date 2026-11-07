@@ -98,7 +98,7 @@ script = ExtResource("17_hwexw")
 id = "deerling"
 numero = 585
 nombre = "Deerling"
-tipos = PackedStringArray("normal", "planta")
+tipos = ["normal", "planta"]
 ps = 60
 ataque = 60
 at_esp = 40
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 34
 }])
-habilidades = PackedStringArray("chlorophyll", "sap_sipper")
+habilidades = ["chlorophyll", "sap_sipper"]
 habilidad_oculta = "serene_grace"
 categoria = "Pokémon Estacional"
 altura = 0.6

@@ -113,7 +113,7 @@ script = ExtResource("1")
 id = "slowbro"
 numero = 80
 nombre = "Slowbro"
-tipos = PackedStringArray("agua", "psiquico")
+tipos = ["agua", "psiquico"]
 ps = 95
 ataque = 75
 defensa = 110
@@ -125,7 +125,7 @@ ratio_captura = 75
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("oblivious", "own_tempo")
+habilidades = ["oblivious", "own_tempo"]
 habilidad_oculta = "regenerator"
 categoria = "Pokémon Ermitaño"
 altura = 1.6

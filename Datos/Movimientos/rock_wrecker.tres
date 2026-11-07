@@ -12,4 +12,4 @@ precision = 90
 pp = 5
 descripcion = "Lanza una piedra enorme contra el objetivo, pero tiene que descansar el siguiente turno."
 numero = 439
-banderas = PackedStringArray("bullet", "metronome", "mirror", "protect", "recharge")
+banderas = ["bullet", "metronome", "mirror", "protect", "recharge"]

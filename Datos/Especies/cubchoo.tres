@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "cubchoo"
 numero = 613
 nombre = "Cubchoo"
-tipos = PackedStringArray("hielo")
+tipos = ["hielo"]
 ps = 55
 ataque = 70
 defensa = 40
@@ -118,7 +118,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 37
 }])
-habilidades = PackedStringArray("snow_cloak")
+habilidades = ["snow_cloak"]
 habilidad_oculta = "rattled"
 categoria = "Pokémon Congelación"
 altura = 0.5

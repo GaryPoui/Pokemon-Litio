@@ -90,7 +90,7 @@ script = ExtResource("1")
 id = "quagsire"
 numero = 195
 nombre = "Quagsire"
-tipos = PackedStringArray("agua", "tierra")
+tipos = ["agua", "tierra"]
 ps = 95
 ataque = 85
 defensa = 85
@@ -102,7 +102,7 @@ ratio_captura = 90
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("damp", "water_absorb")
+habilidades = ["damp", "water_absorb"]
 habilidad_oculta = "unaware"
 categoria = "Pokémon Pez Agua"
 altura = 1.4

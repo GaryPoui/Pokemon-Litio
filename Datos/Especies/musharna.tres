@@ -30,7 +30,7 @@ script = ExtResource("1")
 id = "musharna"
 numero = 518
 nombre = "Musharna"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 116
 ataque = 55
 defensa = 85
@@ -43,7 +43,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("forewarn", "synchronize")
+habilidades = ["forewarn", "synchronize"]
 habilidad_oculta = "telepathy"
 categoria = "Pokémon Duermevela"
 altura = 1.1

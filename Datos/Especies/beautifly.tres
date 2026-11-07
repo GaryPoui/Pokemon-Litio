@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "beautifly"
 numero = 267
 nombre = "Beautifly"
-tipos = PackedStringArray("bicho", "volador")
+tipos = ["bicho", "volador"]
 ps = 60
 ataque = 70
 at_esp = 90
@@ -89,7 +89,7 @@ exp_base = 178
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("swarm")
+habilidades = ["swarm"]
 habilidad_oculta = "rivalry"
 categoria = "Pokémon Mariposa"
 altura = 1.0

@@ -13,4 +13,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Levita gracias a un campo magnético generado por electricidad durante cinco turnos."
 numero = 393
-banderas = PackedStringArray("gravity", "metronome", "snatch")
+banderas = ["gravity", "metronome", "snatch"]

@@ -13,4 +13,4 @@ precision = 90
 pp = 5
 descripcion = "Golpea con una enorme planta. Quien lo usa no puede moverse en el siguiente turno."
 numero = 338
-banderas = PackedStringArray("metronome", "mirror", "nonsky", "protect", "recharge")
+banderas = ["metronome", "mirror", "nonsky", "protect", "recharge"]

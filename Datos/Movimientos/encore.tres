@@ -11,4 +11,4 @@ pp = 5
 meta = "unique"
 descripcion = "El objetivo repite su último movimiento durante tres turnos."
 numero = 227
-banderas = PackedStringArray("bypasssub", "failencore", "metronome", "mirror", "protect", "reflectable")
+banderas = ["bypasssub", "failencore", "metronome", "mirror", "protect", "reflectable"]

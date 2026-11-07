@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "electivire"
 numero = 466
 nombre = "Electivire"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 75
 ataque = 123
 defensa = 67
@@ -118,7 +118,7 @@ ratio_genero = 2
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("motor_drive")
+habilidades = ["motor_drive"]
 habilidad_oculta = "vital_spirit"
 categoria = "Pokémon Rayo"
 altura = 1.8

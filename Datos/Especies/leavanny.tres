@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "leavanny"
 numero = 542
 nombre = "Leavanny"
-tipos = PackedStringArray("bicho", "planta")
+tipos = ["bicho", "planta"]
 ps = 75
 ataque = 103
 defensa = 80
@@ -105,7 +105,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("swarm", "chlorophyll")
+habilidades = ["swarm", "chlorophyll"]
 habilidad_oculta = "overcoat"
 categoria = "Pokémon Cuidador"
 altura = 1.2

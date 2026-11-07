@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "yamask"
 numero = 562
 nombre = "Yamask"
-tipos = PackedStringArray("fantasma")
+tipos = ["fantasma"]
 ps = 38
 ataque = 30
 defensa = 85
@@ -117,7 +117,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 34
 }])
-habilidades = PackedStringArray("mummy")
+habilidades = ["mummy"]
 categoria = "Pokémon Espíritu"
 altura = 0.5
 peso_kg = 1.5

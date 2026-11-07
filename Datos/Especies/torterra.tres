@@ -104,7 +104,7 @@ script = ExtResource("16_sw37w")
 id = "torterra"
 numero = 389
 nombre = "Torterra"
-tipos = PackedStringArray("planta", "tierra")
+tipos = ["planta", "tierra"]
 ps = 95
 ataque = 109
 defensa = 105
@@ -118,7 +118,7 @@ evs_otorgados = {
 "ataque": 2,
 "defensa": 1
 }
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "shell_armor"
 categoria = "Pokémon Continente"
 altura = 2.2

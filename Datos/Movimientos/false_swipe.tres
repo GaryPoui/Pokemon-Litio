@@ -10,4 +10,4 @@ poder = 40
 pp = 40
 descripcion = "Ataque moderado que no debilita al objetivo y le deja al menos 1 PS."
 numero = 206
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

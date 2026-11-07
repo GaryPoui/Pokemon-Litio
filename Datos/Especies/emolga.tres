@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://clup4bcxlvii8"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_p2xxu"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_p2xxu"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/thunder_shock.tres" id="2_gluqi"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="3_tmwvu"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="4_s45we"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/volt_switch.tres" id="14_f1ulv"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/agility.tres" id="15_j1khi"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/discharge.tres" id="16_8o8lp"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_hag27"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/emolga_espalda.png" id="18_vw3xn"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/emolga_frente.png" id="19_namh3"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_hag27"]
+[ext_resource type="Texture2D" uid="uid://4m0l2io4jbf3" path="res://Assets/Pokemones/batalla/emolga_espalda.png" id="18_vw3xn"]
+[ext_resource type="Texture2D" uid="uid://haht5q8852vq" path="res://Assets/Pokemones/batalla/emolga_frente.png" id="19_namh3"]
 
 [sub_resource type="Resource" id="Resource_p2xxu"]
 script = ExtResource("1_p2xxu")
@@ -99,7 +99,7 @@ script = ExtResource("17_hag27")
 id = "emolga"
 numero = 587
 nombre = "Emolga"
-tipos = PackedStringArray("electrico", "volador")
+tipos = ["electrico", "volador"]
 ps = 55
 ataque = 75
 defensa = 60
@@ -111,7 +111,7 @@ ratio_captura = 200
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("static")
+habilidades = ["static"]
 habilidad_oculta = "motor_drive"
 categoria = "Pokémon Vuelardilla"
 altura = 0.4

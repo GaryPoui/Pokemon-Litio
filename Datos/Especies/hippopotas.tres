@@ -74,7 +74,7 @@ script = ExtResource("1")
 id = "hippopotas"
 numero = 449
 nombre = "Hippopotas"
-tipos = PackedStringArray("tierra")
+tipos = ["tierra"]
 ps = 68
 ataque = 72
 defensa = 78
@@ -94,7 +94,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 34
 }])
-habilidades = PackedStringArray("sand_stream")
+habilidades = ["sand_stream"]
 habilidad_oculta = "sand_force"
 categoria = "Pokémon Hipo"
 altura = 0.8

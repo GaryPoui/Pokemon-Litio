@@ -96,7 +96,7 @@ script = ExtResource("16_cpgmq")
 id = "monferno"
 numero = 391
 nombre = "Monferno"
-tipos = PackedStringArray("fuego", "lucha")
+tipos = ["fuego", "lucha"]
 ps = 64
 ataque = 78
 defensa = 52
@@ -117,7 +117,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("blaze")
+habilidades = ["blaze"]
 habilidad_oculta = "iron_fist"
 categoria = "Pokémon Juguetón"
 altura = 0.9

@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "spinarak"
 numero = 167
 nombre = "Spinarak"
-tipos = PackedStringArray("bicho", "veneno")
+tipos = ["bicho", "veneno"]
 ps = 40
 ataque = 60
 defensa = 40
@@ -117,7 +117,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 22
 }])
-habilidades = PackedStringArray("swarm", "insomnia")
+habilidades = ["swarm", "insomnia"]
 habilidad_oculta = "sniper"
 categoria = "Pokémon Escupesoga"
 altura = 0.5

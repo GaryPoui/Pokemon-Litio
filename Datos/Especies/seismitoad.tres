@@ -112,7 +112,7 @@ script = ExtResource("18_v86ip")
 id = "seismitoad"
 numero = 537
 nombre = "Seismitoad"
-tipos = PackedStringArray("agua", "tierra")
+tipos = ["agua", "tierra"]
 ps = 105
 ataque = 85
 defensa = 75
@@ -124,7 +124,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ps": 3
 }
-habilidades = PackedStringArray("swift_swim", "poison_touch")
+habilidades = ["swift_swim", "poison_touch"]
 habilidad_oculta = "water_absorb"
 categoria = "Pokémon Vibrante"
 altura = 1.5

@@ -13,4 +13,4 @@ precision = 90
 pp = 5
 descripcion = "Explosión de fuego. El atacante debe descansar el siguiente turno."
 numero = 307
-banderas = PackedStringArray("metronome", "mirror", "protect", "recharge")
+banderas = ["metronome", "mirror", "protect", "recharge"]

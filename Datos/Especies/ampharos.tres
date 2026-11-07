@@ -110,7 +110,7 @@ script = ExtResource("17_ojetj")
 id = "ampharos"
 numero = 181
 nombre = "Ampharos"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 90
 ataque = 75
 defensa = 75
@@ -122,7 +122,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("static")
+habilidades = ["static"]
 habilidad_oculta = "plus"
 categoria = "Pokémon Luz"
 altura = 1.4

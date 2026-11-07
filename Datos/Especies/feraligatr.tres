@@ -118,7 +118,7 @@ script = ExtResource("19_r24uf")
 id = "feraligatr"
 numero = 160
 nombre = "Feraligatr"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 85
 ataque = 105
 defensa = 100
@@ -132,7 +132,7 @@ evs_otorgados = {
 "ataque": 2,
 "defensa": 1
 }
-habilidades = PackedStringArray("torrent")
+habilidades = ["torrent"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Fauces"
 altura = 2.3

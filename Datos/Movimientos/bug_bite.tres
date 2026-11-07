@@ -11,4 +11,4 @@ poder = 60
 pp = 20
 descripcion = "Pica al objetivo. Si el objetivo lleva una baya, el usuario se la come y se beneficia de su efecto."
 numero = 450
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

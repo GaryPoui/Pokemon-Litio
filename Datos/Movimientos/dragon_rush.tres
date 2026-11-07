@@ -12,4 +12,4 @@ precision = 75
 descripcion = "Ataca de forma brutal mientras intimida al objetivo. También puede amedrentarlo."
 prob_retroceso = 20
 numero = 407
-banderas = PackedStringArray("contact", "metronome", "minimize", "mirror", "protect")
+banderas = ["contact", "metronome", "minimize", "mirror", "protect"]

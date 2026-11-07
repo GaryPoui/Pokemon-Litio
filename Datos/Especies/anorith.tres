@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "anorith"
 numero = 347
 nombre = "Anorith"
-tipos = PackedStringArray("roca", "bicho")
+tipos = ["roca", "bicho"]
 ps = 45
 ataque = 95
 at_esp = 40
@@ -98,7 +98,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 40
 }])
-habilidades = PackedStringArray("battle_armor")
+habilidades = ["battle_armor"]
 habilidad_oculta = "swift_swim"
 categoria = "Pokémon Camarón"
 altura = 0.7

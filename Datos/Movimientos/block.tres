@@ -12,4 +12,4 @@ pp = 5
 meta = "unique"
 descripcion = "Le corta el paso al objetivo para que no pueda escapar."
 numero = 335
-banderas = PackedStringArray("metronome", "mirror", "reflectable")
+banderas = ["metronome", "mirror", "reflectable"]

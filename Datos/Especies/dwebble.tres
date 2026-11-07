@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "dwebble"
 numero = 557
 nombre = "Dwebble"
-tipos = PackedStringArray("bicho", "roca")
+tipos = ["bicho", "roca"]
 ataque = 65
 defensa = 85
 at_esp = 35
@@ -117,7 +117,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 34
 }])
-habilidades = PackedStringArray("sturdy", "shell_armor")
+habilidades = ["sturdy", "shell_armor"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Casapiedra"
 altura = 0.3

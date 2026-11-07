@@ -100,7 +100,7 @@ script = ExtResource("1")
 id = "seaking"
 numero = 119
 nombre = "Seaking"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 80
 ataque = 92
 defensa = 65
@@ -112,7 +112,7 @@ ratio_captura = 60
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("swift_swim", "water_veil")
+habilidades = ["swift_swim", "water_veil"]
 habilidad_oculta = "lightning_rod"
 categoria = "Pokémon Pez Color"
 altura = 1.3

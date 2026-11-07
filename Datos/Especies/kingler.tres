@@ -111,7 +111,7 @@ script = ExtResource("1")
 id = "kingler"
 numero = 99
 nombre = "Kingler"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 55
 ataque = 130
 defensa = 115
@@ -121,7 +121,7 @@ ratio_captura = 60
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("hyper_cutter", "shell_armor")
+habilidades = ["hyper_cutter", "shell_armor"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Tenaza"
 altura = 1.3

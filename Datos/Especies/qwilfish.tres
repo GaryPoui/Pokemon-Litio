@@ -115,7 +115,7 @@ script = ExtResource("1")
 id = "qwilfish"
 numero = 211
 nombre = "Qwilfish"
-tipos = PackedStringArray("agua", "veneno")
+tipos = ["agua", "veneno"]
 ps = 65
 ataque = 95
 defensa = 75
@@ -126,7 +126,7 @@ exp_base = 88
 evs_otorgados = {
 "ataque": 1
 }
-habilidades = PackedStringArray("poison_point", "swift_swim")
+habilidades = ["poison_point", "swift_swim"]
 habilidad_oculta = "intimidate"
 categoria = "Pokémon Globo"
 altura = 0.5

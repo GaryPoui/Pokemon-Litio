@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "regice"
 numero = 378
 nombre = "Regice"
-tipos = PackedStringArray("hielo")
+tipos = ["hielo"]
 ps = 80
 defensa = 100
 at_esp = 100
@@ -99,7 +99,7 @@ evs_otorgados = {
 "def_esp": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("clear_body")
+habilidades = ["clear_body"]
 habilidad_oculta = "ice_body"
 categoria = "Pokémon Iceberg"
 altura = 1.8

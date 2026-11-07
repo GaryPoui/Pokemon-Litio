@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "darkrai"
 numero = 491
 nombre = "Darkrai"
-tipos = PackedStringArray("siniestro")
+tipos = ["siniestro"]
 ps = 70
 ataque = 90
 defensa = 90
@@ -96,7 +96,7 @@ evs_otorgados = {
 "velocidad": 1
 }
 amistad_base = 0
-habilidades = PackedStringArray("bad_dreams")
+habilidades = ["bad_dreams"]
 categoria = "Pokémon Oscuridad"
 altura = 1.5
 peso_kg = 50.5

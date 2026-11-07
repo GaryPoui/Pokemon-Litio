@@ -85,7 +85,7 @@ script = ExtResource("1")
 id = "palkia"
 numero = 484
 nombre = "Palkia"
-tipos = PackedStringArray("agua", "dragon")
+tipos = ["agua", "dragon"]
 ps = 90
 ataque = 120
 defensa = 100
@@ -100,7 +100,7 @@ evs_otorgados = {
 "at_esp": 3
 }
 amistad_base = 0
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 habilidad_oculta = "telepathy"
 categoria = "Pokémon Espacial"
 altura = 4.2

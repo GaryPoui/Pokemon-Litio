@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "seviper"
 numero = 336
 nombre = "Seviper"
-tipos = PackedStringArray("veneno")
+tipos = ["veneno"]
 ps = 73
 ataque = 100
 defensa = 60
@@ -113,7 +113,7 @@ evs_otorgados = {
 "at_esp": 1,
 "ataque": 1
 }
-habilidades = PackedStringArray("shed_skin")
+habilidades = ["shed_skin"]
 habilidad_oculta = "infiltrator"
 categoria = "Pokémon Colmillos"
 altura = 2.7

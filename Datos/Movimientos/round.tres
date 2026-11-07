@@ -11,4 +11,4 @@ poder = 60
 pp = 15
 descripcion = "Un canto que ataca al objetivo. Cuantos más Pokémon lo usan, más aumenta de potencia."
 numero = 496
-banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "sound")
+banderas = ["bypasssub", "metronome", "mirror", "protect", "sound"]

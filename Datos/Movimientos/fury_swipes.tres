@@ -11,6 +11,6 @@ precision = 80
 pp = 15
 descripcion = "Araña rápidamente de dos a cinco veces."
 numero = 154
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]
 golpes_min = 2
 golpes_max = 5

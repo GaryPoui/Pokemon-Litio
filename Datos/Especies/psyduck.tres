@@ -98,7 +98,7 @@ script = ExtResource("17_kxasj")
 id = "psyduck"
 numero = 54
 nombre = "Psyduck"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ataque = 52
 defensa = 48
 at_esp = 65
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 33
 }])
-habilidades = PackedStringArray("damp", "cloud_nine")
+habilidades = ["damp", "cloud_nine"]
 habilidad_oculta = "swift_swim"
 categoria = "Pokémon Pato"
 altura = 0.8

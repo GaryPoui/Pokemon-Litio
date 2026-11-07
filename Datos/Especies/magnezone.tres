@@ -122,7 +122,7 @@ script = ExtResource("1")
 id = "magnezone"
 numero = 462
 nombre = "Magnezone"
-tipos = PackedStringArray("electrico", "acero")
+tipos = ["electrico", "acero"]
 ps = 70
 ataque = 70
 defensa = 115
@@ -135,7 +135,7 @@ ratio_genero = -1
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("magnet_pull", "sturdy")
+habilidades = ["magnet_pull", "sturdy"]
 habilidad_oculta = "analytic"
 categoria = "Pokémon Magnético"
 altura = 1.2

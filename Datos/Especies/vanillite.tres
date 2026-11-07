@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://d3tt3iev2q044"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vubjh"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_vubjh"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/icicle_spear.tres" id="2_f5an6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/harden.tres" id="3_pb765"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/astonish.tres" id="4_np7tl"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/mirror_coat.tres" id="14_xxvdo"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/blizzard.tres" id="15_2syi2"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/sheer_cold.tres" id="16_5apho"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_su30g"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/vanillite_espalda.png" id="18_i5205"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/vanillite_frente.png" id="19_joyr0"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_su30g"]
+[ext_resource type="Texture2D" uid="uid://cry61qtxsmc1" path="res://Assets/Pokemones/batalla/vanillite_espalda.png" id="18_i5205"]
+[ext_resource type="Texture2D" uid="uid://cxiw3uuoqysi5" path="res://Assets/Pokemones/batalla/vanillite_frente.png" id="19_joyr0"]
 
 [sub_resource type="Resource" id="Resource_vubjh"]
 script = ExtResource("1_vubjh")
@@ -99,7 +99,7 @@ script = ExtResource("17_su30g")
 id = "vanillite"
 numero = 582
 nombre = "Vanillite"
-tipos = PackedStringArray("hielo")
+tipos = ["hielo"]
 ps = 36
 at_esp = 65
 def_esp = 60
@@ -117,7 +117,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 35
 }])
-habilidades = PackedStringArray("ice_body")
+habilidades = ["ice_body"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Nieve Fresca"
 altura = 0.4

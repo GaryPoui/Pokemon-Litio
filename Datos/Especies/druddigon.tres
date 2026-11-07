@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "druddigon"
 numero = 621
 nombre = "Druddigon"
-tipos = PackedStringArray("dragon")
+tipos = ["dragon"]
 ps = 77
 ataque = 120
 defensa = 90
@@ -115,7 +115,7 @@ exp_base = 170
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("rough_skin", "sheer_force")
+habilidades = ["rough_skin", "sheer_force"]
 habilidad_oculta = "mold_breaker"
 categoria = "Pokémon Cueva"
 altura = 1.6

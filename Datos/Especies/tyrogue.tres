@@ -30,7 +30,7 @@ script = ExtResource("1")
 id = "tyrogue"
 numero = 236
 nombre = "Tyrogue"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 35
 ataque = 35
 defensa = 35
@@ -59,7 +59,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 20,
 "stats": 0
 }])
-habilidades = PackedStringArray("guts", "steadfast")
+habilidades = ["guts", "steadfast"]
 habilidad_oculta = "vital_spirit"
 categoria = "Pokémon Peleón"
 altura = 0.7

@@ -95,7 +95,7 @@ script = ExtResource("1")
 id = "ledian"
 numero = 166
 nombre = "Ledian"
-tipos = PackedStringArray("bicho", "volador")
+tipos = ["bicho", "volador"]
 ps = 55
 ataque = 35
 at_esp = 55
@@ -107,7 +107,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("swarm", "early_bird")
+habilidades = ["swarm", "early_bird"]
 habilidad_oculta = "iron_fist"
 categoria = "Pokémon 5 Estrellas"
 altura = 1.4

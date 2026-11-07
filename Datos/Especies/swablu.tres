@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "swablu"
 numero = 333
 nombre = "Swablu"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 45
 ataque = 40
 defensa = 60
@@ -111,7 +111,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 35
 }])
-habilidades = PackedStringArray("natural_cure")
+habilidades = ["natural_cure"]
 habilidad_oculta = "cloud_nine"
 categoria = "Pokémon Ave Algodón"
 altura = 0.4

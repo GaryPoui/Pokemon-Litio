@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "oddish"
 numero = 43
 nombre = "Oddish"
-tipos = PackedStringArray("planta", "veneno")
+tipos = ["planta", "veneno"]
 ps = 45
 defensa = 55
 at_esp = 75
@@ -100,7 +100,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 21
 }])
-habilidades = PackedStringArray("chlorophyll")
+habilidades = ["chlorophyll"]
 habilidad_oculta = "run_away"
 categoria = "Pokémon Hierbajo"
 altura = 0.5

@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "solosis"
 numero = 577
 nombre = "Solosis"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 45
 ataque = 30
 defensa = 40
@@ -124,7 +124,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 32
 }])
-habilidades = PackedStringArray("overcoat", "magic_guard")
+habilidades = ["overcoat", "magic_guard"]
 habilidad_oculta = "regenerator"
 categoria = "Pokémon Célula"
 altura = 0.3

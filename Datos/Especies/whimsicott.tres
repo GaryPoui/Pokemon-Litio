@@ -48,7 +48,7 @@ script = ExtResource("1")
 id = "whimsicott"
 numero = 547
 nombre = "Whimsicott"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 60
 ataque = 67
 defensa = 85
@@ -60,7 +60,7 @@ ratio_captura = 75
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("prankster", "infiltrator")
+habilidades = ["prankster", "infiltrator"]
 habilidad_oculta = "chlorophyll"
 categoria = "Pokémon Vuelalviento"
 altura = 0.7

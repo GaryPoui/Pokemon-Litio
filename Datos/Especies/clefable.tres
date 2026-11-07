@@ -30,7 +30,7 @@ script = ExtResource("1")
 id = "clefable"
 numero = 36
 nombre = "Clefable"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 95
 ataque = 70
 defensa = 73
@@ -45,7 +45,7 @@ evs_otorgados = {
 "ps": 3
 }
 amistad_base = 140
-habilidades = PackedStringArray("cute_charm", "magic_guard")
+habilidades = ["cute_charm", "magic_guard"]
 habilidad_oculta = "unaware"
 categoria = "Pokémon Hada"
 altura = 1.3

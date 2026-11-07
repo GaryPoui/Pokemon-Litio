@@ -32,14 +32,15 @@ func humor() -> String:
 	return "atento"
 
 func umbral_huida() -> int:
+	var calma :=1.0- EfectosTrinket.total("huida", null, equipo_j)
 	if velocidad>= 128 and comiendo<= 0:
-		return 256
+		return floori(256* calma)
 	var u:= velocidad* 2
 	if comiendo> 0:
 		u= velocidad/ 2
 	elif enojado> 0:
 		u =velocidad* 4
-	return mini(u, 256)
+	return floori(mini(u, 256) *calma)
 
 func multiplicador() -> float:
 	if enojado> 0:

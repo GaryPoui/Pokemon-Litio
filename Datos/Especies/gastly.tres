@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://xeq4u4c02idd"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_7uuwr"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_7uuwr"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hypnosis.tres" id="2_l210s"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/lick.tres" id="3_5h3a8"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/spite.tres" id="4_sug07"]
@@ -16,9 +16,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/destiny_bond.tres" id="14_o1ttq"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/hex.tres" id="15_secgr"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/nightmare.tres" id="16_bq531"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="17_kbx8n"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/gastly_espalda.png" id="18_2p1q8"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/gastly_frente.png" id="19_k5f7e"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="17_kbx8n"]
+[ext_resource type="Texture2D" uid="uid://bxm6ifpgj36rl" path="res://Assets/Pokemones/batalla/gastly_espalda.png" id="18_2p1q8"]
+[ext_resource type="Texture2D" uid="uid://duc052mntwlup" path="res://Assets/Pokemones/batalla/gastly_frente.png" id="19_k5f7e"]
 
 [sub_resource type="Resource" id="Resource_7uuwr"]
 script = ExtResource("1_7uuwr")
@@ -98,7 +98,7 @@ script = ExtResource("17_kbx8n")
 id = "gastly"
 numero = 92
 nombre = "Gastly"
-tipos = PackedStringArray("fantasma", "veneno")
+tipos = ["fantasma", "veneno"]
 ps = 30
 ataque = 35
 defensa = 30
@@ -118,7 +118,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 25
 }])
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Gas"
 altura = 1.3
 peso_kg = 0.1

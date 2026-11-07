@@ -13,4 +13,4 @@ objetivo = "all-opponents"
 descripcion = "Lanza grandes pedruscos. Puede amedrentar al objetivo."
 prob_retroceso = 30
 numero = 157
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

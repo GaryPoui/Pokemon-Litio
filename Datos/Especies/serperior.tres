@@ -111,7 +111,7 @@ script = ExtResource("17_a638b")
 id = "serperior"
 numero = 497
 nombre = "Serperior"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 75
 ataque = 75
 defensa = 95
@@ -124,7 +124,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "velocidad": 3
 }
-habilidades = PackedStringArray("overgrow")
+habilidades = ["overgrow"]
 habilidad_oculta = "contrary"
 categoria = "Pokémon Realeza"
 altura = 3.3

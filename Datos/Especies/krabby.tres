@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "krabby"
 numero = 98
 nombre = "Krabby"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 30
 ataque = 105
 defensa = 90
@@ -116,7 +116,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 28
 }])
-habilidades = PackedStringArray("hyper_cutter", "shell_armor")
+habilidades = ["hyper_cutter", "shell_armor"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Cangrejo"
 altura = 0.4

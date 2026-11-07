@@ -112,7 +112,7 @@ script = ExtResource("18_csofj")
 id = "garbodor"
 numero = 569
 nombre = "Garbodor"
-tipos = PackedStringArray("veneno")
+tipos = ["veneno"]
 ps = 80
 ataque = 95
 defensa = 82
@@ -124,7 +124,7 @@ ratio_captura = 60
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("stench", "weak_armor")
+habilidades = ["stench", "weak_armor"]
 habilidad_oculta = "aftermath"
 categoria = "Pokémon Vertedero"
 altura = 1.9

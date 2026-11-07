@@ -110,7 +110,7 @@ script = ExtResource("19_4ctpb")
 id = "sandile"
 numero = 551
 nombre = "Sandile"
-tipos = PackedStringArray("tierra", "siniestro")
+tipos = ["tierra", "siniestro"]
 ataque = 72
 defensa = 35
 at_esp = 35
@@ -129,7 +129,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 29
 }])
-habilidades = PackedStringArray("intimidate", "moxie")
+habilidades = ["intimidate", "moxie"]
 habilidad_oculta = "anger_point"
 categoria = "Pokémon Desierdrilo"
 altura = 0.7

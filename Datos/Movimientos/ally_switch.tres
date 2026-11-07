@@ -15,4 +15,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Extraño poder que intercambia la posición del usuario con la de un aliado sobre el terreno de combate."
 numero = 502
-banderas = PackedStringArray("metronome")
+banderas = ["metronome"]

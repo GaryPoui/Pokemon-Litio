@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "cranidos"
 numero = 408
 nombre = "Cranidos"
-tipos = PackedStringArray("roca")
+tipos = ["roca"]
 ps = 67
 ataque = 125
 defensa = 40
@@ -100,7 +100,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("mold_breaker")
+habilidades = ["mold_breaker"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Cabezazo"
 altura = 0.9

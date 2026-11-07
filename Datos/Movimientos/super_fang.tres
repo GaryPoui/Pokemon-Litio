@@ -9,4 +9,4 @@ nombre = "Superdiente"
 precision = 90
 descripcion = "Finos colmillos que reducen a la mitad los PS del objetivo."
 numero = 162
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

@@ -111,7 +111,7 @@ script = ExtResource("17_sfgm4")
 id = "klinklang"
 numero = 601
 nombre = "Klinklang"
-tipos = PackedStringArray("acero")
+tipos = ["acero"]
 ps = 60
 ataque = 100
 defensa = 115
@@ -125,7 +125,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "defensa": 3
 }
-habilidades = PackedStringArray("plus", "minus")
+habilidades = ["plus", "minus"]
 habilidad_oculta = "clear_body"
 categoria = "Pokémon Engranaje"
 altura = 0.6

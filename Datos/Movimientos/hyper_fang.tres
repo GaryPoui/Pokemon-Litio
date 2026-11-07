@@ -12,4 +12,4 @@ pp = 15
 descripcion = "Ataca con agudos colmillos. Puede amedrentar al objetivo."
 prob_retroceso = 10
 numero = 158
-banderas = PackedStringArray("bite", "contact", "metronome", "mirror", "protect")
+banderas = ["bite", "contact", "metronome", "mirror", "protect"]

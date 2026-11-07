@@ -35,7 +35,7 @@ script = ExtResource("1")
 id = "roserade"
 numero = 407
 nombre = "Roserade"
-tipos = PackedStringArray("planta", "veneno")
+tipos = ["planta", "veneno"]
 ps = 60
 ataque = 70
 defensa = 55
@@ -48,7 +48,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("natural_cure", "poison_point")
+habilidades = ["natural_cure", "poison_point"]
 habilidad_oculta = "technician"
 categoria = "Pokémon Ramillete"
 altura = 0.9

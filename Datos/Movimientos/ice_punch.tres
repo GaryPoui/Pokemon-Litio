@@ -14,4 +14,4 @@ descripcion = "Puñetazo helado que puede llegar a congelar."
 estado = "freeze"
 prob_estado = 10
 numero = 8
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "punch")
+banderas = ["contact", "metronome", "mirror", "protect", "punch"]

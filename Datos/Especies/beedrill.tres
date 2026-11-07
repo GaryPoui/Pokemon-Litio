@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "beedrill"
 numero = 15
 nombre = "Beedrill"
-tipos = PackedStringArray("bicho", "veneno")
+tipos = ["bicho", "veneno"]
 ps = 65
 ataque = 80
 defensa = 40
@@ -92,7 +92,7 @@ evs_otorgados = {
 "ataque": 2,
 "def_esp": 1
 }
-habilidades = PackedStringArray("swarm")
+habilidades = ["swarm"]
 habilidad_oculta = "sniper"
 categoria = "Pokémon Abeja Veneno"
 altura = 1.0

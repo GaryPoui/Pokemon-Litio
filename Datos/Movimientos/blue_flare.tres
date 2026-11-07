@@ -16,4 +16,4 @@ descripcion = "Ataca con una bella pero potente llama azul que rodea al objetivo
 estado = "burn"
 prob_estado = 20
 numero = 551
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

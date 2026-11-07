@@ -11,4 +11,4 @@ categoria = "especial"
 poder = 65
 descripcion = "Si al objetivo le queda la mitad o menos de sus PS, el ataque será el doble de fuerte."
 numero = 362
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

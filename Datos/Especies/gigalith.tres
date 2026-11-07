@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "gigalith"
 numero = 526
 nombre = "Gigalith"
-tipos = PackedStringArray("roca")
+tipos = ["roca"]
 ps = 85
 ataque = 135
 defensa = 130
@@ -117,7 +117,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("sturdy")
+habilidades = ["sturdy"]
 habilidad_oculta = "sand_force"
 categoria = "Pokémon Presurizado"
 altura = 1.7

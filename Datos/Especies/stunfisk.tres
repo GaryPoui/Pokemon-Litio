@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "stunfisk"
 numero = 618
 nombre = "Stunfisk"
-tipos = PackedStringArray("tierra", "electrico")
+tipos = ["tierra", "electrico"]
 ps = 109
 ataque = 66
 defensa = 84
@@ -110,7 +110,7 @@ ratio_captura = 75
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("static", "limber")
+habilidades = ["static", "limber"]
 habilidad_oculta = "sand_veil"
 categoria = "Pokémon Trampa"
 altura = 0.7

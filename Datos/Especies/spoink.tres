@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "spoink"
 numero = 325
 nombre = "Spoink"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 60
 ataque = 25
 defensa = 35
@@ -119,7 +119,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 32
 }])
-habilidades = PackedStringArray("thick_fat", "own_tempo")
+habilidades = ["thick_fat", "own_tempo"]
 habilidad_oculta = "gluttony"
 categoria = "Pokémon Saltarín"
 altura = 0.7

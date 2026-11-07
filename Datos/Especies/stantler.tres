@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "stantler"
 numero = 234
 nombre = "Stantler"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 73
 ataque = 95
 defensa = 62
@@ -111,7 +111,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ataque": 1
 }
-habilidades = PackedStringArray("intimidate", "frisk")
+habilidades = ["intimidate", "frisk"]
 habilidad_oculta = "sap_sipper"
 categoria = "Pokémon Gran Cuerno"
 altura = 1.4

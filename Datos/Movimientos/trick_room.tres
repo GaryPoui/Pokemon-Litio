@@ -15,4 +15,4 @@ objetivo = "entire-field"
 meta = "whole-field-effect"
 descripcion = "Crea un espacio extraño en el que los Pokémon lentos se mueven primero durante cinco turnos."
 numero = 433
-banderas = PackedStringArray("metronome", "mirror")
+banderas = ["metronome", "mirror"]

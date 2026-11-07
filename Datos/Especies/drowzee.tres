@@ -109,7 +109,7 @@ script = ExtResource("1")
 id = "drowzee"
 numero = 96
 nombre = "Drowzee"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 60
 ataque = 48
 defensa = 45
@@ -128,7 +128,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 26
 }])
-habilidades = PackedStringArray("insomnia", "forewarn")
+habilidades = ["insomnia", "forewarn"]
 habilidad_oculta = "inner_focus"
 categoria = "Pokémon Hipnosis"
 altura = 1.0

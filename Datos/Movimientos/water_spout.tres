@@ -13,4 +13,4 @@ pp = 5
 objetivo = "all-opponents"
 descripcion = "Chorro de agua. Cuantos menos PS tenga el usuario, menos dañino será."
 numero = 323
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

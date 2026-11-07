@@ -15,4 +15,4 @@ estado = "burn"
 prob_estado = 10
 critico = 1
 numero = 299
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

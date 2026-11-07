@@ -75,7 +75,7 @@ script = ExtResource("13_fwtbe")
 id = "gyarados"
 numero = 130
 nombre = "Gyarados"
-tipos = PackedStringArray("agua", "volador")
+tipos = ["agua", "volador"]
 ps = 95
 ataque = 125
 defensa = 79
@@ -87,7 +87,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("intimidate")
+habilidades = ["intimidate"]
 habilidad_oculta = "moxie"
 categoria = "Pokémon Atrocidad"
 altura = 6.5

@@ -11,4 +11,4 @@ categoria = "estado"
 meta = "unique"
 descripcion = "Da rienda suelta a su rencor para reducir cuatro PP del último movimiento usado por el objetivo."
 numero = 180
-banderas = PackedStringArray("bypasssub", "metronome", "mirror", "protect", "reflectable")
+banderas = ["bypasssub", "metronome", "mirror", "protect", "reflectable"]

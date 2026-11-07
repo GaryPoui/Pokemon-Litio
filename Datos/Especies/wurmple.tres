@@ -32,7 +32,7 @@ script = ExtResource("1")
 id = "wurmple"
 numero = 265
 nombre = "Wurmple"
-tipos = PackedStringArray("bicho")
+tipos = ["bicho"]
 ps = 45
 ataque = 45
 defensa = 35
@@ -55,7 +55,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 7
 }])
-habilidades = PackedStringArray("shield_dust")
+habilidades = ["shield_dust"]
 habilidad_oculta = "run_away"
 categoria = "Pokémon Gusano"
 altura = 0.3

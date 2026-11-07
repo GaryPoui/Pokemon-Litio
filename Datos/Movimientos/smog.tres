@@ -16,4 +16,4 @@ descripcion = "Lanza un ataque con gases tóxicos que pueden llegar a envenenar.
 estado = "poison"
 prob_estado = 40
 numero = 123
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

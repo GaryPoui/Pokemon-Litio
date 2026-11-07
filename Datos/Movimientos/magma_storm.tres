@@ -16,6 +16,6 @@ descripcion = "El objetivo queda atrapado en una tormenta de fuego que dura de c
 estado = "trap"
 prob_estado = 100
 numero = 463
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]
 turnos_min = 5
 turnos_max = 6

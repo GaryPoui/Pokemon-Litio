@@ -11,4 +11,4 @@ poder = 60
 pp = 20
 descripcion = "Picotea al objetivo. Si este sostiene una baya, la picotea también y obtiene sus efectos."
 numero = 365
-banderas = PackedStringArray("contact", "distance", "metronome", "mirror", "protect")
+banderas = ["contact", "distance", "metronome", "mirror", "protect"]

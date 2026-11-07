@@ -121,7 +121,7 @@ script = ExtResource("1")
 id = "tyranitar"
 numero = 248
 nombre = "Tyranitar"
-tipos = PackedStringArray("roca", "siniestro")
+tipos = ["roca", "siniestro"]
 ps = 100
 ataque = 134
 defensa = 110
@@ -134,7 +134,7 @@ evs_otorgados = {
 "ataque": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("sand_stream")
+habilidades = ["sand_stream"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Coraza"
 altura = 2.0

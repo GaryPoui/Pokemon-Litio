@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "masquerain"
 numero = 284
 nombre = "Masquerain"
-tipos = PackedStringArray("bicho", "volador")
+tipos = ["bicho", "volador"]
 ps = 70
 ataque = 60
 defensa = 62
@@ -111,7 +111,7 @@ evs_otorgados = {
 "at_esp": 1,
 "def_esp": 1
 }
-habilidades = PackedStringArray("intimidate")
+habilidades = ["intimidate"]
 habilidad_oculta = "unnerve"
 categoria = "Pokémon Globocular"
 altura = 0.8

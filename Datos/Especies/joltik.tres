@@ -103,7 +103,7 @@ script = ExtResource("18_jfdr1")
 id = "joltik"
 numero = 595
 nombre = "Joltik"
-tipos = PackedStringArray("bicho", "electrico")
+tipos = ["bicho", "electrico"]
 ataque = 47
 at_esp = 57
 velocidad = 65
@@ -119,7 +119,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("compound_eyes", "unnerve")
+habilidades = ["compound_eyes", "unnerve"]
 habilidad_oculta = "swarm"
 categoria = "Pokémon Lapa"
 altura = 0.1

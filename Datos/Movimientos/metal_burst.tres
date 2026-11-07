@@ -10,4 +10,4 @@ tipo = "acero"
 objetivo = "specific-move"
 descripcion = "Devuelve al rival el último ataque recibido, pero con mucha más fuerza."
 numero = 368
-banderas = PackedStringArray("failmefirst", "metronome", "mirror", "protect")
+banderas = ["failmefirst", "metronome", "mirror", "protect"]

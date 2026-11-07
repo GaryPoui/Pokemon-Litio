@@ -126,7 +126,7 @@ script = ExtResource("1")
 id = "exploud"
 numero = 295
 nombre = "Exploud"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 104
 ataque = 91
 defensa = 63
@@ -138,7 +138,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ps": 3
 }
-habilidades = PackedStringArray("soundproof")
+habilidades = ["soundproof"]
 habilidad_oculta = "scrappy"
 categoria = "Pokémon Escandaloso"
 altura = 1.5

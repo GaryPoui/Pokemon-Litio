@@ -107,7 +107,7 @@ script = ExtResource("1")
 id = "toxicroak"
 numero = 454
 nombre = "Toxicroak"
-tipos = PackedStringArray("veneno", "lucha")
+tipos = ["veneno", "lucha"]
 ps = 83
 ataque = 106
 defensa = 65
@@ -119,7 +119,7 @@ ratio_captura = 75
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("anticipation", "dry_skin")
+habilidades = ["anticipation", "dry_skin"]
 habilidad_oculta = "poison_touch"
 categoria = "Pokémon Boca Tóxica"
 altura = 1.3

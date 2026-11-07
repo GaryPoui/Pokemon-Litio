@@ -14,4 +14,4 @@ descripcion = "Ataque eléctrico que puede llegar a paralizar."
 estado = "paralysis"
 prob_estado = 30
 numero = 209
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

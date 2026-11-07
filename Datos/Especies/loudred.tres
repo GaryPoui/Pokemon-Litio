@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "loudred"
 numero = 294
 nombre = "Loudred"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 84
 ataque = 71
 defensa = 43
@@ -119,7 +119,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 40
 }])
-habilidades = PackedStringArray("soundproof")
+habilidades = ["soundproof"]
 habilidad_oculta = "scrappy"
 categoria = "Pokémon Chillón"
 altura = 1.0

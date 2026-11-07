@@ -12,4 +12,4 @@ precision = 95
 pp = 15
 descripcion = "El usuario vuela en el primer turno y ataca en el segundo."
 numero = 19
-banderas = PackedStringArray("charge", "contact", "distance", "failinstruct", "gravity", "metronome", "mirror", "noassist", "nosleeptalk", "protect")
+banderas = ["charge", "contact", "distance", "failinstruct", "gravity", "metronome", "mirror", "noassist", "nosleeptalk", "protect"]

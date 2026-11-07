@@ -13,4 +13,4 @@ meta = "heal"
 descripcion = "Una onda curativa restaura la mitad de los PS máximos del objetivo."
 curacion = 50
 numero = 505
-banderas = PackedStringArray("allyanim", "distance", "heal", "metronome", "protect", "pulse", "reflectable")
+banderas = ["allyanim", "distance", "heal", "metronome", "protect", "pulse", "reflectable"]

@@ -104,7 +104,7 @@ script = ExtResource("18_c7o2t")
 id = "timburr"
 numero = 532
 nombre = "Timburr"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 75
 ataque = 80
 defensa = 55
@@ -125,7 +125,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 25
 }])
-habilidades = PackedStringArray("guts", "sheer_force")
+habilidades = ["guts", "sheer_force"]
 habilidad_oculta = "iron_fist"
 categoria = "Pokémon Musculoso"
 altura = 0.6

@@ -9,6 +9,8 @@ signal colocado
 @export var turn_delay: float =0.08
 @export_range(0, 3, 1) var idle_frame: int= 1
 
+const CIUDADES:= ["res://Escenas/Mapa.tscn", "res://Escenas/Villa31.tscn", "res://Escenas/Constitucion.tscn"]
+
 @onready var animated_sprite: AnimatedSprite2D =$AnimatedSprite2D
 @onready var mochila= get_node_or_null("Mochila")
 @onready var menu_pausa =get_node_or_null("MenuPausa")
@@ -23,6 +25,7 @@ var en_evento :=false
 var tam:= Rejilla.POR_DEFECTO
 var largo_paso :=16.0
 var saltando:= false
+var forzado :=false
 var salto_total :=0.0
 var sprite_y0: float= 0.0
 const NOMBRE_DIR:= {Vector2.DOWN: "abajo", Vector2.UP: "arriba", Vector2.LEFT: "izquierda", Vector2.RIGHT: "derecha"}
@@ -74,6 +77,11 @@ func colocar(pos: Vector2, direccion: Vector2) -> void:
 	colocado.emit()
 
 func _unhandled_input(event: InputEvent) -> void:
+	var num :=_numero(event)
+	if num> 0 and num<= CIUDADES.size() and not is_moving and not _bloqueado():
+		get_viewport().set_input_as_handled()
+		GestorEscenas.cambiar_mapa(CIUDADES[num- 1], "PuertaCentro", Vector2.DOWN)
+		return
 	if not event.is_action_pressed("aceptar") or is_moving or _bloqueado():
 		return
 	var objetivo:= celda()+ Vector2i(last_direction)
@@ -82,6 +90,16 @@ func _unhandled_input(event: InputEvent) -> void:
 			get_viewport().set_input_as_handled()
 			_interactuar(n)
 			return
+
+func _numero(event: InputEvent) -> int:
+	if not event is InputEventKey or not event.pressed or event.echo:
+		return 0
+	var k: Key= event.keycode if event.keycode!= KEY_NONE else event.physical_keycode
+	if k>= KEY_0 and k<= KEY_9:
+		return k- KEY_0
+	if k >=KEY_KP_0 and k<= KEY_KP_9:
+		return k- KEY_KP_0
+	return 0
 
 func _interactuar(n: Node) -> void:
 	en_evento= true
@@ -103,6 +121,8 @@ func _physics_process(delta: float) -> void:
 
 	if is_moving:
 		_move_towards_target(delta)
+	elif forzado:
+		_seguir_forzado()
 	else:
 		_try_start_move(delta, false)
 
@@ -184,6 +204,25 @@ func _saltar(direction: Vector2) -> void:
 	paso_iniciado.emit(celda()+ Vector2i(direction)* 2, direction)
 	_play_move_animation(direction)
 
+func _seguir_forzado() -> bool:
+	var mapa:= get_parent()
+	var d:= Vector2i.ZERO
+	if mapa!= null and mapa.has_method("forzado_en"):
+		d =mapa.forzado_en(celda())
+	if d== Vector2i.ZERO or test_move(transform, Vector2(d)* tam):
+		forzado= false
+		_set_idle()
+		return false
+	last_direction =Vector2(d)
+	is_running= false
+	target_position =position+ Vector2(d)* tam
+	largo_paso= (Vector2(d)* tam).length()
+	is_moving =true
+	forzado= true
+	paso_iniciado.emit(celda()+ d, Vector2(d))
+	_set_idle()
+	return true
+
 func _move_towards_target(delta: float) -> void:
 	var speed: float= move_speed* largo_paso *(run_multiplier if is_running else 1.0)
 	if saltando:
@@ -208,6 +247,10 @@ func _move_towards_target(delta: float) -> void:
 	paso_terminado.emit(celda())
 	if _bloqueado():
 		_set_idle()
+		return
+	if _seguir_forzado():
+		if restante> 0.0:
+			position= position.move_toward(target_position, restante)
 		return
 	_try_start_move(delta, true)
 	if is_moving and restante> 0.0:

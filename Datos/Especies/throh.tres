@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "throh"
 numero = 538
 nombre = "Throh"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 120
 ataque = 100
 defensa = 85
@@ -110,7 +110,7 @@ ratio_genero = 0
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("guts", "inner_focus")
+habilidades = ["guts", "inner_focus"]
 habilidad_oculta = "mold_breaker"
 categoria = "Pokémon Judo"
 altura = 1.3

@@ -42,7 +42,7 @@ script = ExtResource("1")
 id = "vileplume"
 numero = 45
 nombre = "Vileplume"
-tipos = PackedStringArray("planta", "veneno")
+tipos = ["planta", "veneno"]
 ps = 75
 ataque = 80
 defensa = 85
@@ -53,7 +53,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 3
 }
-habilidades = PackedStringArray("chlorophyll")
+habilidades = ["chlorophyll"]
 habilidad_oculta = "effect_spore"
 categoria = "Pokémon Flor"
 altura = 1.2

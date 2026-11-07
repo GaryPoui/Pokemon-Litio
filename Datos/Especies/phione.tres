@@ -74,7 +74,7 @@ script = ExtResource("1")
 id = "phione"
 numero = 489
 nombre = "Phione"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 80
 ataque = 80
 defensa = 80
@@ -88,7 +88,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ps": 1
 }
-habilidades = PackedStringArray("hydration")
+habilidades = ["hydration"]
 categoria = "Pokémon Marino"
 altura = 0.4
 peso_kg = 3.1

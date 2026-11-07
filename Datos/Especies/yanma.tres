@@ -104,7 +104,7 @@ script = ExtResource("1")
 id = "yanma"
 numero = 193
 nombre = "Yanma"
-tipos = PackedStringArray("bicho", "volador")
+tipos = ["bicho", "volador"]
 ps = 65
 ataque = 65
 defensa = 45
@@ -121,7 +121,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "movimiento",
 "movimiento": "ancient_power"
 }])
-habilidades = PackedStringArray("speed_boost", "compound_eyes")
+habilidades = ["speed_boost", "compound_eyes"]
 habilidad_oculta = "frisk"
 categoria = "Pokémon Ala Clara"
 altura = 1.2

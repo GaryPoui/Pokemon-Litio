@@ -12,4 +12,4 @@ precision = 90
 prioridad = -6
 descripcion = "Ataca al objetivo y lo obliga a cambiarse por otro Pokémon. Si es uno salvaje, acaba el combate."
 numero = 525
-banderas = PackedStringArray("contact", "failcopycat", "metronome", "mirror", "noassist", "protect")
+banderas = ["contact", "failcopycat", "metronome", "mirror", "noassist", "protect"]

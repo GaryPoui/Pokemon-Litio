@@ -33,7 +33,7 @@ script = ExtResource("1")
 id = "burmy"
 numero = 412
 nombre = "Burmy"
-tipos = PackedStringArray("bicho")
+tipos = ["bicho"]
 ps = 40
 ataque = 29
 defensa = 45
@@ -56,7 +56,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 20
 }])
-habilidades = PackedStringArray("shed_skin")
+habilidades = ["shed_skin"]
 habilidad_oculta = "overcoat"
 categoria = "Pokémon Larva"
 altura = 0.2

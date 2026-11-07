@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c3uf8rq56qgjk"]
+
+[ext_resource type="Texture2D" uid="uid://de8weqbc350c1" path="res://Assets/Overworld/Rutas7/casa_latas_b.png" id="1_pln0e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pln0e"]
+size = Vector2(64, 32)
+
+[node name="CasaLatasB" type="StaticBody2D" unique_id=305401597]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=634669404]
+position = Vector2(-32, -48)
+texture = ExtResource("1_pln0e")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=122827104]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_pln0e")

@@ -12,4 +12,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Mientras duerme, usa uno de sus movimientos elegido al azar."
 numero = 214
-banderas = PackedStringArray("failcopycat", "failencore", "failinstruct", "failmimic", "noassist", "nosleeptalk")
+banderas = ["failcopycat", "failencore", "failinstruct", "failmimic", "noassist", "nosleeptalk"]

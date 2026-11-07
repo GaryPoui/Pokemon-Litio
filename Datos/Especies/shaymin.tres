@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "shaymin"
 numero = 492
 nombre = "Shaymin"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 100
 ataque = 100
 defensa = 100
@@ -95,7 +95,7 @@ evs_otorgados = {
 "ps": 3
 }
 amistad_base = 100
-habilidades = PackedStringArray("natural_cure")
+habilidades = ["natural_cure"]
 categoria = "Pokémon Gratitud"
 altura = 0.2
 peso_kg = 2.1

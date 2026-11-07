@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "penacho_negro"
+nombre = "Penacho Negro"
+descripcion = "Los Pokémon salvajes con habilidad oculta aparecen el doble de seguido."
+tier = 4
+categoria = "captura"
+alcance = "equipo"
+efecto = "oculta"
+valor = 1.0
+unidad = "multiplicador"
+apilado = "no_apila"
+precio = 4500

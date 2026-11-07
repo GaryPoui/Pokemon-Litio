@@ -24,6 +24,10 @@ const PASOS_RARA:= 40
 
 var rng:= RandomNumberGenerator.new()
 var hierba_rara: Node2D
+var forzado_extra: Dictionary= {}
+var opuestos :Dictionary= {}
+
+const DIR_FORZADO:= {"arriba": Vector2i.UP, "abajo": Vector2i.DOWN, "izquierda": Vector2i.LEFT, "derecha": Vector2i.RIGHT}
 var celda_rara :=Vector2i.ZERO
 var pasos_rara:= 0
 
@@ -47,6 +51,8 @@ func _ready() -> void:
 			jugador.colocar(marca.global_position, GestorEscenas.direccion_llegada)
 		GestorEscenas.llegada= ""
 	jugador.paso_terminado.connect(_al_terminar_paso)
+	if Seguidor.activo():
+		Seguidor.poner(self)
 	GestorEscenas.registrar_zona(zona_id, zona_nombre, zona_subtitulo, tipo_zona, anunciar_al_entrar)
 	if tipo_zona== 0 and por_cambio and not de_partida and Estado.dar_fichas_ciudad(zona_id)> 0:
 		_avisar_fichas.call_deferred()
@@ -99,6 +105,8 @@ func _al_terminar_paso(celda: Vector2i) -> void:
 				Sonido.efecto(w.sonido)
 			GestorEscenas.usar_warp(w)
 			return
+	if forzado_en(celda)!= Vector2i.ZERO:
+		return
 	if hierba_rara!= null and celda== celda_rara:
 		_quitar_rara()
 		var raro:= encuentros_raros.elegir(rng) if encuentros_raros!= null else null
@@ -119,6 +127,51 @@ func _al_terminar_paso(celda: Vector2i) -> void:
 			return
 	_avanzar_rara(celda)
 
+func forzado_en(celda: Vector2i) -> Vector2i:
+	if forzado_extra.has(celda):
+		return forzado_extra[celda]
+	for capa in [get_node_or_null("Decoracion"), get_node_or_null("Suelo")]:
+		if capa is TileMapLayer and capa.tile_set!= null and capa.tile_set.get_custom_data_layer_by_name("forzado")>= 0:
+			var td: TileData= capa.get_cell_tile_data(celda)
+			if td!= null and DIR_FORZADO.has(str(td.get_custom_data("forzado"))):
+				return DIR_FORZADO[str(td.get_custom_data("forzado"))]
+	return Vector2i.ZERO
+
+func cambiar_celdas(lista: Array) -> void:
+	for c in lista:
+		suelo.set_cell(Vector2i(int(c[0]), int(c[1])), int(c[2]), Vector2i(int(c[3]), int(c[4])))
+
+func _opuesto(fuente: int, coords: Vector2i) -> Vector2i:
+	var clave:= Vector3i(fuente, coords.x, coords.y)
+	if opuestos.has(clave):
+		return opuestos[clave]
+	var src:= suelo.tile_set.get_source(fuente) as TileSetAtlasSource
+	var propia: TileData= src.get_tile_data(coords, 0)
+	var buscado: Vector2i= -DIR_FORZADO.get(str(propia.get_custom_data("forzado")), Vector2i.ZERO)
+	var grupo:= str(propia.get_custom_data("grupo_forzado"))
+	var hallado:= coords
+	for k in src.get_tiles_count():
+		var c:= src.get_tile_id(k)
+		var td: TileData= src.get_tile_data(c, 0)
+		if str(td.get_custom_data("grupo_forzado"))== grupo and DIR_FORZADO.get(str(td.get_custom_data("forzado")), Vector2i.ZERO)== buscado:
+			hallado= c
+			break
+	opuestos[clave]= hallado
+	return hallado
+
+func invertir_grupo(grupo: String) -> void:
+	if suelo.tile_set.get_custom_data_layer_by_name("grupo_forzado")< 0:
+		return
+	var lista:= []
+	for c in suelo.get_used_cells():
+		var td: TileData= suelo.get_cell_tile_data(c)
+		if td== null or str(td.get_custom_data("grupo_forzado"))!= grupo:
+			continue
+		var fuente:= suelo.get_cell_source_id(c)
+		var nuevo:= _opuesto(fuente, suelo.get_cell_atlas_coords(c))
+		lista.append([c.x, c.y, fuente, nuevo.x, nuevo.y])
+	cambiar_celdas(lista)
+
 func salto_en(celda: Vector2i) -> String:
 	for capa in [get_node_or_null("Obstaculos"), get_node_or_null("Suelo")]:
 		if capa is TileMapLayer and capa.tile_set!= null and capa.tile_set.get_custom_data_layer_by_name("salto")>= 0:
@@ -136,12 +189,16 @@ func salir_empujando(celda: Vector2i, dir: Vector2) -> bool:
 			return true
 	return false
 
+func prob_oculta(raro: bool) -> float:
+	var base:= Combate.PROB_OCULTA_RARA if raro else Combate.PROB_OCULTA
+	return base *(1.0+ EfectosTrinket.total("oculta", null, Equipo.miembros))
+
 func _encuentro(e: EncuentroEntrada, raro:= false) -> void:
 	var nivel:= rng.randi_range(e.nivel_min, e.nivel_max)
 	var guia:= Equipo.primero_util()
 	if Estado.pasos_repelente> 0 and guia!= null and nivel< guia.nivel:
 		return
-	var oculta:= Combate.PROB_OCULTA_RARA if raro else Combate.PROB_OCULTA
+	var oculta:= prob_oculta(raro)
 	if safari:
 		Combate.iniciar_safari(e.especie, nivel, zona_id, oculta)
 	else:

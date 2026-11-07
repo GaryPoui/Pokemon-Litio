@@ -16,4 +16,4 @@ descripcion = "Un infierno de llamas daña a los Pokémon adyacentes en combate.
 estado = "burn"
 prob_estado = 30
 numero = 545
-banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")
+banderas = ["bullet", "metronome", "mirror", "protect"]

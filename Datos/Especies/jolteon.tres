@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "jolteon"
 numero = 135
 nombre = "Jolteon"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 65
 ataque = 65
 defensa = 60
@@ -103,7 +103,7 @@ ratio_genero = 1
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("volt_absorb")
+habilidades = ["volt_absorb"]
 habilidad_oculta = "quick_feet"
 categoria = "Pokémon Relámpago"
 altura = 0.8

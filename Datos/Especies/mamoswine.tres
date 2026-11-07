@@ -111,7 +111,7 @@ script = ExtResource("1")
 id = "mamoswine"
 numero = 473
 nombre = "Mamoswine"
-tipos = PackedStringArray("hielo", "tierra")
+tipos = ["hielo", "tierra"]
 ps = 110
 ataque = 130
 defensa = 80
@@ -124,7 +124,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("oblivious", "snow_cloak")
+habilidades = ["oblivious", "snow_cloak"]
 habilidad_oculta = "thick_fat"
 categoria = "Pokémon Doscolmillos"
 altura = 2.5

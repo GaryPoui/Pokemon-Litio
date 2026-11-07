@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "sunflora"
 numero = 192
 nombre = "Sunflora"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 75
 ataque = 75
 defensa = 55
@@ -104,7 +104,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "at_esp": 2
 }
-habilidades = PackedStringArray("chlorophyll", "solar_power")
+habilidades = ["chlorophyll", "solar_power"]
 habilidad_oculta = "early_bird"
 categoria = "Pokémon Sol"
 altura = 0.8

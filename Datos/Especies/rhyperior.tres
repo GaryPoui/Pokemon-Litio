@@ -111,7 +111,7 @@ script = ExtResource("1")
 id = "rhyperior"
 numero = 464
 nombre = "Rhyperior"
-tipos = PackedStringArray("tierra", "roca")
+tipos = ["tierra", "roca"]
 ps = 115
 ataque = 140
 defensa = 130
@@ -124,7 +124,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("lightning_rod", "solid_rock")
+habilidades = ["lightning_rod", "solid_rock"]
 habilidad_oculta = "reckless"
 categoria = "Pokémon Taladro"
 altura = 2.4

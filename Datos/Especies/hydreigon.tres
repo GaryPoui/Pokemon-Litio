@@ -112,7 +112,7 @@ script = ExtResource("1")
 id = "hydreigon"
 numero = 635
 nombre = "Hydreigon"
-tipos = PackedStringArray("siniestro", "dragon")
+tipos = ["siniestro", "dragon"]
 ps = 92
 ataque = 105
 defensa = 90
@@ -125,7 +125,7 @@ evs_otorgados = {
 "at_esp": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Voraz"
 altura = 1.8
 peso_kg = 160.0

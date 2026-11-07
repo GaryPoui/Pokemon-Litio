@@ -87,7 +87,7 @@ script = ExtResource("1")
 id = "wormadam"
 numero = 413
 nombre = "Wormadam"
-tipos = PackedStringArray("bicho", "planta")
+tipos = ["bicho", "planta"]
 ps = 60
 ataque = 59
 defensa = 85
@@ -99,7 +99,7 @@ ratio_genero = 8
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("anticipation")
+habilidades = ["anticipation"]
 habilidad_oculta = "overcoat"
 categoria = "Pokémon Larva"
 altura = 0.5

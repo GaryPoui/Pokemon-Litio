@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "bandoneon_bolsillo"
+nombre = "Bandoneón de Bolsillo"
+descripcion = "En la reserva, los Pokémon salvajes huyen un 25% menos."
+tier = 3
+categoria = "captura"
+alcance = "equipo"
+efecto = "huida"
+valor = 0.25
+unidad = "porcentaje"
+apilado = "no_apila"
+precio = 3500

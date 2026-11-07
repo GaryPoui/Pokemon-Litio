@@ -12,4 +12,4 @@ precision = 90
 descripcion = "Golpea con fuerza con una pinza enorme. Suele asestar un golpe crítico."
 critico = 1
 numero = 152
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

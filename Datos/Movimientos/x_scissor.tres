@@ -11,4 +11,4 @@ poder = 80
 pp = 15
 descripcion = "Cruza las guadañas o las garras para atacar al objetivo como si fueran unas tijeras."
 numero = 404
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect", "slicing")
+banderas = ["contact", "metronome", "mirror", "protect", "slicing"]

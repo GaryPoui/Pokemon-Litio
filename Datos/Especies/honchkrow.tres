@@ -66,7 +66,7 @@ script = ExtResource("1")
 id = "honchkrow"
 numero = 430
 nombre = "Honchkrow"
-tipos = PackedStringArray("siniestro", "volador")
+tipos = ["siniestro", "volador"]
 ps = 100
 ataque = 125
 defensa = 52
@@ -80,7 +80,7 @@ evs_otorgados = {
 "ataque": 2
 }
 amistad_base = 35
-habilidades = PackedStringArray("insomnia", "super_luck")
+habilidades = ["insomnia", "super_luck"]
 habilidad_oculta = "moxie"
 categoria = "Pokémon Gran Jefe"
 altura = 0.9

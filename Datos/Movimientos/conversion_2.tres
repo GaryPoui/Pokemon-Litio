@@ -12,4 +12,4 @@ pp = 30
 meta = "unique"
 descripcion = "El usuario cambia de tipo para hacerse resistente al último tipo de movimiento usado por el objetivo."
 numero = 176
-banderas = PackedStringArray("bypasssub", "metronome")
+banderas = ["bypasssub", "metronome"]

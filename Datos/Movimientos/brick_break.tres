@@ -11,4 +11,4 @@ poder = 75
 pp = 15
 descripcion = "Potente ataque que también es capaz de destruir barreras como Pantalla de Luz y Reflejo."
 numero = 280
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

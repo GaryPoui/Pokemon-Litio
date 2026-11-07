@@ -120,7 +120,7 @@ script = ExtResource("1")
 id = "gliscor"
 numero = 472
 nombre = "Gliscor"
-tipos = PackedStringArray("tierra", "volador")
+tipos = ["tierra", "volador"]
 ps = 75
 ataque = 95
 defensa = 125
@@ -133,7 +133,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("hyper_cutter", "sand_veil")
+habilidades = ["hyper_cutter", "sand_veil"]
 habilidad_oculta = "poison_heal"
 categoria = "Pokémon Colmicorpio"
 altura = 2.0

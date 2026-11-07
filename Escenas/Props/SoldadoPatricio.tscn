@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://co6tjhd1o84qf"]
+
+[ext_resource type="Texture2D" uid="uid://icn6nk4paqdj" path="res://Assets/Overworld/Rutas7/soldado_patricio.png" id="1_tbcnu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbcnu"]
+size = Vector2(32, 16)
+
+[node name="SoldadoPatricio" type="StaticBody2D" unique_id=464493765]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=720188886]
+position = Vector2(-16, -53)
+texture = ExtResource("1_tbcnu")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1180135235]
+shape = SubResource("RectangleShape2D_tbcnu")

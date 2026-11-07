@@ -99,7 +99,7 @@ script = ExtResource("1")
 id = "breloom"
 numero = 286
 nombre = "Breloom"
-tipos = PackedStringArray("planta", "lucha")
+tipos = ["planta", "lucha"]
 ps = 60
 ataque = 130
 defensa = 80
@@ -112,7 +112,7 @@ crecimiento = "fast-then-very-slow"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("effect_spore", "poison_heal")
+habilidades = ["effect_spore", "poison_heal"]
 habilidad_oculta = "technician"
 categoria = "Pokémon Hongo"
 altura = 1.2

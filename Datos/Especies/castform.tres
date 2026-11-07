@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "castform"
 numero = 351
 nombre = "Castform"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 70
 ataque = 70
 defensa = 70
@@ -92,7 +92,7 @@ exp_base = 147
 evs_otorgados = {
 "ps": 1
 }
-habilidades = PackedStringArray("forecast")
+habilidades = ["forecast"]
 categoria = "Pokémon Clima"
 altura = 0.3
 peso_kg = 0.8

@@ -110,7 +110,7 @@ script = ExtResource("19_7swrp")
 id = "munna"
 numero = 517
 nombre = "Munna"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 76
 ataque = 25
 defensa = 45
@@ -128,7 +128,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "moon_stone"
 }])
-habilidades = PackedStringArray("forewarn", "synchronize")
+habilidades = ["forewarn", "synchronize"]
 habilidad_oculta = "telepathy"
 categoria = "Pokémon Comesueños"
 altura = 0.6

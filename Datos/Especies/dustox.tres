@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "dustox"
 numero = 269
 nombre = "Dustox"
-tipos = PackedStringArray("bicho", "veneno")
+tipos = ["bicho", "veneno"]
 ps = 60
 defensa = 70
 def_esp = 90
@@ -89,7 +89,7 @@ exp_base = 173
 evs_otorgados = {
 "def_esp": 3
 }
-habilidades = PackedStringArray("shield_dust")
+habilidades = ["shield_dust"]
 habilidad_oculta = "compound_eyes"
 categoria = "Pokémon Polilla Ven."
 altura = 1.2

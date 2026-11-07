@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "swinub"
 numero = 220
 nombre = "Swinub"
-tipos = PackedStringArray("hielo", "tierra")
+tipos = ["hielo", "tierra"]
 defensa = 40
 at_esp = 30
 def_esp = 30
@@ -108,7 +108,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 33
 }])
-habilidades = PackedStringArray("oblivious", "snow_cloak")
+habilidades = ["oblivious", "snow_cloak"]
 habilidad_oculta = "thick_fat"
 categoria = "Pokémon Cerdo"
 altura = 0.4

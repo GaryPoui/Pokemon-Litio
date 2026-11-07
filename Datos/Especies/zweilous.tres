@@ -112,7 +112,7 @@ script = ExtResource("1")
 id = "zweilous"
 numero = 634
 nombre = "Zweilous"
-tipos = PackedStringArray("siniestro", "dragon")
+tipos = ["siniestro", "dragon"]
 ps = 72
 ataque = 85
 defensa = 70
@@ -132,7 +132,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 64
 }])
 amistad_base = 35
-habilidades = PackedStringArray("hustle")
+habilidades = ["hustle"]
 categoria = "Pokémon Violento"
 altura = 1.4
 peso_kg = 50.0

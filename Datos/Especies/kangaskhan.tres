@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "kangaskhan"
 numero = 115
 nombre = "Kangaskhan"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 105
 ataque = 95
 defensa = 80
@@ -110,7 +110,7 @@ ratio_genero = 8
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("early_bird", "scrappy")
+habilidades = ["early_bird", "scrappy"]
 habilidad_oculta = "inner_focus"
 categoria = "Pokémon Maternal"
 altura = 2.2

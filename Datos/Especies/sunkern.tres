@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "sunkern"
 numero = 191
 nombre = "Sunkern"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 30
 ataque = 30
 defensa = 30
@@ -104,7 +104,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "sun_stone"
 }])
-habilidades = PackedStringArray("chlorophyll", "solar_power")
+habilidades = ["chlorophyll", "solar_power"]
 habilidad_oculta = "early_bird"
 categoria = "Pokémon Semilla"
 altura = 0.3

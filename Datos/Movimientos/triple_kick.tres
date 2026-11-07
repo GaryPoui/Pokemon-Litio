@@ -11,6 +11,6 @@ poder = 10
 precision = 90
 descripcion = "Patea hasta tres veces seguidas y cada vez más fuerte."
 numero = 167
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]
 golpes_min = 3
 golpes_max = 3

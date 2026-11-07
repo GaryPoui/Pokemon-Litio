@@ -16,4 +16,4 @@ descripcion = "Ataca al objetivo en el segundo turno rodeándolo de un aire gél
 estado = "burn"
 prob_estado = 30
 numero = 554
-banderas = PackedStringArray("charge", "failinstruct", "mirror", "nosleeptalk", "protect")
+banderas = ["charge", "failinstruct", "mirror", "nosleeptalk", "protect"]

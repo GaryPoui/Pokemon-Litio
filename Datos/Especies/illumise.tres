@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "illumise"
 numero = 314
 nombre = "Illumise"
-tipos = PackedStringArray("bicho")
+tipos = ["bicho"]
 ps = 65
 ataque = 47
 defensa = 55
@@ -95,7 +95,7 @@ crecimiento = "fast-then-very-slow"
 evs_otorgados = {
 "velocidad": 1
 }
-habilidades = PackedStringArray("oblivious", "tinted_lens")
+habilidades = ["oblivious", "tinted_lens"]
 habilidad_oculta = "prankster"
 categoria = "Pokémon Luciérnaga"
 altura = 0.6

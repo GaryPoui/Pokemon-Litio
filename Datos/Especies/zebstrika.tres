@@ -99,7 +99,7 @@ script = ExtResource("15_7r1f2")
 id = "zebstrika"
 numero = 523
 nombre = "Zebstrika"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 75
 ataque = 100
 defensa = 63
@@ -111,7 +111,7 @@ ratio_captura = 75
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("lightning_rod", "motor_drive")
+habilidades = ["lightning_rod", "motor_drive"]
 habilidad_oculta = "sap_sipper"
 categoria = "Pokémon Rayo"
 altura = 1.6

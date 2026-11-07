@@ -129,7 +129,7 @@ script = ExtResource("1")
 id = "dewgong"
 numero = 87
 nombre = "Dewgong"
-tipos = PackedStringArray("agua", "hielo")
+tipos = ["agua", "hielo"]
 ps = 90
 ataque = 70
 defensa = 80
@@ -141,7 +141,7 @@ ratio_captura = 75
 evs_otorgados = {
 "def_esp": 2
 }
-habilidades = PackedStringArray("thick_fat", "hydration")
+habilidades = ["thick_fat", "hydration"]
 habilidad_oculta = "ice_body"
 categoria = "Pokémon León Marino"
 altura = 1.7

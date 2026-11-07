@@ -111,7 +111,7 @@ script = ExtResource("1")
 id = "ariados"
 numero = 168
 nombre = "Ariados"
-tipos = PackedStringArray("bicho", "veneno")
+tipos = ["bicho", "veneno"]
 ps = 70
 ataque = 90
 defensa = 70
@@ -124,7 +124,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("swarm", "insomnia")
+habilidades = ["swarm", "insomnia"]
 habilidad_oculta = "sniper"
 categoria = "Pokémon Pata Larga"
 altura = 1.1

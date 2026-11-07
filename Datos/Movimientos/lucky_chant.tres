@@ -13,4 +13,4 @@ objetivo = "users-field"
 meta = "field-effect"
 descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
 numero = 381
-banderas = PackedStringArray("metronome", "snatch")
+banderas = ["metronome", "snatch"]

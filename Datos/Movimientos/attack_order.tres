@@ -12,4 +12,4 @@ pp = 15
 descripcion = "El usuario llama a sus súbditos para que ataquen al objetivo. Suele ser crítico."
 critico = 1
 numero = 454
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

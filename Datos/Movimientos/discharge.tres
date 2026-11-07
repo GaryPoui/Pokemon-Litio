@@ -16,4 +16,4 @@ descripcion = "Una deslumbradora onda eléctrica afecta a los Pokémon que hay c
 estado = "paralysis"
 prob_estado = 30
 numero = 435
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

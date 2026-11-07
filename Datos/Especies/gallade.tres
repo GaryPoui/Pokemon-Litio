@@ -121,7 +121,7 @@ script = ExtResource("1")
 id = "gallade"
 numero = 475
 nombre = "Gallade"
-tipos = PackedStringArray("psiquico", "lucha")
+tipos = ["psiquico", "lucha"]
 ps = 68
 ataque = 125
 defensa = 65
@@ -135,7 +135,7 @@ evs_otorgados = {
 "ataque": 3
 }
 amistad_base = 35
-habilidades = PackedStringArray("steadfast")
+habilidades = ["steadfast"]
 habilidad_oculta = "justified"
 categoria = "Pokémon Cuchilla"
 altura = 1.6

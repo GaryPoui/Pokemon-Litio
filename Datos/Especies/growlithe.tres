@@ -110,7 +110,7 @@ script = ExtResource("1")
 id = "growlithe"
 numero = 58
 nombre = "Growlithe"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 55
 ataque = 70
 defensa = 45
@@ -128,7 +128,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "fire_stone"
 }])
-habilidades = PackedStringArray("intimidate", "flash_fire")
+habilidades = ["intimidate", "flash_fire"]
 habilidad_oculta = "justified"
 categoria = "Pokémon Perrito"
 altura = 0.7

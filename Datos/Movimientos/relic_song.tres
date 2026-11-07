@@ -14,6 +14,6 @@ descripcion = "Ataca conmoviendo a los rivales de alrededor con un antiguo canto
 estado = "sleep"
 prob_estado = 10
 numero = 547
-banderas = PackedStringArray("bypasssub", "mirror", "protect", "sound")
+banderas = ["bypasssub", "mirror", "protect", "sound"]
 turnos_min = 2
 turnos_max = 4

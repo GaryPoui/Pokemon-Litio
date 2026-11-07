@@ -11,6 +11,6 @@ poder = 30
 pp = 30
 descripcion = "Una patada doble. Golpea dos veces."
 numero = 24
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]
 golpes_min = 2
 golpes_max = 2

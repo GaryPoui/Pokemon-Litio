@@ -15,6 +15,6 @@ descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidar
 estado = "trap"
 prob_estado = 100
 numero = 128
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]
 turnos_min = 5
 turnos_max = 6

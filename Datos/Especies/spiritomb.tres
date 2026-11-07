@@ -83,7 +83,7 @@ script = ExtResource("1")
 id = "spiritomb"
 numero = 442
 nombre = "Spiritomb"
-tipos = PackedStringArray("fantasma", "siniestro")
+tipos = ["fantasma", "siniestro"]
 ataque = 92
 defensa = 108
 at_esp = 92
@@ -95,7 +95,7 @@ evs_otorgados = {
 "def_esp": 1,
 "defensa": 1
 }
-habilidades = PackedStringArray("pressure")
+habilidades = ["pressure"]
 habilidad_oculta = "infiltrator"
 categoria = "Pokémon Prohibido"
 altura = 1.0

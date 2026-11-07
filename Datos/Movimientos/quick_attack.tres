@@ -11,4 +11,4 @@ pp = 30
 prioridad = 1
 descripcion = "Ataca al objetivo a gran velocidad. Este movimiento tiene prioridad alta."
 numero = 98
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

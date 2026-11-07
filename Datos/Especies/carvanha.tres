@@ -86,7 +86,7 @@ script = ExtResource("1")
 id = "carvanha"
 numero = 318
 nombre = "Carvanha"
-tipos = PackedStringArray("agua", "siniestro")
+tipos = ["agua", "siniestro"]
 ps = 45
 ataque = 90
 defensa = 20
@@ -107,7 +107,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 30
 }])
 amistad_base = 35
-habilidades = PackedStringArray("rough_skin")
+habilidades = ["rough_skin"]
 habilidad_oculta = "speed_boost"
 categoria = "Pokémon Feroz"
 altura = 0.8

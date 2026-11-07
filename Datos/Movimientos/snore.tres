@@ -12,4 +12,4 @@ pp = 15
 descripcion = "Fuerte ronquido que solo puede usarse dormido. Puede amedrentar al objetivo."
 prob_retroceso = 30
 numero = 173
-banderas = PackedStringArray("bypasssub", "mirror", "protect", "sound")
+banderas = ["bypasssub", "mirror", "protect", "sound"]

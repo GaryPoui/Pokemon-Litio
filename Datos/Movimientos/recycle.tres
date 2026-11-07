@@ -12,4 +12,4 @@ objetivo = "user"
 meta = "unique"
 descripcion = "Recicla y así recupera un objeto equipado de un solo uso que ya haya sido empleado durante el combate."
 numero = 278
-banderas = PackedStringArray("metronome", "snatch")
+banderas = ["metronome", "snatch"]

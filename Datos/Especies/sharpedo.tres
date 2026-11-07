@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "sharpedo"
 numero = 319
 nombre = "Sharpedo"
-tipos = PackedStringArray("agua", "siniestro")
+tipos = ["agua", "siniestro"]
 ps = 70
 ataque = 120
 defensa = 40
@@ -131,7 +131,7 @@ evs_otorgados = {
 "ataque": 2
 }
 amistad_base = 35
-habilidades = PackedStringArray("rough_skin")
+habilidades = ["rough_skin"]
 habilidad_oculta = "speed_boost"
 categoria = "Pokémon Voraz"
 altura = 1.8

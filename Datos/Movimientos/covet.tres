@@ -10,4 +10,4 @@ poder = 60
 pp = 40
 descripcion = "Se acerca con ternura al objetivo, pero le ataca y le roba el objeto que lleve."
 numero = 343
-banderas = PackedStringArray("contact", "failcopycat", "failmefirst", "mirror", "noassist", "protect")
+banderas = ["contact", "failcopycat", "failmefirst", "mirror", "noassist", "protect"]

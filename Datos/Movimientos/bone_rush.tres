@@ -11,6 +11,6 @@ poder = 25
 precision = 90
 descripcion = "Hueso en ristre, aporrea al objetivo de dos a cinco veces."
 numero = 198
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]
 golpes_min = 2
 golpes_max = 5

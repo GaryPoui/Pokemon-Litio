@@ -90,7 +90,7 @@ script = ExtResource("1")
 id = "arceus"
 numero = 493
 nombre = "Arceus"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 120
 ataque = 120
 defensa = 120
@@ -105,7 +105,7 @@ evs_otorgados = {
 "ps": 3
 }
 amistad_base = 0
-habilidades = PackedStringArray("multitype")
+habilidades = ["multitype"]
 categoria = "Pokémon Alfa"
 altura = 3.2
 peso_kg = 320.0

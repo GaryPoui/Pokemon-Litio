@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "duosion"
 numero = 578
 nombre = "Duosion"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 65
 ataque = 40
 at_esp = 125
@@ -136,7 +136,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 41
 }])
-habilidades = PackedStringArray("overcoat", "magic_guard")
+habilidades = ["overcoat", "magic_guard"]
 habilidad_oculta = "regenerator"
 categoria = "Pokémon Mitosis"
 altura = 0.6

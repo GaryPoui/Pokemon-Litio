@@ -11,4 +11,4 @@ pp = 15
 descripcion = "Potente cabezazo que puede amedrentar al objetivo."
 prob_retroceso = 30
 numero = 29
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

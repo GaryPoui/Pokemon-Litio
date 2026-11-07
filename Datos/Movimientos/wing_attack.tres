@@ -11,4 +11,4 @@ poder = 60
 pp = 35
 descripcion = "Golpea al objetivo con unas grandes alas."
 numero = 17
-banderas = PackedStringArray("contact", "distance", "metronome", "mirror", "protect")
+banderas = ["contact", "distance", "metronome", "mirror", "protect"]

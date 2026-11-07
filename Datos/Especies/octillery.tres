@@ -109,7 +109,7 @@ script = ExtResource("1")
 id = "octillery"
 numero = 224
 nombre = "Octillery"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 75
 ataque = 105
 defensa = 75
@@ -122,7 +122,7 @@ evs_otorgados = {
 "at_esp": 1,
 "ataque": 1
 }
-habilidades = PackedStringArray("suction_cups", "sniper")
+habilidades = ["suction_cups", "sniper"]
 habilidad_oculta = "moody"
 categoria = "Pokémon Reactor"
 altura = 0.9

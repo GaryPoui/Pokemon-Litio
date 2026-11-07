@@ -81,7 +81,7 @@ script = ExtResource("14_g4vul")
 id = "zubat"
 numero = 41
 nombre = "Zubat"
-tipos = PackedStringArray("veneno", "volador")
+tipos = ["veneno", "volador"]
 ps = 40
 ataque = 45
 defensa = 35
@@ -100,7 +100,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 22
 }])
-habilidades = PackedStringArray("inner_focus")
+habilidades = ["inner_focus"]
 habilidad_oculta = "infiltrator"
 categoria = "Pokémon Murciélago"
 altura = 0.8

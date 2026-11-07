@@ -109,7 +109,7 @@ script = ExtResource("1")
 id = "landorus"
 numero = 645
 nombre = "Landorus"
-tipos = PackedStringArray("tierra", "volador")
+tipos = ["tierra", "volador"]
 ps = 89
 ataque = 125
 defensa = 90
@@ -124,7 +124,7 @@ evs_otorgados = {
 "at_esp": 3
 }
 amistad_base = 90
-habilidades = PackedStringArray("sand_force")
+habilidades = ["sand_force"]
 habilidad_oculta = "sheer_force"
 categoria = "Pokémon Fertilidad"
 altura = 1.5

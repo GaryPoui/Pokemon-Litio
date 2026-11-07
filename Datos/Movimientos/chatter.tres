@@ -15,6 +15,6 @@ descripcion = "Ataca con una onda de sonido muy ruidosa compuesta por palabras y
 estado = "confusion"
 prob_estado = 100
 numero = 448
-banderas = PackedStringArray("bypasssub", "distance", "failcopycat", "failinstruct", "failmimic", "mirror", "noassist", "nosleeptalk", "protect", "sound")
+banderas = ["bypasssub", "distance", "failcopycat", "failinstruct", "failmimic", "mirror", "noassist", "nosleeptalk", "protect", "sound"]
 turnos_min = 2
 turnos_max = 5

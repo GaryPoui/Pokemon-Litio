@@ -123,7 +123,7 @@ script = ExtResource("1")
 id = "darmanitan"
 numero = 555
 nombre = "Darmanitan"
-tipos = PackedStringArray("fuego")
+tipos = ["fuego"]
 ps = 105
 ataque = 140
 defensa = 55
@@ -136,7 +136,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("sheer_force")
+habilidades = ["sheer_force"]
 habilidad_oculta = "zen_mode"
 categoria = "Pokémon Candente"
 altura = 1.3

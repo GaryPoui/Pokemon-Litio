@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "elgyem"
 numero = 605
 nombre = "Elgyem"
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 55
 ataque = 55
 defensa = 55
@@ -136,7 +136,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 42
 }])
-habilidades = PackedStringArray("telepathy", "synchronize")
+habilidades = ["telepathy", "synchronize"]
 habilidad_oculta = "analytic"
 categoria = "Pokémon Cerebro"
 altura = 0.5

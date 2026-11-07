@@ -11,4 +11,4 @@ poder = 85
 pp = 5
 descripcion = "Ataca al objetivo con un gran láser. El tipo del ataque lo determina el cartucho que porta el usuario."
 numero = 546
-banderas = PackedStringArray("mirror", "protect")
+banderas = ["mirror", "protect"]

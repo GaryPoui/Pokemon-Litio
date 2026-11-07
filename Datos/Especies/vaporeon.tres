@@ -91,7 +91,7 @@ script = ExtResource("1")
 id = "vaporeon"
 numero = 134
 nombre = "Vaporeon"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 130
 ataque = 65
 defensa = 60
@@ -103,7 +103,7 @@ ratio_genero = 1
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("water_absorb")
+habilidades = ["water_absorb"]
 habilidad_oculta = "hydration"
 categoria = "Pokémon Burbuja"
 altura = 1.0

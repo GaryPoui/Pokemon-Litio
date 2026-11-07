@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://dmk0nxneeevy8"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_pxutu"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_pxutu"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="2_em8ap"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="3_31l2a"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/defense_curl.tres" id="4_ea22e"]
@@ -13,9 +13,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/super_fang.tres" id="11_ef1c0"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/superpower.tres" id="12_r3j8e"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/curse.tres" id="13_dy708"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="14_f6oc4"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/bidoof_espalda.png" id="15_fk5bc"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/bidoof_frente.png" id="16_mhymr"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_f6oc4"]
+[ext_resource type="Texture2D" uid="uid://ddkla8c4wp84p" path="res://Assets/Pokemones/batalla/bidoof_espalda.png" id="15_fk5bc"]
+[ext_resource type="Texture2D" uid="uid://chw2wlxbybgr7" path="res://Assets/Pokemones/batalla/bidoof_frente.png" id="16_mhymr"]
 
 [sub_resource type="Resource" id="Resource_pxutu"]
 script = ExtResource("1_pxutu")
@@ -81,7 +81,6 @@ script = ExtResource("14_f6oc4")
 id = "bidoof"
 numero = 399
 nombre = "Bidoof"
-tipos = PackedStringArray("normal")
 ps = 59
 ataque = 45
 defensa = 40
@@ -99,7 +98,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 15
 }])
-habilidades = PackedStringArray("simple", "unaware")
+habilidades = ["simple", "unaware"]
 habilidad_oculta = "moody"
 categoria = "Pokémon Gran Ratón"
 altura = 0.5

@@ -117,7 +117,7 @@ script = ExtResource("1")
 id = "swalot"
 numero = 317
 nombre = "Swalot"
-tipos = PackedStringArray("veneno")
+tipos = ["veneno"]
 ps = 100
 ataque = 73
 defensa = 83
@@ -130,7 +130,7 @@ crecimiento = "fast-then-very-slow"
 evs_otorgados = {
 "ps": 2
 }
-habilidades = PackedStringArray("liquid_ooze", "sticky_hold")
+habilidades = ["liquid_ooze", "sticky_hold"]
 habilidad_oculta = "gluttony"
 categoria = "Pokémon Bolsa Veneno"
 altura = 1.7

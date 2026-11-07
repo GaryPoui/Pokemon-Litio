@@ -10,6 +10,6 @@ poder = 25
 precision = 85
 descripcion = "Golpea con la cola de dos a cinco veces seguidas."
 numero = 541
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]
 golpes_min = 2
 golpes_max = 5

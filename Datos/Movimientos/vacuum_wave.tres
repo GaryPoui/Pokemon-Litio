@@ -13,4 +13,4 @@ pp = 30
 prioridad = 1
 descripcion = "Gira los puños y libera una onda de vacío contra el objetivo. Este movimiento tiene prioridad alta."
 numero = 410
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

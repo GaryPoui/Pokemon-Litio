@@ -99,7 +99,7 @@ script = ExtResource("17_26lxq")
 id = "panpour"
 numero = 515
 nombre = "Panpour"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ataque = 53
 defensa = 48
 at_esp = 53
@@ -116,7 +116,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "water_stone"
 }])
-habilidades = PackedStringArray("gluttony")
+habilidades = ["gluttony"]
 habilidad_oculta = "torrent"
 categoria = "Pokémon Salpicadura"
 altura = 0.6

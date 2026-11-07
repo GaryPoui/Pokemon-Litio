@@ -94,7 +94,7 @@ script = ExtResource("1")
 id = "metang"
 numero = 375
 nombre = "Metang"
-tipos = PackedStringArray("acero", "psiquico")
+tipos = ["acero", "psiquico"]
 ps = 60
 ataque = 75
 defensa = 100
@@ -115,7 +115,7 @@ evoluciones = Array[Dictionary]([{
 "nivel": 45
 }])
 amistad_base = 35
-habilidades = PackedStringArray("clear_body")
+habilidades = ["clear_body"]
 habilidad_oculta = "light_metal"
 categoria = "Pokémon Garra Hierro"
 altura = 1.2

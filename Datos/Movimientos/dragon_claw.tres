@@ -11,4 +11,4 @@ poder = 80
 pp = 15
 descripcion = "Araña al objetivo con garras afiladas."
 numero = 337
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

@@ -12,4 +12,4 @@ pp = 30
 prioridad = 1
 descripcion = "Crea bolas de hielo y las lanza a gran velocidad. Este movimiento tiene prioridad alta."
 numero = 420
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

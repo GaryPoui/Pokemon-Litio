@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "parasect"
 numero = 47
 nombre = "Parasect"
-tipos = PackedStringArray("bicho", "planta")
+tipos = ["bicho", "planta"]
 ps = 60
 ataque = 95
 defensa = 80
@@ -111,7 +111,7 @@ evs_otorgados = {
 "ataque": 2,
 "defensa": 1
 }
-habilidades = PackedStringArray("effect_spore", "dry_skin")
+habilidades = ["effect_spore", "dry_skin"]
 habilidad_oculta = "damp"
 categoria = "Pokémon Hongo"
 altura = 1.0

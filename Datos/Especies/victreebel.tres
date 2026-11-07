@@ -63,7 +63,7 @@ script = ExtResource("1")
 id = "victreebel"
 numero = 71
 nombre = "Victreebel"
-tipos = PackedStringArray("planta", "veneno")
+tipos = ["planta", "veneno"]
 ps = 80
 ataque = 105
 defensa = 65
@@ -75,7 +75,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("chlorophyll")
+habilidades = ["chlorophyll"]
 habilidad_oculta = "gluttony"
 categoria = "Pokémon Matamoscas"
 altura = 1.7

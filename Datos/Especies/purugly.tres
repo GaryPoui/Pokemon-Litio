@@ -101,7 +101,7 @@ script = ExtResource("1")
 id = "purugly"
 numero = 432
 nombre = "Purugly"
-tipos = PackedStringArray("normal")
+tipos = ["normal"]
 ps = 71
 ataque = 82
 defensa = 64
@@ -115,7 +115,7 @@ crecimiento = "fast"
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("thick_fat", "own_tempo")
+habilidades = ["thick_fat", "own_tempo"]
 habilidad_oculta = "defiant"
 categoria = "Pokémon Tigre Gato"
 altura = 1.0

@@ -11,4 +11,4 @@ poder = 80
 pp = 15
 descripcion = "Lanza al objetivo una descarga de semillas explosivas desde arriba."
 numero = 402
-banderas = PackedStringArray("bullet", "metronome", "mirror", "protect")
+banderas = ["bullet", "metronome", "mirror", "protect"]

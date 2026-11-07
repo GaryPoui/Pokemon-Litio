@@ -110,7 +110,7 @@ script = ExtResource("1")
 id = "crustle"
 numero = 558
 nombre = "Crustle"
-tipos = PackedStringArray("bicho", "roca")
+tipos = ["bicho", "roca"]
 ps = 70
 ataque = 95
 defensa = 125
@@ -122,7 +122,7 @@ ratio_captura = 75
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("sturdy", "shell_armor")
+habilidades = ["sturdy", "shell_armor"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Casarroca"
 altura = 1.4

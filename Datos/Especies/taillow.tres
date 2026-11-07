@@ -68,7 +68,7 @@ script = ExtResource("1")
 id = "taillow"
 numero = 276
 nombre = "Taillow"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 40
 ataque = 55
 defensa = 30
@@ -88,7 +88,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 22
 }])
-habilidades = PackedStringArray("guts")
+habilidades = ["guts"]
 habilidad_oculta = "scrappy"
 categoria = "Pokémon Pequebuche"
 altura = 0.3

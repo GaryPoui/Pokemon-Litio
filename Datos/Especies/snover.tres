@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "snover"
 numero = 459
 nombre = "Snover"
-tipos = PackedStringArray("planta", "hielo")
+tipos = ["planta", "hielo"]
 ps = 60
 ataque = 62
 at_esp = 62
@@ -99,7 +99,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 40
 }])
-habilidades = PackedStringArray("snow_warning")
+habilidades = ["snow_warning"]
 habilidad_oculta = "soundproof"
 categoria = "Pokémon Árbol Nieve"
 altura = 1.0

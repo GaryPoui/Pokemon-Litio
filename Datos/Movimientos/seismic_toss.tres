@@ -10,4 +10,4 @@ tipo = "lucha"
 pp = 20
 descripcion = "Aprovecha la gravedad para derribar al objetivo. Le resta tantos PS como nivel tenga el usuario."
 numero = 69
-banderas = PackedStringArray("contact", "metronome", "mirror", "nonsky", "protect")
+banderas = ["contact", "metronome", "mirror", "nonsky", "protect"]

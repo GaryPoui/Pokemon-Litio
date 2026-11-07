@@ -4,7 +4,7 @@ const RUTA_VIEJA:= "user://partida.json"
 const VERSION :=2
 const RANURAS:= 3
 const CIUDADES :=["la_boca", "villa_31", "constitucion"]
-const RUTAS_SAFARI:= ["reserva_costanera", "puerto_madero", "playa_retiro", "barrancas_retiro", "nueve_de_julio", "linea_c"]
+const RUTAS_SAFARI:= ["reserva_costanera", "puerto_madero", "playa_retiro", "barrancas_retiro", "nueve_de_julio", "linea_c", "ruta_7"]
 
 var ranura:= 1
 

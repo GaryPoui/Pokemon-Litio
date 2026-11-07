@@ -14,6 +14,6 @@ meta = "ailment"
 descripcion = "Este movimiento no se puede usar, por lo que sería mejor olvidarlo, aunque eso implique que no se pueda recordar posteriormente."
 estado = "heal-block"
 numero = 377
-banderas = PackedStringArray("metronome", "mirror", "protect", "reflectable")
+banderas = ["metronome", "mirror", "protect", "reflectable"]
 turnos_min = 5
 turnos_max = 5

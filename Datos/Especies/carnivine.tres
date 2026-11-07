@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "carnivine"
 numero = 455
 nombre = "Carnivine"
-tipos = PackedStringArray("planta")
+tipos = ["planta"]
 ps = 74
 ataque = 100
 defensa = 72
@@ -105,7 +105,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("levitate")
+habilidades = ["levitate"]
 categoria = "Pokémon Caza Bichos"
 altura = 1.4
 peso_kg = 27.0

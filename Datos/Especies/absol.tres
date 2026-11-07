@@ -116,7 +116,7 @@ script = ExtResource("1")
 id = "absol"
 numero = 359
 nombre = "Absol"
-tipos = PackedStringArray("siniestro")
+tipos = ["siniestro"]
 ps = 65
 ataque = 130
 defensa = 60
@@ -130,7 +130,7 @@ evs_otorgados = {
 "ataque": 2
 }
 amistad_base = 35
-habilidades = PackedStringArray("pressure", "super_luck")
+habilidades = ["pressure", "super_luck"]
 habilidad_oculta = "justified"
 categoria = "Pokémon Catástrofe"
 altura = 1.2

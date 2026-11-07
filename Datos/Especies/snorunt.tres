@@ -80,7 +80,7 @@ script = ExtResource("1")
 id = "snorunt"
 numero = 361
 nombre = "Snorunt"
-tipos = PackedStringArray("hielo")
+tipos = ["hielo"]
 exp_base = 60
 ratio_captura = 190
 evs_otorgados = {
@@ -98,7 +98,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "piedra",
 "objeto": "dawn_stone"
 }])
-habilidades = PackedStringArray("inner_focus", "ice_body")
+habilidades = ["inner_focus", "ice_body"]
 habilidad_oculta = "moody"
 categoria = "Pokémon Gorro Nieve"
 altura = 0.7

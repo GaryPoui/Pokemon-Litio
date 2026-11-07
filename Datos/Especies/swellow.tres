@@ -81,7 +81,7 @@ script = ExtResource("1")
 id = "swellow"
 numero = 277
 nombre = "Swellow"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 60
 ataque = 85
 defensa = 60
@@ -91,7 +91,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("guts")
+habilidades = ["guts"]
 habilidad_oculta = "scrappy"
 categoria = "Pokémon Buche"
 altura = 0.7

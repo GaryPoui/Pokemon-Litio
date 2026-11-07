@@ -12,4 +12,4 @@ prioridad = -6
 meta = "force-switch"
 descripcion = "Se lleva al objetivo, que es cambiado por otro Pokémon. Si es un Pokémon salvaje, acaba el combate."
 numero = 18
-banderas = PackedStringArray("allyanim", "bypasssub", "failcopycat", "metronome", "mirror", "noassist", "reflectable", "wind")
+banderas = ["allyanim", "bypasssub", "failcopycat", "metronome", "mirror", "noassist", "reflectable", "wind"]

@@ -98,7 +98,7 @@ script = ExtResource("1")
 id = "kingdra"
 numero = 230
 nombre = "Kingdra"
-tipos = PackedStringArray("agua", "dragon")
+tipos = ["agua", "dragon"]
 ps = 75
 ataque = 95
 defensa = 95
@@ -111,7 +111,7 @@ evs_otorgados = {
 "ataque": 1,
 "def_esp": 1
 }
-habilidades = PackedStringArray("swift_swim", "sniper")
+habilidades = ["swift_swim", "sniper"]
 habilidad_oculta = "damp"
 categoria = "Pokémon Dragón"
 altura = 1.8

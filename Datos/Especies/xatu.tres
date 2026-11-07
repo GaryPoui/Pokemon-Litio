@@ -110,7 +110,7 @@ script = ExtResource("1")
 id = "xatu"
 numero = 178
 nombre = "Xatu"
-tipos = PackedStringArray("psiquico", "volador")
+tipos = ["psiquico", "volador"]
 ps = 65
 ataque = 75
 defensa = 70
@@ -123,7 +123,7 @@ evs_otorgados = {
 "at_esp": 1,
 "velocidad": 1
 }
-habilidades = PackedStringArray("synchronize", "early_bird")
+habilidades = ["synchronize", "early_bird"]
 habilidad_oculta = "magic_bounce"
 categoria = "Pokémon Místico"
 altura = 1.5

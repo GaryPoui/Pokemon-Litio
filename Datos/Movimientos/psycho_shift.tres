@@ -12,4 +12,4 @@ precision = 90
 meta = "unique"
 descripcion = "Usa su poder mental para transferir al objetivo sus problemas de estado."
 numero = 375
-banderas = PackedStringArray("metronome", "mirror", "protect")
+banderas = ["metronome", "mirror", "protect"]

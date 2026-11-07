@@ -92,7 +92,7 @@ script = ExtResource("1")
 id = "pinsir"
 numero = 127
 nombre = "Pinsir"
-tipos = PackedStringArray("bicho")
+tipos = ["bicho"]
 ps = 65
 ataque = 125
 defensa = 100
@@ -104,7 +104,7 @@ crecimiento = "slow"
 evs_otorgados = {
 "ataque": 2
 }
-habilidades = PackedStringArray("hyper_cutter", "mold_breaker")
+habilidades = ["hyper_cutter", "mold_breaker"]
 habilidad_oculta = "moxie"
 categoria = "Pokémon Escarabajo"
 altura = 1.5

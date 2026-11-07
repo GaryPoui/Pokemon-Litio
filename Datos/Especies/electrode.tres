@@ -111,7 +111,7 @@ script = ExtResource("1")
 id = "electrode"
 numero = 101
 nombre = "Electrode"
-tipos = PackedStringArray("electrico")
+tipos = ["electrico"]
 ps = 60
 defensa = 70
 at_esp = 80
@@ -123,7 +123,7 @@ ratio_genero = -1
 evs_otorgados = {
 "velocidad": 2
 }
-habilidades = PackedStringArray("soundproof", "static")
+habilidades = ["soundproof", "static"]
 habilidad_oculta = "aftermath"
 categoria = "Pokémon Bola"
 altura = 1.2

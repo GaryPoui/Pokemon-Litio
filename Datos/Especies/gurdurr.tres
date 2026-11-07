@@ -112,7 +112,7 @@ script = ExtResource("18_e2pk2")
 id = "gurdurr"
 numero = 533
 nombre = "Gurdurr"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 85
 ataque = 105
 defensa = 85
@@ -129,7 +129,7 @@ evoluciones = Array[Dictionary]([{
 "especie": "conkeldurr",
 "metodo": "intercambio"
 }])
-habilidades = PackedStringArray("guts", "sheer_force")
+habilidades = ["guts", "sheer_force"]
 habilidad_oculta = "iron_fist"
 categoria = "Pokémon Musculoso"
 altura = 1.2

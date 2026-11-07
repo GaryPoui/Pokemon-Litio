@@ -102,7 +102,7 @@ script = ExtResource("1")
 id = "omastar"
 numero = 139
 nombre = "Omastar"
-tipos = PackedStringArray("roca", "agua")
+tipos = ["roca", "agua"]
 ps = 70
 ataque = 60
 defensa = 125
@@ -114,7 +114,7 @@ ratio_genero = 1
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("swift_swim", "shell_armor")
+habilidades = ["swift_swim", "shell_armor"]
 habilidad_oculta = "weak_armor"
 categoria = "Pokémon Espiral"
 altura = 1.0

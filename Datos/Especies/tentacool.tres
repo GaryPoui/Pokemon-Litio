@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "tentacool"
 numero = 72
 nombre = "Tentacool"
-tipos = PackedStringArray("agua", "veneno")
+tipos = ["agua", "veneno"]
 ps = 40
 ataque = 40
 defensa = 35
@@ -124,7 +124,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 30
 }])
-habilidades = PackedStringArray("clear_body", "liquid_ooze")
+habilidades = ["clear_body", "liquid_ooze"]
 habilidad_oculta = "rain_dish"
 categoria = "Pokémon Medusa"
 altura = 0.9

@@ -10,4 +10,4 @@ poder = 80
 pp = 15
 descripcion = "Propina un potente puñetazo con todas sus fuerzas."
 numero = 70
-banderas = PackedStringArray("contact", "metronome", "mirror", "protect")
+banderas = ["contact", "metronome", "mirror", "protect"]

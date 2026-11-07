@@ -106,6 +106,7 @@ Al sur: Centro Pokémon, café y kiosco. Al este: la Bombonera y la plaza. Al oe
 position = Vector2(360, 280)
 script = ExtResource("9_8xvfq")
 texto_elegir = "¿Cuál te llevás?"
+texto_pensar = "Pensalo tranquilo. ¡Volvé cuando te decidas!"
 texto = "¡Hola! Mantené Shift para correr.
 
 En las rutas, la hierba alta está llena de Pokémon salvajes. ¡Tené cuidado!"

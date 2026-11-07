@@ -115,7 +115,7 @@ script = ExtResource("1")
 id = "mime_jr"
 numero = 439
 nombre = "Mime Jr."
-tipos = PackedStringArray("psiquico")
+tipos = ["psiquico"]
 ps = 20
 ataque = 25
 defensa = 45
@@ -132,7 +132,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "movimiento",
 "movimiento": "mimic"
 }])
-habilidades = PackedStringArray("soundproof", "filter")
+habilidades = ["soundproof", "filter"]
 habilidad_oculta = "technician"
 categoria = "Pokémon Mimo"
 altura = 0.6

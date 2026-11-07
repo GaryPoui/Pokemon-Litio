@@ -101,7 +101,7 @@ script = ExtResource("16_koydf")
 id = "wartortle"
 numero = 8
 nombre = "Wartortle"
-tipos = PackedStringArray("agua")
+tipos = ["agua"]
 ps = 59
 ataque = 63
 defensa = 80
@@ -122,7 +122,7 @@ evoluciones = Array[Dictionary]([{
 "metodo": "nivel",
 "nivel": 36
 }])
-habilidades = PackedStringArray("torrent")
+habilidades = ["torrent"]
 habilidad_oculta = "rain_dish"
 categoria = "Pokémon Tortuga"
 altura = 1.0

@@ -135,7 +135,7 @@ script = ExtResource("1")
 id = "forretress"
 numero = 205
 nombre = "Forretress"
-tipos = PackedStringArray("bicho", "acero")
+tipos = ["bicho", "acero"]
 ps = 75
 ataque = 90
 defensa = 140
@@ -147,7 +147,7 @@ ratio_captura = 75
 evs_otorgados = {
 "defensa": 2
 }
-habilidades = PackedStringArray("sturdy")
+habilidades = ["sturdy"]
 habilidad_oculta = "overcoat"
 categoria = "Pokémon Larva"
 altura = 1.2

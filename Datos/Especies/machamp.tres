@@ -105,7 +105,7 @@ script = ExtResource("1")
 id = "machamp"
 numero = 68
 nombre = "Machamp"
-tipos = PackedStringArray("lucha")
+tipos = ["lucha"]
 ps = 90
 ataque = 130
 defensa = 80
@@ -118,7 +118,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("guts", "no_guard")
+habilidades = ["guts", "no_guard"]
 habilidad_oculta = "steadfast"
 categoria = "Pokémon Superpoder"
 altura = 1.6

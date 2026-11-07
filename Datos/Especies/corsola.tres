@@ -93,7 +93,7 @@ script = ExtResource("1")
 id = "corsola"
 numero = 222
 nombre = "Corsola"
-tipos = PackedStringArray("agua", "roca")
+tipos = ["agua", "roca"]
 ps = 55
 ataque = 55
 defensa = 85
@@ -108,7 +108,7 @@ evs_otorgados = {
 "def_esp": 1,
 "defensa": 1
 }
-habilidades = PackedStringArray("hustle", "natural_cure")
+habilidades = ["hustle", "natural_cure"]
 habilidad_oculta = "regenerator"
 categoria = "Pokémon Coral"
 altura = 0.6

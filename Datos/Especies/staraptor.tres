@@ -94,7 +94,7 @@ script = ExtResource("15_ltwi0")
 id = "staraptor"
 numero = 398
 nombre = "Staraptor"
-tipos = PackedStringArray("normal", "volador")
+tipos = ["normal", "volador"]
 ps = 85
 ataque = 120
 defensa = 70
@@ -104,7 +104,7 @@ crecimiento = "medium-slow"
 evs_otorgados = {
 "ataque": 3
 }
-habilidades = PackedStringArray("intimidate")
+habilidades = ["intimidate"]
 habilidad_oculta = "reckless"
 categoria = "Pokémon Depredador"
 altura = 1.2
