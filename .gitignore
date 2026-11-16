@@ -10,3 +10,6 @@ ARTE_PENDIENTE.md
 
 # Material de trabajo local
 /.local/
+
+# Exportaciones generadas
+/build/

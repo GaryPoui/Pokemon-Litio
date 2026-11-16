@@ -31,6 +31,7 @@ Sonido="*res://Scripts/sonido.gd"
 window/size/viewport_width=256
 window/size/viewport_height=192
 window/size/mode=3
+window/size/mode.web=0
 window/size/window_width_override=1024
 window/size/window_height_override=768
 window/stretch/mode="canvas_items"
@@ -95,6 +96,7 @@ correr={
 
 [rendering]
 
+renderer/rendering_method.web="gl_compatibility"
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 environment/defaults/default_clear_color=Color(0, 0, 0, 1)

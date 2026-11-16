@@ -24,7 +24,7 @@ func _ready() -> void:
 	for i in 5:
 		EstiloUI.label(caja.get_node("F%d/Nombre" % i), 9)
 		EstiloUI.label(caja.get_node("F%d/Valor" % i), 9)
-	for f in DirAccess.get_files_at(Sonido.EFECTOS):
+	for f in ResourceLoader.list_directory(Sonido.EFECTOS):
 		var n:= f.trim_suffix(".import").trim_suffix(".remap")
 		if n.ends_with(".wav") and not efectos.has(n.get_basename()):
 			efectos.append(n.get_basename())

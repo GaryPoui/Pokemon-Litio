@@ -24,7 +24,7 @@ func _ready() -> void:
 	velo.modulate.a =0.0
 	velo.mouse_filter= Control.MOUSE_FILTER_IGNORE
 	var c:= ConfigFile.new()
-	if c.load(CONFIG)== OK and c.has_section_key("pantalla", "completa"):
+	if not OS.has_feature("web") and c.load(CONFIG)== OK and c.has_section_key("pantalla", "completa"):
 		poner_pantalla_completa(bool(c.get_value("pantalla", "completa")))
 
 func registrar_zona(id: String, nombre: String, subtitulo: String, tipo: int, anunciar: bool) -> void:
@@ -67,6 +67,8 @@ func poner_pantalla_completa(si: bool) -> void:
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	else:
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+		if OS.has_feature("web"):
+			return
 		DisplayServer.window_set_size(Vector2i(1024, 768))
 		var pantalla:= DisplayServer.window_get_current_screen()
 		var centro:= DisplayServer.screen_get_position(pantalla)+ DisplayServer.screen_get_size(pantalla)/ 2
