@@ -38,9 +38,10 @@ func interactuar(jugador: Node) -> void:
 		await Dialogo.mostrar(texto_despues)
 
 func mostrar_tipo() -> PokemonInstancia:
-	for p in Equipo.miembros:
+	for p in Equipo.miembros+ Equipo.caja:
 		if requiere_especies.has(p.especie.id):
 			return p
+	for p in Equipo.miembros:
 		for t in p.especie.tipos:
 			if requiere_tipos.has(str(t)):
 				return p

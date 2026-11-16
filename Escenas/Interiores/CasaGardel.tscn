@@ -1,0 +1,87 @@
+[gd_scene format=4 uid="uid://btplc3pja3gtx"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_52ybv"]
+[ext_resource type="Texture2D" uid="uid://7fy0onj3a5qr" path="res://Assets/Batalla/fondos/campo.png" id="2_mlf86"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_lwicj"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_bcqa0"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_kihgp"]
+[ext_resource type="Script" uid="uid://k0myf87itavg" path="res://Scripts/fonografo.gd" id="6_appct"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="7_wbsay"]
+[ext_resource type="Script" uid="uid://drvlm8d0dkc0t" path="res://Scripts/encuentro_unico.gd" id="8_sn0dv"]
+[ext_resource type="SpriteFrames" uid="uid://0c6a1gs6ohg8" path="res://Recursos/Personajes/radio_rotom.tres" id="9_2js42"]
+[ext_resource type="SpriteFrames" uid="uid://bscstn3e2t1qj" path="res://Recursos/Personajes/chica.tres" id="10_pby88"]
+
+[node name="CasaGardel" type="Node2D" unique_id=1811774928]
+y_sort_enabled = true
+script = ExtResource("1_52ybv")
+fondo_batalla = ExtResource("2_mlf86")
+terreno_batalla = "cemento"
+musica = "pueblo"
+zona_id = "ruta_8"
+zona_nombre = "Casa de Gardel"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=1434734982]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAADgAEAAEAAAAAAAEADgAFAAEAAAAAAAIABgAAAAAAAAAAAAMABgABAAAAAAAAAAQABgAAAAAAAAAAAAUABgAAAAAAAAAAAAYABgABAAAAAAAAAAcABgAAAAAAAAAAAAgABgAAAAAAAAABAAAADgAEAAEAAAABAAEADgAFAAEAAAABAAIABgABAAAAAAABAAMABgAAAAAAAAABAAQABgAAAAAAAAABAAUABgABAAAAAAABAAYABgAAAAAAAAABAAcABgAAAAAAAAABAAgABgABAAAAAAACAAAADgAEAAEAAAACAAEADgAFAAEAAAACAAIABgAAAAAAAAACAAMABgAAAAAAAAACAAQABgABAAAAAAACAAUABgAAAAAAAAACAAYABgAAAAAAAAACAAcABgABAAAAAAACAAgABgAAAAAAAAADAAAADgAEAAEAAAADAAEADgAFAAEAAAADAAIABgAAAAAAAAADAAMABgABAAAAAAADAAQABgAAAAAAAAADAAUABgAAAAAAAAADAAYABgABAAAAAAADAAcABgAAAAAAAAADAAgABgAAAAAAAAAEAAAADgAEAAEAAAAEAAEADgAFAAEAAAAEAAIABgABAAAAAAAEAAMABgAAAAAAAAAEAAQABgAAAAAAAAAEAAUABgABAAAAAAAEAAYABgAAAAAAAAAEAAcABgAAAAAAAAAEAAgABgABAAAAAAAFAAAADgAEAAEAAAAFAAEADgAFAAEAAAAFAAIADgADAAEAAAAFAAMADgADAAEAAAAFAAQADgADAAEAAAAFAAUADgADAAEAAAAFAAYADgADAAEAAAAFAAcADgADAAEAAAAFAAgADgADAAEAAAAGAAAADgAEAAEAAAAGAAEADgAFAAEAAAAGAAIADgADAAEAAAAGAAMADgADAAEAAAAGAAQADgADAAEAAAAGAAUADgADAAEAAAAGAAYADgADAAEAAAAGAAcADgADAAEAAAAGAAgABgAGAAMAAAAHAAAADgAEAAEAAAAHAAEADgAFAAEAAAAHAAIADgADAAEAAAAHAAMADgADAAEAAAAHAAQADgADAAEAAAAHAAUADgADAAEAAAAHAAYADgADAAEAAAAHAAcADgADAAEAAAAHAAgADgADAAEAAAAIAAAADgAEAAEAAAAIAAEADgAFAAEAAAAIAAIADgADAAEAAAAIAAMADgADAAEAAAAIAAQADgADAAEAAAAIAAUADgADAAEAAAAIAAYADgADAAEAAAAIAAcADgADAAEAAAAIAAgADgADAAEAAAAJAAAADgAEAAEAAAAJAAEADgAFAAEAAAAJAAIADgADAAEAAAAJAAMADgADAAEAAAAJAAQADgADAAEAAAAJAAUADgADAAEAAAAJAAYADgADAAEAAAAJAAcADgADAAEAAAAJAAgADgADAAEAAAAKAAAADgAEAAEAAAAKAAEADgAFAAEAAAAKAAIADgADAAEAAAAKAAMADgADAAEAAAAKAAQADgADAAEAAAAKAAUADgADAAEAAAAKAAYADgADAAEAAAAKAAcADgADAAEAAAAKAAgADgADAAEAAAALAAAADgAEAAEAAAALAAEADgAFAAEAAAALAAIADgADAAEAAAALAAMADgADAAEAAAALAAQADgADAAEAAAALAAUADgADAAEAAAALAAYADgADAAEAAAALAAcADgADAAEAAAALAAgADgADAAEAAAA=")
+tile_set = ExtResource("3_lwicj")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1998675053]
+z_index = -1
+tile_set = ExtResource("3_lwicj")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=1743552542]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAD//wgABgAHAAIAAAD//wkABgAHAAIAAAAAAP//BgAHAAIAAAAAAAIACAAAAAQAAAAAAAMACAABAAQAAAAAAAkABgAHAAIAAAABAP//BgAHAAIAAAABAAUACAACAAQAAAABAAkABgAHAAIAAAACAP//BgAHAAIAAAACAAAADgABAAIAAAACAAIADgADAAIAAAACAAMADgAEAAIAAAACAAkABgAHAAIAAAADAP//BgAHAAIAAAADAAUADgAFAAIAAAADAAkABgAHAAIAAAAEAP//BgAHAAIAAAAEAAAADgACAAIAAAAEAAkABgAHAAIAAAAFAP//BgAHAAIAAAAFAAcADgAAAAIAAAAFAAkABgAHAAIAAAAGAP//BgAHAAIAAAAGAAIADgAAAAIAAAAGAAkABgAHAAIAAAAHAP//BgAHAAIAAAAHAAkABgAHAAIAAAAIAP//BgAHAAIAAAAIAAMADgAGAAEAAAAIAAQADgAHAAEAAAAIAAkABgAHAAIAAAAJAP//BgAHAAIAAAAJAAkABgAHAAIAAAAKAP//BgAHAAIAAAAKAAkABgAHAAIAAAALAP//BgAHAAIAAAALAAIADgAAAAIAAAALAAYADgAAAAIAAAALAAkABgAHAAIAAAAMAP//BgAHAAIAAAAMAAAABgAHAAIAAAAMAAEABgAHAAIAAAAMAAIABgAHAAIAAAAMAAMABgAHAAIAAAAMAAQABgAHAAIAAAAMAAUABgAHAAIAAAAMAAYABgAHAAIAAAAMAAcABgAHAAIAAAAMAAgABgAHAAIAAAAMAAkABgAHAAIAAAA=")
+tile_set = ExtResource("3_lwicj")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=691768435]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=838583269]
+position = Vector2(104, 120)
+
+[node name="Salida" type="Node2D" parent="." unique_id=705451454]
+position = Vector2(104, 136)
+script = ExtResource("5_kihgp")
+destino = "res://Escenas/Rutas/Ruta8Abasto.tscn"
+llegada = "PuertaGardel"
+salir_empujando = true
+
+[node name="Fonografo" type="Node2D" parent="." unique_id=548477087]
+position = Vector2(24, 88)
+script = ExtResource("6_appct")
+
+[node name="Radio" parent="." unique_id=1999008602 instance=ExtResource("7_wbsay")]
+position = Vector2(72, 56)
+script = ExtResource("8_sn0dv")
+especie_id = "rotom"
+nivel = 27
+clave = "r8_rotom"
+requiere = "tango_completo"
+quedarse = true
+texto_inactivo = "Una radio a válvulas de los años 30. Está apagada… o eso parece."
+texto_hecho = "La radio quedó en silencio. Por un momento, te pareció escuchar un tango a lo lejos."
+animacion_activa = "temblor"
+texto = "¡La radio tiembla y chisporrotea! Entre la estática se escucha la voz de Gardel… y algo se asoma por el parlante."
+
+[node name="AnimatedSprite2D" parent="Radio" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_2js42")
+animation = &"abajo"
+
+[node name="GuiaMuseo" parent="." unique_id=1229203047 instance=ExtResource("7_wbsay")]
+position = Vector2(152, 120)
+texto = "Bienvenido a la casa donde vivió Carlos Gardel con su madre. Dicen que, a medianoche, el fonógrafo y la radio todavía se acuerdan de sus tangos."
+mirando = Vector2(-1, 0)
+
+[node name="AnimatedSprite2D" parent="GuiaMuseo" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("10_pby88")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_bcqa0")]
+position = Vector2(104, 120)
+
+[editable path="Radio"]
+[editable path="GuiaMuseo"]

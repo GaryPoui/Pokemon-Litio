@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bqi67xpnnnv2e"]
+
+[ext_resource type="Script" uid="uid://v63mowwk2eeu" path="res://Scripts/farol_cementerio.gd" id="1_15rra"]
+[ext_resource type="Texture2D" uid="uid://dqdk70r1cfep6" path="res://Assets/Overworld/Chacarita/farol_cementerio.png" id="2_0ve13"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ve13"]
+size = Vector2(16, 16)
+
+[node name="FarolCementerio" type="StaticBody2D" unique_id=1778834071]
+script = ExtResource("1_15rra")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1211709453]
+position = Vector2(-8, -40)
+texture = ExtResource("2_0ve13")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1811619421]
+shape = SubResource("RectangleShape2D_0ve13")

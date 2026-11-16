@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cmeeajem85chi"]
+
+[ext_resource type="Texture2D" uid="uid://cporq820i7v3i" path="res://Assets/Overworld/Rutas8/pasaje_gardel.png" id="1_q3xea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3xea"]
+size = Vector2(64, 32)
+
+[node name="PasajeGardel" type="StaticBody2D" unique_id=121504094]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1596388537]
+position = Vector2(-32, -52)
+texture = ExtResource("1_q3xea")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1567477644]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_q3xea")

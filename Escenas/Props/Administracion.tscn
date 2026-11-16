@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bhfwnbo40qtwc"]
+
+[ext_resource type="Texture2D" uid="uid://dxnkt2gt1t5do" path="res://Assets/Overworld/Chacarita/administracion.png" id="1_hiwbk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hiwbk"]
+size = Vector2(112, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cdh2n"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wq84r"]
+size = Vector2(48, 16)
+
+[node name="Administracion" type="StaticBody2D" unique_id=1411094201]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1837377992]
+position = Vector2(-56, -70)
+texture = ExtResource("1_hiwbk")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1517457341]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_hiwbk")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=1237458042]
+position = Vector2(-32, 0)
+shape = SubResource("RectangleShape2D_cdh2n")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=754015304]
+position = Vector2(32, 0)
+shape = SubResource("RectangleShape2D_wq84r")

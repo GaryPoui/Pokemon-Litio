@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://c76cqyxyadhc4"]
+
+[ext_resource type="Texture2D" uid="uid://cusv1m0cd3hbl" path="res://Assets/Overworld/Chacarita/casa_sereno.png" id="1_o8sa5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o8sa5"]
+size = Vector2(64, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hrh28"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m5yoi"]
+size = Vector2(32, 16)
+
+[node name="CasaSereno" type="StaticBody2D" unique_id=1032177361]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1128759611]
+position = Vector2(-32, -54)
+texture = ExtResource("1_o8sa5")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=465206210]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_o8sa5")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=1304218749]
+position = Vector2(-24, 0)
+shape = SubResource("RectangleShape2D_hrh28")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=1863363695]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_m5yoi")

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ctnk821en8d5b"]
+
+[ext_resource type="Texture2D" uid="uid://db700jwp1a0ww" path="res://Assets/Overworld/Chacarita/floreria.png" id="1_maa88"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_maa88"]
+size = Vector2(80, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_34kns"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kauim"]
+size = Vector2(32, 16)
+
+[node name="Floreria" type="StaticBody2D" unique_id=1166191340]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=168355036]
+position = Vector2(-40, -58)
+texture = ExtResource("1_maa88")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1925322562]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_maa88")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=1876275844]
+position = Vector2(-24, 0)
+shape = SubResource("RectangleShape2D_34kns")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=444261004]
+position = Vector2(24, 0)
+shape = SubResource("RectangleShape2D_kauim")

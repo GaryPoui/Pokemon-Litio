@@ -1,0 +1,57 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://0c6a1gs6ohg8"]
+
+[ext_resource type="Texture2D" uid="uid://dh8uylf527xmq" path="res://Assets/Overworld/Rutas8/radio_rotom.png" id="1_hoja"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0"]
+atlas = ExtResource("1_hoja")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1"]
+atlas = ExtResource("1_hoja")
+region = Rect2(32, 0, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0")
+}],
+"loop": 0,
+"name": &"abajo",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0")
+}],
+"loop": 0,
+"name": &"arriba",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0")
+}],
+"loop": 0,
+"name": &"derecha",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0")
+}],
+"loop": 0,
+"name": &"izquierda",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1")
+}],
+"loop": 1,
+"name": &"temblor",
+"speed": 10.0
+}]

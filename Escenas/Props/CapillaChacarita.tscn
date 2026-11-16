@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dbpi32frwghja"]
+
+[ext_resource type="Texture2D" uid="uid://jb0nhe3n8faj" path="res://Assets/Overworld/Chacarita/capilla.png" id="1_srw6k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_srw6k"]
+size = Vector2(128, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_csl8k"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2og2f"]
+size = Vector2(48, 16)
+
+[node name="CapillaChacarita" type="StaticBody2D" unique_id=1865055066]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=390134587]
+position = Vector2(-64, -136)
+texture = ExtResource("1_srw6k")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1414995472]
+position = Vector2(0, -32)
+shape = SubResource("RectangleShape2D_srw6k")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=226046574]
+position = Vector2(-40, 0)
+shape = SubResource("RectangleShape2D_csl8k")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=54578183]
+position = Vector2(40, 0)
+shape = SubResource("RectangleShape2D_2og2f")

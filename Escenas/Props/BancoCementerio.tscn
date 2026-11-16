@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dvcwmu7r6fe03"]
+
+[ext_resource type="Texture2D" uid="uid://b5nxdnf4rij3" path="res://Assets/Overworld/Chacarita/banco_cementerio.png" id="1_4128y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4128y"]
+size = Vector2(32, 16)
+
+[node name="BancoCementerio" type="StaticBody2D" unique_id=1458195927]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1970871600]
+position = Vector2(-16, -8)
+texture = ExtResource("1_4128y")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1655519289]
+shape = SubResource("RectangleShape2D_4128y")

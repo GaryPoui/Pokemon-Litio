@@ -89,8 +89,19 @@ func get_categories() -> Array[String]:
 func nombre_bolsillo(category: String) -> String:
 	return NOMBRES_BOLSILLO.get(category, category)
 
+const RECUERDO:= "Recuerdo del último viaje. Un boleto de 3.ª clase del tranvía fúnebre: con él Litwick y vos llegaron juntos hasta la Chacarita."
+
 func get_objeto(item_id: String) -> Objeto:
-	return objetos.get(item_id)
+	var o: Objeto= objetos.get(item_id)
+	if o!= null and item_id== "boleto_tercera" and _recuerdo():
+		var copia:= o.duplicate() as Objeto
+		copia.descripcion =RECUERDO
+		return copia
+	return o
+
+func _recuerdo() -> bool:
+	var e= get_node_or_null("/root/Estado")
+	return e!= null and e.tiene("litwick_unido")
 
 func cantidad_de(item_id: String) -> int:
 	return int(cantidades.get(item_id, 0))
@@ -98,7 +109,7 @@ func cantidad_de(item_id: String) -> int:
 func get_items_for_category(category: String) -> Array[Dictionary]:
 	var result: Array[Dictionary] =[]
 	for id in objetos:
-		var o: Objeto= objetos[id]
+		var o: Objeto= get_objeto(id)
 		if o.categoria== category and cantidad_de(id)> 0:
 			result.append(_como_diccionario(o))
 	return result

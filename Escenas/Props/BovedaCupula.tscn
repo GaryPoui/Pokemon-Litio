@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bysatqe55iogm"]
+
+[ext_resource type="Texture2D" uid="uid://2tnv2qlqc1ti" path="res://Assets/Overworld/Chacarita/boveda_cupula.png" id="1_w10pw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w10pw"]
+size = Vector2(32, 32)
+
+[node name="BovedaCupula" type="StaticBody2D" unique_id=2014007475]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=943411915]
+position = Vector2(-16, -50)
+texture = ExtResource("1_w10pw")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1119259898]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_w10pw")

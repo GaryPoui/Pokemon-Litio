@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bg8h7b6y17st0"]
+
+[ext_resource type="Texture2D" uid="uid://b5ye7kstkw2a6" path="res://Assets/Overworld/Rutas8/techo_galeria.png" id="1_tscaw"]
+
+[node name="TechoGaleria" type="Node2D" unique_id=1078038352]
+z_index = 2
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=25762322]
+position = Vector2(-8, -14)
+texture = ExtResource("1_tscaw")
+centered = false

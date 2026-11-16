@@ -4,6 +4,7 @@ const PANEL:= preload("res://Scripts/ui/panel_encuentros.gd")
 
 @export_multiline var texto: String= ""
 @export var mostrar_encuentros:= false
+@export var sonido :String= ""
 
 func _ready() -> void:
 	add_to_group("interactuable")
@@ -12,6 +13,8 @@ func celda() -> Vector2i:
 	return Rejilla.celda(self)
 
 func interactuar(_jugador: Node) -> void:
+	if sonido!= "":
+		Sonido.efecto(sonido)
 	await Dialogo.mostrar(texto)
 	if not mostrar_encuentros:
 		return

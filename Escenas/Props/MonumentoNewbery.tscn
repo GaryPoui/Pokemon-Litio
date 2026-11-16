@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://k6tv1h2ghwyt"]
+
+[ext_resource type="Texture2D" uid="uid://bv84pfaf42k37" path="res://Assets/Overworld/Chacarita/monumento_newbery.png" id="1_dubqh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dubqh"]
+size = Vector2(64, 48)
+
+[node name="MonumentoNewbery" type="StaticBody2D" unique_id=2139097413]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1137905493]
+position = Vector2(-32, -78)
+texture = ExtResource("1_dubqh")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1058287120]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_dubqh")

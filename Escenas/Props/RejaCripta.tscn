@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c5347t5j1v6wj"]
+
+[ext_resource type="Script" uid="uid://fshn7pus51oi" path="res://Scripts/barrera.gd" id="1_w0w4m"]
+[ext_resource type="Texture2D" uid="uid://bqwm5vm3sdgsv" path="res://Assets/Overworld/Rutas8/reja_cripta.png" id="2_d07d8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d07d8"]
+size = Vector2(32, 16)
+
+[node name="RejaCripta" type="StaticBody2D" unique_id=63717694]
+script = ExtResource("1_w0w4m")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1818022294]
+position = Vector2(-16, -20)
+texture = ExtResource("2_d07d8")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1519307778]
+shape = SubResource("RectangleShape2D_d07d8")

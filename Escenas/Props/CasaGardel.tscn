@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://d13fu7bunkwl3"]
+
+[ext_resource type="Texture2D" uid="uid://dcoehspe0gl1l" path="res://Assets/Overworld/Rutas8/casa_gardel.png" id="1_2jyoi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2jyoi"]
+size = Vector2(64, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qk3yh"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lx5x1"]
+size = Vector2(32, 16)
+
+[node name="CasaGardel" type="StaticBody2D" unique_id=647444458]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1309728739]
+position = Vector2(-32, -60)
+texture = ExtResource("1_2jyoi")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1348282255]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_2jyoi")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=117923893]
+position = Vector2(-24, 0)
+shape = SubResource("RectangleShape2D_qk3yh")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=1910140052]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_lx5x1")

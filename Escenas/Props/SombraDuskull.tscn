@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://mrxssxrpeojy"]
+
+[ext_resource type="Script" uid="uid://c8br1f21qlu1g" path="res://Scripts/sombra.gd" id="1_cgiq8"]
+[ext_resource type="Texture2D" uid="uid://cvq1hebf2yoft" path="res://Assets/Overworld/Rutas9/sombra_duskull.png" id="2_2bu76"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2bu76"]
+size = Vector2(16, 16)
+
+[node name="SombraDuskull" type="StaticBody2D" unique_id=99069138]
+script = ExtResource("1_cgiq8")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2113190458]
+position = Vector2(-16, -21)
+texture = ExtResource("2_2bu76")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=766039759]
+shape = SubResource("RectangleShape2D_2bu76")

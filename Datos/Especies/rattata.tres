@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://b1tgtg51shh5o"]
 
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/rattata_frente.png" id="3"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/rattata_espalda.png" id="4"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://2mrge6gqy8s" path="res://Assets/Pokemones/batalla/rattata_frente.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://camhabu482t6u" path="res://Assets/Pokemones/batalla/rattata_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tackle.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/tail_whip.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/quick_attack.tres" id="7"]
@@ -86,7 +86,6 @@ script = ExtResource("1")
 id = "rattata"
 numero = 19
 nombre = "Rattata"
-tipos = ["normal"]
 ps = 30
 ataque = 56
 defensa = 35

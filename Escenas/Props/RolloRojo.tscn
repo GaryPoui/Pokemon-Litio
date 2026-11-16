@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b5jn6tu2iaogv"]
+
+[ext_resource type="Script" uid="uid://20d8t57xkywt" path="res://Scripts/rollo.gd" id="1_8cjbl"]
+[ext_resource type="Texture2D" uid="uid://bkvuqemahdph4" path="res://Assets/Overworld/Rutas8/rollo_tela_0.png" id="2_tdby0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tdby0"]
+size = Vector2(16, 16)
+
+[node name="RolloRojo" type="StaticBody2D" unique_id=2042654813]
+script = ExtResource("1_8cjbl")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=756077331]
+position = Vector2(-8, -7)
+texture = ExtResource("2_tdby0")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=2001462978]
+shape = SubResource("RectangleShape2D_tdby0")

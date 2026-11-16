@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cl52ealr1t2gt"]
+
+[ext_resource type="Texture2D" uid="uid://dafc80fqfh4pf" path="res://Assets/Overworld/Chacarita/portico_interior.png" id="1_d3lx8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d3lx8"]
+size = Vector2(160, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1mb5t"]
+size = Vector2(64, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_skcbr"]
+size = Vector2(64, 16)
+
+[node name="PorticoInterior" type="StaticBody2D" unique_id=1616008863]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=386750384]
+position = Vector2(-80, -38)
+texture = ExtResource("1_d3lx8")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=480072485]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_d3lx8")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=1534253975]
+position = Vector2(-48, 0)
+shape = SubResource("RectangleShape2D_1mb5t")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=756953912]
+position = Vector2(48, 0)
+shape = SubResource("RectangleShape2D_skcbr")

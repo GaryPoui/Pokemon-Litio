@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/encuentro_entrada.gd" id="1_ofy4e"]
+[ext_resource type="Resource" path="res://Datos/Especies/litwick.tres" id="2_5wwgv"]
+[ext_resource type="Resource" path="res://Datos/Especies/lampent.tres" id="3_ib4gs"]
+[ext_resource type="Script" path="res://Scripts/datos/equipo_entrenador.gd" id="4_2tb2q"]
+
+[sub_resource type="Resource" id="Resource_otfdv"]
+script = ExtResource("1_ofy4e")
+especie = ExtResource("2_5wwgv")
+nivel_min = 28
+nivel_max = 28
+peso = 1
+movimientos = Array[String](["ember", "astonish", "will_o_wisp", "night_shade"])
+
+[sub_resource type="Resource" id="Resource_1fra3"]
+script = ExtResource("1_ofy4e")
+especie = ExtResource("3_ib4gs")
+nivel_min = 30
+nivel_max = 30
+peso = 1
+movimientos = Array[String](["ember", "hex", "will_o_wisp", "confuse_ray"])
+
+[resource]
+script = ExtResource("4_2tb2q")
+clase = "Florista"
+nombre = "Azucena"
+miembros = Array[ExtResource("1_ofy4e")]([SubResource("Resource_otfdv"), SubResource("Resource_1fra3")])
+pago_base = 55

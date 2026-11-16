@@ -524,6 +524,9 @@ static func estado_util(c: LogicaCombate, a: Luchador, d: Luchador, mov: Movimie
 			return a.sustituto== 0 and a.pokemon.ps_actuales* 4> a.pokemon.ps_max()
 		"taunt":
 			return not d.tiene("mofa")
+		"curse":
+			if "fantasma" in a.tipos():
+				return not d.tiene("maldito") and a.pokemon.ps_actuales* 2> a.pokemon.ps_max()
 		"confuse_ray", "supersonic", "sweet_kiss", "teeter_dance":
 			return d.confusion== 0
 		"protect", "detect", "endure":

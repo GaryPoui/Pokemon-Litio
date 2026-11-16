@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c3qpnlg076ddh"]
+
+[ext_resource type="Texture2D" uid="uid://xup7qlgkvhgo" path="res://Assets/Overworld/Chacarita/bajada_galerias.png" id="1_a76v1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cuk3p"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dslw0"]
+size = Vector2(32, 16)
+
+[node name="BajadaGalerias" type="StaticBody2D" unique_id=149058892]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1556358166]
+position = Vector2(-32, -44)
+texture = ExtResource("1_a76v1")
+centered = false
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=892135488]
+position = Vector2(-24, 0)
+shape = SubResource("RectangleShape2D_cuk3p")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=340355554]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_dslw0")

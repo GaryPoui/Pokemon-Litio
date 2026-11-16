@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/encuentro_entrada.gd" id="1_ajmpy"]
+[ext_resource type="Resource" path="res://Datos/Especies/drifblim.tres" id="2_812sa"]
+[ext_resource type="Resource" path="res://Datos/Especies/cofagrigus.tres" id="3_r0qrg"]
+[ext_resource type="Resource" path="res://Datos/Especies/misdreavus.tres" id="4_epth4"]
+[ext_resource type="Resource" path="res://Datos/Especies/froslass.tres" id="5_imp54"]
+[ext_resource type="Script" path="res://Scripts/datos/equipo_entrenador.gd" id="6_es7lg"]
+
+[sub_resource type="Resource" id="Resource_qucwp"]
+script = ExtResource("1_ajmpy")
+especie = ExtResource("2_812sa")
+nivel_min = 29
+nivel_max = 29
+peso = 1
+movimientos = Array[String](["will_o_wisp", "hex", "gust", "ominous_wind"])
+ia = Array[String](["estado:will_o_wisp", "danio"])
+habilidad = "aftermath"
+
+[sub_resource type="Resource" id="Resource_dma0c"]
+script = ExtResource("1_ajmpy")
+especie = ExtResource("3_r0qrg")
+nivel_min = 30
+nivel_max = 30
+peso = 1
+movimientos = Array[String](["curse", "protect", "night_shade", "will_o_wisp"])
+ia = Array[String](["maldicion", "estado:will_o_wisp", "proteger", "danio"])
+habilidad = "mummy"
+
+[sub_resource type="Resource" id="Resource_ea5xw"]
+script = ExtResource("1_ajmpy")
+especie = ExtResource("4_epth4")
+nivel_min = 30
+nivel_max = 30
+peso = 1
+movimientos = Array[String](["pain_split", "confuse_ray", "shadow_ball", "psybeam"])
+ia = Array[String](["confundir", "reparto", "danio"])
+habilidad = "levitate"
+
+[sub_resource type="Resource" id="Resource_a8mk2"]
+script = ExtResource("1_ajmpy")
+especie = ExtResource("5_imp54")
+nivel_min = 32
+nivel_max = 32
+peso = 1
+movimientos = Array[String](["icy_wind", "ice_shard", "shadow_ball", "destiny_bond"])
+ia = Array[String](["destino:50", "danio"])
+habilidad = "cursed_body"
+
+[resource]
+script = ExtResource("6_es7lg")
+clase = "Líder"
+nombre = "La Viuda"
+miembros = Array[ExtResource("1_ajmpy")]([SubResource("Resource_qucwp"), SubResource("Resource_dma0c"), SubResource("Resource_ea5xw"), SubResource("Resource_a8mk2")])
+pago_base = 160
+objetos = Array[String](["super_potion"])

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b142jcypeg4on"]
+
+[ext_resource type="Texture2D" uid="uid://dg3kafuygyns3" path="res://Assets/Overworld/Rutas9/portico_chacarita.png" id="1_kvvfm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kvvfm"]
+size = Vector2(160, 80)
+
+[node name="PorticoChacarita" type="StaticBody2D" unique_id=264154219]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=525576959]
+position = Vector2(-80, -112)
+texture = ExtResource("1_kvvfm")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1917256780]
+position = Vector2(0, -32)
+shape = SubResource("RectangleShape2D_kvvfm")

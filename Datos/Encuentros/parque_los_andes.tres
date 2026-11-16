@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="TablaEncuentros" format=3 uid="uid://k4olntbol2bp"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_entrada"]
+[ext_resource type="Script" uid="uid://ba384a6evk1rl" path="res://Scripts/datos/tabla_encuentros.gd" id="2_tabla"]
+[ext_resource type="Resource" uid="uid://mboqaox23eoj" path="res://Datos/Especies/minccino.tres" id="e0"]
+[ext_resource type="Resource" uid="uid://yl1mvo5wxxiq" path="res://Datos/Especies/pidove.tres" id="e1"]
+[ext_resource type="Resource" uid="uid://bmiwu1x2x5dyt" path="res://Datos/Especies/purrloin.tres" id="e2"]
+
+[sub_resource type="Resource" id="Entrada_0"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e0")
+nivel_min = 26
+nivel_max = 28
+peso = 35
+
+[sub_resource type="Resource" id="Entrada_1"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e1")
+nivel_min = 26
+nivel_max = 28
+peso = 35
+
+[sub_resource type="Resource" id="Entrada_2"]
+script = ExtResource("1_entrada")
+especie = ExtResource("e2")
+nivel_min = 27
+nivel_max = 29
+peso = 30
+
+[resource]
+script = ExtResource("2_tabla")
+tasa = 0.12
+entradas = Array[ExtResource("1_entrada")]([SubResource("Entrada_0"), SubResource("Entrada_1"), SubResource("Entrada_2")])

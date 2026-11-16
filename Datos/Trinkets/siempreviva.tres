@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "siempreviva"
+nombre = "Siempreviva"
+descripcion = "El portador recupera 1/16 de sus PS máximos al final de cada turno."
+tier = 3
+efecto = "cura_turno"
+valor = 0.0625
+apilado = "no_apila"
+precio = 2500

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://0wqa8306khht"]
+
+[ext_resource type="Script" uid="uid://tty3hryghjl7" path="res://Scripts/calesita.gd" id="1_agoja"]
+[ext_resource type="Texture2D" uid="uid://bqonaldusp4hq" path="res://Assets/Overworld/Rutas9/calesita.png" id="2_6nxwu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6nxwu"]
+size = Vector2(64, 16)
+
+[node name="Calesita" type="StaticBody2D" unique_id=1525245368]
+script = ExtResource("1_agoja")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=459955106]
+position = Vector2(-32, -63)
+texture = ExtResource("2_6nxwu")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=472060762]
+shape = SubResource("RectangleShape2D_6nxwu")

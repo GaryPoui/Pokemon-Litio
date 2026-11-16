@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bc45i8wy1xgaa"]
+
+[ext_resource type="Texture2D" uid="uid://c53t8k7rtibxr" path="res://Assets/Overworld/Rutas9/estacion_lacroze.png" id="1_smmyl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_smmyl"]
+size = Vector2(128, 48)
+
+[node name="EstacionLacroze" type="StaticBody2D" unique_id=1777143284]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1088776278]
+position = Vector2(-64, -76)
+texture = ExtResource("1_smmyl")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1851131954]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_smmyl")

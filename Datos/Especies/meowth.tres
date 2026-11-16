@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="EspeciePokemon" format=3]
+[gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://brt8wh2md7vhu"]
 
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/meowth_frente.png" id="3"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/meowth_espalda.png" id="4"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="1"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://b7ydlb6hvq50x" path="res://Assets/Pokemones/batalla/meowth_frente.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bwwf3jrsfdjnr" path="res://Assets/Pokemones/batalla/meowth_espalda.png" id="4"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="5"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="6"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/bite.tres" id="7"]
@@ -98,7 +98,6 @@ script = ExtResource("1")
 id = "meowth"
 numero = 52
 nombre = "Meowth"
-tipos = ["normal"]
 ps = 40
 ataque = 45
 defensa = 35

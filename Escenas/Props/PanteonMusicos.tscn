@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dyqewt4kysoms"]
+
+[ext_resource type="Texture2D" uid="uid://7baxho1opsrx" path="res://Assets/Overworld/Chacarita/panteon_musicos.png" id="1_i4agq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i4agq"]
+size = Vector2(96, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m0qt0"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_die26"]
+size = Vector2(32, 16)
+
+[node name="PanteonMusicos" type="StaticBody2D" unique_id=660175462]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1711249852]
+position = Vector2(-48, -80)
+texture = ExtResource("1_i4agq")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=617616571]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_i4agq")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=2103009851]
+position = Vector2(-32, 0)
+shape = SubResource("RectangleShape2D_m0qt0")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=1844810376]
+position = Vector2(32, 0)
+shape = SubResource("RectangleShape2D_die26")

@@ -696,9 +696,16 @@ func _usar_cuerpo(a: Luchador, d: Luchador, mov: Movimiento, indice: int, gastar
 			_texto("¡%s robó el efecto de %s!" % [_cap(nombre_de(d)), mov.nombre])
 			_efecto_estado(d, a, mov)
 			return
+		_ev_animacion(a, d, mov)
 		_efecto_estado(a, d, mov)
 		return
+	var tipo_golpe:= tipo_de(a, mov)
+	if efectividad(a, d, tipo_golpe, mov)!= 0.0 and not HabCombate.absorberia(self, a, d, tipo_golpe, mov):
+		_ev_animacion(a, d, mov)
 	_golpear(a, d, mov)
+
+func _ev_animacion(a: Luchador, d: Luchador, mov: Movimiento) -> void:
+	_ev({"tipo": "animacion", "mov": mov.id, "de": _lado(a), "a": _lado(a) if mov.objetivo in OBJETIVO_PROPIO else _lado(d)})
 
 func _vinculos(a: Luchador, d: Luchador, mov: Movimiento) -> void:
 	if d.tiene("mismo_destino") and not a.pokemon.esta_debilitado():
@@ -707,6 +714,11 @@ func _vinculos(a: Luchador, d: Luchador, mov: Movimiento) -> void:
 		a.pokemon.ps_actuales= 0
 		ultimo_caido[_lado(a)]= turnos
 		_ev_ps(a, antes)
+	var luto:= EfectosTrinket.total("luto", d.pokemon)
+	if luto> 0.0 and not a.pokemon.esta_debilitado() and not activa(a, "magic_guard"):
+		_ev({"tipo": "sonido", "nombre": "objeto_activo"})
+		_texto("¡La Alianza de Luto %s hirió %s!" % [_de(d), _a(a)])
+		_herir(a, maxi(1, floori(a.pokemon.ps_max()* luto)))
 	if d.tiene("rencor"):
 		var k:= a.movimientos().find(mov)
 		if k>= 0:
@@ -1379,6 +1391,9 @@ func _fin_de_turno() -> void:
 		if p.esta_debilitado():
 			continue
 		HabCombate.fin_turno_estado(self, l)
+		var siempre :=EfectosTrinket.total("cura_turno", p)
+		if siempre> 0.0 and p.ps_actuales< p.ps_max() and _curar(l, maxi(1, floori(p.ps_max()* siempre)))> 0:
+			_texto("¡La Siempreviva %s le devolvió PS!" % _de(l))
 		if l.tiene("acua_aro") and _curar(l, floori(p.ps_max()/ 16.0))> 0:
 			_texto("¡%s recuperó PS con el acua aro!" % _cap(nombre_de(l)))
 		if l.tiene("arraigo") and _curar(l, floori(p.ps_max()/ 16.0))> 0:
@@ -1866,6 +1881,21 @@ func _ia_reglas(reglas: Array[String]) -> int:
 			"vendetta":
 				if velocidad_de(r)< velocidad_de(j):
 					i= _indice_mov(r, "payback")
+			"maldicion":
+				var queda:= r.pokemon.ps_actuales- (_golpe_esperado() if velocidad_de(j)> velocidad_de(r) else 0)
+				if not j.tiene("maldito") and queda* 2> r.pokemon.ps_max():
+					i= _indice_mov(r, "curse")
+			"proteger":
+				var desgaste: bool= j.tiene("maldito") or j.pokemon.estado in ["que", "env", "tox"]
+				if desgaste and (r.ultimo_mov== null or r.ultimo_mov.id!= "protect"):
+					i =_indice_mov(r, "protect")
+			"reparto":
+				if r.pokemon.ps_actuales* 2<= r.pokemon.ps_max() and j.pokemon.ps_actuales> r.pokemon.ps_actuales:
+					i= _indice_mov(r, "pain_split")
+			"destino":
+				var pct:= int(partes[1]) if partes.size()> 1 else 35
+				if r.pokemon.ps_actuales* 100<= r.pokemon.ps_max()* pct and (r.ultimo_mov== null or r.ultimo_mov.id!= "destiny_bond"):
+					i =_indice_mov(r, "destiny_bond")
 			"relevo":
 				if _subidas(r)>= 2:
 					for o in equipo_r:
@@ -1889,6 +1919,14 @@ func _estado_sirve(a: Luchador, d: Luchador, m: Movimiento) -> bool:
 		if t in d.tipos():
 			return false
 	return true
+
+func _golpe_esperado() -> int:
+	var peor:= 0.0
+	var movs:= j.movimientos()
+	for k in movs.size():
+		if j.pp()[k]> 0:
+			peor= maxf(peor, estimar_danio(j, r, movs[k]))
+	return ceili(peor* 1.15)
 
 func represalia_lista(l: Luchador) -> bool:
 	return int(ultimo_caido[_lado(l)])== turnos- 1

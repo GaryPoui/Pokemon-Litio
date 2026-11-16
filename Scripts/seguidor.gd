@@ -175,21 +175,41 @@ func interactuar(_j: Node) -> void:
 	await Dialogo.mostrar(LINEAS.get(zona, GENERICA))
 
 func despedir(adentro: Vector2i) -> void:
+	var inicio:= celda()
 	var camino: Array[Vector2i] =[]
 	var c :=celda()
 	while c != adentro:
 		var d := adentro -c
 		c += Vector2i(signi(d.x), 0) if d.x != 0 else Vector2i(0, signi(d.y))
 		camino.append(c)
-	for p in camino:
+	var dentro:= mini(2, camino.size())
+	for i in camino.size():
+		var p: Vector2i= camino[i]
 		_mirar(p - celda())
+		if i== camino.size()- dentro:
+			z_index =2
 		var tw :=create_tween()
 		tw.tween_property(self, "position", Rejilla.centro(self, p), 0.3)
-		if p == camino.back():
+		if i>= camino.size()- dentro:
 			tw.parallel().tween_property(self, "modulate:a", 0.5, 0.3)
 		await tw.finished
 	await get_tree().create_timer(1.2).timeout
 	_mirar(Vector2i.DOWN)
 	await get_tree().create_timer(0.6).timeout
+	var vuelta: Array[Vector2i]= camino.duplicate()
+	vuelta.reverse()
+	vuelta.remove_at(0)
+	vuelta.append(inicio)
+	for i in vuelta.size():
+		var p: Vector2i =vuelta[i]
+		_mirar(p- celda())
+		var tw:= create_tween()
+		tw.tween_property(self, "position", Rejilla.centro(self, p), 0.3)
+		if i== dentro- 1:
+			tw.parallel().tween_property(self, "modulate:a", 1.0, 0.3)
+		await tw.finished
+		if i== dentro- 1:
+			z_index= 0
 	modulate.a = 1.0
+	z_index =0
 	colocar_detras()

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cjs7b5j0t0jpp"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_nyusf"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_nyusf"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/leer.tres" id="2_7mxjf"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/pound.tres" id="3_m1blx"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/focus_energy.tres" id="4_oqr86"]
@@ -17,9 +17,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/stone_edge.tres" id="15_a6pjd"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/focus_punch.tres" id="16_ra7ay"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/superpower.tres" id="17_7i1yq"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="18_c7o2t"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/timburr_espalda.png" id="19_4jsv1"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/timburr_frente.png" id="20_72em8"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="18_c7o2t"]
+[ext_resource type="Texture2D" uid="uid://cecmd21bpyobe" path="res://Assets/Pokemones/batalla/timburr_espalda.png" id="19_4jsv1"]
+[ext_resource type="Texture2D" uid="uid://cxpi0vi1bti36" path="res://Assets/Pokemones/batalla/timburr_frente.png" id="20_72em8"]
 
 [sub_resource type="Resource" id="Resource_nyusf"]
 script = ExtResource("1_nyusf")

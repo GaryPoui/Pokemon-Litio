@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://v8tnp2xoouel"]
+
+[ext_resource type="Texture2D" uid="uid://coc8kkjuiy0w4" path="res://Assets/Overworld/Chacarita/porton_norte.png" id="1_askoh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_askoh"]
+size = Vector2(64, 16)
+
+[node name="PortonNorte" type="StaticBody2D" unique_id=141132056]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1740541563]
+position = Vector2(-32, -38)
+texture = ExtResource("1_askoh")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1960239923]
+shape = SubResource("RectangleShape2D_askoh")

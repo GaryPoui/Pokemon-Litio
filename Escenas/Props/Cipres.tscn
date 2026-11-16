@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cmoave3hi1xqn"]
+
+[ext_resource type="Texture2D" uid="uid://cd2urv5ws5qvu" path="res://Assets/Overworld/Chacarita/cipres.png" id="1_dgq5u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dgq5u"]
+size = Vector2(16, 16)
+
+[node name="Cipres" type="StaticBody2D" unique_id=516608975]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1198346155]
+position = Vector2(-11, -56)
+texture = ExtResource("1_dgq5u")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1974497030]
+shape = SubResource("RectangleShape2D_dgq5u")

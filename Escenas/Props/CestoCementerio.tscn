@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bovqt5e6n50m4"]
+
+[ext_resource type="Texture2D" uid="uid://dt5pxnnlendhl" path="res://Assets/Overworld/Chacarita/cesto_cementerio.png" id="1_xthdm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xthdm"]
+size = Vector2(16, 16)
+
+[node name="CestoCementerio" type="StaticBody2D" unique_id=1920058738]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=626964491]
+position = Vector2(-8, -10)
+texture = ExtResource("1_xthdm")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1346461015]
+shape = SubResource("RectangleShape2D_xthdm")

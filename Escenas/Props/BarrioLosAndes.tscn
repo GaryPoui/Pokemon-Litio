@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://hlifx48o2n3g"]
+
+[ext_resource type="Texture2D" uid="uid://c1pev4vc6c8wt" path="res://Assets/Overworld/Rutas9/barrio_los_andes.png" id="1_mlw5w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlw5w"]
+size = Vector2(192, 64)
+
+[node name="BarrioLosAndes" type="StaticBody2D" unique_id=1282709692]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=246502287]
+position = Vector2(-96, -88)
+texture = ExtResource("1_mlw5w")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=880108337]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_mlw5w")

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b6k2mnojqwtoj"]
+
+[ext_resource type="Texture2D" uid="uid://cpwj0s0sny17e" path="res://Assets/Overworld/Chacarita/tipa.png" id="1_0sosb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0sosb"]
+size = Vector2(32, 16)
+
+[node name="Tipa" type="StaticBody2D" unique_id=230355977]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1610094591]
+position = Vector2(-24, -52)
+texture = ExtResource("1_0sosb")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1419959413]
+shape = SubResource("RectangleShape2D_0sosb")

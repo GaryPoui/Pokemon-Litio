@@ -1,0 +1,103 @@
+[gd_scene format=4 uid="uid://cy3q6af1mcfgf"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_bas2j"]
+[ext_resource type="Texture2D" uid="uid://7fy0onj3a5qr" path="res://Assets/Batalla/fondos/campo.png" id="2_yrd04"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_5hae8"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_xk16f"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_fvn35"]
+[ext_resource type="Script" uid="uid://cbjsf1alrivgc" path="res://Scripts/viaje_tranvia.gd" id="6_meihs"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="7_mkw7d"]
+[ext_resource type="SpriteFrames" uid="uid://dekv6attq8ofu" path="res://Recursos/Personajes/chacarita_pasajero_duskull.tres" id="8_mhh5t"]
+[ext_resource type="SpriteFrames" uid="uid://bowq6xnwdj7ge" path="res://Recursos/Personajes/chacarita_pasajero_shuppet.tres" id="9_odgfu"]
+[ext_resource type="SpriteFrames" uid="uid://bwts5e2mrvvoh" path="res://Recursos/Personajes/chacarita_fantasma_a_npc.tres" id="10_1gcxn"]
+[ext_resource type="SpriteFrames" uid="uid://dvxr2jfsfa0fx" path="res://Recursos/Personajes/chacarita_fantasma_b_npc.tres" id="11_hticd"]
+
+[node name="TranviaFunebre" type="Node2D" unique_id=155231237]
+y_sort_enabled = true
+script = ExtResource("1_bas2j")
+fondo_batalla = ExtResource("2_yrd04")
+musica = "ruta_1"
+zona_id = "tranvia_funebre"
+zona_nombre = "Tranvía fúnebre"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=744336716]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAADgAAAAMAAAAAAAEADgABAAMAAAAAAAIADgAGAAIAAAAAAAMADgAHAAIAAAAAAAQADgAGAAIAAAAAAAUADgAGAAIAAAABAAAADgACAAMAAAABAAEADgADAAMAAAABAAIADgAEAAMAAAABAAMADgAHAAIAAAABAAQADgAEAAMAAAABAAUADgAGAAIAAAACAAAADgACAAMAAAACAAEADgADAAMAAAACAAIADgAEAAMAAAACAAMADgAHAAIAAAACAAQADgAEAAMAAAACAAUADgAGAAIAAAADAAAADgACAAMAAAADAAEADgADAAMAAAADAAIADgAEAAMAAAADAAMADgAHAAIAAAADAAQADgAEAAMAAAADAAUADgAGAAIAAAAEAAAADgACAAMAAAAEAAEADgADAAMAAAAEAAIADgAEAAMAAAAEAAMADgAHAAIAAAAEAAQADgAEAAMAAAAEAAUADgAGAAIAAAAFAAAADgACAAMAAAAFAAEADgADAAMAAAAFAAIADgAEAAMAAAAFAAMADgAHAAIAAAAFAAQADgAEAAMAAAAFAAUADgAGAAIAAAAGAAAADgACAAMAAAAGAAEADgADAAMAAAAGAAIADgAEAAMAAAAGAAMADgAHAAIAAAAGAAQADgAEAAMAAAAGAAUADgAHAAIAAAAHAAAADgACAAMAAAAHAAEADgADAAMAAAAHAAIADgAEAAMAAAAHAAMADgAHAAIAAAAHAAQADgAEAAMAAAAHAAUADgAGAAIAAAAIAAAADgACAAMAAAAIAAEADgADAAMAAAAIAAIADgAEAAMAAAAIAAMADgAHAAIAAAAIAAQADgAEAAMAAAAIAAUADgAGAAIAAAAJAAAADgAAAAMAAAAJAAEADgABAAMAAAAJAAIADgAGAAIAAAAJAAMADgAHAAIAAAAJAAQADgAGAAIAAAAJAAUADgAGAAIAAAAKAAAADgAAAAMAAAAKAAEADgABAAMAAAAKAAIADgAGAAIAAAAKAAMADgAHAAIAAAAKAAQADgAGAAIAAAAKAAUADgAGAAIAAAALAAAADgAAAAMAAAALAAEADgABAAMAAAALAAIADgAGAAIAAAALAAMADgAHAAIAAAALAAQADgAGAAIAAAALAAUADgAGAAIAAAA=")
+tile_set = ExtResource("3_5hae8")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=773504011]
+z_index = -1
+tile_set = ExtResource("3_5hae8")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=604380390]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAAAAP//BgAHAAIAAAAAAAEADgAHAAMAAAAAAAYABgAHAAIAAAABAP//BgAHAAIAAAABAAYABgAHAAIAAAACAP//BgAHAAIAAAACAAYABgAHAAIAAAADAP//BgAHAAIAAAADAAYABgAHAAIAAAAEAP//BgAHAAIAAAAEAAYABgAHAAIAAAAFAP//BgAHAAIAAAAFAAYABgAHAAIAAAAGAP//BgAHAAIAAAAGAAYABgAHAAIAAAAHAP//BgAHAAIAAAAHAAYABgAHAAIAAAAIAP//BgAHAAIAAAAIAAYABgAHAAIAAAAJAP//BgAHAAIAAAAJAAEADgAHAAMAAAAJAAIADgABAAEAAAAJAAQADgABAAEAAAAJAAYABgAHAAIAAAAKAP//BgAHAAIAAAAKAAIADgAFAAMAAAAKAAYABgAHAAIAAAALAP//BgAHAAIAAAALAAIADgAGAAMAAAALAAYABgAHAAIAAAAMAP//BgAHAAIAAAAMAAAABgAHAAIAAAAMAAEABgAHAAIAAAAMAAIABgAHAAIAAAAMAAMABgAHAAIAAAAMAAQABgAHAAIAAAAMAAUABgAHAAIAAAAMAAYABgAHAAIAAAA=")
+tile_set = ExtResource("3_5hae8")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=843599543]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=1479742264]
+position = Vector2(104, 72)
+
+[node name="Asiento" type="Marker2D" parent="Llegadas" unique_id=185849523]
+position = Vector2(72, 40)
+
+[node name="Salida" type="Node2D" parent="." unique_id=190356651]
+position = Vector2(104, 88)
+script = ExtResource("5_fvn35")
+destino = "res://Escenas/Rutas/Ruta8Abasto.tscn"
+llegada = "Parada"
+salir_empujando = true
+
+[node name="Viaje" type="Node2D" parent="." unique_id=581703289]
+position = Vector2(8, 88)
+script = ExtResource("6_meihs")
+ventana = [1.0, 0.0, 8.0, 1.0]
+
+[node name="PasajeroDuskull" parent="." unique_id=1999008602 instance=ExtResource("7_mkw7d")]
+position = Vector2(40, 40)
+texto = "Duskull te mira con su único ojo rojo. No parece molesto: solo viaja."
+
+[node name="AnimatedSprite2D" parent="PasajeroDuskull" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("8_mhh5t")
+animation = &"abajo"
+
+[node name="PasajeroShuppet" parent="." unique_id=1999137023 instance=ExtResource("7_mkw7d")]
+position = Vector2(120, 40)
+texto = "Shuppet se balancea con el traqueteo del tranvía."
+
+[node name="AnimatedSprite2D" parent="PasajeroShuppet" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("9_odgfu")
+animation = &"abajo"
+
+[node name="PasajeroFantasmaA" parent="." unique_id=697287006 instance=ExtResource("7_mkw7d")]
+position = Vector2(56, 72)
+texto = "Un señor de otra época, transparente como el humo. Mira por la ventana y sonríe."
+mirando = Vector2(0, -1)
+
+[node name="AnimatedSprite2D" parent="PasajeroFantasmaA" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("10_1gcxn")
+animation = &"abajo"
+
+[node name="PasajeroFantasmaB" parent="." unique_id=1265707974 instance=ExtResource("7_mkw7d")]
+position = Vector2(120, 72)
+texto = "Una muchacha pálida con un vestido blanco. Tararea un tango muy bajito."
+mirando = Vector2(0, -1)
+
+[node name="AnimatedSprite2D" parent="PasajeroFantasmaB" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("11_hticd")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_xk16f")]
+position = Vector2(72, 40)
+
+[editable path="PasajeroDuskull"]
+[editable path="PasajeroShuppet"]
+[editable path="PasajeroFantasmaA"]
+[editable path="PasajeroFantasmaB"]

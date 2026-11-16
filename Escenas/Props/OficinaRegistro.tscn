@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ccmenych6o2o7"]
+
+[ext_resource type="Texture2D" uid="uid://bkkm5q543v0fg" path="res://Assets/Overworld/Chacarita/oficina_registro.png" id="1_d5x0o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d5x0o"]
+size = Vector2(80, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xsdyx"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ii0jo"]
+size = Vector2(32, 16)
+
+[node name="OficinaRegistro" type="StaticBody2D" unique_id=1456402090]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1620689169]
+position = Vector2(-40, -58)
+texture = ExtResource("1_d5x0o")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=2034797022]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_d5x0o")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=2113817440]
+position = Vector2(-24, 0)
+shape = SubResource("RectangleShape2D_xsdyx")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=1469614333]
+position = Vector2(24, 0)
+shape = SubResource("RectangleShape2D_ii0jo")

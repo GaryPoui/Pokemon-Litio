@@ -137,6 +137,14 @@ func forzado_en(celda: Vector2i) -> Vector2i:
 				return DIR_FORZADO[str(td.get_custom_data("forzado"))]
 	return Vector2i.ZERO
 
+func es_sotano(celda: Vector2i) -> bool:
+	for capa in [get_node_or_null("Suelo"), get_node_or_null("Obstaculos")]:
+		if capa is TileMapLayer and capa.tile_set!= null and capa.tile_set.get_custom_data_layer_by_name("sotano") >=0:
+			var td: TileData= capa.get_cell_tile_data(celda)
+			if td!= null and td.get_custom_data("sotano")== true:
+				return true
+	return false
+
 func cambiar_celdas(lista: Array) -> void:
 	for c in lista:
 		suelo.set_cell(Vector2i(int(c[0]), int(c[1])), int(c[2]), Vector2i(int(c[3]), int(c[4])))

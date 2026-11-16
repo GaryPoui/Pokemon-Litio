@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dymhjsssqlp1x"]
+
+[ext_resource type="Texture2D" uid="uid://cogok6myyulkc" path="res://Assets/Overworld/Chacarita/monumento_storni.png" id="1_eepad"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eepad"]
+size = Vector2(32, 16)
+
+[node name="MonumentoStorni" type="StaticBody2D" unique_id=2110607317]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=636354668]
+position = Vector2(-16, -38)
+texture = ExtResource("1_eepad")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=689212954]
+shape = SubResource("RectangleShape2D_eepad")

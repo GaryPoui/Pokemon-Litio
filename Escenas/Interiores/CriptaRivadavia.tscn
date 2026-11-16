@@ -1,0 +1,85 @@
+[gd_scene format=4 uid="uid://bkhnxc8tdyugb"]
+
+[ext_resource type="Script" uid="uid://b1nosps1c5dsm" path="res://Scripts/mapa.gd" id="1_owknm"]
+[ext_resource type="Texture2D" uid="uid://7fy0onj3a5qr" path="res://Assets/Batalla/fondos/campo.png" id="2_ea332"]
+[ext_resource type="TileSet" uid="uid://vhf2t4d64g2a" path="res://Recursos/tileset_mundo.tres" id="3_apf1p"]
+[ext_resource type="PackedScene" uid="uid://bw6qghia3ohfr" path="res://Escenas/Personaje.tscn" id="4_xwvnf"]
+[ext_resource type="Script" uid="uid://dn5p3i8giskwy" path="res://Scripts/warp.gd" id="5_ka7fs"]
+[ext_resource type="Script" uid="uid://cus0sfyhcm2w4" path="res://Scripts/cartel.gd" id="6_dd3sn"]
+[ext_resource type="PackedScene" uid="uid://bgwsk6fgjdd6y" path="res://Escenas/ObjetoSuelo.tscn" id="7_orr2n"]
+[ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="8_mkg25"]
+[ext_resource type="Script" uid="uid://drvlm8d0dkc0t" path="res://Scripts/encuentro_unico.gd" id="9_5g3yw"]
+[ext_resource type="SpriteFrames" uid="uid://uivciew7mmxw" path="res://Recursos/Personajes/chacarita_estatua_golett.tres" id="10_not7h"]
+
+[node name="CriptaRivadavia" type="Node2D" unique_id=1061797040]
+y_sort_enabled = true
+script = ExtResource("1_owknm")
+fondo_batalla = ExtResource("2_ea332")
+terreno_batalla = "roca"
+musica = "ruta_chacarita"
+zona_id = "ruta_8"
+zona_nombre = "Cripta de Rivadavia"
+tipo_zona = 3
+anunciar_al_entrar = false
+
+[node name="Suelo" type="TileMapLayer" parent="." unique_id=835138661]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAADgAAAAAAAAAAAAEADgABAAAAAAAAAAIADgAFAAAAAAAAAAMADgAEAAAAAAAAAAQADgAFAAAAAAAAAAUADgAEAAAAAAAAAAYADgAFAAAAAAAAAAcADgAEAAAAAAABAAAADgAAAAAAAAABAAEADgABAAAAAAABAAIADgAEAAAAAAABAAMADgAFAAAAAAABAAQADgAEAAAAAAABAAUADgAFAAAAAAABAAYADgAEAAAAAAABAAcADgAFAAAAAAACAAAADgACAAAAAAACAAEADgADAAAAAAACAAIADgAFAAAAAAACAAMADgAEAAAAAAACAAQADgAFAAAAAAACAAUADgAEAAAAAAACAAYADgAFAAAAAAACAAcADgAEAAAAAAADAAAADgAAAAAAAAADAAEADgABAAAAAAADAAIADgAEAAAAAAADAAMADgAFAAAAAAADAAQADgAEAAAAAAADAAUADgAFAAAAAAADAAYADgAEAAAAAAADAAcADgAFAAAAAAAEAAAADgAAAAAAAAAEAAEADgABAAAAAAAEAAIADgAFAAAAAAAEAAMADgAEAAAAAAAEAAQADgAFAAAAAAAEAAUADgAEAAAAAAAEAAYADgAFAAAAAAAEAAcADgAEAAAAAAAFAAAADgAAAAAAAAAFAAEADgABAAAAAAAFAAIADgAEAAAAAAAFAAMADgAFAAAAAAAFAAQADgAEAAAAAAAFAAUADgAFAAAAAAAFAAYADgAEAAAAAAAFAAcADgAGAAAAAAAGAAAADgAAAAAAAAAGAAEADgABAAAAAAAGAAIADgAFAAAAAAAGAAMADgAEAAAAAAAGAAQADgAFAAAAAAAGAAUADgAEAAAAAAAGAAYADgAFAAAAAAAGAAcADgAEAAAAAAAHAAAADgACAAAAAAAHAAEADgADAAAAAAAHAAIADgAEAAAAAAAHAAMADgAFAAAAAAAHAAQADgAEAAAAAAAHAAUADgAFAAAAAAAHAAYADgAEAAAAAAAHAAcADgAFAAAAAAAIAAAADgAAAAAAAAAIAAEADgABAAAAAAAIAAIADgAFAAAAAAAIAAMADgAEAAAAAAAIAAQADgAFAAAAAAAIAAUADgAEAAAAAAAIAAYADgAFAAAAAAAIAAcADgAEAAAAAAAJAAAADgAAAAAAAAAJAAEADgABAAAAAAAJAAIADgAEAAAAAAAJAAMADgAFAAAAAAAJAAQADgAEAAAAAAAJAAUADgAFAAAAAAAJAAYADgAEAAAAAAAJAAcADgAFAAAAAAA=")
+tile_set = ExtResource("3_apf1p")
+
+[node name="Decoracion" type="TileMapLayer" parent="." unique_id=1699858335]
+z_index = -1
+tile_set = ExtResource("3_apf1p")
+
+[node name="Obstaculos" type="TileMapLayer" parent="." unique_id=197643334]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD/////BgAHAAIAAAD//wAABgAHAAIAAAD//wEABgAHAAIAAAD//wIABgAHAAIAAAD//wMABgAHAAIAAAD//wQABgAHAAIAAAD//wUABgAHAAIAAAD//wYABgAHAAIAAAD//wcABgAHAAIAAAD//wgABgAHAAIAAAAAAP//BgAHAAIAAAAAAAIADgACAAEAAAAAAAgABgAHAAIAAAABAP//BgAHAAIAAAABAAYAAQAGAAAAAAABAAgABgAHAAIAAAACAP//BgAHAAIAAAACAAgABgAHAAIAAAADAP//BgAHAAIAAAADAAMADgABAAEAAAADAAgABgAHAAIAAAAEAP//BgAHAAIAAAAEAAMADgAHAAAAAAAEAAgABgAHAAIAAAAFAP//BgAHAAIAAAAFAAMADgAAAAEAAAAFAAgABgAHAAIAAAAGAP//BgAHAAIAAAAGAAMADgABAAEAAAAGAAgABgAHAAIAAAAHAP//BgAHAAIAAAAHAAgABgAHAAIAAAAIAP//BgAHAAIAAAAIAAgABgAHAAIAAAAJAP//BgAHAAIAAAAJAAIADgACAAEAAAAJAAgABgAHAAIAAAAKAP//BgAHAAIAAAAKAAAABgAHAAIAAAAKAAEABgAHAAIAAAAKAAIABgAHAAIAAAAKAAMABgAHAAIAAAAKAAQABgAHAAIAAAAKAAUABgAHAAIAAAAKAAYABgAHAAIAAAAKAAcABgAHAAIAAAAKAAgABgAHAAIAAAA=")
+tile_set = ExtResource("3_apf1p")
+
+[node name="Llegadas" type="Node2D" parent="." unique_id=1810532608]
+
+[node name="Entrada" type="Marker2D" parent="Llegadas" unique_id=641635347]
+position = Vector2(88, 104)
+
+[node name="Salida" type="Node2D" parent="." unique_id=657182131]
+position = Vector2(88, 120)
+script = ExtResource("5_ka7fs")
+destino = "res://Escenas/Rutas/Ruta8Miserere.tscn"
+llegada = "Cripta"
+salir_empujando = true
+
+[node name="Placa" type="Node2D" parent="." unique_id=1844589029]
+position = Vector2(24, 104)
+script = ExtResource("6_dd3sn")
+texto = "BERNARDINO RIVADAVIA
+
+Primer presidente de la Argentina. Pidió que no lo trajeran de vuelta a Buenos Aires… y aquí descansa, bajo la Plaza Miserere."
+
+[node name="Objeto1" parent="." unique_id=1710029467 instance=ExtResource("7_orr2n")]
+position = Vector2(120, 88)
+item_id = "boleto_segunda"
+clave = "r8_boleto2"
+
+[node name="Golett" parent="." unique_id=1999008602 instance=ExtResource("8_mkg25")]
+position = Vector2(40, 88)
+script = ExtResource("9_5g3yw")
+especie_id = "golett"
+nivel = 26
+clave = "r8_golett"
+requiere = ""
+quedarse = false
+texto_inactivo = ""
+texto_hecho = ""
+animacion_activa = ""
+texto = "La estatua de Golett que faltaba en la plaza está acá abajo, quieta… Sus ojos se encienden: ¡se mueve!"
+mirando = Vector2(1, 0)
+
+[node name="AnimatedSprite2D" parent="Golett" index="0" unique_id=1100079311]
+position = Vector2(0, -7)
+sprite_frames = ExtResource("10_not7h")
+animation = &"abajo"
+
+[node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("4_xwvnf")]
+position = Vector2(88, 104)
+
+[editable path="Golett"]

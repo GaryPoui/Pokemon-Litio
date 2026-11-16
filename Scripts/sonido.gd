@@ -24,6 +24,9 @@ const BUCLES:= {
 	"gimnasio": 14.2,
 	"batalla_lider" :78.8,
 	"victoria_lider": 37.05,
+	"ruta_chacarita" :17.4,
+	"chacarita": 23.55,
+	"galerias" :24.9,
 }
 
 var musica_actual :=""
@@ -135,7 +138,10 @@ func detener_musica(fundido: float= 0.5) -> void:
 	tween_musica.tween_callback(reproductor.stop)
 
 func jingle(nombre: String) -> void:
-	var s:= _cargar(MUSICA+ nombre+ ".ogg")
+	var ruta:= MUSICA+ nombre+ ".ogg"
+	if not ResourceLoader.exists(ruta) and ResourceLoader.exists(EFECTOS+ nombre +".wav"):
+		ruta= EFECTOS+ nombre+ ".wav"
+	var s:= _cargar(ruta)
 	_anotar("jingle", nombre)
 	if s== null:
 		return

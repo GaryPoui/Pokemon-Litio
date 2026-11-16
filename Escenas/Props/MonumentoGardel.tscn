@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b7t070xgnld31"]
+
+[ext_resource type="Script" uid="uid://b8280io1h226a" path="res://Scripts/monumento_gardel.gd" id="1_45w12"]
+[ext_resource type="Texture2D" uid="uid://bfseichxbmx5u" path="res://Assets/Overworld/Chacarita/monumento_gardel.png" id="2_id8by"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_id8by"]
+size = Vector2(32, 16)
+
+[node name="MonumentoGardel" type="StaticBody2D" unique_id=1324702979]
+script = ExtResource("1_45w12")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1063187604]
+position = Vector2(-15, -46)
+texture = ExtResource("2_id8by")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1353856579]
+shape = SubResource("RectangleShape2D_id8by")

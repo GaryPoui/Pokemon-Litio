@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bym2imskw8y6p"]
+
+[ext_resource type="Texture2D" uid="uid://b3nfr7ij5m7m6" path="res://Assets/Overworld/Rutas8/estacion_muertos.png" id="1_terkb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_terkb"]
+size = Vector2(96, 48)
+
+[node name="EstacionMuertos" type="StaticBody2D" unique_id=1408048434]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=468125094]
+position = Vector2(-48, -76)
+texture = ExtResource("1_terkb")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=948026973]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_terkb")

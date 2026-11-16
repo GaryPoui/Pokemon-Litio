@@ -29,5 +29,10 @@ Pokémon Litio es un fan game sin fines de lucro. Pokémon y sus personajes son 
 
 ## Audio
 - Música y jingles: Pokémon Negro/Blanco, © Nintendo / Game Freak. Rip del juego publicado en KHInsider ("Pokémon Black and White (DS) (gamerip)"); los puntos de bucle se midieron para este proyecto.
+  - `ruta_chacarita`: "Route 6 (Spring~Summer)" (Rutas 7 a 9).
+  - `chacarita`: "Kagome Town" (Pueblo Lacunosa), tema de la Chacarita.
+  - `galerias`: "Ancient Castle" (Castillo Ancestral), tema de las Galerías de las Ánimas.
+  - Los efectos `campanada_sala` y `reja` salen de recortar `campanadas` y `bisagra`.
 - Efectos de sonido de Pokémon Negro/Blanco: The Sounds Resource, "Sound Effects" (asset 487564) y "Attack Move Sound Effects" (asset 417935).
 - Gritos de Pokémon Negro/Blanco: The Sounds Resource, "Pokémon Cries" (asset 394759), ripeados por redblueyellow y Mysticus.
+- Tango de la Ruta 8 (melodía original de este proyecto): armado transponiendo una nota de acordeón grabada, "Old Vienna Accordion - C" (Freesound #178092, usuario deleted_user_3305462), dominio público (CC0 1.0).

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d2e4y2xnf2pji"]
+
+[ext_resource type="Texture2D" uid="uid://bf6ys8yw2hhx2" path="res://Assets/Overworld/Rutas9/conventillo_paloma.png" id="1_y4t2v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y4t2v"]
+size = Vector2(128, 64)
+
+[node name="ConventilloPaloma" type="StaticBody2D" unique_id=964359996]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1211959246]
+position = Vector2(-64, -84)
+texture = ExtResource("1_y4t2v")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1719930946]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_y4t2v")

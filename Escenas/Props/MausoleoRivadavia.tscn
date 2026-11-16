@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bu17ciuvhist4"]
+
+[ext_resource type="Texture2D" uid="uid://b0l7hsl5aoyn" path="res://Assets/Overworld/Rutas8/mausoleo_rivadavia.png" id="1_qvcrv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qvcrv"]
+size = Vector2(96, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ew83"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c4n0r"]
+size = Vector2(32, 16)
+
+[node name="MausoleoRivadavia" type="StaticBody2D" unique_id=1078221976]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1035306311]
+position = Vector2(-48, -96)
+texture = ExtResource("1_qvcrv")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1348156139]
+position = Vector2(0, -32)
+shape = SubResource("RectangleShape2D_qvcrv")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=2051951761]
+position = Vector2(-32, 0)
+shape = SubResource("RectangleShape2D_5ew83")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=828599841]
+position = Vector2(32, 0)
+shape = SubResource("RectangleShape2D_c4n0r")

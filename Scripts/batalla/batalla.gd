@@ -29,6 +29,7 @@ const ESCALA_JUGADOR:= Vector2(1.75, 1.75)
 const CATEGORIAS :={"fisico": "Físico", "especial": "Especial", "estado": "Estado"}
 const DESLIZ :=0.08
 const SHADER_ETAPA:= preload("res://Recursos/etapa.gdshader")
+const ANIMADOR :=preload("res://Scripts/batalla/animador.gd")
 const PLATAFORMAS :="res://Assets/Batalla/plataformas/"
 const TONO_SUBE :=Color(1.0, 0.42, 0.24)
 const TONO_BAJA:= Color(0.3, 0.56, 1.0)
@@ -275,6 +276,8 @@ func _reproducir(eventos: Array[Dictionary]) -> void:
 				Sonido.efecto(e["nombre"])
 			"jingle":
 				Sonido.jingle(e["nombre"])
+			"animacion":
+				await ANIMADOR.reproducir(self, e)
 			"etapa":
 				Sonido.efecto("stat_sube" if int(e["cambio"])> 0 else "stat_baja")
 				await _efecto_etapa(str(e["lado"]), int(e["cambio"])> 0)

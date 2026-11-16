@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d78qrsprv72"]
+
+[ext_resource type="Texture2D" uid="uid://xqnnja1i8rqf" path="res://Assets/Overworld/Chacarita/corona_floral.png" id="1_wlj7w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wlj7w"]
+size = Vector2(16, 16)
+
+[node name="CoronaFloral" type="StaticBody2D" unique_id=1525574609]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1612630101]
+position = Vector2(-8, -20)
+texture = ExtResource("1_wlj7w")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1976563177]
+shape = SubResource("RectangleShape2D_wlj7w")

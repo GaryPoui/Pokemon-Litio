@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://chhurtvace2qc"]
+
+[ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_hd5fn"]
+[ext_resource type="Resource" uid="uid://dknhqu0lvmtwe" path="res://Datos/Especies/drilbur.tres" id="2_7cj62"]
+[ext_resource type="Resource" uid="uid://bsqril0acid2u" path="res://Datos/Especies/golett.tres" id="3_81hh0"]
+[ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="4_nlt4j"]
+
+[sub_resource type="Resource" id="Resource_3i7lw"]
+script = ExtResource("1_hd5fn")
+especie = ExtResource("2_7cj62")
+nivel_min = 28
+nivel_max = 28
+peso = 1
+
+[sub_resource type="Resource" id="Resource_78sge"]
+script = ExtResource("1_hd5fn")
+especie = ExtResource("3_81hh0")
+nivel_min = 28
+nivel_max = 28
+peso = 1
+
+[resource]
+script = ExtResource("4_nlt4j")
+clase = "Sepulturero"
+nombre = "Anselmo"
+miembros = Array[ExtResource("1_hd5fn")]([SubResource("Resource_3i7lw"), SubResource("Resource_78sge")])
+pago_base = 50

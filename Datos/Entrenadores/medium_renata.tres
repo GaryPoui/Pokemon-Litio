@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/encuentro_entrada.gd" id="1_lldoy"]
+[ext_resource type="Resource" path="res://Datos/Especies/shuppet.tres" id="2_7dueq"]
+[ext_resource type="Resource" path="res://Datos/Especies/haunter.tres" id="3_xi03n"]
+[ext_resource type="Script" path="res://Scripts/datos/equipo_entrenador.gd" id="4_ddfck"]
+
+[sub_resource type="Resource" id="Resource_kd3xq"]
+script = ExtResource("1_lldoy")
+especie = ExtResource("2_7dueq")
+nivel_min = 28
+nivel_max = 28
+peso = 1
+movimientos = Array[String](["shadow_sneak", "night_shade", "will_o_wisp", "curse"])
+
+[sub_resource type="Resource" id="Resource_qv03i"]
+script = ExtResource("1_lldoy")
+especie = ExtResource("3_xi03n")
+nivel_min = 29
+nivel_max = 29
+peso = 1
+movimientos = Array[String](["lick", "shadow_punch", "night_shade", "confuse_ray"])
+
+[resource]
+script = ExtResource("4_ddfck")
+clase = "Médium"
+nombre = "Renata"
+miembros = Array[ExtResource("1_lldoy")]([SubResource("Resource_kd3xq"), SubResource("Resource_qv03i")])
+pago_base = 55

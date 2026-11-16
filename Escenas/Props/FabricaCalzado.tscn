@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://c8dw4i4sciom0"]
+
+[ext_resource type="Texture2D" uid="uid://6erf7475u54b" path="res://Assets/Overworld/Rutas9/fabrica_calzado.png" id="1_8ukqr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ukqr"]
+size = Vector2(160, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_54cba"]
+size = Vector2(64, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5gm7l"]
+size = Vector2(80, 16)
+
+[node name="FabricaCalzado" type="StaticBody2D" unique_id=1523863286]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=267790325]
+position = Vector2(-80, -96)
+texture = ExtResource("1_8ukqr")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=590157125]
+position = Vector2(0, -32)
+shape = SubResource("RectangleShape2D_8ukqr")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=683082]
+position = Vector2(-48, 0)
+shape = SubResource("RectangleShape2D_54cba")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=565394438]
+position = Vector2(40, 0)
+shape = SubResource("RectangleShape2D_5gm7l")

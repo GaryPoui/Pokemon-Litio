@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cedh4cj3o104j"]
+
+[ext_resource type="Texture2D" uid="uid://bo6jfn22oeqjd" path="res://Assets/Overworld/Chacarita/taller_marmolero.png" id="1_bakiw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bakiw"]
+size = Vector2(80, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nb6qm"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fbcqc"]
+size = Vector2(32, 16)
+
+[node name="TallerMarmolero" type="StaticBody2D" unique_id=1233856834]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1632554333]
+position = Vector2(-40, -62)
+texture = ExtResource("1_bakiw")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=918327671]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_bakiw")
+
+[node name="ColisionIzq" type="CollisionShape2D" parent="." unique_id=1692286985]
+position = Vector2(-24, 0)
+shape = SubResource("RectangleShape2D_nb6qm")
+
+[node name="ColisionDer" type="CollisionShape2D" parent="." unique_id=611774309]
+position = Vector2(24, 0)
+shape = SubResource("RectangleShape2D_fbcqc")

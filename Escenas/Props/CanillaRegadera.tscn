@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://010ix5ii13k3"]
+
+[ext_resource type="Texture2D" uid="uid://df7mxbqxyssn2" path="res://Assets/Overworld/Chacarita/canilla_regadera.png" id="1_3laq3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3laq3"]
+size = Vector2(16, 16)
+
+[node name="CanillaRegadera" type="StaticBody2D" unique_id=1919371062]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2007174294]
+position = Vector2(-8, -16)
+texture = ExtResource("1_3laq3")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1696607554]
+shape = SubResource("RectangleShape2D_3laq3")

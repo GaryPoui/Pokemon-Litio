@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://brunvxcnlnccf"]
+
+[ext_resource type="Texture2D" uid="uid://dsfm1e5gcjhrq" path="res://Assets/Overworld/Chacarita/lapida_quinquela.png" id="1_b6iky"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b6iky"]
+size = Vector2(16, 16)
+
+[node name="LapidaQuinquela" type="StaticBody2D" unique_id=151040379]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=333328170]
+position = Vector2(-8, -18)
+texture = ExtResource("1_b6iky")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1923338748]
+shape = SubResource("RectangleShape2D_b6iky")

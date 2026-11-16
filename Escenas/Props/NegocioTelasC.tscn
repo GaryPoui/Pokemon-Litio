@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://coonrvt738fos"]
+
+[ext_resource type="Texture2D" uid="uid://bvgoo1np6nq8y" path="res://Assets/Overworld/Rutas8/negocio_telas_c.png" id="1_lhviw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lhviw"]
+size = Vector2(48, 32)
+
+[node name="NegocioTelasC" type="StaticBody2D" unique_id=295092615]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1901001679]
+position = Vector2(-24, -68)
+texture = ExtResource("1_lhviw")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1355906801]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_lhviw")

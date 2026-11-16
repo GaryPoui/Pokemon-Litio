@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bxq8drn0ulweq"]
+
+[ext_resource type="Texture2D" uid="uid://wyhjq3j88xls" path="res://Assets/Overworld/Chacarita/boveda_ladrillo.png" id="1_16ilx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_16ilx"]
+size = Vector2(32, 32)
+
+[node name="BovedaLadrillo" type="StaticBody2D" unique_id=603680389]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1346448541]
+position = Vector2(-16, -38)
+texture = ExtResource("1_16ilx")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=781880068]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_16ilx")

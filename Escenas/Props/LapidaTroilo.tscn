@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cwtblfhi8klf2"]
+
+[ext_resource type="Texture2D" uid="uid://mgcqlx04jnnv" path="res://Assets/Overworld/Chacarita/lapida_troilo.png" id="1_iali2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iali2"]
+size = Vector2(16, 16)
+
+[node name="LapidaTroilo" type="StaticBody2D" unique_id=392236071]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=539851106]
+position = Vector2(-8, -20)
+texture = ExtResource("1_iali2")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=900490635]
+shape = SubResource("RectangleShape2D_iali2")

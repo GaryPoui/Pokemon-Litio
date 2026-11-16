@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c1bqmwhislorj"]
+
+[ext_resource type="Texture2D" uid="uid://dv3djg1ok1848" path="res://Assets/Overworld/Rutas8/mercado_abasto.png" id="1_qqmal"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qqmal"]
+size = Vector2(192, 64)
+
+[node name="MercadoAbasto" type="StaticBody2D" unique_id=1237956941]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=71126362]
+position = Vector2(-96, -120)
+texture = ExtResource("1_qqmal")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1283073621]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_qqmal")

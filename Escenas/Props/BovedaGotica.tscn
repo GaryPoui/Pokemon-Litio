@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cfqpqlkgr6p7i"]
+
+[ext_resource type="Texture2D" uid="uid://bfqv7soff7yqy" path="res://Assets/Overworld/Chacarita/boveda_gotica.png" id="1_as1tk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_as1tk"]
+size = Vector2(48, 32)
+
+[node name="BovedaGotica" type="StaticBody2D" unique_id=1722375726]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1717824000]
+position = Vector2(-24, -62)
+texture = ExtResource("1_as1tk")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1536041310]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_as1tk")

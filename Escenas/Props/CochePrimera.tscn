@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d2c1flvb6v611"]
+
+[ext_resource type="Texture2D" uid="uid://cwjfalhovu31e" path="res://Assets/Overworld/Rutas9/coche_primera.png" id="1_ww5vg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ww5vg"]
+size = Vector2(80, 32)
+
+[node name="CochePrimera" type="StaticBody2D" unique_id=1216640939]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2098343650]
+position = Vector2(-39, -38)
+texture = ExtResource("1_ww5vg")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=2032944255]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_ww5vg")

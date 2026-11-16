@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "alianza_luto"
+nombre = "Alianza de Luto"
+descripcion = "Si el portador cae por un golpe directo, el atacante pierde 1/8 de sus PS máximos."
+tier = 3
+efecto = "luto"
+valor = 0.125
+apilado = "no_apila"
+precio = 2500

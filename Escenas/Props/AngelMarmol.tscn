@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b4moqn0af1470"]
+
+[ext_resource type="Texture2D" uid="uid://cjqgis2ao01mi" path="res://Assets/Overworld/Chacarita/angel_marmol.png" id="1_u0aq3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u0aq3"]
+size = Vector2(16, 16)
+
+[node name="AngelMarmol" type="StaticBody2D" unique_id=1080774156]
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=2137972271]
+position = Vector2(-8, -32)
+texture = ExtResource("1_u0aq3")
+centered = false
+
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=1782596355]
+shape = SubResource("RectangleShape2D_u0aq3")
