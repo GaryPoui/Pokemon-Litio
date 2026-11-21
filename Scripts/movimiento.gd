@@ -56,6 +56,15 @@ func _ready() -> void:
 	target_position= position
 	if get_parent()!= null:
 		get_parent().move_child.call_deferred(self, -1)
+	poner_aspecto(Estado.heroe)
+	_set_animation_speeds()
+	_set_idle()
+
+func poner_aspecto(id: String) -> void:
+	var ruta:= "res://Recursos/Personajes/heroe_%s.tres" % id
+	if not ResourceLoader.exists(ruta):
+		return
+	animated_sprite.sprite_frames= load(ruta)
 	_set_animation_speeds()
 	_set_idle()
 

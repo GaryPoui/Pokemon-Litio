@@ -10,6 +10,7 @@ especie = ExtResource("2_8pdqf")
 nivel_min = 5
 nivel_max = 5
 peso = 1
+trinkets = Array[String](["cinta_roja", "pelota_trapo", "alianza_luto"])
 
 [resource]
 script = ExtResource("3_fjjfn")

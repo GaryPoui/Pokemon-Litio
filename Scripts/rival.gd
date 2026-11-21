@@ -4,11 +4,14 @@ const ALERTA:= "res://Assets/UI/exclamacion.png"
 const DIRS :=[Vector2i.RIGHT, Vector2i.UP, Vector2i.DOWN, Vector2i.LEFT]
 
 @export_group("Rival")
-@export_enum("laboca", "cabildo") var evento: String= "laboca"
+@export_enum("laboca", "cabildo", "usina", "adentro") var evento: String= "laboca"
 @export var clave: String =""
 @export var datos_snivy: EquipoEntrenador
 @export var datos_tepig :EquipoEntrenador
 @export var datos_oshawott: EquipoEntrenador
+@export var datos_charmander :EquipoEntrenador
+@export var datos_mudkip: EquipoEntrenador
+@export var celdas_disparo: Array= []
 @export var fila_disparo:= -1
 @export var salida: Vector2= Vector2.RIGHT
 @export var tiempo_paso :=0.22
@@ -21,6 +24,8 @@ const DIRS :=[Vector2i.RIGHT, Vector2i.UP, Vector2i.DOWN, Vector2i.LEFT]
 
 var ocupado:= false
 var jugador: Node
+var reloj :=0.0
+var vieja:= false
 
 func _ready() -> void:
 	super._ready()
@@ -28,19 +33,46 @@ func _ready() -> void:
 	if hecho():
 		queue_free()
 		return
+	if evento== "adentro" and not Estado.en_tutorial():
+		queue_free()
+		return
+	if evento== "usina" and Estado.inicial()!= "" and not Estado.tiene("tut_intro"):
+		evento= "laboca"
+		vieja =true
+		celdas_disparo= []
+		texto= "¡Soy Facu! Me quedé con el Pokémon que le gana al tuyo. ¡A ver quién es mejor!"
+		global_position= Rejilla.centro(self, Vector2i(27, 17))
 	if evento== "laboca" and Estado.inicial()== "":
 		_mostrar(false)
+	if evento== "usina" and not Estado.tiene("tut_usina"):
+		_mostrar(false)
 	_conectar.call_deferred()
+
+func _process(delta: float) -> void:
+	if evento!= "adentro" or ocupado or Dialogo.esta_abierto:
+		return
+	reloj+= delta
+	if reloj< 1.5:
+		return
+	reloj= 0.0
+	_mirar([Vector2.DOWN, Vector2.LEFT, Vector2.RIGHT, Vector2.UP][randi()% 4])
 
 func hecho() -> bool:
 	return clave!= "" and Estado.tiene(clave)
 
 func datos() -> EquipoEntrenador:
+	var ruta:= "res://Datos/Entrenadores/facu_%s_%s.tres" % ["cabildo" if evento== "cabildo" else "laboca", Estado.inicial()]
+	if Estado.inicial()!= "" and ResourceLoader.exists(ruta):
+		return load(ruta)
 	match Estado.inicial():
 		"tepig":
 			return datos_tepig
 		"oshawott":
 			return datos_oshawott
+		"charmander":
+			return datos_charmander
+		"mudkip":
+			return datos_mudkip
 	return datos_snivy
 
 func _conectar() -> void:
@@ -48,8 +80,16 @@ func _conectar() -> void:
 	if m== null or not "jugador" in m or m.jugador== null:
 		return
 	jugador= m.jugador
-	if fila_disparo>= 0 and not jugador.paso_terminado.is_connected(_al_paso):
+	if (fila_disparo>= 0 or not celdas_disparo.is_empty()) and not jugador.paso_terminado.is_connected(_al_paso):
 		jugador.paso_terminado.connect(_al_paso)
+	if evento== "usina" and visible and _en_disparo(jugador.celda()):
+		_al_paso.call_deferred(jugador.celda())
+
+func _en_disparo(c: Vector2i) -> bool:
+	for k in celdas_disparo:
+		if Vector2i(int(k[0]), int(k[1]))== c:
+			return true
+	return false
 
 func _mostrar(si: bool) -> void:
 	visible= si
@@ -63,6 +103,9 @@ func _mostrar(si: bool) -> void:
 
 func interactuar(j: Node) -> void:
 	_mirar(-j.last_direction)
+	if evento== "adentro":
+		await Dialogo.mostrar(texto)
+		return
 	if hecho():
 		await Dialogo.mostrar(texto_despues)
 		return
@@ -73,30 +116,10 @@ func interactuar(j: Node) -> void:
 	await _pelear()
 	ocupado= false
 
-func al_elegir_inicial(j: Node) -> void:
-	if evento!= "laboca" or ocupado or hecho():
-		return
-	ocupado= true
-	jugador= j
-	var objetivo:= _junto_a(j.celda())
-	var inicio:= objetivo
-	for k in range(1, 10):
-		if not _libre(objetivo+ Vector2i(k, 0)):
-			break
-		inicio= objetivo+ Vector2i(k, 0)
-	global_position= Rejilla.centro(self, inicio)
-	_mirar(Vector2.LEFT)
-	_mostrar(true)
-	j.colocar(j.global_position, Vector2(_dir(j.celda(), inicio)))
-	Sonido.musica("mirada_joven", 0.0)
-	await Dialogo.mostrar(texto_llamada)
-	await _caminar_hasta(objetivo, tiempo_paso* 0.7)
-	_enfrentar(j)
-	await _pelear()
-	ocupado= false
-
 func _al_paso(c: Vector2i) -> void:
-	if ocupado or hecho() or c.y!= fila_disparo or Combate.activo or not visible:
+	if ocupado or hecho() or Combate.activo or not visible:
+		return
+	if c.y!= fila_disparo and not _en_disparo(c):
 		return
 	if Equipo.primero_util()== null:
 		return
@@ -108,6 +131,8 @@ func _al_paso(c: Vector2i) -> void:
 	var yo:= celda()
 	var lado:= signi(yo.y- c.y)
 	var objetivo:= Vector2i(c.x, c.y+ (lado if lado!= 0 else 1))
+	if yo.y== c.y:
+		objetivo= Vector2i(c.x+ signi(yo.x- c.x), c.y)
 	if _camino_libre(yo, objetivo):
 		await _caminar_hasta(objetivo, tiempo_paso)
 	_enfrentar(jugador)
@@ -123,12 +148,16 @@ func _pelear() -> void:
 	Sonido.musica("mirada_joven", 0.0)
 	await Dialogo.mostrar(texto)
 	var extra:= {"objetos": d.objetos, "rival": true}
-	if evento== "laboca":
+	if evento in ["laboca", "usina"]:
 		extra["sin_derrota"]= true
-	var res: String= await Combate.iniciar_entrenador(d.nombre_completo(), d.crear_equipo(), d.pago_base, extra)
+	var suyo: Array[PokemonInstancia]= d.crear_equipo()
+	if vieja:
+		for p in suyo:
+			p.trinkets.clear()
+	var res: String= await Combate.iniciar_entrenador(d.nombre_completo(), suyo, d.pago_base, extra)
 	if not is_instance_valid(self) or not is_inside_tree():
 		return
-	if res!= "victoria" and evento!= "laboca":
+	if res!= "victoria" and not evento in ["laboca", "usina"]:
 		return
 	if clave!= "":
 		Estado.marcar(clave)
@@ -139,6 +168,11 @@ func _pelear() -> void:
 		Sonido.jingle("curacion")
 		await Dialogo.mostrar("Tu equipo recuperó toda su energía.")
 		Sonido.cortar_jingle()
+	if evento== "usina":
+		await Dialogo.mostrar("El profe dijo que le devolvamos los Trinkets. Dame los tuyos, yo se los llevo.")
+		for id in Estado.PRESTADOS:
+			Equipo.devolver_trinket(id)
+		Estado.marcar("tutorial_hecho")
 	if texto_salida!= "":
 		await Dialogo.mostrar(texto_salida)
 	await _irse()
@@ -225,3 +259,26 @@ func _libre(c: Vector2i) -> bool:
 	q.transform= Transform2D(0.0, Rejilla.centro(self, c))
 	q.exclude =[get_rid()]
 	return get_world_2d().direct_space_state.intersect_shape(q, 1).is_empty()
+
+func tomar_bola(bola: Node) -> void:
+	ocupado= true
+	var destino: Vector2i= bola.celda()+ Vector2i.DOWN
+	await _caminar_hasta(Vector2i(celda().x, destino.y+ 1), tiempo_paso)
+	await _caminar_hasta(Vector2i(destino.x, destino.y+ 1), tiempo_paso)
+	await _caminar_hasta(destino, tiempo_paso)
+	_mirar(Vector2.UP)
+	await get_tree().create_timer(0.25).timeout
+	bola.quitar()
+	Sonido.efecto("confirmar")
+	ocupado =false
+
+func salir_por(c: Vector2i) -> void:
+	ocupado= true
+	var fila:= c.y- 1
+	await _caminar_hasta(Vector2i(celda().x, fila), tiempo_paso)
+	await _caminar_hasta(Vector2i(c.x, fila), tiempo_paso)
+	await _caminar_hasta(c, tiempo_paso)
+	var tw:= create_tween()
+	tw.tween_property(self, "modulate:a", 0.0, 0.3)
+	await tw.finished
+	queue_free()

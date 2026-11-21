@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EspeciePokemon" format=3 uid="uid://cbisrkam4ey51"]
 
-[ext_resource type="Script" path="res://Scripts/datos/movimiento_nivel.gd" id="1_wtfwn"]
+[ext_resource type="Script" uid="uid://ct40eu5dxhac2" path="res://Scripts/datos/movimiento_nivel.gd" id="1_wtfwn"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/growl.tres" id="2_3ftt1"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/scratch.tres" id="3_j81k0"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/ember.tres" id="4_a853i"]
@@ -13,9 +13,9 @@
 [ext_resource type="Resource" path="res://Datos/Movimientos/flamethrower.tres" id="11_wqmet"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/fire_spin.tres" id="12_mdm6d"]
 [ext_resource type="Resource" path="res://Datos/Movimientos/inferno.tres" id="13_hlsnj"]
-[ext_resource type="Script" path="res://Scripts/datos/especie_pokemon.gd" id="14_dkear"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/charmander_espalda.png" id="15_2vvjq"]
-[ext_resource type="Texture2D" path="res://Assets/Pokemones/batalla/charmander_frente.png" id="16_qf8vb"]
+[ext_resource type="Script" uid="uid://dauli7eb2xcli" path="res://Scripts/datos/especie_pokemon.gd" id="14_dkear"]
+[ext_resource type="Texture2D" uid="uid://bgh2nf8ode8vd" path="res://Assets/Pokemones/batalla/charmander_espalda.png" id="15_2vvjq"]
+[ext_resource type="Texture2D" uid="uid://b7rckbwstg216" path="res://Assets/Pokemones/batalla/charmander_frente.png" id="16_qf8vb"]
 
 [sub_resource type="Resource" id="Resource_wtfwn"]
 script = ExtResource("1_wtfwn")

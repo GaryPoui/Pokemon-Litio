@@ -62,6 +62,16 @@ func reiniciar() -> void:
 	caja.clear()
 	cambiado.emit()
 
+func devolver_trinket(id: String) -> bool:
+	for p in miembros:
+		if p.trinkets.has(id) and EfectosTrinket.quitar_uno(p, id):
+			cambiado.emit()
+			return true
+	for p in caja:
+		if p.trinkets.has(id) and EfectosTrinket.quitar_uno(p, id):
+			return true
+	return Inventario.quitar_trinket(id)
+
 func esta_lleno() -> bool:
 	return miembros.size()>= MAXIMO
 

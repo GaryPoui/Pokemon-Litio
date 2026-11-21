@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "cinta_roja"
+nombre = "Cinta Roja"
+descripcion = "El primer movimiento de daño del portador que acierta en cada combate es un golpe crítico."
+tier = 2
+categoria = "combate"
+alcance = "portador"
+efecto = "cinta"
+valor = 1.0
+unidad = "unico"
+apilado = "no_apila"
+precio = 2000

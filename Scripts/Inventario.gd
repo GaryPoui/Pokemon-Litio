@@ -44,8 +44,8 @@ func _ready() -> void:
 		objetos[id]= BaseDatos.objeto(id)
 	cantidades =INICIAL.duplicate()
 
-func reiniciar() -> void:
-	cantidades= INICIAL.duplicate()
+func reiniciar(vacia:= false) -> void:
+	cantidades= {} if vacia else INICIAL.duplicate()
 	trinkets ={}
 	inventory_changed.emit()
 

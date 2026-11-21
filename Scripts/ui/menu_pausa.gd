@@ -46,7 +46,9 @@ func _unhandled_input(event: InputEvent) -> void:
 	get_viewport().set_input_as_handled()
 
 func abrir() -> void:
-	opciones= ["POKéDEX"]
+	opciones= []
+	if not Estado.en_tutorial() or Estado.tiene("pokedex"):
+		opciones.append("POKéDEX")
 	if not Equipo.miembros.is_empty():
 		opciones.append("POKéMON")
 	opciones.append("MOCHILA")

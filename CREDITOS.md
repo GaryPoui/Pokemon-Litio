@@ -9,6 +9,13 @@ Pokémon Litio es un fan game sin fines de lucro. Pokémon y sus personajes son 
 - Barras de PS y fuente de HGSS: GameMaster12 y StayPuft (The Spriters Resource).
 - Bases de combate de HGSS: Tsuka (The Spriters Resource).
 - Entrenador de espaldas en combate (Ethan, con la animación de lanzamiento) de HGSS: MufasaKong (The Spriters Resource).
+- Protagonistas elegibles:
+  - Ethan y Lyra en el mapa (HGSS): Dazz (The Spriters Resource).
+  - Lucas y Dawn en el mapa (Diamante/Perla): Kaori (The Spriters Resource).
+  - Nate y Rosa en el mapa (Negro 2/Blanco 2): Dazz (The Spriters Resource).
+  - Hilbert y Hilda en el mapa: Barubary (la hoja de Negro/Blanco de arriba).
+  - De espaldas, lanzando: Lyra, Lucas y Dawn de la hoja de HGSS de MufasaKong; Hilbert, Hilda, Nate y Rosa de Negro 2/Blanco 2, ripeados por redblueyellow (The Spriters Resource).
+  - Retratos de la elección de aspecto: sprites de entrenador de Pokémon Showdown.
 - Personajes y entidades del mundo de Pokémon Negro/Blanco: Barubary (The Spriters Resource).
 - Mochila de Pokémon Platino (bolsas, bolsillos y paneles): Dragoon (The Spriters Resource).
 - Íconos de categoría de movimiento (físico/especial/estado): Pokémon Showdown.

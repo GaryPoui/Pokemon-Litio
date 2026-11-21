@@ -11,10 +11,20 @@ var medallas: Array[String]= []
 var fichas:= 0
 var fichas_ciudades :Dictionary= {}
 var estadisticas: Dictionary= estadisticas_nuevas()
+var nombre_jugador :=""
+var heroe:= HEROE_DEFECTO
 
 const DINERO_INICIAL :=3000
 const DINERO_MAX:= 999999
 const FICHAS_POR_CIUDAD :=5
+const INICIALES:= ["snivy", "charmander", "mudkip"]
+const INICIALES_VIEJOS :=["tepig", "oshawott"]
+const CONTRA:= {"snivy": "charmander", "charmander": "mudkip", "mudkip": "snivy"}
+const SOBRA :={"snivy": "mudkip", "charmander": "snivy", "mudkip": "charmander"}
+const PRESTADOS:= ["bombo_hinchada", "botines_potrero", "mate_compartido"]
+const HEROES :=["ethan", "lyra", "lucas", "dawn", "hilbert", "hilda", "nate", "rosa"]
+const FEMENINOS:= ["lyra", "dawn", "hilda", "rosa"]
+const HEROE_DEFECTO :="hilbert"
 
 static func estadisticas_nuevas() -> Dictionary:
 	return {"tiempo": 0.0, "pasos": 0, "companero": ""}
@@ -50,10 +60,19 @@ func tiene(clave: String) -> bool:
 	return banderas.get(clave, false)
 
 func inicial() -> String:
-	for id in ["snivy", "tepig", "oshawott"]:
+	for id in INICIALES+ INICIALES_VIEJOS:
 		if tiene("inicial_" +id):
 			return id
 	return ""
+
+func en_tutorial() -> bool:
+	return tiene("tut_intro") and not tiene("tutorial_hecho")
+
+func g(masc: String, fem: String) -> String:
+	return fem if heroe in FEMENINOS else masc
+
+func con_nombre(con: String, sin: String) -> String:
+	return sin if nombre_jugador== "" else con % nombre_jugador
 
 func ver(especie_id: String) -> void:
 	vistos[especie_id]= true
@@ -98,3 +117,5 @@ func reiniciar() -> void:
 	fichas= 0
 	fichas_ciudades ={}
 	estadisticas= estadisticas_nuevas()
+	nombre_jugador= ""
+	heroe =HEROE_DEFECTO

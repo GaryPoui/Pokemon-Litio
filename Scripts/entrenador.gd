@@ -12,7 +12,7 @@ func interactuar(jugador: Node) -> void:
 		await Dialogo.mostrar(texto_despues)
 		return
 	if Equipo.primero_util()== null:
-		await Dialogo.mostrar("¡Vuelve cuando tengas un Pokémon!")
+		await Dialogo.mostrar("¡Volvé cuando tengas un Pokémon!")
 		return
 	if datos!= null:
 		Sonido.musica("mirada_joven", 0.0)

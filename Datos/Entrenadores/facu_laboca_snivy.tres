@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="EquipoEntrenador" format=3 uid="uid://bu1em2x2ydmue"]
 
 [ext_resource type="Script" uid="uid://c2nasnuam8er1" path="res://Scripts/datos/encuentro_entrada.gd" id="1_jvlmu"]
-[ext_resource type="Resource" uid="uid://c8doxstg2fpgo" path="res://Datos/Especies/tepig.tres" id="2_id6vi"]
+[ext_resource type="Resource" uid="uid://cbisrkam4ey51" path="res://Datos/Especies/charmander.tres" id="2_id6vi"]
 [ext_resource type="Script" uid="uid://bj68m8apddw8q" path="res://Scripts/datos/equipo_entrenador.gd" id="3_ke0b1"]
 
 [sub_resource type="Resource" id="Resource_a2tyq"]
@@ -10,6 +10,7 @@ especie = ExtResource("2_id6vi")
 nivel_min = 5
 nivel_max = 5
 peso = 1
+trinkets = Array[String](["cinta_roja", "pelota_trapo", "alianza_luto"])
 
 [resource]
 script = ExtResource("3_ke0b1")

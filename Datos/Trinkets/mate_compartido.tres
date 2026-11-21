@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "mate_compartido"
+nombre = "Mate Compartido"
+descripcion = "Al final de cada turno, el que tenga menos PS entre los dos Pokémon en el campo y el equipo del portador recupera 1/8 de sus PS máximos."
+tier = 3
+categoria = "combate"
+alcance = "portador"
+efecto = "mate"
+valor = 0.125
+unidad = "porcentaje"
+apilado = "no_apila"
+precio = 2800

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "bombo_hinchada"
+nombre = "Bombo de la Hinchada"
+descripcion = "Cada vez que el portador acierta un movimiento de daño, su Ataque sube un nivel (hasta +2)."
+tier = 2
+categoria = "combate"
+alcance = "portador"
+efecto = "bombo"
+valor = 1.0
+unidad = "fase"
+apilado = "no_apila"
+maximo = 2.0
+precio = 1800

@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="EquipoEntrenador" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/encuentro_entrada.gd" id="1_vedy5"]
+[ext_resource type="Resource" path="res://Datos/Especies/watchog.tres" id="2_21ucq"]
+[ext_resource type="Resource" path="res://Datos/Especies/herdier.tres" id="3_imdi3"]
+[ext_resource type="Resource" path="res://Datos/Especies/gurdurr.tres" id="4_ae26d"]
+[ext_resource type="Resource" path="res://Datos/Especies/marshtomp.tres" id="5_h0s3k"]
+[ext_resource type="Script" path="res://Scripts/datos/equipo_entrenador.gd" id="6_sravg"]
+
+[sub_resource type="Resource" id="Resource_ec7at"]
+script = ExtResource("1_vedy5")
+especie = ExtResource("2_21ucq")
+nivel_min = 19
+nivel_max = 19
+peso = 1
+movimientos = Array[String](["hypnosis", "bite", "work_up", "retaliate"])
+ia = Array[String](["estado:hypnosis", "danio"])
+
+[sub_resource type="Resource" id="Resource_lnuyw"]
+script = ExtResource("1_vedy5")
+especie = ExtResource("3_imdi3")
+nivel_min = 20
+nivel_max = 20
+peso = 1
+movimientos = Array[String](["retaliate", "take_down", "bite", "work_up"])
+ia = Array[String](["represalia", "subir:work_up:ataque:1", "danio"])
+
+[sub_resource type="Resource" id="Resource_718v1"]
+script = ExtResource("1_vedy5")
+especie = ExtResource("4_ae26d")
+nivel_min = 20
+nivel_max = 20
+peso = 1
+movimientos = Array[String](["payback", "low_kick", "rock_throw", "bulk_up"])
+ia = Array[String](["vendetta", "subir:bulk_up:ataque:1", "danio"])
+
+[sub_resource type="Resource" id="Resource_wh8ys"]
+script = ExtResource("1_vedy5")
+especie = ExtResource("5_h0s3k")
+nivel_min = 22
+nivel_max = 22
+peso = 1
+trinkets = Array[String](["colmillo_afilado"])
+movimientos = Array[String](["scald", "mud_shot", "rock_tomb", "bulldoze"])
+ia = Array[String](["danio"])
+
+[resource]
+script = ExtResource("6_sravg")
+clase = "Rival"
+nombre = "Facu"
+miembros = Array[ExtResource("1_vedy5")]([SubResource("Resource_ec7at"), SubResource("Resource_lnuyw"), SubResource("Resource_718v1"), SubResource("Resource_wh8ys")])
+pago_base = 100

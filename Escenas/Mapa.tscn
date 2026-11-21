@@ -9,9 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b241yx4mh0a0n" path="res://Escenas/Npc.tscn" id="6_1p004"]
 [ext_resource type="PackedScene" uid="uid://bgwsk6fgjdd6y" path="res://Escenas/ObjetoSuelo.tscn" id="7_h5d8a"]
 [ext_resource type="Script" uid="uid://cf87qjs4x03b8" path="res://Scripts/entrenador.gd" id="8_7njfp"]
-[ext_resource type="Script" uid="uid://by5d4bt2stuc" path="res://Scripts/inicial.gd" id="9_8xvfq"]
 [ext_resource type="Resource" uid="uid://dmllfp6rnoprj" path="res://Datos/Entrenadores/joven_leo.tres" id="9_bi4ho"]
-[ext_resource type="SpriteFrames" uid="uid://duxoikc8txrow" path="res://Recursos/Personajes/laboca_musico.tres" id="11_p15sl"]
 [ext_resource type="SpriteFrames" uid="uid://0oharg3p0gih" path="res://Recursos/Personajes/laboca_hincha.tres" id="15_p15sl"]
 [ext_resource type="SpriteFrames" uid="uid://coktisehv5kr" path="res://Recursos/Personajes/laboca_guia.tres" id="19_p15sl"]
 [ext_resource type="Resource" uid="uid://24dm04q157pb" path="res://Datos/Entrenadores/chica_ana.tres" id="20_bx1hr"]
@@ -27,6 +25,7 @@
 [ext_resource type="SpriteFrames" uid="uid://cpk1kgmdm6ill" path="res://Recursos/Personajes/rival_facu.tres" id="27_8qk38"]
 [ext_resource type="Resource" uid="uid://bu1em2x2ydmue" path="res://Datos/Entrenadores/facu_laboca_snivy.tres" id="27_p15sl"]
 [ext_resource type="Resource" uid="uid://detkf3mu7vi6d" path="res://Datos/Entrenadores/facu_laboca_tepig.tres" id="28_4w8pt"]
+[ext_resource type="Script" uid="uid://n8idaiqwafyo" path="res://Scripts/bloqueo.gd" id="29_4w8pt"]
 [ext_resource type="Resource" uid="uid://drjwmrnme5t3e" path="res://Datos/Entrenadores/facu_laboca_oshawott.tres" id="29_c2enx"]
 [ext_resource type="PackedScene" uid="uid://dk4sigf6ivygt" path="res://Escenas/DecoracionLaBoca.tscn" id="36_decoracion_boca"]
 [ext_resource type="PackedScene" path="res://Escenas/TerrenoLaBoca.tscn" id="38_terreno_la_boca"]
@@ -100,25 +99,7 @@ position = Vector2(248, 200)
 script = ExtResource("5_rj58i")
 texto = "CAMINITO · LA BOCA
 
-Al sur: Centro Pokémon, café y kiosco. Al este: la Bombonera y la plaza. Al oeste: el puerto."
-
-[node name="Npc" parent="." unique_id=1999008602 instance=ExtResource("6_1p004")]
-position = Vector2(360, 280)
-script = ExtResource("9_8xvfq")
-texto_elegir = "¿Cuál te llevás?"
-texto_pensar = "Pensalo tranquilo. ¡Volvé cuando te decidas!"
-texto = "¡Hola! Mantené Shift para correr.
-
-En las rutas, la hierba alta está llena de Pokémon salvajes. ¡Tené cuidado!"
-texto_regalo = "¡Hola! ¿Todavía no tenés un Pokémon?
-
-Tengo tres que buscan compañero de viaje. Elegí el que más te guste."
-
-[node name="AnimatedSprite2D" parent="Npc" index="0" unique_id=1100079311]
-texture_filter = 1
-position = Vector2(0, -7)
-sprite_frames = ExtResource("11_p15sl")
-animation = &"abajo"
+Al sur: Centro Pokémon, café y kiosco. Al este: la Bombonera y la plaza. Al oeste: el puerto y la Usina del Arte."
 
 [node name="ObjetoSuelo" parent="." unique_id=1710029467 instance=ExtResource("7_h5d8a")]
 position = Vector2(72, 408)
@@ -200,8 +181,8 @@ script = ExtResource("8_7njfp")
 datos = ExtResource("22_wnkcx")
 clave = "vencio_montanero_braulio"
 texto_derrota = "¡Duro como una roca... pero no lo bastante!"
-texto_despues = "En la Zona de Entrenamiento hay muchos Audino. ¡Dan muchísima experiencia!"
-texto = "¡Al este está la Zona de Entrenamiento! Antes de pasar, ¡enfréntate a mis Pokémon de roca!"
+texto_despues = "En la Reserva no se pelea: se atrapa al estilo Safari. El guardaparque te da todo lo que necesitás."
+texto = "¡Al este está la Reserva Ecológica! Antes de pasar, ¡enfrentate a mis Pokémon de roca!"
 mirando = Vector2(0, -1)
 
 [node name="AnimatedSprite2D" parent="MontaneroBraulio" index="0" unique_id=1100079311]
@@ -312,13 +293,16 @@ llegada = "Entrada"
 direccion = Vector2(0, -1)
 
 [node name="Facu" parent="." unique_id=2095868074 instance=ExtResource("6_1p004")]
-position = Vector2(440, 280)
+position = Vector2(88, 168)
 script = ExtResource("26_8qk38")
-evento = "laboca"
+evento = "usina"
 clave = "rival_laboca"
 datos_snivy = ExtResource("27_p15sl")
 datos_tepig = ExtResource("28_4w8pt")
 datos_oshawott = ExtResource("29_c2enx")
+datos_charmander = null
+datos_mudkip = null
+celdas_disparo = [[3.0, 10.0]]
 fila_disparo = -1
 salida = Vector2(1, 0)
 tiempo_paso = 0.22
@@ -330,9 +314,7 @@ texto_derrota = "¡Te gané! Igual tu Pokémon tiene garra, ¿eh?"
 texto_despues = "¡Nos vemos!"
 texto_curar = "Tomá, dejame curar a tu Pokémon. Tengo una Poción de sobra."
 texto_salida = "Me voy a entrenar a la Reserva Ecológica. ¡Nos vemos en el camino!"
-texto = "¡Soy Facu! Yo también le pedí un Pokémon al músico, y me quedé con el que le gana al tuyo.
-
-¿Vemos quién entrena mejor?"
+texto = "¡Ahí estás! El profe nos prestó Trinkets a los dos... ¡a ver cuáles andan mejor!"
 mirando = Vector2(-1, 0)
 
 [node name="AnimatedSprite2D" parent="Facu" index="0" unique_id=1100079311]
@@ -344,7 +326,12 @@ animation = &"abajo"
 [node name="Jugador" parent="." unique_id=232249656 instance=ExtResource("1_8w5j4")]
 position = Vector2(296, 216)
 
-[editable path="Npc"]
+[node name="Bloqueo" type="Node2D" parent="." unique_id=1751332299]
+script = ExtResource("29_4w8pt")
+celdas = [[54.0, 17.0], [54.0, 18.0], [55.0, 16.0], [55.0, 19.0]]
+quien = "../MontaneroBraulio"
+texto = "¡Pará! Antes de ir a la reserva pasá por la Usina del Arte: el profesor Ombú te está esperando."
+
 [editable path="Entrenador"]
 [editable path="GuiaTorre"]
 [editable path="ChicaAna"]

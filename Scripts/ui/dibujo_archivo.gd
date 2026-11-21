@@ -1,7 +1,7 @@
 extends Control
 
 const ARTE:= "res://Assets/UI/Archivos/"
-const HEROE :=preload("res://Assets/Personajes/hero_godot_grid_40x40.png")
+const HEROES :="res://Assets/Personajes/Heroes/%s.png"
 const CUADRO_HEROE:= Rect2i(0, 40, 40, 40)
 const ICONOS :="res://Assets/Pokemones/iconos/"
 const ANCHO:= 68
@@ -27,9 +27,13 @@ func mostrar(r: Dictionary) -> void:
 	if ciudad!= "" and ResourceLoader.exists(ARTE+ "ciudad_%s.png" % ciudad):
 		var t: Texture2D= load(ARTE+ "ciudad_%s.png" % ciudad)
 		_poner(t, Vector2(floori((ANCHO- t.get_width())/ 2.0)+ 3, 33- t.get_height()), "ciudad_" +ciudad)
-	var usado_h:= HEROE.get_image().get_region(CUADRO_HEROE).get_used_rect()
+	var id_h:= str(r.get("heroe", ""))
+	if not ResourceLoader.exists(HEROES % id_h):
+		id_h= Estado.HEROE_DEFECTO
+	var hoja_h: Texture2D= load(HEROES % id_h)
+	var usado_h:= hoja_h.get_image().get_region(CUADRO_HEROE).get_used_rect()
 	var h:= AtlasTexture.new()
-	h.atlas= HEROE
+	h.atlas= hoja_h
 	h.region =Rect2(usado_h.position+ CUADRO_HEROE.position, usado_h.size)
 	_poner(h, Vector2(20- floori(usado_h.size.x/ 2.0), SUELO- usado_h.size.y), "heroe")
 	var comp:= str(r.get("companero", ""))

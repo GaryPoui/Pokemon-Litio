@@ -74,6 +74,11 @@ var forzar_secundarios :=false
 var objetos_perdidos: Dictionary= {}
 var temporales :Dictionary= {}
 var eco:= {}
+var usados :Dictionary= {}
+var luchados: Dictionary ={}
+var caidos_banco: Array= []
+var ultimo_rival_caido: PokemonInstancia
+var ganando_ya:= false
 const PUAS:= [0.0, 1.0/ 8.0, 1.0/ 6.0, 1.0/ 4.0]
 const ILUSION:= ["zorua", "zoroark"]
 const CURAS_RIVAL :={"hyper_potion": 0.0, "super_potion": 0.0, "potion": 0.0}
@@ -99,7 +104,8 @@ func _init(jugador: Array[PokemonInstancia], rival: Array[PokemonInstancia], es_
 func iniciar() -> Array[Dictionary]:
 	r= _nuevo_rival(_siguiente_util(equipo_r))
 	j =_nuevo_luchador(_siguiente_util(equipo_j))
-	participantes= [j.pokemon]
+	participantes.clear()
+	_participa(j.pokemon)
 	if salvaje:
 		_ev_sale("rival", r.pokemon)
 		_texto("¡Un %s salvaje apareció!" % r.pokemon.nombre())
@@ -157,6 +163,7 @@ func turno(accion: Dictionary) -> Array[Dictionary]:
 		_texto("¡%s no puede cambiarse!" % j.pokemon.nombre())
 		return _tomar()
 	turnos+= 1
+	_anotar_luchado(j.pokemon)
 	for l in [j, r]:
 		l.retrocede= false
 		l.actuo_turno= false
@@ -313,8 +320,7 @@ func reemplazar(indice: int) -> Array[Dictionary]:
 	esperando_reemplazo= false
 	j_anunciado =false
 	j= _nuevo_luchador(equipo_j[indice])
-	if not participantes.has(j.pokemon):
-		participantes.append(j.pokemon)
+	_participa(j.pokemon)
 	_texto("¡Adelante, %s!" % j.pokemon.nombre())
 	_ev_sale("jugador", j.pokemon)
 	_al_entrar(j)
@@ -672,6 +678,12 @@ func _usar_cuerpo(a: Luchador, d: Luchador, mov: Movimiento, indice: int, gastar
 			if not MovEfectos.antes(self, d, a, mov, false):
 				_efecto_estado(d, a, mov)
 			return
+	if mov.categoria!= "estado" and not mov.objetivo in OBJETIVO_PROPIO and a!= d and d.invulnerable== "" and not d.pokemon.esta_debilitado() and EfectosTrinket.total("botines", d.pokemon)> 0.0 and _una_vez(d.pokemon, "botines"):
+		_ev({"tipo": "sonido", "nombre": "objeto_activo"})
+		_texto("¡%s esquivó el ataque con sus Botines de Potrero!" % _cap(nombre_de(d)))
+		_cortar_bloqueo(a)
+		a.quitar("corte_furia")
+		return
 	if not mov.objetivo in OBJETIVO_PROPIO and not _acierta(a, d, mov):
 		if d.invulnerable!= "":
 			_texto("¡%s esquivó el ataque!" % _cap(nombre_de(d)))
@@ -702,7 +714,9 @@ func _usar_cuerpo(a: Luchador, d: Luchador, mov: Movimiento, indice: int, gastar
 	var tipo_golpe:= tipo_de(a, mov)
 	if efectividad(a, d, tipo_golpe, mov)!= 0.0 and not HabCombate.absorberia(self, a, d, tipo_golpe, mov):
 		_ev_animacion(a, d, mov)
-	_golpear(a, d, mov)
+	var dados:= _golpear(a, d, mov)
+	a.quitar("cinta_critico")
+	_bombo(a, dados)
 
 func _ev_animacion(a: Luchador, d: Luchador, mov: Movimiento) -> void:
 	_ev({"tipo": "animacion", "mov": mov.id, "de": _lado(a), "a": _lado(a) if mov.objetivo in OBJETIVO_PROPIO else _lado(d)})
@@ -724,6 +738,56 @@ func _vinculos(a: Luchador, d: Luchador, mov: Movimiento) -> void:
 		if k>= 0:
 			a.pp()[k]= 0
 			_texto("¡%s perdió todos los PP de %s por el rencor!" % [_cap(nombre_de(a)), mov.nombre])
+
+func _una_vez(p: PokemonInstancia, id: String) -> bool:
+	var lista: Array= usados.get(p, [])
+	if lista.has(id):
+		return false
+	lista.append(id)
+	usados[p]= lista
+	return true
+
+func _bombo(a: Luchador, dados: int) -> void:
+	if dados<= 0 or a.pokemon.esta_debilitado() or EfectosTrinket.total("bombo", a.pokemon)<= 0.0 or a.etapas["ataque"]>= 2:
+		return
+	_ev({"tipo": "sonido", "nombre": "bombo"})
+	_texto("¡El Bombo de la Hinchada alienta %s!" % _a(a))
+	cambiar_etapa_desde(a, a, "ataque", 1, false)
+
+func _mate(l: Luchador) -> void:
+	if l.pokemon.esta_debilitado() or EfectosTrinket.total("mate", l.pokemon)<= 0.0:
+		return
+	var o:= otro_de(l)
+	var lista: Array[PokemonInstancia]= [l.pokemon]
+	for p in (equipo_j if l== j else equipo_r):
+		if not lista.has(p):
+			lista.append(p)
+	if not lista.has(o.pokemon):
+		lista.append(o.pokemon)
+	var elegido_p: PokemonInstancia= null
+	var menor:= 2.0
+	for p in lista:
+		if p== null or p.esta_debilitado() or p.ps_actuales>= p.ps_max():
+			continue
+		var f:= p.ps_actuales/ float(p.ps_max())
+		if f< menor:
+			menor= f
+			elegido_p =p
+	if elegido_p== null:
+		return
+	var cant:= maxi(1, floori(elegido_p.ps_max()* EfectosTrinket.total("mate", l.pokemon)))
+	var nombre: String
+	var real:= 0
+	if elegido_p== l.pokemon or elegido_p== o.pokemon:
+		var quien:= l if elegido_p== l.pokemon else o
+		nombre= _cap(nombre_de(quien))
+		real= _curar(quien, cant)
+	else:
+		nombre =elegido_p.nombre()
+		real= elegido_p.curar_ps(cant)
+	if real> 0:
+		_ev({"tipo": "sonido", "nombre": "objeto_activo"})
+		_texto("¡%s compartió un mate! %s recuperó PS." % [_cap(nombre_de(l)), nombre])
 
 func _choque(a: Luchador, mov: Movimiento) -> void:
 	if activa(a, "magic_guard"):
@@ -806,30 +870,34 @@ func _acierta(a: Luchador, d: Luchador, mov: Movimiento) -> bool:
 		p*= 5.0/ 3.0
 	return rng.randf()* 100.0< p
 
-func _golpear(a: Luchador, d: Luchador, mov: Movimiento) -> void:
+func _golpear(a: Luchador, d: Luchador, mov: Movimiento) -> int:
 	var nombre:= _cap(nombre_de(a))
 	var tipo:= tipo_de(a, mov)
 	var ef:= efectividad(a, d, tipo, mov)
 	if HabCombate.absorbe(self, a, d, mov, tipo):
 		_cortar_bloqueo(a)
-		return
+		return 0
 	if ef== 0.0 and tipo!= "":
 		_texto("No afecta %s..." % _a(d))
 		_cortar_bloqueo(a)
 		if mov.id in ["jump_kick", "high_jump_kick"]:
 			_choque(a, mov)
-		return
+		return 0
 	if mov.tiene("powder") and "planta" in d.tipos():
 		_texto("No afecta %s..." % _a(d))
-		return
+		return 0
 	if habilidad_def(a, d, "wonder_guard") and ef<= 1.0 and mov.id!= "struggle" and MovEfectos.danio_fijo(self, a, d, mov)< 0:
 		anunciar_habilidad(d)
 		_texto("¡No afecta %s!" % _a(d))
-		return
+		return 0
 	if habilidad_def(a, d, "soundproof") and mov.tiene("sound"):
 		anunciar_habilidad(d)
 		_texto("No afecta %s..." % _a(d))
-		return
+		return 0
+	if MovEfectos.danio_fijo(self, a, d, mov)< 0 and EfectosTrinket.total("cinta", a.pokemon)> 0.0 and _una_vez(a.pokemon, "cinta"):
+		_ev({"tipo": "sonido", "nombre": "objeto_activo"})
+		_texto("¡La Cinta Roja %s brilla!" % _de(a))
+		a.poner("cinta_critico")
 	var golpes:= MovEfectos.golpes(self, a, mov)
 	var dados:= 0
 	var total:= 0
@@ -894,7 +962,7 @@ func _golpear(a: Luchador, d: Luchador, mov: Movimiento) -> void:
 			_cambiar_etapa(d, "ataque", 1, false)
 	a.quitar("golpe_n")
 	if dados== 0:
-		return
+		return 0
 	if golpes> 1:
 		_texto("¡Recibió %d golpe%s!" % [dados, "" if dados== 1 else "s"])
 	elif hubo_critico:
@@ -940,7 +1008,7 @@ func _golpear(a: Luchador, d: Luchador, mov: Movimiento) -> void:
 				cambiar_etapa_desde(a, obj, s, int(mov.cambios_stats[s]), false)
 	if d.pokemon.esta_debilitado():
 		MovEfectos.despues(self, a, d, mov, total)
-		return
+		return dados
 	if not fuerza_bruta and not escudo and d.sustituto<= 0 and not rompio_sub:
 		if ESTADOS.has(mov.estado) and mov.prob_estado> 0 and rng.randi_range(1, 100)<= mov.prob_estado* serena:
 			aplicar_estado_desde(a, d, ESTADOS[mov.estado], false)
@@ -954,6 +1022,7 @@ func _golpear(a: Luchador, d: Luchador, mov: Movimiento) -> void:
 	MovEfectos.despues(self, a, d, mov, total)
 	if not d.pokemon.esta_debilitado() and total> 0:
 		HabCombate.al_recibir_golpe(self, a, d, mov, tipo)
+	return dados
 
 func calcular_danio(a: Luchador, d: Luchador, mov: Movimiento, ef: float) -> Dictionary:
 	if mov.id== "super_fang":
@@ -970,6 +1039,8 @@ func calcular_danio(a: Luchador, d: Luchador, mov: Movimiento, ef: float) -> Dic
 	var critico:= rng.randi_range(1, tabla[clampi(etapa_crit, 0, 4)])== 1 and not sin_criticos
 	if mov.id in ["storm_throw", "frost_breath"]:
 		critico= true
+	if a.tiene("cinta_critico"):
+		critico =true
 	if critico and (habilidad_def(a, d, "battle_armor") or habilidad_def(a, d, "shell_armor") or int(trampas[_lado(d)]["conjuro"])> 0):
 		critico= false
 	var ataque: int
@@ -1172,8 +1243,7 @@ func _meter(a: Luchador, sig: PokemonInstancia, pasa_relevo: bool) -> void:
 		_al_entrar(r)
 	else:
 		j= nuevo
-		if not participantes.has(sig):
-			participantes.append(sig)
+		_participa(sig)
 		_texto("¡Adelante, %s!" % sig.nombre())
 		_ev_sale("jugador", sig)
 		_al_entrar(j)
@@ -1258,8 +1328,7 @@ func _arrastrar(a: Luchador, d: Luchador) -> void:
 		_al_entrar(r)
 	else:
 		j= _nuevo_luchador(sig)
-		if not participantes.has(sig):
-			participantes.append(sig)
+		_participa(sig)
 		_texto("¡%s fue arrastrado al combate!" % sig.nombre())
 		_ev_sale("jugador", sig)
 		_al_entrar(j)
@@ -1394,6 +1463,7 @@ func _fin_de_turno() -> void:
 		var siempre :=EfectosTrinket.total("cura_turno", p)
 		if siempre> 0.0 and p.ps_actuales< p.ps_max() and _curar(l, maxi(1, floori(p.ps_max()* siempre)))> 0:
 			_texto("¡La Siempreviva %s le devolvió PS!" % _de(l))
+		_mate(l)
 		if l.tiene("acua_aro") and _curar(l, floori(p.ps_max()/ 16.0))> 0:
 			_texto("¡%s recuperó PS con el acua aro!" % _cap(nombre_de(l)))
 		if l.tiene("arraigo") and _curar(l, floori(p.ps_max()/ 16.0))> 0:
@@ -1586,29 +1656,51 @@ func restaurar_objetos() -> void:
 
 func _revisar_debilitados(reponer: bool= true) -> bool:
 	var algo:= false
-	if r.pokemon.esta_debilitado() and not terminado and not r.tiene("debil_anunciado"):
-		algo= true
-		r.poner("debil_anunciado")
-		_ev({"tipo": "debilitado", "lado": "rival"})
-		_texto("¡%s se debilitó!" % _cap(nombre_de(r)))
-		HabCombate.al_debilitar(self, r)
-		_dar_experiencia()
+	var seguir:= true
+	while seguir and not terminado:
+		seguir= false
+		if r.pokemon.esta_debilitado() and not r.tiene("debil_anunciado"):
+			algo= true
+			seguir =true
+			r.poner("debil_anunciado")
+			_ev({"tipo": "debilitado", "lado": "rival"})
+			_texto("¡%s se debilitó!" % _cap(nombre_de(r)))
+			HabCombate.al_debilitar(self, r)
+			_dar_experiencia()
+			ultimo_rival_caido= r.pokemon
+			_pelota(r.pokemon, "rival")
+		if j.pokemon.esta_debilitado() and not j_anunciado:
+			algo =true
+			seguir= true
+			j_anunciado= true
+			_ev({"tipo": "debilitado", "lado": "jugador"})
+			_texto("¡%s se debilitó!" % j.pokemon.nombre())
+			HabCombate.al_debilitar(self, j)
+			j.pokemon.subir_amistad(-1)
+			participantes.erase(j.pokemon)
+			_pelota(j.pokemon, "jugador")
+		while not caidos_banco.is_empty():
+			algo= true
+			seguir =true
+			var c: Array= caidos_banco.pop_front()
+			var p: PokemonInstancia= c[0]
+			_texto("¡%s se debilitó en el banco!" % _cap(_nombre_p(p, c[1])))
+			if c[1]== "rival":
+				_dar_experiencia_a(p, luchados.get(p, []))
+				ultimo_rival_caido= p
+			else:
+				p.subir_amistad(-1)
+			_pelota(p, c[1])
+	if algo and not terminado:
 		if _siguiente_util(equipo_r)== null:
 			if not salvaje:
 				_texto("¡Has derrotado a %s!" % nombre_entrenador)
 				if pago_base> 0:
-					dinero_ganado= roundi(pago_base* r.pokemon.nivel* (1.0+ EfectosTrinket.total("dinero", null, equipo_j)))
+					var nivel:= ultimo_rival_caido.nivel if ultimo_rival_caido!= null else r.pokemon.nivel
+					dinero_ganado= roundi(pago_base* nivel* (1.0+ EfectosTrinket.total("dinero", null, equipo_j)))
 					_texto("¡Ganaste %d$ por tu victoria!" % dinero_ganado)
 			_terminar("victoria")
-	if j.pokemon.esta_debilitado() and not j_anunciado:
-		algo =true
-		j_anunciado= true
-		_ev({"tipo": "debilitado", "lado": "jugador"})
-		_texto("¡%s se debilitó!" % j.pokemon.nombre())
-		HabCombate.al_debilitar(self, j)
-		j.pokemon.subir_amistad(-1)
-		participantes.erase(j.pokemon)
-		if not terminado and _siguiente_util(equipo_j)== null:
+		elif _siguiente_util(equipo_j)== null:
 			_texto("¡No te quedan Pokémon que puedan luchar!")
 			_terminar("derrota")
 	if terminado or not reponer:
@@ -1619,7 +1711,7 @@ func _revisar_debilitados(reponer: bool= true) -> bool:
 			r= _nuevo_rival(sig)
 			participantes.clear()
 			if not j.pokemon.esta_debilitado():
-				participantes.append(j.pokemon)
+				_participa(j.pokemon)
 			_texto("¡%s envió a %s!" % [nombre_entrenador, r.nombre_visible()])
 			_ev_sale("rival", sig)
 			_anunciar_trinkets(sig)
@@ -1630,6 +1722,33 @@ func _revisar_debilitados(reponer: bool= true) -> bool:
 		esperando_reemplazo= true
 		_ev({"tipo": "elegir_reemplazo"})
 	return algo
+
+func _nombre_p(p: PokemonInstancia, lado: String) -> String:
+	if lado== "jugador":
+		return p.nombre()
+	return ("el %s salvaje" if salvaje else "el %s enemigo") % p.nombre()
+
+func _pelota(caido: PokemonInstancia, lado_caido: String) -> void:
+	var fr:= EfectosTrinket.total("pelota", caido)
+	if fr<= 0.0 or ganando_ya:
+		return
+	var otro_lado:= "rival" if lado_caido== "jugador" else "jugador"
+	var activo:= r if otro_lado== "rival" else j
+	var n:= _nombre_p(caido, lado_caido)
+	_ev({"tipo": "sonido", "nombre": "objeto_activo"})
+	_texto("¡La Pelota de Trapo %s golpeó a todo el equipo contrario!" % (("del "+ n.substr(3)) if n.begins_with("el ") else ("de "+ n)))
+	for p in (equipo_r if otro_lado== "rival" else equipo_j):
+		if p.esta_debilitado():
+			continue
+		if (activa(activo, "magic_guard") if p== activo.pokemon else p.habilidad== "magic_guard"):
+			continue
+		var cant:= maxi(1, floori(p.ps_max()* fr))
+		if p== activo.pokemon:
+			_herir(activo, cant)
+		else:
+			p.recibir_danio(cant)
+			if p.esta_debilitado():
+				caidos_banco.append([p, otro_lado])
 
 func _terminar(res: String) -> void:
 	if terminado:
@@ -1643,6 +1762,7 @@ func ganar_ya() -> Array[Dictionary]:
 	if terminado:
 		return _tomar()
 	_texto("¡Modo prueba: victoria automática!")
+	ganando_ya= true
 	for p in equipo_r:
 		if not p.esta_debilitado():
 			var antes:= p.ps_actuales
@@ -1662,18 +1782,34 @@ func exp_ganada(p: PokemonInstancia, derrotado: PokemonInstancia, cantidad_parti
 	var total:= floori(base* pow(2.0* nv+ 10.0, 2.5)/ pow(nv+ p.nivel+ 10.0, 2.5))+ 1
 	return floori(total* (1.0+ EfectosTrinket.total("exp", p)))
 
+func _participa(p: PokemonInstancia) -> void:
+	if not participantes.has(p):
+		participantes.append(p)
+	_anotar_luchado(p)
+
+func _anotar_luchado(p: PokemonInstancia) -> void:
+	if r== null or p== null or p.esta_debilitado():
+		return
+	var lista: Array= luchados.get(r.pokemon, [])
+	if not lista.has(p):
+		lista.append(p)
+	luchados[r.pokemon]= lista
+
 func _dar_experiencia() -> void:
+	_dar_experiencia_a(r.pokemon, participantes)
+
+func _dar_experiencia_a(derrotado: PokemonInstancia, quienes: Array) -> void:
 	if sin_exp:
 		return
 	var vivos: Array[PokemonInstancia]= []
-	for p in participantes:
+	for p in quienes:
 		if not p.esta_debilitado() and not vivos.has(p):
 			vivos.append(p)
 	for p in vivos:
-		_dar_evs(p, r.pokemon.especie.evs_otorgados)
+		_dar_evs(p, derrotado.especie.evs_otorgados)
 		if p.nivel>= PokemonInstancia.NIVEL_MAX:
 			continue
-		var cant:= exp_ganada(p, r.pokemon, vivos.size())
+		var cant:= exp_ganada(p, derrotado, vivos.size())
 		var exp_antes:= p.experiencia
 		var nivel_antes :=p.nivel
 		_texto("¡%s ganó %d puntos de experiencia!" % [p.nombre(), cant])
@@ -1723,8 +1859,7 @@ func _cambiar(indice: int) -> void:
 	HabCombate.al_salir(self, j)
 	_ev({"tipo": "retirar", "lado": "jugador", "ball": j.pokemon.ball})
 	j= _nuevo_luchador(equipo_j[indice])
-	if not participantes.has(j.pokemon):
-		participantes.append(j.pokemon)
+	_participa(j.pokemon)
 	_texto("¡Adelante, %s!" % j.pokemon.nombre())
 	_ev_sale("jugador", j.pokemon)
 	_al_entrar(j)

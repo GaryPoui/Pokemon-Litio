@@ -25,11 +25,34 @@ var botones: Array[Label]= []
 var campo: Label
 var cursor: Panel
 var activo:= false
+var maximo :=MAX
+var exigir:= false
 
 func _ready() -> void:
 	layer= 108
 
 func armar(p: PokemonInstancia) -> void:
+	var ic: TextureRect= null
+	var ruta:= "res://Assets/Pokemones/iconos/%s.png" % p.especie.id
+	if ResourceLoader.exists(ruta):
+		var at:= AtlasTexture.new()
+		at.atlas= load(ruta)
+		at.region =Rect2(0, 0, 32, 32)
+		ic= TextureRect.new()
+		ic.texture= at
+		ic.position =EstiloUI.posicion_icono(at.atlas, 2, Vector2(20, 23), false)
+	_armar("Mote de %s" % p.especie.nombre, ic)
+
+func armar_texto(titulo: String, icono: Texture2D= null, largo:= MAX) -> void:
+	maximo= largo
+	var ic: TextureRect= null
+	if icono!= null:
+		ic= TextureRect.new()
+		ic.texture =icono
+		ic.position= (Vector2(20, 23)- icono.get_size()/ 2.0).round()
+	_armar(titulo, ic)
+
+func _armar(titulo: String, ic: TextureRect) -> void:
 	var fondo:= TextureRect.new()
 	fondo.texture= FONDO
 	add_child(fondo)
@@ -43,18 +66,11 @@ func armar(p: PokemonInstancia) -> void:
 	hoja.size =Vector2(236, 46)
 	hoja.add_theme_stylebox_override("panel", EstiloUI.hoja())
 	cab.add_child(hoja)
-	var ruta:= "res://Assets/Pokemones/iconos/%s.png" % p.especie.id
-	if ResourceLoader.exists(ruta):
-		var at:= AtlasTexture.new()
-		at.atlas= load(ruta)
-		at.region =Rect2(0, 0, 32, 32)
-		var ic:= TextureRect.new()
+	if ic!= null:
 		ic.name= "Icono"
-		ic.texture= at
-		ic.position =EstiloUI.posicion_icono(at.atlas, 2, Vector2(20, 23), false)
 		ic.texture_filter= CanvasItem.TEXTURE_FILTER_NEAREST
 		hoja.add_child(ic)
-	hoja.add_child(EstiloUI.nuevo_label("Mote de %s" % p.especie.nombre, 8, Vector2(42, 4), EstiloUI.TENUE))
+	hoja.add_child(EstiloUI.nuevo_label(titulo, 8, Vector2(42, 4), EstiloUI.TENUE))
 	campo= EstiloUI.nuevo_label("", 9, Vector2(42, 20))
 	campo.name= "Campo"
 	hoja.add_child(campo)
@@ -96,7 +112,7 @@ func _pintar() -> void:
 		for c in 10:
 			var ch: String= j[f][c] if c< j[f].length() else " "
 			celdas[f][c].text= ch
-	var vacios:= MAX- texto.length()
+	var vacios:= maximo- texto.length()
 	campo.text= texto+ "_".repeat(vacios)
 	if fila< 4:
 		cursor.position= Vector2(X0+ col* PASO_X- 3+ (ANCHO_LETRA- 17)/ 2.0, Y0+ fila* PASO_Y- 1).round()
@@ -122,8 +138,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	elif event.is_action_pressed("cancelar"):
 		_borrar()
 	elif event.is_action_pressed("menu"):
-		Sonido.efecto("confirmar")
-		listo.emit(texto)
+		_terminar()
 	else:
 		return
 	get_viewport().set_input_as_handled()
@@ -138,9 +153,16 @@ func _mover_fila(d: int) -> void:
 	elif antes== 4 and fila< 4:
 		col =[0, 4, 8][col]
 
+func _terminar() -> void:
+	if exigir and texto.strip_edges()== "":
+		Sonido.efecto("choque")
+		return
+	Sonido.efecto("confirmar")
+	listo.emit(texto)
+
 func escribir(t: String) -> void:
 	for ch in t:
-		if texto.length()< MAX:
+		if texto.length()< maximo:
 			texto+= ch
 	_pintar()
 
@@ -152,13 +174,12 @@ func _aceptar() -> void:
 			1:
 				_borrar()
 			2:
-				Sonido.efecto("confirmar")
-				listo.emit(texto)
+				_terminar()
 		return
 	var ch: String= celdas[fila][col].text
-	if texto.length()< MAX:
+	if texto.length()< maximo:
 		texto+= ch
-	if texto.length()== MAX:
+	if texto.length()== maximo:
 		fila= 4
 		col =2
 

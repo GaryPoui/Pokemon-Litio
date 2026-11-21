@@ -12,7 +12,9 @@ const COMANDOS:= ["Luchar", "Mochila", "Pokémon", "Huir"]
 const SAFARI :=["ball", "alfajor", "barro", "huir"]
 const NOMBRES_SAFARI:= ["Ball", "Alfajor", "Barro", "Huir"]
 const LANZABLES :="res://Assets/Batalla/safari/"
-const MANO:= Vector2(32, -13)
+const MANOS:= {"ethan": Vector2(32, 11), "lyra": Vector2(32, 11), "lucas": Vector2(32, 11), "dawn": Vector2(32, 11), "hilbert": Vector2(44, 23), "hilda": Vector2(40, 25), "nate": Vector2(50, 24), "rosa": Vector2(42, 24)}
+const ESPALDAS :="res://Assets/Personajes/Heroes/%s_espalda.png"
+const POS_ENTRENADOR:= Vector2(68, 128)
 const ESCENA_MOCHILA :="res://Escenas/UI/Mochila/Mochila.tscn"
 const ESCENA_EQUIPO:= "res://Escenas/UI/PantallaEquipo.tscn"
 const BALLS :="res://Assets/Batalla/balls/"
@@ -205,6 +207,12 @@ func poner_fondo(textura: Texture2D, tipo: String= "") -> void:
 		base.position =Vector2.ZERO
 		base.visible= true
 
+static func espalda_de(id: String) -> Texture2D:
+	var ruta:= ESPALDAS % id
+	if not ResourceLoader.exists(ruta):
+		ruta= ESPALDAS % "ethan"
+	return load(ruta)
+
 func empezar(rivales: Array[PokemonInstancia], salvaje: bool, entrenador: String, config: Dictionary= {}) -> String:
 	var propio: Array[PokemonInstancia]= []
 	propio.assign(config.get("equipo", Equipo.miembros))
@@ -228,6 +236,8 @@ func empezar(rivales: Array[PokemonInstancia], salvaje: bool, entrenador: String
 				sprite_rival.mostrar(e["pokemon"].especie, false)
 				sprite_rival.scale= _encajar(sprite_rival, "rival")
 				break
+	sprite_entrenador.texture= espalda_de(Estado.heroe)
+	sprite_entrenador.position =POS_ENTRENADOR
 	sprite_entrenador.frame= 0
 	sprite_entrenador.visible =safari
 	await _entrada()
@@ -1203,7 +1213,7 @@ func _brazo() -> Vector2:
 		await _esperar(0.07)
 	sprite_entrenador.frame =3
 	_bajar_brazo()
-	return sprite_entrenador.position+ MANO
+	return sprite_entrenador.position+ MANOS.get(Estado.heroe, MANOS["ethan"])
 
 func _bajar_brazo() -> void:
 	await _esperar(0.12)

@@ -73,6 +73,8 @@ func guardar() -> bool:
 		"fichas": Estado.fichas,
 		"fichas_ciudades": Estado.fichas_ciudades,
 		"estadisticas": Estado.estadisticas.duplicate(),
+		"nombre": Estado.nombre_jugador,
+		"heroe": Estado.heroe,
 		"equipo": Equipo.a_lista(),
 		"caja": Equipo.caja_a_lista(),
 	}
@@ -106,6 +108,12 @@ func cargar(n: int= -1) -> bool:
 	Estado.estadisticas.merge(datos.get("estadisticas", {}), true)
 	Equipo.desde_lista(datos.get("equipo", []))
 	Equipo.caja_desde_lista(datos.get("caja", []))
+	Estado.nombre_jugador= str(datos.get("nombre", ""))
+	Estado.heroe =str(datos.get("heroe", Estado.HEROE_DEFECTO))
+	if not Estado.heroe in Estado.HEROES:
+		Estado.heroe= Estado.HEROE_DEFECTO
+	if Estado.inicial()== "" and Equipo.miembros.is_empty() and Equipo.caja.is_empty():
+		Estado.marcar("tut_intro")
 	if str(Estado.estadisticas.get("companero", ""))== "" and not Equipo.miembros.is_empty():
 		Estado.estadisticas["companero"]= Equipo.miembros[0].especie.id
 	GestorEscenas.restaurar_zona_exterior(str(datos.get("zona_exterior_id", "")))
@@ -164,4 +172,5 @@ static func resumen_de(datos: Dictionary) -> Dictionary:
 		"ciudad": ciudad,
 		"companero": companero,
 		"lugar": lugar,
+		"heroe": str(datos.get("heroe", "")),
 	}

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Trinket" format=3]
+
+[ext_resource type="Script" path="res://Scripts/datos/trinket.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = "pelota_trapo"
+nombre = "Pelota de Trapo"
+descripcion = "Si el portador se debilita, cada Pokémon del equipo rival pierde 1/8 de sus PS máximos, también los del banco."
+tier = 3
+categoria = "combate"
+alcance = "portador"
+efecto = "pelota"
+valor = 0.125
+unidad = "porcentaje"
+apilado = "no_apila"
+precio = 3000

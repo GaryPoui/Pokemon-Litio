@@ -54,7 +54,7 @@ func _ready() -> void:
 	if Seguidor.activo():
 		Seguidor.poner(self)
 	GestorEscenas.registrar_zona(zona_id, zona_nombre, zona_subtitulo, tipo_zona, anunciar_al_entrar)
-	if tipo_zona== 0 and por_cambio and not de_partida and Estado.dar_fichas_ciudad(zona_id)> 0:
+	if tipo_zona== 0 and por_cambio and not de_partida and not Estado.en_tutorial() and Estado.dar_fichas_ciudad(zona_id)> 0:
 		_avisar_fichas.call_deferred()
 	if safari and not de_partida:
 		for g in get_tree().get_nodes_in_group("guardaparque"):
@@ -101,6 +101,8 @@ func _al_terminar_paso(celda: Vector2i) -> void:
 	Estado.contar_paso()
 	for w in get_tree().get_nodes_in_group("warp"):
 		if w.celda()== celda and w.destino!= "" and not w.salir_empujando:
+			if not _deja_salir(w):
+				return
 			if w.sonido!= "":
 				Sonido.efecto(w.sonido)
 			GestorEscenas.usar_warp(w)
@@ -188,9 +190,17 @@ func salto_en(celda: Vector2i) -> String:
 				return str(td.get_custom_data("salto"))
 	return ""
 
+func _deja_salir(w: Node) -> bool:
+	for g in get_tree().get_nodes_in_group("guardia_salida"):
+		if not g.deja_salir(w):
+			return false
+	return true
+
 func salir_empujando(celda: Vector2i, dir: Vector2) -> bool:
 	for w in get_tree().get_nodes_in_group("warp"):
 		if w.celda()== celda and w.destino!= "" and w.salir_empujando and Vector2(w.direccion)== dir:
+			if not _deja_salir(w):
+				return true
 			if w.sonido!= "":
 				Sonido.efecto(w.sonido)
 			GestorEscenas.usar_warp(w)

@@ -5,6 +5,8 @@ signal elegido(indice: int)
 
 @export var letras_por_segundo: float= 45.0
 
+const FEMENINO:= [["¡Bienvenido", "¡Bienvenida"], ["un campeón", "una campeona"], ["Estás listo", "Estás lista"], ["Pasá tranquilo", "Pasá tranquila"]]
+
 @onready var caja: Panel =$Caja
 @onready var texto: Label= $Caja/Texto
 @onready var flecha: Label =$Caja/Flecha
@@ -57,7 +59,15 @@ func _ready() -> void:
 	EstiloUI.fuente_batalla(flecha)
 	flecha.add_theme_color_override("font_color", Color("d04030"))
 
+func adaptar(t: String) -> String:
+	if not Estado.heroe in Estado.FEMENINOS:
+		return t
+	for par in FEMENINO:
+		t= t.replace(par[0], par[1])
+	return t
+
 func mostrar(contenido: String) -> void:
+	contenido= adaptar(contenido)
 	paginas =contenido.split("\n\n", false)
 	if paginas.is_empty():
 		return
@@ -68,6 +78,7 @@ func mostrar(contenido: String) -> void:
 	await terminado
 
 func preguntar(contenido: String, opciones: Array= ["SÍ", "NO"]) -> int:
+	contenido =adaptar(contenido)
 	preguntando= true
 	paginas= PackedStringArray([contenido])
 	pagina =0

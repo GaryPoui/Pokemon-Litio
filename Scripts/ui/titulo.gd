@@ -1,6 +1,8 @@
 extends Control
 
 const MAPA_INICIAL:= "res://Escenas/Mapa.tscn"
+const CASA :="res://Escenas/Casa.tscn"
+const INTRO:= preload("res://Scripts/ui/intro.gd")
 
 @onready var lista: ListaOpciones= $Opciones/Lista
 @onready var sprite: Sprite2D =$Sprite
@@ -61,11 +63,17 @@ func _jugar() -> void:
 		return
 	if bool(res[1]):
 		Guardado.ranura= n
-		Inventario.reiniciar()
+		Inventario.reiniciar(true)
 		Estado.reiniciar()
 		Equipo.reiniciar()
 		GestorEscenas.reiniciar_zona_exterior()
-		GestorEscenas.cambiar_mapa(MAPA_INICIAL, "", Vector2.DOWN)
+		var intro= INTRO.new()
+		await GestorEscenas.fundido(func():
+			p.queue_free()
+			add_child(intro))
+		await intro.correr()
+		Estado.marcar("tut_intro")
+		GestorEscenas.cambiar_mapa(CASA, "Cama", Vector2.DOWN)
 	else:
 		Guardado.cargar(n)
 
